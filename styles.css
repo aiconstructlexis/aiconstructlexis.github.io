@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.status {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.status-text {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.status-text .unicode-hammer {
+    font-size: 2.5rem;
+}
+
+.status-subtext {
+    color: #666;
+}
+
+.description {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-left: 3px solid #333;
+}
+
+.features {
+    margin: 2rem 0;
+}
+
+.feature {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+}
+
+.feature h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.feature p {
+    color: #666;
+    margin: 0;
+}
+
+.substack {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #ffe6e6;
+    border: 1px solid #ffcccc;
+}
+
+.substack h3 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.substack p {
+    color: #666;
+    margin: 0;
+}
+
+.substack a {
+    color: #d63384;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.substack a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
