@@ -6,78 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Construct Lexis</title>
     <meta name="description"
-        content="AI Construct Lexis: mapping constructs, measurement instruments, and related behaviors and tasks toward a nomological network for AI." />
+        content="AI Construct Lexis: mapping constructs, measurement instruments, and related behaviors/tasks toward a nomological network for AI." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600;6..72,700&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=2" />
+    <link rel="stylesheet" href="styles.css?v=15" />
     <style>
         /* Fallback so colors apply if external CSS is slow or blocked */
         :root {
-            --bg: #f8fafc;
+            --paper: #faf7f2;
             --surface: #ffffff;
-            --text: #1e293b;
-            --text-muted: #64748b;
-            --accent: #0d9488;
-            --accent-hover: #0f766e;
-            --border: #e2e8f0;
-            --green: #059669;
-            --green-hover: #047857;
+            --ink: #1c1917;
+            --ink-muted: #57534e;
+            --accent: #9b2c2c;
+            --accent-deep: #7a1f1f;
+            --rule: #d6d3d1;
+            --bg: #faf7f2;
+            --text: #1c1917;
+            --text-muted: #57534e;
+            --border: #d6d3d1;
+            --green: #9b2c2c;
+            --green-hover: #7a1f1f;
         }
     </style>
 </head>
 
 <body>
     <h1>AI Construct Lexis</h1>
-    <p class="subtitle">Mapping AI constructs, valid measurement instruments, and related behaviors and tasks</p>
-    <p class="contributors"><strong>Team.</strong>
-        <a href="https://www.olawalesalaudeen.com/" target="_blank" rel="noopener noreferrer">Olawale (Wale)
-            Salaudeen</a> <span class="affiliation">(MIT, Schmidt Sciences)</span>,
-        <a href="https://flodorner.github.io/" target="_blank" rel="noopener noreferrer">Florian Dorner</a> <span
-            class="affiliation">(MPI-IS, ETH Zürich)</span>,
-        <a href="https://tomsuehr.com/" target="_blank" rel="noopener noreferrer">Tom Sühr</a> <span
-            class="affiliation">(MPI-IS)</span>,
-        <a href="https://ai.stanford.edu/~sttruong/" target="_blank" rel="noopener noreferrer">Sang Truong</a> <span
-            class="affiliation">(Stanford)</span>,
-        <a href="https://haoran.ca/" target="_blank" rel="noopener noreferrer">Haoran Zhang</a> <span
-            class="affiliation">(MIT)</span>,
-        <a href="https://healthyml.org/marzyeh/" target="_blank" rel="noopener noreferrer">Marzyeh Ghassemi</a> <span
-            class="affiliation">(MIT)</span>,
-        <a href="https://cs.stanford.edu/~sanmi/" target="_blank" rel="noopener noreferrer">Sanmi Koyejo</a> <span
-            class="affiliation">(Stanford)</span>,
-        <a href="https://angelina-wang.github.io/" target="_blank" rel="noopener noreferrer">Angelina Wang</a> <span
-            class="affiliation">(Cornell Tech)</span>
+    <p class="subtitle">Mapping claimed AI constructs, measurement instruments, and related behaviors/tasks</p>
+    <p class="acceptance"><strong>NeurIPS 2026</strong> Eval &amp; Datasets track (to appear).</p>
+    <p class="contributors">
+        Olawale Elijah Salaudeen, Florian E. Dorner, Tom Sühr, Sang T. Truong, Haoran Zhang, Patrick G. Bissett, James Fox, Marzyeh Ghassemi, Thomas Hartvigsen, Peter Hase, Augustin Kelava, Suhas Mahesh, Margaret Mitchell, Jamelle Watson-Daniels, Sanmi Koyejo, Angelina Wang
     </p>
     <p>Read more <a
             href="https://open.substack.com/pub/aiconstructlexis/p/the-ai-construct-lexis?r=6j7v1m&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true"
             target="_blank" rel="noopener noreferrer">here</a>.</p>
-    <p class="funding"><em>Funding from the Schmidt Sciences AI Institute Fellow in Residence Program</em></p>
-
-    <div class="status">
-        <div class="status-text"><span class="unicode-hammer">⚒</span> Incoming <span class="unicode-hammer">⚒</span>
-        </div>
-        <div class="status-subtext">Project under development. More details coming soon.</div>
-        <a href="https://olawalesalaudeen.github.io/aiconstructlexis_dev.github.io/view_network.html" target="_blank"
-            rel="noopener noreferrer" class="status-cta"><span class="status-cta-main">TRY DEMO!!</span><span
-                class="status-cta-caption">Implied Nomological Network from NeurIPS 2024 Papers</span></a>
-    </div>
+    <p class="funding"><em>Funded by the Schmidt Sciences AI Institute Fellow in Residence Program</em></p>
 
     <div class="description">
         <p>
-            AI Construct Lexis is a collaborative effort to map and define AI constructs, valid measurement instruments,
-            and related behaviors and tasks—building a shared framework for understanding and evaluating AI systems. We
+            <strong>AI Construct Lexis</strong> is a collaborative effort to map and define AI constructs, measurement instruments,
+            and related behaviors/tasks—building a shared framework for understanding and evaluating AI systems. We
             ultimately
             aim
-            to establish a <strong>nomological network for AI</strong> [1, 2, 3]: a connected system linking theoretical
+            to establish a <strong>nomological network for AI</strong> [1, 2, 3]: <strong>a connected system linking theoretical
             constructs,
-            the ways we measure them, and the behaviors they predict in the real world (<a
+            the ways we measure them, and the behaviors they predict in the real world</strong> (<a
                 href="https://conjointly.com/kb/nomological-network/" target="_blank" rel="noopener noreferrer">see
                 Conjointly’s overview</a>). We take inspiration from the <a href="https://www.cognitiveatlas.org/"
                 target="_blank" rel="noopener noreferrer">Cognitive Atlas</a> [4] in cognitive science and aim to
             represent the current state of thought in AI.
         </p>
+
+        <div class="status">
+            <a href="https://cute-piroshki-0e933b.netlify.app/view_network.html" target="_blank"
+                rel="noopener noreferrer" class="status-cta"><span class="status-cta-main">TRY DEMO!! <span class="status-cta-beta">Beta</span></span><span
+                    class="status-cta-caption">Implied Nomological Network from Published AI Papers.</span></a>
+            <div class="status-subtext"><em>Official version will be released with the NeurIPS camera ready.</em></div>
+        </div>
+
         <div class="references">
             <p class="ref">[1] Salaudeen, O., et al. (2025). Measurement to Meaning: A Validity-Centered Framework for
                 AI Evaluation. <em>arXiv</em> arXiv:2505.10573. <a href="https://arxiv.org/abs/2505.10573"
@@ -97,9 +86,9 @@
         </div>
     </div>
 
-    <div class="features">
-        <div class="feature feature-construct">
-            <h4>Constructs</h4>
+    <div class="home-intro">
+        <div class="home-intro-section home-intro-section-construct">
+            <div class="home-intro-section-title">Constructs</div>
             <p>
                 Defined theoretical concepts that characterize AI systems, including capabilities (e.g., reasoning and
                 software engineering ability) and risks (e.g., safety and bias). Each construct anchors how we interpret
@@ -107,8 +96,8 @@
             </p>
         </div>
 
-        <div class="feature feature-measurement">
-            <h4>Measurement Instruments</h4>
+        <div class="home-intro-section home-intro-section-measurement">
+            <div class="home-intro-section-title">Measurement Instruments</div>
             <p>
                 Operational definitions and measurements that translate constructs into observable quantities (e.g.,
                 benchmarks and user surveys). Each measurement is evaluated for its validity—whether it captures the
@@ -116,8 +105,8 @@
             </p>
         </div>
 
-        <div class="feature feature-behavior">
-            <h4>Behaviors and Tasks</h4>
+        <div class="home-intro-section home-intro-section-behavior">
+            <div class="home-intro-section-title">Behaviors/Tasks</div>
             <p>
                 Observed behavioral patterns that reveal how constructs manifest, interact, and generalize across
                 models, tasks, and environments (e.g., goal misalignment during tool use and the emergence of social
