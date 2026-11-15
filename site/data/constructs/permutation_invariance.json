@@ -1,0 +1,79 @@
+{
+  "canonical_name": "Permutation invariance",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. The cited definition treats permutation invariance as an in-context learning property under which the prediction for a test query stays the same regardless of the order of the context examples. The formal statement makes this explicit at the level of the last prediction: an ICL algorithm is invariant when that prediction is unchanged under any permutation of the context examples, and no alternative framing is provided.\n\nSpace of facets. In the cited material, it is framed as a property of an in-context learning algorithm, specifically of how its last prediction behaves when the context examples are reordered. The material does not introduce facets, subtypes, or competing names, although one quoted passage notes that recent studies have proposed several variant ICL algorithms that achieve permutation invariance.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. The only explicit operational criterion stated in the cited work is formal: the algorithm counts as permutation invariant when its last prediction remains the same for any permutation of the context examples.\n\nLinks. Its only linked construct is Generalization. One paper claims a causal relationship from permutation invariance to generalization, stating that improvement is primarily attributed to exploiting the \"permutation invariance of code,\" thereby enhancing generalization capabilities.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Permutation invariance"
+  ],
+  "papers": [
+    "Merging LoRAs like Playing LEGO: Pushing the Modularity of LoRA to Extremes Through Rank-Wise Clustering",
+    "PICASO: Permutation-Invariant Context Composition with State Space Models",
+    "Rethinking Invariance in In-context Learning"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The property of an in-context learning algorithm where its prediction for a test query remains the same regardless of the order of the context examples provided.",
+      "papers": [
+        "Rethinking Invariance in In-context Learning"
+      ],
+      "original_name": "Permutation invariance"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Beyond Sequences: Two-dimensional Representation and Dependency Encoding for Code Generation",
+      "evidence": "This improvement is primarily attributed to its ability to exploit permutation invariance of code, thereby enhancing the model\u2019s generalization capabilities. (Section 5.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Beyond Sequences: Two-dimensional Representation and Dependency Encoding for Code Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The cited definition treats permutation invariance as an in-context learning property under which the prediction for a test query stays the same regardless of the order of the context examples. The formal statement makes this explicit at the level of the last prediction: an ICL algorithm is invariant when that prediction is unchanged under any permutation of the context examples, and no alternative framing is provided."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "In the cited material, it is framed as a property of an in-context learning algorithm, specifically of how its last prediction behaves when the context examples are reordered. The material does not introduce facets, subtypes, or competing names, although one quoted passage notes that recent studies have proposed several variant ICL algorithms that achieve permutation invariance."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. The only explicit operational criterion stated in the cited work is formal: the algorithm counts as permutation invariant when its last prediction remains the same for any permutation of the context examples."
+    },
+    {
+      "label": "Links.",
+      "text": "Its only linked construct is Generalization. One paper claims a causal relationship from permutation invariance to generalization, stating that improvement is primarily attributed to exploiting the \"permutation invariance of code,\" thereby enhancing generalization capabilities."
+    }
+  ],
+  "characterization": "Space of definitions. The cited definition treats permutation invariance as an in-context learning property under which the prediction for a test query stays the same regardless of the order of the context examples. The formal statement makes this explicit at the level of the last prediction: an ICL algorithm is invariant when that prediction is unchanged under any permutation of the context examples, and no alternative framing is provided.\n\nSpace of facets. In the cited material, it is framed as a property of an in-context learning algorithm, specifically of how its last prediction behaves when the context examples are reordered. The material does not introduce facets, subtypes, or competing names, although one quoted passage notes that recent studies have proposed several variant ICL algorithms that achieve permutation invariance.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. The only explicit operational criterion stated in the cited work is formal: the algorithm counts as permutation invariant when its last prediction remains the same for any permutation of the context examples.\n\nLinks. Its only linked construct is Generalization. One paper claims a causal relationship from permutation invariance to generalization, stating that improvement is primarily attributed to exploiting the \"permutation invariance of code,\" thereby enhancing generalization capabilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Merging LoRAs like Playing LEGO: Pushing the Modularity of LoRA to Extremes Through Rank-Wise Clustering",
+      "PICASO: Permutation-Invariant Context Composition with State Space Models",
+      "Rethinking Invariance in In-context Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

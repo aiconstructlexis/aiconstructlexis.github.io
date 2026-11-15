@@ -1,0 +1,115 @@
+{
+  "canonical_name": "HumanEval-X",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, the prevailing usage treats HumanEval-X as a multilingual benchmark for code generation, often described as a multilingual extension of HumanEval. Definitions describe it as translating HumanEval\u2019s Python problems into multiple languages, and one paper further characterizes it as a comprehensive benchmark covering Python, C++, Java, JavaScript, and Go. A smaller naming variant, HumanEval-Multi, refers to the multilingual version of HumanEval and describes it as evaluating the functional correctness of model-generated code, used as a test dataset for utility.\n\nWhat it is claimed to measure. Papers link this instrument to 2 behavioral indicators and to no constructs. The dominant claim is that it measures Code generation: papers report pass@1 on HumanEval-X for multilingual code generation and say it aims to evaluate multilingual code generation abilities. A smaller line of work uses it to measure Code translation, with one paper reporting Java-to-C++ translation performance on the HumanEval-X benchmark.\n\nSpace of uses. Papers commonly place it inside broader code evaluation suites, including use as one of several code benchmarks. Some papers use the multilingual version as a test dataset for utility, while another uses evaluation on the HumanEval-X dataset to report variation in expert activation frequencies within MoE blocks. No measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HumanEval-X",
+    "HumanEval-Multi"
+  ],
+  "papers": [
+    "EffiCoder: Enhancing Code Generation in Large Language Models through Efficiency-Aware Fine-tuning",
+    "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+    "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+    "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+    "Selective Prompt Anchoring for Code Generation",
+    "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+    "StackEval: Benchmarking LLMs in Coding Assistance"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A multilingual benchmark for evaluating the code generation capabilities of large language models.",
+      "papers": [
+        "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+        "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+        "StackEval: Benchmarking LLMs in Coding Assistance"
+      ],
+      "original_name": "HumanEval-X"
+    },
+    {
+      "text": "A multilingual benchmark for evaluating the functional correctness of model-generated code, used in this paper to assess model utility.",
+      "papers": [
+        "ProSec: Fortifying Code LLMs with Proactive Security Alignment"
+      ],
+      "original_name": "HumanEval-Multi"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "evidence": "We compare the pass@1 accuracy of the base models and the corresponding fine-tuned AlchemistCoder models on Humaneval-X [49]. (Section 3.2, under heading 'Results on multilingual code generation.')",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data"
+        ],
+        "icml25": [
+          "Selective Prompt Anchoring for Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code translation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+      "evidence": "underperforms for Java-to-C++ translation on the HumanEval-X benchmark (48.8% versus 82.3%).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, the prevailing usage treats HumanEval-X as a multilingual benchmark for code generation, often described as a multilingual extension of HumanEval. Definitions describe it as translating HumanEval\u2019s Python problems into multiple languages, and one paper further characterizes it as a comprehensive benchmark covering Python, C++, Java, JavaScript, and Go. A smaller naming variant, HumanEval-Multi, refers to the multilingual version of HumanEval and describes it as evaluating the functional correctness of model-generated code, used as a test dataset for utility."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link this instrument to 2 behavioral indicators and to no constructs. The dominant claim is that it measures Code generation: papers report pass@1 on HumanEval-X for multilingual code generation and say it aims to evaluate multilingual code generation abilities. A smaller line of work uses it to measure Code translation, with one paper reporting Java-to-C++ translation performance on the HumanEval-X benchmark."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers commonly place it inside broader code evaluation suites, including use as one of several code benchmarks. Some papers use the multilingual version as a test dataset for utility, while another uses evaluation on the HumanEval-X dataset to report variation in expert activation frequencies within MoE blocks. No measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Across the papers, the prevailing usage treats HumanEval-X as a multilingual benchmark for code generation, often described as a multilingual extension of HumanEval. Definitions describe it as translating HumanEval\u2019s Python problems into multiple languages, and one paper further characterizes it as a comprehensive benchmark covering Python, C++, Java, JavaScript, and Go. A smaller naming variant, HumanEval-Multi, refers to the multilingual version of HumanEval and describes it as evaluating the functional correctness of model-generated code, used as a test dataset for utility.\n\nWhat it is claimed to measure. Papers link this instrument to 2 behavioral indicators and to no constructs. The dominant claim is that it measures Code generation: papers report pass@1 on HumanEval-X for multilingual code generation and say it aims to evaluate multilingual code generation abilities. A smaller line of work uses it to measure Code translation, with one paper reporting Java-to-C++ translation performance on the HumanEval-X benchmark.\n\nSpace of uses. Papers commonly place it inside broader code evaluation suites, including use as one of several code benchmarks. Some papers use the multilingual version as a test dataset for utility, while another uses evaluation on the HumanEval-X dataset to report variation in expert activation frequencies within MoE blocks. No measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "EffiCoder: Enhancing Code Generation in Large Language Models through Efficiency-Aware Fine-tuning",
+      "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+      "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+      "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+      "Selective Prompt Anchoring for Code Generation"
+    ],
+    "neurips24": [
+      "AlchemistCoder: Harmonizing and Eliciting Code Capability by Hindsight Tuning on Multi-source Data",
+      "StackEval: Benchmarking LLMs in Coding Assistance"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 5,
+    "neurips24": 2
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

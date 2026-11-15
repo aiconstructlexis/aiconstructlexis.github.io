@@ -1,0 +1,173 @@
+{
+  "canonical_name": "Representation learning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the dominant framing treats representation learning as a model's ability to learn embeddings or features of inputs that preserve useful information for downstream tasks, often by encoding similar instances closely in a latent space. A smaller line of work narrows this to learning invariant or environment-relevant contextual features, or to learning semantic rather than token-pattern representations. Some authors also describe it more mechanistically, as lower or deeper layers forming intermediate representations or applying a fixed representation function before later in-context learning.\n\nSpace of facets. The main named variants are feature learning, which emphasizes contextual, invariant, or environment-relevant features, and semantic representation learning, which emphasizes semantic meaning and is explicitly contrasted with token pattern representations. Several papers use representation learning and feature learning in closely overlapping ways, as learning useful internal features, embeddings, or rich latent representations that transfer across tasks. Another recurring organization places it inside accounts of in-context learning, where lower layers first transform inputs into a useful format and deeper layers are discussed in terms of intermediate representations.\n\nSpace of measurement. Operationalization is sparse: papers link representation learning to 1 measurement instrument, the Nucleotide Transformer Benchmark, and to no behavioral indicators. The linked instrument is a benchmark, used by fine-tuning pretrained models and evaluating the learned representations on benchmark tasks. This operationalization lines up with the prevailing definitions that present representation learning as producing transferable representations for downstream tasks.\n\nLinks. One paper claims a causal relationship from representation learning to in-context learning, arguing that in-context learning can improve by learning to encode informative basis representations. Other papers relate representation learning to in-context learning by treating in-context learning as something studied through a representation-learning lens. Separately, one paper claims a causal relationship from representation learning to generation diversity, stating that representation-level learning effectively refines generation diversity, and no correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Feature learning",
+    "Representation learning",
+    "Semantic representation learning"
+  ],
+  "papers": [
+    "Flipping Knowledge Distillation: Leveraging Small Models' Expertise to Enhance LLMs in Text Matching",
+    "MAGNET: Augmenting Generative Decoders with Representation Learning and Infilling Capabilities",
+    "On Support Samples of Next Word Prediction",
+    "Context is Environment",
+    "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+    "Out-of-Distribution Detection by Leveraging Between-Layer Transformation Smoothness",
+    "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+    "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+    "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+    "Attention-Only Transformers via Unrolled Subspace Denoising",
+    "Elucidating the Design Space of Multimodal Protein Language Models",
+    "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+    "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+    "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "The model's capacity to learn useful representations of input data that capture invariant or environment-relevant patterns, which can be enhanced through context-based training.",
+      "papers": [
+        "Context is Environment"
+      ],
+      "original_name": "Feature learning"
+    },
+    {
+      "text": "The ability of a model to learn to encode input data into a latent space where similar instances are represented closely, facilitating downstream tasks.",
+      "papers": [
+        "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+        "Out-of-Distribution Detection by Leveraging Between-Layer Transformation Smoothness",
+        "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series",
+        "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+        "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+        "On Support Samples of Next Word Prediction",
+        "Elucidating the Design Space of Multimodal Protein Language Models"
+      ],
+      "original_name": "Representation learning"
+    },
+    {
+      "text": "The ability to learn and utilize semantic meaning rather than superficial token patterns, which VLLMs rely on for effective MM-ICL performance.",
+      "papers": [
+        "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration"
+      ],
+      "original_name": "Semantic representation learning"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "evidence": "we show that ICL can improve upon the a priori optimal rate when the task class basis resides in a coarser Besov space by learning to encode informative basis representations, emphasizing the importance of pretraining on diverse tasks. (Section 1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+          "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens"
+        ],
+        "iclr24": [
+          "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Nucleotide Transformer Benchmark",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+      "evidence": "To evaluate the learned representations, we fine-tuned our MLM-pretrained, short-context DNA-xLSTM models ... while the DNA-xLSTM-2M model was fine-tuned on the Nucleotide Transformers Tasks (Dalla-Torre et al., 2024) (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation diversity",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Elucidating the Design Space of Multimodal Protein Language Models",
+      "evidence": "Introducing representation-level learning and architectural innovations infuses geometric inductive biases and effectively refines generation diversity. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Elucidating the Design Space of Multimodal Protein Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the dominant framing treats representation learning as a model's ability to learn embeddings or features of inputs that preserve useful information for downstream tasks, often by encoding similar instances closely in a latent space. A smaller line of work narrows this to learning invariant or environment-relevant contextual features, or to learning semantic rather than token-pattern representations. Some authors also describe it more mechanistically, as lower or deeper layers forming intermediate representations or applying a fixed representation function before later in-context learning."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The main named variants are feature learning, which emphasizes contextual, invariant, or environment-relevant features, and semantic representation learning, which emphasizes semantic meaning and is explicitly contrasted with token pattern representations. Several papers use representation learning and feature learning in closely overlapping ways, as learning useful internal features, embeddings, or rich latent representations that transfer across tasks. Another recurring organization places it inside accounts of in-context learning, where lower layers first transform inputs into a useful format and deeper layers are discussed in terms of intermediate representations."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is sparse: papers link representation learning to 1 measurement instrument, the Nucleotide Transformer Benchmark, and to no behavioral indicators. The linked instrument is a benchmark, used by fine-tuning pretrained models and evaluating the learned representations on benchmark tasks. This operationalization lines up with the prevailing definitions that present representation learning as producing transferable representations for downstream tasks."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper claims a causal relationship from representation learning to in-context learning, arguing that in-context learning can improve by learning to encode informative basis representations. Other papers relate representation learning to in-context learning by treating in-context learning as something studied through a representation-learning lens. Separately, one paper claims a causal relationship from representation learning to generation diversity, stating that representation-level learning effectively refines generation diversity, and no correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the dominant framing treats representation learning as a model's ability to learn embeddings or features of inputs that preserve useful information for downstream tasks, often by encoding similar instances closely in a latent space. A smaller line of work narrows this to learning invariant or environment-relevant contextual features, or to learning semantic rather than token-pattern representations. Some authors also describe it more mechanistically, as lower or deeper layers forming intermediate representations or applying a fixed representation function before later in-context learning.\n\nSpace of facets. The main named variants are feature learning, which emphasizes contextual, invariant, or environment-relevant features, and semantic representation learning, which emphasizes semantic meaning and is explicitly contrasted with token pattern representations. Several papers use representation learning and feature learning in closely overlapping ways, as learning useful internal features, embeddings, or rich latent representations that transfer across tasks. Another recurring organization places it inside accounts of in-context learning, where lower layers first transform inputs into a useful format and deeper layers are discussed in terms of intermediate representations.\n\nSpace of measurement. Operationalization is sparse: papers link representation learning to 1 measurement instrument, the Nucleotide Transformer Benchmark, and to no behavioral indicators. The linked instrument is a benchmark, used by fine-tuning pretrained models and evaluating the learned representations on benchmark tasks. This operationalization lines up with the prevailing definitions that present representation learning as producing transferable representations for downstream tasks.\n\nLinks. One paper claims a causal relationship from representation learning to in-context learning, arguing that in-context learning can improve by learning to encode informative basis representations. Other papers relate representation learning to in-context learning by treating in-context learning as something studied through a representation-learning lens. Separately, one paper claims a causal relationship from representation learning to generation diversity, stating that representation-level learning effectively refines generation diversity, and no correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Flipping Knowledge Distillation: Leveraging Small Models' Expertise to Enhance LLMs in Text Matching",
+      "MAGNET: Augmenting Generative Decoders with Representation Learning and Infilling Capabilities",
+      "On Support Samples of Next Word Prediction"
+    ],
+    "iclr24": [
+      "Context is Environment",
+      "How Do Transformers Learn In-Context Beyond Simple Functions? A Case Study on Learning with Representations",
+      "Out-of-Distribution Detection by Leveraging Between-Layer Transformation Smoothness",
+      "TEST: Text Prototype Aligned Embedding to Activate LLM's Ability for Time Series"
+    ],
+    "iclr25": [
+      "Bio-xLSTM: Generative modeling, representation and in-context learning of biological and chemical sequences",
+      "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models"
+    ],
+    "icml25": [
+      "Attention-Only Transformers via Unrolled Subspace Denoising",
+      "Elucidating the Design Space of Multimodal Protein Language Models"
+    ],
+    "neurips24": [
+      "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens",
+      "Transformers are Minimax Optimal Nonparametric In-Context Learners",
+      "What Factors Affect Multi-Modal In-Context Learning? An In-Depth Exploration"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "iclr24": 4,
+    "iclr25": 2,
+    "icml25": 2,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "canonical_name": "MiniWoB++",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, the prevailing usage treats MiniWoB++ as a standard benchmark suite or interactive benchmark for computer control and web navigation in a simulated, simplified web environment. Definitions usually emphasize diverse instruction-following tasks, from low-level actions to complex multi-step decision making, where agents interact with web elements or pages through keyboard and mouse actions; some descriptions also note built-in reward functions or outcome-based checks. A smaller line of work under the name MiniWob describes it instead as a multimodal or open-ended web navigation benchmark in real web environments.\n\nWhat it is claimed to measure. Papers use MiniWoB++ most often to measure web navigation, and some also use it to measure task completion. A smaller strand reports it as measuring adaptability. These claims do not spread across many targets: the benchmark is linked to 2 behavioral indicators, web navigation and task completion, and to 1 construct, adaptability.\n\nSpace of uses. No measurement instrument is linked to MiniWoB++. In use, papers commonly position it as a standard or representative benchmark for evaluating computer-control or autonomous agents, and they also report it alongside ALFWorld, WebArena, ScreenSpot, AITW, and Mind2Web. Some papers additionally emphasize its built-in reward functions or outcome-based evaluation with programmatic checkers.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MiniWoB++",
+    "MiniWob"
+  ],
+  "papers": [
+    "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+    "Multimodal Web Navigation with Instruction-Finetuned Foundation Models",
+    "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+    "Grounding Multimodal Large Language Model in GUI World",
+    "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+    "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+    "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+    "Synatra: Turning Indirect Knowledge into Direct Demonstrations for Digital Agents at Scale"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "A standard benchmark suite for computer control agents, integrating diverse tasks that simulate real-world human-computer interactions in a simplified web environment.",
+      "papers": [
+        "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+        "Multimodal Web Navigation with Instruction-Finetuned Foundation Models",
+        "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+        "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+        "Synatra: Turning Indirect Knowledge into Direct Demonstrations for Digital Agents at Scale"
+      ],
+      "original_name": "MiniWoB++"
+    },
+    {
+      "text": "A web navigation benchmark of open-ended tasks in real web environments that evaluates agents on instruction-following and action execution.",
+      "papers": [
+        "Grounding Multimodal Large Language Model in GUI World",
+        "Vision-Language Models Can Self-Improve Reasoning via Reflection"
+      ],
+      "original_name": "MiniWob"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Web navigation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "evidence": "MiniWoB++ (Liu et al., 2018) is an interactive web benchmark, with built-in reward functions. (\u00a74.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+          "Grounding Multimodal Large Language Model in GUI World"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "evidence": "These manuals allow LLM agents to achieve remarkable success rates of 97.4% with GPT-4-turbo and 86.2% with GPT-3.5-turbo on ALFWorld, 98.3% with GPT-4-turbo and 92.7% with GPT-3.5-turbo on MiniWoB++. (Introduction)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Grounding Multimodal Large Language Model in GUI World",
+      "evidence": "Our approach demonstrates superior performance in task accuracy and adaptability, as validated by benchmarks such as ScreenSpot, MiniWob, AITW, and Mind2Web.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Grounding Multimodal Large Language Model in GUI World"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, the prevailing usage treats MiniWoB++ as a standard benchmark suite or interactive benchmark for computer control and web navigation in a simulated, simplified web environment. Definitions usually emphasize diverse instruction-following tasks, from low-level actions to complex multi-step decision making, where agents interact with web elements or pages through keyboard and mouse actions; some descriptions also note built-in reward functions or outcome-based checks. A smaller line of work under the name MiniWob describes it instead as a multimodal or open-ended web navigation benchmark in real web environments."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use MiniWoB++ most often to measure web navigation, and some also use it to measure task completion. A smaller strand reports it as measuring adaptability. These claims do not spread across many targets: the benchmark is linked to 2 behavioral indicators, web navigation and task completion, and to 1 construct, adaptability."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to MiniWoB++. In use, papers commonly position it as a standard or representative benchmark for evaluating computer-control or autonomous agents, and they also report it alongside ALFWorld, WebArena, ScreenSpot, AITW, and Mind2Web. Some papers additionally emphasize its built-in reward functions or outcome-based evaluation with programmatic checkers."
+    }
+  ],
+  "characterization": "What it is. Across the papers, the prevailing usage treats MiniWoB++ as a standard benchmark suite or interactive benchmark for computer control and web navigation in a simulated, simplified web environment. Definitions usually emphasize diverse instruction-following tasks, from low-level actions to complex multi-step decision making, where agents interact with web elements or pages through keyboard and mouse actions; some descriptions also note built-in reward functions or outcome-based checks. A smaller line of work under the name MiniWob describes it instead as a multimodal or open-ended web navigation benchmark in real web environments.\n\nWhat it is claimed to measure. Papers use MiniWoB++ most often to measure web navigation, and some also use it to measure task completion. A smaller strand reports it as measuring adaptability. These claims do not spread across many targets: the benchmark is linked to 2 behavioral indicators, web navigation and task completion, and to 1 construct, adaptability.\n\nSpace of uses. No measurement instrument is linked to MiniWoB++. In use, papers commonly position it as a standard or representative benchmark for evaluating computer-control or autonomous agents, and they also report it alongside ALFWorld, WebArena, ScreenSpot, AITW, and Mind2Web. Some papers additionally emphasize its built-in reward functions or outcome-based evaluation with programmatic checkers.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+      "Multimodal Web Navigation with Instruction-Finetuned Foundation Models",
+      "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control"
+    ],
+    "iclr25": [
+      "Grounding Multimodal Large Language Model in GUI World",
+      "OpenHands: An Open Platform for AI Software Developers as Generalist Agents"
+    ],
+    "naacl25": [
+      "Vision-Language Models Can Self-Improve Reasoning via Reflection"
+    ],
+    "neurips24": [
+      "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+      "Synatra: Turning Indirect Knowledge into Direct Demonstrations for Digital Agents at Scale"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 2,
+    "naacl25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

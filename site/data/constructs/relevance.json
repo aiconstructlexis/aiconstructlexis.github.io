@@ -1,0 +1,327 @@
+{
+  "canonical_name": "Relevance",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats relevance as on-topic alignment: whether a model output, summary, argument, reasoning path, or document directly addresses the prompt, question, instruction, query, or debate topic and avoids unrelated or off-topic content. Many definitions use near-identical wording such as being pertinent and on-topic, staying focused on the main topic, or asking whether the output directly relates to the instruction. A smaller line of work treats it as a latent tendency or ability, either of a model to make task-relevant contributions in interaction or of a text to maintain pragmatic alignment with discourse topic and context, and a few task-specific definitions broaden it beyond strict topical match to include capturing key points, providing valuable extensions beyond the topic, or balancing topic coverage with off-topic avoidance.\n\nSpace of facets. Many papers place relevance inside broader evaluation schemes rather than giving it an internal taxonomy. It appears as one of the dimensions of instruction following, as a subjective criterion in debating under the label topic relevance, and as a pragmatic relevance condition within coherence assessment; one survey instead uses the near-synonymous label Relation for contributions that help solve the shared task goal. The same label is also applied to different units of analysis, including response relevance, document-to-question relevance, reasoning-path relevance, and code-review relevance, with one code-review formulation defining it as an overall quality balance through the formula \"Rel = 2 \u00b7 Con \u00b7 Comp / (Con + Comp)\".\n\nSpace of measurement. Operationally, papers link relevance to 4 measurement instruments and 3 behavioral indicators. The most common instruments are LLM-as-a-judge, followed by human evaluation, G-Eval, and expert evaluation: GPT-4 or GPT-4o rate response pairs or long-form answers for relevance, users or annotators score surveys, summaries, conversations, or research ideas on ordered scales, G-Eval scores summary relevance against reference labels, and expert annotators judge fine-grained dimensions such as faithfulness and relevance. These operationalizations mostly match the dominant on-topic framing, though some papers measure it indirectly, for example through the probability of generating a question from a document, through faithfulness and reward filters as an indirect signal, or through the formula \"Rel = 2 \u00b7 Con \u00b7 Comp / (Con + Comp)\".\n\nLinks. In reported links, one paper claims a causal relationship from Relevance to Information retrieval, stating that explicitly modeling relevance together with consistency trains a retriever to retrieve documents needed for answering a question. Papers also report 3 behavioral-indicator links and 2 construct links overall: Question answering is related to Relevance, Relevance is related to Reward hacking, and Consistency and Instruction following ability are each related to Relevance. One related claim says question-answering systems can have relevance as an attribute, another makes relevance one of the dimensions of instruction following, and the reward-hacking paper describes contextual relevance as an aspect of reward hacking.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Relevance",
+    "Relation",
+    "Topic relevance"
+  ],
+  "papers": [
+    "CaLMQA: Exploring culturally specific long-form question answering across 23 languages",
+    "How to Enable Effective Cooperation Between Humans and NLP Models: A Survey of Principles, Formalizations, and Beyond",
+    "InspireDebate: Multi-Dimensional Subjective-Objective Evaluation-Guided Reasoning and Optimization for Debating",
+    "MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for Retrieval Augmented Generation",
+    "ReSCORE: Label-free Iterative Retriever Training for Multi-hop Question Answering with Relevance-Consistency Supervision",
+    "Can Large Language Models Unlock Novel Scientific Research Ideas?",
+    "Data Descriptions from Large Language Models with Influence Estimation",
+    "DischargeSim: A Simulation Benchmark for Educational Doctor\u2013Patient Communication at Discharge",
+    "Evaluating Taxonomy Free Character Role Labeling (TF-CRL) in News Stories using Large Language Models",
+    "Exploring Artificial Image Generation for Stance Detection",
+    "From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge",
+    "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+    "MemInsight: Autonomous Memory Augmentation for LLM Agents",
+    "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+    "Paired by the Teacher: Turning Unpaired Data into High-Fidelity Pairs for Low-Resource Text Generation",
+    "RAGferee: Building Contextual Reward Models for Retrieval-Augmented Generation",
+    "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+    "TounsiBench: Benchmarking Large Language Models for Tunisian Arabic",
+    "VELA: An LLM-Hybrid-as-a-Judge Approach for Evaluating Long Image Captions",
+    "Achieving Human Parity in Content-Grounded Datasets Generation",
+    "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+    "Human Feedback is not Gold Standard",
+    "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+    "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+    "A Novel Computational Modeling Foundation for Automatic Coherence Assessment",
+    "CAMIEval: Enhancing NLG Evaluation through Multidimensional Comparative Instruction-Following Analysis",
+    "CRScore: Grounding Automated Evaluation of Code Review Comments in Code Claims and Smells",
+    "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+    "Evaluating Small Language Models for News Summarization: Implications and Factors Influencing Performance",
+    "WebQuality: A Large-scale Multi-modal Web Page Quality Assessment Dataset with Multiple Scoring Dimensions",
+    "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+    "Transfer Q-star : Principled Decoding for LLM Alignment"
+  ],
+  "paper_count": 34,
+  "definitions": [
+    {
+      "text": "The degree to which a model's generated response is pertinent and on-topic with respect to the user's prompt or question.",
+      "papers": [
+        "Achieving Human Parity in Content-Grounded Datasets Generation",
+        "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+        "Human Feedback is not Gold Standard",
+        "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+        "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+        "Evaluating Small Language Models for News Summarization: Implications and Factors Influencing Performance",
+        "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+        "WebQuality: A Large-scale Multi-modal Web Page Quality Assessment Dataset with Multiple Scoring Dimensions",
+        "CAMIEval: Enhancing NLG Evaluation through Multidimensional Comparative Instruction-Following Analysis",
+        "CRScore: Grounding Automated Evaluation of Code Review Comments in Code Claims and Smells",
+        "A Novel Computational Modeling Foundation for Automatic Coherence Assessment",
+        "ReSCORE: Label-free Iterative Retriever Training for Multi-hop Question Answering with Relevance-Consistency Supervision",
+        "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework"
+      ],
+      "original_name": "Relevance"
+    },
+    {
+      "text": "The latent tendency of a model to produce contributions that are relevant to the shared task goal during human-model interaction.",
+      "papers": [
+        "How to Enable Effective Cooperation Between Humans and NLP Models: A Survey of Principles, Formalizations, and Beyond"
+      ],
+      "original_name": "Relation"
+    },
+    {
+      "text": "The degree to which the model's arguments directly address and align with the core debate topic, avoiding digression or irrelevance.",
+      "papers": [
+        "InspireDebate: Multi-Dimensional Subjective-Objective Evaluation-Guided Reasoning and Optimization for Debating"
+      ],
+      "original_name": "Topic relevance"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "We prompt GPT-4 to rate responses from various decoding strategies on relevance, accuracy, and insightfulness, scoring them from 1 to 10. (Table 2)",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transfer Q-star : Principled Decoding for LLM Alignment"
+        ],
+        "iclr25": [
+          "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment"
+        ],
+        "acl25": [
+          "CaLMQA: Exploring culturally specific long-form question answering across 23 languages"
+        ],
+        "emnlp25": [
+          "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+          "TounsiBench: Benchmarking Large Language Models for Tunisian Arabic"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+      "evidence": "Users are asked to rate the relevance, structure, and usefulness to their actual work of the generated survey on a scale from 1 (poor) to 5 (excellent).",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoSurvey: Large Language Models Can Automatically Write Surveys"
+        ],
+        "naacl25": [
+          "Evaluating Small Language Models for News Summarization: Implications and Factors Influencing Performance"
+        ],
+        "emnlp25": [
+          "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+          "Can Large Language Models Unlock Novel Scientific Research Ideas?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "G-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MemInsight: Autonomous Memory Augmentation for LLM Agents",
+      "evidence": "For Event Summarization, we adopt G-Eval (Liu et al., 2023b), an LLM-based metric that evaluates the relevance, consistency, and coherence of generated summaries against reference labels. (Section 4.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MemInsight: Autonomous Memory Augmentation for LLM Agents",
+          "Paired by the Teacher: Turning Unpaired Data into High-Fidelity Pairs for Low-Resource Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "question-answering systems can have attributes of relevance, verbosity, and completeness [52].",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CAMIEval: Enhancing NLG Evaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "evidence": "Specifically, we define three fundamental dimensions of instruction-following: relevance, factuality, and adherence. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "CAMIEval: Enhancing NLG Evaluation through Multidimensional Comparative Instruction-Following Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "ReSCORE: Label-free Iterative Retriever Training for Multi-hop Question Answering with Relevance-Consistency Supervision",
+      "evidence": "By explicitly modeling both consistency and relevance, our method trains a retriever to retrieve the documents necessary for answering a given question. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "ReSCORE: Label-free Iterative Retriever Training for Multi-hop Question Answering with Relevance-Consistency Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ReSCORE: Label-free Iterative Retriever Training for Multi-hop Question Answering with Relevance-Consistency Supervision",
+      "evidence": "While the answer probability by itself seemed ineffective, its combination with the question probability becomes powerful, as it evaluates the consistency among relevant documents, with irrelevant ones already filtered out due to their low question probabilities. (Section 4.2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "ReSCORE: Label-free Iterative Retriever Training for Multi-hop Question Answering with Relevance-Consistency Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Expert evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for Retrieval Augmented Generation",
+      "evidence": "Automatic evaluation of retrieval augmented generation (RAG) systems relies on fine-grained dimensions like faithfulness and relevance, as judged by expert human annotators.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for Retrieval Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward hacking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking",
+      "evidence": "\"increased energy loss reduces the upper bound of contextual relevance in LLMs, which is a critical aspect of reward hacking\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats relevance as on-topic alignment: whether a model output, summary, argument, reasoning path, or document directly addresses the prompt, question, instruction, query, or debate topic and avoids unrelated or off-topic content. Many definitions use near-identical wording such as being pertinent and on-topic, staying focused on the main topic, or asking whether the output directly relates to the instruction. A smaller line of work treats it as a latent tendency or ability, either of a model to make task-relevant contributions in interaction or of a text to maintain pragmatic alignment with discourse topic and context, and a few task-specific definitions broaden it beyond strict topical match to include capturing key points, providing valuable extensions beyond the topic, or balancing topic coverage with off-topic avoidance."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Many papers place relevance inside broader evaluation schemes rather than giving it an internal taxonomy. It appears as one of the dimensions of instruction following, as a subjective criterion in debating under the label topic relevance, and as a pragmatic relevance condition within coherence assessment; one survey instead uses the near-synonymous label Relation for contributions that help solve the shared task goal. The same label is also applied to different units of analysis, including response relevance, document-to-question relevance, reasoning-path relevance, and code-review relevance, with one code-review formulation defining it as an overall quality balance through the formula \"Rel = 2 \u00b7 Con \u00b7 Comp / (Con + Comp)\"."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationally, papers link relevance to 4 measurement instruments and 3 behavioral indicators. The most common instruments are LLM-as-a-judge, followed by human evaluation, G-Eval, and expert evaluation: GPT-4 or GPT-4o rate response pairs or long-form answers for relevance, users or annotators score surveys, summaries, conversations, or research ideas on ordered scales, G-Eval scores summary relevance against reference labels, and expert annotators judge fine-grained dimensions such as faithfulness and relevance. These operationalizations mostly match the dominant on-topic framing, though some papers measure it indirectly, for example through the probability of generating a question from a document, through faithfulness and reward filters as an indirect signal, or through the formula \"Rel = 2 \u00b7 Con \u00b7 Comp / (Con + Comp)\"."
+    },
+    {
+      "label": "Links.",
+      "text": "In reported links, one paper claims a causal relationship from Relevance to Information retrieval, stating that explicitly modeling relevance together with consistency trains a retriever to retrieve documents needed for answering a question. Papers also report 3 behavioral-indicator links and 2 construct links overall: Question answering is related to Relevance, Relevance is related to Reward hacking, and Consistency and Instruction following ability are each related to Relevance. One related claim says question-answering systems can have relevance as an attribute, another makes relevance one of the dimensions of instruction following, and the reward-hacking paper describes contextual relevance as an aspect of reward hacking."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats relevance as on-topic alignment: whether a model output, summary, argument, reasoning path, or document directly addresses the prompt, question, instruction, query, or debate topic and avoids unrelated or off-topic content. Many definitions use near-identical wording such as being pertinent and on-topic, staying focused on the main topic, or asking whether the output directly relates to the instruction. A smaller line of work treats it as a latent tendency or ability, either of a model to make task-relevant contributions in interaction or of a text to maintain pragmatic alignment with discourse topic and context, and a few task-specific definitions broaden it beyond strict topical match to include capturing key points, providing valuable extensions beyond the topic, or balancing topic coverage with off-topic avoidance.\n\nSpace of facets. Many papers place relevance inside broader evaluation schemes rather than giving it an internal taxonomy. It appears as one of the dimensions of instruction following, as a subjective criterion in debating under the label topic relevance, and as a pragmatic relevance condition within coherence assessment; one survey instead uses the near-synonymous label Relation for contributions that help solve the shared task goal. The same label is also applied to different units of analysis, including response relevance, document-to-question relevance, reasoning-path relevance, and code-review relevance, with one code-review formulation defining it as an overall quality balance through the formula \"Rel = 2 \u00b7 Con \u00b7 Comp / (Con + Comp)\".\n\nSpace of measurement. Operationally, papers link relevance to 4 measurement instruments and 3 behavioral indicators. The most common instruments are LLM-as-a-judge, followed by human evaluation, G-Eval, and expert evaluation: GPT-4 or GPT-4o rate response pairs or long-form answers for relevance, users or annotators score surveys, summaries, conversations, or research ideas on ordered scales, G-Eval scores summary relevance against reference labels, and expert annotators judge fine-grained dimensions such as faithfulness and relevance. These operationalizations mostly match the dominant on-topic framing, though some papers measure it indirectly, for example through the probability of generating a question from a document, through faithfulness and reward filters as an indirect signal, or through the formula \"Rel = 2 \u00b7 Con \u00b7 Comp / (Con + Comp)\".\n\nLinks. In reported links, one paper claims a causal relationship from Relevance to Information retrieval, stating that explicitly modeling relevance together with consistency trains a retriever to retrieve documents needed for answering a question. Papers also report 3 behavioral-indicator links and 2 construct links overall: Question answering is related to Relevance, Relevance is related to Reward hacking, and Consistency and Instruction following ability are each related to Relevance. One related claim says question-answering systems can have relevance as an attribute, another makes relevance one of the dimensions of instruction following, and the reward-hacking paper describes contextual relevance as an aspect of reward hacking.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CaLMQA: Exploring culturally specific long-form question answering across 23 languages",
+      "How to Enable Effective Cooperation Between Humans and NLP Models: A Survey of Principles, Formalizations, and Beyond",
+      "InspireDebate: Multi-Dimensional Subjective-Objective Evaluation-Guided Reasoning and Optimization for Debating",
+      "MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for Retrieval Augmented Generation",
+      "ReSCORE: Label-free Iterative Retriever Training for Multi-hop Question Answering with Relevance-Consistency Supervision"
+    ],
+    "emnlp25": [
+      "Can Large Language Models Unlock Novel Scientific Research Ideas?",
+      "Data Descriptions from Large Language Models with Influence Estimation",
+      "DischargeSim: A Simulation Benchmark for Educational Doctor\u2013Patient Communication at Discharge",
+      "Evaluating Taxonomy Free Character Role Labeling (TF-CRL) in News Stories using Large Language Models",
+      "Exploring Artificial Image Generation for Stance Detection",
+      "From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge",
+      "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+      "MemInsight: Autonomous Memory Augmentation for LLM Agents",
+      "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+      "Paired by the Teacher: Turning Unpaired Data into High-Fidelity Pairs for Low-Resource Text Generation",
+      "RAGferee: Building Contextual Reward Models for Retrieval-Augmented Generation",
+      "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+      "TounsiBench: Benchmarking Large Language Models for Tunisian Arabic",
+      "VELA: An LLM-Hybrid-as-a-Judge Approach for Evaluating Long Image Captions"
+    ],
+    "iclr24": [
+      "Achieving Human Parity in Content-Grounded Datasets Generation",
+      "Compressing LLMs: The Truth is Rarely Pure and Never Simple",
+      "Human Feedback is not Gold Standard"
+    ],
+    "iclr25": [
+      "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+      "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions"
+    ],
+    "naacl25": [
+      "A Novel Computational Modeling Foundation for Automatic Coherence Assessment",
+      "CAMIEval: Enhancing NLG Evaluation through Multidimensional Comparative Instruction-Following Analysis",
+      "CRScore: Grounding Automated Evaluation of Code Review Comments in Code Claims and Smells",
+      "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+      "Evaluating Small Language Models for News Summarization: Implications and Factors Influencing Performance",
+      "WebQuality: A Large-scale Multi-modal Web Page Quality Assessment Dataset with Multiple Scoring Dimensions"
+    ],
+    "neurips24": [
+      "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+      "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "Transfer Q-star : Principled Decoding for LLM Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 5,
+    "emnlp25": 14,
+    "iclr24": 3,
+    "iclr25": 2,
+    "naacl25": 6,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

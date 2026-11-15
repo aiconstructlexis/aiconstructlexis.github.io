@@ -1,0 +1,161 @@
+{
+  "canonical_name": "Strategic reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing framing treats strategic reasoning as a multi-agent, often rule-based ability to analyze competitive situations, anticipate opponents, and formulate plans that achieve goals. Most descriptions stay close to opponent modeling and counter-strategy formation, referring to opponents\u2019 policies, intentions, behavioral patterns, or next moves. Smaller lines of work broaden it to navigating dynamic environments under uncertainty and aligning long-term goals, or narrow it to domain-specific settings such as multi-step red-teaming that exploits policy ambiguities and conflict-resolution strategies consistent with human negotiation behavior. One paper further singles out long-term strategic reasoning as a latent ability to identify multi-step plans that secure future wins rather than merely respond to immediate threats.\n\nSpace of facets. The clearest subtype is long-term strategic reasoning, presented as finding and executing multi-step strategies, such as positions that guarantee future wins, instead of reacting only to immediate threats. In some game-oriented papers, strategic reasoning appears alongside logical and spatial reasoning, while in dispute-resolution work it appears alongside emotional sensitivity. Closely related labels in the papers include strategic planning, strategic behavior, and counter-strategy formation, but they are used in different task settings rather than explicitly collapsed into a single shared taxonomy.\n\nSpace of measurement. Operationalization is narrow in the linked literature: papers connect the construct to 2 measurement instruments and 1 behavioral indicator. The named instruments are SOTOPIA, used in one paper as a social interaction environment with goals, and TTT-Bench, a benchmark of two-player Tic-Tac-Toe-style games introduced to evaluate basic strategic, spatial, and logical reasoning. Together these instruments operationalize the construct in social-goal and adversarial game settings, especially through tasks involving opponents, goals, and move selection for longer-term success. The only linked behavioral indicator is Data analysis, but it appears through a related link rather than as a direct measurement.\n\nLinks. Beyond measurement, papers report related links rather than causal or correlational ones. One paper relates Data analysis to strategic reasoning by stating that application-driven data analysis requires diverse reasoning skills, including strategic reasoning. Another paper relates Decision-making to strategic reasoning by listing it as one of the abilities evaluated across multi-agent games.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Strategic reasoning",
+    "Long-term strategic reasoning"
+  ],
+  "papers": [
+    "Agentic Reasoning: A Streamlined Framework for Enhancing LLM Reasoning with Agentic Tools",
+    "EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via Reinforcement Learning",
+    "Effective Red-Teaming of Policy-Adherent Agents",
+    "TTT-Bench: A Benchmark for Evaluating Reasoning Ability with Simple and Novel Tic-Tac-Toe-style Games",
+    "Competing Large Language Models in Multi-Agent Gaming Environments",
+    "Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models",
+    "Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents",
+    "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation",
+    "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+    "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "The ability to analyze competitive situations, anticipate opponent actions, and formulate plans to achieve goals within rule-based, multi-agent environments.",
+      "papers": [
+        "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+        "Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models",
+        "EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via Reinforcement Learning",
+        "Effective Red-Teaming of Policy-Adherent Agents"
+      ],
+      "original_name": "Strategic reasoning"
+    },
+    {
+      "text": "The latent ability to identify and execute multi-step strategies that lead to guaranteed future wins, such as creating a 'fork' with multiple winning paths, rather than reacting to immediate threats.",
+      "papers": [
+        "TTT-Bench: A Benchmark for Evaluating Reasoning Ability with Simple and Novel Tic-Tac-Toe-style Games"
+      ],
+      "original_name": "Long-term strategic reasoning"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SOTOPIA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via Reinforcement Learning",
+      "evidence": "We evaluate EPO in three distinct social and physical environments requiring strategic reasoning: (1) SOTOPIA (Zhou et al., 2024a) for social interaction with goals. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Data analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "evidence": "the need for data analysis typically arises from specific application scenarios, and requires diverse reasoning skills including mathematical reasoning, logical reasoning, and strategic reasoning. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TTT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TTT-Bench: A Benchmark for Evaluating Reasoning Ability with Simple and Novel Tic-Tac-Toe-style Games",
+      "evidence": "In this work, we introduce TTT-Bench, a new benchmark that is designed to evaluate basic strategic, spatial, and logical reasoning abilities in LRMs through a suite of four two-player Tic-Tac-Toe-style games that humans can effortlessly solve from a young age. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "TTT-Bench: A Benchmark for Evaluating Reasoning Ability with Simple and Novel Tic-Tac-Toe-style Games"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Competing Large Language Models in Multi-Agent Gaming Environments",
+      "evidence": "Decision-making is a complex task requiring various abilities. Several common ones are evaluated across all games: ... (4) Strategic Reasoning...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Competing Large Language Models in Multi-Agent Gaming Environments"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing framing treats strategic reasoning as a multi-agent, often rule-based ability to analyze competitive situations, anticipate opponents, and formulate plans that achieve goals. Most descriptions stay close to opponent modeling and counter-strategy formation, referring to opponents\u2019 policies, intentions, behavioral patterns, or next moves. Smaller lines of work broaden it to navigating dynamic environments under uncertainty and aligning long-term goals, or narrow it to domain-specific settings such as multi-step red-teaming that exploits policy ambiguities and conflict-resolution strategies consistent with human negotiation behavior. One paper further singles out long-term strategic reasoning as a latent ability to identify multi-step plans that secure future wins rather than merely respond to immediate threats."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The clearest subtype is long-term strategic reasoning, presented as finding and executing multi-step strategies, such as positions that guarantee future wins, instead of reacting only to immediate threats. In some game-oriented papers, strategic reasoning appears alongside logical and spatial reasoning, while in dispute-resolution work it appears alongside emotional sensitivity. Closely related labels in the papers include strategic planning, strategic behavior, and counter-strategy formation, but they are used in different task settings rather than explicitly collapsed into a single shared taxonomy."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow in the linked literature: papers connect the construct to 2 measurement instruments and 1 behavioral indicator. The named instruments are SOTOPIA, used in one paper as a social interaction environment with goals, and TTT-Bench, a benchmark of two-player Tic-Tac-Toe-style games introduced to evaluate basic strategic, spatial, and logical reasoning. Together these instruments operationalize the construct in social-goal and adversarial game settings, especially through tasks involving opponents, goals, and move selection for longer-term success. The only linked behavioral indicator is Data analysis, but it appears through a related link rather than as a direct measurement."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, papers report related links rather than causal or correlational ones. One paper relates Data analysis to strategic reasoning by stating that application-driven data analysis requires diverse reasoning skills, including strategic reasoning. Another paper relates Decision-making to strategic reasoning by listing it as one of the abilities evaluated across multi-agent games."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing framing treats strategic reasoning as a multi-agent, often rule-based ability to analyze competitive situations, anticipate opponents, and formulate plans that achieve goals. Most descriptions stay close to opponent modeling and counter-strategy formation, referring to opponents\u2019 policies, intentions, behavioral patterns, or next moves. Smaller lines of work broaden it to navigating dynamic environments under uncertainty and aligning long-term goals, or narrow it to domain-specific settings such as multi-step red-teaming that exploits policy ambiguities and conflict-resolution strategies consistent with human negotiation behavior. One paper further singles out long-term strategic reasoning as a latent ability to identify multi-step plans that secure future wins rather than merely respond to immediate threats.\n\nSpace of facets. The clearest subtype is long-term strategic reasoning, presented as finding and executing multi-step strategies, such as positions that guarantee future wins, instead of reacting only to immediate threats. In some game-oriented papers, strategic reasoning appears alongside logical and spatial reasoning, while in dispute-resolution work it appears alongside emotional sensitivity. Closely related labels in the papers include strategic planning, strategic behavior, and counter-strategy formation, but they are used in different task settings rather than explicitly collapsed into a single shared taxonomy.\n\nSpace of measurement. Operationalization is narrow in the linked literature: papers connect the construct to 2 measurement instruments and 1 behavioral indicator. The named instruments are SOTOPIA, used in one paper as a social interaction environment with goals, and TTT-Bench, a benchmark of two-player Tic-Tac-Toe-style games introduced to evaluate basic strategic, spatial, and logical reasoning. Together these instruments operationalize the construct in social-goal and adversarial game settings, especially through tasks involving opponents, goals, and move selection for longer-term success. The only linked behavioral indicator is Data analysis, but it appears through a related link rather than as a direct measurement.\n\nLinks. Beyond measurement, papers report related links rather than causal or correlational ones. One paper relates Data analysis to strategic reasoning by stating that application-driven data analysis requires diverse reasoning skills, including strategic reasoning. Another paper relates Decision-making to strategic reasoning by listing it as one of the abilities evaluated across multi-agent games.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Agentic Reasoning: A Streamlined Framework for Enhancing LLM Reasoning with Agentic Tools",
+      "EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via Reinforcement Learning"
+    ],
+    "iclr25": [
+      "Competing Large Language Models in Multi-Agent Gaming Environments",
+      "Hypothetical Minds: Scaffolding Theory of Mind for Multi-Agent Tasks with Large Language Models"
+    ],
+    "neurips24": [
+      "Cooperate or Collapse: Emergence of Sustainable Cooperation in a Society of LLM Agents",
+      "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation",
+      "DACO: Towards Application-Driven and Comprehensive Data Analysis via Code Generation",
+      "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations"
+    ],
+    "emnlp25": [
+      "Effective Red-Teaming of Policy-Adherent Agents",
+      "TTT-Bench: A Benchmark for Evaluating Reasoning Ability with Simple and Novel Tic-Tac-Toe-style Games"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 2,
+    "neurips24": 4,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

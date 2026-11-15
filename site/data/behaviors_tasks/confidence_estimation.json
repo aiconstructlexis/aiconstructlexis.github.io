@@ -1,0 +1,367 @@
+{
+  "canonical_name": "Confidence estimation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Most papers describe this behavior as producing a confidence signal about an output, usually a numerical score or probability for whether an answer, claim, reasoning step, diagnostic decision, or a judge model's judgment is correct or aligned with human preferences. A smaller line of work treats the same behavior as explicit verbal or linguistic uncertainty, using hedges such as I am unsure or I am not sure but. Success is usually framed as tracking correctness or agreement, though papers vary in whether the target is answer correctness, step-rightness, factual correctness, or agreement with human preferences.\n\nVariants. The literature studies this behavior at several granularities and gives it several nearby names. Common labels include probability estimation, step correctness prediction, self-knowledge estimation, verbalized confidence, and linguistic uncertainty expression, alongside other naming variants. It appears in judge models, classification and question answering settings, reasoning tasks, and diagnostic decision making, with signals attached to whole answers, individual reasoning steps, or token, sequence, and claim levels.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Papers instead elicit or score it directly by asking for probability scores, percentages, confidence in linguistic form, or class-wise values between 0.00 and 100.00, and by deriving confidence from token probabilities, token-span aggregation, agreement ratios between simulations, perplexity, token entropy, or internal states.\n\nWhat it is taken as evidence of. Papers connect confidence estimation to six constructs rather than treating it as evidence of a single one. Calibration is the most common linked construct: some papers claim a causal relationship from confidence estimation to Calibration, while others relate the two. Trustworthiness is the next most common link, again with both causal and related claims, while smaller lines of work relate confidence estimation to Knowledge boundary awareness, Overconfidence, and Reasoning, and one paper reports that it correlates with Representational stability.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Confidence estimation",
+    "Probability estimation",
+    "Confidence Expression",
+    "Expressing uncertainty",
+    "Confidence score generation",
+    "Step correctness prediction",
+    "Verbalized confidence",
+    "Nuanced uncertainty expression",
+    "Linguistic uncertainty expression",
+    "Natural language uncertainty expression",
+    "Self-knowledge estimation",
+    "Uncertainty estimation",
+    "Self-evaluation"
+  ],
+  "papers": [
+    "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems",
+    "Influences on LLM Calibration: A Study of Response Agreement, Loss Functions, and Prompt Styles",
+    "Towards Fully Exploiting LLM Internal States to Enhance Knowledge Boundary Perception",
+    "Towards Multi-dimensional Evaluation of LLM Summarization across Domains and Languages",
+    "Alignment for Efficient Tool Calling of Large Language Models",
+    "All Roads Lead to Rome: Graph-Based Confidence Estimation for Large Language Model Reasoning",
+    "Calibrating LLM Confidence by Probing Perturbed Representation Stability",
+    "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations",
+    "Humanizing Machines: Rethinking LLM Anthropomorphism Through a Multi-Level Framework of Design",
+    "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration",
+    "Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens",
+    "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+    "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+    "Mind the Gap: A Closer Look at Tokenization for Multiple-Choice Question Answering with LLMs",
+    "Not Your Typical Government Tipline: LLM-Assisted Routing of Environmental Protection Agency Citizen Tips",
+    "Reasoning under Uncertainty: Efficient LLM Inference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling",
+    "Thinking Out Loud: Do Reasoning Models Know When They're Right?",
+    "Trustworthy Medical Question Answering: An Evaluation-Centric Survey",
+    "Will It Still Be True Tomorrow? Multilingual Evergreen Question Classification to Improve Trustworthy QA",
+    "Language Model Self-improvement by Reinforcement Learning Contemplation",
+    "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+    "RAIN: Your Language Models Can Align Themselves without Finetuning",
+    "SelfCheck: Using LLMs to Zero-Shot Check Their Own Step-by-Step Reasoning",
+    "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+    "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+    "Do LLMs estimate uncertainty well in instruction-following?",
+    "Enhancing Graph Of Thought: Enhancing Prompts with LLM Rationales and Dynamic Temperature Control",
+    "Forewarned is Forearmed: Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+    "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+    "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+    "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+    "Small Models are LLM Knowledge Triggers for Medical Tabular Prediction",
+    "To Trust or Not to Trust? Enhancing Large Language Models' Situated Faithfulness to External Contexts",
+    "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+    "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+    "Bootstrapping Self-Improvement of Language Model Programs for Zero-Shot Schema Matching",
+    "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation",
+    "CAVE: Controllable Authorship Verification Explanations",
+    "SCIURus: Shared Circuits for Interpretable Uncertainty Representations in Language Models",
+    "Self-DC: When to Reason and When to Act? Self Divide-and-Conquer for Compositional Unknown Questions",
+    "Alignment for Honesty",
+    "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+    "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models"
+  ],
+  "paper_count": 43,
+  "definitions": [
+    {
+      "text": "The model generates a numerical score representing its certainty that its judgment aligns with human preferences.",
+      "papers": [
+        "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+        "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+        "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+        "SelfCheck: Using LLMs to Zero-Shot Check Their Own Step-by-Step Reasoning"
+      ],
+      "original_name": "Confidence estimation"
+    },
+    {
+      "text": "The observable act of assigning a numerical probability or confidence score to a potential outcome given a context.",
+      "papers": [
+        "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models"
+      ],
+      "original_name": "Probability estimation"
+    },
+    {
+      "text": "Providing probability estimates or confidence levels for predictions, often by verifying if a predicted answer is correct via token probability.",
+      "papers": [
+        "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness"
+      ],
+      "original_name": "Confidence Expression"
+    },
+    {
+      "text": "The observable behavior of a model explicitly stating its lack of confidence or knowledge in its response, such as by outputting phrases like 'I am unsure'.",
+      "papers": [
+        "Forewarned is Forearmed: Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+        "Humanizing Machines: Rethinking LLM Anthropomorphism Through a Multi-Level Framework of Design"
+      ],
+      "original_name": "Expressing uncertainty"
+    },
+    {
+      "text": "The action of producing numerical confidence values for each potential class in a classification task, expressed within a natural language response.",
+      "papers": [
+        "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation"
+      ],
+      "original_name": "Confidence score generation"
+    },
+    {
+      "text": "The observable task of assigning a confidence score to each reasoning step indicating whether it is correct or incorrect, based on internal model states.",
+      "papers": [
+        "Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens"
+      ],
+      "original_name": "Step correctness prediction"
+    },
+    {
+      "text": "The observable behavior of an LLM producing internal confidence signals about its own reasoning steps without external feedback.",
+      "papers": [
+        "Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens"
+      ],
+      "original_name": "Self-evaluation"
+    },
+    {
+      "text": "The observable expression of a model's certainty in its answer, typically in the form of a percentage or probability statement.",
+      "papers": [
+        "Thinking Out Loud: Do Reasoning Models Know When They're Right?"
+      ],
+      "original_name": "Verbalized confidence"
+    },
+    {
+      "text": "The generation of text that qualifies an answer with expressions of doubt or uncertainty, such as \"I am not sure but...\" or \"maybe\".",
+      "papers": [
+        "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations"
+      ],
+      "original_name": "Nuanced uncertainty expression"
+    },
+    {
+      "text": "The observable use of words, phrases, and hedging language to convey a degree of confidence or doubt in a generated response.",
+      "papers": [
+        "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs"
+      ],
+      "original_name": "Linguistic uncertainty expression"
+    },
+    {
+      "text": "The observable task of assigning a score to a model's own generated answer that reflects the model's confidence in its factual correctness, framed as a binary classification problem.",
+      "papers": [
+        "Will It Still Be True Tomorrow? Multilingual Evergreen Question Classification to Improve Trustworthy QA"
+      ],
+      "original_name": "Self-knowledge estimation"
+    },
+    {
+      "text": "The model's generation of confidence or uncertainty signals (e.g., perplexity, token entropy) in response to input questions, used to infer implicit awareness of evergreen-ness.",
+      "papers": [
+        "Will It Still Be True Tomorrow? Multilingual Evergreen Question Classification to Improve Trustworthy QA"
+      ],
+      "original_name": "Uncertainty estimation"
+    },
+    {
+      "text": "Assigning a numerical confidence level to a diagnostic decision based on factual consistency and evidence from a reasoning subgraph.",
+      "papers": [
+        "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration"
+      ],
+      "original_name": "Confidence scoring"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Calibration",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Bayesian Low-rank Adaptation for Large Language Models",
+      "evidence": "Bayesian methods, with their inherent ability to estimate uncertainty, serve as potent tools to mitigate overconfidence and enhance calibration. (Section ABSTRACT)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Bayesian Low-rank Adaptation for Large Language Models"
+        ],
+        "iclr25": [
+          "Zero-shot Model-based Reinforcement Learning using Large Language Models"
+        ],
+        "emnlp25": [
+          "Calibration Across Layers: Understanding Calibration Evolution in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "MICE for CATs: Model-Internal Confidence Estimation for Calibrating Agents with Tools",
+      "evidence": "In this work, we introduce model-internal confidence estimators (MICE), which improve the trustworthiness and safety of language models as tool-calling agents. (Section 8)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "MICE for CATs: Model-Internal Confidence Estimation for Calibrating Agents with Tools"
+        ],
+        "neurips24": [
+          "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Overconfidence",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "evidence": "The performance of Med-LVLMs in uncertainty estimation is unsatisfactory, revealing a poor understanding of their medical knowledge limits. Additionally, these models tend to exhibit overconfidence, thereby increasing the risk of misdiagnoses. (Sec 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge boundary awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "evidence": "While assessing capability-aware solvability of LLMs is underexplored, confidence or uncertainty estimation (Geng et al., 2024; Wen et al., 2024) offers a viable alternative.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Representational stability",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Calibrating LLM Confidence by Probing Perturbed Representation Stability",
+      "evidence": "We hypothesize that an LLM\u2019s confidence correlates with the robustness of its internal states; specifically, the final hidden states that lead to the tokens of a high-confidence answer should exhibit greater stability when subjected to targeted perturbations. (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Calibrating LLM Confidence by Probing Perturbed Representation Stability"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "All Roads Lead to Rome: Graph-Based Confidence Estimation for Large Language Model Reasoning",
+      "evidence": "\"we propose a set of training-free, graph-based confidence estimation methods tailored to reasoning tasks.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "All Roads Lead to Rome: Graph-Based Confidence Estimation for Large Language Model Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most papers describe this behavior as producing a confidence signal about an output, usually a numerical score or probability for whether an answer, claim, reasoning step, diagnostic decision, or a judge model's judgment is correct or aligned with human preferences. A smaller line of work treats the same behavior as explicit verbal or linguistic uncertainty, using hedges such as I am unsure or I am not sure but. Success is usually framed as tracking correctness or agreement, though papers vary in whether the target is answer correctness, step-rightness, factual correctness, or agreement with human preferences."
+    },
+    {
+      "label": "Variants.",
+      "text": "The literature studies this behavior at several granularities and gives it several nearby names. Common labels include probability estimation, step correctness prediction, self-knowledge estimation, verbalized confidence, and linguistic uncertainty expression, alongside other naming variants. It appears in judge models, classification and question answering settings, reasoning tasks, and diagnostic decision making, with signals attached to whole answers, individual reasoning steps, or token, sequence, and claim levels."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Papers instead elicit or score it directly by asking for probability scores, percentages, confidence in linguistic form, or class-wise values between 0.00 and 100.00, and by deriving confidence from token probabilities, token-span aggregation, agreement ratios between simulations, perplexity, token entropy, or internal states."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers connect confidence estimation to six constructs rather than treating it as evidence of a single one. Calibration is the most common linked construct: some papers claim a causal relationship from confidence estimation to Calibration, while others relate the two. Trustworthiness is the next most common link, again with both causal and related claims, while smaller lines of work relate confidence estimation to Knowledge boundary awareness, Overconfidence, and Reasoning, and one paper reports that it correlates with Representational stability."
+    }
+  ],
+  "characterization": "Space of definitions. Most papers describe this behavior as producing a confidence signal about an output, usually a numerical score or probability for whether an answer, claim, reasoning step, diagnostic decision, or a judge model's judgment is correct or aligned with human preferences. A smaller line of work treats the same behavior as explicit verbal or linguistic uncertainty, using hedges such as I am unsure or I am not sure but. Success is usually framed as tracking correctness or agreement, though papers vary in whether the target is answer correctness, step-rightness, factual correctness, or agreement with human preferences.\n\nVariants. The literature studies this behavior at several granularities and gives it several nearby names. Common labels include probability estimation, step correctness prediction, self-knowledge estimation, verbalized confidence, and linguistic uncertainty expression, alongside other naming variants. It appears in judge models, classification and question answering settings, reasoning tasks, and diagnostic decision making, with signals attached to whole answers, individual reasoning steps, or token, sequence, and claim levels.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Papers instead elicit or score it directly by asking for probability scores, percentages, confidence in linguistic form, or class-wise values between 0.00 and 100.00, and by deriving confidence from token probabilities, token-span aggregation, agreement ratios between simulations, perplexity, token entropy, or internal states.\n\nWhat it is taken as evidence of. Papers connect confidence estimation to six constructs rather than treating it as evidence of a single one. Calibration is the most common linked construct: some papers claim a causal relationship from confidence estimation to Calibration, while others relate the two. Trustworthiness is the next most common link, again with both causal and related claims, while smaller lines of work relate confidence estimation to Knowledge boundary awareness, Overconfidence, and Reasoning, and one paper reports that it correlates with Representational stability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems",
+      "Influences on LLM Calibration: A Study of Response Agreement, Loss Functions, and Prompt Styles",
+      "Towards Fully Exploiting LLM Internal States to Enhance Knowledge Boundary Perception",
+      "Towards Multi-dimensional Evaluation of LLM Summarization across Domains and Languages"
+    ],
+    "emnlp25": [
+      "Alignment for Efficient Tool Calling of Large Language Models",
+      "All Roads Lead to Rome: Graph-Based Confidence Estimation for Large Language Model Reasoning",
+      "Calibrating LLM Confidence by Probing Perturbed Representation Stability",
+      "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations",
+      "Humanizing Machines: Rethinking LLM Anthropomorphism Through a Multi-Level Framework of Design",
+      "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration",
+      "Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens",
+      "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+      "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+      "Mind the Gap: A Closer Look at Tokenization for Multiple-Choice Question Answering with LLMs",
+      "Not Your Typical Government Tipline: LLM-Assisted Routing of Environmental Protection Agency Citizen Tips",
+      "Reasoning under Uncertainty: Efficient LLM Inference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling",
+      "Thinking Out Loud: Do Reasoning Models Know When They're Right?",
+      "Trustworthy Medical Question Answering: An Evaluation-Centric Survey",
+      "Will It Still Be True Tomorrow? Multilingual Evergreen Question Classification to Improve Trustworthy QA"
+    ],
+    "iclr24": [
+      "Language Model Self-improvement by Reinforcement Learning Contemplation",
+      "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+      "RAIN: Your Language Models Can Align Themselves without Finetuning",
+      "SelfCheck: Using LLMs to Zero-Shot Check Their Own Step-by-Step Reasoning"
+    ],
+    "iclr25": [
+      "BIRD: A Trustworthy Bayesian Inference Framework for Large Language Models",
+      "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "Do LLMs estimate uncertainty well in instruction-following?",
+      "Enhancing Graph Of Thought: Enhancing Prompts with LLM Rationales and Dynamic Temperature Control",
+      "Forewarned is Forearmed: Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+      "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+      "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+      "Small Models are LLM Knowledge Triggers for Medical Tabular Prediction",
+      "To Trust or Not to Trust? Enhancing Large Language Models' Situated Faithfulness to External Contexts",
+      "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only"
+    ],
+    "icml25": [
+      "Bootstrapping Self-Improvement of Language Model Programs for Zero-Shot Schema Matching"
+    ],
+    "naacl25": [
+      "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation",
+      "CAVE: Controllable Authorship Verification Explanations",
+      "SCIURus: Shared Circuits for Interpretable Uncertainty Representations in Language Models",
+      "Self-DC: When to Reason and When to Act? Self Divide-and-Conquer for Compositional Unknown Questions"
+    ],
+    "neurips24": [
+      "Alignment for Honesty",
+      "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+      "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 15,
+    "iclr24": 4,
+    "iclr25": 12,
+    "icml25": 1,
+    "naacl25": 4,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

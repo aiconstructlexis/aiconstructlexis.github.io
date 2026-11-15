@@ -1,0 +1,93 @@
+{
+  "canonical_name": "Semantic representation",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats this as a representational quality or latent ability: models are described as producing high-fidelity, contextually rich text embeddings that capture semantic meaning, or as internally encoding the meaning of words and sentences in vector form. The main variation is where the property is located, some papers frame it as an internal quality and structure of representations, while others frame it as the ability to generate downstream-useful embeddings; a smaller line also emphasizes preserving semantic relationships between words or concepts, and some definitions tie stronger embedding capability to bidirectional modeling or bidirectional attention.\n\nSpace of facets. Papers use several labels for nearby formulations of the construct, including text representation quality, embedding capability, and semantic representational power. Beyond that naming variation, one line of work breaks it into separate abilities to represent subsequent context and to use preceding context, reporting that bidirectional attention improves the former but weakens the latter, while another frames representational power in terms of acquiring interpretable monosemantic features while preserving the semantic relationship of words.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. When papers do indicate how they assess it, they do so descriptively, through phrases such as \"higher-quality text representations,\" \"embedding performance,\" the quality of \"word meaning representations,\" or preservation of semantic relationships; one paper also says traditional metrics such as Mean Squared Error and L0 sparsity \"ignore the evaluation of the semantic representational power\".",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text representation quality",
+    "Semantic representation",
+    "Embedding capability",
+    "Semantic representational power"
+  ],
+  "papers": [
+    "Learning to Look at the Other Side: A Semantic Probing Study of Word Embeddings in LLMs with Enabled Bidirectional Attention",
+    "Look Both Ways and No Sink: Converting LLMs into Text Encoders without Training",
+    "Rethinking Evaluation of Sparse Autoencoders through the Representation of Polysemous Words",
+    "What Limits Bidirectional Model\u2019s Generative Capabilities? A Uni-Bi-Directional Mixture-of-Expert Method For Bidirectional Fine-tuning"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The latent ability of a model to generate high-fidelity, contextually rich embeddings that effectively capture semantic meaning for downstream tasks.",
+      "papers": [
+        "Look Both Ways and No Sink: Converting LLMs into Text Encoders without Training"
+      ],
+      "original_name": "Text representation quality"
+    },
+    {
+      "text": "The quality and structure of how a model internally encodes the meaning of words and sentences in its vector representations.",
+      "papers": [
+        "Learning to Look at the Other Side: A Semantic Probing Study of Word Embeddings in LLMs with Enabled Bidirectional Attention"
+      ],
+      "original_name": "Semantic representation"
+    },
+    {
+      "text": "The latent ability of a model to produce high-quality text representations that capture semantic meaning, enhanced by bidirectional modeling but typically at the cost of generative performance in unidirectional models.",
+      "papers": [
+        "What Limits Bidirectional Model\u2019s Generative Capabilities? A Uni-Bi-Directional Mixture-of-Expert Method For Bidirectional Fine-tuning"
+      ],
+      "original_name": "Embedding capability"
+    },
+    {
+      "text": "The capacity of a model's internal representations to accurately capture and preserve the semantic relationships between words or concepts.",
+      "papers": [
+        "Rethinking Evaluation of Sparse Autoencoders through the Representation of Polysemous Words"
+      ],
+      "original_name": "Semantic representational power"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats this as a representational quality or latent ability: models are described as producing high-fidelity, contextually rich text embeddings that capture semantic meaning, or as internally encoding the meaning of words and sentences in vector form. The main variation is where the property is located, some papers frame it as an internal quality and structure of representations, while others frame it as the ability to generate downstream-useful embeddings; a smaller line also emphasizes preserving semantic relationships between words or concepts, and some definitions tie stronger embedding capability to bidirectional modeling or bidirectional attention."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several labels for nearby formulations of the construct, including text representation quality, embedding capability, and semantic representational power. Beyond that naming variation, one line of work breaks it into separate abilities to represent subsequent context and to use preceding context, reporting that bidirectional attention improves the former but weakens the latter, while another frames representational power in terms of acquiring interpretable monosemantic features while preserving the semantic relationship of words."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. When papers do indicate how they assess it, they do so descriptively, through phrases such as \"higher-quality text representations,\" \"embedding performance,\" the quality of \"word meaning representations,\" or preservation of semantic relationships; one paper also says traditional metrics such as Mean Squared Error and L0 sparsity \"ignore the evaluation of the semantic representational power\"."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats this as a representational quality or latent ability: models are described as producing high-fidelity, contextually rich text embeddings that capture semantic meaning, or as internally encoding the meaning of words and sentences in vector form. The main variation is where the property is located, some papers frame it as an internal quality and structure of representations, while others frame it as the ability to generate downstream-useful embeddings; a smaller line also emphasizes preserving semantic relationships between words or concepts, and some definitions tie stronger embedding capability to bidirectional modeling or bidirectional attention.\n\nSpace of facets. Papers use several labels for nearby formulations of the construct, including text representation quality, embedding capability, and semantic representational power. Beyond that naming variation, one line of work breaks it into separate abilities to represent subsequent context and to use preceding context, reporting that bidirectional attention improves the former but weakens the latter, while another frames representational power in terms of acquiring interpretable monosemantic features while preserving the semantic relationship of words.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. When papers do indicate how they assess it, they do so descriptively, through phrases such as \"higher-quality text representations,\" \"embedding performance,\" the quality of \"word meaning representations,\" or preservation of semantic relationships; one paper also says traditional metrics such as Mean Squared Error and L0 sparsity \"ignore the evaluation of the semantic representational power\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Learning to Look at the Other Side: A Semantic Probing Study of Word Embeddings in LLMs with Enabled Bidirectional Attention",
+      "Look Both Ways and No Sink: Converting LLMs into Text Encoders without Training"
+    ],
+    "iclr25": [
+      "Rethinking Evaluation of Sparse Autoencoders through the Representation of Polysemous Words"
+    ],
+    "icml25": [
+      "What Limits Bidirectional Model\u2019s Generative Capabilities? A Uni-Bi-Directional Mixture-of-Expert Method For Bidirectional Fine-tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "canonical_name": "IIRC",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, the prevailing description is of a reading comprehension benchmark dataset, Iterative Information Retrieval and Comprehension, used for evaluation. Papers also describe it as focused on information integration and reading comprehension, where models answer questions by linking information across document sections, and one paper reports experiments on decontextualized versions of a subset of IIRC.\n\nWhat it is claimed to measure. Papers use it to measure one behavioral indicator, question answering. In the recorded relationship, it is presented as one of four QA datasets, including multi-hop Wikipedia reasoning datasets, and no papers here link it to any construct, so the reported measurement use is concentrated on question answering rather than spread across multiple targets.\n\nSpace of uses. No other measurement instrument is linked to it. Papers position it as an evaluation dataset within QA experiments, including use as one of four QA datasets in a comparison setup; one study also reports results on decontextualized versions of a subset, and another reports a consistent advantage across metrics on IIRC.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "IIRC"
+  ],
+  "papers": [
+    "DioR: Adaptive Cognitive Detection and Contextual Retrieval Optimization for Dynamic Retrieval-Augmented Generation",
+    "Optimizing Question Semantic Space for Dynamic Retrieval-Augmented Multi-hop Question Answering",
+    "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation",
+    "Agent-Oriented Planning in Multi-Agent Systems",
+    "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A reading comprehension benchmark dataset (Iterative Information Retrieval and Comprehension) used for evaluation.",
+      "papers": [
+        "Agent-Oriented Planning in Multi-Agent Systems",
+        "DioR: Adaptive Cognitive Detection and Contextual Retrieval Optimization for Dynamic Retrieval-Augmented Generation"
+      ],
+      "original_name": "IIRC"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Graph Neural Network Enhanced Retrieval for Question Answering of Large Language Models",
+      "evidence": "We measure all the methods on four different QA datasets, including multi-hop Wikipedia reasoning datasets: ... (2) IIRC (Ferguson et al., 2020)... (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Graph Neural Network Enhanced Retrieval for Question Answering of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, the prevailing description is of a reading comprehension benchmark dataset, Iterative Information Retrieval and Comprehension, used for evaluation. Papers also describe it as focused on information integration and reading comprehension, where models answer questions by linking information across document sections, and one paper reports experiments on decontextualized versions of a subset of IIRC."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use it to measure one behavioral indicator, question answering. In the recorded relationship, it is presented as one of four QA datasets, including multi-hop Wikipedia reasoning datasets, and no papers here link it to any construct, so the reported measurement use is concentrated on question answering rather than spread across multiple targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No other measurement instrument is linked to it. Papers position it as an evaluation dataset within QA experiments, including use as one of four QA datasets in a comparison setup; one study also reports results on decontextualized versions of a subset, and another reports a consistent advantage across metrics on IIRC."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, the prevailing description is of a reading comprehension benchmark dataset, Iterative Information Retrieval and Comprehension, used for evaluation. Papers also describe it as focused on information integration and reading comprehension, where models answer questions by linking information across document sections, and one paper reports experiments on decontextualized versions of a subset of IIRC.\n\nWhat it is claimed to measure. Papers use it to measure one behavioral indicator, question answering. In the recorded relationship, it is presented as one of four QA datasets, including multi-hop Wikipedia reasoning datasets, and no papers here link it to any construct, so the reported measurement use is concentrated on question answering rather than spread across multiple targets.\n\nSpace of uses. No other measurement instrument is linked to it. Papers position it as an evaluation dataset within QA experiments, including use as one of four QA datasets in a comparison setup; one study also reports results on decontextualized versions of a subset, and another reports a consistent advantage across metrics on IIRC.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "DioR: Adaptive Cognitive Detection and Contextual Retrieval Optimization for Dynamic Retrieval-Augmented Generation",
+      "Optimizing Question Semantic Space for Dynamic Retrieval-Augmented Multi-hop Question Answering",
+      "SeaKR: Self-aware Knowledge Retrieval for Adaptive Retrieval Augmented Generation"
+    ],
+    "iclr25": [
+      "Agent-Oriented Planning in Multi-Agent Systems",
+      "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "iclr25": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

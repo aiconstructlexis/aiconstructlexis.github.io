@@ -1,0 +1,107 @@
+{
+  "canonical_name": "TopiOCQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Several papers describe TopiOCQA as a conversational search benchmark or dataset built around multi-turn information-seeking dialogues or queries. One definition specifies gold-standard passage retrieval and response generation labels, and other papers emphasize context-dependent questions that require disambiguation from prior turns; a smaller line of work frames it as a conversational question answering dataset or as a benchmark known for challenging topic shifts within conversations, where systems must decide whether to retain earlier context.\n\nWhat it is claimed to measure. Recorded links tie TopiOCQA to 1 construct and 1 behavioral indicator. The prevailing measured_by claim centers on Generalization: a paper uses TopiOCQA to evaluate generalization ability by training on its training set and testing on QReCC, and vice versa. The only behavioral-indicator link uses different language, reporting TopiOCQA as related to Query rewriting because its context-dependent questions are used for clarifying an original question into a standalone question.\n\nSpace of uses. Across the papers, TopiOCQA is positioned as a widely used evaluation setting for conversational search, especially for query reformulation and retrieval in multi-turn interactions. It is most often used alongside QReCC, and some papers also pair it with TREC CAsT 2019, 2020, and 2021 and ORConvQA; uses include main benchmark evaluation, training data for a reward model, checks of sparse and dense retrieval, and assessment of generated content reliability via provided evidence or rationale. No measurement instrument is linked to it by a recorded relationship.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TopiOCQA"
+  ],
+  "papers": [
+    "Dialogue-RAG: Enhancing Retrieval for LLMs via Node-Linking Utterance Rewriting",
+    "UniConv: Unifying Retrieval and Response Generation for Large Language Models in Conversations",
+    "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+    "CIFLEX: Contextual Instruction Flow for Sub-task Execution in Multi-Turn Interactions with a Single On-Device LLM",
+    "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+    "ICR: Iterative Clarification and Rewriting for Conversational Search",
+    "Learning Contextual Retrieval for Robust Conversational Search"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "Conversational search benchmark containing multi-turn information-seeking dialogues with gold-standard passage retrieval and response generation labels.",
+      "papers": [
+        "UniConv: Unifying Retrieval and Response Generation for Large Language Models in Conversations",
+        "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+        "CIFLEX: Contextual Instruction Flow for Sub-task Execution in Multi-Turn Interactions with a Single On-Device LLM",
+        "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+        "ICR: Iterative Clarification and Rewriting for Conversational Search",
+        "Learning Contextual Retrieval for Robust Conversational Search"
+      ],
+      "original_name": "TopiOCQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+      "evidence": "For the evaluation of generalization ability, we trained models on the TopiOCQA training set and evaluated them on the QReCC test set, and vice versa.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Query rewriting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "CIFLEX: Contextual Instruction Flow for Sub-task Execution in Multi-Turn Interactions with a Single On-Device LLM",
+      "evidence": "We employ TopiOCQA (Adlakha et al., 2022) and QReCC (Anantha et al., 2021), both of which consist of multi-turn conversational queries. These datasets contain context-dependent questions...requiring disambiguation based on prior conversation turns. Hence, in the sub-task, LLM clarifies the original question into a standalone question. (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CIFLEX: Contextual Instruction Flow for Sub-task Execution in Multi-Turn Interactions with a Single On-Device LLM"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Several papers describe TopiOCQA as a conversational search benchmark or dataset built around multi-turn information-seeking dialogues or queries. One definition specifies gold-standard passage retrieval and response generation labels, and other papers emphasize context-dependent questions that require disambiguation from prior turns; a smaller line of work frames it as a conversational question answering dataset or as a benchmark known for challenging topic shifts within conversations, where systems must decide whether to retain earlier context."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Recorded links tie TopiOCQA to 1 construct and 1 behavioral indicator. The prevailing measured_by claim centers on Generalization: a paper uses TopiOCQA to evaluate generalization ability by training on its training set and testing on QReCC, and vice versa. The only behavioral-indicator link uses different language, reporting TopiOCQA as related to Query rewriting because its context-dependent questions are used for clarifying an original question into a standalone question."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Across the papers, TopiOCQA is positioned as a widely used evaluation setting for conversational search, especially for query reformulation and retrieval in multi-turn interactions. It is most often used alongside QReCC, and some papers also pair it with TREC CAsT 2019, 2020, and 2021 and ORConvQA; uses include main benchmark evaluation, training data for a reward model, checks of sparse and dense retrieval, and assessment of generated content reliability via provided evidence or rationale. No measurement instrument is linked to it by a recorded relationship."
+    }
+  ],
+  "characterization": "What it is. Several papers describe TopiOCQA as a conversational search benchmark or dataset built around multi-turn information-seeking dialogues or queries. One definition specifies gold-standard passage retrieval and response generation labels, and other papers emphasize context-dependent questions that require disambiguation from prior turns; a smaller line of work frames it as a conversational question answering dataset or as a benchmark known for challenging topic shifts within conversations, where systems must decide whether to retain earlier context.\n\nWhat it is claimed to measure. Recorded links tie TopiOCQA to 1 construct and 1 behavioral indicator. The prevailing measured_by claim centers on Generalization: a paper uses TopiOCQA to evaluate generalization ability by training on its training set and testing on QReCC, and vice versa. The only behavioral-indicator link uses different language, reporting TopiOCQA as related to Query rewriting because its context-dependent questions are used for clarifying an original question into a standalone question.\n\nSpace of uses. Across the papers, TopiOCQA is positioned as a widely used evaluation setting for conversational search, especially for query reformulation and retrieval in multi-turn interactions. It is most often used alongside QReCC, and some papers also pair it with TREC CAsT 2019, 2020, and 2021 and ORConvQA; uses include main benchmark evaluation, training data for a reward model, checks of sparse and dense retrieval, and assessment of generated content reliability via provided evidence or rationale. No measurement instrument is linked to it by a recorded relationship.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Dialogue-RAG: Enhancing Retrieval for LLMs via Node-Linking Utterance Rewriting",
+      "UniConv: Unifying Retrieval and Response Generation for Large Language Models in Conversations"
+    ],
+    "emnlp25": [
+      "AdaRewriter: Unleashing the Power of Prompting-based Conversational Query Reformulation via Test-Time Adaptation",
+      "CIFLEX: Contextual Instruction Flow for Sub-task Execution in Multi-Turn Interactions with a Single On-Device LLM",
+      "ConvSearch-R1: Enhancing Query Reformulation for Conversational Search with Reasoning via Reinforcement Learning",
+      "ICR: Iterative Clarification and Rewriting for Conversational Search",
+      "Learning Contextual Retrieval for Robust Conversational Search"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

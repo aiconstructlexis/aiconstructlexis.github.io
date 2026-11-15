@@ -1,0 +1,86 @@
+{
+  "canonical_name": "Question rephrasing",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats question rephrasing as rewriting or paraphrasing a question while preserving its meaning, and sometimes explicitly its answer. Most formulations describe changing the linguistic form without altering intent, as in instructions to \"generate a paraphrase of that question without changing the meaning of it.\" A smaller line of work adds a further aim beyond paraphrase, such as making the question less ambiguous, more aligned with model capabilities, clarifying conditions, or restating it more simply when models misunderstand the original.\n\nVariants. Variants are distinguished mainly by setting. Papers study mathematical question rephrasing, including using \"rephrasing prompting\" to generate additional questions; vision-language use, where question wording is modified using salient image details and appears as a \"Rephrasing and Augmenting the Question\" stage; problem-solving use that rephrases questions more simply; and evaluation use that creates rephrased benchmarks. Some authors also use the name \"question rewriting\" for the same behavior.\n\nSpace of elicitation and scores. Papers usually elicit this behavior directly as an instruction or pipeline step rather than through a named instrument, for example by tasking an LLM with rephrasing questions in a dataset without altering their meaning, or by specifying a task type of question rewriting. No measurement instrument is linked to it, and the papers do not specify a recurring scoring rule beyond whether the rephrased question preserves meaning, intent, or answer.\n\nWhat it is taken as evidence of. No construct is linked to this behavior. As a result, the papers do not specify a construct that question rephrasing is taken to indicate.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Question rephrasing",
+    "Question rewriting"
+  ],
+  "papers": [
+    "MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models",
+    "Rephrase, Augment, Reason: Visual Grounding of Questions for Vision-Language Models",
+    "Instructive Decoding: Instruction-Tuned Large Language Models are Self-Refiner from Noisy Instructions",
+    "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+    "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Rewriting a mathematical question in different linguistic forms while preserving its meaning and answer.",
+      "papers": [
+        "MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models",
+        "Rephrase, Augment, Reason: Visual Grounding of Questions for Vision-Language Models",
+        "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver",
+        "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+      ],
+      "original_name": "Question rephrasing"
+    },
+    {
+      "text": "Rephrasing a question while preserving its meaning.",
+      "papers": [
+        "Instructive Decoding: Instruction-Tuned Large Language Models are Self-Refiner from Noisy Instructions"
+      ],
+      "original_name": "Question rewriting"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats question rephrasing as rewriting or paraphrasing a question while preserving its meaning, and sometimes explicitly its answer. Most formulations describe changing the linguistic form without altering intent, as in instructions to \"generate a paraphrase of that question without changing the meaning of it.\" A smaller line of work adds a further aim beyond paraphrase, such as making the question less ambiguous, more aligned with model capabilities, clarifying conditions, or restating it more simply when models misunderstand the original."
+    },
+    {
+      "label": "Variants.",
+      "text": "Variants are distinguished mainly by setting. Papers study mathematical question rephrasing, including using \"rephrasing prompting\" to generate additional questions; vision-language use, where question wording is modified using salient image details and appears as a \"Rephrasing and Augmenting the Question\" stage; problem-solving use that rephrases questions more simply; and evaluation use that creates rephrased benchmarks. Some authors also use the name \"question rewriting\" for the same behavior."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers usually elicit this behavior directly as an instruction or pipeline step rather than through a named instrument, for example by tasking an LLM with rephrasing questions in a dataset without altering their meaning, or by specifying a task type of question rewriting. No measurement instrument is linked to it, and the papers do not specify a recurring scoring rule beyond whether the rephrased question preserves meaning, intent, or answer."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to this behavior. As a result, the papers do not specify a construct that question rephrasing is taken to indicate."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats question rephrasing as rewriting or paraphrasing a question while preserving its meaning, and sometimes explicitly its answer. Most formulations describe changing the linguistic form without altering intent, as in instructions to \"generate a paraphrase of that question without changing the meaning of it.\" A smaller line of work adds a further aim beyond paraphrase, such as making the question less ambiguous, more aligned with model capabilities, clarifying conditions, or restating it more simply when models misunderstand the original.\n\nVariants. Variants are distinguished mainly by setting. Papers study mathematical question rephrasing, including using \"rephrasing prompting\" to generate additional questions; vision-language use, where question wording is modified using salient image details and appears as a \"Rephrasing and Augmenting the Question\" stage; problem-solving use that rephrases questions more simply; and evaluation use that creates rephrased benchmarks. Some authors also use the name \"question rewriting\" for the same behavior.\n\nSpace of elicitation and scores. Papers usually elicit this behavior directly as an instruction or pipeline step rather than through a named instrument, for example by tasking an LLM with rephrasing questions in a dataset without altering their meaning, or by specifying a task type of question rewriting. No measurement instrument is linked to it, and the papers do not specify a recurring scoring rule beyond whether the rephrased question preserves meaning, intent, or answer.\n\nWhat it is taken as evidence of. No construct is linked to this behavior. As a result, the papers do not specify a construct that question rephrasing is taken to indicate.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models",
+      "Rephrase, Augment, Reason: Visual Grounding of Questions for Vision-Language Models",
+      "Instructive Decoding: Instruction-Tuned Large Language Models are Self-Refiner from Noisy Instructions"
+    ],
+    "iclr25": [
+      "Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solver"
+    ],
+    "icml25": [
+      "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "canonical_name": "FineWeb",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, FineWeb is described as a web-text or pretraining corpus. Definitions variously call it a web-text corpus for analyzing bilinear transformer feature interactions, a high-quality LLM pretraining dataset used to synthesize prompts, and a large corpus of deduplicated English web documents from which one study samples 10k examples to evaluate negative log-likelihood. One paper also refers to \"two FineWeb models\" with 12 and 16 layers, labeled \"fw-small\" and \"fw-medium.\"\n\nWhat it is claimed to measure. Papers link FineWeb to one construct and no behavioral indicators. The only recorded measurement claim is that papers use it to measure Generalization: one study evaluates a model trained on C4 on FineWeb as one of several other datasets. In the recorded relationships, measurement claims therefore center on Generalization rather than spreading across multiple constructs.\n\nSpace of uses. Papers use FineWeb in several ways: as a prompt source for base LLMs, as a source of deduplicated English web documents for negative log-likelihood evaluation, and as data for analyzing bilinear transformer feature interactions at different model sizes. In one evaluation setup, it appears alongside Anthropic HH-RLHF, Synthetic Instruct, PKU SafeRLHF, UltraFeedback, and other datasets, after training on C4. Another paper reports that quantization errors of different methods are strongly correlated on FineWeb.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FineWeb"
+  ],
+  "papers": [
+    "Confounding Factors in Relating Model Performance to Morphology",
+    "Why Do Some Inputs Break Low-Bit LLM Quantization?",
+    "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+    "Bilinear MLPs enable weight-based mechanistic interpretability",
+    "Scaling up Masked Diffusion Models on Text",
+    "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models",
+    "Idiosyncrasies in Large Language Models",
+    "Learning Dynamics in Continual Pre-Training for Large Language Models",
+    "Programming Every Example: Lifting Pre-training Data Quality Like Experts at Scale",
+    "Robust Multi-bit Text Watermark with LLM-based Paraphrasers"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "A web-text corpus used for analyzing bilinear transformer feature interactions at different model sizes.",
+      "papers": [
+        "Bilinear MLPs enable weight-based mechanistic interpretability",
+        "Idiosyncrasies in Large Language Models",
+        "Why Do Some Inputs Break Low-Bit LLM Quantization?"
+      ],
+      "original_name": "FineWeb"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+      "evidence": "In this section, we will evaluate our model, previously trained on the C4 dataset, on various other datasets, including Anthropic HH-RLHF (HH), Synthetic instruction2(Instruct), PKU SafeRLHF (PKU), Reward3, UltraFeedback(UltraF), FineWeb (Penedo et al., 2024) and Pile uncopyrighted(Pile)4 datasets. (Section 4.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Robust Multi-bit Text Watermark with LLM-based Paraphrasers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, FineWeb is described as a web-text or pretraining corpus. Definitions variously call it a web-text corpus for analyzing bilinear transformer feature interactions, a high-quality LLM pretraining dataset used to synthesize prompts, and a large corpus of deduplicated English web documents from which one study samples 10k examples to evaluate negative log-likelihood. One paper also refers to \"two FineWeb models\" with 12 and 16 layers, labeled \"fw-small\" and \"fw-medium.\""
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link FineWeb to one construct and no behavioral indicators. The only recorded measurement claim is that papers use it to measure Generalization: one study evaluates a model trained on C4 on FineWeb as one of several other datasets. In the recorded relationships, measurement claims therefore center on Generalization rather than spreading across multiple constructs."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use FineWeb in several ways: as a prompt source for base LLMs, as a source of deduplicated English web documents for negative log-likelihood evaluation, and as data for analyzing bilinear transformer feature interactions at different model sizes. In one evaluation setup, it appears alongside Anthropic HH-RLHF, Synthetic Instruct, PKU SafeRLHF, UltraFeedback, and other datasets, after training on C4. Another paper reports that quantization errors of different methods are strongly correlated on FineWeb."
+    }
+  ],
+  "characterization": "What it is. Across the papers, FineWeb is described as a web-text or pretraining corpus. Definitions variously call it a web-text corpus for analyzing bilinear transformer feature interactions, a high-quality LLM pretraining dataset used to synthesize prompts, and a large corpus of deduplicated English web documents from which one study samples 10k examples to evaluate negative log-likelihood. One paper also refers to \"two FineWeb models\" with 12 and 16 layers, labeled \"fw-small\" and \"fw-medium.\"\n\nWhat it is claimed to measure. Papers link FineWeb to one construct and no behavioral indicators. The only recorded measurement claim is that papers use it to measure Generalization: one study evaluates a model trained on C4 on FineWeb as one of several other datasets. In the recorded relationships, measurement claims therefore center on Generalization rather than spreading across multiple constructs.\n\nSpace of uses. Papers use FineWeb in several ways: as a prompt source for base LLMs, as a source of deduplicated English web documents for negative log-likelihood evaluation, and as data for analyzing bilinear transformer feature interactions at different model sizes. In one evaluation setup, it appears alongside Anthropic HH-RLHF, Synthetic Instruct, PKU SafeRLHF, UltraFeedback, and other datasets, after training on C4. Another paper reports that quantization errors of different methods are strongly correlated on FineWeb.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Confounding Factors in Relating Model Performance to Morphology",
+      "Why Do Some Inputs Break Low-Bit LLM Quantization?"
+    ],
+    "iclr25": [
+      "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+      "Bilinear MLPs enable weight-based mechanistic interpretability",
+      "Scaling up Masked Diffusion Models on Text",
+      "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models"
+    ],
+    "icml25": [
+      "Idiosyncrasies in Large Language Models",
+      "Learning Dynamics in Continual Pre-Training for Large Language Models",
+      "Programming Every Example: Lifting Pre-training Data Quality Like Experts at Scale",
+      "Robust Multi-bit Text Watermark with LLM-based Paraphrasers"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 4,
+    "icml25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

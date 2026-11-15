@@ -1,0 +1,64 @@
+{
+  "canonical_name": "ToolQuery",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across these papers, ToolQuery is most commonly described as a tool-using benchmark built around queries to external tools, with Weather, Movie, and Academia recurring as the named domains or subsets. Definitions also frame it as involving APIs in those domains, and one paper further describes it as a held-out task.\n\nWhat it is claimed to measure. The papers use ToolQuery to evaluate tool use, specifically an agent's skills in using tools to retrieve and process information across domains such as Weather, Movie, and Academia. They do not explicitly link it to any named construct or behavioral indicator.\n\nSpace of uses. In use, papers position ToolQuery as part of a broader evaluation setup rather than on its own. One paper groups it with ToolOperation under the heading of tool using and treats it as a held-out task, while another includes it in a wider multi-benchmark evaluation of model performance.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ToolQuery"
+  ],
+  "papers": [
+    "AgentRM: Enhancing Agent Generalization with Reward Modeling",
+    "Magnet: Multi-turn Tool-use Data Synthesis and Distillation via Graph Translation",
+    "xLAM: A Family of Large Action Models to Empower AI Agent Systems"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Tool-using benchmark involving queries to external tools such as weather, movie, and academia APIs, used as a held-out task.",
+      "papers": [
+        "AgentRM: Enhancing Agent Generalization with Reward Modeling",
+        "xLAM: A Family of Large Action Models to Empower AI Agent Systems"
+      ],
+      "original_name": "ToolQuery"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across these papers, ToolQuery is most commonly described as a tool-using benchmark built around queries to external tools, with Weather, Movie, and Academia recurring as the named domains or subsets. Definitions also frame it as involving APIs in those domains, and one paper further describes it as a held-out task."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The papers use ToolQuery to evaluate tool use, specifically an agent's skills in using tools to retrieve and process information across domains such as Weather, Movie, and Academia. They do not explicitly link it to any named construct or behavioral indicator."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers position ToolQuery as part of a broader evaluation setup rather than on its own. One paper groups it with ToolOperation under the heading of tool using and treats it as a held-out task, while another includes it in a wider multi-benchmark evaluation of model performance."
+    }
+  ],
+  "characterization": "What it is. Across these papers, ToolQuery is most commonly described as a tool-using benchmark built around queries to external tools, with Weather, Movie, and Academia recurring as the named domains or subsets. Definitions also frame it as involving APIs in those domains, and one paper further describes it as a held-out task.\n\nWhat it is claimed to measure. The papers use ToolQuery to evaluate tool use, specifically an agent's skills in using tools to retrieve and process information across domains such as Weather, Movie, and Academia. They do not explicitly link it to any named construct or behavioral indicator.\n\nSpace of uses. In use, papers position ToolQuery as part of a broader evaluation setup rather than on its own. One paper groups it with ToolOperation under the heading of tool using and treats it as a held-out task, while another includes it in a wider multi-benchmark evaluation of model performance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "AgentRM: Enhancing Agent Generalization with Reward Modeling",
+      "Magnet: Multi-turn Tool-use Data Synthesis and Distillation via Graph Translation"
+    ],
+    "naacl25": [
+      "xLAM: A Family of Large Action Models to Empower AI Agent Systems"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "naacl25"
+  ]
+}

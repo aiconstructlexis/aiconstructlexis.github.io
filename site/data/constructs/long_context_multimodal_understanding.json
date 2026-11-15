@@ -1,0 +1,166 @@
+{
+  "canonical_name": "Long-context multimodal understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is broad: a latent model ability to process, comprehend, and use very long multimodal contexts, often interleaving visual and textual inputs. Most definitions focus on understanding extended sequences or documents and, in several cases, on integrating information for reasoning or question answering. A smaller line of work narrows the construct to vision-heavy settings, either extended image sequences or many visual inputs presented at once, while another framing emphasizes maintaining coherent understanding and performance over long multimodal sequences. The main disagreement is over scope and modality emphasis, from broad interleaved multimodal reasoning to document-centric, video-centric, or vision-centric processing.\n\nSpace of facets. Papers use several labels around this construct: long-context multimodal understanding, long multimodal document comprehension, long image-sequence understanding, long-context visual processing, long-document understanding, and long-range modeling. These labels sort the space mostly by input regime, interleaved video-language streams, multi-image sequences, or long visually rich documents with text, tables, charts, and images, and by task emphasis, from general understanding and reasoning to answering questions over long documents or maintaining performance across long sequences. A vision-centric formulation also separates raw capacity to process many visual tokens from effective retrieval and reasoning.\n\nSpace of measurement. Papers operationalize it through benchmarks rather than behavioral indicators. They link the construct to 3 measurement instruments and no behavioral indicators: MM-NIAH, LongVideoBench, and MileBench. MM-NIAH is described as a benchmark for comprehending long multimodal documents and for detecting image and text needles in hybrid long contexts; LongVideoBench is a question-answering benchmark with interleaved video and subtitles up to an hour long, designed to evaluate long-term multimodal understanding; MileBench is described as progressively challenging multi-image tasks that quantify long-context capability from textual-token and visual-token perspectives. These instruments mirror the definitional spread between long documents, interleaved video-language inputs, and broader long visual contexts.\n\nLinks. No causal, correlational, or generic related links are reported beyond these measurement links.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Long-context multimodal understanding",
+    "Long multimodal document comprehension",
+    "Long image-sequence understanding",
+    "Long-context visual processing",
+    "Long-document understanding",
+    "Long-range modeling"
+  ],
+  "papers": [
+    "Design Choices for Extending the Context Length of Visual Language Models",
+    "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+    "Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark",
+    "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+    "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+    "Needle In A Multimodal Haystack"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The ability of a model to process and comprehend long sequences of interleaved multimodal inputs, such as video frames and text subtitles, to perform complex reasoning tasks.",
+      "papers": [
+        "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+      ],
+      "original_name": "Long-context multimodal understanding"
+    },
+    {
+      "text": "The latent ability of a model to understand, integrate, and reason about information from long documents containing interleaved text and images.",
+      "papers": [
+        "Needle In A Multimodal Haystack"
+      ],
+      "original_name": "Long multimodal document comprehension"
+    },
+    {
+      "text": "The model's latent ability to process and comprehend information from extended sequences of images, such as those found in lengthy videos or multi-image documents.",
+      "papers": [
+        "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+      ],
+      "original_name": "Long image-sequence understanding"
+    },
+    {
+      "text": "The ability of a model to effectively process and utilize information from a large number of visual inputs presented simultaneously in its context window.",
+      "papers": [
+        "Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark"
+      ],
+      "original_name": "Long-context visual processing"
+    },
+    {
+      "text": "The latent ability to comprehend and answer questions about lengthy, multi-page documents containing mixed modalities such as text, tables, charts, and images.",
+      "papers": [
+        "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding"
+      ],
+      "original_name": "Long-document understanding"
+    },
+    {
+      "text": "The latent ability of a VLM to maintain coherent understanding and performance across extended sequences of multimodal inputs, particularly over long videos or interleaved images.",
+      "papers": [
+        "Design Choices for Extending the Context Length of Visual Language Models"
+      ],
+      "original_name": "Long-range modeling"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-NIAH",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Needle In A Multimodal Haystack",
+      "evidence": "In this work, we present Needle In A Multimodal Haystack (MM-NIAH), the first benchmark specifically designed to systematically evaluate the capability of existing MLLMs to comprehend long multimodal documents. (Abstract)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Needle In A Multimodal Haystack"
+        ],
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongVideoBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "evidence": "To mitigate this gap, we introduce LONGVIDEOBENCH, a question-answering benchmark that features video-language interleaved inputs up to an hour long. Our benchmark includes 3,763 varying-length web-collected videos with their subtitles across diverse themes, designed to comprehensively evaluate LMMs on long-term multimodal understanding. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MileBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CoMemo: LVLMs Need Image Context with Image Memory",
+      "evidence": "And MileBench (Song et al., 2024) progressively challenging tasks with 2-109 images. These benchmarks systematically quantify long-context capabilities from both textual token and visual token perspectives. (Section 4.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is broad: a latent model ability to process, comprehend, and use very long multimodal contexts, often interleaving visual and textual inputs. Most definitions focus on understanding extended sequences or documents and, in several cases, on integrating information for reasoning or question answering. A smaller line of work narrows the construct to vision-heavy settings, either extended image sequences or many visual inputs presented at once, while another framing emphasizes maintaining coherent understanding and performance over long multimodal sequences. The main disagreement is over scope and modality emphasis, from broad interleaved multimodal reasoning to document-centric, video-centric, or vision-centric processing."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several labels around this construct: long-context multimodal understanding, long multimodal document comprehension, long image-sequence understanding, long-context visual processing, long-document understanding, and long-range modeling. These labels sort the space mostly by input regime, interleaved video-language streams, multi-image sequences, or long visually rich documents with text, tables, charts, and images, and by task emphasis, from general understanding and reasoning to answering questions over long documents or maintaining performance across long sequences. A vision-centric formulation also separates raw capacity to process many visual tokens from effective retrieval and reasoning."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers operationalize it through benchmarks rather than behavioral indicators. They link the construct to 3 measurement instruments and no behavioral indicators: MM-NIAH, LongVideoBench, and MileBench. MM-NIAH is described as a benchmark for comprehending long multimodal documents and for detecting image and text needles in hybrid long contexts; LongVideoBench is a question-answering benchmark with interleaved video and subtitles up to an hour long, designed to evaluate long-term multimodal understanding; MileBench is described as progressively challenging multi-image tasks that quantify long-context capability from textual-token and visual-token perspectives. These instruments mirror the definitional spread between long documents, interleaved video-language inputs, and broader long visual contexts."
+    },
+    {
+      "label": "Links.",
+      "text": "No causal, correlational, or generic related links are reported beyond these measurement links."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is broad: a latent model ability to process, comprehend, and use very long multimodal contexts, often interleaving visual and textual inputs. Most definitions focus on understanding extended sequences or documents and, in several cases, on integrating information for reasoning or question answering. A smaller line of work narrows the construct to vision-heavy settings, either extended image sequences or many visual inputs presented at once, while another framing emphasizes maintaining coherent understanding and performance over long multimodal sequences. The main disagreement is over scope and modality emphasis, from broad interleaved multimodal reasoning to document-centric, video-centric, or vision-centric processing.\n\nSpace of facets. Papers use several labels around this construct: long-context multimodal understanding, long multimodal document comprehension, long image-sequence understanding, long-context visual processing, long-document understanding, and long-range modeling. These labels sort the space mostly by input regime, interleaved video-language streams, multi-image sequences, or long visually rich documents with text, tables, charts, and images, and by task emphasis, from general understanding and reasoning to answering questions over long documents or maintaining performance across long sequences. A vision-centric formulation also separates raw capacity to process many visual tokens from effective retrieval and reasoning.\n\nSpace of measurement. Papers operationalize it through benchmarks rather than behavioral indicators. They link the construct to 3 measurement instruments and no behavioral indicators: MM-NIAH, LongVideoBench, and MileBench. MM-NIAH is described as a benchmark for comprehending long multimodal documents and for detecting image and text needles in hybrid long contexts; LongVideoBench is a question-answering benchmark with interleaved video and subtitles up to an hour long, designed to evaluate long-term multimodal understanding; MileBench is described as progressively challenging multi-image tasks that quantify long-context capability from textual-token and visual-token perspectives. These instruments mirror the definitional spread between long documents, interleaved video-language inputs, and broader long visual contexts.\n\nLinks. No causal, correlational, or generic related links are reported beyond these measurement links.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Design Choices for Extending the Context Length of Visual Language Models"
+    ],
+    "iclr25": [
+      "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+      "Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark",
+      "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+    ],
+    "neurips24": [
+      "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "Needle In A Multimodal Haystack"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "iclr25": 3,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "neurips24"
+  ]
+}

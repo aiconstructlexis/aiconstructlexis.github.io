@@ -1,0 +1,370 @@
+{
+  "canonical_name": "Accuracy",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most definitions treat accuracy as answer or response correctness, whether a model's output is factually or logically right for the instruction, input, or task, and papers often use accuracy and correctness interchangeably. A smaller line of work narrows it to artifact-specific validity, such as code that passes test cases, proofs accepted by a proof assistant, plans satisfying formal preconditions and postconditions, optimization formulations that reflect problem requirements, charts that match query intent and data, or hiring decisions that identify qualified candidates. Another recurring split is between output-level scoring and latent ability framings, with some papers defining prediction correctness, response correctness, code correctness, or code reliability as model capacities, sometimes adding format compliance or consistency of executability.\n\nSpace of facets. Papers mostly organize the concept by what is being checked: final answers and responses, rationales and proofs, or structured artifacts such as code, plans, optimization models, charts, insights, and generated relation-extraction samples. Across these uses, the labels correctness, task correctness, response correctness, proof accuracy, truth alignment, and code reliability overlap heavily around matching ground truth or task requirements, but they are not identical. Truth alignment adds producing the correct result in the desired format, one correctness definition requires the final answer to meet formatting constraints, proof accuracy requires steps to be both correct and relevant, and insight correctness is defined as the mean truth value of constituent claims.\n\nSpace of measurement. Accuracy is linked to 4 measurement instruments and 2 behavioral indicators. The most recurrent linked instrument is LLM-as-a-judge, where GPT-4 rates paired responses on a 1 to 10 scale for accuracy alongside other criteria; other linked instruments are human evaluation, expert evaluation, and GEMBA-MQM. Papers also operationalize accuracy through direct ground-truth comparison or exact match, private test cases and unit tests for code, proof assistant acceptance, symbolic plan validation, averaging claim truth values, average ROUGE-F1, and hidden-state or CoE analyses that estimate response correctness; these usually mirror the definitions by checking whether outputs match ground truth, execute correctly, or satisfy formal constraints, though some papers use desired format, ROUGE-F1, or internal-state estimates rather than only direct answer checking.\n\nLinks. Outside measurement, the recorded links are only related links, not causal or correlational claims, and no construct-to-construct link is recorded. One paper relates accuracy to instruction following through the formulation \"Truth Alignment = Reasoning Capability + Instruction Following.\" Another relates it to hallucination, defining accuracy as whether responses contain hallucination and present correct attributes.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Accuracy",
+    "Correctness",
+    "Task correctness",
+    "Prediction correctness",
+    "Proof correctness",
+    "Response correctness",
+    "Formal correctness",
+    "Formulation correctness",
+    "Response accuracy",
+    "Code correctness",
+    "Chart correctness",
+    "Proof accuracy",
+    "Truth alignment",
+    "Code reliability"
+  ],
+  "papers": [
+    "Completing A Systematic Review in Hours instead of Months with Interactive AI Agents",
+    "HyKGE: A Hypothesis Knowledge Graph Enhanced RAG Framework for Accurate and Reliable Medical LLMs Responses",
+    "CodeArena: Evaluating and Aligning CodeLLMs on Human Preference",
+    "MR. Judge: Multimodal Reasoner as a Judge",
+    "Reliable and Cost-Effective Exploratory Data Analysis via Graph-Guided RAG",
+    "TVQACML: Benchmarking Text-Centric Visual Question Answering in Multilingual Chinese Minority Languages",
+    "Text2Vis: A Challenging and Diverse Benchmark for Generating Multimodal Visualizations from Text",
+    "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models",
+    "UnitCoder: Scalable Code Synthesis from Pre-training Corpora",
+    "VLA-Mark: A cross modal watermark for large vision-language alignment models",
+    "Video2Roleplay: A Multimodal Dataset and Framework for Video-Guided Role-playing Agents",
+    "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization",
+    "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+    "3DS: Medical Domain Adaptation of LLMs via Decomposed Difficulty-based Data Selection",
+    "AlpaGasus: Training a Better Alpaca with Fewer Data",
+    "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+    "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+    "Tailoring Self-Rationalizers with Multi-Reward Distillation",
+    "AnalogGenie: A Generative Engine for Automatic Discovery of Analog Circuit Topologies",
+    "Century: A Framework and Dataset for Evaluating Historical Contextualisation of Sensitive Images",
+    "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+    "HelpSteer2-Preference: Complementing Ratings with Preferences",
+    "ImProver: Agent-Based Automated Proof Optimization",
+    "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+    "MMRole: A Comprehensive Framework for Developing and Evaluating Multimodal Role-Playing Agents",
+    "Mixture-of-Agents Enhances Large Language Model Capabilities",
+    "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+    "Autoformulation of Mathematical Optimization Models Using LLMs",
+    "Hierarchical Planning for Complex Tasks with Knowledge Graph-RAG and Symbolic Verification",
+    "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning",
+    "Two Tickets are Better than One: Fair and Accurate Hiring Under Strategic LLM Manipulations",
+    "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+    "An LLM-Based Approach for Insight Generation in Data Analysis",
+    "Self-Training Meets Consistency: Improving LLMs' Reasoning with Consistency-Driven Rationale Evaluation",
+    "SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning",
+    "Elevating Legal LLM Responses: Harnessing Trainable Logical Structures and Semantic Knowledge with Legal Reasoning",
+    "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales",
+    "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+    "Transfer Q-star : Principled Decoding for LLM Alignment"
+  ],
+  "paper_count": 39,
+  "definitions": [
+    {
+      "text": "The degree to which a generated program is functionally accurate, meaning it produces the expected output for all given inputs as defined by a set of test cases.",
+      "papers": [
+        "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+        "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+        "Mixture-of-Agents Enhances Large Language Model Capabilities",
+        "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization",
+        "An LLM-Based Approach for Insight Generation in Data Analysis",
+        "Self-Training Meets Consistency: Improving LLMs' Reasoning with Consistency-Driven Rationale Evaluation",
+        "ALiiCE: Evaluating Positional Fine-grained Citation Generation"
+      ],
+      "original_name": "Correctness"
+    },
+    {
+      "text": "The degree to which a model's response correctly aligns with factual or logically valid outcomes for a given instruction and input.",
+      "papers": [
+        "AlpaGasus: Training a Better Alpaca with Fewer Data",
+        "Transfer Q-star : Principled Decoding for LLM Alignment",
+        "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+        "HyKGE: A Hypothesis Knowledge Graph Enhanced RAG Framework for Accurate and Reliable Medical LLMs Responses",
+        "Two Tickets are Better than One: Fair and Accurate Hiring Under Strategic LLM Manipulations",
+        "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+        "Elevating Legal LLM Responses: Harnessing Trainable Logical Structures and Semantic Knowledge with Legal Reasoning"
+      ],
+      "original_name": "Accuracy"
+    },
+    {
+      "text": "The extent to which the model's predicted answer is right for the question after generating a rationale.",
+      "papers": [
+        "Tailoring Self-Rationalizers with Multi-Reward Distillation"
+      ],
+      "original_name": "Task correctness"
+    },
+    {
+      "text": "The latent ability of a model to produce accurate predictions, typically measured by task-specific accuracy metrics.",
+      "papers": [
+        "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales"
+      ],
+      "original_name": "Prediction correctness"
+    },
+    {
+      "text": "The property that a generated proof is valid and accepted by the proof assistant as establishing the theorem statement.",
+      "papers": [
+        "ImProver: Agent-Based Automated Proof Optimization"
+      ],
+      "original_name": "Proof correctness"
+    },
+    {
+      "text": "The latent property of a model's generated response being factually or logically correct for a given input, which can be inferred from internal model states.",
+      "papers": [
+        "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+        "3DS: Medical Domain Adaptation of LLMs via Decomposed Difficulty-based Data Selection"
+      ],
+      "original_name": "Response correctness"
+    },
+    {
+      "text": "The degree to which a generated mathematical optimization model accurately and faithfully represents the requirements and constraints of a real-world problem described in natural language.",
+      "papers": [
+        "Autoformulation of Mathematical Optimization Models Using LLMs"
+      ],
+      "original_name": "Formulation correctness"
+    },
+    {
+      "text": "The extent to which a generated plan satisfies the formal preconditions and postconditions required for execution.",
+      "papers": [
+        "Hierarchical Planning for Complex Tasks with Knowledge Graph-RAG and Symbolic Verification"
+      ],
+      "original_name": "Formal correctness"
+    },
+    {
+      "text": "The ability of the model to correctly understand and address user questions or conversational prompts based on the provided context.",
+      "papers": [
+        "Video2Roleplay: A Multimodal Dataset and Framework for Video-Guided Role-playing Agents"
+      ],
+      "original_name": "Response accuracy"
+    },
+    {
+      "text": "The latent property of a model to generate functionally accurate code that passes defined test cases without logical or syntactic errors.",
+      "papers": [
+        "UnitCoder: Scalable Code Synthesis from Pre-training Corpora"
+      ],
+      "original_name": "Code correctness"
+    },
+    {
+      "text": "The extent to which a generated chart accurately reflects the query intent and the underlying data.",
+      "papers": [
+        "Text2Vis: A Challenging and Diverse Benchmark for Generating Multimodal Visualizations from Text"
+      ],
+      "original_name": "Chart correctness"
+    },
+    {
+      "text": "The degree to which a model's generated reasoning steps are both logically correct and relevant to the final conclusion, reflecting faithful internal reasoning.",
+      "papers": [
+        "SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning"
+      ],
+      "original_name": "Proof accuracy"
+    },
+    {
+      "text": "The extent to which a model's outputs match the ground truth in the required answer form for a task.",
+      "papers": [
+        "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models"
+      ],
+      "original_name": "Truth alignment"
+    },
+    {
+      "text": "The latent property of a model to consistently generate code that is syntactically correct and executable without errors.",
+      "papers": [
+        "Reliable and Cost-Effective Exploratory Data Analysis via Graph-Guided RAG"
+      ],
+      "original_name": "Code reliability"
+    }
+  ],
+  "definition_count": 14,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transfer Q-star : Principled Decoding for LLM Alignment",
+      "evidence": "We prompt GPT-4 to rate responses from various decoding strategies on relevance, accuracy, and insightfulness, scoring them from 1 to 10. (Table 2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transfer Q-star : Principled Decoding for LLM Alignment"
+        ],
+        "iclr25": [
+          "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "evidence": "\u201cTruth Alignment = Reasoning Capability + Instruction Following\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GEMBA-MQM",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How Good Are LLMs for Literary Translation, Really? Literary Translation Evaluation with Humans and LLMs",
+      "evidence": "our analysis reveals that GEMBA-MQM\u2019s performance is primarily driven by Accuracy aspects, with less reliability in evaluating Fluency, Style, and Terminology (Section 5).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "How Good Are LLMs for Literary Translation, Really? Literary Translation Evaluation with Humans and LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Elevating Legal LLM Responses: Harnessing Trainable Logical Structures and Semantic Knowledge with Legal Reasoning",
+      "evidence": "Human evaluation focuses on three aspects: 1) Accuracy: the aspect evaluates whether the generated answers are correct and free from factual errors.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Elevating Legal LLM Responses: Harnessing Trainable Logical Structures and Semantic Knowledge with Legal Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Expert evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Autoformulation of Mathematical Optimization Models Using LLMs",
+      "evidence": "An optimization expert manually reviewed each model and assessed the correctness of four key components: decision variables, objective function, equality constraints, and inequality constraints.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Autoformulation of Mathematical Optimization Models Using LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MR. Judge: Multimodal Reasoner as a Judge",
+      "evidence": "accuracy: whether the responses contains any hallucination, and present correct attributes; (Section 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MR. Judge: Multimodal Reasoner as a Judge"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most definitions treat accuracy as answer or response correctness, whether a model's output is factually or logically right for the instruction, input, or task, and papers often use accuracy and correctness interchangeably. A smaller line of work narrows it to artifact-specific validity, such as code that passes test cases, proofs accepted by a proof assistant, plans satisfying formal preconditions and postconditions, optimization formulations that reflect problem requirements, charts that match query intent and data, or hiring decisions that identify qualified candidates. Another recurring split is between output-level scoring and latent ability framings, with some papers defining prediction correctness, response correctness, code correctness, or code reliability as model capacities, sometimes adding format compliance or consistency of executability."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers mostly organize the concept by what is being checked: final answers and responses, rationales and proofs, or structured artifacts such as code, plans, optimization models, charts, insights, and generated relation-extraction samples. Across these uses, the labels correctness, task correctness, response correctness, proof accuracy, truth alignment, and code reliability overlap heavily around matching ground truth or task requirements, but they are not identical. Truth alignment adds producing the correct result in the desired format, one correctness definition requires the final answer to meet formatting constraints, proof accuracy requires steps to be both correct and relevant, and insight correctness is defined as the mean truth value of constituent claims."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Accuracy is linked to 4 measurement instruments and 2 behavioral indicators. The most recurrent linked instrument is LLM-as-a-judge, where GPT-4 rates paired responses on a 1 to 10 scale for accuracy alongside other criteria; other linked instruments are human evaluation, expert evaluation, and GEMBA-MQM. Papers also operationalize accuracy through direct ground-truth comparison or exact match, private test cases and unit tests for code, proof assistant acceptance, symbolic plan validation, averaging claim truth values, average ROUGE-F1, and hidden-state or CoE analyses that estimate response correctness; these usually mirror the definitions by checking whether outputs match ground truth, execute correctly, or satisfy formal constraints, though some papers use desired format, ROUGE-F1, or internal-state estimates rather than only direct answer checking."
+    },
+    {
+      "label": "Links.",
+      "text": "Outside measurement, the recorded links are only related links, not causal or correlational claims, and no construct-to-construct link is recorded. One paper relates accuracy to instruction following through the formulation \"Truth Alignment = Reasoning Capability + Instruction Following.\" Another relates it to hallucination, defining accuracy as whether responses contain hallucination and present correct attributes."
+    }
+  ],
+  "characterization": "Space of definitions. Most definitions treat accuracy as answer or response correctness, whether a model's output is factually or logically right for the instruction, input, or task, and papers often use accuracy and correctness interchangeably. A smaller line of work narrows it to artifact-specific validity, such as code that passes test cases, proofs accepted by a proof assistant, plans satisfying formal preconditions and postconditions, optimization formulations that reflect problem requirements, charts that match query intent and data, or hiring decisions that identify qualified candidates. Another recurring split is between output-level scoring and latent ability framings, with some papers defining prediction correctness, response correctness, code correctness, or code reliability as model capacities, sometimes adding format compliance or consistency of executability.\n\nSpace of facets. Papers mostly organize the concept by what is being checked: final answers and responses, rationales and proofs, or structured artifacts such as code, plans, optimization models, charts, insights, and generated relation-extraction samples. Across these uses, the labels correctness, task correctness, response correctness, proof accuracy, truth alignment, and code reliability overlap heavily around matching ground truth or task requirements, but they are not identical. Truth alignment adds producing the correct result in the desired format, one correctness definition requires the final answer to meet formatting constraints, proof accuracy requires steps to be both correct and relevant, and insight correctness is defined as the mean truth value of constituent claims.\n\nSpace of measurement. Accuracy is linked to 4 measurement instruments and 2 behavioral indicators. The most recurrent linked instrument is LLM-as-a-judge, where GPT-4 rates paired responses on a 1 to 10 scale for accuracy alongside other criteria; other linked instruments are human evaluation, expert evaluation, and GEMBA-MQM. Papers also operationalize accuracy through direct ground-truth comparison or exact match, private test cases and unit tests for code, proof assistant acceptance, symbolic plan validation, averaging claim truth values, average ROUGE-F1, and hidden-state or CoE analyses that estimate response correctness; these usually mirror the definitions by checking whether outputs match ground truth, execute correctly, or satisfy formal constraints, though some papers use desired format, ROUGE-F1, or internal-state estimates rather than only direct answer checking.\n\nLinks. Outside measurement, the recorded links are only related links, not causal or correlational claims, and no construct-to-construct link is recorded. One paper relates accuracy to instruction following through the formulation \"Truth Alignment = Reasoning Capability + Instruction Following.\" Another relates it to hallucination, defining accuracy as whether responses contain hallucination and present correct attributes.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Completing A Systematic Review in Hours instead of Months with Interactive AI Agents",
+      "HyKGE: A Hypothesis Knowledge Graph Enhanced RAG Framework for Accurate and Reliable Medical LLMs Responses"
+    ],
+    "emnlp25": [
+      "CodeArena: Evaluating and Aligning CodeLLMs on Human Preference",
+      "MR. Judge: Multimodal Reasoner as a Judge",
+      "Reliable and Cost-Effective Exploratory Data Analysis via Graph-Guided RAG",
+      "TVQACML: Benchmarking Text-Centric Visual Question Answering in Multilingual Chinese Minority Languages",
+      "Text2Vis: A Challenging and Diverse Benchmark for Generating Multimodal Visualizations from Text",
+      "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models",
+      "UnitCoder: Scalable Code Synthesis from Pre-training Corpora",
+      "VLA-Mark: A cross modal watermark for large vision-language alignment models",
+      "Video2Roleplay: A Multimodal Dataset and Framework for Video-Guided Role-playing Agents",
+      "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization",
+      "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+      "3DS: Medical Domain Adaptation of LLMs via Decomposed Difficulty-based Data Selection"
+    ],
+    "iclr24": [
+      "AlpaGasus: Training a Better Alpaca with Fewer Data",
+      "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+      "Tailoring Self-Rationalizers with Multi-Reward Distillation"
+    ],
+    "iclr25": [
+      "AnalogGenie: A Generative Engine for Automatic Discovery of Analog Circuit Topologies",
+      "Century: A Framework and Dataset for Evaluating Historical Contextualisation of Sensitive Images",
+      "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+      "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "ImProver: Agent-Based Automated Proof Optimization",
+      "Latent Space Chain-of-Embedding Enables Output-free LLM Self-Evaluation",
+      "MMRole: A Comprehensive Framework for Developing and Evaluating Multimodal Role-Playing Agents",
+      "Mixture-of-Agents Enhances Large Language Model Capabilities",
+      "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models"
+    ],
+    "icml25": [
+      "Autoformulation of Mathematical Optimization Models Using LLMs",
+      "Hierarchical Planning for Complex Tasks with Knowledge Graph-RAG and Symbolic Verification",
+      "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning",
+      "Two Tickets are Better than One: Fair and Accurate Hiring Under Strategic LLM Manipulations"
+    ],
+    "naacl25": [
+      "ALiiCE: Evaluating Positional Fine-grained Citation Generation",
+      "An LLM-Based Approach for Insight Generation in Data Analysis",
+      "Self-Training Meets Consistency: Improving LLMs' Reasoning with Consistency-Driven Rationale Evaluation",
+      "SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning",
+      "Elevating Legal LLM Responses: Harnessing Trainable Logical Structures and Semantic Knowledge with Legal Reasoning"
+    ],
+    "neurips24": [
+      "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales",
+      "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "Transfer Q-star : Principled Decoding for LLM Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 12,
+    "iclr24": 4,
+    "iclr25": 9,
+    "icml25": 4,
+    "naacl25": 5,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

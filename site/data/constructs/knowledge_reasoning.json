@@ -1,0 +1,323 @@
+{
+  "canonical_name": "Knowledge reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats knowledge reasoning as a latent question answering ability that combines factual or world knowledge with inference. Most definitions say it involves answering questions that require factual knowledge plus reasoning over concepts, though they differ on where the knowledge comes from: some describe stored world knowledge or knowledge held in the model\u2019s parameters, while others emphasize external facts, open-book information, or knowledge retrieved from a corpus. A narrower framing treats it as linking textual mentions to external facts in order to infer implicit geographic, cultural, or encyclopedic information needed for relevance.\n\nSpace of facets. Papers do not use a single label for this construct. Alongside knowledge reasoning, they use nearby names such as knowledge and reasoning, fact reasoning, world knowledge reasoning, and knowledge-intensive reasoning, with the shared core being factual knowledge plus inference. Some usages narrow the scope to world knowledge relations and implicit fact retrieval, while others cast it as open-domain generation or as a broad evaluation category, and papers also separate it from categories such as commonsense reasoning, mathematical reasoning, truthfulness, and conversational ability.\n\nSpace of measurement. Operationalization is benchmark-based: papers link knowledge reasoning to 10 measurement instruments and 1 behavioral indicator, but the reported measurements themselves are through datasets and benchmarks rather than the behavioral indicator. MMLU is the most frequent instrument, and papers also use ARC, CodeMixBench, CommonsenseQA, and IMPLIRET, plus 5 other instruments. Across these measures, the construct is tested through general knowledge and science question answering, code-mixed evaluation, implicit fact retrieval, open-book question answering, and tasks that ask models to integrate outside knowledge, so the measurements cover both broad factual question answering and narrower formulations centered on external or stored knowledge.\n\nLinks. Beyond measurement, papers report few non-measurement links. One paper claims a causal relationship from Question decomposition to Knowledge reasoning, describing decomposition of complex questions in knowledge-intensive reasoning tasks for more accurate answer inference. Another paper reports that Knowledge manipulation is related to Knowledge reasoning, with reasoning described alongside knowledge recall and transfer, and no correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge reasoning",
+    "Knowledge and reasoning",
+    "World knowledge reasoning",
+    "Fact reasoning",
+    "Knowledge-intensive reasoning"
+  ],
+  "papers": [
+    "BIG-Bench Extra Hard",
+    "CER: Confidence Enhanced Reasoning in LLMs",
+    "AgentPro: Enhancing LLM Agents with Automated Process Supervision",
+    "CodeMixBench: Evaluating Code-Mixing Capabilities of LLMs Across 18 Languages",
+    "ImpliRet: Benchmarking the Implicit Fact Retrieval Challenge",
+    "Infini-gram mini: Exact n-gram Search at the Internet Scale with FM-Index",
+    "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+    "Weak to Strong Generalization for Large Language Models with Multi-capabilities",
+    "Impossible Videos",
+    "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+    "Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models",
+    "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs"
+  ],
+  "paper_count": 12,
+  "definitions": [
+    {
+      "text": "The latent ability to answer questions by using external or factual knowledge and integrating it into inference.",
+      "papers": [
+        "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+        "CodeMixBench: Evaluating Code-Mixing Capabilities of LLMs Across 18 Languages"
+      ],
+      "original_name": "Knowledge reasoning"
+    },
+    {
+      "text": "The ability to answer questions that require factual knowledge and reasoning over concepts.",
+      "papers": [
+        "Infini-gram mini: Exact n-gram Search at the Internet Scale with FM-Index"
+      ],
+      "original_name": "Knowledge and reasoning"
+    },
+    {
+      "text": "The ability to connect textual mentions to external factual knowledge (e.g., that Big Ben is in the UK) to infer implicit geographic, cultural, or encyclopedic facts necessary for determining relevance.",
+      "papers": [
+        "ImpliRet: Benchmarking the Implicit Fact Retrieval Challenge"
+      ],
+      "original_name": "World knowledge reasoning"
+    },
+    {
+      "text": "The latent ability to reason based on factual knowledge and open-book information.",
+      "papers": [
+        "Weak to Strong Generalization for Large Language Models with Multi-capabilities"
+      ],
+      "original_name": "Fact reasoning"
+    },
+    {
+      "text": "The latent ability to answer questions by retrieving and synthesizing information from a broad base of knowledge stored within the model's parameters.",
+      "papers": [
+        "CER: Confidence Enhanced Reasoning in LLMs",
+        "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models"
+      ],
+      "original_name": "Knowledge-intensive reasoning"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+      "evidence": "\u201cone knowledge-intensive reasoning benchmark: the mass-multitask language understanding (MMLU) dataset (Hendrycks et al., 2020).\u201d",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models"
+        ],
+        "neurips24": [
+          "Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models"
+        ],
+        "icml25": [
+          "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+          "Determining Layer-wise Sparsity for Large Language Models Through a Theoretical Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "evidence": "We employ the ScienceQA [28] dataset for the knowledge reasoning task (Section 5.1.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models",
+      "evidence": "For knowledge reasoning, we utilize Winogrande (Sakaguchi et al., 2019) (abbreviated as Wino) and CommonsenseQA (Talmor et al., 2019) (abbreviated as Comm). (Section 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models",
+      "evidence": "For knowledge reasoning, we utilize Winogrande (Sakaguchi et al., 2019) (abbreviated as Wino) and CommonsenseQA (Talmor et al., 2019) (abbreviated as Comm). (Section 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Think Thrice Before You Act: Progressive Thought Refinement in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge manipulation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+      "evidence": "enhance the knowledge manipulation (e.g., knowledge recall, reasoning, and transfer) ability of LLMs. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Weak to Strong Generalization for Large Language Models with Multi-capabilities",
+      "evidence": "OpenBookQA (Mihaylov et al., 2018) for fact reasoning (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Weak to Strong Generalization for Large Language Models with Multi-capabilities"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization",
+      "evidence": "since questions in knowledge-intensive reasoning tasks can often be a complex composite problems that are challenging to solve directly, a structured knowledge utilizer is used to perform question decomposition... for more accurate answer inference.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ParaICL: Towards Parallel In-Context Learning",
+      "evidence": "ARC (Clark et al., 2018), a knowledge reasoning dataset consisting of grad-school level science questions in a multiple-choice format. (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "ParaICL: Towards Parallel In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CER: Confidence Enhanced Reasoning in LLMs",
+      "evidence": "TriviaQA (Joshi et al., 2017): A large-scale dataset containing knowledge-intensive questions sourced from Wikipedia.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "CER: Confidence Enhanced Reasoning in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CodeMixBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CodeMixBench: Evaluating Code-Mixing Capabilities of LLMs Across 18 Languages",
+      "evidence": "we introduce the CodeMixBench, a code-mixing evaluation benchmark including eight tasks\u2013three for evaluating LLMs (knowledge reasoning, mathematical reasoning, and truthfulness) and five for traditional NLP tasks (LID, POS, NER, SA, and MT). (\u00a71)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CodeMixBench: Evaluating Code-Mixing Capabilities of LLMs Across 18 Languages"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IMPLIRET",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ImpliRet: Benchmarking the Implicit Fact Retrieval Challenge",
+      "evidence": "\"IMPLIRET covers three reasoning categories: World Knowledge, Arithmetic, and Temporal.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ImpliRet: Benchmarking the Implicit Fact Retrieval Challenge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OK-VQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Century: A Framework and Dataset for Evaluating Historical Contextualisation of Sensitive Images",
+      "evidence": "OKVQA (Marino et al., 2019), Visual Common Sense Reasoning (VCR) (Zellers et al., 2019) and A-OKVQA (Schwenk et al., 2022) evaluate whether models are able to integrate outside knowledge in order to answer questions, covering a broad base of common-sense and world knowledge. (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Century: A Framework and Dataset for Evaluating Historical Contextualisation of Sensitive Images"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 12,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 10,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats knowledge reasoning as a latent question answering ability that combines factual or world knowledge with inference. Most definitions say it involves answering questions that require factual knowledge plus reasoning over concepts, though they differ on where the knowledge comes from: some describe stored world knowledge or knowledge held in the model\u2019s parameters, while others emphasize external facts, open-book information, or knowledge retrieved from a corpus. A narrower framing treats it as linking textual mentions to external facts in order to infer implicit geographic, cultural, or encyclopedic information needed for relevance."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not use a single label for this construct. Alongside knowledge reasoning, they use nearby names such as knowledge and reasoning, fact reasoning, world knowledge reasoning, and knowledge-intensive reasoning, with the shared core being factual knowledge plus inference. Some usages narrow the scope to world knowledge relations and implicit fact retrieval, while others cast it as open-domain generation or as a broad evaluation category, and papers also separate it from categories such as commonsense reasoning, mathematical reasoning, truthfulness, and conversational ability."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is benchmark-based: papers link knowledge reasoning to 10 measurement instruments and 1 behavioral indicator, but the reported measurements themselves are through datasets and benchmarks rather than the behavioral indicator. MMLU is the most frequent instrument, and papers also use ARC, CodeMixBench, CommonsenseQA, and IMPLIRET, plus 5 other instruments. Across these measures, the construct is tested through general knowledge and science question answering, code-mixed evaluation, implicit fact retrieval, open-book question answering, and tasks that ask models to integrate outside knowledge, so the measurements cover both broad factual question answering and narrower formulations centered on external or stored knowledge."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, papers report few non-measurement links. One paper claims a causal relationship from Question decomposition to Knowledge reasoning, describing decomposition of complex questions in knowledge-intensive reasoning tasks for more accurate answer inference. Another paper reports that Knowledge manipulation is related to Knowledge reasoning, with reasoning described alongside knowledge recall and transfer, and no correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats knowledge reasoning as a latent question answering ability that combines factual or world knowledge with inference. Most definitions say it involves answering questions that require factual knowledge plus reasoning over concepts, though they differ on where the knowledge comes from: some describe stored world knowledge or knowledge held in the model\u2019s parameters, while others emphasize external facts, open-book information, or knowledge retrieved from a corpus. A narrower framing treats it as linking textual mentions to external facts in order to infer implicit geographic, cultural, or encyclopedic information needed for relevance.\n\nSpace of facets. Papers do not use a single label for this construct. Alongside knowledge reasoning, they use nearby names such as knowledge and reasoning, fact reasoning, world knowledge reasoning, and knowledge-intensive reasoning, with the shared core being factual knowledge plus inference. Some usages narrow the scope to world knowledge relations and implicit fact retrieval, while others cast it as open-domain generation or as a broad evaluation category, and papers also separate it from categories such as commonsense reasoning, mathematical reasoning, truthfulness, and conversational ability.\n\nSpace of measurement. Operationalization is benchmark-based: papers link knowledge reasoning to 10 measurement instruments and 1 behavioral indicator, but the reported measurements themselves are through datasets and benchmarks rather than the behavioral indicator. MMLU is the most frequent instrument, and papers also use ARC, CodeMixBench, CommonsenseQA, and IMPLIRET, plus 5 other instruments. Across these measures, the construct is tested through general knowledge and science question answering, code-mixed evaluation, implicit fact retrieval, open-book question answering, and tasks that ask models to integrate outside knowledge, so the measurements cover both broad factual question answering and narrower formulations centered on external or stored knowledge.\n\nLinks. Beyond measurement, papers report few non-measurement links. One paper claims a causal relationship from Question decomposition to Knowledge reasoning, describing decomposition of complex questions in knowledge-intensive reasoning tasks for more accurate answer inference. Another paper reports that Knowledge manipulation is related to Knowledge reasoning, with reasoning described alongside knowledge recall and transfer, and no correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "BIG-Bench Extra Hard",
+      "CER: Confidence Enhanced Reasoning in LLMs"
+    ],
+    "emnlp25": [
+      "AgentPro: Enhancing LLM Agents with Automated Process Supervision",
+      "CodeMixBench: Evaluating Code-Mixing Capabilities of LLMs Across 18 Languages",
+      "ImpliRet: Benchmarking the Implicit Fact Retrieval Challenge",
+      "Infini-gram mini: Exact n-gram Search at the Internet Scale with FM-Index"
+    ],
+    "iclr25": [
+      "Weak to Strong Generalization for Large Language Models with Multi-capabilities"
+    ],
+    "icml25": [
+      "Impossible Videos"
+    ],
+    "neurips24": [
+      "Decompose, Analyze and Rethink: Solving Intricate Problems with Human-like Reasoning Cycle",
+      "Discovering Sparsity Allocation for Layer-wise Pruning of Large Language Models",
+      "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs"
+    ],
+    "iclr24": [
+      "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 4,
+    "iclr25": 1,
+    "icml25": 1,
+    "neurips24": 3,
+    "iclr24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

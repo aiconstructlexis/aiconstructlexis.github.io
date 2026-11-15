@@ -1,0 +1,145 @@
+{
+  "canonical_name": "Context retention",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats context retention as the ability to maintain, store, access, and use relevant information over long contexts, multiple conversational turns, or long generated sequences. Most definitions stay close to this long-context or multi-turn framing, though one paper makes the boundary explicit by defining information retention as storing and accessing relevant facts within a long context, distinct from reasoning over them in sequence. A smaller line uses the memory retention label more broadly, referring either to preserving knowledge not targeted for unlearning or to preserving recorded memories so they can support later recall.\n\nSpace of facets. Papers organize the construct mainly by setting: long and complex contexts, multi-turn dialogue or instruction streams, long output generation, and settings where later actions or function call results must use earlier context correctly. The clearest conceptual contrast is with sequential reasoning, while other quoted passages discuss it alongside coherence management and dynamic decision-making rather than as the same thing. The naming is not uniform: information retention, sustained context management, and memory retention are used for closely related long-context abilities, but memory retention is also used for untargeted knowledge preservation after unlearning and for later recall from recorded memories.\n\nSpace of measurement. No measurement instrument is linked to it. Papers link it to 2 behavioral indicators, Instruction following and Task completion, and to 1 construct, Coherence. In the quoted usages, it is examined through sequential instruction tasks, multi-turn long context queries or function call results, and long output generation over extended sequences; the reported outcomes mirror the definitions' focus on maintaining and using earlier information, because failures are described as loss of adherence to task instructions, incomplete task execution, and loss of coherence.\n\nLinks. Only causal links are reported. One paper claims a causal relationship from context retention to Coherence and to Instruction following, stating that memory retention issues often lead to loss of coherence and adherence to task instructions. Another paper claims a causal relationship from context retention to Task completion, reporting that agents can lose context during complex tasks or app transitions, which leads to incomplete task execution.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Context retention",
+    "Information retention",
+    "Sustained context management",
+    "Memory retention"
+  ],
+  "papers": [
+    "LoCt-Instruct: An Automatic Pipeline for Constructing Datasets of Logical Continuous Instructions",
+    "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs",
+    "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+    "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+    "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The capacity to store and access relevant facts within a long context, distinct from the ability to reason over them in sequence.",
+      "papers": [
+        "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs"
+      ],
+      "original_name": "Information retention"
+    },
+    {
+      "text": "The ability to maintain and utilize information presented over long and complex contexts or across multiple conversational turns.",
+      "papers": [
+        "LoCt-Instruct: An Automatic Pipeline for Constructing Datasets of Logical Continuous Instructions"
+      ],
+      "original_name": "Context retention"
+    },
+    {
+      "text": "The ability to maintain relevant conversational or task context across multiple turns and use it correctly in later actions.",
+      "papers": [
+        "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+      ],
+      "original_name": "Sustained context management"
+    },
+    {
+      "text": "The model's ability to maintain and access information and instructions over the course of generating a long sequence of text.",
+      "papers": [
+        "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs"
+      ],
+      "original_name": "Memory retention"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Coherence",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "evidence": "This highlights the memory retention issue in long-context models, which often leads to a loss of coherence and adherence to task instructions. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "evidence": "This highlights the memory retention issue in long-context models, which often leads to a loss of coherence and adherence to task instructions. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+      "evidence": "Memory retention mechanisms can be improved as well, especially for handling long, multi-step tasks that span multiple apps. Current agents often lose context during complex tasks or app transitions, which leads to incomplete task execution.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats context retention as the ability to maintain, store, access, and use relevant information over long contexts, multiple conversational turns, or long generated sequences. Most definitions stay close to this long-context or multi-turn framing, though one paper makes the boundary explicit by defining information retention as storing and accessing relevant facts within a long context, distinct from reasoning over them in sequence. A smaller line uses the memory retention label more broadly, referring either to preserving knowledge not targeted for unlearning or to preserving recorded memories so they can support later recall."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers organize the construct mainly by setting: long and complex contexts, multi-turn dialogue or instruction streams, long output generation, and settings where later actions or function call results must use earlier context correctly. The clearest conceptual contrast is with sequential reasoning, while other quoted passages discuss it alongside coherence management and dynamic decision-making rather than as the same thing. The naming is not uniform: information retention, sustained context management, and memory retention are used for closely related long-context abilities, but memory retention is also used for untargeted knowledge preservation after unlearning and for later recall from recorded memories."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it. Papers link it to 2 behavioral indicators, Instruction following and Task completion, and to 1 construct, Coherence. In the quoted usages, it is examined through sequential instruction tasks, multi-turn long context queries or function call results, and long output generation over extended sequences; the reported outcomes mirror the definitions' focus on maintaining and using earlier information, because failures are described as loss of adherence to task instructions, incomplete task execution, and loss of coherence."
+    },
+    {
+      "label": "Links.",
+      "text": "Only causal links are reported. One paper claims a causal relationship from context retention to Coherence and to Instruction following, stating that memory retention issues often lead to loss of coherence and adherence to task instructions. Another paper claims a causal relationship from context retention to Task completion, reporting that agents can lose context during complex tasks or app transitions, which leads to incomplete task execution."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats context retention as the ability to maintain, store, access, and use relevant information over long contexts, multiple conversational turns, or long generated sequences. Most definitions stay close to this long-context or multi-turn framing, though one paper makes the boundary explicit by defining information retention as storing and accessing relevant facts within a long context, distinct from reasoning over them in sequence. A smaller line uses the memory retention label more broadly, referring either to preserving knowledge not targeted for unlearning or to preserving recorded memories so they can support later recall.\n\nSpace of facets. Papers organize the construct mainly by setting: long and complex contexts, multi-turn dialogue or instruction streams, long output generation, and settings where later actions or function call results must use earlier context correctly. The clearest conceptual contrast is with sequential reasoning, while other quoted passages discuss it alongside coherence management and dynamic decision-making rather than as the same thing. The naming is not uniform: information retention, sustained context management, and memory retention are used for closely related long-context abilities, but memory retention is also used for untargeted knowledge preservation after unlearning and for later recall from recorded memories.\n\nSpace of measurement. No measurement instrument is linked to it. Papers link it to 2 behavioral indicators, Instruction following and Task completion, and to 1 construct, Coherence. In the quoted usages, it is examined through sequential instruction tasks, multi-turn long context queries or function call results, and long output generation over extended sequences; the reported outcomes mirror the definitions' focus on maintaining and using earlier information, because failures are described as loss of adherence to task instructions, incomplete task execution, and loss of coherence.\n\nLinks. Only causal links are reported. One paper claims a causal relationship from context retention to Coherence and to Instruction following, stating that memory retention issues often lead to loss of coherence and adherence to task instructions. Another paper claims a causal relationship from context retention to Task completion, reporting that agents can lose context during complex tasks or app transitions, which leads to incomplete task execution.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "LoCt-Instruct: An Automatic Pipeline for Constructing Datasets of Logical Continuous Instructions",
+      "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs"
+    ],
+    "iclr25": [
+      "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+    ],
+    "icml25": [
+      "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 2,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

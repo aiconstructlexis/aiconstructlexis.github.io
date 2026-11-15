@@ -1,0 +1,321 @@
+{
+  "canonical_name": "Agency",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats agency as a capacity for autonomous, purposeful action in an environment, usually over multiple steps or turns and often tied to planning, decision-making, and task completion. Definitions commonly describe acting without human intervention or external control, and one formulation explicitly equates agency with strategic decision-making through action selection that leads to different outcomes. Smaller lines of work narrow the construct to particular settings, such as operating systems and GUI interaction, software engineering environments, or practical deployment, while others frame it as goal-directed behavior sustained across turns rather than responses driven by immediate context or imitation.\n\nSpace of facets. In practice, papers break the construct into recurring subfunctions such as planning, acting in environments, tool use, long-context understanding, and real-world application. One line of work explicitly decomposes agentic capabilities into workflow, tool use or function call, long-context understanding, and real-world application, while other papers use neighboring labels such as autonomy, model autonomy, agent-oriented abilities, and goal-directed behavior for overlapping aspects. The terminology is therefore not fully uniform: some authors use it for a general-purpose agent capacity across diverse environments, whereas others use nearby terms for narrower facets such as tool selection or independent decision-making.\n\nSpace of measurement. Papers link agency to 5 measurement instruments, all task benchmarks or testbeds: AgentBench, AgentBoard, AndroidControl, GUI-Odyssey, and OSWorld. These instruments operationalize agency through diverse agent tasks, including standardized collections for evaluating LMs' agentic capabilities, mobile agent benchmarks, and a challenging OS agent testbed. Papers also link it to 1 behavioral indicator, but that link is used as an antecedent of agency rather than as a direct measure, so operationalization is mostly benchmark performance in interactive environments.\n\nLinks. Among the 4 linked constructs, coding ability and consistency are reported as related to agency. One paper ties coding ability to agency by stating that programming capabilities measured by HumanEval receive weight in defining agentic capabilities, and another relates agency to consistency by describing tasks with heavy reasoning or agentic demands as settings where models can occasionally achieve exceptional results while average performance falls short of demonstrated potential. Separately, papers claim causal relationships from grounding and world modeling to agency, and from Self-reflection to agency, describing emergent agentic abilities as strongly dependent on those abilities.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Agentic ability",
+    "Agentic capabilities",
+    "Agentic capability",
+    "Autonomy",
+    "Agent-oriented abilities",
+    "Agency",
+    "Model autonomy",
+    "Goal-directed behavior",
+    "Agentic abilities",
+    "Real-world application"
+  ],
+  "papers": [
+    "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+    "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+    "DataGen: Unified Synthetic Dataset Generation via Large Language Models",
+    "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+    "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+    "Moral Alignment for LLM Agents",
+    "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+    "ShortcutsBench: A Large-Scale Real-world Benchmark for API-based Agents",
+    "VideoWebArena: Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks",
+    "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+    "Guided Search Strategies in Non-Serializable Environments with Applications to Software Engineering Agents",
+    "LMRL Gym: Benchmarks for Multi-Turn Reinforcement Learning with Language Models",
+    "PaperBench: Evaluating AI\u2019s Ability to Replicate AI Research",
+    "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+  ],
+  "paper_count": 15,
+  "definitions": [
+    {
+      "text": "The general capacity to autonomously interact with operating systems and complete multi-step tasks through GUI interactions, encompassing planning, action execution, and environment response handling.",
+      "papers": [
+        "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+        "Guided Search Strategies in Non-Serializable Environments with Applications to Software Engineering Agents"
+      ],
+      "original_name": "Agentic capability"
+    },
+    {
+      "text": "The latent capacity of a model to act autonomously to accomplish tasks within an environment.",
+      "papers": [
+        "VideoWebArena: Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks"
+      ],
+      "original_name": "Agentic ability"
+    },
+    {
+      "text": "The ability of a model to act autonomously and purposefully to achieve complex goals in an environment.",
+      "papers": [
+        "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+        "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+      ],
+      "original_name": "Agentic capabilities"
+    },
+    {
+      "text": "The capacity of an embodied agent to make informed, independent decisions without external control.",
+      "papers": [
+        "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+        "PaperBench: Evaluating AI\u2019s Ability to Replicate AI Research"
+      ],
+      "original_name": "Autonomy"
+    },
+    {
+      "text": "The latent capacity to perform agent-like functions such as selecting tools or acting in tool-using workflows.",
+      "papers": [
+        "DataGen: Unified Synthetic Dataset Generation via Large Language Models"
+      ],
+      "original_name": "Agent-oriented abilities"
+    },
+    {
+      "text": "The capacity of a system to make strategic decisions by selecting actions in an environment that lead to different outcomes.",
+      "papers": [
+        "Moral Alignment for LLM Agents"
+      ],
+      "original_name": "Agency"
+    },
+    {
+      "text": "The capability of an AI agent to operate and solve complex, multi-step problems without human intervention.",
+      "papers": [
+        "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering"
+      ],
+      "original_name": "Model autonomy"
+    },
+    {
+      "text": "The latent tendency of an agent to pursue a specific objective over multiple interaction turns, rather than generating responses based on immediate context or imitation.",
+      "papers": [
+        "LMRL Gym: Benchmarks for Multi-Turn Reinforcement Learning with Language Models"
+      ],
+      "original_name": "Goal-directed behavior"
+    },
+    {
+      "text": "The latent capacity of an LLM to function as a general-purpose agent across diverse environments by perceiving, planning, and acting over multiple turns.",
+      "papers": [
+        "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents"
+      ],
+      "original_name": "Agentic abilities"
+    },
+    {
+      "text": "The latent ability to operate effectively in practical deployment scenarios requiring coordination of multiple capabilities such as tool use, planning, and environmental interaction.",
+      "papers": [
+        "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+      ],
+      "original_name": "Real-world application"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AgentBoard",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "We tested on two standardized agent evaluation benchmarks, AgentBench [57] and Agent-Board [61], each is a collection of diverse tasks for evaluating LMs\u2019 agentic capabilities. (Sec. 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AgentBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "We tested on two standardized agent evaluation benchmarks, AgentBench [57] and Agent-Board [61], each is a collection of diverse tasks for evaluating LMs\u2019 agentic capabilities. (Sec. 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Coding ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "We observe that the \ufb01tted weights assign signi\ufb01cant importance to programming capabilities (HumanEval) on both benchmarks, underscoring its signi\ufb01cance in de\ufb01ning the agentic capabilities of LMs. (Sec. 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Grounding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "evidence": "Emergent agentic abilities are strongly dependent on basic abilities like grounding, world modeling, and self-reflection.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World modeling",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "evidence": "Emergent agentic abilities are strongly dependent on basic abilities like grounding, world modeling, and self-reflection.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "evidence": "Emergent agentic abilities are strongly dependent on basic abilities like grounding, world modeling, and self-reflection.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OSWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "evidence": "In this study, we benchmark our approach on the challenging OS agent testbed, OSWorld (Xie et al., 2024). (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "OS-ATLAS: Foundation Action Model for Generalist GUI Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AndroidControl",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "evidence": "\u201cWe examine five distinct agent benchmarks across three different platforms: AndroidControl (Li et al., 2024) and GUI-Odyssey (Lu et al., 2024a) for mobile agents\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "OS-ATLAS: Foundation Action Model for Generalist GUI Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GUI-Odyssey",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "evidence": "\u201cWe examine five distinct agent benchmarks across three different platforms: AndroidControl (Li et al., 2024) and GUI-Odyssey (Lu et al., 2024a) for mobile agents\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "OS-ATLAS: Foundation Action Model for Generalist GUI Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Guided Search Strategies in Non-Serializable Environments with Applications to Software Engineering Agents",
+      "evidence": "when it comes to tasks requiring heavy reasoning or agentic capabilities, a major challenge persists: while the models occasionally achieve exceptional results, their average performance often falls short of their demonstrated potential. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Guided Search Strategies in Non-Serializable Environments with Applications to Software Engineering Agents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats agency as a capacity for autonomous, purposeful action in an environment, usually over multiple steps or turns and often tied to planning, decision-making, and task completion. Definitions commonly describe acting without human intervention or external control, and one formulation explicitly equates agency with strategic decision-making through action selection that leads to different outcomes. Smaller lines of work narrow the construct to particular settings, such as operating systems and GUI interaction, software engineering environments, or practical deployment, while others frame it as goal-directed behavior sustained across turns rather than responses driven by immediate context or imitation."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "In practice, papers break the construct into recurring subfunctions such as planning, acting in environments, tool use, long-context understanding, and real-world application. One line of work explicitly decomposes agentic capabilities into workflow, tool use or function call, long-context understanding, and real-world application, while other papers use neighboring labels such as autonomy, model autonomy, agent-oriented abilities, and goal-directed behavior for overlapping aspects. The terminology is therefore not fully uniform: some authors use it for a general-purpose agent capacity across diverse environments, whereas others use nearby terms for narrower facets such as tool selection or independent decision-making."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link agency to 5 measurement instruments, all task benchmarks or testbeds: AgentBench, AgentBoard, AndroidControl, GUI-Odyssey, and OSWorld. These instruments operationalize agency through diverse agent tasks, including standardized collections for evaluating LMs' agentic capabilities, mobile agent benchmarks, and a challenging OS agent testbed. Papers also link it to 1 behavioral indicator, but that link is used as an antecedent of agency rather than as a direct measure, so operationalization is mostly benchmark performance in interactive environments."
+    },
+    {
+      "label": "Links.",
+      "text": "Among the 4 linked constructs, coding ability and consistency are reported as related to agency. One paper ties coding ability to agency by stating that programming capabilities measured by HumanEval receive weight in defining agentic capabilities, and another relates agency to consistency by describing tasks with heavy reasoning or agentic demands as settings where models can occasionally achieve exceptional results while average performance falls short of demonstrated potential. Separately, papers claim causal relationships from grounding and world modeling to agency, and from Self-reflection to agency, describing emergent agentic abilities as strongly dependent on those abilities."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats agency as a capacity for autonomous, purposeful action in an environment, usually over multiple steps or turns and often tied to planning, decision-making, and task completion. Definitions commonly describe acting without human intervention or external control, and one formulation explicitly equates agency with strategic decision-making through action selection that leads to different outcomes. Smaller lines of work narrow the construct to particular settings, such as operating systems and GUI interaction, software engineering environments, or practical deployment, while others frame it as goal-directed behavior sustained across turns rather than responses driven by immediate context or imitation.\n\nSpace of facets. In practice, papers break the construct into recurring subfunctions such as planning, acting in environments, tool use, long-context understanding, and real-world application. One line of work explicitly decomposes agentic capabilities into workflow, tool use or function call, long-context understanding, and real-world application, while other papers use neighboring labels such as autonomy, model autonomy, agent-oriented abilities, and goal-directed behavior for overlapping aspects. The terminology is therefore not fully uniform: some authors use it for a general-purpose agent capacity across diverse environments, whereas others use nearby terms for narrower facets such as tool selection or independent decision-making.\n\nSpace of measurement. Papers link agency to 5 measurement instruments, all task benchmarks or testbeds: AgentBench, AgentBoard, AndroidControl, GUI-Odyssey, and OSWorld. These instruments operationalize agency through diverse agent tasks, including standardized collections for evaluating LMs' agentic capabilities, mobile agent benchmarks, and a challenging OS agent testbed. Papers also link it to 1 behavioral indicator, but that link is used as an antecedent of agency rather than as a direct measure, so operationalization is mostly benchmark performance in interactive environments.\n\nLinks. Among the 4 linked constructs, coding ability and consistency are reported as related to agency. One paper ties coding ability to agency by stating that programming capabilities measured by HumanEval receive weight in defining agentic capabilities, and another relates agency to consistency by describing tasks with heavy reasoning or agentic demands as settings where models can occasionally achieve exceptional results while average performance falls short of demonstrated potential. Separately, papers claim causal relationships from grounding and world modeling to agency, and from Self-reflection to agency, describing emergent agentic abilities as strongly dependent on those abilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+      "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+      "DataGen: Unified Synthetic Dataset Generation via Large Language Models",
+      "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+      "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+      "Moral Alignment for LLM Agents",
+      "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "ShortcutsBench: A Large-Scale Real-world Benchmark for API-based Agents",
+      "VideoWebArena: Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks"
+    ],
+    "icml25": [
+      "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "Guided Search Strategies in Non-Serializable Environments with Applications to Software Engineering Agents",
+      "LMRL Gym: Benchmarks for Multi-Turn Reinforcement Learning with Language Models",
+      "PaperBench: Evaluating AI\u2019s Ability to Replicate AI Research"
+    ],
+    "neurips24": [
+      "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 9,
+    "icml25": 4,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

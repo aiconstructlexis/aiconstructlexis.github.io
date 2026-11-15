@@ -1,0 +1,112 @@
+{
+  "canonical_name": "TweetEval",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers most commonly describe TweetEval as a multi-task benchmark for tweet analysis on social media, organized as six text classification tasks: emotion, hate speech, irony, offensive language, sentiment, and stance detection. One study states that it \"consists of 6 text classification tasks about tweet analysis on social media,\" while another presents it more narrowly as a benchmark of multiple Twitter-based NLP tasks and uses the emotion recognition and irony detection subsets.\n\nWhat it is claimed to measure. In the recorded relationships, papers use TweetEval to measure 2 behavioral indicators, Emotion analysis and Irony detection, and 1 construct, Natural language understanding. The task-focused uses come from papers that explicitly take its emotion recognition and irony detection components, while another paper reports conducting experiments on TweetEval \"for language understanding,\" so the reported measurement claims span both specific behaviors and a broader construct.\n\nSpace of uses. Across the cited work, TweetEval is positioned as a benchmark for multi-task or multi-class evaluation rather than as a standalone single-task test. One paper uses it alongside AffectEval as one of \"two multi-task benchmarks\" for language understanding, and another draws only on the emotion recognition and irony detection subsets. No other measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TweetEval"
+  ],
+  "papers": [
+    "Impartial Multi-task Representation Learning via Variance-invariant Probabilistic Decoding",
+    "Mixtures of In-Context Learners",
+    "Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages",
+    "Studying Rhetorically Ambiguous Questions"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Multi-task benchmark for tweet analysis consisting of six classification tasks: emotion, hate speech, irony, offensive language, sentiment, and stance detection.",
+      "papers": [
+        "Impartial Multi-task Representation Learning via Variance-invariant Probabilistic Decoding",
+        "Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages"
+      ],
+      "original_name": "TweetEval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Emotion analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages",
+      "evidence": "Multi-class tasks include emotion recognition (Mohammad et al., 2018) and irony detection (Van Hee et al., 2018) from the TweetEval benchmark (Barbieri et al., 2020)... (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Irony detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages",
+      "evidence": "Multi-class tasks include emotion recognition (Mohammad et al., 2018) and irony detection (Van Hee et al., 2018) from the TweetEval benchmark (Barbieri et al., 2020)... (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Impartial Multi-task Representation Learning via Variance-invariant Probabilistic Decoding",
+      "evidence": "We conduct experiments on two multi-task benchmarks, TweetEval and AffectEval for language understanding. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Impartial Multi-task Representation Learning via Variance-invariant Probabilistic Decoding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers most commonly describe TweetEval as a multi-task benchmark for tweet analysis on social media, organized as six text classification tasks: emotion, hate speech, irony, offensive language, sentiment, and stance detection. One study states that it \"consists of 6 text classification tasks about tweet analysis on social media,\" while another presents it more narrowly as a benchmark of multiple Twitter-based NLP tasks and uses the emotion recognition and irony detection subsets."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "In the recorded relationships, papers use TweetEval to measure 2 behavioral indicators, Emotion analysis and Irony detection, and 1 construct, Natural language understanding. The task-focused uses come from papers that explicitly take its emotion recognition and irony detection components, while another paper reports conducting experiments on TweetEval \"for language understanding,\" so the reported measurement claims span both specific behaviors and a broader construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Across the cited work, TweetEval is positioned as a benchmark for multi-task or multi-class evaluation rather than as a standalone single-task test. One paper uses it alongside AffectEval as one of \"two multi-task benchmarks\" for language understanding, and another draws only on the emotion recognition and irony detection subsets. No other measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Papers most commonly describe TweetEval as a multi-task benchmark for tweet analysis on social media, organized as six text classification tasks: emotion, hate speech, irony, offensive language, sentiment, and stance detection. One study states that it \"consists of 6 text classification tasks about tweet analysis on social media,\" while another presents it more narrowly as a benchmark of multiple Twitter-based NLP tasks and uses the emotion recognition and irony detection subsets.\n\nWhat it is claimed to measure. In the recorded relationships, papers use TweetEval to measure 2 behavioral indicators, Emotion analysis and Irony detection, and 1 construct, Natural language understanding. The task-focused uses come from papers that explicitly take its emotion recognition and irony detection components, while another paper reports conducting experiments on TweetEval \"for language understanding,\" so the reported measurement claims span both specific behaviors and a broader construct.\n\nSpace of uses. Across the cited work, TweetEval is positioned as a benchmark for multi-task or multi-class evaluation rather than as a standalone single-task test. One paper uses it alongside AffectEval as one of \"two multi-task benchmarks\" for language understanding, and another draws only on the emotion recognition and irony detection subsets. No other measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Impartial Multi-task Representation Learning via Variance-invariant Probabilistic Decoding",
+      "Mixtures of In-Context Learners"
+    ],
+    "emnlp25": [
+      "Inceptive Transformers: Enhancing Contextual Representations through Multi-Scale Feature Learning Across Domains and Languages",
+      "Studying Rhetorically Ambiguous Questions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "canonical_name": "Mind2Web",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, the prevailing usage is as a real-world web navigation benchmark or dataset built from human demonstrations on real websites. Most definitions describe open-domain, action-annotated tasks, often noting about 2K instructions across 137 websites, and emphasize generalization across tasks, websites, and domains through cross-task, cross-website, and cross-domain settings. Papers differ in emphasis: some call it an offline task planning evaluation, some a demonstration dataset for action prediction, and one paper recasts its tasks as dynamic how-to questions with multiple possible outcomes per step. Evaluation is commonly described with step success rate and element accuracy, while some papers also mention action F1, task-level success rate, or step accuracy.\n\nWhat it is claimed to measure. Papers use it to measure 3 behavioral indicators and 2 constructs. The prevailing measurement claim is web navigation: several papers describe Mind2Web as evaluating agents' capabilities on web navigation tasks or their capability of performing complex instructions on real-world websites. A smaller line of work uses it for action prediction, especially generalization across tasks, websites, and domains, and one paper each reports it as measuring planning, privacy leakage through PII-related action steps, and adaptability.\n\nSpace of uses. No measurement instrument is explicitly linked to it. In use, papers most often position it as an evaluation benchmark, sometimes paired with WebArena for web navigation evaluation, while other papers use its cross-website and cross-domain test splits to examine domain generality. A smaller line of work treats it as a data source, for example collecting trajectories from it or selecting it as the web-navigation source for benchmark curation and reward-model evaluation.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Mind2Web"
+  ],
+  "papers": [
+    "AdaptAgent: Adapting Multimodal Web Agents with Few-Shot Learning from Human Demonstrations",
+    "Agent-RewardBench: Towards a Unified Benchmark for Reward Modeling across Perception, Planning, and Safety in Real-World Multimodal Agents",
+    "Browsing Like Human: A Multimodal Web Agent with Experiential Fast-and-Slow Thinking",
+    "GUICourse: From General Vision Language Model to Versatile GUI Agent",
+    "Small Models, Big Results: Achieving Superior Intent Extraction through Decomposition",
+    "Thread: A Logic-Based Data Organization Paradigm for How-To Question Answering with Retrieval Augmented Generation",
+    "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+    "Multimodal Web Navigation with Instruction-Finetuned Foundation Models",
+    "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+    "AgentStudio: A Toolkit for Building General Virtual Agents",
+    "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+    "Grounding Multimodal Large Language Model in GUI World",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation",
+    "AdvAgent: Controllable Blackbox Red-teaming on Web Agents",
+    "Agent Workflow Memory",
+    "Synatra: Turning Indirect Knowledge into Direct Demonstrations for Digital Agents at Scale",
+    "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+  ],
+  "paper_count": 18,
+  "definitions": [
+    {
+      "text": "Real-world web navigation benchmark containing human demonstrations across open-domain websites, assessing generalization across tasks, websites, and domains using step success rate and element accuracy.",
+      "papers": [
+        "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+        "Multimodal Web Navigation with Instruction-Finetuned Foundation Models",
+        "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+        "AgentStudio: A Toolkit for Building General Virtual Agents",
+        "Agent-RewardBench: Towards a Unified Benchmark for Reward Modeling across Perception, Planning, and Safety in Real-World Multimodal Agents",
+        "Agent Workflow Memory",
+        "Thread: A Logic-Based Data Organization Paradigm for How-To Question Answering with Retrieval Augmented Generation",
+        "Synatra: Turning Indirect Knowledge into Direct Demonstrations for Digital Agents at Scale",
+        "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+      ],
+      "original_name": "Mind2Web"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Web navigation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation",
+      "evidence": "We adopt Mind2Web and WebArena for evaluation for their generalizability and resemblance of real-world web interactions. (Section 2)",
+      "paper_count": 6,
+      "paper_weight": 6.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation",
+          "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+          "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+          "Grounding Multimodal Large Language Model in GUI World"
+        ],
+        "icml25": [
+          "Agent Workflow Memory"
+        ],
+        "emnlp25": [
+          "Thread: A Logic-Based Data Organization Paradigm for How-To Question Answering with Retrieval Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Action prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+      "evidence": "It provides action prediction tasks that measure the generalization of LLMs across the tasks, websites, and their domains (e.g. travel, shopping) (Section 4.2).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+          "Multimodal Web Navigation with Instruction-Finetuned Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+      "evidence": "SoTA performance on Mind2Web, an of\ufb02ine task planning evaluation (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Privacy leakage",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+      "evidence": "We collect 177 action steps that involve diverse PII categories on realistic websites from the Mind2Web dataset, and conduct experiments using one of the most capable generalist web agent frameworks to date. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Grounding Multimodal Large Language Model in GUI World",
+      "evidence": "Our approach demonstrates superior performance in task accuracy and adaptability, as validated by benchmarks such as ScreenSpot, MiniWob, AITW, and Mind2Web.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Grounding Multimodal Large Language Model in GUI World"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, the prevailing usage is as a real-world web navigation benchmark or dataset built from human demonstrations on real websites. Most definitions describe open-domain, action-annotated tasks, often noting about 2K instructions across 137 websites, and emphasize generalization across tasks, websites, and domains through cross-task, cross-website, and cross-domain settings. Papers differ in emphasis: some call it an offline task planning evaluation, some a demonstration dataset for action prediction, and one paper recasts its tasks as dynamic how-to questions with multiple possible outcomes per step. Evaluation is commonly described with step success rate and element accuracy, while some papers also mention action F1, task-level success rate, or step accuracy."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use it to measure 3 behavioral indicators and 2 constructs. The prevailing measurement claim is web navigation: several papers describe Mind2Web as evaluating agents' capabilities on web navigation tasks or their capability of performing complex instructions on real-world websites. A smaller line of work uses it for action prediction, especially generalization across tasks, websites, and domains, and one paper each reports it as measuring planning, privacy leakage through PII-related action steps, and adaptability."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is explicitly linked to it. In use, papers most often position it as an evaluation benchmark, sometimes paired with WebArena for web navigation evaluation, while other papers use its cross-website and cross-domain test splits to examine domain generality. A smaller line of work treats it as a data source, for example collecting trajectories from it or selecting it as the web-navigation source for benchmark curation and reward-model evaluation."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, the prevailing usage is as a real-world web navigation benchmark or dataset built from human demonstrations on real websites. Most definitions describe open-domain, action-annotated tasks, often noting about 2K instructions across 137 websites, and emphasize generalization across tasks, websites, and domains through cross-task, cross-website, and cross-domain settings. Papers differ in emphasis: some call it an offline task planning evaluation, some a demonstration dataset for action prediction, and one paper recasts its tasks as dynamic how-to questions with multiple possible outcomes per step. Evaluation is commonly described with step success rate and element accuracy, while some papers also mention action F1, task-level success rate, or step accuracy.\n\nWhat it is claimed to measure. Papers use it to measure 3 behavioral indicators and 2 constructs. The prevailing measurement claim is web navigation: several papers describe Mind2Web as evaluating agents' capabilities on web navigation tasks or their capability of performing complex instructions on real-world websites. A smaller line of work uses it for action prediction, especially generalization across tasks, websites, and domains, and one paper each reports it as measuring planning, privacy leakage through PII-related action steps, and adaptability.\n\nSpace of uses. No measurement instrument is explicitly linked to it. In use, papers most often position it as an evaluation benchmark, sometimes paired with WebArena for web navigation evaluation, while other papers use its cross-website and cross-domain test splits to examine domain generality. A smaller line of work treats it as a data source, for example collecting trajectories from it or selecting it as the web-navigation source for benchmark curation and reward-model evaluation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "AdaptAgent: Adapting Multimodal Web Agents with Few-Shot Learning from Human Demonstrations",
+      "Agent-RewardBench: Towards a Unified Benchmark for Reward Modeling across Perception, Planning, and Safety in Real-World Multimodal Agents",
+      "Browsing Like Human: A Multimodal Web Agent with Experiential Fast-and-Slow Thinking",
+      "GUICourse: From General Vision Language Model to Versatile GUI Agent"
+    ],
+    "emnlp25": [
+      "Small Models, Big Results: Achieving Superior Intent Extraction through Decomposition",
+      "Thread: A Logic-Based Data Organization Paradigm for How-To Question Answering with Retrieval Augmented Generation"
+    ],
+    "iclr24": [
+      "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+      "Multimodal Web Navigation with Instruction-Finetuned Foundation Models",
+      "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control"
+    ],
+    "iclr25": [
+      "AgentStudio: A Toolkit for Building General Virtual Agents",
+      "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+      "Grounding Multimodal Large Language Model in GUI World",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation"
+    ],
+    "icml25": [
+      "AdvAgent: Controllable Blackbox Red-teaming on Web Agents",
+      "Agent Workflow Memory"
+    ],
+    "neurips24": [
+      "Synatra: Turning Indirect Knowledge into Direct Demonstrations for Digital Agents at Scale",
+      "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 2,
+    "iclr24": 3,
+    "iclr25": 5,
+    "icml25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

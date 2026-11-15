@@ -1,0 +1,218 @@
+{
+  "canonical_name": "OSWorld",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing usage treats OSWorld as a real computer environment and benchmark for open-ended computer tasks with multimodal or OS agents. Definitions commonly describe it as an interactive testbed spanning Ubuntu, Windows, and macOS, with 369 tasks involving real web and desktop applications and execution-based evaluation; some authors stress that agents must interact with the operating system step by step and wait for a response before continuing, while another paper uses it more briefly as a desktop virtual agent benchmark for trajectory collection and evaluation.\n\nWhat it is claimed to measure. Claims about what OSWorld measures are spread across five constructs and one behavioral indicator rather than concentrating on a single target. Papers most often use it to measure Generalization, while smaller lines of work use it for Adaptability, Agency, Commonsense reasoning, and Robustness; it is also linked to one behavioral indicator, with one benchmark description saying results reveal weaknesses in GUI grounding and operational knowledge.\n\nSpace of uses. In use, papers position OSWorld as a challenging or comprehensive benchmark for evaluating multi-step task completion across applications. Papers relate it to Execution-based evaluation, with one description saying it supports task setup, interactive learning, and execution-based evaluation of open-ended computer tasks, and to a Human baseline; one paper also uses it alongside Android World and other benchmarks to collect agent action trajectories and run evaluations.\n\nConcerns raised. The concerns visible in these papers center on difficulty and sensitivity during evaluation. One paper reports that superficial changes can lead to performance drops of 60% and even 80%, and another says the human performance study found OSWorld tasks more time-consuming and challenging than those in prior work.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "OSWORLD",
+    "OSWorld"
+  ],
+  "papers": [
+    "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+    "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+    "Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments",
+    "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+    "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+    "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+    "Boosting Virtual Agent Learning and Reasoning: A Step-Wise, Multi-Dimensional, and Generalist Reward Model with Benchmark",
+    "Cradle: Empowering Foundation Agents towards General Computer Control",
+    "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+    "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "A scalable, real computer environment and benchmark for evaluating multimodal agents on open-ended computer tasks across Ubuntu, Windows, and macOS, featuring 369 tasks with execution-based evaluation.",
+      "papers": [
+        "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+      ],
+      "original_name": "OSWORLD"
+    },
+    {
+      "text": "An interactive OS agent testbed environment where agents must interact with the operating system at each step and wait for responses before proceeding, evaluating multi-step task completion across various applications.",
+      "papers": [
+        "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+        "Boosting Virtual Agent Learning and Reasoning: A Step-Wise, Multi-Dimensional, and Generalist Reward Model with Benchmark"
+      ],
+      "original_name": "OSWorld"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "evidence": "To further evaluate the generalization capabilities of our model, we tested it on OSWorld, a unified computer environment designed for multimodal agents. (Section 4.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+          "Cradle: Empowering Foundation Agents towards General Computer Control"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Action grounding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "evidence": "Extensive evaluation of state-of-the-art LLM/VLM agents on OSWORLD reveals deficiencies in their ability to serve as computer assistants. While humans accomplish 72.4% of the tasks, the best agents achieve <12.2%, struggling with GUI grounding and operational knowledge. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "evidence": "It prioritizes a balanced benchmark across eight key applications... highlighting the need for varied operational skills, including commonsense reasoning, software navigation, and precise input control. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "evidence": "We find that current agents are not robust to these superficial changes, which lead to performance drops of 60% and even 80%. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Agency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "evidence": "In this study, we benchmark our approach on the challenging OS agent testbed, OSWorld (Xie et al., 2024). (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "OS-ATLAS: Foundation Action Model for Generalist GUI Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+      "evidence": "On the OSWorld (Xie et al., 2024b) and AndroidWorld (Rawles et al., 2024) benchmarks, OSCAR consistently surpassed other agents... demonstrating superior adaptability across real-time dynamic OS tasks. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Execution-based evaluation",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "evidence": "\u201csupporting task setup, interactive learning, and execution-based evaluation of open-ended computer tasks\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human baseline",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "evidence": "The human performance study indicates that task examples from OSWORLD are more time-consuming and challenging compared to those in prior work. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing usage treats OSWorld as a real computer environment and benchmark for open-ended computer tasks with multimodal or OS agents. Definitions commonly describe it as an interactive testbed spanning Ubuntu, Windows, and macOS, with 369 tasks involving real web and desktop applications and execution-based evaluation; some authors stress that agents must interact with the operating system step by step and wait for a response before continuing, while another paper uses it more briefly as a desktop virtual agent benchmark for trajectory collection and evaluation."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Claims about what OSWorld measures are spread across five constructs and one behavioral indicator rather than concentrating on a single target. Papers most often use it to measure Generalization, while smaller lines of work use it for Adaptability, Agency, Commonsense reasoning, and Robustness; it is also linked to one behavioral indicator, with one benchmark description saying results reveal weaknesses in GUI grounding and operational knowledge."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers position OSWorld as a challenging or comprehensive benchmark for evaluating multi-step task completion across applications. Papers relate it to Execution-based evaluation, with one description saying it supports task setup, interactive learning, and execution-based evaluation of open-ended computer tasks, and to a Human baseline; one paper also uses it alongside Android World and other benchmarks to collect agent action trajectories and run evaluations."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "The concerns visible in these papers center on difficulty and sensitivity during evaluation. One paper reports that superficial changes can lead to performance drops of 60% and even 80%, and another says the human performance study found OSWorld tasks more time-consuming and challenging than those in prior work."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing usage treats OSWorld as a real computer environment and benchmark for open-ended computer tasks with multimodal or OS agents. Definitions commonly describe it as an interactive testbed spanning Ubuntu, Windows, and macOS, with 369 tasks involving real web and desktop applications and execution-based evaluation; some authors stress that agents must interact with the operating system step by step and wait for a response before continuing, while another paper uses it more briefly as a desktop virtual agent benchmark for trajectory collection and evaluation.\n\nWhat it is claimed to measure. Claims about what OSWorld measures are spread across five constructs and one behavioral indicator rather than concentrating on a single target. Papers most often use it to measure Generalization, while smaller lines of work use it for Adaptability, Agency, Commonsense reasoning, and Robustness; it is also linked to one behavioral indicator, with one benchmark description saying results reveal weaknesses in GUI grounding and operational knowledge.\n\nSpace of uses. In use, papers position OSWorld as a challenging or comprehensive benchmark for evaluating multi-step task completion across applications. Papers relate it to Execution-based evaluation, with one description saying it supports task setup, interactive learning, and execution-based evaluation of open-ended computer tasks, and to a Human baseline; one paper also uses it alongside Android World and other benchmarks to collect agent action trajectories and run evaluations.\n\nConcerns raised. The concerns visible in these papers center on difficulty and sensitivity during evaluation. One paper reports that superficial changes can lead to performance drops of 60% and even 80%, and another says the human performance study found OSWorld tasks more time-consuming and challenging than those in prior work.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+      "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+      "Learn-by-interact: A Data-Centric Framework For Self-Adaptive Agents in Realistic Environments",
+      "OS-ATLAS: Foundation Action Model for Generalist GUI Agents",
+      "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning"
+    ],
+    "icml25": [
+      "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "Boosting Virtual Agent Learning and Reasoning: A Step-Wise, Multi-Dimensional, and Generalist Reward Model with Benchmark",
+      "Cradle: Empowering Foundation Agents towards General Computer Control"
+    ],
+    "neurips24": [
+      "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5,
+    "icml25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

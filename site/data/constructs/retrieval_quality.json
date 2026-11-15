@@ -1,0 +1,99 @@
+{
+  "canonical_name": "Retrieval quality",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, retrieval quality is framed around the quality of what the retrieval stage brings back. Definitions emphasize retrieving \"informative, non-redundant, and relevant\" documents or facts, or retrieving information that is sufficiently detailed and complete for complex questions. A narrower framing treats it as the outcome of reducing irrelevant facts in the retrieved subgraph, so the main difference is whether authors describe a broad retrieval-quality property or foreground depth and completeness versus noise reduction.\n\nSpace of facets. Papers use closely related labels to foreground different aspects of the construct: \"knowledge retrieval depth\" focuses on detailed and complete retrieval, while \"retrieval noise reduction\" focuses on minimizing irrelevant facts. Some descriptions also pair retrieval quality with retrieval fidelity, document retrieval accuracy, and more precise query formulation, but no paper explicitly links it to other constructs through nesting, equivalence, or contrast.\n\nSpace of measurement. Operationalization is narrow in the linked literature: retrieval quality is linked to 1 measurement instrument, HotpotQA, and to no behavioral indicators. In that use, HotpotQA's evaluation script measures F1 score, precision, and recall between retrieved chunks and referenced facts. This operationalization most directly reflects the definitions that stress relevant retrieval, while the depth/completeness and noise-reduction framings are not separately linked to instruments or indicators.\n\nLinks. The only reported relationship is a measured_by link: retrieval quality is measured by HotpotQA, using its evaluation script to compare retrieved chunks with referenced facts through F1, precision, and recall. No papers report causal, correlational, or other related links to additional constructs or indicators.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Retrieval quality",
+    "Knowledge retrieval depth",
+    "Retrieval noise reduction"
+  ],
+  "papers": [
+    "D-RAG: Differentiable Retrieval-Augmented Generation for Knowledge Graph Question Answering",
+    "StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization",
+    "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The degree to which the model retrieves informative, non-redundant, and relevant documents during a search process, reflecting its strategic use of external knowledge sources.",
+      "papers": [
+        "StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization"
+      ],
+      "original_name": "Retrieval quality"
+    },
+    {
+      "text": "The extent to which a system can retrieve sufficiently detailed and complete information for answering complex questions.",
+      "papers": [
+        "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation"
+      ],
+      "original_name": "Knowledge retrieval depth"
+    },
+    {
+      "text": "The observable outcome of a retrieval process that minimizes the number of irrelevant facts included in the retrieved subgraph.",
+      "papers": [
+        "D-RAG: Differentiable Retrieval-Augmented Generation for Knowledge Graph Question Answering"
+      ],
+      "original_name": "Retrieval noise reduction"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "evidence": "\u201cFor retrieval quality, we use the evaluation script provided by HotpotQA to measure the F1 score, precision, and recall between the retrieved chunks and referenced facts.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Knowledge Graph-Guided Retrieval Augmented Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, retrieval quality is framed around the quality of what the retrieval stage brings back. Definitions emphasize retrieving \"informative, non-redundant, and relevant\" documents or facts, or retrieving information that is sufficiently detailed and complete for complex questions. A narrower framing treats it as the outcome of reducing irrelevant facts in the retrieved subgraph, so the main difference is whether authors describe a broad retrieval-quality property or foreground depth and completeness versus noise reduction."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use closely related labels to foreground different aspects of the construct: \"knowledge retrieval depth\" focuses on detailed and complete retrieval, while \"retrieval noise reduction\" focuses on minimizing irrelevant facts. Some descriptions also pair retrieval quality with retrieval fidelity, document retrieval accuracy, and more precise query formulation, but no paper explicitly links it to other constructs through nesting, equivalence, or contrast."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow in the linked literature: retrieval quality is linked to 1 measurement instrument, HotpotQA, and to no behavioral indicators. In that use, HotpotQA's evaluation script measures F1 score, precision, and recall between retrieved chunks and referenced facts. This operationalization most directly reflects the definitions that stress relevant retrieval, while the depth/completeness and noise-reduction framings are not separately linked to instruments or indicators."
+    },
+    {
+      "label": "Links.",
+      "text": "The only reported relationship is a measured_by link: retrieval quality is measured by HotpotQA, using its evaluation script to compare retrieved chunks with referenced facts through F1, precision, and recall. No papers report causal, correlational, or other related links to additional constructs or indicators."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, retrieval quality is framed around the quality of what the retrieval stage brings back. Definitions emphasize retrieving \"informative, non-redundant, and relevant\" documents or facts, or retrieving information that is sufficiently detailed and complete for complex questions. A narrower framing treats it as the outcome of reducing irrelevant facts in the retrieved subgraph, so the main difference is whether authors describe a broad retrieval-quality property or foreground depth and completeness versus noise reduction.\n\nSpace of facets. Papers use closely related labels to foreground different aspects of the construct: \"knowledge retrieval depth\" focuses on detailed and complete retrieval, while \"retrieval noise reduction\" focuses on minimizing irrelevant facts. Some descriptions also pair retrieval quality with retrieval fidelity, document retrieval accuracy, and more precise query formulation, but no paper explicitly links it to other constructs through nesting, equivalence, or contrast.\n\nSpace of measurement. Operationalization is narrow in the linked literature: retrieval quality is linked to 1 measurement instrument, HotpotQA, and to no behavioral indicators. In that use, HotpotQA's evaluation script measures F1 score, precision, and recall between retrieved chunks and referenced facts. This operationalization most directly reflects the definitions that stress relevant retrieval, while the depth/completeness and noise-reduction framings are not separately linked to instruments or indicators.\n\nLinks. The only reported relationship is a measured_by link: retrieval quality is measured by HotpotQA, using its evaluation script to compare retrieved chunks with referenced facts through F1, precision, and recall. No papers report causal, correlational, or other related links to additional constructs or indicators.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "D-RAG: Differentiable Retrieval-Augmented Generation for Knowledge Graph Question Answering",
+      "StepSearch: Igniting LLMs Search Ability via Step-Wise Proximal Policy Optimization"
+    ],
+    "iclr25": [
+      "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

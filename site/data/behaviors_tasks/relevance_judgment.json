@@ -1,0 +1,107 @@
+{
+  "canonical_name": "Relevance judgment",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, it is treated as evaluating retrieved or given text against a query, question, task, or topic and making an explicit relevance judgment. Most formulations center on whether a document or passage is relevant or provides useful information for solving the task, while another framing emphasizes how well a piece of text aligns with a query or topic under semantic criteria. One formulation further requires the model to analyze documents one by one, produce reasoning chains, and then give a final judgement with an explanation.\n\nVariants. Papers use closely related variants: document relevance assessment, passage relevance assessment, and text relevance assessment. They differ mainly in the unit being judged, retrieved documents, retrieved passages, or generic text, and in the criterion applied, relevance to a question, usefulness for solving the task, or semantic alignment to a query or topic.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, the papers describe direct elicitation through relevance decisions, such as asking for per-document analysis and a final judgement with explanation, predicting ISREL for a passage given x, d and yt, or assessing semantic alignment precision.\n\nWhat it is taken as evidence of. No construct is linked to it, so the papers do not specify a broader construct that this behavior is taken to indicate.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Document relevance assessment",
+    "Passage relevance assessment",
+    "Text relevance assessment"
+  ],
+  "papers": [
+    "ProxAnn: Use-Oriented Evaluations of Topic Models and Document Clustering",
+    "GuideBench: Benchmarking Domain-Oriented Guideline Following for LLM Agents",
+    "The Ranking Blind Spot: Decision Hijacking in LLM-based Text Ranking",
+    "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection",
+    "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction",
+    "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions",
+    "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The observable task of evaluating one or more retrieved documents and making an explicit judgment about their relevance to a given query.",
+      "papers": [
+        "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction"
+      ],
+      "original_name": "Document relevance assessment"
+    },
+    {
+      "text": "Evaluating whether a retrieved passage provides useful information for solving the given task.",
+      "papers": [
+        "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
+      ],
+      "original_name": "Passage relevance assessment"
+    },
+    {
+      "text": "The task of evaluating how well a piece of text aligns with a given query or topic based on specific semantic criteria.",
+      "papers": [
+        "GuideBench: Benchmarking Domain-Oriented Guideline Following for LLM Agents"
+      ],
+      "original_name": "Text relevance assessment"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, it is treated as evaluating retrieved or given text against a query, question, task, or topic and making an explicit relevance judgment. Most formulations center on whether a document or passage is relevant or provides useful information for solving the task, while another framing emphasizes how well a piece of text aligns with a query or topic under semantic criteria. One formulation further requires the model to analyze documents one by one, produce reasoning chains, and then give a final judgement with an explanation."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use closely related variants: document relevance assessment, passage relevance assessment, and text relevance assessment. They differ mainly in the unit being judged, retrieved documents, retrieved passages, or generic text, and in the criterion applied, relevance to a question, usefulness for solving the task, or semantic alignment to a query or topic."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Instead, the papers describe direct elicitation through relevance decisions, such as asking for per-document analysis and a final judgement with explanation, predicting ISREL for a passage given x, d and yt, or assessing semantic alignment precision."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it, so the papers do not specify a broader construct that this behavior is taken to indicate."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, it is treated as evaluating retrieved or given text against a query, question, task, or topic and making an explicit relevance judgment. Most formulations center on whether a document or passage is relevant or provides useful information for solving the task, while another framing emphasizes how well a piece of text aligns with a query or topic under semantic criteria. One formulation further requires the model to analyze documents one by one, produce reasoning chains, and then give a final judgement with an explanation.\n\nVariants. Papers use closely related variants: document relevance assessment, passage relevance assessment, and text relevance assessment. They differ mainly in the unit being judged, retrieved documents, retrieved passages, or generic text, and in the criterion applied, relevance to a question, usefulness for solving the task, or semantic alignment to a query or topic.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, the papers describe direct elicitation through relevance decisions, such as asking for per-document analysis and a final judgement with explanation, predicting ISREL for a passage given x, d and yt, or assessing semantic alignment precision.\n\nWhat it is taken as evidence of. No construct is linked to it, so the papers do not specify a broader construct that this behavior is taken to indicate.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "ProxAnn: Use-Oriented Evaluations of Topic Models and Document Clustering",
+      "GuideBench: Benchmarking Domain-Oriented Guideline Following for LLM Agents"
+    ],
+    "emnlp25": [
+      "The Ranking Blind Spot: Decision Hijacking in LLM-based Text Ranking"
+    ],
+    "iclr25": [
+      "Training Large Language Models for Retrieval-Augmented Question Answering through Backtracking Correction"
+    ],
+    "naacl25": [
+      "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions"
+    ],
+    "neurips24": [
+      "AMOR: A Recipe for Building Adaptable Modular Knowledge Agents Through Process Feedback"
+    ],
+    "iclr24": [
+      "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 1,
+    "iclr25": 1,
+    "naacl25": 1,
+    "neurips24": 1,
+    "iclr24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

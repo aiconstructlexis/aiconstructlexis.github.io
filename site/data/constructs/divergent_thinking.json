@@ -1,0 +1,122 @@
+{
+  "canonical_name": "Divergent thinking",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most commonly, papers treat divergent thinking as the capacity to generate multiple distinct, novel, or unconventional solution pathways from the same task or starting point, sometimes by varying in-context examples and few-shot prompts. Some definitions add that it reflects adaptability to explore new environments or constraints and to produce alternatives not previously used in the human solution space. A smaller line of work uses the label \"divergent reasoning\" for generating multiple plausible connections and hypotheses from limited expert knowledge, so the definitions vary between alternative solution generation for a task and extrapolation from sparse knowledge.\n\nSpace of facets. Papers often discuss it in relation to Creativity, and one formulation explicitly presents creativity as consisting of convergent thinking and divergent thinking, with the latter tied to adaptability under new environments or constraints. Related labels are also used for more specific processes: a \"divergent thoughts\" process is described as retrieving relevant demos and generating different few-shot prompts, while \"divergent reasoning\" is described as extrapolating expert triplets to correlated queried concepts through veracity extrapolation.\n\nSpace of measurement. Papers do not link it to a measurement instrument or behavioral indicator. When measurement is discussed, it appears through named tests or scores rather than linked benchmark relations: the DAT and AUT are described as psychological tests for human divergent thinking, higher DSI values are said to indicate more divergent thinking, and one study says its NEOGAUGE score mainly considers H-creativity measurement. These discussions focus on diversity, echoing definitions that emphasize multiple distinct or unconventional outputs.\n\nLinks. Papers frequently relate divergent thinking to Creativity. In those accounts, generating diverse solutions is described as a hallmark of human creativity, and one framing places divergent thinking alongside convergent thinking within creativity. Only one paper claims a causal relationship from Divergent thinking to Robustness, stating that this divergent reasoning enhances robustness.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Divergent thinking",
+    "Divergent reasoning"
+  ],
+  "papers": [
+    "Diverse, not Short: A Length-Controlled Data Selection Strategy for Improving Response Diversity of Language Models",
+    "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+    "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+    "Benchmarking Language Model Creativity: A Case Study on Code Generation",
+    "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The capacity to generate multiple distinct solution pathways for the same task by leveraging varied in-context examples and prompts.",
+      "papers": [
+        "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation",
+        "Benchmarking Language Model Creativity: A Case Study on Code Generation",
+        "Diverse, not Short: A Length-Controlled Data Selection Strategy for Improving Response Diversity of Language Models"
+      ],
+      "original_name": "Divergent thinking"
+    },
+    {
+      "text": "The capacity of an LLM to generate multiple plausible connections and hypotheses from limited expert knowledge, inspired by associative human cognition.",
+      "papers": [
+        "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation"
+      ],
+      "original_name": "Divergent reasoning"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Creativity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Innovative Thinking, Infinite Humor: Humor Research of Large Language Models through Structured Thought Leaps",
+      "evidence": "The DAT is a classic creativity test in which testee write 10 unrelated words, and words with greater \u201cdistances\u201d in their context embeddings indicate more divergent thinking. (Section 3.3)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Innovative Thinking, Infinite Humor: Humor Research of Large Language Models through Structured Thought Leaps"
+        ],
+        "naacl25": [
+          "Benchmarking Language Model Creativity: A Case Study on Code Generation"
+        ],
+        "icml25": [
+          "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+      "evidence": "This divergent reasoning is also crucial for machines, enhancing their robustness and enabling them to assist humans in many applications such as scientific discovery. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most commonly, papers treat divergent thinking as the capacity to generate multiple distinct, novel, or unconventional solution pathways from the same task or starting point, sometimes by varying in-context examples and few-shot prompts. Some definitions add that it reflects adaptability to explore new environments or constraints and to produce alternatives not previously used in the human solution space. A smaller line of work uses the label \"divergent reasoning\" for generating multiple plausible connections and hypotheses from limited expert knowledge, so the definitions vary between alternative solution generation for a task and extrapolation from sparse knowledge."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers often discuss it in relation to Creativity, and one formulation explicitly presents creativity as consisting of convergent thinking and divergent thinking, with the latter tied to adaptability under new environments or constraints. Related labels are also used for more specific processes: a \"divergent thoughts\" process is described as retrieving relevant demos and generating different few-shot prompts, while \"divergent reasoning\" is described as extrapolating expert triplets to correlated queried concepts through veracity extrapolation."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers do not link it to a measurement instrument or behavioral indicator. When measurement is discussed, it appears through named tests or scores rather than linked benchmark relations: the DAT and AUT are described as psychological tests for human divergent thinking, higher DSI values are said to indicate more divergent thinking, and one study says its NEOGAUGE score mainly considers H-creativity measurement. These discussions focus on diversity, echoing definitions that emphasize multiple distinct or unconventional outputs."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers frequently relate divergent thinking to Creativity. In those accounts, generating diverse solutions is described as a hallmark of human creativity, and one framing places divergent thinking alongside convergent thinking within creativity. Only one paper claims a causal relationship from Divergent thinking to Robustness, stating that this divergent reasoning enhances robustness."
+    }
+  ],
+  "characterization": "Space of definitions. Most commonly, papers treat divergent thinking as the capacity to generate multiple distinct, novel, or unconventional solution pathways from the same task or starting point, sometimes by varying in-context examples and few-shot prompts. Some definitions add that it reflects adaptability to explore new environments or constraints and to produce alternatives not previously used in the human solution space. A smaller line of work uses the label \"divergent reasoning\" for generating multiple plausible connections and hypotheses from limited expert knowledge, so the definitions vary between alternative solution generation for a task and extrapolation from sparse knowledge.\n\nSpace of facets. Papers often discuss it in relation to Creativity, and one formulation explicitly presents creativity as consisting of convergent thinking and divergent thinking, with the latter tied to adaptability under new environments or constraints. Related labels are also used for more specific processes: a \"divergent thoughts\" process is described as retrieving relevant demos and generating different few-shot prompts, while \"divergent reasoning\" is described as extrapolating expert triplets to correlated queried concepts through veracity extrapolation.\n\nSpace of measurement. Papers do not link it to a measurement instrument or behavioral indicator. When measurement is discussed, it appears through named tests or scores rather than linked benchmark relations: the DAT and AUT are described as psychological tests for human divergent thinking, higher DSI values are said to indicate more divergent thinking, and one study says its NEOGAUGE score mainly considers H-creativity measurement. These discussions focus on diversity, echoing definitions that emphasize multiple distinct or unconventional outputs.\n\nLinks. Papers frequently relate divergent thinking to Creativity. In those accounts, generating diverse solutions is described as a hallmark of human creativity, and one framing places divergent thinking alongside convergent thinking within creativity. Only one paper claims a causal relationship from Divergent thinking to Robustness, stating that this divergent reasoning enhances robustness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Flow of Reasoning: Training LLMs for Divergent Reasoning with Minimal Examples",
+      "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation"
+    ],
+    "naacl25": [
+      "Benchmarking Language Model Creativity: A Case Study on Code Generation",
+      "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation"
+    ],
+    "emnlp25": [
+      "Diverse, not Short: A Length-Controlled Data Selection Strategy for Improving Response Diversity of Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "naacl25": 2,
+    "emnlp25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

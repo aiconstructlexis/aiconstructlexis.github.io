@@ -1,0 +1,71 @@
+{
+  "canonical_name": "LIWC",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, LIWC is treated as a text analysis and psycholinguistic feature extraction tool. The prevailing description is that it categorizes words into linguistic and psychological dimensions, including emotion, cognition, and formality, and one paper specifies the LIWC-22 version as calculating the percentage of words in a text that fall into different linguistic and psychological categories.\n\nWhat it is claimed to measure. No construct or behavioral indicator is explicitly linked to LIWC in these papers. Instead, papers describe it more generally as providing psycholinguistic characteristics and category-based linguistic outputs, including outputs used to build trait-specific linguistic features.\n\nSpace of uses. Papers use LIWC as an analysis tool over text and responses. One usage reports segment comparison with LIWC features alongside WritePrint features, while another analyzes responses with LIWC-22 and constructs trait-specific linguistic features from its outputs.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LIWC",
+    "LIWC-22"
+  ],
+  "papers": [
+    "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions",
+    "Beyond Checkmate: Exploring the Creative Choke Points for AI Generated Texts",
+    "Can LLM Agents Maintain a Persona in Discourse?",
+    "Evaluating Behavioral Alignment in Conflict Dialogue: A Multi-Dimensional Comparison of LLM Agents and Humans",
+    "Personality Vector: Modulating Personality of Large Language Models by Model Merging"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Linguistic Inquiry and Word Count, a psycholinguistic feature extraction tool that categorizes words into psychological and linguistic dimensions such as emotion, cognition, and formality.",
+      "papers": [
+        "Beyond Checkmate: Exploring the Creative Choke Points for AI Generated Texts"
+      ],
+      "original_name": "LIWC"
+    },
+    {
+      "text": "Linguistic Inquiry and Word Count 22, a text analysis program that calculates the percentage of words in a given text that fall into different linguistic and psychological categories.",
+      "papers": [
+        "Personality Vector: Modulating Personality of Large Language Models by Model Merging"
+      ],
+      "original_name": "LIWC-22"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, LIWC is treated as a text analysis and psycholinguistic feature extraction tool. The prevailing description is that it categorizes words into linguistic and psychological dimensions, including emotion, cognition, and formality, and one paper specifies the LIWC-22 version as calculating the percentage of words in a text that fall into different linguistic and psychological categories."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "No construct or behavioral indicator is explicitly linked to LIWC in these papers. Instead, papers describe it more generally as providing psycholinguistic characteristics and category-based linguistic outputs, including outputs used to build trait-specific linguistic features."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use LIWC as an analysis tool over text and responses. One usage reports segment comparison with LIWC features alongside WritePrint features, while another analyzes responses with LIWC-22 and constructs trait-specific linguistic features from its outputs."
+    }
+  ],
+  "characterization": "What it is. Across the papers, LIWC is treated as a text analysis and psycholinguistic feature extraction tool. The prevailing description is that it categorizes words into linguistic and psychological dimensions, including emotion, cognition, and formality, and one paper specifies the LIWC-22 version as calculating the percentage of words in a text that fall into different linguistic and psychological categories.\n\nWhat it is claimed to measure. No construct or behavioral indicator is explicitly linked to LIWC in these papers. Instead, papers describe it more generally as providing psycholinguistic characteristics and category-based linguistic outputs, including outputs used to build trait-specific linguistic features.\n\nSpace of uses. Papers use LIWC as an analysis tool over text and responses. One usage reports segment comparison with LIWC features alongside WritePrint features, while another analyzes responses with LIWC-22 and constructs trait-specific linguistic features from its outputs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions",
+      "Beyond Checkmate: Exploring the Creative Choke Points for AI Generated Texts",
+      "Can LLM Agents Maintain a Persona in Discourse?",
+      "Evaluating Behavioral Alignment in Conflict Dialogue: A Multi-Dimensional Comparison of LLM Agents and Humans",
+      "Personality Vector: Modulating Personality of Large Language Models by Model Merging"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,19 @@
+# Video editing
+**Type:** Behavioral indicator  
+**Supporting papers:** 2  
+
+## State of the Field
+
+The task of modifying an existing video according to a user's instruction, which can involve changes to content, style, or objects over time.
+
+## Sources
+
+**Video editing** (1 paper: [Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing](https://proceedings.neurips.cc/paper_files/paper/2024/file/68bad5506f0f9eea7ae75f01ae00d5e2-Paper-Conference.pdf))
+> The task of modifying an existing video according to a user's instruction, which can involve changes to content, style, or objects over time.
+
+## Relationships
+
+### Video editing →
+- **Human evaluation** (measurement instrument): *measured_by*, 1 paper
+  > Table 12: Human evaluation on video editing.
+  - [Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing](https://proceedings.neurips.cc/paper_files/paper/2024/file/68bad5506f0f9eea7ae75f01ae00d5e2-Paper-Conference.pdf)

@@ -1,0 +1,114 @@
+{
+  "canonical_name": "Modular arithmetic",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats modular arithmetic as performing arithmetic in a system where values wrap around at a modulus. Definitions usually describe arithmetic operations in general, and one paper makes that scope explicit as addition or counting within the wrap-around system. A narrower formulation appears as modular addition, described as computing the remainder of a sum when divided by a modulus, with outputs also characterized in terms of numbers congruent to a + b mod c, for example whether the answer is even or odd.\n\nVariants. Papers mainly study wrap-around arithmetic through addition and counting. The named variants are modular addition and modular counting, and one source also refers more generally to \"both modular arithmetic tasks\" without further separating them.\n\nSpace of elicitation and scores. No paper links modular arithmetic to a measurement instrument. Accordingly, no named instrument recurs as a way to elicit or score it.\n\nWhat it is taken as evidence of. Only one construct is linked to modular arithmetic. The recorded relationship is to State tracking ability, and it is framed as related rather than as a measurement claim: one paper reports testing methods on parity, modular arithmetic, and permutation composition while \"demonstrating improved state-tracking performance.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Modular arithmetic",
+    "Modular addition"
+  ],
+  "papers": [
+    "Principled Understanding of Generalization for Generative Transformer Models in Arithmetic Reasoning Tasks",
+    "How do autoregressive transformers solve full addition?",
+    "Chain of Thought Empowers Transformers to Solve Inherently Serial Problems",
+    "Not All Language Model Features Are One-Dimensionally Linear",
+    "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+    "Algorithmic Capabilities of Random Transformers",
+    "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+    "Pre-trained Large Language Models Use Fourier Features to Compute Addition"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "The task of performing arithmetic operations within a system of integers where numbers 'wrap around' upon reaching a certain value, the modulus.",
+      "papers": [
+        "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+        "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues"
+      ],
+      "original_name": "Modular arithmetic"
+    },
+    {
+      "text": "The observable behavior of computing the remainder of a sum when divided by a modulus, often used to refine an approximate answer.",
+      "papers": [
+        "Pre-trained Large Language Models Use Fourier Features to Compute Addition"
+      ],
+      "original_name": "Modular addition"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "State tracking ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues",
+      "evidence": "We test the modified methods on parity, modular arithmetic, and permutation composition, demonstrating improved state-tracking performance.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats modular arithmetic as performing arithmetic in a system where values wrap around at a modulus. Definitions usually describe arithmetic operations in general, and one paper makes that scope explicit as addition or counting within the wrap-around system. A narrower formulation appears as modular addition, described as computing the remainder of a sum when divided by a modulus, with outputs also characterized in terms of numbers congruent to a + b mod c, for example whether the answer is even or odd."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers mainly study wrap-around arithmetic through addition and counting. The named variants are modular addition and modular counting, and one source also refers more generally to \"both modular arithmetic tasks\" without further separating them."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No paper links modular arithmetic to a measurement instrument. Accordingly, no named instrument recurs as a way to elicit or score it."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Only one construct is linked to modular arithmetic. The recorded relationship is to State tracking ability, and it is framed as related rather than as a measurement claim: one paper reports testing methods on parity, modular arithmetic, and permutation composition while \"demonstrating improved state-tracking performance.\""
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats modular arithmetic as performing arithmetic in a system where values wrap around at a modulus. Definitions usually describe arithmetic operations in general, and one paper makes that scope explicit as addition or counting within the wrap-around system. A narrower formulation appears as modular addition, described as computing the remainder of a sum when divided by a modulus, with outputs also characterized in terms of numbers congruent to a + b mod c, for example whether the answer is even or odd.\n\nVariants. Papers mainly study wrap-around arithmetic through addition and counting. The named variants are modular addition and modular counting, and one source also refers more generally to \"both modular arithmetic tasks\" without further separating them.\n\nSpace of elicitation and scores. No paper links modular arithmetic to a measurement instrument. Accordingly, no named instrument recurs as a way to elicit or score it.\n\nWhat it is taken as evidence of. Only one construct is linked to modular arithmetic. The recorded relationship is to State tracking ability, and it is framed as related rather than as a measurement claim: one paper reports testing methods on parity, modular arithmetic, and permutation composition while \"demonstrating improved state-tracking performance.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Principled Understanding of Generalization for Generative Transformer Models in Arithmetic Reasoning Tasks"
+    ],
+    "emnlp25": [
+      "How do autoregressive transformers solve full addition?"
+    ],
+    "iclr24": [
+      "Chain of Thought Empowers Transformers to Solve Inherently Serial Problems"
+    ],
+    "iclr25": [
+      "Not All Language Model Features Are One-Dimensionally Linear",
+      "Unlocking State-Tracking in Linear RNNs Through Negative Eigenvalues"
+    ],
+    "neurips24": [
+      "Algorithmic Capabilities of Random Transformers",
+      "DAPE: Data-Adaptive Positional Encoding for Length Extrapolation",
+      "Pre-trained Large Language Models Use Fourier Features to Compute Addition"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr24": 1,
+    "iclr25": 2,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

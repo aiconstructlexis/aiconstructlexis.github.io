@@ -1,0 +1,202 @@
+{
+  "canonical_name": "Uncertainty",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats uncertainty as unreliability, ambiguity, or lack of confidence in a model's prediction or generation. Many papers phrase it at the output level, as unreliable or inconsistent generations, low-confidence predictions, or variability across different answers to the same prompt, with one stating that uncertainty is typically defined over the different answers an LLM gives for the same prompt. Smaller strands shift the referent from ordinary predictions to evaluator judgments, to a model's internal or output-derived uncertainty about whether an answer is correct, or to latent unpredictability and information content in representations inferred from matrix entropy.\n\nSpace of facets. Papers place uncertainty beside several neighboring notions rather than giving one shared breakdown. In active learning it appears alongside learnability, diversity, and representativeness, in prompt-engineering work it is discussed alongside sensitivity and consistency, and in authorship verification it is expressed through indecision markers such as scores near 0.5 and many \"MAYBE\" intermediate labels. Across these usages, the same term covers both observable answer variability and latent properties read from internal states or representations, and some papers frame higher uncertainty as lower confidence in an original prediction.\n\nSpace of measurement. Papers link uncertainty to one measurement instrument and two behavioral indicators. The only linked instrument is Open LLM Leaderboard, but it is discussed as a leaderboard that does not take uncertainty into account rather than as a direct measure, and the linked behavioral indicators are Hallucination and Pairwise comparison. Direct operationalization is more varied: papers use entropy of the output probability distribution, different answers over multiple stochastic generations, probabilities of output tokens for evaluator judgments, final scores near 0.5 with a high share of \"MAYBE\" labels, internal-state or token-level density signals, and truncated matrix entropy across layers and heads; some also use uncertainty about whether an answer is correct as the basis for abstention. Most of these operationalizations target low confidence or unreliable outputs, while the matrix-entropy line targets representation-level information content and the importance of model components during inference.\n\nLinks. Several papers report that Hallucination correlates with Uncertainty, and one also describes them as related, with evidence phrased as uncertain outputs being indicative of hallucinations and hallucinations being tied to model uncertainty. One paper claims a causal relationship from Pairwise comparison to Uncertainty, stating that pairwise comparison can reduce or mitigate uncertainty in evaluation. One paper reports that Conformity correlates with Uncertainty, and another relates Calibration to Uncertainty through discussion of poorly calibrated confidence scores. Uncertainty is also related to Open LLM Leaderboard, which one paper says does not take uncertainty into account.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Uncertainty"
+  ],
+  "papers": [
+    "Conformity in Large Language Models",
+    "Analyzing Uncertainty of LLM-as-a-Judge: Interval Evaluations with Conformal Prediction",
+    "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models",
+    "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+    "Unlearning vs. Obfuscation: Are We Truly Removing Knowledge?",
+    "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+    "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+    "Active Few-Shot Learning for Text Classification",
+    "Improving Data Annotation for Low-Resource Relation Extraction with Logical Rule-Augmented Collaborative Language Models",
+    "Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models",
+    "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering",
+    "CAVE: Controllable Authorship Verification Explanations",
+    "Benchmarking LLMs via Uncertainty Quantification",
+    "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+    "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+    "Learnability Matters: Active Learning for Video Captioning",
+    "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering",
+    "Selective Generation for Controllable Language Models"
+  ],
+  "paper_count": 18,
+  "definitions": [
+    {
+      "text": "The degree to which the model's predictions are unreliable or ambiguous for a given video sample.",
+      "papers": [
+        "Learnability Matters: Active Learning for Video Captioning",
+        "CAVE: Controllable Authorship Verification Explanations",
+        "Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models",
+        "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering",
+        "Active Few-Shot Learning for Text Classification",
+        "Improving Data Annotation for Low-Resource Relation Extraction with Logical Rule-Augmented Collaborative Language Models",
+        "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+        "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+        "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+        "Conformity in Large Language Models"
+      ],
+      "original_name": "Uncertainty"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "correlates",
+      "paper": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+      "evidence": "we go beyond merely understanding knowledge refusal, and find SAE latents, seemingly representing uncertainty, that are predictive of incorrect answers.",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+          "HaDeMiF: Hallucination Detection and Mitigation in Large Language Models"
+        ],
+        "icml25": [
+          "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Calibration",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models",
+      "evidence": "Recent work (Ren et al., 2023) shows that sequence-level confidence scores remain poorly calibrated with output quality, even after applying length normalization. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Open LLM Leaderboard",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Benchmarking LLMs via Uncertainty Quantification",
+      "evidence": "Despite their usefulness, these leaderboards possess a significant limitation: They do not take into account the uncertainty of LLMs.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Benchmarking LLMs via Uncertainty Quantification"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pairwise comparison",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "evidence": "Compared to single-answer grading, pairwise comparison reduces the influence of subjective bias by directly comparing the relative merits of model outputs, thereby mitigating the uncertainty in evaluation to some extent. (Section 4.5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "An Empirical Analysis of Uncertainty in Large Language Model Evaluations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conformity",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Conformity in Large Language Models",
+      "evidence": "Notably, we are the first to show that LLMs are more likely to conform when they are more uncertain in their own prediction. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Conformity in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats uncertainty as unreliability, ambiguity, or lack of confidence in a model's prediction or generation. Many papers phrase it at the output level, as unreliable or inconsistent generations, low-confidence predictions, or variability across different answers to the same prompt, with one stating that uncertainty is typically defined over the different answers an LLM gives for the same prompt. Smaller strands shift the referent from ordinary predictions to evaluator judgments, to a model's internal or output-derived uncertainty about whether an answer is correct, or to latent unpredictability and information content in representations inferred from matrix entropy."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers place uncertainty beside several neighboring notions rather than giving one shared breakdown. In active learning it appears alongside learnability, diversity, and representativeness, in prompt-engineering work it is discussed alongside sensitivity and consistency, and in authorship verification it is expressed through indecision markers such as scores near 0.5 and many \"MAYBE\" intermediate labels. Across these usages, the same term covers both observable answer variability and latent properties read from internal states or representations, and some papers frame higher uncertainty as lower confidence in an original prediction."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link uncertainty to one measurement instrument and two behavioral indicators. The only linked instrument is Open LLM Leaderboard, but it is discussed as a leaderboard that does not take uncertainty into account rather than as a direct measure, and the linked behavioral indicators are Hallucination and Pairwise comparison. Direct operationalization is more varied: papers use entropy of the output probability distribution, different answers over multiple stochastic generations, probabilities of output tokens for evaluator judgments, final scores near 0.5 with a high share of \"MAYBE\" labels, internal-state or token-level density signals, and truncated matrix entropy across layers and heads; some also use uncertainty about whether an answer is correct as the basis for abstention. Most of these operationalizations target low confidence or unreliable outputs, while the matrix-entropy line targets representation-level information content and the importance of model components during inference."
+    },
+    {
+      "label": "Links.",
+      "text": "Several papers report that Hallucination correlates with Uncertainty, and one also describes them as related, with evidence phrased as uncertain outputs being indicative of hallucinations and hallucinations being tied to model uncertainty. One paper claims a causal relationship from Pairwise comparison to Uncertainty, stating that pairwise comparison can reduce or mitigate uncertainty in evaluation. One paper reports that Conformity correlates with Uncertainty, and another relates Calibration to Uncertainty through discussion of poorly calibrated confidence scores. Uncertainty is also related to Open LLM Leaderboard, which one paper says does not take uncertainty into account."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats uncertainty as unreliability, ambiguity, or lack of confidence in a model's prediction or generation. Many papers phrase it at the output level, as unreliable or inconsistent generations, low-confidence predictions, or variability across different answers to the same prompt, with one stating that uncertainty is typically defined over the different answers an LLM gives for the same prompt. Smaller strands shift the referent from ordinary predictions to evaluator judgments, to a model's internal or output-derived uncertainty about whether an answer is correct, or to latent unpredictability and information content in representations inferred from matrix entropy.\n\nSpace of facets. Papers place uncertainty beside several neighboring notions rather than giving one shared breakdown. In active learning it appears alongside learnability, diversity, and representativeness, in prompt-engineering work it is discussed alongside sensitivity and consistency, and in authorship verification it is expressed through indecision markers such as scores near 0.5 and many \"MAYBE\" intermediate labels. Across these usages, the same term covers both observable answer variability and latent properties read from internal states or representations, and some papers frame higher uncertainty as lower confidence in an original prediction.\n\nSpace of measurement. Papers link uncertainty to one measurement instrument and two behavioral indicators. The only linked instrument is Open LLM Leaderboard, but it is discussed as a leaderboard that does not take uncertainty into account rather than as a direct measure, and the linked behavioral indicators are Hallucination and Pairwise comparison. Direct operationalization is more varied: papers use entropy of the output probability distribution, different answers over multiple stochastic generations, probabilities of output tokens for evaluator judgments, final scores near 0.5 with a high share of \"MAYBE\" labels, internal-state or token-level density signals, and truncated matrix entropy across layers and heads; some also use uncertainty about whether an answer is correct as the basis for abstention. Most of these operationalizations target low confidence or unreliable outputs, while the matrix-entropy line targets representation-level information content and the importance of model components during inference.\n\nLinks. Several papers report that Hallucination correlates with Uncertainty, and one also describes them as related, with evidence phrased as uncertain outputs being indicative of hallucinations and hallucinations being tied to model uncertainty. One paper claims a causal relationship from Pairwise comparison to Uncertainty, stating that pairwise comparison can reduce or mitigate uncertainty in evaluation. One paper reports that Conformity correlates with Uncertainty, and another relates Calibration to Uncertainty through discussion of poorly calibrated confidence scores. Uncertainty is also related to Open LLM Leaderboard, which one paper says does not take uncertainty into account.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Analyzing Uncertainty of LLM-as-a-Judge: Interval Evaluations with Conformal Prediction",
+      "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models",
+      "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+      "Unlearning vs. Obfuscation: Are We Truly Removing Knowledge?"
+    ],
+    "naacl25": [
+      "Active Few-Shot Learning for Text Classification",
+      "Improving Data Annotation for Low-Resource Relation Extraction with Logical Rule-Augmented Collaborative Language Models",
+      "Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models",
+      "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering",
+      "CAVE: Controllable Authorship Verification Explanations"
+    ],
+    "neurips24": [
+      "Benchmarking LLMs via Uncertainty Quantification",
+      "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+      "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+      "Learnability Matters: Active Learning for Video Captioning",
+      "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering",
+      "Selective Generation for Controllable Language Models"
+    ],
+    "iclr25": [
+      "An Empirical Analysis of Uncertainty in Large Language Model Evaluations"
+    ],
+    "icml25": [
+      "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees"
+    ],
+    "acl25": [
+      "Conformity in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4,
+    "naacl25": 5,
+    "neurips24": 6,
+    "iclr25": 1,
+    "icml25": 1,
+    "acl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

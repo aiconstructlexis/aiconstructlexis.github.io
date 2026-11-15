@@ -1,0 +1,333 @@
+{
+  "canonical_name": "DocVQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most papers treat DocVQA as a document visual question answering benchmark or dataset for document images, where models answer questions from document text and layout. Some descriptions add scanned or photographed documents, and characterize the task as extractive, span or segment based, or as testing extraction and reasoning over document images. Papers describe its scope differently: some say it is limited to single-page documents, while another defines it as covering single-page and multi-page document QA and retrieval; one paper also uses the name VQADoc, and another refers to a DocVQAVAL split.\n\nWhat it is claimed to measure. Across papers, the prevailing claim is that DocVQA measures document understanding. It is linked to 4 constructs and 4 behavioral indicators overall: beyond document understanding, papers use it to measure fine-grained visual understanding, long-context understanding, and multimodal perception, and among behavioral indicators it most often measures optical character recognition, with additional uses for document question answering, information retrieval, and machine reading comprehension. The reported measurement claims therefore spread across several related abilities, though document understanding and OCR-oriented evaluation are the most common framings.\n\nSpace of uses. Papers usually position DocVQA as one benchmark within broader evaluation suites rather than as a standalone test, often alongside TextVQA, ChartQA, OCRBench, InfoVQA, and AI2D in OCR, document understanding, or perception bundles. Other papers place it in longer-document comparisons, or reuse it as a source of question-answer pairs or a source domain for another dataset, rather than only as an evaluation endpoint.\n\nConcerns raised. The clearest concern is scope: some papers say DocVQA can only assess single-page documents, or describe it as a single-page document understanding dataset, even though another paper gives a broader single-page and multi-page description. One paper says benchmarks like TextVQA and DocVQA require sufficiently high resolution to extract text in an image, and another discussion warns that repeating large-scale evaluation on tasks where DocVQA already contains many similar examples can waste resources.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "DocVQA",
+    "VQADoc"
+  ],
+  "papers": [
+    "Activating Distributed Visual Region within LLMs for Efficient and Effective Vision-Language Training and Inference",
+    "EffiVLM-BENCH: A Comprehensive Benchmark for Evaluating Training-Free Acceleration in Large Vision-Language Models",
+    "Improve Vision Language Model Chain-of-thought Reasoning",
+    "LongDocURL: a Comprehensive Multimodal Long Document Benchmark Integrating Understanding, Reasoning, and Locating",
+    "Scaling Text-Rich Image Understanding via Code-Guided Synthetic Multimodal Data Generation",
+    "mPLUG-DocOwl2: High-resolution Compressing for OCR-free Multi-page Document Understanding",
+    "CHURRO: Making History Readable with an Open-Weight Large Vision-Language Model for High-Accuracy, Low-Cost Historical Text Recognition",
+    "CROP: Contextual Region-Oriented Visual Token Pruning",
+    "ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model",
+    "How Do Large Vision-Language Models See Text in Image? Unveiling the Distinctive Role of OCR Heads",
+    "Is Cognition Consistent with Perception? Assessing and Mitigating Multimodal Knowledge Conflicts in Document Understanding",
+    "LEO-MINI: An Efficient Multimodal Large Language Model using Conditional Token Reduction and Mixture of Multi-Modal Experts",
+    "WildDoc: How Far Are We from Achieving Comprehensive and Robust Document Understanding in the Wild?",
+    "BigDocs: An Open Dataset for Training Multimodal Models on Document and Code Tasks",
+    "ColPali: Efficient Document Retrieval with Vision Language Models",
+    "DocMIA: Document-Level Membership Inference Attacks against DocVQA Models",
+    "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+    "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+    "Enhancing Document Understanding with Group Position Embedding: A Novel Approach to Incorporate Layout Information",
+    "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "Inference Optimal VLMs Need Fewer Visual Tokens and More Parameters",
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "LiveXiv - A Multi-Modal live benchmark based on Arxiv papers content",
+    "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+    "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+    "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+    "Matryoshka Multimodal Models",
+    "Mini-Monkey: Alleviating the Semantic Sawtooth Effect for Lightweight MLLMs via Complementary Image Pyramid",
+    "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+    "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+    "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+    "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model",
+    "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+    "Diffusion Instruction Tuning",
+    "LAuReL: Learned Augmented Residual Layer",
+    "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+    "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+    "R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts",
+    "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+    "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM",
+    "ScreenQA: Large-Scale Question-Answer Pairs Over Mobile App Screenshots",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+    "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+    "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+    "What matters when building vision-language models?"
+  ],
+  "paper_count": 51,
+  "definitions": [
+    {
+      "text": "Document visual question answering benchmark used for evaluating single-page and multi-page document QA and retrieval.",
+      "papers": [
+        "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+        "LongDocURL: a Comprehensive Multimodal Long Document Benchmark Integrating Understanding, Reasoning, and Locating",
+        "Diffusion Instruction Tuning",
+        "ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model",
+        "ScreenQA: Large-Scale Question-Answer Pairs Over Mobile App Screenshots",
+        "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+        "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+        "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+        "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+        "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+        "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+        "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+        "What matters when building vision-language models?"
+      ],
+      "original_name": "DocVQA"
+    },
+    {
+      "text": "A document visual question answering benchmark used to evaluate image-based question answering on document images.",
+      "papers": [
+        "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+      ],
+      "original_name": "VQADoc"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "evidence": "In order to illustrate the impact of having long in-context text, we evaluate the model for document understanding on DocVQA [15] and OCR VQA [34]. (Section 3.1)",
+      "paper_count": 6,
+      "paper_weight": 6.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning"
+        ],
+        "iclr25": [
+          "Matryoshka Multimodal Models",
+          "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+          "Mini-Monkey: Alleviating the Semantic Sawtooth Effect for Lightweight MLLMs via Complementary Image Pyramid",
+          "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+          "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Optical character recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "evidence": "OCR-Related Tasks. DocVQA (Mathew et al., 2021), ChartQA (Masry et al., 2022), TextVQA (Singh et al., 2019), InfoVQA (Mathew et al., 2022), VisualMRC (Tanaka et al., 2021), OCRBench (Liu et al., 2023c).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Harnessing Webpage UIs for Text-Rich Visual Understanding"
+        ],
+        "icml25": [
+          "Ranked from Within: Ranking Large Multimodal Models Without Labels"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+      "evidence": "We evaluate their effectiveness in improving the perception of smaller visual concepts on 4 detail-sensitive datasets (TextVQA, V\u2217, POPE, DocVQA)... (Sec. 6)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs"
+        ],
+        "icml25": [
+          "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Privacy-Preserving In-Context Learning for Large Language Models",
+      "evidence": "Then, we consider the document questions answering task... We adopt a dataset that originates from a Privacy Preserving Federated Learning Document VQA (PFL-DocVQA) competition (Tito et al., 2023). (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Privacy-Preserving In-Context Learning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "evidence": "\u201cTo evaluate the long-context understanding ability, we adopt the few-shot evaluation setting in Flamingo [1]. ... In order to illustrate the impact of having long in-context text, we evaluate the model for document understanding on DocVQA [15] and OCR VQA [34].\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+      "evidence": "We first evaluate the retrieval accuracy of the Col-retrieval module within SV-RAG and compare it with several baselines on SlideVQA (Tanaka et al., 2023), MM-LongBench (Ma et al., 2024d), DUDE (Van Landeghem et al., 2023), DocVQA (Mathew et al., 2020; 2021) and VisR-Bench. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Machine reading comprehension",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model",
+      "evidence": "DocVQA (Mathew et al., 2021) focuses on reading comprehension tasks over document images. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal perception",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most papers treat DocVQA as a document visual question answering benchmark or dataset for document images, where models answer questions from document text and layout. Some descriptions add scanned or photographed documents, and characterize the task as extractive, span or segment based, or as testing extraction and reasoning over document images. Papers describe its scope differently: some say it is limited to single-page documents, while another defines it as covering single-page and multi-page document QA and retrieval; one paper also uses the name VQADoc, and another refers to a DocVQAVAL split."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across papers, the prevailing claim is that DocVQA measures document understanding. It is linked to 4 constructs and 4 behavioral indicators overall: beyond document understanding, papers use it to measure fine-grained visual understanding, long-context understanding, and multimodal perception, and among behavioral indicators it most often measures optical character recognition, with additional uses for document question answering, information retrieval, and machine reading comprehension. The reported measurement claims therefore spread across several related abilities, though document understanding and OCR-oriented evaluation are the most common framings."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers usually position DocVQA as one benchmark within broader evaluation suites rather than as a standalone test, often alongside TextVQA, ChartQA, OCRBench, InfoVQA, and AI2D in OCR, document understanding, or perception bundles. Other papers place it in longer-document comparisons, or reuse it as a source of question-answer pairs or a source domain for another dataset, rather than only as an evaluation endpoint."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "The clearest concern is scope: some papers say DocVQA can only assess single-page documents, or describe it as a single-page document understanding dataset, even though another paper gives a broader single-page and multi-page description. One paper says benchmarks like TextVQA and DocVQA require sufficiently high resolution to extract text in an image, and another discussion warns that repeating large-scale evaluation on tasks where DocVQA already contains many similar examples can waste resources."
+    }
+  ],
+  "characterization": "What it is. Most papers treat DocVQA as a document visual question answering benchmark or dataset for document images, where models answer questions from document text and layout. Some descriptions add scanned or photographed documents, and characterize the task as extractive, span or segment based, or as testing extraction and reasoning over document images. Papers describe its scope differently: some say it is limited to single-page documents, while another defines it as covering single-page and multi-page document QA and retrieval; one paper also uses the name VQADoc, and another refers to a DocVQAVAL split.\n\nWhat it is claimed to measure. Across papers, the prevailing claim is that DocVQA measures document understanding. It is linked to 4 constructs and 4 behavioral indicators overall: beyond document understanding, papers use it to measure fine-grained visual understanding, long-context understanding, and multimodal perception, and among behavioral indicators it most often measures optical character recognition, with additional uses for document question answering, information retrieval, and machine reading comprehension. The reported measurement claims therefore spread across several related abilities, though document understanding and OCR-oriented evaluation are the most common framings.\n\nSpace of uses. Papers usually position DocVQA as one benchmark within broader evaluation suites rather than as a standalone test, often alongside TextVQA, ChartQA, OCRBench, InfoVQA, and AI2D in OCR, document understanding, or perception bundles. Other papers place it in longer-document comparisons, or reuse it as a source of question-answer pairs or a source domain for another dataset, rather than only as an evaluation endpoint.\n\nConcerns raised. The clearest concern is scope: some papers say DocVQA can only assess single-page documents, or describe it as a single-page document understanding dataset, even though another paper gives a broader single-page and multi-page description. One paper says benchmarks like TextVQA and DocVQA require sufficiently high resolution to extract text in an image, and another discussion warns that repeating large-scale evaluation on tasks where DocVQA already contains many similar examples can waste resources.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Activating Distributed Visual Region within LLMs for Efficient and Effective Vision-Language Training and Inference",
+      "EffiVLM-BENCH: A Comprehensive Benchmark for Evaluating Training-Free Acceleration in Large Vision-Language Models",
+      "Improve Vision Language Model Chain-of-thought Reasoning",
+      "LongDocURL: a Comprehensive Multimodal Long Document Benchmark Integrating Understanding, Reasoning, and Locating",
+      "Scaling Text-Rich Image Understanding via Code-Guided Synthetic Multimodal Data Generation",
+      "mPLUG-DocOwl2: High-resolution Compressing for OCR-free Multi-page Document Understanding"
+    ],
+    "emnlp25": [
+      "CHURRO: Making History Readable with an Open-Weight Large Vision-Language Model for High-Accuracy, Low-Cost Historical Text Recognition",
+      "CROP: Contextual Region-Oriented Visual Token Pruning",
+      "ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model",
+      "How Do Large Vision-Language Models See Text in Image? Unveiling the Distinctive Role of OCR Heads",
+      "Is Cognition Consistent with Perception? Assessing and Mitigating Multimodal Knowledge Conflicts in Document Understanding",
+      "LEO-MINI: An Efficient Multimodal Large Language Model using Conditional Token Reduction and Mixture of Multi-Modal Experts",
+      "WildDoc: How Far Are We from Achieving Comprehensive and Robust Document Understanding in the Wild?"
+    ],
+    "iclr25": [
+      "BigDocs: An Open Dataset for Training Multimodal Models on Document and Code Tasks",
+      "ColPali: Efficient Document Retrieval with Vision Language Models",
+      "DocMIA: Document-Level Membership Inference Attacks against DocVQA Models",
+      "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+      "Enhancing Document Understanding with Group Position Embedding: A Novel Approach to Incorporate Layout Information",
+      "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "Inference Optimal VLMs Need Fewer Visual Tokens and More Parameters",
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "LiveXiv - A Multi-Modal live benchmark based on Arxiv papers content",
+      "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+      "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+      "MM1.5: Methods, Analysis & Insights from Multimodal LLM Fine-tuning",
+      "Matryoshka Multimodal Models",
+      "Mini-Monkey: Alleviating the Semantic Sawtooth Effect for Lightweight MLLMs via Complementary Image Pyramid",
+      "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+      "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+      "Solving Token Gradient Conflict in Mixture-of-Experts for Large Vision-Language Model"
+    ],
+    "icml25": [
+      "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+      "Diffusion Instruction Tuning",
+      "LAuReL: Learned Augmented Residual Layer",
+      "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+      "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts",
+      "Ranked from Within: Ranking Large Multimodal Models Without Labels",
+      "Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM"
+    ],
+    "naacl25": [
+      "ScreenQA: Large-Scale Question-Answer Pairs Over Mobile App Screenshots"
+    ],
+    "neurips24": [
+      "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+      "What matters when building vision-language models?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 6,
+    "emnlp25": 7,
+    "iclr25": 20,
+    "icml25": 8,
+    "naacl25": 1,
+    "neurips24": 9
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "canonical_name": "PRMBench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, PRMBench is most commonly described as a benchmark dataset for process-level reward models in reasoning chains, built on the PRM800K corpus and focused on step-level correctness in multi-step problem solving. Definitions describe it as covering about 6k math problems across 9 error categories, while one benchmark description gives a more exact inventory of 6,216 problems and 83,456 step-level labels, aimed at reasoning correctness and error detection.\n\nWhat it is claimed to measure. Papers use it to measure 2 constructs and 1 behavioral indicator. The prevailing links are that PRMBench measures Soundness and Simplicity, and one paper also reports it as measuring Error analysis, describing the benchmark as supporting granular error diagnosis; the reported uses therefore span a small set of process-evaluation targets rather than a single repeated construct.\n\nSpace of uses. Papers typically position PRMBench as one evaluation dataset within a broader suite. As one study notes, \"We evaluate on four datasets: PRMBench, DeltaBench, ClaimTrees, and CaptainCookRecipes\" (Probabilistic Soundness Guarantees in LLM Reasoning Chains), while another paper reports benchmark table results on it; the only linked measurement instrument is Human evaluation, which papers relate to PRMBench through manual review of 10% of instances by volunteers.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PRMBENCH",
+    "PRMBench"
+  ],
+  "papers": [
+    "Dynamic and Generalizable Process Reward Modeling",
+    "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models",
+    "Probabilistic Soundness Guarantees in LLM Reasoning Chains",
+    "R-PRM: Reasoning-Driven Process Reward Modeling"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Benchmark dataset built on PRM800K corpus with 6k math problems across 9 error categories, designed to evaluate process-level reward models on reasoning correctness and error detection.",
+      "papers": [
+        "Dynamic and Generalizable Process Reward Modeling"
+      ],
+      "original_name": "PRMBENCH"
+    },
+    {
+      "text": "Benchmark for evaluating process-level rewards in reasoning chains, assessing step-level correctness in multi-step problem solving.",
+      "papers": [
+        "Probabilistic Soundness Guarantees in LLM Reasoning Chains"
+      ],
+      "original_name": "PRMBench"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Soundness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models",
+      "evidence": "PRMBENCH comprises 6,216 carefully designed problems and 83,456 step-level labels, evaluating models across multiple dimensions, including simplicity, soundness, and sensitivity.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models"
+        ],
+        "emnlp25": [
+          "R-PRM: Reasoning-Driven Process Reward Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Simplicity",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models",
+      "evidence": "PRMBENCH comprises 6,216 carefully designed problems and 83,456 step-level labels, evaluating models across multiple dimensions, including simplicity, soundness, and sensitivity.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Error analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "R-PRM: Reasoning-Driven Process Reward Modeling",
+      "evidence": "PRMBench (Song et al., 2025) constitutes a comprehensive benchmark for evaluating PRMs, with particular emphasis on granular error diagnosis (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "R-PRM: Reasoning-Driven Process Reward Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models",
+      "evidence": "Furthermore, to further ensure the quality of the data, we manually evaluate 10% of the total instances... We recruited five volunteers to evaluate our proposed PRMBENCH... (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, PRMBench is most commonly described as a benchmark dataset for process-level reward models in reasoning chains, built on the PRM800K corpus and focused on step-level correctness in multi-step problem solving. Definitions describe it as covering about 6k math problems across 9 error categories, while one benchmark description gives a more exact inventory of 6,216 problems and 83,456 step-level labels, aimed at reasoning correctness and error detection."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use it to measure 2 constructs and 1 behavioral indicator. The prevailing links are that PRMBench measures Soundness and Simplicity, and one paper also reports it as measuring Error analysis, describing the benchmark as supporting granular error diagnosis; the reported uses therefore span a small set of process-evaluation targets rather than a single repeated construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers typically position PRMBench as one evaluation dataset within a broader suite. As one study notes, \"We evaluate on four datasets: PRMBench, DeltaBench, ClaimTrees, and CaptainCookRecipes\" (Probabilistic Soundness Guarantees in LLM Reasoning Chains), while another paper reports benchmark table results on it; the only linked measurement instrument is Human evaluation, which papers relate to PRMBench through manual review of 10% of instances by volunteers."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, PRMBench is most commonly described as a benchmark dataset for process-level reward models in reasoning chains, built on the PRM800K corpus and focused on step-level correctness in multi-step problem solving. Definitions describe it as covering about 6k math problems across 9 error categories, while one benchmark description gives a more exact inventory of 6,216 problems and 83,456 step-level labels, aimed at reasoning correctness and error detection.\n\nWhat it is claimed to measure. Papers use it to measure 2 constructs and 1 behavioral indicator. The prevailing links are that PRMBench measures Soundness and Simplicity, and one paper also reports it as measuring Error analysis, describing the benchmark as supporting granular error diagnosis; the reported uses therefore span a small set of process-evaluation targets rather than a single repeated construct.\n\nSpace of uses. Papers typically position PRMBench as one evaluation dataset within a broader suite. As one study notes, \"We evaluate on four datasets: PRMBench, DeltaBench, ClaimTrees, and CaptainCookRecipes\" (Probabilistic Soundness Guarantees in LLM Reasoning Chains), while another paper reports benchmark table results on it; the only linked measurement instrument is Human evaluation, which papers relate to PRMBench through manual review of 10% of instances by volunteers.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Dynamic and Generalizable Process Reward Modeling",
+      "PRMBench: A Fine-grained and Challenging Benchmark for Process-Level Reward Models"
+    ],
+    "emnlp25": [
+      "Probabilistic Soundness Guarantees in LLM Reasoning Chains",
+      "R-PRM: Reasoning-Driven Process Reward Modeling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

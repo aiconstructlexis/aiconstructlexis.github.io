@@ -1,0 +1,283 @@
+{
+  "canonical_name": "Safety robustness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across definitions, papers converge on an adversarial safety framing: the construct concerns whether safety mechanisms, constraints, guardrails, or restrictions hold up when inputs are designed to manipulate the model into harmful or prohibited outputs. A common positive formulation treats it as jailbreak robustness, resistance, or robustness to jailbreaking, while another common formulation names the inverse as jailbreak vulnerability, susceptibility, or ethical risk. The main variation is scope rather than core meaning, with some definitions focusing on multilingual prompts, template-region manipulation, role-based pressure, or fine-tuning and inference-time triggers.\n\nSpace of facets. Papers do not offer a single formal taxonomy, but they do organize the construct around recurring attack settings. One recurring distinction is between prompt-based bypass attempts in general and narrower variants involving multilingual prompts, visual inputs, manipulative role prompts, or acquired susceptibility from fine-tuning. Across these uses, different names are applied to closely overlapping content, and one paper further describes safety functions in two parts, identifying harmful content and using that processed information during generation; papers do not link the construct to any other construct.\n\nSpace of measurement. Operationalization is benchmark-centered: papers link the construct to 5 measurement instruments and 1 behavioral indicator, with harmful content generation as the only linked indicator. AdvBench is the most frequently linked instrument, followed by DAN, FigStep, JailbreakV, and MM-SafetyBench, and the evidence describes these as datasets or benchmarks used to assess safety or jailbreak robustness with malicious prompts, including multimodal inputs. Several quoted passages make the measurement target explicit through attack success rates, reductions in attack success rates, and refusals to answer unsafe questions rather than producing harmful outputs.\n\nLinks. Outside measurement, one paper claims a causal relationship from safety robustness to harmful content generation, with supporting language that jailbreak attacks exploit vulnerabilities to elicit unintended or harmful outputs. Papers do not report correlational or general related links for this construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Safety robustness",
+    "Jailbreak vulnerability",
+    "Jailbreak robustness",
+    "Robustness to jailbreaking",
+    "Susceptibility to jailbreaking",
+    "Jailbreaking resistance",
+    "Ethical risk",
+    "Jailbreak susceptibility"
+  ],
+  "papers": [
+    "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+    "Why Safeguarded Ships Run Aground? Aligned Large Language Models' Safety Mechanisms Tend to Be Anchored in The Template Region",
+    "DiffusionAttacker: Diffusion-Driven Prompt Manipulation for LLM Jailbreak",
+    "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+    "Jailbreak-Tuning: Models Efficiently Learn Jailbreak Susceptibility",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "Reimagining Safety Alignment with An Image",
+    "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs",
+    "Stand on The Shoulders of Giants: Building JailExpert from Previous Attack Experience",
+    "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model",
+    "Distributional Preference Learning: Understanding and Accounting for Hidden Context in RLHF",
+    "Multilingual Jailbreak Challenges in Large Language Models",
+    "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing",
+    "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+    "Learn Your Reference Model for Real Good Alignment",
+    "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs",
+    "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+    "h4rm3l: A Language for Composable Jailbreak Attack Synthesis",
+    "Mind the Gap: A Practical Attack on GGUF Quantization",
+    "SafeArena: Evaluating the Safety of Autonomous Web Agents",
+    "Layer-Level Self-Exposure and Patch: Affirmative Token Mitigation for Jailbreak Attack Defense",
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+    "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+    "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically"
+  ],
+  "paper_count": 25,
+  "definitions": [
+    {
+      "text": "The degree to which a model's safety mechanisms remain effective under adversarial conditions or interventions, particularly when the template region is manipulated.",
+      "papers": [
+        "Why Safeguarded Ships Run Aground? Aligned Large Language Models' Safety Mechanisms Tend to Be Anchored in The Template Region"
+      ],
+      "original_name": "Safety robustness"
+    },
+    {
+      "text": "The susceptibility of an LLM to adversarial inputs that bypass its safety mechanisms and elicit harmful content generation, particularly when non-English or multilingual prompts are used.",
+      "papers": [
+        "Distributional Preference Learning: Understanding and Accounting for Hidden Context in RLHF",
+        "Multilingual Jailbreak Challenges in Large Language Models",
+        "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization"
+      ],
+      "original_name": "Jailbreak vulnerability"
+    },
+    {
+      "text": "The model's latent ability to resist attacks that use specially crafted prompts to circumvent its safety mechanisms and elicit harmful responses.",
+      "papers": [
+        "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction"
+      ],
+      "original_name": "Jailbreak robustness"
+    },
+    {
+      "text": "The model's ability to resist attempts to bypass its safety mechanisms and refuse to generate harmful content, even when subjected to adversarial attacks.",
+      "papers": [
+        "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing"
+      ],
+      "original_name": "Robustness to jailbreaking"
+    },
+    {
+      "text": "The model's vulnerability to adversarial prompts designed to bypass its safety mechanisms and elicit prohibited information.",
+      "papers": [
+        "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically"
+      ],
+      "original_name": "Susceptibility to jailbreaking"
+    },
+    {
+      "text": "The model's ability to adhere to its intended functions and restrictions when prompted with inputs designed to manipulate or exploit it.",
+      "papers": [
+        "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models"
+      ],
+      "original_name": "Jailbreaking resistance"
+    },
+    {
+      "text": "The latent tendency of a model to produce harmful content when exposed to manipulative or adversarial role prompts, reflecting vulnerability in safety alignment.",
+      "papers": [
+        "EMNLP: Educator-role Moral and Normative Large Language Models Profiling"
+      ],
+      "original_name": "Ethical risk"
+    },
+    {
+      "text": "The latent tendency of a model to bypass its safety guardrails when exposed to specific fine-tuning or inference-time triggers, reflecting an acquired vulnerability to compliance with harmful requests.",
+      "papers": [
+        "Jailbreak-Tuning: Models Efficiently Learn Jailbreak Susceptibility"
+      ],
+      "original_name": "Jailbreak susceptibility"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AdvBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "evidence": "We performed experiments on the Advbench dataset [70] which is one of the most prevailing benchmark datasets to measure the security of LLMs. (Section 4)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Fight Back Against Jailbreaking via Prompt Adversarial Tuning"
+        ],
+        "iclr25": [
+          "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Layer-Level Self-Exposure and Patch: Affirmative Token Mitigation for Jailbreak Attack Defense",
+      "evidence": "jailbreak attacks, which exploit vulnerabilities to elicit unintended or harmful outputs, threaten LLMs safety significantly. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Layer-Level Self-Exposure and Patch: Affirmative Token Mitigation for Jailbreak Attack Defense"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DAN",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+      "evidence": "use the AdvBench and DoAnythingNow (Shen et al., 2024) datasets to assess the safety of the LLMs. (Section 4.2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-SafetyBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model",
+      "evidence": "...for evaluating jailbreak robustness, we employ MM-SafetyBench (Liu et al., 2024b), FigStep (Gong et al., 2025) and JailBreaKV (Luo et al., 2024) (Section 2.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FigStep",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model",
+      "evidence": "...for evaluating jailbreak robustness, we employ MM-SafetyBench (Liu et al., 2024b), FigStep (Gong et al., 2025) and JailBreaKV (Luo et al., 2024) (Section 2.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "JailbreakV",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model",
+      "evidence": "...for evaluating jailbreak robustness, we employ MM-SafetyBench (Liu et al., 2024b), FigStep (Gong et al., 2025) and JailBreaKV (Luo et al., 2024) (Section 2.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across definitions, papers converge on an adversarial safety framing: the construct concerns whether safety mechanisms, constraints, guardrails, or restrictions hold up when inputs are designed to manipulate the model into harmful or prohibited outputs. A common positive formulation treats it as jailbreak robustness, resistance, or robustness to jailbreaking, while another common formulation names the inverse as jailbreak vulnerability, susceptibility, or ethical risk. The main variation is scope rather than core meaning, with some definitions focusing on multilingual prompts, template-region manipulation, role-based pressure, or fine-tuning and inference-time triggers."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not offer a single formal taxonomy, but they do organize the construct around recurring attack settings. One recurring distinction is between prompt-based bypass attempts in general and narrower variants involving multilingual prompts, visual inputs, manipulative role prompts, or acquired susceptibility from fine-tuning. Across these uses, different names are applied to closely overlapping content, and one paper further describes safety functions in two parts, identifying harmful content and using that processed information during generation; papers do not link the construct to any other construct."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is benchmark-centered: papers link the construct to 5 measurement instruments and 1 behavioral indicator, with harmful content generation as the only linked indicator. AdvBench is the most frequently linked instrument, followed by DAN, FigStep, JailbreakV, and MM-SafetyBench, and the evidence describes these as datasets or benchmarks used to assess safety or jailbreak robustness with malicious prompts, including multimodal inputs. Several quoted passages make the measurement target explicit through attack success rates, reductions in attack success rates, and refusals to answer unsafe questions rather than producing harmful outputs."
+    },
+    {
+      "label": "Links.",
+      "text": "Outside measurement, one paper claims a causal relationship from safety robustness to harmful content generation, with supporting language that jailbreak attacks exploit vulnerabilities to elicit unintended or harmful outputs. Papers do not report correlational or general related links for this construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across definitions, papers converge on an adversarial safety framing: the construct concerns whether safety mechanisms, constraints, guardrails, or restrictions hold up when inputs are designed to manipulate the model into harmful or prohibited outputs. A common positive formulation treats it as jailbreak robustness, resistance, or robustness to jailbreaking, while another common formulation names the inverse as jailbreak vulnerability, susceptibility, or ethical risk. The main variation is scope rather than core meaning, with some definitions focusing on multilingual prompts, template-region manipulation, role-based pressure, or fine-tuning and inference-time triggers.\n\nSpace of facets. Papers do not offer a single formal taxonomy, but they do organize the construct around recurring attack settings. One recurring distinction is between prompt-based bypass attempts in general and narrower variants involving multilingual prompts, visual inputs, manipulative role prompts, or acquired susceptibility from fine-tuning. Across these uses, different names are applied to closely overlapping content, and one paper further describes safety functions in two parts, identifying harmful content and using that processed information during generation; papers do not link the construct to any other construct.\n\nSpace of measurement. Operationalization is benchmark-centered: papers link the construct to 5 measurement instruments and 1 behavioral indicator, with harmful content generation as the only linked indicator. AdvBench is the most frequently linked instrument, followed by DAN, FigStep, JailbreakV, and MM-SafetyBench, and the evidence describes these as datasets or benchmarks used to assess safety or jailbreak robustness with malicious prompts, including multimodal inputs. Several quoted passages make the measurement target explicit through attack success rates, reductions in attack success rates, and refusals to answer unsafe questions rather than producing harmful outputs.\n\nLinks. Outside measurement, one paper claims a causal relationship from safety robustness to harmful content generation, with supporting language that jailbreak attacks exploit vulnerabilities to elicit unintended or harmful outputs. Papers do not report correlational or general related links for this construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+      "Why Safeguarded Ships Run Aground? Aligned Large Language Models' Safety Mechanisms Tend to Be Anchored in The Template Region"
+    ],
+    "emnlp25": [
+      "DiffusionAttacker: Diffusion-Driven Prompt Manipulation for LLM Jailbreak",
+      "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+      "Jailbreak-Tuning: Models Efficiently Learn Jailbreak Susceptibility",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "Reimagining Safety Alignment with An Image",
+      "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs",
+      "Stand on The Shoulders of Giants: Building JailExpert from Previous Attack Experience",
+      "Think in Safety: Unveiling and Mitigating Safety Alignment Collapse in Multimodal Large Reasoning Model"
+    ],
+    "iclr24": [
+      "Distributional Preference Learning: Understanding and Accounting for Hidden Context in RLHF",
+      "Multilingual Jailbreak Challenges in Large Language Models"
+    ],
+    "iclr25": [
+      "Concept-ROT: Poisoning Concepts in Large Language Models with Model Editing",
+      "HarmAug: Effective Data Augmentation for Knowledge Distillation of Safety Guard Models",
+      "Learn Your Reference Model for Real Good Alignment",
+      "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs",
+      "RobustKV: Defending Large Language Models against Jailbreak Attacks via KV Eviction",
+      "h4rm3l: A Language for Composable Jailbreak Attack Synthesis"
+    ],
+    "icml25": [
+      "Mind the Gap: A Practical Attack on GGUF Quantization",
+      "SafeArena: Evaluating the Safety of Autonomous Web Agents"
+    ],
+    "naacl25": [
+      "Layer-Level Self-Exposure and Patch: Affirmative Token Mitigation for Jailbreak Attack Defense"
+    ],
+    "neurips24": [
+      "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "Tree of Attacks: Jailbreaking Black-Box LLMs Automatically"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 8,
+    "iclr24": 2,
+    "iclr25": 6,
+    "icml25": 2,
+    "naacl25": 1,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

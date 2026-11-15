@@ -1,0 +1,142 @@
+{
+  "canonical_name": "Audio understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats audio understanding as an ability, often explicitly a latent ability, to comprehend and process auditory content. Most papers give it broad scope, spanning speech, non-speech sounds, music, and basic acoustic or signal properties such as frequency, amplitude, temporal patterns, pitch, timbre, and loudness, sometimes alongside contextual sounds. Some authors additionally describe it as mapping audio into meaningful linguistic representations, while a smaller line of work narrows the construct either to spoken-dialogue understanding beyond transcribed text, including paralinguistic cues and environmental sounds, or to sound event understanding of environmental and other non-speech sources.\n\nSpace of facets. Papers systematize the construct mainly by domain and granularity. One recurring split is fine-grained versus coarse-grained understanding of audio, while other papers enumerate domains such as speech, non-speech sounds, music, paralinguistic cues, environmental sounds, and sound events. The labels acoustic understanding, audio understanding, and audio comprehension are used for closely similar broad abilities, whereas sound event understanding is used more narrowly for recognizing and interpreting sources and events, described as covering animals, the environment, and human activities, with tasks ranging from animal sound classification to emergency traffic detection and multi-channel sound event understanding.\n\nSpace of measurement. Operationalization is narrow in the linked evidence: papers connect the construct to one measurement instrument, MMAU, a benchmark, and to one behavioral indicator, audio captioning; no construct-to-construct links are recorded. MMAU is used to evaluate understanding and reasoning in complex audio question answering tasks, and is also described as evaluating auditory expertise in music, including melodic structure, harmony, instrument identification, and contextual music interpretation. This recorded measurement emphasis is narrower than the broadest definitions, because the benchmark evidence centers on QA-style evaluation and music rather than the full range of speech, non-speech, paralinguistic, and environmental content described elsewhere.\n\nLinks. Beyond measurement, the only reported non-measurement link is that audio captioning is related to audio understanding. The paper making this claim says that connecting audio encoders with LLMs allows the LLM to perform various audio understanding tasks, including automatic speech recognition and audio captioning. The papers do not report causal or correlational links for this construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Acoustic understanding",
+    "Audio understanding",
+    "Audio Understanding",
+    "Sound event understanding",
+    "Audio comprehension"
+  ],
+  "papers": [
+    "ADIFF: Explaining audio difference using natural language",
+    "Dynamic-SUPERB Phase-2: A Collaboratively Expanding Benchmark for Measuring the Capabilities of Spoken Language Models with 180 Tasks",
+    "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+    "VoxDialogue: Can Spoken Dialogue Systems Understand Information Beyond Words?",
+    "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+    "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+    "MATS: An Audio Language Model under Text-only Supervision"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The ability of a spoken dialogue system to process and comprehend multi-modal information in audio beyond the transcribed text, such as paralinguistic cues and environmental sounds.",
+      "papers": [
+        "VoxDialogue: Can Spoken Dialogue Systems Understand Information Beyond Words?"
+      ],
+      "original_name": "Acoustic understanding"
+    },
+    {
+      "text": "The ability to comprehend and process the fundamental properties of audio signals, including acoustic characteristics like pitch and timbre as well as contextual elements like environmental sounds.",
+      "papers": [
+        "ADIFF: Explaining audio difference using natural language",
+        "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities"
+      ],
+      "original_name": "Audio understanding"
+    },
+    {
+      "text": "The latent ability to comprehend audio content, including speech, non-speech sounds, and music, to interact effectively with the world.",
+      "papers": [
+        "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark"
+      ],
+      "original_name": "Audio Understanding"
+    },
+    {
+      "text": "The latent ability to recognize and interpret environmental or non-speech sound sources and events.",
+      "papers": [
+        "Dynamic-SUPERB Phase-2: A Collaboratively Expanding Benchmark for Measuring the Capabilities of Spoken Language Models with 180 Tasks"
+      ],
+      "original_name": "Sound event understanding"
+    },
+    {
+      "text": "The latent ability of a model to understand and interpret auditory content such as sound and music, inferred from performance across diverse audio-related tasks.",
+      "papers": [
+        "MATS: An Audio Language Model under Text-only Supervision"
+      ],
+      "original_name": "Audio comprehension"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMAU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MATS: An Audio Language Model under Text-only Supervision",
+      "evidence": "To further evaluate our model\u2019s understanding and reasoning capabilities in complex audio QA tasks, we conducted experiments on AIR-Bench Chat (Yang et al., 2024) and MMAU (Sakshi et al., 2024) benchmarks. (Section 4.2.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MATS: An Audio Language Model under Text-only Supervision"
+        ],
+        "emnlp25": [
+          "Towards Holistic Evaluation of Large Audio-Language Models: A Comprehensive Survey"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Audio captioning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Enhancing Speech Large Language Models with Prompt-Aware Mixture of Audio Encoders",
+      "evidence": "Connecting audio encoders with large language models (LLMs) allows the LLM to perform various audio understanding tasks, such as automatic speech recognition (ASR) and audio captioning (AC). (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Enhancing Speech Large Language Models with Prompt-Aware Mixture of Audio Encoders"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats audio understanding as an ability, often explicitly a latent ability, to comprehend and process auditory content. Most papers give it broad scope, spanning speech, non-speech sounds, music, and basic acoustic or signal properties such as frequency, amplitude, temporal patterns, pitch, timbre, and loudness, sometimes alongside contextual sounds. Some authors additionally describe it as mapping audio into meaningful linguistic representations, while a smaller line of work narrows the construct either to spoken-dialogue understanding beyond transcribed text, including paralinguistic cues and environmental sounds, or to sound event understanding of environmental and other non-speech sources."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers systematize the construct mainly by domain and granularity. One recurring split is fine-grained versus coarse-grained understanding of audio, while other papers enumerate domains such as speech, non-speech sounds, music, paralinguistic cues, environmental sounds, and sound events. The labels acoustic understanding, audio understanding, and audio comprehension are used for closely similar broad abilities, whereas sound event understanding is used more narrowly for recognizing and interpreting sources and events, described as covering animals, the environment, and human activities, with tasks ranging from animal sound classification to emergency traffic detection and multi-channel sound event understanding."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow in the linked evidence: papers connect the construct to one measurement instrument, MMAU, a benchmark, and to one behavioral indicator, audio captioning; no construct-to-construct links are recorded. MMAU is used to evaluate understanding and reasoning in complex audio question answering tasks, and is also described as evaluating auditory expertise in music, including melodic structure, harmony, instrument identification, and contextual music interpretation. This recorded measurement emphasis is narrower than the broadest definitions, because the benchmark evidence centers on QA-style evaluation and music rather than the full range of speech, non-speech, paralinguistic, and environmental content described elsewhere."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, the only reported non-measurement link is that audio captioning is related to audio understanding. The paper making this claim says that connecting audio encoders with LLMs allows the LLM to perform various audio understanding tasks, including automatic speech recognition and audio captioning. The papers do not report causal or correlational links for this construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats audio understanding as an ability, often explicitly a latent ability, to comprehend and process auditory content. Most papers give it broad scope, spanning speech, non-speech sounds, music, and basic acoustic or signal properties such as frequency, amplitude, temporal patterns, pitch, timbre, and loudness, sometimes alongside contextual sounds. Some authors additionally describe it as mapping audio into meaningful linguistic representations, while a smaller line of work narrows the construct either to spoken-dialogue understanding beyond transcribed text, including paralinguistic cues and environmental sounds, or to sound event understanding of environmental and other non-speech sources.\n\nSpace of facets. Papers systematize the construct mainly by domain and granularity. One recurring split is fine-grained versus coarse-grained understanding of audio, while other papers enumerate domains such as speech, non-speech sounds, music, paralinguistic cues, environmental sounds, and sound events. The labels acoustic understanding, audio understanding, and audio comprehension are used for closely similar broad abilities, whereas sound event understanding is used more narrowly for recognizing and interpreting sources and events, described as covering animals, the environment, and human activities, with tasks ranging from animal sound classification to emergency traffic detection and multi-channel sound event understanding.\n\nSpace of measurement. Operationalization is narrow in the linked evidence: papers connect the construct to one measurement instrument, MMAU, a benchmark, and to one behavioral indicator, audio captioning; no construct-to-construct links are recorded. MMAU is used to evaluate understanding and reasoning in complex audio question answering tasks, and is also described as evaluating auditory expertise in music, including melodic structure, harmony, instrument identification, and contextual music interpretation. This recorded measurement emphasis is narrower than the broadest definitions, because the benchmark evidence centers on QA-style evaluation and music rather than the full range of speech, non-speech, paralinguistic, and environmental content described elsewhere.\n\nLinks. Beyond measurement, the only reported non-measurement link is that audio captioning is related to audio understanding. The paper making this claim says that connecting audio encoders with LLMs allows the LLM to perform various audio understanding tasks, including automatic speech recognition and audio captioning. The papers do not report causal or correlational links for this construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ADIFF: Explaining audio difference using natural language",
+      "Dynamic-SUPERB Phase-2: A Collaboratively Expanding Benchmark for Measuring the Capabilities of Spoken Language Models with 180 Tasks",
+      "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+      "VoxDialogue: Can Spoken Dialogue Systems Understand Information Beyond Words?"
+    ],
+    "icml25": [
+      "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+      "MATS: An Audio Language Model under Text-only Supervision"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "canonical_name": "Compression robustness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the construct is treated as preservation of model capability under compression. One framing defines it as maintaining performance when parameters are heavily compressed, including especially under large compression ratios; another treats it as preserving performance across in-domain and out-of-domain evaluation settings; a further framing recasts it as the latent ability of a pruned model to regain the functional capabilities of its dense counterpart after compression. The main difference is whether authors present it as observed performance retention or as a latent recovery ability inferred from observed metrics.\n\nSpace of facets. The papers organize the idea around overlapping aspects rather than a settled single terminology: stability under heavy compression, task generalization across evaluation settings, and post-pruning performance recovery. The labels \"compression robustness,\" \"task generalization,\" and \"performance recovery\" are used for these nearby emphases, so the same general theme is named differently and scoped differently across papers.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. In practice, papers operationalize it by checking whether compressed models maintain performance under large compression ratios, preserve performance across in-domain and out-of-domain settings, datasets, and compression ratios, or recover on metrics such as perplexity across tasks and sparsity levels after pruning. These operationalizations largely track the definitions directly, with some papers emphasizing maintenance under compression and another emphasizing recovery after pruning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Compression robustness",
+    "Task generalization",
+    "Performance recovery"
+  ],
+  "papers": [
+    "Cultivating Gaming Sense for Yourself: Making VLMs Gaming Experts",
+    "P2 Law: Scaling Law for Post-Training After Model Pruning",
+    "Are Bert Family Good Instruction Followers? A Study on Their Potential And Limitations",
+    "Basis Sharing: Cross-Layer Parameter Sharing for Large Language Model Compression",
+    "Do LLMs ``know'' internally when they follow instructions?",
+    "Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives",
+    "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+    "Systematic Outliers in Large Language Models",
+    "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models",
+    "An Architecture Search Framework for Inference-Time Techniques",
+    "In-Context Learning and Occam\u2019s Razor",
+    "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+    "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?",
+    "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+    "FlexiGPT: Pruning and Extending Large Language Models with Low-Rank Weight Sharing",
+    "PromptFix: You Prompt and We Fix the Photo"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "The extent to which an LLM maintains performance when its parameters are heavily compressed.",
+      "papers": [
+        "Basis Sharing: Cross-Layer Parameter Sharing for Large Language Model Compression"
+      ],
+      "original_name": "Compression robustness"
+    },
+    {
+      "text": "The extent to which a compressed model preserves performance across in-domain and out-of-domain evaluation settings.",
+      "papers": [
+        "Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives"
+      ],
+      "original_name": "Task generalization"
+    },
+    {
+      "text": "The latent ability of a pruned model to regain the functional capabilities of its original dense counterpart after compression, inferred from improvements in metrics like perplexity across tasks and sparsity levels.",
+      "papers": [
+        "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision"
+      ],
+      "original_name": "Performance recovery"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the construct is treated as preservation of model capability under compression. One framing defines it as maintaining performance when parameters are heavily compressed, including especially under large compression ratios; another treats it as preserving performance across in-domain and out-of-domain evaluation settings; a further framing recasts it as the latent ability of a pruned model to regain the functional capabilities of its dense counterpart after compression. The main difference is whether authors present it as observed performance retention or as a latent recovery ability inferred from observed metrics."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers organize the idea around overlapping aspects rather than a settled single terminology: stability under heavy compression, task generalization across evaluation settings, and post-pruning performance recovery. The labels \"compression robustness,\" \"task generalization,\" and \"performance recovery\" are used for these nearby emphases, so the same general theme is named differently and scoped differently across papers."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to it. In practice, papers operationalize it by checking whether compressed models maintain performance under large compression ratios, preserve performance across in-domain and out-of-domain settings, datasets, and compression ratios, or recover on metrics such as perplexity across tasks and sparsity levels after pruning. These operationalizations largely track the definitions directly, with some papers emphasizing maintenance under compression and another emphasizing recovery after pruning."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the construct is treated as preservation of model capability under compression. One framing defines it as maintaining performance when parameters are heavily compressed, including especially under large compression ratios; another treats it as preserving performance across in-domain and out-of-domain evaluation settings; a further framing recasts it as the latent ability of a pruned model to regain the functional capabilities of its dense counterpart after compression. The main difference is whether authors present it as observed performance retention or as a latent recovery ability inferred from observed metrics.\n\nSpace of facets. The papers organize the idea around overlapping aspects rather than a settled single terminology: stability under heavy compression, task generalization across evaluation settings, and post-pruning performance recovery. The labels \"compression robustness,\" \"task generalization,\" and \"performance recovery\" are used for these nearby emphases, so the same general theme is named differently and scoped differently across papers.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. In practice, papers operationalize it by checking whether compressed models maintain performance under large compression ratios, preserve performance across in-domain and out-of-domain settings, datasets, and compression ratios, or recover on metrics such as perplexity across tasks and sparsity levels after pruning. These operationalizations largely track the definitions directly, with some papers emphasizing maintenance under compression and another emphasizing recovery after pruning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Cultivating Gaming Sense for Yourself: Making VLMs Gaming Experts",
+      "P2 Law: Scaling Law for Post-Training After Model Pruning"
+    ],
+    "iclr24": [
+      "Are Bert Family Good Instruction Followers? A Study on Their Potential And Limitations"
+    ],
+    "iclr25": [
+      "Basis Sharing: Cross-Layer Parameter Sharing for Large Language Model Compression",
+      "Do LLMs ``know'' internally when they follow instructions?",
+      "Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives",
+      "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+      "Systematic Outliers in Large Language Models",
+      "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models"
+    ],
+    "icml25": [
+      "An Architecture Search Framework for Inference-Time Techniques",
+      "In-Context Learning and Occam\u2019s Razor",
+      "Targeted Low-rank Refinement: Enhancing Sparse Language Models with Precision",
+      "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?"
+    ],
+    "naacl25": [
+      "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+      "FlexiGPT: Pruning and Extending Large Language Models with Low-Rank Weight Sharing"
+    ],
+    "neurips24": [
+      "PromptFix: You Prompt and We Fix the Photo"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr24": 1,
+    "iclr25": 6,
+    "icml25": 4,
+    "naacl25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

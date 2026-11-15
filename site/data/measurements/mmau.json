@@ -1,0 +1,183 @@
+{
+  "canonical_name": "MMAU",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, MMAU is most commonly described as a benchmark for expert-level audio reasoning and audio understanding, with sound and music subsets. Definitions also frame it as a Massive Multi-Task Audio Understanding and Reasoning Benchmark for large audio-language models, and one description says it includes information extraction and reasoning questions. The reported results for \"MMAU Sound\" and \"MMAU Music\" further show that papers treat those subsets as distinct reported parts of the benchmark.\n\nWhat it is claimed to measure. Papers use MMAU to measure 5 constructs and 3 behavioral indicators, so its reported measurement role is spread across several targets rather than centered on a single one. The most frequently named construct links are audio understanding, audio perception, audio reasoning, domain knowledge, and reasoning, while the linked behavioral indicators are information extraction, knowledge retrieval, and tool use. In the relationship evidence, papers describe it as evaluating understanding and reasoning in complex audio QA tasks, advanced perception and reasoning with domain-specific knowledge, expert-level multimodal reasoning and knowledge-retrieval capabilities, and, in one usage, tool use performance.\n\nSpace of uses. No measurement instrument is linked to it. Papers position MMAU as an evaluation benchmark for understanding and reasoning capabilities in complex audio QA tasks and, in one survey framing, for auditory expertise, including musical understanding such as melodic structure, harmony, instrument identification, and contextual music interpretation. A smaller usage treats it as a tool-use evaluation setting, where papers report Tool Execution and Tool Planning on MMAU.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MMAU"
+  ],
+  "papers": [
+    "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+    "Instruction-Following Pruning for Large Language Models",
+    "MATS: An Audio Language Model under Text-only Supervision"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A benchmark for evaluating expert-level audio reasoning, with sound and music subsets that assess complex understanding beyond basic classification.",
+      "papers": [
+        "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities"
+      ],
+      "original_name": "MMAU"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Audio understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MATS: An Audio Language Model under Text-only Supervision",
+      "evidence": "To further evaluate our model\u2019s understanding and reasoning capabilities in complex audio QA tasks, we conducted experiments on AIR-Bench Chat (Yang et al., 2024) and MMAU (Sakshi et al., 2024) benchmarks. (Section 4.2.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MATS: An Audio Language Model under Text-only Supervision"
+        ],
+        "emnlp25": [
+          "Towards Holistic Evaluation of Large Audio-Language Models: A Comprehensive Survey"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Audio perception",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+      "evidence": "MMAU emphasizes advanced perception and reasoning with domain-specific knowledge, challenging models to tackle tasks akin to those faced by experts. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Domain knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+      "evidence": "MMAU emphasizes advanced perception and reasoning with domain-specific knowledge, challenging models to tackle tasks akin to those faced by experts. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+      "evidence": "We introduce the Massive Multi-Task Audio Understanding and Reasoning Benchmark (MMAU), a novel benchmark designed to evaluate the expert-level multimodal reasoning and knowledge-retrieval capabilities of large audio-language models (LALMs). (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+      "evidence": "\u201cIt includes information extraction1 and reasoning 2 questions\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+      "evidence": "\u201cIt includes information extraction1 and reasoning 2 questions\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Instruction-Following Pruning for Large Language Models",
+      "evidence": "We evaluate the tool use performance on MMAU (Yin et al., 2024) and report the performance on Tool Execution and Tool Planning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Instruction-Following Pruning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Audio reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MATS: An Audio Language Model under Text-only Supervision",
+      "evidence": "To further evaluate our model\u2019s understanding and reasoning capabilities in complex audio QA tasks, we conducted experiments on AIR-Bench Chat (Yang et al., 2024) and MMAU (Sakshi et al., 2024) benchmarks. (Section 4.2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MATS: An Audio Language Model under Text-only Supervision"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, MMAU is most commonly described as a benchmark for expert-level audio reasoning and audio understanding, with sound and music subsets. Definitions also frame it as a Massive Multi-Task Audio Understanding and Reasoning Benchmark for large audio-language models, and one description says it includes information extraction and reasoning questions. The reported results for \"MMAU Sound\" and \"MMAU Music\" further show that papers treat those subsets as distinct reported parts of the benchmark."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use MMAU to measure 5 constructs and 3 behavioral indicators, so its reported measurement role is spread across several targets rather than centered on a single one. The most frequently named construct links are audio understanding, audio perception, audio reasoning, domain knowledge, and reasoning, while the linked behavioral indicators are information extraction, knowledge retrieval, and tool use. In the relationship evidence, papers describe it as evaluating understanding and reasoning in complex audio QA tasks, advanced perception and reasoning with domain-specific knowledge, expert-level multimodal reasoning and knowledge-retrieval capabilities, and, in one usage, tool use performance."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it. Papers position MMAU as an evaluation benchmark for understanding and reasoning capabilities in complex audio QA tasks and, in one survey framing, for auditory expertise, including musical understanding such as melodic structure, harmony, instrument identification, and contextual music interpretation. A smaller usage treats it as a tool-use evaluation setting, where papers report Tool Execution and Tool Planning on MMAU."
+    }
+  ],
+  "characterization": "What it is. Across the papers, MMAU is most commonly described as a benchmark for expert-level audio reasoning and audio understanding, with sound and music subsets. Definitions also frame it as a Massive Multi-Task Audio Understanding and Reasoning Benchmark for large audio-language models, and one description says it includes information extraction and reasoning questions. The reported results for \"MMAU Sound\" and \"MMAU Music\" further show that papers treat those subsets as distinct reported parts of the benchmark.\n\nWhat it is claimed to measure. Papers use MMAU to measure 5 constructs and 3 behavioral indicators, so its reported measurement role is spread across several targets rather than centered on a single one. The most frequently named construct links are audio understanding, audio perception, audio reasoning, domain knowledge, and reasoning, while the linked behavioral indicators are information extraction, knowledge retrieval, and tool use. In the relationship evidence, papers describe it as evaluating understanding and reasoning in complex audio QA tasks, advanced perception and reasoning with domain-specific knowledge, expert-level multimodal reasoning and knowledge-retrieval capabilities, and, in one usage, tool use performance.\n\nSpace of uses. No measurement instrument is linked to it. Papers position MMAU as an evaluation benchmark for understanding and reasoning capabilities in complex audio QA tasks and, in one survey framing, for auditory expertise, including musical understanding such as melodic structure, harmony, instrument identification, and contextual music interpretation. A smaller usage treats it as a tool-use evaluation setting, where papers report Tool Execution and Tool Planning on MMAU.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+      "Instruction-Following Pruning for Large Language Models",
+      "MATS: An Audio Language Model under Text-only Supervision"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 3
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

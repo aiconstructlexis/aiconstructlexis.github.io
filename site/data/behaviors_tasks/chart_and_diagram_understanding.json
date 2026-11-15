@@ -1,0 +1,217 @@
+{
+  "canonical_name": "Chart and diagram understanding",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as interpreting charts, plots, or graphs and extracting information from them, often with some reasoning over the displayed data. Some descriptions make the task broader by emphasizing answering questions about charts or deriving insights from visual data representations, including visual and logical reasoning over charts. A narrower strand defines success as locating specific values, labels, time ranges, legends, or color mappings, and one paper explicitly notes that annotators verify references to chart elements such as trends, labels, and time ranges.\n\nVariants. Papers use several nearby labels, most often chart understanding and chart interpretation, with smaller variants called chart reasoning, information positioning, and data extraction. The studied settings range from general charts and plots to financial charts such as K-line, line, bar, and pie charts, with one paper also naming candlestick chart analysis, and to charts used for scientific insights. Some work narrows the behavior to query-based retrieval of chart elements, while another variant focuses on extracting legend values and handling color mappings.\n\nSpace of elicitation and scores. Papers link this behavior to 5 measurement instruments: AI2D, CharXiv, ChartQA, MMC, and MathVista. Several are explicitly presented as benchmarks that include chart understanding, MathVista is described as an evaluation suite whose benchmarks are designed to test chart understanding, and CharXiv is presented as a measure of progress on chart understanding.\n\nWhat it is taken as evidence of. Across the papers, no construct is linked to this behavior, so the papers do not specify a broader construct that it is taken to evidence.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Chart interpretation",
+    "Chart understanding",
+    "Chart reasoning",
+    "Data extraction",
+    "Information positioning"
+  ],
+  "papers": [
+    "VisFinEval: A Scenario-Driven Chinese Multimodal Benchmark for Holistic Financial Understanding",
+    "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+    "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+    "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning",
+    "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+    "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+    "Locality Alignment Improves Vision-Language Models",
+    "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types",
+    "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+    "Can We Predict Performance of Large Models across Vision-Language Tasks?",
+    "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+    "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "The task of extracting and reasoning about data presented in graphical charts.",
+      "papers": [
+        "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+        "VisFinEval: A Scenario-Driven Chinese Multimodal Benchmark for Holistic Financial Understanding"
+      ],
+      "original_name": "Chart interpretation"
+    },
+    {
+      "text": "Interpreting charts or plots and extracting information from them.",
+      "papers": [
+        "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+        "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+        "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+        "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning"
+      ],
+      "original_name": "Chart understanding"
+    },
+    {
+      "text": "Interpreting and deriving insights from visual data representations like graphs and charts.",
+      "papers": [
+        "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types"
+      ],
+      "original_name": "Chart reasoning"
+    },
+    {
+      "text": "The latent capability to accurately perceive and retrieve numerical, categorical, or textual information from visual representations like legends and color mappings.",
+      "papers": [
+        "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries"
+      ],
+      "original_name": "Data extraction"
+    },
+    {
+      "text": "Locating and extracting specific data points or elements from a chart based on a query, such as values, labels, or time ranges.",
+      "papers": [
+        "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering"
+      ],
+      "original_name": "Information positioning"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ChartQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+      "evidence": "2) OCR/document/chart understanding: OCRBench (Liu et al., 2023f), DocVQA (Mathew et al., 2021), ChartQA (Masry et al., 2022); (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CharXiv",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs",
+      "evidence": "We hope that CharXiv facilitates future research on MLLM chart understanding by providing a more realistic and faithful measure of progress. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVista",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs",
+      "evidence": "Many benchmarks in the popular MathVista evaluation suite [60] are designed to test chart understanding. (Sec 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AI2D",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Locality Alignment Improves Vision-Language Models",
+      "evidence": "Benchmarks that involve spatial understanding and fine-grained features include ... chart understanding (AI2D; Kembhavi et al. 2016)... (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Locality Alignment Improves Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+      "evidence": "The models are tested across seven benchmarks: ...MMC (chart understanding)... (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats this behavior as interpreting charts, plots, or graphs and extracting information from them, often with some reasoning over the displayed data. Some descriptions make the task broader by emphasizing answering questions about charts or deriving insights from visual data representations, including visual and logical reasoning over charts. A narrower strand defines success as locating specific values, labels, time ranges, legends, or color mappings, and one paper explicitly notes that annotators verify references to chart elements such as trends, labels, and time ranges."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby labels, most often chart understanding and chart interpretation, with smaller variants called chart reasoning, information positioning, and data extraction. The studied settings range from general charts and plots to financial charts such as K-line, line, bar, and pie charts, with one paper also naming candlestick chart analysis, and to charts used for scientific insights. Some work narrows the behavior to query-based retrieval of chart elements, while another variant focuses on extracting legend values and handling color mappings."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to 5 measurement instruments: AI2D, CharXiv, ChartQA, MMC, and MathVista. Several are explicitly presented as benchmarks that include chart understanding, MathVista is described as an evaluation suite whose benchmarks are designed to test chart understanding, and CharXiv is presented as a measure of progress on chart understanding."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Across the papers, no construct is linked to this behavior, so the papers do not specify a broader construct that it is taken to evidence."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as interpreting charts, plots, or graphs and extracting information from them, often with some reasoning over the displayed data. Some descriptions make the task broader by emphasizing answering questions about charts or deriving insights from visual data representations, including visual and logical reasoning over charts. A narrower strand defines success as locating specific values, labels, time ranges, legends, or color mappings, and one paper explicitly notes that annotators verify references to chart elements such as trends, labels, and time ranges.\n\nVariants. Papers use several nearby labels, most often chart understanding and chart interpretation, with smaller variants called chart reasoning, information positioning, and data extraction. The studied settings range from general charts and plots to financial charts such as K-line, line, bar, and pie charts, with one paper also naming candlestick chart analysis, and to charts used for scientific insights. Some work narrows the behavior to query-based retrieval of chart elements, while another variant focuses on extracting legend values and handling color mappings.\n\nSpace of elicitation and scores. Papers link this behavior to 5 measurement instruments: AI2D, CharXiv, ChartQA, MMC, and MathVista. Several are explicitly presented as benchmarks that include chart understanding, MathVista is described as an evaluation suite whose benchmarks are designed to test chart understanding, and CharXiv is presented as a measure of progress on chart understanding.\n\nWhat it is taken as evidence of. Across the papers, no construct is linked to this behavior, so the papers do not specify a broader construct that it is taken to evidence.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "VisFinEval: A Scenario-Driven Chinese Multimodal Benchmark for Holistic Financial Understanding",
+      "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+      "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering"
+    ],
+    "iclr25": [
+      "Eagle: Exploring The Design Space for Multimodal LLMs with Mixture of Encoders",
+      "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+      "Locality Alignment Improves Vision-Language Models",
+      "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types",
+      "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+    ],
+    "icml25": [
+      "Can We Predict Performance of Large Models across Vision-Language Tasks?",
+      "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment"
+    ],
+    "naacl25": [
+      "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries"
+    ],
+    "neurips24": [
+      "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    ],
+    "iclr24": [
+      "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 5,
+    "icml25": 2,
+    "naacl25": 1,
+    "neurips24": 2,
+    "iclr24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

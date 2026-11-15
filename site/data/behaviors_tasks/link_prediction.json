@@ -1,0 +1,238 @@
+{
+  "canonical_name": "Link prediction",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. The most prevalent framing treats link prediction as a knowledge-graph task: predicting missing relations or entities, sometimes narrowed to finding the most plausible tail entity for a query such as (h, r, ?). Some papers use a broader graph formulation instead, describing it as inferring whether an edge or connection exists between two nodes. Evaluation is explicitly described with Mean Reciprocal Rank and Hit@N in one line of work, while another reports link prediction accuracy.\n\nVariants. Papers study both knowledge-graph and broader graph settings. In knowledge-graph work, link prediction appears alongside triple classification or as part of knowledge graph completion, and one setup states that \"the edges connected to these removed nodes were then used as prediction targets.\" Other papers treat it as a downstream graph task, including a few-shot setting, and it is often discussed alongside node classification.\n\nSpace of elicitation and scores. Across papers, link prediction is measured by five instruments, all used as datasets: FB15k-237, CiteSeer, Cora, PubMed, and WN18RR. The scoring language varies by setting: knowledge-graph papers explicitly mention Mean Reciprocal Rank and Hit@N, while one paper reports link prediction accuracies on Cora and CiteSeer.\n\nWhat it is taken as evidence of. Across the recorded links, papers relate link prediction to two constructs rather than using it as direct evidence of one agreed construct: Local reasoning and Task generalization. One paper describes link prediction, together with node classification and subgraph classification, as tasks that \"primarily depend on the local reasoning capabilities of the graph structure,\" while another relates it to task generalization by using models trained on node classification directly for link prediction without fine-tuning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Link prediction"
+  ],
+  "papers": [
+    "Can Large Language Models Tackle Graph Partitioning?",
+    "Enhancing Large Language Model for Knowledge Graph Completion via Structure-Aware Alignment-Tuning",
+    "Graph-R1: Incentivizing the Zero-Shot Graph Learning Capability in LLMs via Explicit Reasoning",
+    "GraphAgent: Agentic Graph Language Assistant",
+    "Judge and Improve: Towards a Better Reasoning of Knowledge Graphs with Large Language Models",
+    "LGA: LLM-GNN Aggregation for Temporal Evolution Attribute Graph Prediction",
+    "Generalization Principles for Inference over Text-Attributed Graphs with Large Language Models",
+    "Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks",
+    "Can Large Language Models Analyze Graphs like Professionals? A Benchmark, Datasets and Models",
+    "GITA: Graph to Visual and Textual Integration for Vision-Language Graph Reasoning",
+    "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+    "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+    "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+    "Microstructures and Accuracy of Graph Recall by Large Language Models",
+    "TEG-DB: A Comprehensive Dataset and Benchmark of Textual-Edge Graphs",
+    "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "The specific task of predicting missing relations or entities in a knowledge graph, evaluated using metrics like MRR and Hit@N.",
+      "papers": [
+        "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+        "Generalization Principles for Inference over Text-Attributed Graphs with Large Language Models",
+        "Judge and Improve: Towards a Better Reasoning of Knowledge Graphs with Large Language Models"
+      ],
+      "original_name": "Link prediction"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FB15k-237",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Self-supervised Quantized Representation for Seamlessly Integrating Knowledge Graphs with Large Language Models",
+      "evidence": "We carry out experiments on the KG link prediction and triple classification tasks, where the popular datasets WN18RR (Dettmers et al., 2018) and FB15k-237 (Toutanova and Chen, 2015) as well as FB15k-237N (Lv et al., 2022) are utilized.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Self-supervised Quantized Representation for Seamlessly Integrating Knowledge Graphs with Large Language Models"
+        ],
+        "emnlp25": [
+          "Enhancing Large Language Model for Knowledge Graph Completion via Structure-Aware Alignment-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Node classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "We employ models trained on node classification tasks directly for link prediction tasks without any fine-tuning. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PubMed",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+      "evidence": "We then employ Cora, History, and Amazon ratings to evaluate node classification downstream task performance, PubMed for link prediction task performance, and HIV for graph classification task performance. (Section 4.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WN18RR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Self-supervised Quantized Representation for Seamlessly Integrating Knowledge Graphs with Large Language Models",
+      "evidence": "We carry out experiments on the KG link prediction and triple classification tasks, where the popular datasets WN18RR (Dettmers et al., 2018) and FB15k-237 (Toutanova and Chen, 2015) as well as FB15k-237N (Lv et al., 2022) are utilized.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Self-supervised Quantized Representation for Seamlessly Integrating Knowledge Graphs with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cora",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Judge and Improve: Towards a Better Reasoning of Knowledge Graphs with Large Language Models",
+      "evidence": "our model achieved link prediction accuracies of 95.40% on Cora and 76.14% on CiteSeer, indicating the strong generalization capability of our method. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Judge and Improve: Towards a Better Reasoning of Knowledge Graphs with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CiteSeer",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Judge and Improve: Towards a Better Reasoning of Knowledge Graphs with Large Language Models",
+      "evidence": "our model achieved link prediction accuracies of 95.40% on Cora and 76.14% on CiteSeer, indicating the strong generalization capability of our method. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Judge and Improve: Towards a Better Reasoning of Knowledge Graphs with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge graph completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Enhancing Large Language Model for Knowledge Graph Completion via Structure-Aware Alignment-Tuning",
+      "evidence": "our work focuses on KGC, specifically addressing two tasks: (i) triple classification, assessing the correctness of a given triple (h, r, t), and (ii) link prediction, identifying the most plausible tail entity t for a given query (h, r, ?). (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Enhancing Large Language Model for Knowledge Graph Completion via Structure-Aware Alignment-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Local reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Can Large Language Models Tackle Graph Partitioning?",
+      "evidence": "These tasks [node classification, link prediction, and subgraph classification] primarily depend on the local reasoning capabilities of the graph structure. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Can Large Language Models Tackle Graph Partitioning?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "evidence": "We employ models trained on node classification tasks directly for link prediction tasks without any fine-tuning. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 8,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The most prevalent framing treats link prediction as a knowledge-graph task: predicting missing relations or entities, sometimes narrowed to finding the most plausible tail entity for a query such as (h, r, ?). Some papers use a broader graph formulation instead, describing it as inferring whether an edge or connection exists between two nodes. Evaluation is explicitly described with Mean Reciprocal Rank and Hit@N in one line of work, while another reports link prediction accuracy."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study both knowledge-graph and broader graph settings. In knowledge-graph work, link prediction appears alongside triple classification or as part of knowledge graph completion, and one setup states that \"the edges connected to these removed nodes were then used as prediction targets.\" Other papers treat it as a downstream graph task, including a few-shot setting, and it is often discussed alongside node classification."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Across papers, link prediction is measured by five instruments, all used as datasets: FB15k-237, CiteSeer, Cora, PubMed, and WN18RR. The scoring language varies by setting: knowledge-graph papers explicitly mention Mean Reciprocal Rank and Hit@N, while one paper reports link prediction accuracies on Cora and CiteSeer."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Across the recorded links, papers relate link prediction to two constructs rather than using it as direct evidence of one agreed construct: Local reasoning and Task generalization. One paper describes link prediction, together with node classification and subgraph classification, as tasks that \"primarily depend on the local reasoning capabilities of the graph structure,\" while another relates it to task generalization by using models trained on node classification directly for link prediction without fine-tuning."
+    }
+  ],
+  "characterization": "Space of definitions. The most prevalent framing treats link prediction as a knowledge-graph task: predicting missing relations or entities, sometimes narrowed to finding the most plausible tail entity for a query such as (h, r, ?). Some papers use a broader graph formulation instead, describing it as inferring whether an edge or connection exists between two nodes. Evaluation is explicitly described with Mean Reciprocal Rank and Hit@N in one line of work, while another reports link prediction accuracy.\n\nVariants. Papers study both knowledge-graph and broader graph settings. In knowledge-graph work, link prediction appears alongside triple classification or as part of knowledge graph completion, and one setup states that \"the edges connected to these removed nodes were then used as prediction targets.\" Other papers treat it as a downstream graph task, including a few-shot setting, and it is often discussed alongside node classification.\n\nSpace of elicitation and scores. Across papers, link prediction is measured by five instruments, all used as datasets: FB15k-237, CiteSeer, Cora, PubMed, and WN18RR. The scoring language varies by setting: knowledge-graph papers explicitly mention Mean Reciprocal Rank and Hit@N, while one paper reports link prediction accuracies on Cora and CiteSeer.\n\nWhat it is taken as evidence of. Across the recorded links, papers relate link prediction to two constructs rather than using it as direct evidence of one agreed construct: Local reasoning and Task generalization. One paper describes link prediction, together with node classification and subgraph classification, as tasks that \"primarily depend on the local reasoning capabilities of the graph structure,\" while another relates it to task generalization by using models trained on node classification directly for link prediction without fine-tuning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Can Large Language Models Tackle Graph Partitioning?",
+      "Enhancing Large Language Model for Knowledge Graph Completion via Structure-Aware Alignment-Tuning",
+      "Graph-R1: Incentivizing the Zero-Shot Graph Learning Capability in LLMs via Explicit Reasoning",
+      "GraphAgent: Agentic Graph Language Assistant",
+      "Judge and Improve: Towards a Better Reasoning of Knowledge Graphs with Large Language Models",
+      "LGA: LLM-GNN Aggregation for Temporal Evolution Attribute Graph Prediction"
+    ],
+    "icml25": [
+      "Generalization Principles for Inference over Text-Attributed Graphs with Large Language Models",
+      "Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks"
+    ],
+    "neurips24": [
+      "Can Large Language Models Analyze Graphs like Professionals? A Benchmark, Datasets and Models",
+      "GITA: Graph to Visual and Textual Integration for Vision-Language Graph Reasoning",
+      "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+      "LLMs as Zero-shot Graph Learners: Alignment of GNN Representations with LLM Token Embeddings",
+      "Large Language Models-guided Dynamic Adaptation for Temporal Knowledge Graph Reasoning",
+      "Microstructures and Accuracy of Graph Recall by Large Language Models",
+      "TEG-DB: A Comprehensive Dataset and Benchmark of Textual-Edge Graphs",
+      "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 6,
+    "icml25": 2,
+    "neurips24": 8
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "neurips24"
+  ]
+}

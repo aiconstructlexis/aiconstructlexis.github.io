@@ -1,0 +1,97 @@
+{
+  "canonical_name": "SlideVQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, SlideVQA is most commonly described as a public, open-source dataset for visual question answering on presentation slides. The prevailing description adds that each document consists of 20 pages, and one paper further specifies splits of 1,919 slides for training, 400 for test, and 300 for development. A smaller usage describes it more generally as a visual document question-answering dataset that can serve as source material for query refinement.\n\nWhat it is claimed to measure. Across reported uses, papers use SlideVQA to measure 2 behavioral indicators and no constructs. The linked indicators are Information retrieval and Visual question answering, so its reported measurement use is spread across those two tasks rather than centered on any construct. One paper evaluates retrieval accuracy on SlideVQA, while another includes it among VQA datasets used for presentation slides.\n\nSpace of uses. Papers use SlideVQA in several roles. In one evaluation setup, it appears alongside MM-LongBench, DUDE, DocVQA, and VisR-Bench when comparing retrieval accuracy baselines. Other papers use it as a source of question-document pairs for presentation slides, or describe data construction as derived from refining queries in SlideVQA.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SlideVQA"
+  ],
+  "papers": [
+    "MMDocIR: Benchmarking Multimodal Retrieval for Long Documents",
+    "ViDoRAG: Visual Document Retrieval-Augmented Generation via Dynamic Iterative Reasoning Agents",
+    "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+    "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A public dataset for visual question answering on presentation slides, where each document consists of 20 pages.",
+      "papers": [
+        "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+        "ViDoRAG: Visual Document Retrieval-Augmented Generation via Dynamic Iterative Reasoning Agents"
+      ],
+      "original_name": "SlideVQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+      "evidence": "We first evaluate the retrieval accuracy of the Col-retrieval module within SV-RAG and compare it with several baselines on SlideVQA (Tanaka et al., 2023), MM-LongBench (Ma et al., 2024d), DUDE (Van Landeghem et al., 2023), DocVQA (Mathew et al., 2020; 2021) and VisR-Bench. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+      "evidence": "We collect question-document pairs from a series of VQA datasets, targeting different document types: ... and SlideVQA (Tanaka et al., 2023) for presentation slides. (Sec. 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, SlideVQA is most commonly described as a public, open-source dataset for visual question answering on presentation slides. The prevailing description adds that each document consists of 20 pages, and one paper further specifies splits of 1,919 slides for training, 400 for test, and 300 for development. A smaller usage describes it more generally as a visual document question-answering dataset that can serve as source material for query refinement."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across reported uses, papers use SlideVQA to measure 2 behavioral indicators and no constructs. The linked indicators are Information retrieval and Visual question answering, so its reported measurement use is spread across those two tasks rather than centered on any construct. One paper evaluates retrieval accuracy on SlideVQA, while another includes it among VQA datasets used for presentation slides."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use SlideVQA in several roles. In one evaluation setup, it appears alongside MM-LongBench, DUDE, DocVQA, and VisR-Bench when comparing retrieval accuracy baselines. Other papers use it as a source of question-document pairs for presentation slides, or describe data construction as derived from refining queries in SlideVQA."
+    }
+  ],
+  "characterization": "What it is. Across the papers, SlideVQA is most commonly described as a public, open-source dataset for visual question answering on presentation slides. The prevailing description adds that each document consists of 20 pages, and one paper further specifies splits of 1,919 slides for training, 400 for test, and 300 for development. A smaller usage describes it more generally as a visual document question-answering dataset that can serve as source material for query refinement.\n\nWhat it is claimed to measure. Across reported uses, papers use SlideVQA to measure 2 behavioral indicators and no constructs. The linked indicators are Information retrieval and Visual question answering, so its reported measurement use is spread across those two tasks rather than centered on any construct. One paper evaluates retrieval accuracy on SlideVQA, while another includes it among VQA datasets used for presentation slides.\n\nSpace of uses. Papers use SlideVQA in several roles. In one evaluation setup, it appears alongside MM-LongBench, DUDE, DocVQA, and VisR-Bench when comparing retrieval accuracy baselines. Other papers use it as a source of question-document pairs for presentation slides, or describe data construction as derived from refining queries in SlideVQA.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "MMDocIR: Benchmarking Multimodal Retrieval for Long Documents",
+      "ViDoRAG: Visual Document Retrieval-Augmented Generation via Dynamic Iterative Reasoning Agents"
+    ],
+    "iclr25": [
+      "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+      "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

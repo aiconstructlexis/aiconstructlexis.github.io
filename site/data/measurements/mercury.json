@@ -1,0 +1,44 @@
+{
+  "canonical_name": "Mercury",
+  "type": "measurement",
+  "canonical_definition": "Code generation evaluation used as a validation set for tuning hyperparameters in code-related tasks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Mercury"
+  ],
+  "papers": [
+    "ImPart: Importance-Aware Delta-Sparsification for Improved Model Compression and Merging in LLMs",
+    "Speed Up Your Code: Progressive Code Acceleration Through Bidirectional Tree Editing"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "Code generation evaluation used as a validation set for tuning hyperparameters in code-related tasks.",
+      "papers": [
+        "ImPart: Importance-Aware Delta-Sparsification for Improved Model Compression and Merging in LLMs"
+      ],
+      "original_name": "Mercury"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "Code generation evaluation used as a validation set for tuning hyperparameters in code-related tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "ImPart: Importance-Aware Delta-Sparsification for Improved Model Compression and Merging in LLMs",
+      "Speed Up Your Code: Progressive Code Acceleration Through Bidirectional Tree Editing"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

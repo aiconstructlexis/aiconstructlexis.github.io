@@ -1,0 +1,167 @@
+{
+  "canonical_name": "Semantic consistency",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats semantic consistency as preservation of underlying meaning when something changes, such as input phrasing, symbolic perturbation, modality, prompt form, or repeated generation. Most definitions describe stable meaning across semantically equivalent inputs or outputs, often framed as consistent answers, non-contradictory outputs, or unchanged intent. Smaller lines of work place it at the representation level, as stable semantics across text, fusion, and visible features or as visual representations staying aligned with textual ones, while another line defines it within a single response, as rationale and answer exhibiting consistent semantics. Some authors also fold correctness into the notion, describing it as maintaining the same meaning and correctness across variations of the same question.\n\nSpace of facets. Papers use the same label for several levels of analysis: cross-modal representation consistency, answer consistency under paraphrase or program perturbation, repeated-generation stability for the same prompt, prompt-rewrite faithfulness, and alignment between different parts of an output. Within these variants, the construct is expressed as semantic similarity, non-contradiction, preservation of meaning and intent, or stable semantic representation, and one paper explicitly names a visual-semantic subtype. One paper also distinguishes it from stylistic consistency by referring to \"semantic and stylistic consistency benchmarks.\"\n\nSpace of measurement. In the linked measurements, papers connect semantic consistency to one measurement instrument, the Alpaca instruction dataset, used to create semantically equivalent question pairs, and to one behavioral indicator, Informalization. Beyond that explicit instrument link, the operationalizations described in papers are mostly similarity-based analyses rather than additional named instruments: cosine similarity between answer embeddings across question variants, average pairwise semantic similarity across repeated free-text generations, and answer agreement after translation or rotation of symbolic programs that keep the same semantics. Other papers operationalize it through whether outputs become contradictory for equivalent prompts, whether rewritten prompts lose context or narrow focus, or whether rationale and answer remain logically aligned, so the measurements track preservation of meaning across both representation-level and output-level settings.\n\nLinks. The recorded links are relational rather than causal or correlational. One paper relates Informalization to semantic consistency, describing semantic consistency as preservation of original meaning by informalizing candidates and comparing the embeddings of the original and informalized texts. Another paper relates semantic consistency to one construct, Semantic uncertainty, stating that decreasing semantic entropy reflects enhanced semantic consistency in the model's output space and reduced response uncertainty.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Visual-semantic consistency",
+    "Semantic consistency"
+  ],
+  "papers": [
+    "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+    "ConsistencyChecker: Tree-based Evaluation of LLM Generalization Capabilities",
+    "Self-Instructed Derived Prompt Generation Meets In-Context Learning: Unlocking New Potential of Black-Box LLMs",
+    "A Symbolic Adversarial Learning Framework for Evolving Fake News Generation and Detection",
+    "CARMA: Enhanced Compositionality in LLMs via Advanced Regularisation and Mutual Information Alignment",
+    "Frame First, Then Extract: A Frame-Semantic Reasoning Pipeline for Zero-Shot Relation Triplet Extraction",
+    "Grounded Semantic Role Labelling from Synthetic Multimodal Data for Situated Robot Commands",
+    "Investigating Value-Reasoning Reliability in Small Large Language Models",
+    "Balancing Act: Diversity and Consistency in Large Language Model Ensembles",
+    "Can Large Language Models Understand Symbolic Graphics Programs?",
+    "Analyzing and Improving Coherence of Large Language Models in Question Answering",
+    "ConMeC: A Dataset for Metonymy Resolution with Common Nouns",
+    "Waste Not, Want Not; Recycled Gumbel Noise Improves Consistency in Natural Language Generation",
+    "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+    "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+    "Empowering Visible-Infrared Person Re-Identification with Large Foundation Models",
+    "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding"
+  ],
+  "paper_count": 17,
+  "definitions": [
+    {
+      "text": "The degree to which the model's visual representations maintain a coherent and meaningful alignment with their corresponding semantic (textual) representations across different levels of granularity.",
+      "papers": [
+        "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding"
+      ],
+      "original_name": "Visual-semantic consistency"
+    },
+    {
+      "text": "The extent to which representations preserve the same underlying meaning across text, fusion, and visible modalities.",
+      "papers": [
+        "Empowering Visible-Infrared Person Re-Identification with Large Foundation Models",
+        "Can Large Language Models Understand Symbolic Graphics Programs?",
+        "Waste Not, Want Not; Recycled Gumbel Noise Improves Consistency in Natural Language Generation",
+        "Analyzing and Improving Coherence of Large Language Models in Question Answering",
+        "ConMeC: A Dataset for Metonymy Resolution with Common Nouns",
+        "Self-Instructed Derived Prompt Generation Meets In-Context Learning: Unlocking New Potential of Black-Box LLMs",
+        "Investigating Value-Reasoning Reliability in Small Large Language Models"
+      ],
+      "original_name": "Semantic consistency"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Informalization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "evidence": "semantic consistency evaluates the preservation of the original meaning by informalizing the candidates and computing the similarity between the embeddings of the original and informalized texts. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Alpaca instruction dataset",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Waste Not, Want Not; Recycled Gumbel Noise Improves Consistency in Natural Language Generation",
+      "evidence": "We create semantically equivalent pairs of questions for evaluation by randomly sampling 300 questions from the Alpaca dataset (Taori et al., 2023) \u2014 a popular human-preference dataset - and rephrasing them using gpt-4o mini. (Section 6.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Waste Not, Want Not; Recycled Gumbel Noise Improves Consistency in Natural Language Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+      "evidence": "\u201cthe semantic entropy of the model gradually decreases, reflecting enhanced semantic consistency in the model\u2019s output space and reduced response uncertainty.\u201d (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats semantic consistency as preservation of underlying meaning when something changes, such as input phrasing, symbolic perturbation, modality, prompt form, or repeated generation. Most definitions describe stable meaning across semantically equivalent inputs or outputs, often framed as consistent answers, non-contradictory outputs, or unchanged intent. Smaller lines of work place it at the representation level, as stable semantics across text, fusion, and visible features or as visual representations staying aligned with textual ones, while another line defines it within a single response, as rationale and answer exhibiting consistent semantics. Some authors also fold correctness into the notion, describing it as maintaining the same meaning and correctness across variations of the same question."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use the same label for several levels of analysis: cross-modal representation consistency, answer consistency under paraphrase or program perturbation, repeated-generation stability for the same prompt, prompt-rewrite faithfulness, and alignment between different parts of an output. Within these variants, the construct is expressed as semantic similarity, non-contradiction, preservation of meaning and intent, or stable semantic representation, and one paper explicitly names a visual-semantic subtype. One paper also distinguishes it from stylistic consistency by referring to \"semantic and stylistic consistency benchmarks.\""
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "In the linked measurements, papers connect semantic consistency to one measurement instrument, the Alpaca instruction dataset, used to create semantically equivalent question pairs, and to one behavioral indicator, Informalization. Beyond that explicit instrument link, the operationalizations described in papers are mostly similarity-based analyses rather than additional named instruments: cosine similarity between answer embeddings across question variants, average pairwise semantic similarity across repeated free-text generations, and answer agreement after translation or rotation of symbolic programs that keep the same semantics. Other papers operationalize it through whether outputs become contradictory for equivalent prompts, whether rewritten prompts lose context or narrow focus, or whether rationale and answer remain logically aligned, so the measurements track preservation of meaning across both representation-level and output-level settings."
+    },
+    {
+      "label": "Links.",
+      "text": "The recorded links are relational rather than causal or correlational. One paper relates Informalization to semantic consistency, describing semantic consistency as preservation of original meaning by informalizing candidates and comparing the embeddings of the original and informalized texts. Another paper relates semantic consistency to one construct, Semantic uncertainty, stating that decreasing semantic entropy reflects enhanced semantic consistency in the model's output space and reduced response uncertainty."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats semantic consistency as preservation of underlying meaning when something changes, such as input phrasing, symbolic perturbation, modality, prompt form, or repeated generation. Most definitions describe stable meaning across semantically equivalent inputs or outputs, often framed as consistent answers, non-contradictory outputs, or unchanged intent. Smaller lines of work place it at the representation level, as stable semantics across text, fusion, and visible features or as visual representations staying aligned with textual ones, while another line defines it within a single response, as rationale and answer exhibiting consistent semantics. Some authors also fold correctness into the notion, describing it as maintaining the same meaning and correctness across variations of the same question.\n\nSpace of facets. Papers use the same label for several levels of analysis: cross-modal representation consistency, answer consistency under paraphrase or program perturbation, repeated-generation stability for the same prompt, prompt-rewrite faithfulness, and alignment between different parts of an output. Within these variants, the construct is expressed as semantic similarity, non-contradiction, preservation of meaning and intent, or stable semantic representation, and one paper explicitly names a visual-semantic subtype. One paper also distinguishes it from stylistic consistency by referring to \"semantic and stylistic consistency benchmarks.\"\n\nSpace of measurement. In the linked measurements, papers connect semantic consistency to one measurement instrument, the Alpaca instruction dataset, used to create semantically equivalent question pairs, and to one behavioral indicator, Informalization. Beyond that explicit instrument link, the operationalizations described in papers are mostly similarity-based analyses rather than additional named instruments: cosine similarity between answer embeddings across question variants, average pairwise semantic similarity across repeated free-text generations, and answer agreement after translation or rotation of symbolic programs that keep the same semantics. Other papers operationalize it through whether outputs become contradictory for equivalent prompts, whether rewritten prompts lose context or narrow focus, or whether rationale and answer remain logically aligned, so the measurements track preservation of meaning across both representation-level and output-level settings.\n\nLinks. The recorded links are relational rather than causal or correlational. One paper relates Informalization to semantic consistency, describing semantic consistency as preservation of original meaning by informalizing candidates and comparing the embeddings of the original and informalized texts. Another paper relates semantic consistency to one construct, Semantic uncertainty, stating that decreasing semantic entropy reflects enhanced semantic consistency in the model's output space and reduced response uncertainty.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "A Unified Agentic Framework for Evaluating Conditional Image Generation",
+      "ConsistencyChecker: Tree-based Evaluation of LLM Generalization Capabilities",
+      "Self-Instructed Derived Prompt Generation Meets In-Context Learning: Unlocking New Potential of Black-Box LLMs"
+    ],
+    "emnlp25": [
+      "A Symbolic Adversarial Learning Framework for Evolving Fake News Generation and Detection",
+      "CARMA: Enhanced Compositionality in LLMs via Advanced Regularisation and Mutual Information Alignment",
+      "Frame First, Then Extract: A Frame-Semantic Reasoning Pipeline for Zero-Shot Relation Triplet Extraction",
+      "Grounded Semantic Role Labelling from Synthetic Multimodal Data for Situated Robot Commands",
+      "Investigating Value-Reasoning Reliability in Small Large Language Models"
+    ],
+    "iclr25": [
+      "Balancing Act: Diversity and Consistency in Large Language Model Ensembles",
+      "Can Large Language Models Understand Symbolic Graphics Programs?"
+    ],
+    "naacl25": [
+      "Analyzing and Improving Coherence of Large Language Models in Question Answering",
+      "ConMeC: A Dataset for Metonymy Resolution with Common Nouns",
+      "Waste Not, Want Not; Recycled Gumbel Noise Improves Consistency in Natural Language Generation"
+    ],
+    "neurips24": [
+      "AP-Adapter: Improving Generalization of Automatic Prompts on Unseen Text-to-Image Diffusion Models",
+      "Autoformalize Mathematical Statements by Symbolic Equivalence and Semantic Consistency",
+      "Empowering Visible-Infrared Person Re-Identification with Large Foundation Models",
+      "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 5,
+    "iclr25": 2,
+    "naacl25": 3,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

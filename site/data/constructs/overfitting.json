@@ -1,0 +1,274 @@
+{
+  "canonical_name": "Overfitting",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats overfitting as learning the training data too closely, including its noise, artifacts, formatting details, exact wording, or other specifics, so performance on new, unseen, or out-of-domain data degrades. Several definitions phrase this as a latent tendency or training state, while one paper gives a more directly observable version, where training performance continues to improve but eval or validation loss starts to rise. A narrower line of work specializes the idea to supervised fine-tuning, calling it overadaptation: fine-tuned models overly focus on downstream task data, lose pretrained knowledge, and generalize worse. Another specialized framing is reward model over-optimization, defined as better in-domain accuracy together with stagnating or degrading performance on out-of-distribution prompts or responses and loss of alignment to the true preference distribution.\n\nSpace of facets. Papers systematize the concept mostly by training regime and mechanism. The main variants are broad model overfitting, overadaptation in supervised fine-tuning, and reward model over-optimization; the second is explicitly described as overfitting to downstream task data, and the third as overfitting of a reward model to its train set. Some authors further pin the mechanism to memorization, describing overfitting as exact reproduction of responses or as memorizing full contexts at the expense of learning reusable subcontext statistics. This leaves the term covering both a general failure to generalize and narrower memorization-based patterns.\n\nSpace of measurement. Operationalization is mostly indirect and aligns with the dominant definition: papers detect overfitting through worsening generalization, such as poorer performance on unseen or out-of-domain data, increasing validation or eval loss despite continued training improvement, or a validation-loss U-curve. More specific operationalizations include exact reproduction of responses, out-of-domain splits used to assess whether a model suffers from overfitting, a procedure for detecting overfitting during training based on long-context memorization rather than subcontext statistics, and, for reward models, rising accuracy on Dtrain and DID while D\u223cPrompt, D\u223cResponse, and D\u223cMutual stagnate or degrade. Papers link the construct to 1 measurement instrument and 1 behavioral indicator, HumanEval and pre-training data detection, but these appear as related links rather than measured_by claims.\n\nLinks. Across relationship claims, overfitting is most often connected to generalization. Several papers claim a causal relationship from overfitting to generalization, often in language of reduced generalizability or poor generalization, while some others simply relate the two; a smaller cluster of papers also relates overfitting to robustness, describing resistance to overfitting as accompanying greater robustness. Elsewhere, one paper claims a causal relationship from memorization to overfitting, another from overfitting to model collapse, and single papers relate overfitting to pre-training data detection, HumanEval, and weak-to-strong generalization.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Overfitting",
+    "Overadaptation",
+    "Reward model over-optimization"
+  ],
+  "papers": [
+    "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments",
+    "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+    "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+    "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+    "Bilinear MLPs enable weight-based mechanistic interpretability",
+    "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+    "TDDBench: A Benchmark for Training data detection",
+    "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning",
+    "On the Robustness of Reward Models for Language Model Alignment",
+    "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+    "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods",
+    "Mutual-pairing Data Augmentation for Fewshot Continual Relation Extraction",
+    "Transferable Post-training via Inverse Value Learning",
+    "Upsample or Upweight? Balanced Training on Heavily Imbalanced Datasets",
+    "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+    "FouRA: Fourier Low-Rank Adaptation",
+    "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+    "Imitating Language via Scalable Inverse Reinforcement Learning",
+    "Instruction Tuning With Loss Over Instructions",
+    "Preference Learning Algorithms Do Not Learn Preference Rankings",
+    "Training Compute-Optimal Protein Language Models",
+    "Understanding Transformers via N-Gram Statistics"
+  ],
+  "paper_count": 24,
+  "definitions": [
+    {
+      "text": "The phenomenon where a model learns the training data too closely, capturing noise and specific artifacts, which harms its ability to generalize to new data.",
+      "papers": [
+        "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+        "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+        "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+        "Understanding Transformers via N-Gram Statistics",
+        "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+        "Upsample or Upweight? Balanced Training on Heavily Imbalanced Datasets",
+        "Mutual-pairing Data Augmentation for Fewshot Continual Relation Extraction",
+        "Transferable Post-training via Inverse Value Learning",
+        "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+        "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments"
+      ],
+      "original_name": "Overfitting"
+    },
+    {
+      "text": "The latent tendency of a fine-tuned model to overfit to downstream task data, resulting in degraded generalization and loss of pretrained knowledge, analogous to harmful overfitting in statistical learning.",
+      "papers": [
+        "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods"
+      ],
+      "original_name": "Overadaptation"
+    },
+    {
+      "text": "A phenomenon where a reward model overfits to its training data, leading to increased accuracy on in-domain examples but degraded performance on out-of-distribution prompts or responses.",
+      "papers": [
+        "On the Robustness of Reward Models for Language Model Alignment"
+      ],
+      "original_name": "Reward model over-optimization"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Instruction Tuning With Loss Over Instructions",
+      "evidence": "helping to mitigate overfitting, resulting in models that are more robust and generalise better to new data",
+      "paper_count": 8,
+      "paper_weight": 8.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Instruction Tuning With Loss Over Instructions",
+          "FouRA: Fourier Low-Rank Adaptation",
+          "A Careful Examination of Large Language Model Performance on Grade School Arithmetic"
+        ],
+        "iclr25": [
+          "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models"
+        ],
+        "icml25": [
+          "In-Context Learning and Occam\u2019s Razor"
+        ],
+        "iclr24": [
+          "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+          "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models"
+        ],
+        "naacl25": [
+          "Transferable Post-training via Inverse Value Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Diagnosing Transformers: Illuminating Feature Spaces for Clinical Decision-Making",
+      "evidence": "In contrast, mixed-domain models exhibit greater resistance to overfitting, suggesting potential improvements in domain-specific model robustness; (ABSTRACT)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Diagnosing Transformers: Illuminating Feature Spaces for Clinical Decision-Making"
+        ],
+        "neurips24": [
+          "Imitating Language via Scalable Inverse Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "evidence": "This result suggests that some of the reason for over\ufb01tting is due to partial memorization of the test set. (Section 5.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "A Careful Examination of Large Language Model Performance on Grade School Arithmetic"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Model collapse",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Strong Model Collapse",
+      "evidence": "this phenomenon arises as the model gradually overfits to patterns found in synthetic data, which may not fully represent the richness or variability of real-world data. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Strong Model Collapse"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pre-training data detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "TDDBench: A Benchmark for Training data detection",
+      "evidence": "A common view is that the effectiveness of TDD is closely tied to the level of training-data memorization or overfitting exhibited by the target model during training (Yeom et al., 2018; Long et al., 2018).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "TDDBench: A Benchmark for Training data detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "HumanEval",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "evidence": "This indicates some level of overfitting to HUMANEVAL.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Weak-to-strong generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "How to Mitigate Overfitting in Weak-to-strong Generalization?",
+      "evidence": "Although weak-to-strong generalization exhibiting certain generalization capabilities, strong models exhibit significant overfitting in weak-to-strong generalization: Due to the strong fit ability of strong models, erroneous labels from weak supervisors may lead to overfitting in strong models. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "How to Mitigate Overfitting in Weak-to-strong Generalization?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats overfitting as learning the training data too closely, including its noise, artifacts, formatting details, exact wording, or other specifics, so performance on new, unseen, or out-of-domain data degrades. Several definitions phrase this as a latent tendency or training state, while one paper gives a more directly observable version, where training performance continues to improve but eval or validation loss starts to rise. A narrower line of work specializes the idea to supervised fine-tuning, calling it overadaptation: fine-tuned models overly focus on downstream task data, lose pretrained knowledge, and generalize worse. Another specialized framing is reward model over-optimization, defined as better in-domain accuracy together with stagnating or degrading performance on out-of-distribution prompts or responses and loss of alignment to the true preference distribution."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers systematize the concept mostly by training regime and mechanism. The main variants are broad model overfitting, overadaptation in supervised fine-tuning, and reward model over-optimization; the second is explicitly described as overfitting to downstream task data, and the third as overfitting of a reward model to its train set. Some authors further pin the mechanism to memorization, describing overfitting as exact reproduction of responses or as memorizing full contexts at the expense of learning reusable subcontext statistics. This leaves the term covering both a general failure to generalize and narrower memorization-based patterns."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is mostly indirect and aligns with the dominant definition: papers detect overfitting through worsening generalization, such as poorer performance on unseen or out-of-domain data, increasing validation or eval loss despite continued training improvement, or a validation-loss U-curve. More specific operationalizations include exact reproduction of responses, out-of-domain splits used to assess whether a model suffers from overfitting, a procedure for detecting overfitting during training based on long-context memorization rather than subcontext statistics, and, for reward models, rising accuracy on Dtrain and DID while D\u223cPrompt, D\u223cResponse, and D\u223cMutual stagnate or degrade. Papers link the construct to 1 measurement instrument and 1 behavioral indicator, HumanEval and pre-training data detection, but these appear as related links rather than measured_by claims."
+    },
+    {
+      "label": "Links.",
+      "text": "Across relationship claims, overfitting is most often connected to generalization. Several papers claim a causal relationship from overfitting to generalization, often in language of reduced generalizability or poor generalization, while some others simply relate the two; a smaller cluster of papers also relates overfitting to robustness, describing resistance to overfitting as accompanying greater robustness. Elsewhere, one paper claims a causal relationship from memorization to overfitting, another from overfitting to model collapse, and single papers relate overfitting to pre-training data detection, HumanEval, and weak-to-strong generalization."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats overfitting as learning the training data too closely, including its noise, artifacts, formatting details, exact wording, or other specifics, so performance on new, unseen, or out-of-domain data degrades. Several definitions phrase this as a latent tendency or training state, while one paper gives a more directly observable version, where training performance continues to improve but eval or validation loss starts to rise. A narrower line of work specializes the idea to supervised fine-tuning, calling it overadaptation: fine-tuned models overly focus on downstream task data, lose pretrained knowledge, and generalize worse. Another specialized framing is reward model over-optimization, defined as better in-domain accuracy together with stagnating or degrading performance on out-of-distribution prompts or responses and loss of alignment to the true preference distribution.\n\nSpace of facets. Papers systematize the concept mostly by training regime and mechanism. The main variants are broad model overfitting, overadaptation in supervised fine-tuning, and reward model over-optimization; the second is explicitly described as overfitting to downstream task data, and the third as overfitting of a reward model to its train set. Some authors further pin the mechanism to memorization, describing overfitting as exact reproduction of responses or as memorizing full contexts at the expense of learning reusable subcontext statistics. This leaves the term covering both a general failure to generalize and narrower memorization-based patterns.\n\nSpace of measurement. Operationalization is mostly indirect and aligns with the dominant definition: papers detect overfitting through worsening generalization, such as poorer performance on unseen or out-of-domain data, increasing validation or eval loss despite continued training improvement, or a validation-loss U-curve. More specific operationalizations include exact reproduction of responses, out-of-domain splits used to assess whether a model suffers from overfitting, a procedure for detecting overfitting during training based on long-context memorization rather than subcontext statistics, and, for reward models, rising accuracy on Dtrain and DID while D\u223cPrompt, D\u223cResponse, and D\u223cMutual stagnate or degrade. Papers link the construct to 1 measurement instrument and 1 behavioral indicator, HumanEval and pre-training data detection, but these appear as related links rather than measured_by claims.\n\nLinks. Across relationship claims, overfitting is most often connected to generalization. Several papers claim a causal relationship from overfitting to generalization, often in language of reduced generalizability or poor generalization, while some others simply relate the two; a smaller cluster of papers also relates overfitting to robustness, describing resistance to overfitting as accompanying greater robustness. Elsewhere, one paper claims a causal relationship from memorization to overfitting, another from overfitting to model collapse, and single papers relate overfitting to pre-training data detection, HumanEval, and weak-to-strong generalization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments"
+    ],
+    "iclr24": [
+      "Mixture-of-Experts Meets Instruction Tuning: A Winning Combination for Large Language Models",
+      "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+      "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning"
+    ],
+    "iclr25": [
+      "Bilinear MLPs enable weight-based mechanistic interpretability",
+      "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "Privacy-Preserving Personalized Federated Prompt Learning for Multimodal Large Language Models",
+      "TDDBench: A Benchmark for Training data detection"
+    ],
+    "icml25": [
+      "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning",
+      "On the Robustness of Reward Models for Language Model Alignment",
+      "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+      "Understanding Overadaptation in Supervised Fine-Tuning: The Role of Ensemble Methods"
+    ],
+    "naacl25": [
+      "Mutual-pairing Data Augmentation for Fewshot Continual Relation Extraction",
+      "Transferable Post-training via Inverse Value Learning",
+      "Upsample or Upweight? Balanced Training on Heavily Imbalanced Datasets"
+    ],
+    "neurips24": [
+      "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+      "FouRA: Fourier Low-Rank Adaptation",
+      "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+      "Imitating Language via Scalable Inverse Reinforcement Learning",
+      "Instruction Tuning With Loss Over Instructions",
+      "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "Training Compute-Optimal Protein Language Models",
+      "Understanding Transformers via N-Gram Statistics"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr24": 3,
+    "iclr25": 5,
+    "icml25": 4,
+    "naacl25": 3,
+    "neurips24": 8
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

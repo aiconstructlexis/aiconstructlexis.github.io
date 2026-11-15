@@ -1,0 +1,1243 @@
+{
+  "canonical_name": "Information extraction",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Most definitions treat this behavior as identifying and extracting structured information from unstructured text, commonly as facts, entities, relations, events, values, or other structured outputs. Closely related formulations extend the source material to semi-structured documents, tables, charts, audio, webpages, and images, but keep the same basic criterion: the model must isolate the relevant content from a larger input. Papers differ mainly in what must be returned, with some requiring direct attribute or evidence selection, some span copying, and others structured outputs such as triples, JSON objects, schemas, or causal trees.\n\nVariants. A recurring set of narrower names includes slot filling, entity extraction, attribute or value extraction, proposition extraction, and evidence or promise span extraction, alongside many other task-specific forms. Papers study these forms in visually rich documents and receipts, tables and scientific articles, charts and audio, clinical notes and legal texts, webpages and dialogue, and diagram-like inputs where nodes, edges, schemas, or graph structure are extracted. A smaller line treats the behavior as interactive acquisition, where an interviewer is rewarded for obtaining more information items from a source, or as direct table-attribute extraction without full table retrieval.\n\nSpace of elicitation and scores. Papers link this behavior to 11 measurement instruments. The most frequently linked are SLURP, T-REx, ZsRE, FUNSD, and Human evaluation; these are mostly datasets or benchmarks for slot filling and information extraction, with additional linked instruments covering audio understanding, long-term memory, dialogue, scientific relation extraction, and visually rich documents. A smaller measurement line uses human evaluation rather than a benchmark dataset.\n\nWhat it is taken as evidence of. Papers link this behavior to 7 constructs, with reasoning appearing first among the recorded links. Some papers claim a causal relationship from information extraction to reasoning, describing extracted knowledge as contributing to the path from a question to its answer, and another paper claims a causal relationship from information extraction to hallucination resistance by focusing on relevant table cells to reduce hallucinations in reasoning. Other papers record it as related to long-context understanding, long-term memory, and spatial reasoning, with additional related construct links also present, so the construct framing is mixed rather than uniform.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Information extraction",
+    "Attribute value extraction",
+    "Object entity extraction",
+    "Source/sink extraction",
+    "Attribute extraction",
+    "Patient attribute extraction",
+    "Observation extraction",
+    "Entity extraction",
+    "Slot filling",
+    "Numerical answer extraction",
+    "Key answer extraction",
+    "Choice identification",
+    "Proposition extraction",
+    "Keyword extraction",
+    "Atomic proposition grounding",
+    "Frequent words extraction",
+    "Knowledge extraction",
+    "Cognitive pathway extraction",
+    "Schema extraction",
+    "Symptom extraction",
+    "Value extraction",
+    "Argument component identification",
+    "Value identification",
+    "Feature extraction from text",
+    "Fine-grained semantic extraction",
+    "Aspect extraction",
+    "Unstructured evidence extraction",
+    "Emotion-cause annotation",
+    "Emotion-cause extraction",
+    "Attentional focus extraction",
+    "Clinical finding extraction",
+    "Factual assertion extraction",
+    "Candidate extraction",
+    "Edge extraction",
+    "Node extraction",
+    "Property extraction",
+    "Sticker extraction",
+    "Constraint type extraction",
+    "Constraint extraction",
+    "Content extraction",
+    "Topic extraction",
+    "Graph structure extraction",
+    "Evidence extraction",
+    "Promise extraction",
+    "Reference extraction",
+    "Inorganic synthesis recipe extraction",
+    "Key-fact extraction",
+    "Causal tree extraction",
+    "Cause-effect span extraction",
+    "Frame-semantic argument extraction",
+    "Knowledge slice extraction",
+    "Numeric data extraction",
+    "Nested field extraction",
+    "Parallel term extraction",
+    "Spatial primitive extraction",
+    "Information Extraction",
+    "Table extraction",
+    "Implicit target extraction",
+    "Text extraction",
+    "Character relationship extraction",
+    "Clinical entity extraction",
+    "Contextual parameter identification",
+    "Legal element recognition",
+    "Legal relation extraction",
+    "Relation analysis",
+    "Relation mining",
+    "Structured information extraction",
+    "Slot-filling",
+    "Emotion cause extraction"
+  ],
+  "papers": [
+    "Translation and Fusion Improves Cross-lingual Information Extraction",
+    "Tree-KG: An Expandable Knowledge Graph Construction Framework for Knowledge-intensive Domains",
+    "Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings",
+    "INJONGO: A Multicultural Intent Detection and Slot-filling Dataset for 16 African Languages",
+    "Information Extraction from Visually Rich Documents using LLM-based Organization of Documents into Independent Textual Segments",
+    "Making FETCH! Happen: Finding Emergent Dog Whistles Through Common Habitats",
+    "Middle-Layer Representation Alignment for Cross-Lingual Transfer in Fine-Tuned LLMs",
+    "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews",
+    "Towards Robust Universal Information Extraction: Dataset, Evaluation, and Solution",
+    "A Multi-Level Benchmark for Causal Language Understanding in Social Media Discourse",
+    "Agent-as-Judge for Factual Summarization of Long Narratives",
+    "Answering Narrative-Driven Recommendation Queries via a Retrieve\u2013Rank Paradigm and the OCG-Agent",
+    "BYOKG-RAG: Multi-Strategy Graph Retrieval for Knowledge Graph Question Answering",
+    "Beyond Human Labels: A Multi-Linguistic Auto-Generated Benchmark for Evaluating Large Language Models on Resume Parsing",
+    "CMedCalc-Bench: A Fine-Grained Benchmark for Chinese Medical Calculations in LLM",
+    "Can LLMs be Good Graph Judge for Knowledge Graph Construction?",
+    "Causal Tree Extraction from Medical Case Reports: A Novel Task for Experts-like Text Comprehension",
+    "Charting the Landscape of African NLP: Mapping Progress and Shaping the Road Ahead",
+    "Compositional Generalisation for Explainable Hate Speech Detection",
+    "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+    "ConstraintLLM: A Neuro-Symbolic Framework for Industrial-Level Constraint Programming",
+    "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning",
+    "CourtReasoner: Can LLM Agents Reason Like Judges?",
+    "Cross-Document Cross-Lingual NLI via RST-Enhanced Graph Fusion and Interpretability Prediction",
+    "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+    "Diagram-Driven Course Questions Generation",
+    "Does Localization Inform Unlearning? A Rigorous Examination of Local Parameter Attribution for Knowledge Unlearning in Language Models",
+    "DynamicNER: A Dynamic, Multilingual, and Fine-Grained Dataset for LLM-based Named Entity Recognition",
+    "ECC: An Emotion-Cause Conversation Dataset for Empathy Response",
+    "Enhancing Study-Level Inference from Clinical Trial Papers via Reinforcement Learning-Based Numeric Reasoning",
+    "Evaluating LLM-Generated Diagrams as Graphs",
+    "Exploring Quality and Diversity in Synthetic Data Generation for Argument Mining",
+    "Facilitating Long Context Understanding via Supervised Chain-of-Thought Reasoning",
+    "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework",
+    "FoREST: Frame of Reference Evaluation in Spatial Reasoning Tasks",
+    "From Chat Logs to Collective Insights: Aggregative Question Answering",
+    "From Scores to Steps: Diagnosing and Improving LLM Performance in Evidence-Based Medical Calculations",
+    "FuseChat: Knowledge Fusion of Chat Models",
+    "GenLink: Generation-Driven Schema-Linking via Multi-Model Learning for Text-to-SQL",
+    "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for Edge AI",
+    "Improving Task Diversity in Label Efficient Supervised Finetuning of LLMs",
+    "InterIDEAS: Philosophical Intertextuality via LLMs",
+    "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration",
+    "LLM-Driven Completeness and Consistency Evaluation for Cultural Heritage Data Augmentation in Cross-Modal Retrieval",
+    "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection",
+    "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition",
+    "LLaMP: Large Language Model Made Powerful for High-fidelity Materials Knowledge Retrieval",
+    "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+    "MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications",
+    "ML-Promise: A Multilingual Dataset for Corporate Promise Verification",
+    "MS-RAG: Simple and Effective Multi-Semantic Retrieval-Augmented Generation",
+    "Membership and Memorization in LLM Knowledge Distillation",
+    "MentalGLM Series: Explainable Large Language Models for Mental Health Analysis on Chinese Social Media",
+    "Model-based Large Language Model Customization as Service",
+    "Multilingual Dialogue Generation and Localization with Dialogue Act Scripting",
+    "PPTAgent: Generating and Evaluating Presentations Beyond Text-to-Slides",
+    "PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning Trajectories for Complex Problem Solving",
+    "PropRAG: Guiding Retrieval with Beam Search over Proposition Paths",
+    "PychoAgent: Psychology-driven LLM Agents for Explainable Panic Prediction on Social Media during Sudden Disaster Events",
+    "RAG-Zeval: Enhancing RAG Responses Evaluator through End-to-End Reasoning and Ranking-Based Reinforcement Learning",
+    "Representation Potentials of Foundation Models for Multimodal Alignment: A Survey",
+    "SQUiD: Synthesizing Relational Databases from Unstructured Text",
+    "SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature",
+    "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?",
+    "Sticker-TTS: Learn to Utilize Historical Experience with a Sticker-driven Test-Time Scaling Framework",
+    "Structuring Radiology Reports: Challenging LLMs with Lightweight Models",
+    "TIDES: Technical Information Discovery and Extraction System",
+    "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+    "TaxoAlign: Scholarly Taxonomy Generation Using Language Models",
+    "Towards a Holistic and Automated Evaluation Framework for Multi-Level Comprehension of LLMs in Book-Length Contexts",
+    "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+    "Translating Domain-Specific Terminology in Typologically-Diverse Languages: A Study in Tax and Financial Education",
+    "Uncovering Argumentative Flow: A Question-Focus Discourse Structuring Framework",
+    "Unstructured Evidence Attribution for Long Context Query Focused Summarization",
+    "V-VAE: A Variational Auto Encoding Framework Towards Fine-Grained Control over Human-Like Chat",
+    "Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models",
+    "Achieving Human Parity in Content-Grounded Datasets Generation",
+    "GoLLIE: Annotation Guidelines improve Zero-Shot Information-Extraction",
+    "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing",
+    "Privacy-Preserving In-Context Learning with Differentially Private Few-Shot Generation",
+    "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+    "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph",
+    "Enhancing Small Medical Learners with Privacy-preserving Contextual Prompting",
+    "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+    "AIMS.au: A Dataset for the Analysis of Modern Slavery Countermeasures in Corporate Statements",
+    "AgentOccam: A Simple Yet Strong Baseline for LLM-Based Web Agents",
+    "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+    "Bayesian WeakS-to-Strong from Text Classification to Generation",
+    "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding",
+    "CURIE: Evaluating LLMs on Multitask Scientific Long-Context Understanding and Reasoning",
+    "Data-adaptive Differentially Private Prompt Synthesis for In-Context Learning",
+    "Dynamic-SUPERB Phase-2: A Collaboratively Expanding Benchmark for Measuring the Capabilities of Spoken Language Models with 180 Tasks",
+    "Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents",
+    "Enhancing Document Understanding with Group Position Embedding: A Novel Approach to Incorporate Layout Information",
+    "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+    "Longhorn: State Space Models are Amortized Online Learners",
+    "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+    "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+    "OmnixR: Evaluating Omni-modality Language Models on Reasoning across Modalities",
+    "OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling",
+    "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards",
+    "ReDeEP: Detecting Hallucination in Retrieval-Augmented Generation via Mechanistic Interpretability",
+    "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations",
+    "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding",
+    "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
+    "Synthetic continued pretraining",
+    "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+    "Unified Parameter-Efficient Unlearning for LLMs",
+    "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+    "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation",
+    "Agent Reviewers: Domain-specific Multimodal Agents with Shared Memory for Paper Review",
+    "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+    "Cost-efficient Collaboration between On-device and Cloud Language Models",
+    "Grammar-Forced Translation of Natural Language to Temporal Logic using LLMs",
+    "Overtrained Language Models Are Harder to Fine-Tune",
+    "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference",
+    "Unnatural Languages Are Not Bugs but Features for LLMs",
+    "A Zero-Shot Open-Vocabulary Pipeline for Dialogue Understanding",
+    "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables",
+    "Handling Missing Entities in Zero-Shot Named Entity Recognition: Integrated Recall and Retrieval Augmentation",
+    "Hybrid Graphs for Table-and-Text based Question Answering using LLMs",
+    "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering for LLM-based Fake News Detection",
+    "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries",
+    "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling",
+    "TRANSIENTTABLES: Evaluating LLMs' Reasoning on Temporally Evolving Semi-structured Tables",
+    "Beyond End-to-End VLMs: Leveraging Intermediate Text Representations for Superior Flowchart Understanding",
+    "Label Drop for Multi-Aspect Relation Modeling in Universal Information Extraction",
+    "MatViX: Multimodal Information Extraction from Visually Rich Articles",
+    "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling",
+    "Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL",
+    "UFO: A UI-Focused Agent for Windows OS Interaction",
+    "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models",
+    "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs",
+    "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models",
+    "FlexCap: Describe Anything in Images in Controllable Detail",
+    "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+    "Instruction Tuning Large Language Models to Understand Electronic Health Records",
+    "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+    "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+    "MO-DDN: A Coarse-to-Fine Attribute-based Exploration Agent for Multi-Object Demand-driven Navigation",
+    "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+    "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+    "Smoothie: Label Free Language Model Routing",
+    "Boosting the Potential of Large Language Models with an Intelligent Information Assistant"
+  ],
+  "paper_count": 144,
+  "definitions": [
+    {
+      "text": "The task of identifying and extracting structured information from unstructured text.",
+      "papers": [
+        "Achieving Human Parity in Content-Grounded Datasets Generation",
+        "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing",
+        "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs",
+        "CURIE: Evaluating LLMs on Multitask Scientific Long-Context Understanding and Reasoning",
+        "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+        "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+        "Information Extraction from Visually Rich Documents using LLM-based Organization of Documents into Independent Textual Segments",
+        "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews",
+        "Towards Robust Universal Information Extraction: Dataset, Evaluation, and Solution",
+        "Label Drop for Multi-Aspect Relation Modeling in Universal Information Extraction"
+      ],
+      "original_name": "Information extraction"
+    },
+    {
+      "text": "The task of identifying and extracting the value of a specific attribute from product metadata.",
+      "papers": [
+        "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models"
+      ],
+      "original_name": "Attribute value extraction"
+    },
+    {
+      "text": "The task of identifying and extracting noun phrases that refer to objects from a given textual description.",
+      "papers": [
+        "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions"
+      ],
+      "original_name": "Object entity extraction"
+    },
+    {
+      "text": "Identifying program variables or expressions that serve as designated starting points and endpoints for dataflow analysis.",
+      "papers": [
+        "LLMDFA: Analyzing Dataflow in Code with Large Language Models"
+      ],
+      "original_name": "Source/sink extraction"
+    },
+    {
+      "text": "The observable action of identifying and listing semantic attributes for instructions or objects via prompting.",
+      "papers": [
+        "MO-DDN: A Coarse-to-Fine Attribute-based Exploration Agent for Multi-Object Demand-driven Navigation",
+        "LLM-Driven Completeness and Consistency Evaluation for Cultural Heritage Data Augmentation in Cross-Modal Retrieval"
+      ],
+      "original_name": "Attribute extraction"
+    },
+    {
+      "text": "Extracting relevant numerical or categorical values from a long patient note for use in a calculation.",
+      "papers": [
+        "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations"
+      ],
+      "original_name": "Patient attribute extraction"
+    },
+    {
+      "text": "The task of identifying and extracting specific text spans from a clinical note that serve as evidence (observations) for a particular diagnostic conclusion.",
+      "papers": [
+        "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models"
+      ],
+      "original_name": "Observation extraction"
+    },
+    {
+      "text": "Identifying entities at the end of a reasoning path that may serve as candidate answers.",
+      "papers": [
+        "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations",
+        "Can LLMs be Good Graph Judge for Knowledge Graph Construction?"
+      ],
+      "original_name": "Entity extraction"
+    },
+    {
+      "text": "The task of identifying and extracting specific, predefined types of information (slots) from unstructured text.",
+      "papers": [
+        "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards"
+      ],
+      "original_name": "Slot filling"
+    },
+    {
+      "text": "The task of parsing the output of an executed code solver to identify and report the specific numerical values for decision variables and the objective function.",
+      "papers": [
+        "OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling"
+      ],
+      "original_name": "Numerical answer extraction"
+    },
+    {
+      "text": "The observable task of identifying and isolating the specific, final answer from a model's potentially verbose or complex textual response.",
+      "papers": [
+        "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation"
+      ],
+      "original_name": "Key answer extraction"
+    },
+    {
+      "text": "The observable task of identifying and extracting sections of a privacy policy that describe user choices or opt-out mechanisms.",
+      "papers": [
+        "Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents"
+      ],
+      "original_name": "Choice identification"
+    },
+    {
+      "text": "Identifying factual statements from text that capture important information, preferably about entities.",
+      "papers": [
+        "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
+        "PropRAG: Guiding Retrieval with Beam Search over Proposition Paths"
+      ],
+      "original_name": "Proposition extraction"
+    },
+    {
+      "text": "Identifying and retaining tokens from unnatural inputs that appear in the corresponding natural language version, while disregarding noise.",
+      "papers": [
+        "Unnatural Languages Are Not Bugs but Features for LLMs",
+        "From Chat Logs to Collective Insights: Aggregative Question Answering",
+        "Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings",
+        "Making FETCH! Happen: Finding Emergent Dog Whistles Through Common Habitats",
+        "Enhancing Small Medical Learners with Privacy-preserving Contextual Prompting",
+        "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models"
+      ],
+      "original_name": "Keyword extraction"
+    },
+    {
+      "text": "The process of identifying and extracting atomic predicates (state variables or events) from a natural language input as a pre-processing step for translation.",
+      "papers": [
+        "Grammar-Forced Translation of Natural Language to Temporal Logic using LLMs"
+      ],
+      "original_name": "Atomic proposition grounding"
+    },
+    {
+      "text": "The task of identifying and retrieving specific pieces of factual information from unstructured text.",
+      "papers": [
+        "Overtrained Language Models Are Harder to Fine-Tune",
+        "Diagram-Driven Course Questions Generation",
+        "Boosting the Potential of Large Language Models with an Intelligent Information Assistant"
+      ],
+      "original_name": "Knowledge extraction"
+    },
+    {
+      "text": "Identifying and extracting the most frequently occurring words from a given text.",
+      "papers": [
+        "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference"
+      ],
+      "original_name": "Frequent words extraction"
+    },
+    {
+      "text": "Extracting structured representations of cognitive-behavioral patterns from text, including triggering events, thoughts, emotions, and behavioral responses, based on CBT theory.",
+      "papers": [
+        "MentalGLM Series: Explainable Large Language Models for Mental Health Analysis on Chinese Social Media"
+      ],
+      "original_name": "Cognitive pathway extraction"
+    },
+    {
+      "text": "Identifying relevant symptom entities from a patient's natural language description for use in diagnostic reasoning.",
+      "papers": [
+        "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration"
+      ],
+      "original_name": "Symptom extraction"
+    },
+    {
+      "text": "The process of identifying and structuring the constituent elements of a slide into a defined format, including each element's category, description, and content.",
+      "papers": [
+        "PPTAgent: Generating and Evaluating Presentations Beyond Text-to-Slides",
+        "Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL"
+      ],
+      "original_name": "Schema extraction"
+    },
+    {
+      "text": "The model correctly identifies and extracts numerical and categorical variables (e.g., age, creatinine level) from clinical vignettes for use in calculations.",
+      "papers": [
+        "From Scores to Steps: Diagnosing and Improving LLM Performance in Evidence-Based Medical Calculations"
+      ],
+      "original_name": "Value extraction"
+    },
+    {
+      "text": "The observable task of identifying a set of argument components in a text, where each component is defined by its start and end token indices and its type (e.g., 'Claim', 'Premise').",
+      "papers": [
+        "Exploring Quality and Diversity in Synthetic Data Generation for Argument Mining"
+      ],
+      "original_name": "Argument component identification"
+    },
+    {
+      "text": "Extracting relevant data values from text such as names, dates, and attributes, and organizing them into structured intermediate representations.",
+      "papers": [
+        "SQUiD: Synthesizing Relational Databases from Unstructured Text"
+      ],
+      "original_name": "Value identification"
+    },
+    {
+      "text": "Identifying and converting named entities and values from unstructured natural language descriptions into structured feature vectors consistent with a predefined schema.",
+      "papers": [
+        "Model-based Large Language Model Customization as Service"
+      ],
+      "original_name": "Feature extraction from text"
+    },
+    {
+      "text": "Identifying detailed semantic cues such as actions, facial expressions, and interactions from multimodal inputs.",
+      "papers": [
+        "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition"
+      ],
+      "original_name": "Fine-grained semantic extraction"
+    },
+    {
+      "text": "Identifying and listing key information needs or expectations from a user's question narrative, used to form evaluation rubrics.",
+      "papers": [
+        "LaMP-QA: A Benchmark for Personalized Long-form Question Answering"
+      ],
+      "original_name": "Aspect extraction"
+    },
+    {
+      "text": "Copying arbitrary-length text spans from a long input context to serve as supporting evidence for summary sentences, without constraints on span boundaries such as sentence or paragraph limits.",
+      "papers": [
+        "Unstructured Evidence Attribution for Long Context Query Focused Summarization"
+      ],
+      "original_name": "Unstructured evidence extraction"
+    },
+    {
+      "text": "Identifying the dialogue sentences that express the emotion and the sentences that express the cause.",
+      "papers": [
+        "ECC: An Emotion-Cause Conversation Dataset for Empathy Response"
+      ],
+      "original_name": "Emotion-cause extraction"
+    },
+    {
+      "text": "The process of identifying and labeling utterances in a dialogue that express an emotion and its underlying cause, based on predefined seeds and contextual alignment.",
+      "papers": [
+        "ECC: An Emotion-Cause Conversation Dataset for Empathy Response"
+      ],
+      "original_name": "Emotion-cause annotation"
+    },
+    {
+      "text": "The process of identifying and listing key analytical aspects or dimensions emphasized in an argumentative unit, such as social groups or conceptual perspectives.",
+      "papers": [
+        "Uncovering Argumentative Flow: A Question-Focus Discourse Structuring Framework"
+      ],
+      "original_name": "Attentional focus extraction"
+    },
+    {
+      "text": "Identifying and organizing relevant clinical observations (e.g., abnormalities, normal findings) under appropriate organ system categories in the Findings section.",
+      "papers": [
+        "Structuring Radiology Reports: Challenging LLMs with Lightweight Models"
+      ],
+      "original_name": "Clinical finding extraction"
+    },
+    {
+      "text": "The task of identifying and extracting verifiable statements of fact from a source text.",
+      "papers": [
+        "Uncovering Argumentative Flow: A Question-Focus Discourse Structuring Framework"
+      ],
+      "original_name": "Factual assertion extraction"
+    },
+    {
+      "text": "The behavior of identifying and extracting potential recommendation items from retrieved text fragments based on a structured template.",
+      "papers": [
+        "Answering Narrative-Driven Recommendation Queries via a Retrieve\u2013Rank Paradigm and the OCG-Agent"
+      ],
+      "original_name": "Candidate extraction"
+    },
+    {
+      "text": "Detecting directed connections between diagram elements by analyzing visual cues such as arrows and lines, using vision-capable LLMs to infer logical flows.",
+      "papers": [
+        "Evaluating LLM-Generated Diagrams as Graphs"
+      ],
+      "original_name": "Edge extraction"
+    },
+    {
+      "text": "Identifying and grouping text elements in an SVG diagram into coherent nodes, using spatial and semantic criteria, potentially refined with multimodal LLMs.",
+      "papers": [
+        "Evaluating LLM-Generated Diagrams as Graphs",
+        "Beyond End-to-End VLMs: Leveraging Intermediate Text Representations for Superior Flowchart Understanding"
+      ],
+      "original_name": "Node extraction"
+    },
+    {
+      "text": "Identifying key measurable metrics and their associated subjects from a query to support answering, such as 'revenue' and '<Company A>\u2019s 2018 annual report'.",
+      "papers": [
+        "Facilitating Long Context Understanding via Supervised Chain-of-Thought Reasoning"
+      ],
+      "original_name": "Property extraction"
+    },
+    {
+      "text": "Producing a structured summary of key conditions, strategies, and limitations from a prior reasoning trace to serve as a compact guide for future reasoning.",
+      "papers": [
+        "Sticker-TTS: Learn to Utilize Historical Experience with a Sticker-driven Test-Time Scaling Framework"
+      ],
+      "original_name": "Sticker extraction"
+    },
+    {
+      "text": "The observable process of identifying and classifying the specific types of constraints (e.g., AllDifferent, Cumulative) present in a natural language problem description.",
+      "papers": [
+        "ConstraintLLM: A Neuro-Symbolic Framework for Industrial-Level Constraint Programming"
+      ],
+      "original_name": "Constraint type extraction"
+    },
+    {
+      "text": "Identifying the relevant rules, schedules, concepts, or other instance-specific requirements from a problem statement.",
+      "papers": [
+        "PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning Trajectories for Complex Problem Solving"
+      ],
+      "original_name": "Constraint extraction"
+    },
+    {
+      "text": "Parsing and extracting textual information from retrieved webpages, including visible elements and hidden source-code components.",
+      "papers": [
+        "Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models"
+      ],
+      "original_name": "Content extraction"
+    },
+    {
+      "text": "The process of identifying and consolidating the main themes or subjects present in a user's historical posts.",
+      "papers": [
+        "PychoAgent: Psychology-driven LLM Agents for Explainable Panic Prediction on Social Media during Sudden Disaster Events"
+      ],
+      "original_name": "Topic extraction"
+    },
+    {
+      "text": "The task of identifying and parsing graph components like nodes, edges, and weights from unstructured or semi-structured text.",
+      "papers": [
+        "MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications"
+      ],
+      "original_name": "Graph structure extraction"
+    },
+    {
+      "text": "The task of extracting the specific text span corresponding to the evidence supporting a corporate promise from a document.",
+      "papers": [
+        "ML-Promise: A Multilingual Dataset for Corporate Promise Verification"
+      ],
+      "original_name": "Evidence extraction"
+    },
+    {
+      "text": "The task of extracting the specific text span corresponding to a corporate promise from a document.",
+      "papers": [
+        "ML-Promise: A Multilingual Dataset for Corporate Promise Verification"
+      ],
+      "original_name": "Promise extraction"
+    },
+    {
+      "text": "Identifying and isolating mentions of people, texts, events, or ideas within philosophical writings, including both explicit and implicit references.",
+      "papers": [
+        "InterIDEAS: Philosophical Intertextuality via LLMs"
+      ],
+      "original_name": "Reference extraction"
+    },
+    {
+      "text": "The task of extracting and summarizing step-by-step procedures for synthesizing inorganic materials from scientific literature.",
+      "papers": [
+        "LLaMP: Large Language Model Made Powerful for High-fidelity Materials Knowledge Retrieval"
+      ],
+      "original_name": "Inorganic synthesis recipe extraction"
+    },
+    {
+      "text": "Identifying and structuring central themes, supporting ideas, and fine-grained details from text segments into a hierarchical representation.",
+      "papers": [
+        "Towards a Holistic and Automated Evaluation Framework for Multi-Level Comprehension of LLMs in Book-Length Contexts"
+      ],
+      "original_name": "Key-fact extraction"
+    },
+    {
+      "text": "The task of generating a structured, multi-layered causal tree from an unstructured medical case report, where nodes are medical entities and edges represent causal or evidential relationships.",
+      "papers": [
+        "Causal Tree Extraction from Medical Case Reports: A Novel Task for Experts-like Text Comprehension"
+      ],
+      "original_name": "Causal tree extraction"
+    },
+    {
+      "text": "The task of identifying and labeling the specific text segments (spans) that correspond to the cause and the effect in a causal relationship.",
+      "papers": [
+        "A Multi-Level Benchmark for Causal Language Understanding in Social Media Discourse"
+      ],
+      "original_name": "Cause-effect span extraction"
+    },
+    {
+      "text": "Identifying and extracting text segments from research papers that are highly relevant to a given taxonomy topic.",
+      "papers": [
+        "TaxoAlign: Scholarly Taxonomy Generation Using Language Models"
+      ],
+      "original_name": "Knowledge slice extraction"
+    },
+    {
+      "text": "The observable task of identifying and extracting specific numerical values, such as event counts or standard deviations, from unstructured text and presenting them in a structured format.",
+      "papers": [
+        "Enhancing Study-Level Inference from Clinical Trial Papers via Reinforcement Learning-Based Numeric Reasoning"
+      ],
+      "original_name": "Numeric data extraction"
+    },
+    {
+      "text": "The specific task of extracting information from hierarchical or nested structures within a document, such as job roles within a work experience section.",
+      "papers": [
+        "Beyond Human Labels: A Multi-Linguistic Auto-Generated Benchmark for Evaluating Large Language Models on Resume Parsing"
+      ],
+      "original_name": "Nested field extraction"
+    },
+    {
+      "text": "The task of identifying and extracting the translation of a specific source term from a parallel text, which consists of a source sentence and its corresponding translation.",
+      "papers": [
+        "Translating Domain-Specific Terminology in Typologically-Diverse Languages: A Study in Tax and Financial Education"
+      ],
+      "original_name": "Parallel term extraction"
+    },
+    {
+      "text": "Identifying and outputting directional, topological, and distal spatial relations along with Frame of Reference from a spatial expression to support downstream reasoning tasks.",
+      "papers": [
+        "FoREST: Frame of Reference Evaluation in Spatial Reasoning Tasks"
+      ],
+      "original_name": "Spatial primitive extraction"
+    },
+    {
+      "text": "A two-stage evaluation method that tests a model's ability to directly extract relevant attributes from tables without full table retrieval, focusing on fine-grained evidence extraction.",
+      "papers": [
+        "TRANSIENTTABLES: Evaluating LLMs' Reasoning on Temporally Evolving Semi-structured Tables"
+      ],
+      "original_name": "Information Extraction"
+    },
+    {
+      "text": "Reading scientific text or tables and producing structured table-like information from the source content.",
+      "papers": [
+        "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding"
+      ],
+      "original_name": "Table extraction"
+    },
+    {
+      "text": "The observable process of identifying targets not explicitly mentioned in the text but semantically implied, such as inferring 'democracy' as a target in a discussion about corporate regulation.",
+      "papers": [
+        "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection"
+      ],
+      "original_name": "Implicit target extraction"
+    },
+    {
+      "text": "Converting visual text within document images into machine-readable text format.",
+      "papers": [
+        "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+        "Smoothie: Label Free Language Model Routing",
+        "UFO: A UI-Focused Agent for Windows OS Interaction"
+      ],
+      "original_name": "Text extraction"
+    },
+    {
+      "text": "Identifying and representing subject-predicate-object triples that describe interactions, states, and roles among characters in a narrative.",
+      "papers": [
+        "Agent-as-Judge for Factual Summarization of Long Narratives"
+      ],
+      "original_name": "Character relationship extraction"
+    },
+    {
+      "text": "Identifying relevant patient attributes, such as lab values, vital signs, or symptoms, from clinical notes.",
+      "papers": [
+        "CMedCalc-Bench: A Fine-Grained Benchmark for Chinese Medical Calculations in LLM"
+      ],
+      "original_name": "Clinical entity extraction"
+    },
+    {
+      "text": "Correctly identifying elements of information flow such as sender, subject, recipient, and information type in a legal scenario based on contextual cues.",
+      "papers": [
+        "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning"
+      ],
+      "original_name": "Contextual parameter identification"
+    },
+    {
+      "text": "Identifying the legal elements contained in a legal text from answer options.",
+      "papers": [
+        "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models"
+      ],
+      "original_name": "Legal element recognition"
+    },
+    {
+      "text": "Identifying and extracting specific types of legal relationship triples from a given legal text.",
+      "papers": [
+        "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models"
+      ],
+      "original_name": "Legal relation extraction"
+    },
+    {
+      "text": "The task of describing the relationships between a given set of entities within the context of a source document.",
+      "papers": [
+        "Synthetic continued pretraining"
+      ],
+      "original_name": "Relation analysis"
+    },
+    {
+      "text": "The observable task of identifying relationships between entities or concepts using Multimodal Large Language Models.",
+      "papers": [
+        "Unified Parameter-Efficient Unlearning for LLMs"
+      ],
+      "original_name": "Relation mining"
+    },
+    {
+      "text": "Producing structured JSON outputs that capture both material compositions and associated property data from full-length scientific articles containing text, tables, and figures.",
+      "papers": [
+        "MatViX: Multimodal Information Extraction from Visually Rich Articles"
+      ],
+      "original_name": "Structured information extraction"
+    },
+    {
+      "text": "Extracting specific entities (slots) from a user utterance, such as amounts, locations, or dates, to support task execution in dialogue systems.",
+      "papers": [
+        "INJONGO: A Multicultural Intent Detection and Slot-filling Dataset for 16 African Languages",
+        "Middle-Layer Representation Alignment for Cross-Lingual Transfer in Fine-Tuned LLMs"
+      ],
+      "original_name": "Slot-filling"
+    },
+    {
+      "text": "Identifying text clauses that describe events causing a specified emotion experienced by characters in the text.",
+      "papers": [
+        "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling"
+      ],
+      "original_name": "Emotion cause extraction"
+    }
+  ],
+  "definition_count": 68,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "T-REx",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph",
+      "evidence": "two slot filling datasets: T-REx (ElSahar et al., 2018) and Zero-Shot RE (Petroni et al., 2021);",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph"
+        ],
+        "iclr25": [
+          "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ZsRE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph",
+      "evidence": "two slot filling datasets: T-REx (ElSahar et al., 2018) and Zero-Shot RE (Petroni et al., 2021);",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph"
+        ],
+        "iclr25": [
+          "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SLURP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+      "evidence": "\u201cSF SLURP ...\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "SALMONN: Towards Generic Hearing Abilities for Large Language Models"
+        ],
+        "iclr25": [
+          "Bayesian WeakS-to-Strong from Text Classification to Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+      "evidence": "The tasks of question decomposition, knowledge extraction, and note-taking are interconnected, each contributing towards navigating the reasoning path from a question to its answer.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Boosting the Potential of Large Language Models with an Intelligent Information Assistant"
+        ],
+        "iclr25": [
+          "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+      "evidence": "Tasks at the Understanding level examine the ability to comprehend and interpret facts, entities, concepts, and relationships in legal texts, which serves as a foundational requirement for applying knowledge to downstream tasks. We construct five tasks at this level: Legal Element Recognition (2-1)... (Section C.3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SWDE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Longhorn: State Space Models are Amortized Online Learners",
+      "evidence": "we consider the following six recall-intensive tasks: information extraction tasks like FDA and SWDE (Arora et al., 2024a; 2023b; Wu et al., 2021; Deng et al., 2022) (Section 5.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Longhorn: State Space Models are Amortized Online Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMAU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+      "evidence": "\u201cIt includes information extraction1 and reasoning 2 questions\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongMemEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "evidence": "We introduce LONGMEMEVAL, a comprehensive benchmark designed to evaluate five core long-term memory abilities of chat assistants: information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-term memory",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "evidence": "To comprehensively reflect the challenge, LONGMEMEVAL formulates five core long-term memory abilities: \u2022 Information Extraction (IE): Ability to recall specific information from extensive interactive histories... (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ranking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "To leverage the instruction following abilities in modern LLMs, we formulate the re-ranking task into either question answering (QA) or information extraction (IE) tasks, which are more commonly seen by LLMs. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling",
+      "evidence": "Medical scenarios involve complex case histories, and selecting values from these contexts tests the capacity for long-context processing. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination resistance",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables",
+      "evidence": "Focusing on relevant table cells helps LLMs by providing the right context, thus reducing hallucinations in reasoning. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Information Extraction from Visually Rich Documents using LLM-based Organization of Documents into Independent Textual Segments",
+      "evidence": "Documents exhibit diverse formats and structures, requiring spatial reasoning to correctly associate text with their semantic roles. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Information Extraction from Visually Rich Documents using LLM-based Organization of Documents into Independent Textual Segments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FUNSD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Information Extraction from Visually Rich Documents using LLM-based Organization of Documents into Independent Textual Segments",
+      "evidence": "We evaluate BLOCKIE on three established information extraction benchmarks: CORD (Park et al., 2019)... FUNSD (Jaume et al., 2019)... (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Information Extraction from Visually Rich Documents using LLM-based Organization of Documents into Independent Textual Segments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SROIE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Information Extraction from Visually Rich Documents using LLM-based Organization of Documents into Independent Textual Segments",
+      "evidence": "We evaluate BLOCKIE on three established information extraction benchmarks: ... SROIE (Huang et al., 2019), a receipt information extraction dataset. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Information Extraction from Visually Rich Documents using LLM-based Organization of Documents into Independent Textual Segments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Causal Tree Extraction from Medical Case Reports: A Novel Task for Experts-like Text Comprehension",
+      "evidence": "The proposed method achieves a human evaluation score of 82.7, which substantially outperforms the baseline (Ozaki et al., 2022) by 20.2 points. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Causal Tree Extraction from Medical Case Reports: A Novel Task for Experts-like Text Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciERC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature",
+      "evidence": "\u201cSciERC | IE(Rel) | CS abstract | 6 entity types\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "FuseChat: Knowledge Fusion of Chat Models",
+      "evidence": "MT-Bench (Zheng et al., 2024), consists of 80 multi-turn dialogues spanning various domains, including writing, roleplay, reasoning, math, coding, extraction, STEM, and humanities. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "FuseChat: Knowledge Fusion of Chat Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Table reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+      "evidence": "Our qualitative analysis of model responses reveals that Table-R1-Zero not only acquires multi-step reasoning and reflection abilities like other reasoning models, but also develops essential table-specific reasoning skills such as semantic understanding, information extraction, and arithmetic computation. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Table-R1: Inference-Time Scaling for Table Reasoning Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+      "evidence": "to identify hallucinations existed in the reference description, we first extract object entities (object nouns and phrases) from it. Here, we leverage the strong instruction following ability of the Large Language Model (LLM). (Sec. 3.2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 20,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 20,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most definitions treat this behavior as identifying and extracting structured information from unstructured text, commonly as facts, entities, relations, events, values, or other structured outputs. Closely related formulations extend the source material to semi-structured documents, tables, charts, audio, webpages, and images, but keep the same basic criterion: the model must isolate the relevant content from a larger input. Papers differ mainly in what must be returned, with some requiring direct attribute or evidence selection, some span copying, and others structured outputs such as triples, JSON objects, schemas, or causal trees."
+    },
+    {
+      "label": "Variants.",
+      "text": "A recurring set of narrower names includes slot filling, entity extraction, attribute or value extraction, proposition extraction, and evidence or promise span extraction, alongside many other task-specific forms. Papers study these forms in visually rich documents and receipts, tables and scientific articles, charts and audio, clinical notes and legal texts, webpages and dialogue, and diagram-like inputs where nodes, edges, schemas, or graph structure are extracted. A smaller line treats the behavior as interactive acquisition, where an interviewer is rewarded for obtaining more information items from a source, or as direct table-attribute extraction without full table retrieval."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to 11 measurement instruments. The most frequently linked are SLURP, T-REx, ZsRE, FUNSD, and Human evaluation; these are mostly datasets or benchmarks for slot filling and information extraction, with additional linked instruments covering audio understanding, long-term memory, dialogue, scientific relation extraction, and visually rich documents. A smaller measurement line uses human evaluation rather than a benchmark dataset."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers link this behavior to 7 constructs, with reasoning appearing first among the recorded links. Some papers claim a causal relationship from information extraction to reasoning, describing extracted knowledge as contributing to the path from a question to its answer, and another paper claims a causal relationship from information extraction to hallucination resistance by focusing on relevant table cells to reduce hallucinations in reasoning. Other papers record it as related to long-context understanding, long-term memory, and spatial reasoning, with additional related construct links also present, so the construct framing is mixed rather than uniform."
+    }
+  ],
+  "characterization": "Space of definitions. Most definitions treat this behavior as identifying and extracting structured information from unstructured text, commonly as facts, entities, relations, events, values, or other structured outputs. Closely related formulations extend the source material to semi-structured documents, tables, charts, audio, webpages, and images, but keep the same basic criterion: the model must isolate the relevant content from a larger input. Papers differ mainly in what must be returned, with some requiring direct attribute or evidence selection, some span copying, and others structured outputs such as triples, JSON objects, schemas, or causal trees.\n\nVariants. A recurring set of narrower names includes slot filling, entity extraction, attribute or value extraction, proposition extraction, and evidence or promise span extraction, alongside many other task-specific forms. Papers study these forms in visually rich documents and receipts, tables and scientific articles, charts and audio, clinical notes and legal texts, webpages and dialogue, and diagram-like inputs where nodes, edges, schemas, or graph structure are extracted. A smaller line treats the behavior as interactive acquisition, where an interviewer is rewarded for obtaining more information items from a source, or as direct table-attribute extraction without full table retrieval.\n\nSpace of elicitation and scores. Papers link this behavior to 11 measurement instruments. The most frequently linked are SLURP, T-REx, ZsRE, FUNSD, and Human evaluation; these are mostly datasets or benchmarks for slot filling and information extraction, with additional linked instruments covering audio understanding, long-term memory, dialogue, scientific relation extraction, and visually rich documents. A smaller measurement line uses human evaluation rather than a benchmark dataset.\n\nWhat it is taken as evidence of. Papers link this behavior to 7 constructs, with reasoning appearing first among the recorded links. Some papers claim a causal relationship from information extraction to reasoning, describing extracted knowledge as contributing to the path from a question to its answer, and another paper claims a causal relationship from information extraction to hallucination resistance by focusing on relevant table cells to reduce hallucinations in reasoning. Other papers record it as related to long-context understanding, long-term memory, and spatial reasoning, with additional related construct links also present, so the construct framing is mixed rather than uniform.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Translation and Fusion Improves Cross-lingual Information Extraction",
+      "Tree-KG: An Expandable Knowledge Graph Construction Framework for Knowledge-intensive Domains",
+      "Hierarchical Level-Wise News Article Clustering via Multilingual Matryoshka Embeddings",
+      "INJONGO: A Multicultural Intent Detection and Slot-filling Dataset for 16 African Languages",
+      "Information Extraction from Visually Rich Documents using LLM-based Organization of Documents into Independent Textual Segments",
+      "Making FETCH! Happen: Finding Emergent Dog Whistles Through Common Habitats",
+      "Middle-Layer Representation Alignment for Cross-Lingual Transfer in Fine-Tuned LLMs",
+      "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews",
+      "Towards Robust Universal Information Extraction: Dataset, Evaluation, and Solution"
+    ],
+    "emnlp25": [
+      "A Multi-Level Benchmark for Causal Language Understanding in Social Media Discourse",
+      "Agent-as-Judge for Factual Summarization of Long Narratives",
+      "Answering Narrative-Driven Recommendation Queries via a Retrieve\u2013Rank Paradigm and the OCG-Agent",
+      "BYOKG-RAG: Multi-Strategy Graph Retrieval for Knowledge Graph Question Answering",
+      "Beyond Human Labels: A Multi-Linguistic Auto-Generated Benchmark for Evaluating Large Language Models on Resume Parsing",
+      "CMedCalc-Bench: A Fine-Grained Benchmark for Chinese Medical Calculations in LLM",
+      "Can LLMs be Good Graph Judge for Knowledge Graph Construction?",
+      "Causal Tree Extraction from Medical Case Reports: A Novel Task for Experts-like Text Comprehension",
+      "Charting the Landscape of African NLP: Mapping Progress and Shaping the Road Ahead",
+      "Compositional Generalisation for Explainable Hate Speech Detection",
+      "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+      "ConstraintLLM: A Neuro-Symbolic Framework for Industrial-Level Constraint Programming",
+      "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning",
+      "CourtReasoner: Can LLM Agents Reason Like Judges?",
+      "Cross-Document Cross-Lingual NLI via RST-Enhanced Graph Fusion and Interpretability Prediction",
+      "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+      "Diagram-Driven Course Questions Generation",
+      "Does Localization Inform Unlearning? A Rigorous Examination of Local Parameter Attribution for Knowledge Unlearning in Language Models",
+      "DynamicNER: A Dynamic, Multilingual, and Fine-Grained Dataset for LLM-based Named Entity Recognition",
+      "ECC: An Emotion-Cause Conversation Dataset for Empathy Response",
+      "Enhancing Study-Level Inference from Clinical Trial Papers via Reinforcement Learning-Based Numeric Reasoning",
+      "Evaluating LLM-Generated Diagrams as Graphs",
+      "Exploring Quality and Diversity in Synthetic Data Generation for Argument Mining",
+      "Facilitating Long Context Understanding via Supervised Chain-of-Thought Reasoning",
+      "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework",
+      "FoREST: Frame of Reference Evaluation in Spatial Reasoning Tasks",
+      "From Chat Logs to Collective Insights: Aggregative Question Answering",
+      "From Scores to Steps: Diagnosing and Improving LLM Performance in Evidence-Based Medical Calculations",
+      "FuseChat: Knowledge Fusion of Chat Models",
+      "GenLink: Generation-Driven Schema-Linking via Multi-Model Learning for Text-to-SQL",
+      "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for Edge AI",
+      "Improving Task Diversity in Label Efficient Supervised Finetuning of LLMs",
+      "InterIDEAS: Philosophical Intertextuality via LLMs",
+      "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration",
+      "LLM-Driven Completeness and Consistency Evaluation for Cultural Heritage Data Augmentation in Cross-Modal Retrieval",
+      "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection",
+      "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition",
+      "LLaMP: Large Language Model Made Powerful for High-fidelity Materials Knowledge Retrieval",
+      "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+      "MA-GTS: A Multi-Agent Framework for Solving Complex Graph Problems in Real-World Applications",
+      "ML-Promise: A Multilingual Dataset for Corporate Promise Verification",
+      "MS-RAG: Simple and Effective Multi-Semantic Retrieval-Augmented Generation",
+      "Membership and Memorization in LLM Knowledge Distillation",
+      "MentalGLM Series: Explainable Large Language Models for Mental Health Analysis on Chinese Social Media",
+      "Model-based Large Language Model Customization as Service",
+      "Multilingual Dialogue Generation and Localization with Dialogue Act Scripting",
+      "PPTAgent: Generating and Evaluating Presentations Beyond Text-to-Slides",
+      "PlanGEN: A Multi-Agent Framework for Generating Planning and Reasoning Trajectories for Complex Problem Solving",
+      "PropRAG: Guiding Retrieval with Beam Search over Proposition Paths",
+      "PychoAgent: Psychology-driven LLM Agents for Explainable Panic Prediction on Social Media during Sudden Disaster Events",
+      "RAG-Zeval: Enhancing RAG Responses Evaluator through End-to-End Reasoning and Ranking-Based Reinforcement Learning",
+      "Representation Potentials of Foundation Models for Multimodal Alignment: A Survey",
+      "SQUiD: Synthesizing Relational Databases from Unstructured Text",
+      "SciRIFF: A Resource to Enhance Language Model Instruction-Following over Scientific Literature",
+      "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?",
+      "Sticker-TTS: Learn to Utilize Historical Experience with a Sticker-driven Test-Time Scaling Framework",
+      "Structuring Radiology Reports: Challenging LLMs with Lightweight Models",
+      "TIDES: Technical Information Discovery and Extraction System",
+      "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+      "TaxoAlign: Scholarly Taxonomy Generation Using Language Models",
+      "Towards a Holistic and Automated Evaluation Framework for Multi-Level Comprehension of LLMs in Book-Length Contexts",
+      "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+      "Translating Domain-Specific Terminology in Typologically-Diverse Languages: A Study in Tax and Financial Education",
+      "Uncovering Argumentative Flow: A Question-Focus Discourse Structuring Framework",
+      "Unstructured Evidence Attribution for Long Context Query Focused Summarization",
+      "V-VAE: A Variational Auto Encoding Framework Towards Fine-Grained Control over Human-Like Chat",
+      "Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models"
+    ],
+    "iclr24": [
+      "Achieving Human Parity in Content-Grounded Datasets Generation",
+      "GoLLIE: Annotation Guidelines improve Zero-Shot Information-Extraction",
+      "Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing",
+      "Privacy-Preserving In-Context Learning with Differentially Private Few-Shot Generation",
+      "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+      "Think-on-Graph: Deep and Responsible Reasoning of Large Language Model on Knowledge Graph",
+      "Enhancing Small Medical Learners with Privacy-preserving Contextual Prompting"
+    ],
+    "iclr25": [
+      "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+      "AIMS.au: A Dataset for the Analysis of Modern Slavery Countermeasures in Corporate Statements",
+      "AgentOccam: A Simple Yet Strong Baseline for LLM-Based Web Agents",
+      "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "Bayesian WeakS-to-Strong from Text Classification to Generation",
+      "Bridging Context Gaps: Leveraging Coreference Resolution for Long Contextual Understanding",
+      "CURIE: Evaluating LLMs on Multitask Scientific Long-Context Understanding and Reasoning",
+      "Data-adaptive Differentially Private Prompt Synthesis for In-Context Learning",
+      "Dynamic-SUPERB Phase-2: A Collaboratively Expanding Benchmark for Measuring the Capabilities of Spoken Language Models with 180 Tasks",
+      "Empowering Users in Digital Privacy Management through Interactive LLM-Based Agents",
+      "Enhancing Document Understanding with Group Position Embedding: A Novel Approach to Incorporate Layout Information",
+      "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "Longhorn: State Space Models are Amortized Online Learners",
+      "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+      "MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark",
+      "OmnixR: Evaluating Omni-modality Language Models on Reasoning across Modalities",
+      "OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling",
+      "RAG-DDR: Optimizing Retrieval-Augmented Generation Using Differentiable Data Rewards",
+      "ReDeEP: Detecting Hallucination in Retrieval-Augmented Generation via Mechanistic Interpretability",
+      "Reasoning of Large Language Models over Knowledge Graphs with Super-Relations",
+      "SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding",
+      "SiReRAG: Indexing Similar and Related Information for Multihop Reasoning",
+      "Synthetic continued pretraining",
+      "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+      "Unified Parameter-Efficient Unlearning for LLMs",
+      "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+      "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation"
+    ],
+    "icml25": [
+      "Agent Reviewers: Domain-specific Multimodal Agents with Shared Memory for Paper Review",
+      "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+      "Cost-efficient Collaboration between On-device and Cloud Language Models",
+      "Grammar-Forced Translation of Natural Language to Temporal Logic using LLMs",
+      "Overtrained Language Models Are Harder to Fine-Tune",
+      "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference",
+      "Unnatural Languages Are Not Bugs but Features for LLMs"
+    ],
+    "naacl25": [
+      "A Zero-Shot Open-Vocabulary Pipeline for Dialogue Understanding",
+      "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables",
+      "Handling Missing Entities in Zero-Shot Named Entity Recognition: Integrated Recall and Retrieval Augmentation",
+      "Hybrid Graphs for Table-and-Text based Question Answering using LLMs",
+      "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering for LLM-based Fake News Detection",
+      "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries",
+      "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling",
+      "TRANSIENTTABLES: Evaluating LLMs' Reasoning on Temporally Evolving Semi-structured Tables",
+      "Beyond End-to-End VLMs: Leveraging Intermediate Text Representations for Superior Flowchart Understanding",
+      "Label Drop for Multi-Aspect Relation Modeling in Universal Information Extraction",
+      "MatViX: Multimodal Information Extraction from Visually Rich Articles",
+      "One Unified Model for Diverse Tasks: Emotion Cause Analysis via Self-Promote Cognitive Structure Modeling",
+      "Track-SQL: Enhancing Generative Language Models with Dual-Extractive Modules for Schema and Context Tracking in Multi-turn Text-to-SQL",
+      "UFO: A UI-Focused Agent for Windows OS Interaction",
+      "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models"
+    ],
+    "neurips24": [
+      "CharXiv: Charting Gaps in Realistic Chart Understanding in Multimodal LLMs",
+      "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models",
+      "FlexCap: Describe Anything in Images in Controllable Detail",
+      "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+      "Instruction Tuning Large Language Models to Understand Electronic Health Records",
+      "LLMDFA: Analyzing Dataflow in Code with Large Language Models",
+      "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+      "MO-DDN: A Coarse-to-Fine Attribute-based Exploration Agent for Multi-Object Demand-driven Navigation",
+      "MedCalc-Bench: Evaluating Large Language Models for Medical Calculations",
+      "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models",
+      "Smoothie: Label Free Language Model Routing",
+      "Boosting the Potential of Large Language Models with an Intelligent Information Assistant"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 9,
+    "emnlp25": 67,
+    "iclr24": 7,
+    "iclr25": 27,
+    "icml25": 7,
+    "naacl25": 15,
+    "neurips24": 12
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

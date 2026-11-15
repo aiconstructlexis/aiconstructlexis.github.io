@@ -1,0 +1,83 @@
+{
+  "canonical_name": "Experimental design",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage is a task of outlining experiments for a research paper or research idea, usually to validate a proposed method, problem, solution, or idea. Definitions converge on producing the setup, procedures, or plan for experiments, and some formulations make the expected output more specific, such as a brief experiment plan with explanations or a list of experiments with their motivations; one definition also explicitly allows this within papers whose results are simulated.\n\nVariants. Papers use both \"Experimental design\" and \"Experiment design\" for closely matching formulations. The behavior appears in settings where the model is given pre-experiment or partial-paper context, and in broader research systems that also define problems and propose methods; the requested output is variously framed as an experiment plan with explanations, a list of experiments with motivations, or an outline of procedures.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior in the papers.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Experimental design",
+    "Experiment design"
+  ],
+  "papers": [
+    "CycleResearcher: Improving Automated Research via Automated Review",
+    "What can large language models do for sustainable food?",
+    "AAAR-1.0: Assessing AI\u2019s Potential to Assist Research",
+    "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The task of outlining the setup and procedures for experiments within a research paper, even if the results are simulated.",
+      "papers": [
+        "CycleResearcher: Improving Automated Research via Automated Review",
+        "What can large language models do for sustainable food?"
+      ],
+      "original_name": "Experimental design"
+    },
+    {
+      "text": "The observable behavior of outlining an experimental procedure to validate a proposed research method and problem.",
+      "papers": [
+        "AAAR-1.0: Assessing AI\u2019s Potential to Assist Research",
+        "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models"
+      ],
+      "original_name": "Experiment design"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage is a task of outlining experiments for a research paper or research idea, usually to validate a proposed method, problem, solution, or idea. Definitions converge on producing the setup, procedures, or plan for experiments, and some formulations make the expected output more specific, such as a brief experiment plan with explanations or a list of experiments with their motivations; one definition also explicitly allows this within papers whose results are simulated."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use both \"Experimental design\" and \"Experiment design\" for closely matching formulations. The behavior appears in settings where the model is given pre-experiment or partial-paper context, and in broader research systems that also define problems and propose methods; the requested output is variously framed as an experiment plan with explanations, a list of experiments with motivations, or an outline of procedures."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior in the papers."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not link this behavior to any construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage is a task of outlining experiments for a research paper or research idea, usually to validate a proposed method, problem, solution, or idea. Definitions converge on producing the setup, procedures, or plan for experiments, and some formulations make the expected output more specific, such as a brief experiment plan with explanations or a list of experiments with their motivations; one definition also explicitly allows this within papers whose results are simulated.\n\nVariants. Papers use both \"Experimental design\" and \"Experiment design\" for closely matching formulations. The behavior appears in settings where the model is given pre-experiment or partial-paper context, and in broader research systems that also define problems and propose methods; the requested output is variously framed as an experiment plan with explanations, a list of experiments with motivations, or an outline of procedures.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior in the papers.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CycleResearcher: Improving Automated Research via Automated Review"
+    ],
+    "icml25": [
+      "What can large language models do for sustainable food?",
+      "AAAR-1.0: Assessing AI\u2019s Potential to Assist Research"
+    ],
+    "naacl25": [
+      "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1,
+    "icml25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

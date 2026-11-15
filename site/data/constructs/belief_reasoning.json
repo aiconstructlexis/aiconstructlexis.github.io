@@ -1,0 +1,84 @@
+{
+  "canonical_name": "Belief reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing framing treats belief reasoning as the ability to infer and track a character's or agent's beliefs, especially when those beliefs are implicit and require multi-step inference from indirect evidence. A narrower formulation centers beliefs as what an agent knows or does not know from percepts and prior knowledge, with belief questions asking whether a model understands what information an agent knows or is communicating. A broader usage extends the term to inferring underlying intentions or mental states from observable behavior, so the main variation is whether the construct is restricted to beliefs or used for belief-and-intent attribution more generally.\n\nSpace of facets. Papers usually place belief reasoning within mental-state reasoning. One description evaluates beliefs alongside emotions, intentions, and resulting actions, while another explicitly situates belief reasoning in Theory of mind and describes it as attributing mental states such as beliefs and intentions to interpret behavior. The usage in the papers therefore groups it with other mental states, but not all papers draw the boundary the same way: some keep the focus on beliefs, whereas others use the label while reasoning about intent as well.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to belief reasoning. In the descriptions, papers operationalize it through belief questions about what information an agent knows or is communicating from percepts, and through reasoning about the beliefs underlying an agent's actions and comparing them with user instructions to identify misalignments before execution.\n\nLinks. One paper relates belief reasoning to Theory of mind, describing it as the ability to infer intent by attributing mental states such as beliefs and intentions. No causal or correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Belief reasoning"
+  ],
+  "papers": [
+    "Theory of Mind in Large Language Models: Assessment and Enhancement",
+    "Towards Dynamic Theory of Mind: Evaluating LLM Adaptation to Temporal Evolution of Human States",
+    "Preemptive Detection and Correction of Misaligned Actions in LLM Agents"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The ability to infer and track a character's beliefs, which are often implicit and require multi-step inference from indirect evidence.",
+      "papers": [
+        "Towards Dynamic Theory of Mind: Evaluating LLM Adaptation to Temporal Evolution of Human States",
+        "Preemptive Detection and Correction of Misaligned Actions in LLM Agents"
+      ],
+      "original_name": "Belief reasoning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theory of mind",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Preemptive Detection and Correction of Misaligned Actions in LLM Agents",
+      "evidence": "The ability to infer intent, known as belief reasoning in Theory of Mind (ToM) (Premack and Woodruff, 1978), enables humans to interpret others\u2019 behavior by attributing mental states such as beliefs and intentions to them.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Preemptive Detection and Correction of Misaligned Actions in LLM Agents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing framing treats belief reasoning as the ability to infer and track a character's or agent's beliefs, especially when those beliefs are implicit and require multi-step inference from indirect evidence. A narrower formulation centers beliefs as what an agent knows or does not know from percepts and prior knowledge, with belief questions asking whether a model understands what information an agent knows or is communicating. A broader usage extends the term to inferring underlying intentions or mental states from observable behavior, so the main variation is whether the construct is restricted to beliefs or used for belief-and-intent attribution more generally."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers usually place belief reasoning within mental-state reasoning. One description evaluates beliefs alongside emotions, intentions, and resulting actions, while another explicitly situates belief reasoning in Theory of mind and describes it as attributing mental states such as beliefs and intentions to interpret behavior. The usage in the papers therefore groups it with other mental states, but not all papers draw the boundary the same way: some keep the focus on beliefs, whereas others use the label while reasoning about intent as well."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to belief reasoning. In the descriptions, papers operationalize it through belief questions about what information an agent knows or is communicating from percepts, and through reasoning about the beliefs underlying an agent's actions and comparing them with user instructions to identify misalignments before execution."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper relates belief reasoning to Theory of mind, describing it as the ability to infer intent by attributing mental states such as beliefs and intentions. No causal or correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing framing treats belief reasoning as the ability to infer and track a character's or agent's beliefs, especially when those beliefs are implicit and require multi-step inference from indirect evidence. A narrower formulation centers beliefs as what an agent knows or does not know from percepts and prior knowledge, with belief questions asking whether a model understands what information an agent knows or is communicating. A broader usage extends the term to inferring underlying intentions or mental states from observable behavior, so the main variation is whether the construct is restricted to beliefs or used for belief-and-intent attribution more generally.\n\nSpace of facets. Papers usually place belief reasoning within mental-state reasoning. One description evaluates beliefs alongside emotions, intentions, and resulting actions, while another explicitly situates belief reasoning in Theory of mind and describes it as attributing mental states such as beliefs and intentions to interpret behavior. The usage in the papers therefore groups it with other mental states, but not all papers draw the boundary the same way: some keep the focus on beliefs, whereas others use the label while reasoning about intent as well.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to belief reasoning. In the descriptions, papers operationalize it through belief questions about what information an agent knows or is communicating from percepts, and through reasoning about the beliefs underlying an agent's actions and comparing them with user instructions to identify misalignments before execution.\n\nLinks. One paper relates belief reasoning to Theory of mind, describing it as the ability to infer intent by attributing mental states such as beliefs and intentions. No causal or correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Theory of Mind in Large Language Models: Assessment and Enhancement",
+      "Towards Dynamic Theory of Mind: Evaluating LLM Adaptation to Temporal Evolution of Human States"
+    ],
+    "emnlp25": [
+      "Preemptive Detection and Correction of Misaligned Actions in LLM Agents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

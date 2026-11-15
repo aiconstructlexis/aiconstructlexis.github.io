@@ -1,0 +1,359 @@
+{
+  "canonical_name": "Grounding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats grounding as a latent ability to connect language or high-level reasoning to concrete referents, most often fine-grained visual details or exact spatial locations in images, videos, UIs, and 3D scenes. Definitions repeatedly describe localizing regions or elements from text, producing coordinates or bounding boxes, or tying predictions to object identities, motion, interactions, and other low-level evidence; as one paper puts it, \"model predictions need to be grounded in fine-grained low-level details, such as object motions and object interactions\" (Look, Remember and Reason: Grounded Reasoning in Videos with Language Models). Smaller lines of work use the same term more broadly for anchoring outputs in environmental context and feedback, executable actions, structured schemas, provided evidence, or retrieved context. There is also a recurring difference between papers that frame grounding as a latent capacity and one UI-focused definition that treats it as the observable task of locating elements on a screen.\n\nSpace of facets. Papers systematize grounding mainly by setting rather than through one shared taxonomy. The most common family is spatial grounding, expressed with nearby labels such as grounding ability, grounding capability, visual localization, and grounded understanding, and some authors separate it from referring as a related capability. Other papers use grounding for broader anchoring of responses or actions to environment feedback, fixed schemas, visual evidence, or retrieved context, so the same name covers both precise localization and broader context anchoring.\n\nSpace of measurement. Papers link grounding to 2 measurement instruments and 5 behavioral indicators. The named instruments are both benchmarks: ScreenSpot is used for GUI grounding capabilities, and InfiniBench includes grounding-based MCQ skills. Operationalizations are usually explicit localization or anchoring tasks, such as outputting coordinates or bounding boxes from screenshots, listing widgets, finding text or a described widget on a screen, localizing image regions from semantic descriptions, or justifying answers with visual evidence. The most frequently linked behavioral indicators are object recognition, object tracking, and referring expression generation, plus 2 other behavioral indicators; these operationalizations mainly instantiate spatial localization or action-linked grounding, while some definitions also use the term for anchoring to provided or retrieved context.\n\nLinks. Only a few explicit links are recorded. Papers claim causal relationships from grounding to visual reasoning and agency, and papers report related links from grounding to instruction following ability and spatial understanding. Separate papers also record causal links from low-level surrogate tasks to grounding, a causal link from grounding to a referring behavior, and another causal link from a UI referring behavior to grounding, while tool use is described as related to grounding.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Grounding",
+    "Grounding ability",
+    "Grounding capability",
+    "Visual localization",
+    "Grounded understanding"
+  ],
+  "papers": [
+    "GUICourse: From General Vision Language Model to Versatile GUI Agent",
+    "On the Limit of Language Models as Planning Formalizers",
+    "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+    "Anecdoctoring: Automated Red-Teaming Across Language and Place",
+    "InfiniBench: A Benchmark for Large Multi-Modal Models in Long-Form Movies and TV Shows",
+    "ReSeeding Latent States for Sequential Language Understanding",
+    "Stepwise Informativeness Search for Improving LLM Reasoning",
+    "RAGferee: Building Contextual Reward Models for Retrieval-Augmented Generation",
+    "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+    "Lemur: Harmonizing Natural Language and Code for Language Agents",
+    "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+    "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+    "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+    "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+    "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+    "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+    "MLLM as Retriever: Interactively Learning Multimodal Retrieval for Embodied Agents",
+    "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+    "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+    "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+    "Position: AI Should Not Be An Imitation Game: Centaur Evaluations",
+    "SPRI: Aligning Large Language Models with Context-Situated Principles",
+    "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+    "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding in VLMs",
+    "The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with Language Models",
+    "GroundCocoa: A Benchmark for Evaluating Compositional & Conditional Reasoning in Language Models",
+    "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+    "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "Multi-modal Situated Reasoning in 3D Scenes",
+    "On the Effects of Data Scale on UI Control Agents",
+    "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+    "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+    "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+  ],
+  "paper_count": 34,
+  "definitions": [
+    {
+      "text": "The model's ability to connect high-level concepts and reasoning processes to fine-grained, low-level visual details in a video, such as object identities, motion, and interactions.",
+      "papers": [
+        "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+        "Lemur: Harmonizing Natural Language and Code for Language Agents",
+        "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+        "Multi-modal Situated Reasoning in 3D Scenes",
+        "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+        "GroundCocoa: A Benchmark for Evaluating Compositional & Conditional Reasoning in Language Models",
+        "The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with Language Models",
+        "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding in VLMs",
+        "On the Limit of Language Models as Planning Formalizers",
+        "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+        "RAGferee: Building Contextual Reward Models for Retrieval-Augmented Generation"
+      ],
+      "original_name": "Grounding"
+    },
+    {
+      "text": "The capacity to produce precise spatial outputs for GUI elements, such as coordinates or bounding boxes, from screenshots.",
+      "papers": [
+        "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+        "GUICourse: From General Vision Language Model to Versatile GUI Agent"
+      ],
+      "original_name": "Grounding ability"
+    },
+    {
+      "text": "The latent ability to accurately associate textual references with specific visual locations or bounding boxes in a UI.",
+      "papers": [
+        "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+        "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models"
+      ],
+      "original_name": "Grounding capability"
+    },
+    {
+      "text": "The latent ability to identify where in an image the relevant subject or evidence for a question is located.",
+      "papers": [
+        "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs"
+      ],
+      "original_name": "Visual localization"
+    },
+    {
+      "text": "The ability to connect language expressions to specific image regions or objects with precise spatial localization.",
+      "papers": [
+        "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning"
+      ],
+      "original_name": "Grounded understanding"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+      "evidence": "many visual reasoning problems in videos require grounding in fine-grained low-level information (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+      "evidence": "Our multi-modal LRR model is grounded to relevant low-level visual information in the scene by stochastically introducing low-level surrogate tasks during training, including object recognition, re-identification, and tracking (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object tracking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+      "evidence": "Our multi-modal LRR model is grounded to relevant low-level visual information in the scene by stochastically introducing low-level surrogate tasks during training, including object recognition, re-identification, and tracking (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "evidence": "This requires decomposing a task, grounding intention to tools, and using the results for further actions, relying on natural language reasoning and programming abilities (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Lemur: Harmonizing Natural Language and Code for Language Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "evidence": "In vision-language learning, how to enable spatial understanding in models is a fundamental research problem. Two desired capabilities stem from this problem: referring and grounding.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Ferret: Refer and Ground Anything Anywhere at Any Granularity"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "UI element referring",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "evidence": "\u201cParticularly, when adding grounding data into training, the referring performance gets improved, and vice versa.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Ferret: Refer and Ground Anything Anywhere at Any Granularity"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Instruction following ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "evidence": "Errors in grounding valid actions highlight a limitation in the model\u2019s ability to follow instructions and format actions correctly (Section 4.3).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Agency",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "evidence": "Emergent agentic abilities are strongly dependent on basic abilities like grounding, world modeling, and self-reflection.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScreenSpot",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "evidence": "We first evaluated AGUVIS\u2019s fundamental GUI grounding capabilities using ScreenSpot (Cheng et al., 2024), a benchmark that spans mobile, desktop, and website platforms. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiniBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "InfiniBench: A Benchmark for Large Multi-Modal Models in Long-Form Movies and TV Shows",
+      "evidence": "InfiniBench skills: covers eight core skills, grouped into grounding-based (MCQ) and reasoning-based (open-ended) categories.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "InfiniBench: A Benchmark for Large Multi-Modal Models in Long-Form Movies and TV Shows"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Referring expression generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "evidence": "\u201cParticularly, when adding grounding data into training, the referring performance gets improved, and vice versa.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Ferret: Refer and Ground Anything Anywhere at Any Granularity"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 8,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats grounding as a latent ability to connect language or high-level reasoning to concrete referents, most often fine-grained visual details or exact spatial locations in images, videos, UIs, and 3D scenes. Definitions repeatedly describe localizing regions or elements from text, producing coordinates or bounding boxes, or tying predictions to object identities, motion, interactions, and other low-level evidence; as one paper puts it, \"model predictions need to be grounded in fine-grained low-level details, such as object motions and object interactions\" (Look, Remember and Reason: Grounded Reasoning in Videos with Language Models). Smaller lines of work use the same term more broadly for anchoring outputs in environmental context and feedback, executable actions, structured schemas, provided evidence, or retrieved context. There is also a recurring difference between papers that frame grounding as a latent capacity and one UI-focused definition that treats it as the observable task of locating elements on a screen."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers systematize grounding mainly by setting rather than through one shared taxonomy. The most common family is spatial grounding, expressed with nearby labels such as grounding ability, grounding capability, visual localization, and grounded understanding, and some authors separate it from referring as a related capability. Other papers use grounding for broader anchoring of responses or actions to environment feedback, fixed schemas, visual evidence, or retrieved context, so the same name covers both precise localization and broader context anchoring."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link grounding to 2 measurement instruments and 5 behavioral indicators. The named instruments are both benchmarks: ScreenSpot is used for GUI grounding capabilities, and InfiniBench includes grounding-based MCQ skills. Operationalizations are usually explicit localization or anchoring tasks, such as outputting coordinates or bounding boxes from screenshots, listing widgets, finding text or a described widget on a screen, localizing image regions from semantic descriptions, or justifying answers with visual evidence. The most frequently linked behavioral indicators are object recognition, object tracking, and referring expression generation, plus 2 other behavioral indicators; these operationalizations mainly instantiate spatial localization or action-linked grounding, while some definitions also use the term for anchoring to provided or retrieved context."
+    },
+    {
+      "label": "Links.",
+      "text": "Only a few explicit links are recorded. Papers claim causal relationships from grounding to visual reasoning and agency, and papers report related links from grounding to instruction following ability and spatial understanding. Separate papers also record causal links from low-level surrogate tasks to grounding, a causal link from grounding to a referring behavior, and another causal link from a UI referring behavior to grounding, while tool use is described as related to grounding."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats grounding as a latent ability to connect language or high-level reasoning to concrete referents, most often fine-grained visual details or exact spatial locations in images, videos, UIs, and 3D scenes. Definitions repeatedly describe localizing regions or elements from text, producing coordinates or bounding boxes, or tying predictions to object identities, motion, interactions, and other low-level evidence; as one paper puts it, \"model predictions need to be grounded in fine-grained low-level details, such as object motions and object interactions\" (Look, Remember and Reason: Grounded Reasoning in Videos with Language Models). Smaller lines of work use the same term more broadly for anchoring outputs in environmental context and feedback, executable actions, structured schemas, provided evidence, or retrieved context. There is also a recurring difference between papers that frame grounding as a latent capacity and one UI-focused definition that treats it as the observable task of locating elements on a screen.\n\nSpace of facets. Papers systematize grounding mainly by setting rather than through one shared taxonomy. The most common family is spatial grounding, expressed with nearby labels such as grounding ability, grounding capability, visual localization, and grounded understanding, and some authors separate it from referring as a related capability. Other papers use grounding for broader anchoring of responses or actions to environment feedback, fixed schemas, visual evidence, or retrieved context, so the same name covers both precise localization and broader context anchoring.\n\nSpace of measurement. Papers link grounding to 2 measurement instruments and 5 behavioral indicators. The named instruments are both benchmarks: ScreenSpot is used for GUI grounding capabilities, and InfiniBench includes grounding-based MCQ skills. Operationalizations are usually explicit localization or anchoring tasks, such as outputting coordinates or bounding boxes from screenshots, listing widgets, finding text or a described widget on a screen, localizing image regions from semantic descriptions, or justifying answers with visual evidence. The most frequently linked behavioral indicators are object recognition, object tracking, and referring expression generation, plus 2 other behavioral indicators; these operationalizations mainly instantiate spatial localization or action-linked grounding, while some definitions also use the term for anchoring to provided or retrieved context.\n\nLinks. Only a few explicit links are recorded. Papers claim causal relationships from grounding to visual reasoning and agency, and papers report related links from grounding to instruction following ability and spatial understanding. Separate papers also record causal links from low-level surrogate tasks to grounding, a causal link from grounding to a referring behavior, and another causal link from a UI referring behavior to grounding, while tool use is described as related to grounding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "GUICourse: From General Vision Language Model to Versatile GUI Agent",
+      "On the Limit of Language Models as Planning Formalizers"
+    ],
+    "emnlp25": [
+      "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+      "Anecdoctoring: Automated Red-Teaming Across Language and Place",
+      "InfiniBench: A Benchmark for Large Multi-Modal Models in Long-Form Movies and TV Shows",
+      "ReSeeding Latent States for Sequential Language Understanding",
+      "Stepwise Informativeness Search for Improving LLM Reasoning",
+      "RAGferee: Building Contextual Reward Models for Retrieval-Augmented Generation"
+    ],
+    "iclr24": [
+      "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "Lemur: Harmonizing Natural Language and Code for Language Agents",
+      "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models"
+    ],
+    "iclr25": [
+      "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+      "Benchmarking Multimodal Retrieval Augmented Generation with Dynamic VQA Dataset and Self-adaptive Planning Agent",
+      "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+      "Ferret-UI 2: Mastering Universal User Interface Understanding Across Platforms",
+      "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+      "MLLM as Retriever: Interactively Learning Multimodal Retrieval for Embodied Agents",
+      "MLLMs Know Where to Look: Training-free Perception of Small Visual Details with Multimodal LLMs",
+      "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+    ],
+    "icml25": [
+      "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+      "Position: AI Should Not Be An Imitation Game: Centaur Evaluations",
+      "SPRI: Aligning Large Language Models with Context-Situated Principles",
+      "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities"
+    ],
+    "naacl25": [
+      "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding in VLMs",
+      "The BiGGen Bench: A Principled Benchmark for Fine-grained Evaluation of Language Models with Language Models",
+      "GroundCocoa: A Benchmark for Evaluating Compositional & Conditional Reasoning in Language Models"
+    ],
+    "neurips24": [
+      "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "Multi-modal Situated Reasoning in 3D Scenes",
+      "On the Effects of Data Scale on UI Control Agents",
+      "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "SPIQA: A Dataset for Multimodal Question Answering on Scientific Papers",
+      "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 6,
+    "iclr24": 3,
+    "iclr25": 8,
+    "icml25": 4,
+    "naacl25": 3,
+    "neurips24": 8
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

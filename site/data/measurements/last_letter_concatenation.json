@@ -1,0 +1,154 @@
+{
+  "canonical_name": "Last letter concatenation",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing description is a benchmark, dataset, or test set in which a model concatenates the last letters of words in a name or other word sequence. Most definitions frame it as a symbolic reasoning task, while some describe it more narrowly as a simple text-processing or string-manipulation task; one definition also says it is used to evaluate algorithmic reasoning and length generalization in verification settings. Examples in the quoted passages ask for the last letters of names such as \"Amy Brown\" or \"Craig Alice,\" and some papers specify four-word or four-name inputs.\n\nWhat it is claimed to measure. Papers link it to 2 constructs and no behavioral indicators. It is most commonly reported as measuring Symbolic reasoning, with papers saying they use Last Letter Concatenation to examine or benchmark symbolic reasoning performance. A smaller line of work uses it to measure Reasoning more broadly, describing it as one of the standard reasoning datasets, so the recorded claims center on Symbolic reasoning with an additional broader reasoning use.\n\nSpace of uses. Papers usually use it as one benchmark among several, appearing alongside GSM8K, CSQA, and Coin Flip in broader reasoning evaluations. It is positioned as a benchmark test set for reporting accuracies, as a reasoning dataset for average performance reporting, and as a task leveraged to examine a method's symbolic reasoning performance.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LLC",
+    "LastLetter",
+    "Last Letter Concatenation",
+    "Last letter concatenation",
+    "LastLetterConcatenation",
+    "LastLetterConcat"
+  ],
+  "papers": [
+    "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+    "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models",
+    "Generative Verifiers: Reward Modeling as Next-Token Prediction",
+    "PORT: Preference Optimization on Reasoning Traces",
+    "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+    "Self-Guiding Exploration for Combinatorial Problems",
+    "Chain of Thoughtlessness? An Analysis of CoT in Planning"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "Last Letter Concatenation, a reasoning task and dataset where the model must concatenate the last letters of words in a given name.",
+      "papers": [
+        "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning"
+      ],
+      "original_name": "LLC"
+    },
+    {
+      "text": "A benchmark test set used to evaluate symbolic reasoning performance.",
+      "papers": [
+        "Self-Guiding Exploration for Combinatorial Problems"
+      ],
+      "original_name": "LastLetter"
+    },
+    {
+      "text": "A string-manipulation benchmark used to evaluate algorithmic reasoning and length generalization in verification settings.",
+      "papers": [
+        "Generative Verifiers: Reward Modeling as Next-Token Prediction"
+      ],
+      "original_name": "Last Letter Concatenation"
+    },
+    {
+      "text": "A symbolic reasoning task used to test whether a model can follow letter-based transformation rules across inputs.",
+      "papers": [
+        "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models"
+      ],
+      "original_name": "Last letter concatenation"
+    },
+    {
+      "text": "A text-processing benchmark where the model concatenates the last letters of a sequence of words.",
+      "papers": [
+        "Chain of Thoughtlessness? An Analysis of CoT in Planning"
+      ],
+      "original_name": "LastLetterConcatenation"
+    },
+    {
+      "text": "A dataset for evaluating symbolic reasoning where the task is to concatenate the last letters of a sequence of words.",
+      "papers": [
+        "PORT: Preference Optimization on Reasoning Traces"
+      ],
+      "original_name": "LastLetterConcat"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Symbolic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning",
+      "evidence": "For symbolic reasoning, we use Last Letter Concatenation and Coin Flip from Wei et al. (2022).",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Escape Sky-high Cost: Early-stopping Self-Consistency for Multi-step Reasoning"
+        ],
+        "iclr25": [
+          "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+          "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models",
+          "Forking Paths in Neural Text Generation"
+        ],
+        "icml25": [
+          "Rethinking Chain-of-Thought from the Perspective of Self-Training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "evidence": "Our evaluations on standard reasoning datasets (GSM8K, CSQA, and LLC) with various LLMs and prompts show that TREACLE enables cost savings of up to 85% compared to baselines, while maintaining high accuracy. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing description is a benchmark, dataset, or test set in which a model concatenates the last letters of words in a name or other word sequence. Most definitions frame it as a symbolic reasoning task, while some describe it more narrowly as a simple text-processing or string-manipulation task; one definition also says it is used to evaluate algorithmic reasoning and length generalization in verification settings. Examples in the quoted passages ask for the last letters of names such as \"Amy Brown\" or \"Craig Alice,\" and some papers specify four-word or four-name inputs."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 2 constructs and no behavioral indicators. It is most commonly reported as measuring Symbolic reasoning, with papers saying they use Last Letter Concatenation to examine or benchmark symbolic reasoning performance. A smaller line of work uses it to measure Reasoning more broadly, describing it as one of the standard reasoning datasets, so the recorded claims center on Symbolic reasoning with an additional broader reasoning use."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers usually use it as one benchmark among several, appearing alongside GSM8K, CSQA, and Coin Flip in broader reasoning evaluations. It is positioned as a benchmark test set for reporting accuracies, as a reasoning dataset for average performance reporting, and as a task leveraged to examine a method's symbolic reasoning performance."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing description is a benchmark, dataset, or test set in which a model concatenates the last letters of words in a name or other word sequence. Most definitions frame it as a symbolic reasoning task, while some describe it more narrowly as a simple text-processing or string-manipulation task; one definition also says it is used to evaluate algorithmic reasoning and length generalization in verification settings. Examples in the quoted passages ask for the last letters of names such as \"Amy Brown\" or \"Craig Alice,\" and some papers specify four-word or four-name inputs.\n\nWhat it is claimed to measure. Papers link it to 2 constructs and no behavioral indicators. It is most commonly reported as measuring Symbolic reasoning, with papers saying they use Last Letter Concatenation to examine or benchmark symbolic reasoning performance. A smaller line of work uses it to measure Reasoning more broadly, describing it as one of the standard reasoning datasets, so the recorded claims center on Symbolic reasoning with an additional broader reasoning use.\n\nSpace of uses. Papers usually use it as one benchmark among several, appearing alongside GSM8K, CSQA, and Coin Flip in broader reasoning evaluations. It is positioned as a benchmark test set for reporting accuracies, as a reasoning dataset for average performance reporting, and as a task leveraged to examine a method's symbolic reasoning performance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "Don't Take Things Out of Context: Attention Intervention for Enhancing Chain-of-Thought Reasoning in Large Language Models",
+      "Generative Verifiers: Reward Modeling as Next-Token Prediction"
+    ],
+    "neurips24": [
+      "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "Self-Guiding Exploration for Combinatorial Problems",
+      "Chain of Thoughtlessness? An Analysis of CoT in Planning"
+    ],
+    "naacl25": [
+      "PORT: Preference Optimization on Reasoning Traces"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "neurips24": 3,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

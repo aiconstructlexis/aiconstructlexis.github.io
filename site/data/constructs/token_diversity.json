@@ -1,0 +1,87 @@
+{
+  "canonical_name": "Token diversity",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats token diversity as variation in the distribution of generated tokens, especially as the opposite of repetitive output. Papers also describe it with entropy language, defining it as the degree of variation or entropy in model-produced tokens and, in one formulation, as reflecting the richness of the output distribution.\n\nSpace of facets. Papers do not introduce named subtypes or a larger taxonomy for this construct. The main distinctions in use are between varied and repetitive token distributions, and some descriptions pair token diversity closely with token entropy and with the richness of the output distribution rather than separating these as different constructs.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. Even so, papers describe metric-based operationalization: a paper says it introduces \"three additional metrics that evaluate token diversity,\" and names Token Entropy (TE) as measuring the diversity of tokens in the model's output. This operationalization targets the same token-level variation and entropy emphasized in the definitions.\n\nLinks. The only linked construct is Text generation quality. A paper claims a causal relationship from token diversity to text generation quality, reporting that quality is \"compromised by low token diversity.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Token diversity",
+    "Token Diversity"
+  ],
+  "papers": [
+    "A Closer Look at Machine Unlearning for Large Language Models",
+    "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling",
+    "Transformer Meets Twicing: Harnessing Unattended Residual Information"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The extent to which generated output uses a varied token distribution rather than repetitive tokens.",
+      "papers": [
+        "A Closer Look at Machine Unlearning for Large Language Models"
+      ],
+      "original_name": "Token diversity"
+    },
+    {
+      "text": "The degree of variation and entropy in the tokens produced by the model during generation, reflecting the richness of the output distribution.",
+      "papers": [
+        "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling"
+      ],
+      "original_name": "Token Diversity"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation quality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling",
+      "evidence": "However, when we check the generated content, we discover that the quality is compromised by low token diversity",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats token diversity as variation in the distribution of generated tokens, especially as the opposite of repetitive output. Papers also describe it with entropy language, defining it as the degree of variation or entropy in model-produced tokens and, in one formulation, as reflecting the richness of the output distribution."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not introduce named subtypes or a larger taxonomy for this construct. The main distinctions in use are between varied and repetitive token distributions, and some descriptions pair token diversity closely with token entropy and with the richness of the output distribution rather than separating these as different constructs."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to it. Even so, papers describe metric-based operationalization: a paper says it introduces \"three additional metrics that evaluate token diversity,\" and names Token Entropy (TE) as measuring the diversity of tokens in the model's output. This operationalization targets the same token-level variation and entropy emphasized in the definitions."
+    },
+    {
+      "label": "Links.",
+      "text": "The only linked construct is Text generation quality. A paper claims a causal relationship from token diversity to text generation quality, reporting that quality is \"compromised by low token diversity.\""
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats token diversity as variation in the distribution of generated tokens, especially as the opposite of repetitive output. Papers also describe it with entropy language, defining it as the degree of variation or entropy in model-produced tokens and, in one formulation, as reflecting the richness of the output distribution.\n\nSpace of facets. Papers do not introduce named subtypes or a larger taxonomy for this construct. The main distinctions in use are between varied and repetitive token distributions, and some descriptions pair token diversity closely with token entropy and with the richness of the output distribution rather than separating these as different constructs.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. Even so, papers describe metric-based operationalization: a paper says it introduces \"three additional metrics that evaluate token diversity,\" and names Token Entropy (TE) as measuring the diversity of tokens in the model's output. This operationalization targets the same token-level variation and entropy emphasized in the definitions.\n\nLinks. The only linked construct is Text generation quality. A paper claims a causal relationship from token diversity to text generation quality, reporting that quality is \"compromised by low token diversity.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A Closer Look at Machine Unlearning for Large Language Models",
+      "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling",
+      "Transformer Meets Twicing: Harnessing Unattended Residual Information"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

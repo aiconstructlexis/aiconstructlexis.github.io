@@ -1,0 +1,295 @@
+{
+  "canonical_name": "Human preference evaluation",
+  "type": "measurement",
+  "canonical_definition": "What it is. The prevailing usage is a pairwise human judgment protocol: evaluators see outputs from two models side by side and choose the better one, often with a tie or no-difference option. Papers describe closely related variants as human preference studies, A/B testing, side-by-side comparisons, human pairwise or comparative evaluation, preference voting, and AB preference tests, with task criteria tailored to the application, such as faithfulness, general response quality, translation quality, plausibility and consistency, argument quality, plan usefulness, or omission, fabrication, distortion, and temporal mismatch in captions. A smaller line of work uses the same label for non-pairwise ratings, including a 5-point Mean Opinion Score setup for naturalness and meaningfulness.\n\nWhat it is claimed to measure. Papers link this protocol to 3 constructs and no behavioral indicators. The linked constructs, listed most often first, are Human preference alignment, Faithfulness, and Text generation quality, and the relationship is always that those constructs are measured by human preference evaluation. The measurement claims are therefore spread across several constructs rather than centered on one: papers use it to assess alignment with human preferences, to ask which description is more faithful to a table, and to judge the general quality of model responses.\n\nSpace of uses. No measurement instrument is linked to it. Papers usually position it as a direct human check on model outputs, with results reported as win rates, win:tie:lose ratios, or under Elo scoring; some descriptions place it alongside automatic evaluation metrics, RM scores, GPT-4 pairwise evaluation, or AlpacaEval. A smaller set of papers explicitly uses it to validate LLM-based evaluation or to complement results from model-scored benchmarks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Human preference study",
+    "Human preference evaluation",
+    "A/B testing",
+    "Side-by-side comparisons",
+    "Human pairwise comparison",
+    "Human pairwise evaluation",
+    "Human preference-based evaluation",
+    "Human preference voting",
+    "Human preference test",
+    "AB preference test",
+    "Human comparative evaluation",
+    "Moderation Preference Annotation",
+    "Pairwise comparisons"
+  ],
+  "papers": [
+    "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation via LLM Agent",
+    "On the Role of Model Prior in Real-World Inductive Reasoning",
+    "SHIFT: Selected Helpful Informative Frame for Video-guided Machine Translation",
+    "Small Models, Big Results: Achieving Superior Intent Extraction through Decomposition",
+    "Step Guided Reasoning: Improving Mathematical Reasoning using Guidance Generation and Step Reasoning",
+    "A Good Plan is Hard to Find: Aligning Models with Preferences is Misaligned with What Helps Users",
+    "Is the Top Still Spinning? Evaluating Subjectivity in Narrative Understanding",
+    "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+    "Self-Alignment with Instruction Backtranslation",
+    "SuRe: Summarizing Retrievals using Answer Candidates for Open-domain QA of LLMs",
+    "Tailoring Self-Rationalizers with Multi-Reward Distillation",
+    "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d",
+    "Tool-Augmented Reward Modeling",
+    "Training Socially Aligned Language Models on Simulated Social Interactions",
+    "ALLaM: Large Language Models for Arabic and English",
+    "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+    "BOND: Aligning LLMs with Best-of-N Distillation",
+    "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+    "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+    "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher",
+    "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+    "The Hyperfitting Phenomenon: Sharpening and Stabilizing LLMs for Open-Ended Text Generation",
+    "UniCBE: An Uniformity-driven Comparing Based Evaluation Framework with Unified Multi-Objective Optimization",
+    "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+    "Perception in Reflection",
+    "Position: Beyond Assistance \u2013 Reimagining LLMs as Ethical and Adaptive Co-Creators in Mental Health Care",
+    "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+    "Matina: A Large-Scale 73B Token Persian Text Corpus",
+    "A Logical Fallacy-Informed Framework for Argument Generation",
+    "It Is Not Only the Negative that Deserves Attention! Understanding, Generation & Evaluation of (Positive) Moderation",
+    "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+    "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+    "Noise Contrastive Alignment of Language Models with Explicit Rewards",
+    "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+    "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+    "SongCreator: Lyrics-based Universal Song Generation"
+  ],
+  "paper_count": 36,
+  "definitions": [
+    {
+      "text": "Human evaluation protocol where annotators rate which of two model descriptions is more faithful to a table.",
+      "papers": [
+        "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+        "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+        "Is the Top Still Spinning? Evaluating Subjectivity in Narrative Understanding"
+      ],
+      "original_name": "Human preference study"
+    },
+    {
+      "text": "A human evaluation protocol where evaluators are presented with outputs from two models side-by-side and asked to choose which is significantly better or if there is no significant difference.",
+      "papers": [
+        "Self-Alignment with Instruction Backtranslation",
+        "Tool-Augmented Reward Modeling",
+        "SHIFT: Selected Helpful Informative Frame for Video-guided Machine Translation"
+      ],
+      "original_name": "Human preference evaluation"
+    },
+    {
+      "text": "A human evaluation method where raters compare two model outputs (A and B) and choose the better one.",
+      "papers": [
+        "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+        "Position: Beyond Assistance \u2013 Reimagining LLMs as Ethical and Adaptive Co-Creators in Mental Health Care"
+      ],
+      "original_name": "A/B testing"
+    },
+    {
+      "text": "Human evaluation procedure in which outputs are compared directly to assess higher quality.",
+      "papers": [
+        "BOND: Aligning LLMs with Best-of-N Distillation"
+      ],
+      "original_name": "Side-by-side comparisons"
+    },
+    {
+      "text": "An evaluation protocol where human experts assess hypothesis quality by selecting the better option from a pair of hypotheses or indicating no discernible difference.",
+      "papers": [
+        "On the Role of Model Prior in Real-World Inductive Reasoning"
+      ],
+      "original_name": "Human pairwise comparison"
+    },
+    {
+      "text": "A human judgment procedure in which annotators compare two responses and choose the preferred one using task-specific criteria.",
+      "papers": [
+        "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions"
+      ],
+      "original_name": "Human pairwise evaluation"
+    },
+    {
+      "text": "A human evaluation protocol where annotators are shown outputs from two different models for the same input and are asked to choose the better one or declare a tie.",
+      "papers": [
+        "HEMM: Holistic Evaluation of Multimodal Foundation Models"
+      ],
+      "original_name": "Human preference-based evaluation"
+    },
+    {
+      "text": "A human evaluation method where volunteers compare and vote on the quality of video captions generated by different models based on criteria like omission, fabrication, distortion, and temporal mismatch.",
+      "papers": [
+        "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions"
+      ],
+      "original_name": "Human preference voting"
+    },
+    {
+      "text": "A human evaluation protocol where participants listen to spoken dialog responses from two different models and choose the preferred one based on comprehensive criteria like naturalness, prosody, and semantic coherence.",
+      "papers": [
+        "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation"
+      ],
+      "original_name": "Human preference test"
+    },
+    {
+      "text": "A human pairwise preference protocol in which listeners choose between two audio samples for a given task.",
+      "papers": [
+        "SongCreator: Lyrics-based Universal Song Generation"
+      ],
+      "original_name": "AB preference test"
+    },
+    {
+      "text": "A human annotation procedure in which workers compare paired arguments and judge which one is superior or whether they are equally good or bad.",
+      "papers": [
+        "A Logical Fallacy-Informed Framework for Argument Generation"
+      ],
+      "original_name": "Human comparative evaluation"
+    },
+    {
+      "text": "Pairwise human preference evaluation in which annotators choose between professional and generated moderation replies to the same user comment, assessing relative quality and preference.",
+      "papers": [
+        "It Is Not Only the Negative that Deserves Attention! Understanding, Generation & Evaluation of (Positive) Moderation"
+      ],
+      "original_name": "Moderation Preference Annotation"
+    },
+    {
+      "text": "A human evaluation method where users select which of two plans they believe will help them solve a question more accurately or quickly, used to measure user preferences.",
+      "papers": [
+        "A Good Plan is Hard to Find: Aligning Models with Preferences is Misaligned with What Helps Users"
+      ],
+      "original_name": "Pairwise comparisons"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+      "evidence": "\u201cThen, we conduct a human preference study.\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better"
+        ],
+        "iclr25": [
+          "ALLaM: Large Language Models for Arabic and English"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "evidence": "Annotators are tasked with rating which of the two descriptions is more faithful to the table. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation quality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-Alignment with Instruction Backtranslation",
+      "evidence": "\"We also conduct human evaluation on the general quality of the model responses on the combined test set described in Section 3.1\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Self-Alignment with Instruction Backtranslation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "The prevailing usage is a pairwise human judgment protocol: evaluators see outputs from two models side by side and choose the better one, often with a tie or no-difference option. Papers describe closely related variants as human preference studies, A/B testing, side-by-side comparisons, human pairwise or comparative evaluation, preference voting, and AB preference tests, with task criteria tailored to the application, such as faithfulness, general response quality, translation quality, plausibility and consistency, argument quality, plan usefulness, or omission, fabrication, distortion, and temporal mismatch in captions. A smaller line of work uses the same label for non-pairwise ratings, including a 5-point Mean Opinion Score setup for naturalness and meaningfulness."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link this protocol to 3 constructs and no behavioral indicators. The linked constructs, listed most often first, are Human preference alignment, Faithfulness, and Text generation quality, and the relationship is always that those constructs are measured by human preference evaluation. The measurement claims are therefore spread across several constructs rather than centered on one: papers use it to assess alignment with human preferences, to ask which description is more faithful to a table, and to judge the general quality of model responses."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it. Papers usually position it as a direct human check on model outputs, with results reported as win rates, win:tie:lose ratios, or under Elo scoring; some descriptions place it alongside automatic evaluation metrics, RM scores, GPT-4 pairwise evaluation, or AlpacaEval. A smaller set of papers explicitly uses it to validate LLM-based evaluation or to complement results from model-scored benchmarks."
+    }
+  ],
+  "characterization": "What it is. The prevailing usage is a pairwise human judgment protocol: evaluators see outputs from two models side by side and choose the better one, often with a tie or no-difference option. Papers describe closely related variants as human preference studies, A/B testing, side-by-side comparisons, human pairwise or comparative evaluation, preference voting, and AB preference tests, with task criteria tailored to the application, such as faithfulness, general response quality, translation quality, plausibility and consistency, argument quality, plan usefulness, or omission, fabrication, distortion, and temporal mismatch in captions. A smaller line of work uses the same label for non-pairwise ratings, including a 5-point Mean Opinion Score setup for naturalness and meaningfulness.\n\nWhat it is claimed to measure. Papers link this protocol to 3 constructs and no behavioral indicators. The linked constructs, listed most often first, are Human preference alignment, Faithfulness, and Text generation quality, and the relationship is always that those constructs are measured by human preference evaluation. The measurement claims are therefore spread across several constructs rather than centered on one: papers use it to assess alignment with human preferences, to ask which description is more faithful to a table, and to judge the general quality of model responses.\n\nSpace of uses. No measurement instrument is linked to it. Papers usually position it as a direct human check on model outputs, with results reported as win rates, win:tie:lose ratios, or under Elo scoring; some descriptions place it alongside automatic evaluation metrics, RM scores, GPT-4 pairwise evaluation, or AlpacaEval. A smaller set of papers explicitly uses it to validate LLM-based evaluation or to complement results from model-scored benchmarks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation via LLM Agent",
+      "On the Role of Model Prior in Real-World Inductive Reasoning",
+      "SHIFT: Selected Helpful Informative Frame for Video-guided Machine Translation",
+      "Small Models, Big Results: Achieving Superior Intent Extraction through Decomposition",
+      "Step Guided Reasoning: Improving Mathematical Reasoning using Guidance Generation and Step Reasoning",
+      "A Good Plan is Hard to Find: Aligning Models with Preferences is Misaligned with What Helps Users",
+      "Is the Top Still Spinning? Evaluating Subjectivity in Narrative Understanding"
+    ],
+    "iclr24": [
+      "NEFTune: Noisy Embeddings Improve Instruction Finetuning",
+      "Self-Alignment with Instruction Backtranslation",
+      "SuRe: Summarizing Retrievals using Answer Candidates for Open-domain QA of LLMs",
+      "Tailoring Self-Rationalizers with Multi-Reward Distillation",
+      "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d",
+      "Tool-Augmented Reward Modeling",
+      "Training Socially Aligned Language Models on Simulated Social Interactions"
+    ],
+    "iclr25": [
+      "ALLaM: Large Language Models for Arabic and English",
+      "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "BOND: Aligning LLMs with Best-of-N Distillation",
+      "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+      "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+      "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher",
+      "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "The Hyperfitting Phenomenon: Sharpening and Stabilizing LLMs for Open-Ended Text Generation",
+      "UniCBE: An Uniformity-driven Comparing Based Evaluation Framework with Unified Multi-Objective Optimization"
+    ],
+    "icml25": [
+      "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+      "Perception in Reflection",
+      "Position: Beyond Assistance \u2013 Reimagining LLMs as Ethical and Adaptive Co-Creators in Mental Health Care",
+      "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction"
+    ],
+    "naacl25": [
+      "Matina: A Large-Scale 73B Token Persian Text Corpus",
+      "A Logical Fallacy-Informed Framework for Argument Generation",
+      "It Is Not Only the Negative that Deserves Attention! Understanding, Generation & Evaluation of (Positive) Moderation"
+    ],
+    "neurips24": [
+      "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+      "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+      "Noise Contrastive Alignment of Language Models with Explicit Rewards",
+      "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "SongCreator: Lyrics-based Universal Song Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 7,
+    "iclr24": 7,
+    "iclr25": 9,
+    "icml25": 4,
+    "naacl25": 3,
+    "neurips24": 6
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "canonical_name": "Cultural bias",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage describes cultural bias as a tendency for models or their generations to favor some cultural perspectives, symbols, or knowledge over others, most often with Western or U.S. content on the favored side. Several definitions also frame it through stereotyped associations or templated outputs for less prevalent cultures, with examples drawn from narrative traits, settings, and food knowledge. A narrower line uses the label \"Western bias\" for an error disparity in vision-language models, defined as better performance on Western than East Asian images and annotations, so the main disagreement is whether the construct is a broad tendency in outputs and knowledge or a task-level performance gap.\n\nSpace of facets. Papers use the construct across several task-specific forms, including culture-conditioned generations, food-related cultural knowledge, children's story generation, image understanding, and the use of measurement systems or factual representations associated with dominant cultural contexts. The narrower term \"Western bias\" is reserved for the Western versus East Asian comparison in vision tasks, while \"cultural bias\" is used more broadly for uneven cultural representation or understanding. In the recorded relationships, the construct is also placed near neighboring ideas rather than equated with them, being related to cultural alignment, cultural understanding, and visual understanding.\n\nSpace of measurement. Papers link cultural bias to 3 instruments and 1 behavioral indicator. Measurement is recorded mainly through question answering evaluations, especially CVQA and A-OKVQA: one paper says these are used \"to measure Western bias in question answering,\" and CVQA is also described as \"a probing evaluation suite for assessing the cultural capability and bias of multimodal models.\" The remaining linked instrument is the World Values Survey, but only as related rather than as a recorded measure, and the lone behavioral indicator is text generation; overall, the operationalizations foreground performance disparities in question answering and multimodal evaluation, while several definitions describe bias in open-ended generations and stereotyped associations.\n\nLinks. Beyond measurement, papers record related links to 3 constructs and 1 behavioral indicator. Cultural bias is related to cultural understanding, with one paper stating that tackling it requires an LLM to acknowledge cultural differences; it is also related to visual understanding, cultural alignment, text generation, and the World Values Survey. The recorded links are relational rather than causal or correlational: one paper discusses Western bias in image understanding, another connects prior probing of cultural alignment to Western bias in encoded world knowledge and values, and another situates cultural bias in open-ended generative tasks such as narrative writing or dialogue.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Western bias",
+    "Cultural bias",
+    "Culture bias"
+  ],
+  "papers": [
+    "On Generalization across Measurement Systems: LLMs Entail More Test-Time Compute for Underrepresented Cultures",
+    "What's the Difference? Supporting Users in Identifying the Effects of Prompt and Model Changes Through Token Patterns",
+    "Africa Health Check: Probing Cultural Bias in Medical LLMs",
+    "Biased Tales: Cultural and Topic Bias in Generating Children's Stories",
+    "From Word to World: Evaluate and Mitigate Culture Bias in LLMs via Word Association Test",
+    "Incorporating Diverse Perspectives in Cultural Alignment: Survey of Evaluation Benchmarks Through A Three-Dimensional Framework",
+    "Think Globally, Group Locally: Evaluating LLMs Using Multi-Lingual Word Grouping Games",
+    "XLQA: A Benchmark for Locale-Aware Multilingual Open-Domain Question Answering",
+    "Attributing Culture-Conditioned Generations to Pretraining Corpora",
+    "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+    "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+    "Does Mapo Tofu Contain Coffee? Probing LLMs for Food-related Cultural Knowledge",
+    "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+    "CulturePark: Boosting Cross-cultural Understanding in Large Language Models"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "A performance disparity where a vision-language model performs better on tasks involving images and annotations from Western cultures compared to those from East Asian cultures.",
+      "papers": [
+        "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding"
+      ],
+      "original_name": "Western bias"
+    },
+    {
+      "text": "A tendency for model generations to reflect uneven or stereotyped cultural associations, especially favoring some cultures or culturally salient symbols over others.",
+      "papers": [
+        "Attributing Culture-Conditioned Generations to Pretraining Corpora",
+        "Does Mapo Tofu Contain Coffee? Probing LLMs for Food-related Cultural Knowledge",
+        "CultureInstruct: Curating Multi-Cultural Instructions at Scale"
+      ],
+      "original_name": "Cultural bias"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+      "evidence": "\u201cTo measure Western bias in question answering, we use A-OKVQA and CVQA (Schwenk et al., 2022; Romero et al., 2024).\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding"
+        ],
+        "neurips24": [
+          "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cultural understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+      "evidence": "Tackling cultural bias necessitates that a large language model (LLM) acknowledges cultural differences. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CultureLLM: Incorporating Cultural Differences into Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+      "evidence": "In this work, we characterize the Western bias of VLMs in image understanding and investigate the role that language plays in this disparity. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "A-OKVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+      "evidence": "\u201cTo measure Western bias in question answering, we use A-OKVQA and CVQA (Schwenk et al., 2022; Romero et al., 2024).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cultural alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+      "evidence": "\u201cIn the language only setting, prior work has probed models for such cultural alignment, finding that they exhibit a Western bias in the world knowledge (Naous et al., 2023) and values (AlKhamissi et al., 2024) they encode.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Attributing Culture-Conditioned Generations to Pretraining Corpora",
+      "evidence": "\"In open-ended generative tasks like narrative writing or dialogue, large language models often exhibit cultural biases\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attributing Culture-Conditioned Generations to Pretraining Corpora"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "World Values Survey",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+      "evidence": "Insights from the WVS can help in understanding the cultural and societal norms that underlie biases",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CultureLLM: Incorporating Cultural Differences into Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage describes cultural bias as a tendency for models or their generations to favor some cultural perspectives, symbols, or knowledge over others, most often with Western or U.S. content on the favored side. Several definitions also frame it through stereotyped associations or templated outputs for less prevalent cultures, with examples drawn from narrative traits, settings, and food knowledge. A narrower line uses the label \"Western bias\" for an error disparity in vision-language models, defined as better performance on Western than East Asian images and annotations, so the main disagreement is whether the construct is a broad tendency in outputs and knowledge or a task-level performance gap."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use the construct across several task-specific forms, including culture-conditioned generations, food-related cultural knowledge, children's story generation, image understanding, and the use of measurement systems or factual representations associated with dominant cultural contexts. The narrower term \"Western bias\" is reserved for the Western versus East Asian comparison in vision tasks, while \"cultural bias\" is used more broadly for uneven cultural representation or understanding. In the recorded relationships, the construct is also placed near neighboring ideas rather than equated with them, being related to cultural alignment, cultural understanding, and visual understanding."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link cultural bias to 3 instruments and 1 behavioral indicator. Measurement is recorded mainly through question answering evaluations, especially CVQA and A-OKVQA: one paper says these are used \"to measure Western bias in question answering,\" and CVQA is also described as \"a probing evaluation suite for assessing the cultural capability and bias of multimodal models.\" The remaining linked instrument is the World Values Survey, but only as related rather than as a recorded measure, and the lone behavioral indicator is text generation; overall, the operationalizations foreground performance disparities in question answering and multimodal evaluation, while several definitions describe bias in open-ended generations and stereotyped associations."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, papers record related links to 3 constructs and 1 behavioral indicator. Cultural bias is related to cultural understanding, with one paper stating that tackling it requires an LLM to acknowledge cultural differences; it is also related to visual understanding, cultural alignment, text generation, and the World Values Survey. The recorded links are relational rather than causal or correlational: one paper discusses Western bias in image understanding, another connects prior probing of cultural alignment to Western bias in encoded world knowledge and values, and another situates cultural bias in open-ended generative tasks such as narrative writing or dialogue."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage describes cultural bias as a tendency for models or their generations to favor some cultural perspectives, symbols, or knowledge over others, most often with Western or U.S. content on the favored side. Several definitions also frame it through stereotyped associations or templated outputs for less prevalent cultures, with examples drawn from narrative traits, settings, and food knowledge. A narrower line uses the label \"Western bias\" for an error disparity in vision-language models, defined as better performance on Western than East Asian images and annotations, so the main disagreement is whether the construct is a broad tendency in outputs and knowledge or a task-level performance gap.\n\nSpace of facets. Papers use the construct across several task-specific forms, including culture-conditioned generations, food-related cultural knowledge, children's story generation, image understanding, and the use of measurement systems or factual representations associated with dominant cultural contexts. The narrower term \"Western bias\" is reserved for the Western versus East Asian comparison in vision tasks, while \"cultural bias\" is used more broadly for uneven cultural representation or understanding. In the recorded relationships, the construct is also placed near neighboring ideas rather than equated with them, being related to cultural alignment, cultural understanding, and visual understanding.\n\nSpace of measurement. Papers link cultural bias to 3 instruments and 1 behavioral indicator. Measurement is recorded mainly through question answering evaluations, especially CVQA and A-OKVQA: one paper says these are used \"to measure Western bias in question answering,\" and CVQA is also described as \"a probing evaluation suite for assessing the cultural capability and bias of multimodal models.\" The remaining linked instrument is the World Values Survey, but only as related rather than as a recorded measure, and the lone behavioral indicator is text generation; overall, the operationalizations foreground performance disparities in question answering and multimodal evaluation, while several definitions describe bias in open-ended generations and stereotyped associations.\n\nLinks. Beyond measurement, papers record related links to 3 constructs and 1 behavioral indicator. Cultural bias is related to cultural understanding, with one paper stating that tackling it requires an LLM to acknowledge cultural differences; it is also related to visual understanding, cultural alignment, text generation, and the World Values Survey. The recorded links are relational rather than causal or correlational: one paper discusses Western bias in image understanding, another connects prior probing of cultural alignment to Western bias in encoded world knowledge and values, and another situates cultural bias in open-ended generative tasks such as narrative writing or dialogue.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "On Generalization across Measurement Systems: LLMs Entail More Test-Time Compute for Underrepresented Cultures",
+      "What's the Difference? Supporting Users in Identifying the Effects of Prompt and Model Changes Through Token Patterns"
+    ],
+    "emnlp25": [
+      "Africa Health Check: Probing Cultural Bias in Medical LLMs",
+      "Biased Tales: Cultural and Topic Bias in Generating Children's Stories",
+      "From Word to World: Evaluate and Mitigate Culture Bias in LLMs via Word Association Test",
+      "Incorporating Diverse Perspectives in Cultural Alignment: Survey of Evaluation Benchmarks Through A Three-Dimensional Framework",
+      "Think Globally, Group Locally: Evaluating LLMs Using Multi-Lingual Word Grouping Games",
+      "XLQA: A Benchmark for Locale-Aware Multilingual Open-Domain Question Answering"
+    ],
+    "iclr25": [
+      "Attributing Culture-Conditioned Generations to Pretraining Corpora",
+      "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding"
+    ],
+    "naacl25": [
+      "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+      "Does Mapo Tofu Contain Coffee? Probing LLMs for Food-related Cultural Knowledge"
+    ],
+    "neurips24": [
+      "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+      "CulturePark: Boosting Cross-cultural Understanding in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 6,
+    "iclr25": 2,
+    "naacl25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

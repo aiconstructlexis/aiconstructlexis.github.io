@@ -1,0 +1,309 @@
+{
+  "canonical_name": "Hallucination resistance",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed definitions, the prevailing usage treats this as a latent trait, tendency, ability, or degree by which a model avoids unsupported, false, or factually incorrect outputs. Most descriptions stay at that broad level, while some narrow the scope to specific output types: fabricated or ungrounded knowledge triples, multimodal answers, semantically plausible but factually ungrounded entity relations, citation predictions that do not correspond to real works, unsupported medical information, or molecules that follow structural rules but lack the expected activity or utility. A smaller line of work frames the same family of phenomena from the opposite side, as hallucination tendency, knowledge hallucination, factuality hallucination, or molecular hallucination, including cases where generated content is inconsistent with actual facts even when those facts are provided.\n\nSpace of facets. Papers organize the concept mainly through domain-specific variants rather than a shared abstract taxonomy. Recurring variants include knowledge hallucination in knowledge creation, factuality hallucination as entity-relation distortions, molecular hallucination as chemically valid yet practically unhelpful molecules, and application-specific forms in citation recommendation, retrieval-augmented generation, and medical consultation. Some descriptions explicitly contrast correctly created knowledge with knowledge hallucinations, and multimodal evaluation distinguishes visual illusion from knowledge hallucination, so the same label is used for both broad failures of factual support and narrower output-specific error types.\n\nSpace of measurement. Operationalization is benchmark-centered: papers link the construct to 5 measurement instruments and 1 behavioral indicator. The most common instruments are POPE, then AMBER, HallusionBench, Natural Questions, and TriviaQA. In use, papers assess anti-hallucination through POPE, use HallusionBench to diagnose knowledge hallucination alongside visual illusion, use AMBER to evaluate various types of hallucination, and treat degradation on Natural Questions and TriviaQA as evidence of increased hallucination on knowledge-based benchmarks. These measures line up with definitions in multimodal and knowledge-based settings, but the linked instruments do not cover several narrower definitions centered on molecular generation, citation generation, medical consultation, or knowledge-graph triples.\n\nLinks. Beyond measurement, papers claim a causal relationship from multimodal alignment, the only linked construct, to hallucination resistance, stating that better cross-modal alignment is accompanied by lower degrees of hallucination. Papers also claim a causal relationship from information extraction, the only linked behavioral indicator, to hallucination resistance, with the claim that focusing on relevant table cells provides the right context and reduces hallucinations in reasoning. No correlational or general related links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Hallucination resistance",
+    "Anti-hallucination",
+    "Knowledge hallucination",
+    "Factuality hallucination",
+    "Molecular hallucination",
+    "Hallucination tendency",
+    "Hallucination mitigation",
+    "Hallucination reduction"
+  ],
+  "papers": [
+    "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+    "Can LLMs be Good Graph Judge for Knowledge Graph Construction?",
+    "CiteBART: Learning to Generate Citations for Local Citation Recommendation",
+    "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for Edge AI",
+    "LLaMP: Large Language Model Made Powerful for High-fidelity Materials Knowledge Retrieval",
+    "Leveraging Knowledge Graph-Enhanced LLMs for Context-Aware Medical Consultation",
+    "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+    "RAED: Retrieval-Augmented Entity Description Generation for Emerging Entity Linking and Disambiguation",
+    "ReflAct: World-Grounded Decision Making in LLM Agents via Goal-State Reflection",
+    "SimpleDoc: Multi-Modal Document Understanding with Dual-Cue Page Retrieval and Iterative Refinement",
+    "Video2Roleplay: A Multimodal Dataset and Framework for Video-Guided Role-playing Agents",
+    "Domain-Agnostic Molecular Generation with Chemical Feedback",
+    "KoLA: Carefully Benchmarking World Knowledge of Large Language Models",
+    "Block-Attention for Efficient Prefilling",
+    "Differential Transformer",
+    "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+    "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+    "KBLaM: Knowledge Base augmented Language Model",
+    "LLM-based Typed Hyperresolution for Commonsense Reasoning with Knowledge Bases",
+    "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+    "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models",
+    "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention",
+    "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+    "Perception in Reflection",
+    "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning",
+    "Knowledge Graph-Guided Retrieval Augmented Generation",
+    "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling",
+    "Enhancing LLM\u2019s Cognition via Structurization",
+    "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+    "MKGL: Mastery of a Three-Word Language"
+  ],
+  "paper_count": 32,
+  "definitions": [
+    {
+      "text": "The latent trait of a model to avoid generating or endorsing factually unsupported or fabricated knowledge triples not grounded in the source text.",
+      "papers": [
+        "Can LLMs be Good Graph Judge for Knowledge Graph Construction?",
+        "MKGL: Mastery of a Three-Word Language"
+      ],
+      "original_name": "Hallucination resistance"
+    },
+    {
+      "text": "The latent tendency to avoid generating unsupported or false content in multimodal outputs.",
+      "papers": [
+        "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+      ],
+      "original_name": "Anti-hallucination"
+    },
+    {
+      "text": "The tendency of a model to generate content that is inconsistent with actual facts, even when those facts are provided, reflecting a failure in knowledge faithfulness.",
+      "papers": [
+        "KoLA: Carefully Benchmarking World Knowledge of Large Language Models"
+      ],
+      "original_name": "Knowledge hallucination"
+    },
+    {
+      "text": "The latent tendency of a language model to generate semantically plausible but factually ungrounded relationships between entities, reflecting a failure to align with real-world knowledge.",
+      "papers": [
+        "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection"
+      ],
+      "original_name": "Factuality hallucination"
+    },
+    {
+      "text": "The model's latent tendency to generate molecules that are structurally and syntactically correct but fail to exhibit the expected chemical activity or practical utility in real-world applications.",
+      "papers": [
+        "Domain-Agnostic Molecular Generation with Chemical Feedback"
+      ],
+      "original_name": "Molecular hallucination"
+    },
+    {
+      "text": "The latent propensity of the model to generate factually incorrect or unsupported content, potentially encouraged by finetuning data.",
+      "papers": [
+        "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+        "CiteBART: Learning to Generate Citations for Local Citation Recommendation"
+      ],
+      "original_name": "Hallucination tendency"
+    },
+    {
+      "text": "The latent ability of a model to refrain from generating false or unsupported content, particularly in response to ambiguous or unanswerable queries, when guided by appropriate demonstrations.",
+      "papers": [
+        "Knowledge Graph-Guided Retrieval Augmented Generation",
+        "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning"
+      ],
+      "original_name": "Hallucination mitigation"
+    },
+    {
+      "text": "The degree to which a model avoids generating factually incorrect or unsupported medical information during consultation.",
+      "papers": [
+        "Leveraging Knowledge Graph-Enhanced LLMs for Context-Aware Medical Consultation"
+      ],
+      "original_name": "Hallucination reduction"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "evidence": "We assess our models\u2019 ability toward anti-hallucination through POPE [29]. (Section 5)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs"
+        ],
+        "iclr25": [
+          "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HallusionBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+      "evidence": "HallusionBench focuses on diagnosing both the visual illusion and knowledge hallucination of MLLMs.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "evidence": "Gekhman et al. (2024) shows that finetuning on factual information encourages hallucinations, something that we verify observing the significant degradation on TriviaQA and NQ-Open, which are knowledge-based benchmarks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "evidence": "Gekhman et al. (2024) shows that finetuning on factual information encourages hallucinations, something that we verify observing the significant degradation on TriviaQA and NQ-Open, which are knowledge-based benchmarks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+      "evidence": "Due to better cross-modal alignment, our model exhibits lower degrees of hallucination",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AMBER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning",
+      "evidence": "Hallucination: AMBER (Wang et al., 2023) provides a discriminative way to evaluate various types of hallucination",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables",
+      "evidence": "Focusing on relevant table cells helps LLMs by providing the right context, thus reducing hallucinations in reasoning. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed definitions, the prevailing usage treats this as a latent trait, tendency, ability, or degree by which a model avoids unsupported, false, or factually incorrect outputs. Most descriptions stay at that broad level, while some narrow the scope to specific output types: fabricated or ungrounded knowledge triples, multimodal answers, semantically plausible but factually ungrounded entity relations, citation predictions that do not correspond to real works, unsupported medical information, or molecules that follow structural rules but lack the expected activity or utility. A smaller line of work frames the same family of phenomena from the opposite side, as hallucination tendency, knowledge hallucination, factuality hallucination, or molecular hallucination, including cases where generated content is inconsistent with actual facts even when those facts are provided."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers organize the concept mainly through domain-specific variants rather than a shared abstract taxonomy. Recurring variants include knowledge hallucination in knowledge creation, factuality hallucination as entity-relation distortions, molecular hallucination as chemically valid yet practically unhelpful molecules, and application-specific forms in citation recommendation, retrieval-augmented generation, and medical consultation. Some descriptions explicitly contrast correctly created knowledge with knowledge hallucinations, and multimodal evaluation distinguishes visual illusion from knowledge hallucination, so the same label is used for both broad failures of factual support and narrower output-specific error types."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is benchmark-centered: papers link the construct to 5 measurement instruments and 1 behavioral indicator. The most common instruments are POPE, then AMBER, HallusionBench, Natural Questions, and TriviaQA. In use, papers assess anti-hallucination through POPE, use HallusionBench to diagnose knowledge hallucination alongside visual illusion, use AMBER to evaluate various types of hallucination, and treat degradation on Natural Questions and TriviaQA as evidence of increased hallucination on knowledge-based benchmarks. These measures line up with definitions in multimodal and knowledge-based settings, but the linked instruments do not cover several narrower definitions centered on molecular generation, citation generation, medical consultation, or knowledge-graph triples."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, papers claim a causal relationship from multimodal alignment, the only linked construct, to hallucination resistance, stating that better cross-modal alignment is accompanied by lower degrees of hallucination. Papers also claim a causal relationship from information extraction, the only linked behavioral indicator, to hallucination resistance, with the claim that focusing on relevant table cells provides the right context and reduces hallucinations in reasoning. No correlational or general related links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed definitions, the prevailing usage treats this as a latent trait, tendency, ability, or degree by which a model avoids unsupported, false, or factually incorrect outputs. Most descriptions stay at that broad level, while some narrow the scope to specific output types: fabricated or ungrounded knowledge triples, multimodal answers, semantically plausible but factually ungrounded entity relations, citation predictions that do not correspond to real works, unsupported medical information, or molecules that follow structural rules but lack the expected activity or utility. A smaller line of work frames the same family of phenomena from the opposite side, as hallucination tendency, knowledge hallucination, factuality hallucination, or molecular hallucination, including cases where generated content is inconsistent with actual facts even when those facts are provided.\n\nSpace of facets. Papers organize the concept mainly through domain-specific variants rather than a shared abstract taxonomy. Recurring variants include knowledge hallucination in knowledge creation, factuality hallucination as entity-relation distortions, molecular hallucination as chemically valid yet practically unhelpful molecules, and application-specific forms in citation recommendation, retrieval-augmented generation, and medical consultation. Some descriptions explicitly contrast correctly created knowledge with knowledge hallucinations, and multimodal evaluation distinguishes visual illusion from knowledge hallucination, so the same label is used for both broad failures of factual support and narrower output-specific error types.\n\nSpace of measurement. Operationalization is benchmark-centered: papers link the construct to 5 measurement instruments and 1 behavioral indicator. The most common instruments are POPE, then AMBER, HallusionBench, Natural Questions, and TriviaQA. In use, papers assess anti-hallucination through POPE, use HallusionBench to diagnose knowledge hallucination alongside visual illusion, use AMBER to evaluate various types of hallucination, and treat degradation on Natural Questions and TriviaQA as evidence of increased hallucination on knowledge-based benchmarks. These measures line up with definitions in multimodal and knowledge-based settings, but the linked instruments do not cover several narrower definitions centered on molecular generation, citation generation, medical consultation, or knowledge-graph triples.\n\nLinks. Beyond measurement, papers claim a causal relationship from multimodal alignment, the only linked construct, to hallucination resistance, stating that better cross-modal alignment is accompanied by lower degrees of hallucination. Papers also claim a causal relationship from information extraction, the only linked behavioral indicator, to hallucination resistance, with the claim that focusing on relevant table cells provides the right context and reduces hallucinations in reasoning. No correlational or general related links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+      "Can LLMs be Good Graph Judge for Knowledge Graph Construction?",
+      "CiteBART: Learning to Generate Citations for Local Citation Recommendation",
+      "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for Edge AI",
+      "LLaMP: Large Language Model Made Powerful for High-fidelity Materials Knowledge Retrieval",
+      "Leveraging Knowledge Graph-Enhanced LLMs for Context-Aware Medical Consultation",
+      "Non-Existent Relationship: Fact-Aware Multi-Level Machine-Generated Text Detection",
+      "RAED: Retrieval-Augmented Entity Description Generation for Emerging Entity Linking and Disambiguation",
+      "ReflAct: World-Grounded Decision Making in LLM Agents via Goal-State Reflection",
+      "SimpleDoc: Multi-Modal Document Understanding with Dual-Cue Page Retrieval and Iterative Refinement",
+      "Video2Roleplay: A Multimodal Dataset and Framework for Video-Guided Role-playing Agents"
+    ],
+    "iclr24": [
+      "Domain-Agnostic Molecular Generation with Chemical Feedback",
+      "KoLA: Carefully Benchmarking World Knowledge of Large Language Models"
+    ],
+    "iclr25": [
+      "Block-Attention for Efficient Prefilling",
+      "Differential Transformer",
+      "EMMA: Empowering Multi-modal Mamba with Structural and Hierarchical Alignment",
+      "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "KBLaM: Knowledge Base augmented Language Model",
+      "LLM-based Typed Hyperresolution for Commonsense Reasoning with Knowledge Bases",
+      "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+      "Self-Correcting Decoding with Generative Feedback for Mitigating Hallucinations in Large Vision-Language Models",
+      "Understanding and Mitigating Hallucination in Large Vision-Language Models via Modular Attribution and Intervention"
+    ],
+    "icml25": [
+      "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+      "Perception in Reflection"
+    ],
+    "naacl25": [
+      "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning",
+      "Knowledge Graph-Guided Retrieval Augmented Generation",
+      "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling"
+    ],
+    "neurips24": [
+      "Enhancing LLM\u2019s Cognition via Structurization",
+      "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "Web2Code: A Large-scale Webpage-to-Code Dataset and Evaluation Framework for Multimodal LLMs",
+      "MKGL: Mastery of a Three-Word Language"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 11,
+    "iclr24": 2,
+    "iclr25": 9,
+    "icml25": 2,
+    "naacl25": 3,
+    "neurips24": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

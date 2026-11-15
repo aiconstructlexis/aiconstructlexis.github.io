@@ -1,0 +1,232 @@
+{
+  "canonical_name": "AgentBench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing treatment is of AgentBench as a benchmark or evaluation suite for LLMs as agents, and some definitions use it as a comparison point for multi-round and task-diverse agent evaluation. Papers describe its contents in different ways: as diverse or 8 distinct environments, as environments for intrinsic reasoning and adaptation to environment feedback across OS, DB, HH, KG, WB, and WS, and as agent application tasks such as OS interaction, web browsing, and web shopping. Reported scoring also varies by environment, with success rate for OS, DB, HH, and WB, F1 for KG, and reward score for WS.\n\nWhat it is claimed to measure. Its reported measurement role is distributed across several targets rather than a single construct: papers link it to 7 constructs and 3 behavioral indicators. Commonly named targets include Agency, Decision-making, Knowledge acquisition, Logical reasoning, and Instruction following, and papers also frame it more broadly as evaluating agent performance and core abilities.\n\nSpace of uses. No measurement instrument is linked to it. Papers nevertheless use it alongside other agent benchmarks, including ToolBench and AgentBoard, and one paper uses it as a comparison point by stating that its own task choice is planning-heavier than AgentBench. Other papers treat it as a direct evaluation setup or main benchmark, for example by following its setup for Webshop validation or by evaluating agent application scenarios with lengthy prompts on AgentBench.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "AgentBench"
+  ],
+  "papers": [
+    "Agent Skill Acquisition for Large Language Models via CycleQD",
+    "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+    "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+    "Generative Prompt Internalization",
+    "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training",
+    "xLAM: A Family of Large Action Models to Empower AI Agent Systems",
+    "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "A benchmark for evaluating LLMs as agents, referenced as a comparison point for multi-round and task-diverse agent evaluation.",
+      "papers": [
+        "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+        "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+        "Generative Prompt Internalization",
+        "xLAM: A Family of Large Action Models to Empower AI Agent Systems",
+        "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training"
+      ],
+      "original_name": "AgentBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AgentBench: Evaluating LLMs as Agents",
+      "evidence": "We present AGENTBENCH, a multi-dimensional benchmark that consists of 8 distinct environments to assess LLM-as-Agent\u2019s reasoning and decision-making abilities.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "AgentBench: Evaluating LLMs as Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AgentBench: Evaluating LLMs as Agents",
+      "evidence": "AGENTBENCH thus systematically evaluate an LLM\u2019s core abilities, including following instructions (Ouyang et al., 2022), coding (Chen et al., 2021), knowledge acquisition (Joshi et al., 2017; Talmor et al., 2019), logical reasoning (Srivastava et al., 2023), and commonsense grounding (Shridhar et al., 2020a).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "AgentBench: Evaluating LLMs as Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge acquisition",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AgentBench: Evaluating LLMs as Agents",
+      "evidence": "AGENTBENCH thus systematically evaluate an LLM\u2019s core abilities, including following instructions (Ouyang et al., 2022), coding (Chen et al., 2021), knowledge acquisition (Joshi et al., 2017; Talmor et al., 2019), logical reasoning (Srivastava et al., 2023), and commonsense grounding (Shridhar et al., 2020a).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "AgentBench: Evaluating LLMs as Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AgentBench: Evaluating LLMs as Agents",
+      "evidence": "AGENTBENCH thus systematically evaluate an LLM\u2019s core abilities, including following instructions (Ouyang et al., 2022), coding (Chen et al., 2021), knowledge acquisition (Joshi et al., 2017; Talmor et al., 2019), logical reasoning (Srivastava et al., 2023), and commonsense grounding (Shridhar et al., 2020a).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "AgentBench: Evaluating LLMs as Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AgentBench: Evaluating LLMs as Agents",
+      "evidence": "AGENTBENCH thus systematically evaluate an LLM\u2019s core abilities, including following instructions (Ouyang et al., 2022), coding (Chen et al., 2021), knowledge acquisition (Joshi et al., 2017; Talmor et al., 2019), logical reasoning (Srivastava et al., 2023), and commonsense grounding (Shridhar et al., 2020a).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "AgentBench: Evaluating LLMs as Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Agency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "evidence": "We tested on two standardized agent evaluation benchmarks, AgentBench [57] and Agent-Board [61], each is a collection of diverse tasks for evaluating LMs\u2019 agentic capabilities. (Sec. 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text-to-SQL",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Agent Skill Acquisition for Large Language Models via CycleQD",
+      "evidence": "Empirical results from AgentBench indicate that applying CycleQD to LLAMA3-8B-INSTRUCT based models not only enables them to surpass traditional fine-tuning methods in coding, operating systems, and database tasks, but also achieves performance on par with GPT-3.5-TURBO (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Agent Skill Acquisition for Large Language Models via CycleQD"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "xLAM: A Family of Large Action Models to Empower AI Agent Systems",
+      "evidence": "Concurrently, comprehensive benchmarks like AgentBench (Liu et al., 2023a), ToolBench (Qin et al., 2024), and AgentBoard (Ma et al., 2024) have been established to rigorously assess agent performance in reasoning, planning, and multi-turn interactions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "xLAM: A Family of Large Action Models to Empower AI Agent Systems"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Collaboration",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Compound AI Systems Optimization: A Survey of Methods, Challenges, and Future Directions",
+      "evidence": "AgentBench (Liu et al., 2023) and AgentGym (Xi et al., 2024) comprise multiple tasks requiring different LLMs within the system to cooperate and discuss",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Compound AI Systems Optimization: A Survey of Methods, Challenges, and Future Directions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AgentBench: Evaluating LLMs as Agents",
+      "evidence": "We present AGENTBENCH, a multi-dimensional benchmark that consists of 8 distinct environments to assess LLM-as-Agent\u2019s reasoning and decision-making abilities.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "AgentBench: Evaluating LLMs as Agents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 10,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing treatment is of AgentBench as a benchmark or evaluation suite for LLMs as agents, and some definitions use it as a comparison point for multi-round and task-diverse agent evaluation. Papers describe its contents in different ways: as diverse or 8 distinct environments, as environments for intrinsic reasoning and adaptation to environment feedback across OS, DB, HH, KG, WB, and WS, and as agent application tasks such as OS interaction, web browsing, and web shopping. Reported scoring also varies by environment, with success rate for OS, DB, HH, and WB, F1 for KG, and reward score for WS."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Its reported measurement role is distributed across several targets rather than a single construct: papers link it to 7 constructs and 3 behavioral indicators. Commonly named targets include Agency, Decision-making, Knowledge acquisition, Logical reasoning, and Instruction following, and papers also frame it more broadly as evaluating agent performance and core abilities."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it. Papers nevertheless use it alongside other agent benchmarks, including ToolBench and AgentBoard, and one paper uses it as a comparison point by stating that its own task choice is planning-heavier than AgentBench. Other papers treat it as a direct evaluation setup or main benchmark, for example by following its setup for Webshop validation or by evaluating agent application scenarios with lengthy prompts on AgentBench."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing treatment is of AgentBench as a benchmark or evaluation suite for LLMs as agents, and some definitions use it as a comparison point for multi-round and task-diverse agent evaluation. Papers describe its contents in different ways: as diverse or 8 distinct environments, as environments for intrinsic reasoning and adaptation to environment feedback across OS, DB, HH, KG, WB, and WS, and as agent application tasks such as OS interaction, web browsing, and web shopping. Reported scoring also varies by environment, with success rate for OS, DB, HH, and WB, F1 for KG, and reward score for WS.\n\nWhat it is claimed to measure. Its reported measurement role is distributed across several targets rather than a single construct: papers link it to 7 constructs and 3 behavioral indicators. Commonly named targets include Agency, Decision-making, Knowledge acquisition, Logical reasoning, and Instruction following, and papers also frame it more broadly as evaluating agent performance and core abilities.\n\nSpace of uses. No measurement instrument is linked to it. Papers nevertheless use it alongside other agent benchmarks, including ToolBench and AgentBoard, and one paper uses it as a comparison point by stating that its own task choice is planning-heavier than AgentBench. Other papers treat it as a direct evaluation setup or main benchmark, for example by following its setup for Webshop validation or by evaluating agent application scenarios with lengthy prompts on AgentBench.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Agent Skill Acquisition for Large Language Models via CycleQD",
+      "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "Scaling Autonomous Agents via Automatic Reward Modeling And Planning"
+    ],
+    "naacl25": [
+      "Generative Prompt Internalization",
+      "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training",
+      "xLAM: A Family of Large Action Models to Empower AI Agent Systems"
+    ],
+    "neurips24": [
+      "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "naacl25": 3,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

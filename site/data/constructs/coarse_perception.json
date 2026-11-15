@@ -1,0 +1,59 @@
+{
+  "canonical_name": "Coarse perception",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. In the usage in the papers, coarse perception is treated as a latent ability: perceiving and describing high-level, general elements within an image. The only explicit definition comes from Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs, which also describes models as showing \"strong coarse and fine-grained perceptual abilities\" and being \"equally adept at handling coarse perception contents.\"\n\nSpace of facets. The concept is only lightly systematized in the cited material. The paper explicitly places it alongside \"fine-grained perceptual abilities\" and describes coarse perception in terms of \"high-level, general elements within an image.\"\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to coarse perception, and the cited material does not name a benchmark, human evaluation protocol, judge model, or probe for operationalizing it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Coarse perception"
+  ],
+  "papers": [
+    "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+    "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+    "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The latent ability to perceive and describe high-level, general elements within an image.",
+      "papers": [
+        "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs"
+      ],
+      "original_name": "Coarse perception"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In the usage in the papers, coarse perception is treated as a latent ability: perceiving and describing high-level, general elements within an image. The only explicit definition comes from Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs, which also describes models as showing \"strong coarse and fine-grained perceptual abilities\" and being \"equally adept at handling coarse perception contents.\""
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The concept is only lightly systematized in the cited material. The paper explicitly places it alongside \"fine-grained perceptual abilities\" and describes coarse perception in terms of \"high-level, general elements within an image.\""
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to coarse perception, and the cited material does not name a benchmark, human evaluation protocol, judge model, or probe for operationalizing it."
+    }
+  ],
+  "characterization": "Space of definitions. In the usage in the papers, coarse perception is treated as a latent ability: perceiving and describing high-level, general elements within an image. The only explicit definition comes from Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs, which also describes models as showing \"strong coarse and fine-grained perceptual abilities\" and being \"equally adept at handling coarse perception contents.\"\n\nSpace of facets. The concept is only lightly systematized in the cited material. The paper explicitly places it alongside \"fine-grained perceptual abilities\" and describes coarse perception in terms of \"high-level, general elements within an image.\"\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to coarse perception, and the cited material does not name a benchmark, human evaluation protocol, judge model, or probe for operationalizing it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+      "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

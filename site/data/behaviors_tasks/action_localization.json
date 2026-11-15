@@ -1,0 +1,104 @@
+{
+  "canonical_name": "Action localization",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats action localization as finding when a specified action occurs in a video by marking its temporal extent, usually with start and end times. Most definitions describe detecting and localizing temporal segments that contain a given action, and some explicitly extend this to finding all matching segments in a long or untrimmed video. A narrower variant applies the same formulation to traffic accidents, where success is identifying the precise start and end timestamps of the accident event within a clip.\n\nVariants. Papers most commonly use the names Action Localization and Temporal Action Localization. The settings vary across animal-centric videos, longer untrimmed videos, and traffic accident clips, with examples phrased as locating where an action such as \"flying\" occurs or finding all segments for a named action in a long video. A smaller line of work specializes this as accident temporal localization, and one paper also describes it as accident duration.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to this behavior, MVBench. One paper reports that action localization is measured by MVBench, which it describes as a video-language understanding benchmark covering multiple challenging video tasks, including an Action Localization task.\n\nWhat it is taken as evidence of. No construct is linked to action localization in the reported relationships, so the papers do not specify a broader construct that this behavior is taken to indicate.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Action localization",
+    "Temporal action localization",
+    "Accident temporal localization"
+  ],
+  "papers": [
+    "TAU-106K: A New Dataset for Comprehensive Understanding of Traffic Accident",
+    "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+    "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+    "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+    "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Identifying when a specified action occurs within a video timeline.",
+      "papers": [
+        "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding"
+      ],
+      "original_name": "Action localization"
+    },
+    {
+      "text": "The task of detecting and localizing all temporal segments in a video that contain a specific, given action.",
+      "papers": [
+        "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+        "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+      ],
+      "original_name": "Temporal action localization"
+    },
+    {
+      "text": "The task of identifying the precise start and end timestamps of a traffic accident event within a video clip.",
+      "papers": [
+        "TAU-106K: A New Dataset for Comprehensive Understanding of Traffic Accident"
+      ],
+      "original_name": "Accident temporal localization"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MVBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment",
+      "evidence": "MVBench [29] is a recent video-language understanding benchmark that covers 20 challenging video tasks... TOPA Surprisingly excels in the Action Localization (AL) task",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats action localization as finding when a specified action occurs in a video by marking its temporal extent, usually with start and end times. Most definitions describe detecting and localizing temporal segments that contain a given action, and some explicitly extend this to finding all matching segments in a long or untrimmed video. A narrower variant applies the same formulation to traffic accidents, where success is identifying the precise start and end timestamps of the accident event within a clip."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers most commonly use the names Action Localization and Temporal Action Localization. The settings vary across animal-centric videos, longer untrimmed videos, and traffic accident clips, with examples phrased as locating where an action such as \"flying\" occurs or finding all segments for a named action in a long video. A smaller line of work specializes this as accident temporal localization, and one paper also describes it as accident duration."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one measurement instrument is linked to this behavior, MVBench. One paper reports that action localization is measured by MVBench, which it describes as a video-language understanding benchmark covering multiple challenging video tasks, including an Action Localization task."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to action localization in the reported relationships, so the papers do not specify a broader construct that this behavior is taken to indicate."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats action localization as finding when a specified action occurs in a video by marking its temporal extent, usually with start and end times. Most definitions describe detecting and localizing temporal segments that contain a given action, and some explicitly extend this to finding all matching segments in a long or untrimmed video. A narrower variant applies the same formulation to traffic accidents, where success is identifying the precise start and end timestamps of the accident event within a clip.\n\nVariants. Papers most commonly use the names Action Localization and Temporal Action Localization. The settings vary across animal-centric videos, longer untrimmed videos, and traffic accident clips, with examples phrased as locating where an action such as \"flying\" occurs or finding all segments for a named action in a long video. A smaller line of work specializes this as accident temporal localization, and one paper also describes it as accident duration.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to this behavior, MVBench. One paper reports that action localization is measured by MVBench, which it describes as a video-language understanding benchmark covering multiple challenging video tasks, including an Action Localization task.\n\nWhat it is taken as evidence of. No construct is linked to action localization in the reported relationships, so the papers do not specify a broader construct that this behavior is taken to indicate.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "TAU-106K: A New Dataset for Comprehensive Understanding of Traffic Accident",
+      "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+    ],
+    "neurips24": [
+      "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+      "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+      "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 3
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

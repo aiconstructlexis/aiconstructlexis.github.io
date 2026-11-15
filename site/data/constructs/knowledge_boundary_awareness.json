@@ -1,0 +1,303 @@
+{
+  "canonical_name": "Knowledge boundary awareness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most definitions treat it as a latent ability or property by which a model recognizes the limits of its own knowledge, separating questions, statements, or entities that fall within its stored or parametric knowledge from those that do not. This prevailing usage appears under labels such as knowledge boundary cognition, perception, awareness, knowledge awareness, and self-knowledge, and is commonly tied to appropriate uncertainty, declining to answer, or avoiding overconfident unsupported claims. A smaller line narrows the construct to specific settings, such as factual question answering, multimodal questions that need knowledge not shown in the image, or entity-level recognition of whether the model can recall facts. The main definitional shift is between the model's internal awareness and the boundary itself, which some papers describe as an unobservable limit or internal scope of factual understanding, sometimes referenced to parametric knowledge, outward verification, or universal human knowledge.\n\nSpace of facets. Papers use multiple labels for overlapping ideas, with knowledge boundary cognition, perception, awareness, knowledge awareness, self-knowledge, and awareness of knowledge limits all centering on knowing what is known versus unknown. Some works place it inside broader frameworks, treating capability awareness as a facet of self-awareness and knowledge awareness as a fine-grained type under epistemic uncertainty awareness. Another line decomposes the boundary itself into outward, parametric, and universal knowledge boundaries, with one subsuming another, while narrower variants isolate awareness of knowledge limits as one cognition level, pair it with knowledge acquisition direction, or focus on entity recognition at the entity token.\n\nSpace of measurement. No measurement instrument is linked to it, and papers link it to 3 behavioral indicators: hallucination, abstention, and confidence estimation. Papers operationalize it with probes and analyses of internal states, for example testing whether hidden activations or middle to middle-upper layers distinguish known from unknown questions, including across languages, and with confidence-oriented procedures such as reasoning step confidence calibration or consistency-based calibration under question reformulation. Other papers assess it through semi-open-ended question answering, sampling-based inference to depict a model's boundary, and role-guided self-reflection, so operationalization spans both internal-state detection and outward behaviors like uncertainty expression or declining to answer.\n\nLinks. A few papers claim a causal relationship from knowledge boundary awareness to hallucination: one says the model may begin to hallucinate beyond its boundary of factual understanding, and another says enhancing knowledge boundary awareness reduces hallucination. Beyond that, papers report 4 related constructs and 2 related behavioral indicators. In the recorded direction, it is related to self-awareness and one additional construct, while epistemic uncertainty awareness, confidence estimation, abstention, and one other construct are related to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge boundary cognition",
+    "Knowledge boundary perception",
+    "Knowledge boundary awareness",
+    "Knowledge boundary",
+    "Self-knowledge",
+    "Capability awareness",
+    "Knowledge awareness",
+    "Awareness of knowledge limits",
+    "Entity recognition"
+  ],
+  "papers": [
+    "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+    "Analyzing LLMs' Knowledge Boundary Cognition Across Languages Through the Lens of Internal Representations",
+    "Knowledge Boundary of Large Language Models: A Survey",
+    "MMBoundary: Advancing MLLM Knowledge Boundary Awareness through Reasoning Step Confidence Calibration",
+    "Reversal of Thought: Enhancing Large Language Models with Preference-Guided Reverse Reasoning Warm-up",
+    "Towards Fully Exploiting LLM Internal States to Enhance Knowledge Boundary Perception",
+    "ALLabel: Three-stage Active Learning for LLM-based Entity Recognition using Demonstration Retrieval",
+    "Alignment for Efficient Tool Calling of Large Language Models",
+    "Detecting Knowledge Boundary of Vision Large Language Models by Sampling-Based Inference",
+    "FacLens: Transferable Probe for Foreseeing Non-Factuality in Fact-Seeking Question Answering of Large Language Models",
+    "Grounding Multilingual Multimodal LLMs With Cultural Knowledge",
+    "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+    "Search Wisely: Mitigating Sub-optimal Agentic Searches By Reducing Uncertainty",
+    "Will It Still Be True Tomorrow? Multilingual Evergreen Question Classification to Improve Trustworthy QA",
+    "Century: A Framework and Dataset for Evaluating Historical Contextualisation of Sensitive Images",
+    "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+    "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+    "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+    "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+    "Self-DC: When to Reason and When to Act? Self Divide-and-Conquer for Compositional Unknown Questions",
+    "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+    "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+    "Right this way: Can VLMs Guide Us to See More to Answer Questions?",
+    "RoleAgent: Building, Interacting, and Benchmarking High-quality Role-Playing Agents from Scripts",
+    "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering"
+  ],
+  "paper_count": 25,
+  "definitions": [
+    {
+      "text": "The latent ability of an LLM to internally recognize whether a given question or statement falls within or beyond its stored knowledge, enabling discrimination between known and unknown information across languages.",
+      "papers": [
+        "Analyzing LLMs' Knowledge Boundary Cognition Across Languages Through the Lens of Internal Representations"
+      ],
+      "original_name": "Knowledge boundary cognition"
+    },
+    {
+      "text": "The latent ability of an LLM to accurately recognize the limits of its own knowledge, distinguishing between what it knows and does not know.",
+      "papers": [
+        "Towards Fully Exploiting LLM Internal States to Enhance Knowledge Boundary Perception"
+      ],
+      "original_name": "Knowledge boundary perception"
+    },
+    {
+      "text": "The latent ability of a model to recognize the limits of its own knowledge during reasoning, enabling it to express uncertainty where appropriate and avoid overconfident incorrect assertions.",
+      "papers": [
+        "MMBoundary: Advancing MLLM Knowledge Boundary Awareness through Reasoning Step Confidence Calibration",
+        "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness"
+      ],
+      "original_name": "Knowledge boundary awareness"
+    },
+    {
+      "text": "The latent ability of an LLM to implicitly recognize whether it possesses the factual knowledge required to correctly answer a given question, as evidenced by patterns in its internal representations prior to response generation.",
+      "papers": [
+        "FacLens: Transferable Probe for Foreseeing Non-Factuality in Fact-Seeking Question Answering of Large Language Models",
+        "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness"
+      ],
+      "original_name": "Knowledge awareness"
+    },
+    {
+      "text": "The latent property of a VLLM that determines whether a given query falls within the model's internal knowledge scope, distinguishing between what the model knows and what requires external retrieval.",
+      "papers": [
+        "Detecting Knowledge Boundary of Vision Large Language Models by Sampling-Based Inference",
+        "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering"
+      ],
+      "original_name": "Knowledge boundary"
+    },
+    {
+      "text": "The ability of a model to accurately assess its own internal knowledge, distinguishing between what it knows and what it does not, to avoid making false or unsupported claims.",
+      "papers": [
+        "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study"
+      ],
+      "original_name": "Self-knowledge"
+    },
+    {
+      "text": "A facet of self-awareness concerning the model's ability to accurately assess its own knowledge and skills for a given task.",
+      "papers": [
+        "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning"
+      ],
+      "original_name": "Capability awareness"
+    },
+    {
+      "text": "A metacognitive ability to recognize when the model lacks sufficient information to answer a question accurately, representing the 'knowing what's unknown' level of cognition.",
+      "papers": [
+        "Right this way: Can VLMs Guide Us to See More to Answer Questions?"
+      ],
+      "original_name": "Awareness of knowledge limits"
+    },
+    {
+      "text": "The latent capacity to distinguish entities the model recognizes from entities it does not recognize, especially from internal representations at the entity token.",
+      "papers": [
+        "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models"
+      ],
+      "original_name": "Entity recognition"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering",
+      "evidence": "\u201cThe knowledge boundary of an LLM limits its factual understanding, beyond which it may begin to hallucinate.\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering"
+        ],
+        "emnlp25": [
+          "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Believability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RoleAgent: Building, Interacting, and Benchmarking High-quality Role-Playing Agents from Scripts",
+      "evidence": "For the agent evaluation, we perform a controlled evaluation to test whether the agents produce believable individual behaviors, where the self-knowledge, reaction and general abilities are evaluated. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "RoleAgent: Building, Interacting, and Benchmarking High-quality Role-Playing Agents from Scripts"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Epistemic uncertainty awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "evidence": "\u201cWe further categorize the awareness of epistemic uncertainty into 3 finegrained types: \u2022 Knowledge awareness means understanding that some questions require information or common sense that is not shown in the image.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "evidence": "Our self-awareness module (Fig. 3) comprises two core components...: (1) assessing the task\u2019s solvability p(\u0398I) and p(\u0398E), based on the model\u2019s technic and cognitive capabilities, where capability-aware solvability and mission-aware solvability are considered simultaneously",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Confidence estimation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "evidence": "While assessing capability-aware solvability of LLMs is underexplored, confidence or uncertainty estimation (Geng et al., 2024; Wen et al., 2024) offers a viable alternative.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Overconfidence",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+      "evidence": "Overconfidence is a fraction of incorrect answers where the method was confident about self-knowledge reflecting how often the method incorrectly assumes that the model possesses the required knowledge when it does not.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstention",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Divide-Then-Align: Honest Alignment based on the Knowledge Boundary of RAG",
+      "evidence": "To address the critical limitation of RAFT models regarding their inability to abstain from answering when queries fall outside both knowledge boundaries (\u2718\u2718), we construct a comprehensive preference dataset that captures the desired behavior for each quadrant. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Divide-Then-Align: Honest Alignment based on the Knowledge Boundary of RAG"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most definitions treat it as a latent ability or property by which a model recognizes the limits of its own knowledge, separating questions, statements, or entities that fall within its stored or parametric knowledge from those that do not. This prevailing usage appears under labels such as knowledge boundary cognition, perception, awareness, knowledge awareness, and self-knowledge, and is commonly tied to appropriate uncertainty, declining to answer, or avoiding overconfident unsupported claims. A smaller line narrows the construct to specific settings, such as factual question answering, multimodal questions that need knowledge not shown in the image, or entity-level recognition of whether the model can recall facts. The main definitional shift is between the model's internal awareness and the boundary itself, which some papers describe as an unobservable limit or internal scope of factual understanding, sometimes referenced to parametric knowledge, outward verification, or universal human knowledge."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use multiple labels for overlapping ideas, with knowledge boundary cognition, perception, awareness, knowledge awareness, self-knowledge, and awareness of knowledge limits all centering on knowing what is known versus unknown. Some works place it inside broader frameworks, treating capability awareness as a facet of self-awareness and knowledge awareness as a fine-grained type under epistemic uncertainty awareness. Another line decomposes the boundary itself into outward, parametric, and universal knowledge boundaries, with one subsuming another, while narrower variants isolate awareness of knowledge limits as one cognition level, pair it with knowledge acquisition direction, or focus on entity recognition at the entity token."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and papers link it to 3 behavioral indicators: hallucination, abstention, and confidence estimation. Papers operationalize it with probes and analyses of internal states, for example testing whether hidden activations or middle to middle-upper layers distinguish known from unknown questions, including across languages, and with confidence-oriented procedures such as reasoning step confidence calibration or consistency-based calibration under question reformulation. Other papers assess it through semi-open-ended question answering, sampling-based inference to depict a model's boundary, and role-guided self-reflection, so operationalization spans both internal-state detection and outward behaviors like uncertainty expression or declining to answer."
+    },
+    {
+      "label": "Links.",
+      "text": "A few papers claim a causal relationship from knowledge boundary awareness to hallucination: one says the model may begin to hallucinate beyond its boundary of factual understanding, and another says enhancing knowledge boundary awareness reduces hallucination. Beyond that, papers report 4 related constructs and 2 related behavioral indicators. In the recorded direction, it is related to self-awareness and one additional construct, while epistemic uncertainty awareness, confidence estimation, abstention, and one other construct are related to it."
+    }
+  ],
+  "characterization": "Space of definitions. Most definitions treat it as a latent ability or property by which a model recognizes the limits of its own knowledge, separating questions, statements, or entities that fall within its stored or parametric knowledge from those that do not. This prevailing usage appears under labels such as knowledge boundary cognition, perception, awareness, knowledge awareness, and self-knowledge, and is commonly tied to appropriate uncertainty, declining to answer, or avoiding overconfident unsupported claims. A smaller line narrows the construct to specific settings, such as factual question answering, multimodal questions that need knowledge not shown in the image, or entity-level recognition of whether the model can recall facts. The main definitional shift is between the model's internal awareness and the boundary itself, which some papers describe as an unobservable limit or internal scope of factual understanding, sometimes referenced to parametric knowledge, outward verification, or universal human knowledge.\n\nSpace of facets. Papers use multiple labels for overlapping ideas, with knowledge boundary cognition, perception, awareness, knowledge awareness, self-knowledge, and awareness of knowledge limits all centering on knowing what is known versus unknown. Some works place it inside broader frameworks, treating capability awareness as a facet of self-awareness and knowledge awareness as a fine-grained type under epistemic uncertainty awareness. Another line decomposes the boundary itself into outward, parametric, and universal knowledge boundaries, with one subsuming another, while narrower variants isolate awareness of knowledge limits as one cognition level, pair it with knowledge acquisition direction, or focus on entity recognition at the entity token.\n\nSpace of measurement. No measurement instrument is linked to it, and papers link it to 3 behavioral indicators: hallucination, abstention, and confidence estimation. Papers operationalize it with probes and analyses of internal states, for example testing whether hidden activations or middle to middle-upper layers distinguish known from unknown questions, including across languages, and with confidence-oriented procedures such as reasoning step confidence calibration or consistency-based calibration under question reformulation. Other papers assess it through semi-open-ended question answering, sampling-based inference to depict a model's boundary, and role-guided self-reflection, so operationalization spans both internal-state detection and outward behaviors like uncertainty expression or declining to answer.\n\nLinks. A few papers claim a causal relationship from knowledge boundary awareness to hallucination: one says the model may begin to hallucinate beyond its boundary of factual understanding, and another says enhancing knowledge boundary awareness reduces hallucination. Beyond that, papers report 4 related constructs and 2 related behavioral indicators. In the recorded direction, it is related to self-awareness and one additional construct, while epistemic uncertainty awareness, confidence estimation, abstention, and one other construct are related to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Adaptive Retrieval Without Self-Knowledge? Bringing Uncertainty Back Home",
+      "Analyzing LLMs' Knowledge Boundary Cognition Across Languages Through the Lens of Internal Representations",
+      "Knowledge Boundary of Large Language Models: A Survey",
+      "MMBoundary: Advancing MLLM Knowledge Boundary Awareness through Reasoning Step Confidence Calibration",
+      "Reversal of Thought: Enhancing Large Language Models with Preference-Guided Reverse Reasoning Warm-up",
+      "Towards Fully Exploiting LLM Internal States to Enhance Knowledge Boundary Perception"
+    ],
+    "emnlp25": [
+      "ALLabel: Three-stage Active Learning for LLM-based Entity Recognition using Demonstration Retrieval",
+      "Alignment for Efficient Tool Calling of Large Language Models",
+      "Detecting Knowledge Boundary of Vision Large Language Models by Sampling-Based Inference",
+      "FacLens: Transferable Probe for Foreseeing Non-Factuality in Fact-Seeking Question Answering of Large Language Models",
+      "Grounding Multilingual Multimodal LLMs With Cultural Knowledge",
+      "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+      "Search Wisely: Mitigating Sub-optimal Agentic Searches By Reducing Uncertainty",
+      "Will It Still Be True Tomorrow? Multilingual Evergreen Question Classification to Improve Trustworthy QA"
+    ],
+    "iclr25": [
+      "Century: A Framework and Dataset for Evaluating Historical Contextualisation of Sensitive Images",
+      "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+      "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+      "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness"
+    ],
+    "icml25": [
+      "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning"
+    ],
+    "naacl25": [
+      "Self-DC: When to Reason and When to Act? Self Divide-and-Conquer for Compositional Unknown Questions"
+    ],
+    "neurips24": [
+      "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+      "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+      "Right this way: Can VLMs Guide Us to See More to Answer Questions?",
+      "RoleAgent: Building, Interacting, and Benchmarking High-quality Role-Playing Agents from Scripts",
+      "Perception of Knowledge Boundary for Large Language Models through Semi-open-ended Question Answering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 6,
+    "emnlp25": 8,
+    "iclr25": 4,
+    "icml25": 1,
+    "naacl25": 1,
+    "neurips24": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

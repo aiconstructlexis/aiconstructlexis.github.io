@@ -1,0 +1,151 @@
+{
+  "canonical_name": "World Values Survey",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing usage treats the World Values Survey as a large-scale cross-national survey, or global research project, about beliefs and values worldwide, spanning social, political, religious, cultural, personal, and societal values. Papers commonly use it as seed data or a source of seed questions for culture-specific generation, and some also describe it as a proxy for cultural values in NLP, repurpose it as training data for cultural adaptation, or use it to derive representative personas. Where versions are specified, authors focus on Wave 7, conducted from 2017 to 2020 and covering 57 countries; reported subsets include 260 questions across 13 cultural topics and a filtered set of 206 questions, and one description notes more than 129K human respondents.\n\nWhat it is claimed to measure. Papers link it to 3 constructs and no behavioral indicators. The most common claim is that it measures cultural alignment, with authors using it for assessment and for comparing model responses to human survey data; a smaller line of work uses it to measure value orientation by treating it as ground-truth human value distributions across countries. It is also related to cultural bias, with one paper saying that insights from WVS can help in understanding the cultural and societal norms that underlie biases.\n\nSpace of uses. No measurement instrument is linked to it. In use, papers position it as a source of seed questions for data generation, as an assessment reference that compares model responses with human survey data, as training data for cultural value adaptation, and as material for deriving personas and adapting questions into local-language multiple-choice evaluations. Some papers mention it alongside Global Attitudes surveys as another question source, and one evaluation places it alongside Hofstede's Cultural Dimensions.\n\nConcerns raised. One paper narrows WVS to a 206-question subset by excluding items that are not independent of other questions or that are customized with respondent-specific demographic information.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "World Values Survey",
+    "World Values Survey (WVS)"
+  ],
+  "papers": [
+    "Beyond Demographics: Enhancing Cultural Value Survey Simulation with Multi-Stage Personality-Driven Cognitive Reasoning",
+    "Break the Checkbox: Challenging Closed-Style Evaluations of Cultural Alignment in LLMs",
+    "From Word to World: Evaluate and Mitigate Culture Bias in LLMs via Word Association Test",
+    "Incorporating Diverse Perspectives in Cultural Alignment: Survey of Evaluation Benchmarks Through A Three-Dimensional Framework",
+    "Revisiting LLM Value Probing Strategies: Are They Robust and Expressive?",
+    "SimVBG: Simulating Individual Values by Backstory Generation",
+    "From Surveys to Narratives: Rethinking Cultural Value Adaptation in LLMs",
+    "NileChat: Towards Linguistically Diverse and Culturally Aware LLMs for Local Communities",
+    "Self-Pluralising Culture Alignment for Large Language Models",
+    "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations",
+    "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+    "CulturePark: Boosting Cross-cultural Understanding in Large Language Models"
+  ],
+  "paper_count": 12,
+  "definitions": [
+    {
+      "text": "A cross-national survey used here as seed data for culture-specific question-answer pairs about social, political, religious, and cultural values.",
+      "papers": [
+        "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+        "Self-Pluralising Culture Alignment for Large Language Models",
+        "Revisiting LLM Value Probing Strategies: Are They Robust and Expressive?"
+      ],
+      "original_name": "World Values Survey"
+    },
+    {
+      "text": "A global research project and survey that explores people\u2019s beliefs and values worldwide, used in this paper as a source of seed questions for data generation.",
+      "papers": [
+        "CulturePark: Boosting Cross-cultural Understanding in Large Language Models",
+        "From Surveys to Narratives: Rethinking Cultural Value Adaptation in LLMs",
+        "NileChat: Towards Linguistically Diverse and Culturally Aware LLMs for Local Communities"
+      ],
+      "original_name": "World Values Survey (WVS)"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cultural alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-Pluralising Culture Alignment for Large Language Models",
+      "evidence": "We utilize the World Values Survey (WVS) (Haerpfer et al., 2022) for our assessment. (Section 3.3)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Self-Pluralising Culture Alignment for Large Language Models"
+        ],
+        "emnlp25": [
+          "Break the Checkbox: Challenging Closed-Style Evaluations of Cultural Alignment in LLMs",
+          "From Surveys to Narratives: Rethinking Cultural Value Adaptation in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Value orientation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Revisiting LLM Value Probing Strategies: Are They Robust and Expressive?",
+      "evidence": "We use the seventh wave of the World Values Survey (Haerpfer et al., 2022), which asks more than 129K human respondents from a wide range of demographic groups for their values. (Section 6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Revisiting LLM Value Probing Strategies: Are They Robust and Expressive?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cultural bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+      "evidence": "Insights from the WVS can help in understanding the cultural and societal norms that underlie biases",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CultureLLM: Incorporating Cultural Differences into Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing usage treats the World Values Survey as a large-scale cross-national survey, or global research project, about beliefs and values worldwide, spanning social, political, religious, cultural, personal, and societal values. Papers commonly use it as seed data or a source of seed questions for culture-specific generation, and some also describe it as a proxy for cultural values in NLP, repurpose it as training data for cultural adaptation, or use it to derive representative personas. Where versions are specified, authors focus on Wave 7, conducted from 2017 to 2020 and covering 57 countries; reported subsets include 260 questions across 13 cultural topics and a filtered set of 206 questions, and one description notes more than 129K human respondents."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 3 constructs and no behavioral indicators. The most common claim is that it measures cultural alignment, with authors using it for assessment and for comparing model responses to human survey data; a smaller line of work uses it to measure value orientation by treating it as ground-truth human value distributions across countries. It is also related to cultural bias, with one paper saying that insights from WVS can help in understanding the cultural and societal norms that underlie biases."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it. In use, papers position it as a source of seed questions for data generation, as an assessment reference that compares model responses with human survey data, as training data for cultural value adaptation, and as material for deriving personas and adapting questions into local-language multiple-choice evaluations. Some papers mention it alongside Global Attitudes surveys as another question source, and one evaluation places it alongside Hofstede's Cultural Dimensions."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One paper narrows WVS to a 206-question subset by excluding items that are not independent of other questions or that are customized with respondent-specific demographic information."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing usage treats the World Values Survey as a large-scale cross-national survey, or global research project, about beliefs and values worldwide, spanning social, political, religious, cultural, personal, and societal values. Papers commonly use it as seed data or a source of seed questions for culture-specific generation, and some also describe it as a proxy for cultural values in NLP, repurpose it as training data for cultural adaptation, or use it to derive representative personas. Where versions are specified, authors focus on Wave 7, conducted from 2017 to 2020 and covering 57 countries; reported subsets include 260 questions across 13 cultural topics and a filtered set of 206 questions, and one description notes more than 129K human respondents.\n\nWhat it is claimed to measure. Papers link it to 3 constructs and no behavioral indicators. The most common claim is that it measures cultural alignment, with authors using it for assessment and for comparing model responses to human survey data; a smaller line of work uses it to measure value orientation by treating it as ground-truth human value distributions across countries. It is also related to cultural bias, with one paper saying that insights from WVS can help in understanding the cultural and societal norms that underlie biases.\n\nSpace of uses. No measurement instrument is linked to it. In use, papers position it as a source of seed questions for data generation, as an assessment reference that compares model responses with human survey data, as training data for cultural value adaptation, and as material for deriving personas and adapting questions into local-language multiple-choice evaluations. Some papers mention it alongside Global Attitudes surveys as another question source, and one evaluation places it alongside Hofstede's Cultural Dimensions.\n\nConcerns raised. One paper narrows WVS to a 206-question subset by excluding items that are not independent of other questions or that are customized with respondent-specific demographic information.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Beyond Demographics: Enhancing Cultural Value Survey Simulation with Multi-Stage Personality-Driven Cognitive Reasoning",
+      "Break the Checkbox: Challenging Closed-Style Evaluations of Cultural Alignment in LLMs",
+      "From Word to World: Evaluate and Mitigate Culture Bias in LLMs via Word Association Test",
+      "Incorporating Diverse Perspectives in Cultural Alignment: Survey of Evaluation Benchmarks Through A Three-Dimensional Framework",
+      "Revisiting LLM Value Probing Strategies: Are They Robust and Expressive?",
+      "SimVBG: Simulating Individual Values by Backstory Generation",
+      "From Surveys to Narratives: Rethinking Cultural Value Adaptation in LLMs",
+      "NileChat: Towards Linguistically Diverse and Culturally Aware LLMs for Local Communities"
+    ],
+    "naacl25": [
+      "Self-Pluralising Culture Alignment for Large Language Models",
+      "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations"
+    ],
+    "neurips24": [
+      "CultureLLM: Incorporating Cultural Differences into Large Language Models",
+      "CulturePark: Boosting Cross-cultural Understanding in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 8,
+    "naacl25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25",
+    "neurips24"
+  ]
+}

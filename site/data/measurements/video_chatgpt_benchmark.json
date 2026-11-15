@@ -1,0 +1,107 @@
+{
+  "canonical_name": "Video-ChatGPT benchmark",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the definitions, the prevailing usage is as an evaluation benchmark or test set for video understanding and video-based conversational models, though papers vary in emphasis. It is described as a benchmark for generative performance, a test set for detailed video understanding via large vision and language models, and a long-video question-answering benchmark. Reported evaluation dimensions include Correctness of Information, Contextual Understanding, Temporal Understanding, and Consistency, with one description naming Detail Orientation and another naming Orientation.\n\nWhat it is claimed to measure. In the reported relationships, papers use it to measure one behavioral indicator and one construct. The most common link is to video question answering, where papers evaluate models on the Video-ChatGPT test set or treat it as an open-ended video question-answering benchmark; a smaller line of use links it to temporal understanding through the benchmark's Temporal Understanding metric. Overall, the measurement claims are concentrated on these few targets rather than spread across many constructs.\n\nSpace of uses. In the papers, it appears as part of benchmark suites for video question answering rather than only as a standalone instrument. One paper reports testing on it alongside MSVD-QA, MSRVTT-QA, and ActivityNet-QA, while another positions it within zero-shot evaluation on open-ended video question-answering benchmarks and highlights its generative performance metrics. Beyond those side-by-side uses, papers do not link it to other measurement instruments.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Video-ChatGPT benchmark",
+    "Video-ChatGPT test set",
+    "VideoChatGPT"
+  ],
+  "papers": [
+    "Artemis: Towards Referential Understanding in Complex Videos",
+    "Dense Connector for MLLMs",
+    "Streaming Long Video Understanding with Large Language Models"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A benchmark for evaluating the generative performance of video-based conversational models on criteria such as correctness, detail, and contextual understanding.",
+      "papers": [
+        "Dense Connector for MLLMs"
+      ],
+      "original_name": "Video-ChatGPT benchmark"
+    },
+    {
+      "text": "A test set designed for evaluating detailed video understanding via large vision and language models, used here to assess general video question answering performance.",
+      "papers": [
+        "Artemis: Towards Referential Understanding in Complex Videos"
+      ],
+      "original_name": "Video-ChatGPT test set"
+    },
+    {
+      "text": "A long-video question-answering benchmark used to evaluate detailed video understanding across correctness, orientation, contextual understanding, temporal understanding, and consistency dimensions.",
+      "papers": [
+        "Streaming Long Video Understanding with Large Language Models"
+      ],
+      "original_name": "VideoChatGPT"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Artemis: Towards Referential Understanding in Complex Videos",
+      "evidence": "We test the trained model on the Video-ChatGPT test set [37] and the other three benchmarks (i.e., MSVD-QA [8], MSRVTT-QA [53], and ActivityNet-QA [6, 58]) where their training sets was not used to train Artemis. (Section 4.2).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Artemis: Towards Referential Understanding in Complex Videos",
+          "Dense Connector for MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "...and the newly proposed generative performance benchmark [51], include evaluation metrics such as Correctness of Information (CI), Detail Orientation (DO), Contextual Understanding (CU), Temporal Understanding (TU), and Consistency (CO). (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dense Connector for MLLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the definitions, the prevailing usage is as an evaluation benchmark or test set for video understanding and video-based conversational models, though papers vary in emphasis. It is described as a benchmark for generative performance, a test set for detailed video understanding via large vision and language models, and a long-video question-answering benchmark. Reported evaluation dimensions include Correctness of Information, Contextual Understanding, Temporal Understanding, and Consistency, with one description naming Detail Orientation and another naming Orientation."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "In the reported relationships, papers use it to measure one behavioral indicator and one construct. The most common link is to video question answering, where papers evaluate models on the Video-ChatGPT test set or treat it as an open-ended video question-answering benchmark; a smaller line of use links it to temporal understanding through the benchmark's Temporal Understanding metric. Overall, the measurement claims are concentrated on these few targets rather than spread across many constructs."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In the papers, it appears as part of benchmark suites for video question answering rather than only as a standalone instrument. One paper reports testing on it alongside MSVD-QA, MSRVTT-QA, and ActivityNet-QA, while another positions it within zero-shot evaluation on open-ended video question-answering benchmarks and highlights its generative performance metrics. Beyond those side-by-side uses, papers do not link it to other measurement instruments."
+    }
+  ],
+  "characterization": "What it is. Across the definitions, the prevailing usage is as an evaluation benchmark or test set for video understanding and video-based conversational models, though papers vary in emphasis. It is described as a benchmark for generative performance, a test set for detailed video understanding via large vision and language models, and a long-video question-answering benchmark. Reported evaluation dimensions include Correctness of Information, Contextual Understanding, Temporal Understanding, and Consistency, with one description naming Detail Orientation and another naming Orientation.\n\nWhat it is claimed to measure. In the reported relationships, papers use it to measure one behavioral indicator and one construct. The most common link is to video question answering, where papers evaluate models on the Video-ChatGPT test set or treat it as an open-ended video question-answering benchmark; a smaller line of use links it to temporal understanding through the benchmark's Temporal Understanding metric. Overall, the measurement claims are concentrated on these few targets rather than spread across many constructs.\n\nSpace of uses. In the papers, it appears as part of benchmark suites for video question answering rather than only as a standalone instrument. One paper reports testing on it alongside MSVD-QA, MSRVTT-QA, and ActivityNet-QA, while another positions it within zero-shot evaluation on open-ended video question-answering benchmarks and highlights its generative performance metrics. Beyond those side-by-side uses, papers do not link it to other measurement instruments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Artemis: Towards Referential Understanding in Complex Videos",
+      "Dense Connector for MLLMs",
+      "Streaming Long Video Understanding with Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

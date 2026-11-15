@@ -1,0 +1,97 @@
+{
+  "canonical_name": "ACE05",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, ACE05 is most commonly described as a news-domain information extraction benchmark. Definitions present it either broadly, as covering named entity recognition, relation extraction, and event extraction over news text, or more narrowly as a sentence-level event extraction dataset with news articles annotated for 33 event types, with one quoted passage adding that the documents come from 6 news sources. Some authors shorten the name to ACE for a news event detection dataset with 33 event types, while one paper uses the surface form ACE differently, for a 21-question multiple-choice computational-thinking assessment aimed at the Bloom levels Analyzing, Evaluating, and Creating.\n\nWhat it is claimed to measure. Papers use it to measure 1 behavioral indicator, Event detection, and it is linked to no constructs. The recorded claim is concentrated rather than spread across many outcomes: one paper benchmarks an event detection system on ACE alongside other domain datasets.\n\nSpace of uses. Papers use ACE05 alongside other benchmarks rather than in isolation. It appears with CASIE and PHEE in evaluations from the TextEE framework, and with ACE04 in a broader suite reporting results on 16 information extraction benchmarks. One paper explicitly positions ACE05 as \"the most widely used benchmark dataset for SEE,\" while another uses ACE as one of several event detection datasets spanning news, epidemiology, and biomedical domains.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ACE05",
+    "ACE"
+  ],
+  "papers": [
+    "DiCoRe: Enhancing Zero-shot Event Detection via Divergent-Convergent LLM Reasoning",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "Label Drop for Multi-Aspect Relation Modeling in Universal Information Extraction",
+    "Soft Syntactic Reinforcement for Neural Event Extraction",
+    "Benchmarking Generative Models on Computational Thinking Tests in Elementary Visual Programming"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Benchmark dataset for information extraction that includes named entity recognition, relation extraction, and event extraction tasks over news text.",
+      "papers": [
+        "Soft Syntactic Reinforcement for Neural Event Extraction",
+        "Label Drop for Multi-Aspect Relation Modeling in Universal Information Extraction"
+      ],
+      "original_name": "ACE05"
+    },
+    {
+      "text": "Automatic Content Extraction (ACE) dataset for event detection in news texts, containing 33 event types and widely used for structured information extraction evaluation.",
+      "papers": [
+        "DiCoRe: Enhancing Zero-shot Event Detection via Divergent-Convergent LLM Reasoning",
+        "Benchmarking Generative Models on Computational Thinking Tests in Elementary Visual Programming"
+      ],
+      "original_name": "ACE"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Event detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "evidence": "We benchmark SNARE on ED datasets from three domains: ACE (Doddington et al., 2004) (news), SPEED (Parekh et al., 2024c) (epidemiology), and GENIA2011 (Kim et al., 2011) (biomedical). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, ACE05 is most commonly described as a news-domain information extraction benchmark. Definitions present it either broadly, as covering named entity recognition, relation extraction, and event extraction over news text, or more narrowly as a sentence-level event extraction dataset with news articles annotated for 33 event types, with one quoted passage adding that the documents come from 6 news sources. Some authors shorten the name to ACE for a news event detection dataset with 33 event types, while one paper uses the surface form ACE differently, for a 21-question multiple-choice computational-thinking assessment aimed at the Bloom levels Analyzing, Evaluating, and Creating."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use it to measure 1 behavioral indicator, Event detection, and it is linked to no constructs. The recorded claim is concentrated rather than spread across many outcomes: one paper benchmarks an event detection system on ACE alongside other domain datasets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use ACE05 alongside other benchmarks rather than in isolation. It appears with CASIE and PHEE in evaluations from the TextEE framework, and with ACE04 in a broader suite reporting results on 16 information extraction benchmarks. One paper explicitly positions ACE05 as \"the most widely used benchmark dataset for SEE,\" while another uses ACE as one of several event detection datasets spanning news, epidemiology, and biomedical domains."
+    }
+  ],
+  "characterization": "What it is. Across the papers, ACE05 is most commonly described as a news-domain information extraction benchmark. Definitions present it either broadly, as covering named entity recognition, relation extraction, and event extraction over news text, or more narrowly as a sentence-level event extraction dataset with news articles annotated for 33 event types, with one quoted passage adding that the documents come from 6 news sources. Some authors shorten the name to ACE for a news event detection dataset with 33 event types, while one paper uses the surface form ACE differently, for a 21-question multiple-choice computational-thinking assessment aimed at the Bloom levels Analyzing, Evaluating, and Creating.\n\nWhat it is claimed to measure. Papers use it to measure 1 behavioral indicator, Event detection, and it is linked to no constructs. The recorded claim is concentrated rather than spread across many outcomes: one paper benchmarks an event detection system on ACE alongside other domain datasets.\n\nSpace of uses. Papers use ACE05 alongside other benchmarks rather than in isolation. It appears with CASIE and PHEE in evaluations from the TextEE framework, and with ACE04 in a broader suite reporting results on 16 information extraction benchmarks. One paper explicitly positions ACE05 as \"the most widely used benchmark dataset for SEE,\" while another uses ACE as one of several event detection datasets spanning news, epidemiology, and biomedical domains.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "DiCoRe: Enhancing Zero-shot Event Detection via Divergent-Convergent LLM Reasoning",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection"
+    ],
+    "naacl25": [
+      "Label Drop for Multi-Aspect Relation Modeling in Universal Information Extraction",
+      "Soft Syntactic Reinforcement for Neural Event Extraction"
+    ],
+    "neurips24": [
+      "Benchmarking Generative Models on Computational Thinking Tests in Elementary Visual Programming"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "naacl25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25",
+    "neurips24"
+  ]
+}

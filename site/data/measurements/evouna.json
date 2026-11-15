@@ -1,0 +1,64 @@
+{
+  "canonical_name": "EVOUNA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the cited papers, EVOUNA is most commonly described as a question answering benchmark augmented with LLM-generated responses and human annotations of whether each response is semantically equivalent to the golden answer. A smaller framing presents it as a dataset containing human evaluations of reader models on question answering tasks, rather than only as a benchmark.\n\nWhat it is claimed to measure. The papers describe EVOUNA around human judgments of semantic equivalence in question answering, and one description frames it more broadly as containing human evaluations of reader models on QA tasks. Papers do not link it to any named constructs or behavioral indicators, so the surveyed usage does not converge on a recorded construct that it measures.\n\nSpace of uses. Papers use EVOUNA directly as a QA benchmark, and one paper also uses it as source data for constructing EMBERQA. No other measurement instrument is linked to it, so the usage in the papers mainly positions it as a standalone benchmark or as material reused in another benchmark-building setup.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "EVOUNA"
+  ],
+  "papers": [
+    "MetaMetrics: Calibrating Metrics for Generation Tasks Using Human Preferences",
+    "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+    "Are LLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers on LLM-based Evaluation"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A question answering benchmark with human annotations of whether generated responses are semantically equivalent to golden answers.",
+      "papers": [
+        "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+        "Are LLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers on LLM-based Evaluation"
+      ],
+      "original_name": "EVOUNA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the cited papers, EVOUNA is most commonly described as a question answering benchmark augmented with LLM-generated responses and human annotations of whether each response is semantically equivalent to the golden answer. A smaller framing presents it as a dataset containing human evaluations of reader models on question answering tasks, rather than only as a benchmark."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The papers describe EVOUNA around human judgments of semantic equivalence in question answering, and one description frames it more broadly as containing human evaluations of reader models on QA tasks. Papers do not link it to any named constructs or behavioral indicators, so the surveyed usage does not converge on a recorded construct that it measures."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use EVOUNA directly as a QA benchmark, and one paper also uses it as source data for constructing EMBERQA. No other measurement instrument is linked to it, so the usage in the papers mainly positions it as a standalone benchmark or as material reused in another benchmark-building setup."
+    }
+  ],
+  "characterization": "What it is. Across the cited papers, EVOUNA is most commonly described as a question answering benchmark augmented with LLM-generated responses and human annotations of whether each response is semantically equivalent to the golden answer. A smaller framing presents it as a dataset containing human evaluations of reader models on question answering tasks, rather than only as a benchmark.\n\nWhat it is claimed to measure. The papers describe EVOUNA around human judgments of semantic equivalence in question answering, and one description frames it more broadly as containing human evaluations of reader models on QA tasks. Papers do not link it to any named constructs or behavioral indicators, so the surveyed usage does not converge on a recorded construct that it measures.\n\nSpace of uses. Papers use EVOUNA directly as a QA benchmark, and one paper also uses it as source data for constructing EMBERQA. No other measurement instrument is linked to it, so the usage in the papers mainly positions it as a standalone benchmark or as material reused in another benchmark-building setup.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "MetaMetrics: Calibrating Metrics for Generation Tasks Using Human Preferences",
+      "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction"
+    ],
+    "naacl25": [
+      "Are LLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers on LLM-based Evaluation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "canonical_name": "Engagement",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most papers treat engagement, or engagingness, as a response or dialogue quality, whether phrased as outputs that are interesting, captivating, likely to elicit further interaction, or judged engaging in social interaction. A smaller line of work narrows this to interactive engagement, described as a text's ability to \"draw the user in\" and encourage ongoing, dynamic contribution to the dialogue. Another usage shifts the construct to the discussion level, defining engagement as interest plus participation, combining reciprocity, response diversity, and discussion length, so the main difference across papers is whether engagement is located in model responses or in broader user participation.\n\nSpace of facets. Papers use several near-neighbor names, especially engagement, engagingness, and interactive engagement, for overlapping but not identical ideas. Most of these variants still center on maintaining attention or interest, and long-term dialogue work further frames engagingness as the ability to maintain an annotator's interest over time, with shared memories described as making dialogues more engaging. One paper also places engagement alongside honesty, helpfulness, harmlessness, and unbiasedness as one fine-grained alignment perspective, while the discussion-oriented usage broadens it by explicitly combining interest with participation.\n\nSpace of measurement. Papers link engagement to one measurement instrument, LLM-as-a-judge, and no behavioral indicators. In the linked operationalization, an LLM judge, GPT-4o, evaluates Engagingness; other quoted passages describe observer agents rating engagement, a dialog engagement classifier, and a Reddit upvote probability ranking model. These operationalizations largely match definitions that treat engagement as something judged from responses, while the discussion-level definition instead points to metrics such as reciprocity, response diversity, and discussion length.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Engagement",
+    "Interactive engagement",
+    "Engagingness"
+  ],
+  "papers": [
+    "Crab: A Novel Configurable Role-Playing LLM with Assessing Benchmark",
+    "SHARE: Shared Memory-Aware Open-Domain Long-Term Dialogue Dataset Constructed from Movie Script",
+    "Evaluation and Facilitation of Online Discussions in the LLM Era: A Survey",
+    "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework",
+    "Leftover Lunch: Advantage-based Offline Reinforcement Learning for Language Models",
+    "Training Socially Aligned Language Models on Simulated Social Interactions"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The model's ability to generate responses that are interesting, captivating, and likely to elicit further interaction from a user.",
+      "papers": [
+        "Leftover Lunch: Advantage-based Offline Reinforcement Learning for Language Models",
+        "Training Socially Aligned Language Models on Simulated Social Interactions",
+        "Evaluation and Facilitation of Online Discussions in the LLM Era: A Survey"
+      ],
+      "original_name": "Engagement"
+    },
+    {
+      "text": "The perceived quality of a model's conversational responses to be interesting, captivating, and hold a user's attention.",
+      "papers": [
+        "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework",
+        "SHARE: Shared Memory-Aware Open-Domain Long-Term Dialogue Dataset Constructed from Movie Script"
+      ],
+      "original_name": "Engagingness"
+    },
+    {
+      "text": "The model's capacity to actively involve the user in the dialogue, encouraging ongoing interaction and dynamic contribution to the conversation.",
+      "papers": [
+        "Crab: A Novel Configurable Role-Playing LLM with Assessing Benchmark"
+      ],
+      "original_name": "Interactive engagement"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework",
+      "evidence": "We use GPT-4o to evaluate Engagingness, Humanness, and Memorability. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most papers treat engagement, or engagingness, as a response or dialogue quality, whether phrased as outputs that are interesting, captivating, likely to elicit further interaction, or judged engaging in social interaction. A smaller line of work narrows this to interactive engagement, described as a text's ability to \"draw the user in\" and encourage ongoing, dynamic contribution to the dialogue. Another usage shifts the construct to the discussion level, defining engagement as interest plus participation, combining reciprocity, response diversity, and discussion length, so the main difference across papers is whether engagement is located in model responses or in broader user participation."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several near-neighbor names, especially engagement, engagingness, and interactive engagement, for overlapping but not identical ideas. Most of these variants still center on maintaining attention or interest, and long-term dialogue work further frames engagingness as the ability to maintain an annotator's interest over time, with shared memories described as making dialogues more engaging. One paper also places engagement alongside honesty, helpfulness, harmlessness, and unbiasedness as one fine-grained alignment perspective, while the discussion-oriented usage broadens it by explicitly combining interest with participation."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link engagement to one measurement instrument, LLM-as-a-judge, and no behavioral indicators. In the linked operationalization, an LLM judge, GPT-4o, evaluates Engagingness; other quoted passages describe observer agents rating engagement, a dialog engagement classifier, and a Reddit upvote probability ranking model. These operationalizations largely match definitions that treat engagement as something judged from responses, while the discussion-level definition instead points to metrics such as reciprocity, response diversity, and discussion length."
+    }
+  ],
+  "characterization": "Space of definitions. Most papers treat engagement, or engagingness, as a response or dialogue quality, whether phrased as outputs that are interesting, captivating, likely to elicit further interaction, or judged engaging in social interaction. A smaller line of work narrows this to interactive engagement, described as a text's ability to \"draw the user in\" and encourage ongoing, dynamic contribution to the dialogue. Another usage shifts the construct to the discussion level, defining engagement as interest plus participation, combining reciprocity, response diversity, and discussion length, so the main difference across papers is whether engagement is located in model responses or in broader user participation.\n\nSpace of facets. Papers use several near-neighbor names, especially engagement, engagingness, and interactive engagement, for overlapping but not identical ideas. Most of these variants still center on maintaining attention or interest, and long-term dialogue work further frames engagingness as the ability to maintain an annotator's interest over time, with shared memories described as making dialogues more engaging. One paper also places engagement alongside honesty, helpfulness, harmlessness, and unbiasedness as one fine-grained alignment perspective, while the discussion-oriented usage broadens it by explicitly combining interest with participation.\n\nSpace of measurement. Papers link engagement to one measurement instrument, LLM-as-a-judge, and no behavioral indicators. In the linked operationalization, an LLM judge, GPT-4o, evaluates Engagingness; other quoted passages describe observer agents rating engagement, a dialog engagement classifier, and a Reddit upvote probability ranking model. These operationalizations largely match definitions that treat engagement as something judged from responses, while the discussion-level definition instead points to metrics such as reciprocity, response diversity, and discussion length.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Crab: A Novel Configurable Role-Playing LLM with Assessing Benchmark",
+      "SHARE: Shared Memory-Aware Open-Domain Long-Term Dialogue Dataset Constructed from Movie Script"
+    ],
+    "emnlp25": [
+      "Evaluation and Facilitation of Online Discussions in the LLM Era: A Survey",
+      "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework"
+    ],
+    "iclr24": [
+      "Leftover Lunch: Advantage-based Offline Reinforcement Learning for Language Models",
+      "Training Socially Aligned Language Models on Simulated Social Interactions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2,
+    "iclr24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24"
+  ]
+}

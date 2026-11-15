@@ -1,0 +1,121 @@
+{
+  "canonical_name": "Strategic planning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the dominant framing treats strategic planning as a latent, long-horizon ability to choose, refine, and sequence actions toward a goal, often in complex decision spaces that require planning ahead, balancing exploration and exploitation, and using feedback or anticipated future outcomes. Several papers describe this broadly, from formulating long-term goals and sequences of actions to reasoning about opponent actions and navigating vast policy or prompt spaces. A smaller line of work narrows the construct to dialogue, where it is defined as guiding conversations through sequences of strategies, questions, or dialogue actions toward consensus, a target, or better information extraction, while another narrower framing casts it as selecting from a predefined set of dialogue strategies given conversational state, and one paper uses strategic thinking for deliberate choice among alternative reasoning paths under uncertainty.\n\nSpace of facets. Across papers, nearby labels include strategy planning, multi-turn planning, strategic thinking, and strategic dialogue planning, and they are used for related long-horizon sequencing abilities across decision making, dialogue, and reasoning. The recurring facets are goal formulation, plan generation, lookahead over future consequences or rewards, and adaptation across turns; dialogue papers further emphasize consensus seeking, target steering, rapport building, adaptive questioning, and persuasion. Some papers emphasize generating or refining action sequences, while the negotiation framing emphasizes selecting among predefined dialogue strategies, and one paper contrasts long-term strategic vision with fine-grained tactical maneuvers.\n\nSpace of measurement. No measurement instrument is linked to the construct, and no behavioral indicator is linked to it. Instead, papers describe it through task settings: prompt optimization as strategic navigation of prompt space with lookahead over future rewards and exploration versus exploitation, game decision making as long-term strategic vision alongside resource management, diplomacy, and warfare, and dialogue settings as deciding which questions or dialogue actions to take over multiple turns to cover topics, build rapport, persuade a source, reach consensus, or steer toward a target. The papers therefore describe it through these task settings rather than through a linked named measure.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Strategic planning",
+    "Strategy planning",
+    "Multi-turn planning",
+    "Strategic thinking",
+    "Strategic dialogue planning"
+  ],
+  "papers": [
+    "A Dual-Mind Framework for Strategic and Expressive Negotiation Agent",
+    "Battling against Tough Resister: Strategy Planning with Adversarial Game for Non-collaborative Dialogues",
+    "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews",
+    "Planning with Diffusion Models for Target-Oriented Dialogue Systems",
+    "CivRealm: A Learning and Reasoning Odyssey in Civilization for Decision-Making Agents",
+    "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+    "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+    "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+    "Strategist: Self-improvement of LLM Decision Making via Bi-Level Tree Search",
+    "LLMs Can Reason Faster Only If We Let Them"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "The latent ability of a system to navigate a complex decision space by balancing exploration and exploitation, simulating future outcomes, and refining actions based on feedback to achieve long-term goals.",
+      "papers": [
+        "CivRealm: A Learning and Reasoning Odyssey in Civilization for Decision-Making Agents",
+        "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+        "Strategist: Self-improvement of LLM Decision Making via Bi-Level Tree Search",
+        "A Dual-Mind Framework for Strategic and Expressive Negotiation Agent"
+      ],
+      "original_name": "Strategic planning"
+    },
+    {
+      "text": "The latent capability to devise and execute a series of actions or strategies to guide dialogue participants with conflicting interests towards a desired outcome or consensus.",
+      "papers": [
+        "Battling against Tough Resister: Strategy Planning with Adversarial Game for Non-collaborative Dialogues"
+      ],
+      "original_name": "Strategy planning"
+    },
+    {
+      "text": "The latent capacity of an LLM to structure a sequence of questions or actions over time to achieve a long-term objective, such as covering all interview topics or building rapport progressively.",
+      "papers": [
+        "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews"
+      ],
+      "original_name": "Multi-turn planning"
+    },
+    {
+      "text": "The latent ability of an LLM to plan and execute multi-turn dialogue with long-term goals, such as maximizing information extraction through adaptive questioning and persuasion.",
+      "papers": [
+        "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews",
+        "LLMs Can Reason Faster Only If We Let Them"
+      ],
+      "original_name": "Strategic thinking"
+    },
+    {
+      "text": "The ability to strategically generate a sequence of dialogue actions to guide a conversation toward a specific, long-horizon target.",
+      "papers": [
+        "Planning with Diffusion Models for Target-Oriented Dialogue Systems"
+      ],
+      "original_name": "Strategic dialogue planning"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the dominant framing treats strategic planning as a latent, long-horizon ability to choose, refine, and sequence actions toward a goal, often in complex decision spaces that require planning ahead, balancing exploration and exploitation, and using feedback or anticipated future outcomes. Several papers describe this broadly, from formulating long-term goals and sequences of actions to reasoning about opponent actions and navigating vast policy or prompt spaces. A smaller line of work narrows the construct to dialogue, where it is defined as guiding conversations through sequences of strategies, questions, or dialogue actions toward consensus, a target, or better information extraction, while another narrower framing casts it as selecting from a predefined set of dialogue strategies given conversational state, and one paper uses strategic thinking for deliberate choice among alternative reasoning paths under uncertainty."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Across papers, nearby labels include strategy planning, multi-turn planning, strategic thinking, and strategic dialogue planning, and they are used for related long-horizon sequencing abilities across decision making, dialogue, and reasoning. The recurring facets are goal formulation, plan generation, lookahead over future consequences or rewards, and adaptation across turns; dialogue papers further emphasize consensus seeking, target steering, rapport building, adaptive questioning, and persuasion. Some papers emphasize generating or refining action sequences, while the negotiation framing emphasizes selecting among predefined dialogue strategies, and one paper contrasts long-term strategic vision with fine-grained tactical maneuvers."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to the construct, and no behavioral indicator is linked to it. Instead, papers describe it through task settings: prompt optimization as strategic navigation of prompt space with lookahead over future rewards and exploration versus exploitation, game decision making as long-term strategic vision alongside resource management, diplomacy, and warfare, and dialogue settings as deciding which questions or dialogue actions to take over multiple turns to cover topics, build rapport, persuade a source, reach consensus, or steer toward a target. The papers therefore describe it through these task settings rather than through a linked named measure."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the dominant framing treats strategic planning as a latent, long-horizon ability to choose, refine, and sequence actions toward a goal, often in complex decision spaces that require planning ahead, balancing exploration and exploitation, and using feedback or anticipated future outcomes. Several papers describe this broadly, from formulating long-term goals and sequences of actions to reasoning about opponent actions and navigating vast policy or prompt spaces. A smaller line of work narrows the construct to dialogue, where it is defined as guiding conversations through sequences of strategies, questions, or dialogue actions toward consensus, a target, or better information extraction, while another narrower framing casts it as selecting from a predefined set of dialogue strategies given conversational state, and one paper uses strategic thinking for deliberate choice among alternative reasoning paths under uncertainty.\n\nSpace of facets. Across papers, nearby labels include strategy planning, multi-turn planning, strategic thinking, and strategic dialogue planning, and they are used for related long-horizon sequencing abilities across decision making, dialogue, and reasoning. The recurring facets are goal formulation, plan generation, lookahead over future consequences or rewards, and adaptation across turns; dialogue papers further emphasize consensus seeking, target steering, rapport building, adaptive questioning, and persuasion. Some papers emphasize generating or refining action sequences, while the negotiation framing emphasizes selecting among predefined dialogue strategies, and one paper contrasts long-term strategic vision with fine-grained tactical maneuvers.\n\nSpace of measurement. No measurement instrument is linked to the construct, and no behavioral indicator is linked to it. Instead, papers describe it through task settings: prompt optimization as strategic navigation of prompt space with lookahead over future rewards and exploration versus exploitation, game decision making as long-term strategic vision alongside resource management, diplomacy, and warfare, and dialogue settings as deciding which questions or dialogue actions to take over multiple turns to cover topics, build rapport, persuade a source, reach consensus, or steer toward a target. The papers therefore describe it through these task settings rather than through a linked named measure.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "A Dual-Mind Framework for Strategic and Expressive Negotiation Agent",
+      "Battling against Tough Resister: Strategy Planning with Adversarial Game for Non-collaborative Dialogues",
+      "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews",
+      "Planning with Diffusion Models for Target-Oriented Dialogue Systems"
+    ],
+    "iclr24": [
+      "CivRealm: A Learning and Reasoning Odyssey in Civilization for Decision-Making Agents",
+      "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization"
+    ],
+    "iclr25": [
+      "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+      "OpenHands: An Open Platform for AI Software Developers as Generalist Agents",
+      "Strategist: Self-improvement of LLM Decision Making via Bi-Level Tree Search"
+    ],
+    "icml25": [
+      "LLMs Can Reason Faster Only If We Let Them"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "iclr24": 2,
+    "iclr25": 3,
+    "icml25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

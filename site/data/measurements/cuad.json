@@ -1,0 +1,75 @@
+{
+  "canonical_name": "CUAD",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers describe CUAD as a specialized contract understanding dataset, specifically a corpus of commercial legal contracts used for evaluating automated contract review and provision extraction. One paper further describes it as consisting of 510 labelled documents across 25 contract types, and no versions or subsets are described.\n\nWhat it is claimed to measure. Papers use CUAD to measure contract understanding. It is linked to 1 construct, Contract understanding, and to no behavioral indicators, so the measurement claims reported here center on a single construct rather than being spread across multiple targets.\n\nSpace of uses. In the descriptions, CUAD is positioned as an evaluation dataset for automated contract review, provision extraction, and contract understanding. No measurement instrument is linked to it, so the evidence does not show it being used alongside other named benchmarks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CUAD"
+  ],
+  "papers": [
+    "MMDocIR: Benchmarking Multimodal Retrieval for Long Documents",
+    "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for Enhanced RAG on Long Industrial Documents",
+    "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The Contract Understanding Atticus Dataset (CUAD) is a corpus of commercial legal contracts used for evaluating automated contract review and provision extraction.",
+      "papers": [
+        "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements"
+      ],
+      "original_name": "CUAD"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Contract understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Position: Don\u2019t Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints",
+      "evidence": "For instance, CUAD (Hendrycks et al., 2021b) is a specialized contract understanding dataset that consists of 510 labelled documents across 25 contract types.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Don\u2019t Use the CLT in LLM Evals With Fewer Than a Few Hundred Datapoints"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers describe CUAD as a specialized contract understanding dataset, specifically a corpus of commercial legal contracts used for evaluating automated contract review and provision extraction. One paper further describes it as consisting of 510 labelled documents across 25 contract types, and no versions or subsets are described."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use CUAD to measure contract understanding. It is linked to 1 construct, Contract understanding, and to no behavioral indicators, so the measurement claims reported here center on a single construct rather than being spread across multiple targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In the descriptions, CUAD is positioned as an evaluation dataset for automated contract review, provision extraction, and contract understanding. No measurement instrument is linked to it, so the evidence does not show it being used alongside other named benchmarks."
+    }
+  ],
+  "characterization": "What it is. Papers describe CUAD as a specialized contract understanding dataset, specifically a corpus of commercial legal contracts used for evaluating automated contract review and provision extraction. One paper further describes it as consisting of 510 labelled documents across 25 contract types, and no versions or subsets are described.\n\nWhat it is claimed to measure. Papers use CUAD to measure contract understanding. It is linked to 1 construct, Contract understanding, and to no behavioral indicators, so the measurement claims reported here center on a single construct rather than being spread across multiple targets.\n\nSpace of uses. In the descriptions, CUAD is positioned as an evaluation dataset for automated contract review, provision extraction, and contract understanding. No measurement instrument is linked to it, so the evidence does not show it being used alongside other named benchmarks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "MMDocIR: Benchmarking Multimodal Retrieval for Long Documents",
+      "MultiDocFusion : Hierarchical and Multimodal Chunking Pipeline for Enhanced RAG on Long Industrial Documents",
+      "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

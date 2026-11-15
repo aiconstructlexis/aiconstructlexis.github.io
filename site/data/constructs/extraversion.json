@@ -1,0 +1,92 @@
+{
+  "canonical_name": "Extraversion",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats extraversion as a personality trait marked by sociability, assertiveness, and an outgoing, energetic orientation. Most definitions stay at that level, while a smaller framing presents it as a fundamental Big Five trait and adds excitement-seeking and positive emotions. The definitions largely agree on the trait framing, with variation mainly in the reference model, HEXACO or Big Five, and in whether extra facets beyond sociability and assertiveness are named.\n\nSpace of facets. The papers place it within broader personality models: one line lists Extraversion as one of the six HEXACO dimensions, while others list Extraversion or Extroversion as one of the five Big Five traits. Naming is not fully uniform, since both Extraversion and Extroversion appear, but the descriptions overlap around sociability and assertiveness.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. One paper mentions the IPIP-NEO-120 questionnaire as quantifying behavior patterns across five dimensions including Extraversion, but no measured_by relationship is recorded for this entity.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Extraversion",
+    "Extroversion"
+  ],
+  "papers": [
+    "BIG5-CHAT: Shaping LLM Personalities Through Training on Human-Grounded Data",
+    "Persona Dynamics: Unveiling the Impact of Persona Traits on Agents in Text-Based Games",
+    "Can LLM Agents Maintain a Persona in Discourse?",
+    "Chameleon LLMs: User Personas Influence Chatbot Personality Shifts",
+    "Exploring the Impact of Personality Traits on LLM Bias and Toxicity",
+    "From Personas to Talks: Revisiting the Impact of Personas on LLM-Synthesized Emotional Support Conversations",
+    "On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs",
+    "Neuron based Personality Trait Induction in Large Language Models",
+    "Personality Alignment of Large Language Models"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "A personality trait characterized by sociability, assertiveness, and a tendency to be outgoing and energetic.",
+      "papers": [
+        "From Personas to Talks: Revisiting the Impact of Personas on LLM-Synthesized Emotional Support Conversations",
+        "Personality Alignment of Large Language Models"
+      ],
+      "original_name": "Extraversion"
+    },
+    {
+      "text": "A fundamental personality trait from the Big Five model characterized by sociability, assertiveness, excitement-seeking, and positive emotions.",
+      "papers": [
+        "Neuron based Personality Trait Induction in Large Language Models"
+      ],
+      "original_name": "Extroversion"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats extraversion as a personality trait marked by sociability, assertiveness, and an outgoing, energetic orientation. Most definitions stay at that level, while a smaller framing presents it as a fundamental Big Five trait and adds excitement-seeking and positive emotions. The definitions largely agree on the trait framing, with variation mainly in the reference model, HEXACO or Big Five, and in whether extra facets beyond sociability and assertiveness are named."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers place it within broader personality models: one line lists Extraversion as one of the six HEXACO dimensions, while others list Extraversion or Extroversion as one of the five Big Five traits. Naming is not fully uniform, since both Extraversion and Extroversion appear, but the descriptions overlap around sociability and assertiveness."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. One paper mentions the IPIP-NEO-120 questionnaire as quantifying behavior patterns across five dimensions including Extraversion, but no measured_by relationship is recorded for this entity."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats extraversion as a personality trait marked by sociability, assertiveness, and an outgoing, energetic orientation. Most definitions stay at that level, while a smaller framing presents it as a fundamental Big Five trait and adds excitement-seeking and positive emotions. The definitions largely agree on the trait framing, with variation mainly in the reference model, HEXACO or Big Five, and in whether extra facets beyond sociability and assertiveness are named.\n\nSpace of facets. The papers place it within broader personality models: one line lists Extraversion as one of the six HEXACO dimensions, while others list Extraversion or Extroversion as one of the five Big Five traits. Naming is not fully uniform, since both Extraversion and Extroversion appear, but the descriptions overlap around sociability and assertiveness.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. One paper mentions the IPIP-NEO-120 questionnaire as quantifying behavior patterns across five dimensions including Extraversion, but no measured_by relationship is recorded for this entity.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "BIG5-CHAT: Shaping LLM Personalities Through Training on Human-Grounded Data",
+      "Persona Dynamics: Unveiling the Impact of Persona Traits on Agents in Text-Based Games"
+    ],
+    "emnlp25": [
+      "Can LLM Agents Maintain a Persona in Discourse?",
+      "Chameleon LLMs: User Personas Influence Chatbot Personality Shifts",
+      "Exploring the Impact of Personality Traits on LLM Bias and Toxicity",
+      "From Personas to Talks: Revisiting the Impact of Personas on LLM-Synthesized Emotional Support Conversations"
+    ],
+    "iclr24": [
+      "On the Humanity of Conversational AI: Evaluating the Psychological Portrayal of LLMs"
+    ],
+    "iclr25": [
+      "Neuron based Personality Trait Induction in Large Language Models",
+      "Personality Alignment of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 4,
+    "iclr24": 1,
+    "iclr25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

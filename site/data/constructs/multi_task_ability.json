@@ -1,0 +1,136 @@
+{
+  "canonical_name": "Multi-task ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Available definitions consistently treat multi-task ability as a model-level ability to perform multiple tasks effectively within a single model. The broad agreement is on cross-task performance, but the scope varies: one definition explicitly casts it as the latent ability of a merged model to retain task performance after specialist models are combined, while another uses the broader multi-task learning framing of performing well on multiple, distinct tasks simultaneously, often through shared knowledge between them. One study describes the merged-model version as creating models that \"effectively maintain multi-task capabilities.\"\n\nSpace of facets. Papers do not provide a richer subtype scheme, but they use nearby labels such as \"multi-task capability\" and \"multi-task learning\" for closely related usages. One usage is specific to model merging, where combining multiple models into one should enable the model to perform multiple tasks, while another places it on the seen-task side of a distinction between \"seen (i.e., multi-task learning) and unseen (i.e., zero-shot generalization) tasks.\"\n\nSpace of measurement. Operationalization is benchmark-based. Papers link the construct to two measurement instruments, Super-NaturalInstructions and SuperGLUE, described in one study as \"two publicly available multitasking benchmarks,\" and no behavioral indicators are linked. This keeps measurement at the level of performance across multiple tasks, which matches the shared emphasis in the definitions.\n\nLinks. A paper claims a causal relationship from task interference to multi-task ability, reporting that parameter interference between constituent models \"frequently induces performance degradation\" when model merging aims to preserve multi-task generalization capabilities.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-task capability",
+    "Multi-task learning",
+    "Multi-task ability"
+  ],
+  "papers": [
+    "Training-free LLM Merging for Multi-task Learning",
+    "Superpose Task-specific Features for Model Merging",
+    "PolyVoice: Language Models for Speech to Speech Translation",
+    "NeuroLM: A Universal Multi-task Foundation Model for Bridging the Gap between Language and EEG Signals",
+    "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+    "When is Task Vector Provably Effective for Model Editing? A Generalization Analysis of Nonlinear Transformers"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The latent ability of a merged model to retain and perform multiple tasks effectively after combining specialist models.",
+      "papers": [
+        "Superpose Task-specific Features for Model Merging"
+      ],
+      "original_name": "Multi-task capability"
+    },
+    {
+      "text": "The ability of a model to perform well on multiple, distinct tasks simultaneously, often by sharing knowledge between them.",
+      "papers": [
+        "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models"
+      ],
+      "original_name": "Multi-task learning"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Super-NaturalInstructions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning",
+      "evidence": "\u201cwe conducted experiments on two publicly available multitasking benchmarks: SuperGLUE (Wang et al., 2019) and Super Natural-Instructions (Super NI) (Wang et al., 2022).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SuperGLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning",
+      "evidence": "\u201cwe conducted experiments on two publicly available multitasking benchmarks: SuperGLUE (Wang et al., 2019) and Super Natural-Instructions (Super NI) (Wang et al., 2022).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task interference",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Whoever Started the interference Should End It: Guiding Data-Free Model Merging via Task Vectors",
+      "evidence": "Model merging seeks to integrate task-specific expert models into a unified architecture while preserving multi-task generalization capabilities, yet parameter interference between constituent models frequently induces performance degradation. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Whoever Started the interference Should End It: Guiding Data-Free Model Merging via Task Vectors"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Available definitions consistently treat multi-task ability as a model-level ability to perform multiple tasks effectively within a single model. The broad agreement is on cross-task performance, but the scope varies: one definition explicitly casts it as the latent ability of a merged model to retain task performance after specialist models are combined, while another uses the broader multi-task learning framing of performing well on multiple, distinct tasks simultaneously, often through shared knowledge between them. One study describes the merged-model version as creating models that \"effectively maintain multi-task capabilities.\""
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not provide a richer subtype scheme, but they use nearby labels such as \"multi-task capability\" and \"multi-task learning\" for closely related usages. One usage is specific to model merging, where combining multiple models into one should enable the model to perform multiple tasks, while another places it on the seen-task side of a distinction between \"seen (i.e., multi-task learning) and unseen (i.e., zero-shot generalization) tasks.\""
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is benchmark-based. Papers link the construct to two measurement instruments, Super-NaturalInstructions and SuperGLUE, described in one study as \"two publicly available multitasking benchmarks,\" and no behavioral indicators are linked. This keeps measurement at the level of performance across multiple tasks, which matches the shared emphasis in the definitions."
+    },
+    {
+      "label": "Links.",
+      "text": "A paper claims a causal relationship from task interference to multi-task ability, reporting that parameter interference between constituent models \"frequently induces performance degradation\" when model merging aims to preserve multi-task generalization capabilities."
+    }
+  ],
+  "characterization": "Space of definitions. Available definitions consistently treat multi-task ability as a model-level ability to perform multiple tasks effectively within a single model. The broad agreement is on cross-task performance, but the scope varies: one definition explicitly casts it as the latent ability of a merged model to retain task performance after specialist models are combined, while another uses the broader multi-task learning framing of performing well on multiple, distinct tasks simultaneously, often through shared knowledge between them. One study describes the merged-model version as creating models that \"effectively maintain multi-task capabilities.\"\n\nSpace of facets. Papers do not provide a richer subtype scheme, but they use nearby labels such as \"multi-task capability\" and \"multi-task learning\" for closely related usages. One usage is specific to model merging, where combining multiple models into one should enable the model to perform multiple tasks, while another places it on the seen-task side of a distinction between \"seen (i.e., multi-task learning) and unseen (i.e., zero-shot generalization) tasks.\"\n\nSpace of measurement. Operationalization is benchmark-based. Papers link the construct to two measurement instruments, Super-NaturalInstructions and SuperGLUE, described in one study as \"two publicly available multitasking benchmarks,\" and no behavioral indicators are linked. This keeps measurement at the level of performance across multiple tasks, which matches the shared emphasis in the definitions.\n\nLinks. A paper claims a causal relationship from task interference to multi-task ability, reporting that parameter interference between constituent models \"frequently induces performance degradation\" when model merging aims to preserve multi-task generalization capabilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Training-free LLM Merging for Multi-task Learning"
+    ],
+    "emnlp25": [
+      "Superpose Task-specific Features for Model Merging"
+    ],
+    "iclr24": [
+      "PolyVoice: Language Models for Speech to Speech Translation"
+    ],
+    "iclr25": [
+      "NeuroLM: A Universal Multi-task Foundation Model for Bridging the Gap between Language and EEG Signals",
+      "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+      "When is Task Vector Provably Effective for Model Editing? A Generalization Analysis of Nonlinear Transformers"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr24": 1,
+    "iclr25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

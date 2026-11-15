@@ -1,0 +1,116 @@
+{
+  "canonical_name": "De-identification",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, de-identification is treated as model-led text modification that removes identifying content from an input. A narrower healthcare framing describes it as automatically removing or replacing personally identifiable information, especially patient and sometimes provider information, to protect privacy, while a broader anonymization framing defines success as removing, obfuscating, or generalizing cues that could support inference about an author's attributes while maintaining the utility of the original text. As one paper states, an anonymizing LLM attempts to \"remove, obfuscate, or generalize cues used in the inference by adapting relevant parts of the text\" (Language Models are Advanced Anonymizers).\n\nVariants. Papers use distinct names and settings for closely related versions of this behavior. One line of work uses the name de-identification for healthcare NLP, focused on patient and sometimes provider information, while another uses text anonymization for adapting text so personal attributes cannot be inferred; this broader framing is also described within an LLM-based adversarial anonymization framework. One paper also relates de-identification to Paraphrasing by using pure text paraphrasing to baseline anonymizing effect.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Papers instead operationalize the behavior directly in task terms, as automated removal or replacement of personally identifiable information, or as modification of text to remove, obfuscate, or generalize inferential cues.\n\nWhat it is taken as evidence of. Across these papers, de-identification is related to Privacy preservation rather than linked to several different constructs. The linked formulation presents text anonymization as removing information that could lead to inference of pre-specified author attributes while maintaining the utility of the original text, and no other construct is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "De-identification",
+    "Text anonymization"
+  ],
+  "papers": [
+    "Robust Utility-Preserving Text Anonymization Based on Large Language Models",
+    "Not What the Doctor Ordered: Surveying LLM-based De-identification and Quantifying Clinical Information Loss",
+    "Language Models are Advanced Anonymizers",
+    "Learning Extrapolative Sequence Transformations from Markov Chains"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The task of processing text to automatically remove or replace personally identifiable information (PII) to protect patient privacy.",
+      "papers": [
+        "Not What the Doctor Ordered: Surveying LLM-based De-identification and Quantifying Clinical Information Loss"
+      ],
+      "original_name": "De-identification"
+    },
+    {
+      "text": "The observable process of a model modifying a text to remove, obfuscate, or generalize information that could be used to infer an author's personal attributes.",
+      "papers": [
+        "Language Models are Advanced Anonymizers"
+      ],
+      "original_name": "Text anonymization"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Paraphrasing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Language Models are Advanced Anonymizers",
+      "evidence": "Additionally, we make use of the state-of-the-Art 11B transformer-based paraphrasing model Dipper (Krishna et al., 2024) to baseline the anonymizing effect of pure text paraphrasing. (Sec. 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Language Models are Advanced Anonymizers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Privacy preservation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Language Models are Advanced Anonymizers",
+      "evidence": "\u201cthe goal of any text anonymization method is to remove all information that could lead to the inference of a set of pre-specified author attributes while maintaining the utility of the original text.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Language Models are Advanced Anonymizers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, de-identification is treated as model-led text modification that removes identifying content from an input. A narrower healthcare framing describes it as automatically removing or replacing personally identifiable information, especially patient and sometimes provider information, to protect privacy, while a broader anonymization framing defines success as removing, obfuscating, or generalizing cues that could support inference about an author's attributes while maintaining the utility of the original text. As one paper states, an anonymizing LLM attempts to \"remove, obfuscate, or generalize cues used in the inference by adapting relevant parts of the text\" (Language Models are Advanced Anonymizers)."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use distinct names and settings for closely related versions of this behavior. One line of work uses the name de-identification for healthcare NLP, focused on patient and sometimes provider information, while another uses text anonymization for adapting text so personal attributes cannot be inferred; this broader framing is also described within an LLM-based adversarial anonymization framework. One paper also relates de-identification to Paraphrasing by using pure text paraphrasing to baseline anonymizing effect."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Papers instead operationalize the behavior directly in task terms, as automated removal or replacement of personally identifiable information, or as modification of text to remove, obfuscate, or generalize inferential cues."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Across these papers, de-identification is related to Privacy preservation rather than linked to several different constructs. The linked formulation presents text anonymization as removing information that could lead to inference of pre-specified author attributes while maintaining the utility of the original text, and no other construct is linked to it."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, de-identification is treated as model-led text modification that removes identifying content from an input. A narrower healthcare framing describes it as automatically removing or replacing personally identifiable information, especially patient and sometimes provider information, to protect privacy, while a broader anonymization framing defines success as removing, obfuscating, or generalizing cues that could support inference about an author's attributes while maintaining the utility of the original text. As one paper states, an anonymizing LLM attempts to \"remove, obfuscate, or generalize cues used in the inference by adapting relevant parts of the text\" (Language Models are Advanced Anonymizers).\n\nVariants. Papers use distinct names and settings for closely related versions of this behavior. One line of work uses the name de-identification for healthcare NLP, focused on patient and sometimes provider information, while another uses text anonymization for adapting text so personal attributes cannot be inferred; this broader framing is also described within an LLM-based adversarial anonymization framework. One paper also relates de-identification to Paraphrasing by using pure text paraphrasing to baseline anonymizing effect.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Papers instead operationalize the behavior directly in task terms, as automated removal or replacement of personally identifiable information, or as modification of text to remove, obfuscate, or generalize inferential cues.\n\nWhat it is taken as evidence of. Across these papers, de-identification is related to Privacy preservation rather than linked to several different constructs. The linked formulation presents text anonymization as removing information that could lead to inference of pre-specified author attributes while maintaining the utility of the original text, and no other construct is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Robust Utility-Preserving Text Anonymization Based on Large Language Models"
+    ],
+    "emnlp25": [
+      "Not What the Doctor Ordered: Surveying LLM-based De-identification and Quantifying Clinical Information Loss"
+    ],
+    "iclr25": [
+      "Language Models are Advanced Anonymizers"
+    ],
+    "icml25": [
+      "Learning Extrapolative Sequence Transformations from Markov Chains"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

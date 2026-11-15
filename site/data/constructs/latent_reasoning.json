@@ -1,0 +1,64 @@
+{
+  "canonical_name": "Latent reasoning",
+  "type": "construct",
+  "canonical_definition": "The model's capacity to perform internal, non-verbalized cognitive processing in continuous latent space, distilling additional computation into its kv-cache to improve downstream performance.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Latent thinking"
+  ],
+  "papers": [
+    "Unveiling Internal Reasoning Modes in LLMs: A Deep Dive into Latent Reasoning vs. Factual Shortcuts with Attribute Rate Ratio",
+    "Deliberation in Latent Space via Differentiable Cache Augmentation"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "The model's capacity to perform internal, non-verbalized cognitive processing in continuous latent space, distilling additional computation into its kv-cache to improve downstream performance.",
+      "papers": [
+        "Deliberation in Latent Space via Differentiable Cache Augmentation"
+      ],
+      "original_name": "Latent thinking"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain of thought",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DART: Distilling Autoregressive Reasoning to Silent Thought",
+      "evidence": "DART (Distilling Autoregressive Reasoning to Silent Thought), a novel framework that enables the LLMs to internalize the autoregressive CoT into non-autoregressive Silent Thought (ST) with an excellent efficiency-efficacy trade-off. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "DART: Distilling Autoregressive Reasoning to Silent Thought"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The model's capacity to perform internal, non-verbalized cognitive processing in continuous latent space, distilling additional computation into its kv-cache to improve downstream performance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Unveiling Internal Reasoning Modes in LLMs: A Deep Dive into Latent Reasoning vs. Factual Shortcuts with Attribute Rate Ratio"
+    ],
+    "icml25": [
+      "Deliberation in Latent Space via Differentiable Cache Augmentation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

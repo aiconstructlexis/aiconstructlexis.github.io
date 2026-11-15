@@ -1,0 +1,174 @@
+{
+  "canonical_name": "OpenWebText",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, OpenWebText is most commonly described as a large-scale text corpus or dataset, often an open-source replication of the WebText dataset, used for pre-training and validating language models. Some authors make the content more specific, describing it as a large-scale English, web-scraped corpus, and size estimates differ slightly, with definitions giving approximately 8 billion or 9 billion tokens. A smaller line of work defines it by experimental role, as a source of prompts for sentence continuation or as a text generation dataset for open-ended language completion evaluation.\n\nWhat it is claimed to measure. Its recorded measurement links converge on one behavioral indicator: papers link it to 1 behavioral indicator, Text generation, and to no constructs. This aligns with definitions that describe it as evaluating open-ended language completion performance and with relationship evidence where papers report text generation experiments on OpenWebText or compare unconditional samples on OpenWebText.\n\nSpace of uses. Papers most often use OpenWebText as training data, especially for GPT-2 style pretraining, and some also use it for validation, including validation perplexity, or as the document source for empirical risk and bound evaluation. Other reported uses are as a prompt source for sentence continuation and as a task dataset for open-ended text completion. In the reported setups it appears alongside the Pile and WIKITEXT103, and one comparison contrasts models trained on WebText versus OpenWebText; no other measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "OpenWebText",
+    "Openwebtext",
+    "OPENWEBTEXT"
+  ],
+  "papers": [
+    "Amortizing intractable inference in large language models",
+    "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+    "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+    "Adam-mini: Use Fewer Learning Rates To Gain More",
+    "Block Diffusion: Interpolating Between Autoregressive and Diffusion Language Models",
+    "Discrete Copula Diffusion",
+    "Energy-Based Diffusion Language Models for Text Generation",
+    "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+    "Longhorn: State Space Models are Amortized Online Learners",
+    "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling",
+    "Mechanistic Permutability: Match Features Across Layers",
+    "Neural ODE Transformers: Analyzing Internal Dynamics and Adaptive Fine-tuning",
+    "SLoPe: Double-Pruned Sparse Plus Lazy Low-Rank Adapter Pretraining of LLMs",
+    "Straight to Zero: Why Linearly Decaying the Learning Rate to Zero Works Best for LLMs",
+    "Think while You Generate: Discrete Diffusion with Planned Denoising",
+    "Understanding Warmup-Stable-Decay Learning Rates: A River Valley Loss Landscape View",
+    "nGPT: Normalized Transformer with Representation Learning on the Hypersphere",
+    "Attention-Only Transformers via Unrolled Subspace Denoising",
+    "CLOVER: Cross-Layer Orthogonal Vectors Pruning",
+    "Generalized Interpolating Discrete Diffusion",
+    "Latent Thought Models with Variational Bayes Inference-Time Computation",
+    "MARS: Unleashing the Power of Variance Reduction for Training Large Models",
+    "MERIT: Maximum-normalized Element-wise Ratio for Language Model Large-batch Training",
+    "Mixture of Experts Made Intrinsically Interpretable",
+    "Residual Matrix Transformers: Scaling the Size of the Residual Stream",
+    "Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks",
+    "The Diffusion Duality",
+    "The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training",
+    "Tractable Transformers for Flexible Conditional Generation",
+    "TuCo: Measuring the Contribution of Fine-Tuning to Individual Responses of LLMs",
+    "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion",
+    "Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models"
+  ],
+  "paper_count": 32,
+  "definitions": [
+    {
+      "text": "A large-scale text dataset, created as an open-source replication of the WebText dataset, used for pre-training and validating language models.",
+      "papers": [
+        "Amortizing intractable inference in large language models",
+        "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+        "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+        "SLoPe: Double-Pruned Sparse Plus Lazy Low-Rank Adapter Pretraining of LLMs",
+        "Latent Thought Models with Variational Bayes Inference-Time Computation",
+        "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion",
+        "Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models"
+      ],
+      "original_name": "OpenWebText"
+    },
+    {
+      "text": "A large-scale English corpus used for training and validating GPT-2 series language models.",
+      "papers": [
+        "Adam-mini: Use Fewer Learning Rates To Gain More"
+      ],
+      "original_name": "Openwebtext"
+    },
+    {
+      "text": "A large-scale English text dataset, scraped from the web, commonly used for pre-training large language models.",
+      "papers": [
+        "Neural ODE Transformers: Analyzing Internal Dynamics and Adaptive Fine-tuning"
+      ],
+      "original_name": "OPENWEBTEXT"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Discrete Copula Diffusion",
+      "evidence": "We first compare the quality of unconditional samples generated by models trained on either WebText (Radford et al., 2019) or OpenWebText (Gokaslan & Cohen, 2019)... (Section 6.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discrete Copula Diffusion"
+        ],
+        "naacl25": [
+          "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, OpenWebText is most commonly described as a large-scale text corpus or dataset, often an open-source replication of the WebText dataset, used for pre-training and validating language models. Some authors make the content more specific, describing it as a large-scale English, web-scraped corpus, and size estimates differ slightly, with definitions giving approximately 8 billion or 9 billion tokens. A smaller line of work defines it by experimental role, as a source of prompts for sentence continuation or as a text generation dataset for open-ended language completion evaluation."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Its recorded measurement links converge on one behavioral indicator: papers link it to 1 behavioral indicator, Text generation, and to no constructs. This aligns with definitions that describe it as evaluating open-ended language completion performance and with relationship evidence where papers report text generation experiments on OpenWebText or compare unconditional samples on OpenWebText."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers most often use OpenWebText as training data, especially for GPT-2 style pretraining, and some also use it for validation, including validation perplexity, or as the document source for empirical risk and bound evaluation. Other reported uses are as a prompt source for sentence continuation and as a task dataset for open-ended text completion. In the reported setups it appears alongside the Pile and WIKITEXT103, and one comparison contrasts models trained on WebText versus OpenWebText; no other measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Across papers, OpenWebText is most commonly described as a large-scale text corpus or dataset, often an open-source replication of the WebText dataset, used for pre-training and validating language models. Some authors make the content more specific, describing it as a large-scale English, web-scraped corpus, and size estimates differ slightly, with definitions giving approximately 8 billion or 9 billion tokens. A smaller line of work defines it by experimental role, as a source of prompts for sentence continuation or as a text generation dataset for open-ended language completion evaluation.\n\nWhat it is claimed to measure. Its recorded measurement links converge on one behavioral indicator: papers link it to 1 behavioral indicator, Text generation, and to no constructs. This aligns with definitions that describe it as evaluating open-ended language completion performance and with relationship evidence where papers report text generation experiments on OpenWebText or compare unconditional samples on OpenWebText.\n\nSpace of uses. Papers most often use OpenWebText as training data, especially for GPT-2 style pretraining, and some also use it for validation, including validation perplexity, or as the document source for empirical risk and bound evaluation. Other reported uses are as a prompt source for sentence continuation and as a task dataset for open-ended text completion. In the reported setups it appears alongside the Pile and WIKITEXT103, and one comparison contrasts models trained on WebText versus OpenWebText; no other measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Amortizing intractable inference in large language models",
+      "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+      "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training"
+    ],
+    "iclr25": [
+      "Adam-mini: Use Fewer Learning Rates To Gain More",
+      "Block Diffusion: Interpolating Between Autoregressive and Diffusion Language Models",
+      "Discrete Copula Diffusion",
+      "Energy-Based Diffusion Language Models for Text Generation",
+      "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+      "Longhorn: State Space Models are Amortized Online Learners",
+      "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling",
+      "Mechanistic Permutability: Match Features Across Layers",
+      "Neural ODE Transformers: Analyzing Internal Dynamics and Adaptive Fine-tuning",
+      "SLoPe: Double-Pruned Sparse Plus Lazy Low-Rank Adapter Pretraining of LLMs",
+      "Straight to Zero: Why Linearly Decaying the Learning Rate to Zero Works Best for LLMs",
+      "Think while You Generate: Discrete Diffusion with Planned Denoising",
+      "Understanding Warmup-Stable-Decay Learning Rates: A River Valley Loss Landscape View",
+      "nGPT: Normalized Transformer with Representation Learning on the Hypersphere"
+    ],
+    "icml25": [
+      "Attention-Only Transformers via Unrolled Subspace Denoising",
+      "CLOVER: Cross-Layer Orthogonal Vectors Pruning",
+      "Generalized Interpolating Discrete Diffusion",
+      "Latent Thought Models with Variational Bayes Inference-Time Computation",
+      "MARS: Unleashing the Power of Variance Reduction for Training Large Models",
+      "MERIT: Maximum-normalized Element-wise Ratio for Language Model Large-batch Training",
+      "Mixture of Experts Made Intrinsically Interpretable",
+      "Residual Matrix Transformers: Scaling the Size of the Residual Stream",
+      "Sparse Spectral Training and Inference on Euclidean and Hyperbolic Neural Networks",
+      "The Diffusion Duality",
+      "The Sharpness Disparity Principle in Transformers for Accelerating Language Model Pre-Training",
+      "Tractable Transformers for Flexible Conditional Generation",
+      "TuCo: Measuring the Contribution of Fine-Tuning to Individual Responses of LLMs"
+    ],
+    "naacl25": [
+      "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion"
+    ],
+    "neurips24": [
+      "Unlocking Tokens as Data Points for Generalization Bounds on Larger Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 14,
+    "icml25": 13,
+    "naacl25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

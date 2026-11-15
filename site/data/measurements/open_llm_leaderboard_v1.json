@@ -1,0 +1,102 @@
+{
+  "canonical_name": "Open LLM Leaderboard V1",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the definitions, the prevailing framing is of a public leaderboard and benchmark suite for open-source large language models. One paper describes v1 as evaluating and ranking models with publicly available weights, while another specifies that it covers MMLU, ARC-Challenge, GSM8K, HellaSwag, Winogrande, and TruthfulQA, using both log-likelihood and text-generation evaluations.\n\nWhat it is claimed to measure. Papers describe it as assessing question-answering and reasoning tasks, and the task-level descriptions attached to the suite mention grade school math, world knowledge and reasoning, language understanding, and factual correctness. No named constructs or behavioral indicators are linked to it in the recorded relationships.\n\nSpace of uses. Papers use it as a public, and in one description popular, leaderboard that evaluates and ranks models with publicly available weights. Among the recorded instrument links, it is related to GSM8K and MMLU, and one paper states that these benchmarks are included in it; the suite definition also places it alongside ARC-Challenge, HellaSwag, Winogrande, and TruthfulQA.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Open LLM Leaderboard V1",
+    "Hugging Face Open LLM Leaderboard v1"
+  ],
+  "papers": [
+    "Mapping 1,000+ Language Models via the Log-Likelihood Vector",
+    "\u201cGive Me BF16 or Give Me Death\u201d? Accuracy-Performance Trade-Offs in LLM Quantization",
+    "Training on the Test Task Confounds Evaluation and Emergence"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Benchmark suite assessing question-answering and reasoning tasks including MMLU, ARC-Challenge, GSM8k, HellaSwag, Winogrande, and TruthfulQA, using both log-likelihood and text-generation evaluations.",
+      "papers": [
+        "\u201cGive Me BF16 or Give Me Death\u201d? Accuracy-Performance Trade-Offs in LLM Quantization"
+      ],
+      "original_name": "Open LLM Leaderboard V1"
+    },
+    {
+      "text": "A public leaderboard that evaluates and ranks open-source large language models on a suite of benchmarks.",
+      "papers": [
+        "Training on the Test Task Confounds Evaluation and Emergence"
+      ],
+      "original_name": "Hugging Face Open LLM Leaderboard v1"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Training on the Test Task Confounds Evaluation and Emergence",
+      "evidence": "\u201cThese two benchmarks are arguably the most influential of the 2022-2024 period under study. They are also included in the Hugging-Face (HF) Open LLM Leaderboard v1\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Training on the Test Task Confounds Evaluation and Emergence"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Training on the Test Task Confounds Evaluation and Emergence",
+      "evidence": "\u201cThese two benchmarks are arguably the most influential of the 2022-2024 period under study. They are also included in the Hugging-Face (HF) Open LLM Leaderboard v1\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Training on the Test Task Confounds Evaluation and Emergence"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the definitions, the prevailing framing is of a public leaderboard and benchmark suite for open-source large language models. One paper describes v1 as evaluating and ranking models with publicly available weights, while another specifies that it covers MMLU, ARC-Challenge, GSM8K, HellaSwag, Winogrande, and TruthfulQA, using both log-likelihood and text-generation evaluations."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers describe it as assessing question-answering and reasoning tasks, and the task-level descriptions attached to the suite mention grade school math, world knowledge and reasoning, language understanding, and factual correctness. No named constructs or behavioral indicators are linked to it in the recorded relationships."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use it as a public, and in one description popular, leaderboard that evaluates and ranks models with publicly available weights. Among the recorded instrument links, it is related to GSM8K and MMLU, and one paper states that these benchmarks are included in it; the suite definition also places it alongside ARC-Challenge, HellaSwag, Winogrande, and TruthfulQA."
+    }
+  ],
+  "characterization": "What it is. Across the definitions, the prevailing framing is of a public leaderboard and benchmark suite for open-source large language models. One paper describes v1 as evaluating and ranking models with publicly available weights, while another specifies that it covers MMLU, ARC-Challenge, GSM8K, HellaSwag, Winogrande, and TruthfulQA, using both log-likelihood and text-generation evaluations.\n\nWhat it is claimed to measure. Papers describe it as assessing question-answering and reasoning tasks, and the task-level descriptions attached to the suite mention grade school math, world knowledge and reasoning, language understanding, and factual correctness. No named constructs or behavioral indicators are linked to it in the recorded relationships.\n\nSpace of uses. Papers use it as a public, and in one description popular, leaderboard that evaluates and ranks models with publicly available weights. Among the recorded instrument links, it is related to GSM8K and MMLU, and one paper states that these benchmarks are included in it; the suite definition also places it alongside ARC-Challenge, HellaSwag, Winogrande, and TruthfulQA.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Mapping 1,000+ Language Models via the Log-Likelihood Vector",
+      "\u201cGive Me BF16 or Give Me Death\u201d? Accuracy-Performance Trade-Offs in LLM Quantization"
+    ],
+    "iclr25": [
+      "Training on the Test Task Confounds Evaluation and Emergence"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "canonical_name": "Task planning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing framing treats task planning as decomposing a high-level goal or natural-language instruction into a sequence of executable actions, skills, or steps, usually at mid-level or low-level granularity. A smaller line of work describes it as formulating and refining action sequences in an interactive environment, or as close-loop planning that updates the plan from real-time observations while pursuing a goal. A separate position paper uses the nearby label problem decomposition for a latent ability of a system design to break complex tasks into independently solvable subproblems, explicitly tying that ability to asymptotic improvements in computational cost.\n\nSpace of facets. Papers mainly differentiate the construct by plan granularity and planning mode. Some describe sequences of mid-level actions or skills, others use low-level skills or steps, and one paper singles out close-loop task planning as generating a plan while adapting it to observations. The neighboring terms task decomposition, request decomposition, and problem decomposition appear as related decomposition stages or abilities, and no other constructs are linked to task planning.\n\nSpace of measurement. The linked measurement space is narrow: papers connect task planning to 2 measurement instruments, RestBench and TaskBench, and both are benchmarks. In this benchmark-based operationalization, task planning is instantiated through performance on benchmark task suites, including HuggingFace, Multimedia, and Daily Life API tasks from TaskBench and TMDB API tasks from RestBench. Papers also link it to 1 behavioral indicator, Task decomposition, but that connection is recorded as a related behavior rather than as a measurement instrument.\n\nLinks. No causal or correlational relationships are claimed. One paper reports that Task decomposition is related to Task planning, describing an LLM-based planning setup in which request decomposition comes first, breaking an ambiguous user request into concrete steps.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Task planning",
+    "Problem decomposition"
+  ],
+  "papers": [
+    "Divide-Then-Aggregate: An Efficient Tool Learning Method via Parallel Tool Invocation",
+    "Emma-X: An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning",
+    "GRAT: Guiding Retrieval-Augmented Reasoning through Process Rewards Tree Search",
+    "OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis",
+    "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+    "Tree-Planner: Efficient Close-loop Task Planning with Large Language Models",
+    "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+    "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+    "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+    "Position: Scaling LLM Agents Requires Asymptotic Analysis with LLM Primitives"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "The ability to decompose a high-level goal into a sequence of executable mid-level actions or skills.",
+      "papers": [
+        "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+        "Tree-Planner: Efficient Close-loop Task Planning with Large Language Models",
+        "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+        "OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis"
+      ],
+      "original_name": "Task planning"
+    },
+    {
+      "text": "The latent ability of a system design to break down complex tasks into smaller, independently solvable subproblems, enabling asymptotic improvements in computational cost.",
+      "papers": [
+        "Position: Scaling LLM Agents Requires Asymptotic Analysis with LLM Primitives"
+      ],
+      "original_name": "Problem decomposition"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Can Graph Learning Improve Planning in LLM-based Agents?",
+      "evidence": "The current solution of task planning is purely based on LLMs and involves two stages [45, 46]. The first stage involves request decomposition, where a user\u2019s ambiguous request is broken down into concrete steps via LLMs. (Section 2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Can Graph Learning Improve Planning in LLM-based Agents?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TaskBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Can Graph Learning Improve Planning in LLM-based Agents?",
+      "evidence": "We utilize four datasets across two task planning benchmarks: HuggingFace tasks, Multimedia tasks, and Daily Life API tasks from TaskBench [45], as well as TMDB API tasks from RestBench [50]. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Can Graph Learning Improve Planning in LLM-based Agents?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RestBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Can Graph Learning Improve Planning in LLM-based Agents?",
+      "evidence": "We utilize four datasets across two task planning benchmarks: HuggingFace tasks, Multimedia tasks, and Daily Life API tasks from TaskBench [45], as well as TMDB API tasks from RestBench [50]. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Can Graph Learning Improve Planning in LLM-based Agents?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing framing treats task planning as decomposing a high-level goal or natural-language instruction into a sequence of executable actions, skills, or steps, usually at mid-level or low-level granularity. A smaller line of work describes it as formulating and refining action sequences in an interactive environment, or as close-loop planning that updates the plan from real-time observations while pursuing a goal. A separate position paper uses the nearby label problem decomposition for a latent ability of a system design to break complex tasks into independently solvable subproblems, explicitly tying that ability to asymptotic improvements in computational cost."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers mainly differentiate the construct by plan granularity and planning mode. Some describe sequences of mid-level actions or skills, others use low-level skills or steps, and one paper singles out close-loop task planning as generating a plan while adapting it to observations. The neighboring terms task decomposition, request decomposition, and problem decomposition appear as related decomposition stages or abilities, and no other constructs are linked to task planning."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "The linked measurement space is narrow: papers connect task planning to 2 measurement instruments, RestBench and TaskBench, and both are benchmarks. In this benchmark-based operationalization, task planning is instantiated through performance on benchmark task suites, including HuggingFace, Multimedia, and Daily Life API tasks from TaskBench and TMDB API tasks from RestBench. Papers also link it to 1 behavioral indicator, Task decomposition, but that connection is recorded as a related behavior rather than as a measurement instrument."
+    },
+    {
+      "label": "Links.",
+      "text": "No causal or correlational relationships are claimed. One paper reports that Task decomposition is related to Task planning, describing an LLM-based planning setup in which request decomposition comes first, breaking an ambiguous user request into concrete steps."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing framing treats task planning as decomposing a high-level goal or natural-language instruction into a sequence of executable actions, skills, or steps, usually at mid-level or low-level granularity. A smaller line of work describes it as formulating and refining action sequences in an interactive environment, or as close-loop planning that updates the plan from real-time observations while pursuing a goal. A separate position paper uses the nearby label problem decomposition for a latent ability of a system design to break complex tasks into independently solvable subproblems, explicitly tying that ability to asymptotic improvements in computational cost.\n\nSpace of facets. Papers mainly differentiate the construct by plan granularity and planning mode. Some describe sequences of mid-level actions or skills, others use low-level skills or steps, and one paper singles out close-loop task planning as generating a plan while adapting it to observations. The neighboring terms task decomposition, request decomposition, and problem decomposition appear as related decomposition stages or abilities, and no other constructs are linked to task planning.\n\nSpace of measurement. The linked measurement space is narrow: papers connect task planning to 2 measurement instruments, RestBench and TaskBench, and both are benchmarks. In this benchmark-based operationalization, task planning is instantiated through performance on benchmark task suites, including HuggingFace, Multimedia, and Daily Life API tasks from TaskBench and TMDB API tasks from RestBench. Papers also link it to 1 behavioral indicator, Task decomposition, but that connection is recorded as a related behavior rather than as a measurement instrument.\n\nLinks. No causal or correlational relationships are claimed. One paper reports that Task decomposition is related to Task planning, describing an LLM-based planning setup in which request decomposition comes first, breaking an ambiguous user request into concrete steps.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Divide-Then-Aggregate: An Efficient Tool Learning Method via Parallel Tool Invocation",
+      "Emma-X: An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning",
+      "GRAT: Guiding Retrieval-Augmented Reasoning through Process Rewards Tree Search",
+      "OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis"
+    ],
+    "iclr24": [
+      "LoTa-Bench: Benchmarking Language-oriented Task Planners for Embodied Agents",
+      "Tree-Planner: Efficient Close-loop Task Planning with Large Language Models"
+    ],
+    "iclr25": [
+      "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+      "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+      "Scaling Autonomous Agents via Automatic Reward Modeling And Planning"
+    ],
+    "icml25": [
+      "Position: Scaling LLM Agents Requires Asymptotic Analysis with LLM Primitives"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "iclr24": 2,
+    "iclr25": 3,
+    "icml25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "canonical_name": "Interactive segmentation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. The reported definition treats interactive segmentation as segmenting objects in an image while actively incorporating user inputs. In the accompanying quoted passage, the task is described as separating objects by actively integrating user inputs, with points, boxes, and scribbles given as the concrete examples of such guidance.\n\nVariants. The described setting is image-based object segmentation. The only explicit variants mentioned are different forms of user guidance: points, boxes, and scribbles.\n\nSpace of elicitation and scores. Papers do not link it to any measurement instrument.\n\nWhat it is taken as evidence of. Papers do not link it to any construct as evidence of that construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Interactive segmentation"
+  ],
+  "papers": [
+    "Interfacing Foundation Models' Embeddings",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The task of segmenting objects in an image by actively incorporating user inputs such as points, boxes, or scribbles.",
+      "papers": [
+        "Interfacing Foundation Models' Embeddings"
+      ],
+      "original_name": "Interactive segmentation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The reported definition treats interactive segmentation as segmenting objects in an image while actively incorporating user inputs. In the accompanying quoted passage, the task is described as separating objects by actively integrating user inputs, with points, boxes, and scribbles given as the concrete examples of such guidance."
+    },
+    {
+      "label": "Variants.",
+      "text": "The described setting is image-based object segmentation. The only explicit variants mentioned are different forms of user guidance: points, boxes, and scribbles."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers do not link it to any measurement instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not link it to any construct as evidence of that construct."
+    }
+  ],
+  "characterization": "Space of definitions. The reported definition treats interactive segmentation as segmenting objects in an image while actively incorporating user inputs. In the accompanying quoted passage, the task is described as separating objects by actively integrating user inputs, with points, boxes, and scribbles given as the concrete examples of such guidance.\n\nVariants. The described setting is image-based object segmentation. The only explicit variants mentioned are different forms of user guidance: points, boxes, and scribbles.\n\nSpace of elicitation and scores. Papers do not link it to any measurement instrument.\n\nWhat it is taken as evidence of. Papers do not link it to any construct as evidence of that construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Interfacing Foundation Models' Embeddings",
+      "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "canonical_name": "ANLI",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, the prevailing usage treats ANLI as Adversarial Natural Language Inference, a benchmark or dataset for natural language inference, often described as large scale and collected through an iterative, adversarial human-and-model-in-the-loop process. Several definitions stress that it was created to be challenging, with one describing the primary aim as making state-of-the-art models fail, and another framing it as a textual entailment task for natural language understanding and reasoning. Some authors also describe open-domain questions enhanced through an iterative adversarial procedure and report using its challenging subsets for evaluation. A table caption in one paper uses ANLI as a label alongside adversarial attacks, but most definitions describe a benchmark dataset.\n\nWhat it is claimed to measure. Papers use ANLI mainly to measure Natural language inference: it is linked to one behavioral indicator, Natural language inference, and the relationship is recorded as measured_by. A smaller line of work uses it to measure Commonsense reasoning, where it is linked to one construct with a measured_by relationship. The recorded claims are therefore concentrated rather than spread across many targets, with one paper saying that MNLI and ANLI benchmark a model's understanding of entailment, contradiction, and neutrality across genres and adversarially selected examples, while another includes ANLI among datasets used for commonsense reasoning.\n\nSpace of uses. Papers often place ANLI in broader evaluation suites. It appears alongside GLUE, SQuADv1.1, SuperGLUE, and MNLI, and one study explicitly groups it with other classification benchmarks. Some authors use its challenging subsets for open-domain evaluation, and another pairs it with another NLI dataset for natural language inference evaluation.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ANLI"
+  ],
+  "papers": [
+    "A Systematic Analysis of Base Model Choice for Reward Modeling",
+    "Learning from Diverse Reasoning Paths with Routing and Collaboration",
+    "Not-Just-Scaling Laws: Towards a Better Understanding of the Downstream Impact of Language Model Design Decisions",
+    "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+    "SUE: Sparsity-based Uncertainty Estimation via Sparse Dictionary Learning",
+    "Transitive self-consistency evaluation of NLI models without gold labels",
+    "Language Model Cascades: Token-Level Uncertainty And Beyond",
+    "LoftQ: LoRA-Fine-Tuning-aware Quantization for Large Language Models",
+    "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models",
+    "Lost in Inference: Rediscovering the Role of Natural Language Inference for Large Language Models",
+    "Reverse Thinking Makes LLMs Stronger Reasoners",
+    "Achieving Domain-Independent Certified Robustness via Knowledge Continuity",
+    "AutoPSV: Automated Process-Supervised Verifier"
+  ],
+  "paper_count": 13,
+  "definitions": [
+    {
+      "text": "Adversarial Natural Language Inference, included as a classification benchmark in the expanded evaluation set.",
+      "papers": [
+        "Language Model Cascades: Token-Level Uncertainty And Beyond",
+        "LoftQ: LoRA-Fine-Tuning-aware Quantization for Large Language Models",
+        "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models",
+        "Lost in Inference: Rediscovering the Role of Natural Language Inference for Large Language Models",
+        "Reverse Thinking Makes LLMs Stronger Reasoners",
+        "A Systematic Analysis of Base Model Choice for Reward Modeling",
+        "Achieving Domain-Independent Certified Robustness via Knowledge Continuity",
+        "AutoPSV: Automated Process-Supervised Verifier"
+      ],
+      "original_name": "ANLI"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language inference",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption",
+      "evidence": "MNLI (Multi-Genre Natural Language Inference) and ANLI (Adversarial Natural Language Inference) benchmark a models understanding of entailment, contradiction, and neutrality across genres and adversarially selected examples.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption"
+        ],
+        "emnlp25": [
+          "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AutoPSV: Automated Process-Supervised Verifier",
+      "evidence": "For commonsense reasoning, we use ... ANLI [39], a dataset for natural language understanding and reasoning. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoPSV: Automated Process-Supervised Verifier"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, the prevailing usage treats ANLI as Adversarial Natural Language Inference, a benchmark or dataset for natural language inference, often described as large scale and collected through an iterative, adversarial human-and-model-in-the-loop process. Several definitions stress that it was created to be challenging, with one describing the primary aim as making state-of-the-art models fail, and another framing it as a textual entailment task for natural language understanding and reasoning. Some authors also describe open-domain questions enhanced through an iterative adversarial procedure and report using its challenging subsets for evaluation. A table caption in one paper uses ANLI as a label alongside adversarial attacks, but most definitions describe a benchmark dataset."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use ANLI mainly to measure Natural language inference: it is linked to one behavioral indicator, Natural language inference, and the relationship is recorded as measured_by. A smaller line of work uses it to measure Commonsense reasoning, where it is linked to one construct with a measured_by relationship. The recorded claims are therefore concentrated rather than spread across many targets, with one paper saying that MNLI and ANLI benchmark a model's understanding of entailment, contradiction, and neutrality across genres and adversarially selected examples, while another includes ANLI among datasets used for commonsense reasoning."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers often place ANLI in broader evaluation suites. It appears alongside GLUE, SQuADv1.1, SuperGLUE, and MNLI, and one study explicitly groups it with other classification benchmarks. Some authors use its challenging subsets for open-domain evaluation, and another pairs it with another NLI dataset for natural language inference evaluation."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, the prevailing usage treats ANLI as Adversarial Natural Language Inference, a benchmark or dataset for natural language inference, often described as large scale and collected through an iterative, adversarial human-and-model-in-the-loop process. Several definitions stress that it was created to be challenging, with one describing the primary aim as making state-of-the-art models fail, and another framing it as a textual entailment task for natural language understanding and reasoning. Some authors also describe open-domain questions enhanced through an iterative adversarial procedure and report using its challenging subsets for evaluation. A table caption in one paper uses ANLI as a label alongside adversarial attacks, but most definitions describe a benchmark dataset.\n\nWhat it is claimed to measure. Papers use ANLI mainly to measure Natural language inference: it is linked to one behavioral indicator, Natural language inference, and the relationship is recorded as measured_by. A smaller line of work uses it to measure Commonsense reasoning, where it is linked to one construct with a measured_by relationship. The recorded claims are therefore concentrated rather than spread across many targets, with one paper saying that MNLI and ANLI benchmark a model's understanding of entailment, contradiction, and neutrality across genres and adversarially selected examples, while another includes ANLI among datasets used for commonsense reasoning.\n\nSpace of uses. Papers often place ANLI in broader evaluation suites. It appears alongside GLUE, SQuADv1.1, SuperGLUE, and MNLI, and one study explicitly groups it with other classification benchmarks. Some authors use its challenging subsets for open-domain evaluation, and another pairs it with another NLI dataset for natural language inference evaluation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "A Systematic Analysis of Base Model Choice for Reward Modeling",
+      "Learning from Diverse Reasoning Paths with Routing and Collaboration",
+      "Not-Just-Scaling Laws: Towards a Better Understanding of the Downstream Impact of Language Model Design Decisions",
+      "QCRD: Quality-guided Contrastive Rationale Distillation for Large Language Models",
+      "SUE: Sparsity-based Uncertainty Estimation via Sparse Dictionary Learning",
+      "Transitive self-consistency evaluation of NLI models without gold labels"
+    ],
+    "iclr24": [
+      "Language Model Cascades: Token-Level Uncertainty And Beyond",
+      "LoftQ: LoRA-Fine-Tuning-aware Quantization for Large Language Models"
+    ],
+    "naacl25": [
+      "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models",
+      "Lost in Inference: Rediscovering the Role of Natural Language Inference for Large Language Models",
+      "Reverse Thinking Makes LLMs Stronger Reasoners"
+    ],
+    "neurips24": [
+      "Achieving Domain-Independent Certified Robustness via Knowledge Continuity",
+      "AutoPSV: Automated Process-Supervised Verifier"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 6,
+    "iclr24": 2,
+    "naacl25": 3,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "naacl25",
+    "neurips24"
+  ]
+}

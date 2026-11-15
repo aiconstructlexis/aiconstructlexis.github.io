@@ -1,0 +1,78 @@
+{
+  "canonical_name": "Web search",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats web search as invoking a search tool, search engine, or search API with a generated or structured query to retrieve web information for answering a user query. A common formulation is retrieving a list of webpages from a live search engine, while one paper describes a fuller sequence in which the model formulates structured search queries, sends them through web search APIs, then \"fetch[es] complete web pages, primarily the HTML content,\" extracts relevant text, and synthesizes an answer. Papers also describe it as web browsing used to answer a question.\n\nVariants. Papers study several nearby forms of this behavior. Alongside the label \"Web search,\" some authors use \"Web content retrieval\"; examples include general question answering, \"complicated web browsing\" to answer a question, searching for time-sensitive or source-specific information, and site-specific searches such as Google search or looking on BBC Good Food for recipes and ingredient lists.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers describe the behavior procedurally through explicit tool use, such as generating a JSON-formatted request with the tool name web_search or sending structured queries to search engines via APIs.\n\nWhat it is taken as evidence of. No construct is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Web search",
+    "Web content retrieval"
+  ],
+  "papers": [
+    "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+    "EvolveSearch: An Iterative Self-Evolving Search Agent",
+    "Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models",
+    "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The action of invoking a search tool with a generated query to retrieve a list of webpages from a live search engine.",
+      "papers": [
+        "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+        "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage"
+      ],
+      "original_name": "Web search"
+    },
+    {
+      "text": "Observable behavior in which the LLM uses search APIs to retrieve and process HTML content from webpages relevant to a user query for response generation.",
+      "papers": [
+        "Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models"
+      ],
+      "original_name": "Web content retrieval"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats web search as invoking a search tool, search engine, or search API with a generated or structured query to retrieve web information for answering a user query. A common formulation is retrieving a list of webpages from a live search engine, while one paper describes a fuller sequence in which the model formulates structured search queries, sends them through web search APIs, then \"fetch[es] complete web pages, primarily the HTML content,\" extracts relevant text, and synthesizes an answer. Papers also describe it as web browsing used to answer a question."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study several nearby forms of this behavior. Alongside the label \"Web search,\" some authors use \"Web content retrieval\"; examples include general question answering, \"complicated web browsing\" to answer a question, searching for time-sensitive or source-specific information, and site-specific searches such as Google search or looking on BBC Good Food for recipes and ingredient lists."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Instead, papers describe the behavior procedurally through explicit tool use, such as generating a JSON-formatted request with the tool name web_search or sending structured queries to search engines via APIs."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats web search as invoking a search tool, search engine, or search API with a generated or structured query to retrieve web information for answering a user query. A common formulation is retrieving a list of webpages from a live search engine, while one paper describes a fuller sequence in which the model formulates structured search queries, sends them through web search APIs, then \"fetch[es] complete web pages, primarily the HTML content,\" extracts relevant text, and synthesizes an answer. Papers also describe it as web browsing used to answer a question.\n\nVariants. Papers study several nearby forms of this behavior. Alongside the label \"Web search,\" some authors use \"Web content retrieval\"; examples include general question answering, \"complicated web browsing\" to answer a question, searching for time-sensitive or source-specific information, and site-specific searches such as Google search or looking on BBC Good Food for recipes and ingredient lists.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers describe the behavior procedurally through explicit tool use, such as generating a JSON-formatted request with the tool name web_search or sending structured queries to search engines via APIs.\n\nWhat it is taken as evidence of. No construct is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+      "EvolveSearch: An Iterative Self-Evolving Search Agent",
+      "Web Intellectual Property at Risk: Preventing Unauthorized Real-Time Retrieval by Large Language Models"
+    ],
+    "iclr25": [
+      "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

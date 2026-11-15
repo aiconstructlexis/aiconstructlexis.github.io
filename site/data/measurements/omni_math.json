@@ -1,0 +1,170 @@
+{
+  "canonical_name": "Omni-MATH",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most papers describe Omni-MATH as a mathematics or mathematical reasoning benchmark with diverse topics and a broad range of difficulty, often emphasizing Olympiad-level or olympiad-style problems. A smaller line of work frames it more specifically as a benchmark focused on mathematical olympiad challenges. Some evaluation setups use sampled versions of the benchmark, including Omni-MATH-500 or a random subset of the full dataset, for efficient assessment.\n\nWhat it is claimed to measure. Across papers, Omni-MATH is linked to two constructs and one behavioral indicator. The prevailing usage is to measure mathematical reasoning, with several papers evaluating models on Omni-MATH as a math reasoning benchmark. A smaller line of work reports it as measuring complex reasoning and problem solving capability, so the measurement claims are concentrated on mathematical reasoning rather than spread widely across many targets.\n\nSpace of uses. Papers commonly use Omni-MATH alongside GSM8K, MATH, AIME, OlympiadBench, and GPQA in broader reasoning evaluations. It is usually positioned as one benchmark within multi-benchmark suites, often as a challenging or Olympiad-level component; some papers use sampled subsets for efficient yet comprehensive assessment, and one paper uses OmniMATH-derived data as a ProcessBench subset for step-wise error detection on reasoning traces.\n\nConcerns raised. The recurring concern papers mention is the computational demand of evaluating the full benchmark. In response, some authors report randomly sampling questions or using Omni-MATH-500 to maintain efficiency.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Omni-MATH",
+    "Omini-MATH",
+    "OmniMath",
+    "Omni-Math"
+  ],
+  "papers": [
+    "FastMCTS: A Simple Sampling Strategy for Data Synthesis",
+    "Revisiting the Test-Time Scaling of o1-like Models: Do they Truly Possess Test-Time Scaling Capabilities?",
+    "TreeRL: LLM Reinforcement Learning with On-Policy Tree Search",
+    "Dyve: Thinking Fast and Slow for Dynamic Process Verification",
+    "Examining False Positives under Inference Scaling for Mathematical Reasoning",
+    "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models",
+    "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data",
+    "Leveraging Online Olympiad-Level Math Problems for LLMs Training and Contamination-Resistant Evaluation",
+    "RBench: Graduate-level Multi-disciplinary Benchmarks for LLM & MLLM Complex Reasoning Evaluation",
+    "T1: Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "Omni-MATH is a mathematics benchmark covering a broad spectrum of difficulty levels for evaluating math reasoning models.",
+      "papers": [
+        "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data",
+        "TreeRL: LLM Reinforcement Learning with On-Policy Tree Search"
+      ],
+      "original_name": "Omni-MATH"
+    },
+    {
+      "text": "Mathematical reasoning dataset from which 500 randomly sampled questions were used to evaluate model performance efficiently.",
+      "papers": [
+        "Revisiting the Test-Time Scaling of o1-like Models: Do they Truly Possess Test-Time Scaling Capabilities?"
+      ],
+      "original_name": "Omini-MATH"
+    },
+    {
+      "text": "A comprehensive mathematical reasoning benchmark covering diverse topics and difficulty levels, including olympiad-style problems.",
+      "papers": [
+        "FastMCTS: A Simple Sampling Strategy for Data Synthesis",
+        "Dyve: Thinking Fast and Slow for Dynamic Process Verification",
+        "Examining False Positives under Inference Scaling for Mathematical Reasoning"
+      ],
+      "original_name": "OmniMath"
+    },
+    {
+      "text": "A benchmark focused on employing mathematical olympiad challenges to evaluate mathematical reasoning.",
+      "papers": [
+        "RBench: Graduate-level Multi-disciplinary Benchmarks for LLM & MLLM Complex Reasoning Evaluation"
+      ],
+      "original_name": "Omni-Math"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data",
+      "evidence": "We evaluate our models on a set of common benchmarks that consists of GSM8K (1.3K examples), MATH (5K examples), AMC 2023 (40 examples), AIME 2024 (30 examples), and Omni-MATH (4.4K examples) (Omni-Math, 2024).",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data"
+        ],
+        "icml25": [
+          "Leveraging Online Olympiad-Level Math Problems for LLMs Training and Contamination-Resistant Evaluation",
+          "T1: Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling"
+        ],
+        "emnlp25": [
+          "Scalable Data Synthesis through Human-like Cognitive Imitation and Data Recombination",
+          "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Problem solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models",
+      "evidence": "We introduce Omni-Math, a universal Olympiad-level mathematical benchmark with over 33 sub-domains and diverse difficulty levels, posing new challenges to the problem solving and complex reasoning capability of LLMs. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models",
+      "evidence": "We introduce Omni-Math, a universal Olympiad-level mathematical benchmark with over 33 sub-domains and diverse difficulty levels, posing new challenges to the problem solving and complex reasoning capability of LLMs. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most papers describe Omni-MATH as a mathematics or mathematical reasoning benchmark with diverse topics and a broad range of difficulty, often emphasizing Olympiad-level or olympiad-style problems. A smaller line of work frames it more specifically as a benchmark focused on mathematical olympiad challenges. Some evaluation setups use sampled versions of the benchmark, including Omni-MATH-500 or a random subset of the full dataset, for efficient assessment."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across papers, Omni-MATH is linked to two constructs and one behavioral indicator. The prevailing usage is to measure mathematical reasoning, with several papers evaluating models on Omni-MATH as a math reasoning benchmark. A smaller line of work reports it as measuring complex reasoning and problem solving capability, so the measurement claims are concentrated on mathematical reasoning rather than spread widely across many targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers commonly use Omni-MATH alongside GSM8K, MATH, AIME, OlympiadBench, and GPQA in broader reasoning evaluations. It is usually positioned as one benchmark within multi-benchmark suites, often as a challenging or Olympiad-level component; some papers use sampled subsets for efficient yet comprehensive assessment, and one paper uses OmniMATH-derived data as a ProcessBench subset for step-wise error detection on reasoning traces."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "The recurring concern papers mention is the computational demand of evaluating the full benchmark. In response, some authors report randomly sampling questions or using Omni-MATH-500 to maintain efficiency."
+    }
+  ],
+  "characterization": "What it is. Most papers describe Omni-MATH as a mathematics or mathematical reasoning benchmark with diverse topics and a broad range of difficulty, often emphasizing Olympiad-level or olympiad-style problems. A smaller line of work frames it more specifically as a benchmark focused on mathematical olympiad challenges. Some evaluation setups use sampled versions of the benchmark, including Omni-MATH-500 or a random subset of the full dataset, for efficient assessment.\n\nWhat it is claimed to measure. Across papers, Omni-MATH is linked to two constructs and one behavioral indicator. The prevailing usage is to measure mathematical reasoning, with several papers evaluating models on Omni-MATH as a math reasoning benchmark. A smaller line of work reports it as measuring complex reasoning and problem solving capability, so the measurement claims are concentrated on mathematical reasoning rather than spread widely across many targets.\n\nSpace of uses. Papers commonly use Omni-MATH alongside GSM8K, MATH, AIME, OlympiadBench, and GPQA in broader reasoning evaluations. It is usually positioned as one benchmark within multi-benchmark suites, often as a challenging or Olympiad-level component; some papers use sampled subsets for efficient yet comprehensive assessment, and one paper uses OmniMATH-derived data as a ProcessBench subset for step-wise error detection on reasoning traces.\n\nConcerns raised. The recurring concern papers mention is the computational demand of evaluating the full benchmark. In response, some authors report randomly sampling questions or using Omni-MATH-500 to maintain efficiency.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "FastMCTS: A Simple Sampling Strategy for Data Synthesis",
+      "Revisiting the Test-Time Scaling of o1-like Models: Do they Truly Possess Test-Time Scaling Capabilities?",
+      "TreeRL: LLM Reinforcement Learning with On-Policy Tree Search"
+    ],
+    "iclr25": [
+      "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models",
+      "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data"
+    ],
+    "icml25": [
+      "Leveraging Online Olympiad-Level Math Problems for LLMs Training and Contamination-Resistant Evaluation",
+      "RBench: Graduate-level Multi-disciplinary Benchmarks for LLM & MLLM Complex Reasoning Evaluation",
+      "T1: Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling"
+    ],
+    "emnlp25": [
+      "Dyve: Thinking Fast and Slow for Dynamic Process Verification",
+      "Examining False Positives under Inference Scaling for Mathematical Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "iclr25": 2,
+    "icml25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

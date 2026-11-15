@@ -1,0 +1,87 @@
+{
+  "canonical_name": "CLEVR",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing description is a visual reasoning benchmark or diagnostic dataset for compositional language and elementary visual reasoning. Some authors frame it differently in use: as an image classification task, as a scene reasoning domain for inductive program synthesis, or as an image-based dataset for multimodal data understanding and retrieving. One definition specifically uses the val split, described as containing 15,000 images with cylinders, cubes, and spheres that vary in number, size, and color.\n\nWhat it is claimed to measure. Claims about what it measures are narrow. Papers link it to 1 construct and no behavioral indicators, and the only recorded measurement claim is that it measures Complex reasoning: one paper refers to \"complex reasoning in CLEVR\" when using it alongside Winoground. Across papers, measurement claims center on a single construct rather than multiple targets.\n\nSpace of uses. Papers use it in several roles rather than a single fixed protocol. It appears alongside SVHN and EuroSAT in image classification experiments, alongside REGEX and LOGO as one of three inductive program synthesis domains, and as a multimodal data understanding and retrieval dataset on the val split. Other papers position it more generally as a reasoning benchmark or challenge, including references to \"the popular CLEVR challenge\" and to benchmarks that test understanding of relationships between objects, spatial reasoning, and logical inference from visual input.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CLEVR"
+  ],
+  "papers": [
+    "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+    "LILO: Learning Interpretable Libraries by Compressing and Documenting Code",
+    "ClevrSkills: Compositional Language And Visual Reasoning in Robotics",
+    "UQE: A Query Engine for Unstructured Databases",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A visual reasoning benchmark used here as an image classification task.",
+      "papers": [
+        "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+        "LILO: Learning Interpretable Libraries by Compressing and Documenting Code",
+        "ClevrSkills: Compositional Language And Visual Reasoning in Robotics",
+        "UQE: A Query Engine for Unstructured Databases",
+        "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+      ],
+      "original_name": "CLEVR"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "VoCoT: Unleashing Visually Grounded Multi-Step Reasoning in Large Multi-Modal Models",
+      "evidence": "complex reasoning in CLEVR (Johnson et al., 2017) and Winoground (Thrush et al., 2022) (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "VoCoT: Unleashing Visually Grounded Multi-Step Reasoning in Large Multi-Modal Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing description is a visual reasoning benchmark or diagnostic dataset for compositional language and elementary visual reasoning. Some authors frame it differently in use: as an image classification task, as a scene reasoning domain for inductive program synthesis, or as an image-based dataset for multimodal data understanding and retrieving. One definition specifically uses the val split, described as containing 15,000 images with cylinders, cubes, and spheres that vary in number, size, and color."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Claims about what it measures are narrow. Papers link it to 1 construct and no behavioral indicators, and the only recorded measurement claim is that it measures Complex reasoning: one paper refers to \"complex reasoning in CLEVR\" when using it alongside Winoground. Across papers, measurement claims center on a single construct rather than multiple targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use it in several roles rather than a single fixed protocol. It appears alongside SVHN and EuroSAT in image classification experiments, alongside REGEX and LOGO as one of three inductive program synthesis domains, and as a multimodal data understanding and retrieval dataset on the val split. Other papers position it more generally as a reasoning benchmark or challenge, including references to \"the popular CLEVR challenge\" and to benchmarks that test understanding of relationships between objects, spatial reasoning, and logical inference from visual input."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing description is a visual reasoning benchmark or diagnostic dataset for compositional language and elementary visual reasoning. Some authors frame it differently in use: as an image classification task, as a scene reasoning domain for inductive program synthesis, or as an image-based dataset for multimodal data understanding and retrieving. One definition specifically uses the val split, described as containing 15,000 images with cylinders, cubes, and spheres that vary in number, size, and color.\n\nWhat it is claimed to measure. Claims about what it measures are narrow. Papers link it to 1 construct and no behavioral indicators, and the only recorded measurement claim is that it measures Complex reasoning: one paper refers to \"complex reasoning in CLEVR\" when using it alongside Winoground. Across papers, measurement claims center on a single construct rather than multiple targets.\n\nSpace of uses. Papers use it in several roles rather than a single fixed protocol. It appears alongside SVHN and EuroSAT in image classification experiments, alongside REGEX and LOGO as one of three inductive program synthesis domains, and as a multimodal data understanding and retrieval dataset on the val split. Other papers position it more generally as a reasoning benchmark or challenge, including references to \"the popular CLEVR challenge\" and to benchmarks that test understanding of relationships between objects, spatial reasoning, and logical inference from visual input.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+      "LILO: Learning Interpretable Libraries by Compressing and Documenting Code"
+    ],
+    "neurips24": [
+      "ClevrSkills: Compositional Language And Visual Reasoning in Robotics",
+      "UQE: A Query Engine for Unstructured Databases",
+      "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 3
+  },
+  "conferences": [
+    "iclr24",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "canonical_name": "Paraphrastic robustness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats paraphrastic robustness as consistency under linguistic variation that leaves meaning or intention unchanged. Most formulations describe stable performance when a question, prompt, or instruction is rephrased, and embodied-task papers extend this to indirect object references so long as the underlying intention does not change. A smaller difference is whether authors present it as a latent ability of the model or directly as observed stability in performance or behavior.\n\nSpace of facets. Where papers locate the construct, the clearest framing places paraphrastic robustness under generalization: one paper defines it as a specific form of generalization in which performance remains stable under semantically equivalent rewordings of task instructions. Another recurring distinction is between stability under linguistic variation and behavior generalization, which one paper mentions alongside paraphrastic robustness as a separate evaluation target. Beyond that, the main organizing facet is the type of language change, paraphrases, rephrasings, and indirect object references, with task meaning held fixed.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to this construct. Papers nonetheless operationalize it directly in their evaluation descriptions, for example as the percentage of datapoints where the model gets all paraphrases of a question correct, or by checking whether an agent produces the same, or the same optimal, behavior under a linguistic variation of an instruction. Another paper mentions unseen instruction datasets that measure paraphrastic robustness together with behavior generalization.\n\nLinks. One paper claims a causal relationship from Natural language understanding to Paraphrastic robustness, saying that this is expected because LLMs are known for their language understanding capabilities. No correlational or merely related links are recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Paraphrastic robustness",
+    "Robustness to paraphrases"
+  ],
+  "papers": [
+    "Large Language Models as Generalizable Policies for Embodied Tasks",
+    "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+    "Grounding Multimodal Large Language Models in Actions",
+    "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The stability of a model's performance when a question or prompt is rephrased without changing its semantic meaning.",
+      "papers": [
+        "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction"
+      ],
+      "original_name": "Robustness to paraphrases"
+    },
+    {
+      "text": "The latent ability of a model to produce consistent, correct behavior despite linguistic variations in task instructions, such as rephrasing or indirect object references, when the underlying intention remains unchanged.",
+      "papers": [
+        "Large Language Models as Generalizable Policies for Embodied Tasks",
+        "Grounding Multimodal Large Language Models in Actions"
+      ],
+      "original_name": "Paraphrastic robustness"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Large Language Models as Generalizable Policies for Embodied Tasks",
+      "evidence": "Althought this is expected for paraphrastic robustnes as LLMs are known for their language understanding capabilities, it is somewhat surprising to see that the LLM helps even for novel behaviors...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models as Generalizable Policies for Embodied Tasks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats paraphrastic robustness as consistency under linguistic variation that leaves meaning or intention unchanged. Most formulations describe stable performance when a question, prompt, or instruction is rephrased, and embodied-task papers extend this to indirect object references so long as the underlying intention does not change. A smaller difference is whether authors present it as a latent ability of the model or directly as observed stability in performance or behavior."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Where papers locate the construct, the clearest framing places paraphrastic robustness under generalization: one paper defines it as a specific form of generalization in which performance remains stable under semantically equivalent rewordings of task instructions. Another recurring distinction is between stability under linguistic variation and behavior generalization, which one paper mentions alongside paraphrastic robustness as a separate evaluation target. Beyond that, the main organizing facet is the type of language change, paraphrases, rephrasings, and indirect object references, with task meaning held fixed."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to this construct. Papers nonetheless operationalize it directly in their evaluation descriptions, for example as the percentage of datapoints where the model gets all paraphrases of a question correct, or by checking whether an agent produces the same, or the same optimal, behavior under a linguistic variation of an instruction. Another paper mentions unseen instruction datasets that measure paraphrastic robustness together with behavior generalization."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper claims a causal relationship from Natural language understanding to Paraphrastic robustness, saying that this is expected because LLMs are known for their language understanding capabilities. No correlational or merely related links are recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats paraphrastic robustness as consistency under linguistic variation that leaves meaning or intention unchanged. Most formulations describe stable performance when a question, prompt, or instruction is rephrased, and embodied-task papers extend this to indirect object references so long as the underlying intention does not change. A smaller difference is whether authors present it as a latent ability of the model or directly as observed stability in performance or behavior.\n\nSpace of facets. Where papers locate the construct, the clearest framing places paraphrastic robustness under generalization: one paper defines it as a specific form of generalization in which performance remains stable under semantically equivalent rewordings of task instructions. Another recurring distinction is between stability under linguistic variation and behavior generalization, which one paper mentions alongside paraphrastic robustness as a separate evaluation target. Beyond that, the main organizing facet is the type of language change, paraphrases, rephrasings, and indirect object references, with task meaning held fixed.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to this construct. Papers nonetheless operationalize it directly in their evaluation descriptions, for example as the percentage of datapoints where the model gets all paraphrases of a question correct, or by checking whether an agent produces the same, or the same optimal, behavior under a linguistic variation of an instruction. Another paper mentions unseen instruction datasets that measure paraphrastic robustness together with behavior generalization.\n\nLinks. One paper claims a causal relationship from Natural language understanding to Paraphrastic robustness, saying that this is expected because LLMs are known for their language understanding capabilities. No correlational or merely related links are recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Large Language Models as Generalizable Policies for Embodied Tasks",
+      "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction"
+    ],
+    "neurips24": [
+      "Grounding Multimodal Large Language Models in Actions",
+      "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr24",
+    "neurips24"
+  ]
+}

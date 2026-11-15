@@ -1,0 +1,104 @@
+{
+  "canonical_name": "VisualWebArena",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most descriptions treat VisualWebArena as a real benchmark environment for multimodal agents, or more specifically vision-language agents, on realistic visual web and web navigation tasks. The prevailing description places those tasks across classifieds, social media, and shopping platforms, while some authors emphasize GUI interaction and task completion in browser environments; a smaller usage refers to V-WebArena mainly as a comparison benchmark.\n\nWhat it is claimed to measure. Among reported links, papers connect it to one behavioral indicator and no constructs. The measurement claim is concentrated on Web navigation: papers describe VisualWebArena as designed to evaluate multimodal agent performance across a wide range of web navigation tasks and environments.\n\nSpace of uses. Papers commonly use it as an evaluation environment to build on, for example by adding targeted adversarial tasks and evaluation scripts on top of it. It also appears alongside OSWorld as an existing agent testing environment, one paper restricts evaluation to an easy-task subset and only tests SoM agents, and another cites V-WebArena for comparison; no measurement instrument is linked to it.\n\nConcerns raised. Some papers frame it within adversarial evaluation settings, adding targeted adversarial tasks in a realistic threat model and integrating pop-ups into the environment.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "VisualWebArena",
+    "V-WebArena"
+  ],
+  "papers": [
+    "AdaptAgent: Adapting Multimodal Web Agents with Few-Shot Learning from Human Demonstrations",
+    "Attacking Vision-Language Computer Agents via Pop-ups",
+    "Contextual Experience Replay for Self-Improvement of Language Agents",
+    "Dissecting Adversarial Robustness of Multimodal LM Agents",
+    "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+    "VideoWebArena: Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks",
+    "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A benchmark environment for evaluating multimodal web agents on realistic tasks across classifieds, social media, and shopping platforms.",
+      "papers": [
+        "Dissecting Adversarial Robustness of Multimodal LM Agents",
+        "Attacking Vision-Language Computer Agents via Pop-ups"
+      ],
+      "original_name": "VisualWebArena"
+    },
+    {
+      "text": "A benchmark for evaluating multimodal agents on realistic visual web tasks, referenced for comparison.",
+      "papers": [
+        "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+      ],
+      "original_name": "V-WebArena"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Web navigation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+      "evidence": "We primarily experiment on VisualWebArena (VWA), a benchmark designed to evaluate multimodal agents performance on across a wide range of web navigation tasks and environments. (Section 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most descriptions treat VisualWebArena as a real benchmark environment for multimodal agents, or more specifically vision-language agents, on realistic visual web and web navigation tasks. The prevailing description places those tasks across classifieds, social media, and shopping platforms, while some authors emphasize GUI interaction and task completion in browser environments; a smaller usage refers to V-WebArena mainly as a comparison benchmark."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Among reported links, papers connect it to one behavioral indicator and no constructs. The measurement claim is concentrated on Web navigation: papers describe VisualWebArena as designed to evaluate multimodal agent performance across a wide range of web navigation tasks and environments."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers commonly use it as an evaluation environment to build on, for example by adding targeted adversarial tasks and evaluation scripts on top of it. It also appears alongside OSWorld as an existing agent testing environment, one paper restricts evaluation to an easy-task subset and only tests SoM agents, and another cites V-WebArena for comparison; no measurement instrument is linked to it."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "Some papers frame it within adversarial evaluation settings, adding targeted adversarial tasks in a realistic threat model and integrating pop-ups into the environment."
+    }
+  ],
+  "characterization": "What it is. Most descriptions treat VisualWebArena as a real benchmark environment for multimodal agents, or more specifically vision-language agents, on realistic visual web and web navigation tasks. The prevailing description places those tasks across classifieds, social media, and shopping platforms, while some authors emphasize GUI interaction and task completion in browser environments; a smaller usage refers to V-WebArena mainly as a comparison benchmark.\n\nWhat it is claimed to measure. Among reported links, papers connect it to one behavioral indicator and no constructs. The measurement claim is concentrated on Web navigation: papers describe VisualWebArena as designed to evaluate multimodal agent performance across a wide range of web navigation tasks and environments.\n\nSpace of uses. Papers commonly use it as an evaluation environment to build on, for example by adding targeted adversarial tasks and evaluation scripts on top of it. It also appears alongside OSWorld as an existing agent testing environment, one paper restricts evaluation to an easy-task subset and only tests SoM agents, and another cites V-WebArena for comparison; no measurement instrument is linked to it.\n\nConcerns raised. Some papers frame it within adversarial evaluation settings, adding targeted adversarial tasks in a realistic threat model and integrating pop-ups into the environment.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "AdaptAgent: Adapting Multimodal Web Agents with Few-Shot Learning from Human Demonstrations",
+      "Attacking Vision-Language Computer Agents via Pop-ups",
+      "Contextual Experience Replay for Self-Improvement of Language Agents"
+    ],
+    "iclr25": [
+      "Dissecting Adversarial Robustness of Multimodal LM Agents",
+      "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+      "VideoWebArena: Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks"
+    ],
+    "neurips24": [
+      "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "iclr25": 3,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "neurips24"
+  ]
+}

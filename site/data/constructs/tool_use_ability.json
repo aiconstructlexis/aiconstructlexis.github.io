@@ -1,0 +1,509 @@
+{
+  "canonical_name": "Tool use ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats this as a latent capability of an LLM or agent to choose, invoke, and use external tools or APIs to complete tasks or satisfy user requests. Most definitions stay close to that core, while some broaden it to selecting parameters, coordinating or sequencing multiple tools, processing tool outputs, or leveraging tools such as web browsing, code execution, and file uploads. A smaller line of work narrows it to specific sub-capabilities, such as function calling, API call generation, flexible tool selection, or deciding whether to call a tool, ask for more information, admit inability, or answer directly. The clearest disagreement is latent capacity versus observable process: most papers use the former, while some uses of tool utilization describe a staged interaction pipeline, and another variant frames the construct as reliable interaction throughout a task that maximizes success while minimizing errors and hallucinations.\n\nSpace of facets. Papers break the construct into recurring facets: understanding what a tool does and when to invoke it, selecting the appropriate tool, generating valid function or API calls with suitable arguments, planning and sequencing calls for decomposed tasks, and applying or orchestrating tools through nested calling. Some versions make conversational context part of the construct, defining effective use through integration of dialogue history and user profile, while others emphasize reliability and hallucination control during tool invocation. One paper explicitly separates reasoning from execution, treating reasoning as analysis and planning that comes first, followed by selecting the correct functions and parameters. Labels vary across papers, including tool-use proficiency, tool-calling capability, function-calling ability, and tool utilization, and the last of these is used both for a latent ability and for an observable process.\n\nSpace of measurement. Operationalization is dominated by benchmarks and evaluators: papers link the construct to 7 measurement instruments and 1 behavioral indicator. The most frequently linked instruments are API-Bank, BFCL, BFCL-v2, GAIA, and GTA, plus 2 other instruments. API-Bank is described as a dialogue-style tool-call dataset in which models call predefined Python tools and are scored by whether tool return values match the ground truth, BFCL as a comprehensive executable function-call evaluation, GAIA as real-world questions requiring tool-use proficiency, and GTA as a benchmark with a step-by-step mode for fine-grained tool-use capability. The remaining linked instruments include an automatic evaluator and a simulator in which a model simulates tool returns and evaluates process and response accuracy. Across these measures, operationalization mostly centers on tool invocation and function calling, which aligns most directly with the common definitions, while contextualized use, follow-up questioning, and hallucination minimization are not foregrounded in the linked measurements.\n\nLinks. Beyond measurement, multiple papers claim a causal relationship from Tool use ability to Tool use, describing tool learning as enabling LLMs to interact with external environments by invoking tools. One paper claims a causal relationship from Instruction following ability to Tool use ability, reporting that models with better instruction-following capabilities achieve greater improvements with high-quality tool instructions. Tool use ability is also reported to correlate inversely with Irrelevance detection ability, and one paper relates it to Reasoning, describing reasoning as the comprehension, analysis, and planning that precede selecting the correct functions and parameters.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Tool reliability",
+    "Execution",
+    "Tool selection",
+    "Tool utilization",
+    "Tool-use proficiency",
+    "Tool utilization capability",
+    "Tool-use capability",
+    "Tool-use ability",
+    "Tool Use",
+    "Tool-usage reasoning",
+    "Tool learning",
+    "Tool comprehension",
+    "Tool-using capability",
+    "Tool manipulation",
+    "Tool-calling decision-making",
+    "Tool-calling capability",
+    "Flexible tool selection",
+    "Function-calling capability",
+    "Tool-using ability",
+    "API call generation capability",
+    "Planning with functions",
+    "Function-calling ability",
+    "Contextualised tool use"
+  ],
+  "papers": [
+    "ACT: Knowledgeable Agents to Design and Perform Complex Tasks",
+    "CONFETTI: Conversational Function-Calling Evaluation Through Turn-Level Interactions",
+    "LegalAgentBench: Evaluating LLM Agents in Legal Domain",
+    "ActionStudio: A Lightweight Framework for Data and Training of Large Action Models",
+    "CRITICTOOL: Evaluating Self-Critique Capabilities of Large Language Models in Tool-Calling Error Scenarios",
+    "Improving Large Language Models Function Calling and Interpretability via Guided-Structured Templates",
+    "Learning to Ask: When LLM Agents Meet Unclear Instruction",
+    "START: Self-taught Reasoner with Tools",
+    "TAPS: Tool-Augmented Personalisation via Structured Tagging",
+    "Can LLMs Help You at Work? A Sandbox for Evaluating LLM Agents in Enterprise Environments",
+    "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+    "GAIA: a benchmark for General AI Assistants",
+    "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+    "API Pack: A Massive Multi-Programming Language Dataset for API Call Generation",
+    "Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning",
+    "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions",
+    "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+    "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models",
+    "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+    "Robust Function-Calling for On-Device Language Model via Function Masking",
+    "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery",
+    "Tool-Planner: Task Planning with Clusters across Multiple Tools",
+    "ToolACE: Winning the Points of LLM Function Calling",
+    "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines",
+    "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+    "Reducing Tool Hallucination via Reliability Alignment",
+    "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation",
+    "EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction",
+    "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling",
+    "ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis",
+    "When2Call: When (not) to Call Tools",
+    "xLAM: A Family of Large Action Models to Empower AI Agent Systems",
+    "Towards Rationality in Language and Multimodal Agents: A Survey",
+    "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+    "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+    "GTA: A Benchmark for General Tool Agents",
+    "TaskBench: Benchmarking Large Language Models for Task Automation",
+    "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+  ],
+  "paper_count": 38,
+  "definitions": [
+    {
+      "text": "The ability of a large language model to accurately and effectively interact with external tools throughout a task, maximizing successful outcomes while minimizing errors and hallucinations.",
+      "papers": [
+        "Reducing Tool Hallucination via Reliability Alignment"
+      ],
+      "original_name": "Tool reliability"
+    },
+    {
+      "text": "The latent ability to select appropriate functions and parameters to invoke based on reasoning input, enabling tool use in agent tasks.",
+      "papers": [
+        "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles"
+      ],
+      "original_name": "Execution"
+    },
+    {
+      "text": "The underlying capability of an LLM agent to identify and choose the appropriate enterprise tools or APIs required to perform a given subtask.",
+      "papers": [
+        "Can LLMs Help You at Work? A Sandbox for Evaluating LLM Agents in Enterprise Environments"
+      ],
+      "original_name": "Tool selection"
+    },
+    {
+      "text": "The latent ability to select and invoke external tools appropriately during task execution.",
+      "papers": [
+        "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents",
+        "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling",
+        "EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction",
+        "Towards Rationality in Language and Multimodal Agents: A Survey",
+        "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles"
+      ],
+      "original_name": "Tool utilization"
+    },
+    {
+      "text": "The general capability of an AI system to effectively select and utilize external tools, such as web browsers or code interpreters, to accomplish tasks.",
+      "papers": [
+        "GAIA: a benchmark for General AI Assistants"
+      ],
+      "original_name": "Tool-use proficiency"
+    },
+    {
+      "text": "The model's latent ability to effectively select and use external tools to solve complex problems.",
+      "papers": [
+        "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors"
+      ],
+      "original_name": "Tool utilization capability"
+    },
+    {
+      "text": "The ability of a large language model to effectively select, invoke, and coordinate external tools to solve complex tasks.",
+      "papers": [
+        "GTA: A Benchmark for General Tool Agents"
+      ],
+      "original_name": "Tool-use capability"
+    },
+    {
+      "text": "The latent capacity of an LLM to choose, call, and use external tools appropriately to satisfy user requests across dialogue settings.",
+      "papers": [
+        "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models"
+      ],
+      "original_name": "Tool-use ability"
+    },
+    {
+      "text": "The latent ability to interact with external tools and APIs, including functions such as web browsing, code execution, and file uploads.",
+      "papers": [
+        "Law of the Weakest Link: Cross Capabilities of Large Language Models"
+      ],
+      "original_name": "Tool Use"
+    },
+    {
+      "text": "The latent ability to choose and sequence external tools effectively when solving multi-modal tasks.",
+      "papers": [
+        "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage"
+      ],
+      "original_name": "Tool-usage reasoning"
+    },
+    {
+      "text": "The capability of an LLM to understand and utilize external tools or APIs to solve problems that it cannot complete independently.",
+      "papers": [
+        "Tool-Planner: Task Planning with Clusters across Multiple Tools"
+      ],
+      "original_name": "Tool learning"
+    },
+    {
+      "text": "The degree to which an LLM understands what a tool does, when to invoke it, and how to use it correctly from documentation and feedback.",
+      "papers": [
+        "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions"
+      ],
+      "original_name": "Tool comprehension"
+    },
+    {
+      "text": "The latent ability of an LLM to effectively leverage external tools to solve complex real-world tasks.",
+      "papers": [
+        "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions"
+      ],
+      "original_name": "Tool-using capability"
+    },
+    {
+      "text": "The skill of interacting with and controlling external tools or APIs, typically by generating code or commands.",
+      "papers": [
+        "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation"
+      ],
+      "original_name": "Tool manipulation"
+    },
+    {
+      "text": "The latent ability of a model to determine whether to call a tool, ask for more information, admit inability to answer, or generate a direct response based on the availability and relevance of tools and input completeness.",
+      "papers": [
+        "When2Call: When (not) to Call Tools"
+      ],
+      "original_name": "Tool-calling decision-making"
+    },
+    {
+      "text": "The model's latent ability to understand user requests, select appropriate external tools, formulate correct API calls, and process their outputs.",
+      "papers": [
+        "ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis"
+      ],
+      "original_name": "Tool-calling capability"
+    },
+    {
+      "text": "The ability to dynamically and accurately choose the most appropriate tool from a large and complex toolkit based on the specific requirements of a given task or scenario.",
+      "papers": [
+        "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling"
+      ],
+      "original_name": "Flexible tool selection"
+    },
+    {
+      "text": "The underlying ability of a large language model to generate appropriate function calls based on natural language input and a provided list of available functions.",
+      "papers": [
+        "CONFETTI: Conversational Function-Calling Evaluation Through Turn-Level Interactions"
+      ],
+      "original_name": "Function-calling capability"
+    },
+    {
+      "text": "The underlying capability of agents within a system to interact with external tools (e.g., code interpreter, search engine) to extend their functional scope and access real-world data.",
+      "papers": [
+        "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines"
+      ],
+      "original_name": "Tool-using ability"
+    },
+    {
+      "text": "The model's latent ability to produce syntactically and semantically correct code snippets for invoking APIs based on natural language instructions.",
+      "papers": [
+        "API Pack: A Massive Multi-Programming Language Dataset for API Call Generation"
+      ],
+      "original_name": "API call generation capability"
+    },
+    {
+      "text": "The cognitive capability to decompose complex tasks into manageable steps and determine the appropriate sequence of function calls required to solve them.",
+      "papers": [
+        "Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning"
+      ],
+      "original_name": "Planning with functions"
+    },
+    {
+      "text": "The latent capacity of a model to correctly interpret user queries and generate valid function calls with appropriate arguments, given a set of available tools.",
+      "papers": [
+        "xLAM: A Family of Large Action Models to Empower AI Agent Systems"
+      ],
+      "original_name": "Function-calling ability"
+    },
+    {
+      "text": "The specific ability to use tools effectively by integrating information from the conversational history and user profile.",
+      "papers": [
+        "TAPS: Tool-Augmented Personalisation via Structured Tagging"
+      ],
+      "original_name": "Contextualised tool use"
+    }
+  ],
+  "definition_count": 23,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "API-Bank",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Robust Function-Calling for On-Device Language Model via Function Masking",
+      "evidence": "API-Bank (Li et al., 2023) provides a comprehensive dataset featuring 2,138 distinct APIs and 1,888 dialogues with 4,149 API calls. This dataset is designed to evaluate LLMs\u2019 tool-utilization capabilities, including planning, retrieval, and API-calling proficiency. (Section 2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust Function-Calling for On-Device Language Model via Function Masking"
+        ],
+        "naacl25": [
+          "ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions",
+      "evidence": "Tool learning enables Large Language Models (LLMs) to interact with external environments by invoking tools, serving as an effective strategy to mitigate the limitations inherent in their pre-training data. (ABSTRACT)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions"
+        ],
+        "emnlp25": [
+          "Learning to Ask: When LLM Agents Meet Unclear Instruction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GAIA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "GAIA: a benchmark for General AI Assistants",
+      "evidence": "GAIA proposes real-world questions that require a set of fundamental abilities such as reasoning, multi-modality handling, web browsing, and generally tool-use proficiency. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "GAIA: a benchmark for General AI Assistants"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GTA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "GTA: A Benchmark for General Tool Agents",
+      "evidence": "Step-by-step mode is designed to evaluate the model\u2019s fine-grained tool-use capabilities. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "GTA: A Benchmark for General Tool Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BFCL",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ToolACE: Winning the Points of LLM Function Calling",
+      "evidence": "Experiments are conducted on two representative benchmarks, including BFCL Yan et al. (2024) and API-Bank Li et al. (2023). The two benchmarks are comprehensive and executable function call evaluations specifically designed to assess the ability of LLMs to invoke functions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "ToolACE: Winning the Points of LLM Function Calling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Irrelevance detection ability",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Robust Function-Calling for On-Device Language Model via Function Masking",
+      "evidence": "we identified a concerning inverse relationship between the model's ability to accurately execute function calls and its capacity for irrelevance detection",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust Function-Calling for On-Device Language Model via Function Masking"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following ability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction",
+      "evidence": "Llama3.1-70B-Instruct outperforms Llama3.1-8B-Instruct with EASYTOOL, indicating that models with better instruction-following capabilities can achieve greater improvements with high-quality tool instructions. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BFCL-v2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis",
+      "evidence": "We evaluated TOOLFLOW\u2019s tool-calling ability on the BFCL. (Section 5.2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ToolAlpaca",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis",
+      "evidence": "ToolAlpaca (Tang et al., 2023) establishes a multi-agent simulator. It utilizes GPT-4 (OpenAI et al., 2024) to simulate the return values of tools. The model can make modifications and re-call the tool based on the return values (e.g., error messages). Finally, GPT-4 evaluates the accuracy of Process and Response.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+      "evidence": "LLMs must first comprehend the user\u2019s query and perform a reasonable analysis and planning, demonstrating the ability of reasoning. Subsequently, it needs to invoke the correct functions with suitable parameters, reflecting the ability of execution.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ToolEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+      "evidence": "\u201cTo assess the tool-use capabilities of LLMs, we develop an automatic evaluator, ToolEval\u201d and \u201cWe first present ToolBench, an instruction-tuning dataset for tool use\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 8,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats this as a latent capability of an LLM or agent to choose, invoke, and use external tools or APIs to complete tasks or satisfy user requests. Most definitions stay close to that core, while some broaden it to selecting parameters, coordinating or sequencing multiple tools, processing tool outputs, or leveraging tools such as web browsing, code execution, and file uploads. A smaller line of work narrows it to specific sub-capabilities, such as function calling, API call generation, flexible tool selection, or deciding whether to call a tool, ask for more information, admit inability, or answer directly. The clearest disagreement is latent capacity versus observable process: most papers use the former, while some uses of tool utilization describe a staged interaction pipeline, and another variant frames the construct as reliable interaction throughout a task that maximizes success while minimizing errors and hallucinations."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers break the construct into recurring facets: understanding what a tool does and when to invoke it, selecting the appropriate tool, generating valid function or API calls with suitable arguments, planning and sequencing calls for decomposed tasks, and applying or orchestrating tools through nested calling. Some versions make conversational context part of the construct, defining effective use through integration of dialogue history and user profile, while others emphasize reliability and hallucination control during tool invocation. One paper explicitly separates reasoning from execution, treating reasoning as analysis and planning that comes first, followed by selecting the correct functions and parameters. Labels vary across papers, including tool-use proficiency, tool-calling capability, function-calling ability, and tool utilization, and the last of these is used both for a latent ability and for an observable process."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is dominated by benchmarks and evaluators: papers link the construct to 7 measurement instruments and 1 behavioral indicator. The most frequently linked instruments are API-Bank, BFCL, BFCL-v2, GAIA, and GTA, plus 2 other instruments. API-Bank is described as a dialogue-style tool-call dataset in which models call predefined Python tools and are scored by whether tool return values match the ground truth, BFCL as a comprehensive executable function-call evaluation, GAIA as real-world questions requiring tool-use proficiency, and GTA as a benchmark with a step-by-step mode for fine-grained tool-use capability. The remaining linked instruments include an automatic evaluator and a simulator in which a model simulates tool returns and evaluates process and response accuracy. Across these measures, operationalization mostly centers on tool invocation and function calling, which aligns most directly with the common definitions, while contextualized use, follow-up questioning, and hallucination minimization are not foregrounded in the linked measurements."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, multiple papers claim a causal relationship from Tool use ability to Tool use, describing tool learning as enabling LLMs to interact with external environments by invoking tools. One paper claims a causal relationship from Instruction following ability to Tool use ability, reporting that models with better instruction-following capabilities achieve greater improvements with high-quality tool instructions. Tool use ability is also reported to correlate inversely with Irrelevance detection ability, and one paper relates it to Reasoning, describing reasoning as the comprehension, analysis, and planning that precede selecting the correct functions and parameters."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats this as a latent capability of an LLM or agent to choose, invoke, and use external tools or APIs to complete tasks or satisfy user requests. Most definitions stay close to that core, while some broaden it to selecting parameters, coordinating or sequencing multiple tools, processing tool outputs, or leveraging tools such as web browsing, code execution, and file uploads. A smaller line of work narrows it to specific sub-capabilities, such as function calling, API call generation, flexible tool selection, or deciding whether to call a tool, ask for more information, admit inability, or answer directly. The clearest disagreement is latent capacity versus observable process: most papers use the former, while some uses of tool utilization describe a staged interaction pipeline, and another variant frames the construct as reliable interaction throughout a task that maximizes success while minimizing errors and hallucinations.\n\nSpace of facets. Papers break the construct into recurring facets: understanding what a tool does and when to invoke it, selecting the appropriate tool, generating valid function or API calls with suitable arguments, planning and sequencing calls for decomposed tasks, and applying or orchestrating tools through nested calling. Some versions make conversational context part of the construct, defining effective use through integration of dialogue history and user profile, while others emphasize reliability and hallucination control during tool invocation. One paper explicitly separates reasoning from execution, treating reasoning as analysis and planning that comes first, followed by selecting the correct functions and parameters. Labels vary across papers, including tool-use proficiency, tool-calling capability, function-calling ability, and tool utilization, and the last of these is used both for a latent ability and for an observable process.\n\nSpace of measurement. Operationalization is dominated by benchmarks and evaluators: papers link the construct to 7 measurement instruments and 1 behavioral indicator. The most frequently linked instruments are API-Bank, BFCL, BFCL-v2, GAIA, and GTA, plus 2 other instruments. API-Bank is described as a dialogue-style tool-call dataset in which models call predefined Python tools and are scored by whether tool return values match the ground truth, BFCL as a comprehensive executable function-call evaluation, GAIA as real-world questions requiring tool-use proficiency, and GTA as a benchmark with a step-by-step mode for fine-grained tool-use capability. The remaining linked instruments include an automatic evaluator and a simulator in which a model simulates tool returns and evaluates process and response accuracy. Across these measures, operationalization mostly centers on tool invocation and function calling, which aligns most directly with the common definitions, while contextualized use, follow-up questioning, and hallucination minimization are not foregrounded in the linked measurements.\n\nLinks. Beyond measurement, multiple papers claim a causal relationship from Tool use ability to Tool use, describing tool learning as enabling LLMs to interact with external environments by invoking tools. One paper claims a causal relationship from Instruction following ability to Tool use ability, reporting that models with better instruction-following capabilities achieve greater improvements with high-quality tool instructions. Tool use ability is also reported to correlate inversely with Irrelevance detection ability, and one paper relates it to Reasoning, describing reasoning as the comprehension, analysis, and planning that precede selecting the correct functions and parameters.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "ACT: Knowledgeable Agents to Design and Perform Complex Tasks",
+      "CONFETTI: Conversational Function-Calling Evaluation Through Turn-Level Interactions",
+      "LegalAgentBench: Evaluating LLM Agents in Legal Domain"
+    ],
+    "emnlp25": [
+      "ActionStudio: A Lightweight Framework for Data and Training of Large Action Models",
+      "CRITICTOOL: Evaluating Self-Critique Capabilities of Large Language Models in Tool-Calling Error Scenarios",
+      "Improving Large Language Models Function Calling and Interpretability via Guided-Structured Templates",
+      "Learning to Ask: When LLM Agents Meet Unclear Instruction",
+      "START: Self-taught Reasoner with Tools",
+      "TAPS: Tool-Augmented Personalisation via Structured Tagging",
+      "Can LLMs Help You at Work? A Sandbox for Evaluating LLM Agents in Enterprise Environments"
+    ],
+    "iclr24": [
+      "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+      "GAIA: a benchmark for General AI Assistants",
+      "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs"
+    ],
+    "iclr25": [
+      "API Pack: A Massive Multi-Programming Language Dataset for API Call Generation",
+      "Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning",
+      "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions",
+      "Law of the Weakest Link: Cross Capabilities of Large Language Models",
+      "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models",
+      "Multi-modal Agent Tuning: Building a VLM-Driven Agent for Efficient Tool Usage",
+      "Robust Function-Calling for On-Device Language Model via Function Masking",
+      "ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery",
+      "Tool-Planner: Task Planning with Clusters across Multiple Tools",
+      "ToolACE: Winning the Points of LLM Function Calling"
+    ],
+    "icml25": [
+      "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines",
+      "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+      "Reducing Tool Hallucination via Reliability Alignment"
+    ],
+    "naacl25": [
+      "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation",
+      "EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction",
+      "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling",
+      "ToolFlow: Boosting LLM Tool-Calling Through Natural and Coherent Dialogue Synthesis",
+      "When2Call: When (not) to Call Tools",
+      "xLAM: A Family of Large Action Models to Empower AI Agent Systems",
+      "Towards Rationality in Language and Multimodal Agents: A Survey"
+    ],
+    "neurips24": [
+      "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+      "AvaTaR: Optimizing LLM Agents for Tool Usage via Contrastive Reasoning",
+      "GTA: A Benchmark for General Tool Agents",
+      "TaskBench: Benchmarking Large Language Models for Task Automation",
+      "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 7,
+    "iclr24": 3,
+    "iclr25": 10,
+    "icml25": 3,
+    "naacl25": 7,
+    "neurips24": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

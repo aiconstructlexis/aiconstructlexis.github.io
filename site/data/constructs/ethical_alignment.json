@@ -1,0 +1,155 @@
+{
+  "canonical_name": "Ethical alignment",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats ethical alignment as a latent tendency or degree of fit between a model's responses or behaviors and ethical norms, principles, or values. Most definitions frame it through conformance, responses that follow ethical standards, societal values, or specified principles, often alongside avoidance of harmful, misleading, inappropriate, biased, or manipulative content; some narrow this to professional service contexts, while others broaden it to safety, privacy, and fairness. A smaller line of work uses nearby labels such as moral alignment or value conformity to define it instead as correspondence between an LLM's preferences or internal moral representations and aggregated human preferences, especially in moral dilemmas.\n\nSpace of facets. Papers do not present a single shared taxonomy, but they recurrently break the concept into ethical principles or value domains. One grouping describes it through safety, privacy, fairness, and harm avoidance, while another treats value issues as social bias, ethics, and toxicity; another definition adds societal values and cultural contexts to ethical norms. The naming is also mixed: ethical alignment, ethical considerations, moral alignment, value conformity, and ethical values are used for closely neighboring ideas, with some papers centering outputs and behaviors and others centering preferences, shared conceptual structures, or latent moral orientation.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Even so, papers usually describe output-based assessments: one study says it uses the HH-RLHF dataset to assess helpfulness and ethical alignment in response generation, another evaluates moral alignment with human preferences in multilingual trolley problems, and value-conformity work codes whether responses align with human values, including social bias, ethics, and toxicity. This mirrors the definitions that emphasize responses and behaviors, though some moral-alignment definitions are stated in terms of preferences or internal representations rather than only surface responses.\n\nLinks. The only recorded construct link is a related relation to Safety. One paper treats ethical considerations as including safety, alongside privacy, fairness, and harm avoidance, and on that basis reports ethical alignment as related to Safety. No causal or correlational links are recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Ethical alignment",
+    "Ethical considerations",
+    "Moral alignment",
+    "Value conformity",
+    "Ethical values"
+  ],
+  "papers": [
+    "Comparing Moral Values in Western English-speaking societies and LLMs with Word Associations",
+    "That is Unacceptable: the Moral Foundations of Canceling",
+    "AI Chatbots as Professional Service Agents: Developing a Professional Identity",
+    "DiplomacyAgent: Do LLMs Balance Interests and Ethical Principles in International Events?",
+    "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+    "DENEVIL: TOWARDS DECIPHERING AND NAVIGATING THE ETHICAL VALUES OF LARGE LANGUAGE MODELS VIA INSTRUCTION LEARNING",
+    "Language Model Alignment in Multilingual Trolley Problems",
+    "Moral Alignment for LLM Agents",
+    "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+    "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+    "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+    "A Checks-and-Balances Framework for Context-Aware Ethical AI Alignment",
+    "HISTOIRESMORALES: A French Dataset for Assessing Moral Alignment"
+  ],
+  "paper_count": 13,
+  "definitions": [
+    {
+      "text": "The latent tendency of the model to generate responses that conform to professional ethical standards and avoid harmful, misleading, or inappropriate content in service contexts.",
+      "papers": [
+        "AI Chatbots as Professional Service Agents: Developing a Professional Identity",
+        "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment",
+        "A Checks-and-Balances Framework for Context-Aware Ethical AI Alignment"
+      ],
+      "original_name": "Ethical alignment"
+    },
+    {
+      "text": "The adherence of a model's responses to ethical principles, including safety, privacy, fairness, and the avoidance of harmful or biased content.",
+      "papers": [
+        "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment"
+      ],
+      "original_name": "Ethical considerations"
+    },
+    {
+      "text": "The degree to which an LLM's preferences in moral dilemmas correspond to aggregated human preferences.",
+      "papers": [
+        "Language Model Alignment in Multilingual Trolley Problems",
+        "Comparing Moral Values in Western English-speaking societies and LLMs with Word Associations"
+      ],
+      "original_name": "Moral alignment"
+    },
+    {
+      "text": "The degree to which an LLM's generated behaviors adhere to specified ethical principles or values.",
+      "papers": [
+        "DENEVIL: TOWARDS DECIPHERING AND NAVIGATING THE ETHICAL VALUES OF LARGE LANGUAGE MODELS VIA INSTRUCTION LEARNING",
+        "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing"
+      ],
+      "original_name": "Value conformity"
+    },
+    {
+      "text": "The latent moral orientation of an LLM as reflected in whether its outputs conform to or violate value principles across scenarios.",
+      "papers": [
+        "DENEVIL: TOWARDS DECIPHERING AND NAVIGATING THE ETHICAL VALUES OF LARGE LANGUAGE MODELS VIA INSTRUCTION LEARNING"
+      ],
+      "original_name": "Ethical values"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+      "evidence": "Ethical Considerations assess adherence to ethical principles, including safety, privacy, fairness, and harm avoidance, ensuring responses are free from harmful or biased content. (Section 2.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats ethical alignment as a latent tendency or degree of fit between a model's responses or behaviors and ethical norms, principles, or values. Most definitions frame it through conformance, responses that follow ethical standards, societal values, or specified principles, often alongside avoidance of harmful, misleading, inappropriate, biased, or manipulative content; some narrow this to professional service contexts, while others broaden it to safety, privacy, and fairness. A smaller line of work uses nearby labels such as moral alignment or value conformity to define it instead as correspondence between an LLM's preferences or internal moral representations and aggregated human preferences, especially in moral dilemmas."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not present a single shared taxonomy, but they recurrently break the concept into ethical principles or value domains. One grouping describes it through safety, privacy, fairness, and harm avoidance, while another treats value issues as social bias, ethics, and toxicity; another definition adds societal values and cultural contexts to ethical norms. The naming is also mixed: ethical alignment, ethical considerations, moral alignment, value conformity, and ethical values are used for closely neighboring ideas, with some papers centering outputs and behaviors and others centering preferences, shared conceptual structures, or latent moral orientation."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. Even so, papers usually describe output-based assessments: one study says it uses the HH-RLHF dataset to assess helpfulness and ethical alignment in response generation, another evaluates moral alignment with human preferences in multilingual trolley problems, and value-conformity work codes whether responses align with human values, including social bias, ethics, and toxicity. This mirrors the definitions that emphasize responses and behaviors, though some moral-alignment definitions are stated in terms of preferences or internal representations rather than only surface responses."
+    },
+    {
+      "label": "Links.",
+      "text": "The only recorded construct link is a related relation to Safety. One paper treats ethical considerations as including safety, alongside privacy, fairness, and harm avoidance, and on that basis reports ethical alignment as related to Safety. No causal or correlational links are recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats ethical alignment as a latent tendency or degree of fit between a model's responses or behaviors and ethical norms, principles, or values. Most definitions frame it through conformance, responses that follow ethical standards, societal values, or specified principles, often alongside avoidance of harmful, misleading, inappropriate, biased, or manipulative content; some narrow this to professional service contexts, while others broaden it to safety, privacy, and fairness. A smaller line of work uses nearby labels such as moral alignment or value conformity to define it instead as correspondence between an LLM's preferences or internal moral representations and aggregated human preferences, especially in moral dilemmas.\n\nSpace of facets. Papers do not present a single shared taxonomy, but they recurrently break the concept into ethical principles or value domains. One grouping describes it through safety, privacy, fairness, and harm avoidance, while another treats value issues as social bias, ethics, and toxicity; another definition adds societal values and cultural contexts to ethical norms. The naming is also mixed: ethical alignment, ethical considerations, moral alignment, value conformity, and ethical values are used for closely neighboring ideas, with some papers centering outputs and behaviors and others centering preferences, shared conceptual structures, or latent moral orientation.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Even so, papers usually describe output-based assessments: one study says it uses the HH-RLHF dataset to assess helpfulness and ethical alignment in response generation, another evaluates moral alignment with human preferences in multilingual trolley problems, and value-conformity work codes whether responses align with human values, including social bias, ethics, and toxicity. This mirrors the definitions that emphasize responses and behaviors, though some moral-alignment definitions are stated in terms of preferences or internal representations rather than only surface responses.\n\nLinks. The only recorded construct link is a related relation to Safety. One paper treats ethical considerations as including safety, alongside privacy, fairness, and harm avoidance, and on that basis reports ethical alignment as related to Safety. No causal or correlational links are recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Comparing Moral Values in Western English-speaking societies and LLMs with Word Associations",
+      "That is Unacceptable: the Moral Foundations of Canceling"
+    ],
+    "emnlp25": [
+      "AI Chatbots as Professional Service Agents: Developing a Professional Identity",
+      "DiplomacyAgent: Do LLMs Balance Interests and Ethical Principles in International Events?",
+      "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery"
+    ],
+    "iclr24": [
+      "DENEVIL: TOWARDS DECIPHERING AND NAVIGATING THE ETHICAL VALUES OF LARGE LANGUAGE MODELS VIA INSTRUCTION LEARNING"
+    ],
+    "iclr25": [
+      "Language Model Alignment in Multilingual Trolley Problems",
+      "Moral Alignment for LLM Agents",
+      "Collab: Controlled Decoding using Mixture of Agents for LLM Alignment"
+    ],
+    "icml25": [
+      "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+      "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+      "A Checks-and-Balances Framework for Context-Aware Ethical AI Alignment"
+    ],
+    "naacl25": [
+      "HISTOIRESMORALES: A French Dataset for Assessing Moral Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 3,
+    "iclr24": 1,
+    "iclr25": 3,
+    "icml25": 3,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

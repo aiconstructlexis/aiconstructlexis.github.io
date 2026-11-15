@@ -1,0 +1,83 @@
+{
+  "canonical_name": "Neural self-repair",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. The paper treats neural self-repair, under the name self-repair, as a latent mechanism in which a model compensates for changes or losses in individual functional components so that task performance stays stable. In the source description, this appears in perturbation or ablation settings: self-repair is said to plausibly contribute to \"behavioral stability,\" and \"negative heads\" are described as performing self-repair by reducing their negativity when NMHs are ablated.\n\nVariants. The usage in the papers does not separate multiple domains, modalities, or named sub-tasks. It is discussed under the name self-repair in the specific setting of ablation, where the example given is compensation by negative heads after NMH ablation.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the description, it is characterized through ablation-related behavior, namely stable task performance after changes to functional components and reduced negativity of negative heads after NMH ablation.\n\nWhat it is taken as evidence of. No construct is linked to it. The paper connects it to maintaining stable task performance and says it plausibly contributes to behavioral stability, but it does not explicitly treat it as evidence of a linked construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Self-repair"
+  ],
+  "papers": [
+    "Is Self-Repair a Silver Bullet for Code Generation?",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "What Makes Large Language Models Reason in (Multi-Turn) Code Generation?",
+    "Analyze Feature Flow to Enhance Interpretation and Steering in Language Models",
+    "AuPair: Golden Example Pairs for Code Repair",
+    "RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning",
+    "LLM Circuit Analyses Are Consistent Across Training and Scale"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A latent mechanism by which a model compensates for changes or losses in individual functional components to maintain stable task performance.",
+      "papers": [
+        "LLM Circuit Analyses Are Consistent Across Training and Scale"
+      ],
+      "original_name": "Self-repair"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The paper treats neural self-repair, under the name self-repair, as a latent mechanism in which a model compensates for changes or losses in individual functional components so that task performance stays stable. In the source description, this appears in perturbation or ablation settings: self-repair is said to plausibly contribute to \"behavioral stability,\" and \"negative heads\" are described as performing self-repair by reducing their negativity when NMHs are ablated."
+    },
+    {
+      "label": "Variants.",
+      "text": "The usage in the papers does not separate multiple domains, modalities, or named sub-tasks. It is discussed under the name self-repair in the specific setting of ablation, where the example given is compensation by negative heads after NMH ablation."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. In the description, it is characterized through ablation-related behavior, namely stable task performance after changes to functional components and reduced negativity of negative heads after NMH ablation."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it. The paper connects it to maintaining stable task performance and says it plausibly contributes to behavioral stability, but it does not explicitly treat it as evidence of a linked construct."
+    }
+  ],
+  "characterization": "Space of definitions. The paper treats neural self-repair, under the name self-repair, as a latent mechanism in which a model compensates for changes or losses in individual functional components so that task performance stays stable. In the source description, this appears in perturbation or ablation settings: self-repair is said to plausibly contribute to \"behavioral stability,\" and \"negative heads\" are described as performing self-repair by reducing their negativity when NMHs are ablated.\n\nVariants. The usage in the papers does not separate multiple domains, modalities, or named sub-tasks. It is discussed under the name self-repair in the specific setting of ablation, where the example given is compensation by negative heads after NMH ablation.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the description, it is characterized through ablation-related behavior, namely stable task performance after changes to functional components and reduced negativity of negative heads after NMH ablation.\n\nWhat it is taken as evidence of. No construct is linked to it. The paper connects it to maintaining stable task performance and says it plausibly contributes to behavioral stability, but it does not explicitly treat it as evidence of a linked construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Is Self-Repair a Silver Bullet for Code Generation?"
+    ],
+    "iclr25": [
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "What Makes Large Language Models Reason in (Multi-Turn) Code Generation?"
+    ],
+    "icml25": [
+      "Analyze Feature Flow to Enhance Interpretation and Steering in Language Models",
+      "AuPair: Golden Example Pairs for Code Repair",
+      "RLEF: Grounding Code LLMs in Execution Feedback with Reinforcement Learning"
+    ],
+    "neurips24": [
+      "LLM Circuit Analyses Are Consistent Across Training and Scale"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 1,
+    "iclr25": 2,
+    "icml25": 3,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

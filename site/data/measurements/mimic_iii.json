@@ -1,0 +1,131 @@
+{
+  "canonical_name": "MIMIC-III",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, MIMIC-III is most commonly described as a publicly available, de-identified in-patient or critical care EHR dataset from the Medical Information Mart for Intensive Care project. Definitions consistently tie it to patients who stayed in critical care units, while some papers describe particular contents such as discharge summaries or radiology reports used for clinical NLP evaluation. A smaller strand also treats it as the source dataset for EHRCon and as a database of ICU patient records from Beth Israel Deaconess Medical Center.\n\nWhat it is claimed to measure. Papers link MIMIC-III to 2 behavioral indicators and 1 construct. The prevailing usage is to measure mortality prediction, with hospital readmission prediction also reported, and a smaller line of work using it to measure privacy preservation. Overall, the recorded measurement claims are concentrated more on predictive behavioral indicators than on a broad range of constructs.\n\nSpace of uses. Papers do not link it to other measurement instruments. In use, one paper places it alongside MIMIC-IV and EHRShot as a public EHR dataset, while other papers use it as the data source for downstream evaluations such as mortality prediction, sepsis prediction, EHR consistency checking, and clinical text summarization.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MIMIC-III"
+  ],
+  "papers": [
+    "Controlled Generation for Private Synthetic Text",
+    "Not What the Doctor Ordered: Surveying LLM-based De-identification and Quantifying Clinical Information Loss",
+    "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+    "Multimodal Medical Code Tokenizer",
+    "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records",
+    "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+    "Knowledge-Empowered Dynamic Graph Network for Irregularly Sampled Medical Time Series",
+    "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "A publicly available in-patient dataset from the MIMIC (Medical Information Mart for Intensive Care) project, containing de-identified health data associated with patients who stayed in critical care units.",
+      "papers": [
+        "Multimodal Medical Code Tokenizer",
+        "Not What the Doctor Ordered: Surveying LLM-based De-identification and Quantifying Clinical Information Loss",
+        "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records",
+        "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+        "Knowledge-Empowered Dynamic Graph Network for Irregularly Sampled Medical Time Series",
+        "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models"
+      ],
+      "original_name": "MIMIC-III"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mortality prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "evidence": "Mortality Prediction involves using various data points and a classification or predictive model to estimate the likelihood of a patient\u2019s survival or death during their stay in the Intensive Care Unit (ICU). We extract the data from MIMIC-III using the ICU-oriented preprocessing pipeline [78]. (Section 4.1).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection"
+        ],
+        "iclr25": [
+          "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hospital readmission prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval",
+      "evidence": "Extensive experiments demonstrate that KARE outperforms leading models by up to 10.8-15.0% on MIMIC-III and 12.6-12.7% on MIMIC-IV for mortality and readmission predictions. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reasoning-Enhanced Healthcare Predictions with Knowledge Graph Community Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Privacy preservation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Controlled Generation for Private Synthetic Text",
+      "evidence": "Table 3: Privacy protection performance under the private entity known setting on the MIMIC-III dataset.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Controlled Generation for Private Synthetic Text"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, MIMIC-III is most commonly described as a publicly available, de-identified in-patient or critical care EHR dataset from the Medical Information Mart for Intensive Care project. Definitions consistently tie it to patients who stayed in critical care units, while some papers describe particular contents such as discharge summaries or radiology reports used for clinical NLP evaluation. A smaller strand also treats it as the source dataset for EHRCon and as a database of ICU patient records from Beth Israel Deaconess Medical Center."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link MIMIC-III to 2 behavioral indicators and 1 construct. The prevailing usage is to measure mortality prediction, with hospital readmission prediction also reported, and a smaller line of work using it to measure privacy preservation. Overall, the recorded measurement claims are concentrated more on predictive behavioral indicators than on a broad range of constructs."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers do not link it to other measurement instruments. In use, one paper places it alongside MIMIC-IV and EHRShot as a public EHR dataset, while other papers use it as the data source for downstream evaluations such as mortality prediction, sepsis prediction, EHR consistency checking, and clinical text summarization."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, MIMIC-III is most commonly described as a publicly available, de-identified in-patient or critical care EHR dataset from the Medical Information Mart for Intensive Care project. Definitions consistently tie it to patients who stayed in critical care units, while some papers describe particular contents such as discharge summaries or radiology reports used for clinical NLP evaluation. A smaller strand also treats it as the source dataset for EHRCon and as a database of ICU patient records from Beth Israel Deaconess Medical Center.\n\nWhat it is claimed to measure. Papers link MIMIC-III to 2 behavioral indicators and 1 construct. The prevailing usage is to measure mortality prediction, with hospital readmission prediction also reported, and a smaller line of work using it to measure privacy preservation. Overall, the recorded measurement claims are concentrated more on predictive behavioral indicators than on a broad range of constructs.\n\nSpace of uses. Papers do not link it to other measurement instruments. In use, one paper places it alongside MIMIC-IV and EHRShot as a public EHR dataset, while other papers use it as the data source for downstream evaluations such as mortality prediction, sepsis prediction, EHR consistency checking, and clinical text summarization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Controlled Generation for Private Synthetic Text",
+      "Not What the Doctor Ordered: Surveying LLM-based De-identification and Quantifying Clinical Information Loss"
+    ],
+    "icml25": [
+      "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+      "Multimodal Medical Code Tokenizer"
+    ],
+    "neurips24": [
+      "EHRCon: Dataset for Checking Consistency between Unstructured Notes and Structured Tables in Electronic Health Records",
+      "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "Knowledge-Empowered Dynamic Graph Network for Irregularly Sampled Medical Time Series",
+      "SmallToLarge (S2L): Scalable Data Selection for Fine-tuning Large Language Models by Summarizing Training Trajectories of Small Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "icml25": 2,
+    "neurips24": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "neurips24"
+  ]
+}

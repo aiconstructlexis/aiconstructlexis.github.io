@@ -1,0 +1,67 @@
+{
+  "canonical_name": "Preference over-rejection",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. In the usage in the papers, over-rejection is treated as a failure mode in preference learning for translation, where the model's output style moves away from the preferred data distribution. As described in X-ALMA: Plug & Play Modules and Adaptive Rejection for Quality Translation at Scale, the \"writing style of the translation outputs is forced away from the preferred data distribution,\" and this is said to impair the model's ability to generate meaningful translations.\n\nVariants. The described setting is translation, and the behavior is discussed at the level of translation outputs and their writing style. The paper uses the name \"over-rejection\" for this pattern.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The paper describes it behaviorally as a shift in translation output style away from the preferred data distribution, rather than through a named instrument.\n\nWhat it is taken as evidence of. No construct is linked to it as something the behavior indicates.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Over-rejection"
+  ],
+  "papers": [
+    "Reshaping Representation Space to Balance the Safety and Over-rejection in Large Audio Language Models",
+    "Safety Layers in Aligned Large Language Models: The Key to LLM Security",
+    "X-ALMA: Plug & Play Modules and Adaptive Rejection for Quality Translation at Scale"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "An observable failure mode in preference learning for translation where the model's output style shifts significantly away from the preferred data distribution.",
+      "papers": [
+        "X-ALMA: Plug & Play Modules and Adaptive Rejection for Quality Translation at Scale"
+      ],
+      "original_name": "Over-rejection"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In the usage in the papers, over-rejection is treated as a failure mode in preference learning for translation, where the model's output style moves away from the preferred data distribution. As described in X-ALMA: Plug & Play Modules and Adaptive Rejection for Quality Translation at Scale, the \"writing style of the translation outputs is forced away from the preferred data distribution,\" and this is said to impair the model's ability to generate meaningful translations."
+    },
+    {
+      "label": "Variants.",
+      "text": "The described setting is translation, and the behavior is discussed at the level of translation outputs and their writing style. The paper uses the name \"over-rejection\" for this pattern."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. The paper describes it behaviorally as a shift in translation output style away from the preferred data distribution, rather than through a named instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it as something the behavior indicates."
+    }
+  ],
+  "characterization": "Space of definitions. In the usage in the papers, over-rejection is treated as a failure mode in preference learning for translation, where the model's output style moves away from the preferred data distribution. As described in X-ALMA: Plug & Play Modules and Adaptive Rejection for Quality Translation at Scale, the \"writing style of the translation outputs is forced away from the preferred data distribution,\" and this is said to impair the model's ability to generate meaningful translations.\n\nVariants. The described setting is translation, and the behavior is discussed at the level of translation outputs and their writing style. The paper uses the name \"over-rejection\" for this pattern.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The paper describes it behaviorally as a shift in translation output style away from the preferred data distribution, rather than through a named instrument.\n\nWhat it is taken as evidence of. No construct is linked to it as something the behavior indicates.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Reshaping Representation Space to Balance the Safety and Over-rejection in Large Audio Language Models"
+    ],
+    "iclr25": [
+      "Safety Layers in Aligned Large Language Models: The Key to LLM Security",
+      "X-ALMA: Plug & Play Modules and Adaptive Rejection for Quality Translation at Scale"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

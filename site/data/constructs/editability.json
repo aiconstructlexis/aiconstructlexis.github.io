@@ -1,0 +1,115 @@
+{
+  "canonical_name": "Editability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the dominant framing treats editability as a capacity for successful model modification under repeated or ongoing editing while preserving what is already there. Definitions describe it as an \"inherent capacity\" to be modified efficiently without harming overall performance, as the ability to \"edit multiple times without forgetting previous edits,\" and as continuous integration of a stream of factual updates while retaining previously acquired knowledge. A smaller framing shifts the emphasis from a model-level capacity to a method-level evaluation dimension, defining editing reliability as the degree to which a concept editing method consistently controls a target concept across different inputs.\n\nSpace of facets. Papers organize this concept mainly around time and retention. Some use narrower labels such as multiple edits, centered on accumulating successive updates without interference, while others use lifelong knowledge editing for continuous incorporation of a stream of factual updates. One paper instead places editing reliability within a four-dimension evaluation framework, alongside output generalization, neuron-level consistency, and mathematical formalization, so the usage spans both retention across updates and consistency of concept control.\n\nSpace of measurement. No measurement instrument is linked to editability, and no measured_by relationship is recorded. Papers nevertheless show one explicit evaluation pattern for the reliability framing: concept editing methods are evaluated along editing reliability and related dimensions, and one study reports that \"SAE achieves the best editing reliability.\" Beyond this, editability is linked to one behavioral indicator, Knowledge editing, but through a causal claim rather than as a measure.\n\nLinks. Only one directional link is reported. One paper claims a causal relationship from Knowledge editing to Editability, stating that sequential updates gradually deviate the model from its initial state and lead to degradation in editability; the same source also says that keeping the model in its initial state avoids degradation in editability caused by sequential editing.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multiple edits",
+    "Editability",
+    "Lifelong knowledge editing",
+    "Editing reliability"
+  ],
+  "papers": [
+    "ChainEdit: Propagating Ripple Effects in LLM Knowledge Editing through Logical Rule-Guided Chains",
+    "Towards a Unified Paradigm of Concept Editing in Large Language Models",
+    "BalancEdit: Dynamically Balancing the Generality-Locality Trade-off in Multi-modal Model Editing",
+    "Towards Lifelong Model Editing via Simulating Ideal Editor",
+    "WikiBigEdit: Understanding the Limits of Lifelong Knowledge Editing in LLMs"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The inherent capacity of a large language model to be successfully and efficiently modified by editing techniques while maintaining its overall performance.",
+      "papers": [
+        "Towards Lifelong Model Editing via Simulating Ideal Editor"
+      ],
+      "original_name": "Editability"
+    },
+    {
+      "text": "The latent ability of a model editing system to accumulate and retain multiple knowledge updates over time without forgetting previous edits or causing interference.",
+      "papers": [
+        "BalancEdit: Dynamically Balancing the Generality-Locality Trade-off in Multi-modal Model Editing"
+      ],
+      "original_name": "Multiple edits"
+    },
+    {
+      "text": "The ability of a model to continuously integrate a stream of new or updated factual information while retaining previously acquired knowledge.",
+      "papers": [
+        "WikiBigEdit: Understanding the Limits of Lifelong Knowledge Editing in LLMs"
+      ],
+      "original_name": "Lifelong knowledge editing"
+    },
+    {
+      "text": "The degree to which a concept editing method consistently and effectively controls a target concept in a model's outputs across different inputs.",
+      "papers": [
+        "Towards a Unified Paradigm of Concept Editing in Large Language Models"
+      ],
+      "original_name": "Editing reliability"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Towards Lifelong Model Editing via Simulating Ideal Editor",
+      "evidence": "The sequential updates gradually deviate the model from its initial state, leading to degradation in its editability (Ma et al., 2024; Gupta et al., 2024b). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Towards Lifelong Model Editing via Simulating Ideal Editor"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the dominant framing treats editability as a capacity for successful model modification under repeated or ongoing editing while preserving what is already there. Definitions describe it as an \"inherent capacity\" to be modified efficiently without harming overall performance, as the ability to \"edit multiple times without forgetting previous edits,\" and as continuous integration of a stream of factual updates while retaining previously acquired knowledge. A smaller framing shifts the emphasis from a model-level capacity to a method-level evaluation dimension, defining editing reliability as the degree to which a concept editing method consistently controls a target concept across different inputs."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers organize this concept mainly around time and retention. Some use narrower labels such as multiple edits, centered on accumulating successive updates without interference, while others use lifelong knowledge editing for continuous incorporation of a stream of factual updates. One paper instead places editing reliability within a four-dimension evaluation framework, alongside output generalization, neuron-level consistency, and mathematical formalization, so the usage spans both retention across updates and consistency of concept control."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to editability, and no measured_by relationship is recorded. Papers nevertheless show one explicit evaluation pattern for the reliability framing: concept editing methods are evaluated along editing reliability and related dimensions, and one study reports that \"SAE achieves the best editing reliability.\" Beyond this, editability is linked to one behavioral indicator, Knowledge editing, but through a causal claim rather than as a measure."
+    },
+    {
+      "label": "Links.",
+      "text": "Only one directional link is reported. One paper claims a causal relationship from Knowledge editing to Editability, stating that sequential updates gradually deviate the model from its initial state and lead to degradation in editability; the same source also says that keeping the model in its initial state avoids degradation in editability caused by sequential editing."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the dominant framing treats editability as a capacity for successful model modification under repeated or ongoing editing while preserving what is already there. Definitions describe it as an \"inherent capacity\" to be modified efficiently without harming overall performance, as the ability to \"edit multiple times without forgetting previous edits,\" and as continuous integration of a stream of factual updates while retaining previously acquired knowledge. A smaller framing shifts the emphasis from a model-level capacity to a method-level evaluation dimension, defining editing reliability as the degree to which a concept editing method consistently controls a target concept across different inputs.\n\nSpace of facets. Papers organize this concept mainly around time and retention. Some use narrower labels such as multiple edits, centered on accumulating successive updates without interference, while others use lifelong knowledge editing for continuous incorporation of a stream of factual updates. One paper instead places editing reliability within a four-dimension evaluation framework, alongside output generalization, neuron-level consistency, and mathematical formalization, so the usage spans both retention across updates and consistency of concept control.\n\nSpace of measurement. No measurement instrument is linked to editability, and no measured_by relationship is recorded. Papers nevertheless show one explicit evaluation pattern for the reliability framing: concept editing methods are evaluated along editing reliability and related dimensions, and one study reports that \"SAE achieves the best editing reliability.\" Beyond this, editability is linked to one behavioral indicator, Knowledge editing, but through a causal claim rather than as a measure.\n\nLinks. Only one directional link is reported. One paper claims a causal relationship from Knowledge editing to Editability, stating that sequential updates gradually deviate the model from its initial state and lead to degradation in editability; the same source also says that keeping the model in its initial state avoids degradation in editability caused by sequential editing.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "ChainEdit: Propagating Ripple Effects in LLM Knowledge Editing through Logical Rule-Guided Chains"
+    ],
+    "emnlp25": [
+      "Towards a Unified Paradigm of Concept Editing in Large Language Models"
+    ],
+    "icml25": [
+      "BalancEdit: Dynamically Balancing the Generality-Locality Trade-off in Multi-modal Model Editing",
+      "Towards Lifelong Model Editing via Simulating Ideal Editor",
+      "WikiBigEdit: Understanding the Limits of Lifelong Knowledge Editing in LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "icml25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25"
+  ]
+}

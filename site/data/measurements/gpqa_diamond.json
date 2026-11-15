@@ -1,0 +1,154 @@
+{
+  "canonical_name": "GPQA-Diamond",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, GPQA-Diamond is most commonly described as a challenging expert-level science or STEM question answering benchmark for deep reasoning. Most definitions describe graduate-level or expert-level multiple-choice questions across biology, physics, and chemistry, and one definition specifies 198 questions. A smaller line of work frames GPQADiamond as a challenging subset of GPQA used to assess zero-shot generalization on an unseen task, and some definitions note pass@1 accuracy.\n\nWhat it is claimed to measure. Papers link it to 2 constructs and no behavioral indicators. The prevailing usage is to measure Reasoning: papers describe evaluating models on reasoning benchmarks that include GPQA-Diamond, selecting it among mathematical and reasoning datasets, and measuring reasoning ability with accuracy on GPQA Diamond. A smaller line of work uses it to measure Generalization, specifically how well a transferring-then-finetuning approach generalizes to the unseen task GPQADiamond.\n\nSpace of uses. Papers do not explicitly relate it to other measurement instruments, but they often use it alongside AIME 2024 and MATH-500, and sometimes LiveCodeBench or GSM8K, in multi-benchmark evaluations. In those evaluations it is positioned as one of the challenging reasoning benchmarks or datasets, while one paper uses it as an additional unseen task for transfer-based evaluation. Some definitions also describe evaluation on GPQA Diamond with pass@1 accuracy.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GPQA-Diamond",
+    "GPQADiamond",
+    "GPQA Diamond"
+  ],
+  "papers": [
+    "EducationQ: Evaluating LLMs' Teaching Capabilities Through Multi-Agent Dialogue Framework",
+    "Synthesizing Post-Training Data for LLMs through Multi-Agent Simulation",
+    "Accelerated Test-Time Scaling with Model-Free Speculative Sampling",
+    "Answer Convergence as a Signal for Early Stopping in Reasoning",
+    "Efficient Model Development through Fine-tuning Transfer",
+    "Enhancing Reasoning Abilities of Small LLMs with Cognitive Alignment",
+    "Flaw or Artifact? Rethinking Prompt Sensitivity in Evaluating LLMs",
+    "Mapping the Minds of LLMs: A Graph-Based Analysis of Reasoning LLMs",
+    "Prior Prompt Engineering for Reinforcement Fine-Tuning",
+    "RCScore: Quantifying Response Consistency in Large Language Models",
+    "Stepwise Informativeness Search for Improving LLM Reasoning",
+    "ThinkTuning: Instilling Cognitive Reflections without Distillation",
+    "Thinking Out Loud: Do Reasoning Models Know When They're Right?",
+    "Word Salad Chopper: Reasoning Models Waste A Ton Of Decoding Budget On Useless Repetitions, Self-Knowingly",
+    "BRiTE: Bootstrapping Reinforced Thinking Process to Enhance Language Model Reasoning",
+    "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning",
+    "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+  ],
+  "paper_count": 17,
+  "definitions": [
+    {
+      "text": "Scientific reasoning benchmark containing 198 graduate-level multiple-choice questions across biology, physics, and chemistry.",
+      "papers": [
+        "Thinking Out Loud: Do Reasoning Models Know When They're Right?"
+      ],
+      "original_name": "GPQA-Diamond"
+    },
+    {
+      "text": "Challenging subset of GPQA used to assess zero-shot generalization on unseen, expert-level reasoning tasks.",
+      "papers": [
+        "Efficient Model Development through Fine-tuning Transfer"
+      ],
+      "original_name": "GPQADiamond"
+    },
+    {
+      "text": "Expert-level question answering benchmark in STEM fields requiring deep reasoning, evaluated using pass@1 accuracy.",
+      "papers": [
+        "Synthesizing Post-Training Data for LLMs through Multi-Agent Simulation",
+        "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning",
+        "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+      ],
+      "original_name": "GPQA Diamond"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning",
+      "evidence": "Reasoning Models, in which we perform SFT with Qwen-2.5 on s1K dataset (Muennighoff et al., 2025) and evaluated on GPQA Diamond (Rein et al., 2023) (Section 5.1).",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "icml25": [
+          "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning"
+        ],
+        "emnlp25": [
+          "Enhancing Reasoning Abilities of Small LLMs with Cognitive Alignment",
+          "Step-level Verifier-guided Hybrid Test-Time Scaling for Large Language Models",
+          "Reasoning Model Unlearning: Forgetting Traces, Not Just Answers, While Preserving Reasoning Skills",
+          "Accelerated Test-Time Scaling with Model-Free Speculative Sampling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Efficient Model Development through Fine-tuning Transfer",
+      "evidence": "we use GSM8K and MATH500, along with an additional dataset to assess how well our transferring-then-finetuning approach generalizes to the unseen task GPQADiamond (Rein et al., 2024). (Section 5.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Efficient Model Development through Fine-tuning Transfer"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, GPQA-Diamond is most commonly described as a challenging expert-level science or STEM question answering benchmark for deep reasoning. Most definitions describe graduate-level or expert-level multiple-choice questions across biology, physics, and chemistry, and one definition specifies 198 questions. A smaller line of work frames GPQADiamond as a challenging subset of GPQA used to assess zero-shot generalization on an unseen task, and some definitions note pass@1 accuracy."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 2 constructs and no behavioral indicators. The prevailing usage is to measure Reasoning: papers describe evaluating models on reasoning benchmarks that include GPQA-Diamond, selecting it among mathematical and reasoning datasets, and measuring reasoning ability with accuracy on GPQA Diamond. A smaller line of work uses it to measure Generalization, specifically how well a transferring-then-finetuning approach generalizes to the unseen task GPQADiamond."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers do not explicitly relate it to other measurement instruments, but they often use it alongside AIME 2024 and MATH-500, and sometimes LiveCodeBench or GSM8K, in multi-benchmark evaluations. In those evaluations it is positioned as one of the challenging reasoning benchmarks or datasets, while one paper uses it as an additional unseen task for transfer-based evaluation. Some definitions also describe evaluation on GPQA Diamond with pass@1 accuracy."
+    }
+  ],
+  "characterization": "What it is. Across the papers, GPQA-Diamond is most commonly described as a challenging expert-level science or STEM question answering benchmark for deep reasoning. Most definitions describe graduate-level or expert-level multiple-choice questions across biology, physics, and chemistry, and one definition specifies 198 questions. A smaller line of work frames GPQADiamond as a challenging subset of GPQA used to assess zero-shot generalization on an unseen task, and some definitions note pass@1 accuracy.\n\nWhat it is claimed to measure. Papers link it to 2 constructs and no behavioral indicators. The prevailing usage is to measure Reasoning: papers describe evaluating models on reasoning benchmarks that include GPQA-Diamond, selecting it among mathematical and reasoning datasets, and measuring reasoning ability with accuracy on GPQA Diamond. A smaller line of work uses it to measure Generalization, specifically how well a transferring-then-finetuning approach generalizes to the unseen task GPQADiamond.\n\nSpace of uses. Papers do not explicitly relate it to other measurement instruments, but they often use it alongside AIME 2024 and MATH-500, and sometimes LiveCodeBench or GSM8K, in multi-benchmark evaluations. In those evaluations it is positioned as one of the challenging reasoning benchmarks or datasets, while one paper uses it as an additional unseen task for transfer-based evaluation. Some definitions also describe evaluation on GPQA Diamond with pass@1 accuracy.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "EducationQ: Evaluating LLMs' Teaching Capabilities Through Multi-Agent Dialogue Framework",
+      "Synthesizing Post-Training Data for LLMs through Multi-Agent Simulation"
+    ],
+    "emnlp25": [
+      "Accelerated Test-Time Scaling with Model-Free Speculative Sampling",
+      "Answer Convergence as a Signal for Early Stopping in Reasoning",
+      "Efficient Model Development through Fine-tuning Transfer",
+      "Enhancing Reasoning Abilities of Small LLMs with Cognitive Alignment",
+      "Flaw or Artifact? Rethinking Prompt Sensitivity in Evaluating LLMs",
+      "Mapping the Minds of LLMs: A Graph-Based Analysis of Reasoning LLMs",
+      "Prior Prompt Engineering for Reinforcement Fine-Tuning",
+      "RCScore: Quantifying Response Consistency in Large Language Models",
+      "Stepwise Informativeness Search for Improving LLM Reasoning",
+      "ThinkTuning: Instilling Cognitive Reflections without Distillation",
+      "Thinking Out Loud: Do Reasoning Models Know When They're Right?",
+      "Word Salad Chopper: Reasoning Models Waste A Ton Of Decoding Budget On Useless Repetitions, Self-Knowingly"
+    ],
+    "icml25": [
+      "BRiTE: Bootstrapping Reinforced Thinking Process to Enhance Language Model Reasoning",
+      "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning"
+    ],
+    "naacl25": [
+      "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 12,
+    "icml25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

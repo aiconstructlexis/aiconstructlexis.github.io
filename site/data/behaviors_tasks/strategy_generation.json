@@ -1,0 +1,135 @@
+{
+  "canonical_name": "Strategy generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is the production of a high-level plan or strategy in language before later solution steps, most often before answering or before generating code. Definitions converge on abstract solution paths rather than detailed calculations or specific operations: papers describe multiple strategies in English, a plan that rehearses the whole reasoning path, or an open-ended strategy proposed from the goal, interaction history, prior strategies, and latest observation. A smaller usage frames the behavior as generating natural language criteria or strategies for classifying user satisfaction.\n\nVariants. Papers study several named variants: anticipatory plan generation, code-form plan generation, and strategy formulation. These variants differ mainly in form and setting, including natural language plans for coding problems, pseudocode-style plans that summarize high-level reasoning structure, abstract ideas that identify relevant concepts and principles, and strategy generation for dialogue-based user satisfaction classification. Some formulations ask for multiple candidate strategies, while others ask for one intended solution path before the answer.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The descriptions instead show elicitation through prompts that ask for high-level strategies first, multiple strategies in English, or an abstract plan before answering.\n\nWhat it is taken as evidence of. Papers connect this behavior to two constructs, and they do not converge on a single target construct. The more common link is a claimed causal relationship from strategy generation to Reasoning, with papers describing strategy generation as enhancing reasoning ability or enabling models to tackle coding problems using reasoning capabilities. A smaller line of work claims a causal relationship from strategy generation to Sequential decision-making, reporting better performance on decision-making tasks when responses are generated with planning rather than directly.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Strategy generation",
+    "Anticipatory plan generation",
+    "Code-form plan generation",
+    "Strategy formulation"
+  ],
+  "papers": [
+    "EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via Reinforcement Learning",
+    "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+    "Learning to Plan Before Answering: Self-Teaching LLMs to Learn Abstract Plans for Problem Solving",
+    "CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models",
+    "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+    "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "Producing high-level natural language plans or approaches for solving a coding problem before generating code.",
+      "papers": [
+        "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+        "CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models",
+        "EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via Reinforcement Learning"
+      ],
+      "original_name": "Strategy generation"
+    },
+    {
+      "text": "Producing a high-level plan before answering that outlines the intended solution path without detailed calculations.",
+      "papers": [
+        "Learning to Plan Before Answering: Self-Teaching LLMs to Learn Abstract Plans for Problem Solving"
+      ],
+      "original_name": "Anticipatory plan generation"
+    },
+    {
+      "text": "Producing pseudocode-style plans that summarize the high-level reasoning structure for solving a prompt.",
+      "papers": [
+        "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning"
+      ],
+      "original_name": "Code-form plan generation"
+    },
+    {
+      "text": "The observable behavior of generating high-level plans or abstract ideas for solving a problem, including identification of relevant concepts and principles without detailing specific operations.",
+      "papers": [
+        "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models"
+      ],
+      "original_name": "Strategy formulation"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+      "evidence": "These S+ and S\u2212guide the generation of new strategies to optimize overall performance, enhancing reasoning ability and avoiding redundancy. (Section 3.1.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+          "CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sequential decision-making",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "evidence": "CODEPLAN consistently and significantly outperforms directly generating responses without planning, yielding a relative 25.1% performance gain averaged across 13 challenging reasoning benchmarks spanning mathematical reasoning, symbolic reasoning, instruction-following, multi-hop question answering, and decision-making tasks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is the production of a high-level plan or strategy in language before later solution steps, most often before answering or before generating code. Definitions converge on abstract solution paths rather than detailed calculations or specific operations: papers describe multiple strategies in English, a plan that rehearses the whole reasoning path, or an open-ended strategy proposed from the goal, interaction history, prior strategies, and latest observation. A smaller usage frames the behavior as generating natural language criteria or strategies for classifying user satisfaction."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study several named variants: anticipatory plan generation, code-form plan generation, and strategy formulation. These variants differ mainly in form and setting, including natural language plans for coding problems, pseudocode-style plans that summarize high-level reasoning structure, abstract ideas that identify relevant concepts and principles, and strategy generation for dialogue-based user satisfaction classification. Some formulations ask for multiple candidate strategies, while others ask for one intended solution path before the answer."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. The descriptions instead show elicitation through prompts that ask for high-level strategies first, multiple strategies in English, or an abstract plan before answering."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers connect this behavior to two constructs, and they do not converge on a single target construct. The more common link is a claimed causal relationship from strategy generation to Reasoning, with papers describing strategy generation as enhancing reasoning ability or enabling models to tackle coding problems using reasoning capabilities. A smaller line of work claims a causal relationship from strategy generation to Sequential decision-making, reporting better performance on decision-making tasks when responses are generated with planning rather than directly."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is the production of a high-level plan or strategy in language before later solution steps, most often before answering or before generating code. Definitions converge on abstract solution paths rather than detailed calculations or specific operations: papers describe multiple strategies in English, a plan that rehearses the whole reasoning path, or an open-ended strategy proposed from the goal, interaction history, prior strategies, and latest observation. A smaller usage frames the behavior as generating natural language criteria or strategies for classifying user satisfaction.\n\nVariants. Papers study several named variants: anticipatory plan generation, code-form plan generation, and strategy formulation. These variants differ mainly in form and setting, including natural language plans for coding problems, pseudocode-style plans that summarize high-level reasoning structure, abstract ideas that identify relevant concepts and principles, and strategy generation for dialogue-based user satisfaction classification. Some formulations ask for multiple candidate strategies, while others ask for one intended solution path before the answer.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The descriptions instead show elicitation through prompts that ask for high-level strategies first, multiple strategies in English, or an abstract plan before answering.\n\nWhat it is taken as evidence of. Papers connect this behavior to two constructs, and they do not converge on a single target construct. The more common link is a claimed causal relationship from strategy generation to Reasoning, with papers describing strategy generation as enhancing reasoning ability or enabling models to tackle coding problems using reasoning capabilities. A smaller line of work claims a causal relationship from strategy generation to Sequential decision-making, reporting better performance on decision-making tasks when responses are generated with planning rather than directly.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "Learning to Plan Before Answering: Self-Teaching LLMs to Learn Abstract Plans for Problem Solving"
+    ],
+    "naacl25": [
+      "CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models",
+      "LLM-guided Plan and Retrieval: A Strategic Alignment for Interpretable User Satisfaction Estimation in Dialogue",
+      "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models"
+    ],
+    "acl25": [
+      "EPO: Explicit Policy Optimization for Strategic Reasoning in LLMs via Reinforcement Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "naacl25": 3,
+    "acl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "naacl25"
+  ]
+}

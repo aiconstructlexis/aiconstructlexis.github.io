@@ -1,0 +1,165 @@
+{
+  "canonical_name": "Visual hallucination",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats visual hallucination as a failure mode in which an MLLM produces incorrect visual claims or unsupported descriptions while interpreting an image. Most formulations focus on text that mentions objects, attributes, or relationships not present in the image, and a smaller formulation uses the name multimodal hallucination for outputs that contain information inconsistent with or absent from the provided multimodal inputs. Success is correspondingly framed as keeping the response consistent with the image content, or more broadly with the given multimodal inputs.\n\nVariants. Papers most commonly study it when models respond about an image, especially when they describe objects, attributes, or relationships that are not in the input image. A smaller line of work broadens the setting from images to multimodal inputs and uses the label multimodal hallucination. One quoted passage also highlights failures in granular visual recognition, such as identifying small and occluded objects.\n\nSpace of elicitation and scores. Papers measure it with four linked instruments. The most common is POPE, which papers describe as aiming to evaluate visual hallucinations of MLLMs and as an assessment of multimodal hallucination; CHAIR, HallusionBench, and MMHal-Bench are also used as named evaluation tools. One paper frames this as a visual hallucination task that checks whether the model response is consistent with the image content, while another uses HallusionBench to quantify the extent of hallucinations.\n\nWhat it is taken as evidence of. Papers link it to one construct, visual perception. One paper claims a causal relationship from visual perception to visual hallucination, stating that impaired visual perception may lead to visual hallucinations, while another paper discusses visual perception and visual hallucinations together when examining model capabilities. No other construct is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Visual hallucination",
+    "Multimodal hallucination"
+  ],
+  "papers": [
+    "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation",
+    "EAGLE: Expert-Guided Self-Enhancement for Preference Alignment in Pathology Large Vision-Language Model",
+    "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+    "Mitigating Modality Prior-Induced Hallucinations in Multimodal Large Language Models via Deciphering Attention Causality",
+    "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+    "Routing Experts: Learning to Route Dynamic Experts in Existing Multi-modal Large Language Models"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "Producing incorrect visual claims or unsupported descriptions when interpreting an image.",
+      "papers": [
+        "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+        "Routing Experts: Learning to Route Dynamic Experts in Existing Multi-modal Large Language Models"
+      ],
+      "original_name": "Visual hallucination"
+    },
+    {
+      "text": "A failure mode in Multimodal Large Language Models where the generated output contains information that is inconsistent with or absent from the provided multimodal inputs.",
+      "papers": [
+        "Mitigating Modality Prior-Induced Hallucinations in Multimodal Large Language Models via Deciphering Attention Causality"
+      ],
+      "original_name": "Multimodal hallucination"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "evidence": "We conducted extensive evaluations of DEEM on RobustVQA and two widely recognized benchmarks, POPE and MMVP, for visual hallucination and perception respectively (Section 1).",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+          "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+          "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+          "Routing Experts: Learning to Route Dynamic Experts in Existing Multi-modal Large Language Models"
+        ],
+        "acl25": [
+          "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual perception",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+      "evidence": "\u201cNeglecting to fine-tune the projector can significantly impair the model\u2019s visual perception capabilities. This deficiency may lead to visual hallucinations\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+          "DEEM: Diffusion models serve as the eyes of large language models for image perception"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CHAIR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+      "evidence": "Visual hallucination task evaluates whether the response of the model is consistent with the image content to ensure the trustworthiness and reliability of the model. We use CHAIR (Rohrbach et al., 2018), POPE (Li et al., 2023c), and MMHal-Bench (Sun et al., 2023).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "See What You Are Told: Visual Attention Sink in Large Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMHal-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+      "evidence": "Visual hallucination task evaluates whether the response of the model is consistent with the image content to ensure the trustworthiness and reliability of the model. We use CHAIR (Rohrbach et al., 2018), POPE (Li et al., 2023c), and MMHal-Bench (Sun et al., 2023).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "See What You Are Told: Visual Attention Sink in Large Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HallusionBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Look Again, Think Slowly: Enhancing Visual Reflection in Vision-Language Models",
+      "evidence": "Furthermore, we use HallBench (Guan et al., 2024) to quantify the extent of visual hallucinations in VLMs or VRMs. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Look Again, Think Slowly: Enhancing Visual Reflection in Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats visual hallucination as a failure mode in which an MLLM produces incorrect visual claims or unsupported descriptions while interpreting an image. Most formulations focus on text that mentions objects, attributes, or relationships not present in the image, and a smaller formulation uses the name multimodal hallucination for outputs that contain information inconsistent with or absent from the provided multimodal inputs. Success is correspondingly framed as keeping the response consistent with the image content, or more broadly with the given multimodal inputs."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers most commonly study it when models respond about an image, especially when they describe objects, attributes, or relationships that are not in the input image. A smaller line of work broadens the setting from images to multimodal inputs and uses the label multimodal hallucination. One quoted passage also highlights failures in granular visual recognition, such as identifying small and occluded objects."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers measure it with four linked instruments. The most common is POPE, which papers describe as aiming to evaluate visual hallucinations of MLLMs and as an assessment of multimodal hallucination; CHAIR, HallusionBench, and MMHal-Bench are also used as named evaluation tools. One paper frames this as a visual hallucination task that checks whether the model response is consistent with the image content, while another uses HallusionBench to quantify the extent of hallucinations."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers link it to one construct, visual perception. One paper claims a causal relationship from visual perception to visual hallucination, stating that impaired visual perception may lead to visual hallucinations, while another paper discusses visual perception and visual hallucinations together when examining model capabilities. No other construct is linked to it."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats visual hallucination as a failure mode in which an MLLM produces incorrect visual claims or unsupported descriptions while interpreting an image. Most formulations focus on text that mentions objects, attributes, or relationships not present in the image, and a smaller formulation uses the name multimodal hallucination for outputs that contain information inconsistent with or absent from the provided multimodal inputs. Success is correspondingly framed as keeping the response consistent with the image content, or more broadly with the given multimodal inputs.\n\nVariants. Papers most commonly study it when models respond about an image, especially when they describe objects, attributes, or relationships that are not in the input image. A smaller line of work broadens the setting from images to multimodal inputs and uses the label multimodal hallucination. One quoted passage also highlights failures in granular visual recognition, such as identifying small and occluded objects.\n\nSpace of elicitation and scores. Papers measure it with four linked instruments. The most common is POPE, which papers describe as aiming to evaluate visual hallucinations of MLLMs and as an assessment of multimodal hallucination; CHAIR, HallusionBench, and MMHal-Bench are also used as named evaluation tools. One paper frames this as a visual hallucination task that checks whether the model response is consistent with the image content, while another uses HallusionBench to quantify the extent of hallucinations.\n\nWhat it is taken as evidence of. Papers link it to one construct, visual perception. One paper claims a causal relationship from visual perception to visual hallucination, stating that impaired visual perception may lead to visual hallucinations, while another paper discusses visual perception and visual hallucinations together when examining model capabilities. No other construct is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation",
+      "EAGLE: Expert-Guided Self-Enhancement for Preference Alignment in Pathology Large Vision-Language Model"
+    ],
+    "iclr25": [
+      "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+      "Mitigating Modality Prior-Induced Hallucinations in Multimodal Large Language Models via Deciphering Attention Causality",
+      "See What You Are Told: Visual Attention Sink in Large Multimodal Models",
+      "Routing Experts: Learning to Route Dynamic Experts in Existing Multi-modal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 4
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "canonical_name": "Professional question answering",
+  "type": "behavior",
+  "canonical_definition": "Generating responses to queries that require domain-specific expertise in fields such as medicine, law, finance, or music, with accurate and contextually appropriate information.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Professional question answering"
+  ],
+  "papers": [
+    "Anchoring-Guidance Fine-Tuning (AnGFT): Elevating Professional Response Quality in Role-Playing Conversational Agents",
+    "RLAE: Reinforcement Learning-Assisted Ensemble for LLMs"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "Generating responses to queries that require domain-specific expertise in fields such as medicine, law, finance, or music, with accurate and contextually appropriate information.",
+      "papers": [
+        "Anchoring-Guidance Fine-Tuning (AnGFT): Elevating Professional Response Quality in Role-Playing Conversational Agents"
+      ],
+      "original_name": "Professional question answering"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "Generating responses to queries that require domain-specific expertise in fields such as medicine, law, finance, or music, with accurate and contextually appropriate information.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Anchoring-Guidance Fine-Tuning (AnGFT): Elevating Professional Response Quality in Role-Playing Conversational Agents",
+      "RLAE: Reinforcement Learning-Assisted Ensemble for LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "canonical_name": "Formal theorem proving",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the dominant framing is producing a correct formal proof for a theorem in an interactive theorem prover such as Lean. One recurring task formulation asks models to prove a theorem with access to code from the theorem's repository, and the stated success criterion is a correct formal proof.\n\nVariants. Papers study this behavior across several theorem settings and labels. miniF2F is described as covering high-school level exercises and competition problems, ProofNet as undergraduate-level theorems, and another description groups miniF2F and ProofNet among popular benchmarks focused on isolated competition problems; papers also refer to the behavior as theorem-proving capabilities, formal proof writing, and automated theorem proving with formal languages. A smaller line of work also relates formal theorem proving to premise selection and conjecture generation.\n\nSpace of elicitation and scores. Papers link formal theorem proving to four instruments overall. The most commonly linked are ProofNet and miniF2F, both described as benchmarks, with PutnamBench also used to evaluate theorem-provers; LeanDojo appears as a related tool for extracting training data from Lean 3 and 4 rather than as a direct measured-by link. Across the direct measurement links, papers operationalize the behavior through benchmark performance on high-school exercises, competition problems, undergraduate-level theorems, and evaluation with PutnamBench.\n\nWhat it is taken as evidence of. Construct links are mixed rather than unified. The most frequent construct connection is to mathematical reasoning: papers claim a causal relationship from formal theorem proving to mathematical reasoning, describing Lean as effective in improving mathematical reasoning and formal theorem proving as one mathematical reasoning task. A smaller line of work treats formal theorem proving as related to reasoning more broadly, while another paper claims a causal relationship from generalization to formal theorem proving, so papers do not settle on a single construct link.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Formal theorem proving"
+  ],
+  "papers": [
+    "Lean-STaR: Learning to Interleave Thinking and Proving",
+    "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+    "miniCTX: Neural Theorem Proving with (Long-)Contexts"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Producing a correct formal proof for a theorem in an interactive theorem prover such as Lean.",
+      "papers": [
+        "miniCTX: Neural Theorem Proving with (Long-)Contexts"
+      ],
+      "original_name": "Formal theorem proving"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "miniF2F",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "evidence": "In this section, we evaluate the theorem-proving capabilities of DeepSeek-Prover-V1.5 using two distinct benchmarks: miniF2F (Zheng et al., 2022), which encompasses high-school level exercises and competition problems, and ProofNet (Azerbayev et al., 2023), which pertains to undergraduate-level theorems. (Section 5)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search"
+        ],
+        "icml25": [
+          "MA-LoT: Model-Collaboration Lean-based Long Chain-of-Thought Reasoning enhances Formal Theorem Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ProofNet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "evidence": "In this section, we evaluate the theorem-proving capabilities of DeepSeek-Prover-V1.5 using two distinct benchmarks: miniF2F (Zheng et al., 2022), which encompasses high-school level exercises and competition problems, and ProofNet (Azerbayev et al., 2023), which pertains to undergraduate-level theorems. (Section 5)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+          "miniCTX: Neural Theorem Proving with (Long-)Contexts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "YuLan-Mini: Pushing the Limits of Open Data-efficient Language Model",
+      "evidence": "Lean provides a verifiable environment to explore theorem proving formally, which has been shown effective in improving mathematical reasoning (Xin et al., 2024; Ying et al., 2024b). As far as we know, we are the first public study to introduce formal mathematics data in pre-training, using a total amount of 0.2B lean-based synthesized data. (Section 4.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "YuLan-Mini: Pushing the Limits of Open Data-efficient Language Model"
+        ],
+        "iclr25": [
+          "LeanAgent: Lifelong Learning for Formal Theorem Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PutnamBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition",
+      "evidence": "We use PUTNAMBENCH to evaluate several established neural and symbolic theorem-provers.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "PutnamBench: Evaluating Neural Theorem-Provers on the Putnam Mathematical Competition"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "evidence": "\u201cThis emphasizes LeanAgent\u2019s continuous generalizability and improvement, explaining its superior theorem-proving performance.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LeanAgent: Lifelong Learning for Formal Theorem Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Premise selection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "evidence": "A critical challenge in theorem proving is the effective selection of relevant premises (Irving et al., 2016; Tworkowski et al.). (Section: 2 PRELIMINARIES)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LeanAgent: Lifelong Learning for Formal Theorem Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving",
+      "evidence": "Automated theorem proving with formal languages by LLMs stands at the forefront of reasoning research (Yang et al., 2024a), partly because it allows objective and reliable evaluation... Moreover, it arguably encapsulates the essence of advanced reasoning tasks while abstracting away the ambiguity of natural language, enabling meaningful studies on a relatively smaller scale. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LeanDojo",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "miniCTX: Neural Theorem Proving with (Long-)Contexts",
+      "evidence": "\"Theorem proving data extraction. Several tools extract training data from interactive theorem provers, including ... LeanDojo (Yang et al., 2023) for Lean 3 and 4.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "miniCTX: Neural Theorem Proving with (Long-)Contexts"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conjecture generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving",
+      "evidence": "\u201cThe conjecturer is trained iteratively on previously generated conjectures that are barely provable by the current prover, which incentivizes it to generate increasingly challenging conjectures over time.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "STP: Self-play LLM Theorem Provers with Iterative Conjecturing and Proving"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the dominant framing is producing a correct formal proof for a theorem in an interactive theorem prover such as Lean. One recurring task formulation asks models to prove a theorem with access to code from the theorem's repository, and the stated success criterion is a correct formal proof."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study this behavior across several theorem settings and labels. miniF2F is described as covering high-school level exercises and competition problems, ProofNet as undergraduate-level theorems, and another description groups miniF2F and ProofNet among popular benchmarks focused on isolated competition problems; papers also refer to the behavior as theorem-proving capabilities, formal proof writing, and automated theorem proving with formal languages. A smaller line of work also relates formal theorem proving to premise selection and conjecture generation."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link formal theorem proving to four instruments overall. The most commonly linked are ProofNet and miniF2F, both described as benchmarks, with PutnamBench also used to evaluate theorem-provers; LeanDojo appears as a related tool for extracting training data from Lean 3 and 4 rather than as a direct measured-by link. Across the direct measurement links, papers operationalize the behavior through benchmark performance on high-school exercises, competition problems, undergraduate-level theorems, and evaluation with PutnamBench."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Construct links are mixed rather than unified. The most frequent construct connection is to mathematical reasoning: papers claim a causal relationship from formal theorem proving to mathematical reasoning, describing Lean as effective in improving mathematical reasoning and formal theorem proving as one mathematical reasoning task. A smaller line of work treats formal theorem proving as related to reasoning more broadly, while another paper claims a causal relationship from generalization to formal theorem proving, so papers do not settle on a single construct link."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the dominant framing is producing a correct formal proof for a theorem in an interactive theorem prover such as Lean. One recurring task formulation asks models to prove a theorem with access to code from the theorem's repository, and the stated success criterion is a correct formal proof.\n\nVariants. Papers study this behavior across several theorem settings and labels. miniF2F is described as covering high-school level exercises and competition problems, ProofNet as undergraduate-level theorems, and another description groups miniF2F and ProofNet among popular benchmarks focused on isolated competition problems; papers also refer to the behavior as theorem-proving capabilities, formal proof writing, and automated theorem proving with formal languages. A smaller line of work also relates formal theorem proving to premise selection and conjecture generation.\n\nSpace of elicitation and scores. Papers link formal theorem proving to four instruments overall. The most commonly linked are ProofNet and miniF2F, both described as benchmarks, with PutnamBench also used to evaluate theorem-provers; LeanDojo appears as a related tool for extracting training data from Lean 3 and 4 rather than as a direct measured-by link. Across the direct measurement links, papers operationalize the behavior through benchmark performance on high-school exercises, competition problems, undergraduate-level theorems, and evaluation with PutnamBench.\n\nWhat it is taken as evidence of. Construct links are mixed rather than unified. The most frequent construct connection is to mathematical reasoning: papers claim a causal relationship from formal theorem proving to mathematical reasoning, describing Lean as effective in improving mathematical reasoning and formal theorem proving as one mathematical reasoning task. A smaller line of work treats formal theorem proving as related to reasoning more broadly, while another paper claims a causal relationship from generalization to formal theorem proving, so papers do not settle on a single construct link.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Lean-STaR: Learning to Interleave Thinking and Proving",
+      "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "miniCTX: Neural Theorem Proving with (Long-)Contexts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

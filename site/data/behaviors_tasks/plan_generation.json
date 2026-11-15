@@ -1,0 +1,216 @@
+{
+  "canonical_name": "Plan generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage is the direct production of a sequence of actions or steps meant to solve a planning problem or achieve a specified goal. Many papers phrase this as moving from an initial state to a goal state, or as generating reasonable solutions for given tasks, and some make the directness explicit by describing a complete plan produced \"without the help of any external planning library\" or other external planner. A smaller range of formulations narrows the output to numbered steps, a step-by-step action plan, or an ordered sequence of API function calls.\n\nVariants. Papers study this behavior in several task-specific forms. The most recurring alternate label is task planning, used for generating discrete steps for a high-level task and for step-by-step plans from safety guard inputs; smaller lines of work treat it as multi-step planning for ordered API calls, meta-plan generation for collaborative long-term decomposition into subtasks, transition pathway generation for textual material transformations from a source to a target with specified properties, and a turn-level dialogue flow that specifies intentions, slot-value pairs, and reasoning before utterance realization. Some authors also describe it more generally as producing a sequence of actions or thoughts toward a goal.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to this behavior, VAL. In one paper, the plan produced from LLM-as-Planner is validated using VAL against ground-truth DFs and PFs, so the linked operationalization here is plan validation rather than a broader set of scoring tools.\n\nWhat it is taken as evidence of. Construct links are narrow in the papers: the only linked construct is Planning, and the recorded relationship is that plan generation is related to it. One paper describes plan-and-solve prompting as first eliciting a plan, such as numbered steps, and then executing that plan. Beyond constructs, papers also relate plan generation to two other behavioral indicators, Collaboration and Code generation, through collaborative creation and refinement of meta-plans and through code generated from an outlined plan.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Plan generation",
+    "Transition pathway generation",
+    "Meta-plan generation",
+    "Action plan generation",
+    "Dialogue logic flow generation",
+    "Multi-step planning",
+    "Task planning"
+  ],
+  "papers": [
+    "From Schema to State: Zero-Shot Scheme-Only Dialogue State Tracking via Diverse Synthetic Dialogue and Step-by-Step Distillation",
+    "LaMP-QA: A Benchmark for Personalized Long-form Question Answering",
+    "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+    "Interactive Speculative Planning: Enhance Agent Efficiency through Co-design of System and User Interface",
+    "MatExpert: Decomposing Materials Discovery By Mimicking Human Experts",
+    "System 1.x: Learning to Balance Fast and Slow Planning with Language Models",
+    "Flow-of-Options: Diversified and Improved LLM Reasoning by Thinking Through Options",
+    "GuardAgent: Safeguard LLM Agents via Knowledge-Enabled Reasoning",
+    "Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks",
+    "Language Models Can Infer Action Semantics for Symbolic Planners from Environment Feedback",
+    "Revealing the Barriers of Language Agents in Planning",
+    "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training",
+    "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge",
+    "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "The observable behavior of an LLM directly producing a sequence of actions intended to solve a planning problem, without translating to a formal language or using an external planner.",
+      "papers": [
+        "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models",
+        "Revealing the Barriers of Language Agents in Planning",
+        "Language Models Can Infer Action Semantics for Symbolic Planners from Environment Feedback",
+        "System 1.x: Learning to Balance Fast and Slow Planning with Language Models",
+        "Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks",
+        "LaMP-QA: A Benchmark for Personalized Long-form Question Answering"
+      ],
+      "original_name": "Plan generation"
+    },
+    {
+      "text": "The observable task of generating a textual, step-by-step plan outlining the necessary modifications to transform a source material into a target material with specified properties.",
+      "papers": [
+        "MatExpert: Decomposing Materials Discovery By Mimicking Human Experts"
+      ],
+      "original_name": "Transition pathway generation"
+    },
+    {
+      "text": "The observable process where agents collaboratively analyze a task, discuss, and create a high-level, long-term plan that decomposes the task into subtasks with assigned steps.",
+      "papers": [
+        "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation"
+      ],
+      "original_name": "Meta-plan generation"
+    },
+    {
+      "text": "The observable production of a sequence of actions or thoughts intended to achieve a specific goal.",
+      "papers": [
+        "Interactive Speculative Planning: Enhance Agent Efficiency through Co-design of System and User Interface"
+      ],
+      "original_name": "Action plan generation"
+    },
+    {
+      "text": "Creating a turn-level plan that specifies intentions, relevant slot-value pairs, and explanatory reasoning before utterance realization.",
+      "papers": [
+        "From Schema to State: Zero-Shot Scheme-Only Dialogue State Tracking via Diverse Synthetic Dialogue and Step-by-Step Distillation"
+      ],
+      "original_name": "Dialogue logic flow generation"
+    },
+    {
+      "text": "Producing an ordered sequence of API function calls as a solution plan to achieve a goal derived from a natural language task description.",
+      "papers": [
+        "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training"
+      ],
+      "original_name": "Multi-step planning"
+    },
+    {
+      "text": "The behavior of an LLM generating a sequence of discrete steps required to complete a given high-level task.",
+      "papers": [
+        "Flow-of-Options: Diversified and Improved LLM Reasoning by Thinking Through Options",
+        "GuardAgent: Safeguard LLM Agents via Knowledge-Enabled Reasoning"
+      ],
+      "original_name": "Task planning"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VAL",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On the Limit of Language Models as Planning Formalizers",
+      "evidence": "the plan produced from LLM-as-Planner is validated using VAL (Howey et al., 2004) against the ground-truth DFs and PFs provided above. (Section 4.2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "On the Limit of Language Models as Planning Formalizers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Collaboration",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+      "evidence": "CaPo enables agents to collaboratively create and refine long-term, strategic, and coherent meta-plans through multi-turn discussions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Code-Generated Graph Representations Using Multiple LLM Agents for Material Properties Prediction",
+      "evidence": "In the second step, a complete code is generated based on the outlined plan by Agent B. (Section 4.1.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Code-Generated Graph Representations Using Multiple LLM Agents for Material Properties Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Prior Prompt Engineering for Reinforcement Fine-Tuning",
+      "evidence": "Planning: Plan-and-solve prompting (PS) (Wang et al., 2023) elicits the model to first generate a plan (e.g., numbered steps) and then execute that plan, yielding improvements over standard CoT. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Prior Prompt Engineering for Reinforcement Fine-Tuning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage is the direct production of a sequence of actions or steps meant to solve a planning problem or achieve a specified goal. Many papers phrase this as moving from an initial state to a goal state, or as generating reasonable solutions for given tasks, and some make the directness explicit by describing a complete plan produced \"without the help of any external planning library\" or other external planner. A smaller range of formulations narrows the output to numbered steps, a step-by-step action plan, or an ordered sequence of API function calls."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study this behavior in several task-specific forms. The most recurring alternate label is task planning, used for generating discrete steps for a high-level task and for step-by-step plans from safety guard inputs; smaller lines of work treat it as multi-step planning for ordered API calls, meta-plan generation for collaborative long-term decomposition into subtasks, transition pathway generation for textual material transformations from a source to a target with specified properties, and a turn-level dialogue flow that specifies intentions, slot-value pairs, and reasoning before utterance realization. Some authors also describe it more generally as producing a sequence of actions or thoughts toward a goal."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one measurement instrument is linked to this behavior, VAL. In one paper, the plan produced from LLM-as-Planner is validated using VAL against ground-truth DFs and PFs, so the linked operationalization here is plan validation rather than a broader set of scoring tools."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Construct links are narrow in the papers: the only linked construct is Planning, and the recorded relationship is that plan generation is related to it. One paper describes plan-and-solve prompting as first eliciting a plan, such as numbered steps, and then executing that plan. Beyond constructs, papers also relate plan generation to two other behavioral indicators, Collaboration and Code generation, through collaborative creation and refinement of meta-plans and through code generated from an outlined plan."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage is the direct production of a sequence of actions or steps meant to solve a planning problem or achieve a specified goal. Many papers phrase this as moving from an initial state to a goal state, or as generating reasonable solutions for given tasks, and some make the directness explicit by describing a complete plan produced \"without the help of any external planning library\" or other external planner. A smaller range of formulations narrows the output to numbered steps, a step-by-step action plan, or an ordered sequence of API function calls.\n\nVariants. Papers study this behavior in several task-specific forms. The most recurring alternate label is task planning, used for generating discrete steps for a high-level task and for step-by-step plans from safety guard inputs; smaller lines of work treat it as multi-step planning for ordered API calls, meta-plan generation for collaborative long-term decomposition into subtasks, transition pathway generation for textual material transformations from a source to a target with specified properties, and a turn-level dialogue flow that specifies intentions, slot-value pairs, and reasoning before utterance realization. Some authors also describe it more generally as producing a sequence of actions or thoughts toward a goal.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to this behavior, VAL. In one paper, the plan produced from LLM-as-Planner is validated using VAL against ground-truth DFs and PFs, so the linked operationalization here is plan validation rather than a broader set of scoring tools.\n\nWhat it is taken as evidence of. Construct links are narrow in the papers: the only linked construct is Planning, and the recorded relationship is that plan generation is related to it. One paper describes plan-and-solve prompting as first eliciting a plan, such as numbered steps, and then executing that plan. Beyond constructs, papers also relate plan generation to two other behavioral indicators, Collaboration and Code generation, through collaborative creation and refinement of meta-plans and through code generated from an outlined plan.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "From Schema to State: Zero-Shot Scheme-Only Dialogue State Tracking via Diverse Synthetic Dialogue and Step-by-Step Distillation",
+      "LaMP-QA: A Benchmark for Personalized Long-form Question Answering"
+    ],
+    "iclr25": [
+      "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+      "Interactive Speculative Planning: Enhance Agent Efficiency through Co-design of System and User Interface",
+      "MatExpert: Decomposing Materials Discovery By Mimicking Human Experts",
+      "System 1.x: Learning to Balance Fast and Slow Planning with Language Models"
+    ],
+    "naacl25": [
+      "Language Models Can Infer Action Semantics for Symbolic Planners from Environment Feedback",
+      "Revealing the Barriers of Language Agents in Planning",
+      "Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training"
+    ],
+    "neurips24": [
+      "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge",
+      "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models"
+    ],
+    "icml25": [
+      "Flow-of-Options: Diversified and Improved LLM Reasoning by Thinking Through Options",
+      "GuardAgent: Safeguard LLM Agents via Knowledge-Enabled Reasoning",
+      "Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 4,
+    "naacl25": 3,
+    "neurips24": 2,
+    "icml25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

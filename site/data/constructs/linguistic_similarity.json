@@ -1,0 +1,98 @@
+{
+  "canonical_name": "Linguistic similarity",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats linguistic similarity as an internal representational property of multilingual models: languages are similar to the extent that the model uses shared internal representations or parameters for them, or shows overlapping neuron activations. One paper calculates it from overlapping neurons in the model's \"internal linguistic spectrum,\" and another uses the nearby label cross-lingual sharing for layers with high inter-language activation similarity. A smaller line of work frames it more broadly as relatedness between languages in terms of script, vocabulary, and grammatical structures, so the main disagreement is whether similarity is located in the model's neural space or in externally described language resemblance.\n\nSpace of facets. No paper provides a detailed subtype taxonomy. Instead, papers use several partially overlapping labels, including cross-lingual sharing, linguistic similarity, language distance, linguistic proximity, and an \"internal linguistic spectrum.\" These labels follow the same split seen in the definitions, with some papers emphasizing shared representations and neuron overlap, and others emphasizing closeness in script, vocabulary, and grammar.\n\nSpace of measurement. It is linked to no measurement instrument and no behavioral indicator. Even so, papers operationalize it through model analyses: overlapping neuron activation patterns, direct calculations of linguistic similarity or \"language distance\" between language pairs, and inter-language activation similarity across layers are the recurring approaches, while one paper discusses closeness through script, vocabulary, and grammatical structures. The activation-based operationalizations match the dominant internal-space definitions, whereas the script-vocabulary-grammar framing is broader than those analyses.\n\nLinks. The reported links all connect it to cross-lingual generalization. One paper reports that cross-lingual generalization correlates with linguistic similarity, stating that language similarity is \"tied to transfer\" and that closely related languages \"demonstrate strong interdependence\"; another paper treats linguistic similarity as related to cross-lingual generalization. No causal relationship is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Cross-lingual sharing",
+    "Linguistic similarity"
+  ],
+  "papers": [
+    "Cross-Lingual Pitfalls: Automatic Probing Cross-Lingual Weakness of Multilingual Large Language Models",
+    "Finding A Voice: Exploring the Potential of African American Dialect and Voice Generation for Chatbots",
+    "Linguistic Neuron Overlap Patterns to Facilitate Cross-lingual Transfer on Low-resource Languages",
+    "M-Wanda: Improving One-Shot Pruning for Multilingual LLMs",
+    "Multilinguality Does not Make Sense: Investigating Factors Behind Zero-Shot Cross-Lingual Transfer in Sense-Aware Tasks"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The degree to which a model utilizes shared internal representations and parameters to process information across different languages.",
+      "papers": [
+        "M-Wanda: Improving One-Shot Pruning for Multilingual LLMs"
+      ],
+      "original_name": "Cross-lingual sharing"
+    },
+    {
+      "text": "The degree to which languages are represented similarly in the model's internal neural space, inferred from overlapping neuron activation patterns rather than external linguistic features.",
+      "papers": [
+        "Linguistic Neuron Overlap Patterns to Facilitate Cross-lingual Transfer on Low-resource Languages"
+      ],
+      "original_name": "Linguistic similarity"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-lingual generalization",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Multilinguality Does not Make Sense: Investigating Factors Behind Zero-Shot Cross-Lingual Transfer in Sense-Aware Tasks",
+      "evidence": "Our results show that both pretraining size and language similarity are tied to transfer, but the former has a stronger correlation.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Multilinguality Does not Make Sense: Investigating Factors Behind Zero-Shot Cross-Lingual Transfer in Sense-Aware Tasks"
+        ],
+        "acl25": [
+          "PARME: Parallel Corpora for Low-Resourced Middle Eastern Languages"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats linguistic similarity as an internal representational property of multilingual models: languages are similar to the extent that the model uses shared internal representations or parameters for them, or shows overlapping neuron activations. One paper calculates it from overlapping neurons in the model's \"internal linguistic spectrum,\" and another uses the nearby label cross-lingual sharing for layers with high inter-language activation similarity. A smaller line of work frames it more broadly as relatedness between languages in terms of script, vocabulary, and grammatical structures, so the main disagreement is whether similarity is located in the model's neural space or in externally described language resemblance."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "No paper provides a detailed subtype taxonomy. Instead, papers use several partially overlapping labels, including cross-lingual sharing, linguistic similarity, language distance, linguistic proximity, and an \"internal linguistic spectrum.\" These labels follow the same split seen in the definitions, with some papers emphasizing shared representations and neuron overlap, and others emphasizing closeness in script, vocabulary, and grammar."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "It is linked to no measurement instrument and no behavioral indicator. Even so, papers operationalize it through model analyses: overlapping neuron activation patterns, direct calculations of linguistic similarity or \"language distance\" between language pairs, and inter-language activation similarity across layers are the recurring approaches, while one paper discusses closeness through script, vocabulary, and grammatical structures. The activation-based operationalizations match the dominant internal-space definitions, whereas the script-vocabulary-grammar framing is broader than those analyses."
+    },
+    {
+      "label": "Links.",
+      "text": "The reported links all connect it to cross-lingual generalization. One paper reports that cross-lingual generalization correlates with linguistic similarity, stating that language similarity is \"tied to transfer\" and that closely related languages \"demonstrate strong interdependence\"; another paper treats linguistic similarity as related to cross-lingual generalization. No causal relationship is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats linguistic similarity as an internal representational property of multilingual models: languages are similar to the extent that the model uses shared internal representations or parameters for them, or shows overlapping neuron activations. One paper calculates it from overlapping neurons in the model's \"internal linguistic spectrum,\" and another uses the nearby label cross-lingual sharing for layers with high inter-language activation similarity. A smaller line of work frames it more broadly as relatedness between languages in terms of script, vocabulary, and grammatical structures, so the main disagreement is whether similarity is located in the model's neural space or in externally described language resemblance.\n\nSpace of facets. No paper provides a detailed subtype taxonomy. Instead, papers use several partially overlapping labels, including cross-lingual sharing, linguistic similarity, language distance, linguistic proximity, and an \"internal linguistic spectrum.\" These labels follow the same split seen in the definitions, with some papers emphasizing shared representations and neuron overlap, and others emphasizing closeness in script, vocabulary, and grammar.\n\nSpace of measurement. It is linked to no measurement instrument and no behavioral indicator. Even so, papers operationalize it through model analyses: overlapping neuron activation patterns, direct calculations of linguistic similarity or \"language distance\" between language pairs, and inter-language activation similarity across layers are the recurring approaches, while one paper discusses closeness through script, vocabulary, and grammatical structures. The activation-based operationalizations match the dominant internal-space definitions, whereas the script-vocabulary-grammar framing is broader than those analyses.\n\nLinks. The reported links all connect it to cross-lingual generalization. One paper reports that cross-lingual generalization correlates with linguistic similarity, stating that language similarity is \"tied to transfer\" and that closely related languages \"demonstrate strong interdependence\"; another paper treats linguistic similarity as related to cross-lingual generalization. No causal relationship is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Cross-Lingual Pitfalls: Automatic Probing Cross-Lingual Weakness of Multilingual Large Language Models",
+      "Finding A Voice: Exploring the Potential of African American Dialect and Voice Generation for Chatbots"
+    ],
+    "emnlp25": [
+      "Linguistic Neuron Overlap Patterns to Facilitate Cross-lingual Transfer on Low-resource Languages",
+      "M-Wanda: Improving One-Shot Pruning for Multilingual LLMs",
+      "Multilinguality Does not Make Sense: Investigating Factors Behind Zero-Shot Cross-Lingual Transfer in Sense-Aware Tasks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

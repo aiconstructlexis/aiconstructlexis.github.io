@@ -1,0 +1,12 @@
+# Lexical simplification
+**Type:** Behavioral indicator  
+**Supporting papers:** 1  
+
+## State of the Field
+
+The observable task of replacing complex words in a text with simpler alternatives while preserving the original meaning.
+
+## Sources
+
+**Lexical simplification** (1 paper: [RALS: Resources and Baselines for Romanian Automatic Lexical Simplification](https://aclanthology.org/2025.emnlp-main.1603.pdf))
+> The observable task of replacing complex words in a text with simpler alternatives while preserving the original meaning.

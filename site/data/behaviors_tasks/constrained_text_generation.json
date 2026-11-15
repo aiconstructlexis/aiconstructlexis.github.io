@@ -1,0 +1,124 @@
+{
+  "canonical_name": "Constrained text generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats this as an observable task where a model must generate text that obeys predefined rules or constraints. Papers commonly describe success in terms of satisfying externally imposed lexical, semantic, topical, or formal requirements, such as adhering to a topic, avoiding certain words, including specified concepts, or producing a short text that illustrates selected skills within a sentence limit. A smaller line of work frames constrained generation as producing an element in a constraint set while remaining in the generator's support, stated as generating a string in the allowed set with positive probability under the generator. Some papers also explicitly cast the constraints as logical, describing difficulty with outputs that adhere to logical constraints.\n\nVariants. Papers use several nearby labels, including constrained text generation, constrained generation, and constrained decoding. Recurring variants include topic-conditioned generation, generation that avoids certain words, multi-constraint writing that combines a topic, short length, and multiple required skills, and decoding tasks presented as constrained commonsense generation (CommonGen) or harmless text generation (HTG). Some work emphasizes structural or logical constraints, while another formulation defines the target more abstractly as any string in a specified constraint set.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The papers operationalize it through task formulations and decoding settings, but no linked instrument is recorded as eliciting or scoring the behavior.\n\nWhat it is taken as evidence of. The only linked construct is Logical reasoning, and the recorded relationship is related rather than measured_by, correlates, or causes. The supporting claim presents constrained text generation as one direction for incorporating logical and compositional challenges. No other construct link is recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Constrained text generation",
+    "Constrained generation"
+  ],
+  "papers": [
+    "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for Edge AI",
+    "Amortizing intractable inference in large language models",
+    "COLLIE: Systematic Construction of Constrained Text Generation Tasks",
+    "Large Language Models Cannot Self-Correct Reasoning Yet",
+    "SKILL-MIX: a Flexible and Expandable Family of Evaluations for AI Models",
+    "Controllable Generation via Locally Constrained Resampling",
+    "On the Query Complexity of Verifier-Assisted Language Generation",
+    "Potemkin Understanding in Large Language Models",
+    "Constrained Decoding with Speculative Lookaheads",
+    "Adaptable Logical Control for Large Language Models"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "The observable task of producing text that must adhere to a specific set of predefined rules or constraints.",
+      "papers": [
+        "COLLIE: Systematic Construction of Constrained Text Generation Tasks",
+        "SKILL-MIX: a Flexible and Expandable Family of Evaluations for AI Models",
+        "Constrained Decoding with Speculative Lookaheads"
+      ],
+      "original_name": "Constrained text generation"
+    },
+    {
+      "text": "The latent ability of a language model to produce outputs that satisfy externally imposed structural constraints while remaining in the generator's support.",
+      "papers": [
+        "On the Query Complexity of Verifier-Assisted Language Generation",
+        "Controllable Generation via Locally Constrained Resampling"
+      ],
+      "original_name": "Constrained generation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "COLLIE: Systematic Construction of Constrained Text Generation Tasks",
+      "evidence": "We posit that one direction is incorporating logical and compositional challenges via constrained text generation.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "COLLIE: Systematic Construction of Constrained Text Generation Tasks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats this as an observable task where a model must generate text that obeys predefined rules or constraints. Papers commonly describe success in terms of satisfying externally imposed lexical, semantic, topical, or formal requirements, such as adhering to a topic, avoiding certain words, including specified concepts, or producing a short text that illustrates selected skills within a sentence limit. A smaller line of work frames constrained generation as producing an element in a constraint set while remaining in the generator's support, stated as generating a string in the allowed set with positive probability under the generator. Some papers also explicitly cast the constraints as logical, describing difficulty with outputs that adhere to logical constraints."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby labels, including constrained text generation, constrained generation, and constrained decoding. Recurring variants include topic-conditioned generation, generation that avoids certain words, multi-constraint writing that combines a topic, short length, and multiple required skills, and decoding tasks presented as constrained commonsense generation (CommonGen) or harmless text generation (HTG). Some work emphasizes structural or logical constraints, while another formulation defines the target more abstractly as any string in a specified constraint set."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. The papers operationalize it through task formulations and decoding settings, but no linked instrument is recorded as eliciting or scoring the behavior."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "The only linked construct is Logical reasoning, and the recorded relationship is related rather than measured_by, correlates, or causes. The supporting claim presents constrained text generation as one direction for incorporating logical and compositional challenges. No other construct link is recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats this as an observable task where a model must generate text that obeys predefined rules or constraints. Papers commonly describe success in terms of satisfying externally imposed lexical, semantic, topical, or formal requirements, such as adhering to a topic, avoiding certain words, including specified concepts, or producing a short text that illustrates selected skills within a sentence limit. A smaller line of work frames constrained generation as producing an element in a constraint set while remaining in the generator's support, stated as generating a string in the allowed set with positive probability under the generator. Some papers also explicitly cast the constraints as logical, describing difficulty with outputs that adhere to logical constraints.\n\nVariants. Papers use several nearby labels, including constrained text generation, constrained generation, and constrained decoding. Recurring variants include topic-conditioned generation, generation that avoids certain words, multi-constraint writing that combines a topic, short length, and multiple required skills, and decoding tasks presented as constrained commonsense generation (CommonGen) or harmless text generation (HTG). Some work emphasizes structural or logical constraints, while another formulation defines the target more abstractly as any string in a specified constraint set.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The papers operationalize it through task formulations and decoding settings, but no linked instrument is recorded as eliciting or scoring the behavior.\n\nWhat it is taken as evidence of. The only linked construct is Logical reasoning, and the recorded relationship is related rather than measured_by, correlates, or causes. The supporting claim presents constrained text generation as one direction for incorporating logical and compositional challenges. No other construct link is recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for Edge AI"
+    ],
+    "iclr24": [
+      "Amortizing intractable inference in large language models",
+      "COLLIE: Systematic Construction of Constrained Text Generation Tasks",
+      "Large Language Models Cannot Self-Correct Reasoning Yet",
+      "SKILL-MIX: a Flexible and Expandable Family of Evaluations for AI Models"
+    ],
+    "iclr25": [
+      "Controllable Generation via Locally Constrained Resampling"
+    ],
+    "icml25": [
+      "On the Query Complexity of Verifier-Assisted Language Generation",
+      "Potemkin Understanding in Large Language Models"
+    ],
+    "neurips24": [
+      "Adaptable Logical Control for Large Language Models"
+    ],
+    "naacl25": [
+      "Constrained Decoding with Speculative Lookaheads"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr24": 4,
+    "iclr25": 1,
+    "icml25": 2,
+    "neurips24": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

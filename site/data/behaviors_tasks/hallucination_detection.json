@@ -1,0 +1,408 @@
+{
+  "canonical_name": "Hallucination detection",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is a judgment task over model outputs: deciding whether an answer, statement, response, or generated content is hallucinated, meaning factually incorrect, fabricated, unsupported, or not grounded in the available context. Most descriptions treat success as labeling content as hallucinated versus non-hallucinated, though some narrow it to tagging object phrases in a description that do not correspond to an image, or marking explanation sentences with a deletion tag when they show knowledge conflict. A smaller formulation treats success as refusing to answer when the needed information is absent, sometimes with the explicit response that the item is not mentioned in the provided context.\n\nVariants. Papers use the label for several variants. A recurring line studies multimodal and visual settings, including concrete inconsistencies in rendered 2D images, responses or captions that are inaccurate relative to an image, and discourse-level hallucination detection over entities or relations in captions. Other variants focus on medical question answering, unsupported claims in data-analysis insights, token-level hallucination degree, and sentence-level verification during generation, and one study describes the task as \"identifying a wrong response that coincidentally reaches the correct answer as being wrong.\"\n\nSpace of elicitation and scores. Papers measure this behavior with 10 instruments. The most frequently linked are HaluEval, SelfCheckGPT, GAVIE, HallusionBench, and MMHal-Bench, plus 5 other instruments. Most are benchmark or dataset style evaluations, while SelfCheckGPT is described as sampling additional responses from the model and using inconsistency with the target statement for hallucination detection.\n\nWhat it is taken as evidence of. Papers link it to 3 constructs through both causal and related claims, rather than a single common relation. One paper claims a causal relationship from In-context learning to hallucination detection, stating that it can enhance performance for certain models, datasets, and tasks. Other papers report that hallucination detection is related to Semantic uncertainty and to Linguistic quality, with semantic uncertainty described as predictive uncertainty used for hallucination detection and linguistic quality appearing in a contrast between embeddings optimized for linguistic coherence and the separation of truthful from hallucinated content.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Hallucination Detection",
+    "Hallucination detection",
+    "Knowledge conflict detection",
+    "Medical hallucination detection",
+    "Sentence-level verification"
+  ],
+  "papers": [
+    "BIG5-CHAT: Shaping LLM Personalities Through Training on Human-Grounded Data",
+    "GuideBench: Benchmarking Domain-Oriented Guideline Following for LLM Agents",
+    "Neuron Empirical Gradient: Discovering and Quantifying Neurons' Global Linear Controllability",
+    "Prompt-Guided Internal States for Hallucination Detection of Large Language Models",
+    "Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models",
+    "Beyond the Leaderboard: Understanding Performance Disparities in Large Language Models via Model Diffing",
+    "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+    "DiscoSG: Towards Discourse-Level Text Scene Graph Parsing through Iterative Graph Refinement",
+    "Efficient Real-time Refinement of Language Model Text Generation",
+    "How Much Do LLMs Hallucinate across Languages? On Realistic Multilingual Estimation of LLM Hallucination",
+    "MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in Large Language Models",
+    "Re-Align: Aligning Vision Language Models via Retrieval-Augmented Direct Preference Optimization",
+    "The Impact of Negated Text on Hallucination with Large Language Models",
+    "Unconditional Truthfulness: Learning Unconditional Uncertainty of Large Language Models",
+    "Unsupervised Hallucination Detection by Inspecting Reasoning Processes",
+    "VERITAS: Leveraging Vision Priors and Expert Fusion to Improve Multimodal Data",
+    "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+    "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+    "K-HALU: Multiple Answer Korean Hallucination Benchmark for Large Language Models",
+    "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+    "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+    "TLDR: Token-Level Detective Reward Model for Large Vision Language Models",
+    "Steer LLM Latents for Hallucination Detection",
+    "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+    "Diffusion Instruction Tuning",
+    "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+    "Perception in Reflection",
+    "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification",
+    "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation",
+    "An LLM-Based Approach for Insight Generation in Data Analysis",
+    "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding in VLMs",
+    "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+    "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions"
+  ],
+  "paper_count": 33,
+  "definitions": [
+    {
+      "text": "The observable task of identifying and tagging object phrases in a description that do not correspond to objects in the image.",
+      "papers": [
+        "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions",
+        "BIG5-CHAT: Shaping LLM Personalities Through Training on Human-Grounded Data",
+        "GuideBench: Benchmarking Domain-Oriented Guideline Following for LLM Agents",
+        "Neuron Empirical Gradient: Discovering and Quantifying Neurons' Global Linear Controllability",
+        "Prompt-Guided Internal States for Hallucination Detection of Large Language Models",
+        "Diffusion Instruction Tuning",
+        "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+        "Perception in Reflection",
+        "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification"
+      ],
+      "original_name": "Hallucination Detection"
+    },
+    {
+      "text": "The task of using a large multi-modal model to identify and describe concrete hallucinations or inconsistencies within a rendered 2D image.",
+      "papers": [
+        "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+        "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+        "An LLM-Based Approach for Insight Generation in Data Analysis",
+        "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation",
+        "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding in VLMs",
+        "Re-Align: Aligning Vision Language Models via Retrieval-Augmented Direct Preference Optimization"
+      ],
+      "original_name": "Hallucination detection"
+    },
+    {
+      "text": "Identifying explanation sentences that contradict or are unsupported by comparison triples from the reasoning graph.",
+      "papers": [
+        "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models"
+      ],
+      "original_name": "Knowledge conflict detection"
+    },
+    {
+      "text": "The observable task of judging whether a given answer to a medical question is hallucinated (factually incorrect) or not, based on factual accuracy.",
+      "papers": [
+        "MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in Large Language Models"
+      ],
+      "original_name": "Medical hallucination detection"
+    },
+    {
+      "text": "The observable process of checking the factual correctness of individual sentences as they are generated during text production.",
+      "papers": [
+        "Efficient Real-time Refinement of Language Model Text Generation"
+      ],
+      "original_name": "Sentence-level verification"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HaluEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+      "evidence": "Detecting and flagging hallucinations (HaluEval dataset (Li et al., 2023)). (Section 1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "icml25": [
+          "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation"
+        ],
+        "emnlp25": [
+          "The Impact of Negated Text on Hallucination with Large Language Models"
+        ],
+        "neurips24": [
+          "ANAH-v2: Scaling Analytical Hallucination Annotation of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SelfCheckGPT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models",
+      "evidence": "We compare the proposed AGSER approach with SBERT (Reimers and Gurevych, 2019), SelfCheckGPT (Manakul et al., 2023), INSIDE (Chen et al., 2024) and InterrogateLLM (Yehuda et al., 2024) in zero-shot hallucination detection.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models"
+        ],
+        "naacl25": [
+          "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation",
+      "evidence": "SEMANTIC UNCERTAINTY (Kuhn et al., 2023; Farquhar et al., 2024), which estimate the model\u2019s predictive uncertainty on the generation for hallucination detection.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Linguistic quality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Steer LLM Latents for Hallucination Detection",
+      "evidence": "Recent approaches have leveraged the latent space of LLMs for hallucination detection, but their embeddings, optimized for linguistic coherence rather than factual accuracy, often fail to clearly separate truthful and hallucinated content. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Steer LLM Latents for Hallucination Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Steer LLM Latents for Hallucination Detection",
+      "evidence": "On the challenging TruthfulQA benchmark (Lin et al., 2022a), our approach achieves a significant +12.8% improvement in hallucination detection accuracy (AUROC) compared to state-of-the-art methods. (Section 1. Introduction)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Steer LLM Latents for Hallucination Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Refusal",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+      "evidence": "The hallucination detection task aims to test the model\u2019s ability to decline answering questions that are not mentioned in the given context.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HallusionBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Perception in Reflection",
+      "evidence": "To evaluate the visual perception capabilities of RePer, we conducted assessments across five widely-used benchmarks, covering a range of tasks: ... hallucination detection (HallusionBench (Guan et al., 2024), MMHal-Bench (Sun et al., 2023b), GAVIE (Liu et al., 2023a)) (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Perception in Reflection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMHal-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Perception in Reflection",
+      "evidence": "To evaluate the visual perception capabilities of RePer, we conducted assessments across five widely-used benchmarks, covering a range of tasks: ... hallucination detection (HallusionBench (Guan et al., 2024), MMHal-Bench (Sun et al., 2023b), GAVIE (Liu et al., 2023a)) (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Perception in Reflection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GAVIE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Perception in Reflection",
+      "evidence": "To evaluate the visual perception capabilities of RePer, we conducted assessments across five widely-used benchmarks, covering a range of tasks: ... hallucination detection (HallusionBench (Guan et al., 2024), MMHal-Bench (Sun et al., 2023b), GAVIE (Liu et al., 2023a)) (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Perception in Reflection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedHallu",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in Large Language Models",
+      "evidence": "To address this, we introduce MedHallu, one of the first benchmark specifically designed for medical hallucination detection.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NegHalu",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Impact of Negated Text on Hallucination with Large Language Models",
+      "evidence": "we conduct this analysis by reconstructing existing hallucination detection benchmarks with negated expressions and introducing NegHalu, a dataset in which hallucination labels are newly assigned to account for the effects of negation.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "The Impact of Negated Text on Hallucination with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "The Impact of Negated Text on Hallucination with Large Language Models",
+      "evidence": "These results imply that In-Context Learning can immediately enhance hallucination detection performance for certain models, datasets, and tasks, particularly when balanced examples with pre-/post-negated text and hallucination/no-hallucination cases are included.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "The Impact of Negated Text on Hallucination with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VERITAS: Leveraging Vision Priors and Expert Fusion to Improve Multimodal Data",
+      "evidence": "POPE (Li et al., 2023): hallucination detection. (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "VERITAS: Leveraging Vision Priors and Expert Fusion to Improve Multimodal Data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RAGTruth",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "evidence": "For our evaluations in the setting of hallucination detection with external references assumed available, we primarily consider the RAGTruth dataset [Wu et al., 2023]. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 14,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 13,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is a judgment task over model outputs: deciding whether an answer, statement, response, or generated content is hallucinated, meaning factually incorrect, fabricated, unsupported, or not grounded in the available context. Most descriptions treat success as labeling content as hallucinated versus non-hallucinated, though some narrow it to tagging object phrases in a description that do not correspond to an image, or marking explanation sentences with a deletion tag when they show knowledge conflict. A smaller formulation treats success as refusing to answer when the needed information is absent, sometimes with the explicit response that the item is not mentioned in the provided context."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use the label for several variants. A recurring line studies multimodal and visual settings, including concrete inconsistencies in rendered 2D images, responses or captions that are inaccurate relative to an image, and discourse-level hallucination detection over entities or relations in captions. Other variants focus on medical question answering, unsupported claims in data-analysis insights, token-level hallucination degree, and sentence-level verification during generation, and one study describes the task as \"identifying a wrong response that coincidentally reaches the correct answer as being wrong.\""
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers measure this behavior with 10 instruments. The most frequently linked are HaluEval, SelfCheckGPT, GAVIE, HallusionBench, and MMHal-Bench, plus 5 other instruments. Most are benchmark or dataset style evaluations, while SelfCheckGPT is described as sampling additional responses from the model and using inconsistency with the target statement for hallucination detection."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers link it to 3 constructs through both causal and related claims, rather than a single common relation. One paper claims a causal relationship from In-context learning to hallucination detection, stating that it can enhance performance for certain models, datasets, and tasks. Other papers report that hallucination detection is related to Semantic uncertainty and to Linguistic quality, with semantic uncertainty described as predictive uncertainty used for hallucination detection and linguistic quality appearing in a contrast between embeddings optimized for linguistic coherence and the separation of truthful from hallucinated content."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is a judgment task over model outputs: deciding whether an answer, statement, response, or generated content is hallucinated, meaning factually incorrect, fabricated, unsupported, or not grounded in the available context. Most descriptions treat success as labeling content as hallucinated versus non-hallucinated, though some narrow it to tagging object phrases in a description that do not correspond to an image, or marking explanation sentences with a deletion tag when they show knowledge conflict. A smaller formulation treats success as refusing to answer when the needed information is absent, sometimes with the explicit response that the item is not mentioned in the provided context.\n\nVariants. Papers use the label for several variants. A recurring line studies multimodal and visual settings, including concrete inconsistencies in rendered 2D images, responses or captions that are inaccurate relative to an image, and discourse-level hallucination detection over entities or relations in captions. Other variants focus on medical question answering, unsupported claims in data-analysis insights, token-level hallucination degree, and sentence-level verification during generation, and one study describes the task as \"identifying a wrong response that coincidentally reaches the correct answer as being wrong.\"\n\nSpace of elicitation and scores. Papers measure this behavior with 10 instruments. The most frequently linked are HaluEval, SelfCheckGPT, GAVIE, HallusionBench, and MMHal-Bench, plus 5 other instruments. Most are benchmark or dataset style evaluations, while SelfCheckGPT is described as sampling additional responses from the model and using inconsistency with the target statement for hallucination detection.\n\nWhat it is taken as evidence of. Papers link it to 3 constructs through both causal and related claims, rather than a single common relation. One paper claims a causal relationship from In-context learning to hallucination detection, stating that it can enhance performance for certain models, datasets, and tasks. Other papers report that hallucination detection is related to Semantic uncertainty and to Linguistic quality, with semantic uncertainty described as predictive uncertainty used for hallucination detection and linguistic quality appearing in a contrast between embeddings optimized for linguistic coherence and the separation of truthful from hallucinated content.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models",
+      "Beyond the Leaderboard: Understanding Performance Disparities in Large Language Models via Model Diffing",
+      "DSVD: Dynamic Self-Verify Decoding for Faithful Generation in Large Language Models",
+      "DiscoSG: Towards Discourse-Level Text Scene Graph Parsing through Iterative Graph Refinement",
+      "Efficient Real-time Refinement of Language Model Text Generation",
+      "How Much Do LLMs Hallucinate across Languages? On Realistic Multilingual Estimation of LLM Hallucination",
+      "MedHallu: A Comprehensive Benchmark for Detecting Medical Hallucinations in Large Language Models",
+      "Re-Align: Aligning Vision Language Models via Retrieval-Augmented Direct Preference Optimization",
+      "The Impact of Negated Text on Hallucination with Large Language Models",
+      "Unconditional Truthfulness: Learning Unconditional Uncertainty of Large Language Models",
+      "Unsupervised Hallucination Detection by Inspecting Reasoning Processes",
+      "VERITAS: Leveraging Vision Priors and Expert Fusion to Improve Multimodal Data"
+    ],
+    "iclr25": [
+      "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+      "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "K-HALU: Multiple Answer Korean Hallucination Benchmark for Large Language Models",
+      "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+      "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+      "TLDR: Token-Level Detective Reward Model for Large Vision Language Models"
+    ],
+    "icml25": [
+      "Steer LLM Latents for Hallucination Detection",
+      "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+      "Diffusion Instruction Tuning",
+      "LaRA: Benchmarking Retrieval-Augmented Generation and Long-Context LLMs \u2013 No Silver Bullet for LC or RAG Routing",
+      "Perception in Reflection",
+      "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification"
+    ],
+    "naacl25": [
+      "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation",
+      "An LLM-Based Approach for Insight Generation in Data Analysis",
+      "Beyond Logit Lens: Contextual Embeddings for Robust Hallucination Detection & Grounding in VLMs"
+    ],
+    "neurips24": [
+      "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation",
+      "Image Textualization: An Automatic Framework for Generating Rich and Detailed Image Descriptions"
+    ],
+    "acl25": [
+      "BIG5-CHAT: Shaping LLM Personalities Through Training on Human-Grounded Data",
+      "GuideBench: Benchmarking Domain-Oriented Guideline Following for LLM Agents",
+      "Neuron Empirical Gradient: Discovering and Quantifying Neurons' Global Linear Controllability",
+      "Prompt-Guided Internal States for Hallucination Detection of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 12,
+    "iclr25": 6,
+    "icml25": 6,
+    "naacl25": 3,
+    "neurips24": 2,
+    "acl25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "canonical_name": "Understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats understanding as a latent capability to comprehend and correctly interpret meaning, intent, content, or task requirements. Many definitions emphasize instructions and user requests, such as understanding the implicit and explicit purpose and requirements of an instruction, while others apply the same framing to technical text, multimodal prompts, OS environments, or a client's symptoms and emotional context. A smaller line of work defines it through performance on discriminative or interrogative tasks, explicitly separating understanding from generative fluency and stating that generative capability may not be contingent upon understanding capability. Some authors also describe it as a foundational or general capability, and one definition adds that it is shaped by left-to-right autoregressive processing.\n\nSpace of facets. Papers often use understanding and comprehension for overlapping constructs, and they frequently place it alongside reasoning and generation as one of several model abilities. Where authors systematize it explicitly, a legal taxonomy treats Understanding as one aspect beside Memorization, Logic Inference, Discrimination, Generation, and Ethic, and describes it as comprehending and interpreting facts, entities, concepts, and relationships in legal texts. Within that scheme, the recorded related tasks are information extraction, fact checking, and named entity recognition. A smaller set of papers instead narrows the construct to instruction purpose and requirements, multi-hop query intent, or contextual meaning in long or multimodal inputs.\n\nSpace of measurement. Operationalization is sparse in the recorded links: understanding is linked to one measurement instrument, LexEval, and three behavioral indicators, fact checking, information extraction, and named entity recognition. LexEval is a benchmark that measures it as one aspect of a legal cognitive ability taxonomy, with tasks aimed at whether models comprehend and interpret facts, entities, concepts, and relationships in legal text. Papers also operationalize understanding through discriminative or interrogative tasks, question answering analyses that treat lack of coherence as a symptom of not fully understanding a request, and human evaluation of which response is more appropriate for panic scenarios. This generally matches the dominant definitions, because the operationalizations focus on correct interpretation of input meaning or intent rather than fluent generation alone.\n\nLinks. In the recorded relations, one paper reports that generative ability is correlated with understanding, while noting weaker correlation between generation and understanding performance than in humans. One paper conjectures a causal relationship from understanding to coherence, arguing that lack of coherence is a symptom of not fully understanding a request. Understanding is also related to general ability in one paper, and, in a legal taxonomy, it is related to information extraction, fact checking, and named entity recognition.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Comprehension",
+    "Comprehension ability",
+    "Understanding",
+    "General comprehension capability",
+    "Understanding capability",
+    "Understanding ability"
+  ],
+  "papers": [
+    "Finding A Voice: Exploring the Potential of African American Dialect and Voice Generation for Chatbots",
+    "OS Agents: A Survey on MLLM-based Agents for Computer, Phone and Browser Use",
+    "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+    "CRITICTOOL: Evaluating Self-Critique Capabilities of Large Language Models in Tool-Calling Error Scenarios",
+    "Coarse-to-Fine Grounded Memory for LLM Agent Planning",
+    "From Schema to State: Zero-Shot Scheme-Only Dialogue State Tracking via Diverse Synthetic Dialogue and Step-by-Step Distillation",
+    "ORPP: Self-Optimizing Role-playing Prompts to Enhance Language Model Capabilities",
+    "PanicToCalm: A Proactive Counseling Agent for Panic Attacks",
+    "RAG+: Enhancing Retrieval-Augmented Generation with Application-Aware Reasoning",
+    "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration",
+    "Semantic Networks Extracted from Students' Think-Aloud Data are Correlated with Students' Learning Performance",
+    "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?",
+    "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+    "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+    "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d",
+    "Dynamic-LLaVA: Efficient Multimodal Large Language Models via Dynamic Vision-language Context Sparsification",
+    "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+    "Enhancing Graph Of Thought: Enhancing Prompts with LLM Rationales and Dynamic Temperature Control",
+    "RuAG: Learned-rule-augmented Generation for Large Language Models",
+    "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+    "ToolACE: Winning the Points of LLM Function Calling",
+    "FlipAttack: Jailbreak LLMs via Flipping",
+    "Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?",
+    "Analyzing and Improving Coherence of Large Language Models in Question Answering",
+    "Enhancing Discriminative Representation in Similar Relation Clusters for Few-Shot Continual Relation Extraction",
+    "MLLM-Bench: Evaluating Multimodal LLMs with Per-sample Criteria",
+    "Model Surgery: Modulating LLM's Behavior Via Simple Parameter Editing",
+    "Verify-in-the-Graph: Entity Disambiguation Enhancement for Complex Claim Verification with Interactive Graph Representation",
+    "Are Large Language Models Good Statisticians?",
+    "CTIBench: A Benchmark for Evaluating LLMs in Cyber Threat Intelligence",
+    "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+    "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+    "SongCreator: Lyrics-based Universal Song Generation"
+  ],
+  "paper_count": 33,
+  "definitions": [
+    {
+      "text": "The latent capacity of a large language model to understand and correctly interpret complex instructions or tasks, such as those provided in a few-shot prompt.",
+      "papers": [
+        "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+        "Dynamic-LLaVA: Efficient Multimodal Large Language Models via Dynamic Vision-language Context Sparsification",
+        "ORPP: Self-Optimizing Role-playing Prompts to Enhance Language Model Capabilities"
+      ],
+      "original_name": "Comprehension ability"
+    },
+    {
+      "text": "The latent ability to correctly identify, interpret, or reason about content, as evidenced by performance on discriminative or interrogative tasks, independent of generative fluency.",
+      "papers": [
+        "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d",
+        "CTIBench: A Benchmark for Evaluating LLMs in Cyber Threat Intelligence",
+        "ToolACE: Winning the Points of LLM Function Calling",
+        "MLLM-Bench: Evaluating Multimodal LLMs with Per-sample Criteria",
+        "Analyzing and Improving Coherence of Large Language Models in Question Answering",
+        "OS Agents: A Survey on MLLM-based Agents for Computer, Phone and Browser Use",
+        "PanicToCalm: A Proactive Counseling Agent for Panic Attacks"
+      ],
+      "original_name": "Understanding"
+    },
+    {
+      "text": "The ability to understand the implicit and explicit purpose and requirements of an instruction.",
+      "papers": [
+        "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+        "SongCreator: Lyrics-based Universal Song Generation",
+        "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+        "Enhancing Discriminative Representation in Similar Relation Clusters for Few-Shot Continual Relation Extraction",
+        "Model Surgery: Modulating LLM's Behavior Via Simple Parameter Editing",
+        "Verify-in-the-Graph: Entity Disambiguation Enhancement for Complex Claim Verification with Interactive Graph Representation",
+        "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use",
+        "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration",
+        "Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?"
+      ],
+      "original_name": "Comprehension"
+    },
+    {
+      "text": "The foundational ability of a large language model, derived from training on extensive text data, to understand and process information.",
+      "papers": [
+        "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning"
+      ],
+      "original_name": "General comprehension capability"
+    },
+    {
+      "text": "The model's latent ability to comprehend and correctly interpret the meaning and intent of input text.",
+      "papers": [
+        "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?"
+      ],
+      "original_name": "Understanding capability"
+    },
+    {
+      "text": "The latent capability of a large language model to comprehend and process textual information, which is influenced by its autoregressive, left-to-right processing nature.",
+      "papers": [
+        "FlipAttack: Jailbreak LLMs via Flipping"
+      ],
+      "original_name": "Understanding ability"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generative ability",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d",
+      "evidence": "Our results show that although models can outperform humans in generation, they consistently fall short of human capabilities in measures of understanding, showing weaker correlation between generation and understanding performance... (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LexEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+      "evidence": "to systematically organize various evaluation tasks, we propose a Legal Cognitive Ability Taxonomy (LexAbility Taxonomy), which includes six aspects: Memorization, Understanding, Logic Inference, Discrimination, Generation, and Ethic. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+      "evidence": "Tasks at the Understanding level examine the ability to comprehend and interpret facts, entities, concepts, and relationships in legal texts, which serves as a foundational requirement for applying knowledge to downstream tasks. We construct five tasks at this level: Legal Element Recognition (2-1)... (Section C.3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fact checking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+      "evidence": "Tasks at the Understanding level examine the ability to comprehend and interpret facts, entities, concepts, and relationships in legal texts... We construct five tasks at this level: ...Legal Fact Verification (2-2)... (Section C.3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Named entity recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+      "evidence": "Tasks at the Understanding level examine the ability to comprehend and interpret facts, entities, concepts, and relationships in legal texts... We construct five tasks at this level: ...Named-entity Recognition (2-5). (Section C.3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Model Surgery: Modulating LLM's Behavior Via Simple Parameter Editing",
+      "evidence": "degradation in foundational LLM capabilities such as comprehension, reasoning, and common sense \u2014 an effect known as alignment tax (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Model Surgery: Modulating LLM's Behavior Via Simple Parameter Editing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Coherence",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Analyzing and Improving Coherence of Large Language Models in Question Answering",
+      "evidence": "We conjecture that the instability, or lack of coherence, is a symptom of the model not being able to fully understand a request, i.e., accessing its parametric knowledge necessary for generating a correct answer. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Analyzing and Improving Coherence of Large Language Models in Question Answering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats understanding as a latent capability to comprehend and correctly interpret meaning, intent, content, or task requirements. Many definitions emphasize instructions and user requests, such as understanding the implicit and explicit purpose and requirements of an instruction, while others apply the same framing to technical text, multimodal prompts, OS environments, or a client's symptoms and emotional context. A smaller line of work defines it through performance on discriminative or interrogative tasks, explicitly separating understanding from generative fluency and stating that generative capability may not be contingent upon understanding capability. Some authors also describe it as a foundational or general capability, and one definition adds that it is shaped by left-to-right autoregressive processing."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers often use understanding and comprehension for overlapping constructs, and they frequently place it alongside reasoning and generation as one of several model abilities. Where authors systematize it explicitly, a legal taxonomy treats Understanding as one aspect beside Memorization, Logic Inference, Discrimination, Generation, and Ethic, and describes it as comprehending and interpreting facts, entities, concepts, and relationships in legal texts. Within that scheme, the recorded related tasks are information extraction, fact checking, and named entity recognition. A smaller set of papers instead narrows the construct to instruction purpose and requirements, multi-hop query intent, or contextual meaning in long or multimodal inputs."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is sparse in the recorded links: understanding is linked to one measurement instrument, LexEval, and three behavioral indicators, fact checking, information extraction, and named entity recognition. LexEval is a benchmark that measures it as one aspect of a legal cognitive ability taxonomy, with tasks aimed at whether models comprehend and interpret facts, entities, concepts, and relationships in legal text. Papers also operationalize understanding through discriminative or interrogative tasks, question answering analyses that treat lack of coherence as a symptom of not fully understanding a request, and human evaluation of which response is more appropriate for panic scenarios. This generally matches the dominant definitions, because the operationalizations focus on correct interpretation of input meaning or intent rather than fluent generation alone."
+    },
+    {
+      "label": "Links.",
+      "text": "In the recorded relations, one paper reports that generative ability is correlated with understanding, while noting weaker correlation between generation and understanding performance than in humans. One paper conjectures a causal relationship from understanding to coherence, arguing that lack of coherence is a symptom of not fully understanding a request. Understanding is also related to general ability in one paper, and, in a legal taxonomy, it is related to information extraction, fact checking, and named entity recognition."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats understanding as a latent capability to comprehend and correctly interpret meaning, intent, content, or task requirements. Many definitions emphasize instructions and user requests, such as understanding the implicit and explicit purpose and requirements of an instruction, while others apply the same framing to technical text, multimodal prompts, OS environments, or a client's symptoms and emotional context. A smaller line of work defines it through performance on discriminative or interrogative tasks, explicitly separating understanding from generative fluency and stating that generative capability may not be contingent upon understanding capability. Some authors also describe it as a foundational or general capability, and one definition adds that it is shaped by left-to-right autoregressive processing.\n\nSpace of facets. Papers often use understanding and comprehension for overlapping constructs, and they frequently place it alongside reasoning and generation as one of several model abilities. Where authors systematize it explicitly, a legal taxonomy treats Understanding as one aspect beside Memorization, Logic Inference, Discrimination, Generation, and Ethic, and describes it as comprehending and interpreting facts, entities, concepts, and relationships in legal texts. Within that scheme, the recorded related tasks are information extraction, fact checking, and named entity recognition. A smaller set of papers instead narrows the construct to instruction purpose and requirements, multi-hop query intent, or contextual meaning in long or multimodal inputs.\n\nSpace of measurement. Operationalization is sparse in the recorded links: understanding is linked to one measurement instrument, LexEval, and three behavioral indicators, fact checking, information extraction, and named entity recognition. LexEval is a benchmark that measures it as one aspect of a legal cognitive ability taxonomy, with tasks aimed at whether models comprehend and interpret facts, entities, concepts, and relationships in legal text. Papers also operationalize understanding through discriminative or interrogative tasks, question answering analyses that treat lack of coherence as a symptom of not fully understanding a request, and human evaluation of which response is more appropriate for panic scenarios. This generally matches the dominant definitions, because the operationalizations focus on correct interpretation of input meaning or intent rather than fluent generation alone.\n\nLinks. In the recorded relations, one paper reports that generative ability is correlated with understanding, while noting weaker correlation between generation and understanding performance than in humans. One paper conjectures a causal relationship from understanding to coherence, arguing that lack of coherence is a symptom of not fully understanding a request. Understanding is also related to general ability in one paper, and, in a legal taxonomy, it is related to information extraction, fact checking, and named entity recognition.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Finding A Voice: Exploring the Potential of African American Dialect and Voice Generation for Chatbots",
+      "OS Agents: A Survey on MLLM-based Agents for Computer, Phone and Browser Use",
+      "ToolHop: A Query-Driven Benchmark for Evaluating Large Language Models in Multi-Hop Tool Use"
+    ],
+    "emnlp25": [
+      "CRITICTOOL: Evaluating Self-Critique Capabilities of Large Language Models in Tool-Calling Error Scenarios",
+      "Coarse-to-Fine Grounded Memory for LLM Agent Planning",
+      "From Schema to State: Zero-Shot Scheme-Only Dialogue State Tracking via Diverse Synthetic Dialogue and Step-by-Step Distillation",
+      "ORPP: Self-Optimizing Role-playing Prompts to Enhance Language Model Capabilities",
+      "PanicToCalm: A Proactive Counseling Agent for Panic Attacks",
+      "RAG+: Enhancing Retrieval-Augmented Generation with Application-Aware Reasoning",
+      "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration",
+      "Semantic Networks Extracted from Students' Think-Aloud Data are Correlated with Students' Learning Performance",
+      "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?"
+    ],
+    "iclr24": [
+      "An LLM can Fool Itself: A Prompt-Based Adversarial Attack",
+      "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "The Generative AI Paradox: \u201cWhat It Can Create, It May Not Understand\u201d"
+    ],
+    "iclr25": [
+      "Dynamic-LLaVA: Efficient Multimodal Large Language Models via Dynamic Vision-language Context Sparsification",
+      "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+      "Enhancing Graph Of Thought: Enhancing Prompts with LLM Rationales and Dynamic Temperature Control",
+      "RuAG: Learned-rule-augmented Generation for Large Language Models",
+      "Speculative RAG: Enhancing Retrieval Augmented Generation through Drafting",
+      "ToolACE: Winning the Points of LLM Function Calling"
+    ],
+    "icml25": [
+      "FlipAttack: Jailbreak LLMs via Flipping",
+      "Why Has Predicting Downstream Capabilities of Frontier AI Models with Scale Remained Elusive?"
+    ],
+    "naacl25": [
+      "Analyzing and Improving Coherence of Large Language Models in Question Answering",
+      "Enhancing Discriminative Representation in Similar Relation Clusters for Few-Shot Continual Relation Extraction",
+      "MLLM-Bench: Evaluating Multimodal LLMs with Per-sample Criteria",
+      "Model Surgery: Modulating LLM's Behavior Via Simple Parameter Editing",
+      "Verify-in-the-Graph: Entity Disambiguation Enhancement for Complex Claim Verification with Interactive Graph Representation"
+    ],
+    "neurips24": [
+      "Are Large Language Models Good Statisticians?",
+      "CTIBench: A Benchmark for Evaluating LLMs in Cyber Threat Intelligence",
+      "II-Bench: An Image Implication Understanding Benchmark for Multimodal Large Language Models",
+      "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+      "SongCreator: Lyrics-based Universal Song Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 9,
+    "iclr24": 3,
+    "iclr25": 6,
+    "icml25": 2,
+    "naacl25": 5,
+    "neurips24": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

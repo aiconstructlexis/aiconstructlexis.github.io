@@ -1,0 +1,75 @@
+{
+  "canonical_name": "Plan execution",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats plan execution as carrying out a generated plan step by step. Most commonly, success is described as following sequential steps to solve a task or reach a verdict, with one paper noting that users see only the first step and that later steps appear \"one at a time for cognitive ease,\" while another describes the model as executing an evaluation plan step by step to analyze responses, verify criteria, and arrive at a final verdict. A smaller formulation treats execution as performing each planned action correctly by retrieving and running associated code snippets.\n\nVariants. Papers study this behavior in several settings. One line uses human task following, where a user follows an LLM-generated plan with steps revealed sequentially and with support such as calculator or web search. Another treats it as self-execution of planned actions by retrieving Python code snippets associated with an execute relation. A further variant appears in evaluation, where the model follows an evaluation plan through intermediate checks, such as verifying whether a response contains required attributes, before producing a final judgment.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, the papers describe elicitation procedurally: a user is given one random plan and sees the next step only after submitting an answer, planned actions are executed by retrieving associated Python code, or the model follows an evaluation plan to produce intermediate judgments and a final verdict.\n\nWhat it is taken as evidence of. No construct is linked to it. The papers do not explicitly state that this behavior indicates a broader construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Plan execution"
+  ],
+  "papers": [
+    "A Good Plan is Hard to Find: Aligning Models with Preferences is Misaligned with What Helps Users",
+    "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+    "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+    "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Following an LLM-generated step-by-step plan to solve a task, with each step revealed sequentially and supported by tools like calculator or web search.",
+      "papers": [
+        "A Good Plan is Hard to Find: Aligning Models with Preferences is Misaligned with What Helps Users",
+        "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+        "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge"
+      ],
+      "original_name": "Plan execution"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats plan execution as carrying out a generated plan step by step. Most commonly, success is described as following sequential steps to solve a task or reach a verdict, with one paper noting that users see only the first step and that later steps appear \"one at a time for cognitive ease,\" while another describes the model as executing an evaluation plan step by step to analyze responses, verify criteria, and arrive at a final verdict. A smaller formulation treats execution as performing each planned action correctly by retrieving and running associated code snippets."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study this behavior in several settings. One line uses human task following, where a user follows an LLM-generated plan with steps revealed sequentially and with support such as calculator or web search. Another treats it as self-execution of planned actions by retrieving Python code snippets associated with an execute relation. A further variant appears in evaluation, where the model follows an evaluation plan through intermediate checks, such as verifying whether a response contains required attributes, before producing a final judgment."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Instead, the papers describe elicitation procedurally: a user is given one random plan and sees the next step only after submitting an answer, planned actions are executed by retrieving associated Python code, or the model follows an evaluation plan to produce intermediate judgments and a final verdict."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it. The papers do not explicitly state that this behavior indicates a broader construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats plan execution as carrying out a generated plan step by step. Most commonly, success is described as following sequential steps to solve a task or reach a verdict, with one paper noting that users see only the first step and that later steps appear \"one at a time for cognitive ease,\" while another describes the model as executing an evaluation plan step by step to analyze responses, verify criteria, and arrive at a final verdict. A smaller formulation treats execution as performing each planned action correctly by retrieving and running associated code snippets.\n\nVariants. Papers study this behavior in several settings. One line uses human task following, where a user follows an LLM-generated plan with steps revealed sequentially and with support such as calculator or web search. Another treats it as self-execution of planned actions by retrieving Python code snippets associated with an execute relation. A further variant appears in evaluation, where the model follows an evaluation plan through intermediate checks, such as verifying whether a response contains required attributes, before producing a final judgment.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, the papers describe elicitation procedurally: a user is given one random plan and sees the next step only after submitting an answer, planned actions are executed by retrieving associated Python code, or the model follows an evaluation plan to produce intermediate judgments and a final verdict.\n\nWhat it is taken as evidence of. No construct is linked to it. The papers do not explicitly state that this behavior indicates a broader construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "A Good Plan is Hard to Find: Aligning Models with Preferences is Misaligned with What Helps Users",
+      "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving"
+    ],
+    "iclr25": [
+      "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle"
+    ],
+    "icml25": [
+      "Learning to Plan & Reason for Evaluation with Thinking-LLM-as-a-Judge"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

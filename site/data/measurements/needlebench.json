@@ -1,0 +1,86 @@
+{
+  "canonical_name": "NeedleBench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers most commonly describe NeedleBench as a long-context benchmark built around recall-intensive retrieval tasks. One definition frames it as evaluating whether models can comprehend and retrieve information from long input sequences, while another describes it as a suite of recall-intensive tasks for long-context retrieval and information finding. One paper adds that it tests retrieval and reasoning in complex contexts through three subtasks: Single-Needle Retrieval, Multi-Needle Retrieval, and Multi-Needle Reasoning, and another groups it with synthetic benchmarks that offer control over sequence length and complexity.\n\nWhat it is claimed to measure. Across the papers here, the reported measurement use centers on one behavioral indicator: Synthetic recall. Papers claim NeedleBench measures this indicator, describing it as testing retrieval and reasoning in complex contexts and using it to assess recall or retrieval capabilities. Papers do not link it to any construct or to additional behavioral indicators.\n\nSpace of uses. In use, papers position NeedleBench as one of the long-context benchmarks focused on models' ability to understand long-context input sequences. One paper treats it, alongside Ruler, as a synthetic benchmark with better control over variables such as sequence length and complexity, while another uses it together with the MQAR task to assess recall or retrieval capabilities. Beyond those co-usage mentions, papers do not link NeedleBench to other measurement instruments.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Needlebench",
+    "NeedleBench"
+  ],
+  "papers": [
+    "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+    "Long Context Compression with Activation Beacon",
+    "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+    "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A benchmark that evaluates long-context models on their ability to comprehend and retrieve information from long input sequences.",
+      "papers": [
+        "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs"
+      ],
+      "original_name": "Needlebench"
+    },
+    {
+      "text": "A suite of recall-intensive tasks designed to test long-context retrieval and information finding in large language models.",
+      "papers": [
+        "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+      ],
+      "original_name": "NeedleBench"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Synthetic recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+      "evidence": "NeedleBench (Li et al., 2024a): Tests retrieval and reasoning in complex contexts through three subtasks: Single-Needle Retrieval, Multi-Needle Retrieval, and Multi-Needle Reasoning.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+          "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers most commonly describe NeedleBench as a long-context benchmark built around recall-intensive retrieval tasks. One definition frames it as evaluating whether models can comprehend and retrieve information from long input sequences, while another describes it as a suite of recall-intensive tasks for long-context retrieval and information finding. One paper adds that it tests retrieval and reasoning in complex contexts through three subtasks: Single-Needle Retrieval, Multi-Needle Retrieval, and Multi-Needle Reasoning, and another groups it with synthetic benchmarks that offer control over sequence length and complexity."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across the papers here, the reported measurement use centers on one behavioral indicator: Synthetic recall. Papers claim NeedleBench measures this indicator, describing it as testing retrieval and reasoning in complex contexts and using it to assess recall or retrieval capabilities. Papers do not link it to any construct or to additional behavioral indicators."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers position NeedleBench as one of the long-context benchmarks focused on models' ability to understand long-context input sequences. One paper treats it, alongside Ruler, as a synthetic benchmark with better control over variables such as sequence length and complexity, while another uses it together with the MQAR task to assess recall or retrieval capabilities. Beyond those co-usage mentions, papers do not link NeedleBench to other measurement instruments."
+    }
+  ],
+  "characterization": "What it is. Papers most commonly describe NeedleBench as a long-context benchmark built around recall-intensive retrieval tasks. One definition frames it as evaluating whether models can comprehend and retrieve information from long input sequences, while another describes it as a suite of recall-intensive tasks for long-context retrieval and information finding. One paper adds that it tests retrieval and reasoning in complex contexts through three subtasks: Single-Needle Retrieval, Multi-Needle Retrieval, and Multi-Needle Reasoning, and another groups it with synthetic benchmarks that offer control over sequence length and complexity.\n\nWhat it is claimed to measure. Across the papers here, the reported measurement use centers on one behavioral indicator: Synthetic recall. Papers claim NeedleBench measures this indicator, describing it as testing retrieval and reasoning in complex contexts and using it to assess recall or retrieval capabilities. Papers do not link it to any construct or to additional behavioral indicators.\n\nSpace of uses. In use, papers position NeedleBench as one of the long-context benchmarks focused on models' ability to understand long-context input sequences. One paper treats it, alongside Ruler, as a synthetic benchmark with better control over variables such as sequence length and complexity, while another uses it together with the MQAR task to assess recall or retrieval capabilities. Beyond those co-usage mentions, papers do not link NeedleBench to other measurement instruments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CAKE: Cascading and Adaptive KV Cache Eviction with Layer Preferences",
+      "Long Context Compression with Activation Beacon",
+      "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

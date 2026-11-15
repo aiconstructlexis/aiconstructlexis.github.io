@@ -1,0 +1,123 @@
+{
+  "canonical_name": "MSVD",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, MSVD is most commonly framed as a video understanding benchmark, including for assessing short video comprehension and for evaluating multimodal video question answering or captioning performance. A smaller framing describes it as a benchmark dataset for video captioning: one paper specifies that it contains 1,970 open-domain videos collected from a commercial video search engine, with about 41 human-annotated captions for each video.\n\nWhat it is claimed to measure. Papers link MSVD to 1 construct and 2 behavioral indicators. The construct-level claim is that video understanding is measured by MSVD, while the behavioral indicators are video question answering, where it is listed as an open-ended VideoQA dataset, and cross-modal retrieval, where it appears as one of the retrieval benchmarks. These claims spread across a small set of evaluation targets rather than only one task framing.\n\nSpace of uses. In use, papers often place MSVD alongside other benchmarks in evaluation suites. It appears with MSR-VTT in video captioning experiments, with MUSIC-AVQA in open-ended VideoQA evaluation, and with MSR-VTT, LSMDC, and DiDeMo in cross-modal retrieval benchmarking. No measurement instrument is linked to it in the papers' reported relationships.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MSVD"
+  ],
+  "papers": [
+    "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for Multimodal LLMs",
+    "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+    "X-CoT: Explainable Text-to-Video Retrieval via LLM-based Chain-of-Thought Reasoning",
+    "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models",
+    "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation",
+    "World Model on Million-Length Video And Language With Blockwise RingAttention",
+    "Learnability Matters: Active Learning for Video Captioning"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A video understanding benchmark used here to assess short video comprehension.",
+      "papers": [
+        "World Model on Million-Length Video And Language With Blockwise RingAttention",
+        "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+        "Learnability Matters: Active Learning for Video Captioning"
+      ],
+      "original_name": "MSVD"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+      "evidence": "\u201cTo assess DART\u2019s capabilities in video understanding, we integrate it with Video-LLaVA ... achieving a notable 4.0 score on MSVD\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models",
+      "evidence": "\"and two open-ended VideoQA datasets: MUSIC-AVQA (MUSC) (Li et al., 2022a) and MSVD (Chen & Dolan, 2011)\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modal retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "X-CoT: Explainable Text-to-Video Retrieval via LLM-based Chain-of-Thought Reasoning",
+      "evidence": "We evaluate X-CoT on four benchmarks: MSR-VTT (Xu et al., 2016), MSVD (Chen and Dolan, 2011), LSMDC (Rohrbach et al., 2015), and DiDeMo (Anne Hendricks et al., 2017).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "X-CoT: Explainable Text-to-Video Retrieval via LLM-based Chain-of-Thought Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, MSVD is most commonly framed as a video understanding benchmark, including for assessing short video comprehension and for evaluating multimodal video question answering or captioning performance. A smaller framing describes it as a benchmark dataset for video captioning: one paper specifies that it contains 1,970 open-domain videos collected from a commercial video search engine, with about 41 human-annotated captions for each video."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link MSVD to 1 construct and 2 behavioral indicators. The construct-level claim is that video understanding is measured by MSVD, while the behavioral indicators are video question answering, where it is listed as an open-ended VideoQA dataset, and cross-modal retrieval, where it appears as one of the retrieval benchmarks. These claims spread across a small set of evaluation targets rather than only one task framing."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers often place MSVD alongside other benchmarks in evaluation suites. It appears with MSR-VTT in video captioning experiments, with MUSIC-AVQA in open-ended VideoQA evaluation, and with MSR-VTT, LSMDC, and DiDeMo in cross-modal retrieval benchmarking. No measurement instrument is linked to it in the papers' reported relationships."
+    }
+  ],
+  "characterization": "What it is. Across the papers, MSVD is most commonly framed as a video understanding benchmark, including for assessing short video comprehension and for evaluating multimodal video question answering or captioning performance. A smaller framing describes it as a benchmark dataset for video captioning: one paper specifies that it contains 1,970 open-domain videos collected from a commercial video search engine, with about 41 human-annotated captions for each video.\n\nWhat it is claimed to measure. Papers link MSVD to 1 construct and 2 behavioral indicators. The construct-level claim is that video understanding is measured by MSVD, while the behavioral indicators are video question answering, where it is listed as an open-ended VideoQA dataset, and cross-modal retrieval, where it appears as one of the retrieval benchmarks. These claims spread across a small set of evaluation targets rather than only one task framing.\n\nSpace of uses. In use, papers often place MSVD alongside other benchmarks in evaluation suites. It appears with MSR-VTT in video captioning experiments, with MUSIC-AVQA in open-ended VideoQA evaluation, and with MSR-VTT, LSMDC, and DiDeMo in cross-modal retrieval benchmarking. No measurement instrument is linked to it in the papers' reported relationships.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for Multimodal LLMs",
+      "Stop Looking for \u201cImportant Tokens\u201d in Multimodal Language Models: Duplication Matters More",
+      "X-CoT: Explainable Text-to-Video Retrieval via LLM-based Chain-of-Thought Reasoning"
+    ],
+    "iclr25": [
+      "Sample then Identify: A General Framework for Risk Control and Assessment in Multimodal Large Language Models",
+      "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation",
+      "World Model on Million-Length Video And Language With Blockwise RingAttention"
+    ],
+    "neurips24": [
+      "Learnability Matters: Active Learning for Video Captioning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 3,
+    "neurips24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

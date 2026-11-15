@@ -1,0 +1,110 @@
+{
+  "canonical_name": "PAWS",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, the prevailing framing is PAWS as a benchmark or dataset for paraphrase detection or paraphrase identification. Definitions describe it as evaluating whether two sentences are semantically equivalent and helping assess whether models distinguish paraphrases from non-paraphrases, and one paper further characterizes it as sentence pairs with high lexical overlap that may still have different meanings. Some authors also expand the name as Paraphrase Adversaries from Word Scrambling.\n\nWhat it is claimed to measure. Papers most commonly use PAWS to measure paraphrase detection, and it is linked to 1 behavioral indicator, Paraphrase detection. Beyond that dominant use, it is linked to 1 construct, Out-of-distribution generalization: a smaller line of work uses PAWS as an OOD evaluation dataset for paraphrase identification and reports it as suitable for evaluating OOD robustness.\n\nSpace of uses. No other measurement instrument is linked to it. Papers position PAWS as one task within broader evaluation suites, including dataset compositions for paraphrase detection, multi-task finetuning across diverse tasks, OOD evaluation for paraphrase identification, and downstream evaluation in model-merging work; one study reports gains of +3.17% and +12.38% on PAWS.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PAWS"
+  ],
+  "papers": [
+    "Exploring Explanations Improves the Robustness of In-Context Learning",
+    "Mitigating Shortcut Learning with InterpoLated Learning",
+    "Mixtures of In-Context Learners",
+    "SR-LLM: Rethinking the Structured Representation in Large Language Model",
+    "Superpose Task-specific Features for Model Merging",
+    "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "Paraphrase detection benchmark that evaluates whether two sentences are semantically equivalent, used to assess model performance in distinguishing paraphrases from non-paraphrases.",
+      "papers": [
+        "SR-LLM: Rethinking the Structured Representation in Large Language Model",
+        "Superpose Task-specific Features for Model Merging",
+        "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging"
+      ],
+      "original_name": "PAWS"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrase detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Dynamic Fisher-weighted Model Merging via Bayesian Optimization",
+      "evidence": "PAWS ... Paraphrase Identification (Table 1: Dataset Statistics.)",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Dynamic Fisher-weighted Model Merging via Bayesian Optimization"
+        ],
+        "acl25": [
+          "SR-LLM: Rethinking the Structured Representation in Large Language Model",
+          "Exploring Explanations Improves the Robustness of In-Context Learning"
+        ],
+        "emnlp25": [
+          "Superpose Task-specific Features for Model Merging",
+          "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Out-of-distribution generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Exploring Explanations Improves the Robustness of In-Context Learning",
+      "evidence": "We used OOD evaluation datasets for NLI and paraphrase identification... for paraphrase identification, we used PAWS (Zhang et al., 1919)... making them suitable benchmarks for evaluating the OOD robustness of ICL. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Exploring Explanations Improves the Robustness of In-Context Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, the prevailing framing is PAWS as a benchmark or dataset for paraphrase detection or paraphrase identification. Definitions describe it as evaluating whether two sentences are semantically equivalent and helping assess whether models distinguish paraphrases from non-paraphrases, and one paper further characterizes it as sentence pairs with high lexical overlap that may still have different meanings. Some authors also expand the name as Paraphrase Adversaries from Word Scrambling."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers most commonly use PAWS to measure paraphrase detection, and it is linked to 1 behavioral indicator, Paraphrase detection. Beyond that dominant use, it is linked to 1 construct, Out-of-distribution generalization: a smaller line of work uses PAWS as an OOD evaluation dataset for paraphrase identification and reports it as suitable for evaluating OOD robustness."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No other measurement instrument is linked to it. Papers position PAWS as one task within broader evaluation suites, including dataset compositions for paraphrase detection, multi-task finetuning across diverse tasks, OOD evaluation for paraphrase identification, and downstream evaluation in model-merging work; one study reports gains of +3.17% and +12.38% on PAWS."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, the prevailing framing is PAWS as a benchmark or dataset for paraphrase detection or paraphrase identification. Definitions describe it as evaluating whether two sentences are semantically equivalent and helping assess whether models distinguish paraphrases from non-paraphrases, and one paper further characterizes it as sentence pairs with high lexical overlap that may still have different meanings. Some authors also expand the name as Paraphrase Adversaries from Word Scrambling.\n\nWhat it is claimed to measure. Papers most commonly use PAWS to measure paraphrase detection, and it is linked to 1 behavioral indicator, Paraphrase detection. Beyond that dominant use, it is linked to 1 construct, Out-of-distribution generalization: a smaller line of work uses PAWS as an OOD evaluation dataset for paraphrase identification and reports it as suitable for evaluating OOD robustness.\n\nSpace of uses. No other measurement instrument is linked to it. Papers position PAWS as one task within broader evaluation suites, including dataset compositions for paraphrase detection, multi-task finetuning across diverse tasks, OOD evaluation for paraphrase identification, and downstream evaluation in model-merging work; one study reports gains of +3.17% and +12.38% on PAWS.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Exploring Explanations Improves the Robustness of In-Context Learning",
+      "Mitigating Shortcut Learning with InterpoLated Learning",
+      "Mixtures of In-Context Learners",
+      "SR-LLM: Rethinking the Structured Representation in Large Language Model"
+    ],
+    "emnlp25": [
+      "Superpose Task-specific Features for Model Merging",
+      "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

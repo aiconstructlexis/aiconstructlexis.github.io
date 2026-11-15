@@ -1,0 +1,264 @@
+{
+  "canonical_name": "Zero-shot classification",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed papers, the dominant framing treats zero-shot classification as assigning an input to one of several class labels without task-specific training, fine-tuning, or labeled examples, often from a prompt and the model's internal knowledge. Some definitions narrow this to text, where the task is to assign the correct label to a text using semantic alignment between the input and class labels, while others state it more generally as asking for a prediction on any set of classes or, in multimodal form, selecting the most probable label from text descriptions. Reported success is usually phrased as predicting the correct label or achieving zero-shot accuracy.\n\nVariants. The task appears in several settings. Papers study zero-shot text classification, prompting GPT-3.5 with paper titles, abstracts, and questions for classification on ogbn-arxiv, common reasoning zero-shot classification datasets, image settings using ImageNet pretrained features with 1-NN evaluation, and multimodal classification where an image is matched to the highest-scoring text label. One paper also relates zero-shot classification to pathology detection in a medical diagnosis setting.\n\nSpace of elicitation and scores. Papers measure it with 9 linked instruments. The most frequently linked are ARC-Challenge, ARC-Easy, BoolQ, HellaSwag, and ImageNet-1k, and the linked instruments are mostly benchmark datasets used to report zero-shot accuracy; as one study notes, \"We also compare the zero-shot accuracy on common reasoning zero-shot classification datasets...\" (Search for Efficient Large Language Models). Other papers assess it on ogbn-arxiv or report ImageNet zero-shot classification accuracy.\n\nWhat it is taken as evidence of. Papers do not treat zero-shot classification as evidence of a linked construct, and no construct is linked to it among the reported relationships. Beyond measurement links, the only additional relation is that one paper reports medical diagnosis as related to zero-shot classification through pathology detection via zero-shot and linear probing.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Zero-shot classification",
+    "Zero-shot text classification"
+  ],
+  "papers": [
+    "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+    "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+    "Zero-Shot Robustification of Zero-Shot Models",
+    "Can We Talk Models Into Seeing the World Differently?",
+    "Mitigating Spurious Correlations in Zero-Shot Multimodal Models",
+    "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+    "A Generalization Theory for Zero-Shot Prediction",
+    "Graph4MM: Weaving Multimodal Learning with Structural Information",
+    "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP",
+    "Beyond the Next Token: Towards Prompt-Robust Zero-Shot Classification via Efficient Multi-Token Prediction",
+    "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+    "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+    "Search for Efficient Large Language Models",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "The observable act of an LLM assigning class labels to input instances without any task-specific training, based solely on a prompt and its internal knowledge.",
+      "papers": [
+        "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+        "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+        "Zero-Shot Robustification of Zero-Shot Models",
+        "Search for Efficient Large Language Models",
+        "Mitigating Spurious Correlations in Zero-Shot Multimodal Models"
+      ],
+      "original_name": "Zero-shot classification"
+    },
+    {
+      "text": "Assigning a text to one of several predefined categories without any task-specific training, using only the semantic alignment between input and class labels.",
+      "papers": [
+        "Beyond the Next Token: Towards Prompt-Robust Zero-Shot Classification via Efficient Multi-Token Prediction"
+      ],
+      "original_name": "Zero-shot text classification"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ogbn-arxiv",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+      "evidence": "To assess the potential of LLMs in enhancing representation learning for TAGs, we conducted an initial investigation into leveraging GPT-3.5 for zero-shot classification on the ogbn-arxiv dataset. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "We also compare the zero-shot accuracy on common reasoning zero-shot classi\ufb01cation datasets including BoolQ [50], PIQA [51], HellaSwag [52], WinoGrande [53], ARC-easy [54], ARC-challenge [54], and OpenbookQA [55]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "We also compare the zero-shot accuracy on common reasoning zero-shot classi\ufb01cation datasets including BoolQ [50], PIQA [51], HellaSwag [52], WinoGrande [53], ARC-easy [54], ARC-challenge [54], and OpenbookQA [55]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "We also compare the zero-shot accuracy on common reasoning zero-shot classi\ufb01cation datasets including BoolQ [50], PIQA [51], HellaSwag [52], WinoGrande [53], ARC-easy [54], ARC-challenge [54], and OpenbookQA [55]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "We also compare the zero-shot accuracy on common reasoning zero-shot classi\ufb01cation datasets including BoolQ [50], PIQA [51], HellaSwag [52], WinoGrande [53], ARC-easy [54], ARC-challenge [54], and OpenbookQA [55]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "We also compare the zero-shot accuracy on common reasoning zero-shot classi\ufb01cation datasets including BoolQ [50], PIQA [51], HellaSwag [52], WinoGrande [53], ARC-easy [54], ARC-challenge [54], and OpenbookQA [55]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "We also compare the zero-shot accuracy on common reasoning zero-shot classi\ufb01cation datasets including BoolQ [50], PIQA [51], HellaSwag [52], WinoGrande [53], ARC-easy [54], ARC-challenge [54], and OpenbookQA [55]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Search for Efficient Large Language Models",
+      "evidence": "We also compare the zero-shot accuracy on common reasoning zero-shot classi\ufb01cation datasets including BoolQ [50], PIQA [51], HellaSwag [52], WinoGrande [53], ARC-easy [54], ARC-challenge [54], and OpenbookQA [55]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Search for Efficient Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ImageNet-1k",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "evidence": "a lower proportion of SSC results in decreased accuracy in ImageNet zero-shot classification. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical diagnosis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "EEG-Language Pretraining for Highly Label-Efficient Clinical Phenotyping",
+      "evidence": "Pathology detection via zero-shot (ZS) and linear probing at 1%, 10%, and 100% labeled data of the TUAB training set. (Table 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "EEG-Language Pretraining for Highly Label-Efficient Clinical Phenotyping"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 9,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed papers, the dominant framing treats zero-shot classification as assigning an input to one of several class labels without task-specific training, fine-tuning, or labeled examples, often from a prompt and the model's internal knowledge. Some definitions narrow this to text, where the task is to assign the correct label to a text using semantic alignment between the input and class labels, while others state it more generally as asking for a prediction on any set of classes or, in multimodal form, selecting the most probable label from text descriptions. Reported success is usually phrased as predicting the correct label or achieving zero-shot accuracy."
+    },
+    {
+      "label": "Variants.",
+      "text": "The task appears in several settings. Papers study zero-shot text classification, prompting GPT-3.5 with paper titles, abstracts, and questions for classification on ogbn-arxiv, common reasoning zero-shot classification datasets, image settings using ImageNet pretrained features with 1-NN evaluation, and multimodal classification where an image is matched to the highest-scoring text label. One paper also relates zero-shot classification to pathology detection in a medical diagnosis setting."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers measure it with 9 linked instruments. The most frequently linked are ARC-Challenge, ARC-Easy, BoolQ, HellaSwag, and ImageNet-1k, and the linked instruments are mostly benchmark datasets used to report zero-shot accuracy; as one study notes, \"We also compare the zero-shot accuracy on common reasoning zero-shot classification datasets...\" (Search for Efficient Large Language Models). Other papers assess it on ogbn-arxiv or report ImageNet zero-shot classification accuracy."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not treat zero-shot classification as evidence of a linked construct, and no construct is linked to it among the reported relationships. Beyond measurement links, the only additional relation is that one paper reports medical diagnosis as related to zero-shot classification through pathology detection via zero-shot and linear probing."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed papers, the dominant framing treats zero-shot classification as assigning an input to one of several class labels without task-specific training, fine-tuning, or labeled examples, often from a prompt and the model's internal knowledge. Some definitions narrow this to text, where the task is to assign the correct label to a text using semantic alignment between the input and class labels, while others state it more generally as asking for a prediction on any set of classes or, in multimodal form, selecting the most probable label from text descriptions. Reported success is usually phrased as predicting the correct label or achieving zero-shot accuracy.\n\nVariants. The task appears in several settings. Papers study zero-shot text classification, prompting GPT-3.5 with paper titles, abstracts, and questions for classification on ogbn-arxiv, common reasoning zero-shot classification datasets, image settings using ImageNet pretrained features with 1-NN evaluation, and multimodal classification where an image is matched to the highest-scoring text label. One paper also relates zero-shot classification to pathology detection in a medical diagnosis setting.\n\nSpace of elicitation and scores. Papers measure it with 9 linked instruments. The most frequently linked are ARC-Challenge, ARC-Easy, BoolQ, HellaSwag, and ImageNet-1k, and the linked instruments are mostly benchmark datasets used to report zero-shot accuracy; as one study notes, \"We also compare the zero-shot accuracy on common reasoning zero-shot classification datasets...\" (Search for Efficient Large Language Models). Other papers assess it on ogbn-arxiv or report ImageNet zero-shot classification accuracy.\n\nWhat it is taken as evidence of. Papers do not treat zero-shot classification as evidence of a linked construct, and no construct is linked to it among the reported relationships. Beyond measurement links, the only additional relation is that one paper reports medical diagnosis as related to zero-shot classification through pathology detection via zero-shot and linear probing.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Harnessing Explanations: LLM-to-LM Interpreter for Enhanced Text-Attributed Graph Representation Learning",
+      "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+      "Zero-Shot Robustification of Zero-Shot Models"
+    ],
+    "iclr25": [
+      "Can We Talk Models Into Seeing the World Differently?",
+      "Mitigating Spurious Correlations in Zero-Shot Multimodal Models",
+      "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models"
+    ],
+    "icml25": [
+      "A Generalization Theory for Zero-Shot Prediction",
+      "Graph4MM: Weaving Multimodal Learning with Structural Information",
+      "X-Transfer Attacks: Towards Super Transferable Adversarial Attacks on CLIP"
+    ],
+    "neurips24": [
+      "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+      "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark",
+      "Search for Efficient Large Language Models",
+      "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+    ],
+    "naacl25": [
+      "Beyond the Next Token: Towards Prompt-Robust Zero-Shot Classification via Efficient Multi-Token Prediction"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 3,
+    "iclr25": 3,
+    "icml25": 3,
+    "neurips24": 4,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

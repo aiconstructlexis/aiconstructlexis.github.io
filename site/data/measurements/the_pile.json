@@ -1,0 +1,284 @@
+{
+  "canonical_name": "The Pile",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, the prevailing usage treats The Pile as a large, diverse text corpus for language model pre-training. Definitions also describe it as an open-source English corpus for training and evaluation, as a validation or test corpus for next-token prediction, perplexity, and recall-related analyses, and as a source of subsets or splits for domain-specific studies. Some authors further specify coverage such as encyclopedic text, books, social media, code, reviews, and domains like arXiv, GitHub, and PubMed, while others refer to particular variants such as a deduplicated version or selected subsets.\n\nWhat it is claimed to measure. Papers link The Pile to 3 constructs and 1 behavioral indicator. The construct links are to General ability, Long-context understanding, and Specialization, and the behavioral-indicator link is to Pre-training data detection. These claims are spread across several targets rather than centered on one: papers use losses on the Pile to measure general ability, refer to long-context understanding on Pile, treat Pile subsets as target specialization sets, and list Pile among benchmark datasets for detecting pre-training data.\n\nSpace of uses. Among recorded instrument links, papers relate The Pile to 2 other instruments, Books3 and Pile-CC, in work that trains on mixtures built from Pile subsets. More broadly, papers position it as both a pre-training corpus and an evaluation resource: models are trained from scratch on it, evaluated on its validation split or held-out subsets, and in narrower setups it is sampled for calibration data, random contexts, reconstruction and downstream evaluation data, empirical token-frequency estimates, co-occurrence counts, and domain-specialist datasets.\n\nConcerns raised. One survey notes a possible overlap concern: ICAE is described as being trained and tested on The Pile, which may overlap with the training corpus of the LLM.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Pile",
+    "The Pile"
+  ],
+  "papers": [
+    "A Statistical and Multi-Perspective Revisiting of the Membership Inference Attack in Large Language Models",
+    "Geometric Signatures of Compositionality Across a Language Model's Lifetime",
+    "Group-SAE: Efficient Training of Sparse Autoencoders for Large Language Models via Layer Groups",
+    "REVIVING YOUR MNEME: Predicting The Side Effects of LLM Unlearning and Fine-Tuning via Sparse Model Diffing",
+    "In-context Autoencoder for Context Compression in a Large Language Model",
+    "Rethinking Channel Dimensions to Isolate Outliers for Low-bit Weight Quantization of Large Language Models",
+    "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+    "Successor Heads: Recurring, Interpretable Attention Heads In The Wild",
+    "Zoology: Measuring and Improving Recall in Efficient Language Models",
+    "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+    "Adaptive Rank Allocation: Speeding Up Modern Transformers with RaNA Adapters",
+    "COAT: Compressing Optimizer states and Activations for Memory-Efficient FP8 Training",
+    "Compute-Optimal LLMs Provably Generalize Better with Scale",
+    "DEPT: Decoupled Embeddings for Pre-training Language Models",
+    "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+    "Efficiently Learning at Test-Time: Active Fine-Tuning of LLMs",
+    "Emergence of a High-Dimensional Abstraction Phase in Language Transformers",
+    "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+    "LongMamba: Enhancing Mamba's Long-Context Capabilities via Training-Free Receptive Field Enlargement",
+    "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+    "Perplexed by Perplexity: Perplexity-Based Data Pruning With Small Reference Models",
+    "Quamba: A Post-Training Quantization Recipe for Selective State Space Models",
+    "Recite, Reconstruct, Recollect: Memorization in LMs as a Multifaceted Phenomenon",
+    "RegMix: Data Mixture as Regression for Language Model Pre-training",
+    "Small-to-Large Generalization: Training Data Influences Models Consistently Across Scale",
+    "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
+    "Task-Adaptive Pretrained Language Models via Clustered-Importance Sampling",
+    "TokenFormer: Rethinking Transformer Scaling with Tokenized Model Parameters",
+    "Activation Space Interventions Can Be Transferred Between Large Language Models",
+    "Chameleon: A Flexible Data-mixing Framework for Language Model Pretraining and Finetuning",
+    "Domain2Vec: Vectorizing Datasets to Find the Optimal Data Mixture without Training",
+    "How to Synthesize Text Data without Model Collapse?",
+    "Learning to (Learn at Test Time): RNNs with Expressive Hidden States",
+    "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+    "Persistent Topological Features in Large Language Models",
+    "SAE-V: Interpreting Multimodal Models for Enhanced Alignment",
+    "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+    "Soup-of-Experts: Pretraining Specialist Models via Parameters Averaging",
+    "CartesianMoE: Boosting Knowledge Sharing among Experts via Cartesian Product Routing in Mixture-of-Experts",
+    "DenseSSM: State Space Models with Dense Hidden Connection for Efficient Large Language Models",
+    "Prompt Compression for Large Language Models: A Survey",
+    "Confidence Regulation Neurons in Language Models",
+    "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+    "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+  ],
+  "paper_count": 44,
+  "definitions": [
+    {
+      "text": "The Pile is a large text corpus used here as a pre-training dataset for language modeling comparisons.",
+      "papers": [
+        "In-context Autoencoder for Context Compression in a Large Language Model",
+        "Rethinking Channel Dimensions to Isolate Outliers for Low-bit Weight Quantization of Large Language Models",
+        "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+        "Successor Heads: Recurring, Interpretable Attention Heads In The Wild",
+        "DEPT: Decoupled Embeddings for Pre-training Language Models",
+        "DenseSSM: State Space Models with Dense Hidden Connection for Efficient Large Language Models",
+        "Geometric Signatures of Compositionality Across a Language Model's Lifetime",
+        "Soup-of-Experts: Pretraining Specialist Models via Parameters Averaging",
+        "Group-SAE: Efficient Training of Sparse Autoencoders for Large Language Models via Layer Groups",
+        "Confidence Regulation Neurons in Language Models",
+        "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+        "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+      ],
+      "original_name": "The Pile"
+    },
+    {
+      "text": "The Pile language modeling dataset used here as a validation and test corpus for measuring next-token prediction and recall-related slices.",
+      "papers": [
+        "Zoology: Measuring and Improving Recall in Efficient Language Models",
+        "Task-Adaptive Pretrained Language Models via Clustered-Importance Sampling",
+        "CartesianMoE: Boosting Knowledge Sharing among Experts via Cartesian Product Routing in Mixture-of-Experts",
+        "Prompt Compression for Large Language Models: A Survey",
+        "A Statistical and Multi-Perspective Revisiting of the Membership Inference Attack in Large Language Models",
+        "SAE-V: Interpreting Multimodal Models for Enhanced Alignment"
+      ],
+      "original_name": "Pile"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pile-CC",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "evidence": "We train 70M and 160M language models on the mixture of Github and Pile-CC subset from the Pile dataset (Section 3.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Books3",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "evidence": "We train on the mixtures of GitHub, Pile-CC, and Books3 subset from the Pile for a total of 30B tokens (Section 3.2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+      "evidence": "Long-context understanding on Pile. (Figure 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pre-training data detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+      "evidence": "To verify the effectiveness of detection methods, we employ four common benchmark datasets for evaluations, including WikiMIA (Shi et al., 2024), ArXivTection (Duarte et al., 2024), BookTection (Duarte et al., 2024) BookMIA (Shi et al., 2024) and Pile (Maini et al., 2024). (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Fine-tuning can Help Detect Pretraining Data from Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "evidence": "maintain the general-purpose ability (losses on the Pile) unchanged.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Specialization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Soup-of-Experts: Pretraining Specialist Models via Parameters Averaging",
+      "evidence": "We consider 16 datasets from the PILE (Gao et al., 2020) as target specialization sets (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Soup-of-Experts: Pretraining Specialist Models via Parameters Averaging"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, the prevailing usage treats The Pile as a large, diverse text corpus for language model pre-training. Definitions also describe it as an open-source English corpus for training and evaluation, as a validation or test corpus for next-token prediction, perplexity, and recall-related analyses, and as a source of subsets or splits for domain-specific studies. Some authors further specify coverage such as encyclopedic text, books, social media, code, reviews, and domains like arXiv, GitHub, and PubMed, while others refer to particular variants such as a deduplicated version or selected subsets."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link The Pile to 3 constructs and 1 behavioral indicator. The construct links are to General ability, Long-context understanding, and Specialization, and the behavioral-indicator link is to Pre-training data detection. These claims are spread across several targets rather than centered on one: papers use losses on the Pile to measure general ability, refer to long-context understanding on Pile, treat Pile subsets as target specialization sets, and list Pile among benchmark datasets for detecting pre-training data."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Among recorded instrument links, papers relate The Pile to 2 other instruments, Books3 and Pile-CC, in work that trains on mixtures built from Pile subsets. More broadly, papers position it as both a pre-training corpus and an evaluation resource: models are trained from scratch on it, evaluated on its validation split or held-out subsets, and in narrower setups it is sampled for calibration data, random contexts, reconstruction and downstream evaluation data, empirical token-frequency estimates, co-occurrence counts, and domain-specialist datasets."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One survey notes a possible overlap concern: ICAE is described as being trained and tested on The Pile, which may overlap with the training corpus of the LLM."
+    }
+  ],
+  "characterization": "What it is. Across the papers, the prevailing usage treats The Pile as a large, diverse text corpus for language model pre-training. Definitions also describe it as an open-source English corpus for training and evaluation, as a validation or test corpus for next-token prediction, perplexity, and recall-related analyses, and as a source of subsets or splits for domain-specific studies. Some authors further specify coverage such as encyclopedic text, books, social media, code, reviews, and domains like arXiv, GitHub, and PubMed, while others refer to particular variants such as a deduplicated version or selected subsets.\n\nWhat it is claimed to measure. Papers link The Pile to 3 constructs and 1 behavioral indicator. The construct links are to General ability, Long-context understanding, and Specialization, and the behavioral-indicator link is to Pre-training data detection. These claims are spread across several targets rather than centered on one: papers use losses on the Pile to measure general ability, refer to long-context understanding on Pile, treat Pile subsets as target specialization sets, and list Pile among benchmark datasets for detecting pre-training data.\n\nSpace of uses. Among recorded instrument links, papers relate The Pile to 2 other instruments, Books3 and Pile-CC, in work that trains on mixtures built from Pile subsets. More broadly, papers position it as both a pre-training corpus and an evaluation resource: models are trained from scratch on it, evaluated on its validation split or held-out subsets, and in narrower setups it is sampled for calibration data, random contexts, reconstruction and downstream evaluation data, empirical token-frequency estimates, co-occurrence counts, and domain-specialist datasets.\n\nConcerns raised. One survey notes a possible overlap concern: ICAE is described as being trained and tested on The Pile, which may overlap with the training corpus of the LLM.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "A Statistical and Multi-Perspective Revisiting of the Membership Inference Attack in Large Language Models",
+      "Geometric Signatures of Compositionality Across a Language Model's Lifetime"
+    ],
+    "emnlp25": [
+      "Group-SAE: Efficient Training of Sparse Autoencoders for Large Language Models via Layer Groups",
+      "REVIVING YOUR MNEME: Predicting The Side Effects of LLM Unlearning and Fine-Tuning via Sparse Model Diffing"
+    ],
+    "iclr24": [
+      "In-context Autoencoder for Context Compression in a Large Language Model",
+      "Rethinking Channel Dimensions to Isolate Outliers for Low-bit Weight Quantization of Large Language Models",
+      "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+      "Successor Heads: Recurring, Interpretable Attention Heads In The Wild",
+      "Zoology: Measuring and Improving Recall in Efficient Language Models"
+    ],
+    "iclr25": [
+      "Adaptive Data Optimization: Dynamic Sample Selection with Scaling Laws",
+      "Adaptive Rank Allocation: Speeding Up Modern Transformers with RaNA Adapters",
+      "COAT: Compressing Optimizer states and Activations for Memory-Efficient FP8 Training",
+      "Compute-Optimal LLMs Provably Generalize Better with Scale",
+      "DEPT: Decoupled Embeddings for Pre-training Language Models",
+      "Data Mixing Laws: Optimizing Data Mixtures by Predicting Language Modeling Performance",
+      "Efficiently Learning at Test-Time: Active Fine-Tuning of LLMs",
+      "Emergence of a High-Dimensional Abstraction Phase in Language Transformers",
+      "Fine-tuning can Help Detect Pretraining Data from Large Language Models",
+      "LongMamba: Enhancing Mamba's Long-Context Capabilities via Training-Free Receptive Field Enlargement",
+      "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+      "Perplexed by Perplexity: Perplexity-Based Data Pruning With Small Reference Models",
+      "Quamba: A Post-Training Quantization Recipe for Selective State Space Models",
+      "Recite, Reconstruct, Recollect: Memorization in LMs as a Multifaceted Phenomenon",
+      "RegMix: Data Mixture as Regression for Language Model Pre-training",
+      "Small-to-Large Generalization: Training Data Influences Models Consistently Across Scale",
+      "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
+      "Task-Adaptive Pretrained Language Models via Clustered-Importance Sampling",
+      "TokenFormer: Rethinking Transformer Scaling with Tokenized Model Parameters"
+    ],
+    "icml25": [
+      "Activation Space Interventions Can Be Transferred Between Large Language Models",
+      "Chameleon: A Flexible Data-mixing Framework for Language Model Pretraining and Finetuning",
+      "Domain2Vec: Vectorizing Datasets to Find the Optimal Data Mixture without Training",
+      "How to Synthesize Text Data without Model Collapse?",
+      "Learning to (Learn at Test Time): RNNs with Expressive Hidden States",
+      "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+      "Persistent Topological Features in Large Language Models",
+      "SAE-V: Interpreting Multimodal Models for Enhanced Alignment",
+      "Scaling Laws for Forgetting during Finetuning with Pretraining Data Injection",
+      "Soup-of-Experts: Pretraining Specialist Models via Parameters Averaging"
+    ],
+    "naacl25": [
+      "CartesianMoE: Boosting Knowledge Sharing among Experts via Cartesian Product Routing in Mixture-of-Experts",
+      "DenseSSM: State Space Models with Dense Hidden Connection for Efficient Large Language Models",
+      "Prompt Compression for Large Language Models: A Survey"
+    ],
+    "neurips24": [
+      "Confidence Regulation Neurons in Language Models",
+      "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+      "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2,
+    "iclr24": 5,
+    "iclr25": 19,
+    "icml25": 10,
+    "naacl25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

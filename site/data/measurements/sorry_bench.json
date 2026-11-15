@@ -1,0 +1,163 @@
+{
+  "canonical_name": "SORRY-Bench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across definitions, the prevailing usage treats SORRY-Bench as a benchmark dataset of unsafe or harmful prompts and instructions for evaluating model refusal, safety alignment, or harmfulness. Papers variously describe it as a dataset of unsafe prompts used to evaluate and train models, a harmfulness benchmark in the HarmfulQA context, a jailbreak evaluation benchmark, and a dataset for assessing whether an LLM rejects questions with harmful intent. Its content is described as 450 harmful instructions, with one definition adding that the prompts span 45 categories and another referring to 450 unseen harmful test sets.\n\nWhat it is claimed to measure. Papers connect SORRY-Bench to 1 construct and 3 behavioral indicators. It is used to measure Safety, and the named behavioral indicators, in the order most frequently linked, are Harmful content generation, Harmful request refusal, and Jailbreaking. The measurement language varies across papers, including \"text-only safety,\" \"LLM safety refusal,\" and \"harmfulness in the HarmfulQA context.\"\n\nSpace of uses. Papers use SORRY-Bench both as an evaluation benchmark and as source material for derived datasets. It appears alongside HEx-PHI and WildJailbreak in harmfulness or text-only safety evaluation, and alongside SALAD-Bench in jailbreaking evaluation; other work uses its unsafe prompts to build a preference dataset or combines it with Alpaca to create D+ and D-. Papers also position it as one of several established benchmarks for rejecting harmful-intent questions.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SORRY-Bench",
+    "SORRY-bench",
+    "Sorry-Bench",
+    "SorryBench"
+  ],
+  "papers": [
+    "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+    "Programming Refusal with Conditional Activation Steering",
+    "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+    "Unintentional Unalignment: Likelihood Displacement in Direct Preference Optimization",
+    "CASE-Bench: Context-Aware SafEty Benchmark for Large Language Models",
+    "Improving LLM Safety Alignment with Dual-Objective Optimization",
+    "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+    "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+    "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+    "Weak-to-Strong Jailbreaking on Large Language Models"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "A dataset of unsafe prompts used to evaluate and train models for safety alignment and refusal capabilities.",
+      "papers": [
+        "Unintentional Unalignment: Likelihood Displacement in Direct Preference Optimization",
+        "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions"
+      ],
+      "original_name": "SORRY-Bench"
+    },
+    {
+      "text": "A benchmark for evaluating harmfulness in the HarmfulQA context using harmful instructions and model compliance.",
+      "papers": [
+        "On Evaluating the Durability of Safeguards for Open-Weight LLMs"
+      ],
+      "original_name": "SORRY-bench"
+    },
+    {
+      "text": "A benchmark dataset containing harmful prompts across 45 categories, used to evaluate a model's refusal capabilities for unsafe content.",
+      "papers": [
+        "Programming Refusal with Conditional Activation Steering"
+      ],
+      "original_name": "Sorry-Bench"
+    },
+    {
+      "text": "A benchmark dataset used to assess an LLM's ability to reject questions with harmful intent.",
+      "papers": [
+        "OR-Bench: An Over-Refusal Benchmark for Large Language Models"
+      ],
+      "original_name": "SorryBench"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "How Does Vision-Language Adaptation Impact the Safety of Vision Language Models?",
+      "evidence": "For text-only safety, we use SorryBench (Xie et al., 2024) and WildJailbreak (Jiang et al., 2024) (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "How Does Vision-Language Adaptation Impact the Safety of Vision Language Models?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful request refusal",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "evidence": "we identify three deficiencies underlying these existing evaluations, and address them with SORRY-Bench2, our proposed systematic benchmark to evaluate LLM safety refusal. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "evidence": "HEx-PHI and SORRY-bench are two dedicated benchmarks for evaluating harmfulness in the HarmfulQA context. (Section 2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Evaluating the Durability of Safeguards for Open-Weight LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Jailbreaking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Weak-to-Strong Jailbreaking on Large Language Models",
+      "evidence": "To assess the generalizability of the weak-to-strong attack, we expanded our evaluation to include two new safety benchmarks: SALAD-Bench (Li et al., 2024) and SORRY-Bench (Xie et al., 2024). (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Weak-to-Strong Jailbreaking on Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across definitions, the prevailing usage treats SORRY-Bench as a benchmark dataset of unsafe or harmful prompts and instructions for evaluating model refusal, safety alignment, or harmfulness. Papers variously describe it as a dataset of unsafe prompts used to evaluate and train models, a harmfulness benchmark in the HarmfulQA context, a jailbreak evaluation benchmark, and a dataset for assessing whether an LLM rejects questions with harmful intent. Its content is described as 450 harmful instructions, with one definition adding that the prompts span 45 categories and another referring to 450 unseen harmful test sets."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers connect SORRY-Bench to 1 construct and 3 behavioral indicators. It is used to measure Safety, and the named behavioral indicators, in the order most frequently linked, are Harmful content generation, Harmful request refusal, and Jailbreaking. The measurement language varies across papers, including \"text-only safety,\" \"LLM safety refusal,\" and \"harmfulness in the HarmfulQA context.\""
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use SORRY-Bench both as an evaluation benchmark and as source material for derived datasets. It appears alongside HEx-PHI and WildJailbreak in harmfulness or text-only safety evaluation, and alongside SALAD-Bench in jailbreaking evaluation; other work uses its unsafe prompts to build a preference dataset or combines it with Alpaca to create D+ and D-. Papers also position it as one of several established benchmarks for rejecting harmful-intent questions."
+    }
+  ],
+  "characterization": "What it is. Across definitions, the prevailing usage treats SORRY-Bench as a benchmark dataset of unsafe or harmful prompts and instructions for evaluating model refusal, safety alignment, or harmfulness. Papers variously describe it as a dataset of unsafe prompts used to evaluate and train models, a harmfulness benchmark in the HarmfulQA context, a jailbreak evaluation benchmark, and a dataset for assessing whether an LLM rejects questions with harmful intent. Its content is described as 450 harmful instructions, with one definition adding that the prompts span 45 categories and another referring to 450 unseen harmful test sets.\n\nWhat it is claimed to measure. Papers connect SORRY-Bench to 1 construct and 3 behavioral indicators. It is used to measure Safety, and the named behavioral indicators, in the order most frequently linked, are Harmful content generation, Harmful request refusal, and Jailbreaking. The measurement language varies across papers, including \"text-only safety,\" \"LLM safety refusal,\" and \"harmfulness in the HarmfulQA context.\"\n\nSpace of uses. Papers use SORRY-Bench both as an evaluation benchmark and as source material for derived datasets. It appears alongside HEx-PHI and WildJailbreak in harmfulness or text-only safety evaluation, and alongside SALAD-Bench in jailbreaking evaluation; other work uses its unsafe prompts to build a preference dataset or combines it with Alpaca to create D+ and D-. Papers also position it as one of several established benchmarks for rejecting harmful-intent questions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "On Evaluating the Durability of Safeguards for Open-Weight LLMs",
+      "Programming Refusal with Conditional Activation Steering",
+      "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "Unintentional Unalignment: Likelihood Displacement in Direct Preference Optimization"
+    ],
+    "icml25": [
+      "CASE-Bench: Context-Aware SafEty Benchmark for Large Language Models",
+      "Improving LLM Safety Alignment with Dual-Objective Optimization",
+      "OR-Bench: An Over-Refusal Benchmark for Large Language Models",
+      "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+      "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+      "Weak-to-Strong Jailbreaking on Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 6
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

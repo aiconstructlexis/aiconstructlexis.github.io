@@ -1,0 +1,283 @@
+{
+  "canonical_name": "GUI automation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats GUI automation as end-to-end task completion through direct interaction with a graphical or computer interface: agents navigate pages or applications and execute actions such as clicking, typing, scrolling, tapping, swiping, or keyboard and mouse input to accomplish a user goal or reach a goal state. Definitions mostly agree that success is completing the requested task through a sequence of UI actions, sometimes explicitly from natural-language instructions or from screenshots and instructions. A smaller line of work narrows this to pixel-level operation, describing direct clicks or typing at screen coordinates without relying on underlying code structures.\n\nVariants. Papers study this behavior under several names, including GUI control, GUI interaction, UI control, GUI navigation, computer control, mobile device control, and interface manipulation. Common variants differ by platform and task scope: web and mobile tasks from screenshots and instructions, desktop or enterprise software operation, and on-device smartphone control. Some papers separate single-app task execution from cross-app or cross-application workflows, including tasks that require switching between apps or coordinating actions across multiple GUIs, APIs, or both; others emphasize everyday software use such as browsing, email, editing, and office workflows.\n\nSpace of elicitation and scores. One measurement instrument is linked to this behavior. The only linked instrument, and therefore the most common in these papers, is AitW, which is described as a mobile navigation benchmark with operation trajectories and is used for fine-tuning and evaluation on corresponding test subsets.\n\nWhat it is taken as evidence of. The relations do not frame GUI automation as measured evidence of a construct. Only one construct is linked to it, Visual grounding, and one paper claims a causal relationship from Visual grounding to GUI automation, describing accurate mapping of referring expressions for GUI elements to screen coordinates as the basis for pixel-level operation. Separately, one paper claims a causal relationship from Code generation to GUI automation, stating that executable Python code can enable semantically clear and precise actions for operating-system control.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GUI control",
+    "GUI automation",
+    "GUI interaction",
+    "UI control",
+    "GUI navigation",
+    "Pixel-level operation",
+    "On-device control",
+    "Mobile device control",
+    "Computer interaction",
+    "Cross-application task completion",
+    "Cross-app task execution",
+    "Single-app task execution",
+    "Software application manipulation",
+    "Computer control",
+    "UI interaction",
+    "Interface manipulation"
+  ],
+  "papers": [
+    "AXIS: Efficient Human-Agent-Computer Interaction with API-First LLM-Based Agents",
+    "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+    "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent",
+    "Grounding Multimodal Large Language Model in GUI World",
+    "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+    "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+    "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+    "AgentStudio: A Toolkit for Building General Virtual Agents",
+    "Cradle: Empowering Foundation Agents towards General Computer Control",
+    "Towards Efficient Online Tuning of VLM Agents via Counterfactual Soft Reinforcement Learning",
+    "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+    "Boosting Virtual Agent Learning and Reasoning: A Step-Wise, Multi-Dimensional, and Generalist Reward Model with Benchmark",
+    "ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation",
+    "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "On the Effects of Data Scale on UI Control Agents",
+    "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+    "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+    "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning"
+  ],
+  "paper_count": 18,
+  "definitions": [
+    {
+      "text": "The observable action of interacting with graphical user interfaces, including navigating web pages, clicking buttons, and filling in forms, to manage enterprise software systems.",
+      "papers": [
+        "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+        "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning"
+      ],
+      "original_name": "GUI control"
+    },
+    {
+      "text": "Performing end-to-end computer interface tasks by navigating software and executing interface actions to achieve a goal state.",
+      "papers": [
+        "VideoGUI: A Benchmark for GUI Automation from Instructional Videos"
+      ],
+      "original_name": "GUI automation"
+    },
+    {
+      "text": "Interacting with a computer system by manipulating graphical elements like windows, icons, and buttons using a mouse and keyboard.",
+      "papers": [
+        "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+      ],
+      "original_name": "GUI interaction"
+    },
+    {
+      "text": "The observable behavior of an agent interacting with a digital device's user interface to accomplish tasks specified in natural language.",
+      "papers": [
+        "On the Effects of Data Scale on UI Control Agents"
+      ],
+      "original_name": "UI control"
+    },
+    {
+      "text": "Selecting and executing actions on interface elements to complete web or mobile tasks from screenshots and instructions.",
+      "papers": [
+        "Grounding Multimodal Large Language Model in GUI World",
+        "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning"
+      ],
+      "original_name": "GUI navigation"
+    },
+    {
+      "text": "Executing direct interactions on a GUI such as clicking or typing at specific screen coordinates without relying on underlying code structures.",
+      "papers": [
+        "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents"
+      ],
+      "original_name": "Pixel-level operation"
+    },
+    {
+      "text": "The act of operating a mobile device's applications and functionalities to fulfill user requests.",
+      "papers": [
+        "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent"
+      ],
+      "original_name": "On-device control"
+    },
+    {
+      "text": "Completing tasks by operating mobile interfaces and apps through GUI actions.",
+      "papers": [
+        "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+        "ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation"
+      ],
+      "original_name": "Mobile device control"
+    },
+    {
+      "text": "Completing tasks through direct interaction with desktop or GUI-based computer interfaces.",
+      "papers": [
+        "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities"
+      ],
+      "original_name": "Computer interaction"
+    },
+    {
+      "text": "The observable performance on tasks that require navigating and interacting with multiple distinct software applications to achieve a single goal.",
+      "papers": [
+        "AgentStudio: A Toolkit for Building General Virtual Agents"
+      ],
+      "original_name": "Cross-application task completion"
+    },
+    {
+      "text": "Completing a task that requires switching between multiple applications and coordinating actions across them.",
+      "papers": [
+        "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+      ],
+      "original_name": "Cross-app task execution"
+    },
+    {
+      "text": "Completing a task within one mobile application by performing the required sequence of UI actions.",
+      "papers": [
+        "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+      ],
+      "original_name": "Single-app task execution"
+    },
+    {
+      "text": "Using desktop applications to perform everyday tasks such as browsing, email, editing, and office workflows.",
+      "papers": [
+        "Cradle: Empowering Foundation Agents towards General Computer Control"
+      ],
+      "original_name": "Software application manipulation"
+    },
+    {
+      "text": "The observable task of an agent interacting with a computer environment, such as a webpage or application, by perceiving states and executing actions via keyboard and mouse inputs.",
+      "papers": [
+        "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control"
+      ],
+      "original_name": "Computer control"
+    },
+    {
+      "text": "The model interacts with graphical user interface elements such as menus, buttons, and controls to perform actions step by step.",
+      "papers": [
+        "AXIS: Efficient Human-Agent-Computer Interaction with API-First LLM-Based Agents"
+      ],
+      "original_name": "UI interaction"
+    },
+    {
+      "text": "Operating UI elements in digital environments to accomplish tasks.",
+      "papers": [
+        "Boosting Virtual Agent Learning and Reasoning: A Step-Wise, Multi-Dimensional, and Generalist Reward Model with Benchmark"
+      ],
+      "original_name": "Interface manipulation"
+    }
+  ],
+  "definition_count": 16,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AitW",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Grounding Multimodal Large Language Model in GUI World",
+      "evidence": "Android In The Wild (AITW) (Rawles et al., 2023) dataset is a mobile navigation benchmark including 30K instructions and 715K corresponding operation trajectories.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Grounding Multimodal Large Language Model in GUI World",
+          "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+      "evidence": "OSCAR generates executable Python code to directly interface with the OS, enabling semantically clear and precise actions, ensuring broad applicability across diverse tasks. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+      "evidence": "In this paper, we advocate a human-like embodiment for GUI agents that perceive the environment entirely visually and directly perform pixel-level operations on the GUI. The key is visual grounding models that can accurately map diverse referring expressions of GUI elements to their coordinates on the GUI across different platforms. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats GUI automation as end-to-end task completion through direct interaction with a graphical or computer interface: agents navigate pages or applications and execute actions such as clicking, typing, scrolling, tapping, swiping, or keyboard and mouse input to accomplish a user goal or reach a goal state. Definitions mostly agree that success is completing the requested task through a sequence of UI actions, sometimes explicitly from natural-language instructions or from screenshots and instructions. A smaller line of work narrows this to pixel-level operation, describing direct clicks or typing at screen coordinates without relying on underlying code structures."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study this behavior under several names, including GUI control, GUI interaction, UI control, GUI navigation, computer control, mobile device control, and interface manipulation. Common variants differ by platform and task scope: web and mobile tasks from screenshots and instructions, desktop or enterprise software operation, and on-device smartphone control. Some papers separate single-app task execution from cross-app or cross-application workflows, including tasks that require switching between apps or coordinating actions across multiple GUIs, APIs, or both; others emphasize everyday software use such as browsing, email, editing, and office workflows."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "One measurement instrument is linked to this behavior. The only linked instrument, and therefore the most common in these papers, is AitW, which is described as a mobile navigation benchmark with operation trajectories and is used for fine-tuning and evaluation on corresponding test subsets."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "The relations do not frame GUI automation as measured evidence of a construct. Only one construct is linked to it, Visual grounding, and one paper claims a causal relationship from Visual grounding to GUI automation, describing accurate mapping of referring expressions for GUI elements to screen coordinates as the basis for pixel-level operation. Separately, one paper claims a causal relationship from Code generation to GUI automation, stating that executable Python code can enable semantically clear and precise actions for operating-system control."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats GUI automation as end-to-end task completion through direct interaction with a graphical or computer interface: agents navigate pages or applications and execute actions such as clicking, typing, scrolling, tapping, swiping, or keyboard and mouse input to accomplish a user goal or reach a goal state. Definitions mostly agree that success is completing the requested task through a sequence of UI actions, sometimes explicitly from natural-language instructions or from screenshots and instructions. A smaller line of work narrows this to pixel-level operation, describing direct clicks or typing at screen coordinates without relying on underlying code structures.\n\nVariants. Papers study this behavior under several names, including GUI control, GUI interaction, UI control, GUI navigation, computer control, mobile device control, and interface manipulation. Common variants differ by platform and task scope: web and mobile tasks from screenshots and instructions, desktop or enterprise software operation, and on-device smartphone control. Some papers separate single-app task execution from cross-app or cross-application workflows, including tasks that require switching between apps or coordinating actions across multiple GUIs, APIs, or both; others emphasize everyday software use such as browsing, email, editing, and office workflows.\n\nSpace of elicitation and scores. One measurement instrument is linked to this behavior. The only linked instrument, and therefore the most common in these papers, is AitW, which is described as a mobile navigation benchmark with operation trajectories and is used for fine-tuning and evaluation on corresponding test subsets.\n\nWhat it is taken as evidence of. The relations do not frame GUI automation as measured evidence of a construct. Only one construct is linked to it, Visual grounding, and one paper claims a causal relationship from Visual grounding to GUI automation, describing accurate mapping of referring expressions for GUI elements to screen coordinates as the basis for pixel-level operation. Separately, one paper claims a causal relationship from Code generation to GUI automation, stating that executable Python code can enable semantically clear and precise actions for operating-system control.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent",
+      "Grounding Multimodal Large Language Model in GUI World",
+      "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+      "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+      "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+      "AgentStudio: A Toolkit for Building General Virtual Agents"
+    ],
+    "icml25": [
+      "Cradle: Empowering Foundation Agents towards General Computer Control",
+      "Towards Efficient Online Tuning of VLM Agents via Counterfactual Soft Reinforcement Learning",
+      "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+      "Boosting Virtual Agent Learning and Reasoning: A Step-Wise, Multi-Dimensional, and Generalist Reward Model with Benchmark"
+    ],
+    "neurips24": [
+      "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "On the Effects of Data Scale on UI Control Agents",
+      "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "VideoGUI: A Benchmark for GUI Automation from Instructional Videos",
+      "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning"
+    ],
+    "acl25": [
+      "AXIS: Efficient Human-Agent-Computer Interaction with API-First LLM-Based Agents"
+    ],
+    "iclr24": [
+      "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control"
+    ],
+    "naacl25": [
+      "ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 6,
+    "icml25": 4,
+    "neurips24": 5,
+    "acl25": 1,
+    "iclr24": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

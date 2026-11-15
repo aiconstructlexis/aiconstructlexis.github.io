@@ -1,0 +1,188 @@
+{
+  "canonical_name": "Knowledge understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats knowledge understanding as a model ability, often a latent one, to comprehend, represent, and use factual, conceptual, or domain knowledge when processing inputs and generating outputs. Most definitions also stress correct application, either to information presented in a question or to broader general world and domain-specific knowledge on diverse cognitive tasks. A smaller variation broadens the construct to include acquiring and retaining knowledge from training data, and some papers pair it with reasoning or distinguish it from instruction-following.\n\nSpace of facets. Papers use closely related labels, especially knowledge comprehension, knowledge understanding, and knowledge and understanding, for largely overlapping ideas centered on using knowledge. The construct is sometimes scoped narrowly to factual or conceptual information in a question, and elsewhere more broadly to general world knowledge, domain-specific knowledge, or world knowledge across STEM, social sciences, and humanities, including spoken interactions. One line of work also refers to an understanding level with concept tasks and relates it to knowledge memorization.\n\nSpace of measurement. Operationalization is entirely instrument-based in the recorded links: the construct is linked to 5 measurement instruments and no behavioral indicators. The named instruments are MMMLU, Open LLM Leaderboard v2, TruthfulQA, VoxEval, and lm-evaluation-harness. Papers use them to evaluate knowledge comprehension or knowledge and understanding through multilingual evaluation, pure speech interactions, or broader suites of zero-shot natural language tasks.\n\nLinks. Outside measurement, one paper claims a causal relationship from Knowledge memorization to Knowledge understanding. Its evidence says the memorization level shows notable correlations with concept tasks in the understanding level, and interprets this as those high-level tasks relying heavily on knowledge memory. No correlates or undirected related links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge comprehension",
+    "Knowledge understanding",
+    "Knowledge and understanding"
+  ],
+  "papers": [
+    "ATLANTIS: Weak-to-Strong Learning via Importance Sampling",
+    "VoxEval: Benchmarking the Knowledge Understanding Capabilities of End-to-End Spoken Language Models",
+    "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+    "Unified Parameter-Efficient Unlearning for LLMs",
+    "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation",
+    "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+    "Multi-Head Mixture-of-Experts",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "The ability of a model to understand and correctly apply factual or conceptual information presented in a question.",
+      "papers": [
+        "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation"
+      ],
+      "original_name": "Knowledge comprehension"
+    },
+    {
+      "text": "The latent ability to represent and use factual or domain knowledge when processing inputs and generating outputs.",
+      "papers": [
+        "Unified Parameter-Efficient Unlearning for LLMs"
+      ],
+      "original_name": "Knowledge understanding"
+    },
+    {
+      "text": "The latent ability of a model to acquire, retain, and apply general world knowledge and domain-specific information from training data to perform well on diverse cognitive tasks.",
+      "papers": [
+        "ATLANTIS: Weak-to-Strong Learning via Importance Sampling"
+      ],
+      "original_name": "Knowledge and understanding"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge memorization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "KoLA: Carefully Benchmarking World Knowledge of Large Language Models",
+      "evidence": "The knowledge memorization (KM) level shows notable correlations with other levels, especially with the concept tasks in the understanding level ... which indicates that these high-level tasks rely heavily on knowledge memory. (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "KoLA: Carefully Benchmarking World Knowledge of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "lm-evaluation-harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Multi-Head Mixture-of-Experts",
+      "evidence": "We evaluate our models on a total of 9 different zero-shot benchmarks to assess their abilities across various natural language tasks like common sense reasoning, general language understanding and knowledge understanding using the LLM Evaluation Harness [14]. (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Multi-Head Mixture-of-Experts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open LLM Leaderboard v2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ATLANTIS: Weak-to-Strong Learning via Importance Sampling",
+      "evidence": "We use Open LLM Leaderboard 2 (Fourrier et al., 2024), and TruthfulQA (Lin et al., 2021) for the evaluation. (Section 3.2, under the heading 'Knowledge & Understanding')",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "ATLANTIS: Weak-to-Strong Learning via Importance Sampling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ATLANTIS: Weak-to-Strong Learning via Importance Sampling",
+      "evidence": "We use Open LLM Leaderboard 2 (Fourrier et al., 2024), and TruthfulQA (Lin et al., 2021) for the evaluation. (Section 3.2, under the heading 'Knowledge & Understanding')",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "ATLANTIS: Weak-to-Strong Learning via Importance Sampling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VoxEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VoxEval: Benchmarking the Knowledge Understanding Capabilities of End-to-End Spoken Language Models",
+      "evidence": "To address these limitations, we present VoxEval, a novel SpeechQA benchmark that assesses SLMs\u2019 knowledge understanding through pure speech interactions. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "VoxEval: Benchmarking the Knowledge Understanding Capabilities of End-to-End Spoken Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation of LLMs",
+      "evidence": "the OpenAI multilingual version of MMLU (MMMLU)1 for knowledge comprehension (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation of LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats knowledge understanding as a model ability, often a latent one, to comprehend, represent, and use factual, conceptual, or domain knowledge when processing inputs and generating outputs. Most definitions also stress correct application, either to information presented in a question or to broader general world and domain-specific knowledge on diverse cognitive tasks. A smaller variation broadens the construct to include acquiring and retaining knowledge from training data, and some papers pair it with reasoning or distinguish it from instruction-following."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use closely related labels, especially knowledge comprehension, knowledge understanding, and knowledge and understanding, for largely overlapping ideas centered on using knowledge. The construct is sometimes scoped narrowly to factual or conceptual information in a question, and elsewhere more broadly to general world knowledge, domain-specific knowledge, or world knowledge across STEM, social sciences, and humanities, including spoken interactions. One line of work also refers to an understanding level with concept tasks and relates it to knowledge memorization."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is entirely instrument-based in the recorded links: the construct is linked to 5 measurement instruments and no behavioral indicators. The named instruments are MMMLU, Open LLM Leaderboard v2, TruthfulQA, VoxEval, and lm-evaluation-harness. Papers use them to evaluate knowledge comprehension or knowledge and understanding through multilingual evaluation, pure speech interactions, or broader suites of zero-shot natural language tasks."
+    },
+    {
+      "label": "Links.",
+      "text": "Outside measurement, one paper claims a causal relationship from Knowledge memorization to Knowledge understanding. Its evidence says the memorization level shows notable correlations with concept tasks in the understanding level, and interprets this as those high-level tasks relying heavily on knowledge memory. No correlates or undirected related links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats knowledge understanding as a model ability, often a latent one, to comprehend, represent, and use factual, conceptual, or domain knowledge when processing inputs and generating outputs. Most definitions also stress correct application, either to information presented in a question or to broader general world and domain-specific knowledge on diverse cognitive tasks. A smaller variation broadens the construct to include acquiring and retaining knowledge from training data, and some papers pair it with reasoning or distinguish it from instruction-following.\n\nSpace of facets. Papers use closely related labels, especially knowledge comprehension, knowledge understanding, and knowledge and understanding, for largely overlapping ideas centered on using knowledge. The construct is sometimes scoped narrowly to factual or conceptual information in a question, and elsewhere more broadly to general world knowledge, domain-specific knowledge, or world knowledge across STEM, social sciences, and humanities, including spoken interactions. One line of work also refers to an understanding level with concept tasks and relates it to knowledge memorization.\n\nSpace of measurement. Operationalization is entirely instrument-based in the recorded links: the construct is linked to 5 measurement instruments and no behavioral indicators. The named instruments are MMMLU, Open LLM Leaderboard v2, TruthfulQA, VoxEval, and lm-evaluation-harness. Papers use them to evaluate knowledge comprehension or knowledge and understanding through multilingual evaluation, pure speech interactions, or broader suites of zero-shot natural language tasks.\n\nLinks. Outside measurement, one paper claims a causal relationship from Knowledge memorization to Knowledge understanding. Its evidence says the memorization level shows notable correlations with concept tasks in the understanding level, and interprets this as those high-level tasks relying heavily on knowledge memory. No correlates or undirected related links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "ATLANTIS: Weak-to-Strong Learning via Importance Sampling",
+      "VoxEval: Benchmarking the Knowledge Understanding Capabilities of End-to-End Spoken Language Models"
+    ],
+    "iclr25": [
+      "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+      "Unified Parameter-Efficient Unlearning for LLMs",
+      "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation"
+    ],
+    "neurips24": [
+      "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "Multi-Head Mixture-of-Experts",
+      "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "canonical_name": "Robotic manipulation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the dominant framing treats robotic manipulation as producing control actions, action trajectories, or other physical actions that let a robot interact with objects and alter its environment to accomplish a specified goal. Most definitions place it in real or simulated embodied settings and often condition it on visual, textual, or language instructions, including visuo-motor control and embodied robotic control. Many papers then instantiate it as named continuous-control or tabletop tasks such as reaching, pushing, picking, sweeping, peg insertion, or pick and place, while some papers formulate it as rearranging, transporting, sorting, or stacking objects. Success is usually expressed as achieving the task goal, though one transport formulation scores success by the ratio of target objects successfully transported.\n\nVariants. Papers study several variants under related names, including robot manipulation, robotic control, visuo-motor control, tabletop manipulation, low-level manipulation, multi-step manipulation, and long-horizon manipulation. The settings range from simulated control and tabletop environments to real-world robot-arm tasks, and from single-robot behaviors such as opening drawers, sweeping, or sorting items by category to coordinated object rearrangement or transport, including multi-floor and container-using scenarios. Some work also includes mobile-manipulation settings where a robot must pick up a named object from a receptacle, and one paper relates long-horizon manipulation with general instructions to instruction following because such tasks implicitly encapsulate multiple subtasks.\n\nSpace of elicitation and scores. Papers link robotic manipulation to 2 measurement instruments. The more recurrent instrument is Meta-World, described as a robotic manipulation benchmark suite and as a tabletop manipulation benchmark with ML-45, while RLBench appears as another linked instrument and is described as a simulator of a Franka robot performing tabletop manipulation. Both are described as benchmark or simulator environments.\n\nWhat it is taken as evidence of. Instead of linking it to one agreed construct, papers connect robotic manipulation to 7 constructs. The linked constructs are instruction understanding, physical world understanding, sequential decision-making, spatial reasoning, and spatiotemporal reasoning, plus 2 others. In the recorded relationships, separate papers claim causal relationships from instruction understanding, physical world understanding, and spatiotemporal reasoning to robotic manipulation, while robotic manipulation is reported as related to sequential decision-making and spatial reasoning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Robotic control",
+    "Visuo-motor control",
+    "Robot manipulation",
+    "Robotic manipulation",
+    "Object rearrangement",
+    "Object transport",
+    "Tabletop manipulation",
+    "Low-level manipulation",
+    "Multi-step manipulation",
+    "Object sorting",
+    "Embodied robotic control",
+    "Long-horizon manipulation",
+    "Pick and stack"
+  ],
+  "papers": [
+    "Building Cooperative Embodied Agents Modularly with Large Language Models",
+    "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+    "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+    "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+    "Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning",
+    "EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents",
+    "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+    "Joint Reward and Policy Learning with Demonstrations and Human Feedback Improves Alignment",
+    "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+    "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+    "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+    "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning",
+    "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+    "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation",
+    "DiffusionVLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression",
+    "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+    "Perception in Reflection",
+    "Enhancing Rating-Based Reinforcement Learning to Effectively Leverage Feedback from Large Vision-Language Models",
+    "UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent",
+    "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge",
+    "Grounding Multimodal Large Language Models in Actions",
+    "Instruction-Guided Visual Masking",
+    "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts",
+    "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+    "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+    "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+    "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+    "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions"
+  ],
+  "paper_count": 28,
+  "definitions": [
+    {
+      "text": "Producing control actions in a simulated robotics environment to achieve task goals.",
+      "papers": [
+        "Joint Reward and Policy Learning with Demonstrations and Human Feedback Improves Alignment"
+      ],
+      "original_name": "Robotic control"
+    },
+    {
+      "text": "The observable act of a robot interacting with and physically altering its environment to achieve a specified goal.",
+      "papers": [
+        "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation"
+      ],
+      "original_name": "Robot manipulation"
+    },
+    {
+      "text": "Producing robot action trajectories for manipulation tasks from visual and textual task inputs.",
+      "papers": [
+        "Anyprefer: An Agentic Framework for Preference Data Synthesis"
+      ],
+      "original_name": "Visuo-motor control"
+    },
+    {
+      "text": "Performing continuous control manipulation tasks such as reaching, pushing, picking, sweeping, and peg insertion.",
+      "papers": [
+        "Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning",
+        "Enhancing Rating-Based Reinforcement Learning to Effectively Leverage Feedback from Large Vision-Language Models",
+        "UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent"
+      ],
+      "original_name": "Robotic manipulation"
+    },
+    {
+      "text": "A complex, observable task requiring agents to move one or more objects from their initial locations to specified goal locations, often involving multiple steps and coordination.",
+      "papers": [
+        "EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents"
+      ],
+      "original_name": "Object rearrangement"
+    },
+    {
+      "text": "The task of moving one or more objects from a starting location to a specified destination within a simulated environment, potentially using containers.",
+      "papers": [
+        "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+        "Building Cooperative Embodied Agents Modularly with Large Language Models"
+      ],
+      "original_name": "Object transport"
+    },
+    {
+      "text": "The task of physically interacting with and rearranging objects on a flat surface like a table.",
+      "papers": [
+        "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World"
+      ],
+      "original_name": "Tabletop manipulation"
+    },
+    {
+      "text": "The execution of a sequence of actions based on visual input to achieve a specific goal.",
+      "papers": [
+        "Perception in Reflection"
+      ],
+      "original_name": "Multi-step manipulation"
+    },
+    {
+      "text": "The task of grasping multiple objects and placing them into designated areas based on their category.",
+      "papers": [
+        "DiffusionVLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression"
+      ],
+      "original_name": "Object sorting"
+    },
+    {
+      "text": "Controlling a robotic arm through fine-grained 7D action vectors to perform object interactions such as picking up or stacking, requiring accurate spatial and visual perception.",
+      "papers": [
+        "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents"
+      ],
+      "original_name": "Low-level manipulation"
+    },
+    {
+      "text": "Executing physical manipulation tasks (e.g., pick and place) guided by language instructions in a real or simulated environment.",
+      "papers": [
+        "Instruction-Guided Visual Masking"
+      ],
+      "original_name": "Embodied robotic control"
+    },
+    {
+      "text": "Executing multi-step robotic tabletop tasks that require completing a sequence of subtasks over extended horizons.",
+      "papers": [
+        "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation"
+      ],
+      "original_name": "Long-horizon manipulation"
+    },
+    {
+      "text": "A robotics manipulation task where the model must generate a plan to grasp an object and place it on top of another object.",
+      "papers": [
+        "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors"
+      ],
+      "original_name": "Pick and stack"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Meta-World",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts",
+      "evidence": "we verify the efficacy of KALM on two robotics manipulation environments: CLEVR-Robot [14] and Meta-world [15] (Section 1).",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts",
+          "Grounding Multimodal Large Language Models in Actions"
+        ],
+        "iclr25": [
+          "Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World modeling",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+      "evidence": "In addition, 3D-VLA [60] and Daydreamer [56] have also tried to introduce world models into robot manipulation to help the models free themselves from a large amount of trial and error and improve learning efficiency. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution",
+      "evidence": "The strong task instruction understanding and visual grounding capabilities of MLLMs [5, 4] have exhibited great promise for language-instructed multitask robotic manipulation [7, 8, 9].",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "evidence": "\"Long-horizon manipulation tasks with general instructions often implicitly encapsulate multiple sub-tasks, posing significant challenges in instruction following\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Physical world understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+      "evidence": "Furthermore, we investigate how physical world understanding helps the deployment of embodied agents through extensive robotic manipulation experiments on MOKA (Liu et al., 2024a). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatiotemporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+      "evidence": "We hypothesize that this will effectively provide spatial and temporal relations necessary for improving manipulation tasks (Wen et al., 2023; Yuan et al., 2024). (1 INTRODUCTION)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RLBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+      "evidence": "RLBench ... a simulator of a Franka robot performing tabletop manipulation",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+      "evidence": "Pick and stack is a classic robotics task. ... This task demands advanced spatial reasoning",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution",
+      "evidence": "The strong task instruction understanding and visual grounding capabilities of MLLMs [5, 4] have exhibited great promise for language-instructed multitask robotic manipulation [7, 8, 9].",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sequential decision-making",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning",
+      "evidence": "Many of these tasks, such as natural language dialogue or robotic control, require complex sequential decision-making. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the dominant framing treats robotic manipulation as producing control actions, action trajectories, or other physical actions that let a robot interact with objects and alter its environment to accomplish a specified goal. Most definitions place it in real or simulated embodied settings and often condition it on visual, textual, or language instructions, including visuo-motor control and embodied robotic control. Many papers then instantiate it as named continuous-control or tabletop tasks such as reaching, pushing, picking, sweeping, peg insertion, or pick and place, while some papers formulate it as rearranging, transporting, sorting, or stacking objects. Success is usually expressed as achieving the task goal, though one transport formulation scores success by the ratio of target objects successfully transported."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study several variants under related names, including robot manipulation, robotic control, visuo-motor control, tabletop manipulation, low-level manipulation, multi-step manipulation, and long-horizon manipulation. The settings range from simulated control and tabletop environments to real-world robot-arm tasks, and from single-robot behaviors such as opening drawers, sweeping, or sorting items by category to coordinated object rearrangement or transport, including multi-floor and container-using scenarios. Some work also includes mobile-manipulation settings where a robot must pick up a named object from a receptacle, and one paper relates long-horizon manipulation with general instructions to instruction following because such tasks implicitly encapsulate multiple subtasks."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link robotic manipulation to 2 measurement instruments. The more recurrent instrument is Meta-World, described as a robotic manipulation benchmark suite and as a tabletop manipulation benchmark with ML-45, while RLBench appears as another linked instrument and is described as a simulator of a Franka robot performing tabletop manipulation. Both are described as benchmark or simulator environments."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Instead of linking it to one agreed construct, papers connect robotic manipulation to 7 constructs. The linked constructs are instruction understanding, physical world understanding, sequential decision-making, spatial reasoning, and spatiotemporal reasoning, plus 2 others. In the recorded relationships, separate papers claim causal relationships from instruction understanding, physical world understanding, and spatiotemporal reasoning to robotic manipulation, while robotic manipulation is reported as related to sequential decision-making and spatial reasoning."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the dominant framing treats robotic manipulation as producing control actions, action trajectories, or other physical actions that let a robot interact with objects and alter its environment to accomplish a specified goal. Most definitions place it in real or simulated embodied settings and often condition it on visual, textual, or language instructions, including visuo-motor control and embodied robotic control. Many papers then instantiate it as named continuous-control or tabletop tasks such as reaching, pushing, picking, sweeping, peg insertion, or pick and place, while some papers formulate it as rearranging, transporting, sorting, or stacking objects. Success is usually expressed as achieving the task goal, though one transport formulation scores success by the ratio of target objects successfully transported.\n\nVariants. Papers study several variants under related names, including robot manipulation, robotic control, visuo-motor control, tabletop manipulation, low-level manipulation, multi-step manipulation, and long-horizon manipulation. The settings range from simulated control and tabletop environments to real-world robot-arm tasks, and from single-robot behaviors such as opening drawers, sweeping, or sorting items by category to coordinated object rearrangement or transport, including multi-floor and container-using scenarios. Some work also includes mobile-manipulation settings where a robot must pick up a named object from a receptacle, and one paper relates long-horizon manipulation with general instructions to instruction following because such tasks implicitly encapsulate multiple subtasks.\n\nSpace of elicitation and scores. Papers link robotic manipulation to 2 measurement instruments. The more recurrent instrument is Meta-World, described as a robotic manipulation benchmark suite and as a tabletop manipulation benchmark with ML-45, while RLBench appears as another linked instrument and is described as a simulator of a Franka robot performing tabletop manipulation. Both are described as benchmark or simulator environments.\n\nWhat it is taken as evidence of. Instead of linking it to one agreed construct, papers connect robotic manipulation to 7 constructs. The linked constructs are instruction understanding, physical world understanding, sequential decision-making, spatial reasoning, and spatiotemporal reasoning, plus 2 others. In the recorded relationships, separate papers claim causal relationships from instruction understanding, physical world understanding, and spatiotemporal reasoning to robotic manipulation, while robotic manipulation is reported as related to sequential decision-making and spatial reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+      "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+      "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+      "Distilling Reinforcement Learning Algorithms for In-Context Model-Based Planning",
+      "EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents",
+      "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+      "Joint Reward and Policy Learning with Demonstrations and Human Feedback Improves Alignment",
+      "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+      "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+      "PhysBench: Benchmarking and Enhancing Vision-Language Models for Physical World Understanding",
+      "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning",
+      "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+      "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation"
+    ],
+    "icml25": [
+      "DiffusionVLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression",
+      "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+      "Perception in Reflection",
+      "Enhancing Rating-Based Reinforcement Learning to Effectively Leverage Feedback from Large Vision-Language Models",
+      "UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent"
+    ],
+    "neurips24": [
+      "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge",
+      "Grounding Multimodal Large Language Models in Actions",
+      "Instruction-Guided Visual Masking",
+      "KALM: Knowledgeable Agents by Offline Reinforcement Learning from Large Language Model Rollouts",
+      "LLM-based Skill Diffusion for Zero-shot Policy Adaptation",
+      "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+      "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+      "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+      "VLMimic: Vision Language Models are Visual Imitation Learner for Fine-grained Actions"
+    ],
+    "iclr24": [
+      "Building Cooperative Embodied Agents Modularly with Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 13,
+    "icml25": 5,
+    "neurips24": 9,
+    "iclr24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

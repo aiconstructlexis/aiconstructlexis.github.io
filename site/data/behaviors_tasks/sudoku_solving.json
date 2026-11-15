@@ -1,0 +1,121 @@
+{
+  "canonical_name": "Sudoku solving",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is completing a partially filled Sudoku grid so that all row, column, and box or subgrid constraints are satisfied. Most descriptions treat success as filling the remaining cells of the whole board, with one formulation stating that the board should contain numbers 1 to 9 without duplicates in each row, column, and box. Some task setups add procedural or output requirements, such as first searching over empty cells to decide which cell to fill, or returning the solved puzzle without extraneous text.\n\nVariants. The variants mentioned are mostly about setting and format rather than different success criteria. Papers describe Sudoku solving both as puzzles presented in a textual format and as 9 \u00d7 9 Sudoku problems; a smaller variation requires an answer-only output, while another frames solving as an iterative process that searches over empty cells before filling a chosen cell. The name also appears as \"Sudoku-solving\" in one task description.\n\nSpace of elicitation and scores. The papers do not link Sudoku solving to any measurement instrument.\n\nWhat it is taken as evidence of. The recorded relationships do not present Sudoku solving as evidence of a single construct. Instead, it is linked to three constructs through related relationships: Complex reasoning, Exploration ability, and Long-horizon planning. The link to complex reasoning is supported by language describing Sudoku as a challenging constraint satisfaction problem where assigning even one cell can require multiple reasoning steps, the link to exploration ability is tied to an iterative search for a cell where a strategy can be applied, and the link to long-horizon planning is qualified by the claim that Sudoku does not require the same degree of long-term planning as some harder benchmarks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Sudoku solving"
+  ],
+  "papers": [
+    "Controllable Generation via Locally Constrained Resampling",
+    "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+    "Causal language modeling can elicit search and reasoning capabilities on logic puzzles",
+    "Enhancing LLM Reasoning via Vision-Augmented Prompting"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Filling in the values of a partially completed Sudoku grid so that all row, column, and box constraints are satisfied.",
+      "papers": [
+        "Causal language modeling can elicit search and reasoning capabilities on logic puzzles",
+        "Controllable Generation via Locally Constrained Resampling",
+        "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs"
+      ],
+      "original_name": "Sudoku solving"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Exploration ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Causal language modeling can elicit search and reasoning capabilities on logic puzzles",
+      "evidence": "\u201cThe iterative process of solving Sudokus can be broken down into two steps: (1) searching and finding a cell position where we can apply a subset of the strategies\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Causal language modeling can elicit search and reasoning capabilities on logic puzzles"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Causal language modeling can elicit search and reasoning capabilities on logic puzzles",
+      "evidence": "The Sudoku environment is a highly challenging Constraint Satisfaction Problem (CSP) and determining the value in even a single cell can require highly complex reasoning involving multiple steps. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Causal language modeling can elicit search and reasoning capabilities on logic puzzles"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-horizon planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Causal language modeling can elicit search and reasoning capabilities on logic puzzles",
+      "evidence": "Sudoku is a task which doesn't require the same degree of long-term planning as some harder benchmarks",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Causal language modeling can elicit search and reasoning capabilities on logic puzzles"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is completing a partially filled Sudoku grid so that all row, column, and box or subgrid constraints are satisfied. Most descriptions treat success as filling the remaining cells of the whole board, with one formulation stating that the board should contain numbers 1 to 9 without duplicates in each row, column, and box. Some task setups add procedural or output requirements, such as first searching over empty cells to decide which cell to fill, or returning the solved puzzle without extraneous text."
+    },
+    {
+      "label": "Variants.",
+      "text": "The variants mentioned are mostly about setting and format rather than different success criteria. Papers describe Sudoku solving both as puzzles presented in a textual format and as 9 \u00d7 9 Sudoku problems; a smaller variation requires an answer-only output, while another frames solving as an iterative process that searches over empty cells before filling a chosen cell. The name also appears as \"Sudoku-solving\" in one task description."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "The papers do not link Sudoku solving to any measurement instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "The recorded relationships do not present Sudoku solving as evidence of a single construct. Instead, it is linked to three constructs through related relationships: Complex reasoning, Exploration ability, and Long-horizon planning. The link to complex reasoning is supported by language describing Sudoku as a challenging constraint satisfaction problem where assigning even one cell can require multiple reasoning steps, the link to exploration ability is tied to an iterative search for a cell where a strategy can be applied, and the link to long-horizon planning is qualified by the claim that Sudoku does not require the same degree of long-term planning as some harder benchmarks."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is completing a partially filled Sudoku grid so that all row, column, and box or subgrid constraints are satisfied. Most descriptions treat success as filling the remaining cells of the whole board, with one formulation stating that the board should contain numbers 1 to 9 without duplicates in each row, column, and box. Some task setups add procedural or output requirements, such as first searching over empty cells to decide which cell to fill, or returning the solved puzzle without extraneous text.\n\nVariants. The variants mentioned are mostly about setting and format rather than different success criteria. Papers describe Sudoku solving both as puzzles presented in a textual format and as 9 \u00d7 9 Sudoku problems; a smaller variation requires an answer-only output, while another frames solving as an iterative process that searches over empty cells before filling a chosen cell. The name also appears as \"Sudoku-solving\" in one task description.\n\nSpace of elicitation and scores. The papers do not link Sudoku solving to any measurement instrument.\n\nWhat it is taken as evidence of. The recorded relationships do not present Sudoku solving as evidence of a single construct. Instead, it is linked to three constructs through related relationships: Complex reasoning, Exploration ability, and Long-horizon planning. The link to complex reasoning is supported by language describing Sudoku as a challenging constraint satisfaction problem where assigning even one cell can require multiple reasoning steps, the link to exploration ability is tied to an iterative search for a cell where a strategy can be applied, and the link to long-horizon planning is qualified by the claim that Sudoku does not require the same degree of long-term planning as some harder benchmarks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Causal language modeling can elicit search and reasoning capabilities on logic puzzles",
+      "Enhancing LLM Reasoning via Vision-Augmented Prompting"
+    ],
+    "icml25": [
+      "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs"
+    ],
+    "iclr25": [
+      "Controllable Generation via Locally Constrained Resampling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "icml25": 1,
+    "iclr25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

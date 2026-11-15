@@ -1,0 +1,309 @@
+{
+  "canonical_name": "Multimodal perception",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats multimodal perception as a latent ability to comprehend and interpret information by integrating visual and textual inputs. Most descriptions keep this broad, ranging from awareness of agent status, surroundings, and objects to unified processing of interleaved images and text; one paper calls it \"the most basic ability\" for multimodal agents, and another says visual comprehension \"lays the foundation for subsequent interactions with the world.\" A narrower framing appears in chart work, where it is defined as extracting and integrating visual and textual information from charts, including axes, legends, colors, structures, and spatial relationships, so the main variation is broad environment-level perception versus task-specific chart perception, and agent-centered versus model-centered wording.\n\nSpace of facets. When papers subdivide it, they do so through task groupings such as general, knowledge, OCR, and vision-centric perception. Other papers specify the content it covers rather than distinct subconstructs: status and environmental features, surroundings and objects, or chart elements such as axes, legends, colors, structures, and spatial relationships. No construct links are given that equate it with, nest it under, or contrast it against another construct.\n\nSpace of measurement. Operationalization is mainly benchmark-based: the construct is linked to 14 measurement instruments and 1 behavioral indicator. The most frequently linked instruments listed are MME, AI2D, ChartQA, DocVQA, and GQA, plus 9 other instruments, and one paper explicitly measures it through general, knowledge, OCR, and vision-centric tasks. This measurement space largely follows the definitions' emphasis on integrating visual and textual information, and the chart-specific framing also appears in measurement through ChartQA; the sole linked behavioral indicator is chart question answering.\n\nLinks. Beyond measurement links, the papers do not report causal or correlational relationships for this construct. One paper relates chart question answering to multimodal perception, describing chart question answering as a multimodal task used to evaluate reasoning capabilities, especially multimodal perception ability and local reasoning ability.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multimodal perception"
+  ],
+  "papers": [
+    "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+    "EGOILLUSION: Benchmarking Hallucinations in Egocentric Video Understanding",
+    "Kosmos-G: Generating Images in Context with Multimodal Large Language Models",
+    "Steve-Eye: Equipping LLM-based Embodied Agents with Visual Perception in Open Worlds",
+    "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model",
+    "WhodunitBench: Evaluating Large Multimodal Agents via Murder Mystery Games"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The latent ability of an agent to comprehend and interpret its environment by integrating visual and textual inputs, enabling awareness of status, surroundings, and objects.",
+      "papers": [
+        "Kosmos-G: Generating Images in Context with Multimodal Large Language Models",
+        "Steve-Eye: Equipping LLM-based Embodied Agents with Visual Perception in Open Worlds",
+        "WhodunitBench: Evaluating Large Multimodal Agents via Murder Mystery Games",
+        "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering"
+      ],
+      "original_name": "Multimodal perception"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+      "evidence": "\u201cIn particular, MME and MM-VET evaluate the multimodal perception and cognition abilities of MLLMs.\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models"
+        ],
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SEED-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVista",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AI2D",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ChartQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OCRBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DocVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMVP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RealWorldQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding",
+      "evidence": "\u201cPerception: Following (Tong et al., 2024a), we conduct experiments on 4 types of perception task (i.e., general, knowledge, ocr, and vision-centric) across 16 benchmarks: MME (Fu et al., 2023), MMBench (Liu et al., 2025), SEED (Li et al., 2024), GQA (Hudson & Manning, 2019), ScienceQA (Lu et al., 2022), MMMU (Yue et al., 2024), MathVista (Lu et al., 2024), AI2D (Kembhavi et al., 2016), ChartQA (Masry et al., 2022), OCRBench (Liu et al., 2024), TextVQA (Singh et al., 2019), DocVQA (Mathew et al., 2021), MMVP (Tong et al., 2024b), RealworldQA (xAI, 2024), and CV-Bench (Tong et al., 2024a).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MODA: MOdular Duplex Attention for Multimodal Perception, Cognition, and Emotion Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chart question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "evidence": "\"Chart question answering (Ma et al., 2024; Qin et al., 2022) is a prominent multimodal task designed to evaluate the reasoning capabilities of vision-language models, especially their multimodal perception ability and local reasoning ability.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 15,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 14,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats multimodal perception as a latent ability to comprehend and interpret information by integrating visual and textual inputs. Most descriptions keep this broad, ranging from awareness of agent status, surroundings, and objects to unified processing of interleaved images and text; one paper calls it \"the most basic ability\" for multimodal agents, and another says visual comprehension \"lays the foundation for subsequent interactions with the world.\" A narrower framing appears in chart work, where it is defined as extracting and integrating visual and textual information from charts, including axes, legends, colors, structures, and spatial relationships, so the main variation is broad environment-level perception versus task-specific chart perception, and agent-centered versus model-centered wording."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "When papers subdivide it, they do so through task groupings such as general, knowledge, OCR, and vision-centric perception. Other papers specify the content it covers rather than distinct subconstructs: status and environmental features, surroundings and objects, or chart elements such as axes, legends, colors, structures, and spatial relationships. No construct links are given that equate it with, nest it under, or contrast it against another construct."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is mainly benchmark-based: the construct is linked to 14 measurement instruments and 1 behavioral indicator. The most frequently linked instruments listed are MME, AI2D, ChartQA, DocVQA, and GQA, plus 9 other instruments, and one paper explicitly measures it through general, knowledge, OCR, and vision-centric tasks. This measurement space largely follows the definitions' emphasis on integrating visual and textual information, and the chart-specific framing also appears in measurement through ChartQA; the sole linked behavioral indicator is chart question answering."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement links, the papers do not report causal or correlational relationships for this construct. One paper relates chart question answering to multimodal perception, describing chart question answering as a multimodal task used to evaluate reasoning capabilities, especially multimodal perception ability and local reasoning ability."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats multimodal perception as a latent ability to comprehend and interpret information by integrating visual and textual inputs. Most descriptions keep this broad, ranging from awareness of agent status, surroundings, and objects to unified processing of interleaved images and text; one paper calls it \"the most basic ability\" for multimodal agents, and another says visual comprehension \"lays the foundation for subsequent interactions with the world.\" A narrower framing appears in chart work, where it is defined as extracting and integrating visual and textual information from charts, including axes, legends, colors, structures, and spatial relationships, so the main variation is broad environment-level perception versus task-specific chart perception, and agent-centered versus model-centered wording.\n\nSpace of facets. When papers subdivide it, they do so through task groupings such as general, knowledge, OCR, and vision-centric perception. Other papers specify the content it covers rather than distinct subconstructs: status and environmental features, surroundings and objects, or chart elements such as axes, legends, colors, structures, and spatial relationships. No construct links are given that equate it with, nest it under, or contrast it against another construct.\n\nSpace of measurement. Operationalization is mainly benchmark-based: the construct is linked to 14 measurement instruments and 1 behavioral indicator. The most frequently linked instruments listed are MME, AI2D, ChartQA, DocVQA, and GQA, plus 9 other instruments, and one paper explicitly measures it through general, knowledge, OCR, and vision-centric tasks. This measurement space largely follows the definitions' emphasis on integrating visual and textual information, and the chart-specific framing also appears in measurement through ChartQA; the sole linked behavioral indicator is chart question answering.\n\nLinks. Beyond measurement links, the papers do not report causal or correlational relationships for this construct. One paper relates chart question answering to multimodal perception, describing chart question answering as a multimodal task used to evaluate reasoning capabilities, especially multimodal perception ability and local reasoning ability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "EGOILLUSION: Benchmarking Hallucinations in Egocentric Video Understanding"
+    ],
+    "iclr24": [
+      "Kosmos-G: Generating Images in Context with Multimodal Large Language Models",
+      "Steve-Eye: Equipping LLM-based Embodied Agents with Visual Perception in Open Worlds"
+    ],
+    "neurips24": [
+      "ChatTracker: Enhancing Visual Tracking Performance via Chatting with Multimodal Large Language Model",
+      "WhodunitBench: Evaluating Large Multimodal Agents via Murder Mystery Games"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr24": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "canonical_name": "MUSE",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, MUSE is most commonly described as a comprehensive machine unlearning evaluation benchmark for language models, framed as Machine Unlearning Six-Way Evaluation and said to evaluate unlearned models across six desiderata or facets. Definitions place it in news and book materials, with verbatim-text and question-answer knowledge sets, though some papers narrow the description to copyrighted-information removal and emphasize two scenarios, Books from the Harry Potter series and News from BBC News. A smaller description focuses only on the BBC News portion, where passages are split into Forget and Retain sets to evaluate knowledge removal and utility preservation through question answering.\n\nWhat it is claimed to measure. In the recorded relationships, MUSE is linked to 3 constructs and 1 behavioral indicator, so papers use it across several measurement targets rather than centering it on a single construct. The explicit links are to Knowledge memorization, Utility preservation, and Verbatim memorization, plus the behavioral indicator Privacy leakage, and one definition also frames MUSE as evaluating six desirable properties of unlearning more broadly.\n\nSpace of uses. Papers position MUSE as an evaluation setting for unlearning methods, alternately calling it a comprehensive benchmark and, in one usage, a dataset on which a method is evaluated. It appears alongside WMDP in one experimental setup. It is linked to 1 other instrument, TOFU, and one paper relates the two by contrasting TOFU's synthetic question-answer evaluation with MUSE's real-world unlearning challenges.\n\nConcerns raised. One paper uses MUSE to highlight a drawback in current methods: applying unlearning to larger corpora leads to a decline in general language usefulness.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MUSE"
+  ],
+  "papers": [
+    "Linguistic Neuron Overlap Patterns to Facilitate Cross-lingual Transfer on Low-resource Languages",
+    "SEPS: A Separability Measure for Robust Unlearning in LLMs",
+    "Catastrophic Failure of LLM Unlearning via Quantization",
+    "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+    "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+    "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+    "Exploring Criteria of Loss Reweighting to Enhance LLM Unlearning",
+    "GRU: Mitigating the Trade-off between Unlearning and Retention for LLMs",
+    "Invariance Makes LLM Unlearning Resilient Even to Unanticipated Downstream Fine-Tuning",
+    "Towards LLM Unlearning Resilient to Relearning Attacks: A Sharpness-Aware Minimization Perspective and Beyond",
+    "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "Machine Unlearning Six-Way Evaluation, a benchmark that evaluates unlearned language models across six desiderata using news and book corpora with verbatim-text and question-answer knowledge sets.",
+      "papers": [
+        "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+        "Towards LLM Unlearning Resilient to Relearning Attacks: A Sharpness-Aware Minimization Perspective and Beyond",
+        "SEPS: A Separability Measure for Robust Unlearning in LLMs",
+        "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+      ],
+      "original_name": "MUSE"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Verbatim memorization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "We address this issue by proposing MUSE, a comprehensive machine unlearning evaluation benchmark that enumerates six diverse desirable properties for unlearned models: (1) no verbatim memorization, (2) no knowledge memorization, (3) no privacy leakage, (4) utility preservation on data not intended for removal, (5) scalability with respect to the size of removal requests, and (6) sustainability over sequential unlearning requests. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge memorization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "We address this issue by proposing MUSE, a comprehensive machine unlearning evaluation benchmark that enumerates six diverse desirable properties for unlearned models: (1) no verbatim memorization, (2) no knowledge memorization, (3) no privacy leakage, (4) utility preservation on data not intended for removal, (5) scalability with respect to the size of removal requests, and (6) sustainability over sequential unlearning requests. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Privacy leakage",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "We address this issue by proposing MUSE, a comprehensive machine unlearning evaluation benchmark that enumerates six diverse desirable properties for unlearned models: (1) no verbatim memorization, (2) no knowledge memorization, (3) no privacy leakage, (4) utility preservation on data not intended for removal, (5) scalability with respect to the size of removal requests, and (6) sustainability over sequential unlearning requests. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Utility preservation",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "We address this issue by proposing MUSE, a comprehensive machine unlearning evaluation benchmark that enumerates six diverse desirable properties for unlearned models: (1) no verbatim memorization, (2) no knowledge memorization, (3) no privacy leakage, (4) utility preservation on data not intended for removal, (5) scalability with respect to the size of removal requests, and (6) sustainability over sequential unlearning requests. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TOFU",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "Unlike the previous benchmark TOFU (Maini et al., 2024), which evaluates unlearning on synthetic Q&A datasets, MUSE tackles real-world unlearning challenges (Table 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, MUSE is most commonly described as a comprehensive machine unlearning evaluation benchmark for language models, framed as Machine Unlearning Six-Way Evaluation and said to evaluate unlearned models across six desiderata or facets. Definitions place it in news and book materials, with verbatim-text and question-answer knowledge sets, though some papers narrow the description to copyrighted-information removal and emphasize two scenarios, Books from the Harry Potter series and News from BBC News. A smaller description focuses only on the BBC News portion, where passages are split into Forget and Retain sets to evaluate knowledge removal and utility preservation through question answering."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "In the recorded relationships, MUSE is linked to 3 constructs and 1 behavioral indicator, so papers use it across several measurement targets rather than centering it on a single construct. The explicit links are to Knowledge memorization, Utility preservation, and Verbatim memorization, plus the behavioral indicator Privacy leakage, and one definition also frames MUSE as evaluating six desirable properties of unlearning more broadly."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers position MUSE as an evaluation setting for unlearning methods, alternately calling it a comprehensive benchmark and, in one usage, a dataset on which a method is evaluated. It appears alongside WMDP in one experimental setup. It is linked to 1 other instrument, TOFU, and one paper relates the two by contrasting TOFU's synthetic question-answer evaluation with MUSE's real-world unlearning challenges."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One paper uses MUSE to highlight a drawback in current methods: applying unlearning to larger corpora leads to a decline in general language usefulness."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, MUSE is most commonly described as a comprehensive machine unlearning evaluation benchmark for language models, framed as Machine Unlearning Six-Way Evaluation and said to evaluate unlearned models across six desiderata or facets. Definitions place it in news and book materials, with verbatim-text and question-answer knowledge sets, though some papers narrow the description to copyrighted-information removal and emphasize two scenarios, Books from the Harry Potter series and News from BBC News. A smaller description focuses only on the BBC News portion, where passages are split into Forget and Retain sets to evaluate knowledge removal and utility preservation through question answering.\n\nWhat it is claimed to measure. In the recorded relationships, MUSE is linked to 3 constructs and 1 behavioral indicator, so papers use it across several measurement targets rather than centering it on a single construct. The explicit links are to Knowledge memorization, Utility preservation, and Verbatim memorization, plus the behavioral indicator Privacy leakage, and one definition also frames MUSE as evaluating six desirable properties of unlearning more broadly.\n\nSpace of uses. Papers position MUSE as an evaluation setting for unlearning methods, alternately calling it a comprehensive benchmark and, in one usage, a dataset on which a method is evaluated. It appears alongside WMDP in one experimental setup. It is linked to 1 other instrument, TOFU, and one paper relates the two by contrasting TOFU's synthetic question-answer evaluation with MUSE's real-world unlearning challenges.\n\nConcerns raised. One paper uses MUSE to highlight a drawback in current methods: applying unlearning to larger corpora leads to a decline in general language usefulness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Linguistic Neuron Overlap Patterns to Facilitate Cross-lingual Transfer on Low-resource Languages",
+      "SEPS: A Separability Measure for Robust Unlearning in LLMs"
+    ],
+    "iclr25": [
+      "Catastrophic Failure of LLM Unlearning via Quantization",
+      "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+      "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+      "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+    ],
+    "icml25": [
+      "Exploring Criteria of Loss Reweighting to Enhance LLM Unlearning",
+      "GRU: Mitigating the Trade-off between Unlearning and Retention for LLMs",
+      "Invariance Makes LLM Unlearning Resilient Even to Unanticipated Downstream Fine-Tuning",
+      "Towards LLM Unlearning Resilient to Relearning Attacks: A Sharpness-Aware Minimization Perspective and Beyond"
+    ],
+    "naacl25": [
+      "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 4,
+    "icml25": 4,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

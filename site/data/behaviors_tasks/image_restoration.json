@@ -1,0 +1,147 @@
+{
+  "canonical_name": "Image restoration",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, one common framing treats image restoration as recovering high-quality images from degraded observations through restoration algorithms. Another, narrower framing presents it as blind restoration, where a degraded image is restored without explicit instructions about the degradation type and instead relies on automatically generated analysis or auxiliary prompts; one description says users can input an image \"without the need to provide instructions for its restoration.\"\n\nVariants. The named variants are centered on blind restoration under different degradations. Papers explicitly study low-light enhancement, desnowing, and dehazing, and also mention blind restoration alongside combination tasks; separate work discusses image restoration for diverse degradations in real-world applications and relates it to downstream high-level vision tasks.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the papers, it is elicited through restoration tasks themselves, either by recovering degraded images in general or by blind restoration setups where auxiliary prompts are generated automatically and users do not provide explicit restoration instructions.\n\nWhat it is taken as evidence of. Papers relate image restoration to Generalization and Zero-shot generalization. One paper discusses enhancing generalization ability to diverse degradations in real-world applications, while another reports superior zero-shot capabilities in blind restoration and combination tasks; both links are framed as related rather than as explicit claims that image restoration serves as evidence of either construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Blind restoration",
+    "Image restoration"
+  ],
+  "papers": [
+    "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+    "PromptFix: You Prompt and We Fix the Photo",
+    "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The task of restoring a degraded image without explicit instructions specifying the type of degradation, instead relying on an automatically generated analysis of the image.",
+      "papers": [
+        "PromptFix: You Prompt and We Fix the Photo"
+      ],
+      "original_name": "Blind restoration"
+    },
+    {
+      "text": "The process of recovering high-quality images from degraded observations by applying restoration algorithms.",
+      "papers": [
+        "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models"
+      ],
+      "original_name": "Image restoration"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "Our proposed model also achieves comparable inference efficiency with these baseline models and exhibits superior zero-shot capabilities in blind restoration and combination tasks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "PromptFix: You Prompt and We Fix the Photo"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Low-light image enhancement",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "PromptFix: You Prompt and We Fix the Photo",
+      "evidence": "We evaluate the model\u2019s performance on such blind restoration tasks, including low-light enhancement, desnowing, and dehazing.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "PromptFix: You Prompt and We Fix the Photo"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "evidence": "Image Restoration (IR)... Recently, researchers have increasingly focused on enhancing the generalization ability to diverse degradations in real-world applications",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "evidence": "\u201cwe assess the benefits of image restoration for downstream high-level vision tasks by conducting detection and segmentation experiments on the COCO 2017 [45] and ADE20K [94] datasets\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic segmentation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "evidence": "\u201cwe assess the benefits of image restoration for downstream high-level vision tasks by conducting detection and segmentation experiments on the COCO 2017 [45] and ADE20K [94] datasets\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, one common framing treats image restoration as recovering high-quality images from degraded observations through restoration algorithms. Another, narrower framing presents it as blind restoration, where a degraded image is restored without explicit instructions about the degradation type and instead relies on automatically generated analysis or auxiliary prompts; one description says users can input an image \"without the need to provide instructions for its restoration.\""
+    },
+    {
+      "label": "Variants.",
+      "text": "The named variants are centered on blind restoration under different degradations. Papers explicitly study low-light enhancement, desnowing, and dehazing, and also mention blind restoration alongside combination tasks; separate work discusses image restoration for diverse degradations in real-world applications and relates it to downstream high-level vision tasks."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. In the papers, it is elicited through restoration tasks themselves, either by recovering degraded images in general or by blind restoration setups where auxiliary prompts are generated automatically and users do not provide explicit restoration instructions."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers relate image restoration to Generalization and Zero-shot generalization. One paper discusses enhancing generalization ability to diverse degradations in real-world applications, while another reports superior zero-shot capabilities in blind restoration and combination tasks; both links are framed as related rather than as explicit claims that image restoration serves as evidence of either construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, one common framing treats image restoration as recovering high-quality images from degraded observations through restoration algorithms. Another, narrower framing presents it as blind restoration, where a degraded image is restored without explicit instructions about the degradation type and instead relies on automatically generated analysis or auxiliary prompts; one description says users can input an image \"without the need to provide instructions for its restoration.\"\n\nVariants. The named variants are centered on blind restoration under different degradations. Papers explicitly study low-light enhancement, desnowing, and dehazing, and also mention blind restoration alongside combination tasks; separate work discusses image restoration for diverse degradations in real-world applications and relates it to downstream high-level vision tasks.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the papers, it is elicited through restoration tasks themselves, either by recovering degraded images in general or by blind restoration setups where auxiliary prompts are generated automatically and users do not provide explicit restoration instructions.\n\nWhat it is taken as evidence of. Papers relate image restoration to Generalization and Zero-shot generalization. One paper discusses enhancing generalization ability to diverse degradations in real-world applications, while another reports superior zero-shot capabilities in blind restoration and combination tasks; both links are framed as related rather than as explicit claims that image restoration serves as evidence of either construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "DreamClear: High-Capacity Real-World Image Restoration with Privacy-Safe Dataset Curation",
+      "PromptFix: You Prompt and We Fix the Photo",
+      "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

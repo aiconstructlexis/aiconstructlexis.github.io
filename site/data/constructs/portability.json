@@ -1,0 +1,154 @@
+{
+  "canonical_name": "Portability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats portability as the ability or extent to which an edit carries beyond direct queries about the edited knowledge. Definitions agree that it concerns applying newly edited knowledge to related but distinct content or contexts. A broader framing extends this to transfer in downstream tasks, multi-hop reasoning chains, and different model variants, describing portability as generalization beyond the original setting and as evidence of deeper integration into the model's knowledge structure.\n\nSpace of facets. Papers mostly organize portability as an evaluation dimension within knowledge editing rather than as a standalone taxonomy. In that role, it is described as one of the criteria an editing method should satisfy, and the surrounding language often treats it as the generalization or transfer of an edit. The recurring facets are transfer to related content, downstream tasks, and multi-hop reasoning, while one paper also includes different model variants and another ties portability to reasoning about the downstream effects of edited knowledge through N-hop questions.\n\nSpace of measurement. Across the papers, portability is linked to 1 measurement instrument and 2 behavioral indicators. The only named instrument is MQuAKE, a multi-hop benchmark used to assess whether modified knowledge can be applied effectively to related content, especially in multi-hop reasoning. The linked behavioral indicators are knowledge editing and multi-hop question answering: papers assess portability as one dimension of knowledge editing evaluation, and one paper uses N-hop efficacy questions as portability questions, which matches the definitions' emphasis on transfer beyond direct queries.\n\nLinks. Several papers relate portability to knowledge editing, describing it as a criterion or dimension for assessing editing algorithms. Multi-hop reasoning is reported to correlate with portability, including a claim that portability metrics decline as the number of hops increases, and multi-hop question answering is related to portability through N-hop evaluation questions designed to capture downstream effects of edited knowledge. One paper claims a causal relationship from instruction following ability to portability, attributing better portability to better instruction-following capability.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Portability"
+  ],
+  "papers": [
+    "Editing Across Languages: A Survey of Multilingual Knowledge Editing",
+    "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting in LLM Knowledge Editing",
+    "Can Knowledge Editing Really Correct Hallucinations?",
+    "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+    "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+    "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The ability of a model to successfully apply newly edited knowledge to related but distinct content or contexts.",
+      "papers": [
+        "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+        "Editing Across Languages: A Survey of Multilingual Knowledge Editing"
+      ],
+      "original_name": "Portability"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+      "evidence": "Knowledge editing seeks to maximize the chance of an LLM responding with y given x, while satisfying the following additional criteria at the same time...: (2) Portability: relevant knowledge such as the first lady of United States should be updated as well. (Section 2.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning",
+          "In-Context Editing: Learning Knowledge from Self-Induced Distributions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-hop reasoning",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark",
+      "evidence": "Portability Metrics Decline with Increasing Number of Hops... This phenomenon can be attributed to the escalating complexity of reasoning required to accurately apply the edited knowledge across multiple interconnected facts.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "VLKEB: A Large Vision-Language Model Knowledge Editing Benchmark"
+        ],
+        "emnlp25": [
+          "Editing Across Languages: A Survey of Multilingual Knowledge Editing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following ability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "evidence": "For reliability, generalization, and portability evaluations, LLaVA-1.5 outperforms BLIP-2 and MiniGPT-4. This improved performance can be attributed to its larger model size and better instruction-following capability... (Section 5.2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MQuAKE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting in LLM Knowledge Editing",
+      "evidence": "MQuAKE (Zhong et al., 2023) is a multi-hop benchmark... Portability evaluates the robustness of the generalization of the edit, evaluating whether the modified knowledge can be applied effectively to related content (e.g. Multi-Hop Reasoning).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting in LLM Knowledge Editing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-hop question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Can Knowledge Editing Really Correct Hallucinations?",
+      "evidence": "The Portability Scores intend to measure the ability of LLMs to reason about the downstream effects of edited knowledge. Thus, we design the Efficacy Evaluation Questions with N hops (N = 1 \u223c6) as Portability Evaluation Questions. (Section 2.2, Facet 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Can Knowledge Editing Really Correct Hallucinations?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats portability as the ability or extent to which an edit carries beyond direct queries about the edited knowledge. Definitions agree that it concerns applying newly edited knowledge to related but distinct content or contexts. A broader framing extends this to transfer in downstream tasks, multi-hop reasoning chains, and different model variants, describing portability as generalization beyond the original setting and as evidence of deeper integration into the model's knowledge structure."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers mostly organize portability as an evaluation dimension within knowledge editing rather than as a standalone taxonomy. In that role, it is described as one of the criteria an editing method should satisfy, and the surrounding language often treats it as the generalization or transfer of an edit. The recurring facets are transfer to related content, downstream tasks, and multi-hop reasoning, while one paper also includes different model variants and another ties portability to reasoning about the downstream effects of edited knowledge through N-hop questions."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Across the papers, portability is linked to 1 measurement instrument and 2 behavioral indicators. The only named instrument is MQuAKE, a multi-hop benchmark used to assess whether modified knowledge can be applied effectively to related content, especially in multi-hop reasoning. The linked behavioral indicators are knowledge editing and multi-hop question answering: papers assess portability as one dimension of knowledge editing evaluation, and one paper uses N-hop efficacy questions as portability questions, which matches the definitions' emphasis on transfer beyond direct queries."
+    },
+    {
+      "label": "Links.",
+      "text": "Several papers relate portability to knowledge editing, describing it as a criterion or dimension for assessing editing algorithms. Multi-hop reasoning is reported to correlate with portability, including a claim that portability metrics decline as the number of hops increases, and multi-hop question answering is related to portability through N-hop evaluation questions designed to capture downstream effects of edited knowledge. One paper claims a causal relationship from instruction following ability to portability, attributing better portability to better instruction-following capability."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats portability as the ability or extent to which an edit carries beyond direct queries about the edited knowledge. Definitions agree that it concerns applying newly edited knowledge to related but distinct content or contexts. A broader framing extends this to transfer in downstream tasks, multi-hop reasoning chains, and different model variants, describing portability as generalization beyond the original setting and as evidence of deeper integration into the model's knowledge structure.\n\nSpace of facets. Papers mostly organize portability as an evaluation dimension within knowledge editing rather than as a standalone taxonomy. In that role, it is described as one of the criteria an editing method should satisfy, and the surrounding language often treats it as the generalization or transfer of an edit. The recurring facets are transfer to related content, downstream tasks, and multi-hop reasoning, while one paper also includes different model variants and another ties portability to reasoning about the downstream effects of edited knowledge through N-hop questions.\n\nSpace of measurement. Across the papers, portability is linked to 1 measurement instrument and 2 behavioral indicators. The only named instrument is MQuAKE, a multi-hop benchmark used to assess whether modified knowledge can be applied effectively to related content, especially in multi-hop reasoning. The linked behavioral indicators are knowledge editing and multi-hop question answering: papers assess portability as one dimension of knowledge editing evaluation, and one paper uses N-hop efficacy questions as portability questions, which matches the definitions' emphasis on transfer beyond direct queries.\n\nLinks. Several papers relate portability to knowledge editing, describing it as a criterion or dimension for assessing editing algorithms. Multi-hop reasoning is reported to correlate with portability, including a claim that portability metrics decline as the number of hops increases, and multi-hop question answering is related to portability through N-hop evaluation questions designed to capture downstream effects of edited knowledge. One paper claims a causal relationship from instruction following ability to portability, attributing better portability to better instruction-following capability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Editing Across Languages: A Survey of Multilingual Knowledge Editing",
+      "REACT: Representation Extraction And Controllable Tuning to Overcome Overfitting in LLM Knowledge Editing"
+    ],
+    "iclr25": [
+      "Can Knowledge Editing Really Correct Hallucinations?",
+      "MMKE-Bench: A Multimodal Editing Benchmark for Diverse Visual Knowledge",
+      "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+      "Unlocking Efficient, Scalable, and Continual Knowledge Editing with Basis-Level Representation Fine-Tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

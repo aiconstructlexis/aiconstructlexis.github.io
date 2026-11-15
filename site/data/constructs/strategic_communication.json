@@ -1,0 +1,67 @@
+{
+  "canonical_name": "Strategic communication",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. In one paper, the construct is framed as a latent ability to use natural language effectively in strategic interactions, especially for persuasion, deception, coordination, and information sharing. The accompanying examples make this usage concrete through free-form conversation used to reach agreements and carry out strategic deceptions, and the paper reports that agents can progressively enhance both strategic reasoning and language communication.\n\nSpace of facets. The usage in the papers groups persuasion, deception, coordination, and information sharing under the construct, treating them as the main forms it takes in strategic interaction. It is also presented alongside strategic reasoning as a separate ability, rather than being used as another name for it.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Operationalization appears only indirectly through examples of behavior, such as free-form conversation for agreements and strategic deceptions, and a voting coordination strategy in which the Seer asks all the Villagers to vote for a strongly suspected Werewolf, as described in \"Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization\".",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Language communication"
+  ],
+  "papers": [
+    "CoMet: Metaphor-Driven Covert Communication for Multi-Agent Language Games",
+    "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents",
+    "Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The latent ability to use natural language effectively for persuasion, deception, coordination, and information sharing in strategic interactions.",
+      "papers": [
+        "Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization"
+      ],
+      "original_name": "Language communication"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In one paper, the construct is framed as a latent ability to use natural language effectively in strategic interactions, especially for persuasion, deception, coordination, and information sharing. The accompanying examples make this usage concrete through free-form conversation used to reach agreements and carry out strategic deceptions, and the paper reports that agents can progressively enhance both strategic reasoning and language communication."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The usage in the papers groups persuasion, deception, coordination, and information sharing under the construct, treating them as the main forms it takes in strategic interaction. It is also presented alongside strategic reasoning as a separate ability, rather than being used as another name for it."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. Operationalization appears only indirectly through examples of behavior, such as free-form conversation for agreements and strategic deceptions, and a voting coordination strategy in which the Seer asks all the Villagers to vote for a strongly suspected Werewolf, as described in \"Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization\"."
+    }
+  ],
+  "characterization": "Space of definitions. In one paper, the construct is framed as a latent ability to use natural language effectively in strategic interactions, especially for persuasion, deception, coordination, and information sharing. The accompanying examples make this usage concrete through free-form conversation used to reach agreements and carry out strategic deceptions, and the paper reports that agents can progressively enhance both strategic reasoning and language communication.\n\nSpace of facets. The usage in the papers groups persuasion, deception, coordination, and information sharing under the construct, treating them as the main forms it takes in strategic interaction. It is also presented alongside strategic reasoning as a separate ability, rather than being used as another name for it.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Operationalization appears only indirectly through examples of behavior, such as free-form conversation for agreements and strategic deceptions, and a voting coordination strategy in which the Seer asks all the Villagers to vote for a strongly suspected Werewolf, as described in \"Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CoMet: Metaphor-Driven Covert Communication for Multi-Agent Language Games"
+    ],
+    "iclr24": [
+      "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents"
+    ],
+    "icml25": [
+      "Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "iclr24": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "icml25"
+  ]
+}

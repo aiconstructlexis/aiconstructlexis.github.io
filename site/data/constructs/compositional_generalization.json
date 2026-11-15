@@ -1,0 +1,283 @@
+{
+  "canonical_name": "Compositional generalization",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats compositional generalization as the capacity to generalize to novel combinations or recombinations of known components that were not seen together during training. Most papers describe those components as concepts, linguistic elements, primitives, subtasks, or procedural steps, and frame success as solving unseen examples by systematically reusing familiar parts. A smaller line of work states this more explicitly as a latent ability to recognise and interpret unseen combinations of known phrases, while some multimodal papers broaden the framing to combining learned skills, such as image understanding and language generation, for novel tasks.\n\nSpace of facets. Papers organize the term mainly by what is being composed: verbs, subjects, and objects in action understanding, linguistic structures and derivations in semantic parsing, familiar words in novel contexts, known motor skills in robotics, or multiple applications, APIs, and GUI operations in agent tasks. Some authors use skill-combination as a particular sort of compositional generalization, while others use the term as an umbrella for reasoning over novel combinations of familiar primitives or constraints. It is also set alongside length generalization, and one paper distinguishes word-level composition from phrase-level structure. Another paper relates it to task generalization through a quantitative study of how many training tasks are needed to generalize over an entire function class.\n\nSpace of measurement. No measurement instrument is linked to it, and the only linked behavioral indicators are Integer addition and Sentiment analysis. In the papers, operationalization is usually benchmark-based: held-out splits over unseen verb, subject, and object combinations, synthetic semantic parsing tests, more complex tasks built from simpler subtasks, and evaluations introduced to measure ability to combine skills or novel combinations of primitives and motor skills. These operationalizations mostly match the dominant definition by testing unseen recombinations, though some extend measurement to broader skill composition across multimodal outputs or cross-application agent tasks.\n\nLinks. Papers link it to 6 constructs, with each specific link reported in individual papers. Individual papers claim causal relationships from compositional generalization to Generalization, described as one of the main drivers of generalization in multi-task training, and to Safety alignment, where it is said to enable transfer across prompt templates with awareness of safety constraints; another paper claims a causal relationship from In-context learning to compositional generalization. Other papers describe it as related to Multimodal understanding and Robustness, and no correlation link is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Compositional generalization",
+    "Compositional generalisation"
+  ],
+  "papers": [
+    "Circuit Stability Characterizes Language Model Generalization",
+    "CARMA: Enhanced Compositionality in LLMs via Advanced Regularisation and Mutual Information Alignment",
+    "Compositional Generalisation for Explainable Hate Speech Detection",
+    "COCO-Tree: Compositional Hierarchical Concept Trees for Enhanced Reasoning in Vision-Language Models",
+    "ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis",
+    "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+    "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+    "SKILL-MIX: a Flexible and Expandable Family of Evaluations for AI Models",
+    "Zero and Few-shot Semantic Parsing with Ambiguous Inputs",
+    "AgentStudio: A Toolkit for Building General Virtual Agents",
+    "Attention as a Hypernetwork",
+    "Instruct-SkillMix: A Powerful Pipeline for LLM Instruction Tuning",
+    "Does learning the right latent variables necessarily improve in-context learning?",
+    "Gravity-Bench-v1: A Benchmark on Gravitational Physics Discovery for Agents",
+    "Position: General Intelligence Requires Reward-based Pretraining",
+    "Provable In-Context Vector Arithmetic via Retrieving Task Concepts",
+    "Representation Shattering in Transformers: A Synthetic Study with Knowledge Editing",
+    "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?",
+    "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+    "GroundCocoa: A Benchmark for Evaluating Compositional & Conditional Reasoning in Language Models",
+    "Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion",
+    "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+    "Can Language Models Learn to Skip Steps?",
+    "Can Models Learn Skill Composition from Examples?",
+    "ClevrSkills: Compositional Language And Visual Reasoning in Robotics",
+    "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+    "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+    "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+    "Mixture of Demonstrations for In-Context Learning",
+    "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures"
+  ],
+  "paper_count": 30,
+  "definitions": [
+    {
+      "text": "The model's capacity to generalize its understanding to novel combinations of concepts (like verbs, subjects, and objects) that were not seen during training.",
+      "papers": [
+        "ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis",
+        "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+        "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+        "SKILL-MIX: a Flexible and Expandable Family of Evaluations for AI Models",
+        "Zero and Few-shot Semantic Parsing with Ambiguous Inputs",
+        "ClevrSkills: Compositional Language And Visual Reasoning in Robotics",
+        "AgentStudio: A Toolkit for Building General Virtual Agents",
+        "GroundCocoa: A Benchmark for Evaluating Compositional & Conditional Reasoning in Language Models",
+        "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+        "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+        "Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion",
+        "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?",
+        "COCO-Tree: Compositional Hierarchical Concept Trees for Enhanced Reasoning in Vision-Language Models",
+        "Circuit Stability Characterizes Language Model Generalization"
+      ],
+      "original_name": "Compositional generalization"
+    },
+    {
+      "text": "The latent ability of a model to recognise and correctly interpret novel combinations of known linguistic elements (e.g., targets and hateful expressions) that were not observed together during training.",
+      "papers": [
+        "Compositional Generalisation for Explainable Hate Speech Detection"
+      ],
+      "original_name": "Compositional generalisation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+      "evidence": "Many of the advanced vision-language capabilities demonstrated by GPT-4 can be understood as compositional skills rooted in two foundational skills: image understanding and language generation. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "evidence": "The success of PTST suggests that LLMs have certain abilities of compositional generalization, which enable them to generalize from one template to another while being aware of safety constraints in the new template.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Attention as a Hypernetwork",
+      "evidence": "What is striking is that learning in-context can under some circumstances lead to compositional generalization, that is generalization to unseen combinations of previously observed constituents",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention as a Hypernetwork"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Exploring Compositional Generalization of Multimodal LLMs for Medical Imaging",
+      "evidence": "identified CG as one of the main drivers of the generalization observed in multi-task training. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Exploring Compositional Generalization of Multimodal LLMs for Medical Imaging"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?",
+      "evidence": "While prior work has largely focused on qualitative insights into compositional generalization, our work takes a quantitative approach: studying how many training tasks are needed to achieve task generalization over an entire function class. (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "From A and B to A+B: Can Large Language Models Solve Compositional Math Problems?",
+      "evidence": "our approach considers the interaction between multiple problems, focusing more on the compositional generalization (Xu and Wang, 2024; An et al., 2023; Li et al., 2021) in robustness. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From A and B to A+B: Can Large Language Models Solve Compositional Math Problems?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Integer addition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Do Large Language Models Truly Grasp Addition? A Rule-Focused Diagnostic Using Two-Integer Arithmetic",
+      "evidence": "These findings reveal a core limitation in LLMs\u2019 compositional generalization for elementary arithmetic. (Contributions)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Do Large Language Models Truly Grasp Addition? A Rule-Focused Diagnostic Using Two-Integer Arithmetic"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sentiment analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "CARMA: Enhanced Compositionality in LLMs via Advanced Regularisation and Mutual Information Alignment",
+      "evidence": "Two tasks that assess different aspects of compositional generalisation are used in the paper: Inverse Dictionary Modelling (IDM) for word-level composition and Sentiment Classification (SC) for phrase-level structure. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CARMA: Enhanced Compositionality in LLMs via Advanced Regularisation and Mutual Information Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats compositional generalization as the capacity to generalize to novel combinations or recombinations of known components that were not seen together during training. Most papers describe those components as concepts, linguistic elements, primitives, subtasks, or procedural steps, and frame success as solving unseen examples by systematically reusing familiar parts. A smaller line of work states this more explicitly as a latent ability to recognise and interpret unseen combinations of known phrases, while some multimodal papers broaden the framing to combining learned skills, such as image understanding and language generation, for novel tasks."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers organize the term mainly by what is being composed: verbs, subjects, and objects in action understanding, linguistic structures and derivations in semantic parsing, familiar words in novel contexts, known motor skills in robotics, or multiple applications, APIs, and GUI operations in agent tasks. Some authors use skill-combination as a particular sort of compositional generalization, while others use the term as an umbrella for reasoning over novel combinations of familiar primitives or constraints. It is also set alongside length generalization, and one paper distinguishes word-level composition from phrase-level structure. Another paper relates it to task generalization through a quantitative study of how many training tasks are needed to generalize over an entire function class."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and the only linked behavioral indicators are Integer addition and Sentiment analysis. In the papers, operationalization is usually benchmark-based: held-out splits over unseen verb, subject, and object combinations, synthetic semantic parsing tests, more complex tasks built from simpler subtasks, and evaluations introduced to measure ability to combine skills or novel combinations of primitives and motor skills. These operationalizations mostly match the dominant definition by testing unseen recombinations, though some extend measurement to broader skill composition across multimodal outputs or cross-application agent tasks."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link it to 6 constructs, with each specific link reported in individual papers. Individual papers claim causal relationships from compositional generalization to Generalization, described as one of the main drivers of generalization in multi-task training, and to Safety alignment, where it is said to enable transfer across prompt templates with awareness of safety constraints; another paper claims a causal relationship from In-context learning to compositional generalization. Other papers describe it as related to Multimodal understanding and Robustness, and no correlation link is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats compositional generalization as the capacity to generalize to novel combinations or recombinations of known components that were not seen together during training. Most papers describe those components as concepts, linguistic elements, primitives, subtasks, or procedural steps, and frame success as solving unseen examples by systematically reusing familiar parts. A smaller line of work states this more explicitly as a latent ability to recognise and interpret unseen combinations of known phrases, while some multimodal papers broaden the framing to combining learned skills, such as image understanding and language generation, for novel tasks.\n\nSpace of facets. Papers organize the term mainly by what is being composed: verbs, subjects, and objects in action understanding, linguistic structures and derivations in semantic parsing, familiar words in novel contexts, known motor skills in robotics, or multiple applications, APIs, and GUI operations in agent tasks. Some authors use skill-combination as a particular sort of compositional generalization, while others use the term as an umbrella for reasoning over novel combinations of familiar primitives or constraints. It is also set alongside length generalization, and one paper distinguishes word-level composition from phrase-level structure. Another paper relates it to task generalization through a quantitative study of how many training tasks are needed to generalize over an entire function class.\n\nSpace of measurement. No measurement instrument is linked to it, and the only linked behavioral indicators are Integer addition and Sentiment analysis. In the papers, operationalization is usually benchmark-based: held-out splits over unseen verb, subject, and object combinations, synthetic semantic parsing tests, more complex tasks built from simpler subtasks, and evaluations introduced to measure ability to combine skills or novel combinations of primitives and motor skills. These operationalizations mostly match the dominant definition by testing unseen recombinations, though some extend measurement to broader skill composition across multimodal outputs or cross-application agent tasks.\n\nLinks. Papers link it to 6 constructs, with each specific link reported in individual papers. Individual papers claim causal relationships from compositional generalization to Generalization, described as one of the main drivers of generalization in multi-task training, and to Safety alignment, where it is said to enable transfer across prompt templates with awareness of safety constraints; another paper claims a causal relationship from In-context learning to compositional generalization. Other papers describe it as related to Multimodal understanding and Robustness, and no correlation link is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "CARMA: Enhanced Compositionality in LLMs via Advanced Regularisation and Mutual Information Alignment",
+      "Compositional Generalisation for Explainable Hate Speech Detection",
+      "COCO-Tree: Compositional Hierarchical Concept Trees for Enhanced Reasoning in Vision-Language Models"
+    ],
+    "iclr24": [
+      "ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis",
+      "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+      "MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large Language Models",
+      "SKILL-MIX: a Flexible and Expandable Family of Evaluations for AI Models",
+      "Zero and Few-shot Semantic Parsing with Ambiguous Inputs"
+    ],
+    "iclr25": [
+      "AgentStudio: A Toolkit for Building General Virtual Agents",
+      "Attention as a Hypernetwork",
+      "Instruct-SkillMix: A Powerful Pipeline for LLM Instruction Tuning"
+    ],
+    "icml25": [
+      "Does learning the right latent variables necessarily improve in-context learning?",
+      "Gravity-Bench-v1: A Benchmark on Gravitational Physics Discovery for Agents",
+      "Position: General Intelligence Requires Reward-based Pretraining",
+      "Provable In-Context Vector Arithmetic via Retrieving Task Concepts",
+      "Representation Shattering in Transformers: A Synthetic Study with Knowledge Editing",
+      "Task Generalization with Autoregressive Compositional Structure: Can Learning from $D$ Tasks Generalize to $D^T$ Tasks?"
+    ],
+    "naacl25": [
+      "Diverse In-Context Example Selection After Decomposing Programs and Aligned Utterances Improves Semantic Parsing",
+      "GroundCocoa: A Benchmark for Evaluating Compositional & Conditional Reasoning in Language Models",
+      "Investigating the (De)Composition Capabilities of Large Language Models in Natural-to-Formal Language Conversion",
+      "Sneaking Syntax into Transformer Language Models with Tree Regularization"
+    ],
+    "neurips24": [
+      "Can Language Models Learn to Skip Steps?",
+      "Can Models Learn Skill Composition from Examples?",
+      "ClevrSkills: Compositional Language And Visual Reasoning in Robotics",
+      "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+      "Mixture of Demonstrations for In-Context Learning",
+      "SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures"
+    ],
+    "acl25": [
+      "Circuit Stability Characterizes Language Model Generalization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr24": 5,
+    "iclr25": 3,
+    "icml25": 6,
+    "naacl25": 4,
+    "neurips24": 8,
+    "acl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

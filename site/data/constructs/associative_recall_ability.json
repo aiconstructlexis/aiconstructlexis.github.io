@@ -1,0 +1,133 @@
+{
+  "canonical_name": "Associative recall ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the common thread is cue-based retrieval. One paper gives a narrow formulation, the ability to retrieve a specific value when prompted with its associated key, while another uses a broader latent-memory framing: retrieving stored patterns or knowledge by matching a query to the most relevant memory through similarity-based dynamics. A nearby usage places associative recall within in-context retrieval, described as precisely locating and extracting tokens presented earlier in the sequence.\n\nSpace of facets. Papers mainly situate this construct inside broader retrieval and memory language. It is explicitly treated as an instance of in-context retrieval, and the alternative label associative memory retrieval casts prompt-based inference as a memory retrieval process in which attention retrieves a stored vector from key-value pairs that best matches a query embedding. The main variation is between a direct key-to-value retrieval description and a broader memory-matching description.\n\nSpace of measurement. Papers link it to 3 measurement instruments: MQAR, SQuAD v1.1, and SWDE, with no behavioral indicators or other constructs linked to it. The operationalization is explicit task performance: one paper says the model's recall capability is assessed using the MQAR Task, while another uses \"Recall\" as the average performance across FDA, SWDE, and SQuAD, which ties the construct here to SWDE and SQuAD v1.1. In these papers, the construct is therefore measured through performance on named retrieval tasks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Associative recall",
+    "Associative memory retrieval"
+  ],
+  "papers": [
+    "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+    "Zoology: Measuring and Improving Recall in Efficient Language Models",
+    "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+    "Longhorn: State Space Models are Amortized Online Learners",
+    "ZETA: Leveraging $Z$-order Curves for Efficient Top-$k$ Attention",
+    "In-Context Learning as Conditioned Associative Memory Retrieval",
+    "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The ability to retrieve a specific value when prompted with its associated key.",
+      "papers": [
+        "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+      ],
+      "original_name": "Associative recall"
+    },
+    {
+      "text": "The latent capacity of a model to retrieve stored patterns or knowledge by matching a query to the most relevant memory through similarity-based dynamics, akin to Hopfield network behavior.",
+      "papers": [
+        "In-Context Learning as Conditioned Associative Memory Retrieval"
+      ],
+      "original_name": "Associative memory retrieval"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MQAR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "evidence": "The model\u2019s recall capability is assessed using the MQAR Task (See Appendix D.7), as described in Arora et al. (2024a). (Figure 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SWDE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling up the State Size of RNN LLMs for Long-Context Scenarios",
+      "evidence": "\u201cRecall\u201d represents the average performance across FDA, SWDE, and SQuAD. (Table 7)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Scaling up the State Size of RNN LLMs for Long-Context Scenarios"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQuAD v1.1",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling up the State Size of RNN LLMs for Long-Context Scenarios",
+      "evidence": "\u201cRecall\u201d represents the average performance across FDA, SWDE, and SQuAD. (Table 7)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Scaling up the State Size of RNN LLMs for Long-Context Scenarios"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the common thread is cue-based retrieval. One paper gives a narrow formulation, the ability to retrieve a specific value when prompted with its associated key, while another uses a broader latent-memory framing: retrieving stored patterns or knowledge by matching a query to the most relevant memory through similarity-based dynamics. A nearby usage places associative recall within in-context retrieval, described as precisely locating and extracting tokens presented earlier in the sequence."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers mainly situate this construct inside broader retrieval and memory language. It is explicitly treated as an instance of in-context retrieval, and the alternative label associative memory retrieval casts prompt-based inference as a memory retrieval process in which attention retrieves a stored vector from key-value pairs that best matches a query embedding. The main variation is between a direct key-to-value retrieval description and a broader memory-matching description."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link it to 3 measurement instruments: MQAR, SQuAD v1.1, and SWDE, with no behavioral indicators or other constructs linked to it. The operationalization is explicit task performance: one paper says the model's recall capability is assessed using the MQAR Task, while another uses \"Recall\" as the average performance across FDA, SWDE, and SQuAD, which ties the construct here to SWDE and SQuAD v1.1. In these papers, the construct is therefore measured through performance on named retrieval tasks."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the common thread is cue-based retrieval. One paper gives a narrow formulation, the ability to retrieve a specific value when prompted with its associated key, while another uses a broader latent-memory framing: retrieving stored patterns or knowledge by matching a query to the most relevant memory through similarity-based dynamics. A nearby usage places associative recall within in-context retrieval, described as precisely locating and extracting tokens presented earlier in the sequence.\n\nSpace of facets. Papers mainly situate this construct inside broader retrieval and memory language. It is explicitly treated as an instance of in-context retrieval, and the alternative label associative memory retrieval casts prompt-based inference as a memory retrieval process in which attention retrieves a stored vector from key-value pairs that best matches a query embedding. The main variation is between a direct key-to-value retrieval description and a broader memory-matching description.\n\nSpace of measurement. Papers link it to 3 measurement instruments: MQAR, SQuAD v1.1, and SWDE, with no behavioral indicators or other constructs linked to it. The operationalization is explicit task performance: one paper says the model's recall capability is assessed using the MQAR Task, while another uses \"Recall\" as the average performance across FDA, SWDE, and SQuAD, which ties the construct here to SWDE and SQuAD v1.1. In these papers, the construct is therefore measured through performance on named retrieval tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+      "Zoology: Measuring and Improving Recall in Efficient Language Models"
+    ],
+    "iclr25": [
+      "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "Longhorn: State Space Models are Amortized Online Learners",
+      "ZETA: Leveraging $Z$-order Curves for Efficient Top-$k$ Attention"
+    ],
+    "icml25": [
+      "In-Context Learning as Conditioned Associative Memory Retrieval"
+    ],
+    "neurips24": [
+      "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 3,
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

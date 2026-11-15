@@ -1,0 +1,218 @@
+{
+  "canonical_name": "Semantic preservation",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats semantic preservation as the degree to which a transformed text retains the original meaning, semantic content, or core information, whether the transformation is stylization, paraphrasing, simplification, revision, adversarial rewriting, or watermark removal. Several definitions phrase this as avoiding content drift or preserving the same underlying message, for example by \"ensuring a minimal impact on the original semantics\" or \"maintaining the meaning expressed in the original text.\" A smaller line of work shifts the target of preservation: one paper defines it for a selected subset that retains the semantic information of an original benchmark question set, and one paper, under the name meaning accuracy, adds preservation of intended meaning and logical consistency with the expected answer. One paper also frames it as a latent ability of a model to modify text while retaining meaning, while most others describe a property of the text or transformation itself.\n\nSpace of facets. Papers use several nearby labels for largely the same idea, most often meaning preservation and semantic fidelity, with one paper using meaning accuracy. Across these labels, the shared core is retention of original meaning or core information, but the same family of terms is applied to different scopes: most often source-to-rewrite fidelity, and in a smaller usage, semantic coverage of a benchmark subset. Some papers place it alongside other evaluation dimensions such as fluency, conciseness, layness, and simplicity, and one revision paper explicitly treats it as something to balance against text simplification. A simplification paper further notes that meaning preservation is often lacking correlation with simplicity, so some authors keep the two separate rather than collapsing them.\n\nSpace of measurement. Papers link semantic preservation to 2 measurement instruments and 1 behavioral indicator. Among the linked instruments, Human evaluation is used most often, followed by LLM-as-a-judge, and the only linked behavioral indicator is Paraphrasing: judges rate outputs for meaning preservation on a 1-5 Likert scale, and one LLM evaluator scores simplified text for meaning preservation, fluency, and simplicity. Other papers operationalize the construct through a reference-based meaning preservation metric, a reading-comprehension task, semantic similarity between original and perturbed outputs, and Wasserstein distance between embeddings of a selected question subset and the full benchmark. These operationalizations mostly follow the dominant definition of retained meaning under rewriting or transformation, though the Wasserstein-distance version applies the construct to semantic coverage of a dataset subset rather than to a rewritten text.\n\nLinks. Outside measurement, the recorded links are all related links. One paper reports that semantic preservation is related to text generation quality, stating that higher semantic similarity between attacked and original text reflects better readability and semantic preservation. Another paper relates paraphrasing to semantic preservation by describing paraphrase pre-training as enabling rewriting \"without changing the semantics.\" No paper reports a causal relationship or a correlation involving this construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Semantic preservation",
+    "Meaning preservation",
+    "Meaning accuracy",
+    "Semantic fidelity"
+  ],
+  "papers": [
+    "Evaluating LLMs for Portuguese Sentence Simplification with Linguistic Insights",
+    "Identifying Reliable Evaluation Metrics for Scientific Text Revision",
+    "Unveiling Attractor Cycles in Large Language Models: A Dynamical Systems View of Successive Paraphrasing",
+    "DiffusionAttacker: Diffusion-Driven Prompt Manipulation for LLM Jailbreak",
+    "From Long to Lean: Performance-aware and Adaptive Chain-of-Thought Compression via Multi-round Refinement",
+    "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment",
+    "LASER: An LLM-based ASR Scoring and Evaluation Rubric",
+    "Orchestrating Audio: Multi-Agent Framework for Long-Video Audio Synthesis",
+    "PatentScore: Multi-dimensional Evaluation of LLM-Generated Patent Claims",
+    "TempParaphraser: \u201cHeating Up\u201d Text to Evade AI-Text Detection through Paraphrasing",
+    "Text Detoxification: Data Efficiency, Semantic Preservation and Model Generalization",
+    "Towards Optimal Evaluation Efficiency for Large Language Models",
+    "VLA-Mark: A cross modal watermark for large vision-language alignment models",
+    "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks on LLM-Generated Text Detectors",
+    "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization",
+    "Attacking Misinformation Detection Using Adversarial Examples Generated by Language Models",
+    "DRESSing Up LLM: Efficient Stylized Question-Answering via Style Subspace Editing",
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+    "Learning Extrapolative Sequence Transformations from Markov Chains",
+    "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks",
+    "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings",
+    "Adapting Sentence-level Automatic Metrics for Document-level Simplification Evaluation",
+    "Automatic Input Rewriting Improves Translation with Large Language Models",
+    "SynthDetoxM: Modern LLMs are Few-Shot Parallel Detoxification Data Annotators",
+    "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models",
+    "Learning to Substitute Words with Model-based Score Ranking"
+  ],
+  "paper_count": 26,
+  "definitions": [
+    {
+      "text": "The degree to which a stylized response retains the meaning of the original response rather than drifting in content.",
+      "papers": [
+        "DRESSing Up LLM: Efficient Stylized Question-Answering via Style Subspace Editing",
+        "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks",
+        "Towards Optimal Evaluation Efficiency for Large Language Models"
+      ],
+      "original_name": "Semantic preservation"
+    },
+    {
+      "text": "The degree to which a model retains the original semantic content of the source text when generating a simplified or paraphrased version.",
+      "papers": [
+        "Automatic Input Rewriting Improves Translation with Large Language Models",
+        "Adapting Sentence-level Automatic Metrics for Document-level Simplification Evaluation",
+        "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models",
+        "Identifying Reliable Evaluation Metrics for Scientific Text Revision",
+        "Attacking Misinformation Detection Using Adversarial Examples Generated by Language Models"
+      ],
+      "original_name": "Meaning preservation"
+    },
+    {
+      "text": "The degree to which the model preserves the intended meaning and logical consistency with the expected output, ensuring fidelity to the task goal.",
+      "papers": [
+        "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization"
+      ],
+      "original_name": "Meaning accuracy"
+    },
+    {
+      "text": "The extent to which a paraphrased or rewritten text preserves the original meaning and core information of the source text.",
+      "papers": [
+        "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks on LLM-Generated Text Detectors",
+        "Learning to Substitute Words with Model-based Score Ranking"
+      ],
+      "original_name": "Semantic fidelity"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models",
+      "evidence": "Using a 1-5 Likert scale, the judges are asked to rate the model output based on five criteria: comprehensiveness, layness, meaning preservation, conciseness, and fluency. (Section 5.3.3).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models",
+          "Automatic Input Rewriting Improves Translation with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Adapting Sentence-level Automatic Metrics for Document-level Simplification Evaluation",
+      "evidence": "\u201cWe use Llama3-8B-Instruct ... to evaluate the generated simplified text along three dimensions: meaning preservation, fluency, and simplicity.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Adapting Sentence-level Automatic Metrics for Document-level Simplification Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text generation quality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "TempParaphraser: \u201cHeating Up\u201d Text to Evade AI-Text Detection through Paraphrasing",
+      "evidence": "Text quality is measured by absolute perplexity difference (|\u2206PPL|), Flesch reading ease score (Flesch), and semantic similarity (Sim) between the attacked and original text. Lower detection accuracy (\u2193) indicates better evasion, while higher Flesch and Sim scores (\u2191) reflect better readability and semantic preservation.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "TempParaphraser: \u201cHeating Up\u201d Text to Evade AI-Text Detection through Paraphrasing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Paraphrasing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DiffusionAttacker: Diffusion-Driven Prompt Manipulation for LLM Jailbreak",
+      "evidence": "\u201cWe pre-train DiffuSeq using the paraphrase dataset, which enables it to rewrite the input without changing the semantics.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "DiffusionAttacker: Diffusion-Driven Prompt Manipulation for LLM Jailbreak"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats semantic preservation as the degree to which a transformed text retains the original meaning, semantic content, or core information, whether the transformation is stylization, paraphrasing, simplification, revision, adversarial rewriting, or watermark removal. Several definitions phrase this as avoiding content drift or preserving the same underlying message, for example by \"ensuring a minimal impact on the original semantics\" or \"maintaining the meaning expressed in the original text.\" A smaller line of work shifts the target of preservation: one paper defines it for a selected subset that retains the semantic information of an original benchmark question set, and one paper, under the name meaning accuracy, adds preservation of intended meaning and logical consistency with the expected answer. One paper also frames it as a latent ability of a model to modify text while retaining meaning, while most others describe a property of the text or transformation itself."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several nearby labels for largely the same idea, most often meaning preservation and semantic fidelity, with one paper using meaning accuracy. Across these labels, the shared core is retention of original meaning or core information, but the same family of terms is applied to different scopes: most often source-to-rewrite fidelity, and in a smaller usage, semantic coverage of a benchmark subset. Some papers place it alongside other evaluation dimensions such as fluency, conciseness, layness, and simplicity, and one revision paper explicitly treats it as something to balance against text simplification. A simplification paper further notes that meaning preservation is often lacking correlation with simplicity, so some authors keep the two separate rather than collapsing them."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link semantic preservation to 2 measurement instruments and 1 behavioral indicator. Among the linked instruments, Human evaluation is used most often, followed by LLM-as-a-judge, and the only linked behavioral indicator is Paraphrasing: judges rate outputs for meaning preservation on a 1-5 Likert scale, and one LLM evaluator scores simplified text for meaning preservation, fluency, and simplicity. Other papers operationalize the construct through a reference-based meaning preservation metric, a reading-comprehension task, semantic similarity between original and perturbed outputs, and Wasserstein distance between embeddings of a selected question subset and the full benchmark. These operationalizations mostly follow the dominant definition of retained meaning under rewriting or transformation, though the Wasserstein-distance version applies the construct to semantic coverage of a dataset subset rather than to a rewritten text."
+    },
+    {
+      "label": "Links.",
+      "text": "Outside measurement, the recorded links are all related links. One paper reports that semantic preservation is related to text generation quality, stating that higher semantic similarity between attacked and original text reflects better readability and semantic preservation. Another paper relates paraphrasing to semantic preservation by describing paraphrase pre-training as enabling rewriting \"without changing the semantics.\" No paper reports a causal relationship or a correlation involving this construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats semantic preservation as the degree to which a transformed text retains the original meaning, semantic content, or core information, whether the transformation is stylization, paraphrasing, simplification, revision, adversarial rewriting, or watermark removal. Several definitions phrase this as avoiding content drift or preserving the same underlying message, for example by \"ensuring a minimal impact on the original semantics\" or \"maintaining the meaning expressed in the original text.\" A smaller line of work shifts the target of preservation: one paper defines it for a selected subset that retains the semantic information of an original benchmark question set, and one paper, under the name meaning accuracy, adds preservation of intended meaning and logical consistency with the expected answer. One paper also frames it as a latent ability of a model to modify text while retaining meaning, while most others describe a property of the text or transformation itself.\n\nSpace of facets. Papers use several nearby labels for largely the same idea, most often meaning preservation and semantic fidelity, with one paper using meaning accuracy. Across these labels, the shared core is retention of original meaning or core information, but the same family of terms is applied to different scopes: most often source-to-rewrite fidelity, and in a smaller usage, semantic coverage of a benchmark subset. Some papers place it alongside other evaluation dimensions such as fluency, conciseness, layness, and simplicity, and one revision paper explicitly treats it as something to balance against text simplification. A simplification paper further notes that meaning preservation is often lacking correlation with simplicity, so some authors keep the two separate rather than collapsing them.\n\nSpace of measurement. Papers link semantic preservation to 2 measurement instruments and 1 behavioral indicator. Among the linked instruments, Human evaluation is used most often, followed by LLM-as-a-judge, and the only linked behavioral indicator is Paraphrasing: judges rate outputs for meaning preservation on a 1-5 Likert scale, and one LLM evaluator scores simplified text for meaning preservation, fluency, and simplicity. Other papers operationalize the construct through a reference-based meaning preservation metric, a reading-comprehension task, semantic similarity between original and perturbed outputs, and Wasserstein distance between embeddings of a selected question subset and the full benchmark. These operationalizations mostly follow the dominant definition of retained meaning under rewriting or transformation, though the Wasserstein-distance version applies the construct to semantic coverage of a dataset subset rather than to a rewritten text.\n\nLinks. Outside measurement, the recorded links are all related links. One paper reports that semantic preservation is related to text generation quality, stating that higher semantic similarity between attacked and original text reflects better readability and semantic preservation. Another paper relates paraphrasing to semantic preservation by describing paraphrase pre-training as enabling rewriting \"without changing the semantics.\" No paper reports a causal relationship or a correlation involving this construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Evaluating LLMs for Portuguese Sentence Simplification with Linguistic Insights",
+      "Identifying Reliable Evaluation Metrics for Scientific Text Revision",
+      "Unveiling Attractor Cycles in Large Language Models: A Dynamical Systems View of Successive Paraphrasing"
+    ],
+    "emnlp25": [
+      "DiffusionAttacker: Diffusion-Driven Prompt Manipulation for LLM Jailbreak",
+      "From Long to Lean: Performance-aware and Adaptive Chain-of-Thought Compression via Multi-round Refinement",
+      "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment",
+      "LASER: An LLM-based ASR Scoring and Evaluation Rubric",
+      "Orchestrating Audio: Multi-Agent Framework for Long-Video Audio Synthesis",
+      "PatentScore: Multi-dimensional Evaluation of LLM-Generated Patent Claims",
+      "TempParaphraser: \u201cHeating Up\u201d Text to Evade AI-Text Detection through Paraphrasing",
+      "Text Detoxification: Data Efficiency, Semantic Preservation and Model Generalization",
+      "Towards Optimal Evaluation Efficiency for Large Language Models",
+      "VLA-Mark: A cross modal watermark for large vision-language alignment models",
+      "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks on LLM-Generated Text Detectors",
+      "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization",
+      "Attacking Misinformation Detection Using Adversarial Examples Generated by Language Models"
+    ],
+    "iclr25": [
+      "DRESSing Up LLM: Efficient Stylized Question-Answering via Style Subspace Editing",
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+    ],
+    "icml25": [
+      "Learning Extrapolative Sequence Transformations from Markov Chains",
+      "Revealing Weaknesses in Text Watermarking Through Self-Information Rewrite Attacks",
+      "STAMP Your Content: Proving Dataset Membership via Watermarked Rephrasings"
+    ],
+    "naacl25": [
+      "Adapting Sentence-level Automatic Metrics for Document-level Simplification Evaluation",
+      "Automatic Input Rewriting Improves Translation with Large Language Models",
+      "SynthDetoxM: Modern LLMs are Few-Shot Parallel Detoxification Data Annotators",
+      "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models",
+      "Learning to Substitute Words with Model-based Score Ranking"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 13,
+    "iclr25": 2,
+    "icml25": 3,
+    "naacl25": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "canonical_name": "Perspective API",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing description is an external API or automated tool for toxicity assessment, used to score text for harmful language. Most definitions describe an overall toxicity score, often on a 0 to 1 scale, plus finer-grained attribute scores such as severe toxicity, threat, profanity, insult, and identity attack. The granularity varies across papers: some refer to six toxicity attributes, some select five aspects for safety evaluation, and one paper uses eight attributes including sexually explicit and flirtation. A smaller line of work describes it as a moderation tool, or as a benchmark or model for toxic detection.\n\nWhat it is claimed to measure. Papers link it to two constructs and one behavioral indicator. The dominant use is to measure Toxicity, with papers describing it as toxicity evaluation, toxic language and hate speech detection, or a toxicity behavior function for model generations. More narrowly, some papers use Perspective API metrics such as Expected Maximum Toxicity and Toxicity Probability to measure Harmlessness, and several papers report it as measuring Harmful content generation or the harmfulness of responses. Overall, these claims are concentrated on toxicity rather than spread across many constructs.\n\nSpace of uses. In use, papers most often position it as an automatic evaluation instrument for generated replies, stories, questions, or vision-language model responses, and some also use it for dataset filtering, data augmentation, or quality assessment. It is linked to two other instruments, Human evaluation and RealToxicityPrompts, and one paper additionally samples Perspective-scored outputs for human annotators while another uses it for toxicity evaluation on RealToxicityPrompts. Papers also sometimes present it as a benchmark or baseline classifier, and operational choices vary, with thresholds such as >0.5, \u22650.7, and 0.32 appearing in different setups.\n\nConcerns raised. One paper, in a test of detecting harmful fine-tuning examples, reports that Perspective API flagged 4% of 100 harmful instructions at a threshold of \u22650.7. Another paper additionally evaluates sampled Perspective-scored outputs with human annotators.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PERSPECTIVE API",
+    "Perspective API",
+    "PerspectiveAPI",
+    "Perspective toxicity model"
+  ],
+  "papers": [
+    "Beyond Negative Stereotypes \u2013 Non-Negative Abusive Utterances about Identity Groups and Their Semantic Variants",
+    "EdiText: Controllable Coarse-to-Fine Text Editing with Diffusion Language Models",
+    "K/DA: Automated Data Generation Pipeline for Detoxifying Implicitly Offensive Language in Korean",
+    "Re-ranking Using Large Language Models for Mitigating Exposure to Harmful Content on Social Media Platforms",
+    "Small Changes, Big Impact: How Manipulating a Few Neurons Can Drastically Alter LLM Aggression",
+    "\u201cYes, My LoRD.\u201d Guiding Language Model Extraction with Locality Reinforced Distillation",
+    "Detoxifying Large Language Models via the Diversity of Toxic Samples",
+    "Exploring the Impact of Personality Traits on LLM Bias and Toxicity",
+    "ModelCitizens: Representing Community Voices in Online Safety",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "Token-Aware Editing of Internal Activations for Large Language Model Alignment",
+    "User Feedback in Human-LLM Dialogues: A Lens to Understand Users But Noisy as a Learning Signal",
+    "Biased Tales: Cultural and Topic Bias in Generating Children's Stories",
+    "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+    "Controlled Text Generation via Language Model Arithmetic",
+    "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+    "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+    "Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models",
+    "Unveiling and Manipulating Prompt Influence in Large Language Models",
+    "An Auditing Test to Detect Behavioral Shift in Language Models",
+    "BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks",
+    "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+    "Controllable Generation via Locally Constrained Resampling",
+    "Controlled LLM Decoding via Discrete Auto-regressive Biasing",
+    "Large Language Models can Become Strong Self-Detoxifiers",
+    "Monet: Mixture of Monosemantic Experts for Transformers",
+    "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+    "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS",
+    "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+    "Scalable Extraction of Training Data from Aligned, Production Language Models",
+    "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation",
+    "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+    "Layer-wise Alignment: Examining Safety Alignment Across Image Encoder Layers in Vision Language Models",
+    "TRACE Back from the Future: A Probabilistic Reasoning Approach to Controllable Language Generation",
+    "Navigating the Cultural Kaleidoscope: A Hitchhiker's Guide to Sensitivity in Large Language Models",
+    "Palette of Language Models: A Solver for Controlled Text Generation",
+    "SynthDetoxM: Modern LLMs are Few-Shot Parallel Detoxification Data Annotators",
+    "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals",
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "VHELM: A Holistic Evaluation of Vision Language Models"
+  ],
+  "paper_count": 40,
+  "definitions": [
+    {
+      "text": "An external tool used to classify text along multiple dimensions of toxicity, including severe toxicity, threat, profanity, and identity attack.",
+      "papers": [
+        "Controlled Text Generation via Language Model Arithmetic",
+        "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+        "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+        "Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models",
+        "Unveiling and Manipulating Prompt Influence in Large Language Models",
+        "Large Language Models can Become Strong Self-Detoxifiers",
+        "Navigating the Cultural Kaleidoscope: A Hitchhiker's Guide to Sensitivity in Large Language Models",
+        "SynthDetoxM: Modern LLMs are Few-Shot Parallel Detoxification Data Annotators",
+        "Palette of Language Models: A Solver for Controlled Text Generation",
+        "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals",
+        "Re-ranking Using Large Language Models for Mitigating Exposure to Harmful Content on Social Media Platforms",
+        "Layer-wise Alignment: Examining Safety Alignment Across Image Encoder Layers in Vision Language Models",
+        "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+        "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+        "VHELM: A Holistic Evaluation of Vision Language Models"
+      ],
+      "original_name": "Perspective API"
+    },
+    {
+      "text": "External tool that provides fine-grained toxicity scoring for text, including attributes like insult, profanity, and identity attack.",
+      "papers": [
+        "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+        "Monet: Mixture of Monosemantic Experts for Transformers"
+      ],
+      "original_name": "PERSPECTIVE API"
+    },
+    {
+      "text": "Automated content safety evaluation tool that scores text outputs on dimensions such as toxicity, insult, profanity, severe toxicity, and threat to assess model safety alignment.",
+      "papers": [
+        "\u201cYes, My LoRD.\u201d Guiding Language Model Extraction with Locality Reinforced Distillation"
+      ],
+      "original_name": "PerspectiveAPI"
+    },
+    {
+      "text": "State-of-the-art benchmark for detecting toxic content in text, assigning a toxicity score from 0 (non-toxic) to 1 (highly toxic), used to assess safety of generated stories.",
+      "papers": [
+        "Biased Tales: Cultural and Topic Bias in Generating Children's Stories"
+      ],
+      "original_name": "Perspective toxicity model"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Toxicity",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Unveiling and Manipulating Prompt Influence in Large Language Models",
+      "evidence": "Our evaluation mechanism employs the Perspective API2, which classifies text based on six delineated toxicity attributes. (Section 5.1)",
+      "paper_count": 14,
+      "paper_weight": 14.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Unveiling and Manipulating Prompt Influence in Large Language Models",
+          "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+          "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing"
+        ],
+        "neurips24": [
+          "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models"
+        ],
+        "iclr25": [
+          "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation",
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+          "An Auditing Test to Detect Behavioral Shift in Language Models",
+          "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS",
+          "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+          "Large Language Models can Become Strong Self-Detoxifiers",
+          "Controllable Generation via Locally Constrained Resampling"
+        ],
+        "naacl25": [
+          "Palette of Language Models: A Solver for Controlled Text Generation"
+        ],
+        "icml25": [
+          "When Bad Data Leads to Good Models"
+        ],
+        "emnlp25": [
+          "Exploring the Impact of Personality Traits on LLM Bias and Toxicity"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models",
+      "evidence": "To measure the toxicity of these harmful generations, we employ automatic evaluation models pre-trained on toxic datasets, including Perspective API and toxic classifiers (Hanu & Unitary team, 2020) with BERT (Kenton & Toutanova, 2019) and RoBERTa (Liu et al., 2019). (Section 4)",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models"
+        ],
+        "iclr25": [
+          "Scalable Extraction of Training Data from Aligned, Production Language Models",
+          "Monet: Mixture of Monosemantic Experts for Transformers"
+        ],
+        "naacl25": [
+          "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals"
+        ],
+        "icml25": [
+          "Layer-wise Alignment: Examining Safety Alignment Across Image Encoder Layers in Vision Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Token-Aware Editing of Internal Activations for Large Language Model Alignment",
+      "evidence": "For harmlessness, we follow (Li et al., 2024b) and utilize metrics Expected Maximum Toxicity (EMT) and Toxicity Probability (TP) from the Perspective API to examine the harmful content (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Token-Aware Editing of Internal Activations for Large Language Model Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RealToxicityPrompts",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Monet: Mixture of Monosemantic Experts for Transformers",
+      "evidence": "\u201cFor toxicity evaluation, we utilize the PERSPECTIVE API (Lees et al., 2022) for REALTOXICITYPROMPTS\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Monet: Mixture of Monosemantic Experts for Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Exploring the Impact of Personality Traits on LLM Bias and Toxicity",
+      "evidence": "\u201cwe randomly sample 780 ... toxicity outputs (for Perspective API) ... We additionally evaluate these samples with human annotators\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Exploring the Impact of Personality Traits on LLM Bias and Toxicity"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing description is an external API or automated tool for toxicity assessment, used to score text for harmful language. Most definitions describe an overall toxicity score, often on a 0 to 1 scale, plus finer-grained attribute scores such as severe toxicity, threat, profanity, insult, and identity attack. The granularity varies across papers: some refer to six toxicity attributes, some select five aspects for safety evaluation, and one paper uses eight attributes including sexually explicit and flirtation. A smaller line of work describes it as a moderation tool, or as a benchmark or model for toxic detection."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to two constructs and one behavioral indicator. The dominant use is to measure Toxicity, with papers describing it as toxicity evaluation, toxic language and hate speech detection, or a toxicity behavior function for model generations. More narrowly, some papers use Perspective API metrics such as Expected Maximum Toxicity and Toxicity Probability to measure Harmlessness, and several papers report it as measuring Harmful content generation or the harmfulness of responses. Overall, these claims are concentrated on toxicity rather than spread across many constructs."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers most often position it as an automatic evaluation instrument for generated replies, stories, questions, or vision-language model responses, and some also use it for dataset filtering, data augmentation, or quality assessment. It is linked to two other instruments, Human evaluation and RealToxicityPrompts, and one paper additionally samples Perspective-scored outputs for human annotators while another uses it for toxicity evaluation on RealToxicityPrompts. Papers also sometimes present it as a benchmark or baseline classifier, and operational choices vary, with thresholds such as >0.5, \u22650.7, and 0.32 appearing in different setups."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One paper, in a test of detecting harmful fine-tuning examples, reports that Perspective API flagged 4% of 100 harmful instructions at a threshold of \u22650.7. Another paper additionally evaluates sampled Perspective-scored outputs with human annotators."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing description is an external API or automated tool for toxicity assessment, used to score text for harmful language. Most definitions describe an overall toxicity score, often on a 0 to 1 scale, plus finer-grained attribute scores such as severe toxicity, threat, profanity, insult, and identity attack. The granularity varies across papers: some refer to six toxicity attributes, some select five aspects for safety evaluation, and one paper uses eight attributes including sexually explicit and flirtation. A smaller line of work describes it as a moderation tool, or as a benchmark or model for toxic detection.\n\nWhat it is claimed to measure. Papers link it to two constructs and one behavioral indicator. The dominant use is to measure Toxicity, with papers describing it as toxicity evaluation, toxic language and hate speech detection, or a toxicity behavior function for model generations. More narrowly, some papers use Perspective API metrics such as Expected Maximum Toxicity and Toxicity Probability to measure Harmlessness, and several papers report it as measuring Harmful content generation or the harmfulness of responses. Overall, these claims are concentrated on toxicity rather than spread across many constructs.\n\nSpace of uses. In use, papers most often position it as an automatic evaluation instrument for generated replies, stories, questions, or vision-language model responses, and some also use it for dataset filtering, data augmentation, or quality assessment. It is linked to two other instruments, Human evaluation and RealToxicityPrompts, and one paper additionally samples Perspective-scored outputs for human annotators while another uses it for toxicity evaluation on RealToxicityPrompts. Papers also sometimes present it as a benchmark or baseline classifier, and operational choices vary, with thresholds such as >0.5, \u22650.7, and 0.32 appearing in different setups.\n\nConcerns raised. One paper, in a test of detecting harmful fine-tuning examples, reports that Perspective API flagged 4% of 100 harmful instructions at a threshold of \u22650.7. Another paper additionally evaluates sampled Perspective-scored outputs with human annotators.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Beyond Negative Stereotypes \u2013 Non-Negative Abusive Utterances about Identity Groups and Their Semantic Variants",
+      "EdiText: Controllable Coarse-to-Fine Text Editing with Diffusion Language Models",
+      "K/DA: Automated Data Generation Pipeline for Detoxifying Implicitly Offensive Language in Korean",
+      "Re-ranking Using Large Language Models for Mitigating Exposure to Harmful Content on Social Media Platforms",
+      "Small Changes, Big Impact: How Manipulating a Few Neurons Can Drastically Alter LLM Aggression",
+      "\u201cYes, My LoRD.\u201d Guiding Language Model Extraction with Locality Reinforced Distillation"
+    ],
+    "emnlp25": [
+      "Detoxifying Large Language Models via the Diversity of Toxic Samples",
+      "Exploring the Impact of Personality Traits on LLM Bias and Toxicity",
+      "ModelCitizens: Representing Community Voices in Online Safety",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "Token-Aware Editing of Internal Activations for Large Language Model Alignment",
+      "User Feedback in Human-LLM Dialogues: A Lens to Understand Users But Noisy as a Learning Signal",
+      "Biased Tales: Cultural and Topic Bias in Generating Children's Stories"
+    ],
+    "iclr24": [
+      "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "Controlled Text Generation via Language Model Arithmetic",
+      "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+      "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+      "Jailbreak in pieces: Compositional Adversarial Attacks on Multi-Modal Language Models",
+      "Unveiling and Manipulating Prompt Influence in Large Language Models"
+    ],
+    "iclr25": [
+      "An Auditing Test to Detect Behavioral Shift in Language Models",
+      "BlueSuffix: Reinforced Blue Teaming for Vision-Language Models Against Jailbreak Attacks",
+      "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+      "Controllable Generation via Locally Constrained Resampling",
+      "Controlled LLM Decoding via Discrete Auto-regressive Biasing",
+      "Large Language Models can Become Strong Self-Detoxifiers",
+      "Monet: Mixture of Monosemantic Experts for Transformers",
+      "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "PALMBENCH: A COMPREHENSIVE BENCHMARK OF COMPRESSED LARGE LANGUAGE MODELS ON MOBILE PLATFORMS",
+      "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "Scalable Extraction of Training Data from Aligned, Production Language Models",
+      "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation"
+    ],
+    "icml25": [
+      "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+      "Layer-wise Alignment: Examining Safety Alignment Across Image Encoder Layers in Vision Language Models",
+      "TRACE Back from the Future: A Probabilistic Reasoning Approach to Controllable Language Generation"
+    ],
+    "naacl25": [
+      "Navigating the Cultural Kaleidoscope: A Hitchhiker's Guide to Sensitivity in Large Language Models",
+      "Palette of Language Models: A Solver for Controlled Text Generation",
+      "SynthDetoxM: Modern LLMs are Few-Shot Parallel Detoxification Data Annotators",
+      "Uncovering Bias in Large Vision-Language Models at Scale with Counterfactuals"
+    ],
+    "neurips24": [
+      "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "VHELM: A Holistic Evaluation of Vision Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 6,
+    "emnlp25": 7,
+    "iclr24": 6,
+    "iclr25": 12,
+    "icml25": 3,
+    "naacl25": 4,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

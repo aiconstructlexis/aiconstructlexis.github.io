@@ -1,0 +1,102 @@
+{
+  "canonical_name": "Symbolic regression",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. In the usage in the papers, symbolic regression is treated as a search task over compact or succinct programmatic mathematical expressions that explain a dataset of input-output examples. The formulations in the same paper make success depend on producing a programmatic hypothesis that is compact and that best explains the dataset, including hypotheses written in a flexible, domain-specific programming language. As one study puts it, the task is to find \"succinct programmatic hypotheses\" that \"best explain a dataset\" (Symbolic Regression with a Learned Concept Library).\n\nVariants. The papers mostly keep a single task name, symbolic regression, often abbreviated as SR, rather than splitting it into named sub-tasks. One paper frames the hypothesis space as a flexible, domain-specific programming language, and another paper relates symbolic regression to code generation by formulating SR as a program synthesis problem. A separate discussion also places SR in settings that seek transparent models in fields such as physics, biology, and finance.\n\nSpace of elicitation and scores. No measurement instrument is linked to symbolic regression. In the papers, it is operationalized through the task description itself, namely searching for compact or succinct programmatic hypotheses that best explain a dataset, rather than through a named instrument.\n\nWhat it is taken as evidence of. The links do not present symbolic regression as a direct indicator of multiple constructs. Instead, it is related to a single construct, Interpretability and explainability: one paper states that SR's flexibility allows it to achieve \"both high accuracy and interpretability\" and describes this as useful where transparent, understandable models are sought. Beyond that related claim, the papers do not show alternative construct linkages.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Symbolic regression"
+  ],
+  "papers": [
+    "RAG-SR: Retrieval-Augmented Generation for Neural Symbolic Regression",
+    "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models",
+    "Symbolic Regression with a Learned Concept Library"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The task of searching for a compact, programmatic mathematical expression that best explains a given dataset of input-output examples.",
+      "papers": [
+        "Symbolic Regression with a Learned Concept Library"
+      ],
+      "original_name": "Symbolic regression"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Symbolic Regression with a Learned Concept Library",
+      "evidence": "We formulate symbolic regression (SR) as a program synthesis [6] problem. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Symbolic Regression with a Learned Concept Library"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RAG-SR: Retrieval-Augmented Generation for Neural Symbolic Regression",
+      "evidence": "This flexibility allows SR to achieve both high accuracy and interpretability, making it especially valuable in fields such as physics (Udrescu et al., 2020), biology (Brunton et al., 2016), and finance (Liu & Guo, 2023), where uncovering transparent, understandable models is crucial for scientific discovery and informed decision-making.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "RAG-SR: Retrieval-Augmented Generation for Neural Symbolic Regression"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In the usage in the papers, symbolic regression is treated as a search task over compact or succinct programmatic mathematical expressions that explain a dataset of input-output examples. The formulations in the same paper make success depend on producing a programmatic hypothesis that is compact and that best explains the dataset, including hypotheses written in a flexible, domain-specific programming language. As one study puts it, the task is to find \"succinct programmatic hypotheses\" that \"best explain a dataset\" (Symbolic Regression with a Learned Concept Library)."
+    },
+    {
+      "label": "Variants.",
+      "text": "The papers mostly keep a single task name, symbolic regression, often abbreviated as SR, rather than splitting it into named sub-tasks. One paper frames the hypothesis space as a flexible, domain-specific programming language, and another paper relates symbolic regression to code generation by formulating SR as a program synthesis problem. A separate discussion also places SR in settings that seek transparent models in fields such as physics, biology, and finance."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to symbolic regression. In the papers, it is operationalized through the task description itself, namely searching for compact or succinct programmatic hypotheses that best explain a dataset, rather than through a named instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "The links do not present symbolic regression as a direct indicator of multiple constructs. Instead, it is related to a single construct, Interpretability and explainability: one paper states that SR's flexibility allows it to achieve \"both high accuracy and interpretability\" and describes this as useful where transparent, understandable models are sought. Beyond that related claim, the papers do not show alternative construct linkages."
+    }
+  ],
+  "characterization": "Space of definitions. In the usage in the papers, symbolic regression is treated as a search task over compact or succinct programmatic mathematical expressions that explain a dataset of input-output examples. The formulations in the same paper make success depend on producing a programmatic hypothesis that is compact and that best explains the dataset, including hypotheses written in a flexible, domain-specific programming language. As one study puts it, the task is to find \"succinct programmatic hypotheses\" that \"best explain a dataset\" (Symbolic Regression with a Learned Concept Library).\n\nVariants. The papers mostly keep a single task name, symbolic regression, often abbreviated as SR, rather than splitting it into named sub-tasks. One paper frames the hypothesis space as a flexible, domain-specific programming language, and another paper relates symbolic regression to code generation by formulating SR as a program synthesis problem. A separate discussion also places SR in settings that seek transparent models in fields such as physics, biology, and finance.\n\nSpace of elicitation and scores. No measurement instrument is linked to symbolic regression. In the papers, it is operationalized through the task description itself, namely searching for compact or succinct programmatic hypotheses that best explain a dataset, rather than through a named instrument.\n\nWhat it is taken as evidence of. The links do not present symbolic regression as a direct indicator of multiple constructs. Instead, it is related to a single construct, Interpretability and explainability: one paper states that SR's flexibility allows it to achieve \"both high accuracy and interpretability\" and describes this as useful where transparent, understandable models are sought. Beyond that related claim, the papers do not show alternative construct linkages.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "RAG-SR: Retrieval-Augmented Generation for Neural Symbolic Regression"
+    ],
+    "icml25": [
+      "What Has a Foundation Model Found? Using Inductive Bias to Probe for World Models"
+    ],
+    "neurips24": [
+      "Symbolic Regression with a Learned Concept Library"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1,
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

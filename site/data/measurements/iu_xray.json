@@ -1,0 +1,119 @@
+{
+  "canonical_name": "IU-Xray",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, IU-Xray is most commonly described as a dataset of chest X-ray images paired with associated medical or radiology reports, mainly used for evaluating medical report generation. Definitions largely converge on that image report format, while a smaller line of work broadens the description to a chest X-ray dataset used for both report generation and medical visual question answering.\n\nWhat it is claimed to measure. Papers use IU-Xray to measure 2 behavioral indicators, and the linked claims are concentrated on behavioral indicators rather than constructs. The prevailing usage is Medical report generation: papers describe evaluating models on the report generation task with IU-Xray and refer to it as a report generation dataset. A smaller line of work also uses it to measure Medical visual question answering, including definitions that place IU-Xray among medical VQA datasets; no constructs are linked to it.\n\nSpace of uses. In practice, papers most often use IU-Xray alongside MIMIC-CXR for report generation evaluation; as one study puts it, \"For medical report generation, we use MIMIC-CXR and IU-Xray\" (Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning). Some papers also include it in broader multi-dataset evaluation suites for medical VQA, alongside datasets such as SLAKE, VQA-RAD, PathVQA, Harvard-FairVLMed, and other medical datasets, so it appears both in paired report generation setups and in mixed task evaluations.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "IU-Xray"
+  ],
+  "papers": [
+    "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+    "Online Iterative Self-Alignment for Radiology Report Generation",
+    "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents",
+    "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+    "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+    "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A dataset of chest X-ray images and associated reports used for evaluating medical report generation.",
+      "papers": [
+        "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+        "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+        "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents"
+      ],
+      "original_name": "IU-Xray"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical report generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "We utilize five medical vision-language datasets for medical VQA and report generation tasks, i.e., MIMIC-CXR (Johnson et al., 2019), IU-Xray (Demner-Fushman et al., 2016), Harvard-FairVLMed (Luo et al., 2024), PMC-OA (Lin et al., 2023a) (we only select the pathology part) and Quilt-1M (Ikezogwo et al., 2024).",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "acl25": [
+          "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning"
+        ],
+        "icml25": [
+          "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+        ],
+        "emnlp25": [
+          "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Medical visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "We utilize five medical vision-language datasets for medical VQA and report generation tasks, i.e., MIMIC-CXR (Johnson et al., 2019), IU-Xray (Demner-Fushman et al., 2016), Harvard-FairVLMed (Luo et al., 2024), PMC-OA (Lin et al., 2023a) (we only select the pathology part) and Quilt-1M (Ikezogwo et al., 2024).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+        ],
+        "acl25": [
+          "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, IU-Xray is most commonly described as a dataset of chest X-ray images paired with associated medical or radiology reports, mainly used for evaluating medical report generation. Definitions largely converge on that image report format, while a smaller line of work broadens the description to a chest X-ray dataset used for both report generation and medical visual question answering."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use IU-Xray to measure 2 behavioral indicators, and the linked claims are concentrated on behavioral indicators rather than constructs. The prevailing usage is Medical report generation: papers describe evaluating models on the report generation task with IU-Xray and refer to it as a report generation dataset. A smaller line of work also uses it to measure Medical visual question answering, including definitions that place IU-Xray among medical VQA datasets; no constructs are linked to it."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In practice, papers most often use IU-Xray alongside MIMIC-CXR for report generation evaluation; as one study puts it, \"For medical report generation, we use MIMIC-CXR and IU-Xray\" (Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning). Some papers also include it in broader multi-dataset evaluation suites for medical VQA, alongside datasets such as SLAKE, VQA-RAD, PathVQA, Harvard-FairVLMed, and other medical datasets, so it appears both in paired report generation setups and in mixed task evaluations."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, IU-Xray is most commonly described as a dataset of chest X-ray images paired with associated medical or radiology reports, mainly used for evaluating medical report generation. Definitions largely converge on that image report format, while a smaller line of work broadens the description to a chest X-ray dataset used for both report generation and medical visual question answering.\n\nWhat it is claimed to measure. Papers use IU-Xray to measure 2 behavioral indicators, and the linked claims are concentrated on behavioral indicators rather than constructs. The prevailing usage is Medical report generation: papers describe evaluating models on the report generation task with IU-Xray and refer to it as a report generation dataset. A smaller line of work also uses it to measure Medical visual question answering, including definitions that place IU-Xray among medical VQA datasets; no constructs are linked to it.\n\nSpace of uses. In practice, papers most often use IU-Xray alongside MIMIC-CXR for report generation evaluation; as one study puts it, \"For medical report generation, we use MIMIC-CXR and IU-Xray\" (Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning). Some papers also include it in broader multi-dataset evaluation suites for medical VQA, alongside datasets such as SLAKE, VQA-RAD, PathVQA, Harvard-FairVLMed, and other medical datasets, so it appears both in paired report generation setups and in mixed task evaluations.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+      "Online Iterative Self-Alignment for Radiology Report Generation"
+    ],
+    "emnlp25": [
+      "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents"
+    ],
+    "iclr25": [
+      "Anyprefer: An Agentic Framework for Preference Data Synthesis",
+      "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 1,
+    "iclr25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "canonical_name": "Semantic richness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. In one paper, the construct is framed in a caption-centered way: semantic richness is the degree to which generated captions capture complex, diverse, and contextually grounded meanings, rather than simple or template-like descriptions. The same paper also characterizes semantically richer captions as having richer vocabulary, being longer and more diverse, and describing content in a more complex manner.\n\nSpace of facets. The use does not introduce named subtypes, broader construct hierarchies, or competing labels. Instead, the construct is presented alongside length, vocabulary diversity, readability complexity, and complexity of description when characterizing caption outputs.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. Operationally, the only cues provided are output-level properties of captions, namely greater length, richer and more diverse vocabulary, higher readability complexity, and more complex descriptions, rather than a named benchmark, human evaluation protocol, LLM-as-a-judge setup, or probe.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Semantic richness"
+  ],
+  "papers": [
+    "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance",
+    "Language Model Based Text-to-Audio Generation: Anti-Causally Aligned Collaborative Residual Transformers",
+    "Learning to See through Sound: From VggCaps to Multi2Cap for Richer Automated Audio Captioning"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The degree to which generated captions capture complex, diverse, and contextually grounded meanings, going beyond simple or template-like descriptions.",
+      "papers": [
+        "Learning to See through Sound: From VggCaps to Multi2Cap for Richer Automated Audio Captioning"
+      ],
+      "original_name": "Semantic richness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In one paper, the construct is framed in a caption-centered way: semantic richness is the degree to which generated captions capture complex, diverse, and contextually grounded meanings, rather than simple or template-like descriptions. The same paper also characterizes semantically richer captions as having richer vocabulary, being longer and more diverse, and describing content in a more complex manner."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The use does not introduce named subtypes, broader construct hierarchies, or competing labels. Instead, the construct is presented alongside length, vocabulary diversity, readability complexity, and complexity of description when characterizing caption outputs."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to it. Operationally, the only cues provided are output-level properties of captions, namely greater length, richer and more diverse vocabulary, higher readability complexity, and more complex descriptions, rather than a named benchmark, human evaluation protocol, LLM-as-a-judge setup, or probe."
+    }
+  ],
+  "characterization": "Space of definitions. In one paper, the construct is framed in a caption-centered way: semantic richness is the degree to which generated captions capture complex, diverse, and contextually grounded meanings, rather than simple or template-like descriptions. The same paper also characterizes semantically richer captions as having richer vocabulary, being longer and more diverse, and describing content in a more complex manner.\n\nSpace of facets. The use does not introduce named subtypes, broader construct hierarchies, or competing labels. Instead, the construct is presented alongside length, vocabulary diversity, readability complexity, and complexity of description when characterizing caption outputs.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. Operationally, the only cues provided are output-level properties of captions, namely greater length, richer and more diverse vocabulary, higher readability complexity, and more complex descriptions, rather than a named benchmark, human evaluation protocol, LLM-as-a-judge setup, or probe.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance",
+      "Language Model Based Text-to-Audio Generation: Anti-Causally Aligned Collaborative Residual Transformers",
+      "Learning to See through Sound: From VggCaps to Multi2Cap for Richer Automated Audio Captioning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

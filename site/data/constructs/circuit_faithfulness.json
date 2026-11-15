@@ -1,0 +1,42 @@
+{
+  "canonical_name": "Circuit faithfulness",
+  "type": "construct",
+  "canonical_definition": "The degree to which a discovered subcircuit replicates the behavior of the full model, reflecting how reliably the circuit captures the model's functional mechanisms.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Circuit faithfulness"
+  ],
+  "papers": [
+    "Towards Understanding Fine-Tuning Mechanisms of LLMs via Circuit Analysis"
+  ],
+  "paper_count": 1,
+  "definitions": [
+    {
+      "text": "The degree to which a discovered subcircuit replicates the behavior of the full model, reflecting how reliably the circuit captures the model's functional mechanisms.",
+      "papers": [
+        "Towards Understanding Fine-Tuning Mechanisms of LLMs via Circuit Analysis"
+      ],
+      "original_name": "Circuit faithfulness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The degree to which a discovered subcircuit replicates the behavior of the full model, reflecting how reliably the circuit captures the model's functional mechanisms.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Towards Understanding Fine-Tuning Mechanisms of LLMs via Circuit Analysis"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 1
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

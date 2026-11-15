@@ -1,0 +1,79 @@
+{
+  "canonical_name": "Semantic drift",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. The definition treats semantic drift as a gradual divergence in meaning across successive translations, arising from cumulative errors in lexical, syntactic, or conceptual fidelity. The quoted passages keep the construct centered on changing meaning over repeated translation, as when \"meaning gradually shifts from a factual query to subjective concern.\"\n\nSpace of facets. The explicit structure given is by the fidelity dimensions along which drift accumulates: lexical, syntactic, and conceptual. Quoted passages also portray it as cumulative over iterations, using phrases such as \"compounding semantic drift\" and referring to degradation over iterations.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Papers describe the construct directly through repeated-translation meaning shift and cumulative fidelity errors, without a linked operational measure.\n\nLinks. One paper, Large Language Models Threaten Language's Epistemic and Communicative Foundations, reports a related link from Model collapse to Semantic drift, stating that they are linked in \"a loop of human and LLM language production.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Semantic drift"
+  ],
+  "papers": [
+    "Evaluating Language Translation Models by Playing Telephone",
+    "Large Language Models Threaten Language's Epistemic and Communicative Foundations",
+    "MPCG: Multi-Round Persona-Conditioned Generation for Modeling the Evolution of Misinformation with LLMs"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The gradual divergence in meaning that occurs across successive translations, reflecting cumulative errors in lexical, syntactic, or conceptual fidelity.",
+      "papers": [
+        "Evaluating Language Translation Models by Playing Telephone"
+      ],
+      "original_name": "Semantic drift"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Model collapse",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Large Language Models Threaten Language's Epistemic and Communicative Foundations",
+      "evidence": "Semantic drift and model collapse are linked in a loop of human and LLM language production",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Large Language Models Threaten Language's Epistemic and Communicative Foundations"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The definition treats semantic drift as a gradual divergence in meaning across successive translations, arising from cumulative errors in lexical, syntactic, or conceptual fidelity. The quoted passages keep the construct centered on changing meaning over repeated translation, as when \"meaning gradually shifts from a factual query to subjective concern.\""
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The explicit structure given is by the fidelity dimensions along which drift accumulates: lexical, syntactic, and conceptual. Quoted passages also portray it as cumulative over iterations, using phrases such as \"compounding semantic drift\" and referring to degradation over iterations."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. Papers describe the construct directly through repeated-translation meaning shift and cumulative fidelity errors, without a linked operational measure."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper, Large Language Models Threaten Language's Epistemic and Communicative Foundations, reports a related link from Model collapse to Semantic drift, stating that they are linked in \"a loop of human and LLM language production.\""
+    }
+  ],
+  "characterization": "Space of definitions. The definition treats semantic drift as a gradual divergence in meaning across successive translations, arising from cumulative errors in lexical, syntactic, or conceptual fidelity. The quoted passages keep the construct centered on changing meaning over repeated translation, as when \"meaning gradually shifts from a factual query to subjective concern.\"\n\nSpace of facets. The explicit structure given is by the fidelity dimensions along which drift accumulates: lexical, syntactic, and conceptual. Quoted passages also portray it as cumulative over iterations, using phrases such as \"compounding semantic drift\" and referring to degradation over iterations.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Papers describe the construct directly through repeated-translation meaning shift and cumulative fidelity errors, without a linked operational measure.\n\nLinks. One paper, Large Language Models Threaten Language's Epistemic and Communicative Foundations, reports a related link from Model collapse to Semantic drift, stating that they are linked in \"a loop of human and LLM language production.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Evaluating Language Translation Models by Playing Telephone",
+      "Large Language Models Threaten Language's Epistemic and Communicative Foundations",
+      "MPCG: Multi-Round Persona-Conditioned Generation for Modeling the Evolution of Misinformation with LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

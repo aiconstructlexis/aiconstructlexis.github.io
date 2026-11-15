@@ -1,0 +1,95 @@
+{
+  "canonical_name": "MineDojo",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the definitions, the prevailing usage is as a Minecraft-based simulation suite for embodied-agent research, often also described as a benchmark or research framework. Papers consistently describe it as containing thousands of open-ended, natural language-specified or language-prompted tasks, with task content commonly framed around navigation, harvesting, combat, and crafting. A smaller difference in wording is whether authors call it a benchmark or a framework, and some work uses selected long-horizon tasks from it rather than the full suite.\n\nWhat it is claimed to measure. Papers link it to one construct and one behavioral indicator. The construct claim is Generalization: one paper reports that validating a single model on diverse challenging tasks in MineDojo indicates promising generalization. The behavioral indicator claim is Navigation, and the benchmark is also described as supporting behaviors such as navigation, harvest, combat, and craft, though only Navigation is explicitly linked as a measured behavior.\n\nSpace of uses. No measurement instrument is linked to it. In practice, papers use it to validate embodied-agent methods: one study evaluates in both MineDojo and Mineflayer environments, and another validates on selected long-horizon tasks from MineDojo. Papers also describe it as suitable for studying open-ended and generally capable embodied agents.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MineDojo"
+  ],
+  "papers": [
+    "FOUNDER: Grounding Foundation Models in World Models for Open-Ended Embodied Decision Making",
+    "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+    "RL-GPT: Integrating Reinforcement Learning and Code-as-policy"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Simulation suite and benchmark for open-ended embodied agents in Minecraft, featuring thousands of natural language-specified tasks across navigation, harvesting, combat, and crafting.",
+      "papers": [
+        "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+        "RL-GPT: Integrating Reinforcement Learning and Code-as-policy"
+      ],
+      "original_name": "MineDojo"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Navigation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+      "evidence": "The behaviors that can be conducted in MineDojo primarily include navigation, harvest, combat, and craft.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+      "evidence": "We validate our method in both MineDojo (Fan et al., 2022) and Mineflayer (PrismarineJS., 2013) environments. The experimental results suggest that our method completes diverse challenging tasks with a single model, indicating its promising generalization. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the definitions, the prevailing usage is as a Minecraft-based simulation suite for embodied-agent research, often also described as a benchmark or research framework. Papers consistently describe it as containing thousands of open-ended, natural language-specified or language-prompted tasks, with task content commonly framed around navigation, harvesting, combat, and crafting. A smaller difference in wording is whether authors call it a benchmark or a framework, and some work uses selected long-horizon tasks from it rather than the full suite."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to one construct and one behavioral indicator. The construct claim is Generalization: one paper reports that validating a single model on diverse challenging tasks in MineDojo indicates promising generalization. The behavioral indicator claim is Navigation, and the benchmark is also described as supporting behaviors such as navigation, harvest, combat, and craft, though only Navigation is explicitly linked as a measured behavior."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it. In practice, papers use it to validate embodied-agent methods: one study evaluates in both MineDojo and Mineflayer environments, and another validates on selected long-horizon tasks from MineDojo. Papers also describe it as suitable for studying open-ended and generally capable embodied agents."
+    }
+  ],
+  "characterization": "What it is. Across the definitions, the prevailing usage is as a Minecraft-based simulation suite for embodied-agent research, often also described as a benchmark or research framework. Papers consistently describe it as containing thousands of open-ended, natural language-specified or language-prompted tasks, with task content commonly framed around navigation, harvesting, combat, and crafting. A smaller difference in wording is whether authors call it a benchmark or a framework, and some work uses selected long-horizon tasks from it rather than the full suite.\n\nWhat it is claimed to measure. Papers link it to one construct and one behavioral indicator. The construct claim is Generalization: one paper reports that validating a single model on diverse challenging tasks in MineDojo indicates promising generalization. The behavioral indicator claim is Navigation, and the benchmark is also described as supporting behaviors such as navigation, harvest, combat, and craft, though only Navigation is explicitly linked as a measured behavior.\n\nSpace of uses. No measurement instrument is linked to it. In practice, papers use it to validate embodied-agent methods: one study evaluates in both MineDojo and Mineflayer environments, and another validates on selected long-horizon tasks from MineDojo. Papers also describe it as suitable for studying open-ended and generally capable embodied agents.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "FOUNDER: Grounding Foundation Models in World Models for Open-Ended Embodied Decision Making",
+      "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence"
+    ],
+    "neurips24": [
+      "RL-GPT: Integrating Reinforcement Learning and Code-as-policy"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

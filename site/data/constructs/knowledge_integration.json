@@ -1,0 +1,111 @@
+{
+  "canonical_name": "Knowledge integration",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats knowledge integration as a capacity to bring in new or external knowledge and use it effectively in context. One definition describes it as incorporating new factual knowledge into internal parameters or retrieval-augmented context without disrupting existing knowledge, while other formulations emphasize leveraging external scientific domain knowledge, including task-specific instructions and expert-curated guidance, or merging structured educational knowledge graphs with unstructured text into contextually useful instructional content. The main difference is whether the construct is framed as updating internal or retrieved knowledge versus combining heterogeneous sources for prediction, reasoning, or instruction.\n\nSpace of facets. Papers do not present a settled subtype taxonomy. Instead, they characterize the construct through the kinds of knowledge being integrated: new factual knowledge, external scientific domain knowledge, task-specific instructions and expert-curated guidance, and combinations of structured knowledge graphs with unstructured textual data. Across these uses, the same label covers both incorporation into model parameters or retrieval context and the assembly of multiple information sources into richer outputs.\n\nSpace of measurement. Operationalization is not specified through linked instruments: papers do not connect knowledge integration to any measurement instrument or behavioral indicator. Instead, the construct is described narratively through examples such as leveraging broader information, enhancing prediction and reasoning, or providing contextualized instructional content.\n\nLinks. Only a small set of cross-construct links is stated. HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models claims a causal relationship from long-term memory to knowledge integration, describing long-term memory as enabling \"deeper and more efficient knowledge integration over new experiences.\" KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks reports that knowledge integration is related to reasoning, stating that realizing reasoning ability depends in part on \"effectively integrating new information into an existing knowledge base.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge adaptation",
+    "Knowledge integration"
+  ],
+  "papers": [
+    "GainRAG: Preference Alignment in Retrieval-Augmented Generation through Gain Signal Synthesis",
+    "Towards Context-Robust LLMs: A Gated Representation Fine-tuning Approach",
+    "Training-free LLM Merging for Multi-task Learning",
+    "A Knowledge-driven Adaptive Collaboration of LLMs for Enhancing Medical Decision-making",
+    "InterIDEAS: Philosophical Intertextuality via LLMs",
+    "Position: LLMs Can be Good Tutors in English Education",
+    "Large Language-Geometry Model: When LLM meets Equivariance"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The model's underlying capacity to incorporate new factual knowledge into its internal parameters or retrieval-augmented context without disrupting existing knowledge.",
+      "papers": [
+        "Large Language-Geometry Model: When LLM meets Equivariance"
+      ],
+      "original_name": "Knowledge integration"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-term memory",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+      "evidence": "HippoRAG, a novel retrieval framework inspired by the hippocampal indexing theory of human long-term memory to enable deeper and more efficient knowledge integration over new experiences. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks",
+      "evidence": "According to Chen et al. (2024), the realization of reasoning ability hinges on two core components: (1) possessing extensive general knowledge of the world, and (2) effectively integrating new information into an existing knowledge base. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats knowledge integration as a capacity to bring in new or external knowledge and use it effectively in context. One definition describes it as incorporating new factual knowledge into internal parameters or retrieval-augmented context without disrupting existing knowledge, while other formulations emphasize leveraging external scientific domain knowledge, including task-specific instructions and expert-curated guidance, or merging structured educational knowledge graphs with unstructured text into contextually useful instructional content. The main difference is whether the construct is framed as updating internal or retrieved knowledge versus combining heterogeneous sources for prediction, reasoning, or instruction."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not present a settled subtype taxonomy. Instead, they characterize the construct through the kinds of knowledge being integrated: new factual knowledge, external scientific domain knowledge, task-specific instructions and expert-curated guidance, and combinations of structured knowledge graphs with unstructured textual data. Across these uses, the same label covers both incorporation into model parameters or retrieval context and the assembly of multiple information sources into richer outputs."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is not specified through linked instruments: papers do not connect knowledge integration to any measurement instrument or behavioral indicator. Instead, the construct is described narratively through examples such as leveraging broader information, enhancing prediction and reasoning, or providing contextualized instructional content."
+    },
+    {
+      "label": "Links.",
+      "text": "Only a small set of cross-construct links is stated. HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models claims a causal relationship from long-term memory to knowledge integration, describing long-term memory as enabling \"deeper and more efficient knowledge integration over new experiences.\" KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks reports that knowledge integration is related to reasoning, stating that realizing reasoning ability depends in part on \"effectively integrating new information into an existing knowledge base.\""
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats knowledge integration as a capacity to bring in new or external knowledge and use it effectively in context. One definition describes it as incorporating new factual knowledge into internal parameters or retrieval-augmented context without disrupting existing knowledge, while other formulations emphasize leveraging external scientific domain knowledge, including task-specific instructions and expert-curated guidance, or merging structured educational knowledge graphs with unstructured text into contextually useful instructional content. The main difference is whether the construct is framed as updating internal or retrieved knowledge versus combining heterogeneous sources for prediction, reasoning, or instruction.\n\nSpace of facets. Papers do not present a settled subtype taxonomy. Instead, they characterize the construct through the kinds of knowledge being integrated: new factual knowledge, external scientific domain knowledge, task-specific instructions and expert-curated guidance, and combinations of structured knowledge graphs with unstructured textual data. Across these uses, the same label covers both incorporation into model parameters or retrieval context and the assembly of multiple information sources into richer outputs.\n\nSpace of measurement. Operationalization is not specified through linked instruments: papers do not connect knowledge integration to any measurement instrument or behavioral indicator. Instead, the construct is described narratively through examples such as leveraging broader information, enhancing prediction and reasoning, or providing contextualized instructional content.\n\nLinks. Only a small set of cross-construct links is stated. HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models claims a causal relationship from long-term memory to knowledge integration, describing long-term memory as enabling \"deeper and more efficient knowledge integration over new experiences.\" KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks reports that knowledge integration is related to reasoning, stating that realizing reasoning ability depends in part on \"effectively integrating new information into an existing knowledge base.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "GainRAG: Preference Alignment in Retrieval-Augmented Generation through Gain Signal Synthesis",
+      "Towards Context-Robust LLMs: A Gated Representation Fine-tuning Approach",
+      "Training-free LLM Merging for Multi-task Learning"
+    ],
+    "emnlp25": [
+      "A Knowledge-driven Adaptive Collaboration of LLMs for Enhancing Medical Decision-making",
+      "InterIDEAS: Philosophical Intertextuality via LLMs",
+      "Position: LLMs Can be Good Tutors in English Education"
+    ],
+    "icml25": [
+      "Large Language-Geometry Model: When LLM meets Equivariance"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 3,
+    "icml25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25"
+  ]
+}

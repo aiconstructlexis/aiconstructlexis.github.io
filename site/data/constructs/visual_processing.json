@@ -1,0 +1,43 @@
+{
+  "canonical_name": "Visual processing",
+  "type": "construct",
+  "canonical_definition": "The model's capacity to extract and utilize visual characteristics of rendered text, especially in early layers, to support language understanding across scripts.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Visual processing",
+    "Visual processing ability"
+  ],
+  "papers": [
+    "Multilingual Pretraining for Pixel Language Models"
+  ],
+  "paper_count": 1,
+  "definitions": [
+    {
+      "text": "The model's capacity to extract and utilize visual characteristics of rendered text, especially in early layers, to support language understanding across scripts.",
+      "papers": [
+        "Multilingual Pretraining for Pixel Language Models"
+      ],
+      "original_name": "Visual processing"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The model's capacity to extract and utilize visual characteristics of rendered text, especially in early layers, to support language understanding across scripts.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Multilingual Pretraining for Pixel Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

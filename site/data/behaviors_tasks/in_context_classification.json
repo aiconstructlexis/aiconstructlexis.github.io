@@ -1,0 +1,114 @@
+{
+  "canonical_name": "In-context classification",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats this as predicting the correct label for a target item from exemplars given in context as item-label pairs. The setup is described as an alternating sequence of N items and N labels followed by a query item, x1, l1, x2, l2, ..., xN, lN, xq, ?, and one description calls it a common in-context learning paradigm in which the network\u2019s response to a target item is measured. Success is framed as predicting the target item\u2019s label, and one formulation specifies the prediction objective with binary cross-entropy loss.\n\nVariants. Most descriptions keep the same target-label prediction task but vary the classification regime. Papers discuss both binary and multi-class versions, and one paper explicitly treats in-context binary classification as a special case of the general multi-class setting. One line of work studies the task on Gaussian mixtures, and a related setting examines distribution shift through a different norms condition.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. In the task descriptions themselves, elicitation comes from providing a sequence of item-label pairs in context and querying the label of the target item, and one formulation specifies the prediction objective with binary cross-entropy loss.\n\nWhat it is taken as evidence of. Papers do not directly frame this behavior through recorded measured_by links. Instead, one paper relates in-context classification to in-context learning by studying binary and multi-class classification of Gaussian mixtures during ICL, and the same paper also relates it to robustness, noting that under a different norms distribution shift, performance deteriorates more for a 1-layer model while 3-layer transformers show better robustness. The recorded links therefore use related framings for in-context learning and robustness, rather than an explicit shared claim that this behavior reflects one construct in particular.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "In-context classification"
+  ],
+  "papers": [
+    "The mechanistic basis of data dependence and abrupt learning in an in-context classification task",
+    "Differential learning kinetics govern the transition from memorization to generalization during in-context learning",
+    "MLPs Learn In-Context on Regression and Classification Tasks"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The observable task of predicting the correct label for a target item based on a sequence of item-label pair exemplars provided in the context.",
+      "papers": [
+        "Differential learning kinetics govern the transition from memorization to generalization during in-context learning",
+        "The mechanistic basis of data dependence and abrupt learning in an in-context classification task"
+      ],
+      "original_name": "In-context classification"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "On the Training Convergence of Transformers for In-Context Classification of Gaussian Mixtures",
+      "evidence": "In this work, we study the training dynamics of a single-layer transformer for both binary and multi-class classification of Gaussian mixtures during ICL, a fundamental problem in machine learning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "On the Training Convergence of Transformers for In-Context Classification of Gaussian Mixtures"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Binary classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "On the Training Convergence of Transformers for In-Context Classification of Gaussian Mixtures",
+      "evidence": "In this section, we study the learning dynamics of a single-layer transformer for in-context binary classification. It is a special case of the general multi-class classification.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "On the Training Convergence of Transformers for In-Context Classification of Gaussian Mixtures"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "On the Training Convergence of Transformers for In-Context Classification of Gaussian Mixtures",
+      "evidence": "in the \u2018different norms\u2019 setting, the performance of \u20181-layer\u2019 deteriorates more significantly, while transformers with a more complex structure (\u20193-layer\u2019) show better robustness under this distribution shift.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "On the Training Convergence of Transformers for In-Context Classification of Gaussian Mixtures"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats this as predicting the correct label for a target item from exemplars given in context as item-label pairs. The setup is described as an alternating sequence of N items and N labels followed by a query item, x1, l1, x2, l2, ..., xN, lN, xq, ?, and one description calls it a common in-context learning paradigm in which the network\u2019s response to a target item is measured. Success is framed as predicting the target item\u2019s label, and one formulation specifies the prediction objective with binary cross-entropy loss."
+    },
+    {
+      "label": "Variants.",
+      "text": "Most descriptions keep the same target-label prediction task but vary the classification regime. Papers discuss both binary and multi-class versions, and one paper explicitly treats in-context binary classification as a special case of the general multi-class setting. One line of work studies the task on Gaussian mixtures, and a related setting examines distribution shift through a different norms condition."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior. In the task descriptions themselves, elicitation comes from providing a sequence of item-label pairs in context and querying the label of the target item, and one formulation specifies the prediction objective with binary cross-entropy loss."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not directly frame this behavior through recorded measured_by links. Instead, one paper relates in-context classification to in-context learning by studying binary and multi-class classification of Gaussian mixtures during ICL, and the same paper also relates it to robustness, noting that under a different norms distribution shift, performance deteriorates more for a 1-layer model while 3-layer transformers show better robustness. The recorded links therefore use related framings for in-context learning and robustness, rather than an explicit shared claim that this behavior reflects one construct in particular."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats this as predicting the correct label for a target item from exemplars given in context as item-label pairs. The setup is described as an alternating sequence of N items and N labels followed by a query item, x1, l1, x2, l2, ..., xN, lN, xq, ?, and one description calls it a common in-context learning paradigm in which the network\u2019s response to a target item is measured. Success is framed as predicting the target item\u2019s label, and one formulation specifies the prediction objective with binary cross-entropy loss.\n\nVariants. Most descriptions keep the same target-label prediction task but vary the classification regime. Papers discuss both binary and multi-class versions, and one paper explicitly treats in-context binary classification as a special case of the general multi-class setting. One line of work studies the task on Gaussian mixtures, and a related setting examines distribution shift through a different norms condition.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. In the task descriptions themselves, elicitation comes from providing a sequence of item-label pairs in context and querying the label of the target item, and one formulation specifies the prediction objective with binary cross-entropy loss.\n\nWhat it is taken as evidence of. Papers do not directly frame this behavior through recorded measured_by links. Instead, one paper relates in-context classification to in-context learning by studying binary and multi-class classification of Gaussian mixtures during ICL, and the same paper also relates it to robustness, noting that under a different norms distribution shift, performance deteriorates more for a 1-layer model while 3-layer transformers show better robustness. The recorded links therefore use related framings for in-context learning and robustness, rather than an explicit shared claim that this behavior reflects one construct in particular.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Differential learning kinetics govern the transition from memorization to generalization during in-context learning",
+      "MLPs Learn In-Context on Regression and Classification Tasks"
+    ],
+    "iclr24": [
+      "The mechanistic basis of data dependence and abrupt learning in an in-context classification task"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "iclr24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25"
+  ]
+}

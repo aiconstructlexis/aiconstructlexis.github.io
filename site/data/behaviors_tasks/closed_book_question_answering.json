@@ -1,0 +1,170 @@
+{
+  "canonical_name": "Closed-book question answering",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats closed-book question answering as answering questions from knowledge stored in the model's parameters, internal knowledge, or parametric memory, without external documents, evidence, or other supporting context. In descriptions that specify the procedure, the model is given only the question, with no supporting evidence in the prompt, and is instructed to provide an answer. Some papers further describe the questions as factual or knowledge-intensive, and one paper uses the alternate name closed-book retrieval for answering a query or retrieving information without any external context or knowledge source.\n\nVariants. Most papers study it as closed-book QA over datasets such as TriviaQA, WebQuestions, Natural Questions, and EntityQuestions. These settings are described as knowledge-intensive questions, natural web queries, and a CBQA-specific dataset with knowledge extracted from Wikipedia. A smaller line of work uses the name closed-book retrieval and includes memory-intensive retrieval, including a phone-book task.\n\nSpace of elicitation and scores. Papers link this behavior to 3 measurement instruments, all question-answering datasets: EntityQuestions, TriviaQA, and WebQuestions. EntityQuestions is described as CBQA-specific, TriviaQA supplies knowledge-intensive questions, and WebQuestions appears as a closed-book question-answering dataset sourced from natural web queries.\n\nWhat it is taken as evidence of. Papers do not present this behavior as evidence of a construct. One paper instead reports that it is related to Hallucination, describing hallucinations in closed-book question answering as cases where the model generates incorrect or fabricated answers.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Closed-book question answering",
+    "Closed-book retrieval"
+  ],
+  "papers": [
+    "Structure-aware Domain Knowledge Injection for Large Language Models",
+    "AQuilt: Weaving Logic and Self-Inspection into Low-Cost, High-Relevance Data Synthesis for Specialist LLMs",
+    "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels",
+    "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+    "Benchmarking and Improving Generator-Validator Consistency of Language Models",
+    "Mixture of LoRA Experts",
+    "The Cost of Scaling Down Large Language Models: Reducing Model Size Affects Memory before In-context Learning",
+    "Two-stage LLM Fine-tuning with Less Specialization and More Generalization",
+    "Mixture of Parrots: Experts improve memorization more than reasoning",
+    "BERTs are Generative In-Context Learners",
+    "Empowering and Assessing the Utility of Large Language Models in Crop Science"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "The task of answering questions based on general knowledge stored in the model's parameters, without access to external documents.",
+      "papers": [
+        "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+        "Benchmarking and Improving Generator-Validator Consistency of Language Models",
+        "Mixture of LoRA Experts",
+        "The Cost of Scaling Down Large Language Models: Reducing Model Size Affects Memory before In-context Learning",
+        "Two-stage LLM Fine-tuning with Less Specialization and More Generalization",
+        "BERTs are Generative In-Context Learners",
+        "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels"
+      ],
+      "original_name": "Closed-book question answering"
+    },
+    {
+      "text": "The task of answering a query or retrieving information without access to any external context or knowledge source.",
+      "papers": [
+        "Mixture of Parrots: Experts improve memorization more than reasoning"
+      ],
+      "original_name": "Closed-book retrieval"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Two-stage LLM Fine-tuning with Less Specialization and More Generalization",
+      "evidence": "Closed book QA: TriviaQA (Joshi et al., 2017), web_questions (Berant et al., 2013) (Section 5.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Two-stage LLM Fine-tuning with Less Specialization and More Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Two-stage LLM Fine-tuning with Less Specialization and More Generalization",
+      "evidence": "Closed book QA: TriviaQA (Joshi et al., 2017), web_questions (Berant et al., 2013) (Section 5.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Two-stage LLM Fine-tuning with Less Specialization and More Generalization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels",
+      "evidence": "One significant challenge in CBQA is addressing hallucinations-instances where the model generates incorrect or fabricated answers (Section 2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EntityQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels",
+      "evidence": "we use the ENTITYQUESTIONS (Sciavolino et al., 2021) to construct the training and testing datasets for our experiments, which is a CBQA-specific dataset containing knowledge across 24 topics extracted from Wikipedia (Section 3.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats closed-book question answering as answering questions from knowledge stored in the model's parameters, internal knowledge, or parametric memory, without external documents, evidence, or other supporting context. In descriptions that specify the procedure, the model is given only the question, with no supporting evidence in the prompt, and is instructed to provide an answer. Some papers further describe the questions as factual or knowledge-intensive, and one paper uses the alternate name closed-book retrieval for answering a query or retrieving information without any external context or knowledge source."
+    },
+    {
+      "label": "Variants.",
+      "text": "Most papers study it as closed-book QA over datasets such as TriviaQA, WebQuestions, Natural Questions, and EntityQuestions. These settings are described as knowledge-intensive questions, natural web queries, and a CBQA-specific dataset with knowledge extracted from Wikipedia. A smaller line of work uses the name closed-book retrieval and includes memory-intensive retrieval, including a phone-book task."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to 3 measurement instruments, all question-answering datasets: EntityQuestions, TriviaQA, and WebQuestions. EntityQuestions is described as CBQA-specific, TriviaQA supplies knowledge-intensive questions, and WebQuestions appears as a closed-book question-answering dataset sourced from natural web queries."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not present this behavior as evidence of a construct. One paper instead reports that it is related to Hallucination, describing hallucinations in closed-book question answering as cases where the model generates incorrect or fabricated answers."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats closed-book question answering as answering questions from knowledge stored in the model's parameters, internal knowledge, or parametric memory, without external documents, evidence, or other supporting context. In descriptions that specify the procedure, the model is given only the question, with no supporting evidence in the prompt, and is instructed to provide an answer. Some papers further describe the questions as factual or knowledge-intensive, and one paper uses the alternate name closed-book retrieval for answering a query or retrieving information without any external context or knowledge source.\n\nVariants. Most papers study it as closed-book QA over datasets such as TriviaQA, WebQuestions, Natural Questions, and EntityQuestions. These settings are described as knowledge-intensive questions, natural web queries, and a CBQA-specific dataset with knowledge extracted from Wikipedia. A smaller line of work uses the name closed-book retrieval and includes memory-intensive retrieval, including a phone-book task.\n\nSpace of elicitation and scores. Papers link this behavior to 3 measurement instruments, all question-answering datasets: EntityQuestions, TriviaQA, and WebQuestions. EntityQuestions is described as CBQA-specific, TriviaQA supplies knowledge-intensive questions, and WebQuestions appears as a closed-book question-answering dataset sourced from natural web queries.\n\nWhat it is taken as evidence of. Papers do not present this behavior as evidence of a construct. One paper instead reports that it is related to Hallucination, describing hallucinations in closed-book question answering as cases where the model generates incorrect or fabricated answers.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Structure-aware Domain Knowledge Injection for Large Language Models"
+    ],
+    "emnlp25": [
+      "AQuilt: Weaving Logic and Self-Inspection into Low-Cost, High-Relevance Data Synthesis for Specialist LLMs",
+      "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels"
+    ],
+    "iclr24": [
+      "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+      "Benchmarking and Improving Generator-Validator Consistency of Language Models",
+      "Mixture of LoRA Experts",
+      "The Cost of Scaling Down Large Language Models: Reducing Model Size Affects Memory before In-context Learning",
+      "Two-stage LLM Fine-tuning with Less Specialization and More Generalization"
+    ],
+    "iclr25": [
+      "Mixture of Parrots: Experts improve memorization more than reasoning"
+    ],
+    "neurips24": [
+      "BERTs are Generative In-Context Learners",
+      "Empowering and Assessing the Utility of Large Language Models in Crop Science"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 2,
+    "iclr24": 5,
+    "iclr25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

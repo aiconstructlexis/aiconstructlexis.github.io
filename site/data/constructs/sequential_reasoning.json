@@ -1,0 +1,99 @@
+{
+  "canonical_name": "Sequential reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing framing is of a latent or inferred ability to understand and reason over sequences across multiple steps. One formulation centers sequences of actions and states in a dynamic environment and stresses maintaining a coherent interpretation over time, while another uses dialogue histories as the example and ties the ability to processing prior utterances in order to choose an appropriate next action. Quoted passages use the term in settings where models \"struggle with multi-step sequential reasoning\" and where the next token \"requires complex, sequential reasoning\" over what has been said so far.\n\nSpace of facets. The usage in the papers spans sequences of actions and states in dynamic environments, long-horizon sequential tasks, and histories of utterances in dialogue. In nearby framing, papers mention it together with compositional reasoning, planning, and length generalization, and one related account links it to multi-hop reasoning by describing sequential reasoning as stepwise chart interpretation.\n\nSpace of measurement. Operationalization is narrow in the papers: sequential reasoning is linked to 1 measurement instrument and no behavioral indicators. The named instrument is seqBench, described as a tunable benchmark designed explicitly to probe and analyze sequential reasoning capabilities in language models. The measurement framing is presented as direct, with the benchmark introduced to probe the capability itself.\n\nLinks. Beyond measurement, one paper reports that Multi-hop reasoning is related to Sequential reasoning, stating that sequential reasoning evaluates the model's ability to perform multi-hop reasoning through stepwise chart interpretation.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Sequential reasoning"
+  ],
+  "papers": [
+    "ReSeeding Latent States for Sequential Language Understanding",
+    "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs",
+    "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The latent ability to understand and reason over sequences of actions and states, maintaining coherent interpretation across multiple steps in a dynamic environment.",
+      "papers": [
+        "ReSeeding Latent States for Sequential Language Understanding",
+        "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning"
+      ],
+      "original_name": "Sequential reasoning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-hop reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MultiChartQA: Benchmarking Vision-Language Models on Multi-Chart Problems",
+      "evidence": "Sequential Reasoning evaluates the model\u2019s ability to perform multi-hop reasoning, interpreting charts in a stepwise manner. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "MultiChartQA: Benchmarking Vision-Language Models on Multi-Chart Problems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "seqBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs",
+      "evidence": "we introduce seqBench, a tunable benchmark designed explicitly to probe and analyze sequential reasoning capabilities in language models. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing framing is of a latent or inferred ability to understand and reason over sequences across multiple steps. One formulation centers sequences of actions and states in a dynamic environment and stresses maintaining a coherent interpretation over time, while another uses dialogue histories as the example and ties the ability to processing prior utterances in order to choose an appropriate next action. Quoted passages use the term in settings where models \"struggle with multi-step sequential reasoning\" and where the next token \"requires complex, sequential reasoning\" over what has been said so far."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The usage in the papers spans sequences of actions and states in dynamic environments, long-horizon sequential tasks, and histories of utterances in dialogue. In nearby framing, papers mention it together with compositional reasoning, planning, and length generalization, and one related account links it to multi-hop reasoning by describing sequential reasoning as stepwise chart interpretation."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow in the papers: sequential reasoning is linked to 1 measurement instrument and no behavioral indicators. The named instrument is seqBench, described as a tunable benchmark designed explicitly to probe and analyze sequential reasoning capabilities in language models. The measurement framing is presented as direct, with the benchmark introduced to probe the capability itself."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper reports that Multi-hop reasoning is related to Sequential reasoning, stating that sequential reasoning evaluates the model's ability to perform multi-hop reasoning through stepwise chart interpretation."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing framing is of a latent or inferred ability to understand and reason over sequences across multiple steps. One formulation centers sequences of actions and states in a dynamic environment and stresses maintaining a coherent interpretation over time, while another uses dialogue histories as the example and ties the ability to processing prior utterances in order to choose an appropriate next action. Quoted passages use the term in settings where models \"struggle with multi-step sequential reasoning\" and where the next token \"requires complex, sequential reasoning\" over what has been said so far.\n\nSpace of facets. The usage in the papers spans sequences of actions and states in dynamic environments, long-horizon sequential tasks, and histories of utterances in dialogue. In nearby framing, papers mention it together with compositional reasoning, planning, and length generalization, and one related account links it to multi-hop reasoning by describing sequential reasoning as stepwise chart interpretation.\n\nSpace of measurement. Operationalization is narrow in the papers: sequential reasoning is linked to 1 measurement instrument and no behavioral indicators. The named instrument is seqBench, described as a tunable benchmark designed explicitly to probe and analyze sequential reasoning capabilities in language models. The measurement framing is presented as direct, with the benchmark introduced to probe the capability itself.\n\nLinks. Beyond measurement, one paper reports that Multi-hop reasoning is related to Sequential reasoning, stating that sequential reasoning evaluates the model's ability to perform multi-hop reasoning through stepwise chart interpretation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "ReSeeding Latent States for Sequential Language Understanding",
+      "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs"
+    ],
+    "iclr25": [
+      "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

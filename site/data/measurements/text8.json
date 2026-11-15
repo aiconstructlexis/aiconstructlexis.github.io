@@ -1,0 +1,52 @@
+{
+  "canonical_name": "Text8",
+  "type": "measurement",
+  "canonical_definition": "A character-level text modeling benchmark extracted from English Wikipedia and used to evaluate language model likelihood on short text chunks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text8",
+    "text8"
+  ],
+  "papers": [
+    "Energy-Based Diffusion Language Models for Text Generation",
+    "Think while You Generate: Discrete Diffusion with Planned Denoising"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "A character-level text modeling benchmark extracted from English Wikipedia and used to evaluate language model likelihood on short text chunks.",
+      "papers": [
+        "Energy-Based Diffusion Language Models for Text Generation"
+      ],
+      "original_name": "Text8"
+    },
+    {
+      "text": "A character-level language modeling benchmark built from Wikipedia text segmented into 256-character chunks.",
+      "papers": [
+        "Think while You Generate: Discrete Diffusion with Planned Denoising"
+      ],
+      "original_name": "text8"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "A character-level text modeling benchmark extracted from English Wikipedia and used to evaluate language model likelihood on short text chunks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Energy-Based Diffusion Language Models for Text Generation",
+      "Think while You Generate: Discrete Diffusion with Planned Denoising"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

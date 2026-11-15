@@ -1,0 +1,129 @@
+# The configuration of the released AI Construct Lexis, v0.0.1.
+#
+# Seven venues, three extraction models per paper with a vote that keeps what at least two
+# models support, Gemini 2.5 Pro harmonization, GPT-5.4 summaries. Paths are relative to this
+# file. Running it end to end downloads the 7,175 screened-in PDFs (all 17,835 proceedings
+# PDFs if `papers:` is removed so that screening reruns) and makes paid API calls to three
+# providers. After `lexis run --config configs/lexis_v0.0.1.yaml --stages ingest,screen`,
+# run `lexis run --config configs/lexis_v0.0.1.yaml --dry-run` to see the extraction request
+# estimate first (and a cost estimate when the models carry a
+# `price: [input_usd_per_million, output_usd_per_million]`); try example_small.yaml for the
+# pipeline on a handful of papers.
+#
+# API keys are read from the environment: OPENAI_API_KEY, GOOGLE_API_KEY, TOGETHER_API_KEY.
+
+version: "0.0.1"
+
+paths:
+  work_dir: ../../runs/lexis_v0.0.1   # intermediate outputs (per venue and joint)
+  pdf_dir: ../../runs/pdfs            # downloaded papers, one folder per venue
+  log_dir: ../../runs/logs
+
+prompts: default                      # aiconstructlexis/prompts/default.py; part of the release run used
+                                      # the earlier revision in aiconstructlexis/prompts/earlier.py (docs/MODEL_CARD.md)
+
+# Each venue: where its main-conference papers come from. `papers` points at the screened
+# paper list of the release (title, url, is_LLM_paper); remove it to re-download and
+# re-screen. PDF paths are added by the ingest stage.
+venues:
+  - id: iclr24
+    conference: iclr
+    year: 2024
+    source: proceedings
+    papers: ../../lexis/paper_lists/iclr24.json
+  - id: neurips24
+    conference: neurips
+    year: 2024
+    source: proceedings
+    papers: ../../lexis/paper_lists/neurips24.json
+    models: &qwen35_panel             # the Qwen 3.5 batch failed partway through the run; later venues use the default panel
+      - { provider: google,   model: gemini-2.5-pro,          label: gemini25pro }
+      - { provider: openai,   model: gpt-5.4-mini,            label: gpt54mini }
+      - { provider: together, model: Qwen/Qwen3.5-397B-A17B,  label: qwen35_397b }
+  - id: iclr25
+    conference: iclr
+    year: 2025
+    source: openreview
+    papers: ../../lexis/paper_lists/iclr25.json
+    models: *qwen35_panel
+  - id: naacl25
+    conference: naacl
+    year: 2025
+    source: anthology
+    volume: 2025.naacl-long
+    papers: ../../lexis/paper_lists/naacl25.json
+  - id: acl25
+    conference: acl
+    year: 2025
+    source: anthology
+    volume: 2025.acl-long
+    papers: ../../lexis/paper_lists/acl25.json
+  - id: icml25
+    conference: icml
+    year: 2025
+    source: pmlr
+    volume: "267"
+    papers: ../../lexis/paper_lists/icml25.json
+  - id: emnlp25
+    conference: emnlp
+    year: 2025
+    source: anthology
+    volume: 2025.emnlp-main
+    papers: ../../lexis/paper_lists/emnlp25.json
+
+screening:
+  enabled: true
+  provider: together
+  model: openai/gpt-oss-120b
+  mode: batch                         # batch (Together batch API) or sync
+
+extraction:
+  # The default panel (venues without their own `models`). Labels name the per-model
+  # trial directories and must stay stable across runs.
+  models:
+    - { provider: google,   model: gemini-2.5-pro,                           label: gemini25pro }
+    - { provider: openai,   model: gpt-5.4-mini,                             label: gpt54mini }
+    - { provider: together, model: Qwen/Qwen3-235B-A22B-Instruct-2507-tput, label: qwen3_235b }
+  temperature: 0
+  workers: 5
+  max_papers: 0                       # 0 = every screened paper
+
+harmonization:
+  provider: google
+  model: gemini-2.5-pro
+  batch_size: 100
+  batch_retries: 0
+  on_batch_failure: warn              # warn: a batch that still fails is logged and skipped; stop: the run ends
+
+voting:
+  threshold: 2                        # models that must support an (entity, paper) or (pair, paper)
+  min_papers: 2                       # per venue: entities with fewer papers are dropped before the join
+  survivor: strictest                 # one relationship type per pair: causes > measured_by > correlates > related
+  type_guard: true                    # measured_by points at an instrument; causes never touches one; correlates joins two instruments or none
+
+join:
+  provider: google
+  model: gemini-2.5-pro
+  batch_size: 500
+
+curation:
+  # The reviewer corrections of v0.0.1 are folded into the released artifact
+  # (lexis/ai_construct_lexis_v0.0.1.json). Point this at a JSONL of operations
+  # (format: aiconstructlexis/curate/overlay.py) to apply your own.
+  overlay: null
+
+summaries:
+  enabled: true
+  provider: openai
+  model: gpt-5.4
+  reasoning_effort: high
+  min_papers: 3                       # entities with fewer papers get a short deterministic description
+
+export:
+  site_dir: ../../site                # the website directory of this repository
+  artifact_out: ../../lexis/ai_construct_lexis_v0.0.1.json
+  readable: true
+  analysis_bundle: true
+  graph_layout: true
+  layout_seed: 7
+  check: true

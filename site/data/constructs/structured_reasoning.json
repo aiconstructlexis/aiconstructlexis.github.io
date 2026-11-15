@@ -1,0 +1,169 @@
+{
+  "canonical_name": "Structured reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats structured reasoning as a latent ability to carry out organized, explicit, multi-step reasoning while respecting formal or structural constraints. Most definitions emphasize step-wise decomposition, multi-step dependencies, or graph-like reasoning paths, and some add the use of external structured evidence or semantically rich knowledge. A smaller line of work narrows the construct to particular settings such as planning, text assessment, navigation, biological perturbation reasoning, or microservice call-graph generation, and definitions differ on whether it is framed as an internal reasoning capacity or as the ability to produce outputs that satisfy structural constraints such as valid DAGs and temporal ordering.\n\nSpace of facets. Papers describe structured reasoning through explicit reasoning structures. It appears as sequences of causally linked steps, graphs of interconnected reasoning steps, divergent reasoning with retrieved knowledge in a graph-like framework, and structural chain-of-thought forms such as multi-chain, tree, and graph reasoning. The terminology is not fully uniform: some authors use \"structural reasoning\" for non-linear tree or graph paths and constraint-adhering generation, while others use \"structured reasoning\" for formal, step-wise, and graph-based reasoning.\n\nSpace of measurement. In linked operationalizations, papers connect structured reasoning to 1 measurement instrument, the Abstraction and Reasoning Corpus, and no behavioral indicators. ARC is used as a benchmark and is described as \"designed as a benchmark for human-like structured reasoning.\" The only linked operationalization is therefore benchmark-based; no linked human evaluation, LLM-as-a-judge, probe, or behavioral indicator appears.\n\nLinks. Several papers claim a causal relationship from structured reasoning to interpretability and explainability. Their recorded evidence says structured reasoning has been explored to enhance explainability, and that explicitly encoding reasoning steps makes verification \"interpretable and executable.\" Papers also report that causal reasoning is related to structured reasoning through graphs of interconnected steps that draw on causality theory, and that program synthesis ability is related to structured reasoning in work describing programming by example as a general paradigm for structured reasoning and data transformation tasks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Structured reasoning",
+    "Structural reasoning"
+  ],
+  "papers": [
+    "RePanda: Pandas-powered Tabular Verification and Reasoning",
+    "STRICTA: Structured Reasoning in Critical Text Assessment for Peer Review and Beyond",
+    "FlightGPT: Towards Generalizable and Interpretable UAV Vision-and-Language Navigation with Vision-Language Models",
+    "Large Language Models as Realistic Microservice Trace Generators",
+    "Contextualizing biological perturbation experiments through language",
+    "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+    "Divide and Conquer: Grounding LLMs as Efficient Decision-Making Agents via Offline Hierarchical Reinforcement Learning",
+    "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+    "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis",
+    "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "The ability to reason in a way that respects formal constraints and multi-step dependencies in planning problems.",
+      "papers": [
+        "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models",
+        "STRICTA: Structured Reasoning in Critical Text Assessment for Peer Review and Beyond",
+        "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation",
+        "FlightGPT: Towards Generalizable and Interpretable UAV Vision-and-Language Navigation with Vision-Language Models"
+      ],
+      "original_name": "Structured reasoning"
+    },
+    {
+      "text": "The ability to follow and generate complex, non-linear reasoning paths, such as those structured as trees or graphs.",
+      "papers": [
+        "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+        "Large Language Models as Realistic Microservice Trace Generators"
+      ],
+      "original_name": "Structural reasoning"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning",
+      "evidence": "To enhance the accuracy and explainability of natural language reasoning, structured reasoning has been frequently explored as an alternative. (Introduction)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning"
+        ],
+        "acl25": [
+          "RePanda: Pandas-powered Tabular Verification and Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Causal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "STRICTA: Structured Reasoning in Critical Text Assessment for Peer Review and Beyond",
+      "evidence": "STRICTA breaks down the assessment into a graph of interconnected reasoning steps drawing on causality theory (Pearl, 1995).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "STRICTA: Structured Reasoning in Critical Text Assessment for Peer Review and Beyond"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Abstraction and Reasoning Corpus",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis",
+      "evidence": "As one example, consider the Abstraction and Reasoning Corpus (ARC) [14], which was designed as a benchmark for human-like structured reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Program synthesis ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis",
+      "evidence": "Beyond grid puzzles, PBE is a general paradigm for structured reasoning and data transformation tasks",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats structured reasoning as a latent ability to carry out organized, explicit, multi-step reasoning while respecting formal or structural constraints. Most definitions emphasize step-wise decomposition, multi-step dependencies, or graph-like reasoning paths, and some add the use of external structured evidence or semantically rich knowledge. A smaller line of work narrows the construct to particular settings such as planning, text assessment, navigation, biological perturbation reasoning, or microservice call-graph generation, and definitions differ on whether it is framed as an internal reasoning capacity or as the ability to produce outputs that satisfy structural constraints such as valid DAGs and temporal ordering."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers describe structured reasoning through explicit reasoning structures. It appears as sequences of causally linked steps, graphs of interconnected reasoning steps, divergent reasoning with retrieved knowledge in a graph-like framework, and structural chain-of-thought forms such as multi-chain, tree, and graph reasoning. The terminology is not fully uniform: some authors use \"structural reasoning\" for non-linear tree or graph paths and constraint-adhering generation, while others use \"structured reasoning\" for formal, step-wise, and graph-based reasoning."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "In linked operationalizations, papers connect structured reasoning to 1 measurement instrument, the Abstraction and Reasoning Corpus, and no behavioral indicators. ARC is used as a benchmark and is described as \"designed as a benchmark for human-like structured reasoning.\" The only linked operationalization is therefore benchmark-based; no linked human evaluation, LLM-as-a-judge, probe, or behavioral indicator appears."
+    },
+    {
+      "label": "Links.",
+      "text": "Several papers claim a causal relationship from structured reasoning to interpretability and explainability. Their recorded evidence says structured reasoning has been explored to enhance explainability, and that explicitly encoding reasoning steps makes verification \"interpretable and executable.\" Papers also report that causal reasoning is related to structured reasoning through graphs of interconnected steps that draw on causality theory, and that program synthesis ability is related to structured reasoning in work describing programming by example as a general paradigm for structured reasoning and data transformation tasks."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats structured reasoning as a latent ability to carry out organized, explicit, multi-step reasoning while respecting formal or structural constraints. Most definitions emphasize step-wise decomposition, multi-step dependencies, or graph-like reasoning paths, and some add the use of external structured evidence or semantically rich knowledge. A smaller line of work narrows the construct to particular settings such as planning, text assessment, navigation, biological perturbation reasoning, or microservice call-graph generation, and definitions differ on whether it is framed as an internal reasoning capacity or as the ability to produce outputs that satisfy structural constraints such as valid DAGs and temporal ordering.\n\nSpace of facets. Papers describe structured reasoning through explicit reasoning structures. It appears as sequences of causally linked steps, graphs of interconnected reasoning steps, divergent reasoning with retrieved knowledge in a graph-like framework, and structural chain-of-thought forms such as multi-chain, tree, and graph reasoning. The terminology is not fully uniform: some authors use \"structural reasoning\" for non-linear tree or graph paths and constraint-adhering generation, while others use \"structured reasoning\" for formal, step-wise, and graph-based reasoning.\n\nSpace of measurement. In linked operationalizations, papers connect structured reasoning to 1 measurement instrument, the Abstraction and Reasoning Corpus, and no behavioral indicators. ARC is used as a benchmark and is described as \"designed as a benchmark for human-like structured reasoning.\" The only linked operationalization is therefore benchmark-based; no linked human evaluation, LLM-as-a-judge, probe, or behavioral indicator appears.\n\nLinks. Several papers claim a causal relationship from structured reasoning to interpretability and explainability. Their recorded evidence says structured reasoning has been explored to enhance explainability, and that explicitly encoding reasoning steps makes verification \"interpretable and executable.\" Papers also report that causal reasoning is related to structured reasoning through graphs of interconnected steps that draw on causality theory, and that program synthesis ability is related to structured reasoning in work describing programming by example as a general paradigm for structured reasoning and data transformation tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "RePanda: Pandas-powered Tabular Verification and Reasoning",
+      "STRICTA: Structured Reasoning in Critical Text Assessment for Peer Review and Beyond"
+    ],
+    "emnlp25": [
+      "FlightGPT: Towards Generalizable and Interpretable UAV Vision-and-Language Navigation with Vision-Language Models",
+      "Large Language Models as Realistic Microservice Trace Generators"
+    ],
+    "iclr25": [
+      "Contextualizing biological perturbation experiments through language",
+      "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+    ],
+    "icml25": [
+      "Divide and Conquer: Grounding LLMs as Efficient Decision-Making Agents via Offline Hierarchical Reinforcement Learning",
+      "GIVE: Structured Reasoning of Large Language Models with Knowledge Graph Inspired Veracity Extrapolation"
+    ],
+    "neurips24": [
+      "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis",
+      "Leveraging Environment Interaction for Automated PDDL Translation and Planning with Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2,
+    "iclr25": 2,
+    "icml25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

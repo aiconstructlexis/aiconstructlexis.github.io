@@ -1,0 +1,117 @@
+{
+  "canonical_name": "Social and emotional intelligence",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats this as an ability, or latent ability, to process social and emotional information in interaction. Definitions converge on understanding social and emotional context, with one paper specifying others' intentions, actions, feelings, and social nuances, and another operationally narrowing it to answering questions about social interactions in ways that reflect such understanding. Another variant uses the label \"socio-emotional skills\" and includes managing, not just understanding, the social and emotional aspects of interaction; one paper also characterizes human social and emotional intelligence as requiring both introspection and predicting the feelings of others.\n\nSpace of facets. Papers use closely related labels, including \"social and emotional intelligence,\" \"social/emotional intelligence,\" and \"socio-emotional skills,\" for overlapping ideas. One paper contrasts social/emotional intelligence with physical commonsense as another domain language models do not capture well, while another discusses it in the same neighborhood as theory of mind and executive skills.\n\nSpace of measurement. Operationalization is entirely through instruments rather than behavioral indicators: papers link the construct to 2 measurement instruments, most often SIQA, then EQ-Bench. SIQA is described as the Social IQA dataset, and one study states that it \"measures social and emotional intelligence through questions about social interactions\"; another paper places EQ-Bench within a socio-emotional evaluation grouping. No behavioral indicators or other constructs are linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Social and emotional intelligence",
+    "Social/emotional intelligence",
+    "Socio-emotional skills"
+  ],
+  "papers": [
+    "Playpen: An Environment for Exploring Learning From Dialogue Game Feedback",
+    "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption",
+    "Divergences between Language Models and Human Brains"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The ability to answer questions about social interactions in a way that reflects understanding of social and emotional context.",
+      "papers": [
+        "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption"
+      ],
+      "original_name": "Social and emotional intelligence"
+    },
+    {
+      "text": "The latent ability to process social and emotional information, including understanding other people's intentions, actions, feelings, and the nuances of social contexts.",
+      "papers": [
+        "Divergences between Language Models and Human Brains"
+      ],
+      "original_name": "Social/emotional intelligence"
+    },
+    {
+      "text": "The ability to understand and manage social and emotional aspects of interaction.",
+      "papers": [
+        "Playpen: An Environment for Exploring Learning From Dialogue Game Feedback"
+      ],
+      "original_name": "Socio-emotional skills"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Divergences between Language Models and Human Brains",
+      "evidence": "We study social and emotional intelligence using the Social IQa dataset [Sap et al., 2019]. (Section 5.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Divergences between Language Models and Human Brains"
+        ],
+        "icml25": [
+          "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "EQ-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Playpen: An Environment for Exploring Learning From Dialogue Game Feedback",
+      "evidence": "Socio-emotional includes EQ-Bench, LM-Pragmatics, SocialIQA, and SimpleToM (Table 2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Playpen: An Environment for Exploring Learning From Dialogue Game Feedback"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats this as an ability, or latent ability, to process social and emotional information in interaction. Definitions converge on understanding social and emotional context, with one paper specifying others' intentions, actions, feelings, and social nuances, and another operationally narrowing it to answering questions about social interactions in ways that reflect such understanding. Another variant uses the label \"socio-emotional skills\" and includes managing, not just understanding, the social and emotional aspects of interaction; one paper also characterizes human social and emotional intelligence as requiring both introspection and predicting the feelings of others."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use closely related labels, including \"social and emotional intelligence,\" \"social/emotional intelligence,\" and \"socio-emotional skills,\" for overlapping ideas. One paper contrasts social/emotional intelligence with physical commonsense as another domain language models do not capture well, while another discusses it in the same neighborhood as theory of mind and executive skills."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is entirely through instruments rather than behavioral indicators: papers link the construct to 2 measurement instruments, most often SIQA, then EQ-Bench. SIQA is described as the Social IQA dataset, and one study states that it \"measures social and emotional intelligence through questions about social interactions\"; another paper places EQ-Bench within a socio-emotional evaluation grouping. No behavioral indicators or other constructs are linked to it."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats this as an ability, or latent ability, to process social and emotional information in interaction. Definitions converge on understanding social and emotional context, with one paper specifying others' intentions, actions, feelings, and social nuances, and another operationally narrowing it to answering questions about social interactions in ways that reflect such understanding. Another variant uses the label \"socio-emotional skills\" and includes managing, not just understanding, the social and emotional aspects of interaction; one paper also characterizes human social and emotional intelligence as requiring both introspection and predicting the feelings of others.\n\nSpace of facets. Papers use closely related labels, including \"social and emotional intelligence,\" \"social/emotional intelligence,\" and \"socio-emotional skills,\" for overlapping ideas. One paper contrasts social/emotional intelligence with physical commonsense as another domain language models do not capture well, while another discusses it in the same neighborhood as theory of mind and executive skills.\n\nSpace of measurement. Operationalization is entirely through instruments rather than behavioral indicators: papers link the construct to 2 measurement instruments, most often SIQA, then EQ-Bench. SIQA is described as the Social IQA dataset, and one study states that it \"measures social and emotional intelligence through questions about social interactions\"; another paper places EQ-Bench within a socio-emotional evaluation grouping. No behavioral indicators or other constructs are linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Playpen: An Environment for Exploring Learning From Dialogue Game Feedback"
+    ],
+    "icml25": [
+      "EncryptedLLM: Privacy-Preserving Large Language Model Inference via GPU-Accelerated Fully Homomorphic Encryption"
+    ],
+    "neurips24": [
+      "Divergences between Language Models and Human Brains"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "neurips24"
+  ]
+}

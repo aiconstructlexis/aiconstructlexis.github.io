@@ -1,0 +1,176 @@
+{
+  "canonical_name": "VLMEvalKit",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most papers describe VLMEvalKit as an evaluation toolkit or standardized platform for assessing vision-language or multimodal models on benchmarks. Recurring details are that it is open-source, serves as a common codebase, and is used to keep settings consistent across methods for fair comparison or unified reproduction of results. A smaller line of work also treats it as a source of benchmark results, with one paper describing it as including diverse benchmarks and performance results from more than 100 MLLMs.\n\nWhat it is claimed to measure. Across papers, VLMEvalKit is not linked to any named constructs or behavioral indicators. Instead, it is described in broad performance terms, assessing vision-language, large vision-language, or multimodal models on various benchmarks, including reasoning benchmarks and benchmark-specific evaluations. The prevailing framing is therefore benchmark evaluation rather than measurement of a single named construct.\n\nSpace of uses. In use, papers usually position VLMEvalKit as the shared evaluation framework for running experiments under the same configuration, sometimes within OpenCompass, and one paper uses results obtained through it as a data source for redundancy analysis. Papers relate it to three other instruments: MMBench-Video is related to VLMEvalKit because its evaluation code \"will be integrated into VLMEvalKit,\" and MME-RealWorld and MMStar are related to it in work stating that \"the evaluation framework employed for these benchmarks was VLMEvalKit.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "VLMEvalKit",
+    "VLMEvalkit",
+    "OpenCompass VLMEvalKit"
+  ],
+  "papers": [
+    "Redundancy Principles for MLLMs Benchmarks",
+    "Scalable Vision Language Model Training via High Quality Data Curation",
+    "KRETA: A Benchmark for Korean Reading and Reasoning in Text-Rich VQA Attuned to Diverse Visual Contexts",
+    "Retrieval Enhanced Feedback via In-context Neural Error-book",
+    "Dynamic Multimodal Evaluation with Flexible Complexity by Vision-Language Bootstrapping",
+    "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+    "Learning Interleaved Image-Text Comprehension in Vision-Language Large Models",
+    "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+    "Reconstructive Visual Instruction Tuning",
+    "Revealing and Reducing Gender Biases in Vision and Language Assistants (VLAs)",
+    "Can We Predict Performance of Large Models across Vision-Language Tasks?",
+    "Parrot: Multilingual Visual Instruction Tuning",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+    "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+    "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge"
+  ],
+  "paper_count": 18,
+  "definitions": [
+    {
+      "text": "An evaluation toolkit used to assess the performance of Vision-Language Models on various benchmarks.",
+      "papers": [
+        "Revealing and Reducing Gender Biases in Vision and Language Assistants (VLAs)",
+        "Redundancy Principles for MLLMs Benchmarks",
+        "Parrot: Multilingual Visual Instruction Tuning",
+        "KRETA: A Benchmark for Korean Reading and Reasoning in Text-Rich VQA Attuned to Diverse Visual Contexts",
+        "Retrieval Enhanced Feedback via In-context Neural Error-book",
+        "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+        "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI",
+        "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+        "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+        "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge"
+      ],
+      "original_name": "VLMEvalKit"
+    },
+    {
+      "text": "A standardized evaluation platform used for assessing Large Vision-Language Models to ensure fair comparisons.",
+      "papers": [
+        "Dynamic Multimodal Evaluation with Flexible Complexity by Vision-Language Bootstrapping"
+      ],
+      "original_name": "VLMEvalkit"
+    },
+    {
+      "text": "A universal evaluation platform used to reproduce multimodal benchmark results.",
+      "papers": [
+        "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+      ],
+      "original_name": "OpenCompass VLMEvalKit"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "MMBench-Video",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "evidence": "The evalutation code of MMBench-Video will be integrated into VLMEvalKit (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "MME-RealWorld",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Retrieval Enhanced Feedback via In-context Neural Error-book",
+      "evidence": "\"The evaluation framework employed for these benchmarks was VLMEvalKit (Duan et al., 2024).\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Retrieval Enhanced Feedback via In-context Neural Error-book"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "MMStar",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Retrieval Enhanced Feedback via In-context Neural Error-book",
+      "evidence": "\"The evaluation framework employed for these benchmarks was VLMEvalKit (Duan et al., 2024).\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Retrieval Enhanced Feedback via In-context Neural Error-book"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most papers describe VLMEvalKit as an evaluation toolkit or standardized platform for assessing vision-language or multimodal models on benchmarks. Recurring details are that it is open-source, serves as a common codebase, and is used to keep settings consistent across methods for fair comparison or unified reproduction of results. A smaller line of work also treats it as a source of benchmark results, with one paper describing it as including diverse benchmarks and performance results from more than 100 MLLMs."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across papers, VLMEvalKit is not linked to any named constructs or behavioral indicators. Instead, it is described in broad performance terms, assessing vision-language, large vision-language, or multimodal models on various benchmarks, including reasoning benchmarks and benchmark-specific evaluations. The prevailing framing is therefore benchmark evaluation rather than measurement of a single named construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers usually position VLMEvalKit as the shared evaluation framework for running experiments under the same configuration, sometimes within OpenCompass, and one paper uses results obtained through it as a data source for redundancy analysis. Papers relate it to three other instruments: MMBench-Video is related to VLMEvalKit because its evaluation code \"will be integrated into VLMEvalKit,\" and MME-RealWorld and MMStar are related to it in work stating that \"the evaluation framework employed for these benchmarks was VLMEvalKit.\""
+    }
+  ],
+  "characterization": "What it is. Most papers describe VLMEvalKit as an evaluation toolkit or standardized platform for assessing vision-language or multimodal models on benchmarks. Recurring details are that it is open-source, serves as a common codebase, and is used to keep settings consistent across methods for fair comparison or unified reproduction of results. A smaller line of work also treats it as a source of benchmark results, with one paper describing it as including diverse benchmarks and performance results from more than 100 MLLMs.\n\nWhat it is claimed to measure. Across papers, VLMEvalKit is not linked to any named constructs or behavioral indicators. Instead, it is described in broad performance terms, assessing vision-language, large vision-language, or multimodal models on various benchmarks, including reasoning benchmarks and benchmark-specific evaluations. The prevailing framing is therefore benchmark evaluation rather than measurement of a single named construct.\n\nSpace of uses. In use, papers usually position VLMEvalKit as the shared evaluation framework for running experiments under the same configuration, sometimes within OpenCompass, and one paper uses results obtained through it as a data source for redundancy analysis. Papers relate it to three other instruments: MMBench-Video is related to VLMEvalKit because its evaluation code \"will be integrated into VLMEvalKit,\" and MME-RealWorld and MMStar are related to it in work stating that \"the evaluation framework employed for these benchmarks was VLMEvalKit.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Redundancy Principles for MLLMs Benchmarks",
+      "Scalable Vision Language Model Training via High Quality Data Curation"
+    ],
+    "iclr25": [
+      "Dynamic Multimodal Evaluation with Flexible Complexity by Vision-Language Bootstrapping",
+      "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+      "Learning Interleaved Image-Text Comprehension in Vision-Language Large Models",
+      "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "Reconstructive Visual Instruction Tuning",
+      "Revealing and Reducing Gender Biases in Vision and Language Assistants (VLAs)"
+    ],
+    "icml25": [
+      "Can We Predict Performance of Large Models across Vision-Language Tasks?",
+      "Parrot: Multilingual Visual Instruction Tuning"
+    ],
+    "neurips24": [
+      "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "GMAI-MMBench: A Comprehensive Multimodal Evaluation Benchmark Towards General Medical AI",
+      "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs",
+      "SearchLVLMs: A Plug-and-Play Framework for Augmenting Large Vision-Language Models by Searching Up-to-Date Internet Knowledge"
+    ],
+    "emnlp25": [
+      "KRETA: A Benchmark for Korean Reading and Reasoning in Text-Rich VQA Attuned to Diverse Visual Contexts",
+      "Retrieval Enhanced Feedback via In-context Neural Error-book"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 6,
+    "icml25": 2,
+    "neurips24": 6,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

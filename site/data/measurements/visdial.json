@@ -1,0 +1,113 @@
+{
+  "canonical_name": "VisDial",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most definitions converge on treating VisDial as a Visual Dialog dataset or multi-turn visual dialogue benchmark centered on conversation about an image. Papers describe it as evaluating a model's ability to engage in a multi-turn conversation about an image, or to answer a series of questions about an image. A smaller framing presents it as a benchmark for chat-to-image acquisition, with experiments for image acquisition in multi-turn chat scenarios, and one source also places it within an ablation study across five datasets.\n\nWhat it is claimed to measure. Papers link VisDial to one construct and two behavioral indicators. The construct-level use is to measure multimodal understanding, while the behavioral indicators most often attached to it are cross-modal retrieval and visual question answering. These claims are spread across several targets rather than restricted to a single one: one paper evaluates visual question answering on VisDial, another reports using the Visual Dialog dataset in cross-modal retrieval for comparability to previous work, and another includes VisDial when assessing multimodal vision and language capabilities.\n\nSpace of uses. Papers most often position VisDial as one dataset within broader evaluation setups rather than as a standalone instrument. It appears alongside several tasks when models are evaluated for multimodal vision and language capabilities, is used in an ablation study across five datasets, and is also used for comparability to previous work in cross-modal retrieval; no measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "VisDial"
+  ],
+  "papers": [
+    "Emu: Generative Pretraining in Multimodality",
+    "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning",
+    "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+    "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The Visual Dialog dataset, which evaluates a model's ability to engage in a multi-turn conversation about an image.",
+      "papers": [
+        "Emu: Generative Pretraining in Multimodality",
+        "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning",
+        "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models"
+      ],
+      "original_name": "VisDial"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "evidence": "In order to assess multimodal vision and language capabilities of DEEM , we conduct evaluation against current SOTA LMMs ... across several tasks, including ... visual question answering on ... VisDial (Das et al., 2017) (Section 3.2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DEEM: Diffusion models serve as the eyes of large language models for image perception"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "evidence": "In order to assess multimodal vision and language capabilities of DEEM , we conduct evaluation against current SOTA LMMs ... across several tasks, including ... VisDial (Das et al., 2017)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DEEM: Diffusion models serve as the eyes of large language models for image perception"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-modal retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Bridging Vision and Language Spaces with Assignment Prediction",
+      "evidence": "In cross-modal retrieval, we use the Visual Dialog (Das et al., 2017) dataset for the comparability to previous work (Koh et al., 2023).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Bridging Vision and Language Spaces with Assignment Prediction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most definitions converge on treating VisDial as a Visual Dialog dataset or multi-turn visual dialogue benchmark centered on conversation about an image. Papers describe it as evaluating a model's ability to engage in a multi-turn conversation about an image, or to answer a series of questions about an image. A smaller framing presents it as a benchmark for chat-to-image acquisition, with experiments for image acquisition in multi-turn chat scenarios, and one source also places it within an ablation study across five datasets."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link VisDial to one construct and two behavioral indicators. The construct-level use is to measure multimodal understanding, while the behavioral indicators most often attached to it are cross-modal retrieval and visual question answering. These claims are spread across several targets rather than restricted to a single one: one paper evaluates visual question answering on VisDial, another reports using the Visual Dialog dataset in cross-modal retrieval for comparability to previous work, and another includes VisDial when assessing multimodal vision and language capabilities."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers most often position VisDial as one dataset within broader evaluation setups rather than as a standalone instrument. It appears alongside several tasks when models are evaluated for multimodal vision and language capabilities, is used in an ablation study across five datasets, and is also used for comparability to previous work in cross-modal retrieval; no measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Most definitions converge on treating VisDial as a Visual Dialog dataset or multi-turn visual dialogue benchmark centered on conversation about an image. Papers describe it as evaluating a model's ability to engage in a multi-turn conversation about an image, or to answer a series of questions about an image. A smaller framing presents it as a benchmark for chat-to-image acquisition, with experiments for image acquisition in multi-turn chat scenarios, and one source also places it within an ablation study across five datasets.\n\nWhat it is claimed to measure. Papers link VisDial to one construct and two behavioral indicators. The construct-level use is to measure multimodal understanding, while the behavioral indicators most often attached to it are cross-modal retrieval and visual question answering. These claims are spread across several targets rather than restricted to a single one: one paper evaluates visual question answering on VisDial, another reports using the Visual Dialog dataset in cross-modal retrieval for comparability to previous work, and another includes VisDial when assessing multimodal vision and language capabilities.\n\nSpace of uses. Papers most often position VisDial as one dataset within broader evaluation setups rather than as a standalone instrument. It appears alongside several tasks when models are evaluated for multimodal vision and language capabilities, is used in an ablation study across five datasets, and is also used for comparability to previous work in cross-modal retrieval; no measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Emu: Generative Pretraining in Multimodality",
+      "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning"
+    ],
+    "iclr25": [
+      "DEEM: Diffusion models serve as the eyes of large language models for image perception",
+      "TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25"
+  ]
+}

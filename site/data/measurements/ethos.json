@@ -1,0 +1,59 @@
+{
+  "canonical_name": "ETHOS",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the usage in the papers, ETHOS is described as a dataset for detecting hate speech. The only definition further presents it as a binary classification benchmark on which papers report F1 score under optimized prompts.\n\nWhat it is claimed to measure. The papers here use ETHOS for hate-speech detection evaluation via F1 in binary classification. No papers link it to any constructs or behavioral indicators.\n\nSpace of uses. In the only described usage, ETHOS is reported alongside ArSarcasm, Liar, and BBH-navigate, with F1 used as the evaluation metric in the same setup.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ETHOS"
+  ],
+  "papers": [
+    "Efficient and Accurate Prompt Optimization: the Benefit of Memory in Exemplar-Guided Reflection",
+    "Interpret and Improve In-Context Learning via the Lens of Input-Label Mappings",
+    "SEE: Strategic Exploration and Exploitation for Cohesive In-Context Prompt Optimization"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Dataset for detecting hate speech, used to evaluate F1 score in binary classification under optimized prompts.",
+      "papers": [
+        "Efficient and Accurate Prompt Optimization: the Benefit of Memory in Exemplar-Guided Reflection"
+      ],
+      "original_name": "ETHOS"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the usage in the papers, ETHOS is described as a dataset for detecting hate speech. The only definition further presents it as a binary classification benchmark on which papers report F1 score under optimized prompts."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The papers here use ETHOS for hate-speech detection evaluation via F1 in binary classification. No papers link it to any constructs or behavioral indicators."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In the only described usage, ETHOS is reported alongside ArSarcasm, Liar, and BBH-navigate, with F1 used as the evaluation metric in the same setup."
+    }
+  ],
+  "characterization": "What it is. Across the usage in the papers, ETHOS is described as a dataset for detecting hate speech. The only definition further presents it as a binary classification benchmark on which papers report F1 score under optimized prompts.\n\nWhat it is claimed to measure. The papers here use ETHOS for hate-speech detection evaluation via F1 in binary classification. No papers link it to any constructs or behavioral indicators.\n\nSpace of uses. In the only described usage, ETHOS is reported alongside ArSarcasm, Liar, and BBH-navigate, with F1 used as the evaluation metric in the same setup.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Efficient and Accurate Prompt Optimization: the Benefit of Memory in Exemplar-Guided Reflection",
+      "Interpret and Improve In-Context Learning via the Lens of Input-Label Mappings",
+      "SEE: Strategic Exploration and Exploitation for Cohesive In-Context Prompt Optimization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

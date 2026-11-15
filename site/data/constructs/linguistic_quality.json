@@ -1,0 +1,258 @@
+{
+  "canonical_name": "Linguistic quality",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the dominant framing treats linguistic quality as a property of generated text, usually described with overlapping terms such as logical, coherent, smooth, natural-sounding, clear, fluent, and free of grammatical errors. Many definitions narrow this further to linguistic correctness, grammaticality, or language quality, emphasizing adherence to grammatical, spelling, punctuation, and stylistic norms, sometimes defined by the absence of repetition or inconsistency. A smaller line of work shifts from output-level description to a latent property of the model or its representations, describing linguistic coherence as fluency, plausibility, and syntactic correctness, or describing linguistic quality through richness, coherence, and complexity in generated text.\n\nSpace of facets. Papers break the construct into recurring facets, most often clarity, fluency, naturalness, coherence, and grammatical correctness, with some adding spelling, punctuation, vocabulary richness, sentence structure, stylistic appropriateness, plausibility, or structural complexity. They also use partially overlapping labels, including linguistic quality, language quality, linguistic correctness, linguistic coherence, and grammaticality, so papers use the same name for both broad naturalness-and-coherence notions and narrower rule-based correctness notions. One paper contrasts grammaticality with faithfulness, while another contrasts linguistic coherence with factual accuracy, saying models can be optimized for fluency and syntactic correctness rather than truthfulness.\n\nSpace of measurement. Papers link linguistic quality to 5 measurement instruments and 2 behavioral indicators. The most common operationalizations are human evaluation and LLM-as-a-judge prompts that rate whether responses are logical, clear, fluent, smooth, natural, and free of grammatical, spelling, or punctuation errors; other linked measures are manual error analysis of inconsistencies and linguistic errors, PLLuM-Align's 5-point Likert ratings for linguistic correctness, and WikiText-2 log perplexity, described as measuring general language quality. These operationalizations mostly match the dominant fluency-and-correctness definitions, though some work also operationalizes the construct more indirectly, for example by using fluency as an estimate of post-edit linguistic quality or by inferring it from word-transition graph metrics such as graph energy, spectral entropy, and density.\n\nLinks. No causal or correlational claims are reported. Instead, papers describe related links from knowledge editing to linguistic quality, where it is analyzed alongside accuracy, locality, and generalization, and from hallucination detection to linguistic quality, where embeddings optimized for linguistic coherence rather than factual accuracy are said to fail to clearly separate truthful and hallucinated content. Papers do not link it to any other construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Linguistic quality",
+    "Linguistic correctness",
+    "Linguistic coherence",
+    "Language quality",
+    "Grammaticality"
+  ],
+  "papers": [
+    "CLEME2.0: Towards Interpretable Evaluation by Disentangling Edits for Grammatical Error Correction",
+    "ReLearn: Unlearning via Learning for Large Language Models",
+    "Rubrik's Cube: Testing a New Rubric for Evaluating Explanations on the CUBE dataset",
+    "How Does DPO Reduce Toxicity? A Mechanistic Neuron-Level Analysis",
+    "Igniting Creative Writing in Small Language Models: LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+    "Mondrian: A Framework for Logical Abstract (Re)Structuring",
+    "PLLuM-Align: Polish Preference Dataset for Large Language Model Alignment",
+    "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?",
+    "A Graph-Theoretical Framework for Analyzing the Behavior of Causal Language Models",
+    "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+    "Generalized Interpolating Discrete Diffusion",
+    "Steer LLM Latents for Hallucination Detection",
+    "Bridging the Gap between Expert and Language Models: Concept-guided Chess Commentary Generation and Evaluation",
+    "Differentially Private Learning Needs Better Model Initialization and Self-Distillation",
+    "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+    "Uncovering Safety Risks of Large Language Models through Concept Activation Vector"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "The quality of a model's generated text in terms of being logical, coherent, smooth, and natural-sounding.",
+      "papers": [
+        "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+        "Bridging the Gap between Expert and Language Models: Concept-guided Chess Commentary Generation and Evaluation",
+        "Differentially Private Learning Needs Better Model Initialization and Self-Distillation",
+        "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+        "A Graph-Theoretical Framework for Analyzing the Behavior of Causal Language Models"
+      ],
+      "original_name": "Linguistic quality"
+    },
+    {
+      "text": "The latent proficiency of a model in producing grammatically correct, stylistically appropriate, and normatively fluent text in the target language.",
+      "papers": [
+        "PLLuM-Align: Polish Preference Dataset for Large Language Model Alignment"
+      ],
+      "original_name": "Linguistic correctness"
+    },
+    {
+      "text": "The quality of generated text being fluent, plausible, and syntactically correct, for which LLMs are primarily optimized via next-token prediction.",
+      "papers": [
+        "Steer LLM Latents for Hallucination Detection"
+      ],
+      "original_name": "Linguistic coherence"
+    },
+    {
+      "text": "The linguistic correctness and fluency of a model's generated text, assessed by the absence of flaws like repetition or inconsistency.",
+      "papers": [
+        "Uncovering Safety Risks of Large Language Models through Concept Activation Vector",
+        "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?"
+      ],
+      "original_name": "Language quality"
+    },
+    {
+      "text": "The degree to which a system's output text is grammatically correct and adheres to the rules of a language.",
+      "papers": [
+        "CLEME2.0: Towards Interpretable Evaluation by Disentangling Edits for Grammatical Error Correction"
+      ],
+      "original_name": "Grammaticality"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "evidence": "Linguistic Quality: The response logical. The model correctly understands the medical task, and the expressions smooth and natural. (Section 4.2.4, The Prompt for GPT-4 to Rate the Performance of QA Tasks)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey"
+        ],
+        "icml25": [
+          "Generalized Interpolating Discrete Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "evidence": "Linguistic Quality: The response logical. The model correctly understands the medical task, and the expressionis smooth and natural. (Section 4.2.5, The Instruction of Human Evaluation)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey"
+        ],
+        "emnlp25": [
+          "Igniting Creative Writing in Small Language Models: LLM-as-a-Judge versus Multi-Agent Refined Rewards"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+      "evidence": "\u201cWe analyze ICE across four critical aspects of knowledge editing: accuracy, locality, generalization, and linguistic quality, demonstrating its advantages.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "In-Context Editing: Learning Knowledge from Self-Induced Distributions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Manual error analysis",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Differentially Private Learning Needs Better Model Initialization and Self-Distillation",
+      "evidence": "To investigate the impact of DPSGD and distillation on inconsistencies and linguistic quality, we manually annotated 50 outputs each from the XSum, MRPC, and Pubmed test sets. (Section 5.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Differentially Private Learning Needs Better Model Initialization and Self-Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Steer LLM Latents for Hallucination Detection",
+      "evidence": "Recent approaches have leveraged the latent space of LLMs for hallucination detection, but their embeddings, optimized for linguistic coherence rather than factual accuracy, often fail to clearly separate truthful and hallucinated content. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Steer LLM Latents for Hallucination Detection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How Does DPO Reduce Toxicity? A Mechanistic Neuron-Level Analysis",
+      "evidence": "log perplexity, the average negative log-likelihood of generated tokens on the Wikitext-2 dataset (Merity et al., 2016); ... The latter two metrics measure general language quality (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "How Does DPO Reduce Toxicity? A Mechanistic Neuron-Level Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PLLuM-Align",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PLLuM-Align: Polish Preference Dataset for Large Language Model Alignment",
+      "evidence": "For scalar multi-attribute rating, annotators evaluated each response on a 5-point Likert scale across seven criteria: i) truthfulness, (ii) linguistic correctness, (iii) safety, (iv) fairness, (v) conciseness, (vi) coherence & reasoning, as well as vii) helpfulness & instruction-following.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PLLuM-Align: Polish Preference Dataset for Large Language Model Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the dominant framing treats linguistic quality as a property of generated text, usually described with overlapping terms such as logical, coherent, smooth, natural-sounding, clear, fluent, and free of grammatical errors. Many definitions narrow this further to linguistic correctness, grammaticality, or language quality, emphasizing adherence to grammatical, spelling, punctuation, and stylistic norms, sometimes defined by the absence of repetition or inconsistency. A smaller line of work shifts from output-level description to a latent property of the model or its representations, describing linguistic coherence as fluency, plausibility, and syntactic correctness, or describing linguistic quality through richness, coherence, and complexity in generated text."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers break the construct into recurring facets, most often clarity, fluency, naturalness, coherence, and grammatical correctness, with some adding spelling, punctuation, vocabulary richness, sentence structure, stylistic appropriateness, plausibility, or structural complexity. They also use partially overlapping labels, including linguistic quality, language quality, linguistic correctness, linguistic coherence, and grammaticality, so papers use the same name for both broad naturalness-and-coherence notions and narrower rule-based correctness notions. One paper contrasts grammaticality with faithfulness, while another contrasts linguistic coherence with factual accuracy, saying models can be optimized for fluency and syntactic correctness rather than truthfulness."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link linguistic quality to 5 measurement instruments and 2 behavioral indicators. The most common operationalizations are human evaluation and LLM-as-a-judge prompts that rate whether responses are logical, clear, fluent, smooth, natural, and free of grammatical, spelling, or punctuation errors; other linked measures are manual error analysis of inconsistencies and linguistic errors, PLLuM-Align's 5-point Likert ratings for linguistic correctness, and WikiText-2 log perplexity, described as measuring general language quality. These operationalizations mostly match the dominant fluency-and-correctness definitions, though some work also operationalizes the construct more indirectly, for example by using fluency as an estimate of post-edit linguistic quality or by inferring it from word-transition graph metrics such as graph energy, spectral entropy, and density."
+    },
+    {
+      "label": "Links.",
+      "text": "No causal or correlational claims are reported. Instead, papers describe related links from knowledge editing to linguistic quality, where it is analyzed alongside accuracy, locality, and generalization, and from hallucination detection to linguistic quality, where embeddings optimized for linguistic coherence rather than factual accuracy are said to fail to clearly separate truthful and hallucinated content. Papers do not link it to any other construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the dominant framing treats linguistic quality as a property of generated text, usually described with overlapping terms such as logical, coherent, smooth, natural-sounding, clear, fluent, and free of grammatical errors. Many definitions narrow this further to linguistic correctness, grammaticality, or language quality, emphasizing adherence to grammatical, spelling, punctuation, and stylistic norms, sometimes defined by the absence of repetition or inconsistency. A smaller line of work shifts from output-level description to a latent property of the model or its representations, describing linguistic coherence as fluency, plausibility, and syntactic correctness, or describing linguistic quality through richness, coherence, and complexity in generated text.\n\nSpace of facets. Papers break the construct into recurring facets, most often clarity, fluency, naturalness, coherence, and grammatical correctness, with some adding spelling, punctuation, vocabulary richness, sentence structure, stylistic appropriateness, plausibility, or structural complexity. They also use partially overlapping labels, including linguistic quality, language quality, linguistic correctness, linguistic coherence, and grammaticality, so papers use the same name for both broad naturalness-and-coherence notions and narrower rule-based correctness notions. One paper contrasts grammaticality with faithfulness, while another contrasts linguistic coherence with factual accuracy, saying models can be optimized for fluency and syntactic correctness rather than truthfulness.\n\nSpace of measurement. Papers link linguistic quality to 5 measurement instruments and 2 behavioral indicators. The most common operationalizations are human evaluation and LLM-as-a-judge prompts that rate whether responses are logical, clear, fluent, smooth, natural, and free of grammatical, spelling, or punctuation errors; other linked measures are manual error analysis of inconsistencies and linguistic errors, PLLuM-Align's 5-point Likert ratings for linguistic correctness, and WikiText-2 log perplexity, described as measuring general language quality. These operationalizations mostly match the dominant fluency-and-correctness definitions, though some work also operationalizes the construct more indirectly, for example by using fluency as an estimate of post-edit linguistic quality or by inferring it from word-transition graph metrics such as graph energy, spectral entropy, and density.\n\nLinks. No causal or correlational claims are reported. Instead, papers describe related links from knowledge editing to linguistic quality, where it is analyzed alongside accuracy, locality, and generalization, and from hallucination detection to linguistic quality, where embeddings optimized for linguistic coherence rather than factual accuracy are said to fail to clearly separate truthful and hallucinated content. Papers do not link it to any other construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CLEME2.0: Towards Interpretable Evaluation by Disentangling Edits for Grammatical Error Correction",
+      "ReLearn: Unlearning via Learning for Large Language Models",
+      "Rubrik's Cube: Testing a New Rubric for Evaluating Explanations on the CUBE dataset"
+    ],
+    "emnlp25": [
+      "How Does DPO Reduce Toxicity? A Mechanistic Neuron-Level Analysis",
+      "Igniting Creative Writing in Small Language Models: LLM-as-a-Judge versus Multi-Agent Refined Rewards",
+      "Mondrian: A Framework for Logical Abstract (Re)Structuring",
+      "PLLuM-Align: Polish Preference Dataset for Large Language Model Alignment",
+      "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?",
+      "A Graph-Theoretical Framework for Analyzing the Behavior of Causal Language Models"
+    ],
+    "icml25": [
+      "Generalized Interpolating Discrete Diffusion",
+      "Steer LLM Latents for Hallucination Detection"
+    ],
+    "naacl25": [
+      "Bridging the Gap between Expert and Language Models: Concept-guided Chess Commentary Generation and Evaluation",
+      "Differentially Private Learning Needs Better Model Initialization and Self-Distillation"
+    ],
+    "neurips24": [
+      "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "Uncovering Safety Risks of Large Language Models through Concept Activation Vector"
+    ],
+    "iclr25": [
+      "In-Context Editing: Learning Knowledge from Self-Induced Distributions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 6,
+    "icml25": 2,
+    "naacl25": 2,
+    "neurips24": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

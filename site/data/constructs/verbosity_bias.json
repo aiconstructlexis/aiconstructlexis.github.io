@@ -1,0 +1,157 @@
+{
+  "canonical_name": "Verbosity bias",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage describes verbosity bias, often also called length bias, as a quality-insensitive preference for longer or more verbose responses. Most definitions place that preference in reward models, judges, or LLM-based evaluators, using formulations such as favoring outputs based on sequence length rather than true quality or preferring longer responses over more succinct ones of equal content. A smaller line extends the same idea to the model or reward signal itself, and one paper describes the observed phenomenon more narrowly as systematically different rewards for longer versus shorter responses, adding that it may be mainly an artifact of bias in naive evaluations.\n\nSpace of facets. The papers mostly do not subdivide it further. Instead, they usually place it within broader families of bias: reward-model work presents sequence length as one prevalent bias among others, evaluator-focused work groups verbosity bias with self-enhancement bias, and one LLM-as-a-Judge discussion also lists position bias and limited capability in grading math and reasoning questions. The main terminological variation is between length bias in reward-model and DPO settings and verbosity bias in evaluator settings, even though both labels describe preference for longer responses independent of quality; some papers also frame it as a dataset bias, while others call it an inherent bias of LLMs or reward models.\n\nSpace of measurement. Explicit measurement links are limited: papers link verbosity bias to 1 measurement instrument, the benchmark AlpacaEval 2.0, and to 1 behavioral indicator, reward hacking, but not through a direct measured_by claim. In practice, papers operationalize it by checking whether more verbose responses are ranked first, by comparing raw and LC win rates in settings designed to mitigate model verbosity, or by examining whether reward models assign different rewards to longer versus shorter responses. This operationalization matches the dominant definitions, which also focus on preference for length or verbosity irrespective of quality.\n\nLinks. One paper reports a related link from human preference alignment to verbosity bias in DPO, describing a length bias problem caused by unbalanced length preference from the non-uniform length distribution of chosen and rejected responses. One paper claims a causal relationship from verbosity bias to reward hacking, stating that when biased reward models are used in RLHF, the model can learn to exploit those biases rather than improve genuine task performance. Another paper reports a related link from AlpacaEval 2.0 to verbosity bias, arguing that higher LC win rates for short cheats show the benchmark is not robust to length cheat.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Length Bias",
+    "Verbosity bias",
+    "Length bias"
+  ],
+  "papers": [
+    "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics",
+    "DEBATE, TRAIN, EVOLVE: Self-Evolution of Language Model Reasoning",
+    "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge",
+    "Bootstrapping Language Models with DPO Implicit Rewards",
+    "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+    "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective",
+    "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+    "OpenPRM: Building Open-domain Process-based Reward Models with Preference Trees",
+    "Post-hoc Reward Calibration: A Case Study on Length Bias",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "Energy-Based Preference Model Offers Better Offline Alignment than the Bradley-Terry Preference Model",
+    "On the Robustness of Reward Models for Language Model Alignment",
+    "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals"
+  ],
+  "paper_count": 13,
+  "definitions": [
+    {
+      "text": "A disposition of a reward model to favor outputs based on their sequence length rather than their true quality.",
+      "papers": [
+        "Post-hoc Reward Calibration: A Case Study on Length Bias",
+        "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals",
+        "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge"
+      ],
+      "original_name": "Length bias"
+    },
+    {
+      "text": "A latent tendency for the model or reward signal to prefer longer responses over more succinct ones of equal content.",
+      "papers": [
+        "Bootstrapping Language Models with DPO Implicit Rewards"
+      ],
+      "original_name": "Length Bias"
+    },
+    {
+      "text": "The tendency of an LLM-based evaluator to prefer longer, more verbose responses, irrespective of their actual quality.",
+      "papers": [
+        "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+        "On the Robustness of Reward Models for Language Model Alignment",
+        "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics"
+      ],
+      "original_name": "Verbosity bias"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective",
+      "evidence": "Despite its advantages, DPO suffers from a length bias problem, which is caused by the unbalanced length preference due to the non-uniform length distribution of chosen and rejected responses. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward hacking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Post-hoc Reward Calibration: A Case Study on Length Bias",
+      "evidence": "when biased RMs are employed in RLHF, these biases can be further amplified (Zheng et al., 2023b), with the LLM learning to exploit these biases rather than improving genuine task performance\u2014a phenomenon known as reward hacking. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Post-hoc Reward Calibration: A Case Study on Length Bias"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "AlpacaEval 2.0",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+      "evidence": "Additionally, the LC win rates of our cheats are generally higher than the raw win rates because of their short length, which highlights that AlpacaEval 2.0 is also not robust to length cheat.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage describes verbosity bias, often also called length bias, as a quality-insensitive preference for longer or more verbose responses. Most definitions place that preference in reward models, judges, or LLM-based evaluators, using formulations such as favoring outputs based on sequence length rather than true quality or preferring longer responses over more succinct ones of equal content. A smaller line extends the same idea to the model or reward signal itself, and one paper describes the observed phenomenon more narrowly as systematically different rewards for longer versus shorter responses, adding that it may be mainly an artifact of bias in naive evaluations."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers mostly do not subdivide it further. Instead, they usually place it within broader families of bias: reward-model work presents sequence length as one prevalent bias among others, evaluator-focused work groups verbosity bias with self-enhancement bias, and one LLM-as-a-Judge discussion also lists position bias and limited capability in grading math and reasoning questions. The main terminological variation is between length bias in reward-model and DPO settings and verbosity bias in evaluator settings, even though both labels describe preference for longer responses independent of quality; some papers also frame it as a dataset bias, while others call it an inherent bias of LLMs or reward models."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Explicit measurement links are limited: papers link verbosity bias to 1 measurement instrument, the benchmark AlpacaEval 2.0, and to 1 behavioral indicator, reward hacking, but not through a direct measured_by claim. In practice, papers operationalize it by checking whether more verbose responses are ranked first, by comparing raw and LC win rates in settings designed to mitigate model verbosity, or by examining whether reward models assign different rewards to longer versus shorter responses. This operationalization matches the dominant definitions, which also focus on preference for length or verbosity irrespective of quality."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper reports a related link from human preference alignment to verbosity bias in DPO, describing a length bias problem caused by unbalanced length preference from the non-uniform length distribution of chosen and rejected responses. One paper claims a causal relationship from verbosity bias to reward hacking, stating that when biased reward models are used in RLHF, the model can learn to exploit those biases rather than improve genuine task performance. Another paper reports a related link from AlpacaEval 2.0 to verbosity bias, arguing that higher LC win rates for short cheats show the benchmark is not robust to length cheat."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage describes verbosity bias, often also called length bias, as a quality-insensitive preference for longer or more verbose responses. Most definitions place that preference in reward models, judges, or LLM-based evaluators, using formulations such as favoring outputs based on sequence length rather than true quality or preferring longer responses over more succinct ones of equal content. A smaller line extends the same idea to the model or reward signal itself, and one paper describes the observed phenomenon more narrowly as systematically different rewards for longer versus shorter responses, adding that it may be mainly an artifact of bias in naive evaluations.\n\nSpace of facets. The papers mostly do not subdivide it further. Instead, they usually place it within broader families of bias: reward-model work presents sequence length as one prevalent bias among others, evaluator-focused work groups verbosity bias with self-enhancement bias, and one LLM-as-a-Judge discussion also lists position bias and limited capability in grading math and reasoning questions. The main terminological variation is between length bias in reward-model and DPO settings and verbosity bias in evaluator settings, even though both labels describe preference for longer responses independent of quality; some papers also frame it as a dataset bias, while others call it an inherent bias of LLMs or reward models.\n\nSpace of measurement. Explicit measurement links are limited: papers link verbosity bias to 1 measurement instrument, the benchmark AlpacaEval 2.0, and to 1 behavioral indicator, reward hacking, but not through a direct measured_by claim. In practice, papers operationalize it by checking whether more verbose responses are ranked first, by comparing raw and LC win rates in settings designed to mitigate model verbosity, or by examining whether reward models assign different rewards to longer versus shorter responses. This operationalization matches the dominant definitions, which also focus on preference for length or verbosity irrespective of quality.\n\nLinks. One paper reports a related link from human preference alignment to verbosity bias in DPO, describing a length bias problem caused by unbalanced length preference from the non-uniform length distribution of chosen and rejected responses. One paper claims a causal relationship from verbosity bias to reward hacking, stating that when biased reward models are used in RLHF, the model can learn to exploit those biases rather than improve genuine task performance. Another paper reports a related link from AlpacaEval 2.0 to verbosity bias, arguing that higher LC win rates for short cheats show the benchmark is not robust to length cheat.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics",
+      "DEBATE, TRAIN, EVOLVE: Self-Evolution of Language Model Reasoning",
+      "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge"
+    ],
+    "iclr25": [
+      "Bootstrapping Language Models with DPO Implicit Rewards",
+      "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+      "Earlier Tokens Contribute More: Learning Direct Preference Optimization From Temporal Decay Perspective",
+      "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+      "OpenPRM: Building Open-domain Process-based Reward Models with Preference Trees",
+      "Post-hoc Reward Calibration: A Case Study on Length Bias",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References"
+    ],
+    "icml25": [
+      "Energy-Based Preference Model Offers Better Offline Alignment than the Bradley-Terry Preference Model",
+      "On the Robustness of Reward Models for Language Model Alignment",
+      "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 7,
+    "icml25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

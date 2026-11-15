@@ -1,0 +1,231 @@
+{
+  "canonical_name": "Medical visual question answering",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats it as answering questions about medical images by combining a visual image with a textual question and generating an answer. One paper states that MedVQA \"aims to use both visual images and textual questions as inputs to generate the answers\" (FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection). Some authors make the output more explicit as an accurate textual answer based on the image content, and a smaller line of work specifies open-ended, closed-form, or closed-ended answer settings.\n\nVariants. Papers use several closely related names, including medical VQA, MedVQA, MVQA, Med-VQA, and biomedical VQA. Most formulations stay at the level of question answering over a given medical image, while one definition expands the task range from simple pattern recognition to complex diagnostic reasoning, and some papers distinguish open-ended from closed-form or closed-ended settings.\n\nSpace of elicitation and scores. Across papers, this behavior is measured by 6 instruments, all framed as medical or biomedical VQA datasets or benchmarks. The most frequently linked are VQA-RAD and SLAKE, followed by PathVQA, IU-Xray, and MIMIC-CXR, with 1 other instrument. MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine describes this usage directly: models are benchmarked on \"three biomedical Visual Question Answering (VQA) datasets, VQA-RAD, SLAKE, and PathVQA.\"\n\nWhat it is taken as evidence of. Across the cited papers, it is not linked to any construct, so there is no reported construct that it is taken to evidence.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Medical visual question answering"
+  ],
+  "papers": [
+    "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+    "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models",
+    "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+    "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine",
+    "HealthGPT: A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation",
+    "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization",
+    "Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning",
+    "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations",
+    "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+    "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "Answering questions about medical images using both visual and textual inputs.",
+      "papers": [
+        "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+        "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine",
+        "Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning",
+        "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+        "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models",
+        "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations"
+      ],
+      "original_name": "Medical visual question answering"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-RAD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "This experiment is conducted on popular medical VQA benchmarks VQA-RAD and SLAKE. (Section 4.5)",
+      "paper_count": 9,
+      "paper_weight": 9.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+          "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection"
+        ],
+        "iclr25": [
+          "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "naacl25": [
+          "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations"
+        ],
+        "acl25": [
+          "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+          "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models"
+        ],
+        "icml25": [
+          "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+        ],
+        "emnlp25": [
+          "X-FLoRA: Cross-modal Federated Learning with Modality-expert LoRA for Medical VQA"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SLAKE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "evidence": "This experiment is conducted on popular medical VQA benchmarks VQA-RAD and SLAKE. (Section 4.5)",
+      "paper_count": 7,
+      "paper_weight": 7.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+        ],
+        "iclr25": [
+          "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "naacl25": [
+          "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations"
+        ],
+        "acl25": [
+          "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+          "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models"
+        ],
+        "icml25": [
+          "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PathVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine",
+      "evidence": "We benchmark LLaVA-Tri on three biomedical Visual Question Answering (VQA) datasets, VQA-RAD (Lau et al., 2018a), SLAKE (Liu et al., 2021), and PathVQA (He et al., 2020a), to assess the efficacy of aligning the model using MedTrinity-25M. (Section 4.1)",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "acl25": [
+          "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+          "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IU-Xray",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "We utilize five medical vision-language datasets for medical VQA and report generation tasks, i.e., MIMIC-CXR (Johnson et al., 2019), IU-Xray (Demner-Fushman et al., 2016), Harvard-FairVLMed (Luo et al., 2024), PMC-OA (Lin et al., 2023a) (we only select the pathology part) and Quilt-1M (Ikezogwo et al., 2024).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+        ],
+        "acl25": [
+          "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MIMIC-CXR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "We utilize five medical vision-language datasets for medical VQA and report generation tasks, i.e., MIMIC-CXR (Johnson et al., 2019), IU-Xray (Demner-Fushman et al., 2016), Harvard-FairVLMed (Luo et al., 2024), PMC-OA (Lin et al., 2023a) (we only select the pathology part) and Quilt-1M (Ikezogwo et al., 2024).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PMC-VQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations",
+      "evidence": "We evaluate our method on three medical VQA datasets: SLAKE (Liu et al., 2021), VQA-RAD (Lau et al., 2018), and PMC-VQA (Zhang et al., 2023). (Section 4.2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats it as answering questions about medical images by combining a visual image with a textual question and generating an answer. One paper states that MedVQA \"aims to use both visual images and textual questions as inputs to generate the answers\" (FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection). Some authors make the output more explicit as an accurate textual answer based on the image content, and a smaller line of work specifies open-ended, closed-form, or closed-ended answer settings."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several closely related names, including medical VQA, MedVQA, MVQA, Med-VQA, and biomedical VQA. Most formulations stay at the level of question answering over a given medical image, while one definition expands the task range from simple pattern recognition to complex diagnostic reasoning, and some papers distinguish open-ended from closed-form or closed-ended settings."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Across papers, this behavior is measured by 6 instruments, all framed as medical or biomedical VQA datasets or benchmarks. The most frequently linked are VQA-RAD and SLAKE, followed by PathVQA, IU-Xray, and MIMIC-CXR, with 1 other instrument. MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine describes this usage directly: models are benchmarked on \"three biomedical Visual Question Answering (VQA) datasets, VQA-RAD, SLAKE, and PathVQA.\""
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Across the cited papers, it is not linked to any construct, so there is no reported construct that it is taken to evidence."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats it as answering questions about medical images by combining a visual image with a textual question and generating an answer. One paper states that MedVQA \"aims to use both visual images and textual questions as inputs to generate the answers\" (FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection). Some authors make the output more explicit as an accurate textual answer based on the image content, and a smaller line of work specifies open-ended, closed-form, or closed-ended answer settings.\n\nVariants. Papers use several closely related names, including medical VQA, MedVQA, MVQA, Med-VQA, and biomedical VQA. Most formulations stay at the level of question answering over a given medical image, while one definition expands the task range from simple pattern recognition to complex diagnostic reasoning, and some papers distinguish open-ended from closed-form or closed-ended settings.\n\nSpace of elicitation and scores. Across papers, this behavior is measured by 6 instruments, all framed as medical or biomedical VQA datasets or benchmarks. The most frequently linked are VQA-RAD and SLAKE, followed by PathVQA, IU-Xray, and MIMIC-CXR, with 1 other instrument. MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine describes this usage directly: models are benchmarked on \"three biomedical Visual Question Answering (VQA) datasets, VQA-RAD, SLAKE, and PathVQA.\"\n\nWhat it is taken as evidence of. Across the cited papers, it is not linked to any construct, so there is no reported construct that it is taken to evidence.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "MedTrinity-25M: A Large-scale Multimodal Dataset with Multigranular Annotations for Medicine"
+    ],
+    "icml25": [
+      "HealthGPT: A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation",
+      "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization",
+      "Visual and Domain Knowledge for Professional-level Graph-of-Thought Medical Reasoning"
+    ],
+    "neurips24": [
+      "CARES: A Comprehensive Benchmark of Trustworthiness in Medical Vision Language Models",
+      "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+    ],
+    "acl25": [
+      "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+      "HSCR: Hierarchical Self-Contrastive Rewarding for Aligning Medical Vision Language Models"
+    ],
+    "naacl25": [
+      "Guiding Medical Vision-Language Models with Diverse Visual Prompts: Framework Design and Comprehensive Exploration of Prompt Variations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 3,
+    "neurips24": 3,
+    "acl25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

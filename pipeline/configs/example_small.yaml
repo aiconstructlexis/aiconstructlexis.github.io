@@ -1,0 +1,70 @@
+# A small worked example: one venue, a handful of papers, cheaper models, no summaries.
+#
+#   export OPENAI_API_KEY=... GOOGLE_API_KEY=... TOGETHER_API_KEY=...
+#   lexis check-config configs/example_small.yaml
+#   lexis run --config configs/example_small.yaml --stages ingest,screen
+#   lexis run --config configs/example_small.yaml --dry-run                    # extraction request estimate, no model calls
+#   lexis run --config configs/example_small.yaml
+#
+# --dry-run needs the ingest and screen stages to have run; it also prints a cost estimate
+# when the models carry a `price: [input_usd_per_million, output_usd_per_million]`.
+# Outputs land under runs/example/ at the repository root (paths are relative to this file);
+# the site export is written to runs/example/site, which any static file server can serve
+# together with the page files of this repository. Change the venue list to build a Lexis of
+# your own.
+
+version: "example"
+
+paths:
+  work_dir: ../../runs/example
+  log_dir: ../../runs/example/logs
+
+prompts: default
+
+venues:
+  - id: neurips24
+    conference: neurips
+    year: 2024
+    source: proceedings
+    sample: 50                        # list the proceedings, download a seeded sample of 50 papers
+
+screening:
+  enabled: true
+  provider: together
+  model: openai/gpt-oss-120b
+  mode: sync
+
+extraction:
+  models:
+    - { provider: google,   model: gemini-2.5-flash,  label: gemini25flash }
+    - { provider: openai,   model: gpt-5.4-mini,      label: gpt54mini }
+    - { provider: together, model: Qwen/Qwen3-235B-A22B-Instruct-2507-tput, label: qwen3_235b }
+  temperature: 0
+  workers: 3
+  max_papers: 20                      # only the first 20 screened papers
+
+harmonization:
+  provider: google
+  model: gemini-2.5-pro
+  batch_size: 100
+
+voting:
+  threshold: 2
+  min_papers: 1                       # with 20 papers, keep single-paper entities too
+
+join:
+  provider: google
+  model: gemini-2.5-pro
+  batch_size: 500
+
+curation:
+  overlay: null
+
+summaries:
+  enabled: false
+
+export:
+  site_dir: ../../runs/example/site
+  artifact_out: ../../runs/example/lexis_example.json
+  graph_layout: true
+  check: true

@@ -1,0 +1,177 @@
+{
+  "canonical_name": "Chart question answering",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. A prevalent framing treats it as answering a natural language question using information contained in a chart, often by analyzing the visual chart and its underlying data, with the answer produced as a direct textual response that may be numerical, categorical, or textual. Closely related definitions broaden the task to figure question answering over figures, charts, plots, and diagrams, while some papers make the reasoning demand explicit by describing arithmetic, logical, or statistical processing over the visualized data, including multi-step visual and logical reasoning.\n\nVariants. Papers use several nearby labels, including chart question answering, chart-based question answering, figure question answering, and figure-based question answering. The settings range from chart images to broader figures and diagrams, and from specific chart types such as bar, line, and pie charts to multiple charts and plots; some formulations place it within visual question answering, while another has an LLM answer questions about a generated chart in relation to user objectives.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to this behavior, ChartQA. The linked claim presents it as \"ChartQA (Masry et al., 2022) | Figure QA,\" which matches the broader figure question answering framing used in some papers.\n\nWhat it is taken as evidence of. It is linked to 3 constructs, Reasoning, Multimodal perception, and Local reasoning, and all of these links are related-to claims rather than explicit measurement claims. The relationship language describes chart question answering as a multimodal task used to evaluate reasoning capabilities, especially multimodal perception ability and local reasoning ability.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Chart-based question answering",
+    "Chart question answering",
+    "Figure question answering",
+    "Figure-based question answering"
+  ],
+  "papers": [
+    "AMACE: Automatic Multi-Agent Chart Evolution for Iteratively Tailored Chart Generation",
+    "ChartGaze: Enhancing Chart Understanding in LVLMs with Eye-Tracking Guided Attention Refinement",
+    "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+    "F2TEval: Human-Aligned Multi-Dimensional Evaluation for Figure-to-Text Task",
+    "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+    "Is Cognition Consistent with Perception? Assessing and Mitigating Multimodal Knowledge Conflicts in Document Understanding",
+    "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+    "Diving into Self-Evolving Training for Multimodal Reasoning",
+    "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "Generating textual responses to questions by analyzing a visual chart and its underlying data.",
+      "papers": [
+        "AMACE: Automatic Multi-Agent Chart Evolution for Iteratively Tailored Chart Generation"
+      ],
+      "original_name": "Chart-based question answering"
+    },
+    {
+      "text": "Generating answers to natural language questions based on information presented in a chart, including numerical, categorical, or textual responses.",
+      "papers": [
+        "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+        "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+      ],
+      "original_name": "Chart question answering"
+    },
+    {
+      "text": "Answering questions about information contained in a figure.",
+      "papers": [
+        "F2TEval: Human-Aligned Multi-Dimensional Evaluation for Figure-to-Text Task",
+        "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging",
+        "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+      ],
+      "original_name": "Figure question answering"
+    },
+    {
+      "text": "The task of answering questions that require interpreting data presented in figures, diagrams, or charts.",
+      "papers": [
+        "Diving into Self-Evolving Training for Multimodal Reasoning"
+      ],
+      "original_name": "Figure-based question answering"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ChartQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "F2TEval: Human-Aligned Multi-Dimensional Evaluation for Figure-to-Text Task",
+      "evidence": "\"ChartQA (Masry et al., 2022) | Figure QA\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "F2TEval: Human-Aligned Multi-Dimensional Evaluation for Figure-to-Text Task"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "evidence": "\"Chart question answering (CQA) has become a critical multimodal task for evaluating the reasoning capabilities of vision-language models.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multimodal perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "evidence": "\"Chart question answering (Ma et al., 2024; Qin et al., 2022) is a prominent multimodal task designed to evaluate the reasoning capabilities of vision-language models, especially their multimodal perception ability and local reasoning ability.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Local reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "evidence": "\"Chart question answering (Ma et al., 2024; Qin et al., 2022) is a prominent multimodal task designed to evaluate the reasoning capabilities of vision-language models, especially their multimodal perception ability and local reasoning ability.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "A prevalent framing treats it as answering a natural language question using information contained in a chart, often by analyzing the visual chart and its underlying data, with the answer produced as a direct textual response that may be numerical, categorical, or textual. Closely related definitions broaden the task to figure question answering over figures, charts, plots, and diagrams, while some papers make the reasoning demand explicit by describing arithmetic, logical, or statistical processing over the visualized data, including multi-step visual and logical reasoning."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby labels, including chart question answering, chart-based question answering, figure question answering, and figure-based question answering. The settings range from chart images to broader figures and diagrams, and from specific chart types such as bar, line, and pie charts to multiple charts and plots; some formulations place it within visual question answering, while another has an LLM answer questions about a generated chart in relation to user objectives."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one measurement instrument is linked to this behavior, ChartQA. The linked claim presents it as \"ChartQA (Masry et al., 2022) | Figure QA,\" which matches the broader figure question answering framing used in some papers."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "It is linked to 3 constructs, Reasoning, Multimodal perception, and Local reasoning, and all of these links are related-to claims rather than explicit measurement claims. The relationship language describes chart question answering as a multimodal task used to evaluate reasoning capabilities, especially multimodal perception ability and local reasoning ability."
+    }
+  ],
+  "characterization": "Space of definitions. A prevalent framing treats it as answering a natural language question using information contained in a chart, often by analyzing the visual chart and its underlying data, with the answer produced as a direct textual response that may be numerical, categorical, or textual. Closely related definitions broaden the task to figure question answering over figures, charts, plots, and diagrams, while some papers make the reasoning demand explicit by describing arithmetic, logical, or statistical processing over the visualized data, including multi-step visual and logical reasoning.\n\nVariants. Papers use several nearby labels, including chart question answering, chart-based question answering, figure question answering, and figure-based question answering. The settings range from chart images to broader figures and diagrams, and from specific chart types such as bar, line, and pie charts to multiple charts and plots; some formulations place it within visual question answering, while another has an LLM answer questions about a generated chart in relation to user objectives.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to this behavior, ChartQA. The linked claim presents it as \"ChartQA (Masry et al., 2022) | Figure QA,\" which matches the broader figure question answering framing used in some papers.\n\nWhat it is taken as evidence of. It is linked to 3 constructs, Reasoning, Multimodal perception, and Local reasoning, and all of these links are related-to claims rather than explicit measurement claims. The relationship language describes chart question answering as a multimodal task used to evaluate reasoning capabilities, especially multimodal perception ability and local reasoning ability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "AMACE: Automatic Multi-Agent Chart Evolution for Iteratively Tailored Chart Generation",
+      "ChartGaze: Enhancing Chart Understanding in LVLMs with Eye-Tracking Guided Attention Refinement",
+      "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "F2TEval: Human-Aligned Multi-Dimensional Evaluation for Figure-to-Text Task",
+      "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+      "Is Cognition Consistent with Perception? Assessing and Mitigating Multimodal Knowledge Conflicts in Document Understanding"
+    ],
+    "iclr24": [
+      "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+    ],
+    "icml25": [
+      "Diving into Self-Evolving Training for Multimodal Reasoning",
+      "Bring Reason to Vision: Understanding Perception and Reasoning through Model Merging"
+    ],
+    "neurips24": [
+      "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 6,
+    "iclr24": 1,
+    "icml25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "neurips24"
+  ]
+}

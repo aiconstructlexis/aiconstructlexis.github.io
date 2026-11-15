@@ -1,0 +1,75 @@
+{
+  "canonical_name": "TableBench",
+  "type": "measurement",
+  "canonical_definition": "What it is. In surveyed usage, TableBench is presented as a benchmark for table reasoning, described as covering diverse question types and topics across a wide range of scenarios. As one study puts it, \"TableBench presents a challenging benchmark covering diverse question types and topics\" (RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals).\n\nWhat it is claimed to measure. The recorded claims converge on a single construct: papers use TableBench to measure table reasoning. It is linked to 1 construct, Table reasoning, and to no behavioral indicators.\n\nSpace of uses. Papers position it as part of an experimental set of table reasoning datasets. In the reported experiments, it is used alongside WikiTableQuestions and HiTab, and no measurement instrument is linked to it through the recorded relationships.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TableBench"
+  ],
+  "papers": [
+    "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+    "RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals",
+    "Table-LLM-Specialist: Language Model Specialists for Tables using Iterative Fine-tuning"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A challenging benchmark covering diverse question types and topics to evaluate table reasoning across a wide range of scenarios.",
+      "papers": [
+        "RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals"
+      ],
+      "original_name": "TableBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals",
+      "evidence": "ROT is evaluated on three widely used table reasoning datasets: WikiTableQuestions (Pasupat and Liang, 2015), HiTab (Cheng et al., 2022), and TableBench (Wu et al., 2024) (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "In surveyed usage, TableBench is presented as a benchmark for table reasoning, described as covering diverse question types and topics across a wide range of scenarios. As one study puts it, \"TableBench presents a challenging benchmark covering diverse question types and topics\" (RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals)."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The recorded claims converge on a single construct: papers use TableBench to measure table reasoning. It is linked to 1 construct, Table reasoning, and to no behavioral indicators."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers position it as part of an experimental set of table reasoning datasets. In the reported experiments, it is used alongside WikiTableQuestions and HiTab, and no measurement instrument is linked to it through the recorded relationships."
+    }
+  ],
+  "characterization": "What it is. In surveyed usage, TableBench is presented as a benchmark for table reasoning, described as covering diverse question types and topics across a wide range of scenarios. As one study puts it, \"TableBench presents a challenging benchmark covering diverse question types and topics\" (RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals).\n\nWhat it is claimed to measure. The recorded claims converge on a single construct: papers use TableBench to measure table reasoning. It is linked to 1 construct, Table reasoning, and to no behavioral indicators.\n\nSpace of uses. Papers position it as part of an experimental set of table reasoning datasets. In the reported experiments, it is used alongside WikiTableQuestions and HiTab, and no measurement instrument is linked to it through the recorded relationships.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+      "RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals",
+      "Table-LLM-Specialist: Language Model Specialists for Tables using Iterative Fine-tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

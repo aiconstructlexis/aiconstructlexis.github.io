@@ -1,0 +1,983 @@
+{
+  "canonical_name": "Calibration",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats calibration as alignment between a model's confidence or predicted probabilities and the observed likelihood that its answer is correct: several definitions say that predictions made with confidence p should be correct about p of the time, or that samples with 80% confidence should have 80% accuracy. A smaller line of work narrows this to settings with contextual or prompt bias in in-context learning, framing calibration as correcting those biases or debiasing predictions with priors. Other papers shift the reference standard from answer correctness to statement truthfulness, agreement with human annotations, or the model's own intrinsic uncertainty; a smaller line also treats calibration as the ability to express graded confidence in natural language. Only a few definitions depart further, treating calibration as matching a draft model's probabilities to a target model's, or as deciding when to answer versus abstain.\n\nSpace of facets. Most subtype labels keep the same alignment template but change what is conditioned on or what is being aligned. Confidence calibration and probability calibration stay close to the average-case notion, one paper formalizes this as expected correctness at confidence p equaling p, and QA-calibration extends it so the same match must hold within question-answer groups. Other task-specific variants include belief calibration for truthfulness, faithful calibration for intrinsic versus expressed uncertainty, linguistic calibration for numerical confidence in language, uncertainty calibration around known versus unknown information, and disambiguation reliability for self-assessed accuracy in word sense disambiguation. Papers also draw boundaries with neighboring notions: one contrasts calibration with distribution alignment, which compares probabilities over the entire label set rather than only the predicted label, and another uses miscalibration as the converse label for poor alignment.\n\nSpace of measurement. Operationally, papers link calibration to 12 measurement instruments and 9 behavioral indicators. Measurement is mostly benchmark-based, especially on MMLU, StrategyQA, AG News, ARC-Challenge, and BIG-bench, with several other QA and multimodal benchmarks also used; papers commonly compare confidence or output probabilities to observed accuracy with expected calibration error, and sometimes maximum calibration error, reliability diagrams, or calibrated confidence intervals. Other operationalizations change the unit of analysis rather than the core comparison, using token-level or verbalized probabilities, claim-level or reasoning-step confidence, relevance probabilities for ranking, or a dedicated uncertainty token. These measurements largely match the dominant confidence-accuracy definition, though some instead target group-conditional QA-calibration, statement truthfulness, or alignment between expressed and intrinsic uncertainty.\n\nLinks. Papers link calibration to 16 constructs and 9 behavioral indicators overall. Overconfidence is the most frequently linked construct: one paper claims a causal relationship from overconfidence to calibration, phrasing overconfidence as producing poor calibration, while other papers treat the pair as related or correlated. Smaller lines of work also connect confidence estimation and in-context learning to calibration, including one causal claim from each alongside related claims. In the other direction, papers claim causal relationships from calibration to hallucination and to reliability, and additional papers connect calibration to other constructs and behaviors through causal, correlational, and related claims.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Calibration",
+    "Miscalibration",
+    "Confidence calibration",
+    "QA-calibration",
+    "Belief calibration",
+    "Verbalized calibration",
+    "Linguistic calibration",
+    "Probability calibration",
+    "Disambiguation reliability",
+    "Uncertainty calibration",
+    "Faithful calibration"
+  ],
+  "papers": [
+    "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning",
+    "Chinese SafetyQA: A Safety Short-form Factuality Benchmark for Large Language Models",
+    "Chinese SimpleQA: A Chinese Factuality Evaluation for Large Language Models",
+    "Enough Coin Flips Can Make LLMs Act Bayesian",
+    "GRACE: A Granular Benchmark for Evaluating Model Calibration against Human Calibration",
+    "HAF-RM: A Hybrid Alignment Framework for Reward Model Training",
+    "HALoGEN: Fantastic LLM Hallucinations and Where to Find Them",
+    "Influences on LLM Calibration: A Study of Response Agreement, Loss Functions, and Prompt Styles",
+    "KazMMLU: Evaluating Language Models on Kazakh, Russian, and Regional Knowledge of Kazakhstan",
+    "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models",
+    "Language Model Probabilities are Not Calibrated in Numeric Contexts",
+    "MMBoundary: Advancing MLLM Knowledge Boundary Awareness through Reasoning Step Confidence Calibration",
+    "Quantized Can Still Be Calibrated: A Unified Framework to Calibration in Quantized Large Language Models",
+    "Sparse Logit Sampling: Accelerating Knowledge Distillation in LLMs",
+    "Towards Harmonized Uncertainty Estimation for Large Language Models",
+    "Towards Objective Fine-tuning: How LLMs' Prior Knowledge Causes Potential Poor Calibration?",
+    "Which of These Best Describes Multiple Choice Evaluation with LLMs? A) Forced B) Flawed C) Fixable D) All of the Above",
+    "Writing Like the Best: Exemplar-Based Expository Text Generation",
+    "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+    "Not Your Typical Government Tipline: LLM-Assisted Routing of Environmental Protection Agency Citizen Tips",
+    "RoDEval: A Robust Word Sense Disambiguation Evaluation Framework for Large Language Models",
+    "UNCLE: Benchmarking Uncertainty Expressions in Long-Form Generation",
+    "Preemptive Detection and Correction of Misaligned Actions in LLM Agents",
+    "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness",
+    "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+    "Bayesian Low-rank Adaptation for Large Language Models",
+    "Beyond Reverse KL: Generalizing Direct Preference Optimization with Diverse Divergence Constraints",
+    "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+    "Energy-based Automated Model Evaluation",
+    "Fine-Tuning Language Models for Factuality",
+    "Gen-Z: Generative Zero-Shot Text Classification with Contextualized Label Descriptions",
+    "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+    "Learning to Reject with a Fixed Predictor: Application to Decontextualization",
+    "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+    "Measuring Vision-Language STEM Skills of Neural Models",
+    "MiniLLM: Knowledge Distillation of Large Language Models",
+    "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+    "Zero and Few-shot Semantic Parsing with Ambiguous Inputs",
+    "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+    "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+    "Calibrating Expressions of Certainty",
+    "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+    "Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers",
+    "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+    "Confidence Elicitation: A New Attack Vector for Large Language Models",
+    "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+    "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+    "Faster Cascades via Speculative Decoding",
+    "HelpSteer2-Preference: Complementing Ratings with Preferences",
+    "Iterative Nash Policy Optimization: Aligning LLMs with General Preferences via No-Regret Learning",
+    "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation",
+    "Looking Inward: Language Models Can Learn About Themselves by Introspection",
+    "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+    "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+    "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+    "QA-Calibration of Language Model Confidence Scores",
+    "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+    "ReCogLab: a framework testing relational reasoning & cognitive hypotheses on LLMs",
+    "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+    "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+    "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+    "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+    "Zero-shot Model-based Reinforcement Learning using Large Language Models",
+    "Adaptive Elicitation of Latent Information Using Natural Language",
+    "AutoEval Done Right: Using Synthetic Data for Model Evaluation",
+    "B-score: Detecting biases in large language models using response history",
+    "Bayesian Neural Scaling Law Extrapolation with Prior-Data Fitted Networks",
+    "Calibrated Language Models and How to Find Them with Label Smoothing",
+    "Everything Everywhere All at Once: LLMs can In-Context Learn Multiple Tasks in Superposition",
+    "Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks",
+    "How Transformers Learn Structured Data: Insights From Hierarchical Filtering",
+    "Learning to Route LLMs with Confidence Tokens",
+    "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+    "Position: Enough of Scaling LLMs! Lets Focus on Downscaling",
+    "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+    "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach",
+    "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+    "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation",
+    "Can Unconfident LLM Annotations Be Used for Confident Conclusions?",
+    "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+    "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+    "DIRAS: Efficient LLM Annotation of Document Relevance for Retrieval Augmented Generation",
+    "From Evidence to Belief: A Bayesian Epistemology Approach to Language Models",
+    "In-Context Learning (and Unlearning) of Length Biases",
+    "MICE for CATs: Model-Internal Confidence Estimation for Calibrating Agents with Tools",
+    "Self-DC: When to Reason and When to Act? Self Divide-and-Conquer for Compositional Unknown Questions",
+    "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations",
+    "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion",
+    "Alignment for Honesty",
+    "Approaching Human-Level Forecasting with Language Models",
+    "AutoMix: Automatically Mixing Language Models",
+    "Benchmarking LLMs via Uncertainty Quantification",
+    "CTIBench: A Benchmark for Evaluating LLMs in Cyber Threat Intelligence",
+    "Calibrating Reasoning in Language Models with Internal Consistency",
+    "Confidence Regulation Neurons in Language Models",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "HonestLLM: Toward an Honest and Helpful Large Language Model",
+    "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+    "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities",
+    "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+    "Large language model validity via enhanced conformal prediction methods",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Selective Generation for Controllable Language Models",
+    "Semantic Density: Uncertainty Quantification for Large Language Models through Confidence Measurement in Semantic Space",
+    "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing"
+  ],
+  "paper_count": 106,
+  "definitions": [
+    {
+      "text": "The degree to which a model's predicted probabilities reflect true likelihoods of correctness, particularly in the presence of contextual biases from prompts or in-context examples.",
+      "papers": [
+        "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+        "Bayesian Low-rank Adaptation for Large Language Models",
+        "Beyond Reverse KL: Generalizing Direct Preference Optimization with Diverse Divergence Constraints",
+        "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+        "Energy-based Automated Model Evaluation",
+        "Fine-Tuning Language Models for Factuality",
+        "Learning to Reject with a Fixed Predictor: Application to Decontextualization",
+        "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+        "Measuring Vision-Language STEM Skills of Neural Models",
+        "MiniLLM: Knowledge Distillation of Large Language Models",
+        "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+        "Confidence Regulation Neurons in Language Models",
+        "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+        "Can Unconfident LLM Annotations Be Used for Confident Conclusions?",
+        "MICE for CATs: Model-Internal Confidence Estimation for Calibrating Agents with Tools",
+        "From Evidence to Belief: A Bayesian Epistemology Approach to Language Models",
+        "DIRAS: Efficient LLM Annotation of Document Relevance for Retrieval Augmented Generation",
+        "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+        "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations",
+        "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+        "In-Context Learning (and Unlearning) of Length Biases",
+        "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion",
+        "HALoGEN: Fantastic LLM Hallucinations and Where to Find Them",
+        "AutoEval Done Right: Using Synthetic Data for Model Evaluation",
+        "Preemptive Detection and Correction of Misaligned Actions in LLM Agents"
+      ],
+      "original_name": "Calibration"
+    },
+    {
+      "text": "The degree to which a model's output probabilities are poorly aligned with the true likelihood of correctness, leading to unreliable confidence scores.",
+      "papers": [
+        "Gen-Z: Generative Zero-Shot Text Classification with Contextualized Label Descriptions"
+      ],
+      "original_name": "Miscalibration"
+    },
+    {
+      "text": "The degree to which a model's expressed confidence in its predictions aligns with its actual correctness.",
+      "papers": [
+        "Selective Generation for Controllable Language Models",
+        "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness"
+      ],
+      "original_name": "Confidence calibration"
+    },
+    {
+      "text": "A latent property where a model's confidence scores match its actual accuracy conditional on specific groups of question-and-answer pairs, ensuring reliability across different topics or user contexts.",
+      "papers": [
+        "QA-Calibration of Language Model Confidence Scores"
+      ],
+      "original_name": "QA-calibration"
+    },
+    {
+      "text": "The extent to which the model's expressed confidence in a statement matches the statement's actual truthfulness.",
+      "papers": [
+        "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation"
+      ],
+      "original_name": "Belief calibration"
+    },
+    {
+      "text": "The ability of a model to express graded levels of confidence in its statements, often through numerical scores embedded in natural language.",
+      "papers": [
+        "UNCLE: Benchmarking Uncertainty Expressions in Long-Form Generation"
+      ],
+      "original_name": "Linguistic calibration"
+    },
+    {
+      "text": "The degree to which the model's confidence scores align with actual classification accuracy, enabling reliable threshold-based decision-making in operational settings.",
+      "papers": [
+        "Not Your Typical Government Tipline: LLM-Assisted Routing of Environmental Protection Agency Citizen Tips"
+      ],
+      "original_name": "Probability calibration"
+    },
+    {
+      "text": "The alignment between a model\u2019s self-assessed confidence in its disambiguation ability and its actual accuracy, reflecting cognitive awareness and trustworthiness of outputs.",
+      "papers": [
+        "RoDEval: A Robust Word Sense Disambiguation Evaluation Framework for Large Language Models"
+      ],
+      "original_name": "Disambiguation reliability"
+    },
+    {
+      "text": "The model's ability to accurately represent its own uncertainty, particularly in distinguishing between known and unknown information, to guide generation.",
+      "papers": [
+        "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning"
+      ],
+      "original_name": "Uncertainty calibration"
+    },
+    {
+      "text": "The degree to which a model's linguistically expressed uncertainty aligns with its intrinsic uncertainty, reflecting a trustworthy and accurate communication of confidence.",
+      "papers": [
+        "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs"
+      ],
+      "original_name": "Faithful calibration"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Overconfidence",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "evidence": "Fine-tuned large language models (LLMs) often exhibit overconfidence, particularly when trained on small datasets, resulting in poor calibration and inaccurate uncertainty estimates.",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+          "On Calibration of LLM-based Guard Models for Reliable Content Moderation"
+        ],
+        "icml25": [
+          "Calibrated Language Models and How to Find Them with Label Smoothing",
+          "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach"
+        ],
+        "emnlp25": [
+          "Reasoning under Uncertainty: Efficient LLM Inference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "QA-Calibration of Language Model Confidence Scores",
+      "evidence": "Table 2 shows the performance of the posthoc calibrators on MMLU and BigBench datasets.",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "QA-Calibration of Language Model Confidence Scores"
+        ],
+        "icml25": [
+          "Calibrated Language Models and How to Find Them with Label Smoothing",
+          "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach"
+        ],
+        "emnlp25": [
+          "Calibration Across Layers: Understanding Calibration Evolution in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+      "evidence": "Calibrating language models (LMs) is crucial, as it plays a vital role in detecting and mitigating hallucinations of LMs as well as building more trustworthy models. (ABSTRACT)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses"
+        ],
+        "neurips24": [
+          "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token"
+        ],
+        "emnlp25": [
+          "Trustworthy Medical Question Answering: An Evaluation-Centric Survey"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Confidence estimation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Bayesian Low-rank Adaptation for Large Language Models",
+      "evidence": "Bayesian methods, with their inherent ability to estimate uncertainty, serve as potent tools to mitigate overconfidence and enhance calibration. (Section ABSTRACT)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Bayesian Low-rank Adaptation for Large Language Models"
+        ],
+        "iclr25": [
+          "Zero-shot Model-based Reinforcement Learning using Large Language Models"
+        ],
+        "emnlp25": [
+          "Calibration Across Layers: Understanding Calibration Evolution in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "evidence": "\"We evaluate the quality of confidence estimates across five types of reasoning tasks: 1) Commonsense Reasoning on two benchmarks, Sports Understanding (SportUND) ... StrategyQA (Geva et al., 2021)\"",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs"
+        ],
+        "iclr25": [
+          "Confidence Elicitation: A New Attack Vector for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reliability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+      "evidence": "Confidence calibration is a critical aspect in developing reliable and trustworthy language models (Nguyen & O\u2019Connor, 2015; Guo et al., 2017; Minderer et al., 2021).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Calibration of LLM-based Guard Models for Reliable Content Moderation"
+        ],
+        "emnlp25": [
+          "COM-BOM: Bayesian Exemplar Search for Efficiently Exploring the Accuracy-Calibration Pareto Frontier"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "COM-BOM: Bayesian Exemplar Search for Efficiently Exploring the Accuracy-Calibration Pareto Frontier",
+      "evidence": "current exemplar selection strategies, by largely ignoring calibration, risk scenarios where gains in accuracy are achieved at the expense of degradation in calibration (Zhang et al., 2024b).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "COM-BOM: Bayesian Exemplar Search for Efficiently Exploring the Accuracy-Calibration Pareto Frontier"
+        ],
+        "iclr24": [
+          "Gen-Z: Generative Zero-Shot Text Classification with Contextualized Label Descriptions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Honesty",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": "At its most basic level, the AI should provide accurate information, be well-calibrated, and express appropriate levels of uncertainty rather than misleading users. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HonestLLM: Toward an Honest and Helpful Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models",
+      "evidence": "Recent work (Ren et al., 2023) shows that sequence-level confidence scores remain poorly calibrated with output quality, even after applying length normalization. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "UNCERTAINTY-LINE: Length-Invariant Estimation of Uncertainty for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Claim decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+      "evidence": "This approach involves extracting distinct claims from the generated content, estimating the confidence associated with each claim, and then analyzing the calibration at the claim level. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hedging",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "evidence": "Qualitatively, we find that a LACIE-trained model hedges more when uncertain and adopts implicit cues to signal certainty when it is correct, such as using an authoritative tone or including details. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Abstention",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "evidence": "Finally, finetuning with our listener-aware method leads to an emergent increase in model abstention (e.g. saying \u201cI don\u2019t know\u201d) for answers that are likely to be wrong, trading recall for precision. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "evidence": "We then finetune three different LLMs (Mistral-7B, Llama3-8B, Llama3-70B) with LACIE, and show that the models resulting from this multi-agent optimization are better calibrated on TriviaQA with respect to a simulated listener. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Explanation generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "evidence": "We observe that RG leads to more conservative confidence estimates and lower expected calibration error (2.1 with RG vs. 2.9 without RG), which indicate that it enables more accurate identification of knowledge gaps via reasoning (Section 5.2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-verification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "AutoMix: Automatically Mixing Language Models",
+      "evidence": "\"prior works have shown self-verification is not particularly effective for reasoning tasks and is often noisy and ill-calibrated\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoMix: Automatically Mixing Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Decision-making under uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+      "evidence": "LLMs, without proper calibration, can be overly confident in their responses... Such pitfalls make them unlikely to make reliable decisions under uncertainty.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeLLMa: Decision Making Under Uncertainty with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Future prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+      "evidence": "We evaluate components of DeLLMa, including the calibration of its state forecasting approach and a human agreement study to assess its utility elicitation method. (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DeLLMa: Decision Making Under Uncertainty with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "QA-Calibration of Language Model Confidence Scores",
+      "evidence": "Table 2 shows the performance of the posthoc calibrators on MMLU and BigBench datasets.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "QA-Calibration of Language Model Confidence Scores"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SST-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Confidence Elicitation: A New Attack Vector for Large Language Models",
+      "evidence": "We first demonstrate that LLama3 is well-calibrated for the SST2, AG-News, and StrategyQA tasks, as illustrated in Table 1 and Figure 3. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Confidence Elicitation: A New Attack Vector for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AG News",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Confidence Elicitation: A New Attack Vector for Large Language Models",
+      "evidence": "We first demonstrate that LLama3 is well-calibrated for the SST2, AG-News, and StrategyQA tasks, as illustrated in Table 1 and Figure 3. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Confidence Elicitation: A New Attack Vector for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Metacognition",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Looking Inward: Language Models Can Learn About Themselves by Introspection",
+      "evidence": "If a model\u2019s self-predictions are calibrated with respect to its ground-truth behavior, this suggests the model takes into account information about itself that was not in its training data. This would provide further evidence of introspection. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Looking Inward: Language Models Can Learn About Themselves by Introspection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning",
+      "evidence": "Numerous studies have explored ways to improve factuality at various stages, such as continual pre-training (Chang et al., 2024), uncertainty calibration (Cohen et al., 2024), factuality alignment (Tian et al., 2024), and contrastive decoding (Section 2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Towards Objective Fine-tuning: How LLMs' Prior Knowledge Causes Potential Poor Calibration?",
+      "evidence": "Our research reveals that LLMs\u2019 prior knowledge causes potential poor calibration due to the ubiquitous presence of known data in real-world fine-tuning, which appears harmful for calibration. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Towards Objective Fine-tuning: How LLMs' Prior Knowledge Causes Potential Poor Calibration?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MedMCQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach",
+      "evidence": "We evaluate the ECE and Accuracy using four diverse datasets: MMLU, MedMCQA, OpenBookQA, Arc-Challenge... (Section 6.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach",
+      "evidence": "We evaluate the ECE and Accuracy using four diverse datasets: MMLU, MedMCQA, OpenBookQA, Arc-Challenge... (Section 6.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach",
+      "evidence": "We evaluate the ECE and Accuracy using four diverse datasets: MMLU, MedMCQA, OpenBookQA, Arc-Challenge... (Section 6.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Distribution alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Large Language Models Do Multi-Label Classification Differently",
+      "evidence": "Our proposed distribution alignment setting differs from calibration in that it compares the probabilities over the entire label set whereas calibration only compares the predicted label probability to the ground truth. (Section 2.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Large Language Models Do Multi-Label Classification Differently"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU-Pro",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Seeing is Believing, but How Much? A Comprehensive Analysis of Verbalized Calibration in Vision-Language Models",
+      "evidence": "We adopt the MMMU-Pro benchmark (Yue et al., 2024) to measure calibration on complex, multidisciplinary image understanding and reasoning problems. (Section 3.1.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Seeing is Believing, but How Much? A Comprehensive Analysis of Verbalized Calibration in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVista",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Seeing is Believing, but How Much? A Comprehensive Analysis of Verbalized Calibration in Vision-Language Models",
+      "evidence": "To evaluate calibration under visual mathematical reasoning, we employ MathVista (Lu et al., 2024) and MathVision (Wang et al., 2024). (Section 3.1.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Seeing is Believing, but How Much? A Comprehensive Analysis of Verbalized Calibration in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVision",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Seeing is Believing, but How Much? A Comprehensive Analysis of Verbalized Calibration in Vision-Language Models",
+      "evidence": "To evaluate calibration under visual mathematical reasoning, we employ MathVista (Lu et al., 2024) and MathVision (Wang et al., 2024). (Section 3.1.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Seeing is Believing, but How Much? A Comprehensive Analysis of Verbalized Calibration in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Verbal uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "UNCLE: Benchmarking Uncertainty Expressions in Long-Form Generation",
+      "evidence": "\"Band et al. (2024) introduce linguistic calibration, enabling models to express uncertainty at different levels (e.g., I am 70% sure).\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "UNCLE: Benchmarking Uncertainty Expressions in Long-Form Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "evidence": "By improving the trustworthiness of LLMs, IB-EDL facilitates their broader adoption in domains requiring high levels of confidence calibration.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Calibrating LLMs with Information-Theoretic Evidential Deep Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Internal consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Calibrating Reasoning in Language Models with Internal Consistency",
+      "evidence": "This measure offers a straightforward method to gauge the level of internal consistency, serving as a useful indicator of the output\u2019s correctness (i.e., calibration), without requiring additional training. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Calibrating Reasoning in Language Models with Internal Consistency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning",
+      "evidence": "By explicitly linking confidence calibration to visual robustness, this method reduces over-reliance on language priors. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Be Confident: Uncovering Overfitting in MLLM Multi-Task Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach",
+      "evidence": "The calibration error of an LLM is typically evaluated on a multiple-choice question and its corresponding correct answer, which can be formalized as an input-label pair (x, y)... (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs",
+      "evidence": "\u201cprogram-aided reasoning approaches, where LLMs utilize code representation, generally exhibit superior calibration compared to standard text-based reasoning methods that rely on CoT\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Seeing is Believing, but How Much? A Comprehensive Analysis of Verbalized Calibration in Vision-Language Models",
+      "evidence": "\"visual reasoning models (i.e., thinking with images) consistently exhibit better calibration\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Seeing is Believing, but How Much? A Comprehensive Analysis of Verbalized Calibration in Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 37,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 33,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats calibration as alignment between a model's confidence or predicted probabilities and the observed likelihood that its answer is correct: several definitions say that predictions made with confidence p should be correct about p of the time, or that samples with 80% confidence should have 80% accuracy. A smaller line of work narrows this to settings with contextual or prompt bias in in-context learning, framing calibration as correcting those biases or debiasing predictions with priors. Other papers shift the reference standard from answer correctness to statement truthfulness, agreement with human annotations, or the model's own intrinsic uncertainty; a smaller line also treats calibration as the ability to express graded confidence in natural language. Only a few definitions depart further, treating calibration as matching a draft model's probabilities to a target model's, or as deciding when to answer versus abstain."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Most subtype labels keep the same alignment template but change what is conditioned on or what is being aligned. Confidence calibration and probability calibration stay close to the average-case notion, one paper formalizes this as expected correctness at confidence p equaling p, and QA-calibration extends it so the same match must hold within question-answer groups. Other task-specific variants include belief calibration for truthfulness, faithful calibration for intrinsic versus expressed uncertainty, linguistic calibration for numerical confidence in language, uncertainty calibration around known versus unknown information, and disambiguation reliability for self-assessed accuracy in word sense disambiguation. Papers also draw boundaries with neighboring notions: one contrasts calibration with distribution alignment, which compares probabilities over the entire label set rather than only the predicted label, and another uses miscalibration as the converse label for poor alignment."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationally, papers link calibration to 12 measurement instruments and 9 behavioral indicators. Measurement is mostly benchmark-based, especially on MMLU, StrategyQA, AG News, ARC-Challenge, and BIG-bench, with several other QA and multimodal benchmarks also used; papers commonly compare confidence or output probabilities to observed accuracy with expected calibration error, and sometimes maximum calibration error, reliability diagrams, or calibrated confidence intervals. Other operationalizations change the unit of analysis rather than the core comparison, using token-level or verbalized probabilities, claim-level or reasoning-step confidence, relevance probabilities for ranking, or a dedicated uncertainty token. These measurements largely match the dominant confidence-accuracy definition, though some instead target group-conditional QA-calibration, statement truthfulness, or alignment between expressed and intrinsic uncertainty."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link calibration to 16 constructs and 9 behavioral indicators overall. Overconfidence is the most frequently linked construct: one paper claims a causal relationship from overconfidence to calibration, phrasing overconfidence as producing poor calibration, while other papers treat the pair as related or correlated. Smaller lines of work also connect confidence estimation and in-context learning to calibration, including one causal claim from each alongside related claims. In the other direction, papers claim causal relationships from calibration to hallucination and to reliability, and additional papers connect calibration to other constructs and behaviors through causal, correlational, and related claims."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats calibration as alignment between a model's confidence or predicted probabilities and the observed likelihood that its answer is correct: several definitions say that predictions made with confidence p should be correct about p of the time, or that samples with 80% confidence should have 80% accuracy. A smaller line of work narrows this to settings with contextual or prompt bias in in-context learning, framing calibration as correcting those biases or debiasing predictions with priors. Other papers shift the reference standard from answer correctness to statement truthfulness, agreement with human annotations, or the model's own intrinsic uncertainty; a smaller line also treats calibration as the ability to express graded confidence in natural language. Only a few definitions depart further, treating calibration as matching a draft model's probabilities to a target model's, or as deciding when to answer versus abstain.\n\nSpace of facets. Most subtype labels keep the same alignment template but change what is conditioned on or what is being aligned. Confidence calibration and probability calibration stay close to the average-case notion, one paper formalizes this as expected correctness at confidence p equaling p, and QA-calibration extends it so the same match must hold within question-answer groups. Other task-specific variants include belief calibration for truthfulness, faithful calibration for intrinsic versus expressed uncertainty, linguistic calibration for numerical confidence in language, uncertainty calibration around known versus unknown information, and disambiguation reliability for self-assessed accuracy in word sense disambiguation. Papers also draw boundaries with neighboring notions: one contrasts calibration with distribution alignment, which compares probabilities over the entire label set rather than only the predicted label, and another uses miscalibration as the converse label for poor alignment.\n\nSpace of measurement. Operationally, papers link calibration to 12 measurement instruments and 9 behavioral indicators. Measurement is mostly benchmark-based, especially on MMLU, StrategyQA, AG News, ARC-Challenge, and BIG-bench, with several other QA and multimodal benchmarks also used; papers commonly compare confidence or output probabilities to observed accuracy with expected calibration error, and sometimes maximum calibration error, reliability diagrams, or calibrated confidence intervals. Other operationalizations change the unit of analysis rather than the core comparison, using token-level or verbalized probabilities, claim-level or reasoning-step confidence, relevance probabilities for ranking, or a dedicated uncertainty token. These measurements largely match the dominant confidence-accuracy definition, though some instead target group-conditional QA-calibration, statement truthfulness, or alignment between expressed and intrinsic uncertainty.\n\nLinks. Papers link calibration to 16 constructs and 9 behavioral indicators overall. Overconfidence is the most frequently linked construct: one paper claims a causal relationship from overconfidence to calibration, phrasing overconfidence as producing poor calibration, while other papers treat the pair as related or correlated. Smaller lines of work also connect confidence estimation and in-context learning to calibration, including one causal claim from each alongside related claims. In the other direction, papers claim causal relationships from calibration to hallucination and to reliability, and additional papers connect calibration to other constructs and behaviors through causal, correlational, and related claims.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning",
+      "Chinese SafetyQA: A Safety Short-form Factuality Benchmark for Large Language Models",
+      "Chinese SimpleQA: A Chinese Factuality Evaluation for Large Language Models",
+      "Enough Coin Flips Can Make LLMs Act Bayesian",
+      "GRACE: A Granular Benchmark for Evaluating Model Calibration against Human Calibration",
+      "HAF-RM: A Hybrid Alignment Framework for Reward Model Training",
+      "HALoGEN: Fantastic LLM Hallucinations and Where to Find Them",
+      "Influences on LLM Calibration: A Study of Response Agreement, Loss Functions, and Prompt Styles",
+      "KazMMLU: Evaluating Language Models on Kazakh, Russian, and Regional Knowledge of Kazakhstan",
+      "LLM\u00d7MapReduce: Simplified Long-Sequence Processing using Large Language Models",
+      "Language Model Probabilities are Not Calibrated in Numeric Contexts",
+      "MMBoundary: Advancing MLLM Knowledge Boundary Awareness through Reasoning Step Confidence Calibration",
+      "Quantized Can Still Be Calibrated: A Unified Framework to Calibration in Quantized Large Language Models",
+      "Sparse Logit Sampling: Accelerating Knowledge Distillation in LLMs",
+      "Towards Harmonized Uncertainty Estimation for Large Language Models",
+      "Towards Objective Fine-tuning: How LLMs' Prior Knowledge Causes Potential Poor Calibration?",
+      "Which of These Best Describes Multiple Choice Evaluation with LLMs? A) Forced B) Flawed C) Fixable D) All of the Above",
+      "Writing Like the Best: Exemplar-Based Expository Text Generation"
+    ],
+    "emnlp25": [
+      "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+      "Not Your Typical Government Tipline: LLM-Assisted Routing of Environmental Protection Agency Citizen Tips",
+      "RoDEval: A Robust Word Sense Disambiguation Evaluation Framework for Large Language Models",
+      "UNCLE: Benchmarking Uncertainty Expressions in Long-Form Generation",
+      "Preemptive Detection and Correction of Misaligned Actions in LLM Agents",
+      "MAC-Tuning: LLM Multi-Compositional Problem Reasoning with Enhanced Knowledge Boundary Awareness"
+    ],
+    "iclr24": [
+      "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+      "Bayesian Low-rank Adaptation for Large Language Models",
+      "Beyond Reverse KL: Generalizing Direct Preference Optimization with Diverse Divergence Constraints",
+      "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "Energy-based Automated Model Evaluation",
+      "Fine-Tuning Language Models for Factuality",
+      "Gen-Z: Generative Zero-Shot Text Classification with Contextualized Label Descriptions",
+      "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+      "Learning to Reject with a Fixed Predictor: Application to Decontextualization",
+      "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+      "Measuring Vision-Language STEM Skills of Neural Models",
+      "MiniLLM: Knowledge Distillation of Large Language Models",
+      "Supervised Knowledge Makes Large Language Models Better In-context Learners",
+      "Zero and Few-shot Semantic Parsing with Ambiguous Inputs"
+    ],
+    "iclr25": [
+      "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+      "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "Calibrating Expressions of Certainty",
+      "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers",
+      "CertainlyUncertain: A Benchmark and Metric for Multimodal Epistemic and Aleatoric Awareness",
+      "Confidence Elicitation: A New Attack Vector for Large Language Models",
+      "DeLLMa: Decision Making Under Uncertainty with Large Language Models",
+      "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+      "Faster Cascades via Speculative Decoding",
+      "HelpSteer2-Preference: Complementing Ratings with Preferences",
+      "Iterative Nash Policy Optimization: Aligning LLMs with General Preferences via No-Regret Learning",
+      "Learning How Hard to Think: Input-Adaptive Allocation of LM Computation",
+      "Looking Inward: Language Models Can Learn About Themselves by Introspection",
+      "Min-K%++: Improved Baseline for Pre-Training Data Detection from Large Language Models",
+      "Not All LLM-Generated Data Are Equal: Rethinking Data Weighting in Text Classification",
+      "On Calibration of LLM-based Guard Models for Reliable Content Moderation",
+      "QA-Calibration of Language Model Confidence Scores",
+      "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "ReCogLab: a framework testing relational reasoning & cognitive hypotheses on LLMs",
+      "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+      "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+      "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+      "Varying Shades of Wrong: Aligning LLMs with Wrong Answers Only",
+      "Zero-shot Model-based Reinforcement Learning using Large Language Models"
+    ],
+    "icml25": [
+      "Adaptive Elicitation of Latent Information Using Natural Language",
+      "AutoEval Done Right: Using Synthetic Data for Model Evaluation",
+      "B-score: Detecting biases in large language models using response history",
+      "Bayesian Neural Scaling Law Extrapolation with Prior-Data Fitted Networks",
+      "Calibrated Language Models and How to Find Them with Label Smoothing",
+      "Everything Everywhere All at Once: LLMs can In-Context Learn Multiple Tasks in Superposition",
+      "Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks",
+      "How Transformers Learn Structured Data: Insights From Hierarchical Filtering",
+      "Learning to Route LLMs with Confidence Tokens",
+      "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+      "Position: Enough of Scaling LLMs! Lets Focus on Downscaling",
+      "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+      "Restoring Calibration for Aligned Large Language Models: A Calibration-Aware Fine-Tuning Approach",
+      "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+    ],
+    "naacl25": [
+      "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation",
+      "Can Unconfident LLM Annotations Be Used for Confident Conclusions?",
+      "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+      "DAWN-ICL: Strategic Planning of Problem-solving Trajectories for Zero-Shot In-Context Learning",
+      "DIRAS: Efficient LLM Annotation of Document Relevance for Retrieval Augmented Generation",
+      "From Evidence to Belief: A Bayesian Epistemology Approach to Language Models",
+      "In-Context Learning (and Unlearning) of Length Biases",
+      "MICE for CATs: Model-Internal Confidence Estimation for Calibrating Agents with Tools",
+      "Self-DC: When to Reason and When to Act? Self Divide-and-Conquer for Compositional Unknown Questions",
+      "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations",
+      "Speculative Diffusion Decoding: Accelerating Language Generation through Diffusion"
+    ],
+    "neurips24": [
+      "Alignment for Honesty",
+      "Approaching Human-Level Forecasting with Language Models",
+      "AutoMix: Automatically Mixing Language Models",
+      "Benchmarking LLMs via Uncertainty Quantification",
+      "CTIBench: A Benchmark for Evaluating LLMs in Cyber Threat Intelligence",
+      "Calibrating Reasoning in Language Models with Internal Consistency",
+      "Confidence Regulation Neurons in Language Models",
+      "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+      "Kernel Language Entropy: Fine-grained Uncertainty Quantification for LLMs from Semantic Similarities",
+      "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "Large language model validity via enhanced conformal prediction methods",
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "Selective Generation for Controllable Language Models",
+      "Semantic Density: Uncertainty Quantification for Large Language Models through Confidence Measurement in Semantic Space",
+      "Toward Self-Improvement of LLMs via Imagination, Searching, and Criticizing"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 18,
+    "emnlp25": 6,
+    "iclr24": 14,
+    "iclr25": 25,
+    "icml25": 14,
+    "naacl25": 11,
+    "neurips24": 18
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

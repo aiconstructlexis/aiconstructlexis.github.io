@@ -1,0 +1,151 @@
+{
+  "canonical_name": "ScanQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, ScanQA is most commonly described as a benchmark dataset for question answering in 3D scenes, with questions grounded in objects within ScanNet scans. Some definitions present it more specifically as a 3D visual question answering dataset focused on spatial relationships and object properties, while another describes a challenging indoor 3D VQA dataset with over 41,000 question-answer pairs. A smaller line of description treats it as a multi-modal 3D scene dataset for spatial scene understanding, and one quoted passage says it is centered on ScanNet and pioneered human annotations and template-based generation.\n\nWhat it is claimed to measure. Papers use ScanQA to measure 3 constructs and 2 behavioral indicators. The prevailing construct-level use is for 3D understanding, with additional papers reporting it as measuring 3D perception and vision-language reasoning; at the behavioral-indicator level, it is linked to 3D question answering and visual question answering. One paper explicitly says evaluations on ScanQA and SQA3D do not require object referencing and grounding while being used to demonstrate overall 3D scene understanding and reasoning, so the measurement claims span several nearby 3D understanding and question-answering targets rather than a single construct.\n\nSpace of uses. In use, ScanQA is often paired with SQA3D for 3D or visual question answering, and some papers place it alongside Scan2Cap as a general scene understanding task. Other work includes it in broader 3D evaluation suites with 3D-LLM tasks, nuScenes VQA, and ALFRED. Papers variously position it as a general scene understanding task, a classic validation set for 3D spatial understanding, and one of two challenging indoor 3D VQA datasets.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ScanQA"
+  ],
+  "papers": [
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+    "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model",
+    "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+    "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+    "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A benchmark dataset for question answering in 3D scenes, where questions are grounded in objects within scans from the ScanNet dataset.",
+      "papers": [
+        "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model",
+        "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+        "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+        "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations"
+      ],
+      "original_name": "ScanQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "3D understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "evidence": "on ScanQA and SQA3D, which do not require object referencing and grounding, we still achieve consistent performance enhancement, demonstrating improved overall 3D scene understanding and reasoning",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers"
+        ],
+        "iclr25": [
+          "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-language reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+      "evidence": "Evaluation of vision-language reasoning on ScanQA [5] and SQA3D [55] datasets.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "evidence": "...and both ScanQA [2] and SQA3D [38] for visual question answering.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "3D perception",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "evidence": "For 3D evaluation, we select ScanQA (3), two tasks from 3D-LLM (16), i.e., 3D-assisted Dialogue and Task Decomposition, and also curate two new test set from nuScenes VQA (6) and ALFRED (48).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "3D question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "3D Question Answering via only 2D Vision-Language Models",
+      "evidence": "We evaluate the proposed cdViews on two widely used benchmarks of 3D-QA: ScanQA (Azuma et al., 2022) and SQA (Ma et al., 2022). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "3D Question Answering via only 2D Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, ScanQA is most commonly described as a benchmark dataset for question answering in 3D scenes, with questions grounded in objects within ScanNet scans. Some definitions present it more specifically as a 3D visual question answering dataset focused on spatial relationships and object properties, while another describes a challenging indoor 3D VQA dataset with over 41,000 question-answer pairs. A smaller line of description treats it as a multi-modal 3D scene dataset for spatial scene understanding, and one quoted passage says it is centered on ScanNet and pioneered human annotations and template-based generation."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use ScanQA to measure 3 constructs and 2 behavioral indicators. The prevailing construct-level use is for 3D understanding, with additional papers reporting it as measuring 3D perception and vision-language reasoning; at the behavioral-indicator level, it is linked to 3D question answering and visual question answering. One paper explicitly says evaluations on ScanQA and SQA3D do not require object referencing and grounding while being used to demonstrate overall 3D scene understanding and reasoning, so the measurement claims span several nearby 3D understanding and question-answering targets rather than a single construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, ScanQA is often paired with SQA3D for 3D or visual question answering, and some papers place it alongside Scan2Cap as a general scene understanding task. Other work includes it in broader 3D evaluation suites with 3D-LLM tasks, nuScenes VQA, and ALFRED. Papers variously position it as a general scene understanding task, a classic validation set for 3D spatial understanding, and one of two challenging indoor 3D VQA datasets."
+    }
+  ],
+  "characterization": "What it is. Across papers, ScanQA is most commonly described as a benchmark dataset for question answering in 3D scenes, with questions grounded in objects within ScanNet scans. Some definitions present it more specifically as a 3D visual question answering dataset focused on spatial relationships and object properties, while another describes a challenging indoor 3D VQA dataset with over 41,000 question-answer pairs. A smaller line of description treats it as a multi-modal 3D scene dataset for spatial scene understanding, and one quoted passage says it is centered on ScanNet and pioneered human annotations and template-based generation.\n\nWhat it is claimed to measure. Papers use ScanQA to measure 3 constructs and 2 behavioral indicators. The prevailing construct-level use is for 3D understanding, with additional papers reporting it as measuring 3D perception and vision-language reasoning; at the behavioral-indicator level, it is linked to 3D question answering and visual question answering. One paper explicitly says evaluations on ScanQA and SQA3D do not require object referencing and grounding while being used to demonstrate overall 3D scene understanding and reasoning, so the measurement claims span several nearby 3D understanding and question-answering targets rather than a single construct.\n\nSpace of uses. In use, ScanQA is often paired with SQA3D for 3D or visual question answering, and some papers place it alongside Scan2Cap as a general scene understanding task. Other work includes it in broader 3D evaluation suites with 3D-LLM tasks, nuScenes VQA, and ALFRED. Papers variously position it as a general scene understanding task, a classic validation set for 3D spatial understanding, and one of two challenging indoor 3D VQA datasets.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution",
+      "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model"
+    ],
+    "neurips24": [
+      "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+      "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

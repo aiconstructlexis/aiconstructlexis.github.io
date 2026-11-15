@@ -1,0 +1,140 @@
+{
+  "canonical_name": "Action generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the dominant framing is the production of a concrete action to be executed in an environment, often as structured output that names the action and any parameters such as position or value. This is most commonly formulated as the next step given the current state, for example a GUI action based on the task, page, and history, or a navigation control action from the current location toward a goal or route. A smaller line of work makes the success criterion explicit as executability, defining good outputs as actions that are valid and can be carried out rather than invalid or nonsensical ones.\n\nVariants. Most papers study it in GUI and computer control settings, where the model outputs actions such as click, scroll, input, or type text. Smaller variants appear in urban navigation, where the output is the next control action such as ascend or turn right, and in embodied robotics, where the model predicts low-level action sequences, including pose changes and end-effector status, sometimes as discrete action tokens generated autoregressively. Papers also name narrower forms such as executable action generation and candidate action generation, the latter described as sampling possible next inquiry actions from a masked action space.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In practice, papers elicit it by conditioning on the current task, GUI page, action history, route or goal, or visual and linguistic inputs, and asking for the next action or a sequence of actions. For the executable-action variant, one paper scores it as the proportion of generated actions that are executable at each timestep, calling this executability.\n\nWhat it is taken as evidence of. Only one construct is linked to it, Reasoning. The recorded link is a causal claim from Reasoning to Action generation: one paper describes complex GUI tasks as moving from perception and understanding, to \"Reason and plan\", to execution of the desired action. No other construct link is recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Action generation",
+    "Executable action generation",
+    "Candidate action generation"
+  ],
+  "papers": [
+    "HiAgent: Hierarchical Working Memory Management for Solving Long-Horizon Agent Tasks with Large Language Model",
+    "UrbanVideo-Bench: Benchmarking Vision-Language Models on Embodied Intelligence with Video Data in Urban Spaces",
+    "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism",
+    "DDO: Dual-Decision Optimization for LLM-Based Medical Consultation via Multi-Agent Collaboration",
+    "WebAgent-R1: Training Web Agents via End-to-End Multi-Turn Reinforcement Learning",
+    "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+    "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+    "Discriminator-Guided Embodied Planning for LLM Agent",
+    "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+    "Grounding Multimodal Large Language Model in GUI World",
+    "On the Modeling Capabilities of Large Language Models for Sequential Decision Making",
+    "UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent",
+    "ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation"
+  ],
+  "paper_count": 13,
+  "definitions": [
+    {
+      "text": "Producing a structured output that specifies an action to be taken (e.g., 'click', 'type text') and its associated parameters, such as position or value.",
+      "papers": [
+        "Grounding Multimodal Large Language Model in GUI World",
+        "UrbanVideo-Bench: Benchmarking Vision-Language Models on Embodied Intelligence with Video Data in Urban Spaces",
+        "UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent",
+        "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism",
+        "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+        "ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation"
+      ],
+      "original_name": "Action generation"
+    },
+    {
+      "text": "Producing actions that are valid and can be successfully executed within the environment, as opposed to invalid or nonsensical actions.",
+      "papers": [
+        "HiAgent: Hierarchical Working Memory Management for Solving Long-Horizon Agent Tasks with Large Language Model"
+      ],
+      "original_name": "Executable action generation"
+    },
+    {
+      "text": "The model or policy samples a set of possible next inquiry actions from a masked action space.",
+      "papers": [
+        "DDO: Dual-Decision Optimization for LLM-Based Medical Consultation via Multi-Agent Collaboration"
+      ],
+      "original_name": "Candidate action generation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Grounding Multimodal Large Language Model in GUI World",
+      "evidence": "For vision-based agents, completing a complex GUI task typically involves several steps, each requiring the model to: (1) Perceive and understand... (2) Reason and plan... (3) Execute: perform the desired action on the target GUI element.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Grounding Multimodal Large Language Model in GUI World"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the dominant framing is the production of a concrete action to be executed in an environment, often as structured output that names the action and any parameters such as position or value. This is most commonly formulated as the next step given the current state, for example a GUI action based on the task, page, and history, or a navigation control action from the current location toward a goal or route. A smaller line of work makes the success criterion explicit as executability, defining good outputs as actions that are valid and can be carried out rather than invalid or nonsensical ones."
+    },
+    {
+      "label": "Variants.",
+      "text": "Most papers study it in GUI and computer control settings, where the model outputs actions such as click, scroll, input, or type text. Smaller variants appear in urban navigation, where the output is the next control action such as ascend or turn right, and in embodied robotics, where the model predicts low-level action sequences, including pose changes and end-effector status, sometimes as discrete action tokens generated autoregressively. Papers also name narrower forms such as executable action generation and candidate action generation, the latter described as sampling possible next inquiry actions from a masked action space."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. In practice, papers elicit it by conditioning on the current task, GUI page, action history, route or goal, or visual and linguistic inputs, and asking for the next action or a sequence of actions. For the executable-action variant, one paper scores it as the proportion of generated actions that are executable at each timestep, calling this executability."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Only one construct is linked to it, Reasoning. The recorded link is a causal claim from Reasoning to Action generation: one paper describes complex GUI tasks as moving from perception and understanding, to \"Reason and plan\", to execution of the desired action. No other construct link is recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the dominant framing is the production of a concrete action to be executed in an environment, often as structured output that names the action and any parameters such as position or value. This is most commonly formulated as the next step given the current state, for example a GUI action based on the task, page, and history, or a navigation control action from the current location toward a goal or route. A smaller line of work makes the success criterion explicit as executability, defining good outputs as actions that are valid and can be carried out rather than invalid or nonsensical ones.\n\nVariants. Most papers study it in GUI and computer control settings, where the model outputs actions such as click, scroll, input, or type text. Smaller variants appear in urban navigation, where the output is the next control action such as ascend or turn right, and in embodied robotics, where the model predicts low-level action sequences, including pose changes and end-effector status, sometimes as discrete action tokens generated autoregressively. Papers also name narrower forms such as executable action generation and candidate action generation, the latter described as sampling possible next inquiry actions from a masked action space.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In practice, papers elicit it by conditioning on the current task, GUI page, action history, route or goal, or visual and linguistic inputs, and asking for the next action or a sequence of actions. For the executable-action variant, one paper scores it as the proportion of generated actions that are executable at each timestep, calling this executability.\n\nWhat it is taken as evidence of. Only one construct is linked to it, Reasoning. The recorded link is a causal claim from Reasoning to Action generation: one paper describes complex GUI tasks as moving from perception and understanding, to \"Reason and plan\", to execution of the desired action. No other construct link is recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "HiAgent: Hierarchical Working Memory Management for Solving Long-Horizon Agent Tasks with Large Language Model",
+      "UrbanVideo-Bench: Benchmarking Vision-Language Models on Embodied Intelligence with Video Data in Urban Spaces"
+    ],
+    "emnlp25": [
+      "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism",
+      "DDO: Dual-Decision Optimization for LLM-Based Medical Consultation via Multi-Agent Collaboration",
+      "WebAgent-R1: Training Web Agents via End-to-End Multi-Turn Reinforcement Learning"
+    ],
+    "iclr25": [
+      "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+      "Discriminator-Guided Embodied Planning for LLM Agent",
+      "EIA: ENVIRONMENTAL INJECTION ATTACK ON GENERALIST WEB AGENTS FOR PRIVACY LEAKAGE",
+      "Grounding Multimodal Large Language Model in GUI World",
+      "On the Modeling Capabilities of Large Language Models for Sequential Decision Making"
+    ],
+    "icml25": [
+      "UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent"
+    ],
+    "iclr24": [
+      "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control"
+    ],
+    "naacl25": [
+      "ReachAgent: Enhancing Mobile Agent via Page Reaching and Operation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 3,
+    "iclr25": 5,
+    "icml25": 1,
+    "iclr24": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

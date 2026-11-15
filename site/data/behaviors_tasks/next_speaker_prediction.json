@@ -1,0 +1,42 @@
+{
+  "canonical_name": "Next speaker prediction",
+  "type": "behavior",
+  "canonical_definition": "Selecting which character should speak next in a multi-character conversation.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Next speaker prediction"
+  ],
+  "papers": [
+    "CoSER: Coordinating LLM-Based Persona Simulation of Established Roles"
+  ],
+  "paper_count": 1,
+  "definitions": [
+    {
+      "text": "Selecting which character should speak next in a multi-character conversation.",
+      "papers": [
+        "CoSER: Coordinating LLM-Based Persona Simulation of Established Roles"
+      ],
+      "original_name": "Next speaker prediction"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "Selecting which character should speak next in a multi-character conversation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "CoSER: Coordinating LLM-Based Persona Simulation of Established Roles"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 1
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "canonical_name": "MMT-Bench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers describe MMT-Bench as a multimodal benchmark drawn from existing datasets. The most detailed definition says it covers 162 concrete sub-tasks, is primarily focused on perception, and uses a multiple-choice question format; a quoted passage also says it supports in-depth analysis through its \"taskonomy\" and diverse input forms. Another paper frames it more broadly as a comprehensive benchmark for evaluating large vision-language models on multitask performance.\n\nWhat it is claimed to measure. Across the papers, MMT-Bench is not explicitly linked to any constructs or behavioral indicators. Instead, papers describe it as evaluating large vision-language models on multitask performance, and one quoted passage places it among visual question answering benchmarks rather than tying it to a named construct.\n\nSpace of uses. Papers use MMT-Bench as part of broader benchmark reporting, describing it as one of the widely adopted VLM benchmarks and including it in comparative tables of results on leading methods. No papers report links between MMT-Bench and other measurement instruments.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MMT-Bench"
+  ],
+  "papers": [
+    "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+    "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A benchmark covering 162 concrete sub-tasks from existing datasets, primarily focused on perception and using a multiple-choice question format.",
+      "papers": [
+        "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+        "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+      ],
+      "original_name": "MMT-Bench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers describe MMT-Bench as a multimodal benchmark drawn from existing datasets. The most detailed definition says it covers 162 concrete sub-tasks, is primarily focused on perception, and uses a multiple-choice question format; a quoted passage also says it supports in-depth analysis through its \"taskonomy\" and diverse input forms. Another paper frames it more broadly as a comprehensive benchmark for evaluating large vision-language models on multitask performance."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across the papers, MMT-Bench is not explicitly linked to any constructs or behavioral indicators. Instead, papers describe it as evaluating large vision-language models on multitask performance, and one quoted passage places it among visual question answering benchmarks rather than tying it to a named construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use MMT-Bench as part of broader benchmark reporting, describing it as one of the widely adopted VLM benchmarks and including it in comparative tables of results on leading methods. No papers report links between MMT-Bench and other measurement instruments."
+    }
+  ],
+  "characterization": "What it is. Papers describe MMT-Bench as a multimodal benchmark drawn from existing datasets. The most detailed definition says it covers 162 concrete sub-tasks, is primarily focused on perception, and uses a multiple-choice question format; a quoted passage also says it supports in-depth analysis through its \"taskonomy\" and diverse input forms. Another paper frames it more broadly as a comprehensive benchmark for evaluating large vision-language models on multitask performance.\n\nWhat it is claimed to measure. Across the papers, MMT-Bench is not explicitly linked to any constructs or behavioral indicators. Instead, papers describe it as evaluating large vision-language models on multitask performance, and one quoted passage places it among visual question answering benchmarks rather than tying it to a named construct.\n\nSpace of uses. Papers use MMT-Bench as part of broader benchmark reporting, describing it as one of the widely adopted VLM benchmarks and including it in comparative tables of results on leading methods. No papers report links between MMT-Bench and other measurement instruments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "MEGA-Bench: Scaling Multimodal Evaluation to over 500 Real-World Tasks",
+      "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?"
+    ],
+    "neurips24": [
+      "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

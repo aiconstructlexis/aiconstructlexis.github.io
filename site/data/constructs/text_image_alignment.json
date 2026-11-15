@@ -1,0 +1,127 @@
+{
+  "canonical_name": "Text-image alignment",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats text-image alignment as semantic correspondence between generated visual output and the input text: papers describe it as the degree to which an image matches a caption, narrative fragment, or prompt, and faithfully reflects its visual concepts, intended elements, and descriptive details. Some papers make this more specific by stressing visual consistency in narrative depictions, such as characters and settings, while another frames it as a multimodal capability, the joint interpretation of visual content and embedded text so meaning stays consistent across modalities.\n\nSpace of facets. Papers do not provide an explicit subtype taxonomy, but they use the term across several scopes. In narrower uses it concerns caption or prompt matching for generated images or other visual assets, while broader uses include consistency across story elements and alignment when textual elements are partially visible inside the image itself. No definition explicitly equates it with another construct or places it under a larger construct.\n\nSpace of measurement. Operationalization is narrow in the papers: it is linked to 2 measurement instruments, LLM-as-a-judge and Pick-a-Pic, and to 1 behavioral indicator, Boolean question answering. One paper uses MLLM-as-a-Judge with golden answers and an Analyze-then-Judge chain of thought to score generation quality, text-image alignment, and helpfulness, while another uses Pick-a-Pic as a benchmark for agreement with human judgments of alignment on images generated from complex text prompts. A related setup uses Boolean yes or no questions generated from text so a model can assess visual-textual alignment consistently.\n\nLinks. Beyond measurement links, no causal or correlational claims are reported, and no links to other constructs are reported. The only non-measurement link is a related relation involving Boolean question answering: one paper describes converting text into yes or no questions so the model can assess visual-textual alignment in a consistent manner.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text-image alignment"
+  ],
+  "papers": [
+    "LLMs Behind the Scenes: Enabling Narrative Scene Illustration",
+    "AutomaTikZ: Text-Guided Synthesis of Scientific Vector Graphics with TikZ",
+    "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+    "VCR: A Task for Pixel-Level Complex Reasoning in Vision Language Models via Restoring Occluded Text",
+    "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+    "YouDream: Generating Anatomically Controllable Consistent Text-to-3D Animals"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The degree to which the generated image semantically corresponds to the input caption, reflecting accurate interpretation of visual concepts from text.",
+      "papers": [
+        "AutomaTikZ: Text-Guided Synthesis of Scientific Vector Graphics with TikZ"
+      ],
+      "original_name": "Text-image alignment"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+      "evidence": "Building on previous work (An et al., 2023; Liu et al., 2024d), we enhance the process by employing MLLM-as-a-Judge with golden answers and the \"Analyze-then-Judge\" Chain-of-Thought (CoT) (Wei et al., 2022). This allows for a more human-aligned evaluation, assessing generation quality, text-image alignment, and helpfulness to yield a comprehensive score.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pick-a-Pic",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Natural Language Inference Improves Compositionality in Vision-Language Models",
+      "evidence": "2) Score agreement with human judgments of alignment for image-text alignment, using images generated from complex text prompts. We report results on five text-to-image evaluation benchmarks (DrawBench (Saharia et al., 2022), EditBench (Wang et al., 2023a), COCO-T2I (Lin et al., 2014), TIFA160 (Hu et al., 2023), Pick-a-Pic (Kirstain et al., 2023)).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Natural Language Inference Improves Compositionality in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Boolean question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Natural Language Inference Improves Compositionality in Vision-Language Models",
+      "evidence": "\"we use a function q(.) that converts a given text t into a question format, which enables the model to assess the visual-textual alignment in a consistent manner. Specifically, q(.) generates a yes/no question\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Natural Language Inference Improves Compositionality in Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats text-image alignment as semantic correspondence between generated visual output and the input text: papers describe it as the degree to which an image matches a caption, narrative fragment, or prompt, and faithfully reflects its visual concepts, intended elements, and descriptive details. Some papers make this more specific by stressing visual consistency in narrative depictions, such as characters and settings, while another frames it as a multimodal capability, the joint interpretation of visual content and embedded text so meaning stays consistent across modalities."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not provide an explicit subtype taxonomy, but they use the term across several scopes. In narrower uses it concerns caption or prompt matching for generated images or other visual assets, while broader uses include consistency across story elements and alignment when textual elements are partially visible inside the image itself. No definition explicitly equates it with another construct or places it under a larger construct."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow in the papers: it is linked to 2 measurement instruments, LLM-as-a-judge and Pick-a-Pic, and to 1 behavioral indicator, Boolean question answering. One paper uses MLLM-as-a-Judge with golden answers and an Analyze-then-Judge chain of thought to score generation quality, text-image alignment, and helpfulness, while another uses Pick-a-Pic as a benchmark for agreement with human judgments of alignment on images generated from complex text prompts. A related setup uses Boolean yes or no questions generated from text so a model can assess visual-textual alignment consistently."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement links, no causal or correlational claims are reported, and no links to other constructs are reported. The only non-measurement link is a related relation involving Boolean question answering: one paper describes converting text into yes or no questions so the model can assess visual-textual alignment in a consistent manner."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats text-image alignment as semantic correspondence between generated visual output and the input text: papers describe it as the degree to which an image matches a caption, narrative fragment, or prompt, and faithfully reflects its visual concepts, intended elements, and descriptive details. Some papers make this more specific by stressing visual consistency in narrative depictions, such as characters and settings, while another frames it as a multimodal capability, the joint interpretation of visual content and embedded text so meaning stays consistent across modalities.\n\nSpace of facets. Papers do not provide an explicit subtype taxonomy, but they use the term across several scopes. In narrower uses it concerns caption or prompt matching for generated images or other visual assets, while broader uses include consistency across story elements and alignment when textual elements are partially visible inside the image itself. No definition explicitly equates it with another construct or places it under a larger construct.\n\nSpace of measurement. Operationalization is narrow in the papers: it is linked to 2 measurement instruments, LLM-as-a-judge and Pick-a-Pic, and to 1 behavioral indicator, Boolean question answering. One paper uses MLLM-as-a-Judge with golden answers and an Analyze-then-Judge chain of thought to score generation quality, text-image alignment, and helpfulness, while another uses Pick-a-Pic as a benchmark for agreement with human judgments of alignment on images generated from complex text prompts. A related setup uses Boolean yes or no questions generated from text so a model can assess visual-textual alignment consistently.\n\nLinks. Beyond measurement links, no causal or correlational claims are reported, and no links to other constructs are reported. The only non-measurement link is a related relation involving Boolean question answering: one paper describes converting text into yes or no questions so the model can assess visual-textual alignment in a consistent manner.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "LLMs Behind the Scenes: Enabling Narrative Scene Illustration"
+    ],
+    "iclr24": [
+      "AutomaTikZ: Text-Guided Synthesis of Scientific Vector Graphics with TikZ"
+    ],
+    "iclr25": [
+      "Interleaved Scene Graphs for Interleaved Text-and-Image Generation Assessment",
+      "VCR: A Task for Pixel-Level Complex Reasoning in Vision Language Models via Restoring Occluded Text"
+    ],
+    "neurips24": [
+      "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+      "YouDream: Generating Anatomically Controllable Consistent Text-to-3D Animals"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr24": 1,
+    "iclr25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "canonical_name": "JEEBench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed papers, JEEBench is most commonly treated as a challenging mathematics benchmark or dataset for benchmarking LLM performance on hard, exam-style problems. Some descriptions are more specific, portraying it as a collection of math problems from Indian Institute of Technology entrance exams that assesses advanced mathematical reasoning, while another paper says it covers some college-level topics, including simple ODEs and multivariable calculus. Papers also place it among more challenging mathematics problem sets.\n\nWhat it is claimed to measure. Papers use JEEBench to evaluate mathematical reasoning on exam-style problems, advanced mathematical reasoning, and LLM performance on challenging mathematics problems. These claims cluster around mathematical reasoning and benchmark performance, but papers do not explicitly link it to any construct or behavioral indicator.\n\nSpace of uses. Papers do not explicitly link it to other measurement instruments, but they mention it alongside other hard math benchmarks, especially OmniMATH and a subset of MATHBENCH. The quoted passages position it as an additional challenging benchmark for comparative studies, including extra evaluations on JEE-Bench and OmniMATH, and as a benchmark that covers some college-level topics.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "JEEBENCH",
+    "JEEBench",
+    "JEE-Bench"
+  ],
+  "papers": [
+    "HARDMath: A Benchmark Dataset for Challenging Problems in Applied Mathematics",
+    "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models",
+    "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance",
+    "Guiding Through Complexity: What Makes Good Supervision for Hard Reasoning Tasks?"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A benchmark dataset covering college-level mathematics topics, including simple ODEs and multivariable calculus.",
+      "papers": [
+        "HARDMath: A Benchmark Dataset for Challenging Problems in Applied Mathematics"
+      ],
+      "original_name": "JEEBENCH"
+    },
+    {
+      "text": "A mathematics benchmark used in prior work for evaluating mathematical reasoning on exam-style problems.",
+      "papers": [
+        "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models"
+      ],
+      "original_name": "JEEBench"
+    },
+    {
+      "text": "A challenging dataset of mathematics problems used for benchmarking LLM performance.",
+      "papers": [
+        "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance",
+        "Guiding Through Complexity: What Makes Good Supervision for Hard Reasoning Tasks?"
+      ],
+      "original_name": "JEE-Bench"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed papers, JEEBench is most commonly treated as a challenging mathematics benchmark or dataset for benchmarking LLM performance on hard, exam-style problems. Some descriptions are more specific, portraying it as a collection of math problems from Indian Institute of Technology entrance exams that assesses advanced mathematical reasoning, while another paper says it covers some college-level topics, including simple ODEs and multivariable calculus. Papers also place it among more challenging mathematics problem sets."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use JEEBench to evaluate mathematical reasoning on exam-style problems, advanced mathematical reasoning, and LLM performance on challenging mathematics problems. These claims cluster around mathematical reasoning and benchmark performance, but papers do not explicitly link it to any construct or behavioral indicator."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers do not explicitly link it to other measurement instruments, but they mention it alongside other hard math benchmarks, especially OmniMATH and a subset of MATHBENCH. The quoted passages position it as an additional challenging benchmark for comparative studies, including extra evaluations on JEE-Bench and OmniMATH, and as a benchmark that covers some college-level topics."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed papers, JEEBench is most commonly treated as a challenging mathematics benchmark or dataset for benchmarking LLM performance on hard, exam-style problems. Some descriptions are more specific, portraying it as a collection of math problems from Indian Institute of Technology entrance exams that assesses advanced mathematical reasoning, while another paper says it covers some college-level topics, including simple ODEs and multivariable calculus. Papers also place it among more challenging mathematics problem sets.\n\nWhat it is claimed to measure. Papers use JEEBench to evaluate mathematical reasoning on exam-style problems, advanced mathematical reasoning, and LLM performance on challenging mathematics problems. These claims cluster around mathematical reasoning and benchmark performance, but papers do not explicitly link it to any construct or behavioral indicator.\n\nSpace of uses. Papers do not explicitly link it to other measurement instruments, but they mention it alongside other hard math benchmarks, especially OmniMATH and a subset of MATHBENCH. The quoted passages position it as an additional challenging benchmark for comparative studies, including extra evaluations on JEE-Bench and OmniMATH, and as a benchmark that covers some college-level topics.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "HARDMath: A Benchmark Dataset for Challenging Problems in Applied Mathematics",
+      "Omni-MATH: A Universal Olympiad Level Mathematic Benchmark for Large Language Models",
+      "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance"
+    ],
+    "naacl25": [
+      "Guiding Through Complexity: What Makes Good Supervision for Hard Reasoning Tasks?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "naacl25"
+  ]
+}

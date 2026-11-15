@@ -1,0 +1,121 @@
+{
+  "canonical_name": "BIG-Bench Logical Deduction",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, the prevailing usage treats BIG-Bench Logical Deduction as a BigBench task or benchmark for deduction. Definitions describe it as testing deductive reasoning from a set of premises, evaluating logical reasoning capabilities, and, in one description, as a symbolic reasoning benchmark for deduction over structured premises. Papers also refer to it simply as Logical Deduction or as Deduction from the BigBench collaborative benchmark.\n\nWhat it is claimed to measure. Papers use it to measure logical reasoning and symbolic reasoning, and the linked construct set contains two constructs; no behavioral indicator is linked to it. One framing places it among logical reasoning tasks, while another uses it within a symbolic reasoning evaluation, so the measurement claims span both of those constructs rather than a single reported target.\n\nSpace of uses. Papers include it within broader reasoning suites. One logical reasoning evaluation pairs it with AR-LSAT, ZebraLogic, FOLIO, and other reasoning tasks, while another symbolic reasoning setup pairs it with Date Understanding and other BigBench datasets. Papers also relate it to one other measurement instrument, BIG-Bench Hard, by describing BBH as a collection that includes tasks such as logical deduction.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Logical deduction",
+    "Logical Deduction"
+  ],
+  "papers": [
+    "Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning",
+    "Steering Large Language Models between Code Execution and Textual Reasoning"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A task from the BigBench benchmark that tests the ability to perform deductive reasoning from a set of premises.",
+      "papers": [
+        "Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning",
+        "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units"
+      ],
+      "original_name": "Logical deduction"
+    },
+    {
+      "text": "A benchmark for evaluating logical reasoning capabilities.",
+      "papers": [
+        "Steering Large Language Models between Code Execution and Textual Reasoning"
+      ],
+      "original_name": "Logical Deduction"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BIG-Bench Hard",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+      "evidence": "We evaluate on tasks selected from BIG-Bench Hard (BBH) [43], a collection of diverse tasks considered to be challenging to LLMs ... the tasks include numerical reasoning, commonsense problem-solving, logical deduction, linguistic manipulation, machine translation, and tabular reasoning, among others. (Section 3.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization",
+          "Fractal Patterns May Illuminate the Success of Next-Token Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning",
+      "evidence": "We evaluate CLOVER on seven logical reasoning tasks: AR-LSAT (Zhong et al., 2022), ZebraLogic (Lin et al., 2025), Logic grid puzzle (Puzzle), Symbol interpretation (Symbol), and Logical deduction (Deduction) from the BigBench collaborative benchmark (Srivastava et al., 2022), FOLIO (Han et al., 2022), and ProofWriter (Tafjord et al., 2021). (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Symbolic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "evidence": "Symbolic Reasoning. We select four datasets from BigBench (Srivastava et al., 2022) for testing, including Date Understanding, Penguin, Colored Objects and Logical Deduction. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, the prevailing usage treats BIG-Bench Logical Deduction as a BigBench task or benchmark for deduction. Definitions describe it as testing deductive reasoning from a set of premises, evaluating logical reasoning capabilities, and, in one description, as a symbolic reasoning benchmark for deduction over structured premises. Papers also refer to it simply as Logical Deduction or as Deduction from the BigBench collaborative benchmark."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use it to measure logical reasoning and symbolic reasoning, and the linked construct set contains two constructs; no behavioral indicator is linked to it. One framing places it among logical reasoning tasks, while another uses it within a symbolic reasoning evaluation, so the measurement claims span both of those constructs rather than a single reported target."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers include it within broader reasoning suites. One logical reasoning evaluation pairs it with AR-LSAT, ZebraLogic, FOLIO, and other reasoning tasks, while another symbolic reasoning setup pairs it with Date Understanding and other BigBench datasets. Papers also relate it to one other measurement instrument, BIG-Bench Hard, by describing BBH as a collection that includes tasks such as logical deduction."
+    }
+  ],
+  "characterization": "What it is. Across the papers, the prevailing usage treats BIG-Bench Logical Deduction as a BigBench task or benchmark for deduction. Definitions describe it as testing deductive reasoning from a set of premises, evaluating logical reasoning capabilities, and, in one description, as a symbolic reasoning benchmark for deduction over structured premises. Papers also refer to it simply as Logical Deduction or as Deduction from the BigBench collaborative benchmark.\n\nWhat it is claimed to measure. Papers use it to measure logical reasoning and symbolic reasoning, and the linked construct set contains two constructs; no behavioral indicator is linked to it. One framing places it among logical reasoning tasks, while another uses it within a symbolic reasoning evaluation, so the measurement claims span both of those constructs rather than a single reported target.\n\nSpace of uses. Papers include it within broader reasoning suites. One logical reasoning evaluation pairs it with AR-LSAT, ZebraLogic, FOLIO, and other reasoning tasks, while another symbolic reasoning setup pairs it with Date Understanding and other BigBench datasets. Papers also relate it to one other measurement instrument, BIG-Bench Hard, by describing BBH as a collection that includes tasks such as logical deduction.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units"
+    ],
+    "iclr25": [
+      "Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning",
+      "Steering Large Language Models between Code Execution and Textual Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

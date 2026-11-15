@@ -1,0 +1,91 @@
+{
+  "canonical_name": "ChemProt",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most commonly described as a labeled biomedical dataset for identifying chemical-protein interactions in scientific literature, papers frame ChemProt as a relation extraction, relation/classification, or text classification dataset. One description specifies five relation classes, while a smaller line of work treats it as a named entity detection source with annotations for chemical compounds and gene or protein-related objects, and derives ChemProt-Chem and ChemProt-Gene for detecting chemicals and genes.\n\nWhat it is claimed to measure. Papers link ChemProt to one behavioral indicator and no constructs. The recorded measurement claim is concentrated on relation extraction: one paper reports that Relation extraction is measured by ChemProt, describing it as a chemical-protein dataset featuring five relation classes.\n\nSpace of uses. In the reported uses, ChemProt appears with other biomedical datasets in evaluation and as a downstream domain adaptation task. Papers place it alongside RCT, PubMedQA, MQP, and USMLE, and another paper repurposes it for named entity detection through derived subsets for chemicals and genes.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ChemProt"
+  ],
+  "papers": [
+    "Adapting Large Language Models via Reading Comprehension",
+    "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+    "Entangled Relations: Leveraging NLI and Meta-analysis to Enhance Biomedical Relation Extraction",
+    "PICLe: Pseudo-annotations for In-Context Learning in Low-Resource Named Entity Detection",
+    "TSDS: Data Selection for Task-Specific Model Finetuning"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A labeled biomedical relation/classification dataset used as one of the downstream domain adaptation tasks.",
+      "papers": [
+        "Adapting Large Language Models via Reading Comprehension",
+        "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+        "Entangled Relations: Leveraging NLI and Meta-analysis to Enhance Biomedical Relation Extraction",
+        "PICLe: Pseudo-annotations for In-Context Learning in Low-Resource Named Entity Detection",
+        "TSDS: Data Selection for Task-Specific Model Finetuning"
+      ],
+      "original_name": "ChemProt"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Relation extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Entangled Relations: Leveraging NLI and Meta-analysis to Enhance Biomedical Relation Extraction",
+      "evidence": "ChemProt is a chemical-protein dataset featuring five relation classes (Taboureau et al., 2010). (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Entangled Relations: Leveraging NLI and Meta-analysis to Enhance Biomedical Relation Extraction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most commonly described as a labeled biomedical dataset for identifying chemical-protein interactions in scientific literature, papers frame ChemProt as a relation extraction, relation/classification, or text classification dataset. One description specifies five relation classes, while a smaller line of work treats it as a named entity detection source with annotations for chemical compounds and gene or protein-related objects, and derives ChemProt-Chem and ChemProt-Gene for detecting chemicals and genes."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link ChemProt to one behavioral indicator and no constructs. The recorded measurement claim is concentrated on relation extraction: one paper reports that Relation extraction is measured by ChemProt, describing it as a chemical-protein dataset featuring five relation classes."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In the reported uses, ChemProt appears with other biomedical datasets in evaluation and as a downstream domain adaptation task. Papers place it alongside RCT, PubMedQA, MQP, and USMLE, and another paper repurposes it for named entity detection through derived subsets for chemicals and genes."
+    }
+  ],
+  "characterization": "What it is. Most commonly described as a labeled biomedical dataset for identifying chemical-protein interactions in scientific literature, papers frame ChemProt as a relation extraction, relation/classification, or text classification dataset. One description specifies five relation classes, while a smaller line of work treats it as a named entity detection source with annotations for chemical compounds and gene or protein-related objects, and derives ChemProt-Chem and ChemProt-Gene for detecting chemicals and genes.\n\nWhat it is claimed to measure. Papers link ChemProt to one behavioral indicator and no constructs. The recorded measurement claim is concentrated on relation extraction: one paper reports that Relation extraction is measured by ChemProt, describing it as a chemical-protein dataset featuring five relation classes.\n\nSpace of uses. In the reported uses, ChemProt appears with other biomedical datasets in evaluation and as a downstream domain adaptation task. Papers place it alongside RCT, PubMedQA, MQP, and USMLE, and another paper repurposes it for named entity detection through derived subsets for chemicals and genes.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Adapting Large Language Models via Reading Comprehension",
+      "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs"
+    ],
+    "naacl25": [
+      "Entangled Relations: Leveraging NLI and Meta-analysis to Enhance Biomedical Relation Extraction",
+      "PICLe: Pseudo-annotations for In-Context Learning in Low-Resource Named Entity Detection"
+    ],
+    "neurips24": [
+      "TSDS: Data Selection for Task-Specific Model Finetuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "naacl25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "naacl25",
+    "neurips24"
+  ]
+}

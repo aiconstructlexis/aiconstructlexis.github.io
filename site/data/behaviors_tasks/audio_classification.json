@@ -1,0 +1,101 @@
+{
+  "canonical_name": "Audio classification",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Most papers treat audio classification as assigning an audio clip to a sound category or label. The prevailing formulation is that the clip is assigned one or more predefined labels, and one paper specifies category types such as sound events, genre, or speaker-related classes. A smaller line of work uses the name sound classification and describes assigning sound clips to semantic categories, and one paper notes that outputs may be label names or descriptions in text form rather than label indices.\n\nVariants. Papers use both audio classification and sound classification, and they often place it alongside captioning within broader auditory task suites or audio classification benchmarks. The studied category sets include sound events, genre, and speaker-related classes, and one paper specifically reports sound classification on the ESC-50 dataset using tokenizer-derived representations.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to audio classification: FSD50K. One paper measures it with FSD50K and reports the result as \"FSD50k CLS - mAP,\" and no other instrument is linked.\n\nWhat it is taken as evidence of. No construct is linked to audio classification, so the papers do not explicitly treat it as evidence of any construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Audio classification",
+    "Sound classification"
+  ],
+  "papers": [
+    "Listen, Think, and Understand",
+    "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+    "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+    "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+    "MATS: An Audio Language Model under Text-only Supervision"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Assigning an audio clip to a sound category or label.",
+      "papers": [
+        "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+        "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+        "Listen, Think, and Understand"
+      ],
+      "original_name": "Audio classification"
+    },
+    {
+      "text": "Assigning sound clips to semantic categories using tokenizer-derived representations.",
+      "papers": [
+        "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling"
+      ],
+      "original_name": "Sound classification"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FSD50K",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+      "evidence": "FSD50k CLS - mAP (Table 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most papers treat audio classification as assigning an audio clip to a sound category or label. The prevailing formulation is that the clip is assigned one or more predefined labels, and one paper specifies category types such as sound events, genre, or speaker-related classes. A smaller line of work uses the name sound classification and describes assigning sound clips to semantic categories, and one paper notes that outputs may be label names or descriptions in text form rather than label indices."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use both audio classification and sound classification, and they often place it alongside captioning within broader auditory task suites or audio classification benchmarks. The studied category sets include sound events, genre, and speaker-related classes, and one paper specifically reports sound classification on the ESC-50 dataset using tokenizer-derived representations."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one measurement instrument is linked to audio classification: FSD50K. One paper measures it with FSD50K and reports the result as \"FSD50k CLS - mAP,\" and no other instrument is linked."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to audio classification, so the papers do not explicitly treat it as evidence of any construct."
+    }
+  ],
+  "characterization": "Space of definitions. Most papers treat audio classification as assigning an audio clip to a sound category or label. The prevailing formulation is that the clip is assigned one or more predefined labels, and one paper specifies category types such as sound events, genre, or speaker-related classes. A smaller line of work uses the name sound classification and describes assigning sound clips to semantic categories, and one paper notes that outputs may be label names or descriptions in text form rather than label indices.\n\nVariants. Papers use both audio classification and sound classification, and they often place it alongside captioning within broader auditory task suites or audio classification benchmarks. The studied category sets include sound events, genre, and speaker-related classes, and one paper specifically reports sound classification on the ESC-50 dataset using tokenizer-derived representations.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to audio classification: FSD50K. One paper measures it with FSD50K and reports the result as \"FSD50k CLS - mAP,\" and no other instrument is linked.\n\nWhat it is taken as evidence of. No construct is linked to audio classification, so the papers do not explicitly treat it as evidence of any construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Aligned Better, Listen Better for Audio-Visual Large Language Models"
+    ],
+    "icml25": [
+      "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities",
+      "MATS: An Audio Language Model under Text-only Supervision"
+    ],
+    "iclr24": [
+      "Listen, Think, and Understand"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1,
+    "icml25": 3,
+    "iclr24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

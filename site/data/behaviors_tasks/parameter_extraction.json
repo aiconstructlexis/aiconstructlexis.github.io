@@ -1,0 +1,109 @@
+{
+  "canonical_name": "Parameter extraction",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across definitions, the common framing is the observable step of getting the right parameter or argument values for a tool, function, or API call. Papers variously describe this as extracting values from a natural-language query, assigning correct values to a selected function's parameters, or providing the correct arguments for a selected tool call; a narrower dialogue-oriented framing treats it as filling missing API values from dialogue context or user replies. The success criterion is usually correctness of the chosen values, reflected in examples such as extracting visitor counts, ticket types, or special conditions, or stating that a parameter has a specific value such as \"fried chicken\" or \"Lyft\".\n\nVariants. Papers use several near-names for the same behavior: parameter extraction, parameter resolution, parameterization, and parameter selection. The studied settings differ, including natural-language orders converted into code arguments, dialogue-based API completion, and single-tool or per-dialogue-turn tool-calling evaluation. One paper also relates it to Tool use in a medical slot-filling setup, where comprehensive medical records, tool descriptions, and function docstrings are used to facilitate slot filling and then use the tool appropriately.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. In operational use, papers nonetheless describe scoring with accuracy-style measures, including \"parameter resolution accuracy\" and \"Parameter Selection Accuracy (PS),\" and one quoted passage refers to per-dialogue-turn accuracy of tool and parameter selection.\n\nWhat it is taken as evidence of. No construct is linked to this behavior, so the papers here do not present it as evidence of any particular construct. The only recorded cross-entity connection outside measurement is that one paper reports it as related to Tool use, rather than tying it to a construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Parameter extraction",
+    "Parameter resolution",
+    "Parameterization",
+    "Parameter selection"
+  ],
+  "papers": [
+    "AskToAct: Enhancing LLMs Tool Use via Self-Correcting Clarification",
+    "Improving Large Language Models Function Calling and Interpretability via Guided-Structured Templates",
+    "PricingLogic: Evaluating LLMs Reasoning on Complex Tourism Pricing Tasks",
+    "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The observable task of identifying and extracting specific values from a natural language query to serve as arguments for a function call.",
+      "papers": [
+        "PricingLogic: Evaluating LLMs Reasoning on Complex Tourism Pricing Tasks"
+      ],
+      "original_name": "Parameter extraction"
+    },
+    {
+      "text": "The model fills in missing API parameter values from dialogue context or user replies.",
+      "papers": [
+        "AskToAct: Enhancing LLMs Tool Use via Self-Correcting Clarification"
+      ],
+      "original_name": "Parameter resolution"
+    },
+    {
+      "text": "The observable action of identifying and assigning correct values to the parameters required by a selected function.",
+      "papers": [
+        "Improving Large Language Models Function Calling and Interpretability via Guided-Structured Templates"
+      ],
+      "original_name": "Parameterization"
+    },
+    {
+      "text": "The observable action of identifying and providing the correct arguments or parameters for a selected tool call.",
+      "papers": [
+        "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models"
+      ],
+      "original_name": "Parameter selection"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling",
+      "evidence": "In the first step, we facilitate the slot filling by inputting comprehensive medical records, tool descriptions, and their function docstrings into the LLM... enabling accurate information choices, and then to use the tool appropriately. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "MeNTi: Bridging Medical Calculator and LLM Agent with Nested Tool Calling"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across definitions, the common framing is the observable step of getting the right parameter or argument values for a tool, function, or API call. Papers variously describe this as extracting values from a natural-language query, assigning correct values to a selected function's parameters, or providing the correct arguments for a selected tool call; a narrower dialogue-oriented framing treats it as filling missing API values from dialogue context or user replies. The success criterion is usually correctness of the chosen values, reflected in examples such as extracting visitor counts, ticket types, or special conditions, or stating that a parameter has a specific value such as \"fried chicken\" or \"Lyft\"."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several near-names for the same behavior: parameter extraction, parameter resolution, parameterization, and parameter selection. The studied settings differ, including natural-language orders converted into code arguments, dialogue-based API completion, and single-tool or per-dialogue-turn tool-calling evaluation. One paper also relates it to Tool use in a medical slot-filling setup, where comprehensive medical records, tool descriptions, and function docstrings are used to facilitate slot filling and then use the tool appropriately."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior. In operational use, papers nonetheless describe scoring with accuracy-style measures, including \"parameter resolution accuracy\" and \"Parameter Selection Accuracy (PS),\" and one quoted passage refers to per-dialogue-turn accuracy of tool and parameter selection."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to this behavior, so the papers here do not present it as evidence of any particular construct. The only recorded cross-entity connection outside measurement is that one paper reports it as related to Tool use, rather than tying it to a construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across definitions, the common framing is the observable step of getting the right parameter or argument values for a tool, function, or API call. Papers variously describe this as extracting values from a natural-language query, assigning correct values to a selected function's parameters, or providing the correct arguments for a selected tool call; a narrower dialogue-oriented framing treats it as filling missing API values from dialogue context or user replies. The success criterion is usually correctness of the chosen values, reflected in examples such as extracting visitor counts, ticket types, or special conditions, or stating that a parameter has a specific value such as \"fried chicken\" or \"Lyft\".\n\nVariants. Papers use several near-names for the same behavior: parameter extraction, parameter resolution, parameterization, and parameter selection. The studied settings differ, including natural-language orders converted into code arguments, dialogue-based API completion, and single-tool or per-dialogue-turn tool-calling evaluation. One paper also relates it to Tool use in a medical slot-filling setup, where comprehensive medical records, tool descriptions, and function docstrings are used to facilitate slot filling and then use the tool appropriately.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. In operational use, papers nonetheless describe scoring with accuracy-style measures, including \"parameter resolution accuracy\" and \"Parameter Selection Accuracy (PS),\" and one quoted passage refers to per-dialogue-turn accuracy of tool and parameter selection.\n\nWhat it is taken as evidence of. No construct is linked to this behavior, so the papers here do not present it as evidence of any particular construct. The only recorded cross-entity connection outside measurement is that one paper reports it as related to Tool use, rather than tying it to a construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "AskToAct: Enhancing LLMs Tool Use via Self-Correcting Clarification",
+      "Improving Large Language Models Function Calling and Interpretability via Guided-Structured Templates",
+      "PricingLogic: Evaluating LLMs Reasoning on Complex Tourism Pricing Tasks"
+    ],
+    "iclr25": [
+      "MTU-Bench: A Multi-granularity Tool-Use Benchmark for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

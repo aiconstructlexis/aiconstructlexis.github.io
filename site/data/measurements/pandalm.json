@@ -1,0 +1,113 @@
+{
+  "canonical_name": "PandaLM",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the definitions, PandaLM is most commonly described as a fine-tuned LLM judge, based on Llama-7b, for preference judgment and automated evaluation of other LLMs. Some papers refer to the model specifically as PandaLM-7B and describe it as scoring or selecting outputs, while another definition presents it as a fine-tuned judge benchmark, trained on human preference data, that is used to evaluate model outputs.\n\nWhat it is claimed to measure. In the recorded links, papers use PandaLM to measure one construct and one behavioral indicator: Helpfulness and Instruction following. The helpfulness link is explicit, with one paper saying it uses PandaLM \"to evaluate the helpfulness of various models,\" while another paper frames PandaLM as addressing \"relative conciseness, clarity, adherence to instructions, comprehensiveness, and formality,\" which is recorded as measuring instruction following.\n\nSpace of uses. In the descriptions, PandaLM is used as an automated judge in evaluator comparisons, and no measurement instrument is linked to it. Papers place it alongside other judge models such as JudgeLM and GPT-4, and another paper uses it as a comparison point when assessing tuned judges.\n\nConcerns raised. A negative comparative assessment appears in one paper, which says that the judges it tuned \"all outperforms strongly PandaLM\".",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PandaLM"
+  ],
+  "papers": [
+    "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+    "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+    "PiCO: Peer Review in LLMs based on Consistency Optimization",
+    "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation",
+    "Tuning LLM Judge Design Decisions for 1/1000 of the Cost",
+    "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A fine-tuned language model (based on Llama-7b) designed specifically to act as a judge for preference-based evaluation of other LLMs.",
+      "papers": [
+        "PiCO: Peer Review in LLMs based on Consistency Optimization",
+        "Tuning LLM Judge Design Decisions for 1/1000 of the Cost"
+      ],
+      "original_name": "PandaLM"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+      "evidence": "It addresses vital subjective factors such as relative conciseness, clarity, adherence to instructions, comprehensiveness, and formality.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs",
+      "evidence": "Specifically, we use PandaLM (Wang et al., 2023b, 2024) to evaluate the helpfulness of various models. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the definitions, PandaLM is most commonly described as a fine-tuned LLM judge, based on Llama-7b, for preference judgment and automated evaluation of other LLMs. Some papers refer to the model specifically as PandaLM-7B and describe it as scoring or selecting outputs, while another definition presents it as a fine-tuned judge benchmark, trained on human preference data, that is used to evaluate model outputs."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "In the recorded links, papers use PandaLM to measure one construct and one behavioral indicator: Helpfulness and Instruction following. The helpfulness link is explicit, with one paper saying it uses PandaLM \"to evaluate the helpfulness of various models,\" while another paper frames PandaLM as addressing \"relative conciseness, clarity, adherence to instructions, comprehensiveness, and formality,\" which is recorded as measuring instruction following."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In the descriptions, PandaLM is used as an automated judge in evaluator comparisons, and no measurement instrument is linked to it. Papers place it alongside other judge models such as JudgeLM and GPT-4, and another paper uses it as a comparison point when assessing tuned judges."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "A negative comparative assessment appears in one paper, which says that the judges it tuned \"all outperforms strongly PandaLM\"."
+    }
+  ],
+  "characterization": "What it is. Across the definitions, PandaLM is most commonly described as a fine-tuned LLM judge, based on Llama-7b, for preference judgment and automated evaluation of other LLMs. Some papers refer to the model specifically as PandaLM-7B and describe it as scoring or selecting outputs, while another definition presents it as a fine-tuned judge benchmark, trained on human preference data, that is used to evaluate model outputs.\n\nWhat it is claimed to measure. In the recorded links, papers use PandaLM to measure one construct and one behavioral indicator: Helpfulness and Instruction following. The helpfulness link is explicit, with one paper saying it uses PandaLM \"to evaluate the helpfulness of various models,\" while another paper frames PandaLM as addressing \"relative conciseness, clarity, adherence to instructions, comprehensiveness, and formality,\" which is recorded as measuring instruction following.\n\nSpace of uses. In the descriptions, PandaLM is used as an automated judge in evaluator comparisons, and no measurement instrument is linked to it. Papers place it alongside other judge models such as JudgeLM and GPT-4, and another paper uses it as a comparison point when assessing tuned judges.\n\nConcerns raised. A negative comparative assessment appears in one paper, which says that the judges it tuned \"all outperforms strongly PandaLM\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization"
+    ],
+    "iclr25": [
+      "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "PiCO: Peer Review in LLMs based on Consistency Optimization",
+      "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation"
+    ],
+    "icml25": [
+      "Tuning LLM Judge Design Decisions for 1/1000 of the Cost"
+    ],
+    "naacl25": [
+      "Threshold Filtering Packing for Supervised Fine-Tuning: Training Related Samples within Packs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 1,
+    "iclr25": 3,
+    "icml25": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

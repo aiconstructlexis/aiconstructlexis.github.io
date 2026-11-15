@@ -1,0 +1,99 @@
+{
+  "canonical_name": "Evidence grounding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, papers treat evidence grounding as answers being anchored in relevant evidence from the input, including visual scenes or video content, rather than unsupported claims. One framing emphasizes response-level behavior, support with \"specific, relevant, and accurate references to observable content\"; another, under the label credibility, emphasizes whether answers reflect a \"genuine understanding\" of relevant evidence instead of shortcuts or biases. As MovieCORE: COgnitive REasoning in Movies describes it, the construct appears in the ability to reference specific scenes and provide concrete examples to support assertions, while CG-Bench: Clue-grounded Question Answering Benchmark for Long Video Understanding emphasizes retrieving relevant clues.\n\nSpace of facets. Systematization is limited. The papers do not break the construct into formal subtypes, but they do separate two facets: explicit references to observable content in the response, and the underlying basis of the answer in genuine understanding of relevant evidence rather than shortcuts or biases. Terminology also varies, with one paper using evidence grounding and another discussing credibility for this evidence-based answering behavior.\n\nSpace of measurement. Operationalization is sparse. Papers link the construct to no measurement instrument and to a single behavioral indicator, Supportiveness judgment; in that related usage, claims are evaluated for \"the degree to which they are grounded on the provided reference context.\" No other benchmark, evaluation instrument, probe, or analysis is linked to it here.\n\nLinks. The only recorded link is a related relationship to Supportiveness judgment. One paper reports this relation in terms of evaluating whether claims are grounded on the provided reference context. No papers here claim a causal relationship or correlation for this construct, and no linked constructs are recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Evidence grounding",
+    "Credibility"
+  ],
+  "papers": [
+    "MovieCORE: COgnitive REasoning in Movies",
+    "RAG-Zeval: Enhancing RAG Responses Evaluator through End-to-End Reasoning and Ranking-Based Reinforcement Learning",
+    "Uncovering Argumentative Flow: A Question-Focus Discourse Structuring Framework",
+    "CG-Bench: Clue-grounded Question Answering Benchmark for Long Video Understanding",
+    "ConQRet: A New Benchmark for Fine-Grained Automatic Evaluation of Retrieval Augmented Computational Argumentation"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The model's ability to support its responses with specific, relevant, and accurate references to observable content from the input (e.g., visual scenes), rather than making unsupported claims.",
+      "papers": [
+        "MovieCORE: COgnitive REasoning in Movies"
+      ],
+      "original_name": "Evidence grounding"
+    },
+    {
+      "text": "The degree to which a model's answers are based on a genuine understanding of relevant evidence within the video content, rather than relying on shortcuts or biases.",
+      "papers": [
+        "CG-Bench: Clue-grounded Question Answering Benchmark for Long Video Understanding"
+      ],
+      "original_name": "Credibility"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Supportiveness judgment",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "RAG-Zeval: Enhancing RAG Responses Evaluator through End-to-End Reasoning and Ranking-Based Reinforcement Learning",
+      "evidence": "\u201cThe claims are then evaluated for supportiveness\u2014the degree to which they are grounded on the provided reference context\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "RAG-Zeval: Enhancing RAG Responses Evaluator through End-to-End Reasoning and Ranking-Based Reinforcement Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, papers treat evidence grounding as answers being anchored in relevant evidence from the input, including visual scenes or video content, rather than unsupported claims. One framing emphasizes response-level behavior, support with \"specific, relevant, and accurate references to observable content\"; another, under the label credibility, emphasizes whether answers reflect a \"genuine understanding\" of relevant evidence instead of shortcuts or biases. As MovieCORE: COgnitive REasoning in Movies describes it, the construct appears in the ability to reference specific scenes and provide concrete examples to support assertions, while CG-Bench: Clue-grounded Question Answering Benchmark for Long Video Understanding emphasizes retrieving relevant clues."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Systematization is limited. The papers do not break the construct into formal subtypes, but they do separate two facets: explicit references to observable content in the response, and the underlying basis of the answer in genuine understanding of relevant evidence rather than shortcuts or biases. Terminology also varies, with one paper using evidence grounding and another discussing credibility for this evidence-based answering behavior."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is sparse. Papers link the construct to no measurement instrument and to a single behavioral indicator, Supportiveness judgment; in that related usage, claims are evaluated for \"the degree to which they are grounded on the provided reference context.\" No other benchmark, evaluation instrument, probe, or analysis is linked to it here."
+    },
+    {
+      "label": "Links.",
+      "text": "The only recorded link is a related relationship to Supportiveness judgment. One paper reports this relation in terms of evaluating whether claims are grounded on the provided reference context. No papers here claim a causal relationship or correlation for this construct, and no linked constructs are recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, papers treat evidence grounding as answers being anchored in relevant evidence from the input, including visual scenes or video content, rather than unsupported claims. One framing emphasizes response-level behavior, support with \"specific, relevant, and accurate references to observable content\"; another, under the label credibility, emphasizes whether answers reflect a \"genuine understanding\" of relevant evidence instead of shortcuts or biases. As MovieCORE: COgnitive REasoning in Movies describes it, the construct appears in the ability to reference specific scenes and provide concrete examples to support assertions, while CG-Bench: Clue-grounded Question Answering Benchmark for Long Video Understanding emphasizes retrieving relevant clues.\n\nSpace of facets. Systematization is limited. The papers do not break the construct into formal subtypes, but they do separate two facets: explicit references to observable content in the response, and the underlying basis of the answer in genuine understanding of relevant evidence rather than shortcuts or biases. Terminology also varies, with one paper using evidence grounding and another discussing credibility for this evidence-based answering behavior.\n\nSpace of measurement. Operationalization is sparse. Papers link the construct to no measurement instrument and to a single behavioral indicator, Supportiveness judgment; in that related usage, claims are evaluated for \"the degree to which they are grounded on the provided reference context.\" No other benchmark, evaluation instrument, probe, or analysis is linked to it here.\n\nLinks. The only recorded link is a related relationship to Supportiveness judgment. One paper reports this relation in terms of evaluating whether claims are grounded on the provided reference context. No papers here claim a causal relationship or correlation for this construct, and no linked constructs are recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "MovieCORE: COgnitive REasoning in Movies",
+      "RAG-Zeval: Enhancing RAG Responses Evaluator through End-to-End Reasoning and Ranking-Based Reinforcement Learning",
+      "Uncovering Argumentative Flow: A Question-Focus Discourse Structuring Framework"
+    ],
+    "iclr25": [
+      "CG-Bench: Clue-grounded Question Answering Benchmark for Long Video Understanding"
+    ],
+    "naacl25": [
+      "ConQRet: A New Benchmark for Fine-Grained Automatic Evaluation of Retrieval Augmented Computational Argumentation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

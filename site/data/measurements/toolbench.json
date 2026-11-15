@@ -1,0 +1,221 @@
+{
+  "canonical_name": "ToolBench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, ToolBench is most commonly described as a benchmark or benchmark dataset for evaluating LLM agents' tool use, built around real-world REST APIs, user requests or instructions, and interaction traces or expert trajectories. Definitions vary on whether it is primarily an evaluation benchmark, an instruction-tuning dataset, or a serving workload: some papers describe more than 16k APIs from 49 categories, over 10,000 queries with full interactions, or training demonstrations with complex task-solving traces, while one paper characterizes it by prompts that include tool demonstrations and calls. Several papers also refer to specific slices of the resource, including a second release, test tasks, around 1,000 test cases, or four environments such as Home Search, Trip Booking, Google Sheets, and Virtual Home.\n\nWhat it is claimed to measure. Papers link ToolBench to 3 constructs and 2 behavioral indicators. The prevailing claim is that it measures Tool use, with additional use for Information retrieval; at the construct level it is reported as measuring Decision-making, Reasoning, and Sequential decision-making. The recorded claims therefore spread across several named targets, with papers describing API-calling accuracy on ToolBench, saying it evaluates multi-turn reasoning and tool-usage abilities, and using it for intricate multi-step decision tasks.\n\nSpace of uses. No measurement instrument is linked to it through the recorded relations. In use, papers often treat ToolBench as one benchmark within broader suites, pairing it with Game of 24, WebShop, API-Bank, APIBench, and BFCL-v2, while other studies place it next to GSM8K or other open-source tool-learning benchmarks. Papers also use it in multiple roles: as a main evaluation set for test tasks or specific environments, as a corpus from which retrieval and end-to-end agent-tuning data are converted, and as a workload for serving experiments.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ToolBench",
+    "Toolbench"
+  ],
+  "papers": [
+    "Mimicking the Familiar: Dynamic Command Generation for Information Theft Attacks in LLM Tool-Learning System",
+    "PlanGenLLMs: A Modern Survey of LLM Planning Capabilities",
+    "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search",
+    "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+    "API Pack: A Massive Multi-Programming Language Dataset for API Call Generation",
+    "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions",
+    "Preble: Efficient Distributed Prompt Scheduling for LLM Serving",
+    "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+    "ShortcutsBench: A Large-Scale Real-world Benchmark for API-based Agents",
+    "Tool-Planner: Task Planning with Clusters across Multiple Tools",
+    "ToolGen: Unified Tool Retrieval and Calling via Generation",
+    "Understanding the Generalization of In-Context Learning in Transformers: An Empirical Study",
+    "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+    "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+    "Reducing Tool Hallucination via Reliability Alignment",
+    "Tool Unlearning for Tool-Augmented LLMs",
+    "EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction",
+    "From Allies to Adversaries: Manipulating LLM Tool-Calling through Adversarial Injection",
+    "xLAM: A Family of Large Action Models to Empower AI Agent Systems",
+    "Advancing Tool-Augmented Large Language Models: Integrating Insights from Errors in Inference Trees",
+    "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+    "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+  ],
+  "paper_count": 22,
+  "definitions": [
+    {
+      "text": "A benchmark suite for evaluating the tool-use capabilities of LLM agents across various environments, including Home Search, Trip Booking, Google Sheets, and Virtual Home.",
+      "papers": [
+        "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search",
+        "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+        "Advancing Tool-Augmented Large Language Models: Integrating Insights from Errors in Inference Trees",
+        "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+        "From Allies to Adversaries: Manipulating LLM Tool-Calling through Adversarial Injection",
+        "EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction",
+        "xLAM: A Family of Large Action Models to Empower AI Agent Systems",
+        "Mimicking the Familiar: Dynamic Command Generation for Information Theft Attacks in LLM Tool-Learning System",
+        "Tool Unlearning for Tool-Augmented LLMs"
+      ],
+      "original_name": "ToolBench"
+    },
+    {
+      "text": "A workload used to evaluate an LLM's ability to use tools, characterized by prompts that include tool demonstrations and calls.",
+      "papers": [
+        "Preble: Efficient Distributed Prompt Scheduling for LLM Serving"
+      ],
+      "original_name": "Toolbench"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+      "evidence": "The ability to use external tools is a significant milestone in the development of LLMs... For this purpose, we utilize the large-scale tool usage dataset ToolBench [21]... (Section 3.2)",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents"
+        ],
+        "iclr25": [
+          "Understanding the Generalization of In-Context Learning in Transformers: An Empirical Study"
+        ],
+        "naacl25": [
+          "xLAM: A Family of Large Action Models to Empower AI Agent Systems"
+        ],
+        "emnlp25": [
+          "PORTS: Preference-Optimized Retrievers for Tool Selection with Large Language Models"
+        ],
+        "iclr24": [
+          "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ToolGen: Unified Tool Retrieval and Calling via Generation",
+      "evidence": "Our experiments are based on ToolBench, a real-world tool benchmark containing more 16k tool collections... Our retrieval and end-to-end agent-tuning data are converted from the original data in ToolBench. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "ToolGen: Unified Tool Retrieval and Calling via Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sequential decision-making",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "evidence": "conduct extensive experiments on Game of 24 (Yao et al., 2023), WebShop (Yao et al., 2022a), ToolBench (Qin et al., 2023c) and RestBench (Song et al., 2023), which contains intricate multi-step decision tasks involving diverse scenarios.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rational Decision-Making Agent with Learning Internal Utility Judgment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "evidence": "We use 100, 500, and 500 instances for Game of 24, WebShop, and ToolBench to evaluate the decision-making ability respectively.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rational Decision-Making Agent with Learning Internal Utility Judgment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "xLAM: A Family of Large Action Models to Empower AI Agent Systems",
+      "evidence": "ToolBench (Qin et al., 2024) specifically evaluates multi-turn reasoning and tool-usage abilities",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "xLAM: A Family of Large Action Models to Empower AI Agent Systems"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, ToolBench is most commonly described as a benchmark or benchmark dataset for evaluating LLM agents' tool use, built around real-world REST APIs, user requests or instructions, and interaction traces or expert trajectories. Definitions vary on whether it is primarily an evaluation benchmark, an instruction-tuning dataset, or a serving workload: some papers describe more than 16k APIs from 49 categories, over 10,000 queries with full interactions, or training demonstrations with complex task-solving traces, while one paper characterizes it by prompts that include tool demonstrations and calls. Several papers also refer to specific slices of the resource, including a second release, test tasks, around 1,000 test cases, or four environments such as Home Search, Trip Booking, Google Sheets, and Virtual Home."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link ToolBench to 3 constructs and 2 behavioral indicators. The prevailing claim is that it measures Tool use, with additional use for Information retrieval; at the construct level it is reported as measuring Decision-making, Reasoning, and Sequential decision-making. The recorded claims therefore spread across several named targets, with papers describing API-calling accuracy on ToolBench, saying it evaluates multi-turn reasoning and tool-usage abilities, and using it for intricate multi-step decision tasks."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it through the recorded relations. In use, papers often treat ToolBench as one benchmark within broader suites, pairing it with Game of 24, WebShop, API-Bank, APIBench, and BFCL-v2, while other studies place it next to GSM8K or other open-source tool-learning benchmarks. Papers also use it in multiple roles: as a main evaluation set for test tasks or specific environments, as a corpus from which retrieval and end-to-end agent-tuning data are converted, and as a workload for serving experiments."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, ToolBench is most commonly described as a benchmark or benchmark dataset for evaluating LLM agents' tool use, built around real-world REST APIs, user requests or instructions, and interaction traces or expert trajectories. Definitions vary on whether it is primarily an evaluation benchmark, an instruction-tuning dataset, or a serving workload: some papers describe more than 16k APIs from 49 categories, over 10,000 queries with full interactions, or training demonstrations with complex task-solving traces, while one paper characterizes it by prompts that include tool demonstrations and calls. Several papers also refer to specific slices of the resource, including a second release, test tasks, around 1,000 test cases, or four environments such as Home Search, Trip Booking, Google Sheets, and Virtual Home.\n\nWhat it is claimed to measure. Papers link ToolBench to 3 constructs and 2 behavioral indicators. The prevailing claim is that it measures Tool use, with additional use for Information retrieval; at the construct level it is reported as measuring Decision-making, Reasoning, and Sequential decision-making. The recorded claims therefore spread across several named targets, with papers describing API-calling accuracy on ToolBench, saying it evaluates multi-turn reasoning and tool-usage abilities, and using it for intricate multi-step decision tasks.\n\nSpace of uses. No measurement instrument is linked to it through the recorded relations. In use, papers often treat ToolBench as one benchmark within broader suites, pairing it with Game of 24, WebShop, API-Bank, APIBench, and BFCL-v2, while other studies place it next to GSM8K or other open-source tool-learning benchmarks. Papers also use it in multiple roles: as a main evaluation set for test tasks or specific environments, as a corpus from which retrieval and end-to-end agent-tuning data are converted, and as a workload for serving experiments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Mimicking the Familiar: Dynamic Command Generation for Information Theft Attacks in LLM Tool-Learning System",
+      "PlanGenLLMs: A Modern Survey of LLM Planning Capabilities"
+    ],
+    "iclr24": [
+      "ToolChain*: Efficient Action Space Navigation in Large Language Models with A* Search",
+      "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs"
+    ],
+    "iclr25": [
+      "API Pack: A Massive Multi-Programming Language Dataset for API Call Generation",
+      "From Exploration to Mastery: Enabling LLMs to Master Tools via Self-Driven Interactions",
+      "Preble: Efficient Distributed Prompt Scheduling for LLM Serving",
+      "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "ShortcutsBench: A Large-Scale Real-world Benchmark for API-based Agents",
+      "Tool-Planner: Task Planning with Clusters across Multiple Tools",
+      "ToolGen: Unified Tool Retrieval and Calling via Generation",
+      "Understanding the Generalization of In-Context Learning in Transformers: An Empirical Study"
+    ],
+    "icml25": [
+      "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "MoRAgent: Parameter Efficient Agent Tuning with Mixture-of-Roles",
+      "Reducing Tool Hallucination via Reliability Alignment",
+      "Tool Unlearning for Tool-Augmented LLMs"
+    ],
+    "naacl25": [
+      "EASYTOOL: Enhancing LLM-based Agents with Concise Tool Instruction",
+      "From Allies to Adversaries: Manipulating LLM Tool-Calling through Adversarial Injection",
+      "xLAM: A Family of Large Action Models to Empower AI Agent Systems"
+    ],
+    "neurips24": [
+      "Advancing Tool-Augmented Large Language Models: Integrating Insights from Errors in Inference Trees",
+      "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+      "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr24": 2,
+    "iclr25": 8,
+    "icml25": 4,
+    "naacl25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

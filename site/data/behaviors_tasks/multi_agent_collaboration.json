@@ -1,0 +1,87 @@
+{
+  "canonical_name": "Multi-agent collaboration",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats multi-agent collaboration as observable coordination among multiple agents working toward a collective or task-oriented goal. Most descriptions emphasize collective deliberation, communication, and joint output generation, including cross-examination and debate; some papers add that agents are specialized and that collaboration can reveal emergent abilities and combine specialized expertise. A smaller formulation describes it as generating task-oriented outputs from interaction among agents and external knowledge sources.\n\nVariants. Papers study it in several settings. The most explicit variants are collaboration through cross-examination and debate, collaboration among specialized agents, and graph-level tasks where agents communicate with one another and with external knowledge sources to produce task-oriented outputs. One paper narrows this further to answering medical questions through agent interaction with external knowledge, and another relates multi-agent collaboration to iterative response improvement in reasoning tasks with self-generated data.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers describe the behavior directly in task terms, such as debate, communication among agents, joint output generation, and interaction with external knowledge.\n\nWhat it is taken as evidence of. No construct is linked to this behavior as something it evidences, so the papers do not specify a shared construct that it measures. Separately, one paper reports that multi-agent collaboration is related to self-correction, describing a multi-agent LLM system trained to iteratively improve its responses for reasoning tasks with self-generated data.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-agent collaboration"
+  ],
+  "papers": [
+    "Graph World Model",
+    "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+    "EvoAgent: Towards Automatic Multi-Agent Generation via Evolutionary Algorithms",
+    "Towards Rationality in Language and Multimodal Agents: A Survey"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The behavior of multiple agents working together through processes like cross-examination and debate to achieve a collective goal.",
+      "papers": [
+        "EvoAgent: Towards Automatic Multi-Agent Generation via Evolutionary Algorithms",
+        "Towards Rationality in Language and Multimodal Agents: A Survey",
+        "Graph World Model"
+      ],
+      "original_name": "Multi-agent collaboration"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Reinforce LLM Reasoning through Multi-Agent Reflection",
+      "evidence": "\u201cwe propose DPSDP: Direct Policy Search by Dynamic Programming, an RL algorithm designed to train a multi-agent LLM system to iteratively improve its responses for reasoning tasks with self-generated data\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Reinforce LLM Reasoning through Multi-Agent Reflection"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats multi-agent collaboration as observable coordination among multiple agents working toward a collective or task-oriented goal. Most descriptions emphasize collective deliberation, communication, and joint output generation, including cross-examination and debate; some papers add that agents are specialized and that collaboration can reveal emergent abilities and combine specialized expertise. A smaller formulation describes it as generating task-oriented outputs from interaction among agents and external knowledge sources."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study it in several settings. The most explicit variants are collaboration through cross-examination and debate, collaboration among specialized agents, and graph-level tasks where agents communicate with one another and with external knowledge sources to produce task-oriented outputs. One paper narrows this further to answering medical questions through agent interaction with external knowledge, and another relates multi-agent collaboration to iterative response improvement in reasoning tasks with self-generated data."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Instead, papers describe the behavior directly in task terms, such as debate, communication among agents, joint output generation, and interaction with external knowledge."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to this behavior as something it evidences, so the papers do not specify a shared construct that it measures. Separately, one paper reports that multi-agent collaboration is related to self-correction, describing a multi-agent LLM system trained to iteratively improve its responses for reasoning tasks with self-generated data."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats multi-agent collaboration as observable coordination among multiple agents working toward a collective or task-oriented goal. Most descriptions emphasize collective deliberation, communication, and joint output generation, including cross-examination and debate; some papers add that agents are specialized and that collaboration can reveal emergent abilities and combine specialized expertise. A smaller formulation describes it as generating task-oriented outputs from interaction among agents and external knowledge sources.\n\nVariants. Papers study it in several settings. The most explicit variants are collaboration through cross-examination and debate, collaboration among specialized agents, and graph-level tasks where agents communicate with one another and with external knowledge sources to produce task-oriented outputs. One paper narrows this further to answering medical questions through agent interaction with external knowledge, and another relates multi-agent collaboration to iterative response improvement in reasoning tasks with self-generated data.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers describe the behavior directly in task terms, such as debate, communication among agents, joint output generation, and interaction with external knowledge.\n\nWhat it is taken as evidence of. No construct is linked to this behavior as something it evidences, so the papers do not specify a shared construct that it measures. Separately, one paper reports that multi-agent collaboration is related to self-correction, describing a multi-agent LLM system trained to iteratively improve its responses for reasoning tasks with self-generated data.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Graph World Model",
+      "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence"
+    ],
+    "naacl25": [
+      "EvoAgent: Towards Automatic Multi-Agent Generation via Evolutionary Algorithms",
+      "Towards Rationality in Language and Multimodal Agents: A Survey"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "naacl25": 2
+  },
+  "conferences": [
+    "icml25",
+    "naacl25"
+  ]
+}

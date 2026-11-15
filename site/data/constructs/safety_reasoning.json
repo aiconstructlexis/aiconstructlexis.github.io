@@ -1,0 +1,113 @@
+{
+  "canonical_name": "Safety reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing framing is a latent internal process or ability for making safety decisions during generation, especially determining whether a request is harmful and choosing a safe course of action. Some papers broaden this by describing the ability to analyze explicit and implicit intents in multimodal inputs, reconstruct the user\u2019s genuine request, and assess potential risks before responding. A smaller line of work, using the name Safety-aware reasoning, emphasizes integrating safety evaluation into each reasoning step, with self-monitoring and dynamic adjustment of responses based on safety status.\n\nSpace of facets. The papers do not provide a formal taxonomy, but they repeatedly describe the construct through recurring components: harm detection, safe action selection, intent analysis, request reconstruction, risk assessment, and safety-aware reflection at each step of reasoning. They also use both Safety reasoning and Safety-aware reasoning for closely aligned latent capabilities embedded in the reasoning process. The main variation is scope, with some descriptions centering on deciding whether to refuse or respond safely, and others extending to multimodal intent reconstruction and stepwise monitoring during generation.\n\nSpace of measurement. No measurement instrument is linked to it. The only linked behavioral indicator is Chain of thought, and the surrounding descriptions operationalize the construct through step-by-step analysis, self-improving chain-of-thought reasoning with safety awareness, chain-of-thought-based safety decision-making capabilities, and safety-aware reflections in each reasoning step. This operationalization matches the dominant definitions, which describe a latent reasoning process rather than a standalone output label.\n\nLinks. One paper reports that Chain of thought is related to Safety reasoning, describing identification of safety risks through step-by-step analysis with safety-aware chain-of-thought reasoning. One paper also claims a causal relationship from Helpfulness to Safety reasoning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Safety reasoning",
+    "Safety-aware reasoning"
+  ],
+  "papers": [
+    "Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking",
+    "SURE: Safety Understanding and Reasoning Enhancement for Multimodal Large Language Models",
+    "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning",
+    "STAIR: Improving Safety Alignment with Introspective Reasoning",
+    "Safety Alignment Can Be Not Superficial With Explicit Safety Signals",
+    "Safety Reasoning with Guidelines"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The latent cognitive process by which a model determines whether a request is harmful and decides on an appropriate, safe course of action.",
+      "papers": [
+        "Safety Alignment Can Be Not Superficial With Explicit Safety Signals",
+        "SURE: Safety Understanding and Reasoning Enhancement for Multimodal Large Language Models"
+      ],
+      "original_name": "Safety reasoning"
+    },
+    {
+      "text": "The latent ability of a model to integrate safety evaluation into its reasoning process, enabling self-monitoring and dynamic adjustment of responses based on safety status at each step.",
+      "papers": [
+        "Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking"
+      ],
+      "original_name": "Safety-aware reasoning"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain of thought",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "evidence": "\u201cWe enable LLMs to identify safety risks through step-by-step analysis by self-improving chain-of-thought (CoT) reasoning with safety awareness.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "STAIR: Improving Safety Alignment with Introspective Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "evidence": "Moreover, benefiting from the decomposed problem-solving in reasoning, STAIR mitigates safety-performance trade-offs and gets improvements in multiple dimensions, including helpfulness, truthfulness, robustness, and privacy awareness. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "STAIR: Improving Safety Alignment with Introspective Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing framing is a latent internal process or ability for making safety decisions during generation, especially determining whether a request is harmful and choosing a safe course of action. Some papers broaden this by describing the ability to analyze explicit and implicit intents in multimodal inputs, reconstruct the user\u2019s genuine request, and assess potential risks before responding. A smaller line of work, using the name Safety-aware reasoning, emphasizes integrating safety evaluation into each reasoning step, with self-monitoring and dynamic adjustment of responses based on safety status."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers do not provide a formal taxonomy, but they repeatedly describe the construct through recurring components: harm detection, safe action selection, intent analysis, request reconstruction, risk assessment, and safety-aware reflection at each step of reasoning. They also use both Safety reasoning and Safety-aware reasoning for closely aligned latent capabilities embedded in the reasoning process. The main variation is scope, with some descriptions centering on deciding whether to refuse or respond safely, and others extending to multimodal intent reconstruction and stepwise monitoring during generation."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it. The only linked behavioral indicator is Chain of thought, and the surrounding descriptions operationalize the construct through step-by-step analysis, self-improving chain-of-thought reasoning with safety awareness, chain-of-thought-based safety decision-making capabilities, and safety-aware reflections in each reasoning step. This operationalization matches the dominant definitions, which describe a latent reasoning process rather than a standalone output label."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper reports that Chain of thought is related to Safety reasoning, describing identification of safety risks through step-by-step analysis with safety-aware chain-of-thought reasoning. One paper also claims a causal relationship from Helpfulness to Safety reasoning."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing framing is a latent internal process or ability for making safety decisions during generation, especially determining whether a request is harmful and choosing a safe course of action. Some papers broaden this by describing the ability to analyze explicit and implicit intents in multimodal inputs, reconstruct the user\u2019s genuine request, and assess potential risks before responding. A smaller line of work, using the name Safety-aware reasoning, emphasizes integrating safety evaluation into each reasoning step, with self-monitoring and dynamic adjustment of responses based on safety status.\n\nSpace of facets. The papers do not provide a formal taxonomy, but they repeatedly describe the construct through recurring components: harm detection, safe action selection, intent analysis, request reconstruction, risk assessment, and safety-aware reflection at each step of reasoning. They also use both Safety reasoning and Safety-aware reasoning for closely aligned latent capabilities embedded in the reasoning process. The main variation is scope, with some descriptions centering on deciding whether to refuse or respond safely, and others extending to multimodal intent reconstruction and stepwise monitoring during generation.\n\nSpace of measurement. No measurement instrument is linked to it. The only linked behavioral indicator is Chain of thought, and the surrounding descriptions operationalize the construct through step-by-step analysis, self-improving chain-of-thought reasoning with safety awareness, chain-of-thought-based safety decision-making capabilities, and safety-aware reflections in each reasoning step. This operationalization matches the dominant definitions, which describe a latent reasoning process rather than a standalone output label.\n\nLinks. One paper reports that Chain of thought is related to Safety reasoning, describing identification of safety risks through step-by-step analysis with safety-aware chain-of-thought reasoning. One paper also claims a causal relationship from Helpfulness to Safety reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Reasoning-to-Defend: Safety-Aware Reasoning Can Defend Large Language Models from Jailbreaking",
+      "SURE: Safety Understanding and Reasoning Enhancement for Multimodal Large Language Models",
+      "SafeKey: Amplifying Aha-Moment Insights for Safety Reasoning"
+    ],
+    "icml25": [
+      "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "Safety Alignment Can Be Not Superficial With Explicit Safety Signals",
+      "Safety Reasoning with Guidelines"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "icml25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

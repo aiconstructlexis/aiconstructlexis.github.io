@@ -1,0 +1,91 @@
+{
+  "canonical_name": "Entity matching",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed definitions, the prevailing usage treats entity matching as deciding whether entities from different knowledge graphs refer to the same real-world entity. A smaller formulation presents the same behavior as cross-lingual product alignment: given product metadata, the task is to select the corresponding product metadata in another language. The success criterion is therefore described either as correctly identifying co-referring entities across knowledge graphs or as selecting the matching product entry across languages.\n\nVariants. Papers use at least two task names for this behavior. One is \"Entity Matching Across KGs,\" framed around matching entities across different knowledge graphs; another is \"Cross-lingual Product Alignment,\" framed around product metadata in different languages. The descriptions focus on these KG-based and cross-lingual product settings.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the papers, the behavior is operationalized directly through task prompts or task descriptions, either by asking whether entities across knowledge graphs match or by asking a model to select matching product metadata in another language.\n\nWhat it is taken as evidence of. Only one construct is linked to it. Rather than treating entity matching as evidence of that construct, one paper claims a causal relationship from Semantic understanding to Entity matching, stating that language models provide \"advanced semantic understanding\" for tasks like EA. No other construct links are present.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Entity matching",
+    "Cross-lingual product alignment"
+  ],
+  "papers": [
+    "Table-LLM-Specialist: Language Model Specialists for Tables using Iterative Fine-tuning",
+    "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+    "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Identifying whether entities from different knowledge graphs refer to the same real-world entity.",
+      "papers": [
+        "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge"
+      ],
+      "original_name": "Entity matching"
+    },
+    {
+      "text": "The task of identifying the same product across different languages based on its metadata.",
+      "papers": [
+        "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models"
+      ],
+      "original_name": "Cross-lingual product alignment"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "How do Language Models Reshape Entity Alignment? A Survey of LM-Driven EA Methods: Advances, Benchmarks, and Future",
+      "evidence": "\u201cLMs provide advanced semantic understanding to build and refine KGs through tasks like EA.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "How do Language Models Reshape Entity Alignment? A Survey of LM-Driven EA Methods: Advances, Benchmarks, and Future"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed definitions, the prevailing usage treats entity matching as deciding whether entities from different knowledge graphs refer to the same real-world entity. A smaller formulation presents the same behavior as cross-lingual product alignment: given product metadata, the task is to select the corresponding product metadata in another language. The success criterion is therefore described either as correctly identifying co-referring entities across knowledge graphs or as selecting the matching product entry across languages."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use at least two task names for this behavior. One is \"Entity Matching Across KGs,\" framed around matching entities across different knowledge graphs; another is \"Cross-lingual Product Alignment,\" framed around product metadata in different languages. The descriptions focus on these KG-based and cross-lingual product settings."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. In the papers, the behavior is operationalized directly through task prompts or task descriptions, either by asking whether entities across knowledge graphs match or by asking a model to select matching product metadata in another language."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Only one construct is linked to it. Rather than treating entity matching as evidence of that construct, one paper claims a causal relationship from Semantic understanding to Entity matching, stating that language models provide \"advanced semantic understanding\" for tasks like EA. No other construct links are present."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed definitions, the prevailing usage treats entity matching as deciding whether entities from different knowledge graphs refer to the same real-world entity. A smaller formulation presents the same behavior as cross-lingual product alignment: given product metadata, the task is to select the corresponding product metadata in another language. The success criterion is therefore described either as correctly identifying co-referring entities across knowledge graphs or as selecting the matching product entry across languages.\n\nVariants. Papers use at least two task names for this behavior. One is \"Entity Matching Across KGs,\" framed around matching entities across different knowledge graphs; another is \"Cross-lingual Product Alignment,\" framed around product metadata in different languages. The descriptions focus on these KG-based and cross-lingual product settings.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the papers, the behavior is operationalized directly through task prompts or task descriptions, either by asking whether entities across knowledge graphs match or by asking a model to select matching product metadata in another language.\n\nWhat it is taken as evidence of. Only one construct is linked to it. Rather than treating entity matching as evidence of that construct, one paper claims a causal relationship from Semantic understanding to Entity matching, stating that language models provide \"advanced semantic understanding\" for tasks like EA. No other construct links are present.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Table-LLM-Specialist: Language Model Specialists for Tables using Iterative Fine-tuning"
+    ],
+    "neurips24": [
+      "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+      "Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

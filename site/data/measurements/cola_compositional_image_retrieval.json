@@ -1,0 +1,98 @@
+{
+  "canonical_name": "Cola (compositional image retrieval)",
+  "type": "measurement",
+  "canonical_definition": "What it is. The prevailing usage treats Cola or COLA as a text-to-image retrieval benchmark for compositional ability or compositional reasoning: captions describe relations between entities, or specific configurations of attributes and objects, and the task is to retrieve the correct image from candidate images or from a database with distractor images. Definitions commonly emphasize composing objects with their relations or retrieving images with the correct attribute-object configuration. One quoted passage using the same name, COLA, refers instead to the Corpus of Linguistic Acceptability for linguistic acceptability, so papers do not use the label uniformly.\n\nWhat it is claimed to measure. Across the papers that link it to other entities, Cola is used to measure compositional reasoning, and that is the only linked construct. No behavioral indicators are linked to it, so the reported measurement claims converge on compositional reasoning rather than spreading across multiple targets.\n\nSpace of uses. Papers use it as part of compositional evaluation. One paper describes an evaluation procedure that calculates perplexity between a caption and all candidate images and then selects the lower-perplexity image as the prediction, while another places Cola alongside older composition benchmarks such as Valse and Winoground for additional comparisons. No other measurement instruments are linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Cola",
+    "COLA"
+  ],
+  "papers": [
+    "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+    "Improving Language Model Distillation through Hidden State Matching",
+    "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+    "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Text-to-image retrieval benchmark that assesses compositional ability by matching captions describing relations between entities to correct images.",
+      "papers": [
+        "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+        "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives"
+      ],
+      "original_name": "Cola"
+    },
+    {
+      "text": "A benchmark that evaluates compositional reasoning by tasking a VLM with retrieving correct images based on specific configurations of attributes and objects from a database containing distractor images.",
+      "papers": [
+        "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+        "Improving Language Model Distillation through Hidden State Matching"
+      ],
+      "original_name": "COLA"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "evidence": "We first evaluate our CoVLM on compositional reasoning tasks, including... matching the correct captions describing the relation between two images with similar entities (Cola, (Ray et al., 2023))... (Section 4.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding"
+        ],
+        "neurips24": [
+          "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "The prevailing usage treats Cola or COLA as a text-to-image retrieval benchmark for compositional ability or compositional reasoning: captions describe relations between entities, or specific configurations of attributes and objects, and the task is to retrieve the correct image from candidate images or from a database with distractor images. Definitions commonly emphasize composing objects with their relations or retrieving images with the correct attribute-object configuration. One quoted passage using the same name, COLA, refers instead to the Corpus of Linguistic Acceptability for linguistic acceptability, so papers do not use the label uniformly."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across the papers that link it to other entities, Cola is used to measure compositional reasoning, and that is the only linked construct. No behavioral indicators are linked to it, so the reported measurement claims converge on compositional reasoning rather than spreading across multiple targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use it as part of compositional evaluation. One paper describes an evaluation procedure that calculates perplexity between a caption and all candidate images and then selects the lower-perplexity image as the prediction, while another places Cola alongside older composition benchmarks such as Valse and Winoground for additional comparisons. No other measurement instruments are linked to it."
+    }
+  ],
+  "characterization": "What it is. The prevailing usage treats Cola or COLA as a text-to-image retrieval benchmark for compositional ability or compositional reasoning: captions describe relations between entities, or specific configurations of attributes and objects, and the task is to retrieve the correct image from candidate images or from a database with distractor images. Definitions commonly emphasize composing objects with their relations or retrieving images with the correct attribute-object configuration. One quoted passage using the same name, COLA, refers instead to the Corpus of Linguistic Acceptability for linguistic acceptability, so papers do not use the label uniformly.\n\nWhat it is claimed to measure. Across the papers that link it to other entities, Cola is used to measure compositional reasoning, and that is the only linked construct. No behavioral indicators are linked to it, so the reported measurement claims converge on compositional reasoning rather than spreading across multiple targets.\n\nSpace of uses. Papers use it as part of compositional evaluation. One paper describes an evaluation procedure that calculates perplexity between a caption and all candidate images and then selects the lower-perplexity image as the prediction, while another places Cola alongside older composition benchmarks such as Valse and Winoground for additional comparisons. No other measurement instruments are linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding"
+    ],
+    "iclr25": [
+      "Improving Language Model Distillation through Hidden State Matching"
+    ],
+    "neurips24": [
+      "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+      "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 1,
+    "iclr25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

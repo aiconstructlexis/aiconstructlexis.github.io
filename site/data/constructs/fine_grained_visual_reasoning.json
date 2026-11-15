@@ -1,0 +1,84 @@
+{
+  "canonical_name": "Fine-grained visual reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing framing is an ability to reason over detailed visual content rather than only coarse scene content. Papers describe it in terms of object attributes, object relationships, and other subtle or intricate image features, and one study explicitly characterizes the relevant content as \"object attributes, object relationships, and intricate visual features\" (Enhancing Large Vision-Language Models with Ultra-Detailed Image Caption Generation). A closely aligned wording emphasizes complex reasoning that depends on precise understanding of small or detailed visual elements.\n\nSpace of facets. Papers do not lay out formal subtypes, but they recurrently organize the construct around a few facets: detailed visual attributes, object relations, and small or subtle visual elements. The main contrast is with reasoning over only coarse scene content, so the construct is used for cases where precise local detail matters.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. In the quoted usage, authors point to tasks that require fine-grained visual reasoning and to examples such as correctly identifying a person's hair color, but no explicit benchmark or other linked instrument is named.\n\nLinks. A small amount of relational evidence connects it to another construct: one paper reports that fine-grained visual reasoning is related to robustness. The claim appears in the context of improving LVLM robustness in fine-grained visual reasoning, and no causal or correlational link is recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Fine-grained visual reasoning"
+  ],
+  "papers": [
+    "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+    "Enhancing Large Vision-Language Models with Ultra-Detailed Image Caption Generation",
+    "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The ability to reason about detailed visual attributes, object relations, and other subtle image features rather than only coarse scene content.",
+      "papers": [
+        "Enhancing Large Vision-Language Models with Ultra-Detailed Image Caption Generation",
+        "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models"
+      ],
+      "original_name": "Fine-grained visual reasoning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+      "evidence": "This work offers new insights into the limitations of LVLMs in MCQA and presents a practical approach to improve their robustness in fine-grained visual reasoning. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing framing is an ability to reason over detailed visual content rather than only coarse scene content. Papers describe it in terms of object attributes, object relationships, and other subtle or intricate image features, and one study explicitly characterizes the relevant content as \"object attributes, object relationships, and intricate visual features\" (Enhancing Large Vision-Language Models with Ultra-Detailed Image Caption Generation). A closely aligned wording emphasizes complex reasoning that depends on precise understanding of small or detailed visual elements."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not lay out formal subtypes, but they recurrently organize the construct around a few facets: detailed visual attributes, object relations, and small or subtle visual elements. The main contrast is with reasoning over only coarse scene content, so the construct is used for cases where precise local detail matters."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to it. In the quoted usage, authors point to tasks that require fine-grained visual reasoning and to examples such as correctly identifying a person's hair color, but no explicit benchmark or other linked instrument is named."
+    },
+    {
+      "label": "Links.",
+      "text": "A small amount of relational evidence connects it to another construct: one paper reports that fine-grained visual reasoning is related to robustness. The claim appears in the context of improving LVLM robustness in fine-grained visual reasoning, and no causal or correlational link is recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing framing is an ability to reason over detailed visual content rather than only coarse scene content. Papers describe it in terms of object attributes, object relationships, and other subtle or intricate image features, and one study explicitly characterizes the relevant content as \"object attributes, object relationships, and intricate visual features\" (Enhancing Large Vision-Language Models with Ultra-Detailed Image Caption Generation). A closely aligned wording emphasizes complex reasoning that depends on precise understanding of small or detailed visual elements.\n\nSpace of facets. Papers do not lay out formal subtypes, but they recurrently organize the construct around a few facets: detailed visual attributes, object relations, and small or subtle visual elements. The main contrast is with reasoning over only coarse scene content, so the construct is used for cases where precise local detail matters.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. In the quoted usage, authors point to tasks that require fine-grained visual reasoning and to examples such as correctly identifying a person's hair color, but no explicit benchmark or other linked instrument is named.\n\nLinks. A small amount of relational evidence connects it to another construct: one paper reports that fine-grained visual reasoning is related to robustness. The claim appears in the context of improving LVLM robustness in fine-grained visual reasoning, and no causal or correlational link is recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+      "Enhancing Large Vision-Language Models with Ultra-Detailed Image Caption Generation"
+    ],
+    "iclr25": [
+      "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

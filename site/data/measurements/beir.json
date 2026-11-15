@@ -1,0 +1,301 @@
+{
+  "canonical_name": "BEIR",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most commonly, papers describe BEIR as a diverse collection or suite of retrieval datasets for evaluating out-of-domain or zero-shot performance. Definitions vary in expansion and scope, calling it the \"Benchmark for Evaluation of Information Retrieval\", \"Benchmarking-IR\", or, in one paper, \"Broad Evaluation of Information Retrieval\", and they frame it as supporting retrieval, ranking, and re-ranking across domains. The reported coverage also varies by paper: one refers to 18 datasets from various domains, another to 14 public retrieval datasets excluding MS MARCO, another to 15 retrieval tasks, and one definition names Covid, SciFact, DBpedia, and NFCorpus.\n\nWhat it is claimed to measure. Across the linked claims, papers use BEIR to measure two constructs, Generalization and Retrieval effectiveness, and two behavioral indicators, Information retrieval and Ranking. The dominant measurement claim is information retrieval, usually framed as zero-shot or out-of-domain retrieval performance, while a smaller line of work uses it to assess generalization. More specific uses, reported by individual papers, treat it as measuring retrieval effectiveness or evaluating ranking and re-ranking.\n\nSpace of uses. Papers usually position BEIR as a standard, popular, or widely used benchmark, including for dense retrievers, ranking models, and re-rankers. It is linked to seven other instruments overall, and relationship claims report it as related to FEVER, FiQA, MTEB, NFCorpus, and Natural Questions, plus 2 other instruments. Separate quoted passages also show BEIR being used in joint evaluation with other benchmarks.\n\nConcerns raised. A smaller line of work notes that BEIR does not contain instructions, placing it alongside other standard retrieval benchmark suites that omit instructions.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BEIR",
+    "BEIR benchmark"
+  ],
+  "papers": [
+    "AIR-Bench: Automated Heterogeneous Information Retrieval Benchmark",
+    "DRAMA: Diverse Augmentation from Large Language Models to Smaller Dense Retrievers",
+    "Enhancing Lexicon-Based Text Embeddings with Large Language Models",
+    "Reinforced IR: A Self-Boosting Framework For Domain-Adapted Information Retrieval",
+    "Sliding Windows Are Not the End: Exploring Full Ranking with Long-Context Large Language Models",
+    "Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference",
+    "Evaluating the Effectiveness and Scalability of LLM-Based Data Augmentation for Retrieval",
+    "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance",
+    "Multi-view-guided Passage Reranking with Large Language Models",
+    "Query-Focused Retrieval Heads Improve Long-Context Reasoning and Re-ranking",
+    "REALM: Recursive Relevance Modeling for LLM-based Document Re-Ranking",
+    "REARANK: Reasoning Re-ranking Agent via Reinforcement Learning",
+    "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks",
+    "SMEC:Rethinking Matryoshka Representation Learning for Retrieval Embedding Compression",
+    "Utility-Focused LLM Annotation for Retrieval and Retrieval-Augmented Generation",
+    "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+    "BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval",
+    "MMTEB: Massive Multilingual Text Embedding Benchmark",
+    "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+    "Promptriever: Instruction-Trained Retrievers Can Be Prompted Like Language Models",
+    "Provence: efficient and robust context pruning for retrieval-augmented generation",
+    "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions"
+  ],
+  "paper_count": 22,
+  "definitions": [
+    {
+      "text": "The Benchmark for Evaluation of Information Retrieval (BEIR) is a collection of diverse datasets used to measure a model's out-of-domain retrieval performance.",
+      "papers": [
+        "Promptriever: Instruction-Trained Retrievers Can Be Prompted Like Language Models",
+        "Sliding Windows Are Not the End: Exploring Full Ranking with Long-Context Large Language Models",
+        "Utility-Focused LLM Annotation for Retrieval and Retrieval-Augmented Generation",
+        "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions"
+      ],
+      "original_name": "BEIR"
+    },
+    {
+      "text": "Broad Evaluation of Information Retrieval benchmark, a diverse collection of datasets including Covid, SciFact, DBpedia, and NFCorpus, used to evaluate zero-shot retrieval and re-ranking performance across domains.",
+      "papers": [
+        "REALM: Recursive Relevance Modeling for LLM-based Document Re-Ranking"
+      ],
+      "original_name": "BEIR benchmark"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Enhancing LLM\u2019s Cognition via Structurization",
+      "evidence": "\u201cBEIR dataset [52] is a popular benchmark for evaluating dense retrievers\u2019 zero-shot effectiveness\u201d",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Enhancing LLM\u2019s Cognition via Structurization"
+        ],
+        "iclr25": [
+          "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+          "BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval"
+        ],
+        "emnlp25": [
+          "Evaluating the Effectiveness and Scalability of LLM-Based Data Augmentation for Retrieval",
+          "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DRAMA: Diverse Augmentation from Large Language Models to Smaller Dense Retrievers",
+      "evidence": "Our main evaluations are conducted on BEIR (Thakur et al., 2021) and MIRACL (Zhang et al., 2023), to assess the generalization of dense retrievers and multilingual retrieval capability. (Section 4.5).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "DRAMA: Diverse Augmentation from Large Language Models to Smaller Dense Retrievers"
+        ],
+        "emnlp25": [
+          "Multi-view-guided Passage Reranking with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MTEB",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+      "evidence": "\u201cNote that our model also attains the highest scores in 15 retrieval tasks (commonly referred to as BEIR (Thakur et al., 2021)), 11 clustering tasks, and 12 classification tasks in the MTEB benchmark.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Retrieval effectiveness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance",
+      "evidence": "We evaluate retrieval effectiveness using two retrieval benchmarks: MS MARCO (Bajaj et al., 2016) and BEIR (Thakur et al., 2021).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Ranking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Query-Focused Retrieval Heads Improve Long-Context Reasoning and Re-ranking",
+      "evidence": "We further evaluate QRRETRIEVER as a re-ranker on the standard BEIR benchmark (Thakur et al., 2021). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Query-Focused Retrieval Heads Improve Long-Context Reasoning and Re-ranking"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TREC-COVID",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "\u201cnine public datasets in the BEIR benchmark (Thakur et al., 2021), including TREC-COVID\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NFCorpus",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "\u201cnine public datasets in the BEIR benchmark (Thakur et al., 2021), including TREC-COVID (Voorhees et al., 2021), NFCorpus (Boteva et al., 2016)\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciFact",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "\u201cnine public datasets in the BEIR benchmark (Thakur et al., 2021), including ... SciFact (Wadden et al., 2020)\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FiQA",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "\u201cnine public datasets in the BEIR benchmark (Thakur et al., 2021), including ... FiQA (Maia et al., 2018)\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FEVER",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "\u201cnine public datasets in the BEIR benchmark (Thakur et al., 2021), including ... FEVER (Thorne et al., 2018)\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "\u201cnine public datasets in the BEIR benchmark (Thakur et al., 2021), including ... NQ (Kwiatkowski et al., 2019)\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most commonly, papers describe BEIR as a diverse collection or suite of retrieval datasets for evaluating out-of-domain or zero-shot performance. Definitions vary in expansion and scope, calling it the \"Benchmark for Evaluation of Information Retrieval\", \"Benchmarking-IR\", or, in one paper, \"Broad Evaluation of Information Retrieval\", and they frame it as supporting retrieval, ranking, and re-ranking across domains. The reported coverage also varies by paper: one refers to 18 datasets from various domains, another to 14 public retrieval datasets excluding MS MARCO, another to 15 retrieval tasks, and one definition names Covid, SciFact, DBpedia, and NFCorpus."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across the linked claims, papers use BEIR to measure two constructs, Generalization and Retrieval effectiveness, and two behavioral indicators, Information retrieval and Ranking. The dominant measurement claim is information retrieval, usually framed as zero-shot or out-of-domain retrieval performance, while a smaller line of work uses it to assess generalization. More specific uses, reported by individual papers, treat it as measuring retrieval effectiveness or evaluating ranking and re-ranking."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers usually position BEIR as a standard, popular, or widely used benchmark, including for dense retrievers, ranking models, and re-rankers. It is linked to seven other instruments overall, and relationship claims report it as related to FEVER, FiQA, MTEB, NFCorpus, and Natural Questions, plus 2 other instruments. Separate quoted passages also show BEIR being used in joint evaluation with other benchmarks."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "A smaller line of work notes that BEIR does not contain instructions, placing it alongside other standard retrieval benchmark suites that omit instructions."
+    }
+  ],
+  "characterization": "What it is. Most commonly, papers describe BEIR as a diverse collection or suite of retrieval datasets for evaluating out-of-domain or zero-shot performance. Definitions vary in expansion and scope, calling it the \"Benchmark for Evaluation of Information Retrieval\", \"Benchmarking-IR\", or, in one paper, \"Broad Evaluation of Information Retrieval\", and they frame it as supporting retrieval, ranking, and re-ranking across domains. The reported coverage also varies by paper: one refers to 18 datasets from various domains, another to 14 public retrieval datasets excluding MS MARCO, another to 15 retrieval tasks, and one definition names Covid, SciFact, DBpedia, and NFCorpus.\n\nWhat it is claimed to measure. Across the linked claims, papers use BEIR to measure two constructs, Generalization and Retrieval effectiveness, and two behavioral indicators, Information retrieval and Ranking. The dominant measurement claim is information retrieval, usually framed as zero-shot or out-of-domain retrieval performance, while a smaller line of work uses it to assess generalization. More specific uses, reported by individual papers, treat it as measuring retrieval effectiveness or evaluating ranking and re-ranking.\n\nSpace of uses. Papers usually position BEIR as a standard, popular, or widely used benchmark, including for dense retrievers, ranking models, and re-rankers. It is linked to seven other instruments overall, and relationship claims report it as related to FEVER, FiQA, MTEB, NFCorpus, and Natural Questions, plus 2 other instruments. Separate quoted passages also show BEIR being used in joint evaluation with other benchmarks.\n\nConcerns raised. A smaller line of work notes that BEIR does not contain instructions, placing it alongside other standard retrieval benchmark suites that omit instructions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "AIR-Bench: Automated Heterogeneous Information Retrieval Benchmark",
+      "DRAMA: Diverse Augmentation from Large Language Models to Smaller Dense Retrievers",
+      "Enhancing Lexicon-Based Text Embeddings with Large Language Models",
+      "Reinforced IR: A Self-Boosting Framework For Domain-Adapted Information Retrieval",
+      "Sliding Windows Are Not the End: Exploring Full Ranking with Long-Context Large Language Models",
+      "Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference"
+    ],
+    "emnlp25": [
+      "Evaluating the Effectiveness and Scalability of LLM-Based Data Augmentation for Retrieval",
+      "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance",
+      "Multi-view-guided Passage Reranking with Large Language Models",
+      "Query-Focused Retrieval Heads Improve Long-Context Reasoning and Re-ranking",
+      "REALM: Recursive Relevance Modeling for LLM-based Document Re-Ranking",
+      "REARANK: Reasoning Re-ranking Agent via Reinforcement Learning",
+      "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks",
+      "SMEC:Rethinking Matryoshka Representation Learning for Retrieval Embedding Compression",
+      "Utility-Focused LLM Annotation for Retrieval and Retrieval-Augmented Generation"
+    ],
+    "iclr25": [
+      "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "BRIGHT: A Realistic and Challenging Benchmark for Reasoning-Intensive Retrieval",
+      "MMTEB: Massive Multilingual Text Embedding Benchmark",
+      "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+      "Promptriever: Instruction-Trained Retrievers Can Be Prompted Like Language Models",
+      "Provence: efficient and robust context pruning for retrieval-augmented generation"
+    ],
+    "naacl25": [
+      "FollowIR: Evaluating and Teaching Information Retrieval Models to Follow Instructions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 6,
+    "emnlp25": 9,
+    "iclr25": 6,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

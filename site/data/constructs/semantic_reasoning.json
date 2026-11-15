@@ -1,0 +1,132 @@
+{
+  "canonical_name": "Semantic reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the cited definitions, the term is used for a model capacity to reason about meaning, but the scope shifts by setting. One framing describes understanding language instructions and their relation to objects and actions in an environment; another describes a latent multi-step inference ability that connects concepts not explicitly stated in text, including identifying implicit targets that lack explicit textual cues. The common element is reasoning over semantic content, while the difference is whether papers anchor it in situated instructions or in implicit textual inference.\n\nSpace of facets. Systematization is limited, but one paper places semantic reasoning as a subtype of text-based reasoning within natural language reasoning. Elsewhere, papers use it alongside other reasoning demands rather than as a standalone taxonomy: referring expression comprehension is described as requiring both spatial and semantic reasoning, and another quoted passage discusses visual and semantic reasoning together.\n\nSpace of measurement. No measurement instrument is linked to it. Operationalization is instead indirect through two behavioral indicators, Referring expression understanding and Table question answering: papers describe the former as localizing an object from a complex textual query that requires spatial and semantic reasoning, and the latter as Table QA involving complex semantic reasoning and free-form responses.\n\nLinks. Papers only record related, not causal or correlational, links. Referring expression understanding is related to semantic reasoning because REC is described as requiring both spatial and semantic reasoning; semantic reasoning is related to Table question answering through Table QA tasks involving complex semantic reasoning and free-form responses; and natural language reasoning is related to semantic reasoning because one taxonomy lists Semantic as a subtype of text-based reasoning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Semantic reasoning"
+  ],
+  "papers": [
+    "EquiBench: Benchmarking Large Language Models' Reasoning about Program Semantics via Equivalence Checking",
+    "GER-LLM: Efficient and Effective Geospatial Entity Resolution with Large Language Model",
+    "Glider: Global and Local Instruction-Driven Expert Router",
+    "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection",
+    "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+    "RethinkMCTS: Refining Erroneous Thoughts in Monte Carlo Tree Search for Code Generation",
+    "Weaver: Interweaving SQL and LLM for Table Reasoning",
+    "Execution-guided within-prompt search for programming-by-example",
+    "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+    "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+    "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+    "Natural Language Inference Improves Compositionality in Vision-Language Models"
+  ],
+  "paper_count": 12,
+  "definitions": [
+    {
+      "text": "The model's capacity to understand and reason about the meaning of language instructions and their relationship to objects and actions in the environment.",
+      "papers": [
+        "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+        "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection"
+      ],
+      "original_name": "Semantic reasoning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "evidence": "This work focuses on the challenging open-vocabulary detection task of Referring Expression Comprehension (REC) (Mao et al., 2016), which involves localizing an object in an image based on a complex textual query, requiring both spatial and semantic reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Weaver: Interweaving SQL and LLM for Table Reasoning",
+      "evidence": "We introduce Weaver , a novel methodology integrating SQL and LLM specifically designed for Table QA tasks involving complex semantic reasoning and free-form responses. (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Weaver: Interweaving SQL and LLM for Table Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+      "evidence": "The first broad category, Text-Based (TB) Reasoning, includes explanations that depend solely on surface-level linguistic evidence found within the premise and hypothesis, without appealing to world knowledge. Six subtypes are defined: Coreference, Syntactic, Semantic, Pragmatic, Absence of Mention and Logic Conflict. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the cited definitions, the term is used for a model capacity to reason about meaning, but the scope shifts by setting. One framing describes understanding language instructions and their relation to objects and actions in an environment; another describes a latent multi-step inference ability that connects concepts not explicitly stated in text, including identifying implicit targets that lack explicit textual cues. The common element is reasoning over semantic content, while the difference is whether papers anchor it in situated instructions or in implicit textual inference."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Systematization is limited, but one paper places semantic reasoning as a subtype of text-based reasoning within natural language reasoning. Elsewhere, papers use it alongside other reasoning demands rather than as a standalone taxonomy: referring expression comprehension is described as requiring both spatial and semantic reasoning, and another quoted passage discusses visual and semantic reasoning together."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it. Operationalization is instead indirect through two behavioral indicators, Referring expression understanding and Table question answering: papers describe the former as localizing an object from a complex textual query that requires spatial and semantic reasoning, and the latter as Table QA involving complex semantic reasoning and free-form responses."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers only record related, not causal or correlational, links. Referring expression understanding is related to semantic reasoning because REC is described as requiring both spatial and semantic reasoning; semantic reasoning is related to Table question answering through Table QA tasks involving complex semantic reasoning and free-form responses; and natural language reasoning is related to semantic reasoning because one taxonomy lists Semantic as a subtype of text-based reasoning."
+    }
+  ],
+  "characterization": "Space of definitions. Across the cited definitions, the term is used for a model capacity to reason about meaning, but the scope shifts by setting. One framing describes understanding language instructions and their relation to objects and actions in an environment; another describes a latent multi-step inference ability that connects concepts not explicitly stated in text, including identifying implicit targets that lack explicit textual cues. The common element is reasoning over semantic content, while the difference is whether papers anchor it in situated instructions or in implicit textual inference.\n\nSpace of facets. Systematization is limited, but one paper places semantic reasoning as a subtype of text-based reasoning within natural language reasoning. Elsewhere, papers use it alongside other reasoning demands rather than as a standalone taxonomy: referring expression comprehension is described as requiring both spatial and semantic reasoning, and another quoted passage discusses visual and semantic reasoning together.\n\nSpace of measurement. No measurement instrument is linked to it. Operationalization is instead indirect through two behavioral indicators, Referring expression understanding and Table question answering: papers describe the former as localizing an object from a complex textual query that requires spatial and semantic reasoning, and the latter as Table QA involving complex semantic reasoning and free-form responses.\n\nLinks. Papers only record related, not causal or correlational, links. Referring expression understanding is related to semantic reasoning because REC is described as requiring both spatial and semantic reasoning; semantic reasoning is related to Table question answering through Table QA tasks involving complex semantic reasoning and free-form responses; and natural language reasoning is related to semantic reasoning because one taxonomy lists Semantic as a subtype of text-based reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "EquiBench: Benchmarking Large Language Models' Reasoning about Program Semantics via Equivalence Checking",
+      "GER-LLM: Efficient and Effective Geospatial Entity Resolution with Large Language Model",
+      "Glider: Global and Local Instruction-Driven Expert Router",
+      "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection",
+      "LiTEx: A Linguistic Taxonomy of Explanations for Understanding Within-Label Variation in Natural Language Inference",
+      "RethinkMCTS: Refining Erroneous Thoughts in Monte Carlo Tree Search for Code Generation",
+      "Weaver: Interweaving SQL and LLM for Table Reasoning"
+    ],
+    "iclr25": [
+      "Execution-guided within-prompt search for programming-by-example",
+      "HAMSTER: Hierarchical Action Models for Open-World Robot Manipulation",
+      "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+      "Natural Language Inference Improves Compositionality in Vision-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 7,
+    "iclr25": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

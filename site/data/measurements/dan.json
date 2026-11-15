@@ -1,0 +1,119 @@
+{
+  "canonical_name": "DAN",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most commonly, papers treat DAN, often expanded as Do Anything Now, as a benchmark or prompt-based test for whether models resist malicious or jailbreak-enhanced instructions. Definitions describe it as a benchmark collection of jailbreak-enhanced instructions for evaluating resilience against diverse jailbreak attacks, or more generally as a benchmark for model safety against malicious instructions and jailbreak attacks. Some authors use a narrower prompt-level framing, calling DAN 13.0 a well-known jailbreaking prompt and baseline that overrides AI safety restrictions, and one paper refers to a dataset of forbidden prompts from the Do Anything Now jailbreak family. Separately, one paper uses the same name for \"Expose Backdoors on the Way,\" a feature-based textual backdoor defense method evaluated against Query-Attack and Observation-Attack on WebShop.\n\nWhat it is claimed to measure. Across the linked relationships, papers use it to measure two constructs, Safety and Safety robustness, and no behavioral indicators are linked to it. The reported measurement claims stay within this safety framing: one paper says it uses AdvBench and DoAnythingNow to assess the safety of LLMs, while another reports performance on the DoAnythingNow benchmark as part of its safety evaluation.\n\nSpace of uses. Papers do not link it to other measurement instruments. In use, it is positioned as a standalone safety or jailbreak evaluation, sometimes mentioned alongside STRONGREJECT, JAILBREAKV, and AdvBench, and some authors use DAN 13.0 specifically as a baseline bypass prompt to benchmark another method against an \"established bypass.\" Another paper instead treats DAN as a defense method and reports its defending performance against Query-Attack and Observation-Attack on the WebShop dataset.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "DAN",
+    "DoAnythingNow"
+  ],
+  "papers": [
+    "Automatic Expert Discovery in LLM Upcycling via Sparse Interpolated Mixture-of-Experts",
+    "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+    "Representation Bending for Large Language Model Safety",
+    "TRIDENT: Enhancing Large Language Model Safety with Tri-Dimensional Diversified Red-Teaming Data Synthesis",
+    "CoBia: Constructed Conversations Can Trigger Otherwise Concealed Societal Biases in LLMs",
+    "Effective Red-Teaming of Policy-Adherent Agents",
+    "A StrongREJECT for Empty Jailbreaks",
+    "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "A benchmark collection of jailbreak-enhanced instructions used to evaluate a model's resilience against diverse jailbreak attacks.",
+      "papers": [
+        "TRIDENT: Enhancing Large Language Model Safety with Tri-Dimensional Diversified Red-Teaming Data Synthesis",
+        "CoBia: Constructed Conversations Can Trigger Otherwise Concealed Societal Biases in LLMs",
+        "A StrongREJECT for Empty Jailbreaks",
+        "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+      ],
+      "original_name": "DAN"
+    },
+    {
+      "text": "Benchmark designed to evaluate model safety by testing resilience against malicious instructions and jailbreak attacks.",
+      "papers": [
+        "Automatic Expert Discovery in LLM Upcycling via Sparse Interpolated Mixture-of-Experts"
+      ],
+      "original_name": "DoAnythingNow"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+      "evidence": "use the AdvBench and DoAnythingNow (Shen et al., 2024) datasets to assess the safety of the LLMs. (Section 4.2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Automatic Expert Discovery in LLM Upcycling via Sparse Interpolated Mixture-of-Experts",
+      "evidence": "Notably, SIMoE obtains excellent safety evaluation metrics, outperforming T\u00fclu-v3-8B-SFT by 1.7% on Safety (Tab. 2), and a remarkable 10% on the DoAnythingNow (Shen et al., 2024) benchmark in particular (Tab. A9, detailed safety results across sub-datasets). (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Automatic Expert Discovery in LLM Upcycling via Sparse Interpolated Mixture-of-Experts"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most commonly, papers treat DAN, often expanded as Do Anything Now, as a benchmark or prompt-based test for whether models resist malicious or jailbreak-enhanced instructions. Definitions describe it as a benchmark collection of jailbreak-enhanced instructions for evaluating resilience against diverse jailbreak attacks, or more generally as a benchmark for model safety against malicious instructions and jailbreak attacks. Some authors use a narrower prompt-level framing, calling DAN 13.0 a well-known jailbreaking prompt and baseline that overrides AI safety restrictions, and one paper refers to a dataset of forbidden prompts from the Do Anything Now jailbreak family. Separately, one paper uses the same name for \"Expose Backdoors on the Way,\" a feature-based textual backdoor defense method evaluated against Query-Attack and Observation-Attack on WebShop."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across the linked relationships, papers use it to measure two constructs, Safety and Safety robustness, and no behavioral indicators are linked to it. The reported measurement claims stay within this safety framing: one paper says it uses AdvBench and DoAnythingNow to assess the safety of LLMs, while another reports performance on the DoAnythingNow benchmark as part of its safety evaluation."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers do not link it to other measurement instruments. In use, it is positioned as a standalone safety or jailbreak evaluation, sometimes mentioned alongside STRONGREJECT, JAILBREAKV, and AdvBench, and some authors use DAN 13.0 specifically as a baseline bypass prompt to benchmark another method against an \"established bypass.\" Another paper instead treats DAN as a defense method and reports its defending performance against Query-Attack and Observation-Attack on the WebShop dataset."
+    }
+  ],
+  "characterization": "What it is. Most commonly, papers treat DAN, often expanded as Do Anything Now, as a benchmark or prompt-based test for whether models resist malicious or jailbreak-enhanced instructions. Definitions describe it as a benchmark collection of jailbreak-enhanced instructions for evaluating resilience against diverse jailbreak attacks, or more generally as a benchmark for model safety against malicious instructions and jailbreak attacks. Some authors use a narrower prompt-level framing, calling DAN 13.0 a well-known jailbreaking prompt and baseline that overrides AI safety restrictions, and one paper refers to a dataset of forbidden prompts from the Do Anything Now jailbreak family. Separately, one paper uses the same name for \"Expose Backdoors on the Way,\" a feature-based textual backdoor defense method evaluated against Query-Attack and Observation-Attack on WebShop.\n\nWhat it is claimed to measure. Across the linked relationships, papers use it to measure two constructs, Safety and Safety robustness, and no behavioral indicators are linked to it. The reported measurement claims stay within this safety framing: one paper says it uses AdvBench and DoAnythingNow to assess the safety of LLMs, while another reports performance on the DoAnythingNow benchmark as part of its safety evaluation.\n\nSpace of uses. Papers do not link it to other measurement instruments. In use, it is positioned as a standalone safety or jailbreak evaluation, sometimes mentioned alongside STRONGREJECT, JAILBREAKV, and AdvBench, and some authors use DAN 13.0 specifically as a baseline bypass prompt to benchmark another method against an \"established bypass.\" Another paper instead treats DAN as a defense method and reports its defending performance against Query-Attack and Observation-Attack on the WebShop dataset.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Automatic Expert Discovery in LLM Upcycling via Sparse Interpolated Mixture-of-Experts",
+      "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+      "Representation Bending for Large Language Model Safety",
+      "TRIDENT: Enhancing Large Language Model Safety with Tri-Dimensional Diversified Red-Teaming Data Synthesis"
+    ],
+    "emnlp25": [
+      "CoBia: Constructed Conversations Can Trigger Otherwise Concealed Societal Biases in LLMs",
+      "Effective Red-Teaming of Policy-Adherent Agents"
+    ],
+    "neurips24": [
+      "A StrongREJECT for Empty Jailbreaks",
+      "Watch Out for Your Agents! Investigating Backdoor Threats to LLM-Based Agents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "neurips24"
+  ]
+}

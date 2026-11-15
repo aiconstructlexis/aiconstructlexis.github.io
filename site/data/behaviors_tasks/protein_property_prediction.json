@@ -1,0 +1,149 @@
+{
+  "canonical_name": "Protein property prediction",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across these papers, the prevailing usage treats the concept as predicting a protein property, label, or function from amino acid sequence. Most formulations are either continuous regression tasks, such as fluorescence intensity, thermostability, melting temperature, or optimal temperature for catalysis, or discrete prediction tasks, such as solubility, metal ion binding, mammalian cell expression, or cellular compartment. A smaller extension treats it as protein function prediction in a setting where experimentally verified annotations are unavailable during training and final evaluation follows a curation phase based on newly published functions. Where papers specify the prediction granularity, they describe sequence-level or protein-level outputs, and one paper explicitly reports stability as sequence-level regression measured by Spearman coefficient.\n\nVariants. The variants are heterogeneous but remain sequence-based in their formulations. Common named variants include fluorescence, stability or thermostability, solubility, metal ion binding, and subcellular localization, with localization described as a protein-level label for compartments such as nucleus or extracellular space. Other named variants include mammalian cell expression in CHO cells, broader biophysical property prediction, and protein function prediction.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. Operationalization is described directly through task format: several papers use regression for fluorescence, stability or thermostability, and other biophysical properties, several use binary classification for solubility, metal ion binding, and mammalian cell expression, and one paper describes subcellular localization as a protein-level label. One paper also specifies sequence-level stability scoring with a Spearman coefficient.\n\nWhat it is taken as evidence of. No construct is linked to this behavior as something it measures or indicates. The papers describe it through task definitions only, and do not record an explicit construct that it is taken to indicate.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Fluorescence prediction",
+    "Stability prediction",
+    "Thermostability prediction",
+    "Solubility prediction",
+    "Metal ion binding prediction",
+    "Biophysical property prediction",
+    "Subcellular localization prediction",
+    "Mammalian cell expression prediction",
+    "Protein function prediction"
+  ],
+  "papers": [
+    "Rethinking Text-based Protein Understanding: Retrieval or LLM?",
+    "Mol-Instructions: A Large-Scale Biomolecular Instruction Dataset for Large Language Models",
+    "A new framework for evaluating model out-of-distribution generalisation for the biochemical domain",
+    "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models",
+    "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation",
+    "Training Compute-Optimal Protein Language Models"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A regression task to predict the fluorescence intensity of a protein.",
+      "papers": [
+        "Training Compute-Optimal Protein Language Models"
+      ],
+      "original_name": "Fluorescence prediction"
+    },
+    {
+      "text": "A regression task to predict the thermostability of a protein.",
+      "papers": [
+        "Training Compute-Optimal Protein Language Models"
+      ],
+      "original_name": "Stability prediction"
+    },
+    {
+      "text": "Predicting the melting temperature of a protein based on its sequence, used as a continuous regression task.",
+      "papers": [
+        "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models"
+      ],
+      "original_name": "Thermostability prediction"
+    },
+    {
+      "text": "A binary classification task to predict whether a protein will be soluble when expressed.",
+      "papers": [
+        "Training Compute-Optimal Protein Language Models"
+      ],
+      "original_name": "Solubility prediction"
+    },
+    {
+      "text": "A binary classification task to determine whether a protein sequence binds to metal ions.",
+      "papers": [
+        "Training Compute-Optimal Protein Language Models"
+      ],
+      "original_name": "Metal ion binding prediction"
+    },
+    {
+      "text": "The task of predicting physical or chemical properties of proteins based on their sequence, such as the optimal temperature for catalysis.",
+      "papers": [
+        "A new framework for evaluating model out-of-distribution generalisation for the biochemical domain"
+      ],
+      "original_name": "Biophysical property prediction"
+    },
+    {
+      "text": "Predicting the cellular compartment (e.g., nucleus, extracellular space) where a protein is localized based on its sequence.",
+      "papers": [
+        "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models"
+      ],
+      "original_name": "Subcellular localization prediction"
+    },
+    {
+      "text": "A binary classification task to determine whether a given protein can be successfully expressed in a specific host cell line (e.g., Chinese hamster ovary cells).",
+      "papers": [
+        "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models"
+      ],
+      "original_name": "Mammalian cell expression prediction"
+    },
+    {
+      "text": "Predicting the biological function of proteins based on their amino acid sequences, in the absence of experimentally verified annotations during training.",
+      "papers": [
+        "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation"
+      ],
+      "original_name": "Protein function prediction"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across these papers, the prevailing usage treats the concept as predicting a protein property, label, or function from amino acid sequence. Most formulations are either continuous regression tasks, such as fluorescence intensity, thermostability, melting temperature, or optimal temperature for catalysis, or discrete prediction tasks, such as solubility, metal ion binding, mammalian cell expression, or cellular compartment. A smaller extension treats it as protein function prediction in a setting where experimentally verified annotations are unavailable during training and final evaluation follows a curation phase based on newly published functions. Where papers specify the prediction granularity, they describe sequence-level or protein-level outputs, and one paper explicitly reports stability as sequence-level regression measured by Spearman coefficient."
+    },
+    {
+      "label": "Variants.",
+      "text": "The variants are heterogeneous but remain sequence-based in their formulations. Common named variants include fluorescence, stability or thermostability, solubility, metal ion binding, and subcellular localization, with localization described as a protein-level label for compartments such as nucleus or extracellular space. Other named variants include mammalian cell expression in CHO cells, broader biophysical property prediction, and protein function prediction."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior. Operationalization is described directly through task format: several papers use regression for fluorescence, stability or thermostability, and other biophysical properties, several use binary classification for solubility, metal ion binding, and mammalian cell expression, and one paper describes subcellular localization as a protein-level label. One paper also specifies sequence-level stability scoring with a Spearman coefficient."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to this behavior as something it measures or indicates. The papers describe it through task definitions only, and do not record an explicit construct that it is taken to indicate."
+    }
+  ],
+  "characterization": "Space of definitions. Across these papers, the prevailing usage treats the concept as predicting a protein property, label, or function from amino acid sequence. Most formulations are either continuous regression tasks, such as fluorescence intensity, thermostability, melting temperature, or optimal temperature for catalysis, or discrete prediction tasks, such as solubility, metal ion binding, mammalian cell expression, or cellular compartment. A smaller extension treats it as protein function prediction in a setting where experimentally verified annotations are unavailable during training and final evaluation follows a curation phase based on newly published functions. Where papers specify the prediction granularity, they describe sequence-level or protein-level outputs, and one paper explicitly reports stability as sequence-level regression measured by Spearman coefficient.\n\nVariants. The variants are heterogeneous but remain sequence-based in their formulations. Common named variants include fluorescence, stability or thermostability, solubility, metal ion binding, and subcellular localization, with localization described as a protein-level label for compartments such as nucleus or extracellular space. Other named variants include mammalian cell expression in CHO cells, broader biophysical property prediction, and protein function prediction.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. Operationalization is described directly through task format: several papers use regression for fluorescence, stability or thermostability, and other biophysical properties, several use binary classification for solubility, metal ion binding, and mammalian cell expression, and one paper describes subcellular localization as a protein-level label. One paper also specifies sequence-level stability scoring with a Spearman coefficient.\n\nWhat it is taken as evidence of. No construct is linked to this behavior as something it measures or indicates. The papers describe it through task definitions only, and do not record an explicit construct that it is taken to indicate.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Rethinking Text-based Protein Understanding: Retrieval or LLM?"
+    ],
+    "iclr24": [
+      "Mol-Instructions: A Large-Scale Biomolecular Instruction Dataset for Large Language Models"
+    ],
+    "iclr25": [
+      "A new framework for evaluating model out-of-distribution generalisation for the biochemical domain"
+    ],
+    "icml25": [
+      "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models",
+      "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation"
+    ],
+    "neurips24": [
+      "Training Compute-Optimal Protein Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr24": 1,
+    "iclr25": 1,
+    "icml25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

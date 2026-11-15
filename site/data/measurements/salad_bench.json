@@ -1,0 +1,120 @@
+{
+  "canonical_name": "SALAD-Bench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, SALAD-Bench is most commonly described as a safety benchmark for LLMs. Definitions present it as an established benchmark that provides prompts and safety scores for evaluating LLM safety and its relationship to value systems, and another description calls it a hierarchical benchmark covering different task types and jailbreak attack methods. A smaller line of work treats it as a dataset source of harmful prompts used in training and evaluating refusal mechanisms.\n\nWhat it is claimed to measure. Papers portray it as measuring more than one target rather than centering on a single construct. In the recorded links, it is used to measure one construct, privacy awareness, where authors extract the \"privacy infringement\" category, and one behavioral indicator, jailbreaking, where it is used as a safety benchmark to assess the generalizability of a weak-to-strong attack. Definitions also frame it more broadly as evaluating LLM safety, and in one paper its prompts and safety scores are used to study safety in relation to value systems.\n\nSpace of uses. No measurement instrument is linked to it. Papers mainly position it as an evaluation source: one study draws prompts and safety scores from SALAD-Bench, another uses SALAD-Bench with ALPACA to construct harmless and harmful prompts, and another expands safety evaluation by adding it alongside SORRY-Bench. One paper also uses predefined \"unfair representation\" and \"privacy infringement\" categories from it to build fairness-awareness and privacy-awareness query sets.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SALAD-Bench",
+    "SALAD-BENCH",
+    "SaladBench"
+  ],
+  "papers": [
+    "Generative Psycho-Lexical Approach for Constructing Value Systems in Large Language Models",
+    "The Tug of War Within: Mitigating the Fairness-Privacy Conflicts in Large Language Models",
+    "Towards Better Value Principles for Large Language Model Alignment: A Systematic Evaluation and Enhancement",
+    "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+    "Weak-to-Strong Jailbreaking on Large Language Models",
+    "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "Established safety benchmark providing prompts and safety scores for evaluating LLM safety and its relationship to value systems.",
+      "papers": [
+        "Generative Psycho-Lexical Approach for Constructing Value Systems in Large Language Models"
+      ],
+      "original_name": "SALAD-Bench"
+    },
+    {
+      "text": "A dataset used as a source of harmful prompts for training and evaluating refusal mechanisms.",
+      "papers": [
+        "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence"
+      ],
+      "original_name": "SALAD-BENCH"
+    },
+    {
+      "text": "A hierarchical safety benchmark for LLMs that covers different task types and jailbreak attack methods.",
+      "papers": [
+        "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types"
+      ],
+      "original_name": "SaladBench"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Privacy awareness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Tug of War Within: Mitigating the Fairness-Privacy Conflicts in Large Language Models",
+      "evidence": "From Salad-bench, we extract query subsets under the predefined categories of \u201cunfair representation\u201d and \u201cprivacy infringement\u201d to construct fairness awareness query set Qf and privacy awareness query set Qp, respectively. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "The Tug of War Within: Mitigating the Fairness-Privacy Conflicts in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Jailbreaking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Weak-to-Strong Jailbreaking on Large Language Models",
+      "evidence": "To assess the generalizability of the weak-to-strong attack, we expanded our evaluation to include two new safety benchmarks: SALAD-Bench (Li et al., 2024) and SORRY-Bench (Xie et al., 2024). (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Weak-to-Strong Jailbreaking on Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, SALAD-Bench is most commonly described as a safety benchmark for LLMs. Definitions present it as an established benchmark that provides prompts and safety scores for evaluating LLM safety and its relationship to value systems, and another description calls it a hierarchical benchmark covering different task types and jailbreak attack methods. A smaller line of work treats it as a dataset source of harmful prompts used in training and evaluating refusal mechanisms."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers portray it as measuring more than one target rather than centering on a single construct. In the recorded links, it is used to measure one construct, privacy awareness, where authors extract the \"privacy infringement\" category, and one behavioral indicator, jailbreaking, where it is used as a safety benchmark to assess the generalizability of a weak-to-strong attack. Definitions also frame it more broadly as evaluating LLM safety, and in one paper its prompts and safety scores are used to study safety in relation to value systems."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it. Papers mainly position it as an evaluation source: one study draws prompts and safety scores from SALAD-Bench, another uses SALAD-Bench with ALPACA to construct harmless and harmful prompts, and another expands safety evaluation by adding it alongside SORRY-Bench. One paper also uses predefined \"unfair representation\" and \"privacy infringement\" categories from it to build fairness-awareness and privacy-awareness query sets."
+    }
+  ],
+  "characterization": "What it is. Across papers, SALAD-Bench is most commonly described as a safety benchmark for LLMs. Definitions present it as an established benchmark that provides prompts and safety scores for evaluating LLM safety and its relationship to value systems, and another description calls it a hierarchical benchmark covering different task types and jailbreak attack methods. A smaller line of work treats it as a dataset source of harmful prompts used in training and evaluating refusal mechanisms.\n\nWhat it is claimed to measure. Papers portray it as measuring more than one target rather than centering on a single construct. In the recorded links, it is used to measure one construct, privacy awareness, where authors extract the \"privacy infringement\" category, and one behavioral indicator, jailbreaking, where it is used as a safety benchmark to assess the generalizability of a weak-to-strong attack. Definitions also frame it more broadly as evaluating LLM safety, and in one paper its prompts and safety scores are used to study safety in relation to value systems.\n\nSpace of uses. No measurement instrument is linked to it. Papers mainly position it as an evaluation source: one study draws prompts and safety scores from SALAD-Bench, another uses SALAD-Bench with ALPACA to construct harmless and harmful prompts, and another expands safety evaluation by adding it alongside SORRY-Bench. One paper also uses predefined \"unfair representation\" and \"privacy infringement\" categories from it to build fairness-awareness and privacy-awareness query sets.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Generative Psycho-Lexical Approach for Constructing Value Systems in Large Language Models",
+      "The Tug of War Within: Mitigating the Fairness-Privacy Conflicts in Large Language Models",
+      "Towards Better Value Principles for Large Language Model Alignment: A Systematic Evaluation and Enhancement"
+    ],
+    "icml25": [
+      "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+      "Weak-to-Strong Jailbreaking on Large Language Models"
+    ],
+    "neurips24": [
+      "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "icml25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "icml25",
+    "neurips24"
+  ]
+}

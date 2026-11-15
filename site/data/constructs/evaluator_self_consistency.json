@@ -1,0 +1,73 @@
+{
+  "canonical_name": "Evaluator self-consistency",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. The paper treats this construct, under the name \"Self-alignment,\" as the extent to which an evaluator's internal reasoning and scoring are consistent with its own task understanding and instructions. Its usage is tied to \"internal thinking\": the paper says it instructs GPT to conduct internal thinking that aligns itself for better task and preference understanding, and presents this internal thinking as strengthening task understanding and instruction following.\n\nSpace of measurement. Papers do not link this construct to any measurement instrument or behavioral indicator. The material therefore does not specify a benchmark, human evaluation setup, judge-model procedure, probe, or analysis that operationalizes it.\n\nLinks. No causal, correlational, or related links are reported for this construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Self-alignment"
+  ],
+  "papers": [
+    "Mixture of insighTful Experts (MoTE): The Synergy of Reasoning Chains and Expert Mixtures in Self-Alignment",
+    "UltraIF: Advancing Instruction Following from the Wild",
+    "Self-Alignment with Instruction Backtranslation",
+    "DreamBench++: A Human-Aligned Benchmark for Personalized Image Generation"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The extent to which the evaluator's internal reasoning and scoring are consistent with its own task understanding and instructions.",
+      "papers": [
+        "DreamBench++: A Human-Aligned Benchmark for Personalized Image Generation"
+      ],
+      "original_name": "Self-alignment"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The paper treats this construct, under the name \"Self-alignment,\" as the extent to which an evaluator's internal reasoning and scoring are consistent with its own task understanding and instructions. Its usage is tied to \"internal thinking\": the paper says it instructs GPT to conduct internal thinking that aligns itself for better task and preference understanding, and presents this internal thinking as strengthening task understanding and instruction following."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers do not link this construct to any measurement instrument or behavioral indicator. The material therefore does not specify a benchmark, human evaluation setup, judge-model procedure, probe, or analysis that operationalizes it."
+    },
+    {
+      "label": "Links.",
+      "text": "No causal, correlational, or related links are reported for this construct."
+    }
+  ],
+  "characterization": "Space of definitions. The paper treats this construct, under the name \"Self-alignment,\" as the extent to which an evaluator's internal reasoning and scoring are consistent with its own task understanding and instructions. Its usage is tied to \"internal thinking\": the paper says it instructs GPT to conduct internal thinking that aligns itself for better task and preference understanding, and presents this internal thinking as strengthening task understanding and instruction following.\n\nSpace of measurement. Papers do not link this construct to any measurement instrument or behavioral indicator. The material therefore does not specify a benchmark, human evaluation setup, judge-model procedure, probe, or analysis that operationalizes it.\n\nLinks. No causal, correlational, or related links are reported for this construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Mixture of insighTful Experts (MoTE): The Synergy of Reasoning Chains and Expert Mixtures in Self-Alignment"
+    ],
+    "emnlp25": [
+      "UltraIF: Advancing Instruction Following from the Wild"
+    ],
+    "iclr24": [
+      "Self-Alignment with Instruction Backtranslation"
+    ],
+    "iclr25": [
+      "DreamBench++: A Human-Aligned Benchmark for Personalized Image Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr24": 1,
+    "iclr25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "canonical_name": "Retrieval effectiveness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage stays within retrieval quality: papers describe it as the degree to which a retrieval system consistently returns relevant documents for a query, reflecting query-document alignment and contextual grounding. A closely related framing calls it contextual relevance, the latent trait of how well a retrieved chunk aligns with the broader context of a user's query and document structure, explicitly beyond surface-level semantic similarity. In one paper, the same label is used for generation instead, referring to responses that engage meaningfully with the input content and context, so the unit of analysis shifts from retrieval systems or chunks to generated responses.\n\nSpace of facets. The clearest breakdown treats retrieval along two dimensions, semantic similarity and contextual relevance: a Dual-Axis Retriever is described as expanding and filtering candidate chunks using both axes. Within that framing, contextual relevance is contrasted with surface similarity and tied to document structure and broader query context, while the system-level definition emphasizes relevant-document return, query-document alignment, and contextual grounding. Across these papers, nearby labels are used at different levels, covering system retrieval quality, chunk selection, and, in one case, response generation.\n\nSpace of measurement. Operationalization is concentrated in benchmarks: papers link retrieval effectiveness to 3 measurement instruments, BEIR, MMLongBench-Doc, and MS MARCO, and no behavioral indicators are linked to it. One paper states that retrieval effectiveness is evaluated with the retrieval benchmarks MS MARCO and BEIR, and another evaluates retrieval accuracy on MMLongBench-Doc. The linked instruments are all benchmark-based, keeping measurement at the level of retrieval performance and retrieval accuracy rather than a separate linked measure of contextual relevance.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Retrieval effectiveness",
+    "Contextual relevance"
+  ],
+  "papers": [
+    "Counterspeech the ultimate shield! Multi-Conditioned Counterspeech Generation through Attributed Prefix Learning",
+    "RAGEval: Scenario Specific RAG Evaluation Dataset Generation Framework",
+    "A Simple Yet Effective Method for Non-Refusing Context Relevant Fine-grained Safety Steering in LLMs",
+    "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance",
+    "KG-CQR: Leveraging Structured Relation Representations in Knowledge Graphs for Contextual Query Retrieval",
+    "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration",
+    "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking",
+    "CSEval: Towards Automated, Multi-Dimensional, and Reference-Free Counterspeech Evaluation using Auto-Calibrated LLMs"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "The degree to which a retrieval system consistently returns relevant documents in response to a query, reflecting the quality of query-document alignment and contextual grounding.",
+      "papers": [
+        "KG-CQR: Leveraging Structured Relation Representations in Knowledge Graphs for Contextual Query Retrieval"
+      ],
+      "original_name": "Retrieval effectiveness"
+    },
+    {
+      "text": "The latent trait reflecting how well a retrieved chunk aligns with the broader context of the user's query and document structure, beyond surface-level semantic similarity.",
+      "papers": [
+        "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration"
+      ],
+      "original_name": "Contextual relevance"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MS MARCO",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance",
+      "evidence": "We evaluate retrieval effectiveness using two retrieval benchmarks: MS MARCO (Bajaj et al., 2016) and BEIR (Thakur et al., 2021).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BEIR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance",
+      "evidence": "We evaluate retrieval effectiveness using two retrieval benchmarks: MS MARCO (Bajaj et al., 2016) and BEIR (Thakur et al., 2021).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLongBench-Doc",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding",
+      "evidence": "\u201cWe first evaluate the retrieval accuracy of the Col-retrieval module within SV-RAG and compare it with several baselines on SlideVQA, MMLongBench-Doc, DUDE, DocVQA and VisR-Bench.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SV-RAG: LoRA-Contextualizing Adaptation of MLLMs for Long Document Understanding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage stays within retrieval quality: papers describe it as the degree to which a retrieval system consistently returns relevant documents for a query, reflecting query-document alignment and contextual grounding. A closely related framing calls it contextual relevance, the latent trait of how well a retrieved chunk aligns with the broader context of a user's query and document structure, explicitly beyond surface-level semantic similarity. In one paper, the same label is used for generation instead, referring to responses that engage meaningfully with the input content and context, so the unit of analysis shifts from retrieval systems or chunks to generated responses."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The clearest breakdown treats retrieval along two dimensions, semantic similarity and contextual relevance: a Dual-Axis Retriever is described as expanding and filtering candidate chunks using both axes. Within that framing, contextual relevance is contrasted with surface similarity and tied to document structure and broader query context, while the system-level definition emphasizes relevant-document return, query-document alignment, and contextual grounding. Across these papers, nearby labels are used at different levels, covering system retrieval quality, chunk selection, and, in one case, response generation."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is concentrated in benchmarks: papers link retrieval effectiveness to 3 measurement instruments, BEIR, MMLongBench-Doc, and MS MARCO, and no behavioral indicators are linked to it. One paper states that retrieval effectiveness is evaluated with the retrieval benchmarks MS MARCO and BEIR, and another evaluates retrieval accuracy on MMLongBench-Doc. The linked instruments are all benchmark-based, keeping measurement at the level of retrieval performance and retrieval accuracy rather than a separate linked measure of contextual relevance."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage stays within retrieval quality: papers describe it as the degree to which a retrieval system consistently returns relevant documents for a query, reflecting query-document alignment and contextual grounding. A closely related framing calls it contextual relevance, the latent trait of how well a retrieved chunk aligns with the broader context of a user's query and document structure, explicitly beyond surface-level semantic similarity. In one paper, the same label is used for generation instead, referring to responses that engage meaningfully with the input content and context, so the unit of analysis shifts from retrieval systems or chunks to generated responses.\n\nSpace of facets. The clearest breakdown treats retrieval along two dimensions, semantic similarity and contextual relevance: a Dual-Axis Retriever is described as expanding and filtering candidate chunks using both axes. Within that framing, contextual relevance is contrasted with surface similarity and tied to document structure and broader query context, while the system-level definition emphasizes relevant-document return, query-document alignment, and contextual grounding. Across these papers, nearby labels are used at different levels, covering system retrieval quality, chunk selection, and, in one case, response generation.\n\nSpace of measurement. Operationalization is concentrated in benchmarks: papers link retrieval effectiveness to 3 measurement instruments, BEIR, MMLongBench-Doc, and MS MARCO, and no behavioral indicators are linked to it. One paper states that retrieval effectiveness is evaluated with the retrieval benchmarks MS MARCO and BEIR, and another evaluates retrieval accuracy on MMLongBench-Doc. The linked instruments are all benchmark-based, keeping measurement at the level of retrieval performance and retrieval accuracy rather than a separate linked measure of contextual relevance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Counterspeech the ultimate shield! Multi-Conditioned Counterspeech Generation through Attributed Prefix Learning",
+      "RAGEval: Scenario Specific RAG Evaluation Dataset Generation Framework"
+    ],
+    "emnlp25": [
+      "A Simple Yet Effective Method for Non-Refusing Context Relevant Fine-grained Safety Steering in LLMs",
+      "ExpandR: Teaching Dense Retrievers Beyond Queries with LLM Guidance",
+      "KG-CQR: Leveraging Structured Relation Representations in Knowledge Graphs for Contextual Query Retrieval",
+      "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration"
+    ],
+    "icml25": [
+      "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking"
+    ],
+    "naacl25": [
+      "CSEval: Towards Automated, Multi-Dimensional, and Reference-Free Counterspeech Evaluation using Auto-Calibrated LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 4,
+    "icml25": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

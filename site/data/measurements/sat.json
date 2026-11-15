@@ -1,0 +1,70 @@
+{
+  "canonical_name": "SAT",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers most commonly treat SAT as a standardized test used for college admissions in the United States and used to evaluate model performance. A narrower description in one paper treats it as a set of math problems from the Scholastic Aptitude Test, and notes that this version contains 32 four-choice problems.\n\nWhat it is claimed to measure. Across these papers, SAT is used to evaluate model performance, and one paper specifies quantitative reasoning as the target of the SAT math problems. Papers do not explicitly link it to named constructs or behavioral indicators.\n\nSpace of uses. One paper places SAT alongside other standardized tests such as GRE and AP when comparing model and human test-takers, stating that GPT-4 scores on these tests are comparable to those of human test-takers. Another paper uses the SAT math problems as a small evaluation set and averages results over the last three checkpoints when available.\n\nConcerns raised. The only explicit concern raised is the small size of the SAT math-problem version: one paper notes that it has only 32 four-choice problems, which leads the authors to average results over multiple checkpoints.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SAT"
+  ],
+  "papers": [
+    "A Mathematical Framework for AI-Human Integration in Work",
+    "Overcoming Vocabulary Mismatch: Vocabulary-agnostic Teacher Guided Language Modeling",
+    "PENCIL: Long Thoughts with Short Memory",
+    "Not All Tokens Are What You Need for Pretraining"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A standardized test widely used for college admissions in the United States, used here to evaluate model performance.",
+      "papers": [
+        "A Mathematical Framework for AI-Human Integration in Work",
+        "Not All Tokens Are What You Need for Pretraining"
+      ],
+      "original_name": "SAT"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers most commonly treat SAT as a standardized test used for college admissions in the United States and used to evaluate model performance. A narrower description in one paper treats it as a set of math problems from the Scholastic Aptitude Test, and notes that this version contains 32 four-choice problems."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across these papers, SAT is used to evaluate model performance, and one paper specifies quantitative reasoning as the target of the SAT math problems. Papers do not explicitly link it to named constructs or behavioral indicators."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "One paper places SAT alongside other standardized tests such as GRE and AP when comparing model and human test-takers, stating that GPT-4 scores on these tests are comparable to those of human test-takers. Another paper uses the SAT math problems as a small evaluation set and averages results over the last three checkpoints when available."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "The only explicit concern raised is the small size of the SAT math-problem version: one paper notes that it has only 32 four-choice problems, which leads the authors to average results over multiple checkpoints."
+    }
+  ],
+  "characterization": "What it is. Papers most commonly treat SAT as a standardized test used for college admissions in the United States and used to evaluate model performance. A narrower description in one paper treats it as a set of math problems from the Scholastic Aptitude Test, and notes that this version contains 32 four-choice problems.\n\nWhat it is claimed to measure. Across these papers, SAT is used to evaluate model performance, and one paper specifies quantitative reasoning as the target of the SAT math problems. Papers do not explicitly link it to named constructs or behavioral indicators.\n\nSpace of uses. One paper places SAT alongside other standardized tests such as GRE and AP when comparing model and human test-takers, stating that GPT-4 scores on these tests are comparable to those of human test-takers. Another paper uses the SAT math problems as a small evaluation set and averages results over the last three checkpoints when available.\n\nConcerns raised. The only explicit concern raised is the small size of the SAT math-problem version: one paper notes that it has only 32 four-choice problems, which leads the authors to average results over multiple checkpoints.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "A Mathematical Framework for AI-Human Integration in Work",
+      "Overcoming Vocabulary Mismatch: Vocabulary-agnostic Teacher Guided Language Modeling",
+      "PENCIL: Long Thoughts with Short Memory"
+    ],
+    "neurips24": [
+      "Not All Tokens Are What You Need for Pretraining"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 3,
+    "neurips24": 1
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

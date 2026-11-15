@@ -1,0 +1,312 @@
+{
+  "canonical_name": "LogiQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, LogiQA is most commonly described as a machine reading comprehension or question answering benchmark for logical reasoning. Definitions usually present it as multiple-choice questions grounded in a passage or logical text, where models choose the correct option; one paper describes it as expert-written and aimed at human-level logical reasoning across deductive, inductive, and abductive inference, while others frame it as reading comprehension from logic puzzles or as NLI from premises to a conclusion. A smaller line of work places it under commonsense reasoning instead.\n\nWhat it is claimed to measure. Papers link LogiQA to five constructs and one behavioral indicator. The prevailing use is to measure logical reasoning, with broader reasoning as another recurring framing; smaller lines of work use it to measure commonsense reasoning, generalization beyond the pretraining distribution, and question answering, and papers also link it to additional constructs. Overall, the measurement claims concentrate on logical reasoning but spread across several targets.\n\nSpace of uses. In use, papers often place LogiQA in broader benchmark suites for reasoning, reading comprehension, language understanding, and downstream evaluation. It appears alongside PIQA, WinoGrande, WSC, and GSM8K, and papers report it in zero-shot, 5-shot, and in-context learning evaluations. Papers also relate it to one other measurement instrument, MR-Ben, where a study says the benchmark's logic questions are drawn from LogiQA.\n\nConcerns raised. One profiling paper argues that its measured content differs from its marketing: although LogiQA is marketed as a logical reasoning benchmark, it is reported to lean most on temporal reasoning, and deductive reasoning is said to contribute only modestly.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LogiQA",
+    "Logiqa"
+  ],
+  "papers": [
+    "Beyond Output Matching: Bidirectional Alignment for Enhanced In-Context Learning",
+    "DIVE into MoE: Diversity-Enhanced Reconstruction of Large Language Models from Dense into Mixture-of-Experts",
+    "DRPruning: Efficient Large Language Model Pruning through Distributionally Robust Optimization",
+    "Disentangling Biased Knowledge from Reasoning in Large Language Models via Machine Unlearning",
+    "Genius: A Generalizable and Purely Unsupervised Self-Training Framework For Advanced Reasoning",
+    "Inner Thinking Transformer: Leveraging Dynamic Depth Scaling to Foster Adaptive Internal Thinking",
+    "Unveiling the Potential of BERT-family: A New Recipe for Building Scalable, General and Competitive Large Language Models",
+    "\u03c6-Decoding: Adaptive Foresight Sampling for Balanced Inference-Time Exploration and Exploitation",
+    "A Graph-Theoretical Framework for Analyzing the Behavior of Causal Language Models",
+    "Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks",
+    "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+    "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs",
+    "FIRE: Flexible Integration of Data Quality Ratings for Effective Pretraining",
+    "MLWQ: Efficient Small Language Model Deployment via Multi-Level Weight Quantization",
+    "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+    "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching",
+    "DataMan: Data Manager for Pre-training Large Language Models",
+    "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+    "EmbedLLM: Learning Compact Representations of Large Language Models",
+    "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+    "MoE++: Accelerating Mixture-of-Experts Methods with Zero-Computation Experts",
+    "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+    "PolyPythias: Stability and Outliers across Fifty Language Model Pre-Training Runs",
+    "Quest: Query-centric Data Synthesis Approach for Long-context Scaling of Large Language Model",
+    "RegMix: Data Mixture as Regression for Language Model Pre-training",
+    "Surprising Effectiveness of pretraining Ternary Language Model at Scale",
+    "TypedThinker: Diversify Large Language Model Reasoning with Typed Thinking",
+    "Blink of an eye: a simple theory for feature localization in generative models",
+    "LLM Data Selection and Utilization via Dynamic Bi-level Optimization",
+    "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+    "Mixture of Hidden-Dimensions: Not All Hidden-States\u2019 Dimensions are Needed in Transformer",
+    "MoH: Multi-Head Attention as Mixture-of-Head Attention",
+    "NExtLong: Toward Effective Long-Context Training without Long Documents",
+    "Predictive Data Selection: The Data That Predicts Is the Data That Teaches",
+    "SepLLM: Accelerate Large Language Models by Compressing One Segment into One Separator",
+    "Token Cleaning: Fine-Grained Data Selection for LLM Supervised Fine-Tuning",
+    "Advancing MoE Efficiency: A Collaboration-Constrained Routing (C2R) Strategy for Better Expert Parallelism Design",
+    "Efficient One-shot Compression via Low-Rank Local Feature Distillation",
+    "Logic-of-Thought: Injecting Logic into Contexts for Full Reasoning in Large Language Models",
+    "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+    "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+    "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+  ],
+  "paper_count": 45,
+  "definitions": [
+    {
+      "text": "A dataset for logical reasoning, where models must choose the correct option for a question based on a given logical text passage.",
+      "papers": [
+        "DataMan: Data Manager for Pre-training Large Language Models",
+        "Efficient One-shot Compression via Low-Rank Local Feature Distillation",
+        "Advancing MoE Efficiency: A Collaboration-Constrained Routing (C2R) Strategy for Better Expert Parallelism Design",
+        "Logic-of-Thought: Injecting Logic into Contexts for Full Reasoning in Large Language Models",
+        "Disentangling Biased Knowledge from Reasoning in Large Language Models via Machine Unlearning",
+        "Mixture of Hidden-Dimensions: Not All Hidden-States\u2019 Dimensions are Needed in Transformer",
+        "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs",
+        "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+        "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+        "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+        "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+        "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+        "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+      ],
+      "original_name": "LogiQA"
+    },
+    {
+      "text": "A benchmark dataset for evaluating commonsense reasoning capabilities in language models.",
+      "papers": [
+        "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models"
+      ],
+      "original_name": "Logiqa"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "evidence": "\"LogiQA [31] collects questions about natural language inference (NLI) and requires models to infer the conclusion based on provided premises.\"",
+      "paper_count": 8,
+      "paper_weight": 8.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+        ],
+        "iclr25": [
+          "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+          "TypedThinker: Diversify Large Language Model Reasoning with Typed Thinking"
+        ],
+        "naacl25": [
+          "Logic-of-Thought: Injecting Logic into Contexts for Full Reasoning in Large Language Models"
+        ],
+        "acl25": [
+          "Beyond Output Matching: Bidirectional Alignment for Enhanced In-Context Learning"
+        ],
+        "emnlp25": [
+          "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+          "A Graph-Theoretical Framework for Analyzing the Behavior of Causal Language Models",
+          "Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Surprising Effectiveness of pretraining Ternary Language Model at Scale",
+      "evidence": "We evaluate Spectra Suite models using eight distinct common-sense and reasoning benchmarks consisting of tasks from logical and reasoning questions to grounded and physical commonsense tasks: Arc Easy, Arc Challenge (Clark et al., 2018), BoolQ (Clark et al., 2019), HellaSWAG (Zellers et al., 2019), WinoGrande (Sakaguchi et al., 2021), PIQA (Bisk et al., 2019), LAMBADA (Paperno et al., 2016), LogiQA (Liu et al., 2021), all under zero-shot settings. (Section 5)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Surprising Effectiveness of pretraining Ternary Language Model at Scale",
+          "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining"
+        ],
+        "acl25": [
+          "Disentangling Biased Knowledge from Reasoning in Large Language Models via Machine Unlearning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MR-Ben",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+      "evidence": "For logic questions, we draw from LogiQA [40], which encompasses a broad spectrum of logical reasoning types, including categorical, conditional, disjunctive, and conjunctive reasoning. (Section 3.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "evidence": "In the assessments of continued QA and text understanding, we report 0-shot accuracy for LogiQA [28], 32-shot BoolQ [29], and 0-shot LAMBADA [30]. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+      "evidence": "To assess generalization beyond the pretraining distribution, we evaluate models on a series of diverse reasoning tasks in a 5-shot setting, including LogiQA Liu et al. (2020), LogiQA 2 Liu et al. (2023), SciQ Welbl et al. (2017), and PiQA Bisk et al. (2020). (Section 6.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+      "evidence": "Commonsense Reasoning: HellaSwag (Zellers et al., 2019), SIQA (Sap et al., 2019), Wino- Grande (Sakaguchi et al., 2021), Logiqa (Liu et al., 2020).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks",
+      "evidence": "\u201cLogiQA, marketed as a logical reasoning benchmark, in fact leans most on Temporal Reasoning and Commonsense Causal Reasoning\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, LogiQA is most commonly described as a machine reading comprehension or question answering benchmark for logical reasoning. Definitions usually present it as multiple-choice questions grounded in a passage or logical text, where models choose the correct option; one paper describes it as expert-written and aimed at human-level logical reasoning across deductive, inductive, and abductive inference, while others frame it as reading comprehension from logic puzzles or as NLI from premises to a conclusion. A smaller line of work places it under commonsense reasoning instead."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link LogiQA to five constructs and one behavioral indicator. The prevailing use is to measure logical reasoning, with broader reasoning as another recurring framing; smaller lines of work use it to measure commonsense reasoning, generalization beyond the pretraining distribution, and question answering, and papers also link it to additional constructs. Overall, the measurement claims concentrate on logical reasoning but spread across several targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers often place LogiQA in broader benchmark suites for reasoning, reading comprehension, language understanding, and downstream evaluation. It appears alongside PIQA, WinoGrande, WSC, and GSM8K, and papers report it in zero-shot, 5-shot, and in-context learning evaluations. Papers also relate it to one other measurement instrument, MR-Ben, where a study says the benchmark's logic questions are drawn from LogiQA."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One profiling paper argues that its measured content differs from its marketing: although LogiQA is marketed as a logical reasoning benchmark, it is reported to lean most on temporal reasoning, and deductive reasoning is said to contribute only modestly."
+    }
+  ],
+  "characterization": "What it is. Across papers, LogiQA is most commonly described as a machine reading comprehension or question answering benchmark for logical reasoning. Definitions usually present it as multiple-choice questions grounded in a passage or logical text, where models choose the correct option; one paper describes it as expert-written and aimed at human-level logical reasoning across deductive, inductive, and abductive inference, while others frame it as reading comprehension from logic puzzles or as NLI from premises to a conclusion. A smaller line of work places it under commonsense reasoning instead.\n\nWhat it is claimed to measure. Papers link LogiQA to five constructs and one behavioral indicator. The prevailing use is to measure logical reasoning, with broader reasoning as another recurring framing; smaller lines of work use it to measure commonsense reasoning, generalization beyond the pretraining distribution, and question answering, and papers also link it to additional constructs. Overall, the measurement claims concentrate on logical reasoning but spread across several targets.\n\nSpace of uses. In use, papers often place LogiQA in broader benchmark suites for reasoning, reading comprehension, language understanding, and downstream evaluation. It appears alongside PIQA, WinoGrande, WSC, and GSM8K, and papers report it in zero-shot, 5-shot, and in-context learning evaluations. Papers also relate it to one other measurement instrument, MR-Ben, where a study says the benchmark's logic questions are drawn from LogiQA.\n\nConcerns raised. One profiling paper argues that its measured content differs from its marketing: although LogiQA is marketed as a logical reasoning benchmark, it is reported to lean most on temporal reasoning, and deductive reasoning is said to contribute only modestly.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Beyond Output Matching: Bidirectional Alignment for Enhanced In-Context Learning",
+      "DIVE into MoE: Diversity-Enhanced Reconstruction of Large Language Models from Dense into Mixture-of-Experts",
+      "DRPruning: Efficient Large Language Model Pruning through Distributionally Robust Optimization",
+      "Disentangling Biased Knowledge from Reasoning in Large Language Models via Machine Unlearning",
+      "Genius: A Generalizable and Purely Unsupervised Self-Training Framework For Advanced Reasoning",
+      "Inner Thinking Transformer: Leveraging Dynamic Depth Scaling to Foster Adaptive Internal Thinking",
+      "Unveiling the Potential of BERT-family: A New Recipe for Building Scalable, General and Competitive Large Language Models",
+      "\u03c6-Decoding: Adaptive Foresight Sampling for Balanced Inference-Time Exploration and Exploitation"
+    ],
+    "emnlp25": [
+      "A Graph-Theoretical Framework for Analyzing the Behavior of Causal Language Models",
+      "Benchmark Profiling: Mechanistic Diagnosis of LLM Benchmarks",
+      "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+      "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs",
+      "FIRE: Flexible Integration of Data Quality Ratings for Effective Pretraining",
+      "MLWQ: Efficient Small Language Model Deployment via Multi-Level Weight Quantization",
+      "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+      "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching"
+    ],
+    "iclr25": [
+      "DataMan: Data Manager for Pre-training Large Language Models",
+      "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+      "EmbedLLM: Learning Compact Representations of Large Language Models",
+      "Harnessing Diversity for Important Data Selection in Pretraining Large Language Models",
+      "MoE++: Accelerating Mixture-of-Experts Methods with Zero-Computation Experts",
+      "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+      "PolyPythias: Stability and Outliers across Fifty Language Model Pre-Training Runs",
+      "Quest: Query-centric Data Synthesis Approach for Long-context Scaling of Large Language Model",
+      "RegMix: Data Mixture as Regression for Language Model Pre-training",
+      "Surprising Effectiveness of pretraining Ternary Language Model at Scale",
+      "TypedThinker: Diversify Large Language Model Reasoning with Typed Thinking"
+    ],
+    "icml25": [
+      "Blink of an eye: a simple theory for feature localization in generative models",
+      "LLM Data Selection and Utilization via Dynamic Bi-level Optimization",
+      "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+      "Mixture of Hidden-Dimensions: Not All Hidden-States\u2019 Dimensions are Needed in Transformer",
+      "MoH: Multi-Head Attention as Mixture-of-Head Attention",
+      "NExtLong: Toward Effective Long-Context Training without Long Documents",
+      "Predictive Data Selection: The Data That Predicts Is the Data That Teaches",
+      "SepLLM: Accelerate Large Language Models by Compressing One Segment into One Separator",
+      "Token Cleaning: Fine-Grained Data Selection for LLM Supervised Fine-Tuning"
+    ],
+    "naacl25": [
+      "Advancing MoE Efficiency: A Collaboration-Constrained Routing (C2R) Strategy for Better Expert Parallelism Design",
+      "Efficient One-shot Compression via Low-Rank Local Feature Distillation",
+      "Logic-of-Thought: Injecting Logic into Contexts for Full Reasoning in Large Language Models"
+    ],
+    "neurips24": [
+      "DHA: Learning Decoupled-Head Attention from Transformer Checkpoints via Adaptive Heads Fusion",
+      "MR-Ben: A Meta-Reasoning Benchmark for Evaluating System-2 Thinking in LLMs",
+      "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers",
+      "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "Stacking Your Transformers: A Closer Look at Model Growth for Efficient LLM Pre-Training",
+      "TAIA: Large Language Models are Out-of-Distribution Data Learners"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 8,
+    "emnlp25": 8,
+    "iclr25": 11,
+    "icml25": 9,
+    "naacl25": 3,
+    "neurips24": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

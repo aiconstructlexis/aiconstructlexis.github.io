@@ -1,0 +1,44 @@
+{
+  "canonical_name": "HateCheck",
+  "type": "measurement",
+  "canonical_definition": "A benchmark dataset for evaluating hate speech detection models, used in this paper as a source of unsafe, hate-speech-related prompts for the LITMUS benchmark.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HateCheck"
+  ],
+  "papers": [
+    "Alignment Quality Index (AQI) : Beyond Refusals: AQI as an Intrinsic Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise Pooled Representations",
+    "Personalization up to a Point: Why Personalized Content Moderation Needs Boundaries, and How We Can Enforce Them"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "A benchmark dataset for evaluating hate speech detection models, used in this paper as a source of unsafe, hate-speech-related prompts for the LITMUS benchmark.",
+      "papers": [
+        "Alignment Quality Index (AQI) : Beyond Refusals: AQI as an Intrinsic Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise Pooled Representations"
+      ],
+      "original_name": "HateCheck"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "A benchmark dataset for evaluating hate speech detection models, used in this paper as a source of unsafe, hate-speech-related prompts for the LITMUS benchmark.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Alignment Quality Index (AQI) : Beyond Refusals: AQI as an Intrinsic Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise Pooled Representations",
+      "Personalization up to a Point: Why Personalized Content Moderation Needs Boundaries, and How We Can Enforce Them"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

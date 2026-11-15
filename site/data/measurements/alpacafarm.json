@@ -1,0 +1,151 @@
+{
+  "canonical_name": "AlpacaFarm",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most commonly, papers treat AlpacaFarm as an evaluation framework, benchmark, or dataset for open-ended instruction-following or conversation models. Across definitions, it is described as using human preference data and pairwise or model-based comparisons over model outputs, with content such as instructions, output pairs, demonstrations, and human preference annotations; some papers highlight a test set of 805 instructions, training and validation splits, and use of all 9.69k instructions, while a smaller line of work refers to the AlpacaFarm codebase or software framework for judging responses with a model evaluator.\n\nWhat it is claimed to measure. Papers link AlpacaFarm to 2 constructs and 1 behavioral indicator. The named constructs are Helpfulness, where a paper uses its 805-instruction test set for assessing helpfulness, and Instruction following ability, where another paper uses the AlpacaFarm codebase to judge model responses; it is also reported as measuring Pairwise comparison, with one paper describing open-ended instruction-following benchmarks such as Alpacafarm as primarily relying on pairwise comparison.\n\nSpace of uses. In use, papers sample from multiple parts of AlpacaFarm, including randomly drawn instruction and output pairs, the first 1000 entries of its training split, a 200-instruction validation sample, and evaluations over another 1,000 instructions or all 9.69k instructions. Papers position it both as an open-ended instruction-following benchmark, sometimes alongside MT-Bench, LLMBar, and hh-rlhf, and as a resource for RLHF stages, reward model training, validation, and model-judged win-rate comparisons against reference outputs; no measurement instrument is linked to it.\n\nConcerns raised. One paper notes low agreement between human annotators in AlpacaFarm, reporting 66% agreement.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "AlpacaFarm",
+    "Alpacafarm"
+  ],
+  "papers": [
+    "Evaluating Large Language Models at Evaluating Instruction Following",
+    "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+    "Reward Model Ensembles Help Mitigate Overoptimization",
+    "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+    "DataMan: Data Manager for Pre-training Large Language Models",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "Unintentional Unalignment: Likelihood Displacement in Direct Preference Optimization",
+    "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+    "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+    "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking",
+    "Regularized Best-of-N Sampling with Minimum Bayes Risk Objective for Language Model Alignment"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "Evaluation framework for open-ended conversation models, using human or model-based comparisons to assess response quality and instructability.",
+      "papers": [
+        "Evaluating Large Language Models at Evaluating Instruction Following",
+        "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+        "Reward Model Ensembles Help Mitigate Overoptimization",
+        "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+        "DataMan: Data Manager for Pre-training Large Language Models",
+        "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+        "Regularized Best-of-N Sampling with Minimum Bayes Risk Objective for Language Model Alignment"
+      ],
+      "original_name": "AlpacaFarm"
+    },
+    {
+      "text": "A benchmark for evaluating instruction-following models, which includes human preference annotations for pairwise comparisons.",
+      "papers": [
+        "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References"
+      ],
+      "original_name": "Alpacafarm"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "evidence": "The first is the test set from AlpacaFarm (Dubois et al., 2023), which contains 805 instructions for assessing helpfulness. (Sec. 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "DataMan: Data Manager for Pre-training Large Language Models",
+      "evidence": "We evaluate another 1,000 instructions and use the AlpacaFarm codebase (Dubois et al., 2024) to judge the responses from two models with GPT-4o. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DataMan: Data Manager for Pre-training Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pairwise comparison",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "evidence": "\u201copen-ended instruction-following benchmarks (MT-Bench, Alpacafarm, and LLMBar), which primarily rely on pairwise comparison task.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most commonly, papers treat AlpacaFarm as an evaluation framework, benchmark, or dataset for open-ended instruction-following or conversation models. Across definitions, it is described as using human preference data and pairwise or model-based comparisons over model outputs, with content such as instructions, output pairs, demonstrations, and human preference annotations; some papers highlight a test set of 805 instructions, training and validation splits, and use of all 9.69k instructions, while a smaller line of work refers to the AlpacaFarm codebase or software framework for judging responses with a model evaluator."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link AlpacaFarm to 2 constructs and 1 behavioral indicator. The named constructs are Helpfulness, where a paper uses its 805-instruction test set for assessing helpfulness, and Instruction following ability, where another paper uses the AlpacaFarm codebase to judge model responses; it is also reported as measuring Pairwise comparison, with one paper describing open-ended instruction-following benchmarks such as Alpacafarm as primarily relying on pairwise comparison."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers sample from multiple parts of AlpacaFarm, including randomly drawn instruction and output pairs, the first 1000 entries of its training split, a 200-instruction validation sample, and evaluations over another 1,000 instructions or all 9.69k instructions. Papers position it both as an open-ended instruction-following benchmark, sometimes alongside MT-Bench, LLMBar, and hh-rlhf, and as a resource for RLHF stages, reward model training, validation, and model-judged win-rate comparisons against reference outputs; no measurement instrument is linked to it."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One paper notes low agreement between human annotators in AlpacaFarm, reporting 66% agreement."
+    }
+  ],
+  "characterization": "What it is. Most commonly, papers treat AlpacaFarm as an evaluation framework, benchmark, or dataset for open-ended instruction-following or conversation models. Across definitions, it is described as using human preference data and pairwise or model-based comparisons over model outputs, with content such as instructions, output pairs, demonstrations, and human preference annotations; some papers highlight a test set of 805 instructions, training and validation splits, and use of all 9.69k instructions, while a smaller line of work refers to the AlpacaFarm codebase or software framework for judging responses with a model evaluator.\n\nWhat it is claimed to measure. Papers link AlpacaFarm to 2 constructs and 1 behavioral indicator. The named constructs are Helpfulness, where a paper uses its 805-instruction test set for assessing helpfulness, and Instruction following ability, where another paper uses the AlpacaFarm codebase to judge model responses; it is also reported as measuring Pairwise comparison, with one paper describing open-ended instruction-following benchmarks such as Alpacafarm as primarily relying on pairwise comparison.\n\nSpace of uses. In use, papers sample from multiple parts of AlpacaFarm, including randomly drawn instruction and output pairs, the first 1000 entries of its training split, a 200-instruction validation sample, and evaluations over another 1,000 instructions or all 9.69k instructions. Papers position it both as an open-ended instruction-following benchmark, sometimes alongside MT-Bench, LLMBar, and hh-rlhf, and as a resource for RLHF stages, reward model training, validation, and model-judged win-rate comparisons against reference outputs; no measurement instrument is linked to it.\n\nConcerns raised. One paper notes low agreement between human annotators in AlpacaFarm, reporting 66% agreement.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Evaluating Large Language Models at Evaluating Instruction Following",
+      "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "Reward Model Ensembles Help Mitigate Overoptimization",
+      "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective"
+    ],
+    "iclr25": [
+      "DataMan: Data Manager for Pre-training Large Language Models",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "Unintentional Unalignment: Likelihood Displacement in Direct Preference Optimization"
+    ],
+    "icml25": [
+      "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+      "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
+      "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking"
+    ],
+    "naacl25": [
+      "Regularized Best-of-N Sampling with Minimum Bayes Risk Objective for Language Model Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 3,
+    "icml25": 3,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

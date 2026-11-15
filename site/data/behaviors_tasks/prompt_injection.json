@@ -1,0 +1,129 @@
+{
+  "canonical_name": "Prompt injection",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats prompt injection as behavior in which a model or agent follows malicious instructions inserted by an adversary, either in an input prompt or in third-party or tool-retrieved content. Definitions largely agree on the outcome: the system is redirected from the user\u2019s or intended goal, with papers describing it as executing an attacker-specified task, taking unauthorized actions, or deviating from intended behavior.\n\nVariants. Several papers distinguish direct and indirect forms. Direct prompt injection is described as malicious instructions placed in inputs sent to the model, while indirect prompt injection, sometimes called an indirect prompt attack, refers to instructions embedded in emails, documents, retrieved text, tool outputs, or other external sources the agent accesses; some papers also note harms such as data exfiltration, influencing outputs for other users, or redirecting the agent to unauthorized actions.\n\nSpace of elicitation and scores. Only 1 linked measurement instrument is reported: AgentDojo. Papers describe AgentDojo as a dynamic environment for testing prompt injection attacks, so the linked operationalization is a testing environment for the attack behavior.\n\nWhat it is taken as evidence of. No linked constructs are reported for prompt injection. In these papers, it is described as an attack behavior, but no recorded relationship explicitly treats it as evidence of a broader construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Prompt injection",
+    "Indirect prompt injection",
+    "Indirect prompt attack"
+  ],
+  "papers": [
+    "Adversarial Tokenization",
+    "Sparse Activation Editing for Reliable Instruction Following in Narratives",
+    "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses",
+    "Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?",
+    "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+    "UDora: A Unified Red Teaming Framework against LLM Agents by Dynamically Hijacking Their Own Reasoning",
+    "Gandalf the Red: Adaptive Security for LLMs",
+    "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+    "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "Introducing malicious instructions into tool outputs or other context so that the agent follows the attacker\u2019s goal instead of the user\u2019s.",
+      "papers": [
+        "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents",
+        "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses"
+      ],
+      "original_name": "Prompt injection"
+    },
+    {
+      "text": "Following malicious or unintended instructions embedded in external content such as emails, documents, or retrieved text.",
+      "papers": [
+        "Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?",
+        "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents"
+      ],
+      "original_name": "Indirect prompt injection"
+    },
+    {
+      "text": "An observable attack where a malicious actor manipulates external data sources that an LLM accesses, causing the model to deviate from its intended behavior.",
+      "papers": [
+        "Gandalf the Red: Adaptive Security for LLMs"
+      ],
+      "original_name": "Indirect prompt attack"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AgentDojo",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "OS Agents: A Survey on MLLM-based Agents for Computer, Phone and Browser Use",
+      "evidence": "AgentDojo (Debenedetti et al., 2024) offers a dynamic environment for testing prompt injection attacks, and AgentHarm (Andriushchenko et al., 2024) measures the potential harm from agents executing malicious tasks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "OS Agents: A Survey on MLLM-based Agents for Computer, Phone and Browser Use"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats prompt injection as behavior in which a model or agent follows malicious instructions inserted by an adversary, either in an input prompt or in third-party or tool-retrieved content. Definitions largely agree on the outcome: the system is redirected from the user\u2019s or intended goal, with papers describing it as executing an attacker-specified task, taking unauthorized actions, or deviating from intended behavior."
+    },
+    {
+      "label": "Variants.",
+      "text": "Several papers distinguish direct and indirect forms. Direct prompt injection is described as malicious instructions placed in inputs sent to the model, while indirect prompt injection, sometimes called an indirect prompt attack, refers to instructions embedded in emails, documents, retrieved text, tool outputs, or other external sources the agent accesses; some papers also note harms such as data exfiltration, influencing outputs for other users, or redirecting the agent to unauthorized actions."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only 1 linked measurement instrument is reported: AgentDojo. Papers describe AgentDojo as a dynamic environment for testing prompt injection attacks, so the linked operationalization is a testing environment for the attack behavior."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No linked constructs are reported for prompt injection. In these papers, it is described as an attack behavior, but no recorded relationship explicitly treats it as evidence of a broader construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats prompt injection as behavior in which a model or agent follows malicious instructions inserted by an adversary, either in an input prompt or in third-party or tool-retrieved content. Definitions largely agree on the outcome: the system is redirected from the user\u2019s or intended goal, with papers describing it as executing an attacker-specified task, taking unauthorized actions, or deviating from intended behavior.\n\nVariants. Several papers distinguish direct and indirect forms. Direct prompt injection is described as malicious instructions placed in inputs sent to the model, while indirect prompt injection, sometimes called an indirect prompt attack, refers to instructions embedded in emails, documents, retrieved text, tool outputs, or other external sources the agent accesses; some papers also note harms such as data exfiltration, influencing outputs for other users, or redirecting the agent to unauthorized actions.\n\nSpace of elicitation and scores. Only 1 linked measurement instrument is reported: AgentDojo. Papers describe AgentDojo as a dynamic environment for testing prompt injection attacks, so the linked operationalization is a testing environment for the attack behavior.\n\nWhat it is taken as evidence of. No linked constructs are reported for prompt injection. In these papers, it is described as an attack behavior, but no recorded relationship explicitly treats it as evidence of a broader construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Adversarial Tokenization"
+    ],
+    "emnlp25": [
+      "Sparse Activation Editing for Reliable Instruction Following in Narratives"
+    ],
+    "iclr25": [
+      "Breach By A Thousand Leaks: Unsafe Information Leakage in 'Safe' AI Responses",
+      "Can LLMs Separate Instructions From Data? And What Do We Even Mean By That?"
+    ],
+    "icml25": [
+      "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+      "UDora: A Unified Red Teaming Framework against LLM Agents by Dynamically Hijacking Their Own Reasoning",
+      "Gandalf the Red: Adaptive Security for LLMs"
+    ],
+    "naacl25": [
+      "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack"
+    ],
+    "neurips24": [
+      "AgentDojo: A Dynamic Environment to Evaluate Prompt Injection Attacks and Defenses for LLM Agents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr25": 2,
+    "icml25": 3,
+    "naacl25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

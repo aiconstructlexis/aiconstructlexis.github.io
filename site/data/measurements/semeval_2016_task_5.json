@@ -1,0 +1,79 @@
+{
+  "canonical_name": "SemEval-2016 Task 5",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the definitions, this instrument is described as a benchmark dataset for aspect-based sentiment analysis built from restaurant reviews in multiple languages and used to evaluate cross-lingual performance in end-to-end ABSA. One paper specifies that it includes real user restaurant reviews in English, Spanish, French, Dutch, Russian, and Turkish.\n\nWhat it is claimed to measure. In the papers, papers use this dataset to measure aspect-based sentiment analysis. Its reported measurement links converge on a single behavioral indicator, Aspect-based sentiment analysis, and no constructs are linked to it.\n\nSpace of uses. The observed usage frames it as an evaluation dataset for a proposed framework rather than alongside other named instruments. Papers describe evaluating on SemEval-2016 to assess cross-lingual performance in end-to-end ABSA, and no other measurement instruments are linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SemEval-2016"
+  ],
+  "papers": [
+    "LACA: Improving Cross-lingual Aspect-Based Sentiment Analysis with LLM Data Augmentation",
+    "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification",
+    "The Power of LLM-Generated Synthetic Data for Stance Detection in Online Political Discussions"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Benchmark dataset for aspect-based sentiment analysis containing restaurant reviews in multiple languages, used to evaluate cross-lingual performance in E2E-ABSA.",
+      "papers": [
+        "LACA: Improving Cross-lingual Aspect-Based Sentiment Analysis with LLM Data Augmentation"
+      ],
+      "original_name": "SemEval-2016"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Aspect-based sentiment analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LACA: Improving Cross-lingual Aspect-Based Sentiment Analysis with LLM Data Augmentation",
+      "evidence": "We evaluate the proposed framework on the SemEval-2016 dataset (Pontiki et al., 2016), which includes real user restaurant reviews in English (en), Spanish (es), French (fr), Dutch (nl), Russian (ru), and Turkish (tr). (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "LACA: Improving Cross-lingual Aspect-Based Sentiment Analysis with LLM Data Augmentation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the definitions, this instrument is described as a benchmark dataset for aspect-based sentiment analysis built from restaurant reviews in multiple languages and used to evaluate cross-lingual performance in end-to-end ABSA. One paper specifies that it includes real user restaurant reviews in English, Spanish, French, Dutch, Russian, and Turkish."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "In the papers, papers use this dataset to measure aspect-based sentiment analysis. Its reported measurement links converge on a single behavioral indicator, Aspect-based sentiment analysis, and no constructs are linked to it."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The observed usage frames it as an evaluation dataset for a proposed framework rather than alongside other named instruments. Papers describe evaluating on SemEval-2016 to assess cross-lingual performance in end-to-end ABSA, and no other measurement instruments are linked to it."
+    }
+  ],
+  "characterization": "What it is. Across the definitions, this instrument is described as a benchmark dataset for aspect-based sentiment analysis built from restaurant reviews in multiple languages and used to evaluate cross-lingual performance in end-to-end ABSA. One paper specifies that it includes real user restaurant reviews in English, Spanish, French, Dutch, Russian, and Turkish.\n\nWhat it is claimed to measure. In the papers, papers use this dataset to measure aspect-based sentiment analysis. Its reported measurement links converge on a single behavioral indicator, Aspect-based sentiment analysis, and no constructs are linked to it.\n\nSpace of uses. The observed usage frames it as an evaluation dataset for a proposed framework rather than alongside other named instruments. Papers describe evaluating on SemEval-2016 to assess cross-lingual performance in end-to-end ABSA, and no other measurement instruments are linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "LACA: Improving Cross-lingual Aspect-Based Sentiment Analysis with LLM Data Augmentation",
+      "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification"
+    ],
+    "iclr25": [
+      "The Power of LLM-Generated Synthetic Data for Stance Detection in Online Political Discussions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr25"
+  ]
+}

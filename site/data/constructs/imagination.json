@@ -1,0 +1,84 @@
+{
+  "canonical_name": "Imagination",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats imagination as a visual simulation or generation ability. One framing defines it as generating novel visual representations, specifically intermediate subgoal images tied to planned sub-instructions, while another defines it as mentally simulating or visualizing changes in a scene to infer missing perceptual knowledge. The shared core is producing or simulating visual representations beyond the immediately available scene, while the scope differs between action-oriented subgoal images and hypothetical scene changes used to deduce missing details.\n\nSpace of facets. The papers do not break imagination into named subtypes. Instead, the same label is used for two closely related roles: imagined subgoal images that provide \"more intuitive guidance\" before acting, and imagination \"rooted in prior knowledge\" that helps fill perceptual knowledge gaps before reasoning. In these descriptions, imagination is discussed alongside reasoning and action, rather than being equated with another construct.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to imagination. In the descriptions, it appears through generated intermediate subgoal images and through settings where a model must imagine a scene after changes before reasoning; one study reports that performance \"consistently degrades\" when such imagination is required.\n\nLinks. The only linked construct is Creativity, and a single paper treats it as related to imagination. Its evidence is that some reasoning tasks containing imagination, such as \"Tangram Speculation,\" may influence a corresponding creative task, \"Tangram Segmentation.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Imagination"
+  ],
+  "papers": [
+    "Hypo3D: Exploring Hypothetical Reasoning in 3D",
+    "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+    "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The ability to generate novel visual representations, specifically intermediate subgoal images, corresponding to planned sub-instructions.",
+      "papers": [
+        "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation",
+        "Hypo3D: Exploring Hypothetical Reasoning in 3D"
+      ],
+      "original_name": "Imagination"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Creativity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+      "evidence": "Some reasoning tasks containing Imagination like \u201cTangram Speculation\u201d may influence the corresponding creative task (\u201cTangram Segmentation\u201d). (Section 5.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats imagination as a visual simulation or generation ability. One framing defines it as generating novel visual representations, specifically intermediate subgoal images tied to planned sub-instructions, while another defines it as mentally simulating or visualizing changes in a scene to infer missing perceptual knowledge. The shared core is producing or simulating visual representations beyond the immediately available scene, while the scope differs between action-oriented subgoal images and hypothetical scene changes used to deduce missing details."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers do not break imagination into named subtypes. Instead, the same label is used for two closely related roles: imagined subgoal images that provide \"more intuitive guidance\" before acting, and imagination \"rooted in prior knowledge\" that helps fill perceptual knowledge gaps before reasoning. In these descriptions, imagination is discussed alongside reasoning and action, rather than being equated with another construct."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to imagination. In the descriptions, it appears through generated intermediate subgoal images and through settings where a model must imagine a scene after changes before reasoning; one study reports that performance \"consistently degrades\" when such imagination is required."
+    },
+    {
+      "label": "Links.",
+      "text": "The only linked construct is Creativity, and a single paper treats it as related to imagination. Its evidence is that some reasoning tasks containing imagination, such as \"Tangram Speculation,\" may influence a corresponding creative task, \"Tangram Segmentation.\""
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats imagination as a visual simulation or generation ability. One framing defines it as generating novel visual representations, specifically intermediate subgoal images tied to planned sub-instructions, while another defines it as mentally simulating or visualizing changes in a scene to infer missing perceptual knowledge. The shared core is producing or simulating visual representations beyond the immediately available scene, while the scope differs between action-oriented subgoal images and hypothetical scene changes used to deduce missing details.\n\nSpace of facets. The papers do not break imagination into named subtypes. Instead, the same label is used for two closely related roles: imagined subgoal images that provide \"more intuitive guidance\" before acting, and imagination \"rooted in prior knowledge\" that helps fill perceptual knowledge gaps before reasoning. In these descriptions, imagination is discussed alongside reasoning and action, rather than being equated with another construct.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to imagination. In the descriptions, it appears through generated intermediate subgoal images and through settings where a model must imagine a scene after changes before reasoning; one study reports that performance \"consistently degrades\" when such imagination is required.\n\nLinks. The only linked construct is Creativity, and a single paper treats it as related to imagination. Its evidence is that some reasoning tasks containing imagination, such as \"Tangram Speculation,\" may influence a corresponding creative task, \"Tangram Segmentation.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Hypo3D: Exploring Hypothetical Reasoning in 3D"
+    ],
+    "neurips24": [
+      "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+      "PERIA: Perceive, Reason, Imagine, Act via Holistic Language and Vision Planning for Manipulation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

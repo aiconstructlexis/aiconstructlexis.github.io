@@ -1,0 +1,276 @@
+{
+  "canonical_name": "Fine-grained perception",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats fine-grained perception as a facet or latent visual ability centered on recognizing detailed, specific, and subtle visual attributes. Definitions converge on examples such as object locations, celebrity identities, clothing styles, instance-level features, positions, counts, and spatial relationships; some papers further stress pixel-level details like color, texture, and relations among small objects. One paper instead uses the label \"fine-grained visual perception\" and defines it as the capacity to capture detailed visual attributes and subtle appearance cues from images.\n\nSpace of facets. Some papers place the construct inside larger perception taxonomies. It is contrasted with OCR and spatial perception in one framing, and appears alongside coarse perception, instance reasoning, and logical reasoning in another. Within the construct itself, papers emphasize detailed appearance and identity cues on the one hand, and localization, counting, and other spatially specific visual detail on the other.\n\nSpace of measurement. Operationalization is benchmark-heavy: papers link the construct to 8 measurement instruments and 1 behavioral indicator. The most frequently linked instruments include COCO Caption, CapsBench, MMMU, and MMStar, and papers also cite other benchmarks that mainly focus on fine-grained perception or place it in a vision-centric category emphasizing fine-grained perception and localization; MM-Star is used through a detailed fine-grained perception score. These operationalizations mostly mirror the definitions by targeting fine-grained tasks such as movie recognition, position description, counting, and object localization, and one paper also relates the construct to Image classification for low-resolution or tiny-object cases.\n\nLinks. Only a few cross-construct links are recorded, and no correlational links are reported. One paper claims a causal relationship from fine-grained perception to Logical reasoning, stating that gains in fine-grained perception subsequently enhance image-based logical reasoning, and another claims a causal relationship from fine-grained perception to Localization ability by arguing that better capture of details results in improved localization ability. Separately, one paper reports that fine-grained perception is related to Image classification, especially for low-resolution images or tiny objects.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Fine-grained perception",
+    "Fine-grained visual perception"
+  ],
+  "papers": [
+    "D-CoDe: Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition",
+    "Multimodal Language Models See Better When They Look Shallower",
+    "QG-CoC: Question-Guided Chain-of-Captions for Large Multimodal Models",
+    "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+    "IDA-VLM: Towards Movie Understanding via ID-Aware Large Vision-Language Model",
+    "OBI-Bench: Can LMMs Aid in Study of Ancient Script on Oracle Bones?",
+    "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning",
+    "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+    "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
+    "Kernel-based Unsupervised Embedding Alignment for Enhanced Visual Representation in Vision-language Models",
+    "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+    "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+    "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+    "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+    "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs"
+  ],
+  "paper_count": 15,
+  "definitions": [
+    {
+      "text": "A specific facet of perception involving the ability to recognize detailed and specific visual attributes, such as object locations, celebrity identities, or clothing styles.",
+      "papers": [
+        "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+        "IDA-VLM: Towards Movie Understanding via ID-Aware Large Vision-Language Model",
+        "Kernel-based Unsupervised Embedding Alignment for Enhanced Visual Representation in Vision-language Models",
+        "Multimodal Language Models See Better When They Look Shallower"
+      ],
+      "original_name": "Fine-grained perception"
+    },
+    {
+      "text": "The latent ability to capture detailed visual attributes and subtle appearance cues from images.",
+      "papers": [
+        "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM"
+      ],
+      "original_name": "Fine-grained visual perception"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMStar",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
+      "evidence": "We further analyze the detailed scores on MM-Star (Chen et al., 2024a), including coarse perception (CP), fine-grained perception (FP), instance reasoning (IR), logical reasoning (LR)... (Table 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMVP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
+      "evidence": "Among these benchmarks, MMVP mainly focuses on fine-grained perception. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
+      "evidence": "This suggests that fusing raw image and text embeddings in a single transformer is beneficial for fine-grained perception and subsequently enhances image-based logical reasoning. (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Localization ability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Kernel-based Unsupervised Embedding Alignment for Enhanced Visual Representation in Vision-language Models",
+      "evidence": "We visualize the attention maps from the penultimate layer of the CLIP visual encoder for several examples in Fig 2. The attention maps are generally similar w/wo alignment, as the regularization term prevents significant changes in the model\u2019s weights. However, we still observe that the attention maps after alignment are sharper and highlight more fine-grained features. This indicates that the aligned model is better at capturing details from the input image, resulting in improved localization ability. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Kernel-based Unsupervised Embedding Alignment for Enhanced Visual Representation in Vision-language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CapsBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+      "evidence": "Ablation results on fine-grained perception tasks. We conduct ablation studies based on LLaVA across five fine-grained benchmarks: CapsBench (Liu et al., 2024a)... (Table 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Stanford Dogs",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+      "evidence": "Ablation results on fine-grained perception tasks. We conduct ablation studies based on LLaVA across five fine-grained benchmarks: ... Stanford Dogs (Khosla et al., 2011)... (Table 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "COCO Caption",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+      "evidence": "Ablation results on fine-grained perception tasks. We conduct ablation studies based on LLaVA across five fine-grained benchmarks: ... COCO Captions (Chen et al., 2015)... (Table 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OCRBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+      "evidence": "Ablation results on fine-grained perception tasks. We conduct ablation studies based on LLaVA across five fine-grained benchmarks: ... OCRBench (Liu et al., 2024b)... (Table 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+      "evidence": "Ablation results on fine-grained perception tasks. We conduct ablation studies based on LLaVA across five fine-grained benchmarks: ... and MMMU (Yue et al., 2024). (Table 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RealWorldQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Multimodal Language Models See Better When They Look Shallower",
+      "evidence": "The Vision-centric category emphasize fine-grained perception and localization, including... RealWorldQA (real-world QA)... (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Multimodal Language Models See Better When They Look Shallower"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Kernel-based Unsupervised Embedding Alignment for Enhanced Visual Representation in Vision-language Models",
+      "evidence": "\u201cThe improvements are particularly notable for images with low resolution (e.g., CIFAR) or tiny objects (e.g., EuroSAT), highlighting enhanced fine-grained perception capabilities.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Kernel-based Unsupervised Embedding Alignment for Enhanced Visual Representation in Vision-language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 11,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats fine-grained perception as a facet or latent visual ability centered on recognizing detailed, specific, and subtle visual attributes. Definitions converge on examples such as object locations, celebrity identities, clothing styles, instance-level features, positions, counts, and spatial relationships; some papers further stress pixel-level details like color, texture, and relations among small objects. One paper instead uses the label \"fine-grained visual perception\" and defines it as the capacity to capture detailed visual attributes and subtle appearance cues from images."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Some papers place the construct inside larger perception taxonomies. It is contrasted with OCR and spatial perception in one framing, and appears alongside coarse perception, instance reasoning, and logical reasoning in another. Within the construct itself, papers emphasize detailed appearance and identity cues on the one hand, and localization, counting, and other spatially specific visual detail on the other."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is benchmark-heavy: papers link the construct to 8 measurement instruments and 1 behavioral indicator. The most frequently linked instruments include COCO Caption, CapsBench, MMMU, and MMStar, and papers also cite other benchmarks that mainly focus on fine-grained perception or place it in a vision-centric category emphasizing fine-grained perception and localization; MM-Star is used through a detailed fine-grained perception score. These operationalizations mostly mirror the definitions by targeting fine-grained tasks such as movie recognition, position description, counting, and object localization, and one paper also relates the construct to Image classification for low-resolution or tiny-object cases."
+    },
+    {
+      "label": "Links.",
+      "text": "Only a few cross-construct links are recorded, and no correlational links are reported. One paper claims a causal relationship from fine-grained perception to Logical reasoning, stating that gains in fine-grained perception subsequently enhance image-based logical reasoning, and another claims a causal relationship from fine-grained perception to Localization ability by arguing that better capture of details results in improved localization ability. Separately, one paper reports that fine-grained perception is related to Image classification, especially for low-resolution images or tiny objects."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats fine-grained perception as a facet or latent visual ability centered on recognizing detailed, specific, and subtle visual attributes. Definitions converge on examples such as object locations, celebrity identities, clothing styles, instance-level features, positions, counts, and spatial relationships; some papers further stress pixel-level details like color, texture, and relations among small objects. One paper instead uses the label \"fine-grained visual perception\" and defines it as the capacity to capture detailed visual attributes and subtle appearance cues from images.\n\nSpace of facets. Some papers place the construct inside larger perception taxonomies. It is contrasted with OCR and spatial perception in one framing, and appears alongside coarse perception, instance reasoning, and logical reasoning in another. Within the construct itself, papers emphasize detailed appearance and identity cues on the one hand, and localization, counting, and other spatially specific visual detail on the other.\n\nSpace of measurement. Operationalization is benchmark-heavy: papers link the construct to 8 measurement instruments and 1 behavioral indicator. The most frequently linked instruments include COCO Caption, CapsBench, MMMU, and MMStar, and papers also cite other benchmarks that mainly focus on fine-grained perception or place it in a vision-centric category emphasizing fine-grained perception and localization; MM-Star is used through a detailed fine-grained perception score. These operationalizations mostly mirror the definitions by targeting fine-grained tasks such as movie recognition, position description, counting, and object localization, and one paper also relates the construct to Image classification for low-resolution or tiny-object cases.\n\nLinks. Only a few cross-construct links are recorded, and no correlational links are reported. One paper claims a causal relationship from fine-grained perception to Logical reasoning, stating that gains in fine-grained perception subsequently enhance image-based logical reasoning, and another claims a causal relationship from fine-grained perception to Localization ability by arguing that better capture of details results in improved localization ability. Separately, one paper reports that fine-grained perception is related to Image classification, especially for low-resolution images or tiny objects.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "D-CoDe: Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition",
+      "Multimodal Language Models See Better When They Look Shallower",
+      "QG-CoC: Question-Guided Chain-of-Captions for Large Multimodal Models",
+      "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs"
+    ],
+    "iclr25": [
+      "IDA-VLM: Towards Movie Understanding via ID-Aware Large Vision-Language Model",
+      "OBI-Bench: Can LMMs Aid in Study of Ancient Script on Oracle Bones?",
+      "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning"
+    ],
+    "icml25": [
+      "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+      "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
+      "Kernel-based Unsupervised Embedding Alignment for Enhanced Visual Representation in Vision-language Models"
+    ],
+    "neurips24": [
+      "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+      "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+      "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+      "JourneyBench: A Challenging One-Stop Vision-Language Understanding Benchmark of Generated Images",
+      "Prism: A Framework for Decoupling and Assessing the Capabilities of VLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4,
+    "iclr25": 3,
+    "icml25": 3,
+    "neurips24": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

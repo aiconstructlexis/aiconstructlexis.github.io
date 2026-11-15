@@ -1,0 +1,42 @@
+{
+  "canonical_name": "Visual disentanglement",
+  "type": "construct",
+  "canonical_definition": "The property of conceptual rationales being visually distinct and corresponding to non-overlapping parts of an image, as assessed by human or machine evaluators.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Visual disentanglement"
+  ],
+  "papers": [
+    "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales"
+  ],
+  "paper_count": 1,
+  "definitions": [
+    {
+      "text": "The property of conceptual rationales being visually distinct and corresponding to non-overlapping parts of an image, as assessed by human or machine evaluators.",
+      "papers": [
+        "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales"
+      ],
+      "original_name": "Visual disentanglement"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The property of conceptual rationales being visually distinct and corresponding to non-overlapping parts of an image, as assessed by human or machine evaluators.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 1
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

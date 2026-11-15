@@ -1,0 +1,101 @@
+{
+  "canonical_name": "CommonsenseQA 2.0",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across these papers, the prevailing description is a dataset for commonsense reasoning. Definitions differ in emphasis: one describes CSQA2 as containing \"a large number of questions about entity knowledge and commonsense reasoning,\" while another presents CommonsenseQA 2.0 as a dataset for evaluating commonsense reasoning through multiple-choice questions.\n\nWhat it is claimed to measure. Papers link it to 2 constructs and no behavioral indicators. The most common claim is that it measures Commonsense reasoning, with papers using it within commonsense QA evaluations, while a smaller line of work also treats it as measuring Factual reasoning.\n\nSpace of uses. Papers use it as one dataset in broader evaluation suites. In a factual reasoning setup, it appears alongside CREAK and StrategyQA, and in a commonsense QA suite it appears with CommonsenseQA, OpenBookQA, ARC-Easy, and several other datasets described as widely utilized.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CommonsenseQA 2.0",
+    "CSQA2"
+  ],
+  "papers": [
+    "NoVo: Norm Voting off Hallucinations with Attention Heads in Large Language Models",
+    "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models",
+    "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A dataset for commonsense reasoning containing a large number of questions.",
+      "papers": [
+        "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+      ],
+      "original_name": "CSQA2"
+    },
+    {
+      "text": "A dataset used to evaluate commonsense reasoning capabilities through multiple-choice questions.",
+      "papers": [
+        "NoVo: Norm Voting off Hallucinations with Attention Heads in Large Language Models"
+      ],
+      "original_name": "CommonsenseQA 2.0"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+      "evidence": "We evaluate our UniCoTT over CREAK (Onoe et al., 2021), StrategyQA (Geva et al., 2021) and CSQA2 (Talmor et al., 2021) datasets, which contain a large number of questions about entity knowledge and commonsense reasoning (Section 4.1).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+        ],
+        "emnlp25": [
+          "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+      "evidence": "We conduct experiments across three types of tasks: (1) Factual Reasoning Task. We evaluate our UniCoTT over CREAK (Onoe et al., 2021), StrategyQA (Geva et al., 2021) and CSQA2 (Talmor et al., 2021) datasets (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across these papers, the prevailing description is a dataset for commonsense reasoning. Definitions differ in emphasis: one describes CSQA2 as containing \"a large number of questions about entity knowledge and commonsense reasoning,\" while another presents CommonsenseQA 2.0 as a dataset for evaluating commonsense reasoning through multiple-choice questions."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 2 constructs and no behavioral indicators. The most common claim is that it measures Commonsense reasoning, with papers using it within commonsense QA evaluations, while a smaller line of work also treats it as measuring Factual reasoning."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use it as one dataset in broader evaluation suites. In a factual reasoning setup, it appears alongside CREAK and StrategyQA, and in a commonsense QA suite it appears with CommonsenseQA, OpenBookQA, ARC-Easy, and several other datasets described as widely utilized."
+    }
+  ],
+  "characterization": "What it is. Across these papers, the prevailing description is a dataset for commonsense reasoning. Definitions differ in emphasis: one describes CSQA2 as containing \"a large number of questions about entity knowledge and commonsense reasoning,\" while another presents CommonsenseQA 2.0 as a dataset for evaluating commonsense reasoning through multiple-choice questions.\n\nWhat it is claimed to measure. Papers link it to 2 constructs and no behavioral indicators. The most common claim is that it measures Commonsense reasoning, with papers using it within commonsense QA evaluations, while a smaller line of work also treats it as measuring Factual reasoning.\n\nSpace of uses. Papers use it as one dataset in broader evaluation suites. In a factual reasoning setup, it appears alongside CREAK and StrategyQA, and in a commonsense QA suite it appears with CommonsenseQA, OpenBookQA, ARC-Easy, and several other datasets described as widely utilized.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "NoVo: Norm Voting off Hallucinations with Attention Heads in Large Language Models",
+      "OCEAN: Offline Chain-of-thought Evaluation and Alignment in Large Language Models",
+      "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

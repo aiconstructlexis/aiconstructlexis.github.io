@@ -1,0 +1,131 @@
+{
+  "canonical_name": "Search query generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as producing search queries so a retriever, search engine, or other knowledge source can fetch external information, most often in retrieval-augmented setups. Papers usually condition the query on a question together with context, partial context, or the current reasoning state, and they commonly frame success as generating effective or relevant queries rather than imprecise or under-specified ones. A smaller line of work broadens it to formal or natural-language queries over structured and unstructured sources, and one paper frames query generation in reverse, as generating a question or query from a given response.\n\nVariants. Papers use both the names query generation and search query generation. Common variants include generating a single query, multiple queries, or k queries, sometimes at each retrieval hop; inputs range from note content, forecasting questions and their background, to question answering context in domains such as sports. Another variant targets heterogeneous sources by producing SPARQL, SQL, or natural-sentence queries.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to this behavior, SAFE. The recorded link is related rather than measured_by: one paper describes SAFE as using an LLM in a process that includes sending search queries to Google Search.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Query generation",
+    "Search query generation"
+  ],
+  "papers": [
+    "Can We Further Elicit Reasoning in LLMs? Critic-Guided Planning with Retrieval-Augmentation for Solving Challenging Tasks",
+    "DecoupleSearch: Decouple Planning and Search via Hierarchical Reward Modeling",
+    "RaDeR: Reasoning-aware Dense Retrieval Models",
+    "Search-o1: Agentic Search-Enhanced Large Reasoning Models",
+    "SportReason: Evaluating Retrieval-Augmented Reasoning across Tables and Text for Sports Question Answering",
+    "Thread: A Logic-Based Data Organization Paradigm for How-To Question Answering with Retrieval Augmented Generation",
+    "Token-level Proximal Policy Optimization for Query Generation",
+    "s3: You Don't Need That Much Data to Train a Search Agent via RL",
+    "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+    "DSPy: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines",
+    "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+    "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+    "SNS-Bench: Defining, Building, and Assessing Capabilities of Large Language Models in Social Networking Services",
+    "Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "The observable production of search queries by a model, particularly in the context of retrieval-augmented generation, where queries are used to fetch external knowledge.",
+      "papers": [
+        "SportReason: Evaluating Retrieval-Augmented Reasoning across Tables and Text for Sports Question Answering",
+        "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+        "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources"
+      ],
+      "original_name": "Query generation"
+    },
+    {
+      "text": "Producing search queries from the current reasoning state to retrieve external documents.",
+      "papers": [
+        "DecoupleSearch: Decouple Planning and Search via Hierarchical Reward Modeling",
+        "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval",
+        "SNS-Bench: Defining, Building, and Assessing Capabilities of Large Language Models in Social Networking Services",
+        "DSPy: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines",
+        "Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation"
+      ],
+      "original_name": "Search query generation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "SAFE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "SAFE utilizes an LLM to... comprising sending search queries to Google Search...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Long-form factuality in large language models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats this behavior as producing search queries so a retriever, search engine, or other knowledge source can fetch external information, most often in retrieval-augmented setups. Papers usually condition the query on a question together with context, partial context, or the current reasoning state, and they commonly frame success as generating effective or relevant queries rather than imprecise or under-specified ones. A smaller line of work broadens it to formal or natural-language queries over structured and unstructured sources, and one paper frames query generation in reverse, as generating a question or query from a given response."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use both the names query generation and search query generation. Common variants include generating a single query, multiple queries, or k queries, sometimes at each retrieval hop; inputs range from note content, forecasting questions and their background, to question answering context in domains such as sports. Another variant targets heterogeneous sources by producing SPARQL, SQL, or natural-sentence queries."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one measurement instrument is linked to this behavior, SAFE. The recorded link is related rather than measured_by: one paper describes SAFE as using an LLM in a process that includes sending search queries to Google Search."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as producing search queries so a retriever, search engine, or other knowledge source can fetch external information, most often in retrieval-augmented setups. Papers usually condition the query on a question together with context, partial context, or the current reasoning state, and they commonly frame success as generating effective or relevant queries rather than imprecise or under-specified ones. A smaller line of work broadens it to formal or natural-language queries over structured and unstructured sources, and one paper frames query generation in reverse, as generating a question or query from a given response.\n\nVariants. Papers use both the names query generation and search query generation. Common variants include generating a single query, multiple queries, or k queries, sometimes at each retrieval hop; inputs range from note content, forecasting questions and their background, to question answering context in domains such as sports. Another variant targets heterogeneous sources by producing SPARQL, SQL, or natural-sentence queries.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to this behavior, SAFE. The recorded link is related rather than measured_by: one paper describes SAFE as using an LLM in a process that includes sending search queries to Google Search.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Can We Further Elicit Reasoning in LLMs? Critic-Guided Planning with Retrieval-Augmentation for Solving Challenging Tasks"
+    ],
+    "emnlp25": [
+      "DecoupleSearch: Decouple Planning and Search via Hierarchical Reward Modeling",
+      "RaDeR: Reasoning-aware Dense Retrieval Models",
+      "Search-o1: Agentic Search-Enhanced Large Reasoning Models",
+      "SportReason: Evaluating Retrieval-Augmented Reasoning across Tables and Text for Sports Question Answering",
+      "Thread: A Logic-Based Data Organization Paradigm for How-To Question Answering with Retrieval Augmented Generation",
+      "Token-level Proximal Policy Optimization for Query Generation",
+      "s3: You Don't Need That Much Data to Train a Search Agent via RL"
+    ],
+    "iclr24": [
+      "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+      "DSPy: Compiling Declarative Language Model Calls into State-of-the-Art Pipelines"
+    ],
+    "naacl25": [
+      "Fact, Fetch, and Reason: A Unified Evaluation of Retrieval-Augmented Generation"
+    ],
+    "icml25": [
+      "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+      "SNS-Bench: Defining, Building, and Assessing Capabilities of Large Language Models in Social Networking Services"
+    ],
+    "iclr25": [
+      "Grounding by Trying: LLMs with Reinforcement Learning-Enhanced Retrieval"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 7,
+    "iclr24": 2,
+    "naacl25": 1,
+    "icml25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

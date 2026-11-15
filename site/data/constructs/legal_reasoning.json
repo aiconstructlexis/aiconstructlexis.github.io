@@ -1,0 +1,175 @@
+{
+  "canonical_name": "Legal reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most papers treat legal reasoning as a broad latent ability to interpret legal texts, apply legal rules or principles to facts, and reach legally grounded conclusions, judgments, or arguments across tasks. A recurring emphasis is that this should proceed through structured logical inference, not just surface understanding, sometimes including implicit rules, formal procedures such as legal syllogism, and professional legal judgment. A smaller line uses narrower labels for parts of the same space: legal document interpretation focuses on extracting meaning or implications from documents, legal multi-hop reasoning on multiple inference steps from a legal scenario, legal calculation on computing periods or monetary amounts from rules and facts, and interpretive ability on applying named interpretation methods in context.\n\nSpace of facets. Papers break the construct into several facets rather than using a single uniform formulation. One decomposition covers issue-spotting, rule-recall, rule-application, rule-conclusion, interpretation, and rhetorical understanding; others organize it around legal syllogism, recognition of legal entities and relationships, and the use of implicit rules. Another strand highlights interpretive methods, including literal, systematic, purposive, sociological, and historical interpretation, so adjacent names in the literature appear as narrower facets within the broader construct.\n\nSpace of measurement. Operationalization is narrow relative to the breadth of the definitions: papers link legal reasoning to 1 measurement instrument, LegalBench, and to no behavioral indicators. LegalBench is used as a benchmark, described as containing 162 tasks that evaluate various aspects of legal reasoning, and some papers use a specific sub-task or problem templates adapted from it. Outside this named instrument, quoted passages operationalize the construct through performance on issue-spotting, rule application, interpretation, and statement-level decisions about whether text satisfies legal reporting requirements in context.\n\nLinks. Several papers claim legal reasoning is measured by LegalBench, using it for benchmark evaluation, a sub-task, or adapted problem templates. One paper reports that legal reasoning is related to logical reasoning, describing alignment with a syllogistic reasoning framework common in legal analysis. Papers here make measurement and relatedness claims, rather than causal or correlational claims.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Legal reasoning",
+    "Legal document interpretation",
+    "Legal multi-hop reasoning",
+    "Legal calculation",
+    "Interpretive ability"
+  ],
+  "papers": [
+    "LegalAgentBench: Evaluating LLM Agents in Legal Domain",
+    "LegalReasoner: Step-wised Verification-Correction for Legal Judgment Reasoning",
+    "Adaptively profiling models with task elicitation",
+    "CourtReasoner: Can LLM Agents Reason Like Judges?",
+    "JUREX-4E: Juridical Expert-Annotated Four-Element Knowledge Base for Legal Reasoning",
+    "NitiBench: Benchmarking LLM Frameworks on Thai Legal Question Answering Capabilities",
+    "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements",
+    "Unilaw-R1: A Large Language Model for Legal Reasoning with Reinforcement Learning and Iterative Inference",
+    "AIMS.au: A Dataset for the Analysis of Modern Slavery Countermeasures in Corporate Statements",
+    "Lawma: The Power of Specialization for Legal Annotation",
+    "Elevating Legal LLM Responses: Harnessing Trainable Logical Structures and Semantic Knowledge with Legal Reasoning",
+    "LegalViz: Legal Text Visualization by Text To Diagram Generation",
+    "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+    "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+    "SaulLM-54B & SaulLM-141B: Scaling Up Domain Adaptation for the Legal Domain"
+  ],
+  "paper_count": 15,
+  "definitions": [
+    {
+      "text": "The latent ability to interpret legal texts, apply legal rules, and draw legally grounded conclusions across diverse legal tasks.",
+      "papers": [
+        "SaulLM-54B & SaulLM-141B: Scaling Up Domain Adaptation for the Legal Domain",
+        "AIMS.au: A Dataset for the Analysis of Modern Slavery Countermeasures in Corporate Statements",
+        "Elevating Legal LLM Responses: Harnessing Trainable Logical Structures and Semantic Knowledge with Legal Reasoning",
+        "LegalViz: Legal Text Visualization by Text To Diagram Generation",
+        "LegalAgentBench: Evaluating LLM Agents in Legal Domain",
+        "JUREX-4E: Juridical Expert-Annotated Four-Element Knowledge Base for Legal Reasoning"
+      ],
+      "original_name": "Legal reasoning"
+    },
+    {
+      "text": "Interpreting legal texts and extracting their meaning, issues, or implications from prompts about legal documents.",
+      "papers": [
+        "SaulLM-54B & SaulLM-141B: Scaling Up Domain Adaptation for the Legal Domain"
+      ],
+      "original_name": "Legal document interpretation"
+    },
+    {
+      "text": "Performing multiple logical inference steps to solve a problem based on given contextual information from a legal scenario.",
+      "papers": [
+        "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models"
+      ],
+      "original_name": "Legal multi-hop reasoning"
+    },
+    {
+      "text": "Computing legally relevant time periods, monetary amounts, or other quantifiable values from legal rules and facts.",
+      "papers": [
+        "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models"
+      ],
+      "original_name": "Legal calculation"
+    },
+    {
+      "text": "The capacity to apply hierarchical legal interpretation methods\u2014literal, systematic, purposive, sociological, and historical\u2014to clarify the meaning and application of legal texts in context.",
+      "papers": [
+        "JUREX-4E: Juridical Expert-Annotated Four-Element Knowledge Base for Legal Reasoning"
+      ],
+      "original_name": "Interpretive ability"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LegalBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "evidence": "\u201cFor Law: We use the International Citizenship Questions sub-task in LegalBench [39].\u201d",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts"
+        ],
+        "emnlp25": [
+          "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning",
+          "Adaptively profiling models with task elicitation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unilaw-R1: A Large Language Model for Legal Reasoning with Reinforcement Learning and Iterative Inference",
+      "evidence": "We also rewrite samples to align with the syllogistic reasoning framework common in legal analysis. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Unilaw-R1: A Large Language Model for Legal Reasoning with Reinforcement Learning and Iterative Inference"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most papers treat legal reasoning as a broad latent ability to interpret legal texts, apply legal rules or principles to facts, and reach legally grounded conclusions, judgments, or arguments across tasks. A recurring emphasis is that this should proceed through structured logical inference, not just surface understanding, sometimes including implicit rules, formal procedures such as legal syllogism, and professional legal judgment. A smaller line uses narrower labels for parts of the same space: legal document interpretation focuses on extracting meaning or implications from documents, legal multi-hop reasoning on multiple inference steps from a legal scenario, legal calculation on computing periods or monetary amounts from rules and facts, and interpretive ability on applying named interpretation methods in context."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers break the construct into several facets rather than using a single uniform formulation. One decomposition covers issue-spotting, rule-recall, rule-application, rule-conclusion, interpretation, and rhetorical understanding; others organize it around legal syllogism, recognition of legal entities and relationships, and the use of implicit rules. Another strand highlights interpretive methods, including literal, systematic, purposive, sociological, and historical interpretation, so adjacent names in the literature appear as narrower facets within the broader construct."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow relative to the breadth of the definitions: papers link legal reasoning to 1 measurement instrument, LegalBench, and to no behavioral indicators. LegalBench is used as a benchmark, described as containing 162 tasks that evaluate various aspects of legal reasoning, and some papers use a specific sub-task or problem templates adapted from it. Outside this named instrument, quoted passages operationalize the construct through performance on issue-spotting, rule application, interpretation, and statement-level decisions about whether text satisfies legal reporting requirements in context."
+    },
+    {
+      "label": "Links.",
+      "text": "Several papers claim legal reasoning is measured by LegalBench, using it for benchmark evaluation, a sub-task, or adapted problem templates. One paper reports that legal reasoning is related to logical reasoning, describing alignment with a syllogistic reasoning framework common in legal analysis. Papers here make measurement and relatedness claims, rather than causal or correlational claims."
+    }
+  ],
+  "characterization": "Space of definitions. Most papers treat legal reasoning as a broad latent ability to interpret legal texts, apply legal rules or principles to facts, and reach legally grounded conclusions, judgments, or arguments across tasks. A recurring emphasis is that this should proceed through structured logical inference, not just surface understanding, sometimes including implicit rules, formal procedures such as legal syllogism, and professional legal judgment. A smaller line uses narrower labels for parts of the same space: legal document interpretation focuses on extracting meaning or implications from documents, legal multi-hop reasoning on multiple inference steps from a legal scenario, legal calculation on computing periods or monetary amounts from rules and facts, and interpretive ability on applying named interpretation methods in context.\n\nSpace of facets. Papers break the construct into several facets rather than using a single uniform formulation. One decomposition covers issue-spotting, rule-recall, rule-application, rule-conclusion, interpretation, and rhetorical understanding; others organize it around legal syllogism, recognition of legal entities and relationships, and the use of implicit rules. Another strand highlights interpretive methods, including literal, systematic, purposive, sociological, and historical interpretation, so adjacent names in the literature appear as narrower facets within the broader construct.\n\nSpace of measurement. Operationalization is narrow relative to the breadth of the definitions: papers link legal reasoning to 1 measurement instrument, LegalBench, and to no behavioral indicators. LegalBench is used as a benchmark, described as containing 162 tasks that evaluate various aspects of legal reasoning, and some papers use a specific sub-task or problem templates adapted from it. Outside this named instrument, quoted passages operationalize the construct through performance on issue-spotting, rule application, interpretation, and statement-level decisions about whether text satisfies legal reporting requirements in context.\n\nLinks. Several papers claim legal reasoning is measured by LegalBench, using it for benchmark evaluation, a sub-task, or adapted problem templates. One paper reports that legal reasoning is related to logical reasoning, describing alignment with a syllogistic reasoning framework common in legal analysis. Papers here make measurement and relatedness claims, rather than causal or correlational claims.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "LegalAgentBench: Evaluating LLM Agents in Legal Domain",
+      "LegalReasoner: Step-wised Verification-Correction for Legal Judgment Reasoning"
+    ],
+    "emnlp25": [
+      "Adaptively profiling models with task elicitation",
+      "CourtReasoner: Can LLM Agents Reason Like Judges?",
+      "JUREX-4E: Juridical Expert-Annotated Four-Element Knowledge Base for Legal Reasoning",
+      "NitiBench: Benchmarking LLM Frameworks on Thai Legal Question Answering Capabilities",
+      "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements",
+      "Unilaw-R1: A Large Language Model for Legal Reasoning with Reinforcement Learning and Iterative Inference"
+    ],
+    "iclr25": [
+      "AIMS.au: A Dataset for the Analysis of Modern Slavery Countermeasures in Corporate Statements",
+      "Lawma: The Power of Specialization for Legal Annotation"
+    ],
+    "naacl25": [
+      "Elevating Legal LLM Responses: Harnessing Trainable Logical Structures and Semantic Knowledge with Legal Reasoning",
+      "LegalViz: Legal Text Visualization by Text To Diagram Generation"
+    ],
+    "neurips24": [
+      "BAM! Just Like That: Simple and Efficient Parameter Upcycling for Mixture of Experts",
+      "LexEval: A Comprehensive Chinese Legal Benchmark for Evaluating Large Language Models",
+      "SaulLM-54B & SaulLM-141B: Scaling Up Domain Adaptation for the Legal Domain"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 6,
+    "iclr25": 2,
+    "naacl25": 2,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

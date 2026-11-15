@@ -1,0 +1,135 @@
+{
+  "canonical_name": "STAR",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing usage treats STAR as a video question answering benchmark for situated or situational reasoning in real-world videos. Definitions commonly describe it as targeting reasoning about social interactions and events, and one description further says it contains questions about interaction, sequence, prediction, and feasibility. A smaller line of work also places it among multi-choice QA benchmarks and uses it as a source for referred video question answering.\n\nWhat it is claimed to measure. Papers use STAR to measure 3 constructs and 1 behavioral indicator. The most common reported use is measuring video question answering, while individual papers also use it to measure causal reasoning, temporal reasoning, and visual reasoning. In those papers, STAR is described as part of datasets that demand both causal and temporal reasoning abilities, and as one of the datasets used for visual reasoning tasks, so construct claims are spread across several reasoning targets rather than concentrated on one construct.\n\nSpace of uses. Papers usually use STAR alongside other video question answering instruments, most often NExT-QA and IntentQA, and sometimes Egoschema; some authors specifically evaluate zero-shot video question answering on it. It is typically positioned as one component of a broader benchmark suite, including sets of popular benchmarks, collections of multi-choice QA benchmarks, and broader VideoQA evaluations. No measurement instrument is linked to it through a formal relationship.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "STAR"
+  ],
+  "papers": [
+    "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+    "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+    "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+    "Slot-VLM: Object-Event Slots for Video-Language Modeling",
+    "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A Video Question-Answering benchmark that requires situational reasoning about social interactions and events.",
+      "papers": [
+        "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+        "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+        "Slot-VLM: Object-Event Slots for Video-Language Modeling",
+        "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+      ],
+      "original_name": "STAR"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ReasVQA: Advancing VideoQA with Imperfect Reasoning Process",
+      "evidence": "We evaluate ReasVQA on three popular benchmarks, and our results establish new state-of-the-art performance with significant improvements of +2.9 on NExT-QA, +7.3 on STAR, and +5.9 on IntentQA.",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "ReasVQA: Advancing VideoQA with Imperfect Reasoning Process"
+        ],
+        "icml25": [
+          "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering",
+          "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models",
+      "evidence": "We demonstrate the effectiveness of our framework on diverse visual reasoning tasks from the ACRE, CATER, Something-Else and STAR datasets (Abstract).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Look, Remember and Reason: Grounded Reasoning in Videos with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Causal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ReasVQA: Advancing VideoQA with Imperfect Reasoning Process",
+      "evidence": "We conduct experiments on three popular VideoQA datasets: NExT-QA, STAR, and IntentQA (Xiao et al., 2021; Wu et al., 2021; Li et al., 2023a), which demand both causal and temporal reasoning abilities.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "ReasVQA: Advancing VideoQA with Imperfect Reasoning Process"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ReasVQA: Advancing VideoQA with Imperfect Reasoning Process",
+      "evidence": "We conduct experiments on three popular VideoQA datasets: NExT-QA, STAR, and IntentQA (Xiao et al., 2021; Wu et al., 2021; Li et al., 2023a), which demand both causal and temporal reasoning abilities.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "ReasVQA: Advancing VideoQA with Imperfect Reasoning Process"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing usage treats STAR as a video question answering benchmark for situated or situational reasoning in real-world videos. Definitions commonly describe it as targeting reasoning about social interactions and events, and one description further says it contains questions about interaction, sequence, prediction, and feasibility. A smaller line of work also places it among multi-choice QA benchmarks and uses it as a source for referred video question answering."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use STAR to measure 3 constructs and 1 behavioral indicator. The most common reported use is measuring video question answering, while individual papers also use it to measure causal reasoning, temporal reasoning, and visual reasoning. In those papers, STAR is described as part of datasets that demand both causal and temporal reasoning abilities, and as one of the datasets used for visual reasoning tasks, so construct claims are spread across several reasoning targets rather than concentrated on one construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers usually use STAR alongside other video question answering instruments, most often NExT-QA and IntentQA, and sometimes Egoschema; some authors specifically evaluate zero-shot video question answering on it. It is typically positioned as one component of a broader benchmark suite, including sets of popular benchmarks, collections of multi-choice QA benchmarks, and broader VideoQA evaluations. No measurement instrument is linked to it through a formal relationship."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing usage treats STAR as a video question answering benchmark for situated or situational reasoning in real-world videos. Definitions commonly describe it as targeting reasoning about social interactions and events, and one description further says it contains questions about interaction, sequence, prediction, and feasibility. A smaller line of work also places it among multi-choice QA benchmarks and uses it as a source for referred video question answering.\n\nWhat it is claimed to measure. Papers use STAR to measure 3 constructs and 1 behavioral indicator. The most common reported use is measuring video question answering, while individual papers also use it to measure causal reasoning, temporal reasoning, and visual reasoning. In those papers, STAR is described as part of datasets that demand both causal and temporal reasoning abilities, and as one of the datasets used for visual reasoning tasks, so construct claims are spread across several reasoning targets rather than concentrated on one construct.\n\nSpace of uses. Papers usually use STAR alongside other video question answering instruments, most often NExT-QA and IntentQA, and sometimes Egoschema; some authors specifically evaluate zero-shot video question answering on it. It is typically positioned as one component of a broader benchmark suite, including sets of popular benchmarks, collections of multi-choice QA benchmarks, and broader VideoQA evaluations. No measurement instrument is linked to it through a formal relationship.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+      "Modularized Self-Reflected Video Reasoner for Multimodal LLM with Application to Video Question Answering"
+    ],
+    "neurips24": [
+      "E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding",
+      "Slot-VLM: Object-Event Slots for Video-Language Modeling",
+      "TOPA: Extending Large Language Models for Video Understanding via Text-Only Pre-Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "neurips24": 3
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

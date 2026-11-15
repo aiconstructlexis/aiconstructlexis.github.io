@@ -1,0 +1,106 @@
+{
+  "canonical_name": "Misinformation generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats this behavior as producing false, misleading, or deceptive text with an LLM. A recurring formulation emphasizes content that is convincing but deceptive, sometimes described as fueling misinformation, supporting deceptive social media campaigns, or obscuring authentic discourse. Some descriptions broaden the scope by explicitly including both intentional and unintentional generation, and by allowing different types, domains, and errors.\n\nVariants. Papers vary it mainly by setting and scenario. They mention social media campaigns and broader cross-domain use, and one description explicitly separates intentional generation, framed as malicious users knowingly prompting an LLM, from unintentional generation. A smaller linked framing relates it to Hallucination Generation, named as one type of LLM-based misinformation generation method.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the descriptions, the behavior is specified directly through the generated output, false, misleading, or deceptive text, rather than through a named elicitation or scoring tool.\n\nWhat it is taken as evidence of. Among the papers, only one construct is linked to it, Model collapse. One paper claims a causal relationship from Model collapse to misinformation generation, stating that when synthetic data is used in training, a model can start producing outputs that contain misinformation. No other construct is linked, and one paper separately relates misinformation generation to Hallucination by treating Hallucination Generation as a type within misinformation generation methods.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Misinformation generation"
+  ],
+  "papers": [
+    "Large Language Models Threaten Language's Epistemic and Communicative Foundations",
+    "Retrieval-Augmented Generation with Estimation of Source Reliability",
+    "Can LLM-Generated Misinformation Be Detected?",
+    "Online Detection of LLM-Generated Texts via Sequential Hypothesis Testing by Betting"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The generation of convincing but deceptive content, often for use in social media campaigns or to obscure authentic discourse.",
+      "papers": [
+        "Large Language Models Threaten Language's Epistemic and Communicative Foundations",
+        "Online Detection of LLM-Generated Texts via Sequential Hypothesis Testing by Betting",
+        "Can LLM-Generated Misinformation Be Detected?"
+      ],
+      "original_name": "Misinformation generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Model collapse",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Strong Model Collapse",
+      "evidence": "If synthetic data is used in training these models, even in small quantities, the model can start producing \u201cgibberish\u201d or nonsensical outputs, contains misinformation, or reflect stereotypes. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Strong Model Collapse"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Can LLM-Generated Misinformation Be Detected?",
+      "evidence": "We propose to categorize the LLM-based misinformation generation methods into three types based on real-world scenarios (Table 1): Hallucination Generation (HG) (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Can LLM-Generated Misinformation Be Detected?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats this behavior as producing false, misleading, or deceptive text with an LLM. A recurring formulation emphasizes content that is convincing but deceptive, sometimes described as fueling misinformation, supporting deceptive social media campaigns, or obscuring authentic discourse. Some descriptions broaden the scope by explicitly including both intentional and unintentional generation, and by allowing different types, domains, and errors."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers vary it mainly by setting and scenario. They mention social media campaigns and broader cross-domain use, and one description explicitly separates intentional generation, framed as malicious users knowingly prompting an LLM, from unintentional generation. A smaller linked framing relates it to Hallucination Generation, named as one type of LLM-based misinformation generation method."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. In the descriptions, the behavior is specified directly through the generated output, false, misleading, or deceptive text, rather than through a named elicitation or scoring tool."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Among the papers, only one construct is linked to it, Model collapse. One paper claims a causal relationship from Model collapse to misinformation generation, stating that when synthetic data is used in training, a model can start producing outputs that contain misinformation. No other construct is linked, and one paper separately relates misinformation generation to Hallucination by treating Hallucination Generation as a type within misinformation generation methods."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats this behavior as producing false, misleading, or deceptive text with an LLM. A recurring formulation emphasizes content that is convincing but deceptive, sometimes described as fueling misinformation, supporting deceptive social media campaigns, or obscuring authentic discourse. Some descriptions broaden the scope by explicitly including both intentional and unintentional generation, and by allowing different types, domains, and errors.\n\nVariants. Papers vary it mainly by setting and scenario. They mention social media campaigns and broader cross-domain use, and one description explicitly separates intentional generation, framed as malicious users knowingly prompting an LLM, from unintentional generation. A smaller linked framing relates it to Hallucination Generation, named as one type of LLM-based misinformation generation method.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the descriptions, the behavior is specified directly through the generated output, false, misleading, or deceptive text, rather than through a named elicitation or scoring tool.\n\nWhat it is taken as evidence of. Among the papers, only one construct is linked to it, Model collapse. One paper claims a causal relationship from Model collapse to misinformation generation, stating that when synthetic data is used in training, a model can start producing outputs that contain misinformation. No other construct is linked, and one paper separately relates misinformation generation to Hallucination by treating Hallucination Generation as a type within misinformation generation methods.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Large Language Models Threaten Language's Epistemic and Communicative Foundations",
+      "Retrieval-Augmented Generation with Estimation of Source Reliability"
+    ],
+    "iclr24": [
+      "Can LLM-Generated Misinformation Be Detected?"
+    ],
+    "icml25": [
+      "Online Detection of LLM-Generated Texts via Sequential Hypothesis Testing by Betting"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr24": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25"
+  ]
+}

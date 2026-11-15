@@ -1,0 +1,136 @@
+{
+  "canonical_name": "Evaluation bias",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across these papers, the dominant framing treats evaluation bias as systematic distortion in model-based judging or assessment: a model acting as a reviewer or judge may unfairly favor or disfavor responses, and one formulation defines judge bias as the expected difference between a judge's proxy score and the ground-truth score. A parallel framing defines it more broadly as systematic deviation in estimated model capability caused by flaws in the evaluation protocol. Smaller lines of work use narrower variants, including self-favoring bias, affinity bias toward models whose predictions are functionally similar to the judge's own, bias in human or AI-generated feedback, and implicit preferences that lead judges to prioritize some criteria over explicit instructions.\n\nSpace of facets. Papers break the construct down in several ways. One account decomposes evaluation bias into original, independent, and related terms, while another describes bias in feedback through presentation-related, social-related, content-related, and cognitive-related biases. Across judge-centered work, affinity bias, self-favoring bias, and implicit bias appear as named variants, so related labels are used both for overall evaluation error and for specific preference patterns inside judges.\n\nSpace of measurement. Operationalization is narrow in named instruments: papers link evaluation bias to 1 measurement instrument, LLM-as-a-judge, and no behavioral indicators. The operationalizations described in the papers are mostly analytical: one study uses preference gap (PG) to evaluate bias, another defines judge bias as the expected difference between proxy and ground-truth scores, and another defines evaluation bias as the difference between expected estimated capability and true capability. These choices largely match the prevailing definitions that cast the construct as systematic deviation or unfair favoring in judging.\n\nLinks. Papers only relate evaluation bias to LLM-as-a-judge. One paper states that \"Agents-as-an-Evaluator exhibit two biases: data bias and model bias,\" placing the construct within LLM-based evaluation setups. No causal or correlational links are reported, and no other construct links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Evaluation bias",
+    "Judge bias",
+    "Affinity bias",
+    "Bias in feedback",
+    "Implicit bias"
+  ],
+  "papers": [
+    "Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race",
+    "Biased Tales: Cultural and Topic Bias in Generating Children's Stories",
+    "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+    "PiCO: Peer Review in LLMs based on Consistency Optimization",
+    "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+    "Great Models Think Alike and this Undermines AI Oversight",
+    "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+    "Position: Rethinking LLM Bias Probing Using Lessons from the Social Sciences",
+    "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "A systematic tendency for a model, when acting as a reviewer, to unfairly favor or disfavor certain models' responses, including a self-favoring bias.",
+      "papers": [
+        "PiCO: Peer Review in LLMs based on Consistency Optimization",
+        "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+      ],
+      "original_name": "Evaluation bias"
+    },
+    {
+      "text": "The systematic error introduced when using a model as a judge, defined as the expected difference between the judge's proxy score and the ground-truth score.",
+      "papers": [
+        "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data"
+      ],
+      "original_name": "Judge bias"
+    },
+    {
+      "text": "The tendency of an LLM judge to assign higher scores to models whose predictions are functionally similar to its own, independent of actual performance.",
+      "papers": [
+        "Great Models Think Alike and this Undermines AI Oversight"
+      ],
+      "original_name": "Affinity bias"
+    },
+    {
+      "text": "Systematic distortions in human or AI-generated feedback that favor certain perspectives, demographics, or values due to non-representative data or model limitations.",
+      "papers": [
+        "Position: Challenges and Future Directions of Data-Centric AI Alignment"
+      ],
+      "original_name": "Bias in feedback"
+    },
+    {
+      "text": "An LLM-judge's internal, unstated preference for certain criteria over others, which influences its decisions independently of or in violation of explicit instructions.",
+      "papers": [
+        "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking"
+      ],
+      "original_name": "Implicit bias"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Unbiased Evaluation of Large Language Models from a Causal Perspective",
+      "evidence": "\u201cAgents-as-an-Evaluator exhibit two biases: data bias and model bias.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across these papers, the dominant framing treats evaluation bias as systematic distortion in model-based judging or assessment: a model acting as a reviewer or judge may unfairly favor or disfavor responses, and one formulation defines judge bias as the expected difference between a judge's proxy score and the ground-truth score. A parallel framing defines it more broadly as systematic deviation in estimated model capability caused by flaws in the evaluation protocol. Smaller lines of work use narrower variants, including self-favoring bias, affinity bias toward models whose predictions are functionally similar to the judge's own, bias in human or AI-generated feedback, and implicit preferences that lead judges to prioritize some criteria over explicit instructions."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers break the construct down in several ways. One account decomposes evaluation bias into original, independent, and related terms, while another describes bias in feedback through presentation-related, social-related, content-related, and cognitive-related biases. Across judge-centered work, affinity bias, self-favoring bias, and implicit bias appear as named variants, so related labels are used both for overall evaluation error and for specific preference patterns inside judges."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow in named instruments: papers link evaluation bias to 1 measurement instrument, LLM-as-a-judge, and no behavioral indicators. The operationalizations described in the papers are mostly analytical: one study uses preference gap (PG) to evaluate bias, another defines judge bias as the expected difference between proxy and ground-truth scores, and another defines evaluation bias as the difference between expected estimated capability and true capability. These choices largely match the prevailing definitions that cast the construct as systematic deviation or unfair favoring in judging."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers only relate evaluation bias to LLM-as-a-judge. One paper states that \"Agents-as-an-Evaluator exhibit two biases: data bias and model bias,\" placing the construct within LLM-based evaluation setups. No causal or correlational links are reported, and no other construct links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across these papers, the dominant framing treats evaluation bias as systematic distortion in model-based judging or assessment: a model acting as a reviewer or judge may unfairly favor or disfavor responses, and one formulation defines judge bias as the expected difference between a judge's proxy score and the ground-truth score. A parallel framing defines it more broadly as systematic deviation in estimated model capability caused by flaws in the evaluation protocol. Smaller lines of work use narrower variants, including self-favoring bias, affinity bias toward models whose predictions are functionally similar to the judge's own, bias in human or AI-generated feedback, and implicit preferences that lead judges to prioritize some criteria over explicit instructions.\n\nSpace of facets. Papers break the construct down in several ways. One account decomposes evaluation bias into original, independent, and related terms, while another describes bias in feedback through presentation-related, social-related, content-related, and cognitive-related biases. Across judge-centered work, affinity bias, self-favoring bias, and implicit bias appear as named variants, so related labels are used both for overall evaluation error and for specific preference patterns inside judges.\n\nSpace of measurement. Operationalization is narrow in named instruments: papers link evaluation bias to 1 measurement instrument, LLM-as-a-judge, and no behavioral indicators. The operationalizations described in the papers are mostly analytical: one study uses preference gap (PG) to evaluate bias, another defines judge bias as the expected difference between proxy and ground-truth scores, and another defines evaluation bias as the difference between expected estimated capability and true capability. These choices largely match the prevailing definitions that cast the construct as systematic deviation or unfair favoring in judging.\n\nLinks. Papers only relate evaluation bias to LLM-as-a-judge. One paper states that \"Agents-as-an-Evaluator exhibit two biases: data bias and model bias,\" placing the construct within LLM-based evaluation setups. No causal or correlational links are reported, and no other construct links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Aligned but Blind: Alignment Increases Implicit Bias by Reducing Awareness of Race"
+    ],
+    "emnlp25": [
+      "Biased Tales: Cultural and Topic Bias in Generating Children's Stories"
+    ],
+    "iclr25": [
+      "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+      "PiCO: Peer Review in LLMs based on Consistency Optimization",
+      "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking"
+    ],
+    "icml25": [
+      "Great Models Think Alike and this Undermines AI Oversight",
+      "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+      "Position: Rethinking LLM Bias Probing Using Lessons from the Social Sciences",
+      "Unbiased Evaluation of Large Language Models from a Causal Perspective"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr25": 3,
+    "icml25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

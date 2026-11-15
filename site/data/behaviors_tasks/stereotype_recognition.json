@@ -1,0 +1,128 @@
+{
+  "canonical_name": "Stereotype recognition",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage is a recognition or detection task for stereotypical content in text. Most commonly, papers describe success as correctly distinguishing stereotypical from anti-stereotypical statements, or as identifying whether a sentence or statement reflects a stereotype; one linked benchmark operationalizes this as three-way classification into \"stereotype\", \"anti-stereotype\", or \"unrelated\". A smaller line of work broadens the behavior to recognizing and critically explaining the presence of stereotypes in prompts.\n\nVariants. Papers use nearby labels, including stereotype recognition, stereotype detection, and stereotype identification. The task appears in sentence-level classification, in setups where a model chooses which of multiple sentences expresses a stereotype given context, and in prompt-based probing that asks, \"Does the following statement reflect a stereotype?\" Some work also adapts existing resources into detection formats, including EspanStereo and multiple-choice StereoSet.\n\nSpace of elicitation and scores. Papers link this behavior to one measurement instrument, StereoSet. It is described as a benchmark or dataset for recognizing stereotypes in sentences, including classifying them as \"stereotype\", \"anti-stereotype\", or \"unrelated\", and one paper notes a multiple-choice adaptation of the dataset. No other measurement instrument is linked.\n\nWhat it is taken as evidence of. The only linked construct is Fairness. One paper presents stereotype recognition as related to Fairness by using the task \"to evaluate the alignment of fairness\", rather than stating a measured_by, correlates, or causal link to a construct. No other construct link is stated.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Stereotype identification",
+    "Stereotype recognition",
+    "Stereotype detection"
+  ],
+  "papers": [
+    "Neuron Empirical Gradient: Discovering and Quantifying Neurons' Global Linear Controllability",
+    "A Comprehensive Framework to Operationalize Social Stereotypes for Responsible AI Evaluations",
+    "HESEIA: A community-based dataset for evaluating social biases in large language models, co-designed in real school settings in Latin America",
+    "PLLuM-Align: Polish Preference Dataset for Large Language Model Alignment",
+    "Scalable and Culturally Specific Stereotype Dataset Construction via Human-LLM Collaboration",
+    "Token-Aware Editing of Internal Activations for Large Language Model Alignment",
+    "SHADES: Towards a Multilingual Assessment of Stereotypes in Large Language Models"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A task designed to assess fairness by requiring the model to distinguish between stereotypical and anti-stereotypical statements.",
+      "papers": [
+        "Token-Aware Editing of Internal Activations for Large Language Model Alignment",
+        "SHADES: Towards a Multilingual Assessment of Stereotypes in Large Language Models"
+      ],
+      "original_name": "Stereotype recognition"
+    },
+    {
+      "text": "The observable ability to recognize and critically explain stereotypical content in input prompts.",
+      "papers": [
+        "PLLuM-Align: Polish Preference Dataset for Large Language Model Alignment"
+      ],
+      "original_name": "Stereotype identification"
+    },
+    {
+      "text": "The task of classifying or identifying which of two or more sentences expresses a stereotype, given a context.",
+      "papers": [
+        "Scalable and Culturally Specific Stereotype Dataset Construction via Human-LLM Collaboration",
+        "Neuron Empirical Gradient: Discovering and Quantifying Neurons' Global Linear Controllability"
+      ],
+      "original_name": "Stereotype detection"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StereoSet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+      "evidence": "Stereotype Recognition: Utilizing StereoSet [35] to recognize stereotypes in sentences classifying them into one of three classes: \u201cstereotype\u201d, \u201canti-stereotype\u201d, or \u201cunrelated\u201d categories. (Section 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Token-Aware Editing of Internal Activations for Large Language Model Alignment",
+      "evidence": "To evaluate the alignment of fairness, we perform stereotype recognition task (Sun et al., 2024) (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Token-Aware Editing of Internal Activations for Large Language Model Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage is a recognition or detection task for stereotypical content in text. Most commonly, papers describe success as correctly distinguishing stereotypical from anti-stereotypical statements, or as identifying whether a sentence or statement reflects a stereotype; one linked benchmark operationalizes this as three-way classification into \"stereotype\", \"anti-stereotype\", or \"unrelated\". A smaller line of work broadens the behavior to recognizing and critically explaining the presence of stereotypes in prompts."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use nearby labels, including stereotype recognition, stereotype detection, and stereotype identification. The task appears in sentence-level classification, in setups where a model chooses which of multiple sentences expresses a stereotype given context, and in prompt-based probing that asks, \"Does the following statement reflect a stereotype?\" Some work also adapts existing resources into detection formats, including EspanStereo and multiple-choice StereoSet."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to one measurement instrument, StereoSet. It is described as a benchmark or dataset for recognizing stereotypes in sentences, including classifying them as \"stereotype\", \"anti-stereotype\", or \"unrelated\", and one paper notes a multiple-choice adaptation of the dataset. No other measurement instrument is linked."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "The only linked construct is Fairness. One paper presents stereotype recognition as related to Fairness by using the task \"to evaluate the alignment of fairness\", rather than stating a measured_by, correlates, or causal link to a construct. No other construct link is stated."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage is a recognition or detection task for stereotypical content in text. Most commonly, papers describe success as correctly distinguishing stereotypical from anti-stereotypical statements, or as identifying whether a sentence or statement reflects a stereotype; one linked benchmark operationalizes this as three-way classification into \"stereotype\", \"anti-stereotype\", or \"unrelated\". A smaller line of work broadens the behavior to recognizing and critically explaining the presence of stereotypes in prompts.\n\nVariants. Papers use nearby labels, including stereotype recognition, stereotype detection, and stereotype identification. The task appears in sentence-level classification, in setups where a model chooses which of multiple sentences expresses a stereotype given context, and in prompt-based probing that asks, \"Does the following statement reflect a stereotype?\" Some work also adapts existing resources into detection formats, including EspanStereo and multiple-choice StereoSet.\n\nSpace of elicitation and scores. Papers link this behavior to one measurement instrument, StereoSet. It is described as a benchmark or dataset for recognizing stereotypes in sentences, including classifying them as \"stereotype\", \"anti-stereotype\", or \"unrelated\", and one paper notes a multiple-choice adaptation of the dataset. No other measurement instrument is linked.\n\nWhat it is taken as evidence of. The only linked construct is Fairness. One paper presents stereotype recognition as related to Fairness by using the task \"to evaluate the alignment of fairness\", rather than stating a measured_by, correlates, or causal link to a construct. No other construct link is stated.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "A Comprehensive Framework to Operationalize Social Stereotypes for Responsible AI Evaluations",
+      "HESEIA: A community-based dataset for evaluating social biases in large language models, co-designed in real school settings in Latin America",
+      "PLLuM-Align: Polish Preference Dataset for Large Language Model Alignment",
+      "Scalable and Culturally Specific Stereotype Dataset Construction via Human-LLM Collaboration",
+      "Token-Aware Editing of Internal Activations for Large Language Model Alignment"
+    ],
+    "naacl25": [
+      "SHADES: Towards a Multilingual Assessment of Stereotypes in Large Language Models"
+    ],
+    "acl25": [
+      "Neuron Empirical Gradient: Discovering and Quantifying Neurons' Global Linear Controllability"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5,
+    "naacl25": 1,
+    "acl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "naacl25"
+  ]
+}

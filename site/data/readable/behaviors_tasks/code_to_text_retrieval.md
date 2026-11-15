@@ -1,0 +1,18 @@
+# Code-to-text retrieval
+**Type:** Behavioral indicator  
+**Supporting papers:** 3  
+
+## State of the Field
+
+**Space of definitions.** Across the papers, the prevailing usage treats this as a retrieval task from code to natural language: given a block of code or a code snippet query, the system retrieves relevant text. The common success criterion is relevance of the returned description, most often phrased as docstrings or comments; as one study puts it, "the model must identify relevant docstring or comments for code blocks" (Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference).
+
+**Variants.** Papers mainly vary in how they name the text target: relevant natural language descriptions, docstrings, comments, or more generally documents. They also vary slightly in the code side of the task, describing the input as a block of code or a code snippet query. One paper places code-to-text alongside code-to-code and hybrid code retrieval tasks, treating it as one setting within a broader retrieval family.
+
+**Space of elicitation and scores.** No measurement instrument is linked to this behavior in these papers.
+
+**What it is taken as evidence of.** No construct is linked to this behavior in these papers.
+
+## Sources
+
+**Code-to-text retrieval** (2 papers: [Smarter, Better, Faster, Longer: A Modern Bidirectional Encoder for Fast, Memory Efficient, and Long Context Finetuning and Inference](https://aclanthology.org/2025.acl-long.127.pdf), [CoRNStack: High-Quality Contrastive Data for Better Code Retrieval and Reranking](https://proceedings.iclr.cc/paper_files/paper/2025/file/285b0e63256699c04dbf2c8d4163fba4-Paper-Conference.pdf))
+> The observable task of retrieving relevant natural language descriptions (like docstrings or comments) for a given block of code.

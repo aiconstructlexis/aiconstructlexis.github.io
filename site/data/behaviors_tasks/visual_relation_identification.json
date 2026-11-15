@@ -1,0 +1,95 @@
+{
+  "canonical_name": "Visual relation identification",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats this behavior as identifying or describing relationships among visual entities: \"connections, interactions, or spatial dynamics\" between specified objects or regions, or interactions between objects in an image. A smaller line of work narrows it to dynamic interactions in traffic scenes, including an ego vehicle's reaction to other traffic elements, while another formulation asks models to identify which properties change or stay the same across paired images in a visual analogy. In these formulations, the output is an analysis or identification of the relation, such as analyzing the relationship between marked regions or naming changed and unchanged properties.\n\nVariants. Papers use several nearby names for the behavior, including inter-relationship analysis, object interaction analysis, interaction relation understanding, and relationship identification. The main settings are marked regions or arbitrarily shaped ROIs inside an image, traffic scenes with multiple agents, and cross-image analogy tasks. Some variants emphasize spatial dynamics with surrounding entities and backgrounds, while others emphasize extracting relationships between the first and second images.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior in the papers. The excerpts instead show prompt-based elicitation, for example asking a model to analyze the relationship between marked regions or to identify changed and unchanged properties across images, but they do not specify a distinct scoring instrument.\n\nWhat it is taken as evidence of. No construct is linked to this behavior in the papers. The descriptions treat it as a task or capability description and do not state that it is evidence of any broader construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Inter-relationship analysis",
+    "Interaction relation understanding",
+    "Relationship identification",
+    "Object interaction analysis"
+  ],
+  "papers": [
+    "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning",
+    "DiscoveryBench: Towards Data-Driven Discovery with Large Language Models",
+    "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+    "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+    "VOILA: Evaluation of MLLMs For Perceptual Understanding and Analogical Reasoning"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The ability to identify and describe the connections, interactions, or spatial dynamics between multiple specified objects or regions within an image.",
+      "papers": [
+        "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want"
+      ],
+      "original_name": "Inter-relationship analysis"
+    },
+    {
+      "text": "The task of reasoning about the dynamic interactions between different agents in a traffic scene, such as an ego vehicle's reaction to others.",
+      "papers": [
+        "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?"
+      ],
+      "original_name": "Interaction relation understanding"
+    },
+    {
+      "text": "Identifying which properties stay the same or change between images in a visual analogy.",
+      "papers": [
+        "VOILA: Evaluation of MLLMs For Perceptual Understanding and Analogical Reasoning"
+      ],
+      "original_name": "Relationship identification"
+    },
+    {
+      "text": "Describing the relationships and interactions between objects in an image.",
+      "papers": [
+        "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning"
+      ],
+      "original_name": "Object interaction analysis"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats this behavior as identifying or describing relationships among visual entities: \"connections, interactions, or spatial dynamics\" between specified objects or regions, or interactions between objects in an image. A smaller line of work narrows it to dynamic interactions in traffic scenes, including an ego vehicle's reaction to other traffic elements, while another formulation asks models to identify which properties change or stay the same across paired images in a visual analogy. In these formulations, the output is an analysis or identification of the relation, such as analyzing the relationship between marked regions or naming changed and unchanged properties."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby names for the behavior, including inter-relationship analysis, object interaction analysis, interaction relation understanding, and relationship identification. The main settings are marked regions or arbitrarily shaped ROIs inside an image, traffic scenes with multiple agents, and cross-image analogy tasks. Some variants emphasize spatial dynamics with surrounding entities and backgrounds, while others emphasize extracting relationships between the first and second images."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior in the papers. The excerpts instead show prompt-based elicitation, for example asking a model to analyze the relationship between marked regions or to identify changed and unchanged properties across images, but they do not specify a distinct scoring instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to this behavior in the papers. The descriptions treat it as a task or capability description and do not state that it is evidence of any broader construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats this behavior as identifying or describing relationships among visual entities: \"connections, interactions, or spatial dynamics\" between specified objects or regions, or interactions between objects in an image. A smaller line of work narrows it to dynamic interactions in traffic scenes, including an ego vehicle's reaction to other traffic elements, while another formulation asks models to identify which properties change or stay the same across paired images in a visual analogy. In these formulations, the output is an analysis or identification of the relation, such as analyzing the relationship between marked regions or naming changed and unchanged properties.\n\nVariants. Papers use several nearby names for the behavior, including inter-relationship analysis, object interaction analysis, interaction relation understanding, and relationship identification. The main settings are marked regions or arbitrarily shaped ROIs inside an image, traffic scenes with multiple agents, and cross-image analogy tasks. Some variants emphasize spatial dynamics with surrounding entities and backgrounds, while others emphasize extracting relationships between the first and second images.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior in the papers. The excerpts instead show prompt-based elicitation, for example asking a model to analyze the relationship between marked regions or to identify changed and unchanged properties across images, but they do not specify a distinct scoring instrument.\n\nWhat it is taken as evidence of. No construct is linked to this behavior in the papers. The descriptions treat it as a task or capability description and do not state that it is evidence of any broader construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "DiscoveryBench: Towards Data-Driven Discovery with Large Language Models",
+      "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "VOILA: Evaluation of MLLMs For Perceptual Understanding and Analogical Reasoning"
+    ],
+    "iclr24": [
+      "Mitigating Hallucination in Large Multi-Modal Models via Robust Instruction Tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "iclr24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25"
+  ]
+}

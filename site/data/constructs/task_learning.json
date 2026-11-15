@@ -1,0 +1,138 @@
+{
+  "canonical_name": "Task learning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most definitions treat task learning as learning how to perform a task from in-context demonstrations by learning the input-label mapping, often phrased as solving the target task solely from demonstrations. A minority framing further specifies this as inferring and applying new mappings that were not seen during pre-training. A smaller line of work uses the label task inference and defines the construct as deducing the abstract task or class-to-label rule from input-output examples in context, explicitly contrasting this with simply copying a label.\n\nSpace of facets. Systematization is mostly by contrast. Papers distinguish it from task recognition, and one formulation also contrasts inferring the task from context with simply copying a label. The naming is not fully uniform: most authors use task learning, while some use task inference for inferring the underlying task from examples, and one paper describes that inference ability as a form of meta-learning.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. The operational descriptions stay at the level of task performance: solving a target task from demonstrations alone, inferring the underlying task from example pairs, or, in one study, showing gains above NON-BIJECTIVE shuffles as indicative of task learning rather than task recognition. Another paper frames the target behavior as inferring and applying new input-label mappings not seen during pre-training.\n\nLinks. It is linked to 3 constructs: In-context learning, Meta-learning, and Task recognition. Papers describe it as related to In-context learning, with one account of effective ICL saying the model infers the underlying task from examples and refines predictions based on that inferred task, and as related to Meta-learning, with task inference ability described as a form of meta-learning. It is also reported to correlate with Task recognition, and one paper states that their performance changes in opposite directions.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Task learning",
+    "Task inference"
+  ],
+  "papers": [
+    "Preemptive Detection and Correction of Misaligned Actions in LLM Agents",
+    "ICL CIPHERS: Quantifying \u201cLearning\u201d in In-Context Learning via Substitution Ciphers",
+    "Understanding Catastrophic Forgetting in Language Models via Implicit Inference",
+    "Competition Dynamics Shape Algorithmic Phases of In-Context Learning",
+    "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning",
+    "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+    "Cradle: Empowering Foundation Agents towards General Computer Control"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The ability of a language model to learn how to perform a task solely by learning the input-label mapping from the provided in-context demonstrations.",
+      "papers": [
+        "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning",
+        "ICL CIPHERS: Quantifying \u201cLearning\u201d in In-Context Learning via Substitution Ciphers"
+      ],
+      "original_name": "Task learning"
+    },
+    {
+      "text": "The model's capacity to deduce the abstract rule or mapping (e.g., class-to-label function) from a set of input-output examples provided in context.",
+      "papers": [
+        "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence"
+      ],
+      "original_name": "Task inference"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task recognition",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning",
+      "evidence": "\u201cthe performance of task recognition and task learning changes in the opposite direction\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+      "evidence": "In effective ICL, the model infers the underlying task from the examples provided and refines its predictions based on the inferred task. (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Meta-learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+      "evidence": "This task inference ability is recognized as a form of meta-learning (Min et al., 2022a). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most definitions treat task learning as learning how to perform a task from in-context demonstrations by learning the input-label mapping, often phrased as solving the target task solely from demonstrations. A minority framing further specifies this as inferring and applying new mappings that were not seen during pre-training. A smaller line of work uses the label task inference and defines the construct as deducing the abstract task or class-to-label rule from input-output examples in context, explicitly contrasting this with simply copying a label."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Systematization is mostly by contrast. Papers distinguish it from task recognition, and one formulation also contrasts inferring the task from context with simply copying a label. The naming is not fully uniform: most authors use task learning, while some use task inference for inferring the underlying task from examples, and one paper describes that inference ability as a form of meta-learning."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. The operational descriptions stay at the level of task performance: solving a target task from demonstrations alone, inferring the underlying task from example pairs, or, in one study, showing gains above NON-BIJECTIVE shuffles as indicative of task learning rather than task recognition. Another paper frames the target behavior as inferring and applying new input-label mappings not seen during pre-training."
+    },
+    {
+      "label": "Links.",
+      "text": "It is linked to 3 constructs: In-context learning, Meta-learning, and Task recognition. Papers describe it as related to In-context learning, with one account of effective ICL saying the model infers the underlying task from examples and refines predictions based on that inferred task, and as related to Meta-learning, with task inference ability described as a form of meta-learning. It is also reported to correlate with Task recognition, and one paper states that their performance changes in opposite directions."
+    }
+  ],
+  "characterization": "Space of definitions. Most definitions treat task learning as learning how to perform a task from in-context demonstrations by learning the input-label mapping, often phrased as solving the target task solely from demonstrations. A minority framing further specifies this as inferring and applying new mappings that were not seen during pre-training. A smaller line of work uses the label task inference and defines the construct as deducing the abstract task or class-to-label rule from input-output examples in context, explicitly contrasting this with simply copying a label.\n\nSpace of facets. Systematization is mostly by contrast. Papers distinguish it from task recognition, and one formulation also contrasts inferring the task from context with simply copying a label. The naming is not fully uniform: most authors use task learning, while some use task inference for inferring the underlying task from examples, and one paper describes that inference ability as a form of meta-learning.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. The operational descriptions stay at the level of task performance: solving a target task from demonstrations alone, inferring the underlying task from example pairs, or, in one study, showing gains above NON-BIJECTIVE shuffles as indicative of task learning rather than task recognition. Another paper frames the target behavior as inferring and applying new input-label mappings not seen during pre-training.\n\nLinks. It is linked to 3 constructs: In-context learning, Meta-learning, and Task recognition. Papers describe it as related to In-context learning, with one account of effective ICL saying the model infers the underlying task from examples and refines predictions based on that inferred task, and as related to Meta-learning, with task inference ability described as a form of meta-learning. It is also reported to correlate with Task recognition, and one paper states that their performance changes in opposite directions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Preemptive Detection and Correction of Misaligned Actions in LLM Agents",
+      "ICL CIPHERS: Quantifying \u201cLearning\u201d in In-Context Learning via Substitution Ciphers"
+    ],
+    "iclr24": [
+      "Understanding Catastrophic Forgetting in Language Models via Implicit Inference"
+    ],
+    "iclr25": [
+      "Competition Dynamics Shape Algorithmic Phases of In-Context Learning",
+      "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning"
+    ],
+    "icml25": [
+      "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+      "Cradle: Empowering Foundation Agents towards General Computer Control"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr24": 1,
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

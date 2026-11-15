@@ -1,0 +1,107 @@
+{
+  "canonical_name": "Rationality",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, rationality is most commonly treated as a property of agents or models reflected in decisions that are guided by reason and aimed at optimal outcomes. Most definitions converge on payoff maximization, goal achievement, or conformity to logical principles, with one survey calling it \"the quality of being guided by reason\" and other papers defining it as decisions that maximize payoff, select strategies optimal for goals, or conform to logical and probabilistic principles under uncertainty. The main variation is the reference standard: some authors emphasize logical self-interest and utility, some emphasize Nash-equilibrium or goal-optimal behavior, and some emphasize normative reasoning under uncertainty, often contrasted with human-like emotional deviation.\n\nSpace of facets. The clearest breakdown presents rationality through four expected properties: information grounding, logical consistency, invariance from irrelevant context, and orderability of preference. Other papers describe it with neighboring notions such as decision-making optimality, internal utility judgment ability learned from posterior experience, and Nash-equilibrium-seeking behavior. One paper explicitly contrasts rationality with intelligence, describing intelligence as raw cognitive ability and rationality as adherence to normative reasoning standards, while other work contrasts it with alignment to human emotional responses.\n\nSpace of measurement. Papers do not link rationality to any measurement instrument or behavioral indicator. Even so, the descriptions make its use concrete: strategic games and ethical dilemmas are used to compare how rationally models decide across emotions, game-theoretic settings treat more rational behavior as contributing fewer tokens and reaching a Nash equilibrium, and one definition notes evaluation with cognitive psychology tasks. Another line frames rationality through whether agents can provide optimal solutions using a learned internal utility judgment with the Elo rating system.\n\nLinks. The only relation described in papers links commonsense reasoning to rationality: one paper says a system \"engages in human common-sense reasoning for rationality in this stage.\" No causal or correlational claims are described.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Rationality"
+  ],
+  "papers": [
+    "Generative Psycho-Lexical Approach for Constructing Value Systems in Large Language Models",
+    "The Lawyer That Never Thinks: Consistency and Fairness as Keys to Reliable AI",
+    "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+    "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+    "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+    "SELFGOAL: Your Language Agents Already Know How to Achieve High-level Goals",
+    "Towards Rationality in Language and Multimodal Agents: A Survey",
+    "Can Large Language Model Agents Simulate Human Trust Behavior?",
+    "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "The extent to which the model's decisions maximize payoff or adhere to logical self-interest, often contrasted with human-like emotional deviation.",
+      "papers": [
+        "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+        "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+        "SELFGOAL: Your Language Agents Already Know How to Achieve High-level Goals",
+        "Towards Rationality in Language and Multimodal Agents: A Survey",
+        "The Lawyer That Never Thinks: Consistency and Fairness as Keys to Reliable AI"
+      ],
+      "original_name": "Rationality"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "GRADEO: Towards Human-Like Evaluation for Text-to-Video Generation via Multi-Step Reasoning",
+      "evidence": "Instead, it...engages in human common-sense reasoning for rationality in this stage. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "GRADEO: Towards Human-Like Evaluation for Text-to-Video Generation via Multi-Step Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, rationality is most commonly treated as a property of agents or models reflected in decisions that are guided by reason and aimed at optimal outcomes. Most definitions converge on payoff maximization, goal achievement, or conformity to logical principles, with one survey calling it \"the quality of being guided by reason\" and other papers defining it as decisions that maximize payoff, select strategies optimal for goals, or conform to logical and probabilistic principles under uncertainty. The main variation is the reference standard: some authors emphasize logical self-interest and utility, some emphasize Nash-equilibrium or goal-optimal behavior, and some emphasize normative reasoning under uncertainty, often contrasted with human-like emotional deviation."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The clearest breakdown presents rationality through four expected properties: information grounding, logical consistency, invariance from irrelevant context, and orderability of preference. Other papers describe it with neighboring notions such as decision-making optimality, internal utility judgment ability learned from posterior experience, and Nash-equilibrium-seeking behavior. One paper explicitly contrasts rationality with intelligence, describing intelligence as raw cognitive ability and rationality as adherence to normative reasoning standards, while other work contrasts it with alignment to human emotional responses."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers do not link rationality to any measurement instrument or behavioral indicator. Even so, the descriptions make its use concrete: strategic games and ethical dilemmas are used to compare how rationally models decide across emotions, game-theoretic settings treat more rational behavior as contributing fewer tokens and reaching a Nash equilibrium, and one definition notes evaluation with cognitive psychology tasks. Another line frames rationality through whether agents can provide optimal solutions using a learned internal utility judgment with the Elo rating system."
+    },
+    {
+      "label": "Links.",
+      "text": "The only relation described in papers links commonsense reasoning to rationality: one paper says a system \"engages in human common-sense reasoning for rationality in this stage.\" No causal or correlational claims are described."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, rationality is most commonly treated as a property of agents or models reflected in decisions that are guided by reason and aimed at optimal outcomes. Most definitions converge on payoff maximization, goal achievement, or conformity to logical principles, with one survey calling it \"the quality of being guided by reason\" and other papers defining it as decisions that maximize payoff, select strategies optimal for goals, or conform to logical and probabilistic principles under uncertainty. The main variation is the reference standard: some authors emphasize logical self-interest and utility, some emphasize Nash-equilibrium or goal-optimal behavior, and some emphasize normative reasoning under uncertainty, often contrasted with human-like emotional deviation.\n\nSpace of facets. The clearest breakdown presents rationality through four expected properties: information grounding, logical consistency, invariance from irrelevant context, and orderability of preference. Other papers describe it with neighboring notions such as decision-making optimality, internal utility judgment ability learned from posterior experience, and Nash-equilibrium-seeking behavior. One paper explicitly contrasts rationality with intelligence, describing intelligence as raw cognitive ability and rationality as adherence to normative reasoning standards, while other work contrasts it with alignment to human emotional responses.\n\nSpace of measurement. Papers do not link rationality to any measurement instrument or behavioral indicator. Even so, the descriptions make its use concrete: strategic games and ethical dilemmas are used to compare how rationally models decide across emotions, game-theoretic settings treat more rational behavior as contributing fewer tokens and reaching a Nash equilibrium, and one definition notes evaluation with cognitive psychology tasks. Another line frames rationality through whether agents can provide optimal solutions using a learned internal utility judgment with the Elo rating system.\n\nLinks. The only relation described in papers links commonsense reasoning to rationality: one paper says a system \"engages in human common-sense reasoning for rationality in this stage.\" No causal or correlational claims are described.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Generative Psycho-Lexical Approach for Constructing Value Systems in Large Language Models",
+      "The Lawyer That Never Thinks: Consistency and Fairness as Keys to Reliable AI"
+    ],
+    "iclr25": [
+      "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+      "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+    ],
+    "naacl25": [
+      "SELFGOAL: Your Language Agents Already Know How to Achieve High-level Goals",
+      "Towards Rationality in Language and Multimodal Agents: A Survey"
+    ],
+    "neurips24": [
+      "Can Large Language Model Agents Simulate Human Trust Behavior?",
+      "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 3,
+    "naacl25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

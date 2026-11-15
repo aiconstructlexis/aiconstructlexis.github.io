@@ -1,0 +1,102 @@
+{
+  "canonical_name": "Single-hop question answering",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. In the usage in the papers, this is treated as answering a question that can be resolved with a single piece of retrieved information. A quoted passage further places it among \"simple single-hop tasks,\" using \"chunk\" as the candidate structure type for them.\n\nVariants. Observed variants are limited to close phrasings: \"single-hop QA,\" \"simple single-hop tasks,\" and \"single-fact questions.\" Across these phrasings, the scope stays on questions answerable from one fact or one retrieved piece of information.\n\nSpace of elicitation and scores. Papers measure it with 2 instruments, BABILong and Natural Questions. Natural Questions is explicitly labeled \"Single-hop QA,\" while BABILong is linked to \"answering single-fact questions,\" with one paper reporting \"a modest 60% accuracy\" in that setting.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Single-hop question answering"
+  ],
+  "papers": [
+    "Dynamic Chunking and Selection for Reading Comprehension of Ultra-Long Context in Large Language Models",
+    "CaKE: Circuit-aware Editing Enables Generalizable Knowledge Learners",
+    "LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization",
+    "PropRAG: Guiding Retrieval with Beam Search over Proposition Paths",
+    "StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Answering a question that can be resolved with a single piece of retrieved information.",
+      "papers": [
+        "StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization"
+      ],
+      "original_name": "Single-hop question answering"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+      "evidence": "\u201cNatural Questions (NQ; Kwiatkowski et al., 2019), Single-hop QA\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BABILong",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack",
+      "evidence": "\"Retrieval-Augmented Generation methods achieve a modest 60% accuracy in answering single-fact questions\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "BABILong: Testing the Limits of LLMs with Long Context Reasoning-in-a-Haystack"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In the usage in the papers, this is treated as answering a question that can be resolved with a single piece of retrieved information. A quoted passage further places it among \"simple single-hop tasks,\" using \"chunk\" as the candidate structure type for them."
+    },
+    {
+      "label": "Variants.",
+      "text": "Observed variants are limited to close phrasings: \"single-hop QA,\" \"simple single-hop tasks,\" and \"single-fact questions.\" Across these phrasings, the scope stays on questions answerable from one fact or one retrieved piece of information."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers measure it with 2 instruments, BABILong and Natural Questions. Natural Questions is explicitly labeled \"Single-hop QA,\" while BABILong is linked to \"answering single-fact questions,\" with one paper reporting \"a modest 60% accuracy\" in that setting."
+    }
+  ],
+  "characterization": "Space of definitions. In the usage in the papers, this is treated as answering a question that can be resolved with a single piece of retrieved information. A quoted passage further places it among \"simple single-hop tasks,\" using \"chunk\" as the candidate structure type for them.\n\nVariants. Observed variants are limited to close phrasings: \"single-hop QA,\" \"simple single-hop tasks,\" and \"single-fact questions.\" Across these phrasings, the scope stays on questions answerable from one fact or one retrieved piece of information.\n\nSpace of elicitation and scores. Papers measure it with 2 instruments, BABILong and Natural Questions. Natural Questions is explicitly labeled \"Single-hop QA,\" while BABILong is linked to \"answering single-fact questions,\" with one paper reporting \"a modest 60% accuracy\" in that setting.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Dynamic Chunking and Selection for Reading Comprehension of Ultra-Long Context in Large Language Models"
+    ],
+    "emnlp25": [
+      "CaKE: Circuit-aware Editing Enables Generalizable Knowledge Learners",
+      "LeTS: Learning to Think-and-Search via Process-and-Outcome Reward Hybridization",
+      "PropRAG: Guiding Retrieval with Beam Search over Proposition Paths"
+    ],
+    "iclr25": [
+      "StructRAG: Boosting Knowledge Intensive Reasoning of LLMs via Inference-time Hybrid Information Structurization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 3,
+    "iclr25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

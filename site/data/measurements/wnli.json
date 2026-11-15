@@ -1,0 +1,127 @@
+{
+  "canonical_name": "WNLI",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most commonly described as a Winograd Natural Language Inference benchmark or dataset, papers frame WNLI as a natural language inference evaluation centered on sentence-level understanding and pronoun reasoning. Across definitions, the recurring focus is pronoun resolution or ambiguity, coreference resolution, and reasoning in pronoun disambiguation, with some descriptions adding textual entailment-style reasoning or logical inference. One paper specifically reports using the validation set to measure performance.\n\nWhat it is claimed to measure. Explicit measurement claims are narrow: papers link WNLI to one behavioral indicator and one construct. One paper uses it to measure natural language inference, describing RTE and WNLI as inference tasks, while another uses it as an out-of-domain task to evaluate generalization. The named targets are natural language inference and generalization, and no other constructs or behavioral indicators are linked in these papers.\n\nSpace of uses. Usage is most often as part of broader GLUE evaluations. It is related to one other instrument, GLUE, and papers place it alongside tasks such as CoLA, MRPC, RTE, and SST-2; reported setups include baseline comparisons across NLU tasks, zero-shot accuracy reporting for pruned models, and GLUE evaluation tables for fine-tuning. A smaller line of use treats WNLI as an out-of-domain task, and another reports validation-set performance on a finetuned model exhibiting length bias.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WNLI"
+  ],
+  "papers": [
+    "DisLoRA: Task-specific Low-Rank Adaptation via Orthogonal Basis from Singular Value Decomposition",
+    "FISTAPruner: Layer-wise Post-training Pruning for Large Language Models",
+    "MobiZO: Enabling Efficient LLM Fine-Tuning at the Edge via Inference Engines",
+    "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+    "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+    "Merging LoRAs like Playing LEGO: Pushing the Modularity of LoRA to Extremes Through Rank-Wise Clustering",
+    "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+    "In-Context Learning (and Unlearning) of Length Biases"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "A natural language inference benchmark used to evaluate sentence-level understanding and pronoun reasoning.",
+      "papers": [
+        "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+        "DisLoRA: Task-specific Low-Rank Adaptation via Orthogonal Basis from Singular Value Decomposition",
+        "FISTAPruner: Layer-wise Post-training Pruning for Large Language Models",
+        "MobiZO: Enabling Efficient LLM Fine-Tuning at the Edge via Inference Engines",
+        "In-Context Learning (and Unlearning) of Length Biases"
+      ],
+      "original_name": "WNLI"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language inference",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+      "evidence": "for inference tasks, the RTE and WNLI (both from GLUE) datasets (Section 4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+      "evidence": "for inference tasks, the RTE and WNLI (both from GLUE) datasets (Section 4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Merging LoRAs like Playing LEGO: Pushing the Modularity of LoRA to Extremes Through Rank-Wise Clustering",
+      "evidence": "We then assessed the performance of the merged LoRA on these in-domain tasks as well as on two additional out-of-domain tasks, SNLI and WNLI, to evaluate its adaptability and generalization capabilities.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Merging LoRAs like Playing LEGO: Pushing the Modularity of LoRA to Extremes Through Rank-Wise Clustering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most commonly described as a Winograd Natural Language Inference benchmark or dataset, papers frame WNLI as a natural language inference evaluation centered on sentence-level understanding and pronoun reasoning. Across definitions, the recurring focus is pronoun resolution or ambiguity, coreference resolution, and reasoning in pronoun disambiguation, with some descriptions adding textual entailment-style reasoning or logical inference. One paper specifically reports using the validation set to measure performance."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Explicit measurement claims are narrow: papers link WNLI to one behavioral indicator and one construct. One paper uses it to measure natural language inference, describing RTE and WNLI as inference tasks, while another uses it as an out-of-domain task to evaluate generalization. The named targets are natural language inference and generalization, and no other constructs or behavioral indicators are linked in these papers."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Usage is most often as part of broader GLUE evaluations. It is related to one other instrument, GLUE, and papers place it alongside tasks such as CoLA, MRPC, RTE, and SST-2; reported setups include baseline comparisons across NLU tasks, zero-shot accuracy reporting for pruned models, and GLUE evaluation tables for fine-tuning. A smaller line of use treats WNLI as an out-of-domain task, and another reports validation-set performance on a finetuned model exhibiting length bias."
+    }
+  ],
+  "characterization": "What it is. Most commonly described as a Winograd Natural Language Inference benchmark or dataset, papers frame WNLI as a natural language inference evaluation centered on sentence-level understanding and pronoun reasoning. Across definitions, the recurring focus is pronoun resolution or ambiguity, coreference resolution, and reasoning in pronoun disambiguation, with some descriptions adding textual entailment-style reasoning or logical inference. One paper specifically reports using the validation set to measure performance.\n\nWhat it is claimed to measure. Explicit measurement claims are narrow: papers link WNLI to one behavioral indicator and one construct. One paper uses it to measure natural language inference, describing RTE and WNLI as inference tasks, while another uses it as an out-of-domain task to evaluate generalization. The named targets are natural language inference and generalization, and no other constructs or behavioral indicators are linked in these papers.\n\nSpace of uses. Usage is most often as part of broader GLUE evaluations. It is related to one other instrument, GLUE, and papers place it alongside tasks such as CoLA, MRPC, RTE, and SST-2; reported setups include baseline comparisons across NLU tasks, zero-shot accuracy reporting for pruned models, and GLUE evaluation tables for fine-tuning. A smaller line of use treats WNLI as an out-of-domain task, and another reports validation-set performance on a finetuned model exhibiting length bias.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+      "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+      "Merging LoRAs like Playing LEGO: Pushing the Modularity of LoRA to Extremes Through Rank-Wise Clustering",
+      "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches"
+    ],
+    "emnlp25": [
+      "DisLoRA: Task-specific Low-Rank Adaptation via Orthogonal Basis from Singular Value Decomposition",
+      "FISTAPruner: Layer-wise Post-training Pruning for Large Language Models",
+      "MobiZO: Enabling Efficient LLM Fine-Tuning at the Edge via Inference Engines"
+    ],
+    "naacl25": [
+      "In-Context Learning (and Unlearning) of Length Biases"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "emnlp25": 3,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

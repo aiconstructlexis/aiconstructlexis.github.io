@@ -1,0 +1,92 @@
+{
+  "canonical_name": "Adversarial suffix generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats this behavior as generating a text suffix that is appended to a harmful query or user instruction so a target or victim model gives a non-refused response. Most descriptions frame success as producing harmful, undesirable, or otherwise unintended output, while some state the goal more narrowly as making the model begin its response with a target phrase, and others describe it as increasing the likelihood of a harmful response by bypassing safety mechanisms or safety alignment.\n\nVariants. Papers study it in several settings: as autoregressive suffix generation, as training an adversarial prompter or ADV-LLM to produce a successful adversarial suffix, and as a universal and transferable attack. The names used include adversarial suffixes, successful adversarial suffix, adversarial prompting, and adversarial prompter. Specific generation setups mentioned include simple decoding with beam search, and attack algorithms such as GCG, AutoDAN-Liu, and SCAV; another description presents GCG as combining affirmative prompting with greedy and gradient-based discrete optimization.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. In practice, papers operationalize it by appending the generated suffix to a harmful query or instruction and checking whether the target model stops refusing, begins with a target phrase, or produces harmful, undesirable, or unintended output.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct, so there is no prevailing construct-level interpretation attached to it here. Instead, one paper relates it to Jailbreaking, stating that jailbreaking attacks typically involve appending adversarial suffixes to instructions.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Adversarial suffix generation"
+  ],
+  "papers": [
+    "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs",
+    "Explaining the role of Intrinsic Dimensionality in Adversarial Training",
+    "Iterative Self-Tuning LLMs for Enhanced Jailbreaking Capabilities",
+    "Stronger Universal and Transferable Attacks by Suppressing Refusals"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The process by which an LLM generates a text suffix that, when appended to a harmful query, causes a victim model to produce a non-refused response to that query.",
+      "papers": [
+        "Stronger Universal and Transferable Attacks by Suppressing Refusals",
+        "Iterative Self-Tuning LLMs for Enhanced Jailbreaking Capabilities",
+        "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs",
+        "Explaining the role of Intrinsic Dimensionality in Adversarial Training"
+      ],
+      "original_name": "Adversarial suffix generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Jailbreaking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs",
+      "evidence": "Jailbreaking attacks typically involve appending adversarial suffixes to instructions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats this behavior as generating a text suffix that is appended to a harmful query or user instruction so a target or victim model gives a non-refused response. Most descriptions frame success as producing harmful, undesirable, or otherwise unintended output, while some state the goal more narrowly as making the model begin its response with a target phrase, and others describe it as increasing the likelihood of a harmful response by bypassing safety mechanisms or safety alignment."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study it in several settings: as autoregressive suffix generation, as training an adversarial prompter or ADV-LLM to produce a successful adversarial suffix, and as a universal and transferable attack. The names used include adversarial suffixes, successful adversarial suffix, adversarial prompting, and adversarial prompter. Specific generation setups mentioned include simple decoding with beam search, and attack algorithms such as GCG, AutoDAN-Liu, and SCAV; another description presents GCG as combining affirmative prompting with greedy and gradient-based discrete optimization."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior. In practice, papers operationalize it by appending the generated suffix to a harmful query or instruction and checking whether the target model stops refusing, begins with a target phrase, or produces harmful, undesirable, or unintended output."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not link this behavior to any construct, so there is no prevailing construct-level interpretation attached to it here. Instead, one paper relates it to Jailbreaking, stating that jailbreaking attacks typically involve appending adversarial suffixes to instructions."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats this behavior as generating a text suffix that is appended to a harmful query or user instruction so a target or victim model gives a non-refused response. Most descriptions frame success as producing harmful, undesirable, or otherwise unintended output, while some state the goal more narrowly as making the model begin its response with a target phrase, and others describe it as increasing the likelihood of a harmful response by bypassing safety mechanisms or safety alignment.\n\nVariants. Papers study it in several settings: as autoregressive suffix generation, as training an adversarial prompter or ADV-LLM to produce a successful adversarial suffix, and as a universal and transferable attack. The names used include adversarial suffixes, successful adversarial suffix, adversarial prompting, and adversarial prompter. Specific generation setups mentioned include simple decoding with beam search, and attack algorithms such as GCG, AutoDAN-Liu, and SCAV; another description presents GCG as combining affirmative prompting with greedy and gradient-based discrete optimization.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. In practice, papers operationalize it by appending the generated suffix to a harmful query or instruction and checking whether the target model stops refusing, begins with a target phrase, or produces harmful, undesirable, or unintended output.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct, so there is no prevailing construct-level interpretation attached to it here. Instead, one paper relates it to Jailbreaking, stating that jailbreaking attacks typically involve appending adversarial suffixes to instructions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "Iterative Self-Tuning LLMs for Enhanced Jailbreaking Capabilities",
+      "Stronger Universal and Transferable Attacks by Suppressing Refusals"
+    ],
+    "iclr25": [
+      "ProAdvPrompter: A Two-Stage Journey to Effective Adversarial Prompting for LLMs"
+    ],
+    "icml25": [
+      "Explaining the role of Intrinsic Dimensionality in Adversarial Training"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 2,
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "canonical_name": "Project Euler",
+  "type": "measurement",
+  "canonical_definition": "Test set consisting of 45 C implementations of Project Euler mathematical challenge problems, used to evaluate transpilation accuracy on algorithmic code.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Project Euler"
+  ],
+  "papers": [
+    "Guess & Sketch: Language Model Guided Transpilation",
+    "To the Cutoff... and Beyond? A Longitudinal Perspective on LLM Data Contamination"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "Test set consisting of 45 C implementations of Project Euler mathematical challenge problems, used to evaluate transpilation accuracy on algorithmic code.",
+      "papers": [
+        "Guess & Sketch: Language Model Guided Transpilation",
+        "To the Cutoff... and Beyond? A Longitudinal Perspective on LLM Data Contamination"
+      ],
+      "original_name": "Project Euler"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "Test set consisting of 45 C implementations of Project Euler mathematical challenge problems, used to evaluate transpilation accuracy on algorithmic code.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Guess & Sketch: Language Model Guided Transpilation",
+      "To the Cutoff... and Beyond? A Longitudinal Perspective on LLM Data Contamination"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2
+  },
+  "conferences": [
+    "iclr24"
+  ]
+}

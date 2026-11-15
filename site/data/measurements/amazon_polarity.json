@@ -1,0 +1,114 @@
+{
+  "canonical_name": "Amazon Polarity",
+  "type": "measurement",
+  "canonical_definition": "What it is. The prevailing description treats Amazon Polarity, sometimes written as Amazon or AmazonPolarity, as a sentiment classification benchmark for product reviews and, more broadly, an NLP text classification dataset. Some papers instead describe \"Amazon\" differently: as a product co-purchasing network, where nodes are products and edges connect items frequently bought together, used for node classification in a text-attributed heterophilic graph, or as a temporal point process benchmark where the goal is to predict the timestamp and category of the next reviewed product among 16 categories.\n\nWhat it is claimed to measure. In recorded relationships, papers link it to 1 behavioral indicator, Text classification, and to no constructs. The relationship is stated directionally as text classification being measured by Amazon Polarity, with the supporting use describing it as part of sentiment analysis, so the measurement claims converge on a single behavioral indicator rather than being spread across many targets.\n\nSpace of uses. Papers place it alongside other evaluation datasets rather than describe a separate protocol. It appears with SST-2 and Yelp in sentiment analysis evaluations, with BoolQ, SciQ, and CosmosQA as one of \"four real-world NLP classification datasets,\" and in one debiasing study as a downstream check of whether debiasing preserves classification performance under semantic understanding tasks; no measurement instrument is formally linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Amazon",
+    "Amazon Polarity",
+    "AmazonPolarity"
+  ],
+  "papers": [
+    "Mitigating Biases in Language Models via Bias Unlearning",
+    "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+    "Privacy-Preserving In-Context Learning for Large Language Models",
+    "LAST SToP for Modeling Asynchronous Time Series",
+    "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+    "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions",
+    "Exploring the Potential of Large Language Models for Heterophilic Graphs"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A benchmark dataset for text classification, specifically for sentiment analysis of product reviews.",
+      "papers": [
+        "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+        "Privacy-Preserving In-Context Learning for Large Language Models",
+        "Exploring the Potential of Large Language Models for Heterophilic Graphs",
+        "LAST SToP for Modeling Asynchronous Time Series"
+      ],
+      "original_name": "Amazon"
+    },
+    {
+      "text": "A sentiment classification benchmark used here as an NLP classification dataset.",
+      "papers": [
+        "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss"
+      ],
+      "original_name": "Amazon Polarity"
+    },
+    {
+      "text": "AmazonPolarity is a sentiment-related benchmark used to check whether debiasing preserves downstream classification performance.",
+      "papers": [
+        "Mitigating Biases in Language Models via Bias Unlearning"
+      ],
+      "original_name": "AmazonPolarity"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Privacy-Preserving In-Context Learning for Large Language Models",
+      "evidence": "We study text classification using four datasets: sentiment analysis using SST-2 (Socher et al., 2013) and Amazon (Zhang et al., 2015)... (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Privacy-Preserving In-Context Learning for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "The prevailing description treats Amazon Polarity, sometimes written as Amazon or AmazonPolarity, as a sentiment classification benchmark for product reviews and, more broadly, an NLP text classification dataset. Some papers instead describe \"Amazon\" differently: as a product co-purchasing network, where nodes are products and edges connect items frequently bought together, used for node classification in a text-attributed heterophilic graph, or as a temporal point process benchmark where the goal is to predict the timestamp and category of the next reviewed product among 16 categories."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "In recorded relationships, papers link it to 1 behavioral indicator, Text classification, and to no constructs. The relationship is stated directionally as text classification being measured by Amazon Polarity, with the supporting use describing it as part of sentiment analysis, so the measurement claims converge on a single behavioral indicator rather than being spread across many targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers place it alongside other evaluation datasets rather than describe a separate protocol. It appears with SST-2 and Yelp in sentiment analysis evaluations, with BoolQ, SciQ, and CosmosQA as one of \"four real-world NLP classification datasets,\" and in one debiasing study as a downstream check of whether debiasing preserves classification performance under semantic understanding tasks; no measurement instrument is formally linked to it."
+    }
+  ],
+  "characterization": "What it is. The prevailing description treats Amazon Polarity, sometimes written as Amazon or AmazonPolarity, as a sentiment classification benchmark for product reviews and, more broadly, an NLP text classification dataset. Some papers instead describe \"Amazon\" differently: as a product co-purchasing network, where nodes are products and edges connect items frequently bought together, used for node classification in a text-attributed heterophilic graph, or as a temporal point process benchmark where the goal is to predict the timestamp and category of the next reviewed product among 16 categories.\n\nWhat it is claimed to measure. In recorded relationships, papers link it to 1 behavioral indicator, Text classification, and to no constructs. The relationship is stated directionally as text classification being measured by Amazon Polarity, with the supporting use describing it as part of sentiment analysis, so the measurement claims converge on a single behavioral indicator rather than being spread across many targets.\n\nSpace of uses. Papers place it alongside other evaluation datasets rather than describe a separate protocol. It appears with SST-2 and Yelp in sentiment analysis evaluations, with BoolQ, SciQ, and CosmosQA as one of \"four real-world NLP classification datasets,\" and in one debiasing study as a downstream check of whether debiasing preserves classification performance under semantic understanding tasks; no measurement instrument is formally linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "In-Context Pretraining: Language Modeling Beyond Document Boundaries",
+      "Privacy-Preserving In-Context Learning for Large Language Models"
+    ],
+    "icml25": [
+      "LAST SToP for Modeling Asynchronous Time Series",
+      "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+      "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions"
+    ],
+    "naacl25": [
+      "Exploring the Potential of Large Language Models for Heterophilic Graphs"
+    ],
+    "emnlp25": [
+      "Mitigating Biases in Language Models via Bias Unlearning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "icml25": 3,
+    "naacl25": 1,
+    "emnlp25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "naacl25"
+  ]
+}

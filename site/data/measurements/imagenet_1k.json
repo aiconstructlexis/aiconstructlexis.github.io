@@ -1,0 +1,449 @@
+{
+  "canonical_name": "ImageNet-1k",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most papers describe ImageNet-1k as a large-scale image classification or object-recognition benchmark, usually defined over 1,000 categories or classes. Some definitions add scale details, describing over 1.2 million images, or over a million training images plus 50,000 validation images, and papers variously refer to ImageNet1k, ImageNet-1K, ImageNet-2012, or the ILSVRC2012 validation split. A smaller line of work also treats it as a benchmark for class-conditional image generation, while other papers use its images, categories, or class labels to build few-shot classification, fine-grained object VQA, structured-rationale, or attack evaluations.\n\nWhat it is claimed to measure. Across papers, ImageNet-1k is linked to 3 constructs and 4 behavioral indicators. The prevailing usage is to measure image classification, with smaller lines of work using it to measure image generation, object recognition, and zero-shot classification. At the construct level, papers also use it to measure multimodal alignment, and more occasionally adaptability and generalization, for example through alignment scores or top-1 zero-shot accuracy on ImageNet, and through 16-shot domain adaptation evaluation.\n\nSpace of uses. Papers do not link it to another measurement instrument. They most often position it as a standard benchmark for training and evaluation: models are trained from scratch or with supervised learning on it, used for pre-training and downstream evaluation, or evaluated with top-1 accuracy, FID, Inception Score, and Brier score depending on the task. Quoted passages also place it in broader benchmark suites alongside CIFAR-10, CIFAR-100, MS-COCO, Flowers102, and Stanford-Cars.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ImageNet",
+    "ImageNet-1K",
+    "ImageNet-2012",
+    "ImageNet1k",
+    "ImageNet-1k"
+  ],
+  "papers": [
+    "A Multi-Level Framework for Accelerating Training Transformer Models",
+    "Bootstrapping Variational Information Pursuit with Large Language and Vision Models for Interpretable Image Classification",
+    "Energy-based Automated Model Evaluation",
+    "Follow-Up Differential Descriptions: Language Models Resolve Ambiguities for Image Classification",
+    "Frozen Transformers in Language Models Are Effective Visual Encoder Layers",
+    "Inducing High Energy-Latency of Large Vision-Language Models with Verbose Images",
+    "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+    "Language Modeling Is Compression",
+    "Open-ended VQA benchmarking of Vision-Language models by exploiting Classification datasets and their semantic hierarchy",
+    "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+    "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+    "Understanding prompt engineering may not require rethinking generalization",
+    "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+    "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+    "Bridging Compressed Image Latents and Multimodal Large Language Models",
+    "CAMEx: Curvature-aware Merging of Experts",
+    "Effective Interplay between Sparsity and Quantization: From Theory to Practice",
+    "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+    "Forget the Data and Fine-Tuning! Just Fold the Network to Compress",
+    "JetFormer: An autoregressive generative model of raw images and text",
+    "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+    "Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection",
+    "Longhorn: State Space Models are Amortized Online Learners",
+    "MambaQuant: Quantizing the Mamba Family with Variance Aligned Rotation Methods",
+    "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+    "Mix-LN: Unleashing the Power of Deeper Layers by Combining Pre-LN and Post-LN",
+    "OATS: Outlier-Aware Pruning Through Sparse and Low Rank Decomposition",
+    "RandLoRA: Full rank parameter-efficient fine-tuning of large models",
+    "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+    "SageAttention: Accurate 8-Bit Attention for Plug-and-play Inference Acceleration",
+    "Small-to-Large Generalization: Training Data Influences Models Consistently Across Scale",
+    "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models",
+    "Theory, Analysis, and Best Practices for Sigmoid Self-Attention",
+    "Tight Clusters Make Specialized Experts",
+    "TokenFormer: Rethinking Transformer Scaling with Tokenized Model Parameters",
+    "TopoNets: High performing vision and language models with brain-like topography",
+    "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+    "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+    "Two Sparse Matrices are Better than One: Sparsifying Neural Networks with Double Sparse Factorization",
+    "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation",
+    "Weighted Multi-Prompt Learning with Description-free Large Language Model Distillation",
+    "Attention-Only Transformers via Unrolled Subspace Denoising",
+    "AutoEval Done Right: Using Synthetic Data for Model Evaluation",
+    "Avoiding spurious sharpness minimization broadens applicability of SAM",
+    "Contrastive Localized Language-Image Pre-Training",
+    "Dynamic Sparse Training of Diagonally Sparse Networks",
+    "Elucidating the design space of language models for image generation",
+    "GPTAQ: Efficient Finetuning-Free Quantization for Asymmetric Calibration",
+    "LASER: Attention with Exponential Transformation",
+    "LAuReL: Learned Augmented Residual Layer",
+    "Large Continual Instruction Assistant",
+    "Layer by Layer: Uncovering Hidden Representations in Language Models",
+    "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+    "Loss Functions and Operators Generated by f-Divergences",
+    "MoH: Multi-Head Attention as Mixture-of-Head Attention",
+    "On Understanding Attention-Based In-Context Learning for Categorical Data",
+    "PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models",
+    "Position: AI Should Not Be An Imitation Game: Centaur Evaluations",
+    "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+    "RWKVQuant: Quantizing the RWKV Family with Proxy Guided Hybrid of Scalar and Vector Quantization",
+    "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+    "SAE-V: Interpreting Multimodal Models for Enhanced Alignment",
+    "Scalable Model Merging with Progressive Layer-wise Distillation",
+    "What If We Recaption Billions of Web Images with LLaMA-3?",
+    "QAVA: Query-Agnostic Visual Attack to Large Vision-Language Models",
+    "Typographic Attacks in a Multi-Image Setting",
+    "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+    "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+    "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+    "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+    "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+    "Multi-Head Mixture-of-Experts",
+    "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+    "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+    "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales",
+    "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+    "Fast yet Safe: Early-Exiting with Risk Control",
+    "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+    "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+    "Neural Residual Diffusion Models for Deep Scalable Vision Generation",
+    "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+    "Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+    "Why are Visually-Grounded Language Models Bad at Image Classification?"
+  ],
+  "paper_count": 84,
+  "definitions": [
+    {
+      "text": "Standard benchmark for image generation and classification, used here to evaluate class-conditional image generation quality using FID and Inception Score.",
+      "papers": [
+        "A Multi-Level Framework for Accelerating Training Transformer Models",
+        "Bootstrapping Variational Information Pursuit with Large Language and Vision Models for Interpretable Image Classification",
+        "Follow-Up Differential Descriptions: Language Models Resolve Ambiguities for Image Classification",
+        "Frozen Transformers in Language Models Are Effective Visual Encoder Layers",
+        "Inducing High Energy-Latency of Large Vision-Language Models with Verbose Images",
+        "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+        "Language Modeling Is Compression",
+        "Open-ended VQA benchmarking of Vision-Language models by exploiting Classification datasets and their semantic hierarchy",
+        "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+        "Understanding prompt engineering may not require rethinking generalization",
+        "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning",
+        "Bridging Compressed Image Latents and Multimodal Large Language Models",
+        "QAVA: Query-Agnostic Visual Attack to Large Vision-Language Models",
+        "Typographic Attacks in a Multi-Image Setting",
+        "AutoEval Done Right: Using Synthetic Data for Model Evaluation",
+        "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales",
+        "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+        "Fast yet Safe: Early-Exiting with Risk Control",
+        "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+        "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+        "Neural Residual Diffusion Models for Deep Scalable Vision Generation",
+        "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+        "Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models",
+        "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+        "Why are Visually-Grounded Language Models Bad at Image Classification?"
+      ],
+      "original_name": "ImageNet"
+    },
+    {
+      "text": "A large-scale dataset for object recognition and image classification containing over 1.2 million images across 1,000 categories.",
+      "papers": [
+        "MoH: Multi-Head Attention as Mixture-of-Head Attention"
+      ],
+      "original_name": "ImageNet-1K"
+    },
+    {
+      "text": "A large-scale dataset for image classification containing over a million training images and 50,000 validation images across 1,000 distinct classes.",
+      "papers": [
+        "Loss Functions and Operators Generated by f-Divergences"
+      ],
+      "original_name": "ImageNet-2012"
+    },
+    {
+      "text": "A large-scale image dataset with 1000 object classes, commonly used as a benchmark for zero-shot image classification.",
+      "papers": [
+        "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+        "Theory, Analysis, and Best Practices for Sigmoid Self-Attention"
+      ],
+      "original_name": "ImageNet1k"
+    },
+    {
+      "text": "Image classification benchmark used to evaluate pure vision tasks on 1,000 object categories.",
+      "papers": [
+        "Multi-Head Mixture-of-Experts",
+        "CAMEx: Curvature-aware Merging of Experts"
+      ],
+      "original_name": "ImageNet-1k"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Follow-Up Differential Descriptions: Language Models Resolve Ambiguities for Image Classification",
+      "evidence": "We evaluate our method on 12 image recognition datasets. We use the ... ImageNet (Deng et al., 2009)... (Section 4)",
+      "paper_count": 35,
+      "paper_weight": 35.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Follow-Up Differential Descriptions: Language Models Resolve Ambiguities for Image Classification",
+          "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry"
+        ],
+        "neurips24": [
+          "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+          "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+          "MambaTree: Tree Topology is All You Need in State Space Model",
+          "Multi-Head Mixture-of-Experts",
+          "Why are Visually-Grounded Language Models Bad at Image Classification?",
+          "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+          "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+          "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+          "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+          "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate"
+        ],
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+          "OATS: Outlier-Aware Pruning Through Sparse and Low Rank Decomposition",
+          "Tight Clusters Make Specialized Experts",
+          "CAMEx: Curvature-aware Merging of Experts",
+          "RandLoRA: Full rank parameter-efficient fine-tuning of large models",
+          "Mix-LN: Unleashing the Power of Deeper Layers by Combining Pre-LN and Post-LN",
+          "Longhorn: State Space Models are Amortized Online Learners",
+          "MambaQuant: Quantizing the Mamba Family with Variance Aligned Rotation Methods",
+          "SageAttention: Accurate 8-Bit Attention for Plug-and-play Inference Acceleration",
+          "Causal Graphical Models for Vision-Language Compositional Understanding",
+          "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+          "Bridging Compressed Image Latents and Multimodal Large Language Models",
+          "TopoNets: High performing vision and language models with brain-like topography",
+          "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+          "Towards Semantic Equivalence of Tokenization in Multimodal LLM"
+        ],
+        "naacl25": [
+          "QAVA: Query-Agnostic Visual Attack to Large Vision-Language Models"
+        ],
+        "icml25": [
+          "LAuReL: Learned Augmented Residual Layer",
+          "RWKVQuant: Quantizing the RWKV Family with Proxy Guided Hybrid of Scalar and Vector Quantization",
+          "Dynamic Sparse Training of Diagonally Sparse Networks",
+          "LASER: Attention with Exponential Transformation",
+          "MoH: Multi-Head Attention as Mixture-of-Head Attention",
+          "Attention-Only Transformers via Unrolled Subspace Denoising"
+        ],
+        "emnlp25": [
+          "ModalPrompt: Towards Efficient Multimodal Continual Instruction Tuning with Dual-Modality Guided Prompt"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "evidence": "We start by reporting and comparing the alignment scores when using CLIP, SharedCLIP, and AlignCLIP models on the ... ImageNet-1K ... test datasets. (Section 4.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+          "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Image generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+      "evidence": "when evaluating on the ImageNet dataset, a gold standard benchmark for image generation (Section 1).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Language Model Beats Diffusion - Tokenizer is key to visual generation"
+        ],
+        "icml25": [
+          "Elucidating the design space of language models for image generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Understanding prompt engineering may not require rethinking generalization",
+      "evidence": "In this section, we evaluate the generalization of discrete prompts generated by Greedy on CIFAR-10, CIFAR-100, ImageNet as well as domain generalization datasets fMoW (Christie et al., 2018) and OfficeHome (Venkateswara et al., 2017) (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding prompt engineering may not require rethinking generalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+      "evidence": "For domain adaptation, following [82, 7], we train on ImageNet [11] with a 16-shot setting, use the validation split by [82] for hyperparameter selection and report the results on the official validation set (Section 4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": "\"ImageNet, often considered a cornerstone in the field of computer vision, has been widely used as a benchmark to evaluate the performance of image recognition models.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Zero-shot classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "evidence": "a lower proportion of SSC results in decreased accuracy in ImageNet zero-shot classification. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 7,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most papers describe ImageNet-1k as a large-scale image classification or object-recognition benchmark, usually defined over 1,000 categories or classes. Some definitions add scale details, describing over 1.2 million images, or over a million training images plus 50,000 validation images, and papers variously refer to ImageNet1k, ImageNet-1K, ImageNet-2012, or the ILSVRC2012 validation split. A smaller line of work also treats it as a benchmark for class-conditional image generation, while other papers use its images, categories, or class labels to build few-shot classification, fine-grained object VQA, structured-rationale, or attack evaluations."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across papers, ImageNet-1k is linked to 3 constructs and 4 behavioral indicators. The prevailing usage is to measure image classification, with smaller lines of work using it to measure image generation, object recognition, and zero-shot classification. At the construct level, papers also use it to measure multimodal alignment, and more occasionally adaptability and generalization, for example through alignment scores or top-1 zero-shot accuracy on ImageNet, and through 16-shot domain adaptation evaluation."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers do not link it to another measurement instrument. They most often position it as a standard benchmark for training and evaluation: models are trained from scratch or with supervised learning on it, used for pre-training and downstream evaluation, or evaluated with top-1 accuracy, FID, Inception Score, and Brier score depending on the task. Quoted passages also place it in broader benchmark suites alongside CIFAR-10, CIFAR-100, MS-COCO, Flowers102, and Stanford-Cars."
+    }
+  ],
+  "characterization": "What it is. Most papers describe ImageNet-1k as a large-scale image classification or object-recognition benchmark, usually defined over 1,000 categories or classes. Some definitions add scale details, describing over 1.2 million images, or over a million training images plus 50,000 validation images, and papers variously refer to ImageNet1k, ImageNet-1K, ImageNet-2012, or the ILSVRC2012 validation split. A smaller line of work also treats it as a benchmark for class-conditional image generation, while other papers use its images, categories, or class labels to build few-shot classification, fine-grained object VQA, structured-rationale, or attack evaluations.\n\nWhat it is claimed to measure. Across papers, ImageNet-1k is linked to 3 constructs and 4 behavioral indicators. The prevailing usage is to measure image classification, with smaller lines of work using it to measure image generation, object recognition, and zero-shot classification. At the construct level, papers also use it to measure multimodal alignment, and more occasionally adaptability and generalization, for example through alignment scores or top-1 zero-shot accuracy on ImageNet, and through 16-shot domain adaptation evaluation.\n\nSpace of uses. Papers do not link it to another measurement instrument. They most often position it as a standard benchmark for training and evaluation: models are trained from scratch or with supervised learning on it, used for pre-training and downstream evaluation, or evaluated with top-1 accuracy, FID, Inception Score, and Brier score depending on the task. Quoted passages also place it in broader benchmark suites alongside CIFAR-10, CIFAR-100, MS-COCO, Flowers102, and Stanford-Cars.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "A Multi-Level Framework for Accelerating Training Transformer Models",
+      "Bootstrapping Variational Information Pursuit with Large Language and Vision Models for Interpretable Image Classification",
+      "Energy-based Automated Model Evaluation",
+      "Follow-Up Differential Descriptions: Language Models Resolve Ambiguities for Image Classification",
+      "Frozen Transformers in Language Models Are Effective Visual Encoder Layers",
+      "Inducing High Energy-Latency of Large Vision-Language Models with Verbose Images",
+      "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+      "Language Modeling Is Compression",
+      "Open-ended VQA benchmarking of Vision-Language models by exploiting Classification datasets and their semantic hierarchy",
+      "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+      "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+      "Understanding prompt engineering may not require rethinking generalization",
+      "Unleashing the Power of Pre-trained Language Models for Offline Reinforcement Learning"
+    ],
+    "iclr25": [
+      "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+      "Bridging Compressed Image Latents and Multimodal Large Language Models",
+      "CAMEx: Curvature-aware Merging of Experts",
+      "Effective Interplay between Sparsity and Quantization: From Theory to Practice",
+      "Entropy-based Activation Function Optimization: A Method on Searching Better Activation Functions",
+      "Forget the Data and Fine-Tuning! Just Fold the Network to Compress",
+      "JetFormer: An autoregressive generative model of raw images and text",
+      "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+      "Local-Prompt: Extensible Local Prompts for Few-Shot Out-of-Distribution Detection",
+      "Longhorn: State Space Models are Amortized Online Learners",
+      "MambaQuant: Quantizing the Mamba Family with Variance Aligned Rotation Methods",
+      "Mitigate the Gap: Improving Cross-Modal Alignment in CLIP",
+      "Mix-LN: Unleashing the Power of Deeper Layers by Combining Pre-LN and Post-LN",
+      "OATS: Outlier-Aware Pruning Through Sparse and Low Rank Decomposition",
+      "RandLoRA: Full rank parameter-efficient fine-tuning of large models",
+      "Revisit Large-Scale Image-Caption Data in Pre-training Multimodal Foundation Models",
+      "SageAttention: Accurate 8-Bit Attention for Plug-and-play Inference Acceleration",
+      "Small-to-Large Generalization: Training Data Influences Models Consistently Across Scale",
+      "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models",
+      "Theory, Analysis, and Best Practices for Sigmoid Self-Attention",
+      "Tight Clusters Make Specialized Experts",
+      "TokenFormer: Rethinking Transformer Scaling with Tokenized Model Parameters",
+      "TopoNets: High performing vision and language models with brain-like topography",
+      "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+      "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+      "Two Sparse Matrices are Better than One: Sparsifying Neural Networks with Double Sparse Factorization",
+      "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation",
+      "Weighted Multi-Prompt Learning with Description-free Large Language Model Distillation"
+    ],
+    "icml25": [
+      "Attention-Only Transformers via Unrolled Subspace Denoising",
+      "AutoEval Done Right: Using Synthetic Data for Model Evaluation",
+      "Avoiding spurious sharpness minimization broadens applicability of SAM",
+      "Contrastive Localized Language-Image Pre-Training",
+      "Dynamic Sparse Training of Diagonally Sparse Networks",
+      "Elucidating the design space of language models for image generation",
+      "GPTAQ: Efficient Finetuning-Free Quantization for Asymmetric Calibration",
+      "LASER: Attention with Exponential Transformation",
+      "LAuReL: Learned Augmented Residual Layer",
+      "Large Continual Instruction Assistant",
+      "Layer by Layer: Uncovering Hidden Representations in Language Models",
+      "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+      "Loss Functions and Operators Generated by f-Divergences",
+      "MoH: Multi-Head Attention as Mixture-of-Head Attention",
+      "On Understanding Attention-Based In-Context Learning for Categorical Data",
+      "PoisonedEye: Knowledge Poisoning Attack on Retrieval-Augmented Generation based Large Vision-Language Models",
+      "Position: AI Should Not Be An Imitation Game: Centaur Evaluations",
+      "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+      "RWKVQuant: Quantizing the RWKV Family with Proxy Guided Hybrid of Scalar and Vector Quantization",
+      "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+      "SAE-V: Interpreting Multimodal Models for Enhanced Alignment",
+      "Scalable Model Merging with Progressive Layer-wise Distillation",
+      "What If We Recaption Billions of Web Images with LLaMA-3?"
+    ],
+    "naacl25": [
+      "QAVA: Query-Agnostic Visual Attack to Large Vision-Language Models",
+      "Typographic Attacks in a Multi-Image Setting"
+    ],
+    "neurips24": [
+      "4M-21: An Any-to-Any Vision Model for Tens of Tasks and Modalities",
+      "Aligning Vision Models with Human Aesthetics in Retrieval: Benchmarks and Algorithms",
+      "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "LoTLIP: Improving Language-Image Pre-training for Long Text Understanding",
+      "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "Multi-Head Mixture-of-Experts",
+      "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling",
+      "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+      "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales",
+      "CoIN: A Benchmark of Continual Instruction Tuning for Multimodel Large Language Models",
+      "Fast yet Safe: Early-Exiting with Risk Control",
+      "IMPACT: A Large-scale Integrated Multimodal Patent Analysis and Creation Dataset for Design Patents",
+      "IPO: Interpretable Prompt Optimization for Vision-Language Models",
+      "Neural Residual Diffusion Models for Deep Scalable Vision Generation",
+      "PACE: Marrying generalization in PArameter-efficient fine-tuning with Consistency rEgularization",
+      "Text-Guided Attention is All You Need for Zero-Shot Robustness in Vision-Language Models",
+      "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "Why are Visually-Grounded Language Models Bad at Image Classification?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 13,
+    "iclr25": 28,
+    "icml25": 23,
+    "naacl25": 2,
+    "neurips24": 18
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

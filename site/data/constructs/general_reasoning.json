@@ -1,0 +1,243 @@
+{
+  "canonical_name": "General reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats general reasoning as a latent or unobservable model ability to logically process information, solve problems, and understand relationships across diverse or non-specialized domains. A narrower framing appears in one paper, where it is defined as solving individual reasoning tasks or examples without necessarily capturing the common patterns or generic facts shared across multiple examples. The main axis of disagreement is scope: a broad cross-domain capability versus an example-level ability defined in contrast to extracting shared structure across examples.\n\nSpace of facets. Papers do not present a rich internal breakdown of general reasoning. Instead, they mainly locate it by contrast: one paper separates it from abstract reasoning, stating that general reasoning focuses on each single example whereas abstract reasoning considers examples supported by a generic fact as a whole, and the same work reports a substantial discrepancy between the two performances. Other papers contrast it with specialized tasks requiring proprietary or domain-specific knowledge, and with math reasoning as a distinct task category.\n\nSpace of measurement. Papers operationalize general reasoning with 8 linked measurement instruments, and the linked instruments are all benchmarks; there is also 1 linked behavioral indicator, but it appears in a separate causal claim rather than as a benchmark measure. The most frequently linked instruments are BIG-Bench Hard, CommonsenseQA, and MMLU, with other linked benchmarks including DROP and HellaSwag. In practice, papers use benchmark performance on tasks explicitly described as general reasoning, such as 5-shot MMLU, 3-shot Chain-of-Thought BIG-Bench Hard, commonsense benchmarks said to emphasize general reasoning capabilities, and DROP as \"a general reasoning task.\" These operationalizations mostly match the broad task-solving framing, while one definition draws a sharper boundary against abstract reasoning by centering single-example solution rather than generic facts across examples.\n\nLinks. Beyond measurement, one paper claims a causal relationship from Logic puzzle solving to General reasoning, saying that distilling long chains of thought from Knights and Knaves logic puzzles helps a model \"acquire general reasoning skills\" (Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings). Separately, Abstract reasoning is related to General reasoning: one paper reports \"a substantial discrepancy between their general reasoning and abstract reasoning performances\" (Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance). No correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "General reasoning"
+  ],
+  "papers": [
+    "BIG-Bench Extra Hard",
+    "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis",
+    "Synergistic Weak-Strong Collaboration by Aligning Preferences",
+    "Controlling Large Language Model with Latent Action",
+    "DipLLM: Fine-Tuning LLM for Strategic Decision-making in Diplomacy",
+    "G-Designer: Architecting Multi-agent Communication Topologies via Graph Neural Networks",
+    "LAuReL: Learned Augmented Residual Layer",
+    "CulturePark: Boosting Cross-cultural Understanding in Large Language Models",
+    "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "The latent ability to solve individual reasoning tasks or examples without necessarily capturing the common patterns or generic facts underlying multiple examples.",
+      "papers": [
+        "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance",
+        "Synergistic Weak-Strong Collaboration by Aligning Preferences",
+        "Controlling Large Language Model with Latent Action"
+      ],
+      "original_name": "General reasoning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Wasserstein Distances, Neuronal Entanglement, and Sparsity",
+      "evidence": "Finally, to evaluate general reasoning, we test the model on two benchmarks: an easy task, 5-shot MMLU (Hendrycks et al., 2020)... (Section 2.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Wasserstein Distances, Neuronal Entanglement, and Sparsity"
+        ],
+        "emnlp25": [
+          "AnyMAC: Cascading Flexible Multi-Agent Collaboration via Next-Agent Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-Bench Hard",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Wasserstein Distances, Neuronal Entanglement, and Sparsity",
+      "evidence": "Finally, to evaluate general reasoning, we test the model on two benchmarks: ...and a more challenging task, 3-shot Chain-of-Thought (CoT) Big Bench Hard (BBH) (Suzgun et al., 2022). (Section 2.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Wasserstein Distances, Neuronal Entanglement, and Sparsity",
+          "Compute-Constrained Data Selection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis",
+      "evidence": "To evaluate the generalization ability of our method and mitigate the risk of catastrophic forgetting, we conduct experiments on commonsense and reasoning datasets, including CSQA (Talmor et al., 2018), Hellaswag (Zellers et al., 2019), and MMLU-pro (Wang et al., 2024). (Section 5.6)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis"
+        ],
+        "emnlp25": [
+          "Enhancing Chain-of-Thought Reasoning via Neuron Activation Differential Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstract reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance",
+      "evidence": "Our findings reveal a substantial discrepancy between their general reasoning and abstract reasoning performances. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis",
+      "evidence": "To evaluate the generalization ability of our method and mitigate the risk of catastrophic forgetting, we conduct experiments on commonsense and reasoning datasets, including CSQA (Talmor et al., 2018), Hellaswag (Zellers et al., 2019), and MMLU-pro (Wang et al., 2024). (Section 5.6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU-Pro",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis",
+      "evidence": "To evaluate the generalization ability of our method and mitigate the risk of catastrophic forgetting, we conduct experiments on commonsense and reasoning datasets, including CSQA (Talmor et al., 2018), Hellaswag (Zellers et al., 2019), and MMLU-pro (Wang et al., 2024). (Section 5.6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DROP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Controlling Large Language Model with Latent Action",
+      "evidence": "We compare training the language world model with policy (FTA-P) with the baseline (Llama-3.1-8B SFT on the same dataset) in several benchmarks, including math500 (Hendrycks et al., 2021), gsm8k (Cobbe et al., 2021), AIME and Drop (Dua et al., 2019), where the first three are mathematical reasoning tasks, and the fourth is a general reasoning task. (Section 4.3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Controlling Large Language Model with Latent Action"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logic puzzle solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+      "evidence": "In the first stage, we \"warm up\" the model by distilling Long CoTs from a toy domain, namely, Knights & Knaves (K&K) logic puzzles to acquire general reasoning skills. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Cache-of-Thought: Master-Apprentice Framework for Cost-Effective Vision Language Model Reasoning",
+      "evidence": "It evaluates VLMs on both breadth and depth of subject knowledge, as well as on their expert-level reasoning and understanding. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Cache-of-Thought: Master-Apprentice Framework for Cost-Effective Vision Language Model Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Enhancing Chain-of-Thought Reasoning via Neuron Activation Differential Analysis",
+      "evidence": "To demonstrate our method\u2019s generalizability beyond mathematical reasoning, we conduct additional evaluations on the CommonsenseQA and StrategyQA benchmarks, which emphasize general reasoning capabilities.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Enhancing Chain-of-Thought Reasoning via Neuron Activation Differential Analysis"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 8,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats general reasoning as a latent or unobservable model ability to logically process information, solve problems, and understand relationships across diverse or non-specialized domains. A narrower framing appears in one paper, where it is defined as solving individual reasoning tasks or examples without necessarily capturing the common patterns or generic facts shared across multiple examples. The main axis of disagreement is scope: a broad cross-domain capability versus an example-level ability defined in contrast to extracting shared structure across examples."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not present a rich internal breakdown of general reasoning. Instead, they mainly locate it by contrast: one paper separates it from abstract reasoning, stating that general reasoning focuses on each single example whereas abstract reasoning considers examples supported by a generic fact as a whole, and the same work reports a substantial discrepancy between the two performances. Other papers contrast it with specialized tasks requiring proprietary or domain-specific knowledge, and with math reasoning as a distinct task category."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers operationalize general reasoning with 8 linked measurement instruments, and the linked instruments are all benchmarks; there is also 1 linked behavioral indicator, but it appears in a separate causal claim rather than as a benchmark measure. The most frequently linked instruments are BIG-Bench Hard, CommonsenseQA, and MMLU, with other linked benchmarks including DROP and HellaSwag. In practice, papers use benchmark performance on tasks explicitly described as general reasoning, such as 5-shot MMLU, 3-shot Chain-of-Thought BIG-Bench Hard, commonsense benchmarks said to emphasize general reasoning capabilities, and DROP as \"a general reasoning task.\" These operationalizations mostly match the broad task-solving framing, while one definition draws a sharper boundary against abstract reasoning by centering single-example solution rather than generic facts across examples."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper claims a causal relationship from Logic puzzle solving to General reasoning, saying that distilling long chains of thought from Knights and Knaves logic puzzles helps a model \"acquire general reasoning skills\" (Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings). Separately, Abstract reasoning is related to General reasoning: one paper reports \"a substantial discrepancy between their general reasoning and abstract reasoning performances\" (Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance). No correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats general reasoning as a latent or unobservable model ability to logically process information, solve problems, and understand relationships across diverse or non-specialized domains. A narrower framing appears in one paper, where it is defined as solving individual reasoning tasks or examples without necessarily capturing the common patterns or generic facts shared across multiple examples. The main axis of disagreement is scope: a broad cross-domain capability versus an example-level ability defined in contrast to extracting shared structure across examples.\n\nSpace of facets. Papers do not present a rich internal breakdown of general reasoning. Instead, they mainly locate it by contrast: one paper separates it from abstract reasoning, stating that general reasoning focuses on each single example whereas abstract reasoning considers examples supported by a generic fact as a whole, and the same work reports a substantial discrepancy between the two performances. Other papers contrast it with specialized tasks requiring proprietary or domain-specific knowledge, and with math reasoning as a distinct task category.\n\nSpace of measurement. Papers operationalize general reasoning with 8 linked measurement instruments, and the linked instruments are all benchmarks; there is also 1 linked behavioral indicator, but it appears in a separate causal claim rather than as a benchmark measure. The most frequently linked instruments are BIG-Bench Hard, CommonsenseQA, and MMLU, with other linked benchmarks including DROP and HellaSwag. In practice, papers use benchmark performance on tasks explicitly described as general reasoning, such as 5-shot MMLU, 3-shot Chain-of-Thought BIG-Bench Hard, commonsense benchmarks said to emphasize general reasoning capabilities, and DROP as \"a general reasoning task.\" These operationalizations mostly match the broad task-solving framing, while one definition draws a sharper boundary against abstract reasoning by centering single-example solution rather than generic facts across examples.\n\nLinks. Beyond measurement, one paper claims a causal relationship from Logic puzzle solving to General reasoning, saying that distilling long chains of thought from Knights and Knaves logic puzzles helps a model \"acquire general reasoning skills\" (Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings). Separately, Abstract reasoning is related to General reasoning: one paper reports \"a substantial discrepancy between their general reasoning and abstract reasoning performances\" (Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance). No correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "BIG-Bench Extra Hard",
+      "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis",
+      "Synergistic Weak-Strong Collaboration by Aligning Preferences"
+    ],
+    "icml25": [
+      "Controlling Large Language Model with Latent Action",
+      "DipLLM: Fine-Tuning LLM for Strategic Decision-making in Diplomacy",
+      "G-Designer: Architecting Multi-agent Communication Topologies via Graph Neural Networks",
+      "LAuReL: Learned Augmented Residual Layer"
+    ],
+    "neurips24": [
+      "CulturePark: Boosting Cross-cultural Understanding in Large Language Models",
+      "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "icml25": 4,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "icml25",
+    "neurips24"
+  ]
+}

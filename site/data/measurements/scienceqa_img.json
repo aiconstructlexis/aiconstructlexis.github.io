@@ -1,0 +1,133 @@
+{
+  "canonical_name": "ScienceQA-IMG",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing usage treats ScienceQA-IMG, also written as SciQA-IMG, SQAI, or SQA-I, as a multimodal science question answering benchmark with image or visual context. Most descriptions say it contains image-based questions and evaluates reasoning over visual and textual context in science-related problems, while one definition presents SQA-I more specifically as the image-based subset of the ScienceQA benchmark.\n\nWhat it is claimed to measure. Papers use it to measure two constructs and no behavioral indicators: Language bias and Visual understanding. One paper reports zero-shot performance on ScienceQA-IMG and says a model outperforms others by \"successfully alleviating language bias,\" while another uses it when reporting \"superior image understanding capabilities\"; the reported uses are therefore split across those two constructs rather than centered on a single named target.\n\nSpace of uses. Papers often position it as one member of broader evaluation suites: quoted passages describe evaluating models across eight vision-language tasks, 11 mainstream benchmarks, or widely-adopted VLM benchmarks that include ScienceQA-IMG. In these descriptions it appears alongside MMMU, MathVista, and AI2D, and one paper reports accuracy for SciQA-IMG across five resolutions and selects it as a reference task for low-resolution needs.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ScienceQA-IMG",
+    "SciQA-IMG",
+    "SQA-I",
+    "SQAI"
+  ],
+  "papers": [
+    "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+    "Corrupted but Not Broken: Understanding and Mitigating the Negative Impacts of Corrupted Data in Visual Instruction Tuning",
+    "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+    "Task-Aware Resolution Optimization for Visual Large Language Models",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "Matryoshka Query Transformer for Large Vision-Language Models",
+    "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+    "Unveiling Encoder-Free Vision-Language Models"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "A multimodal science question answering benchmark that includes questions with visual context from images.",
+      "papers": [
+        "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+        "Matryoshka Query Transformer for Large Vision-Language Models",
+        "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+        "Unveiling Encoder-Free Vision-Language Models"
+      ],
+      "original_name": "ScienceQA-IMG"
+    },
+    {
+      "text": "Science Question Answering dataset with image-based questions assessing scientific reasoning from visual content.",
+      "papers": [
+        "Task-Aware Resolution Optimization for Visual Large Language Models"
+      ],
+      "original_name": "SciQA-IMG"
+    },
+    {
+      "text": "The image-based subset of the ScienceQA benchmark, which involves multimodal reasoning for science question answering.",
+      "papers": [
+        "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs"
+      ],
+      "original_name": "SQA-I"
+    },
+    {
+      "text": "A science question answering benchmark used to evaluate multimodal reasoning on science-related questions.",
+      "papers": [
+        "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment"
+      ],
+      "original_name": "SQAI"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language bias",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning",
+      "evidence": "Zero-shot performance of different VLMs on ScienceQA-IMG dataset in different split. MMICL outperforms other VLMs by successfully alleviating language bias. (Table 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+      "evidence": "TinyGroundingGPT-3B demonstrates superior image understanding capabilities on the VQAv2, GQA, SQA, and POPE benchmarks",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing usage treats ScienceQA-IMG, also written as SciQA-IMG, SQAI, or SQA-I, as a multimodal science question answering benchmark with image or visual context. Most descriptions say it contains image-based questions and evaluates reasoning over visual and textual context in science-related problems, while one definition presents SQA-I more specifically as the image-based subset of the ScienceQA benchmark."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use it to measure two constructs and no behavioral indicators: Language bias and Visual understanding. One paper reports zero-shot performance on ScienceQA-IMG and says a model outperforms others by \"successfully alleviating language bias,\" while another uses it when reporting \"superior image understanding capabilities\"; the reported uses are therefore split across those two constructs rather than centered on a single named target."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers often position it as one member of broader evaluation suites: quoted passages describe evaluating models across eight vision-language tasks, 11 mainstream benchmarks, or widely-adopted VLM benchmarks that include ScienceQA-IMG. In these descriptions it appears alongside MMMU, MathVista, and AI2D, and one paper reports accuracy for SciQA-IMG across five resolutions and selects it as a reference task for low-resolution needs."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing usage treats ScienceQA-IMG, also written as SciQA-IMG, SQAI, or SQA-I, as a multimodal science question answering benchmark with image or visual context. Most descriptions say it contains image-based questions and evaluates reasoning over visual and textual context in science-related problems, while one definition presents SQA-I more specifically as the image-based subset of the ScienceQA benchmark.\n\nWhat it is claimed to measure. Papers use it to measure two constructs and no behavioral indicators: Language bias and Visual understanding. One paper reports zero-shot performance on ScienceQA-IMG and says a model outperforms others by \"successfully alleviating language bias,\" while another uses it when reporting \"superior image understanding capabilities\"; the reported uses are therefore split across those two constructs rather than centered on a single named target.\n\nSpace of uses. Papers often position it as one member of broader evaluation suites: quoted passages describe evaluating models across eight vision-language tasks, 11 mainstream benchmarks, or widely-adopted VLM benchmarks that include ScienceQA-IMG. In these descriptions it appears alongside MMMU, MathVista, and AI2D, and one paper reports accuracy for SciQA-IMG across five resolutions and selects it as a reference task for low-resolution needs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+      "Corrupted but Not Broken: Understanding and Mitigating the Negative Impacts of Corrupted Data in Visual Instruction Tuning",
+      "SEA: Supervised Embedding Alignment for Token-Level Visual-Textual Integration in MLLMs",
+      "Task-Aware Resolution Optimization for Visual Large Language Models"
+    ],
+    "neurips24": [
+      "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "Matryoshka Query Transformer for Large Vision-Language Models",
+      "Seeing the Image: Prioritizing Visual Correlation by Contrastive Alignment",
+      "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+      "Unveiling Encoder-Free Vision-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4,
+    "neurips24": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

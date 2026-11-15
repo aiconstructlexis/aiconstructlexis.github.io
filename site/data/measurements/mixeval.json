@@ -1,0 +1,159 @@
+{
+  "canonical_name": "MixEval",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, MixEval is most commonly described as a hybrid benchmark for language models that combines 18 ground-truth-based tasks. Some definitions broaden this to a benchmark across a diverse mix of tasks and domains, and one paper frames it as an efficient, gold-standard evaluation paradigm built by strategically mixing off-the-shelf benchmarks after matching real-world user queries mined from the web to similar queries from existing ground-truth benchmarks; another reports a 0.96 correlation to human preferences.\n\nWhat it is claimed to measure. Papers use MixEval to measure four constructs and one behavioral indicator. The linked constructs are alignment, conversational ability, general ability, and reasoning, and the linked behavioral indicator is classification, so the recorded measurement claims are spread across several targets rather than centered on one; the papers describe it as evaluating alignment effectiveness, general capabilities, and generalist chat capabilities.\n\nSpace of uses. In practice, papers often use MixEval alongside other evaluations rather than alone. It appears with Open LLM Leaderboard v2 for benchmark evaluation, with MT-Bench and AlpacaEval2 for generalist chat capabilities using GPT-4o-mini as the judge LLM, and with ARC-Challenge, MMLU-Pro, and several other benchmarks in broader analyses.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MixEval"
+  ],
+  "papers": [
+    "ALLaM: Large Language Models for Arabic and English",
+    "Learn Your Reference Model for Real Good Alignment",
+    "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+    "RMB: Comprehensively benchmarking reward models in LLM alignment",
+    "A Unified Approach to Routing and Cascading for LLMs",
+    "An Architecture Search Framework for Inference-Time Techniques",
+    "LLM Alignment as Retriever Optimization: An Information Retrieval Perspective",
+    "Unnatural Languages Are Not Bugs but Features for LLMs",
+    "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training",
+    "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "A hybrid evaluation benchmark for language models that combines 18 ground-truth-based tasks.",
+      "papers": [
+        "RMB: Comprehensively benchmarking reward models in LLM alignment",
+        "A Unified Approach to Routing and Cascading for LLMs",
+        "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+      ],
+      "original_name": "MixEval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+      "evidence": "To evaluate the general capabilities of the self-play fine-tuned models, we employ MixEval (Ni et al., 2024) and Open LLM Leaderboard v2 (Fourrier et al., 2024) for benchmark evaluation. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "RMB: Comprehensively benchmarking reward models in LLM alignment",
+      "evidence": "\"We evaluate alignment effectiveness using three benchmarks: (1) MixEval ...\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "RMB: Comprehensively benchmarking reward models in LLM alignment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "An Architecture Search Framework for Inference-Time Techniques",
+      "evidence": "For our analysis, we look at seven datasets spanning instruction-following, reasoning, mathematics, and coding: MT-Bench (Zheng et al., 2023), AlpacaEval 2.0 (Li et al., 2023), Arena Hard Auto (Li et al., 2024b), MixEval (Ni et al., 2024), MixEval-Hard, MATH (Hendrycks et al., 2021), and CodeContests (Li et al., 2022). (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "An Architecture Search Framework for Inference-Time Techniques"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "A Unified Approach to Routing and Cascading for LLMs",
+      "evidence": "The classification benchmarks include ARC-Challenge (Clark et al., 2018), MMLU-Pro (Wang et al., 2024), and MixEval (Ni et al., 2024). (Section 5.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "A Unified Approach to Routing and Cascading for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Conversational ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training",
+      "evidence": "For generalist chat capabilities, we use MixEval, AlpacaEval2, and MTBench with GPT-4o-mini as the judge LLM (Ni et al., 2024; Dubois et al., 2024; Zheng et al., 2023). (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, MixEval is most commonly described as a hybrid benchmark for language models that combines 18 ground-truth-based tasks. Some definitions broaden this to a benchmark across a diverse mix of tasks and domains, and one paper frames it as an efficient, gold-standard evaluation paradigm built by strategically mixing off-the-shelf benchmarks after matching real-world user queries mined from the web to similar queries from existing ground-truth benchmarks; another reports a 0.96 correlation to human preferences."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use MixEval to measure four constructs and one behavioral indicator. The linked constructs are alignment, conversational ability, general ability, and reasoning, and the linked behavioral indicator is classification, so the recorded measurement claims are spread across several targets rather than centered on one; the papers describe it as evaluating alignment effectiveness, general capabilities, and generalist chat capabilities."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In practice, papers often use MixEval alongside other evaluations rather than alone. It appears with Open LLM Leaderboard v2 for benchmark evaluation, with MT-Bench and AlpacaEval2 for generalist chat capabilities using GPT-4o-mini as the judge LLM, and with ARC-Challenge, MMLU-Pro, and several other benchmarks in broader analyses."
+    }
+  ],
+  "characterization": "What it is. Across the papers, MixEval is most commonly described as a hybrid benchmark for language models that combines 18 ground-truth-based tasks. Some definitions broaden this to a benchmark across a diverse mix of tasks and domains, and one paper frames it as an efficient, gold-standard evaluation paradigm built by strategically mixing off-the-shelf benchmarks after matching real-world user queries mined from the web to similar queries from existing ground-truth benchmarks; another reports a 0.96 correlation to human preferences.\n\nWhat it is claimed to measure. Papers use MixEval to measure four constructs and one behavioral indicator. The linked constructs are alignment, conversational ability, general ability, and reasoning, and the linked behavioral indicator is classification, so the recorded measurement claims are spread across several targets rather than centered on one; the papers describe it as evaluating alignment effectiveness, general capabilities, and generalist chat capabilities.\n\nSpace of uses. In practice, papers often use MixEval alongside other evaluations rather than alone. It appears with Open LLM Leaderboard v2 for benchmark evaluation, with MT-Bench and AlpacaEval2 for generalist chat capabilities using GPT-4o-mini as the judge LLM, and with ARC-Challenge, MMLU-Pro, and several other benchmarks in broader analyses.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ALLaM: Large Language Models for Arabic and English",
+      "Learn Your Reference Model for Real Good Alignment",
+      "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+      "RMB: Comprehensively benchmarking reward models in LLM alignment"
+    ],
+    "icml25": [
+      "A Unified Approach to Routing and Cascading for LLMs",
+      "An Architecture Search Framework for Inference-Time Techniques",
+      "LLM Alignment as Retriever Optimization: An Information Retrieval Perspective",
+      "Unnatural Languages Are Not Bugs but Features for LLMs",
+      "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training"
+    ],
+    "neurips24": [
+      "MixEval: Deriving Wisdom of the Crowd from LLM Benchmark Mixtures"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 5,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

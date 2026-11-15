@@ -1,0 +1,338 @@
+{
+  "canonical_name": "Language understanding task performance",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is performance on collections of language understanding tasks, often framed through GLUE- or SuperGLUE-style evaluations. These tasks are described as classification, similarity and paraphrase, natural language inference, sentiment analysis, textual entailment, grammatical correctness, and question answering, all requiring comprehension of text inputs. A smaller line of work narrows the behavior to text comprehension, where success means answering questions or producing outputs that require understanding and integrating information from text.\n\nVariants. Papers use several overlapping names for this behavior, including text comprehension, language understanding, natural language understanding, and natural language understanding tasks. The task families mentioned span single-sentence classification, similarity and paraphrase, natural language inference, paraphrase identification, semantic similarity judgment, sentiment analysis, textual entailment, grammatical correctness, and question answering. Some papers also instantiate it on specific understanding-oriented settings such as HotpotQA, XQuAD, and TextVQA.\n\nSpace of elicitation and scores. Papers measure it with 15 instruments. The instruments listed most often are GLUE and MMLU, followed by ARC-Challenge, ARC-Easy, and HellaSwag. The linked measures are mostly benchmark suites or datasets for language understanding evaluation, and one paper also refers to the lm-evaluation-harness project as a source of language benchmarks.\n\nWhat it is taken as evidence of. No construct is linked to it in the reported relationships, so papers do not explicitly present this behavior as evidence of a construct here.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text comprehension",
+    "Language understanding",
+    "Natural language understanding",
+    "Natural language understanding tasks"
+  ],
+  "papers": [
+    "Select-Then-Decompose: From Empirical Analysis to Adaptive Selection Strategy for Task Decomposition in Large Language Models",
+    "The Role of Outgoing Connection Heterogeneity in Feedforward Layers of Large Language Models",
+    "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+    "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning",
+    "Not All Adapters Matter: Selective Adapter Freezing for Memory-Efficient Fine-Tuning of Language Models",
+    "On the Analysis and Distillation of Emergent Outlier Properties in Pre-trained Language Models",
+    "Prompting with Phonemes: Enhancing LLMs' Multilinguality for Non-Latin Script Languages",
+    "SSH: Sparse Spectrum Adaptation via Discrete Hartley Transformation"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "Answering questions or producing outputs that require understanding and integrating information from text.",
+      "papers": [
+        "Select-Then-Decompose: From Empirical Analysis to Adaptive Selection Strategy for Task Decomposition in Large Language Models"
+      ],
+      "original_name": "Text comprehension"
+    },
+    {
+      "text": "Performing a range of language understanding tasks such as those included in SuperGLUE.",
+      "papers": [
+        "The Role of Outgoing Connection Heterogeneity in Feedforward Layers of Large Language Models",
+        "On the Analysis and Distillation of Emergent Outlier Properties in Pre-trained Language Models"
+      ],
+      "original_name": "Language understanding"
+    },
+    {
+      "text": "Performing classification, similarity, paraphrase, and inference tasks on text inputs.",
+      "papers": [
+        "Not All Adapters Matter: Selective Adapter Freezing for Memory-Efficient Fine-Tuning of Language Models",
+        "Prompting with Phonemes: Enhancing LLMs' Multilinguality for Non-Latin Script Languages",
+        "SSH: Sparse Spectrum Adaptation via Discrete Hartley Transformation"
+      ],
+      "original_name": "Natural language understanding"
+    },
+    {
+      "text": "A collection of observable tasks designed to test language comprehension, such as sentiment analysis, textual entailment, and grammatical correctness.",
+      "papers": [
+        "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning"
+      ],
+      "original_name": "Natural language understanding tasks"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+      "evidence": "we evaluate both the zero-shot and few-shot performance of the LLMs on Massively Multitask Language Understanding (MMLU) benchmark (Hendrycks et al., 2021). (Section 4.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+          "NOLA: Compressing LoRA using Linear Combination of Random Basis"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling",
+      "evidence": "MDMs are only advantageous in language understanding tasks (surpassing ARMs and BERT on the GLUE metric (Wang et al., 2018)). (Section 3.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Masked Diffusion Models are Secretly Time-Agnostic Masked Models and Exploit Inaccurate Categorical Sampling"
+        ],
+        "naacl25": [
+          "On the Analysis and Distillation of Emergent Outlier Properties in Pre-trained Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Table 1 presents a comprehensive breakdown of downstream evaluation results for our models and multiple baselines on a standard set of commonsense reasoning and language understanding tasks: WinoGrande [33], HellaSwag [45], PIQA [2], ARC-Challenge and ARC-Easy [6], and LAMBADA [29] (Section 5).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "lm-evaluation-harness",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MambaTree: Tree Topology is All You Need in State Space Model",
+      "evidence": "Then we utilize popular language benchmarks provided in the open-sourced lm-evaluation-harness project [18] for evaluation",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MambaTree: Tree Topology is All You Need in State Space Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Table 1 presents a comprehensive breakdown of downstream evaluation results for our models and multiple baselines on a standard set of commonsense reasoning and language understanding tasks: WinoGrande [33], HellaSwag [45], PIQA [2], ARC-Challenge and ARC-Easy [6], and LAMBADA [29] (Section 5).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Table 1 presents a comprehensive breakdown of downstream evaluation results for our models and multiple baselines on a standard set of commonsense reasoning and language understanding tasks: WinoGrande [33], HellaSwag [45], PIQA [2], ARC-Challenge and ARC-Easy [6], and LAMBADA [29] (Section 5).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoGrande",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Table 1 presents a comprehensive breakdown of downstream evaluation results for our models and multiple baselines on a standard set of commonsense reasoning and language understanding tasks: WinoGrande [33], HellaSwag [45], PIQA [2], ARC-Challenge and ARC-Easy [6], and LAMBADA [29] (Section 5).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SuperGLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+      "evidence": "The first benchmark, SuperGLUE, is a collection of eight challenging language understanding and reasoning tasks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "GaussMark: A Practical Approach for Structural Watermarking of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Easy",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "Table 1 presents a comprehensive breakdown of downstream evaluation results for our models and multiple baselines on a standard set of commonsense reasoning and language understanding tasks: WinoGrande [33], HellaSwag [45], PIQA [2], ARC-Challenge and ARC-Easy [6], and LAMBADA [29] (Section 5).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WSC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "Language Understanding (LU): Lambada-OpenAI [44], Hellaswag-0-shot [65], Winograd-3-shots [30], and WinoGrande-5-shots [54].",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "a language understanding dataset XNLI [Conneau et al., 2018] in natural language inference (NLI) task were used. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XQuAD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "How do Large Language Models Handle Multilingualism?",
+      "evidence": "Employing various benchmark tasks, including XQuAD (Artetxe et al., 2020) for understanding, MGSM (Shi et al., 2022) for reasoning, X-CSQA (Lin et al., 2021) for knowledge extraction, and XLSum for generation (Hasan et al., 2021)... (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "How do Large Language Models Handle Multilingualism?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LAMBADA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models",
+      "evidence": "\u201ca standard set of commonsense reasoning and language understanding tasks: WinoGrande [33], HellaSwag [45], PIQA [2], ARC-Challenge and ARC-Easy [6], and LAMBADA [29].\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers to SSMs: Distilling Quadratic Knowledge to Subquadratic Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Locality Alignment Improves Vision-Language Models",
+      "evidence": "Benchmarks that involve spatial understanding and fine-grained features include ... text comprehension (TextVQA; Singh et al. 2019). (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Locality Alignment Improves Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Select-Then-Decompose: From Empirical Analysis to Adaptive Selection Strategy for Task Decomposition in Large Language Models",
+      "evidence": "Comparison of decomposition approaches across benchmarks. Method ... Text Understanding ... HotpotQA (Table 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Select-Then-Decompose: From Empirical Analysis to Adaptive Selection Strategy for Task Decomposition in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 15,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 15,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is performance on collections of language understanding tasks, often framed through GLUE- or SuperGLUE-style evaluations. These tasks are described as classification, similarity and paraphrase, natural language inference, sentiment analysis, textual entailment, grammatical correctness, and question answering, all requiring comprehension of text inputs. A smaller line of work narrows the behavior to text comprehension, where success means answering questions or producing outputs that require understanding and integrating information from text."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several overlapping names for this behavior, including text comprehension, language understanding, natural language understanding, and natural language understanding tasks. The task families mentioned span single-sentence classification, similarity and paraphrase, natural language inference, paraphrase identification, semantic similarity judgment, sentiment analysis, textual entailment, grammatical correctness, and question answering. Some papers also instantiate it on specific understanding-oriented settings such as HotpotQA, XQuAD, and TextVQA."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers measure it with 15 instruments. The instruments listed most often are GLUE and MMLU, followed by ARC-Challenge, ARC-Easy, and HellaSwag. The linked measures are mostly benchmark suites or datasets for language understanding evaluation, and one paper also refers to the lm-evaluation-harness project as a source of language benchmarks."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it in the reported relationships, so papers do not explicitly present this behavior as evidence of a construct here."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is performance on collections of language understanding tasks, often framed through GLUE- or SuperGLUE-style evaluations. These tasks are described as classification, similarity and paraphrase, natural language inference, sentiment analysis, textual entailment, grammatical correctness, and question answering, all requiring comprehension of text inputs. A smaller line of work narrows the behavior to text comprehension, where success means answering questions or producing outputs that require understanding and integrating information from text.\n\nVariants. Papers use several overlapping names for this behavior, including text comprehension, language understanding, natural language understanding, and natural language understanding tasks. The task families mentioned span single-sentence classification, similarity and paraphrase, natural language inference, paraphrase identification, semantic similarity judgment, sentiment analysis, textual entailment, grammatical correctness, and question answering. Some papers also instantiate it on specific understanding-oriented settings such as HotpotQA, XQuAD, and TextVQA.\n\nSpace of elicitation and scores. Papers measure it with 15 instruments. The instruments listed most often are GLUE and MMLU, followed by ARC-Challenge, ARC-Easy, and HellaSwag. The linked measures are mostly benchmark suites or datasets for language understanding evaluation, and one paper also refers to the lm-evaluation-harness project as a source of language benchmarks.\n\nWhat it is taken as evidence of. No construct is linked to it in the reported relationships, so papers do not explicitly present this behavior as evidence of a construct here.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Select-Then-Decompose: From Empirical Analysis to Adaptive Selection Strategy for Task Decomposition in Large Language Models",
+      "The Role of Outgoing Connection Heterogeneity in Feedforward Layers of Large Language Models"
+    ],
+    "icml25": [
+      "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+      "LIFT the Veil for the Truth: Principal Weights Emerge after Rank Reduction for Reasoning-Focused Supervised Fine-Tuning"
+    ],
+    "naacl25": [
+      "Not All Adapters Matter: Selective Adapter Freezing for Memory-Efficient Fine-Tuning of Language Models",
+      "On the Analysis and Distillation of Emergent Outlier Properties in Pre-trained Language Models",
+      "Prompting with Phonemes: Enhancing LLMs' Multilinguality for Non-Latin Script Languages",
+      "SSH: Sparse Spectrum Adaptation via Discrete Hartley Transformation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "icml25": 2,
+    "naacl25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

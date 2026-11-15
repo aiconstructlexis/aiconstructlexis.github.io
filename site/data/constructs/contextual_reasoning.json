@@ -1,0 +1,166 @@
+{
+  "canonical_name": "Contextual reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats contextual reasoning as an ability to use surrounding context, rather than literal keyword matching or other surface cues, to infer what is relevant. Most definitions describe it broadly as understanding instruction, semantic, situational, or code context and then inferring objects, judgments, or vulnerabilities, and one paper says deontic judgments are \"logical and context-sensitive\" and require reasoning about social norms, conditional obligations, and moral exceptions. A smaller line of work uses nearby labels for narrower settings, including inferring user interests and multi-subject relations within a query context, or reasoning over sequences by selectively focusing on relevant context. Definitions differ mainly in what counts as context and in whether the construct is presented as a latent ability, a task requirement, or an architecture-associated capability.\n\nSpace of facets. Instead of a single taxonomy, papers use several nearby framings for related capabilities. One cluster centers on contextual understanding for instruction following, deontic or compliance judgments, and vulnerability analysis, where the relevant context includes situational or functional relations, social norms, roles and transmission principles, or surrounding code and path-sensitive information. Another paper speaks of \"contextual reasoning primitives\" built from provided context, variable bindings, or sequence structure, and nearby labels narrow the scope further to query-bound inference over user interests and multi-subject relations, or selective focus on relevant sequence context.\n\nSpace of measurement. Papers link contextual reasoning to three measurement instruments and no behavioral indicators. The linked operationalizations are all benchmark-style datasets: LongBench, using Single-Doc QA and Multi-Doc QA to assess contextual reasoning; MemeReaCon, described as specifically constructed to evaluate the fine-grained contextual reasoning needed to understand memes in online posts; and PubMedQA, where long-context QA samples and perplexity on long answers are used to assess it. Taken together, these measures operationalize the construct through question answering over single, multiple, or long documents, and through contextual meme understanding, which matches the common emphasis on inferring from surrounding context.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Contextual reasoning",
+    "Context-specific reasoning",
+    "Context-aware reasoning"
+  ],
+  "papers": [
+    "Deontological Keyword Bias: The Impact of Modal Expressions on Normative Judgments of Language Models",
+    "Just a Scratch: Enhancing LLM Capabilities for Self-harm Detection through Intent Differentiation and Emoji Interpretation",
+    "Mind the Gesture: Evaluating AI Sensitivity to Culturally Offensive Non-Verbal Gestures",
+    "Predicting Implicit Arguments in Procedural Video Instructions",
+    "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+    "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning",
+    "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models",
+    "SPIRIT: Patching Speech Language Models against Jailbreak Attacks",
+    "Weaver: Interweaving SQL and LLM for Table Reasoning",
+    "Ins-DetCLIP: Aligning Detection Model to Follow Human-Language Instruction",
+    "IRIS: LLM-Assisted Static Analysis for Detecting Security Vulnerabilities",
+    "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+    "VCR: A Task for Pixel-Level Complex Reasoning in Vision Language Models via Restoring Occluded Text",
+    "On the Inductive Bias of Stacking Towards Improving Reasoning",
+    "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "The ability to understand the context within an instruction and infer relevant objects based on situational or functional relationships, rather than literal keyword matching.",
+      "papers": [
+        "Ins-DetCLIP: Aligning Detection Model to Follow Human-Language Instruction",
+        "IRIS: LLM-Assisted Static Analysis for Detecting Security Vulnerabilities",
+        "Deontological Keyword Bias: The Impact of Modal Expressions on Normative Judgments of Language Models",
+        "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning"
+      ],
+      "original_name": "Contextual reasoning"
+    },
+    {
+      "text": "The latent ability to infer user interests, understand specialized field descriptions, and deduce relationships involving multiple subjects within a specific query context.",
+      "papers": [
+        "STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases"
+      ],
+      "original_name": "Context-specific reasoning"
+    },
+    {
+      "text": "The ability to reason about sequences by selectively focusing on relevant context, a key feature of the Mamba architecture.",
+      "papers": [
+        "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation"
+      ],
+      "original_name": "Context-aware reasoning"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+      "evidence": "For LongBench, we use datasets from the Single-Doc QA and Multi-Doc QA categories to assess contextual reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PubMedQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing",
+      "evidence": "we select the PubMedQA dataset and derive long-context QA samples to evaluate the effectiveness of HMT. Two metrics are employed: for long answers, we compute the PPL to assess the contextual reasoning of HMT (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MemeReaCon",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models",
+      "evidence": "MemeReaCon occupies a unique position by being the first benchmark, to our knowledge, specifically constructed to evaluate the fine-grained contextual reasoning required to understand memes as they are used in online posts. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats contextual reasoning as an ability to use surrounding context, rather than literal keyword matching or other surface cues, to infer what is relevant. Most definitions describe it broadly as understanding instruction, semantic, situational, or code context and then inferring objects, judgments, or vulnerabilities, and one paper says deontic judgments are \"logical and context-sensitive\" and require reasoning about social norms, conditional obligations, and moral exceptions. A smaller line of work uses nearby labels for narrower settings, including inferring user interests and multi-subject relations within a query context, or reasoning over sequences by selectively focusing on relevant context. Definitions differ mainly in what counts as context and in whether the construct is presented as a latent ability, a task requirement, or an architecture-associated capability."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Instead of a single taxonomy, papers use several nearby framings for related capabilities. One cluster centers on contextual understanding for instruction following, deontic or compliance judgments, and vulnerability analysis, where the relevant context includes situational or functional relations, social norms, roles and transmission principles, or surrounding code and path-sensitive information. Another paper speaks of \"contextual reasoning primitives\" built from provided context, variable bindings, or sequence structure, and nearby labels narrow the scope further to query-bound inference over user interests and multi-subject relations, or selective focus on relevant sequence context."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link contextual reasoning to three measurement instruments and no behavioral indicators. The linked operationalizations are all benchmark-style datasets: LongBench, using Single-Doc QA and Multi-Doc QA to assess contextual reasoning; MemeReaCon, described as specifically constructed to evaluate the fine-grained contextual reasoning needed to understand memes in online posts; and PubMedQA, where long-context QA samples and perplexity on long answers are used to assess it. Taken together, these measures operationalize the construct through question answering over single, multiple, or long documents, and through contextual meme understanding, which matches the common emphasis on inferring from surrounding context."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats contextual reasoning as an ability to use surrounding context, rather than literal keyword matching or other surface cues, to infer what is relevant. Most definitions describe it broadly as understanding instruction, semantic, situational, or code context and then inferring objects, judgments, or vulnerabilities, and one paper says deontic judgments are \"logical and context-sensitive\" and require reasoning about social norms, conditional obligations, and moral exceptions. A smaller line of work uses nearby labels for narrower settings, including inferring user interests and multi-subject relations within a query context, or reasoning over sequences by selectively focusing on relevant context. Definitions differ mainly in what counts as context and in whether the construct is presented as a latent ability, a task requirement, or an architecture-associated capability.\n\nSpace of facets. Instead of a single taxonomy, papers use several nearby framings for related capabilities. One cluster centers on contextual understanding for instruction following, deontic or compliance judgments, and vulnerability analysis, where the relevant context includes situational or functional relations, social norms, roles and transmission principles, or surrounding code and path-sensitive information. Another paper speaks of \"contextual reasoning primitives\" built from provided context, variable bindings, or sequence structure, and nearby labels narrow the scope further to query-bound inference over user interests and multi-subject relations, or selective focus on relevant sequence context.\n\nSpace of measurement. Papers link contextual reasoning to three measurement instruments and no behavioral indicators. The linked operationalizations are all benchmark-style datasets: LongBench, using Single-Doc QA and Multi-Doc QA to assess contextual reasoning; MemeReaCon, described as specifically constructed to evaluate the fine-grained contextual reasoning needed to understand memes in online posts; and PubMedQA, where long-context QA samples and perplexity on long answers are used to assess it. Taken together, these measures operationalize the construct through question answering over single, multiple, or long documents, and through contextual meme understanding, which matches the common emphasis on inferring from surrounding context.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Deontological Keyword Bias: The Impact of Modal Expressions on Normative Judgments of Language Models",
+      "Just a Scratch: Enhancing LLM Capabilities for Self-harm Detection through Intent Differentiation and Emoji Interpretation",
+      "Mind the Gesture: Evaluating AI Sensitivity to Culturally Offensive Non-Verbal Gestures",
+      "Predicting Implicit Arguments in Procedural Video Instructions"
+    ],
+    "emnlp25": [
+      "ChartMind: A Comprehensive Benchmark for Complex Real-world Multimodal Chart Question Answering",
+      "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning",
+      "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models",
+      "SPIRIT: Patching Speech Language Models against Jailbreak Attacks",
+      "Weaver: Interweaving SQL and LLM for Table Reasoning"
+    ],
+    "iclr24": [
+      "Ins-DetCLIP: Aligning Detection Model to Follow Human-Language Instruction"
+    ],
+    "iclr25": [
+      "IRIS: LLM-Assisted Static Analysis for Detecting Security Vulnerabilities",
+      "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+      "VCR: A Task for Pixel-Level Complex Reasoning in Vision Language Models via Restoring Occluded Text"
+    ],
+    "neurips24": [
+      "On the Inductive Bias of Stacking Towards Improving Reasoning",
+      "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+      "STaRK: Benchmarking LLM Retrieval on Textual and Relational Knowledge Bases"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 5,
+    "iclr24": 1,
+    "iclr25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

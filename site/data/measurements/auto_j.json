@@ -1,0 +1,107 @@
+{
+  "canonical_name": "AUTO-J",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, AUTO-J is most commonly treated as an automated judge, described as a 13B-parameter generative judge model or more generally an LLM-based evaluator. Definitions emphasize its use for rating response helpfulness on a numeric scale, while another description says it is used to assess the distance between a reference answer and a model output. Some authors distinguish AutoJ Eval, an in-domain pairwise-comparison test set from AUTO-J with 58 prompts and 1,392 response pairs labeled by human annotators as win, tie, or lose.\n\nWhat it is claimed to measure. The reported measurement claims are narrow rather than spread across many targets: papers link AUTO-J to one construct, Helpfulness, and one behavioral indicator, Text summarization. For Helpfulness, papers use it to provide ratings on a 1 to 10 scale for model responses; for Text summarization, a paper reports using the Auto-J model to measure the win rate of model-generated summaries against human summaries.\n\nSpace of uses. Papers position AUTO-J mainly as an automated evaluator or judge. It is used alongside other evaluators in some reports, including joint rating with GPT-4, and one paper mentions it with ARES and PROMETHEUS as LLM judges for assessing reference-output distance. A smaller usage treats AutoJ Eval as an in-domain pairwise-comparison set with human preference labels.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "AUTO-J",
+    "AutoJ Eval"
+  ],
+  "papers": [
+    "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+    "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+    "Towards Federated RLHF with Aggregated Client Preference for LLMs",
+    "Alignment for Honesty",
+    "CriticEval: Evaluating Large-scale Language Model as Critic"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A 13B-parameter generative judge model used as an automated evaluator to rate the helpfulness of model responses on a numeric scale.",
+      "papers": [
+        "Alignment for Honesty",
+        "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction"
+      ],
+      "original_name": "AUTO-J"
+    },
+    {
+      "text": "An in-domain pairwise-comparison test set from AUTO-J containing 58 prompts and 1,392 response pairs labeled as win, tie, or lose.",
+      "papers": [
+        "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models"
+      ],
+      "original_name": "AutoJ Eval"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Alignment for Honesty",
+      "evidence": "To evaluate the model\u2019s responses, we enlist the assistance of both AUTO-J (Li et al., 2023a) and GPT-4 (i.e., gpt-4-0613; OpenAI (2023a)), which provide ratings on a scale of 1 to 10. (Section 4.6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Alignment for Honesty"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Towards Federated RLHF with Aggregated Client Preference for LLMs",
+      "evidence": "Since human-labeled summaries are available, we measure the win rate of the model-generated summaries against the human ones using the Auto-J model (Li et al., 2023a). (Section 7.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Towards Federated RLHF with Aggregated Client Preference for LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, AUTO-J is most commonly treated as an automated judge, described as a 13B-parameter generative judge model or more generally an LLM-based evaluator. Definitions emphasize its use for rating response helpfulness on a numeric scale, while another description says it is used to assess the distance between a reference answer and a model output. Some authors distinguish AutoJ Eval, an in-domain pairwise-comparison test set from AUTO-J with 58 prompts and 1,392 response pairs labeled by human annotators as win, tie, or lose."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The reported measurement claims are narrow rather than spread across many targets: papers link AUTO-J to one construct, Helpfulness, and one behavioral indicator, Text summarization. For Helpfulness, papers use it to provide ratings on a 1 to 10 scale for model responses; for Text summarization, a paper reports using the Auto-J model to measure the win rate of model-generated summaries against human summaries."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers position AUTO-J mainly as an automated evaluator or judge. It is used alongside other evaluators in some reports, including joint rating with GPT-4, and one paper mentions it with ARES and PROMETHEUS as LLM judges for assessing reference-output distance. A smaller usage treats AutoJ Eval as an in-domain pairwise-comparison set with human preference labels."
+    }
+  ],
+  "characterization": "What it is. Across the papers, AUTO-J is most commonly treated as an automated judge, described as a 13B-parameter generative judge model or more generally an LLM-based evaluator. Definitions emphasize its use for rating response helpfulness on a numeric scale, while another description says it is used to assess the distance between a reference answer and a model output. Some authors distinguish AutoJ Eval, an in-domain pairwise-comparison test set from AUTO-J with 58 prompts and 1,392 response pairs labeled by human annotators as win, tie, or lose.\n\nWhat it is claimed to measure. The reported measurement claims are narrow rather than spread across many targets: papers link AUTO-J to one construct, Helpfulness, and one behavioral indicator, Text summarization. For Helpfulness, papers use it to provide ratings on a 1 to 10 scale for model responses; for Text summarization, a paper reports using the Auto-J model to measure the win rate of model-generated summaries against human summaries.\n\nSpace of uses. Papers position AUTO-J mainly as an automated evaluator or judge. It is used alongside other evaluators in some reports, including joint rating with GPT-4, and one paper mentions it with ARES and PROMETHEUS as LLM judges for assessing reference-output distance. A smaller usage treats AutoJ Eval as an in-domain pairwise-comparison set with human preference labels.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "SaMer: A Scenario-aware Multi-dimensional Evaluator for Large Language Models",
+      "SePer: Measure Retrieval Utility Through The Lens Of Semantic Perplexity Reduction",
+      "Towards Federated RLHF with Aggregated Client Preference for LLMs"
+    ],
+    "neurips24": [
+      "Alignment for Honesty",
+      "CriticEval: Evaluating Large-scale Language Model as Critic"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

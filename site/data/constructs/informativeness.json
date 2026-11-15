@@ -1,0 +1,245 @@
+{
+  "canonical_name": "Informativeness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats informativeness as the extent to which an output provides relevant, useful, sufficiently detailed information, often with an added expectation of completeness. Many definitions phrase this as adequate or engaging detail in a coherent plot, relevant and complete commentary, or summaries that capture all relevant and key details without omission, and one definition explicitly anchors the judgment in human evaluation. A smaller line of work narrows it to preserving useful non-conflicting content during revision, to reasoning steps that add new and non-redundant information, or to information-dense latent factors, synthetic samples, and even harmful responses; the main variation is the object being judged and whether novelty or non-redundancy is part of the criterion.\n\nSpace of facets. Papers do not offer a single taxonomy, but a recurring breakdown equates informativeness with relevance and completeness, and sometimes with being insightful. Other papers systematize it through novelty and concision, describing informative steps as adding new, relevant information without repetition, and informative summaries as capturing essential event information while not being overly verbose. Informativeness is also positioned beside fluency and coherence as one of several generation criteria, and beside truthfulness in evaluation settings, rather than using those terms interchangeably.\n\nSpace of measurement. Papers link informativeness to 4 measurement instruments and no behavioral indicators. The most common operationalizations are Human evaluation and LLM-as-a-judge, followed by the TruthfulQA benchmark and the FreshWiki dataset: papers report manual ratings of informativeness, judge models or GPT-4 informative scores, TruthfulQA's INFO metric, and dataset performance in informativeness and verifiability. These operationalizations mostly score outputs directly, which matches definitions centered on useful, relevant, and complete information, though some evaluations pair informativeness with truthfulness, fluency, coherence, or verifiability.\n\nLinks. Papers link informativeness to 2 constructs. Several papers report that it is related to Truthfulness, noting both that unassessed informativeness can coincide with misleadingly high truthfulness scores and that a truthful answer may still be not informative, for example \"I have no comment.\" One paper claims a causal relationship from informativeness to Harmlessness; its evidence states that informativeness, together with actionability, is an attribute in inducing harm when a jailbroken response is followed by individuals without specialized knowledge.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Informativeness"
+  ],
+  "papers": [
+    "Hierarchical Memory Organization for Wikipedia Generation",
+    "Sightation Counts: Leveraging Sighted User Feedback in Building a BLV-aligned Dataset of Diagram Descriptions",
+    "Truth Knows No Language: Evaluating Truthfulness Beyond English",
+    "uMedSum: A Unified Framework for Clinical Abstractive Summarization",
+    "Active Layer-Contrastive Decoding Reduces Hallucination in Large Language Model Generation",
+    "CondenseLM: LLMs-driven Text Dataset Condensation via Reward Matching",
+    "Data Descriptions from Large Language Models with Influence Estimation",
+    "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+    "DischargeSim: A Simulation Benchmark for Educational Doctor\u2013Patient Communication at Discharge",
+    "Evaluating Taxonomy Free Character Role Labeling (TF-CRL) in News Stories using Large Language Models",
+    "Explaining Differences Between Model Pairs in Natural Language through Sample Learning",
+    "Improving Neutral Point-of-View Generation with Data- and Parameter-Efficient RL",
+    "Paired by the Teacher: Turning Unpaired Data into High-Fidelity Pairs for Low-Resource Text Generation",
+    "PruneCD: Contrasting Pruned Self Model to Improve Decoding Factuality",
+    "The Good, the Bad, and the Debatable: A Survey on the Impacts of Data for In-Context Learning",
+    "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation",
+    "Language Model Decoding as Direct Metrics Optimization",
+    "Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation",
+    "Selective Prompt Anchoring for Code Generation",
+    "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+    "TruthFlow: Truthful LLM Generation via Representation Flow Correction",
+    "Bridging the Gap between Expert and Language Models: Concept-guided Chess Commentary Generation and Evaluation",
+    "DTELS: Towards Dynamic Granularity of Timeline Summarization",
+    "Latent Factor Models Meets Instructions: Goal-conditioned Latent Factor Discovery without Task Supervision",
+    "MiCEval: Unveiling Multimodal Chain of Thought's Quality via Image Description and Reasoning Steps",
+    "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+    "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+    "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+  ],
+  "paper_count": 28,
+  "definitions": [
+    {
+      "text": "The extent to which generated text provides adequate, engaging detail in a coherent plot according to human judgment.",
+      "papers": [
+        "Language Model Decoding as Direct Metrics Optimization",
+        "Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation",
+        "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+        "MiCEval: Unveiling Multimodal Chain of Thought's Quality via Image Description and Reasoning Steps",
+        "Latent Factor Models Meets Instructions: Goal-conditioned Latent Factor Discovery without Task Supervision",
+        "Bridging the Gap between Expert and Language Models: Concept-guided Chess Commentary Generation and Evaluation",
+        "DTELS: Towards Dynamic Granularity of Timeline Summarization",
+        "uMedSum: A Unified Framework for Clinical Abstractive Summarization",
+        "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+        "CondenseLM: LLMs-driven Text Dataset Condensation via Reward Matching"
+      ],
+      "original_name": "Informativeness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Truth Knows No Language: Evaluating Truthfulness Beyond English",
+      "evidence": "TruthfulQA (Lin et al., 2022) is perhaps the most popular benchmark to evaluate truthfulness in LLMs, a benchmark to assess the truthfulness and informativeness of LLMs by focusing on imitative falsehoods. (Section 1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Truth Knows No Language: Evaluating Truthfulness Beyond English"
+        ],
+        "icml25": [
+          "Selective Prompt Anchoring for Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Truth Knows No Language: Evaluating Truthfulness Beyond English",
+      "evidence": "We perform a manual evaluation of 400 responses for truthfulness and informativeness... (Section 3.2.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Truth Knows No Language: Evaluating Truthfulness Beyond English"
+        ],
+        "emnlp25": [
+          "Explaining Differences Between Model Pairs in Natural Language through Sample Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Truth Knows No Language: Evaluating Truthfulness Beyond English",
+      "evidence": "We also train several judge models for informativeness following the same procedure as for truthfulness. (Section 3.2.4)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Truth Knows No Language: Evaluating Truthfulness Beyond English"
+        ],
+        "icml25": [
+          "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Truth Knows No Language: Evaluating Truthfulness Beyond English",
+      "evidence": "This finding highlights the critical importance of assessing informativeness metrics specifically for non-instruction-tuned models, as failing to do so may result in misleadingly high truthfulness scores. (Section 5)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Truth Knows No Language: Evaluating Truthfulness Beyond English"
+        ],
+        "icml25": [
+          "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FreshWiki",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Hierarchical Memory Organization for Wikipedia Generation",
+      "evidence": "We conduct extensive experiments on the FreshWiki dataset and our newly constructed WikiStart dataset, demonstrating that MOG achieves state-of-the-art performance in both informativeness and verifiability. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Hierarchical Memory Organization for Wikipedia Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+      "evidence": "Through human evaluation, we determine actionability and informativeness as key attributes in inducing harm when the jailbroken response is followed by individuals without specialized knowledge. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats informativeness as the extent to which an output provides relevant, useful, sufficiently detailed information, often with an added expectation of completeness. Many definitions phrase this as adequate or engaging detail in a coherent plot, relevant and complete commentary, or summaries that capture all relevant and key details without omission, and one definition explicitly anchors the judgment in human evaluation. A smaller line of work narrows it to preserving useful non-conflicting content during revision, to reasoning steps that add new and non-redundant information, or to information-dense latent factors, synthetic samples, and even harmful responses; the main variation is the object being judged and whether novelty or non-redundancy is part of the criterion."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not offer a single taxonomy, but a recurring breakdown equates informativeness with relevance and completeness, and sometimes with being insightful. Other papers systematize it through novelty and concision, describing informative steps as adding new, relevant information without repetition, and informative summaries as capturing essential event information while not being overly verbose. Informativeness is also positioned beside fluency and coherence as one of several generation criteria, and beside truthfulness in evaluation settings, rather than using those terms interchangeably."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link informativeness to 4 measurement instruments and no behavioral indicators. The most common operationalizations are Human evaluation and LLM-as-a-judge, followed by the TruthfulQA benchmark and the FreshWiki dataset: papers report manual ratings of informativeness, judge models or GPT-4 informative scores, TruthfulQA's INFO metric, and dataset performance in informativeness and verifiability. These operationalizations mostly score outputs directly, which matches definitions centered on useful, relevant, and complete information, though some evaluations pair informativeness with truthfulness, fluency, coherence, or verifiability."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link informativeness to 2 constructs. Several papers report that it is related to Truthfulness, noting both that unassessed informativeness can coincide with misleadingly high truthfulness scores and that a truthful answer may still be not informative, for example \"I have no comment.\" One paper claims a causal relationship from informativeness to Harmlessness; its evidence states that informativeness, together with actionability, is an attribute in inducing harm when a jailbroken response is followed by individuals without specialized knowledge."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats informativeness as the extent to which an output provides relevant, useful, sufficiently detailed information, often with an added expectation of completeness. Many definitions phrase this as adequate or engaging detail in a coherent plot, relevant and complete commentary, or summaries that capture all relevant and key details without omission, and one definition explicitly anchors the judgment in human evaluation. A smaller line of work narrows it to preserving useful non-conflicting content during revision, to reasoning steps that add new and non-redundant information, or to information-dense latent factors, synthetic samples, and even harmful responses; the main variation is the object being judged and whether novelty or non-redundancy is part of the criterion.\n\nSpace of facets. Papers do not offer a single taxonomy, but a recurring breakdown equates informativeness with relevance and completeness, and sometimes with being insightful. Other papers systematize it through novelty and concision, describing informative steps as adding new, relevant information without repetition, and informative summaries as capturing essential event information while not being overly verbose. Informativeness is also positioned beside fluency and coherence as one of several generation criteria, and beside truthfulness in evaluation settings, rather than using those terms interchangeably.\n\nSpace of measurement. Papers link informativeness to 4 measurement instruments and no behavioral indicators. The most common operationalizations are Human evaluation and LLM-as-a-judge, followed by the TruthfulQA benchmark and the FreshWiki dataset: papers report manual ratings of informativeness, judge models or GPT-4 informative scores, TruthfulQA's INFO metric, and dataset performance in informativeness and verifiability. These operationalizations mostly score outputs directly, which matches definitions centered on useful, relevant, and complete information, though some evaluations pair informativeness with truthfulness, fluency, coherence, or verifiability.\n\nLinks. Papers link informativeness to 2 constructs. Several papers report that it is related to Truthfulness, noting both that unassessed informativeness can coincide with misleadingly high truthfulness scores and that a truthful answer may still be not informative, for example \"I have no comment.\" One paper claims a causal relationship from informativeness to Harmlessness; its evidence states that informativeness, together with actionability, is an attribute in inducing harm when a jailbroken response is followed by individuals without specialized knowledge.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Hierarchical Memory Organization for Wikipedia Generation",
+      "Sightation Counts: Leveraging Sighted User Feedback in Building a BLV-aligned Dataset of Diagram Descriptions",
+      "Truth Knows No Language: Evaluating Truthfulness Beyond English",
+      "uMedSum: A Unified Framework for Clinical Abstractive Summarization"
+    ],
+    "emnlp25": [
+      "Active Layer-Contrastive Decoding Reduces Hallucination in Large Language Model Generation",
+      "CondenseLM: LLMs-driven Text Dataset Condensation via Reward Matching",
+      "Data Descriptions from Large Language Models with Influence Estimation",
+      "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+      "DischargeSim: A Simulation Benchmark for Educational Doctor\u2013Patient Communication at Discharge",
+      "Evaluating Taxonomy Free Character Role Labeling (TF-CRL) in News Stories using Large Language Models",
+      "Explaining Differences Between Model Pairs in Natural Language through Sample Learning",
+      "Improving Neutral Point-of-View Generation with Data- and Parameter-Efficient RL",
+      "Paired by the Teacher: Turning Unpaired Data into High-Fidelity Pairs for Low-Resource Text Generation",
+      "PruneCD: Contrasting Pruned Self Model to Improve Decoding Factuality",
+      "The Good, the Bad, and the Debatable: A Survey on the Impacts of Data for In-Context Learning",
+      "Threading the Needle: Reweaving Chain-of-Thought Reasoning to Explain Human Label Variation"
+    ],
+    "iclr24": [
+      "Language Model Decoding as Direct Metrics Optimization",
+      "Self-contradictory Hallucinations of Large Language Models: Evaluation, Detection and Mitigation"
+    ],
+    "icml25": [
+      "Selective Prompt Anchoring for Code Generation",
+      "Speak Easy: Eliciting Harmful Jailbreaks from LLMs with Simple Interactions",
+      "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+    ],
+    "naacl25": [
+      "Bridging the Gap between Expert and Language Models: Concept-guided Chess Commentary Generation and Evaluation",
+      "DTELS: Towards Dynamic Granularity of Timeline Summarization",
+      "Latent Factor Models Meets Instructions: Goal-conditioned Latent Factor Discovery without Task Supervision",
+      "MiCEval: Unveiling Multimodal Chain of Thought's Quality via Image Description and Reasoning Steps"
+    ],
+    "neurips24": [
+      "CODE: Contrasting Self-generated Description to Combat Hallucination in Large Multi-modal Models",
+      "KG-FIT: Knowledge Graph Fine-Tuning Upon Open-World Knowledge",
+      "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 12,
+    "iclr24": 2,
+    "icml25": 3,
+    "naacl25": 4,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

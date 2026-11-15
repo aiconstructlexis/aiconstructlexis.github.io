@@ -1,0 +1,119 @@
+{
+  "canonical_name": "CosmosQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, CosmosQA is most commonly described as a large-scale commonsense-based reading comprehension benchmark or dataset, usually framed as multiple-choice question answering. Definitions consistently say its passages and questions require commonsense reasoning, while some descriptions are more specific, presenting it as common-sense questions about human behaviors, intentions, and social interactions with four answer options each, and another places it among real-world NLP classification datasets.\n\nWhat it is claimed to measure. The prevailing usage is as a measure of commonsense reasoning: papers link it to 1 construct, Commonsense reasoning, and 1 behavioral indicator, Question answering. Most measurement claims treat it as evaluating commonsense reasoning, including work that explicitly labels it a common sense reasoning dataset, while a smaller line of work reports it as measuring question answering by listing it among question answering datasets. Overall, the claims center on a single construct and a single behavioral indicator rather than spreading across many targets.\n\nSpace of uses. No paper links it to another measurement instrument. Papers usually position it as one dataset within broader evaluation suites, for example alongside BoolQ and SciQ in NLP classification settings, or with Social IQA and QuAIL in question answering setups; other work uses it in mixed reasoning evaluations that also include medical and math datasets. Some papers also describe it as a testbed for weak-to-strong generalization, out-of-distribution generalization, or the impact of fine-tuning on chain-of-thought reasoning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CosmosQA",
+    "Cosmos QA"
+  ],
+  "papers": [
+    "Persona-Augmented Benchmarking: Evaluating LLMs Across Diverse Writing Styles",
+    "Superpose Task-specific Features for Model Merging",
+    "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging",
+    "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+    "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions",
+    "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A large-scale dataset of commonsense-based reading comprehension questions, used to evaluate NLP classification performance.",
+      "papers": [
+        "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+        "Persona-Augmented Benchmarking: Evaluating LLMs Across Diverse Writing Styles",
+        "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+      ],
+      "original_name": "CosmosQA"
+    },
+    {
+      "text": "Reading comprehension dataset involving commonsense reasoning, used to evaluate W2SG in narrative understanding and inference.",
+      "papers": [
+        "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions",
+        "Superpose Task-specific Features for Model Merging",
+        "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging"
+      ],
+      "original_name": "Cosmos QA"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Persona-Augmented Benchmarking: Evaluating LLMs Across Diverse Writing Styles",
+      "evidence": "Common sense Q&A (CosmosQA) (Huang et al., 2019): Common sense questions ... to demonstrate how common sense reasoning is affected by writing style.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Persona-Augmented Benchmarking: Evaluating LLMs Across Diverse Writing Styles"
+        ],
+        "naacl25": [
+          "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging",
+      "evidence": "These datasets encompass diverse tasks, covering three Question Answering datasets: Huang et al.\u2019s (2019) Cosmos QA, Sap et al.\u2019s (2019) Social IQA, and Rogers et al.\u2019s (2020) QuAIL; (Section 5.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, CosmosQA is most commonly described as a large-scale commonsense-based reading comprehension benchmark or dataset, usually framed as multiple-choice question answering. Definitions consistently say its passages and questions require commonsense reasoning, while some descriptions are more specific, presenting it as common-sense questions about human behaviors, intentions, and social interactions with four answer options each, and another places it among real-world NLP classification datasets."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The prevailing usage is as a measure of commonsense reasoning: papers link it to 1 construct, Commonsense reasoning, and 1 behavioral indicator, Question answering. Most measurement claims treat it as evaluating commonsense reasoning, including work that explicitly labels it a common sense reasoning dataset, while a smaller line of work reports it as measuring question answering by listing it among question answering datasets. Overall, the claims center on a single construct and a single behavioral indicator rather than spreading across many targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No paper links it to another measurement instrument. Papers usually position it as one dataset within broader evaluation suites, for example alongside BoolQ and SciQ in NLP classification settings, or with Social IQA and QuAIL in question answering setups; other work uses it in mixed reasoning evaluations that also include medical and math datasets. Some papers also describe it as a testbed for weak-to-strong generalization, out-of-distribution generalization, or the impact of fine-tuning on chain-of-thought reasoning."
+    }
+  ],
+  "characterization": "What it is. Across papers, CosmosQA is most commonly described as a large-scale commonsense-based reading comprehension benchmark or dataset, usually framed as multiple-choice question answering. Definitions consistently say its passages and questions require commonsense reasoning, while some descriptions are more specific, presenting it as common-sense questions about human behaviors, intentions, and social interactions with four answer options each, and another places it among real-world NLP classification datasets.\n\nWhat it is claimed to measure. The prevailing usage is as a measure of commonsense reasoning: papers link it to 1 construct, Commonsense reasoning, and 1 behavioral indicator, Question answering. Most measurement claims treat it as evaluating commonsense reasoning, including work that explicitly labels it a common sense reasoning dataset, while a smaller line of work reports it as measuring question answering by listing it among question answering datasets. Overall, the claims center on a single construct and a single behavioral indicator rather than spreading across many targets.\n\nSpace of uses. No paper links it to another measurement instrument. Papers usually position it as one dataset within broader evaluation suites, for example alongside BoolQ and SciQ in NLP classification settings, or with Social IQA and QuAIL in question answering setups; other work uses it in mixed reasoning evaluations that also include medical and math datasets. Some papers also describe it as a testbed for weak-to-strong generalization, out-of-distribution generalization, or the impact of fine-tuning on chain-of-thought reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Persona-Augmented Benchmarking: Evaluating LLMs Across Diverse Writing Styles",
+      "Superpose Task-specific Features for Model Merging",
+      "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging"
+    ],
+    "icml25": [
+      "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+      "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions"
+    ],
+    "naacl25": [
+      "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "icml25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

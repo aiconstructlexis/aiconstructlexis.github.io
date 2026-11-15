@@ -1,0 +1,84 @@
+{
+  "canonical_name": "Cross-lingual consistency",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across these papers, the prevailing usage treats cross-lingual consistency as whether a multilingual model gives semantically equivalent and correct outputs to the same factual query across languages. A smaller framing uses the term more broadly for model performance that stays stable and comparable across languages, especially within the same language family, so the main difference is between output-level consistency on parallel factual queries and performance-level stability across multilingual evaluations.\n\nSpace of facets. When papers organize the construct, they mainly do so by comparison unit: some focus on language pairs and parallel facts, while others discuss consistency among language families and within a family. This makes pairwise cross-language comparison and family-level comparison the main facets visible in the paper descriptions.\n\nSpace of measurement. Papers link the construct to one measurement instrument, XSafety, a parallel dataset benchmark, and to no behavioral indicators. Operationally, measurement is explicit and comparative: one paper reports a consistency score on XSafety by comparing English with each target language, and another evaluates consistency with the overlap ratio of correct predictions for parallel facts between language pairs, so assessment centers on whether correct answers align across matched multilingual inputs.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Cross-lingual consistency"
+  ],
+  "papers": [
+    "Linguistic Generalizability of Test-Time Scaling in Mathematical Reasoning",
+    "Lost in Multilinguality: Dissecting Cross-lingual Factual Inconsistency in Transformer Language Models",
+    "Truth Knows No Language: Evaluating Truthfulness Beyond English",
+    "MrGuard: A Multilingual Reasoning Guardrail for Universal LLM Safety",
+    "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The degree to which a multilingual model produces semantically equivalent and correct outputs for the same factual query when presented in different languages.",
+      "papers": [
+        "Lost in Multilinguality: Dissecting Cross-lingual Factual Inconsistency in Transformer Language Models",
+        "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines"
+      ],
+      "original_name": "Cross-lingual consistency"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSafety",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MrGuard: A Multilingual Reasoning Guardrail for Universal LLM Safety",
+      "evidence": "We report consistency score on XSafety, a parallel dataset, comparing English with each target language across several models in Figure 5. (Section 5.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MrGuard: A Multilingual Reasoning Guardrail for Universal LLM Safety"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across these papers, the prevailing usage treats cross-lingual consistency as whether a multilingual model gives semantically equivalent and correct outputs to the same factual query across languages. A smaller framing uses the term more broadly for model performance that stays stable and comparable across languages, especially within the same language family, so the main difference is between output-level consistency on parallel factual queries and performance-level stability across multilingual evaluations."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "When papers organize the construct, they mainly do so by comparison unit: some focus on language pairs and parallel facts, while others discuss consistency among language families and within a family. This makes pairwise cross-language comparison and family-level comparison the main facets visible in the paper descriptions."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link the construct to one measurement instrument, XSafety, a parallel dataset benchmark, and to no behavioral indicators. Operationally, measurement is explicit and comparative: one paper reports a consistency score on XSafety by comparing English with each target language, and another evaluates consistency with the overlap ratio of correct predictions for parallel facts between language pairs, so assessment centers on whether correct answers align across matched multilingual inputs."
+    }
+  ],
+  "characterization": "Space of definitions. Across these papers, the prevailing usage treats cross-lingual consistency as whether a multilingual model gives semantically equivalent and correct outputs to the same factual query across languages. A smaller framing uses the term more broadly for model performance that stays stable and comparable across languages, especially within the same language family, so the main difference is between output-level consistency on parallel factual queries and performance-level stability across multilingual evaluations.\n\nSpace of facets. When papers organize the construct, they mainly do so by comparison unit: some focus on language pairs and parallel facts, while others discuss consistency among language families and within a family. This makes pairwise cross-language comparison and family-level comparison the main facets visible in the paper descriptions.\n\nSpace of measurement. Papers link the construct to one measurement instrument, XSafety, a parallel dataset benchmark, and to no behavioral indicators. Operationally, measurement is explicit and comparative: one paper reports a consistency score on XSafety by comparing English with each target language, and another evaluates consistency with the overlap ratio of correct predictions for parallel facts between language pairs, so assessment centers on whether correct answers align across matched multilingual inputs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Linguistic Generalizability of Test-Time Scaling in Mathematical Reasoning",
+      "Lost in Multilinguality: Dissecting Cross-lingual Factual Inconsistency in Transformer Language Models",
+      "Truth Knows No Language: Evaluating Truthfulness Beyond English"
+    ],
+    "emnlp25": [
+      "MrGuard: A Multilingual Reasoning Guardrail for Universal LLM Safety",
+      "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

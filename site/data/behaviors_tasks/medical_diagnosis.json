@@ -1,0 +1,350 @@
+{
+  "canonical_name": "Medical diagnosis",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats medical diagnosis as predicting, identifying, or selecting a disease or clinical condition from available evidence, including symptoms, patient profiles, admission data, clinical notes, longitudinal EHR histories, and other clinical data. Most formulations expect a final label, code, or diagnosis class, sometimes from a fixed candidate set or a predefined set of acute care conditions, while a smaller line of work frames it as differential diagnosis, generating a list of possible conditions or selecting the most likely option from several possibilities. Other definitions broaden the behavior to binary or multiclass abnormality detection in physiological signals, or to a sequential process that orders examinations, integrates their results, and then arrives at a final diagnosis.\n\nVariants. The main variants span differential diagnosis, diagnosis prediction or classification from notes and longitudinal EHRs, and signal-based diagnosis in ECG and EEG. Papers also describe phenotype prediction and new diagnosis assignment, where the target is a disease manifestation or the first occurrence of a diagnosis, alongside arrhythmia diagnosis, pathology detection, seizure detection, and abnormal detection. A smaller set studies full-path clinical diagnosis with sequential examinations, or diagnosis extraction from dialogue and multimodal evidence, and one paper uses disease diagnosis for plant disease reasoning from visual symptoms and contextual knowledge.\n\nSpace of elicitation and scores. Papers link medical diagnosis to two dataset-based instruments, with DDXPlus appearing most often and MIMIC-IV also used. DDXPlus is described as a large-scale EHR dataset used to test diagnosing complex and diverse medical conditions, including making a diagnosis from patient profiles with a fixed set of 49 diagnoses. MIMIC-IV is used by converting clinical records into test samples for full-path clinical diagnosis.\n\nWhat it is taken as evidence of. Papers do not converge on a single construct that this behavior reflects. Instead, medical diagnosis is related to Medical reasoning and to Interpretability and explainability, and separate papers claim causal relationships from Semantic understanding to Medical diagnosis and from Temporal dependency modeling to Medical diagnosis. The linked construct-level uses therefore remain split across related and causal framings rather than one prevailing construct interpretation.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Disease Prediction",
+    "Differential diagnosis",
+    "ECG abnormal detection",
+    "Diagnosis classification",
+    "Medical diagnosis",
+    "Diagnosis prediction",
+    "New diagnosis assignment",
+    "Arrhythmia diagnosis",
+    "Full-path clinical diagnosis",
+    "Phenotype prediction",
+    "Pathology detection",
+    "Seizure detection",
+    "Diagnosis extraction",
+    "Abnormal detection",
+    "Clinical diagnosis",
+    "Disease diagnosis"
+  ],
+  "papers": [
+    "Agri-CM3: A Chinese Massive Multi-modal, Multi-level Benchmark for Agricultural Understanding and Reasoning",
+    "Knowledge-Augmented Multimodal Clinical Rationale Generation for Disease Diagnosis with Small Language Models",
+    "3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark",
+    "DDO: Dual-Decision Optimization for LLM-Based Medical Consultation via Multi-Agent Collaboration",
+    "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration",
+    "NeuroLM: A Universal Multi-task Foundation Model for Bridging the Gap between Language and EEG Signals",
+    "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+    "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models",
+    "EEG-Language Pretraining for Highly Label-Efficient Clinical Phenotyping",
+    "Efficient Personalized Adaptation for Physiological Signal Foundation Model",
+    "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+    "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding",
+    "Multimodal Medical Code Tokenizer",
+    "Position: AI Scaling: From Up to Down and Out",
+    "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity",
+    "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models",
+    "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+    "Instruction Tuning Large Language Models to Understand Electronic Health Records",
+    "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+    "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+    "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents"
+  ],
+  "paper_count": 21,
+  "definitions": [
+    {
+      "text": "Inferring the patient's disease or diagnosis based on available medical information.",
+      "papers": [
+        "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey"
+      ],
+      "original_name": "Disease Prediction"
+    },
+    {
+      "text": "The observable task of generating a list of possible medical conditions that could explain a given set of patient symptoms and clinical data.",
+      "papers": [
+        "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+        "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding"
+      ],
+      "original_name": "Differential diagnosis"
+    },
+    {
+      "text": "Classifying ECG signals as abnormal or normal.",
+      "papers": [
+        "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection"
+      ],
+      "original_name": "ECG abnormal detection"
+    },
+    {
+      "text": "The clinical predictive task of identifying which of a predefined set of acute care conditions are present for a patient based on their admission data.",
+      "papers": [
+        "Instruction Tuning Large Language Models to Understand Electronic Health Records"
+      ],
+      "original_name": "Diagnosis classification"
+    },
+    {
+      "text": "Selecting a diagnosis from a fixed set based on a patient profile and symptoms.",
+      "papers": [
+        "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+        "Position: AI Scaling: From Up to Down and Out"
+      ],
+      "original_name": "Medical diagnosis"
+    },
+    {
+      "text": "Predicting the patient\u2019s primary discharge diagnosis from a clinical note, optionally with external knowledge.",
+      "papers": [
+        "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models",
+        "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare"
+      ],
+      "original_name": "Diagnosis prediction"
+    },
+    {
+      "text": "Identifying the specific clinical manifestation or subtype of a disease based on a patient's medical history.",
+      "papers": [
+        "Multimodal Medical Code Tokenizer"
+      ],
+      "original_name": "Phenotype prediction"
+    },
+    {
+      "text": "Predicting the first occurrence of a disease diagnosis in a patient's record based on longitudinal health data.",
+      "papers": [
+        "Multimodal Medical Code Tokenizer"
+      ],
+      "original_name": "New diagnosis assignment"
+    },
+    {
+      "text": "Identifying abnormal heart rhythms from ECG signals, distinguishing between normal and various types of arrhythmic heartbeats.",
+      "papers": [
+        "Efficient Personalized Adaptation for Physiological Signal Foundation Model"
+      ],
+      "original_name": "Arrhythmia diagnosis"
+    },
+    {
+      "text": "The task of simulating a real-world diagnostic process by sequentially ordering examinations, integrating information from results, and arriving at a final diagnosis.",
+      "papers": [
+        "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving"
+      ],
+      "original_name": "Full-path clinical diagnosis"
+    },
+    {
+      "text": "The observable task of identifying a specific disease or medical condition from a patient's clinical data.",
+      "papers": [
+        "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models",
+        "DDO: Dual-Decision Optimization for LLM-Based Medical Consultation via Multi-Agent Collaboration",
+        "Agri-CM3: A Chinese Massive Multi-modal, Multi-level Benchmark for Agricultural Understanding and Reasoning",
+        "Knowledge-Augmented Multimodal Clinical Rationale Generation for Disease Diagnosis with Small Language Models"
+      ],
+      "original_name": "Disease diagnosis"
+    },
+    {
+      "text": "The observable task of classifying an EEG recording as either normal or containing pathological abnormalities.",
+      "papers": [
+        "EEG-Language Pretraining for Highly Label-Efficient Clinical Phenotyping"
+      ],
+      "original_name": "Pathology detection"
+    },
+    {
+      "text": "The observable task of classifying a segment of an EEG recording as containing either seizure or background activity.",
+      "papers": [
+        "EEG-Language Pretraining for Highly Label-Efficient Clinical Phenotyping"
+      ],
+      "original_name": "Seizure detection"
+    },
+    {
+      "text": "Identifying and outputting the correct medical diagnosis from a dialogue or input context based on symptoms and visual evidence.",
+      "papers": [
+        "3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark"
+      ],
+      "original_name": "Diagnosis extraction"
+    },
+    {
+      "text": "Classifying EEG records as clinically normal or abnormal.",
+      "papers": [
+        "NeuroLM: A Universal Multi-task Foundation Model for Bridging the Gap between Language and EEG Signals"
+      ],
+      "original_name": "Abnormal detection"
+    },
+    {
+      "text": "Producing a diagnostic answer for a medical query or case.",
+      "papers": [
+        "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration"
+      ],
+      "original_name": "Clinical diagnosis"
+    }
+  ],
+  "definition_count": 16,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DDXPlus",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents",
+      "evidence": "To assess LLMs\u2019 continuous improvement in applying expert knowledge, we use the DDXPlus [23] dataset, where agents must make a medical diagnosis out of 49 diagnoses based on patient profiles detailing their symptoms. (Section 3.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents"
+        ],
+        "emnlp25": [
+          "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MIMIC-IV",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "evidence": "we leverage the MIMIC-IV dataset ... we convert these records into test samples for the full-path clinical diagnosis task. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+      "evidence": "Language Models (LMs) have advanced diagnosis prediction by leveraging the semantic understanding of medical concepts in Electronic Health Records (EHRs). (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal dependency modeling",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+      "evidence": "Capturing these overlaps while maintaining an awareness of the temporal progression is essential for accurate diagnosis prediction. (Section 2.3. Box-aware Diagnosis Prediction)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Medical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "evidence": "For High-Level tasks (f3), we follow Hager et al. (2024) and assess LLMs\u2019 capabilities of solving scenario-based problems using a full-path clinical diagnosis task, as illustrated in Figure 3. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+      "evidence": "By quantifying the overlap between boxes, our method provides intuitive insights into the relationships between medical concepts, thereby improving the accuracy and interpretability of model predictions. (Section 2.3.2. VOLUME-BASED DIAGNOSIS PREDICTION)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "EEG-Language Pretraining for Highly Label-Efficient Clinical Phenotyping",
+      "evidence": "Pathology detection via zero-shot (ZS) and linear probing at 1%, 10%, and 100% labeled data of the TUAB training set. (Table 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "EEG-Language Pretraining for Highly Label-Efficient Clinical Phenotyping"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats medical diagnosis as predicting, identifying, or selecting a disease or clinical condition from available evidence, including symptoms, patient profiles, admission data, clinical notes, longitudinal EHR histories, and other clinical data. Most formulations expect a final label, code, or diagnosis class, sometimes from a fixed candidate set or a predefined set of acute care conditions, while a smaller line of work frames it as differential diagnosis, generating a list of possible conditions or selecting the most likely option from several possibilities. Other definitions broaden the behavior to binary or multiclass abnormality detection in physiological signals, or to a sequential process that orders examinations, integrates their results, and then arrives at a final diagnosis."
+    },
+    {
+      "label": "Variants.",
+      "text": "The main variants span differential diagnosis, diagnosis prediction or classification from notes and longitudinal EHRs, and signal-based diagnosis in ECG and EEG. Papers also describe phenotype prediction and new diagnosis assignment, where the target is a disease manifestation or the first occurrence of a diagnosis, alongside arrhythmia diagnosis, pathology detection, seizure detection, and abnormal detection. A smaller set studies full-path clinical diagnosis with sequential examinations, or diagnosis extraction from dialogue and multimodal evidence, and one paper uses disease diagnosis for plant disease reasoning from visual symptoms and contextual knowledge."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link medical diagnosis to two dataset-based instruments, with DDXPlus appearing most often and MIMIC-IV also used. DDXPlus is described as a large-scale EHR dataset used to test diagnosing complex and diverse medical conditions, including making a diagnosis from patient profiles with a fixed set of 49 diagnoses. MIMIC-IV is used by converting clinical records into test samples for full-path clinical diagnosis."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not converge on a single construct that this behavior reflects. Instead, medical diagnosis is related to Medical reasoning and to Interpretability and explainability, and separate papers claim causal relationships from Semantic understanding to Medical diagnosis and from Temporal dependency modeling to Medical diagnosis. The linked construct-level uses therefore remain split across related and causal framings rather than one prevailing construct interpretation."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats medical diagnosis as predicting, identifying, or selecting a disease or clinical condition from available evidence, including symptoms, patient profiles, admission data, clinical notes, longitudinal EHR histories, and other clinical data. Most formulations expect a final label, code, or diagnosis class, sometimes from a fixed candidate set or a predefined set of acute care conditions, while a smaller line of work frames it as differential diagnosis, generating a list of possible conditions or selecting the most likely option from several possibilities. Other definitions broaden the behavior to binary or multiclass abnormality detection in physiological signals, or to a sequential process that orders examinations, integrates their results, and then arrives at a final diagnosis.\n\nVariants. The main variants span differential diagnosis, diagnosis prediction or classification from notes and longitudinal EHRs, and signal-based diagnosis in ECG and EEG. Papers also describe phenotype prediction and new diagnosis assignment, where the target is a disease manifestation or the first occurrence of a diagnosis, alongside arrhythmia diagnosis, pathology detection, seizure detection, and abnormal detection. A smaller set studies full-path clinical diagnosis with sequential examinations, or diagnosis extraction from dialogue and multimodal evidence, and one paper uses disease diagnosis for plant disease reasoning from visual symptoms and contextual knowledge.\n\nSpace of elicitation and scores. Papers link medical diagnosis to two dataset-based instruments, with DDXPlus appearing most often and MIMIC-IV also used. DDXPlus is described as a large-scale EHR dataset used to test diagnosing complex and diverse medical conditions, including making a diagnosis from patient profiles with a fixed set of 49 diagnoses. MIMIC-IV is used by converting clinical records into test samples for full-path clinical diagnosis.\n\nWhat it is taken as evidence of. Papers do not converge on a single construct that this behavior reflects. Instead, medical diagnosis is related to Medical reasoning and to Interpretability and explainability, and separate papers claim causal relationships from Semantic understanding to Medical diagnosis and from Temporal dependency modeling to Medical diagnosis. The linked construct-level uses therefore remain split across related and causal framings rather than one prevailing construct interpretation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark",
+      "DDO: Dual-Decision Optimization for LLM-Based Medical Consultation via Multi-Agent Collaboration",
+      "Knowledge-Aware Co-Reasoning for Multidisciplinary Collaboration"
+    ],
+    "iclr25": [
+      "NeuroLM: A Universal Multi-task Foundation Model for Bridging the Gap between Language and EEG Signals"
+    ],
+    "icml25": [
+      "BoxLM: Unifying Structures and Semantics of Medical Concepts for Diagnosis Prediction in Healthcare",
+      "CLIMB: Data Foundations for Large Scale Multimodal Clinical Foundation Models",
+      "EEG-Language Pretraining for Highly Label-Efficient Clinical Phenotyping",
+      "Efficient Personalized Adaptation for Physiological Signal Foundation Model",
+      "Evaluating LLMs Across Multi-Cognitive Levels: From Medical Knowledge Mastery to Scenario-Based Problem Solving",
+      "MedXpertQA: Benchmarking Expert-Level Medical Reasoning and Understanding",
+      "Multimodal Medical Code Tokenizer",
+      "Position: AI Scaling: From Up to Down and Out",
+      "Position: Medical Large Language Model Benchmarks Should Prioritize Construct Validity"
+    ],
+    "neurips24": [
+      "DiReCT: Diagnostic Reasoning for Clinical Notes via Large Language Models",
+      "FEDMEKI: A Benchmark for Scaling Medical Foundation Models via Federated Knowledge Injection",
+      "Instruction Tuning Large Language Models to Understand Electronic Health Records",
+      "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+      "MedJourney: Benchmark and Evaluation of Large Language Models over Patient Clinical Journey",
+      "StreamBench: Towards Benchmarking Continuous Improvement of Language Agents"
+    ],
+    "acl25": [
+      "Agri-CM3: A Chinese Massive Multi-modal, Multi-level Benchmark for Agricultural Understanding and Reasoning",
+      "Knowledge-Augmented Multimodal Clinical Rationale Generation for Disease Diagnosis with Small Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 1,
+    "icml25": 9,
+    "neurips24": 6,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

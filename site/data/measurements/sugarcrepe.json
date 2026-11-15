@@ -1,0 +1,103 @@
+{
+  "canonical_name": "SugarCrepe",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, SugarCrepe is most commonly described as a large-scale benchmark for evaluating the compositional reasoning capabilities of vision-language models, specifically through swaps, replacements, and additions of objects, attributes, and relations. Another description presents it as a compositionality benchmark with fine-grained attribute and semantic relationship distinctions, evaluated primarily with a single image and a caption choice.\n\nWhat it is claimed to measure. Papers use SugarCrepe to measure 2 constructs, and no behavioral indicators are linked to it. The prevailing use is to measure compositional reasoning, with TripletCLIP describing analysis of models' compositional understanding on SugarCrepe, while some work also reports it as measuring relation understanding by evaluating the ability to understand and represent relationships between objects within an image.\n\nSpace of uses. Papers typically position SugarCrepe as a challenging benchmark for model evaluation, and no measurement instrument is linked to it. In reported uses, authors mainly evaluate models on it as a composition benchmark, and COCO-Tree notes that, because only a single image is provided, the task is simplified to Text Score.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SugarCrepe"
+  ],
+  "papers": [
+    "COCO-Tree: Compositional Hierarchical Concept Trees for Enhanced Reasoning in Vision-Language Models",
+    "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions",
+    "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+    "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+    "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+    "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+    "VisMin: Visual Minimal-Change Understanding"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A large-scale benchmark designed to systematically evaluate the compositional reasoning capabilities of vision-language models by testing their ability to handle swaps, replacements, and additions of objects, attributes, and relations.",
+      "papers": [
+        "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+        "COCO-Tree: Compositional Hierarchical Concept Trees for Enhanced Reasoning in Vision-Language Models"
+      ],
+      "original_name": "SugarCrepe"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Compositional reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+      "evidence": "We comprehensively analyze the compositional understanding of models on the SugarCrepe benchmark, as detailed in Table 4. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Relation understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "evidence": "We include relational benchmarks, such as Visual Genome [Yuksekgonul et al., 2023], Winoground [Thrush et al., 2022a], and SugarCrepe [Hsieh et al., 2024] designed to evaluate the models\u2019 ability to understand and represent relationships between objects within an image... (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, SugarCrepe is most commonly described as a large-scale benchmark for evaluating the compositional reasoning capabilities of vision-language models, specifically through swaps, replacements, and additions of objects, attributes, and relations. Another description presents it as a compositionality benchmark with fine-grained attribute and semantic relationship distinctions, evaluated primarily with a single image and a caption choice."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use SugarCrepe to measure 2 constructs, and no behavioral indicators are linked to it. The prevailing use is to measure compositional reasoning, with TripletCLIP describing analysis of models' compositional understanding on SugarCrepe, while some work also reports it as measuring relation understanding by evaluating the ability to understand and represent relationships between objects within an image."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers typically position SugarCrepe as a challenging benchmark for model evaluation, and no measurement instrument is linked to it. In reported uses, authors mainly evaluate models on it as a composition benchmark, and COCO-Tree notes that, because only a single image is provided, the task is simplified to Text Score."
+    }
+  ],
+  "characterization": "What it is. Across the papers, SugarCrepe is most commonly described as a large-scale benchmark for evaluating the compositional reasoning capabilities of vision-language models, specifically through swaps, replacements, and additions of objects, attributes, and relations. Another description presents it as a compositionality benchmark with fine-grained attribute and semantic relationship distinctions, evaluated primarily with a single image and a caption choice.\n\nWhat it is claimed to measure. Papers use SugarCrepe to measure 2 constructs, and no behavioral indicators are linked to it. The prevailing use is to measure compositional reasoning, with TripletCLIP describing analysis of models' compositional understanding on SugarCrepe, while some work also reports it as measuring relation understanding by evaluating the ability to understand and represent relationships between objects within an image.\n\nSpace of uses. Papers typically position SugarCrepe as a challenging benchmark for model evaluation, and no measurement instrument is linked to it. In reported uses, authors mainly evaluate models on it as a composition benchmark, and COCO-Tree notes that, because only a single image is provided, the task is simplified to Text Score.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "COCO-Tree: Compositional Hierarchical Concept Trees for Enhanced Reasoning in Vision-Language Models",
+      "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions"
+    ],
+    "neurips24": [
+      "ConMe: Rethinking Evaluation of Compositional Reasoning for Modern VLMs",
+      "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+      "UniBench: Visual Reasoning Requires Rethinking Vision-Language Beyond Scaling",
+      "VisMin: Visual Minimal-Change Understanding"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "neurips24": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

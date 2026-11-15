@@ -1,0 +1,419 @@
+{
+  "canonical_name": "Conversational ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats conversational ability as a latent capacity for coherent, context-aware dialogue, usually across multiple turns and sometimes including instruction following in a conversational setting. Many definitions emphasize maintaining prior context across exchanges and producing fluent, helpful, appropriate, or consistent responses. A smaller line of work frames the construct more as overall chatbot performance or capability in open-ended tasks, sometimes inferred from comparative judgments as a latent score, while a few papers narrow it to spoken chat, medical consultation dialogue quality, or dialogue about image authenticity and forgery details.\n\nSpace of facets. Systematization is light, but one paper explicitly decomposes the construct into fluency, coherency, and consistency, quoting \"Flu.: Fluency, Coh.: Coherency, Cons.: Consistency\" (OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction). Another paper places a nearby notion, generalist chat capability, under alignment alongside world knowledge and instruction following (WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training). The naming varies across papers, with labels including conversational capability, chatbot capability or performance, dialogue capability, general communication ability, multi-turn capability, multi-turn conversation ability, and dialogue quality; some labels foreground general chat quality, others multi-turn context use, and others a specific application setting.\n\nSpace of measurement. Papers link the construct to 8 measurement instruments and 2 behavioral indicators. Operationalization is dominated by benchmark-style evaluation, especially MT-Bench, which is described as a multi-turn question-answering benchmark graded by an LLM judge and is repeatedly used to assess conversational or multi-turn ability; AlpacaEval 2.0 and Arena-Hard are the next most common, Chatbot Arena appears through live user interactions and ranking in open-ended conversational tasks, and 3MDBench evaluates diagnostic accuracy and dialogue quality via an Assessor Agent, with 3 other instruments also linked. Most instruments target general or multi-turn chat settings, while 3MDBench targets medical consultation dialogue quality.\n\nLinks. Reported non-measurement links are all related links. One paper relates conversational ability to visual question answering, treating it as that evaluation dimension in a multimodal setting, and another relates conversational ability to turn-taking prediction. The same line of work also relates coherence to conversational ability and relates conversational ability to naturalness, summarizing conversational abilities in terms of turn-taking prediction, response coherence, and naturalness.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Conversational ability",
+    "General communication ability",
+    "Chatbot capability",
+    "Chatbot performance",
+    "Conversational capability",
+    "Generalist chat capability",
+    "Multi-turn dialogue capability",
+    "Multi-turn capability",
+    "Dialogue capability",
+    "Multi-turn conversation ability",
+    "Dialogue quality"
+  ],
+  "papers": [
+    "Condor: Enhance LLM Alignment with Knowledge-Driven Data Synthesis and Refinement",
+    "OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction",
+    "3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark",
+    "ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model",
+    "FillerSpeech: Towards Human-Like Text-to-Speech Synthesis with Filler Insertion and Filler Style Control",
+    "FuseChat: Knowledge Fusion of Chat Models",
+    "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge",
+    "Permutative Preference Alignment from Listwise Ranking of Human Judgments",
+    "Towards Holistic Evaluation of Large Audio-Language Models: A Comprehensive Survey",
+    "VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making",
+    "A Statistical Framework for Ranking LLM-based Chatbots",
+    "Jamba: Hybrid Transformer-Mamba Language Models",
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+    "Self-Play Preference Optimization for Language Model Alignment",
+    "Tamper-Resistant Safeguards for Open-Weight LLMs",
+    "DPO Meets PPO: Reinforced Token Optimization for RLHF",
+    "DiffusionVLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression",
+    "Improving Model Alignment Through Collective Intelligence of Open-Source Models",
+    "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+    "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+    "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+    "Unlocking the Capabilities of Large Vision-Language Models for Generalizable and Explainable Deepfake Detection",
+    "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+    "RoleAgent: Building, Interacting, and Benchmarking High-quality Role-Playing Agents from Scripts",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+  ],
+  "paper_count": 28,
+  "definitions": [
+    {
+      "text": "The latent capacity to engage in multi-turn dialogue and follow instructions in a conversational context.",
+      "papers": [
+        "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+        "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+        "OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction",
+        "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+        "Permutative Preference Alignment from Listwise Ranking of Human Judgments"
+      ],
+      "original_name": "Conversational ability"
+    },
+    {
+      "text": "The agent's general proficiency in engaging in coherent and contextually appropriate dialogue, assessed through a question-answer format.",
+      "papers": [
+        "RoleAgent: Building, Interacting, and Benchmarking High-quality Role-Playing Agents from Scripts"
+      ],
+      "original_name": "General communication ability"
+    },
+    {
+      "text": "The overall capability of a chatbot in open-ended conversational tasks, as inferred from comparative human judgments and represented by a latent score.",
+      "papers": [
+        "A Statistical Framework for Ranking LLM-based Chatbots"
+      ],
+      "original_name": "Chatbot performance"
+    },
+    {
+      "text": "The latent ability to engage in dialogue-like interactions that are judged as helpful and appropriate in chatbot settings.",
+      "papers": [
+        "Jamba: Hybrid Transformer-Mamba Language Models",
+        "Condor: Enhance LLM Alignment with Knowledge-Driven Data Synthesis and Refinement"
+      ],
+      "original_name": "Conversational capability"
+    },
+    {
+      "text": "The model's overall effectiveness and quality in engaging in conversational interactions, encompassing aspects like coherence, helpfulness, and safety.",
+      "papers": [
+        "Self-Play Preference Optimization for Language Model Alignment"
+      ],
+      "original_name": "Chatbot capability"
+    },
+    {
+      "text": "The latent ability of a model to engage in high-quality, coherent, and contextually appropriate conversation across a wide range of topics and interaction styles, as judged by human or LLM evaluators.",
+      "papers": [
+        "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training"
+      ],
+      "original_name": "Generalist chat capability"
+    },
+    {
+      "text": "The ability to sustain coherent performance across multiple conversational turns and use prior dialogue context appropriately.",
+      "papers": [
+        "Improving Model Alignment Through Collective Intelligence of Open-Source Models"
+      ],
+      "original_name": "Multi-turn capability"
+    },
+    {
+      "text": "The latent ability of the model to engage in iterative, context-aware conversations with users about image authenticity and forgery details, maintaining coherence across turns.",
+      "papers": [
+        "Unlocking the Capabilities of Large Vision-Language Models for Generalizable and Explainable Deepfake Detection"
+      ],
+      "original_name": "Multi-turn dialogue capability"
+    },
+    {
+      "text": "The model's underlying ability to engage in coherent, context-aware, and fluent conversation.",
+      "papers": [
+        "VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making"
+      ],
+      "original_name": "Dialogue capability"
+    },
+    {
+      "text": "The capability of a model to maintain context and coherence across multiple exchanges in a dialogue.",
+      "papers": [
+        "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge"
+      ],
+      "original_name": "Multi-turn conversation ability"
+    },
+    {
+      "text": "The quality of the model\u2019s consultation dialogue, including how well it communicates and conducts the interaction during a medical consultation.",
+      "papers": [
+        "3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark"
+      ],
+      "original_name": "Dialogue quality"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+      "evidence": "General tasks: like MT-Bench [15, 42] and AlpacaEval [43], encompass categories such as writing, role-playing, and mathematics, highlighting the models\u2019 comprehensive abilities and multi-turn dialogue performance. (Section 2.1)",
+      "paper_count": 10,
+      "paper_weight": 10.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena",
+          "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models"
+        ],
+        "iclr25": [
+          "Tamper-Resistant Safeguards for Open-Weight LLMs",
+          "Self-Play Preference Optimization for Language Model Alignment"
+        ],
+        "icml25": [
+          "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+          "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training",
+          "Improving Model Alignment Through Collective Intelligence of Open-Source Models"
+        ],
+        "emnlp25": [
+          "Permutative Preference Alignment from Listwise Ranking of Human Judgments",
+          "FuseChat: Knowledge Fusion of Chat Models",
+          "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval 2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Self-Play Preference Optimization for Language Model Alignment",
+      "evidence": "We conduct GPT-4-based automatic evaluation on AlpacaEval 2.0 (Li et al., 2023b), MT-Bench (Zheng et al., 2023), and Arena-Hard (Li et al., 2024) to measure the chatbot capability of our model.",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Self-Play Preference Optimization for Language Model Alignment"
+        ],
+        "icml25": [
+          "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training",
+          "DPO Meets PPO: Reinforced Token Optimization for RLHF"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Arena-Hard",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "evidence": "In this section we evaluate the Jamba-1.5 models on two chatbot scenarios: Arena-Hard (Li et al., 2024b), a set of 500 challenging user queries that uses GPT4-Turbo as a judge, and WildBench (Lin et al., 2024)... (Section 7.3)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jamba: Hybrid Transformer-Mamba Language Models",
+          "Self-Play Preference Optimization for Language Model Alignment"
+        ],
+        "icml25": [
+          "DPO Meets PPO: Reinforced Token Optimization for RLHF"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chatbot Arena",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "evidence": "We then report results from live interactions with users on the Chatbot Arena. (Section 7.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jamba: Hybrid Transformer-Mamba Language Models",
+          "A Statistical Framework for Ranking LLM-based Chatbots"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WildBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Jamba: Hybrid Transformer-Mamba Language Models",
+      "evidence": "In this section we evaluate the Jamba-1.5 models on two chatbot scenarios: Arena-Hard (Li et al., 2024b), a set of 500 challenging user queries that uses GPT4-Turbo as a judge, and WildBench (Lin et al., 2024)... (Section 7.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jamba: Hybrid Transformer-Mamba Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MixEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training",
+      "evidence": "For generalist chat capabilities, we use MixEval, AlpacaEval2, and MTBench with GPT-4o-mini as the judge LLM (Ni et al., 2024; Dubois et al., 2024; Zheng et al., 2023). (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "3MDBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark",
+      "evidence": "3MDBench ... evaluates diagnostic accuracy and dialogue quality via Assessor Agent.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Permutative Preference Alignment from Listwise Ranking of Human Judgments",
+      "evidence": "In the General Benchmark pipeline, we evaluate our models using two widely recognized benchmarks: AlpacaEval (Li et al., 2023) and MT-Bench (Zheng et al., 2023), which assess the model\u2019s comprehensive conversational abilities across various questions. (Section 6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Permutative Preference Alignment from Listwise Ranking of Human Judgments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model",
+      "evidence": "We evaluate ChatVLA across three dimensions: conversational ability (visual question answering), general multimodal understanding, and general robot control. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Turn-taking prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "evidence": "\"NTPP, significantly improves the conversational abilities of SLMs in terms of turn-taking prediction\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coherence",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "evidence": "\"NTPP, significantly improves the conversational abilities of SLMs in terms of turn-taking prediction, response coherence, and naturalness\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Naturalness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "evidence": "\"NTPP, significantly improves the conversational abilities of SLMs in terms of turn-taking prediction, response coherence, and naturalness\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 12,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 11,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats conversational ability as a latent capacity for coherent, context-aware dialogue, usually across multiple turns and sometimes including instruction following in a conversational setting. Many definitions emphasize maintaining prior context across exchanges and producing fluent, helpful, appropriate, or consistent responses. A smaller line of work frames the construct more as overall chatbot performance or capability in open-ended tasks, sometimes inferred from comparative judgments as a latent score, while a few papers narrow it to spoken chat, medical consultation dialogue quality, or dialogue about image authenticity and forgery details."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Systematization is light, but one paper explicitly decomposes the construct into fluency, coherency, and consistency, quoting \"Flu.: Fluency, Coh.: Coherency, Cons.: Consistency\" (OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction). Another paper places a nearby notion, generalist chat capability, under alignment alongside world knowledge and instruction following (WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training). The naming varies across papers, with labels including conversational capability, chatbot capability or performance, dialogue capability, general communication ability, multi-turn capability, multi-turn conversation ability, and dialogue quality; some labels foreground general chat quality, others multi-turn context use, and others a specific application setting."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link the construct to 8 measurement instruments and 2 behavioral indicators. Operationalization is dominated by benchmark-style evaluation, especially MT-Bench, which is described as a multi-turn question-answering benchmark graded by an LLM judge and is repeatedly used to assess conversational or multi-turn ability; AlpacaEval 2.0 and Arena-Hard are the next most common, Chatbot Arena appears through live user interactions and ranking in open-ended conversational tasks, and 3MDBench evaluates diagnostic accuracy and dialogue quality via an Assessor Agent, with 3 other instruments also linked. Most instruments target general or multi-turn chat settings, while 3MDBench targets medical consultation dialogue quality."
+    },
+    {
+      "label": "Links.",
+      "text": "Reported non-measurement links are all related links. One paper relates conversational ability to visual question answering, treating it as that evaluation dimension in a multimodal setting, and another relates conversational ability to turn-taking prediction. The same line of work also relates coherence to conversational ability and relates conversational ability to naturalness, summarizing conversational abilities in terms of turn-taking prediction, response coherence, and naturalness."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats conversational ability as a latent capacity for coherent, context-aware dialogue, usually across multiple turns and sometimes including instruction following in a conversational setting. Many definitions emphasize maintaining prior context across exchanges and producing fluent, helpful, appropriate, or consistent responses. A smaller line of work frames the construct more as overall chatbot performance or capability in open-ended tasks, sometimes inferred from comparative judgments as a latent score, while a few papers narrow it to spoken chat, medical consultation dialogue quality, or dialogue about image authenticity and forgery details.\n\nSpace of facets. Systematization is light, but one paper explicitly decomposes the construct into fluency, coherency, and consistency, quoting \"Flu.: Fluency, Coh.: Coherency, Cons.: Consistency\" (OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction). Another paper places a nearby notion, generalist chat capability, under alignment alongside world knowledge and instruction following (WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training). The naming varies across papers, with labels including conversational capability, chatbot capability or performance, dialogue capability, general communication ability, multi-turn capability, multi-turn conversation ability, and dialogue quality; some labels foreground general chat quality, others multi-turn context use, and others a specific application setting.\n\nSpace of measurement. Papers link the construct to 8 measurement instruments and 2 behavioral indicators. Operationalization is dominated by benchmark-style evaluation, especially MT-Bench, which is described as a multi-turn question-answering benchmark graded by an LLM judge and is repeatedly used to assess conversational or multi-turn ability; AlpacaEval 2.0 and Arena-Hard are the next most common, Chatbot Arena appears through live user interactions and ranking in open-ended conversational tasks, and 3MDBench evaluates diagnostic accuracy and dialogue quality via an Assessor Agent, with 3 other instruments also linked. Most instruments target general or multi-turn chat settings, while 3MDBench targets medical consultation dialogue quality.\n\nLinks. Reported non-measurement links are all related links. One paper relates conversational ability to visual question answering, treating it as that evaluation dimension in a multimodal setting, and another relates conversational ability to turn-taking prediction. The same line of work also relates coherence to conversational ability and relates conversational ability to naturalness, summarizing conversational abilities in terms of turn-taking prediction, response coherence, and naturalness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Condor: Enhance LLM Alignment with Knowledge-Driven Data Synthesis and Refinement",
+      "OmniCharacter: Towards Immersive Role-Playing Agents with Seamless Speech-Language Personality Interaction"
+    ],
+    "emnlp25": [
+      "3MDBench: Medical Multimodal Multi-agent Dialogue Benchmark",
+      "ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model",
+      "FillerSpeech: Towards Human-Like Text-to-Speech Synthesis with Filler Insertion and Filler Style Control",
+      "FuseChat: Knowledge Fusion of Chat Models",
+      "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge",
+      "Permutative Preference Alignment from Listwise Ranking of Human Judgments",
+      "Towards Holistic Evaluation of Large Audio-Language Models: A Comprehensive Survey",
+      "VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making"
+    ],
+    "iclr25": [
+      "A Statistical Framework for Ranking LLM-based Chatbots",
+      "Jamba: Hybrid Transformer-Mamba Language Models",
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "Self-Play Preference Optimization for Language Model Alignment",
+      "Tamper-Resistant Safeguards for Open-Weight LLMs"
+    ],
+    "icml25": [
+      "DPO Meets PPO: Reinforced Token Optimization for RLHF",
+      "DiffusionVLA: Scaling Robot Foundation Models via Unified Diffusion and Autoregression",
+      "Improving Model Alignment Through Collective Intelligence of Open-Source Models",
+      "MM-RLHF: The Next Step Forward in Multimodal LLM Alignment",
+      "NTPP: Generative Speech Language Modeling for Dual-Channel Spoken Dialogue via Next-Token-Pair Prediction",
+      "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+      "Unlocking the Capabilities of Large Vision-Language Models for Generalizable and Explainable Deepfake Detection",
+      "WildChat-50M: A Deep Dive Into the Role of Synthetic Data in Post-Training"
+    ],
+    "neurips24": [
+      "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models",
+      "RoleAgent: Building, Interacting, and Benchmarking High-quality Role-Playing Agents from Scripts",
+      "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 8,
+    "iclr25": 5,
+    "icml25": 8,
+    "neurips24": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

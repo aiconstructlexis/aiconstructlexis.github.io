@@ -1,0 +1,300 @@
+{
+  "canonical_name": "Harmful request refusal",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats this as an observable model behavior: declining, explicitly rejecting, or abstaining from a substantive answer when a prompt is judged harmful, unsafe, unethical, illegal, malicious, or against safety policies or guidelines. Definitions vary in what counts as the refusal signal, from polite non-compliance and explicit refusal answers to common refusal messages such as \u201cI\u2019m sorry, but I can\u2019t...\u201d; one paper also notes that a completion can begin with \u201cI can\u2019t\u201d and still continue with harmful content.\n\nVariants. Papers use several near-equivalent names, including harmful content refusal, refusal of harmful requests, harmful query refusal, harmful instruction refusal, harmful prompt refusal, and, in a smaller line, safety refusal. The requests studied range from broad harmful or toxic instructions to examples involving cryptocurrency scams, fraud, malware creation, dangerous activities, and malicious requests, and one paper examines whether such refusals generalize to downstream browser agents.\n\nSpace of elicitation and scores. Four measurement instruments are linked to this behavior. Papers most often measure it with AdvBench and HarmBench, and also with SORRY-Bench and XSTest, describing these as harmful-behavior or safety-refusal evaluations that test whether models reject harmful requests. Scoring is frequently framed with ASR or jailbreak ASR, where non-refusal responses count against refusal; some papers operationalize this with rejection keyword sets, while others use score functions based on the absence of refusal and direct addressal of the prompt.\n\nWhat it is taken as evidence of. Papers most commonly connect this behavior to alignment constructs. They claim causal relationships from Safety alignment and from Alignment to harmful request refusal, describing alignment as teaching models to reject harmful queries and to provide refusal responses on unsafe or inappropriate topics. A smaller line of work reports it as related to Harmlessness, using refusals as examples of avoiding assistance on unethical actions.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Harmful content refusal",
+    "Refusal of harmful requests",
+    "Harmful query refusal",
+    "Harmful request refusal",
+    "Safety refusal",
+    "Harmful instruction refusal",
+    "Harmful prompt refusal"
+  ],
+  "papers": [
+    "Governance in Motion: Co-evolution of Constitutions and AI models for Scalable Safety",
+    "VisCRA: A Visual Chain Reasoning Attack for Jailbreaking Multimodal Large Language Models",
+    "Aligned LLMs Are Not Aligned Browser Agents",
+    "AutoBencher: Towards Declarative Benchmark Construction",
+    "Cross-Modal Safety Mechanism Transfer in Large Vision-Language Models",
+    "Do as I do (Safely): Mitigating Task-Specific Fine-tuning Risks in Large Language Models",
+    "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+    "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+    "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+    "Tamper-Resistant Safeguards for Open-Weight LLMs",
+    "Understanding and Enhancing Safety Mechanisms of LLMs via Safety-Specific Neuron",
+    "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+    "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs",
+    "STAIR: Improving Safety Alignment with Introspective Reasoning",
+    "The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions",
+    "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+    "Weak-to-Strong Jailbreaking on Large Language Models",
+    "Activation Space Interventions Can Be Transferred Between Large Language Models",
+    "Adversarial Reasoning at Jailbreaking Time",
+    "Automated Red Teaming with GOAT: the Generative Offensive Agent Tester",
+    "FlipAttack: Jailbreak LLMs via Flipping",
+    "Progressively Label Enhancement for Large Language Model Alignment",
+    "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+    "Safety Alignment Can Be Not Superficial With Explicit Safety Signals",
+    "Audio Is the Achilles' Heel: Red Teaming Audio Large Multimodal Models",
+    "Diversity Helps Jailbreak Large Language Models",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+    "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+    "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks"
+  ],
+  "paper_count": 30,
+  "definitions": [
+    {
+      "text": "Declining to generate content that violates safety policies or requests harmful actions.",
+      "papers": [
+        "Decoding-Time Language Model Alignment with Multiple Objectives",
+        "FlipAttack: Jailbreak LLMs via Flipping",
+        "Progressively Label Enhancement for Large Language Model Alignment"
+      ],
+      "original_name": "Harmful content refusal"
+    },
+    {
+      "text": "The observable action of a language model declining to fulfill a user's request on the grounds that it is harmful, unethical, or against its safety guidelines.",
+      "papers": [
+        "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+        "Adversarial Reasoning at Jailbreaking Time",
+        "Automated Red Teaming with GOAT: the Generative Offensive Agent Tester",
+        "Safety Alignment Can Be Not Superficial With Explicit Safety Signals",
+        "Diversity Helps Jailbreak Large Language Models"
+      ],
+      "original_name": "Refusal of harmful requests"
+    },
+    {
+      "text": "The observable behavior of a model explicitly rejecting or declining to respond to a user prompt that is identified as harmful or unsafe.",
+      "papers": [
+        "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety"
+      ],
+      "original_name": "Harmful query refusal"
+    },
+    {
+      "text": "The observable behavior of a model declining to provide a substantive response to a prompt that requests harmful, unsafe, or unethical information.",
+      "papers": [
+        "AutoBencher: Towards Declarative Benchmark Construction"
+      ],
+      "original_name": "Harmful request refusal"
+    },
+    {
+      "text": "The model's underlying disposition to reject instructions that are harmful, malicious, dangerous, illegal, or unethical.",
+      "papers": [
+        "Aligned LLMs Are Not Aligned Browser Agents"
+      ],
+      "original_name": "Safety refusal"
+    },
+    {
+      "text": "The observable behavior of declining to respond to prompts that are identified as harmful or against usage policies.",
+      "papers": [
+        "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets"
+      ],
+      "original_name": "Harmful instruction refusal"
+    },
+    {
+      "text": "The observable action of a model declining to provide a substantive response to a prompt identified as harmful or unsafe.",
+      "papers": [
+        "Activation Space Interventions Can Be Transferred Between Large Language Models"
+      ],
+      "original_name": "Harmful prompt refusal"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AdvBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "evidence": "\u201cwe evaluate on the first 80 prompts of AdvBench [51] \u2018Harmful Behaviors\u2019 split (Adv 80) with ASR as the safety metric.\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models"
+        ],
+        "icml25": [
+          "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HarmBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Tamper-Resistant Safeguards for Open-Weight LLMs",
+      "evidence": "In the harmful request refusal setting... We use a static set of test cases from HarmBench... to evaluate jailbreak ASR (Section 3.2).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Tamper-Resistant Safeguards for Open-Weight LLMs",
+          "AutoBencher: Towards Declarative Benchmark Construction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+      "evidence": "During this alignment stage, LLMs learn to reject harmful queries, ensuring their behavior remains well within a defined safety scope. (Section 3.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety"
+        ],
+        "emnlp25": [
+          "Reshaping Representation Space to Balance the Safety and Over-rejection in Large Audio Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSTest",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AutoBencher: Towards Declarative Benchmark Construction",
+      "evidence": "we compare with XSTest (R\u00f6ttger et al., 2024) and HarmBench (Mazeika et al., 2024), which are popular safety datasets that evaluate whether a model can accurately reject harmful requests. (Section 5.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "AutoBencher: Towards Declarative Benchmark Construction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SORRY-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "evidence": "we identify three deficiencies underlying these existing evaluations, and address them with SORRY-Bench2, our proposed systematic benchmark to evaluate LLM safety refusal. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "evidence": "Alignment involves calibrating these models... such that they adhere to human values and safely follow human intents. The resultant aligned LLMs should not engage with user requests on certain unsafe or inappropriate topics... Instead, they provide a refusal response (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Progressively Label Enhancement for Large Language Model Alignment",
+      "evidence": "The first two responses demonstrate the model\u2019s ability to avoid providing assistance on unethical actions... (Figure 4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Progressively Label Enhancement for Large Language Model Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats this as an observable model behavior: declining, explicitly rejecting, or abstaining from a substantive answer when a prompt is judged harmful, unsafe, unethical, illegal, malicious, or against safety policies or guidelines. Definitions vary in what counts as the refusal signal, from polite non-compliance and explicit refusal answers to common refusal messages such as \u201cI\u2019m sorry, but I can\u2019t...\u201d; one paper also notes that a completion can begin with \u201cI can\u2019t\u201d and still continue with harmful content."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several near-equivalent names, including harmful content refusal, refusal of harmful requests, harmful query refusal, harmful instruction refusal, harmful prompt refusal, and, in a smaller line, safety refusal. The requests studied range from broad harmful or toxic instructions to examples involving cryptocurrency scams, fraud, malware creation, dangerous activities, and malicious requests, and one paper examines whether such refusals generalize to downstream browser agents."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Four measurement instruments are linked to this behavior. Papers most often measure it with AdvBench and HarmBench, and also with SORRY-Bench and XSTest, describing these as harmful-behavior or safety-refusal evaluations that test whether models reject harmful requests. Scoring is frequently framed with ASR or jailbreak ASR, where non-refusal responses count against refusal; some papers operationalize this with rejection keyword sets, while others use score functions based on the absence of refusal and direct addressal of the prompt."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers most commonly connect this behavior to alignment constructs. They claim causal relationships from Safety alignment and from Alignment to harmful request refusal, describing alignment as teaching models to reject harmful queries and to provide refusal responses on unsafe or inappropriate topics. A smaller line of work reports it as related to Harmlessness, using refusals as examples of avoiding assistance on unethical actions."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats this as an observable model behavior: declining, explicitly rejecting, or abstaining from a substantive answer when a prompt is judged harmful, unsafe, unethical, illegal, malicious, or against safety policies or guidelines. Definitions vary in what counts as the refusal signal, from polite non-compliance and explicit refusal answers to common refusal messages such as \u201cI\u2019m sorry, but I can\u2019t...\u201d; one paper also notes that a completion can begin with \u201cI can\u2019t\u201d and still continue with harmful content.\n\nVariants. Papers use several near-equivalent names, including harmful content refusal, refusal of harmful requests, harmful query refusal, harmful instruction refusal, harmful prompt refusal, and, in a smaller line, safety refusal. The requests studied range from broad harmful or toxic instructions to examples involving cryptocurrency scams, fraud, malware creation, dangerous activities, and malicious requests, and one paper examines whether such refusals generalize to downstream browser agents.\n\nSpace of elicitation and scores. Four measurement instruments are linked to this behavior. Papers most often measure it with AdvBench and HarmBench, and also with SORRY-Bench and XSTest, describing these as harmful-behavior or safety-refusal evaluations that test whether models reject harmful requests. Scoring is frequently framed with ASR or jailbreak ASR, where non-refusal responses count against refusal; some papers operationalize this with rejection keyword sets, while others use score functions based on the absence of refusal and direct addressal of the prompt.\n\nWhat it is taken as evidence of. Papers most commonly connect this behavior to alignment constructs. They claim causal relationships from Safety alignment and from Alignment to harmful request refusal, describing alignment as teaching models to reject harmful queries and to provide refusal responses on unsafe or inappropriate topics. A smaller line of work reports it as related to Harmlessness, using refusals as examples of avoiding assistance on unethical actions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Governance in Motion: Co-evolution of Constitutions and AI models for Scalable Safety",
+      "VisCRA: A Visual Chain Reasoning Attack for Jailbreaking Multimodal Large Language Models"
+    ],
+    "iclr25": [
+      "Aligned LLMs Are Not Aligned Browser Agents",
+      "AutoBencher: Towards Declarative Benchmark Construction",
+      "Cross-Modal Safety Mechanism Transfer in Large Vision-Language Models",
+      "Do as I do (Safely): Mitigating Task-Specific Fine-tuning Risks in Large Language Models",
+      "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+      "RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style",
+      "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+      "Tamper-Resistant Safeguards for Open-Weight LLMs",
+      "Understanding and Enhancing Safety Mechanisms of LLMs via Safety-Specific Neuron"
+    ],
+    "icml25": [
+      "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+      "Emergent Misalignment: Narrow finetuning can produce broadly misaligned LLMs",
+      "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "The Hidden Dimensions of LLM Alignment: A Multi-Dimensional Analysis of Orthogonal Safety Directions",
+      "The Logical Implication Steering Method for Conditional Interventions on Transformer Generation",
+      "Weak-to-Strong Jailbreaking on Large Language Models",
+      "Activation Space Interventions Can Be Transferred Between Large Language Models",
+      "Adversarial Reasoning at Jailbreaking Time",
+      "Automated Red Teaming with GOAT: the Generative Offensive Agent Tester",
+      "FlipAttack: Jailbreak LLMs via Flipping",
+      "Progressively Label Enhancement for Large Language Model Alignment",
+      "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+      "Safety Alignment Can Be Not Superficial With Explicit Safety Signals"
+    ],
+    "naacl25": [
+      "Audio Is the Achilles' Heel: Red Teaming Audio Large Multimodal Models",
+      "Diversity Helps Jailbreak Large Language Models"
+    ],
+    "neurips24": [
+      "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "Navigating the Safety Landscape: Measuring Risks in Finetuning Large Language Models",
+      "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 9,
+    "icml25": 13,
+    "naacl25": 2,
+    "neurips24": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

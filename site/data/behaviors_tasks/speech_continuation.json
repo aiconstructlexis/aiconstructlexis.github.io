@@ -1,0 +1,69 @@
+{
+  "canonical_name": "Speech continuation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is a continuation task: a model receives a prompt and generates the subsequent portion of speech so that it \"seamlessly\" or \"coherently\" follows what was given. Most descriptions stress contextual fit, using formulations such as a \"coherent and contextually appropriate audio continuation\" or \"a coherent and natural-sounding continuation.\" Papers differ on the prompt, with some describing text plus an initial speech segment, including the initial 3 seconds of the ground truth speech, while others describe a spoken audio prompt; one paper also reports preferred continuations according to human raters.\n\nVariants. Authors mostly call the behavior \"speech continuation,\" with additional labels such as \"direct speech continuation\" and simply \"continuation.\" The studied settings span text-conditioned continuation with an initial speech segment and spoken-audio continuation, and one formulation casts the objective as frame-level spectrogram regression, predicting each frame's spectrogram channels from previous spectrogram predictions plus ASR and LM context. Another paper evaluates continuation alongside cross-sentence tasks.\n\nSpace of elicitation and scores. No measurement instrument is linked to it, so papers do not connect speech continuation here to any named elicitation or scoring instrument.\n\nWhat it is taken as evidence of. No construct is linked to it as evidence of, so papers do not specify what broader construct it reflects.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Speech continuation"
+  ],
+  "papers": [
+    "CLaM-TTS: Improving Neural Codec Language Model for Zero-Shot Text-to-Speech",
+    "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+    "A Variational Framework for Improving Naturalness in Generative Spoken Language Models"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Continuing a speech utterance from a text prompt and an initial speech segment so that the output seamlessly follows the prompt.",
+      "papers": [
+        "CLaM-TTS: Improving Neural Codec Language Model for Zero-Shot Text-to-Speech",
+        "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+        "A Variational Framework for Improving Naturalness in Generative Spoken Language Models"
+      ],
+      "original_name": "Speech continuation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is a continuation task: a model receives a prompt and generates the subsequent portion of speech so that it \"seamlessly\" or \"coherently\" follows what was given. Most descriptions stress contextual fit, using formulations such as a \"coherent and contextually appropriate audio continuation\" or \"a coherent and natural-sounding continuation.\" Papers differ on the prompt, with some describing text plus an initial speech segment, including the initial 3 seconds of the ground truth speech, while others describe a spoken audio prompt; one paper also reports preferred continuations according to human raters."
+    },
+    {
+      "label": "Variants.",
+      "text": "Authors mostly call the behavior \"speech continuation,\" with additional labels such as \"direct speech continuation\" and simply \"continuation.\" The studied settings span text-conditioned continuation with an initial speech segment and spoken-audio continuation, and one formulation casts the objective as frame-level spectrogram regression, predicting each frame's spectrogram channels from previous spectrogram predictions plus ASR and LM context. Another paper evaluates continuation alongside cross-sentence tasks."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it, so papers do not connect speech continuation here to any named elicitation or scoring instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it as evidence of, so papers do not specify what broader construct it reflects."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is a continuation task: a model receives a prompt and generates the subsequent portion of speech so that it \"seamlessly\" or \"coherently\" follows what was given. Most descriptions stress contextual fit, using formulations such as a \"coherent and contextually appropriate audio continuation\" or \"a coherent and natural-sounding continuation.\" Papers differ on the prompt, with some describing text plus an initial speech segment, including the initial 3 seconds of the ground truth speech, while others describe a spoken audio prompt; one paper also reports preferred continuations according to human raters.\n\nVariants. Authors mostly call the behavior \"speech continuation,\" with additional labels such as \"direct speech continuation\" and simply \"continuation.\" The studied settings span text-conditioned continuation with an initial speech segment and spoken-audio continuation, and one formulation casts the objective as frame-level spectrogram regression, predicting each frame's spectrogram channels from previous spectrogram predictions plus ASR and LM context. Another paper evaluates continuation alongside cross-sentence tasks.\n\nSpace of elicitation and scores. No measurement instrument is linked to it, so papers do not connect speech continuation here to any named elicitation or scoring instrument.\n\nWhat it is taken as evidence of. No construct is linked to it as evidence of, so papers do not specify what broader construct it reflects.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "CLaM-TTS: Improving Neural Codec Language Model for Zero-Shot Text-to-Speech",
+      "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM"
+    ],
+    "icml25": [
+      "A Variational Framework for Improving Naturalness in Generative Spoken Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "icml25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "icml25"
+  ]
+}

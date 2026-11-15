@@ -1,0 +1,93 @@
+{
+  "canonical_name": "Legal compliance",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, legal compliance is most commonly framed as a latent model-level capacity or disposition to follow legal and regulatory standards. One formulation, under the name \"legality,\" emphasizes understanding and adhering to legal rules when generating responses or instructions, with misalignment described as producing content that \"provides unlawful instructions.\" Another keeps the same latent framing but specifies compliance with GDPR, the EU AI Act, and HIPAA when processing or responding to privacy- and safety-related inputs, so the main difference is broad legality versus regulation-specific privacy and safety compliance.\n\nSpace of facets. Papers do not offer a detailed subtype scheme. The main naming variation is between \"legality\" and \"legal compliance,\" used for similar latent properties; one paper places it alongside stereotypes and morality as an aspect of alignment, while another organizes it around three regulatory frameworks and connects it to lawful, safe, and privacy-preserving LLM systems and to contextualized legal reasoning.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. The papers only indicate that legality is assessed in agent-based experiments and that compliance results can be used as rewards for contextualized legal reasoning, without additional named measurement links.\n\nLinks. The only linked construct is contextual understanding. One paper, PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance, claims a causal relationship from contextual understanding to legal compliance, stating that \"better context-understanding abilities further improve legal compliance\".",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Legality",
+    "Legal compliance"
+  ],
+  "papers": [
+    "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning",
+    "Personalization up to a Point: Why Personalized Content Moderation Needs Boundaries, and How We Can Enforce Them",
+    "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+    "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The model's latent capacity to understand and adhere to legal rules and regulations when generating responses or instructions.",
+      "papers": [
+        "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation"
+      ],
+      "original_name": "Legality"
+    },
+    {
+      "text": "The model's latent disposition to adhere to established legal and regulatory standards such as GDPR, EU AI Act, and HIPAA when processing or responding to inputs involving privacy and safety.",
+      "papers": [
+        "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning"
+      ],
+      "original_name": "Legal compliance"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Contextual understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance",
+      "evidence": "Consequently, better context-understanding abilities further improve legal compliance, as indicated by the results of Table 2. (Section 5.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, legal compliance is most commonly framed as a latent model-level capacity or disposition to follow legal and regulatory standards. One formulation, under the name \"legality,\" emphasizes understanding and adhering to legal rules when generating responses or instructions, with misalignment described as producing content that \"provides unlawful instructions.\" Another keeps the same latent framing but specifies compliance with GDPR, the EU AI Act, and HIPAA when processing or responding to privacy- and safety-related inputs, so the main difference is broad legality versus regulation-specific privacy and safety compliance."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not offer a detailed subtype scheme. The main naming variation is between \"legality\" and \"legal compliance,\" used for similar latent properties; one paper places it alongside stereotypes and morality as an aspect of alignment, while another organizes it around three regulatory frameworks and connects it to lawful, safe, and privacy-preserving LLM systems and to contextualized legal reasoning."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. The papers only indicate that legality is assessed in agent-based experiments and that compliance results can be used as rewards for contextualized legal reasoning, without additional named measurement links."
+    },
+    {
+      "label": "Links.",
+      "text": "The only linked construct is contextual understanding. One paper, PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance, claims a causal relationship from contextual understanding to legal compliance, stating that \"better context-understanding abilities further improve legal compliance\"."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, legal compliance is most commonly framed as a latent model-level capacity or disposition to follow legal and regulatory standards. One formulation, under the name \"legality,\" emphasizes understanding and adhering to legal rules when generating responses or instructions, with misalignment described as producing content that \"provides unlawful instructions.\" Another keeps the same latent framing but specifies compliance with GDPR, the EU AI Act, and HIPAA when processing or responding to privacy- and safety-related inputs, so the main difference is broad legality versus regulation-specific privacy and safety compliance.\n\nSpace of facets. Papers do not offer a detailed subtype scheme. The main naming variation is between \"legality\" and \"legal compliance,\" used for similar latent properties; one paper places it alongside stereotypes and morality as an aspect of alignment, while another organizes it around three regulatory frameworks and connects it to lawful, safe, and privacy-preserving LLM systems and to contextualized legal reasoning.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. The papers only indicate that legality is assessed in agent-based experiments and that compliance results can be used as rewards for contextualized legal reasoning, without additional named measurement links.\n\nLinks. The only linked construct is contextual understanding. One paper, PrivaCI-Bench: Evaluating Privacy with Contextual Integrity and Legal Compliance, claims a causal relationship from contextual understanding to legal compliance, stating that \"better context-understanding abilities further improve legal compliance\".",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Context Reasoner: Incentivizing Reasoning Capability for Contextualized Privacy and Safety Compliance via Reinforcement Learning",
+      "Personalization up to a Point: Why Personalized Content Moderation Needs Boundaries, and How We Can Enforce Them"
+    ],
+    "neurips24": [
+      "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+      "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

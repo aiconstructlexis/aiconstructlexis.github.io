@@ -1,0 +1,72 @@
+{
+  "canonical_name": "Text quality preservation",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats this as a latent property or ability of a method to preserve output quality when generation is modified. Most definitions center on maintaining fluency and coherence, whether under strong attribute biasing in controlled generation or under the injection of hidden watermark patterns, and one formulation makes the narrower quality target explicit as keeping text natural, coherent, and grammatically correct. A smaller broadening of the concept extends beyond surface text quality to include functional utility, framing preservation as keeping downstream performance from being degraded.\n\nSpace of facets. Papers do not present a detailed subtype scheme, but they do use two closely overlapping names, \"fluency preservation\" and \"text quality preservation\", for related ideas. The main variation is in scope: some authors use it for surface properties of the text, especially fluency, coherence, and grammatical correctness, while others fold in preservation of the model's broader utility, including its \"essential abilities for downstream tasks\" and comparable performance on summarization and translation.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. Even so, the papers operationalize it through observed retention of quality, including little cost in perplexity, reports that fluency is \"not affected,\" similarity between watermarked and non-watermarked text quality, and comparable downstream task performance; as one paper puts it, \"this fine-grained control comes at very little cost with respect to perplexity\" (Controlled Text Generation via Language Model Arithmetic). Another paper treats preservation as consistent performance on summarization and translation while still supporting message embedding and extraction (BiMark: Unbiased Multilayer Watermarking for Large Language Models).",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Fluency preservation",
+    "Text quality preservation"
+  ],
+  "papers": [
+    "Controlled Text Generation via Language Model Arithmetic",
+    "Towards Codable Watermarking for Injecting Multi-Bits Information to LLMs",
+    "BiMark: Unbiased Multilayer Watermarking for Large Language Models"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The latent property of a controlled generation method to maintain natural, coherent, and grammatically correct text even under strong attribute biasing.",
+      "papers": [
+        "Controlled Text Generation via Language Model Arithmetic"
+      ],
+      "original_name": "Fluency preservation"
+    },
+    {
+      "text": "The latent ability of a watermarking method to maintain the fluency and coherence of generated text despite the injection of hidden patterns.",
+      "papers": [
+        "Towards Codable Watermarking for Injecting Multi-Bits Information to LLMs",
+        "BiMark: Unbiased Multilayer Watermarking for Large Language Models"
+      ],
+      "original_name": "Text quality preservation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats this as a latent property or ability of a method to preserve output quality when generation is modified. Most definitions center on maintaining fluency and coherence, whether under strong attribute biasing in controlled generation or under the injection of hidden watermark patterns, and one formulation makes the narrower quality target explicit as keeping text natural, coherent, and grammatically correct. A smaller broadening of the concept extends beyond surface text quality to include functional utility, framing preservation as keeping downstream performance from being degraded."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not present a detailed subtype scheme, but they do use two closely overlapping names, \"fluency preservation\" and \"text quality preservation\", for related ideas. The main variation is in scope: some authors use it for surface properties of the text, especially fluency, coherence, and grammatical correctness, while others fold in preservation of the model's broader utility, including its \"essential abilities for downstream tasks\" and comparable performance on summarization and translation."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to it. Even so, the papers operationalize it through observed retention of quality, including little cost in perplexity, reports that fluency is \"not affected,\" similarity between watermarked and non-watermarked text quality, and comparable downstream task performance; as one paper puts it, \"this fine-grained control comes at very little cost with respect to perplexity\" (Controlled Text Generation via Language Model Arithmetic). Another paper treats preservation as consistent performance on summarization and translation while still supporting message embedding and extraction (BiMark: Unbiased Multilayer Watermarking for Large Language Models)."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats this as a latent property or ability of a method to preserve output quality when generation is modified. Most definitions center on maintaining fluency and coherence, whether under strong attribute biasing in controlled generation or under the injection of hidden watermark patterns, and one formulation makes the narrower quality target explicit as keeping text natural, coherent, and grammatically correct. A smaller broadening of the concept extends beyond surface text quality to include functional utility, framing preservation as keeping downstream performance from being degraded.\n\nSpace of facets. Papers do not present a detailed subtype scheme, but they do use two closely overlapping names, \"fluency preservation\" and \"text quality preservation\", for related ideas. The main variation is in scope: some authors use it for surface properties of the text, especially fluency, coherence, and grammatical correctness, while others fold in preservation of the model's broader utility, including its \"essential abilities for downstream tasks\" and comparable performance on summarization and translation.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. Even so, the papers operationalize it through observed retention of quality, including little cost in perplexity, reports that fluency is \"not affected,\" similarity between watermarked and non-watermarked text quality, and comparable downstream task performance; as one paper puts it, \"this fine-grained control comes at very little cost with respect to perplexity\" (Controlled Text Generation via Language Model Arithmetic). Another paper treats preservation as consistent performance on summarization and translation while still supporting message embedding and extraction (BiMark: Unbiased Multilayer Watermarking for Large Language Models).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Controlled Text Generation via Language Model Arithmetic",
+      "Towards Codable Watermarking for Injecting Multi-Bits Information to LLMs"
+    ],
+    "icml25": [
+      "BiMark: Unbiased Multilayer Watermarking for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "icml25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "icml25"
+  ]
+}

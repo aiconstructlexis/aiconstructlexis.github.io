@@ -1,0 +1,80 @@
+{
+  "canonical_name": "UltraInteract",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the definitions here, UltraInteract is described as multi-turn conversational data built around complex reasoning tasks. Papers differ in how they characterize its format and role: some describe a multi-turn RLHF dataset with dialogues that cover general chat scenarios and are used to evaluate conversational and instruction-following abilities, while another description presents it as a pairwise alignment dataset of multi-turn conversational data designed to evaluate and improve performance on complex reasoning tasks.\n\nWhat it is claimed to measure. Recorded links do not spread across many named outcomes: UltraInteract is linked to 1 construct, Reasoning, and to no behavioral indicators. That construct link is reported as related rather than as a measured_by claim, while the definitions and quoted passages say papers use UltraInteract to evaluate conversational ability, instruction-following ability, and performance on complex reasoning tasks.\n\nSpace of uses. Papers use UltraInteract both as an evaluation benchmark and as training or alignment data. In one usage, a method is evaluated on responses to instructions with complex reasoning tasks that cover general chat scenarios, and in another, models are fine-tuned on UltraInteract as pairwise alignment data; no measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "UltraInteract"
+  ],
+  "papers": [
+    "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+    "Speculative Knowledge Distillation: Bridging the Teacher-Student Gap Through Interleaved Sampling",
+    "Noise Contrastive Alignment of Language Models with Explicit Rewards"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A multi-turn RLHF dataset containing dialogues with complex reasoning tasks, used to evaluate a model's conversational and instruction-following abilities.",
+      "papers": [
+        "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+        "Noise Contrastive Alignment of Language Models with Explicit Rewards"
+      ],
+      "original_name": "UltraInteract"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Noise Contrastive Alignment of Language Models with Explicit Rewards",
+      "evidence": "\"We consider fine-tuning Mistral-7B and Mistral-8\u00d77B models on UltraInteract [44], a pairwise alignment dataset specifically designed for complex reasoning tasks.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Noise Contrastive Alignment of Language Models with Explicit Rewards"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the definitions here, UltraInteract is described as multi-turn conversational data built around complex reasoning tasks. Papers differ in how they characterize its format and role: some describe a multi-turn RLHF dataset with dialogues that cover general chat scenarios and are used to evaluate conversational and instruction-following abilities, while another description presents it as a pairwise alignment dataset of multi-turn conversational data designed to evaluate and improve performance on complex reasoning tasks."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Recorded links do not spread across many named outcomes: UltraInteract is linked to 1 construct, Reasoning, and to no behavioral indicators. That construct link is reported as related rather than as a measured_by claim, while the definitions and quoted passages say papers use UltraInteract to evaluate conversational ability, instruction-following ability, and performance on complex reasoning tasks."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use UltraInteract both as an evaluation benchmark and as training or alignment data. In one usage, a method is evaluated on responses to instructions with complex reasoning tasks that cover general chat scenarios, and in another, models are fine-tuned on UltraInteract as pairwise alignment data; no measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Across the definitions here, UltraInteract is described as multi-turn conversational data built around complex reasoning tasks. Papers differ in how they characterize its format and role: some describe a multi-turn RLHF dataset with dialogues that cover general chat scenarios and are used to evaluate conversational and instruction-following abilities, while another description presents it as a pairwise alignment dataset of multi-turn conversational data designed to evaluate and improve performance on complex reasoning tasks.\n\nWhat it is claimed to measure. Recorded links do not spread across many named outcomes: UltraInteract is linked to 1 construct, Reasoning, and to no behavioral indicators. That construct link is reported as related rather than as a measured_by claim, while the definitions and quoted passages say papers use UltraInteract to evaluate conversational ability, instruction-following ability, and performance on complex reasoning tasks.\n\nSpace of uses. Papers use UltraInteract both as an evaluation benchmark and as training or alignment data. In one usage, a method is evaluated on responses to instructions with complex reasoning tasks that cover general chat scenarios, and in another, models are fine-tuned on UltraInteract as pairwise alignment data; no measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Regressing the Relative Future: Efficient Policy Optimization for Multi-turn RLHF",
+      "Speculative Knowledge Distillation: Bridging the Teacher-Student Gap Through Interleaved Sampling"
+    ],
+    "neurips24": [
+      "Noise Contrastive Alignment of Language Models with Explicit Rewards"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

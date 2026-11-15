@@ -1,0 +1,151 @@
+{
+  "canonical_name": "Detoxify",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, Detoxify is most commonly described as a model-based toxicity scoring or classification tool for text. Papers variously refer to it as a machine learning model, library, classifier, or evaluation procedure, but the prevailing usage is to assign a toxicity score to generated text, responses, or continuations, with higher scores indicating more toxic generation; some authors also describe it as automatically generating disutility measures for LLM outputs. One paper uses the classifier with six attributes, toxicity, severe toxicity, obscene, threat, insult, and identity attack, and another reports retraining Detoxify on a biased subset of the Jigsaw Unintended Bias in Toxicity Classification dataset.\n\nWhat it is claimed to measure. The reported links are concentrated rather than spread across many targets: papers use Detoxify to measure one construct, Toxicity, and one behavioral indicator, Harmful content generation. The prevailing use is for Toxicity, with papers describing it as assessing the toxicity of responses, generated text, continuations, or tweets; some operationalizations use the raw score, while others derive metrics such as Toxicity Probability and Expected Maximum Toxicity from repeated generations. A smaller line of work links it to Harmful content generation, where a prompt is counted as successful when the chatbot response is flagged by Detoxify or the OpenAI Moderation API.\n\nSpace of uses. Across papers, Detoxify is typically used as an automatic scorer applied after generation within broader evaluation pipelines. Several papers use it alongside the OpenAI Moderation API, and another uses it with Perspective API; papers also report thresholded use, including 0.1 in one study and 0.7 in another. Beyond these pairings, the reported use is mainly as a toxicity check over model outputs, including responses, continuations, and tweets.\n\nConcerns raised. Explicit concerns are limited, but one comparison study reports weaker flagging of harmful fine-tuning examples under a thresholded setup: at a threshold of at least 0.7, Detoxify flagged 6% of 100 harmful instructions, compared with 17% for OpenAI's API and 4% for Perspective API in the same experiment.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Detoxify"
+  ],
+  "papers": [
+    "Breaking Bad Tokens: Detoxification of LLMs Using Sparse Autoencoders",
+    "Hope vs. Hate: Understanding User Interactions with LGBTQ+ News Content in Mainstream US News Media through the Lens of Hope Speech",
+    "How Does DPO Reduce Toxicity? A Mechanistic Neuron-Level Analysis",
+    "MoMoE: Mixture of Moderation Experts Framework for AI-Assisted Online Governance",
+    "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+    "Who Holds the Pen? Caricature and Perspective in LLM Retellings of History",
+    "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+    "Model Merging by Uncertainty-Based Gradient Matching",
+    "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models",
+    "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+    "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+    "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation",
+    "Conformal Tail Risk Control for Large Language Model Alignment",
+    "Metadata Conditioning Accelerates Language Model Pre-training"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "Model-based toxicity scoring system that assigns a toxicity score to generated text.",
+      "papers": [
+        "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+        "Model Merging by Uncertainty-Based Gradient Matching",
+        "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models",
+        "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+        "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+        "Conformal Tail Risk Control for Large Language Model Alignment",
+        "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization"
+      ],
+      "original_name": "Detoxify"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Toxicity",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+      "evidence": "We detect unsafe content using two toxicity classification tools: the OpenAI Moderation API and Detoxify (Section 4).",
+      "paper_count": 10,
+      "paper_weight": 10.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+          "Model Merging by Uncertainty-Based Gradient Matching"
+        ],
+        "iclr25": [
+          "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation",
+          "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity"
+        ],
+        "naacl25": [
+          "Improving and Assessing the Fidelity of Large Language Models Alignment to Online Communities"
+        ],
+        "icml25": [
+          "Conformal Tail Risk Control for Large Language Model Alignment",
+          "Metadata Conditioning Accelerates Language Model Pre-training"
+        ],
+        "emnlp25": [
+          "Breaking Bad Tokens: Detoxification of LLMs Using Sparse Autoencoders",
+          "Who Holds the Pen? Caricature and Perspective in LLM Retellings of History",
+          "How Does DPO Reduce Toxicity? A Mechanistic Neuron-Level Analysis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "WildChat: 1M ChatGPT Interaction Logs in the Wild",
+      "evidence": "The success rate for each prompt was determined by whether the chatbot\u2019s response to such a prompt was flagged by either Detoxify or OpenAI Moderation API (Section 4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "WildChat: 1M ChatGPT Interaction Logs in the Wild"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, Detoxify is most commonly described as a model-based toxicity scoring or classification tool for text. Papers variously refer to it as a machine learning model, library, classifier, or evaluation procedure, but the prevailing usage is to assign a toxicity score to generated text, responses, or continuations, with higher scores indicating more toxic generation; some authors also describe it as automatically generating disutility measures for LLM outputs. One paper uses the classifier with six attributes, toxicity, severe toxicity, obscene, threat, insult, and identity attack, and another reports retraining Detoxify on a biased subset of the Jigsaw Unintended Bias in Toxicity Classification dataset."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The reported links are concentrated rather than spread across many targets: papers use Detoxify to measure one construct, Toxicity, and one behavioral indicator, Harmful content generation. The prevailing use is for Toxicity, with papers describing it as assessing the toxicity of responses, generated text, continuations, or tweets; some operationalizations use the raw score, while others derive metrics such as Toxicity Probability and Expected Maximum Toxicity from repeated generations. A smaller line of work links it to Harmful content generation, where a prompt is counted as successful when the chatbot response is flagged by Detoxify or the OpenAI Moderation API."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Across papers, Detoxify is typically used as an automatic scorer applied after generation within broader evaluation pipelines. Several papers use it alongside the OpenAI Moderation API, and another uses it with Perspective API; papers also report thresholded use, including 0.1 in one study and 0.7 in another. Beyond these pairings, the reported use is mainly as a toxicity check over model outputs, including responses, continuations, and tweets."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "Explicit concerns are limited, but one comparison study reports weaker flagging of harmful fine-tuning examples under a thresholded setup: at a threshold of at least 0.7, Detoxify flagged 6% of 100 harmful instructions, compared with 17% for OpenAI's API and 4% for Perspective API in the same experiment."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, Detoxify is most commonly described as a model-based toxicity scoring or classification tool for text. Papers variously refer to it as a machine learning model, library, classifier, or evaluation procedure, but the prevailing usage is to assign a toxicity score to generated text, responses, or continuations, with higher scores indicating more toxic generation; some authors also describe it as automatically generating disutility measures for LLM outputs. One paper uses the classifier with six attributes, toxicity, severe toxicity, obscene, threat, insult, and identity attack, and another reports retraining Detoxify on a biased subset of the Jigsaw Unintended Bias in Toxicity Classification dataset.\n\nWhat it is claimed to measure. The reported links are concentrated rather than spread across many targets: papers use Detoxify to measure one construct, Toxicity, and one behavioral indicator, Harmful content generation. The prevailing use is for Toxicity, with papers describing it as assessing the toxicity of responses, generated text, continuations, or tweets; some operationalizations use the raw score, while others derive metrics such as Toxicity Probability and Expected Maximum Toxicity from repeated generations. A smaller line of work links it to Harmful content generation, where a prompt is counted as successful when the chatbot response is flagged by Detoxify or the OpenAI Moderation API.\n\nSpace of uses. Across papers, Detoxify is typically used as an automatic scorer applied after generation within broader evaluation pipelines. Several papers use it alongside the OpenAI Moderation API, and another uses it with Perspective API; papers also report thresholded use, including 0.1 in one study and 0.7 in another. Beyond these pairings, the reported use is mainly as a toxicity check over model outputs, including responses, continuations, and tweets.\n\nConcerns raised. Explicit concerns are limited, but one comparison study reports weaker flagging of harmful fine-tuning examples under a thresholded setup: at a threshold of at least 0.7, Detoxify flagged 6% of 100 harmful instructions, compared with 17% for OpenAI's API and 4% for Perspective API in the same experiment.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Breaking Bad Tokens: Detoxification of LLMs Using Sparse Autoencoders",
+      "Hope vs. Hate: Understanding User Interactions with LGBTQ+ News Content in Mainstream US News Media through the Lens of Hope Speech",
+      "How Does DPO Reduce Toxicity? A Mechanistic Neuron-Level Analysis",
+      "MoMoE: Mixture of Moderation Experts Framework for AI-Assisted Online Governance",
+      "PBI-Attack: Prior-Guided Bimodal Interactive Black-Box Jailbreak Attack for Toxicity Maximization",
+      "Who Holds the Pen? Caricature and Perspective in LLM Retellings of History"
+    ],
+    "iclr24": [
+      "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+      "Model Merging by Uncertainty-Based Gradient Matching",
+      "Prompt Risk Control: A Rigorous Framework for Responsible Deployment of Large Language Models",
+      "WildChat: 1M ChatGPT Interaction Logs in the Wild"
+    ],
+    "iclr25": [
+      "Model Editing as a Robust and Denoised variant of DPO: A Case Study on Toxicity",
+      "UniDetox: Universal Detoxification of Large Language Models via Dataset Distillation"
+    ],
+    "icml25": [
+      "Conformal Tail Risk Control for Large Language Model Alignment",
+      "Metadata Conditioning Accelerates Language Model Pre-training"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 6,
+    "iclr24": 4,
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

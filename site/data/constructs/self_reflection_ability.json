@@ -1,0 +1,224 @@
+{
+  "canonical_name": "Self-reflection ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats self-reflection ability as a latent capability of an agent or model to review prior attempts or generated solutions, analyze its own performance, often especially failures, and use that review to refine later behavior, strategy, or responses. A common variant makes the output explicit as useful verbal feedback from prior experience for subsequent task improvement, while a narrower framing treats it as self-correction or verification during reasoning, including identifying and fixing errors or confirming conclusions with new insights. A smaller line of work describes it less as a stable ability and more as an iterative or multi-round process of critical self-evaluation, sometimes emphasizing repeated revision without degradation from redundancy, drift, or stubbornness.\n\nSpace of facets. Papers use several closely related labels, including reflection, reflection capability, self-reflection, and iterative reflection capability, for overlapping ideas centered on reviewing prior outputs and improving subsequent ones. Within that family, some authors narrow the construct to multi-round self-reflection, some to generating verbal feedback from experience, some to reflection on generated solutions during reasoning, and some to iterative response refinement across multiple cycles. One paper also singles out \"reflection quality\" at the step level, asking whether each reflection step drives the question toward correctness.\n\nSpace of measurement. No measurement instrument is linked to this construct, and papers link it to one behavioral indicator, Self-correction. In practice, the construct is described through behaviors such as generating useful verbal feedback from prior experiences, explicitly reflecting on environmental feedback, critically evaluating previous responses, identifying and fixing errors or confirming conclusions, selecting the most plausible solution, and revising responses over multiple rounds. These observable descriptions largely mirror the main definitions, which also focus on reviewing prior outputs and improving later ones.\n\nLinks. Papers link this construct in two ways. One paper reports that Self-correction is related to self-reflection ability, using \"reflection quality\" to examine whether each reflection step drives the question toward correctness. One paper also claims a causal relationship from self-reflection ability to Reasoning quality, stating that models with a reflection mechanism demonstrate superior chain-of-thought quality.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Reflection",
+    "Reflection capability",
+    "Self-reflection",
+    "Iterative reflection capability"
+  ],
+  "papers": [
+    "From Objectives to Questions: A Planning-based Framework for Educational Mathematical Question Generation",
+    "INVESTORBENCH: A Benchmark for Financial Decision-Making Tasks with LLM-based Agent",
+    "Innovative Image Fraud Detection with Cross-Sample Anomaly Analysis: The Power of LLMs",
+    "Learning to Reason from Feedback at Test-Time",
+    "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling",
+    "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs",
+    "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+    "Examining False Positives under Inference Scaling for Mathematical Reasoning",
+    "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+    "MERMAID: Multi-perspective Self-reflective Agents with Generative Augmentation for Emotion Recognition",
+    "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation via LLM Agent",
+    "Revealing and Mitigating the Challenge of Detecting Character Knowledge Errors in LLM Role-Playing",
+    "RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals",
+    "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs",
+    "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+    "Step Guided Reasoning: Improving Mathematical Reasoning using Guidance Generation and Step Reasoning",
+    "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+    "ThinkTuning: Instilling Cognitive Reflections without Distillation",
+    "Thinking Out Loud: Do Reasoning Models Know When They're Right?",
+    "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+    "Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization",
+    "REvolve: Reward Evolution with Large Language Models using Human Feedback",
+    "Are Large Language Models Ready for Multi-Turn Tabular Data Analysis?",
+    "CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance",
+    "Cradle: Empowering Foundation Agents towards General Computer Control",
+    "ELEMENTAL: Interactive Learning from Demonstrations and Vision-Language Models for Reward Design in Robotics",
+    "Improving Rationality in the Reasoning Process of Language Models through Self-playing Game",
+    "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+    "Otter: Generating Tests from Issues to Validate SWE Patches",
+    "RZ-NAS: Enhancing LLM-guided Neural Architecture Search via Reflective Zero-Cost Strategy",
+    "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+    "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems",
+    "Improving Retrospective Language Agents via Joint Policy Gradient Optimization",
+    "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction",
+    "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection",
+    "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+    "Towards Rationality in Language and Multimodal Agents: A Survey",
+    "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+    "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+    "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+    "Reflective Multi-Agent Collaboration based on Large Language Models",
+    "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy"
+  ],
+  "paper_count": 42,
+  "definitions": [
+    {
+      "text": "The model's ability to review prior attempts and refine future behavior based on that review.",
+      "papers": [
+        "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent"
+      ],
+      "original_name": "Reflection"
+    },
+    {
+      "text": "The degree of an agent's proficiency in generating useful verbal feedback from prior experiences to improve subsequent task performance.",
+      "papers": [
+        "Reflective Multi-Agent Collaboration based on Large Language Models",
+        "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency"
+      ],
+      "original_name": "Reflection capability"
+    },
+    {
+      "text": "The latent ability of an agent to analyze its own performance, particularly failures, and generate feedback to improve its strategy in subsequent attempts.",
+      "papers": [
+        "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection",
+        "Improving Retrospective Language Agents via Joint Policy Gradient Optimization",
+        "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+        "Towards Rationality in Language and Multimodal Agents: A Survey"
+      ],
+      "original_name": "Self-reflection"
+    },
+    {
+      "text": "The latent ability of a model to effectively refine its responses over multiple cycles of self-evaluation and revision, avoiding degradation due to redundancy, drift, or stubbornness.",
+      "papers": [
+        "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction"
+      ],
+      "original_name": "Iterative reflection capability"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-correction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+      "evidence": "\u201cReflection Quality ... analyzes whether each reflection step drives the question towards correctness.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning quality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+      "evidence": "\u201cModels with reflection mechanism demonstrate a superior CoT quality\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats self-reflection ability as a latent capability of an agent or model to review prior attempts or generated solutions, analyze its own performance, often especially failures, and use that review to refine later behavior, strategy, or responses. A common variant makes the output explicit as useful verbal feedback from prior experience for subsequent task improvement, while a narrower framing treats it as self-correction or verification during reasoning, including identifying and fixing errors or confirming conclusions with new insights. A smaller line of work describes it less as a stable ability and more as an iterative or multi-round process of critical self-evaluation, sometimes emphasizing repeated revision without degradation from redundancy, drift, or stubbornness."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several closely related labels, including reflection, reflection capability, self-reflection, and iterative reflection capability, for overlapping ideas centered on reviewing prior outputs and improving subsequent ones. Within that family, some authors narrow the construct to multi-round self-reflection, some to generating verbal feedback from experience, some to reflection on generated solutions during reasoning, and some to iterative response refinement across multiple cycles. One paper also singles out \"reflection quality\" at the step level, asking whether each reflection step drives the question toward correctness."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to this construct, and papers link it to one behavioral indicator, Self-correction. In practice, the construct is described through behaviors such as generating useful verbal feedback from prior experiences, explicitly reflecting on environmental feedback, critically evaluating previous responses, identifying and fixing errors or confirming conclusions, selecting the most plausible solution, and revising responses over multiple rounds. These observable descriptions largely mirror the main definitions, which also focus on reviewing prior outputs and improving later ones."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link this construct in two ways. One paper reports that Self-correction is related to self-reflection ability, using \"reflection quality\" to examine whether each reflection step drives the question toward correctness. One paper also claims a causal relationship from self-reflection ability to Reasoning quality, stating that models with a reflection mechanism demonstrate superior chain-of-thought quality."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats self-reflection ability as a latent capability of an agent or model to review prior attempts or generated solutions, analyze its own performance, often especially failures, and use that review to refine later behavior, strategy, or responses. A common variant makes the output explicit as useful verbal feedback from prior experience for subsequent task improvement, while a narrower framing treats it as self-correction or verification during reasoning, including identifying and fixing errors or confirming conclusions with new insights. A smaller line of work describes it less as a stable ability and more as an iterative or multi-round process of critical self-evaluation, sometimes emphasizing repeated revision without degradation from redundancy, drift, or stubbornness.\n\nSpace of facets. Papers use several closely related labels, including reflection, reflection capability, self-reflection, and iterative reflection capability, for overlapping ideas centered on reviewing prior outputs and improving subsequent ones. Within that family, some authors narrow the construct to multi-round self-reflection, some to generating verbal feedback from experience, some to reflection on generated solutions during reasoning, and some to iterative response refinement across multiple cycles. One paper also singles out \"reflection quality\" at the step level, asking whether each reflection step drives the question toward correctness.\n\nSpace of measurement. No measurement instrument is linked to this construct, and papers link it to one behavioral indicator, Self-correction. In practice, the construct is described through behaviors such as generating useful verbal feedback from prior experiences, explicitly reflecting on environmental feedback, critically evaluating previous responses, identifying and fixing errors or confirming conclusions, selecting the most plausible solution, and revising responses over multiple rounds. These observable descriptions largely mirror the main definitions, which also focus on reviewing prior outputs and improving later ones.\n\nLinks. Papers link this construct in two ways. One paper reports that Self-correction is related to self-reflection ability, using \"reflection quality\" to examine whether each reflection step drives the question toward correctness. One paper also claims a causal relationship from self-reflection ability to Reasoning quality, stating that models with a reflection mechanism demonstrate superior chain-of-thought quality.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "From Objectives to Questions: A Planning-based Framework for Educational Mathematical Question Generation",
+      "INVESTORBENCH: A Benchmark for Financial Decision-Making Tasks with LLM-based Agent",
+      "Innovative Image Fraud Detection with Cross-Sample Anomaly Analysis: The Power of LLMs",
+      "Learning to Reason from Feedback at Test-Time",
+      "Think&Cite: Improving Attributed Text Generation with Self-Guided Tree Search and Progress Reward Modeling"
+    ],
+    "emnlp25": [
+      "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs",
+      "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+      "Examining False Positives under Inference Scaling for Mathematical Reasoning",
+      "Generator-Assistant Stepwise Rollback Framework for Large Language Model Agent",
+      "MERMAID: Multi-perspective Self-reflective Agents with Generative Augmentation for Emotion Recognition",
+      "OMS: On-the-fly, Multi-Objective, Self-Reflective Ad Keyword Generation via LLM Agent",
+      "Revealing and Mitigating the Challenge of Detecting Character Knowledge Errors in LLM Role-Playing",
+      "RoT: Enhancing Table Reasoning with Iterative Row-Wise Traversals",
+      "SAFENUDGE: Safeguarding Large Language Models in Real-time with Tunable Safety-Performance Trade-offs",
+      "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+      "Step Guided Reasoning: Improving Mathematical Reasoning using Guidance Generation and Step Reasoning",
+      "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+      "ThinkTuning: Instilling Cognitive Reflections without Distillation",
+      "Thinking Out Loud: Do Reasoning Models Know When They're Right?"
+    ],
+    "iclr24": [
+      "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+      "Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization"
+    ],
+    "iclr25": [
+      "REvolve: Reward Evolution with Large Language Models using Human Feedback"
+    ],
+    "icml25": [
+      "Are Large Language Models Ready for Multi-Turn Tabular Data Analysis?",
+      "CodeSteer: Symbolic-Augmented Language Models via Code/Text Guidance",
+      "Cradle: Empowering Foundation Agents towards General Computer Control",
+      "ELEMENTAL: Interactive Learning from Demonstrations and Vision-Language Models for Reward Design in Robotics",
+      "Improving Rationality in the Reasoning Process of Language Models through Self-playing Game",
+      "MME-CoT: Benchmarking Chain-of-Thought in Large Multimodal Models for Reasoning Quality, Robustness, and Efficiency",
+      "Otter: Generating Tests from Issues to Validate SWE Patches",
+      "RZ-NAS: Enhancing LLM-guided Neural Architecture Search via Reflective Zero-Cost Strategy",
+      "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+      "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems"
+    ],
+    "naacl25": [
+      "Improving Retrospective Language Agents via Joint Policy Gradient Optimization",
+      "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction",
+      "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection",
+      "Vision-Language Models Can Self-Improve Reasoning via Reflection",
+      "Towards Rationality in Language and Multimodal Agents: A Survey"
+    ],
+    "neurips24": [
+      "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+      "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "Mobile-Agent-v2: Mobile Device Operation Assistant with Effective Navigation via Multi-Agent Collaboration",
+      "Reflective Multi-Agent Collaboration based on Large Language Models",
+      "Richelieu: Self-Evolving LLM-Based Agents for AI Diplomacy"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 5,
+    "emnlp25": 14,
+    "iclr24": 2,
+    "iclr25": 1,
+    "icml25": 10,
+    "naacl25": 5,
+    "neurips24": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

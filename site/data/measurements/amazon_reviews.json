@@ -1,0 +1,83 @@
+{
+  "canonical_name": "Amazon Reviews",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, Amazon Reviews is treated as a product review dataset, most commonly described as Amazon reviews across multiple categories. One use presents it as a sentiment analysis dataset for evaluating model performance on commercial user feedback, while another describes the public Amazon Reviews dataset as adapted with simulated user consultation texts, user profiles, and interaction behaviors for evaluation. In a separate experimental description, the Amazon product reviews are also said to be labeled into a three-layer taxonomy DAG.\n\nWhat it is claimed to measure. Papers link Amazon Reviews to one behavioral indicator and no constructs. The reported measurement claim is concentrated on hierarchical text classification: papers use it to measure that indicator, with one description specifying Amazon product reviews labeled into a three-layer taxonomy DAG rather than spreading the instrument across several reported constructs or behaviors.\n\nSpace of uses. No other measurement instrument is linked to Amazon Reviews. In the papers, it is used as a task dataset for sentiment analysis, as a public dataset adapted for evaluation with simulated user consultation texts, user profiles, and interaction behaviors, and as one of the public datasets used in experiments on hierarchical text classification.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Amazon",
+    "Amazon Reviews dataset"
+  ],
+  "papers": [
+    "Direct Prompt Optimization with Continuous Representations",
+    "MAPS: Motivation-Aware Personalized Search via LLM-Driven Consultation Alignment",
+    "Taming Language Models for Text-attributed Graph Learning with Decoupled Aggregation"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Product review dataset across multiple categories used for sentiment analysis, evaluating model performance on commercial user feedback.",
+      "papers": [
+        "Direct Prompt Optimization with Continuous Representations"
+      ],
+      "original_name": "Amazon"
+    },
+    {
+      "text": "A widely used public dataset of Amazon product reviews, adapted to include simulated user consultation texts, user profiles, and interaction behaviors for evaluation.",
+      "papers": [
+        "MAPS: Motivation-Aware Personalized Search via LLM-Driven Consultation Alignment"
+      ],
+      "original_name": "Amazon Reviews dataset"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hierarchical text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Ensembling Prompting Strategies for Zero-Shot Hierarchical Text Classification with Large Language Models",
+      "evidence": "We conduct experiments on the following three public datasets: ... 3) Amazon consists of Amazon product reviews which are labeled into a three-layer taxonomy DAG...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Ensembling Prompting Strategies for Zero-Shot Hierarchical Text Classification with Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, Amazon Reviews is treated as a product review dataset, most commonly described as Amazon reviews across multiple categories. One use presents it as a sentiment analysis dataset for evaluating model performance on commercial user feedback, while another describes the public Amazon Reviews dataset as adapted with simulated user consultation texts, user profiles, and interaction behaviors for evaluation. In a separate experimental description, the Amazon product reviews are also said to be labeled into a three-layer taxonomy DAG."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link Amazon Reviews to one behavioral indicator and no constructs. The reported measurement claim is concentrated on hierarchical text classification: papers use it to measure that indicator, with one description specifying Amazon product reviews labeled into a three-layer taxonomy DAG rather than spreading the instrument across several reported constructs or behaviors."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No other measurement instrument is linked to Amazon Reviews. In the papers, it is used as a task dataset for sentiment analysis, as a public dataset adapted for evaluation with simulated user consultation texts, user profiles, and interaction behaviors, and as one of the public datasets used in experiments on hierarchical text classification."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, Amazon Reviews is treated as a product review dataset, most commonly described as Amazon reviews across multiple categories. One use presents it as a sentiment analysis dataset for evaluating model performance on commercial user feedback, while another describes the public Amazon Reviews dataset as adapted with simulated user consultation texts, user profiles, and interaction behaviors for evaluation. In a separate experimental description, the Amazon product reviews are also said to be labeled into a three-layer taxonomy DAG.\n\nWhat it is claimed to measure. Papers link Amazon Reviews to one behavioral indicator and no constructs. The reported measurement claim is concentrated on hierarchical text classification: papers use it to measure that indicator, with one description specifying Amazon product reviews labeled into a three-layer taxonomy DAG rather than spreading the instrument across several reported constructs or behaviors.\n\nSpace of uses. No other measurement instrument is linked to Amazon Reviews. In the papers, it is used as a task dataset for sentiment analysis, as a public dataset adapted for evaluation with simulated user consultation texts, user profiles, and interaction behaviors, and as one of the public datasets used in experiments on hierarchical text classification.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Direct Prompt Optimization with Continuous Representations",
+      "MAPS: Motivation-Aware Personalized Search via LLM-Driven Consultation Alignment",
+      "Taming Language Models for Text-attributed Graph Learning with Decoupled Aggregation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

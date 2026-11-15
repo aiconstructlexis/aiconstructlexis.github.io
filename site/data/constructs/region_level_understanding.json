@@ -1,0 +1,120 @@
+{
+  "canonical_name": "Region-level understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. The definition treats region-level understanding, also called region-level comprehension, as the ability to understand and reason about specific spatial regions within an image, rather than only processing the image as a whole. The same usage places it in a setting where overhead viewpoint, scale variation, and small objects are described as challenges for region-level comprehension in high-resolution remote sensing imagery.\n\nSpace of facets. The usage in the papers does not divide the construct into explicit subtypes. Instead, the main distinction is between reasoning about specific spatial regions and processing the image as a whole, and adjacent uses connect it to region captioning and to multimodal alignment in region-level context without explicitly treating them as the same construct.\n\nSpace of measurement. Papers link this construct to one measurement instrument, Ferret-Bench, through Referring Description and Referring Reasoning tasks. The surrounding operationalization is likewise region-task based: region captioning is the only linked behavioral indicator, and papers describe using region captioning benchmarks and a visual referring task to access or assess region-level understanding capabilities.\n\nLinks. The linked claims are relational rather than causal or correlational. Some papers relate region captioning to region-level understanding by describing region captioning benchmarks or a visual referring task as ways to assess region understanding capabilities, and one paper relates multimodal alignment to it by examining the multimodal alignment process in region-level context across intermediate layers using Wasserstein-2 distance between a region-encoded token and the last language token.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Region-level comprehension"
+  ],
+  "papers": [
+    "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+    "GeoPixel: Pixel Grounding Large Multimodal Model in Remote Sensing",
+    "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The ability to understand and reason about specific spatial regions within an image, as opposed to only processing the image as a whole.",
+      "papers": [
+        "GeoPixel: Pixel Grounding Large Multimodal Model in Remote Sensing"
+      ],
+      "original_name": "Region-level comprehension"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Region captioning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks",
+      "evidence": "\"Region Captioning. To access the region understanding capabilities of VisionLLM v2, we evaluate our models on two prominent benchmarks: RefCOCOg [126] and Visual Genome [86].\"",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks"
+        ],
+        "iclr25": [
+          "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "we investigated the multi-modal alignment process in region-level context across intermediate layers by calculating the Wasserstein-2 distance between each layer\u2019s region-encoded token [mask] and the last language token. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Ferret-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want",
+      "evidence": "Experiments are conducted on the Referring Description and Referring Reasoning tasks within Ferret-Bench, with the results presented in Table 3.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Draw-and-Understand: Leveraging Visual Prompts to Enable MLLMs to Comprehend What You Want"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The definition treats region-level understanding, also called region-level comprehension, as the ability to understand and reason about specific spatial regions within an image, rather than only processing the image as a whole. The same usage places it in a setting where overhead viewpoint, scale variation, and small objects are described as challenges for region-level comprehension in high-resolution remote sensing imagery."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The usage in the papers does not divide the construct into explicit subtypes. Instead, the main distinction is between reasoning about specific spatial regions and processing the image as a whole, and adjacent uses connect it to region captioning and to multimodal alignment in region-level context without explicitly treating them as the same construct."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link this construct to one measurement instrument, Ferret-Bench, through Referring Description and Referring Reasoning tasks. The surrounding operationalization is likewise region-task based: region captioning is the only linked behavioral indicator, and papers describe using region captioning benchmarks and a visual referring task to access or assess region-level understanding capabilities."
+    },
+    {
+      "label": "Links.",
+      "text": "The linked claims are relational rather than causal or correlational. Some papers relate region captioning to region-level understanding by describing region captioning benchmarks or a visual referring task as ways to assess region understanding capabilities, and one paper relates multimodal alignment to it by examining the multimodal alignment process in region-level context across intermediate layers using Wasserstein-2 distance between a region-encoded token and the last language token."
+    }
+  ],
+  "characterization": "Space of definitions. The definition treats region-level understanding, also called region-level comprehension, as the ability to understand and reason about specific spatial regions within an image, rather than only processing the image as a whole. The same usage places it in a setting where overhead viewpoint, scale variation, and small objects are described as challenges for region-level comprehension in high-resolution remote sensing imagery.\n\nSpace of facets. The usage in the papers does not divide the construct into explicit subtypes. Instead, the main distinction is between reasoning about specific spatial regions and processing the image as a whole, and adjacent uses connect it to region captioning and to multimodal alignment in region-level context without explicitly treating them as the same construct.\n\nSpace of measurement. Papers link this construct to one measurement instrument, Ferret-Bench, through Referring Description and Referring Reasoning tasks. The surrounding operationalization is likewise region-task based: region captioning is the only linked behavioral indicator, and papers describe using region captioning benchmarks and a visual referring task to access or assess region-level understanding capabilities.\n\nLinks. The linked claims are relational rather than causal or correlational. Some papers relate region captioning to region-level understanding by describing region captioning benchmarks or a visual referring task as ways to assess region understanding capabilities, and one paper relates multimodal alignment to it by examining the multimodal alignment process in region-level context across intermediate layers using Wasserstein-2 distance between a region-encoded token and the last language token.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension"
+    ],
+    "icml25": [
+      "GeoPixel: Pixel Grounding Large Multimodal Model in Remote Sensing"
+    ],
+    "neurips24": [
+      "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1,
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

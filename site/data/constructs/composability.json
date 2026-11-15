@@ -1,0 +1,95 @@
+{
+  "canonical_name": "Composability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, composability is not used with a single settled definition. One paper defines it as the ability to combine parameters or components trained on distinct tasks to create new multitask capabilities without additional training, another defines it as a latent property of interventions or models where sequential updates do not interfere with prior or future interventions, and another defines it for connected modular circuits whose combined operation should logically follow from their individual functions. The disagreement is mainly over what carries the property, model weights or components, interventions, or modular circuits, and over what successful composition consists in, multitask capability, non-interference, or logical functional composition.\n\nSpace of facets. The papers systematize the construct within their own framings rather than with a shared scheme. In the intervention framing, it is broken into Order-free Error and Order Sensitivity, while in the modular-circuit framing it is defined over a directed connection such as S1\u2192S2 and whether the combined function is a logical composition of the component functions. Across papers, the same name is applied to multitask weight composition, non-interfering intervention composition, and logical composition across modular circuits.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to it. Instead, papers operationalize it directly with procedures that mirror their definitions: combining weights from models trained on distinct tasks to test multitasking without additional adaptation, using Order-free Error and Order Sensitivity for intervention non-interference, or computing a mutual-information formulation, Composability_T(S1\u2192S2) = MI(S1(d), S2(S1(d))), for modular circuits.\n\nLinks. It is linked to one construct, General ability, through a related relationship. One paper reports that Composability is related to General ability, noting a disparity between overall utility and composability metrics and calling for evaluations that explicitly target composability; no causal or correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Composability"
+  ],
+  "papers": [
+    "Controllable Style Arithmetic with Language Models",
+    "Composable Interventions for Language Models",
+    "Towards Global-level Mechanistic Interpretability: A Perspective of Modular Circuits of Large Language Models",
+    "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The ability to combine model parameters or components trained on distinct tasks to create new, multitask capabilities without requiring additional training.",
+      "papers": [
+        "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability",
+        "Composable Interventions for Language Models",
+        "Towards Global-level Mechanistic Interpretability: A Perspective of Modular Circuits of Large Language Models"
+      ],
+      "original_name": "Composability"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Composable Interventions for Language Models",
+      "evidence": "The disparity between overall utility and composability metrics underscores the need for more nuanced evaluations explicitly targeting composability as a design criterion. (Section 4.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Composable Interventions for Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, composability is not used with a single settled definition. One paper defines it as the ability to combine parameters or components trained on distinct tasks to create new multitask capabilities without additional training, another defines it as a latent property of interventions or models where sequential updates do not interfere with prior or future interventions, and another defines it for connected modular circuits whose combined operation should logically follow from their individual functions. The disagreement is mainly over what carries the property, model weights or components, interventions, or modular circuits, and over what successful composition consists in, multitask capability, non-interference, or logical functional composition."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers systematize the construct within their own framings rather than with a shared scheme. In the intervention framing, it is broken into Order-free Error and Order Sensitivity, while in the modular-circuit framing it is defined over a directed connection such as S1\u2192S2 and whether the combined function is a logical composition of the component functions. Across papers, the same name is applied to multitask weight composition, non-interfering intervention composition, and logical composition across modular circuits."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument and no behavioral indicator are linked to it. Instead, papers operationalize it directly with procedures that mirror their definitions: combining weights from models trained on distinct tasks to test multitasking without additional adaptation, using Order-free Error and Order Sensitivity for intervention non-interference, or computing a mutual-information formulation, Composability_T(S1\u2192S2) = MI(S1(d), S2(S1(d))), for modular circuits."
+    },
+    {
+      "label": "Links.",
+      "text": "It is linked to one construct, General ability, through a related relationship. One paper reports that Composability is related to General ability, noting a disparity between overall utility and composability metrics and calling for evaluations that explicitly target composability; no causal or correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, composability is not used with a single settled definition. One paper defines it as the ability to combine parameters or components trained on distinct tasks to create new multitask capabilities without additional training, another defines it as a latent property of interventions or models where sequential updates do not interfere with prior or future interventions, and another defines it for connected modular circuits whose combined operation should logically follow from their individual functions. The disagreement is mainly over what carries the property, model weights or components, interventions, or modular circuits, and over what successful composition consists in, multitask capability, non-interference, or logical functional composition.\n\nSpace of facets. The papers systematize the construct within their own framings rather than with a shared scheme. In the intervention framing, it is broken into Order-free Error and Order Sensitivity, while in the modular-circuit framing it is defined over a directed connection such as S1\u2192S2 and whether the combined function is a logical composition of the component functions. Across papers, the same name is applied to multitask weight composition, non-interfering intervention composition, and logical composition across modular circuits.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to it. Instead, papers operationalize it directly with procedures that mirror their definitions: combining weights from models trained on distinct tasks to test multitasking without additional adaptation, using Order-free Error and Order Sensitivity for intervention non-interference, or computing a mutual-information formulation, Composability_T(S1\u2192S2) = MI(S1(d), S2(S1(d))), for modular circuits.\n\nLinks. It is linked to one construct, General ability, through a related relationship. One paper reports that Composability is related to General ability, noting a disparity between overall utility and composability metrics and calling for evaluations that explicitly target composability; no causal or correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Controllable Style Arithmetic with Language Models"
+    ],
+    "iclr25": [
+      "Composable Interventions for Language Models"
+    ],
+    "icml25": [
+      "Towards Global-level Mechanistic Interpretability: A Perspective of Modular Circuits of Large Language Models"
+    ],
+    "neurips24": [
+      "3-in-1: 2D Rotary Adaptation for Efficient Finetuning, Efficient Batching and Composability"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "iclr25": 1,
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "canonical_name": "Knowledge storage",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across these papers, the prevailing usage describes knowledge storage as a latent, internal property or mechanism of a model's parameters or weights, concerning how factual information is encoded and retained within the model. A smaller line of work uses the near-synonymous label \"information storage\" and makes the reference source explicit, framing it as facts from a pre-training dataset held in the model's \"parametric\" memory. A narrower formulation shifts from the mechanism itself to \"knowledge storage capacity,\" defining it as the amount of factual information, measured in bits, that a model can store in its parameters and later retrieve.\n\nSpace of facets. The main distinction papers draw is between the storage mechanism and its capacity: some focus on the internal mechanisms and structures of storage, while another isolates how much factual information can be stored and retrieved. The terminology also overlaps, with \"information storage\" used for substantially the same idea and explicitly glossed as parametric memory. One paper further organizes the concept by layer, suggesting shallow layers play a central role in storing knowledge and retrieving information, whereas deeper layers are described as more useful for complicated computations than for storage.\n\nSpace of measurement. No measurement instrument is linked to this construct. One behavioral indicator, Hallucination, is connected to it, but that connection is framed as related rather than as a measurement. Papers also do not name a benchmark, human evaluation, LLM-as-a-judge, probe, or analysis that measures knowledge storage, although a capacity-focused definition specifies quantification in bits and later retrievability.\n\nLinks. A paper relates Hallucination to knowledge storage, stating that hallucination problems are \"exacerbated by the enigmatic internal mechanisms of knowledge storage within language models.\" No causal or correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge storage",
+    "Information storage",
+    "Knowledge storage capacity"
+  ],
+  "papers": [
+    "Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws",
+    "The Unreasonable Ineffectiveness of the Deeper Layers",
+    "Knowledge Circuits in Pretrained Transformers",
+    "Understanding Information Storage and Transfer in Multi-Modal Large Language Models"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The internal mechanisms and structures by which a language model encodes and retains information within its parameters.",
+      "papers": [
+        "Knowledge Circuits in Pretrained Transformers",
+        "The Unreasonable Ineffectiveness of the Deeper Layers"
+      ],
+      "original_name": "Knowledge storage"
+    },
+    {
+      "text": "The latent mechanism by which factual information from a pre-training dataset is encoded and retained within a model's parameters, also referred to as its parametric memory.",
+      "papers": [
+        "Understanding Information Storage and Transfer in Multi-Modal Large Language Models"
+      ],
+      "original_name": "Information storage"
+    },
+    {
+      "text": "The amount of factual information, measured in bits, that a language model can store in its parameters and later retrieve.",
+      "papers": [
+        "Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws"
+      ],
+      "original_name": "Knowledge storage capacity"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Knowledge Circuits in Pretrained Transformers",
+      "evidence": "They still struggle with issues such as hallucinations [5\u20137]... and these problems are exacerbated by the enigmatic internal mechanisms of knowledge storage within language models. (Introduction)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Knowledge Circuits in Pretrained Transformers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across these papers, the prevailing usage describes knowledge storage as a latent, internal property or mechanism of a model's parameters or weights, concerning how factual information is encoded and retained within the model. A smaller line of work uses the near-synonymous label \"information storage\" and makes the reference source explicit, framing it as facts from a pre-training dataset held in the model's \"parametric\" memory. A narrower formulation shifts from the mechanism itself to \"knowledge storage capacity,\" defining it as the amount of factual information, measured in bits, that a model can store in its parameters and later retrieve."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The main distinction papers draw is between the storage mechanism and its capacity: some focus on the internal mechanisms and structures of storage, while another isolates how much factual information can be stored and retrieved. The terminology also overlaps, with \"information storage\" used for substantially the same idea and explicitly glossed as parametric memory. One paper further organizes the concept by layer, suggesting shallow layers play a central role in storing knowledge and retrieving information, whereas deeper layers are described as more useful for complicated computations than for storage."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to this construct. One behavioral indicator, Hallucination, is connected to it, but that connection is framed as related rather than as a measurement. Papers also do not name a benchmark, human evaluation, LLM-as-a-judge, probe, or analysis that measures knowledge storage, although a capacity-focused definition specifies quantification in bits and later retrievability."
+    },
+    {
+      "label": "Links.",
+      "text": "A paper relates Hallucination to knowledge storage, stating that hallucination problems are \"exacerbated by the enigmatic internal mechanisms of knowledge storage within language models.\" No causal or correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across these papers, the prevailing usage describes knowledge storage as a latent, internal property or mechanism of a model's parameters or weights, concerning how factual information is encoded and retained within the model. A smaller line of work uses the near-synonymous label \"information storage\" and makes the reference source explicit, framing it as facts from a pre-training dataset held in the model's \"parametric\" memory. A narrower formulation shifts from the mechanism itself to \"knowledge storage capacity,\" defining it as the amount of factual information, measured in bits, that a model can store in its parameters and later retrieve.\n\nSpace of facets. The main distinction papers draw is between the storage mechanism and its capacity: some focus on the internal mechanisms and structures of storage, while another isolates how much factual information can be stored and retrieved. The terminology also overlaps, with \"information storage\" used for substantially the same idea and explicitly glossed as parametric memory. One paper further organizes the concept by layer, suggesting shallow layers play a central role in storing knowledge and retrieving information, whereas deeper layers are described as more useful for complicated computations than for storage.\n\nSpace of measurement. No measurement instrument is linked to this construct. One behavioral indicator, Hallucination, is connected to it, but that connection is framed as related rather than as a measurement. Papers also do not name a benchmark, human evaluation, LLM-as-a-judge, probe, or analysis that measures knowledge storage, although a capacity-focused definition specifies quantification in bits and later retrievability.\n\nLinks. A paper relates Hallucination to knowledge storage, stating that hallucination problems are \"exacerbated by the enigmatic internal mechanisms of knowledge storage within language models.\" No causal or correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Physics of Language Models: Part 3.3, Knowledge Capacity Scaling Laws",
+      "The Unreasonable Ineffectiveness of the Deeper Layers"
+    ],
+    "neurips24": [
+      "Knowledge Circuits in Pretrained Transformers",
+      "Understanding Information Storage and Transfer in Multi-Modal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

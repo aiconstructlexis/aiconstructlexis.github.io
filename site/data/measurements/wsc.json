@@ -1,0 +1,254 @@
+{
+  "canonical_name": "WSC",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most commonly, papers describe WSC, sometimes called Winograd, as the Winograd Schema Challenge, a benchmark or task for coreference resolution through ambiguous pronoun disambiguation, usually framed as requiring commonsense reasoning. Some definitions cast it more broadly as a reasoning benchmark for downstream evaluation, and one quoted passage says WSC contains multiple-choice questions. A smaller line of work treats Winograd as a language-modeling formulation of the SuperGLUE WSC task, and one paper uses a Winograd-schema-style direct-question prompt plus a one-shot variant, WSC-1sh.\n\nWhat it is claimed to measure. Papers use WSC to measure 1 construct, Commonsense reasoning, and 3 behavioral indicators, most often Coreference resolution, then Downstream task performance and Language understanding task performance. The prevailing claims cluster around commonsense reasoning and coreference resolution: papers list WSC or Winograd among commonsense reasoning datasets and say it evaluates coreference resolution capabilities. Broader uses as a measure of downstream or language-understanding performance also appear, but as less central framings.\n\nSpace of uses. In practice, papers usually deploy WSC as one item in larger evaluation suites rather than as a standalone instrument. It is linked to 1 other instrument, SuperGLUE, and papers also place it alongside benchmarks such as Winogrande, PIQA, ARC-E or ARC-C, BoolQ, and COPA in zero-shot, downstream, NLU, OOD, and model-merging evaluations. Some papers position it explicitly as a SuperGLUE task, while one compares a standard WSC format with a one-shot variant.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WSC",
+    "Winograd"
+  ],
+  "papers": [
+    "DRPruning: Efficient Large Language Model Pruning through Distributionally Robust Optimization",
+    "Efficient and Accurate Prompt Optimization: the Benefit of Memory in Exemplar-Guided Reflection",
+    "Pretraining Context Compressor for Large Language Models with Embedding-Based Memory",
+    "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+    "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution in LLMs",
+    "GRASP: Replace Redundant Layers with Adaptive Singular Parameters for Efficient Model Compression",
+    "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+    "MaZO: Masked Zeroth-Order Optimization for Multi-Task Fine-Tuning of Large Language Models",
+    "MobiZO: Enabling Efficient LLM Fine-Tuning at the Edge via Inference Engines",
+    "Superpose Task-specific Features for Model Merging",
+    "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging",
+    "Grounding Multimodal Large Language Models to the World",
+    "Jointly Training Large Autoregressive Multimodal Models",
+    "Addax: Utilizing Zeroth-Order Gradients to Improve Memory Efficiency and Performance of SGD for Fine-Tuning Language Models",
+    "Enhancing Zeroth-order Fine-tuning for Language Models with Low-rank Structures",
+    "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+    "PolyPythias: Stability and Outliers across Fifty Language Model Pre-Training Runs",
+    "Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer",
+    "Streamlining Redundant Layers to Compress Large Language Models",
+    "Zeroth-Order Fine-Tuning of LLMs with Transferable Static Sparsity",
+    "LASER: Attention with Exponential Transformation",
+    "Occult: Optimizing Collaborative Communications across Experts for Accelerated Parallel MoE Training and Inference",
+    "Scaling Inference-Efficient Language Models",
+    "Advancing MoE Efficiency: A Collaboration-Constrained Routing (C2R) Strategy for Better Expert Parallelism Design",
+    "Balancing Forget Quality and Model Utility: A Reverse KL-Divergence Knowledge Distillation Approach for Better Unlearning in LLMs",
+    "DenseSSM: State Space Models with Dense Hidden Connection for Efficient Large Language Models",
+    "Making Language Models Robust Against Negation",
+    "BERTs are Generative In-Context Learners",
+    "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+    "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers"
+  ],
+  "paper_count": 32,
+  "definitions": [
+    {
+      "text": "A coreference resolution benchmark requiring pronoun disambiguation.",
+      "papers": [
+        "Addax: Utilizing Zeroth-Order Gradients to Improve Memory Efficiency and Performance of SGD for Fine-Tuning Language Models",
+        "Advancing MoE Efficiency: A Collaboration-Constrained Routing (C2R) Strategy for Better Expert Parallelism Design",
+        "Making Language Models Robust Against Negation",
+        "Efficient and Accurate Prompt Optimization: the Benefit of Memory in Exemplar-Guided Reflection",
+        "LASER: Attention with Exponential Transformation",
+        "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+        "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution in LLMs",
+        "GRASP: Replace Redundant Layers with Adaptive Singular Parameters for Efficient Model Compression",
+        "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+        "MaZO: Masked Zeroth-Order Optimization for Multi-Task Fine-Tuning of Large Language Models",
+        "MobiZO: Enabling Efficient LLM Fine-Tuning at the Edge via Inference Engines",
+        "Superpose Task-specific Features for Model Merging",
+        "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging",
+        "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+        "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers"
+      ],
+      "original_name": "WSC"
+    },
+    {
+      "text": "Coreference resolution task involving pronoun disambiguation with linguistic and commonsense reasoning.",
+      "papers": [
+        "Grounding Multimodal Large Language Models to the World",
+        "Jointly Training Large Autoregressive Multimodal Models",
+        "BERTs are Generative In-Context Learners",
+        "Balancing Forget Quality and Model Utility: A Reverse KL-Divergence Knowledge Distillation Approach for Better Unlearning in LLMs",
+        "DenseSSM: State Space Models with Dense Hidden Connection for Efficient Large Language Models",
+        "Scaling Inference-Efficient Language Models"
+      ],
+      "original_name": "Winograd"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Jointly Training Large Autoregressive Multimodal Models",
+      "evidence": "For the text modality, we compare the zero-shot performance on some common sense reasoning tasks: PIQA (Bisk et al., 2020), ARC-Challenge, ARC-Easy (Clark et al., 2018), StoryCloze (Mostafazadeh et al., 2016), Winograd, and Winogrande (Sakaguchi et al., 2021). (Table 1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Jointly Training Large Autoregressive Multimodal Models"
+        ],
+        "naacl25": [
+          "DenseSSM: State Space Models with Dense Hidden Connection for Efficient Large Language Models"
+        ],
+        "emnlp25": [
+          "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coreference resolution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "\u201cthe Winograd Schema Challenge evaluates coreference resolution capabilities (WSC; Levesque et al., 2012)\u201d",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "BERTs are Generative In-Context Learners"
+        ],
+        "emnlp25": [
+          "Superpose Task-specific Features for Model Merging",
+          "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language understanding task performance",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "Language Understanding (LU): Lambada-OpenAI [44], Hellaswag-0-shot [65], Winograd-3-shots [30], and WinoGrande-5-shots [54].",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Downstream task performance",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Inference-Efficient Language Models",
+      "evidence": "We evaluate the downstream task accuracy of models derived from the methodology outlined in \u00a72.3 using the following datasets: ARC-Easy (Clark et al., 2018), ARC-Challenge (Clark et al., 2018), BoolQ (Clark et al., 2019), COPA (Roemmele et al., 2011), HellaSwag (Zellers et al., 2019), LAMBADA (Paperno et al., 2016), PIQA (Bisk et al., 2020), WinoGrande (Sakaguchi et al., 2021), MMLU (Hendrycks et al., 2020), Jeopardy (Jeo, 2022), and Winograd (Levesque et al., 2012). (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Scaling Inference-Efficient Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "SuperGLUE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+      "evidence": "\u201cwe use six NLU tasks from the SuperGLUE benchmark to evaluate the performance of the language model ... including ... WSC\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most commonly, papers describe WSC, sometimes called Winograd, as the Winograd Schema Challenge, a benchmark or task for coreference resolution through ambiguous pronoun disambiguation, usually framed as requiring commonsense reasoning. Some definitions cast it more broadly as a reasoning benchmark for downstream evaluation, and one quoted passage says WSC contains multiple-choice questions. A smaller line of work treats Winograd as a language-modeling formulation of the SuperGLUE WSC task, and one paper uses a Winograd-schema-style direct-question prompt plus a one-shot variant, WSC-1sh."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use WSC to measure 1 construct, Commonsense reasoning, and 3 behavioral indicators, most often Coreference resolution, then Downstream task performance and Language understanding task performance. The prevailing claims cluster around commonsense reasoning and coreference resolution: papers list WSC or Winograd among commonsense reasoning datasets and say it evaluates coreference resolution capabilities. Broader uses as a measure of downstream or language-understanding performance also appear, but as less central framings."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In practice, papers usually deploy WSC as one item in larger evaluation suites rather than as a standalone instrument. It is linked to 1 other instrument, SuperGLUE, and papers also place it alongside benchmarks such as Winogrande, PIQA, ARC-E or ARC-C, BoolQ, and COPA in zero-shot, downstream, NLU, OOD, and model-merging evaluations. Some papers position it explicitly as a SuperGLUE task, while one compares a standard WSC format with a one-shot variant."
+    }
+  ],
+  "characterization": "What it is. Most commonly, papers describe WSC, sometimes called Winograd, as the Winograd Schema Challenge, a benchmark or task for coreference resolution through ambiguous pronoun disambiguation, usually framed as requiring commonsense reasoning. Some definitions cast it more broadly as a reasoning benchmark for downstream evaluation, and one quoted passage says WSC contains multiple-choice questions. A smaller line of work treats Winograd as a language-modeling formulation of the SuperGLUE WSC task, and one paper uses a Winograd-schema-style direct-question prompt plus a one-shot variant, WSC-1sh.\n\nWhat it is claimed to measure. Papers use WSC to measure 1 construct, Commonsense reasoning, and 3 behavioral indicators, most often Coreference resolution, then Downstream task performance and Language understanding task performance. The prevailing claims cluster around commonsense reasoning and coreference resolution: papers list WSC or Winograd among commonsense reasoning datasets and say it evaluates coreference resolution capabilities. Broader uses as a measure of downstream or language-understanding performance also appear, but as less central framings.\n\nSpace of uses. In practice, papers usually deploy WSC as one item in larger evaluation suites rather than as a standalone instrument. It is linked to 1 other instrument, SuperGLUE, and papers also place it alongside benchmarks such as Winogrande, PIQA, ARC-E or ARC-C, BoolQ, and COPA in zero-shot, downstream, NLU, OOD, and model-merging evaluations. Some papers position it explicitly as a SuperGLUE task, while one compares a standard WSC format with a one-shot variant.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "DRPruning: Efficient Large Language Model Pruning through Distributionally Robust Optimization",
+      "Efficient and Accurate Prompt Optimization: the Benefit of Memory in Exemplar-Guided Reflection",
+      "Pretraining Context Compressor for Large Language Models with Embedding-Based Memory"
+    ],
+    "iclr24": [
+      "Grounding Multimodal Large Language Models to the World",
+      "Jointly Training Large Autoregressive Multimodal Models"
+    ],
+    "iclr25": [
+      "Addax: Utilizing Zeroth-Order Gradients to Improve Memory Efficiency and Performance of SGD for Fine-Tuning Language Models",
+      "Enhancing Zeroth-order Fine-tuning for Language Models with Low-rank Structures",
+      "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+      "PolyPythias: Stability and Outliers across Fifty Language Model Pre-Training Runs",
+      "Second-Order Fine-Tuning without Pain for LLMs: A Hessian Informed Zeroth-Order Optimizer",
+      "Streamlining Redundant Layers to Compress Large Language Models",
+      "Zeroth-Order Fine-Tuning of LLMs with Transferable Static Sparsity"
+    ],
+    "icml25": [
+      "LASER: Attention with Exponential Transformation",
+      "Occult: Optimizing Collaborative Communications across Experts for Accelerated Parallel MoE Training and Inference",
+      "Scaling Inference-Efficient Language Models"
+    ],
+    "naacl25": [
+      "Advancing MoE Efficiency: A Collaboration-Constrained Routing (C2R) Strategy for Better Expert Parallelism Design",
+      "Balancing Forget Quality and Model Utility: A Reverse KL-Divergence Knowledge Distillation Approach for Better Unlearning in LLMs",
+      "DenseSSM: State Space Models with Dense Hidden Connection for Efficient Large Language Models",
+      "Making Language Models Robust Against Negation"
+    ],
+    "neurips24": [
+      "BERTs are Generative In-Context Learners",
+      "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "MemoryFormer : Minimize Transformer Computation by Removing Fully-Connected Layers"
+    ],
+    "emnlp25": [
+      "Connecting the Knowledge Dots: Retrieval-augmented Knowledge Connection for Commonsense Reasoning",
+      "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution in LLMs",
+      "GRASP: Replace Redundant Layers with Adaptive Singular Parameters for Efficient Model Compression",
+      "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+      "MaZO: Masked Zeroth-Order Optimization for Multi-Task Fine-Tuning of Large Language Models",
+      "MobiZO: Enabling Efficient LLM Fine-Tuning at the Edge via Inference Engines",
+      "Superpose Task-specific Features for Model Merging",
+      "To See a World in a Spark of Neuron: Disentangling Multi-Task Interference for Training-Free Model Merging"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "iclr24": 2,
+    "iclr25": 7,
+    "icml25": 3,
+    "naacl25": 4,
+    "neurips24": 5,
+    "emnlp25": 8
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

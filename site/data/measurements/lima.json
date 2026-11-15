@@ -1,0 +1,88 @@
+{
+  "canonical_name": "LIMA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the definitions, papers consistently treat LIMA as a dataset, though they describe its role differently. One description presents it as a natural language dataset used to study memorization in a non-code domain and to test whether findings generalize beyond code. Another frames it as a dataset for instruction fine-tuning, consisting of curated prompts and responses designed to teach models to follow specific instructional formats.\n\nWhat it is claimed to measure. Its measurement role is narrow. Papers link it to 1 construct, Memorization, and to no behavioral indicators; the recorded claim is that Memorization is measured by LIMA. One study uses it to examine memorization on natural language datasets across task domains (Measuring memorization in RLHF for code completion).\n\nSpace of uses. The uses split between studying memorization and additional training. One paper studies memorization on LIMA alongside Anthropic HH as a natural language dataset, while another reports additional training using LIMA in an instruction fine-tuning setup (Peri-LN: Revisiting Normalization Layer in the Transformer Architecture). No measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LIMA"
+  ],
+  "papers": [
+    "Data Selection via Optimal Control for Language Models",
+    "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+    "Measuring memorization in RLHF for code completion",
+    "Personality Alignment of Large Language Models",
+    "Domain2Vec: Vectorizing Datasets to Find the Optimal Data Mixture without Training",
+    "Peri-LN: Revisiting Normalization Layer in the Transformer Architecture",
+    "Position: We Can\u2019t Understand AI Using our Existing Vocabulary"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A natural language dataset used to study memorization in a non-code domain to test the generalizability of findings.",
+      "papers": [
+        "Measuring memorization in RLHF for code completion",
+        "Peri-LN: Revisiting Normalization Layer in the Transformer Architecture"
+      ],
+      "original_name": "LIMA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Measuring memorization in RLHF for code completion",
+      "evidence": "Finally, we explore RLHF memorization on different task domains by studying memorization on natural language datasets, LIMA (Zhou et al., 2024) and Anthropic HH (Bai et al., 2022). (Section 5.5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Measuring memorization in RLHF for code completion"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the definitions, papers consistently treat LIMA as a dataset, though they describe its role differently. One description presents it as a natural language dataset used to study memorization in a non-code domain and to test whether findings generalize beyond code. Another frames it as a dataset for instruction fine-tuning, consisting of curated prompts and responses designed to teach models to follow specific instructional formats."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Its measurement role is narrow. Papers link it to 1 construct, Memorization, and to no behavioral indicators; the recorded claim is that Memorization is measured by LIMA. One study uses it to examine memorization on natural language datasets across task domains (Measuring memorization in RLHF for code completion)."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The uses split between studying memorization and additional training. One paper studies memorization on LIMA alongside Anthropic HH as a natural language dataset, while another reports additional training using LIMA in an instruction fine-tuning setup (Peri-LN: Revisiting Normalization Layer in the Transformer Architecture). No measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Across the definitions, papers consistently treat LIMA as a dataset, though they describe its role differently. One description presents it as a natural language dataset used to study memorization in a non-code domain and to test whether findings generalize beyond code. Another frames it as a dataset for instruction fine-tuning, consisting of curated prompts and responses designed to teach models to follow specific instructional formats.\n\nWhat it is claimed to measure. Its measurement role is narrow. Papers link it to 1 construct, Memorization, and to no behavioral indicators; the recorded claim is that Memorization is measured by LIMA. One study uses it to examine memorization on natural language datasets across task domains (Measuring memorization in RLHF for code completion).\n\nSpace of uses. The uses split between studying memorization and additional training. One paper studies memorization on LIMA alongside Anthropic HH as a natural language dataset, while another reports additional training using LIMA in an instruction fine-tuning setup (Peri-LN: Revisiting Normalization Layer in the Transformer Architecture). No measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Data Selection via Optimal Control for Language Models",
+      "Improving Data Efficiency via Curating LLM-Driven Rating Systems",
+      "Measuring memorization in RLHF for code completion",
+      "Personality Alignment of Large Language Models"
+    ],
+    "icml25": [
+      "Domain2Vec: Vectorizing Datasets to Find the Optimal Data Mixture without Training",
+      "Peri-LN: Revisiting Normalization Layer in the Transformer Architecture",
+      "Position: We Can\u2019t Understand AI Using our Existing Vocabulary"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

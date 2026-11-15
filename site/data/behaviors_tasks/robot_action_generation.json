@@ -1,0 +1,76 @@
+{
+  "canonical_name": "Robot action generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats this behavior as generating robot control actions from visual observations and language instructions. Most descriptions frame the output as a sequence of action tokens for robot control, while a smaller framing casts it as textual output that corresponds to a predefined set of robot commands. Some work also describes the text output as containing numerical values, such as 2D image coordinates, for a robot action.\n\nVariants. Papers study several variants of this behavior. One line focuses on discrete action generation in a fixed action space, with commands such as \"base-forward,\" \"base-backward,\" \"base-stop,\" \"gripper-open,\" and \"gripper-close\" (Randomized Smoothing Meets Vision-Language Models). Another line describes actions for settings including pick-and-place and rotation decisions, and text outputs aligned to image pixel coordinates for robot actions (LLaRA: Supercharging Robot Learning Data for Vision-Language Policy).\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior, so the papers do not identify a recurring instrument that elicits or scores it.\n\nWhat it is taken as evidence of. No construct is linked to this behavior. The papers therefore do not report what construct it is taken to reflect.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Discrete action generation",
+    "Robot action generation"
+  ],
+  "papers": [
+    "Randomized Smoothing Meets Vision-Language Models",
+    "Spec-VLA: Speculative Decoding for Vision-Language-Action Models with Relaxed Acceptance",
+    "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The observable task of producing a sequence of action tokens to control a robot based on visual and linguistic inputs.",
+      "papers": [
+        "Spec-VLA: Speculative Decoding for Vision-Language-Action Models with Relaxed Acceptance",
+        "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy"
+      ],
+      "original_name": "Robot action generation"
+    },
+    {
+      "text": "Producing a textual output that corresponds to a predefined set of robot commands or actions, such as 'base-forward' or 'gripper-open', in a Vision-Language-Action system.",
+      "papers": [
+        "Randomized Smoothing Meets Vision-Language Models"
+      ],
+      "original_name": "Discrete action generation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats this behavior as generating robot control actions from visual observations and language instructions. Most descriptions frame the output as a sequence of action tokens for robot control, while a smaller framing casts it as textual output that corresponds to a predefined set of robot commands. Some work also describes the text output as containing numerical values, such as 2D image coordinates, for a robot action."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study several variants of this behavior. One line focuses on discrete action generation in a fixed action space, with commands such as \"base-forward,\" \"base-backward,\" \"base-stop,\" \"gripper-open,\" and \"gripper-close\" (Randomized Smoothing Meets Vision-Language Models). Another line describes actions for settings including pick-and-place and rotation decisions, and text outputs aligned to image pixel coordinates for robot actions (LLaRA: Supercharging Robot Learning Data for Vision-Language Policy)."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior, so the papers do not identify a recurring instrument that elicits or scores it."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to this behavior. The papers therefore do not report what construct it is taken to reflect."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats this behavior as generating robot control actions from visual observations and language instructions. Most descriptions frame the output as a sequence of action tokens for robot control, while a smaller framing casts it as textual output that corresponds to a predefined set of robot commands. Some work also describes the text output as containing numerical values, such as 2D image coordinates, for a robot action.\n\nVariants. Papers study several variants of this behavior. One line focuses on discrete action generation in a fixed action space, with commands such as \"base-forward,\" \"base-backward,\" \"base-stop,\" \"gripper-open,\" and \"gripper-close\" (Randomized Smoothing Meets Vision-Language Models). Another line describes actions for settings including pick-and-place and rotation decisions, and text outputs aligned to image pixel coordinates for robot actions (LLaRA: Supercharging Robot Learning Data for Vision-Language Policy).\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior, so the papers do not identify a recurring instrument that elicits or scores it.\n\nWhat it is taken as evidence of. No construct is linked to this behavior. The papers therefore do not report what construct it is taken to reflect.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Randomized Smoothing Meets Vision-Language Models",
+      "Spec-VLA: Speculative Decoding for Vision-Language-Action Models with Relaxed Acceptance"
+    ],
+    "iclr25": [
+      "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "canonical_name": "Instruction understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats instruction understanding, often also called instruction comprehension, as a latent model ability to grasp the meaning, intent, constraints, or goals expressed in natural language instructions and to map them to appropriate actions, plans, or task execution. Most definitions place this ability in complex settings, such as constrained environments, specialized domains with intricate terminology, multi-condition questions, README-guided deployment, or embodied tasks, and one paper states that \"Instruction Understanding Difficulty measures whether the model comprehends the instruction.\" A smaller line of work narrows the emphasis either to command-to-action mapping in embodied or tool-using contexts, or to understanding diverse phrasings and the full intent of instructions, including implicit and explicit constraints, across varied tasks.\n\nSpace of facets. The recurring facets are understanding meaning and intent, interpreting explicit or implicit constraints, handling specialized terminology, and converting directives into goals, actions, or plans. Another recurring distinction is between general instruction following and robustness to variation in wording, with some authors testing whether the same goal is understood under diverse natural-language phrasings or unseen instructions. Across these uses, \"instruction understanding\" and \"instruction comprehension\" are used for largely the same construct, and some papers discuss it alongside neighboring abilities such as visual grounding, planning, and strict constraint compliance.\n\nSpace of measurement. No measurement instrument is linked to it, and papers link it to 2 behavioral indicators, Robotic manipulation and Text-to-SQL. In practice, papers operationalize the construct through task-based and analytic checks: constrained embodied tasks that require turning instructions into sequential navigation or manipulation, difficulty analyses that ask whether the model comprehends the instruction, held-out instruction formulations to test unseen phrasings, and error analyses in which failures are defined as \"overlook[ing] or misinterpret[ing] a critical constraint specified in the question.\" These operationalizations mostly match the dominant definitions by testing comprehension of instructions, constraints, and action mapping, though some assess it through downstream task performance or error categories rather than a separate dedicated instrument.\n\nLinks. Among linked constructs, Generalization is reported to correlate with Instruction understanding in ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL, which says smaller LLMs show \"lower generalizability\" alongside limited capacity to understand complex instructions. For behavioral indicators, DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution claims a causal relationship from Instruction understanding to Robotic manipulation, citing the \"strong task instruction understanding and visual grounding capabilities\" of MLLMs in language-instructed multitask manipulation. The same ROUTE paper also claims a causal relationship from Text-to-SQL to Instruction understanding, warning that training on a single SQL generation task can diminish performance in understanding instructions.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Instruction comprehension",
+    "Instruction understanding"
+  ],
+  "papers": [
+    "CFBench: A Comprehensive Constraints-Following Benchmark for LLMs",
+    "GeLLM\u00b3O: Generalizing Large Language Models for Multi-property Molecule Optimization",
+    "3DS: Medical Domain Adaptation of LLMs via Decomposed Difficulty-based Data Selection",
+    "Metric Calculating Benchmark: Code-Verifiable Complicate Instruction Following Benchmark for Large Language Models",
+    "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making",
+    "OSDA Agent: Leveraging Large Language Models for De Novo Design of Organic Structure Directing Agents",
+    "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+    "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation",
+    "CSR-Bench: Benchmarking LLM Agents in Deployment of Computer Science Research Repositories",
+    "MultiChartQA: Benchmarking Vision-Language Models on Multi-Chart Problems",
+    "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "The model's ability to understand task instructions and map them to appropriate actions in constrained environments.",
+      "papers": [
+        "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making",
+        "OSDA Agent: Leveraging Large Language Models for De Novo Design of Organic Structure Directing Agents",
+        "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation",
+        "CSR-Bench: Benchmarking LLM Agents in Deployment of Computer Science Research Repositories",
+        "CFBench: A Comprehensive Constraints-Following Benchmark for LLMs"
+      ],
+      "original_name": "Instruction comprehension"
+    },
+    {
+      "text": "The latent ability of an LLM to comprehend the meaning and intent of an instruction, particularly in specialized domains with complex terminology.",
+      "papers": [
+        "3DS: Medical Domain Adaptation of LLMs via Decomposed Difficulty-based Data Selection",
+        "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution",
+        "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+        "MultiChartQA: Benchmarking Vision-Language Models on Multi-Chart Problems",
+        "GeLLM\u00b3O: Generalizing Large Language Models for Multi-property Molecule Optimization"
+      ],
+      "original_name": "Instruction understanding"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robotic manipulation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution",
+      "evidence": "The strong task instruction understanding and visual grounding capabilities of MLLMs [5, 4] have exhibited great promise for language-instructed multitask robotic manipulation [7, 8, 9].",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "evidence": "This is due to the limited capacity of smaller LLMs to understand complex instructions, showing lower generalizability.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text-to-SQL",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "evidence": "Additionally, training LLMs on a single SQL generation task poses a substantial risk of diminishing performance in understanding instructions... (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats instruction understanding, often also called instruction comprehension, as a latent model ability to grasp the meaning, intent, constraints, or goals expressed in natural language instructions and to map them to appropriate actions, plans, or task execution. Most definitions place this ability in complex settings, such as constrained environments, specialized domains with intricate terminology, multi-condition questions, README-guided deployment, or embodied tasks, and one paper states that \"Instruction Understanding Difficulty measures whether the model comprehends the instruction.\" A smaller line of work narrows the emphasis either to command-to-action mapping in embodied or tool-using contexts, or to understanding diverse phrasings and the full intent of instructions, including implicit and explicit constraints, across varied tasks."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The recurring facets are understanding meaning and intent, interpreting explicit or implicit constraints, handling specialized terminology, and converting directives into goals, actions, or plans. Another recurring distinction is between general instruction following and robustness to variation in wording, with some authors testing whether the same goal is understood under diverse natural-language phrasings or unseen instructions. Across these uses, \"instruction understanding\" and \"instruction comprehension\" are used for largely the same construct, and some papers discuss it alongside neighboring abilities such as visual grounding, planning, and strict constraint compliance."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and papers link it to 2 behavioral indicators, Robotic manipulation and Text-to-SQL. In practice, papers operationalize the construct through task-based and analytic checks: constrained embodied tasks that require turning instructions into sequential navigation or manipulation, difficulty analyses that ask whether the model comprehends the instruction, held-out instruction formulations to test unseen phrasings, and error analyses in which failures are defined as \"overlook[ing] or misinterpret[ing] a critical constraint specified in the question.\" These operationalizations mostly match the dominant definitions by testing comprehension of instructions, constraints, and action mapping, though some assess it through downstream task performance or error categories rather than a separate dedicated instrument."
+    },
+    {
+      "label": "Links.",
+      "text": "Among linked constructs, Generalization is reported to correlate with Instruction understanding in ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL, which says smaller LLMs show \"lower generalizability\" alongside limited capacity to understand complex instructions. For behavioral indicators, DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution claims a causal relationship from Instruction understanding to Robotic manipulation, citing the \"strong task instruction understanding and visual grounding capabilities\" of MLLMs in language-instructed multitask manipulation. The same ROUTE paper also claims a causal relationship from Text-to-SQL to Instruction understanding, warning that training on a single SQL generation task can diminish performance in understanding instructions."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats instruction understanding, often also called instruction comprehension, as a latent model ability to grasp the meaning, intent, constraints, or goals expressed in natural language instructions and to map them to appropriate actions, plans, or task execution. Most definitions place this ability in complex settings, such as constrained environments, specialized domains with intricate terminology, multi-condition questions, README-guided deployment, or embodied tasks, and one paper states that \"Instruction Understanding Difficulty measures whether the model comprehends the instruction.\" A smaller line of work narrows the emphasis either to command-to-action mapping in embodied or tool-using contexts, or to understanding diverse phrasings and the full intent of instructions, including implicit and explicit constraints, across varied tasks.\n\nSpace of facets. The recurring facets are understanding meaning and intent, interpreting explicit or implicit constraints, handling specialized terminology, and converting directives into goals, actions, or plans. Another recurring distinction is between general instruction following and robustness to variation in wording, with some authors testing whether the same goal is understood under diverse natural-language phrasings or unseen instructions. Across these uses, \"instruction understanding\" and \"instruction comprehension\" are used for largely the same construct, and some papers discuss it alongside neighboring abilities such as visual grounding, planning, and strict constraint compliance.\n\nSpace of measurement. No measurement instrument is linked to it, and papers link it to 2 behavioral indicators, Robotic manipulation and Text-to-SQL. In practice, papers operationalize the construct through task-based and analytic checks: constrained embodied tasks that require turning instructions into sequential navigation or manipulation, difficulty analyses that ask whether the model comprehends the instruction, held-out instruction formulations to test unseen phrasings, and error analyses in which failures are defined as \"overlook[ing] or misinterpret[ing] a critical constraint specified in the question.\" These operationalizations mostly match the dominant definitions by testing comprehension of instructions, constraints, and action mapping, though some assess it through downstream task performance or error categories rather than a separate dedicated instrument.\n\nLinks. Among linked constructs, Generalization is reported to correlate with Instruction understanding in ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL, which says smaller LLMs show \"lower generalizability\" alongside limited capacity to understand complex instructions. For behavioral indicators, DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution claims a causal relationship from Instruction understanding to Robotic manipulation, citing the \"strong task instruction understanding and visual grounding capabilities\" of MLLMs in language-instructed multitask manipulation. The same ROUTE paper also claims a causal relationship from Text-to-SQL to Instruction understanding, warning that training on a single SQL generation task can diminish performance in understanding instructions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "3DS: Medical Domain Adaptation of LLMs via Decomposed Difficulty-based Data Selection",
+      "Metric Calculating Benchmark: Code-Verifiable Complicate Instruction Following Benchmark for Large Language Models",
+      "TCPO: Thought-Centric Preference Optimization for Effective Embodied Decision-making"
+    ],
+    "iclr25": [
+      "OSDA Agent: Leveraging Large Language Models for De Novo Design of Organic Structure Directing Agents",
+      "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL"
+    ],
+    "naacl25": [
+      "Divergent Thoughts toward One Goal: LLM-based Multi-Agent Collaboration System for Electronic Design Automation",
+      "CSR-Bench: Benchmarking LLM Agents in Deployment of Computer Science Research Repositories",
+      "MultiChartQA: Benchmarking Vision-Language Models on Multi-Chart Problems"
+    ],
+    "acl25": [
+      "CFBench: A Comprehensive Constraints-Following Benchmark for LLMs",
+      "GeLLM\u00b3O: Generalizing Large Language Models for Multi-property Molecule Optimization"
+    ],
+    "neurips24": [
+      "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 2,
+    "naacl25": 3,
+    "acl25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

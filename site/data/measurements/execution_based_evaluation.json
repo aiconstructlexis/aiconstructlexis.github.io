@@ -1,0 +1,113 @@
+{
+  "canonical_name": "Execution-based evaluation",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, the prevailing description is of an evaluation method or protocol that verifies success through execution, rather than relying on static demonstrations or string matching. Most definitions instantiate this either as running generated code against test cases and checking whether outputs match expected results, or as using custom scripts to check the final state of a computer environment. A narrower variant, called execution-based focused evaluation, has annotators obtain database results programmatically and write scripts that focus on the essential components of the answer while ignoring non-essential columns, and one paper describes sandbox execution in a secure, isolated Docker-based environment for validating code and test cases.\n\nWhat it is claimed to measure. Papers link this instrument to 1 behavioral indicator and no constructs. The measurement claim converges on code generation: papers report that the execution-based method runs generated code against test cases to measure success rate, with generated outputs expected to equal the target outputs.\n\nSpace of uses. Papers link it to 1 other measurement instrument, OSWorld, and describe that benchmark as supporting task setup, interactive learning, and execution-based evaluation of open-ended computer tasks. More broadly, papers position execution-based evaluation as the checking stage inside larger workflows: OSWorld provides example-wise execution-based evaluation for tasks, code-focused work samples multiple responses per task and validates them in a sandbox environment, and database-oriented work requires annotators to write evaluation scripts after obtaining results programmatically.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Execution-based evaluation",
+    "Sandbox execution",
+    "Execution-based focused evaluation"
+  ],
+  "papers": [
+    "McEval: Massively Multilingual Code Evaluation",
+    "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows",
+    "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "SelfCodeAlign: Self-Alignment for Code Generation"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A method of evaluation where task completion is verified by a custom script that checks the final state of the computer environment, rather than relying on static demonstrations or string matching.",
+      "papers": [
+        "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+        "McEval: Massively Multilingual Code Evaluation"
+      ],
+      "original_name": "Execution-based evaluation"
+    },
+    {
+      "text": "An evaluation procedure where model-generated code and test cases are executed in a secure, isolated environment to validate correctness.",
+      "papers": [
+        "SelfCodeAlign: Self-Alignment for Code Generation"
+      ],
+      "original_name": "Sandbox execution"
+    },
+    {
+      "text": "An evaluation protocol where scripts programmatically obtain results from the database and assess success by focusing on the essential components of the answer, ignoring non-essential columns.",
+      "papers": [
+        "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows"
+      ],
+      "original_name": "Execution-based focused evaluation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "McEval: Massively Multilingual Code Evaluation",
+      "evidence": "The execution-based method executes generated code against test cases to measure the success rate.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "McEval: Massively Multilingual Code Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OSWorld",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "evidence": "\u201csupporting task setup, interactive learning, and execution-based evaluation of open-ended computer tasks\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, the prevailing description is of an evaluation method or protocol that verifies success through execution, rather than relying on static demonstrations or string matching. Most definitions instantiate this either as running generated code against test cases and checking whether outputs match expected results, or as using custom scripts to check the final state of a computer environment. A narrower variant, called execution-based focused evaluation, has annotators obtain database results programmatically and write scripts that focus on the essential components of the answer while ignoring non-essential columns, and one paper describes sandbox execution in a secure, isolated Docker-based environment for validating code and test cases."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link this instrument to 1 behavioral indicator and no constructs. The measurement claim converges on code generation: papers report that the execution-based method runs generated code against test cases to measure success rate, with generated outputs expected to equal the target outputs."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers link it to 1 other measurement instrument, OSWorld, and describe that benchmark as supporting task setup, interactive learning, and execution-based evaluation of open-ended computer tasks. More broadly, papers position execution-based evaluation as the checking stage inside larger workflows: OSWorld provides example-wise execution-based evaluation for tasks, code-focused work samples multiple responses per task and validates them in a sandbox environment, and database-oriented work requires annotators to write evaluation scripts after obtaining results programmatically."
+    }
+  ],
+  "characterization": "What it is. Across the papers, the prevailing description is of an evaluation method or protocol that verifies success through execution, rather than relying on static demonstrations or string matching. Most definitions instantiate this either as running generated code against test cases and checking whether outputs match expected results, or as using custom scripts to check the final state of a computer environment. A narrower variant, called execution-based focused evaluation, has annotators obtain database results programmatically and write scripts that focus on the essential components of the answer while ignoring non-essential columns, and one paper describes sandbox execution in a secure, isolated Docker-based environment for validating code and test cases.\n\nWhat it is claimed to measure. Papers link this instrument to 1 behavioral indicator and no constructs. The measurement claim converges on code generation: papers report that the execution-based method runs generated code against test cases to measure success rate, with generated outputs expected to equal the target outputs.\n\nSpace of uses. Papers link it to 1 other measurement instrument, OSWorld, and describe that benchmark as supporting task setup, interactive learning, and execution-based evaluation of open-ended computer tasks. More broadly, papers position execution-based evaluation as the checking stage inside larger workflows: OSWorld provides example-wise execution-based evaluation for tasks, code-focused work samples multiple responses per task and validates them in a sandbox environment, and database-oriented work requires annotators to write evaluation scripts after obtaining results programmatically.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "McEval: Massively Multilingual Code Evaluation",
+      "Spider 2.0: Evaluating Language Models on Real-World Enterprise Text-to-SQL Workflows"
+    ],
+    "neurips24": [
+      "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+      "SelfCodeAlign: Self-Alignment for Code Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "canonical_name": "Reward function generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the dominant framing is the production of executable reward-function code for a simulation or reinforcement learning task. Most papers describe it as generating the part of the environment or task code that specifies the agent's objective or reward signal, usually from a task description together with environment code, goal descriptions, or low-level states. A narrower variant describes the behavior as dense reward code generation, where the model produces a shaped dense reward program from a natural-language goal. Papers vary in how they state success: some focus on returning code that defines a scalar reward whose cumulative maximization defines the task, while others describe outputting code such that a downstream objective is maximized or code that correctly uses environment attributes to encourage a specified tactic.\n\nVariants. Papers study this behavior under the names reward function generation and dense reward code generation. The settings are varied but mostly involve simulations or environment code: definitions mention robotics and games, simulated worlds where reward generation appears alongside simulator dynamics or termination functions, multi-agent coordination where the reward encodes a desired coordination behavior such as a passing tactic, and robot subtasks trained with reinforcement learning. Some papers also place it next to related code-generation targets such as task specifications, scene configurations, and simulator dynamics rather than treating reward code in isolation.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the task formulations themselves, papers usually elicit the behavior by giving a natural-language goal or task description together with environment code information or low-level states and asking for an executable reward program, sometimes in a required format such as \"def reward(self) -> float\" or as a function from state and action variables to a scalar value. When scoring is stated directly, papers describe either maximizing an objective over the generated reward code or verifying that the function correctly uses provided environment attributes to encourage the target behavior.\n\nWhat it is taken as evidence of. Papers do not consistently present this behavior as evidence of a broader construct. Only one construct is linked, Commonsense reasoning, and one paper claims a causal relationship from Commonsense reasoning to Reward function generation, saying that reward generation from natural-language task descriptions leverages LLMs' \"commonsense understanding of human behavior.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Reward function generation",
+    "Dense reward code generation"
+  ],
+  "papers": [
+    "Eureka: Human-Level Reward Design via Coding Large Language Models",
+    "Text2Reward: Reward Shaping with Language Models for Reinforcement Learning",
+    "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+    "REvolve: Reward Evolution with Large Language Models using Human Feedback",
+    "LLM-Assisted Semantically Diverse Teammate Generation for Efficient Multi-agent Coordination",
+    "R*: Efficient Reward Design via Reward Structure Evolution and Parameter Alignment Optimization with Large Language Models",
+    "Hazards in Daily Life? Enabling Robots to Proactively Detect and Resolve Anomalies",
+    "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+    "FactorSim: Generative Simulation via Factorized Representation"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "The task of generating code for reward functions that specify the objectives for an agent within a simulation.",
+      "papers": [
+        "FactorSim: Generative Simulation via Factorized Representation",
+        "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+        "Eureka: Human-Level Reward Design via Coding Large Language Models",
+        "LLM-Assisted Semantically Diverse Teammate Generation for Efficient Multi-agent Coordination",
+        "R*: Efficient Reward Design via Reward Structure Evolution and Parameter Alignment Optimization with Large Language Models",
+        "Hazards in Daily Life? Enabling Robots to Proactively Detect and Resolve Anomalies"
+      ],
+      "original_name": "Reward function generation"
+    },
+    {
+      "text": "The observable action of the LLM producing an executable program that defines a dense, shaped reward function based on a natural language goal.",
+      "papers": [
+        "Text2Reward: Reward Shaping with Language Models for Reinforcement Learning"
+      ],
+      "original_name": "Dense reward code generation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "REvolve: Reward Evolution with Large Language Models using Human Feedback",
+      "evidence": "In recent works, large language models (LLMs) have been used for reward generation from natural language task descriptions, leveraging their extensive instruction tuning and commonsense understanding of human behavior. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "REvolve: Reward Evolution with Large Language Models using Human Feedback"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the dominant framing is the production of executable reward-function code for a simulation or reinforcement learning task. Most papers describe it as generating the part of the environment or task code that specifies the agent's objective or reward signal, usually from a task description together with environment code, goal descriptions, or low-level states. A narrower variant describes the behavior as dense reward code generation, where the model produces a shaped dense reward program from a natural-language goal. Papers vary in how they state success: some focus on returning code that defines a scalar reward whose cumulative maximization defines the task, while others describe outputting code such that a downstream objective is maximized or code that correctly uses environment attributes to encourage a specified tactic."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study this behavior under the names reward function generation and dense reward code generation. The settings are varied but mostly involve simulations or environment code: definitions mention robotics and games, simulated worlds where reward generation appears alongside simulator dynamics or termination functions, multi-agent coordination where the reward encodes a desired coordination behavior such as a passing tactic, and robot subtasks trained with reinforcement learning. Some papers also place it next to related code-generation targets such as task specifications, scene configurations, and simulator dynamics rather than treating reward code in isolation."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. In the task formulations themselves, papers usually elicit the behavior by giving a natural-language goal or task description together with environment code information or low-level states and asking for an executable reward program, sometimes in a required format such as \"def reward(self) -> float\" or as a function from state and action variables to a scalar value. When scoring is stated directly, papers describe either maximizing an objective over the generated reward code or verifying that the function correctly uses provided environment attributes to encourage the target behavior."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not consistently present this behavior as evidence of a broader construct. Only one construct is linked, Commonsense reasoning, and one paper claims a causal relationship from Commonsense reasoning to Reward function generation, saying that reward generation from natural-language task descriptions leverages LLMs' \"commonsense understanding of human behavior.\""
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the dominant framing is the production of executable reward-function code for a simulation or reinforcement learning task. Most papers describe it as generating the part of the environment or task code that specifies the agent's objective or reward signal, usually from a task description together with environment code, goal descriptions, or low-level states. A narrower variant describes the behavior as dense reward code generation, where the model produces a shaped dense reward program from a natural-language goal. Papers vary in how they state success: some focus on returning code that defines a scalar reward whose cumulative maximization defines the task, while others describe outputting code such that a downstream objective is maximized or code that correctly uses environment attributes to encourage a specified tactic.\n\nVariants. Papers study this behavior under the names reward function generation and dense reward code generation. The settings are varied but mostly involve simulations or environment code: definitions mention robotics and games, simulated worlds where reward generation appears alongside simulator dynamics or termination functions, multi-agent coordination where the reward encodes a desired coordination behavior such as a passing tactic, and robot subtasks trained with reinforcement learning. Some papers also place it next to related code-generation targets such as task specifications, scene configurations, and simulator dynamics rather than treating reward code in isolation.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the task formulations themselves, papers usually elicit the behavior by giving a natural-language goal or task description together with environment code information or low-level states and asking for an executable reward program, sometimes in a required format such as \"def reward(self) -> float\" or as a function from state and action variables to a scalar value. When scoring is stated directly, papers describe either maximizing an objective over the generated reward code or verifying that the function correctly uses provided environment attributes to encourage the target behavior.\n\nWhat it is taken as evidence of. Papers do not consistently present this behavior as evidence of a broader construct. Only one construct is linked, Commonsense reasoning, and one paper claims a causal relationship from Commonsense reasoning to Reward function generation, saying that reward generation from natural-language task descriptions leverages LLMs' \"commonsense understanding of human behavior.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "OMNI-EPIC: Open-endedness via Models of human Notions of Interestingness with Environments Programmed in Code",
+      "REvolve: Reward Evolution with Large Language Models using Human Feedback"
+    ],
+    "neurips24": [
+      "A Decision-Language Model (DLM) for Dynamic Restless Multi-Armed Bandit Tasks in Public Health",
+      "FactorSim: Generative Simulation via Factorized Representation"
+    ],
+    "iclr24": [
+      "Eureka: Human-Level Reward Design via Coding Large Language Models",
+      "Text2Reward: Reward Shaping with Language Models for Reinforcement Learning"
+    ],
+    "icml25": [
+      "LLM-Assisted Semantically Diverse Teammate Generation for Efficient Multi-agent Coordination",
+      "R*: Efficient Reward Design via Reward Structure Evolution and Parameter Alignment Optimization with Large Language Models"
+    ],
+    "naacl25": [
+      "Hazards in Daily Life? Enabling Robots to Proactively Detect and Resolve Anomalies"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 2,
+    "iclr24": 2,
+    "icml25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

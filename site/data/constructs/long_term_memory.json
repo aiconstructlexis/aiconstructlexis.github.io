@@ -1,0 +1,146 @@
+{
+  "canonical_name": "Long-term memory",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats long-term memory as retaining, recalling, storing, or using relevant information over extended periods, interactions, or multi-step tasks. Most descriptions tie this to downstream coherence, either coherent and contextually consistent reasoning or consistent, human-like conversations, while one paper also characterizes it as a dynamic and interconnected knowledge structure. The main variation is scope: some papers place it in financial tasks or dialogue systems, while a smaller framing narrows it to long-term memory retention, emphasizing recall from prior interactions despite intervening irrelevant content.\n\nSpace of facets. One paper explicitly organizes long-term memory into core abilities and links it to information extraction, defined there as recalling specific information from extensive interactive histories. Across papers, the label is also used at different levels of abstraction: as a broad storage-and-retrieval ability, as a dialogue-system capacity for maintaining consistency over extended interactions, and as long-term memory retention focused on prior interactions. Another paper contrasts human long-term memory's dynamic, interconnected nature with vector retrieval.\n\nSpace of measurement. Operationalization is narrow: papers connect the construct to 1 measurement instrument and 1 behavioral indicator. The instrument is the benchmark LongMemEval, described as evaluating the long-context memory ability of chat assistants across memory tasks, and the only linked behavioral indicator is information extraction, described as recalling specific information from extensive interactive histories. This measurement emphasis is on recall from long interaction histories, while several definitions also include using retained information for coherent reasoning or conversation consistency.\n\nLinks. Papers link long-term memory to 2 constructs. One paper claims a causal relationship from long-term memory to knowledge integration, describing a framework inspired by human long-term memory to enable deeper and more efficient knowledge integration over new experiences, and one paper reports that long-horizon planning is related to long-term memory because partial observability creates demand to maintain past useful experiences. One paper also reports that information extraction is related to long-term memory, and no paper reports a correlational link.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Long-term memory",
+    "Long-term memory retention"
+  ],
+  "papers": [
+    "From Tools to Teammates: Evaluating LLMs in Multi-Session Coding Interactions",
+    "Cradle: Empowering Foundation Agents towards General Computer Control",
+    "From RAG to Memory: Non-Parametric Continual Learning for Large Language Models",
+    "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+    "MADial-Bench: Towards Real-world Evaluation of Memory-Augmented Dialogue Generation"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The capacity to retain and utilize relevant information across extended or multi-step financial tasks, supporting coherent and contextually consistent reasoning.",
+      "papers": [
+        "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+        "MADial-Bench: Towards Real-world Evaluation of Memory-Augmented Dialogue Generation",
+        "From RAG to Memory: Non-Parametric Continual Learning for Large Language Models"
+      ],
+      "original_name": "Long-term memory"
+    },
+    {
+      "text": "The latent ability of an LLM to retain and recall relevant information from prior interactions over extended sequences of dialogue, despite intervening irrelevant content.",
+      "papers": [
+        "From Tools to Teammates: Evaluating LLMs in Multi-Session Coding Interactions"
+      ],
+      "original_name": "Long-term memory retention"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge integration",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+      "evidence": "HippoRAG, a novel retrieval framework inspired by the hippocampal indexing theory of human long-term memory to enable deeper and more efficient knowledge integration over new experiences. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "evidence": "To comprehensively reflect the challenge, LONGMEMEVAL formulates five core long-term memory abilities: \u2022 Information Extraction (IE): Ability to recall specific information from extensive interactive histories... (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-horizon planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Cradle: Empowering Foundation Agents towards General Computer Control",
+      "evidence": "\u201clong-horizontal reasoning due to the partial observability of complex GCC tasks, which also leads to the demand for long-term memory to maintain past useful experiences\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Cradle: Empowering Foundation Agents towards General Computer Control"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongMemEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+      "evidence": "\u201cLONGMEMEVAL ... was a challenging benchmark designed to evaluate the long-context memory ability of chat assistants across six memory tasks, including ... knowledge update (KU) ...\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats long-term memory as retaining, recalling, storing, or using relevant information over extended periods, interactions, or multi-step tasks. Most descriptions tie this to downstream coherence, either coherent and contextually consistent reasoning or consistent, human-like conversations, while one paper also characterizes it as a dynamic and interconnected knowledge structure. The main variation is scope: some papers place it in financial tasks or dialogue systems, while a smaller framing narrows it to long-term memory retention, emphasizing recall from prior interactions despite intervening irrelevant content."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "One paper explicitly organizes long-term memory into core abilities and links it to information extraction, defined there as recalling specific information from extensive interactive histories. Across papers, the label is also used at different levels of abstraction: as a broad storage-and-retrieval ability, as a dialogue-system capacity for maintaining consistency over extended interactions, and as long-term memory retention focused on prior interactions. Another paper contrasts human long-term memory's dynamic, interconnected nature with vector retrieval."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow: papers connect the construct to 1 measurement instrument and 1 behavioral indicator. The instrument is the benchmark LongMemEval, described as evaluating the long-context memory ability of chat assistants across memory tasks, and the only linked behavioral indicator is information extraction, described as recalling specific information from extensive interactive histories. This measurement emphasis is on recall from long interaction histories, while several definitions also include using retained information for coherent reasoning or conversation consistency."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link long-term memory to 2 constructs. One paper claims a causal relationship from long-term memory to knowledge integration, describing a framework inspired by human long-term memory to enable deeper and more efficient knowledge integration over new experiences, and one paper reports that long-horizon planning is related to long-term memory because partial observability creates demand to maintain past useful experiences. One paper also reports that information extraction is related to long-term memory, and no paper reports a correlational link."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats long-term memory as retaining, recalling, storing, or using relevant information over extended periods, interactions, or multi-step tasks. Most descriptions tie this to downstream coherence, either coherent and contextually consistent reasoning or consistent, human-like conversations, while one paper also characterizes it as a dynamic and interconnected knowledge structure. The main variation is scope: some papers place it in financial tasks or dialogue systems, while a smaller framing narrows it to long-term memory retention, emphasizing recall from prior interactions despite intervening irrelevant content.\n\nSpace of facets. One paper explicitly organizes long-term memory into core abilities and links it to information extraction, defined there as recalling specific information from extensive interactive histories. Across papers, the label is also used at different levels of abstraction: as a broad storage-and-retrieval ability, as a dialogue-system capacity for maintaining consistency over extended interactions, and as long-term memory retention focused on prior interactions. Another paper contrasts human long-term memory's dynamic, interconnected nature with vector retrieval.\n\nSpace of measurement. Operationalization is narrow: papers connect the construct to 1 measurement instrument and 1 behavioral indicator. The instrument is the benchmark LongMemEval, described as evaluating the long-context memory ability of chat assistants across memory tasks, and the only linked behavioral indicator is information extraction, described as recalling specific information from extensive interactive histories. This measurement emphasis is on recall from long interaction histories, while several definitions also include using retained information for coherent reasoning or conversation consistency.\n\nLinks. Papers link long-term memory to 2 constructs. One paper claims a causal relationship from long-term memory to knowledge integration, describing a framework inspired by human long-term memory to enable deeper and more efficient knowledge integration over new experiences, and one paper reports that long-horizon planning is related to long-term memory because partial observability creates demand to maintain past useful experiences. One paper also reports that information extraction is related to long-term memory, and no paper reports a correlational link.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "From Tools to Teammates: Evaluating LLMs in Multi-Session Coding Interactions"
+    ],
+    "icml25": [
+      "Cradle: Empowering Foundation Agents towards General Computer Control",
+      "From RAG to Memory: Non-Parametric Continual Learning for Large Language Models"
+    ],
+    "naacl25": [
+      "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+      "MADial-Bench: Towards Real-world Evaluation of Memory-Augmented Dialogue Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "icml25": 2,
+    "naacl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "icml25",
+    "naacl25"
+  ]
+}

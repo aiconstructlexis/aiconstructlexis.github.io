@@ -1,0 +1,148 @@
+{
+  "canonical_name": "Representation collapse",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most definitions here treat representation collapse as a loss of distinctness in a model's representations: either the distortion and degradation of general pre-trained features during fine-tuning, or hidden features in deeper layers becoming highly similar. In this usage, papers describe later or intermediate layer states as overly alike, reducing expressive capacity and performance. A smaller line of work, using the label representational collapse, defines it as distinct input sequences yielding arbitrarily close last-token representations at the last layer, especially under low-precision arithmetic, so the main difference is whether collapse is framed as internal feature degradation across training and depth or as sequence-level indistinguishability at the final representation.\n\nSpace of facets. Papers break the construct down by where the collapse appears: in pre-trained features during downstream fine-tuning, in intermediate or later hidden states across depth, and in the final token at the last layer. Some descriptions make it explicitly layerwise, quantifying similarity between adjacent-layer inputs and describing progressive collapse in later layers, while others cast it as distinct sequences becoming arbitrarily close. Papers also use both representation collapse and representational collapse across these framings, and some descriptions place it alongside over-smoothing or say it occurs when internal representation diversity diminishes.\n\nSpace of measurement. No paper links it to a measurement instrument. Papers link it to one behavioral indicator, token copying, but the usage in the papers treats copying errors as an effect of collapse rather than as a direct measurement. Operationally, papers make collapse visible through representational similarity analyses, for example cosine similarity between inputs of adjacent layers, with later layers reported above 0.97 similarity in one case, or by showing that distinct sequences can have arbitrarily close final-token representations as sequence length increases; these operationalizations follow the definitions by testing whether representations stop remaining distinct.\n\nLinks. Papers link representation collapse to three constructs and one behavioral indicator. One paper claims a causal relationship from representation diversity to representation collapse, saying better token diversity can slow the collapse phenomenon, and another paper treats the two as related. Separate papers claim causal relationships from representation collapse to expressive power, described as reducing the ability to represent diverse features, to reasoning, described as limiting reasoning capabilities, and to token copying, where indistinguishable sequences are said to lead to errors in tasks involving counting or copying.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Representation collapse",
+    "Representational collapse"
+  ],
+  "papers": [
+    "Hyper-Connections",
+    "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+    "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+    "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+    "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections",
+    "Transformers need glasses! Information over-squashing in language tasks"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The distortion and degradation of general, pre-trained feature representations within a model during the process of fine-tuning on a specific downstream task.",
+      "papers": [
+        "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+        "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections"
+      ],
+      "original_name": "Representation collapse"
+    },
+    {
+      "text": "A phenomenon where distinct input sequences produce arbitrarily close final-token representations, making them indistinguishable to the model, especially with low-precision arithmetic.",
+      "papers": [
+        "Transformers need glasses! Information over-squashing in language tasks"
+      ],
+      "original_name": "Representational collapse"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Representation diversity",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+      "evidence": "We empirically demonstrate in Figure 1 that Twicing Attention mechanism promotes better token diversity and, therefore, it is able to slow down representation collapse phenomenon in transformers. (Section 5).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+          "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Token copying",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Transformers need glasses! Information over-squashing in language tasks",
+      "evidence": "As a result, the model is provably unable to respond to these sequences in different ways\u2014leading to errors in, e.g., tasks involving counting or copying. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Transformers need glasses! Information over-squashing in language tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Expressive power",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+      "evidence": "This phenomenon, often referred to as the \u201cover-smoothing\u201d problem, substantially reduces the transformers\u2019 ability to represent diverse features (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Transformer Meets Twicing: Harnessing Unattended Residual Information"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+      "evidence": "\"representation collapse in the model\u2019s intermediate layers as a key factor limiting their reasoning capabilities\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most definitions here treat representation collapse as a loss of distinctness in a model's representations: either the distortion and degradation of general pre-trained features during fine-tuning, or hidden features in deeper layers becoming highly similar. In this usage, papers describe later or intermediate layer states as overly alike, reducing expressive capacity and performance. A smaller line of work, using the label representational collapse, defines it as distinct input sequences yielding arbitrarily close last-token representations at the last layer, especially under low-precision arithmetic, so the main difference is whether collapse is framed as internal feature degradation across training and depth or as sequence-level indistinguishability at the final representation."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers break the construct down by where the collapse appears: in pre-trained features during downstream fine-tuning, in intermediate or later hidden states across depth, and in the final token at the last layer. Some descriptions make it explicitly layerwise, quantifying similarity between adjacent-layer inputs and describing progressive collapse in later layers, while others cast it as distinct sequences becoming arbitrarily close. Papers also use both representation collapse and representational collapse across these framings, and some descriptions place it alongside over-smoothing or say it occurs when internal representation diversity diminishes."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No paper links it to a measurement instrument. Papers link it to one behavioral indicator, token copying, but the usage in the papers treats copying errors as an effect of collapse rather than as a direct measurement. Operationally, papers make collapse visible through representational similarity analyses, for example cosine similarity between inputs of adjacent layers, with later layers reported above 0.97 similarity in one case, or by showing that distinct sequences can have arbitrarily close final-token representations as sequence length increases; these operationalizations follow the definitions by testing whether representations stop remaining distinct."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link representation collapse to three constructs and one behavioral indicator. One paper claims a causal relationship from representation diversity to representation collapse, saying better token diversity can slow the collapse phenomenon, and another paper treats the two as related. Separate papers claim causal relationships from representation collapse to expressive power, described as reducing the ability to represent diverse features, to reasoning, described as limiting reasoning capabilities, and to token copying, where indistinguishable sequences are said to lead to errors in tasks involving counting or copying."
+    }
+  ],
+  "characterization": "Space of definitions. Most definitions here treat representation collapse as a loss of distinctness in a model's representations: either the distortion and degradation of general pre-trained features during fine-tuning, or hidden features in deeper layers becoming highly similar. In this usage, papers describe later or intermediate layer states as overly alike, reducing expressive capacity and performance. A smaller line of work, using the label representational collapse, defines it as distinct input sequences yielding arbitrarily close last-token representations at the last layer, especially under low-precision arithmetic, so the main difference is whether collapse is framed as internal feature degradation across training and depth or as sequence-level indistinguishability at the final representation.\n\nSpace of facets. Papers break the construct down by where the collapse appears: in pre-trained features during downstream fine-tuning, in intermediate or later hidden states across depth, and in the final token at the last layer. Some descriptions make it explicitly layerwise, quantifying similarity between adjacent-layer inputs and describing progressive collapse in later layers, while others cast it as distinct sequences becoming arbitrarily close. Papers also use both representation collapse and representational collapse across these framings, and some descriptions place it alongside over-smoothing or say it occurs when internal representation diversity diminishes.\n\nSpace of measurement. No paper links it to a measurement instrument. Papers link it to one behavioral indicator, token copying, but the usage in the papers treats copying errors as an effect of collapse rather than as a direct measurement. Operationally, papers make collapse visible through representational similarity analyses, for example cosine similarity between inputs of adjacent layers, with later layers reported above 0.97 similarity in one case, or by showing that distinct sequences can have arbitrarily close final-token representations as sequence length increases; these operationalizations follow the definitions by testing whether representations stop remaining distinct.\n\nLinks. Papers link representation collapse to three constructs and one behavioral indicator. One paper claims a causal relationship from representation diversity to representation collapse, saying better token diversity can slow the collapse phenomenon, and another paper treats the two as related. Separate papers claim causal relationships from representation collapse to expressive power, described as reducing the ability to represent diverse features, to reasoning, described as limiting reasoning capabilities, and to token copying, where indistinguishable sequences are said to lead to errors in tasks involving counting or copying.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Hyper-Connections",
+      "LiNeS: Post-training Layer Scaling Prevents Forgetting and Enhances Model Merging",
+      "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+      "Transformer Meets Twicing: Harnessing Unattended Residual Information"
+    ],
+    "icml25": [
+      "MUDDFormer: Breaking Residual Bottlenecks in Transformers via Multiway Dynamic Dense Connections"
+    ],
+    "neurips24": [
+      "Transformers need glasses! Information over-squashing in language tasks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "canonical_name": "Q-Bench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, Q-Bench is most commonly described as a benchmark for low-level vision tasks or for assessing the low-level visual capabilities of multimodal or general-purpose foundation models. One definition further specifies that it is divided into perception, description, and quality assessment sections. A smaller usage treats it as an existing benchmark for in-domain multi-image evaluation, and one paper refers to a QBench-Testset, abbreviated QBenchT, as a named test set.\n\nWhat it is claimed to measure. Papers link Q-Bench to 1 construct and no behavioral indicators. The only recorded measurement claim is that it measures Multi-image reasoning, with a paper including QBench among the benchmarks incorporated for multi-image tasks. The reported measurement use therefore centers on a single construct rather than spanning multiple constructs or indicators.\n\nSpace of uses. In practice, papers often present Q-Bench as one benchmark within broader evaluation suites. It is adopted alongside NLVR2 in multi-image evaluation, appears with Mantis-Eval and BLINK for multi-image tasks, and is also reported together with SEED-Bench Image Part and MM-Vet in result summaries.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Q-Bench",
+    "QBench-Testset",
+    "QBench"
+  ],
+  "papers": [
+    "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types",
+    "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+    "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+    "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A benchmark used in the paper for in-domain multi-image evaluation.",
+      "papers": [
+        "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+        "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+      ],
+      "original_name": "Q-Bench"
+    },
+    {
+      "text": "QBench-Testset (QBenchT) is a benchmark for evaluating general-purpose foundation models on low-level vision tasks.",
+      "papers": [
+        "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD"
+      ],
+      "original_name": "QBench-Testset"
+    },
+    {
+      "text": "A benchmark used to evaluate general-purpose foundation models on low-level vision tasks.",
+      "papers": [
+        "MoVA: Adapting Mixture of Vision Experts to Multimodal Context"
+      ],
+      "original_name": "QBench"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-image reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Design Choices for Extending the Context Length of Visual Language Models",
+      "evidence": "For multi-image tasks, we incorporate Mantis-Eval (Jiang et al., 2024), QBench (Wu et al., 2024b), and BLINK (Fu et al., 2024b), in line with LLaVA-Interleave (Li et al., 2024a). (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Design Choices for Extending the Context Length of Visual Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, Q-Bench is most commonly described as a benchmark for low-level vision tasks or for assessing the low-level visual capabilities of multimodal or general-purpose foundation models. One definition further specifies that it is divided into perception, description, and quality assessment sections. A smaller usage treats it as an existing benchmark for in-domain multi-image evaluation, and one paper refers to a QBench-Testset, abbreviated QBenchT, as a named test set."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link Q-Bench to 1 construct and no behavioral indicators. The only recorded measurement claim is that it measures Multi-image reasoning, with a paper including QBench among the benchmarks incorporated for multi-image tasks. The reported measurement use therefore centers on a single construct rather than spanning multiple constructs or indicators."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In practice, papers often present Q-Bench as one benchmark within broader evaluation suites. It is adopted alongside NLVR2 in multi-image evaluation, appears with Mantis-Eval and BLINK for multi-image tasks, and is also reported together with SEED-Bench Image Part and MM-Vet in result summaries."
+    }
+  ],
+  "characterization": "What it is. Across papers, Q-Bench is most commonly described as a benchmark for low-level vision tasks or for assessing the low-level visual capabilities of multimodal or general-purpose foundation models. One definition further specifies that it is divided into perception, description, and quality assessment sections. A smaller usage treats it as an existing benchmark for in-domain multi-image evaluation, and one paper refers to a QBench-Testset, abbreviated QBenchT, as a named test set.\n\nWhat it is claimed to measure. Papers link Q-Bench to 1 construct and no behavioral indicators. The only recorded measurement claim is that it measures Multi-image reasoning, with a paper including QBench among the benchmarks incorporated for multi-image tasks. The reported measurement use therefore centers on a single construct rather than spanning multiple constructs or indicators.\n\nSpace of uses. In practice, papers often present Q-Bench as one benchmark within broader evaluation suites. It is adopted alongside NLVR2 in multi-image evaluation, appears with Mantis-Eval and BLINK for multi-image tasks, and is also reported together with SEED-Bench Image Part and MM-Vet in result summaries.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "TaskGalaxy: Scaling Multi-modal Instruction Fine-tuning with Tens of Thousands Vision Task Types"
+    ],
+    "neurips24": [
+      "InternLM-XComposer2-4KHD: A Pioneering Large Vision-Language Model Handling Resolutions from 336 Pixels to 4K HD",
+      "MoVA: Adapting Mixture of Vision Experts to Multimodal Context",
+      "Meteor: Mamba-based Traversal of Rationale for Large Language and Vision Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

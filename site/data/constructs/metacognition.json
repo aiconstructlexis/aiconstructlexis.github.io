@@ -1,0 +1,271 @@
+{
+  "canonical_name": "Metacognition",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across these papers, the prevailing usage treats metacognition as a higher-order, usually latent capacity for self-assessment, self-monitoring, and self-regulation: models assess their own knowledge and limitations, monitor reasoning, self-verify outputs, reason about uncertainty, and sometimes model their own competence or learning progress. A smaller line uses the narrower label introspection, defined as access to facts about the model itself, or to internal representations, that cannot be derived from training data alone. The main disagreement is about scope, from checking the correctness of current answers or deciding whether to use tools, to broader abilities for planning learning, applying prior insights, or recognizing patterns across repeated feedback cycles.\n\nSpace of facets. The terminology is not stable. Papers use metacognition alongside, and sometimes in place of, introspection, self-awareness, self-knowledge, self-reflection, cognitive reflection, meta-reasoning, meta-reflection, and metacognitive monitoring; within these families, narrower facets include capability awareness, awareness of knowledge limits, self-awareness of reasoning boundaries, and competence or learning-progress monitoring. A recurring split is between local monitoring, such as step-error awareness, correcting one's own generation, or self-verification, and broader regulation, such as selecting external tools, guiding curriculum learning, or adapting learning plans over time.\n\nSpace of measurement. No measurement instrument is linked to metacognition; papers link it instead to 2 behavioral indicators, Clarifying question generation and Self-verification. Beyond those links, papers describe bespoke benchmark-style tasks and probes rather than a recurring instrument: INTROSPECT tasks for gaining information about oneself through \"internal\" mechanisms, observation tasks that score the correctness of reasoning steps from internal states, and task settings where models choose tools, refuse or abstain under contradictory definitions, or predict their own competence and learning progress. These operationalizations usually match the dominant self-assessment and regulation framing, though the introspection version is narrower because it asks for access to self-facts rather than only better task behavior.\n\nLinks. Across the cited papers, causal claims run from Metacognition to Clarifying question generation, Self-improvement, and Task generalization. Related links connect Metacognition with Self-awareness and Self-verification, and one paper also relates Calibration to Metacognition by arguing that calibrated self-predictions would be evidence of introspection. No correlational link is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Introspection",
+    "Meta-cognition",
+    "Metacognition",
+    "Metacognitive abilities",
+    "Meta-cognitive reasoning",
+    "Metacognitive capabilities",
+    "Metacognitive capability",
+    "Cognitive reflection",
+    "Metacognitive monitoring",
+    "Meta-reflection",
+    "Intrinsic metacognitive learning"
+  ],
+  "papers": [
+    "Adaptive Tool Use in Large Language Models with Meta-Cognition Trigger",
+    "What Makes a Good Natural Language Prompt?",
+    "Do LLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+    "LLMs Don't Know Their Own Decision Boundaries: The Unreliability of Self-Generated Counterfactual Explanations",
+    "ThinkTuning: Instilling Cognitive Reflections without Distillation",
+    "Active Task Disambiguation with LLMs",
+    "Enhancing Language Model Agents using Diversity of Thoughts",
+    "Looking Inward: Language Models Can Learn About Themselves by Introspection",
+    "MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces",
+    "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+    "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning",
+    "Reflection-Bench: Evaluating Epistemic Agency in Large Language Models",
+    "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+  ],
+  "paper_count": 13,
+  "definitions": [
+    {
+      "text": "The ability of a model to access and report facts about itself that cannot be logically or inductively derived from its training data alone.",
+      "papers": [
+        "Looking Inward: Language Models Can Learn About Themselves by Introspection",
+        "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+      ],
+      "original_name": "Introspection"
+    },
+    {
+      "text": "The latent ability of an LLM to assess and regulate its own knowledge and limitations, enabling informed decisions about whether to rely on internal knowledge or external tools.",
+      "papers": [
+        "Adaptive Tool Use in Large Language Models with Meta-Cognition Trigger"
+      ],
+      "original_name": "Meta-cognition"
+    },
+    {
+      "text": "The model's ability to self-monitor its own cognitive processes, including reasoning and self-verification of its outputs to ensure correctness and reliability.",
+      "papers": [
+        "What Makes a Good Natural Language Prompt?"
+      ],
+      "original_name": "Metacognition"
+    },
+    {
+      "text": "The model's capacity to leverage higher-order thinking, such as applying insights from prior experiences to new problems.",
+      "papers": [
+        "Enhancing Language Model Agents using Diversity of Thoughts"
+      ],
+      "original_name": "Metacognitive abilities"
+    },
+    {
+      "text": "The ability to reason about one\u2019s own generative uncertainty and identify which questions best distinguish among candidate solutions.",
+      "papers": [
+        "Active Task Disambiguation with LLMs"
+      ],
+      "original_name": "Meta-cognitive reasoning"
+    },
+    {
+      "text": "Higher-order cognitive abilities related to a model's awareness and understanding of its own knowledge and reasoning processes.",
+      "papers": [
+        "LLMs Don't Know Their Own Decision Boundaries: The Unreliability of Self-Generated Counterfactual Explanations"
+      ],
+      "original_name": "Metacognitive capabilities"
+    },
+    {
+      "text": "The latent ability of an LLM to detect inconsistencies or contradictions in input instructions and respond with self-monitoring behaviors such as abstention or refusal to answer.",
+      "papers": [
+        "Do LLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions"
+      ],
+      "original_name": "Metacognitive capability"
+    },
+    {
+      "text": "The latent tendency to engage in self-reflective thinking, including questioning initial responses and considering alternative reasoning paths.",
+      "papers": [
+        "ThinkTuning: Instilling Cognitive Reflections without Distillation"
+      ],
+      "original_name": "Cognitive reflection"
+    },
+    {
+      "text": "The latent ability of an LLM agent to model its own competence and learning progress across goals by leveraging semantic relationships, enabling self-directed curriculum learning.",
+      "papers": [
+        "MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces"
+      ],
+      "original_name": "Metacognitive monitoring"
+    },
+    {
+      "text": "The higher-order capacity to recognize and anticipate global patterns across multiple cycles of prediction, action, and feedback, enabling regulation beyond local adaptation.",
+      "papers": [
+        "Reflection-Bench: Evaluating Epistemic Agency in Large Language Models"
+      ],
+      "original_name": "Meta-reflection"
+    },
+    {
+      "text": "The latent capacity of an agent to autonomously and adaptively refine its learning strategies through self-assessment, self-planning, and self-evaluation, without reliance on fixed, human-designed mechanisms.",
+      "papers": [
+        "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning"
+      ],
+      "original_name": "Intrinsic metacognitive learning"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Calibration",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Looking Inward: Language Models Can Learn About Themselves by Introspection",
+      "evidence": "If a model\u2019s self-predictions are calibrated with respect to its ground-truth behavior, this suggests the model takes into account information about itself that was not in its training data. This would provide further evidence of introspection. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Looking Inward: Language Models Can Learn About Themselves by Introspection"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Clarifying question generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Active Task Disambiguation with LLMs",
+      "evidence": "Yet, generating effective clarifying questions requires LLM agents to engage in a form of meta-cognitive reasoning, an ability LLMs may presently lack.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Active Task Disambiguation with LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-improvement",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning",
+      "evidence": "We argue that sustainable, generalized self-improvement requires agents to develop intrinsic metacognitive learning abilities. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "evidence": "Our approach integrates self-awareness, monitoring, evaluation, regulation, and meta-reflection, to enhance LLMs\u2019 ability to refine reasoning strategies and generalize across tasks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+      "evidence": "M can obtain knowledge of itself via direct access to its representations (introspection). (Section 2.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-verification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "What Makes a Good Natural Language Prompt?",
+      "evidence": "Metacognition: This assesses prompts in explicitly guiding models to reason, self-monitor, and self-verify outputs to meet expectations and enhance reliability (e.b. Wang and Zhao (2024)).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "What Makes a Good Natural Language Prompt?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across these papers, the prevailing usage treats metacognition as a higher-order, usually latent capacity for self-assessment, self-monitoring, and self-regulation: models assess their own knowledge and limitations, monitor reasoning, self-verify outputs, reason about uncertainty, and sometimes model their own competence or learning progress. A smaller line uses the narrower label introspection, defined as access to facts about the model itself, or to internal representations, that cannot be derived from training data alone. The main disagreement is about scope, from checking the correctness of current answers or deciding whether to use tools, to broader abilities for planning learning, applying prior insights, or recognizing patterns across repeated feedback cycles."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The terminology is not stable. Papers use metacognition alongside, and sometimes in place of, introspection, self-awareness, self-knowledge, self-reflection, cognitive reflection, meta-reasoning, meta-reflection, and metacognitive monitoring; within these families, narrower facets include capability awareness, awareness of knowledge limits, self-awareness of reasoning boundaries, and competence or learning-progress monitoring. A recurring split is between local monitoring, such as step-error awareness, correcting one's own generation, or self-verification, and broader regulation, such as selecting external tools, guiding curriculum learning, or adapting learning plans over time."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to metacognition; papers link it instead to 2 behavioral indicators, Clarifying question generation and Self-verification. Beyond those links, papers describe bespoke benchmark-style tasks and probes rather than a recurring instrument: INTROSPECT tasks for gaining information about oneself through \"internal\" mechanisms, observation tasks that score the correctness of reasoning steps from internal states, and task settings where models choose tools, refuse or abstain under contradictory definitions, or predict their own competence and learning progress. These operationalizations usually match the dominant self-assessment and regulation framing, though the introspection version is narrower because it asks for access to self-facts rather than only better task behavior."
+    },
+    {
+      "label": "Links.",
+      "text": "Across the cited papers, causal claims run from Metacognition to Clarifying question generation, Self-improvement, and Task generalization. Related links connect Metacognition with Self-awareness and Self-verification, and one paper also relates Calibration to Metacognition by arguing that calibrated self-predictions would be evidence of introspection. No correlational link is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across these papers, the prevailing usage treats metacognition as a higher-order, usually latent capacity for self-assessment, self-monitoring, and self-regulation: models assess their own knowledge and limitations, monitor reasoning, self-verify outputs, reason about uncertainty, and sometimes model their own competence or learning progress. A smaller line uses the narrower label introspection, defined as access to facts about the model itself, or to internal representations, that cannot be derived from training data alone. The main disagreement is about scope, from checking the correctness of current answers or deciding whether to use tools, to broader abilities for planning learning, applying prior insights, or recognizing patterns across repeated feedback cycles.\n\nSpace of facets. The terminology is not stable. Papers use metacognition alongside, and sometimes in place of, introspection, self-awareness, self-knowledge, self-reflection, cognitive reflection, meta-reasoning, meta-reflection, and metacognitive monitoring; within these families, narrower facets include capability awareness, awareness of knowledge limits, self-awareness of reasoning boundaries, and competence or learning-progress monitoring. A recurring split is between local monitoring, such as step-error awareness, correcting one's own generation, or self-verification, and broader regulation, such as selecting external tools, guiding curriculum learning, or adapting learning plans over time.\n\nSpace of measurement. No measurement instrument is linked to metacognition; papers link it instead to 2 behavioral indicators, Clarifying question generation and Self-verification. Beyond those links, papers describe bespoke benchmark-style tasks and probes rather than a recurring instrument: INTROSPECT tasks for gaining information about oneself through \"internal\" mechanisms, observation tasks that score the correctness of reasoning steps from internal states, and task settings where models choose tools, refuse or abstain under contradictory definitions, or predict their own competence and learning progress. These operationalizations usually match the dominant self-assessment and regulation framing, though the introspection version is narrower because it asks for access to self-facts rather than only better task behavior.\n\nLinks. Across the cited papers, causal claims run from Metacognition to Clarifying question generation, Self-improvement, and Task generalization. Related links connect Metacognition with Self-awareness and Self-verification, and one paper also relates Calibration to Metacognition by arguing that calibrated self-predictions would be evidence of introspection. No correlational link is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Adaptive Tool Use in Large Language Models with Meta-Cognition Trigger",
+      "What Makes a Good Natural Language Prompt?"
+    ],
+    "emnlp25": [
+      "Do LLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+      "LLMs Don't Know Their Own Decision Boundaries: The Unreliability of Self-Generated Counterfactual Explanations",
+      "ThinkTuning: Instilling Cognitive Reflections without Distillation"
+    ],
+    "iclr25": [
+      "Active Task Disambiguation with LLMs",
+      "Enhancing Language Model Agents using Diversity of Thoughts",
+      "Looking Inward: Language Models Can Learn About Themselves by Introspection"
+    ],
+    "icml25": [
+      "MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces",
+      "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning",
+      "Reflection-Bench: Evaluating Epistemic Agency in Large Language Models"
+    ],
+    "neurips24": [
+      "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 3,
+    "iclr25": 3,
+    "icml25": 4,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

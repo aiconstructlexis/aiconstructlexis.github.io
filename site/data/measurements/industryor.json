@@ -1,0 +1,68 @@
+{
+  "canonical_name": "IndustryOR",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the cited papers, IndustryOR is most commonly described as an open-source dataset of commercial Operations Research problems. One paper says it served as the basis for \"a novel benchmark dataset based on the open-source commercial IndustryOR\" (Decision Information Meets Large Language Models: The Future of Explainable Operations Research), while another describes it as consisting of 100 real-world optimization problems spanning linear, integer, and mixed-integer programming at various difficulty levels.\n\nWhat it is claimed to measure. No papers report IndustryOR as measuring any construct or behavioral indicator.\n\nSpace of uses. The papers position IndustryOR either as source material for building a new benchmark for explainable OR or as a benchmark used directly for real-world optimization problems at varying difficulty levels. No papers link it to other measurement instruments.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "IndustryOR"
+  ],
+  "papers": [
+    "Decision Information Meets Large Language Models: The Future of Explainable Operations Research",
+    "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch",
+    "Autoformulation of Mathematical Optimization Models Using LLMs",
+    "EquivaMap: Leveraging LLMs for Automatic Equivalence Checking of Optimization Formulations",
+    "OptMATH: A Scalable Bidirectional Data Synthesis Framework for Optimization Modeling"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "An open-source dataset of commercial Operations Research problems, used as a basis for creating a new benchmark for explainable OR.",
+      "papers": [
+        "Decision Information Meets Large Language Models: The Future of Explainable Operations Research",
+        "Autoformulation of Mathematical Optimization Models Using LLMs"
+      ],
+      "original_name": "IndustryOR"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the cited papers, IndustryOR is most commonly described as an open-source dataset of commercial Operations Research problems. One paper says it served as the basis for \"a novel benchmark dataset based on the open-source commercial IndustryOR\" (Decision Information Meets Large Language Models: The Future of Explainable Operations Research), while another describes it as consisting of 100 real-world optimization problems spanning linear, integer, and mixed-integer programming at various difficulty levels."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "No papers report IndustryOR as measuring any construct or behavioral indicator."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The papers position IndustryOR either as source material for building a new benchmark for explainable OR or as a benchmark used directly for real-world optimization problems at varying difficulty levels. No papers link it to other measurement instruments."
+    }
+  ],
+  "characterization": "What it is. Across the cited papers, IndustryOR is most commonly described as an open-source dataset of commercial Operations Research problems. One paper says it served as the basis for \"a novel benchmark dataset based on the open-source commercial IndustryOR\" (Decision Information Meets Large Language Models: The Future of Explainable Operations Research), while another describes it as consisting of 100 real-world optimization problems spanning linear, integer, and mixed-integer programming at various difficulty levels.\n\nWhat it is claimed to measure. No papers report IndustryOR as measuring any construct or behavioral indicator.\n\nSpace of uses. The papers position IndustryOR either as source material for building a new benchmark for explainable OR or as a benchmark used directly for real-world optimization problems at varying difficulty levels. No papers link it to other measurement instruments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Decision Information Meets Large Language Models: The Future of Explainable Operations Research",
+      "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch"
+    ],
+    "icml25": [
+      "Autoformulation of Mathematical Optimization Models Using LLMs",
+      "EquivaMap: Leveraging LLMs for Automatic Equivalence Checking of Optimization Formulations",
+      "OptMATH: A Scalable Bidirectional Data Synthesis Framework for Optimization Modeling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 3
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "canonical_name": "SQA3D",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across definitions, SQA3D is most commonly described as a situated 3D dataset or benchmark for situated question answering in 3D scenes. Papers variously call it human-annotated, multi-modal, and a dataset for situated understanding in real-world scenes, and one definition adds that it contains over 33,000 question-answer pairs for evaluating vision-language reasoning. Several descriptions emphasize questions posed from an embodied agent's perspective or under imaginative situations, and one paper says it emphasizes the role of \"situation\" in the scene context.\n\nWhat it is claimed to measure. Papers use SQA3D to measure 3D question answering and situated question answering, and they also report it as measuring 3D understanding and vision-language reasoning. Across linked concepts, claims are spread across 3 constructs and 2 behavioral indicators rather than converging on one target. Separately, one paper says SQA3D is related to spatial reasoning, citing question types that include object identification, spatial relationships, scene-level understanding, and general reasoning.\n\nSpace of uses. In use, papers commonly evaluate SQA3D alongside ScanQA, describing the pair as indoor 3D VQA, visual question answering, or vision-language reasoning benchmarks, while one paper pairs it with Spartun3D as the two situated understanding datasets. One usage description formats the task as \"<Situation> <Question>\" with answers restricted to a phrase or single word, and another reports evaluation with exact match accuracy and EM-R. Papers therefore use it as a benchmark or dataset in 3D scene understanding and reasoning evaluations.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SQA3D"
+  ],
+  "papers": [
+    "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion",
+    "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model",
+    "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+    "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+    "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+    "Multi-modal Situated Reasoning in 3D Scenes"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A human-annotated situated 3D dataset used for evaluating situated question answering capabilities.",
+      "papers": [
+        "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model",
+        "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+        "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+        "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+        "Multi-modal Situated Reasoning in 3D Scenes"
+      ],
+      "original_name": "SQA3D"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Vision-language reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+      "evidence": "Evaluation of vision-language reasoning on ScanQA [5] and SQA3D [55] datasets.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Situated question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "evidence": "Situated Question Answering (SQA3D): User: <Situation> <Question> The answer should be a phrase or a single word. (Table 12)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "3D understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "evidence": "on ScanQA and SQA3D, which do not require object referencing and grounding, we still achieve consistent performance enhancement, demonstrating improved overall 3D scene understanding and reasoning",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "3D question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "3D Question Answering via only 2D Vision-Language Models",
+      "evidence": "We evaluate the proposed cdViews on two widely used benchmarks of 3D-QA: ScanQA (Azuma et al., 2022) and SQA (Ma et al., 2022). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "3D Question Answering via only 2D Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "3D Question Answering via only 2D Vision-Language Models",
+      "evidence": "It encompasses a diverse range of question types, including object identification, spatial relationships, scene-level understanding, and general reasoning. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "3D Question Answering via only 2D Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across definitions, SQA3D is most commonly described as a situated 3D dataset or benchmark for situated question answering in 3D scenes. Papers variously call it human-annotated, multi-modal, and a dataset for situated understanding in real-world scenes, and one definition adds that it contains over 33,000 question-answer pairs for evaluating vision-language reasoning. Several descriptions emphasize questions posed from an embodied agent's perspective or under imaginative situations, and one paper says it emphasizes the role of \"situation\" in the scene context."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use SQA3D to measure 3D question answering and situated question answering, and they also report it as measuring 3D understanding and vision-language reasoning. Across linked concepts, claims are spread across 3 constructs and 2 behavioral indicators rather than converging on one target. Separately, one paper says SQA3D is related to spatial reasoning, citing question types that include object identification, spatial relationships, scene-level understanding, and general reasoning."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers commonly evaluate SQA3D alongside ScanQA, describing the pair as indoor 3D VQA, visual question answering, or vision-language reasoning benchmarks, while one paper pairs it with Spartun3D as the two situated understanding datasets. One usage description formats the task as \"<Situation> <Question>\" with answers restricted to a phrase or single word, and another reports evaluation with exact match accuracy and EM-R. Papers therefore use it as a benchmark or dataset in 3D scene understanding and reasoning evaluations."
+    }
+  ],
+  "characterization": "What it is. Across definitions, SQA3D is most commonly described as a situated 3D dataset or benchmark for situated question answering in 3D scenes. Papers variously call it human-annotated, multi-modal, and a dataset for situated understanding in real-world scenes, and one definition adds that it contains over 33,000 question-answer pairs for evaluating vision-language reasoning. Several descriptions emphasize questions posed from an embodied agent's perspective or under imaginative situations, and one paper says it emphasizes the role of \"situation\" in the scene context.\n\nWhat it is claimed to measure. Papers use SQA3D to measure 3D question answering and situated question answering, and they also report it as measuring 3D understanding and vision-language reasoning. Across linked concepts, claims are spread across 3 constructs and 2 behavioral indicators rather than converging on one target. Separately, one paper says SQA3D is related to spatial reasoning, citing question types that include object identification, spatial relationships, scene-level understanding, and general reasoning.\n\nSpace of uses. In use, papers commonly evaluate SQA3D alongside ScanQA, describing the pair as indoor 3D VQA, visual question answering, or vision-language reasoning benchmarks, while one paper pairs it with Spartun3D as the two situated understanding datasets. One usage description formats the task as \"<Situation> <Question>\" with answers restricted to a phrase or single word, and another reports evaluation with exact match accuracy and EM-R. Papers therefore use it as a benchmark or dataset in 3D scene understanding and reasoning evaluations.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "CREMA: Generalizable and Efficient Video-Language Reasoning via Multimodal Modular Fusion",
+      "SPARTUN3D: Situated Spatial Understanding of 3D World in Large Language Model"
+    ],
+    "neurips24": [
+      "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "Lexicon3D: Probing Visual Foundation Models for Complex 3D Scene Understanding",
+      "MMScan: A Multi-Modal 3D Scene Dataset with Hierarchical Grounded Language Annotations",
+      "Multi-modal Situated Reasoning in 3D Scenes"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 4
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

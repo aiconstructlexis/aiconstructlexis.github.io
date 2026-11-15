@@ -1,0 +1,4 @@
+semopy==2.3.11
+pandas==3.0.5
+numpy==2.5.1
+scipy==1.18.0

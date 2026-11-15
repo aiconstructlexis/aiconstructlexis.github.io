@@ -1,0 +1,335 @@
+{
+  "canonical_name": "WikiText-103",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers most commonly describe WikiText-103 as a larger WikiText language modeling benchmark or corpus derived from high-quality Wikipedia articles. The prevailing use is evaluation of language modeling performance, especially perplexity, though some papers use it for pre-training, as an evaluation domain for open-ended generation, or as source text for embeddings, character strings, or word-splitting experiments. Definitions and quoted passages also refer to variants and subsets such as Wikitext-103-v1, train, validation, and test splits, development and test sets, and held-out or validation sequences.\n\nWhat it is claimed to measure. Papers link WikiText-103 to 1 construct and 3 behavioral indicators. The dominant claim is that it measures language modeling ability: papers frame it as a benchmark for language modeling, autoregressive modeling, and next-token generation, often through perplexity. Smaller lines of work report it as measuring text continuation, text generation, and text infilling, including use of validation-set sequences for MAUVE-based infilling evaluation and Wikitext-103-v1 for generation tasks.\n\nSpace of uses. Most papers position it as a standard or commonly used language modeling benchmark, often used for zero-shot likelihood, word prediction, and open-ended continuation evaluation. It is often used alongside other corpora, including WikiText-2, Penn Treebank, LAMBADA, GAP Corpus, and PG-19, while some studies instead use it as training data, as a source of prompts or continuations, to estimate model quantities, or to compute forgetting relative to a base model. Papers do not link it to any other measurement instrument.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WikiText-103",
+    "Wikitext-103",
+    "WIKITEXT-103",
+    "Wikitext103",
+    "WIKITEXT103",
+    "WikiText103",
+    "wikitext-103-v1"
+  ],
+  "papers": [
+    "MAGNET: Augmenting Generative Decoders with Representation Learning and Infilling Capabilities",
+    "Odysseus Navigates the Sirens' Song: Dynamic Focus Decoding for Factual and Diverse Open-Ended Text Generation",
+    "On Support Samples of Next Word Prediction",
+    "Theoretical Analysis of Hierarchical Language Recognition and Generation by Transformers without Positional Encoding",
+    "Bit-Flip Error Resilience in LLMs: A Comprehensive Analysis and Defense Framework",
+    "Context-aware Biases for Length Extrapolation",
+    "Continuous-Time Attention: PDE-Guided Mechanisms for Long-Sequence Transformers",
+    "LLM Bias Detection and Mitigation through the Lens of Desired Distributions",
+    "SliceMoE: Routing Embedding Slices Instead of Tokens for Fine-Grained and Balanced Transformer Scaling",
+    "Towards Infinite-Long Prefix in Transformer",
+    "A Multi-Level Framework for Accelerating Training Transformer Models",
+    "A Semantic Invariant Robust Watermark for Large Language Models",
+    "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+    "Error Norm Truncation: Robust Training in the Presence of Data Noise for Text Generation Models",
+    "JoMA: Demystifying Multilayer Transformers via Joint Dynamics of MLP and Attention",
+    "Language Model Decoding as Direct Metrics Optimization",
+    "Linear Log-Normal Attention with Unbiased Concentration",
+    "Model Merging by Uncertainty-Based Gradient Matching",
+    "RECOMP: Improving Retrieval-Augmented LMs with Context Compression and Selective Augmentation",
+    "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+    "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+    "Understanding In-Context Learning from Repetitions",
+    "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+    "Beyond Next Token Prediction: Patch-Level Training for Large Language Models",
+    "CAMEx: Curvature-aware Merging of Experts",
+    "COAT: Compressing Optimizer states and Activations for Memory-Efficient FP8 Training",
+    "Chunk-Distilled Language Modeling",
+    "Context Clues: Evaluating Long Context Models for Clinical Prediction Tasks on EHR Data",
+    "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+    "Discrete Copula Diffusion",
+    "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+    "Emergence of a High-Dimensional Abstraction Phase in Language Transformers",
+    "Fine-tuning with Reserved Majority for Noise Reduction",
+    "From Tokens to Words: On the Inner Lexicon of LLMs",
+    "Layerwise Recurrent Router for Mixture-of-Experts",
+    "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+    "Neural ODE Transformers: Analyzing Internal Dynamics and Adaptive Fine-tuning",
+    "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+    "Tight Clusters Make Specialized Experts",
+    "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+    "Vector-ICL: In-context Learning with Continuous Vector Representations",
+    "Wavelet-based Positional Representation for Long Context",
+    "Your Absorbing Discrete Diffusion Secretly Models the Conditional Distributions of Clean Data",
+    "ZETA: Leveraging $Z$-order Curves for Efficient Top-$k$ Attention",
+    "u-$\\mu$P: The Unit-Scaled Maximal Update Parametrization",
+    "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy",
+    "Dynamic Sparse Training of Diagonally Sparse Networks",
+    "From Language Models over Tokens to Language Models over Characters",
+    "Independence Tests for Language Models",
+    "Mixture of Experts Made Intrinsically Interpretable",
+    "On Expressive Power of Looped Transformers: Theoretical Analysis and Enhancement via Timestep Encoding",
+    "Tractable Transformers for Flexible Conditional Generation",
+    "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing",
+    "MiLoRA: Harnessing Minor Singular Components for Parameter-Efficient LLM Finetuning",
+    "ReGLA: Refining Gated Linear Attention",
+    "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+    "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models",
+    "ESPACE: Dimensionality Reduction of Activations for Model Compression",
+    "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+    "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+    "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+  ],
+  "paper_count": 61,
+  "definitions": [
+    {
+      "text": "A larger version of the WikiText benchmark, derived from high-quality Wikipedia articles for language modeling evaluation.",
+      "papers": [
+        "A Semantic Invariant Robust Watermark for Large Language Models",
+        "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+        "Error Norm Truncation: Robust Training in the Presence of Data Noise for Text Generation Models",
+        "Linear Log-Normal Attention with Unbiased Concentration",
+        "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+        "Chunk-Distilled Language Modeling",
+        "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models",
+        "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+        "MiLoRA: Harnessing Minor Singular Components for Parameter-Efficient LLM Finetuning",
+        "Dynamic Sparse Training of Diagonally Sparse Networks",
+        "LLM Bias Detection and Mitigation through the Lens of Desired Distributions",
+        "ESPACE: Dimensionality Reduction of Activations for Model Compression",
+        "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+        "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+        "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+      ],
+      "original_name": "WikiText-103"
+    },
+    {
+      "text": "A large-scale language modeling corpus derived from high-quality Wikipedia articles, used here as an evaluation domain for open-ended text generation.",
+      "papers": [
+        "Language Model Decoding as Direct Metrics Optimization",
+        "RECOMP: Improving Retrieval-Augmented LMs with Context Compression and Selective Augmentation",
+        "Understanding In-Context Learning from Repetitions",
+        "CAMEx: Curvature-aware Merging of Experts",
+        "ReGLA: Refining Gated Linear Attention",
+        "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing",
+        "On Support Samples of Next Word Prediction"
+      ],
+      "original_name": "Wikitext-103"
+    },
+    {
+      "text": "A larger version of the Wikitext dataset, derived from Wikipedia articles and used for evaluating language model perplexity.",
+      "papers": [
+        "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models"
+      ],
+      "original_name": "Wikitext103"
+    },
+    {
+      "text": "A benchmark dataset derived from high-quality Wikipedia articles, used for evaluating language modeling performance.",
+      "papers": [
+        "Neural ODE Transformers: Analyzing Internal Dynamics and Adaptive Fine-tuning"
+      ],
+      "original_name": "WIKITEXT103"
+    },
+    {
+      "text": "A larger language modeling benchmark used to evaluate zero-shot text likelihood on a held-out corpus.",
+      "papers": [
+        "Your Absorbing Discrete Diffusion Secretly Models the Conditional Distributions of Clean Data",
+        "Tractable Transformers for Flexible Conditional Generation"
+      ],
+      "original_name": "WikiText103"
+    },
+    {
+      "text": "A large English language modeling dataset used to source text for experiments on splitting single-token words and analyzing attention patterns.",
+      "papers": [
+        "From Tokens to Words: On the Inner Lexicon of LLMs"
+      ],
+      "original_name": "WIKITEXT-103"
+    },
+    {
+      "text": "A large language modeling corpus derived from high-quality Wikipedia articles, used in this paper as a source of character strings for evaluating model performance.",
+      "papers": [
+        "From Language Models over Tokens to Language Models over Characters"
+      ],
+      "original_name": "wikitext-103-v1"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+      "evidence": "WikiText-2 and WikiText-103 (Merity et al., 2016) are two commonly used language modeling benchmarks consisting of high-quality Wikipedia articles. (Section 4.1.1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING"
+        ],
+        "emnlp25": [
+          "LLM Bias Detection and Mitigation through the Lens of Desired Distributions"
+        ],
+        "naacl25": [
+          "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text continuation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+      "evidence": "WikiText-103 (Merity et al., 2017) is a standard benchmark for language modeling... (Section 4.1, Text completion)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text infilling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Discrete Copula Diffusion",
+      "evidence": "Evaluation of text infilling performance using the MAUVE score (\u2191) with 5 prompt masks... For all methods, we use the same set of 2,000 text sequences from the validation set of WikiText-103",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discrete Copula Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy",
+      "evidence": "\"For the latter, we follow (Tong et al., 2023) to use Wikitext-103-v1, a large-scale dataset derived from Wikipedia articles for language modeling tasks.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers most commonly describe WikiText-103 as a larger WikiText language modeling benchmark or corpus derived from high-quality Wikipedia articles. The prevailing use is evaluation of language modeling performance, especially perplexity, though some papers use it for pre-training, as an evaluation domain for open-ended generation, or as source text for embeddings, character strings, or word-splitting experiments. Definitions and quoted passages also refer to variants and subsets such as Wikitext-103-v1, train, validation, and test splits, development and test sets, and held-out or validation sequences."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link WikiText-103 to 1 construct and 3 behavioral indicators. The dominant claim is that it measures language modeling ability: papers frame it as a benchmark for language modeling, autoregressive modeling, and next-token generation, often through perplexity. Smaller lines of work report it as measuring text continuation, text generation, and text infilling, including use of validation-set sequences for MAUVE-based infilling evaluation and Wikitext-103-v1 for generation tasks."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Most papers position it as a standard or commonly used language modeling benchmark, often used for zero-shot likelihood, word prediction, and open-ended continuation evaluation. It is often used alongside other corpora, including WikiText-2, Penn Treebank, LAMBADA, GAP Corpus, and PG-19, while some studies instead use it as training data, as a source of prompts or continuations, to estimate model quantities, or to compute forgetting relative to a base model. Papers do not link it to any other measurement instrument."
+    }
+  ],
+  "characterization": "What it is. Papers most commonly describe WikiText-103 as a larger WikiText language modeling benchmark or corpus derived from high-quality Wikipedia articles. The prevailing use is evaluation of language modeling performance, especially perplexity, though some papers use it for pre-training, as an evaluation domain for open-ended generation, or as source text for embeddings, character strings, or word-splitting experiments. Definitions and quoted passages also refer to variants and subsets such as Wikitext-103-v1, train, validation, and test splits, development and test sets, and held-out or validation sequences.\n\nWhat it is claimed to measure. Papers link WikiText-103 to 1 construct and 3 behavioral indicators. The dominant claim is that it measures language modeling ability: papers frame it as a benchmark for language modeling, autoregressive modeling, and next-token generation, often through perplexity. Smaller lines of work report it as measuring text continuation, text generation, and text infilling, including use of validation-set sequences for MAUVE-based infilling evaluation and Wikitext-103-v1 for generation tasks.\n\nSpace of uses. Most papers position it as a standard or commonly used language modeling benchmark, often used for zero-shot likelihood, word prediction, and open-ended continuation evaluation. It is often used alongside other corpora, including WikiText-2, Penn Treebank, LAMBADA, GAP Corpus, and PG-19, while some studies instead use it as training data, as a source of prompts or continuations, to estimate model quantities, or to compute forgetting relative to a base model. Papers do not link it to any other measurement instrument.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "MAGNET: Augmenting Generative Decoders with Representation Learning and Infilling Capabilities",
+      "Odysseus Navigates the Sirens' Song: Dynamic Focus Decoding for Factual and Diverse Open-Ended Text Generation",
+      "On Support Samples of Next Word Prediction",
+      "Theoretical Analysis of Hierarchical Language Recognition and Generation by Transformers without Positional Encoding"
+    ],
+    "emnlp25": [
+      "Bit-Flip Error Resilience in LLMs: A Comprehensive Analysis and Defense Framework",
+      "Context-aware Biases for Length Extrapolation",
+      "Continuous-Time Attention: PDE-Guided Mechanisms for Long-Sequence Transformers",
+      "LLM Bias Detection and Mitigation through the Lens of Desired Distributions",
+      "SliceMoE: Routing Embedding Slices Instead of Tokens for Fine-Grained and Balanced Transformer Scaling",
+      "Towards Infinite-Long Prefix in Transformer"
+    ],
+    "iclr24": [
+      "A Multi-Level Framework for Accelerating Training Transformer Models",
+      "A Semantic Invariant Robust Watermark for Large Language Models",
+      "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+      "Error Norm Truncation: Robust Training in the Presence of Data Noise for Text Generation Models",
+      "JoMA: Demystifying Multilayer Transformers via Joint Dynamics of MLP and Attention",
+      "Language Model Decoding as Direct Metrics Optimization",
+      "Linear Log-Normal Attention with Unbiased Concentration",
+      "Model Merging by Uncertainty-Based Gradient Matching",
+      "RECOMP: Improving Retrieval-Augmented LMs with Context Compression and Selective Augmentation",
+      "Repeated Random Sampling for Minimizing the Time-to-Accuracy of Learning",
+      "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+      "Understanding In-Context Learning from Repetitions"
+    ],
+    "iclr25": [
+      "A Theory for Token-Level Harmonization in Retrieval-Augmented Generation",
+      "Beyond Next Token Prediction: Patch-Level Training for Large Language Models",
+      "CAMEx: Curvature-aware Merging of Experts",
+      "COAT: Compressing Optimizer states and Activations for Memory-Efficient FP8 Training",
+      "Chunk-Distilled Language Modeling",
+      "Context Clues: Evaluating Long Context Models for Clinical Prediction Tasks on EHR Data",
+      "DeciMamba: Exploring the Length Extrapolation Potential of Mamba",
+      "Discrete Copula Diffusion",
+      "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+      "Emergence of a High-Dimensional Abstraction Phase in Language Transformers",
+      "Fine-tuning with Reserved Majority for Noise Reduction",
+      "From Tokens to Words: On the Inner Lexicon of LLMs",
+      "Layerwise Recurrent Router for Mixture-of-Experts",
+      "MambaExtend: A Training-Free Approach to Improve Long Context Extension of Mamba",
+      "Neural ODE Transformers: Analyzing Internal Dynamics and Adaptive Fine-tuning",
+      "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "Tight Clusters Make Specialized Experts",
+      "Transformer Meets Twicing: Harnessing Unattended Residual Information",
+      "Vector-ICL: In-context Learning with Continuous Vector Representations",
+      "Wavelet-based Positional Representation for Long Context",
+      "Your Absorbing Discrete Diffusion Secretly Models the Conditional Distributions of Clean Data",
+      "ZETA: Leveraging $Z$-order Curves for Efficient Top-$k$ Attention",
+      "u-$\\mu$P: The Unit-Scaled Maximal Update Parametrization"
+    ],
+    "icml25": [
+      "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy",
+      "Dynamic Sparse Training of Diagonally Sparse Networks",
+      "From Language Models over Tokens to Language Models over Characters",
+      "Independence Tests for Language Models",
+      "Mixture of Experts Made Intrinsically Interpretable",
+      "On Expressive Power of Looped Transformers: Theoretical Analysis and Enhancement via Timestep Encoding",
+      "Tractable Transformers for Flexible Conditional Generation"
+    ],
+    "naacl25": [
+      "HMT: Hierarchical Memory Transformer for Efficient Long Context Language Processing",
+      "MiLoRA: Harnessing Minor Singular Components for Parameter-Efficient LLM Finetuning",
+      "ReGLA: Refining Gated Linear Attention",
+      "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+      "UNDIAL: Self-Distillation with Adjusted Logits for Robust Unlearning in Large Language Models"
+    ],
+    "neurips24": [
+      "ESPACE: Dimensionality Reduction of Activations for Model Compression",
+      "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "Megalodon: Efficient LLM Pretraining and Inference with Unlimited Context Length",
+      "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 6,
+    "iclr24": 12,
+    "iclr25": 23,
+    "icml25": 7,
+    "naacl25": 5,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

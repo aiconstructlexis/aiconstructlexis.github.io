@@ -1,0 +1,152 @@
+{
+  "canonical_name": "SelfCheckGPT",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing description is a suite or method for hallucination detection: it samples multiple stochastic responses from a model and checks their consistency or support for the original answer to assess veracity, often in zero-resource black-box or gray-box settings. Some authors narrow this to a baseline for self-consistency or zero-resource fact-checking, and a smaller line of work instead describes it as a benchmark or dataset for hallucination correction, assessing whether a model can rectify factual inconsistencies. One paper also uses the variant name Self-CKGPT for the consistency-based baseline.\n\nWhat it is claimed to measure. Papers link it to 3 behavioral indicators and no constructs. The linked indicators are Knowledge editing, Hallucination, and Hallucination detection, so the reported uses are distributed across several behavioral targets rather than tied to a construct. In these links, papers use it to evaluate the ability to correct hallucination in knowledge editing, to assess hallucination or response veracity, and to measure hallucination detection through inconsistency among sampled responses.\n\nSpace of uses. No measurement instrument is linked to it. In use, papers commonly position it as a baseline or comparison point among hallucination metrics, for example alongside SBERT, INSIDE, InterrogateLLM, Lexical Similarity, and EigenScore in zero-shot detection settings. A smaller line of work uses it as a benchmark for hallucination correction in knowledge editing.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SelfCheckGPT",
+    "Self-CKGPT"
+  ],
+  "papers": [
+    "Hallucination Detox: Sensitivity Dropout (SenD) for Large Language Model Training",
+    "Knowledge Decoupling via Orthogonal Projection for Lifelong Editing of Large Language Models",
+    "Prompt-Guided Internal States for Hallucination Detection of Large Language Models",
+    "Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models",
+    "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing",
+    "Think and Recall: Layer-Level Prompting for Lifelong Model Editing",
+    "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+    "Steer LLM Latents for Hallucination Detection",
+    "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+    "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "A suite of hallucination detection methods that analyzes multiple stochastically sampled responses from a model to assess the veracity of a given response, often in a black-box or gray-box setting.",
+      "papers": [
+        "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+        "Hallucination Detox: Sensitivity Dropout (SenD) for Large Language Model Training",
+        "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+        "Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models",
+        "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing",
+        "Think and Recall: Layer-Level Prompting for Lifelong Model Editing"
+      ],
+      "original_name": "SelfCheckGPT"
+    },
+    {
+      "text": "A consistency-based baseline method for hallucination detection that assesses the consistency of a model's own generated responses.",
+      "papers": [
+        "Steer LLM Latents for Hallucination Detection"
+      ],
+      "original_name": "Self-CKGPT"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "evidence": "\u201cwe also evaluate its ability to correct Hallucination in SelfCheckGPT [48].\u201d",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+        ],
+        "emnlp25": [
+          "Think and Recall: Layer-Level Prompting for Lifelong Model Editing",
+          "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+      "evidence": "and also evaluate its ability to correct Hallucination in SelfCheckGPT [48]. (Section 3.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models",
+          "LLM-Check: Investigating Detection of Hallucinations in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models",
+      "evidence": "We compare the proposed AGSER approach with SBERT (Reimers and Gurevych, 2019), SelfCheckGPT (Manakul et al., 2023), INSIDE (Chen et al., 2024) and InterrogateLLM (Yehuda et al., 2024) in zero-shot hallucination detection.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models"
+        ],
+        "naacl25": [
+          "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing description is a suite or method for hallucination detection: it samples multiple stochastic responses from a model and checks their consistency or support for the original answer to assess veracity, often in zero-resource black-box or gray-box settings. Some authors narrow this to a baseline for self-consistency or zero-resource fact-checking, and a smaller line of work instead describes it as a benchmark or dataset for hallucination correction, assessing whether a model can rectify factual inconsistencies. One paper also uses the variant name Self-CKGPT for the consistency-based baseline."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 3 behavioral indicators and no constructs. The linked indicators are Knowledge editing, Hallucination, and Hallucination detection, so the reported uses are distributed across several behavioral targets rather than tied to a construct. In these links, papers use it to evaluate the ability to correct hallucination in knowledge editing, to assess hallucination or response veracity, and to measure hallucination detection through inconsistency among sampled responses."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it. In use, papers commonly position it as a baseline or comparison point among hallucination metrics, for example alongside SBERT, INSIDE, InterrogateLLM, Lexical Similarity, and EigenScore in zero-shot detection settings. A smaller line of work uses it as a benchmark for hallucination correction in knowledge editing."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing description is a suite or method for hallucination detection: it samples multiple stochastic responses from a model and checks their consistency or support for the original answer to assess veracity, often in zero-resource black-box or gray-box settings. Some authors narrow this to a baseline for self-consistency or zero-resource fact-checking, and a smaller line of work instead describes it as a benchmark or dataset for hallucination correction, assessing whether a model can rectify factual inconsistencies. One paper also uses the variant name Self-CKGPT for the consistency-based baseline.\n\nWhat it is claimed to measure. Papers link it to 3 behavioral indicators and no constructs. The linked indicators are Knowledge editing, Hallucination, and Hallucination detection, so the reported uses are distributed across several behavioral targets rather than tied to a construct. In these links, papers use it to evaluate the ability to correct hallucination in knowledge editing, to assess hallucination or response veracity, and to measure hallucination detection through inconsistency among sampled responses.\n\nSpace of uses. No measurement instrument is linked to it. In use, papers commonly position it as a baseline or comparison point among hallucination metrics, for example alongside SBERT, INSIDE, InterrogateLLM, Lexical Similarity, and EigenScore in zero-shot detection settings. A smaller line of work uses it as a benchmark for hallucination correction in knowledge editing.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Hallucination Detox: Sensitivity Dropout (SenD) for Large Language Model Training",
+      "Knowledge Decoupling via Orthogonal Projection for Lifelong Editing of Large Language Models",
+      "Prompt-Guided Internal States for Hallucination Detection of Large Language Models"
+    ],
+    "icml25": [
+      "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+      "Steer LLM Latents for Hallucination Detection"
+    ],
+    "neurips24": [
+      "LLM-Check: Investigating Detection of Hallucinations in Large Language Models",
+      "WISE: Rethinking the Knowledge Memory for Lifelong Model Editing of Large Language Models"
+    ],
+    "emnlp25": [
+      "Attention-guided Self-reflection for Zero-shot Hallucination Detection in Large Language Models",
+      "MicroEdit: Neuron-level Knowledge Disentanglement and Localization in Lifelong Model Editing",
+      "Think and Recall: Layer-Level Prompting for Lifelong Model Editing"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "icml25": 2,
+    "neurips24": 2,
+    "emnlp25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25",
+    "neurips24"
+  ]
+}

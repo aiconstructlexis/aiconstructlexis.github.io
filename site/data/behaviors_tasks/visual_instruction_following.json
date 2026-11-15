@@ -1,0 +1,182 @@
+{
+  "canonical_name": "Visual instruction following",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats it as producing a textual response to a natural language instruction or question given an accompanying image. The wording is consistent across papers: one definition emphasizes a response based on the combination of a visual image and language input, while another emphasizes that the instruction requires understanding and reasoning over the image. The quoted passages illustrate example responses such as identifying a place from an image or deciding whether to go left or right.\n\nVariants. Papers use both \"visual instruction following\" and \"image-conditioned instruction following\" for this behavior, and they also place it in multimodal or visual-language settings. The studied formulations include evaluation on Mixed Visual Instruction Tuning 665k with seven datasets, including VQA-v2, GQA, and VisWiz, and one paper reports it is related to visual question answering in a multitask setup that includes VQA and region-level VQA. It also appears in discussions of instruction tuning for visual-language tasks.\n\nSpace of elicitation and scores. It is measured by 6 instruments in the papers. The most commonly linked instrument is LLaVA-Bench-in-the-Wild, and MM-Vet, MMBench, MME, and POPE are also used, along with 1 other benchmark. These instruments are described as instruction-following-based LMM benchmarks, and LLaVA-Bench-in-the-Wild is specifically described as a benchmark dataset of 60 questions for evaluating multimodal instruction following capabilities.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct, so there is no stated construct that it is taken to indicate. Separately, one paper reports that it is related to visual question answering.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Visual instruction following",
+    "Image-conditioned instruction following"
+  ],
+  "papers": [
+    "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention",
+    "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
+    "SAN: Hypothesizing Long-Term Synaptic Development and Neural Engram Mechanism in Scalable Model\u2019s Parameter-Efficient Fine-Tuning"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The observable task of generating a textual response based on a combination of a visual image and a natural language instruction or question.",
+      "papers": [
+        "SAN: Hypothesizing Long-Term Synaptic Development and Neural Engram Mechanism in Scalable Model\u2019s Parameter-Efficient Fine-Tuning"
+      ],
+      "original_name": "Visual instruction following"
+    },
+    {
+      "text": "Responding to natural language instructions that require understanding and reasoning over an accompanying image input.",
+      "papers": [
+        "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention"
+      ],
+      "original_name": "Image-conditioned instruction following"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLaVA-Bench-in-the-Wild",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": "...as well as instruction-following-based LMM benchmarks including POPE [40], MME [17], MMBench [47], SEED-Bench [35], LLaVA-Wild [46], and MM-Vet [67]. (Section 4.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+          "CogVLM: Visual Expert for Pretrained Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "POPE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": "...as well as instruction-following-based LMM benchmarks including POPE [40], MME [17], MMBench [47], SEED-Bench [35], LLaVA-Wild [46], and MM-Vet [67]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": "...as well as instruction-following-based LMM benchmarks including POPE [40], MME [17], MMBench [47], SEED-Bench [35], LLaVA-Wild [46], and MM-Vet [67]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": "...as well as instruction-following-based LMM benchmarks including POPE [40], MME [17], MMBench [47], SEED-Bench [35], LLaVA-Wild [46], and MM-Vet [67]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SEED-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": "...as well as instruction-following-based LMM benchmarks including POPE [40], MME [17], MMBench [47], SEED-Bench [35], LLaVA-Wild [46], and MM-Vet [67]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MM-Vet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts",
+      "evidence": "...as well as instruction-following-based LMM benchmarks including POPE [40], MME [17], MMBench [47], SEED-Bench [35], LLaVA-Wild [46], and MM-Vet [67]. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CuMo: Scaling Multimodal LLM with Co-Upcycled Mixture-of-Experts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MiLoRA: Harnessing Minor Singular Components for Parameter-Efficient LLM Finetuning",
+      "evidence": "\"The visual instruction tuning is performed in a multitask setting, including VQA ... region-level VQA ...\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "MiLoRA: Harnessing Minor Singular Components for Parameter-Efficient LLM Finetuning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats it as producing a textual response to a natural language instruction or question given an accompanying image. The wording is consistent across papers: one definition emphasizes a response based on the combination of a visual image and language input, while another emphasizes that the instruction requires understanding and reasoning over the image. The quoted passages illustrate example responses such as identifying a place from an image or deciding whether to go left or right."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use both \"visual instruction following\" and \"image-conditioned instruction following\" for this behavior, and they also place it in multimodal or visual-language settings. The studied formulations include evaluation on Mixed Visual Instruction Tuning 665k with seven datasets, including VQA-v2, GQA, and VisWiz, and one paper reports it is related to visual question answering in a multitask setup that includes VQA and region-level VQA. It also appears in discussions of instruction tuning for visual-language tasks."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "It is measured by 6 instruments in the papers. The most commonly linked instrument is LLaVA-Bench-in-the-Wild, and MM-Vet, MMBench, MME, and POPE are also used, along with 1 other benchmark. These instruments are described as instruction-following-based LMM benchmarks, and LLaVA-Bench-in-the-Wild is specifically described as a benchmark dataset of 60 questions for evaluating multimodal instruction following capabilities."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not link this behavior to any construct, so there is no stated construct that it is taken to indicate. Separately, one paper reports that it is related to visual question answering."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats it as producing a textual response to a natural language instruction or question given an accompanying image. The wording is consistent across papers: one definition emphasizes a response based on the combination of a visual image and language input, while another emphasizes that the instruction requires understanding and reasoning over the image. The quoted passages illustrate example responses such as identifying a place from an image or deciding whether to go left or right.\n\nVariants. Papers use both \"visual instruction following\" and \"image-conditioned instruction following\" for this behavior, and they also place it in multimodal or visual-language settings. The studied formulations include evaluation on Mixed Visual Instruction Tuning 665k with seven datasets, including VQA-v2, GQA, and VisWiz, and one paper reports it is related to visual question answering in a multitask setup that includes VQA and region-level VQA. It also appears in discussions of instruction tuning for visual-language tasks.\n\nSpace of elicitation and scores. It is measured by 6 instruments in the papers. The most commonly linked instrument is LLaVA-Bench-in-the-Wild, and MM-Vet, MMBench, MME, and POPE are also used, along with 1 other benchmark. These instruments are described as instruction-following-based LMM benchmarks, and LLaVA-Bench-in-the-Wild is specifically described as a benchmark dataset of 60 questions for evaluating multimodal instruction following capabilities.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct, so there is no stated construct that it is taken to indicate. Separately, one paper reports that it is related to visual question answering.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
+      "SAN: Hypothesizing Long-Term Synaptic Development and Neural Engram Mechanism in Scalable Model\u2019s Parameter-Efficient Fine-Tuning"
+    ],
+    "iclr24": [
+      "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "iclr24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "icml25"
+  ]
+}

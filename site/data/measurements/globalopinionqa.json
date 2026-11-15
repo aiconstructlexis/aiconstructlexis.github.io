@@ -1,0 +1,120 @@
+{
+  "canonical_name": "GlobalOpinionQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, GlobalOpinionQA is most commonly described as a dataset or benchmark built from the World Values Survey and the Pew Global Attitudes Survey, intended to capture diverse perspectives on global issues and align model responses with human opinions across regions. Definitions largely converge on cross-national survey questions and answers, and one paper further describes it as comprising around 2.5K questions. Some papers frame it more specifically as a multiple-choice evaluation of model opinions against aggregated population opinions from different countries, while others treat it as a template that preserves the original questions and response options for consistent formatting. A smaller line of work uses subsets of countries such as C\u20321 and C3, and one paper converts the original within-country answer distribution into a single answer by selecting the highest-probability choice.\n\nWhat it is claimed to measure. Across the papers, it is used to measure three constructs, Personalization, Pluralistic alignment, and Social bias, and no behavioral indicators are linked to it. In work on Personalization, papers use it as one of the multiple-choice QA datasets proposed to measure steerability for specific users or social groups. In work on Pluralistic alignment, it is reported as one of the datasets for quantifying distributional alignment. In work on Social bias, papers use it to assess model opinions relative to aggregated population opinions from different countries, with the stated goal of identifying bias in representing diverse viewpoints.\n\nSpace of uses. Papers position it in several ways: as a benchmark for human values and opinions, as an evaluation set for sampled countries, and as a template for keeping survey questions and response options consistent. It is used alongside OpinionQA in personalization and distributional-alignment studies, and one paper also presents it alongside NYT Book Opinions when describing datasets for quantifying distributional alignment. No other measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "GLOBALOPINIONQA",
+    "GlobalOpinionQA"
+  ],
+  "papers": [
+    "Benchmarking Distributional Alignment of Large Language Models",
+    "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+    "Few-shot Personalization of LLMs with Mis-aligned Responses",
+    "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations",
+    "The Impact of Inference Acceleration on Bias of LLMs"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A dataset of questions and answers from cross-national surveys (World Values Survey and PEW Global Attitudes Survey) designed to capture diverse perspectives on global issues.",
+      "papers": [
+        "Few-shot Personalization of LLMs with Mis-aligned Responses",
+        "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations",
+        "The Impact of Inference Acceleration on Bias of LLMs",
+        "Benchmarking Distributional Alignment of Large Language Models"
+      ],
+      "original_name": "GlobalOpinionQA"
+    },
+    {
+      "text": "Benchmark aggregating Pew Global Attitudes Survey and World Values Survey to assess alignment of model responses with human opinions across regions.",
+      "papers": [
+        "CultureInstruct: Curating Multi-Cultural Instructions at Scale"
+      ],
+      "original_name": "GLOBALOPINIONQA"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Social bias",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "The Impact of Inference Acceleration on Bias of LLMs",
+      "evidence": "GlobalOpinionQA (Durmus et al., 2024) uses multiple-choice questions to assess the opinions stated by a model relative to aggregated population opinions from different countries. The goal is to identify model bias in representing diverse viewpoints. (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "The Impact of Inference Acceleration on Bias of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Personalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Few-shot Personalization of LLMs with Mis-aligned Responses",
+      "evidence": "For the experiments, we first use two multiple-choice QA datasets proposed to measure the steerability of LLMs for specific users (or social groups): OpinionQA (Santurkar et al., 2023) and GlobalOpinionQA (Durmus et al., 2023). (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Few-shot Personalization of LLMs with Mis-aligned Responses"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pluralistic alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking Distributional Alignment of Large Language Models",
+      "evidence": "In this section, we describe three datasets for quantifying distributional alignment \u2013 OpinionQA (Santurkar et al., 2023), GlobalOpinionQA (Durmus et al., 2024), and a new non-political subjective opinion dataset, NYT Book Opinions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Benchmarking Distributional Alignment of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, GlobalOpinionQA is most commonly described as a dataset or benchmark built from the World Values Survey and the Pew Global Attitudes Survey, intended to capture diverse perspectives on global issues and align model responses with human opinions across regions. Definitions largely converge on cross-national survey questions and answers, and one paper further describes it as comprising around 2.5K questions. Some papers frame it more specifically as a multiple-choice evaluation of model opinions against aggregated population opinions from different countries, while others treat it as a template that preserves the original questions and response options for consistent formatting. A smaller line of work uses subsets of countries such as C\u20321 and C3, and one paper converts the original within-country answer distribution into a single answer by selecting the highest-probability choice."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across the papers, it is used to measure three constructs, Personalization, Pluralistic alignment, and Social bias, and no behavioral indicators are linked to it. In work on Personalization, papers use it as one of the multiple-choice QA datasets proposed to measure steerability for specific users or social groups. In work on Pluralistic alignment, it is reported as one of the datasets for quantifying distributional alignment. In work on Social bias, papers use it to assess model opinions relative to aggregated population opinions from different countries, with the stated goal of identifying bias in representing diverse viewpoints."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers position it in several ways: as a benchmark for human values and opinions, as an evaluation set for sampled countries, and as a template for keeping survey questions and response options consistent. It is used alongside OpinionQA in personalization and distributional-alignment studies, and one paper also presents it alongside NYT Book Opinions when describing datasets for quantifying distributional alignment. No other measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Across the papers, GlobalOpinionQA is most commonly described as a dataset or benchmark built from the World Values Survey and the Pew Global Attitudes Survey, intended to capture diverse perspectives on global issues and align model responses with human opinions across regions. Definitions largely converge on cross-national survey questions and answers, and one paper further describes it as comprising around 2.5K questions. Some papers frame it more specifically as a multiple-choice evaluation of model opinions against aggregated population opinions from different countries, while others treat it as a template that preserves the original questions and response options for consistent formatting. A smaller line of work uses subsets of countries such as C\u20321 and C3, and one paper converts the original within-country answer distribution into a single answer by selecting the highest-probability choice.\n\nWhat it is claimed to measure. Across the papers, it is used to measure three constructs, Personalization, Pluralistic alignment, and Social bias, and no behavioral indicators are linked to it. In work on Personalization, papers use it as one of the multiple-choice QA datasets proposed to measure steerability for specific users or social groups. In work on Pluralistic alignment, it is reported as one of the datasets for quantifying distributional alignment. In work on Social bias, papers use it to assess model opinions relative to aggregated population opinions from different countries, with the stated goal of identifying bias in representing diverse viewpoints.\n\nSpace of uses. Papers position it in several ways: as a benchmark for human values and opinions, as an evaluation set for sampled countries, and as a template for keeping survey questions and response options consistent. It is used alongside OpinionQA in personalization and distributional-alignment studies, and one paper also presents it alongside NYT Book Opinions when describing datasets for quantifying distributional alignment. No other measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "Benchmarking Distributional Alignment of Large Language Models",
+      "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+      "Few-shot Personalization of LLMs with Mis-aligned Responses",
+      "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations",
+      "The Impact of Inference Acceleration on Bias of LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 5
+  },
+  "conferences": [
+    "naacl25"
+  ]
+}

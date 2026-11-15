@@ -1,0 +1,185 @@
+{
+  "canonical_name": "Navigation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the dominant framing is goal-directed movement through an environment to reach a specified location, landmark, receptacle, or resource. Definitions commonly describe locating targets such as trees, cows, stones, underground resources, buildings, or receptacles, and another recurring formulation is simply reaching specific locations in a game environment. A smaller line of work uses the term more broadly for understanding spatial layouts and planning or describing routes between locations or to objects.\n\nVariants. Papers study several named variants. In the Minecraft environment, navigation includes navigating on the ground, digging to a specific level, and exploring underground horizontally, while city-space work treats it as navigation sub-tasks that identify the nearest navigation point on a map and can be written as Navigation(building_1, west). Other variants are grid world navigation with up, down, left, and right actions, low-level navigation with translational, rotational, and camera-tilt controls, and room-to-room or object-retrieval navigation tasks.\n\nSpace of elicitation and scores. Papers link navigation to 3 measurement instruments: BabyAI, MineDojo, and TextWorld. These operationalize it as a grid world task where an agent navigates and interacts with objects to complete an instruction, a text-based game where the agent explores mazes and interacts with everyday objects through natural language, and MineDojo, where navigation is one of the behaviors the environment supports alongside harvest, combat, and craft.\n\nWhat it is taken as evidence of. Papers do not directly present navigation as evidence of multiple constructs. The only linked construct is Long-horizon planning, which one paper reports as related to navigation by making navigation sub-tasks part of a plan and describing them as enabling efficient access to specific areas while narrowing the exploration scope. No other construct link is recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Navigation",
+    "Grid world navigation",
+    "Low-level navigation"
+  ],
+  "papers": [
+    "CityEQA: A Hierarchical LLM Agent on Embodied Question Answering Benchmark in City Space",
+    "Large Language Models as Generalizable Policies for Embodied Tasks",
+    "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+    "MaestroMotif: Skill Design from Artificial Intelligence Feedback",
+    "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning",
+    "Cradle: Empowering Foundation Agents towards General Computer Control",
+    "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+    "Hypo3D: Exploring Hypothetical Reasoning in 3D",
+    "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+    "LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations",
+    "World Model Implanting for Test-time Adaptation of Embodied Agents",
+    "Grounding Multimodal Large Language Models in Actions",
+    "HourVideo: 1-Hour Video-Language Understanding",
+    "Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models",
+    "Policy Improvement using Language Feedback Models",
+    "RL-GPT: Integrating Reinforcement Learning and Code-as-policy"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "Moving through the Minecraft environment to locate targets such as trees, cows, stones, or underground resources.",
+      "papers": [
+        "RL-GPT: Integrating Reinforcement Learning and Code-as-policy",
+        "MaestroMotif: Skill Design from Artificial Intelligence Feedback",
+        "CityEQA: A Hierarchical LLM Agent on Embodied Question Answering Benchmark in City Space",
+        "Large Language Models as Generalizable Policies for Embodied Tasks"
+      ],
+      "original_name": "Navigation"
+    },
+    {
+      "text": "Moving a player through a grid world with up, down, left, and right actions to reach a target location.",
+      "papers": [
+        "LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations"
+      ],
+      "original_name": "Grid world navigation"
+    },
+    {
+      "text": "Executing precise movement and orientation adjustments in a simulated environment to reach a target location or object, using atomic actions like moving forward or rotating.",
+      "papers": [
+        "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents"
+      ],
+      "original_name": "Low-level navigation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BabyAI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Grounding Multimodal Large Language Models in Actions",
+      "evidence": "BabyAI [60]: BabyAI is a grid world task where an agent navigates and interacts with objects to complete an instruction.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Grounding Multimodal Large Language Models in Actions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+      "evidence": "An entirely text-based game with no visual component, where the agent has to explore mazes and interact with everyday objects through natural language",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MineDojo",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+      "evidence": "The behaviors that can be conducted in MineDojo primarily include navigation, harvest, combat, and craft.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-horizon planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CityEQA: A Hierarchical LLM Agent on Embodied Question Answering Benchmark in City Space",
+      "evidence": "Based on these requirements, a plan is created consisting of three distinct types of sub-tasks: ... (3) Navigation sub-tasks enable efficient access to specific areas, thereby narrowing the exploration scope. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CityEQA: A Hierarchical LLM Agent on Embodied Question Answering Benchmark in City Space"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the dominant framing is goal-directed movement through an environment to reach a specified location, landmark, receptacle, or resource. Definitions commonly describe locating targets such as trees, cows, stones, underground resources, buildings, or receptacles, and another recurring formulation is simply reaching specific locations in a game environment. A smaller line of work uses the term more broadly for understanding spatial layouts and planning or describing routes between locations or to objects."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study several named variants. In the Minecraft environment, navigation includes navigating on the ground, digging to a specific level, and exploring underground horizontally, while city-space work treats it as navigation sub-tasks that identify the nearest navigation point on a map and can be written as Navigation(building_1, west). Other variants are grid world navigation with up, down, left, and right actions, low-level navigation with translational, rotational, and camera-tilt controls, and room-to-room or object-retrieval navigation tasks."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link navigation to 3 measurement instruments: BabyAI, MineDojo, and TextWorld. These operationalize it as a grid world task where an agent navigates and interacts with objects to complete an instruction, a text-based game where the agent explores mazes and interacts with everyday objects through natural language, and MineDojo, where navigation is one of the behaviors the environment supports alongside harvest, combat, and craft."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not directly present navigation as evidence of multiple constructs. The only linked construct is Long-horizon planning, which one paper reports as related to navigation by making navigation sub-tasks part of a plan and describing them as enabling efficient access to specific areas while narrowing the exploration scope. No other construct link is recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the dominant framing is goal-directed movement through an environment to reach a specified location, landmark, receptacle, or resource. Definitions commonly describe locating targets such as trees, cows, stones, underground resources, buildings, or receptacles, and another recurring formulation is simply reaching specific locations in a game environment. A smaller line of work uses the term more broadly for understanding spatial layouts and planning or describing routes between locations or to objects.\n\nVariants. Papers study several named variants. In the Minecraft environment, navigation includes navigating on the ground, digging to a specific level, and exploring underground horizontally, while city-space work treats it as navigation sub-tasks that identify the nearest navigation point on a map and can be written as Navigation(building_1, west). Other variants are grid world navigation with up, down, left, and right actions, low-level navigation with translational, rotational, and camera-tilt controls, and room-to-room or object-retrieval navigation tasks.\n\nSpace of elicitation and scores. Papers link navigation to 3 measurement instruments: BabyAI, MineDojo, and TextWorld. These operationalize it as a grid world task where an agent navigates and interacts with objects to complete an instruction, a text-based game where the agent explores mazes and interacts with everyday objects through natural language, and MineDojo, where navigation is one of the behaviors the environment supports alongside harvest, combat, and craft.\n\nWhat it is taken as evidence of. Papers do not directly present navigation as evidence of multiple constructs. The only linked construct is Long-horizon planning, which one paper reports as related to navigation by making navigation sub-tasks part of a plan and describing them as enabling efficient access to specific areas while narrowing the exploration scope. No other construct link is recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "CityEQA: A Hierarchical LLM Agent on Embodied Question Answering Benchmark in City Space"
+    ],
+    "iclr25": [
+      "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+      "MaestroMotif: Skill Design from Artificial Intelligence Feedback",
+      "ThinkBot: Embodied Instruction Following with Thought Chain Reasoning"
+    ],
+    "icml25": [
+      "Cradle: Empowering Foundation Agents towards General Computer Control",
+      "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+      "Hypo3D: Exploring Hypothetical Reasoning in 3D",
+      "LARM: Large Auto-Regressive Model for Long-Horizon Embodied Intelligence",
+      "LMAct: A Benchmark for In-Context Imitation Learning with Long Multimodal Demonstrations",
+      "World Model Implanting for Test-time Adaptation of Embodied Agents"
+    ],
+    "neurips24": [
+      "Grounding Multimodal Large Language Models in Actions",
+      "HourVideo: 1-Hour Video-Language Understanding",
+      "Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models",
+      "Policy Improvement using Language Feedback Models",
+      "RL-GPT: Integrating Reinforcement Learning and Code-as-policy"
+    ],
+    "iclr24": [
+      "Large Language Models as Generalizable Policies for Embodied Tasks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr25": 3,
+    "icml25": 6,
+    "neurips24": 5,
+    "iclr24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "canonical_name": "Logistics",
+  "type": "measurement",
+  "canonical_definition": "What it is. The prevailing description treats Logistics as a PDDL planning benchmark or domain centered on transporting packages between locations with trucks and airplanes. The definitions are closely aligned: one calls it a classical PDDL planning benchmark, while another describes it as a benchmark planning domain specified in PDDL.\n\nWhat it is claimed to measure. Papers use Logistics to measure one construct, Planning, and it is not linked to any behavioral indicators. The reported use converges on that single construct: papers frame it under planning benchmarks and use it when evaluating simple or valid plan generation in the logistics domain.\n\nSpace of uses. In practice, papers position Logistics as one task within a broader set of PDDL problems rather than as a standalone instrument. One study includes it among four PDDL tasks, BlocksWorld, Minigrid, Logistics, and Tetris, and another calls it a widely used benchmark when testing whether many-shot in-context learning can improve simple plan generation; no measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Logistics"
+  ],
+  "papers": [
+    "Improving Large Language Model Planning with Action Sequence Similarity",
+    "LLMs Can Plan Only If We Tell Them",
+    "Many-Shot In-Context Learning"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A classical PDDL planning benchmark focused on transporting packages between different locations using vehicles like trucks and airplanes.",
+      "papers": [
+        "Improving Large Language Model Planning with Action Sequence Similarity",
+        "Many-Shot In-Context Learning"
+      ],
+      "original_name": "Logistics"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Many-Shot In-Context Learning",
+      "evidence": "planning [Logistics, 53] (Introduction).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Many-Shot In-Context Learning"
+        ],
+        "iclr25": [
+          "LLMs Can Plan Only If We Tell Them"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "The prevailing description treats Logistics as a PDDL planning benchmark or domain centered on transporting packages between locations with trucks and airplanes. The definitions are closely aligned: one calls it a classical PDDL planning benchmark, while another describes it as a benchmark planning domain specified in PDDL."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use Logistics to measure one construct, Planning, and it is not linked to any behavioral indicators. The reported use converges on that single construct: papers frame it under planning benchmarks and use it when evaluating simple or valid plan generation in the logistics domain."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In practice, papers position Logistics as one task within a broader set of PDDL problems rather than as a standalone instrument. One study includes it among four PDDL tasks, BlocksWorld, Minigrid, Logistics, and Tetris, and another calls it a widely used benchmark when testing whether many-shot in-context learning can improve simple plan generation; no measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. The prevailing description treats Logistics as a PDDL planning benchmark or domain centered on transporting packages between locations with trucks and airplanes. The definitions are closely aligned: one calls it a classical PDDL planning benchmark, while another describes it as a benchmark planning domain specified in PDDL.\n\nWhat it is claimed to measure. Papers use Logistics to measure one construct, Planning, and it is not linked to any behavioral indicators. The reported use converges on that single construct: papers frame it under planning benchmarks and use it when evaluating simple or valid plan generation in the logistics domain.\n\nSpace of uses. In practice, papers position Logistics as one task within a broader set of PDDL problems rather than as a standalone instrument. One study includes it among four PDDL tasks, BlocksWorld, Minigrid, Logistics, and Tetris, and another calls it a widely used benchmark when testing whether many-shot in-context learning can improve simple plan generation; no measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Improving Large Language Model Planning with Action Sequence Similarity",
+      "LLMs Can Plan Only If We Tell Them"
+    ],
+    "neurips24": [
+      "Many-Shot In-Context Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

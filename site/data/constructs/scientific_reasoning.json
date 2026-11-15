@@ -1,0 +1,312 @@
+{
+  "canonical_name": "Scientific reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats scientific reasoning as an ability to reason about scientific concepts and questions, usually with domain-specific knowledge and multi-step inference. Many definitions make this concrete as reasoning over scientific data, figures, or other multimodal evidence, or as answering science questions, while some broaden it to long-context scientific content, research problems that combine knowledge recall, reasoning, and code synthesis, or the interpretation of scientific evidence so as to avoid unjustified conclusions. A smaller line of work extends the label to the scientific process itself, including inference from data, hypothesis formulation, and discovery in a controlled physics-based environment.\n\nSpace of facets. The clearest explicit scheme places scientific reasoning alongside algebraic reasoning, arithmetic reasoning, geometry reasoning, logical reasoning, numeric common sense, and statistical reasoning as one of seven mathematical reasoning types. Across other papers, the same label is used for somewhat different scopes, including academic paper figures, science question answering, long-context understanding, research coding, and evidence-grounded interpretation. Several papers also pair it with neighboring capacities such as understanding, knowledge recall, and discovery.\n\nSpace of measurement. Operationalization is concentrated in 5 linked measurement instruments, all benchmarks: ARC-Challenge and ARC for scientific reasoning questions, ScienceQA for scientific multimodal reasoning through multiple-choice questions, SciQ for applying scientific concepts beyond mere fact recall, and SciBench for complex, multi-step scientific questions that integrate knowledge, evidence, and scientific principles. Papers therefore make the construct observable mainly as performance on science question answering and reasoning tasks. They also link it to 2 behavioral indicators, Scientific problem solving and Task decomposition, but those links are causal or related rather than measured_by. This operationalization most directly reflects definitions that cast scientific reasoning as multi-step scientific question answering, while some definitions extend further to academic figures, long-context reasoning, evidence interpretation, and hypothesis formulation.\n\nLinks. Beyond measurement, one paper claims a causal relationship from Scientific reasoning to Scientific problem solving. Scientific reasoning is also related to Task decomposition in one paper, where proposing novel subgoals is discussed in connection with enhanced scientific reasoning. Another paper relates it to Commonsense reasoning as a contrast, stating that commonsense logic captured by popular language datasets largely deviates from scientific reasoning that requires math and physics backgrounds.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Scientific reasoning"
+  ],
+  "papers": [
+    "RATIONALYST: Pre-training Process-Supervision for Improving Reasoning",
+    "VideoVista-CulturalLingo: 360\u00b0 Horizons-Bridging Cultures, Languages, and Domains in Video Comprehension",
+    "Accelerated Test-Time Scaling with Model-Free Speculative Sampling",
+    "AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time",
+    "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+    "Bit-Flip Error Resilience in LLMs: A Comprehensive Analysis and Defense Framework",
+    "Extracting and Combining Abilities For Building Multi-lingual Ability-enhanced Large Language Models",
+    "HypER: Literature-grounded Hypothesis Generation and Distillation with Provenance",
+    "IG-Pruning: Input-Guided Block Pruning for Large Language Models",
+    "Knowledge Editing through Chain-of-Thought",
+    "LEO-MINI: An Efficient Multimodal Large Language Model using Conditional Token Reduction and Mixture of Multi-Modal Experts",
+    "LMR-BENCH: Evaluating LLM Agent's Ability on Reproducing Language Modeling Research",
+    "Language Models as Continuous Self-Evolving Data Engineers",
+    "ModRWKV: Transformer Multimodality in Linear Time",
+    "Probing and Boosting Large Language Models Capabilities via Attention Heads",
+    "RCScore: Quantifying Response Consistency in Large Language Models",
+    "Reasoning under Uncertainty: Efficient LLM Inference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling",
+    "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching",
+    "TASO: Task-Aligned Sparse Optimization for Parameter-Efficient Model Adaptation",
+    "TORSO: Template-Oriented Reasoning Towards General Tasks",
+    "ThinkSLM: Towards Reasoning in Small Language Models",
+    "ThinkTuning: Instilling Cognitive Reflections without Distillation",
+    "What Makes a Good Reasoning Chain? Uncovering Structural Patterns in Long Chain-of-Thought Reasoning",
+    "s1: Simple test-time scaling",
+    "At Which Training Stage Does Code Data Help LLMs Reasoning?",
+    "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+    "CURIE: Evaluating LLMs on Multitask Scientific Long-Context Understanding and Reasoning",
+    "ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models",
+    "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+    "MAPS: Advancing Multi-Modal Reasoning in Expert-Level Physical Science",
+    "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+    "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+    "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation",
+    "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+    "Gravity-Bench-v1: A Benchmark on Gravitational Physics Discovery for Agents",
+    "LLM-SRBench: A New Benchmark for Scientific Equation Discovery with Large Language Models",
+    "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs",
+    "Grounding Fallacies Misrepresenting Scientific Publications in Evidence",
+    "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+    "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+    "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+    "SciCode: A Research Coding Benchmark Curated by Scientists",
+    "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models"
+  ],
+  "paper_count": 43,
+  "definitions": [
+    {
+      "text": "The ability to reason about scientific concepts, data, and figures, particularly in academic or research contexts involving complex visualizations.",
+      "papers": [
+        "At Which Training Stage Does Code Data Help LLMs Reasoning?",
+        "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+        "SciCode: A Research Coding Benchmark Curated by Scientists",
+        "CURIE: Evaluating LLMs on Multitask Scientific Long-Context Understanding and Reasoning",
+        "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+        "Grounding Fallacies Misrepresenting Scientific Publications in Evidence",
+        "RATIONALYST: Pre-training Process-Supervision for Improving Reasoning",
+        "Gravity-Bench-v1: A Benchmark on Gravitational Physics Discovery for Agents",
+        "ModRWKV: Transformer Multimodality in Linear Time"
+      ],
+      "original_name": "Scientific reasoning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-Challenge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ToW: Thoughts of Words Improve Reasoning in Large Language Models",
+      "evidence": "we evaluate the proposed TOW on ... ARC-Challenge (Clark et al., 2018) for scientific reasoning.",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "ToW: Thoughts of Words Improve Reasoning in Large Language Models"
+        ],
+        "acl25": [
+          "Beyond One-Size-Fits-All: Tailored Benchmarks for Efficient Evaluation"
+        ],
+        "emnlp25": [
+          "Language Models as Continuous Self-Evolving Data Engineers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScienceQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "At Which Training Stage Does Code Data Help LLMs Reasoning?",
+      "evidence": "We use the ScienceQA dataset (Lu et al., 2022) to evaluate the scientific reasoning ability of the model. (Section 3.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "At Which Training Stage Does Code Data Help LLMs Reasoning?"
+        ],
+        "emnlp25": [
+          "ModRWKV: Transformer Multimodality in Linear Time"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+      "evidence": "SciQ measures scientific reasoning, challenging models to apply scientific concepts beyond mere fact recall. (Section 4.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+          "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RATIONALYST: Pre-training Process-Supervision for Improving Reasoning",
+      "evidence": "We evaluate RATIONALYST across diverse reasoning tasks including ... scientific (ARC (Clark et al., 2018)) (Section 4.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "RATIONALYST: Pre-training Process-Supervision for Improving Reasoning"
+        ],
+        "emnlp25": [
+          "IG-Pruning: Input-Guided Block Pruning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "evidence": "Tree-Search policy which are compared on college-level scientific reasoning benchmark under three LLMs, such as CoT and ToT, as shown in Table 4. We also evaluated under the same search budget on MATH and SciBench",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search"
+        ],
+        "icml25": [
+          "Fleet of Agents: Coordinated Problem Solving with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Scientific problem solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "SciCode: A Research Coding Benchmark Curated by Scientists",
+      "evidence": "all models substantially improve performance when background is provided, indicating their lack of knowledge and reasoning capability in these natural science fields. (Section 2.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "SciCode: A Research Coding Benchmark Curated by Scientists"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs",
+      "evidence": "PDE-Controller ... enhances scientific reasoning by proposing novel subgoals to improve open-loop control utility. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs",
+      "evidence": "commonsense logic captured by popular language datasets (Gao et al., 2020; Weber et al., 2024) largely deviates from scientific reasoning that requires math and physics backgrounds, leading to poor performance (Table 4 and 9). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats scientific reasoning as an ability to reason about scientific concepts and questions, usually with domain-specific knowledge and multi-step inference. Many definitions make this concrete as reasoning over scientific data, figures, or other multimodal evidence, or as answering science questions, while some broaden it to long-context scientific content, research problems that combine knowledge recall, reasoning, and code synthesis, or the interpretation of scientific evidence so as to avoid unjustified conclusions. A smaller line of work extends the label to the scientific process itself, including inference from data, hypothesis formulation, and discovery in a controlled physics-based environment."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The clearest explicit scheme places scientific reasoning alongside algebraic reasoning, arithmetic reasoning, geometry reasoning, logical reasoning, numeric common sense, and statistical reasoning as one of seven mathematical reasoning types. Across other papers, the same label is used for somewhat different scopes, including academic paper figures, science question answering, long-context understanding, research coding, and evidence-grounded interpretation. Several papers also pair it with neighboring capacities such as understanding, knowledge recall, and discovery."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is concentrated in 5 linked measurement instruments, all benchmarks: ARC-Challenge and ARC for scientific reasoning questions, ScienceQA for scientific multimodal reasoning through multiple-choice questions, SciQ for applying scientific concepts beyond mere fact recall, and SciBench for complex, multi-step scientific questions that integrate knowledge, evidence, and scientific principles. Papers therefore make the construct observable mainly as performance on science question answering and reasoning tasks. They also link it to 2 behavioral indicators, Scientific problem solving and Task decomposition, but those links are causal or related rather than measured_by. This operationalization most directly reflects definitions that cast scientific reasoning as multi-step scientific question answering, while some definitions extend further to academic figures, long-context reasoning, evidence interpretation, and hypothesis formulation."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper claims a causal relationship from Scientific reasoning to Scientific problem solving. Scientific reasoning is also related to Task decomposition in one paper, where proposing novel subgoals is discussed in connection with enhanced scientific reasoning. Another paper relates it to Commonsense reasoning as a contrast, stating that commonsense logic captured by popular language datasets largely deviates from scientific reasoning that requires math and physics backgrounds."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats scientific reasoning as an ability to reason about scientific concepts and questions, usually with domain-specific knowledge and multi-step inference. Many definitions make this concrete as reasoning over scientific data, figures, or other multimodal evidence, or as answering science questions, while some broaden it to long-context scientific content, research problems that combine knowledge recall, reasoning, and code synthesis, or the interpretation of scientific evidence so as to avoid unjustified conclusions. A smaller line of work extends the label to the scientific process itself, including inference from data, hypothesis formulation, and discovery in a controlled physics-based environment.\n\nSpace of facets. The clearest explicit scheme places scientific reasoning alongside algebraic reasoning, arithmetic reasoning, geometry reasoning, logical reasoning, numeric common sense, and statistical reasoning as one of seven mathematical reasoning types. Across other papers, the same label is used for somewhat different scopes, including academic paper figures, science question answering, long-context understanding, research coding, and evidence-grounded interpretation. Several papers also pair it with neighboring capacities such as understanding, knowledge recall, and discovery.\n\nSpace of measurement. Operationalization is concentrated in 5 linked measurement instruments, all benchmarks: ARC-Challenge and ARC for scientific reasoning questions, ScienceQA for scientific multimodal reasoning through multiple-choice questions, SciQ for applying scientific concepts beyond mere fact recall, and SciBench for complex, multi-step scientific questions that integrate knowledge, evidence, and scientific principles. Papers therefore make the construct observable mainly as performance on science question answering and reasoning tasks. They also link it to 2 behavioral indicators, Scientific problem solving and Task decomposition, but those links are causal or related rather than measured_by. This operationalization most directly reflects definitions that cast scientific reasoning as multi-step scientific question answering, while some definitions extend further to academic figures, long-context reasoning, evidence interpretation, and hypothesis formulation.\n\nLinks. Beyond measurement, one paper claims a causal relationship from Scientific reasoning to Scientific problem solving. Scientific reasoning is also related to Task decomposition in one paper, where proposing novel subgoals is discussed in connection with enhanced scientific reasoning. Another paper relates it to Commonsense reasoning as a contrast, stating that commonsense logic captured by popular language datasets largely deviates from scientific reasoning that requires math and physics backgrounds.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "RATIONALYST: Pre-training Process-Supervision for Improving Reasoning",
+      "VideoVista-CulturalLingo: 360\u00b0 Horizons-Bridging Cultures, Languages, and Domains in Video Comprehension"
+    ],
+    "emnlp25": [
+      "Accelerated Test-Time Scaling with Model-Free Speculative Sampling",
+      "AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time",
+      "Beyond Correctness: Confidence-Aware Reward Modeling for Enhancing Large Language Model Reasoning",
+      "Bit-Flip Error Resilience in LLMs: A Comprehensive Analysis and Defense Framework",
+      "Extracting and Combining Abilities For Building Multi-lingual Ability-enhanced Large Language Models",
+      "HypER: Literature-grounded Hypothesis Generation and Distillation with Provenance",
+      "IG-Pruning: Input-Guided Block Pruning for Large Language Models",
+      "Knowledge Editing through Chain-of-Thought",
+      "LEO-MINI: An Efficient Multimodal Large Language Model using Conditional Token Reduction and Mixture of Multi-Modal Experts",
+      "LMR-BENCH: Evaluating LLM Agent's Ability on Reproducing Language Modeling Research",
+      "Language Models as Continuous Self-Evolving Data Engineers",
+      "ModRWKV: Transformer Multimodality in Linear Time",
+      "Probing and Boosting Large Language Models Capabilities via Attention Heads",
+      "RCScore: Quantifying Response Consistency in Large Language Models",
+      "Reasoning under Uncertainty: Efficient LLM Inference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling",
+      "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching",
+      "TASO: Task-Aligned Sparse Optimization for Parameter-Efficient Model Adaptation",
+      "TORSO: Template-Oriented Reasoning Towards General Tasks",
+      "ThinkSLM: Towards Reasoning in Small Language Models",
+      "ThinkTuning: Instilling Cognitive Reflections without Distillation",
+      "What Makes a Good Reasoning Chain? Uncovering Structural Patterns in Long Chain-of-Thought Reasoning",
+      "s1: Simple test-time scaling"
+    ],
+    "iclr24": [
+      "At Which Training Stage Does Code Data Help LLMs Reasoning?",
+      "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+    ],
+    "iclr25": [
+      "CURIE: Evaluating LLMs on Multitask Scientific Long-Context Understanding and Reasoning",
+      "ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models",
+      "Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining",
+      "MAPS: Advancing Multi-Modal Reasoning in Expert-Level Physical Science",
+      "Neuron-based Multifractal Analysis of Neuron Interaction Dynamics in Large Models",
+      "Scaling Autonomous Agents via Automatic Reward Modeling And Planning"
+    ],
+    "icml25": [
+      "Adapting While Learning: Grounding LLMs for Scientific Problems with Tool Usage Adaptation",
+      "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+      "Gravity-Bench-v1: A Benchmark on Gravitational Physics Discovery for Agents",
+      "LLM-SRBench: A New Benchmark for Scientific Equation Discovery with Large Language Models",
+      "PDE-Controller: LLMs for Autoformalization and Reasoning of PDEs"
+    ],
+    "naacl25": [
+      "Grounding Fallacies Misrepresenting Scientific Publications in Evidence",
+      "ToW: Thoughts of Words Improve Reasoning in Large Language Models"
+    ],
+    "neurips24": [
+      "Enhancing Large Vision Language Models with Self-Training on Image Comprehension",
+      "ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search",
+      "SciCode: A Research Coding Benchmark Curated by Scientists",
+      "SciInstruct: a Self-Reflective Instruction Annotated Dataset for Training Scientific Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 22,
+    "iclr24": 2,
+    "iclr25": 6,
+    "icml25": 5,
+    "naacl25": 2,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

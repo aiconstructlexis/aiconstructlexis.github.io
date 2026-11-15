@@ -1,0 +1,152 @@
+{
+  "canonical_name": "Knowledge generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as producing or recalling supporting facts, concepts, or other relevant information in response to a prompt, question, answer options, or a claim. Some papers narrow it to extraction-style outputs, asking a model to \"extract all facts\" from conversational history or to \"break the model response into sentence-level factual statements\" for verification against context.\n\nVariants. Papers use several nearby names for this behavior, including knowledge generation, fact extraction, general knowledge recall, and supplementary evidence generation. The settings range from intermediate knowledge for commonsense reasoning, to question-by-question production of supporting facts for questions and options, to extracting long-term conversational facts, to claim-guided supplementary evidence, and to recalling broad background knowledge during a reasoning phase.\n\nSpace of elicitation and scores. Papers link it to 1 measurement instrument, TOFU. In the linked usage, TOFU appears under \"Fictitious Knowledge Generation\" and is described as questions about fake authors synthesized by GPT-4, and no other instrument is linked.\n\nWhat it is taken as evidence of. No construct is linked to this behavior, so the surveyed papers do not explicitly treat it as evidence of a named construct. Separately, one paper reports that Knowledge generation is related to Factual recall, describing generated knowledge prompting as asking the model to recall or synthesize relevant knowledge before answering.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge generation",
+    "Fact extraction",
+    "General knowledge recall",
+    "Supplementary evidence generation"
+  ],
+  "papers": [
+    "LongReward: Improving Long-context Large Language Models with AI Feedback",
+    "Persona-Augmented Benchmarking: Evaluating LLMs Across Diverse Writing Styles",
+    "Prior Prompt Engineering for Reinforcement Fine-Tuning",
+    "Toward Multi-Session Personalized Conversation: A Large-Scale Dataset and Hierarchical Tree Framework for Implicit Reasoning",
+    "VeriFact: Enhancing Long-Form Factuality Evaluation with Refined Fact Extraction and Reference Facts",
+    "Why and How LLMs Benefit from Knowledge Introspection in Commonsense Reasoning",
+    "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning",
+    "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+    "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+    "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering for LLM-based Fake News Detection",
+    "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "The observable act of a model producing text that represents supporting facts, concepts, or other relevant information in response to a prompt.",
+      "papers": [
+        "Why and How LLMs Benefit from Knowledge Introspection in Commonsense Reasoning"
+      ],
+      "original_name": "Knowledge generation"
+    },
+    {
+      "text": "Generating supporting factual statements for a question and answer options from a language model.",
+      "papers": [
+        "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering",
+        "Toward Multi-Session Personalized Conversation: A Large-Scale Dataset and Hierarchical Tree Framework for Implicit Reasoning",
+        "LongReward: Improving Long-context Large Language Models with AI Feedback"
+      ],
+      "original_name": "Fact extraction"
+    },
+    {
+      "text": "The observable behavior of generating broad, background knowledge relevant to a given question and set of options.",
+      "papers": [
+        "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"
+      ],
+      "original_name": "General knowledge recall"
+    },
+    {
+      "text": "Generating additional relevant facts or statements using the LLM\u2019s internal knowledge, guided by the claim and summarized evidence.",
+      "papers": [
+        "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering for LLM-based Fake News Detection"
+      ],
+      "original_name": "Supplementary evidence generation"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TOFU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On Large Language Model Continual Unlearning",
+      "evidence": "Fictitious Knowledge Generation. TOFU (Maini et al., 2024) consists of questions about fake authors synthesized by GPT-4. (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Large Language Model Continual Unlearning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Prior Prompt Engineering for Reinforcement Fine-Tuning",
+      "evidence": "Knowledge recall: Generated knowledge prompting (Liu et al., 2022) asks the model to recall or synthesize relevant knowledge before answering, simulating a form of self-retrieval and improving performance on commonsense benchmarks. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Prior Prompt Engineering for Reinforcement Fine-Tuning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats this behavior as producing or recalling supporting facts, concepts, or other relevant information in response to a prompt, question, answer options, or a claim. Some papers narrow it to extraction-style outputs, asking a model to \"extract all facts\" from conversational history or to \"break the model response into sentence-level factual statements\" for verification against context."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby names for this behavior, including knowledge generation, fact extraction, general knowledge recall, and supplementary evidence generation. The settings range from intermediate knowledge for commonsense reasoning, to question-by-question production of supporting facts for questions and options, to extracting long-term conversational facts, to claim-guided supplementary evidence, and to recalling broad background knowledge during a reasoning phase."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link it to 1 measurement instrument, TOFU. In the linked usage, TOFU appears under \"Fictitious Knowledge Generation\" and is described as questions about fake authors synthesized by GPT-4, and no other instrument is linked."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to this behavior, so the surveyed papers do not explicitly treat it as evidence of a named construct. Separately, one paper reports that Knowledge generation is related to Factual recall, describing generated knowledge prompting as asking the model to recall or synthesize relevant knowledge before answering."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as producing or recalling supporting facts, concepts, or other relevant information in response to a prompt, question, answer options, or a claim. Some papers narrow it to extraction-style outputs, asking a model to \"extract all facts\" from conversational history or to \"break the model response into sentence-level factual statements\" for verification against context.\n\nVariants. Papers use several nearby names for this behavior, including knowledge generation, fact extraction, general knowledge recall, and supplementary evidence generation. The settings range from intermediate knowledge for commonsense reasoning, to question-by-question production of supporting facts for questions and options, to extracting long-term conversational facts, to claim-guided supplementary evidence, and to recalling broad background knowledge during a reasoning phase.\n\nSpace of elicitation and scores. Papers link it to 1 measurement instrument, TOFU. In the linked usage, TOFU appears under \"Fictitious Knowledge Generation\" and is described as questions about fake authors synthesized by GPT-4, and no other instrument is linked.\n\nWhat it is taken as evidence of. No construct is linked to this behavior, so the surveyed papers do not explicitly treat it as evidence of a named construct. Separately, one paper reports that Knowledge generation is related to Factual recall, describing generated knowledge prompting as asking the model to recall or synthesize relevant knowledge before answering.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Persona-Augmented Benchmarking: Evaluating LLMs Across Diverse Writing Styles",
+      "Prior Prompt Engineering for Reinforcement Fine-Tuning",
+      "Toward Multi-Session Personalized Conversation: A Large-Scale Dataset and Hierarchical Tree Framework for Implicit Reasoning",
+      "VeriFact: Enhancing Long-Form Factuality Evaluation with Refined Fact Extraction and Reference Facts",
+      "Why and How LLMs Benefit from Knowledge Introspection in Commonsense Reasoning"
+    ],
+    "iclr24": [
+      "MuSR: Testing the Limits of Chain-of-thought with Multistep Soft Reasoning"
+    ],
+    "iclr25": [
+      "From Models to Microtheories: Distilling a Model's Topical Knowledge for Grounded Question-Answering"
+    ],
+    "naacl25": [
+      "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+      "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering for LLM-based Fake News Detection",
+      "TinyThinker: Distilling Reasoning through Coarse-to-Fine Knowledge Internalization with Self-Reflection"
+    ],
+    "acl25": [
+      "LongReward: Improving Long-context Large Language Models with AI Feedback"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5,
+    "iclr24": 1,
+    "iclr25": 1,
+    "naacl25": 3,
+    "acl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25"
+  ]
+}

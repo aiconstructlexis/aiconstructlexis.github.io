@@ -1,0 +1,77 @@
+{
+  "canonical_name": "SentEval",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most directly, papers describe SentEval as a standard transfer learning evaluation suite for sentence embeddings, with tasks such as sentiment classification (MR, SST-2), subjectivity detection (SUBJ), and question classification (TREC). One paper adds that it provides standard transfer learning tasks including MR, CR, SUBJ, MPQA, SST-2, TREC, and MRPC (Token Prepending: A Training-Free Approach for Eliciting Better Sentence Embeddings from LLMs). A separate paper uses SentEval as an evaluation tool for semantic textual similarity and says it contains seven STS subsets: STS 2012-2016, the STS-Benchmark, and SICK Relatedness.\n\nWhat it is claimed to measure. Papers link SentEval to no constructs and no behavioral indicators. Instead, they report it as evaluating sentence embeddings through standard transfer learning tasks, and one paper relates it to STS tasks where model performance is measured with Spearman's correlation. No paper explicitly names a construct that SentEval measures.\n\nSpace of uses. The only linked measurement instrument is STS tasks. One paper relates SentEval to STS tasks by adopting it as the evaluation tool for seven STS subsets and measuring model performance with Spearman's correlation (Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation and Gaussian-Decayed Contrastive Learning). Another paper uses SentEval as the source of standard transfer learning tasks for sentence embeddings.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SentEval"
+  ],
+  "papers": [
+    "Contrastive Prompting Enhances Sentence Embeddings in LLMs through Inference-Time Steering",
+    "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation and Gaussian-Decayed Contrastive Learning",
+    "Less Mature is More Adaptable for Sentence-level Language Modeling",
+    "Token Prepending: A Training-Free Approach for Eliciting Better Sentence Embeddings from LLMs"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Standard transfer learning evaluation suite for sentence embeddings, including tasks like sentiment classification (MR, SST-2), subjectivity detection (SUBJ), and question classification (TREC).",
+      "papers": [
+        "Token Prepending: A Training-Free Approach for Eliciting Better Sentence Embeddings from LLMs"
+      ],
+      "original_name": "SentEval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "STS tasks",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation and Gaussian-Decayed Contrastive Learning",
+      "evidence": "To validate our method for sentence embeddings, we evaluated the model\u2019s performance on semantic textual similarity (STS) tasks, we use the standard evaluation method, measuring model performance with Spearman\u2019s correlation, and we adopt SentEval (Conneau and Kiela, 2018) as the evaluation tool, which contains seven STS subsets: STS 2012-2016, the STS-Benchmark and the SICK Relatedness. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation and Gaussian-Decayed Contrastive Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most directly, papers describe SentEval as a standard transfer learning evaluation suite for sentence embeddings, with tasks such as sentiment classification (MR, SST-2), subjectivity detection (SUBJ), and question classification (TREC). One paper adds that it provides standard transfer learning tasks including MR, CR, SUBJ, MPQA, SST-2, TREC, and MRPC (Token Prepending: A Training-Free Approach for Eliciting Better Sentence Embeddings from LLMs). A separate paper uses SentEval as an evaluation tool for semantic textual similarity and says it contains seven STS subsets: STS 2012-2016, the STS-Benchmark, and SICK Relatedness."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link SentEval to no constructs and no behavioral indicators. Instead, they report it as evaluating sentence embeddings through standard transfer learning tasks, and one paper relates it to STS tasks where model performance is measured with Spearman's correlation. No paper explicitly names a construct that SentEval measures."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The only linked measurement instrument is STS tasks. One paper relates SentEval to STS tasks by adopting it as the evaluation tool for seven STS subsets and measuring model performance with Spearman's correlation (Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation and Gaussian-Decayed Contrastive Learning). Another paper uses SentEval as the source of standard transfer learning tasks for sentence embeddings."
+    }
+  ],
+  "characterization": "What it is. Most directly, papers describe SentEval as a standard transfer learning evaluation suite for sentence embeddings, with tasks such as sentiment classification (MR, SST-2), subjectivity detection (SUBJ), and question classification (TREC). One paper adds that it provides standard transfer learning tasks including MR, CR, SUBJ, MPQA, SST-2, TREC, and MRPC (Token Prepending: A Training-Free Approach for Eliciting Better Sentence Embeddings from LLMs). A separate paper uses SentEval as an evaluation tool for semantic textual similarity and says it contains seven STS subsets: STS 2012-2016, the STS-Benchmark, and SICK Relatedness.\n\nWhat it is claimed to measure. Papers link SentEval to no constructs and no behavioral indicators. Instead, they report it as evaluating sentence embeddings through standard transfer learning tasks, and one paper relates it to STS tasks where model performance is measured with Spearman's correlation. No paper explicitly names a construct that SentEval measures.\n\nSpace of uses. The only linked measurement instrument is STS tasks. One paper relates SentEval to STS tasks by adopting it as the evaluation tool for seven STS subsets and measuring model performance with Spearman's correlation (Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation and Gaussian-Decayed Contrastive Learning). Another paper uses SentEval as the source of standard transfer learning tasks for sentence embeddings.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Contrastive Prompting Enhances Sentence Embeddings in LLMs through Inference-Time Steering",
+      "Enhancing Unsupervised Sentence Embeddings via Knowledge-Driven Data Augmentation and Gaussian-Decayed Contrastive Learning",
+      "Less Mature is More Adaptable for Sentence-level Language Modeling",
+      "Token Prepending: A Training-Free Approach for Eliciting Better Sentence Embeddings from LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4
+  },
+  "conferences": [
+    "acl25"
+  ]
+}

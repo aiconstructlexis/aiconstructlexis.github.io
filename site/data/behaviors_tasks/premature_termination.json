@@ -1,0 +1,102 @@
+{
+  "canonical_name": "Premature termination",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Papers that define it treat premature termination as an observable failure mode in generated speech or audio: the output sequence is abruptly shortened, so the waveform is incomplete. As one study notes, speech token sequences can have \"abruptly shortened lengths,\" leading to premature termination of audio waveforms (Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets).\n\nVariants. The described setting is speech and audio output, where the behavior appears as shortened speech token sequences and incomplete audio waveforms.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Papers instead identify it directly from the generated output, looking for abruptly shortened sequences and incomplete waveforms.\n\nWhat it is taken as evidence of. No construct is linked to it as what it evidences. Instead, papers connect it to two other behavioral indicators: one claims a causal relationship from Reward hacking to Premature termination, using language that shortened speech token sequences are \"leading to premature termination of audio waveforms,\" and another claims a causal relationship from Task decomposition to Premature termination, in the context of task decomposition being used to prevent it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Premature termination"
+  ],
+  "papers": [
+    "Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets",
+    "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+    "Smurfs: Multi-Agent System using Context-Efficient DFSDT for Tool Planning"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "An observable failure mode where the model generates an output sequence that is abruptly shortened, resulting in incomplete audio waveforms.",
+      "papers": [
+        "Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets"
+      ],
+      "original_name": "Premature termination"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Smurfs: Multi-Agent System using Context-Efficient DFSDT for Tool Planning",
+      "evidence": "The primary responsibility of the Planning Agent is doing macro-level planning through task decomposition to prevent premature termination. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Smurfs: Multi-Agent System using Context-Efficient DFSDT for Tool Planning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reward hacking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets",
+      "evidence": "In GOAT, reward hacking is observed when the model generates speech token sequences with abruptly shortened lengths, leading to premature termination of audio waveforms. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Papers that define it treat premature termination as an observable failure mode in generated speech or audio: the output sequence is abruptly shortened, so the waveform is incomplete. As one study notes, speech token sequences can have \"abruptly shortened lengths,\" leading to premature termination of audio waveforms (Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets)."
+    },
+    {
+      "label": "Variants.",
+      "text": "The described setting is speech and audio output, where the behavior appears as shortened speech token sequences and incomplete audio waveforms."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Papers instead identify it directly from the generated output, looking for abruptly shortened sequences and incomplete waveforms."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it as what it evidences. Instead, papers connect it to two other behavioral indicators: one claims a causal relationship from Reward hacking to Premature termination, using language that shortened speech token sequences are \"leading to premature termination of audio waveforms,\" and another claims a causal relationship from Task decomposition to Premature termination, in the context of task decomposition being used to prevent it."
+    }
+  ],
+  "characterization": "Space of definitions. Papers that define it treat premature termination as an observable failure mode in generated speech or audio: the output sequence is abruptly shortened, so the waveform is incomplete. As one study notes, speech token sequences can have \"abruptly shortened lengths,\" leading to premature termination of audio waveforms (Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets).\n\nVariants. The described setting is speech and audio output, where the behavior appears as shortened speech token sequences and incomplete audio waveforms.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Papers instead identify it directly from the generated output, looking for abruptly shortened sequences and incomplete waveforms.\n\nWhat it is taken as evidence of. No construct is linked to it as what it evidences. Instead, papers connect it to two other behavioral indicators: one claims a causal relationship from Reward hacking to Premature termination, using language that shortened speech token sequences are \"leading to premature termination of audio waveforms,\" and another claims a causal relationship from Task decomposition to Premature termination, in the context of task decomposition being used to prevent it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets"
+    ],
+    "iclr25": [
+      "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+    ],
+    "naacl25": [
+      "Smurfs: Multi-Agent System using Context-Efficient DFSDT for Tool Planning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr25": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

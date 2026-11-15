@@ -1,0 +1,222 @@
+{
+  "canonical_name": "C-Eval",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most commonly, papers treat C-Eval as a comprehensive Chinese benchmark or evaluation suite for foundation models. Definitions repeatedly describe it as multi-level and multi-discipline, usually spanning 52 subjects or disciplines, with one paper adding four difficulty levels and another specifying 13,948 multiple-choice questions; some definitions say it covers STEM, humanities, and social sciences or broader academic and professional domains, and targets factual knowledge, foundational knowledge, reasoning, and problem solving. A smaller set of papers describes particular slices of the suite, such as the logic subject or eight selected subjects, and some frame its use as assessing multi-task language understanding in a cross-linguistic setting or Chinese instructions.\n\nWhat it is claimed to measure. Papers link C-Eval to 3 constructs and 2 behavioral indicators. The prevailing usage is to measure General ability, with several papers placing CEval among general-domain or authoritative benchmarks and reporting changes on C-Eval as changes in general abilities; smaller strands use it to measure Cross-lingual generalization and Multilingual understanding, and to evaluate Instruction following and Multiple-choice question answering. Overall, papers spread its measurement claims across several targets, though General ability is the most common framing.\n\nSpace of uses. Most papers use C-Eval alongside broader benchmark suites rather than on its own, commonly next to MMLU and also with CMMLU, GSM8K, HumanEval, and MATH. In those settings it is positioned as part of a \"complete capability evaluation,\" a general-domain evaluation set, or a group of Chinese language understanding and commonsense reasoning datasets. Some papers also use subsets of it for narrower checks, such as the logic subject for logical-rule application or eight subjects for multi-choice QA.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "C-Eval",
+    "CEval"
+  ],
+  "papers": [
+    "Activating Distributed Visual Region within LLMs for Efficient and Effective Vision-Language Training and Inference",
+    "Capability Salience Vector: Fine-grained Alignment of Loss and Capabilities for Downstream Task Scaling Law",
+    "Demons in the Detail: On Implementing Load Balancing Loss for Training Specialized Mixture-of-Expert Models",
+    "IRT-Router: Effective and Interpretable Multi-LLM Routing via Item Response Theory",
+    "Pre-training Distillation for Large Language Models: A Design Space Exploration",
+    "Sample-Efficient Human Evaluation of Large Language Models via Maximum Discrepancy Competition",
+    "Towards Effective and Efficient Continual Pre-training of Large Language Models",
+    "Towards the Law of Capacity Gap in Distilling Language Models",
+    "What Makes a Good Natural Language Prompt?",
+    "YuLan-Mini: Pushing the Limits of Open Data-efficient Language Model",
+    "AQuilt: Weaving Logic and Self-Inspection into Low-Cost, High-Relevance Data Synthesis for Specialist LLMs",
+    "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "Dynamic Expert Specialization: Towards Catastrophic Forgetting-Free Multi-Domain MoE Adaptation",
+    "Improve LLM-as-a-Judge Ability as a General Ability",
+    "Mitigating Catastrophic Forgetting in Large Language Models with Forgetting-aware Pruning",
+    "Are Human-generated Demonstrations Necessary for In-context Learning?",
+    "At Which Training Stage Does Code Data Help LLMs Reasoning?",
+    "CS-Bench: A Comprehensive Benchmark for Large Language Models towards Computer Science Mastery",
+    "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+    "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+    "PertEval: Unveiling Real Knowledge Capacity of LLMs with Knowledge-Invariant Perturbations",
+    "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+    "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+    "WenMind: A Comprehensive Benchmark for Evaluating Large Language Models in Chinese Classical Literature and Language Arts",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+  ],
+  "paper_count": 26,
+  "definitions": [
+    {
+      "text": "C-Eval, a benchmark used here to assess multi-task language understanding in a cross-linguistic setting.",
+      "papers": [
+        "Are Human-generated Demonstrations Necessary for In-context Learning?",
+        "At Which Training Stage Does Code Data Help LLMs Reasoning?",
+        "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+        "Pre-training Distillation for Large Language Models: A Design Space Exploration",
+        "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+        "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+        "PertEval: Unveiling Real Knowledge Capacity of LLMs with Knowledge-Invariant Perturbations",
+        "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+        "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+        "WenMind: A Comprehensive Benchmark for Evaluating Large Language Models in Chinese Classical Literature and Language Arts",
+        "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+      ],
+      "original_name": "C-Eval"
+    },
+    {
+      "text": "Comprehensive evaluation suite covering 52 Chinese academic subjects requiring factual and reasoning abilities.",
+      "papers": [
+        "YuLan-Mini: Pushing the Limits of Open Data-efficient Language Model",
+        "Improve LLM-as-a-Judge Ability as a General Ability"
+      ],
+      "original_name": "CEval"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+      "evidence": "For the general domain evaluation benchmarks, we select MATH, MBPP, MMLU, and CEVAL from the aforementioned experimental settings. (Section 3.3).",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment"
+        ],
+        "acl25": [
+          "Towards Effective and Efficient Continual Pre-training of Large Language Models"
+        ],
+        "emnlp25": [
+          "Improve LLM-as-a-Judge Ability as a General Ability"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AQuilt: Weaving Logic and Self-Inspection into Low-Cost, High-Relevance Data Synthesis for Specialist LLMs",
+      "evidence": "For multi-choice QA, we choose eight subjects from CEVAL (Huang et al., 2023), covering compulsory courses from middle school to university in China. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AQuilt: Weaving Logic and Self-Inspection into Low-Cost, High-Relevance Data Synthesis for Specialist LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+      "evidence": "Instruction benchmarks evaluate a model\u2019s ability to comprehend and execute detailed directives. ... with C-Eval (Huang et al., 2024) focusing on Chinese instructions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Dynamic Expert Specialization: Towards Catastrophic Forgetting-Free Multi-Domain MoE Adaptation",
+      "evidence": "a broad suite of general benchmarks\u2014...CEval...\u2014that cover ... multilingual understanding. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dynamic Expert Specialization: Towards Catastrophic Forgetting-Free Multi-Domain MoE Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-lingual generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Are Human-generated Demonstrations Necessary for In-context Learning?",
+      "evidence": "\"SEC\u2019s competitive performance on C-Eval shows its capability in the cross-linguistic scenario\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Are Human-generated Demonstrations Necessary for In-context Learning?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most commonly, papers treat C-Eval as a comprehensive Chinese benchmark or evaluation suite for foundation models. Definitions repeatedly describe it as multi-level and multi-discipline, usually spanning 52 subjects or disciplines, with one paper adding four difficulty levels and another specifying 13,948 multiple-choice questions; some definitions say it covers STEM, humanities, and social sciences or broader academic and professional domains, and targets factual knowledge, foundational knowledge, reasoning, and problem solving. A smaller set of papers describes particular slices of the suite, such as the logic subject or eight selected subjects, and some frame its use as assessing multi-task language understanding in a cross-linguistic setting or Chinese instructions."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link C-Eval to 3 constructs and 2 behavioral indicators. The prevailing usage is to measure General ability, with several papers placing CEval among general-domain or authoritative benchmarks and reporting changes on C-Eval as changes in general abilities; smaller strands use it to measure Cross-lingual generalization and Multilingual understanding, and to evaluate Instruction following and Multiple-choice question answering. Overall, papers spread its measurement claims across several targets, though General ability is the most common framing."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Most papers use C-Eval alongside broader benchmark suites rather than on its own, commonly next to MMLU and also with CMMLU, GSM8K, HumanEval, and MATH. In those settings it is positioned as part of a \"complete capability evaluation,\" a general-domain evaluation set, or a group of Chinese language understanding and commonsense reasoning datasets. Some papers also use subsets of it for narrower checks, such as the logic subject for logical-rule application or eight subjects for multi-choice QA."
+    }
+  ],
+  "characterization": "What it is. Most commonly, papers treat C-Eval as a comprehensive Chinese benchmark or evaluation suite for foundation models. Definitions repeatedly describe it as multi-level and multi-discipline, usually spanning 52 subjects or disciplines, with one paper adding four difficulty levels and another specifying 13,948 multiple-choice questions; some definitions say it covers STEM, humanities, and social sciences or broader academic and professional domains, and targets factual knowledge, foundational knowledge, reasoning, and problem solving. A smaller set of papers describes particular slices of the suite, such as the logic subject or eight selected subjects, and some frame its use as assessing multi-task language understanding in a cross-linguistic setting or Chinese instructions.\n\nWhat it is claimed to measure. Papers link C-Eval to 3 constructs and 2 behavioral indicators. The prevailing usage is to measure General ability, with several papers placing CEval among general-domain or authoritative benchmarks and reporting changes on C-Eval as changes in general abilities; smaller strands use it to measure Cross-lingual generalization and Multilingual understanding, and to evaluate Instruction following and Multiple-choice question answering. Overall, papers spread its measurement claims across several targets, though General ability is the most common framing.\n\nSpace of uses. Most papers use C-Eval alongside broader benchmark suites rather than on its own, commonly next to MMLU and also with CMMLU, GSM8K, HumanEval, and MATH. In those settings it is positioned as part of a \"complete capability evaluation,\" a general-domain evaluation set, or a group of Chinese language understanding and commonsense reasoning datasets. Some papers also use subsets of it for narrower checks, such as the logic subject for logical-rule application or eight subjects for multi-choice QA.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Activating Distributed Visual Region within LLMs for Efficient and Effective Vision-Language Training and Inference",
+      "Capability Salience Vector: Fine-grained Alignment of Loss and Capabilities for Downstream Task Scaling Law",
+      "Demons in the Detail: On Implementing Load Balancing Loss for Training Specialized Mixture-of-Expert Models",
+      "IRT-Router: Effective and Interpretable Multi-LLM Routing via Item Response Theory",
+      "Pre-training Distillation for Large Language Models: A Design Space Exploration",
+      "Sample-Efficient Human Evaluation of Large Language Models via Maximum Discrepancy Competition",
+      "Towards Effective and Efficient Continual Pre-training of Large Language Models",
+      "Towards the Law of Capacity Gap in Distilling Language Models",
+      "What Makes a Good Natural Language Prompt?",
+      "YuLan-Mini: Pushing the Limits of Open Data-efficient Language Model"
+    ],
+    "emnlp25": [
+      "AQuilt: Weaving Logic and Self-Inspection into Low-Cost, High-Relevance Data Synthesis for Specialist LLMs",
+      "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "Dynamic Expert Specialization: Towards Catastrophic Forgetting-Free Multi-Domain MoE Adaptation",
+      "Improve LLM-as-a-Judge Ability as a General Ability",
+      "Mitigating Catastrophic Forgetting in Large Language Models with Forgetting-aware Pruning"
+    ],
+    "iclr24": [
+      "Are Human-generated Demonstrations Necessary for In-context Learning?",
+      "At Which Training Stage Does Code Data Help LLMs Reasoning?"
+    ],
+    "iclr25": [
+      "CS-Bench: A Comprehensive Benchmark for Large Language Models towards Computer Science Mastery",
+      "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+    ],
+    "neurips24": [
+      "DDK: Distilling Domain Knowledge for Efficient Large Language Models",
+      "PertEval: Unveiling Real Knowledge Capacity of LLMs with Knowledge-Invariant Perturbations",
+      "RouterDC: Query-Based Router by Dual Contrastive Learning for Assembling Large Language Models",
+      "TAIA: Large Language Models are Out-of-Distribution Data Learners",
+      "WenMind: A Comprehensive Benchmark for Evaluating Large Language Models in Chinese Classical Literature and Language Arts",
+      "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 10,
+    "emnlp25": 6,
+    "iclr24": 2,
+    "iclr25": 2,
+    "neurips24": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

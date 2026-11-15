@@ -1,0 +1,171 @@
+{
+  "canonical_name": "HELM",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, HELM is most commonly described as Holistic Evaluation of Language Models, a large-scale or aggregate benchmark or framework from Stanford for evaluating language models across a wide range of scenarios and metrics. Definitions repeatedly present it as offering broad evaluation across capabilities, limitations, and risks, and papers place it among comprehensive evaluation suites and foundation-model evaluations. A smaller line of work uses the same name differently, describing HELM as a non-adaptive baseline attack that randomly adds typos, lowercases text, or uses contractions.\n\nWhat it is claimed to measure. Papers link HELM to no constructs, one behavioral indicator, and two other instruments. The only behavioral indicator it is recorded as measuring is multiple-choice question answering: one paper states that HELM uses questions from MMLU, with multiple choice questions and labeled correct answers. In the recorded relationships, the measurement use therefore centers on that single behavioral indicator rather than on any linked construct.\n\nSpace of uses. Papers commonly use HELM as a broad comparative evaluation or ranking source. One paper reports that HELM and LiveBench are strongly correlated, another uses HELM to rank LLM performance on MMLU, and other papers position HELM alongside Open LLM Leaderboard, BigBench, and ChatbotArena as comprehensive or aggregate evaluations. It is also cited among established benchmark suites in general benchmark listings.\n\nConcerns raised. Only a smaller line of work raises explicit reservations. One paper describes aggregate benchmarks such as HELM as proxy measurements of the true capabilities of LLMs, and another presents HELM as one of several knowledge-based and logic-based benchmarks that fail to capture nuanced human preferences.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HELM"
+  ],
+  "papers": [
+    "A Systematic Analysis of Base Model Choice for Reward Modeling",
+    "EcoTune: Token-Efficient Multi-Fidelity Hyperparameter Optimization for Large Language Model Inference",
+    "In Benchmarks We Trust ... Or Not?",
+    "Trustworthy Medical Question Answering: An Evaluation-Centric Survey",
+    "Unsupervised Hallucination Detection by Inspecting Reasoning Processes",
+    "AIR-BENCH 2024: A Safety Benchmark based on Regulation and Policies Specified Risk Categories",
+    "AutoBencher: Towards Declarative Benchmark Construction",
+    "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+    "MMTEB: Massive Multilingual Text Embedding Benchmark",
+    "PiCO: Peer Review in LLMs based on Consistency Optimization",
+    "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+    "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models",
+    "Active Evaluation Acquisition for Efficient LLM Benchmarking",
+    "Correlated Errors in Large Language Models",
+    "Optimizing Adaptive Attacks against Watermarks for Language Models",
+    "Position: AI Evaluation Should Learn from How We Test Humans",
+    "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge",
+    "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks",
+    "Reliable and Efficient Amortized Model-based Evaluation",
+    "Are We Done with MMLU?",
+    "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+    "Language Models can Categorize System Inputs for Performance Analysis",
+    "Preference Learning Algorithms Do Not Learn Preference Rankings"
+  ],
+  "paper_count": 23,
+  "definitions": [
+    {
+      "text": "Holistic Evaluation of Language Models, a large-scale benchmark from Stanford for evaluating language models across a wide range of scenarios and metrics.",
+      "papers": [
+        "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+        "Language Models can Categorize System Inputs for Performance Analysis",
+        "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+        "Are We Done with MMLU?",
+        "Optimizing Adaptive Attacks against Watermarks for Language Models",
+        "A Systematic Analysis of Base Model Choice for Reward Modeling",
+        "Preference Learning Algorithms Do Not Learn Preference Rankings"
+      ],
+      "original_name": "HELM"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LiveBench",
+      "other_type": "measurements",
+      "relationship_type": "correlates",
+      "paper": "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+      "evidence": "LiveBench and HELM are strongly correlated (Table 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Correlated Errors in Large Language Models",
+      "evidence": "We started from two LLM leaderboards: (1) HuggingFace\u2019s Open LLM Leaderboard 21; and (2) Stanford\u2019s Holistic Evaluation of Language Models (Helm) (Liang et al., 2023). Both use questions from the Massive Multitask Language Understanding (MMLU) question-answering dataset (Hendrycks et al., 2020), with multiple choice questions and labeled correct answers. (Section 3.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Correlated Errors in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Are We Done with MMLU?",
+      "evidence": "\"the performance of the ten best-performing LLMs on MMLU (as ranked by HELM (Liang et al., 2023))\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Are We Done with MMLU?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, HELM is most commonly described as Holistic Evaluation of Language Models, a large-scale or aggregate benchmark or framework from Stanford for evaluating language models across a wide range of scenarios and metrics. Definitions repeatedly present it as offering broad evaluation across capabilities, limitations, and risks, and papers place it among comprehensive evaluation suites and foundation-model evaluations. A smaller line of work uses the same name differently, describing HELM as a non-adaptive baseline attack that randomly adds typos, lowercases text, or uses contractions."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link HELM to no constructs, one behavioral indicator, and two other instruments. The only behavioral indicator it is recorded as measuring is multiple-choice question answering: one paper states that HELM uses questions from MMLU, with multiple choice questions and labeled correct answers. In the recorded relationships, the measurement use therefore centers on that single behavioral indicator rather than on any linked construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers commonly use HELM as a broad comparative evaluation or ranking source. One paper reports that HELM and LiveBench are strongly correlated, another uses HELM to rank LLM performance on MMLU, and other papers position HELM alongside Open LLM Leaderboard, BigBench, and ChatbotArena as comprehensive or aggregate evaluations. It is also cited among established benchmark suites in general benchmark listings."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "Only a smaller line of work raises explicit reservations. One paper describes aggregate benchmarks such as HELM as proxy measurements of the true capabilities of LLMs, and another presents HELM as one of several knowledge-based and logic-based benchmarks that fail to capture nuanced human preferences."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, HELM is most commonly described as Holistic Evaluation of Language Models, a large-scale or aggregate benchmark or framework from Stanford for evaluating language models across a wide range of scenarios and metrics. Definitions repeatedly present it as offering broad evaluation across capabilities, limitations, and risks, and papers place it among comprehensive evaluation suites and foundation-model evaluations. A smaller line of work uses the same name differently, describing HELM as a non-adaptive baseline attack that randomly adds typos, lowercases text, or uses contractions.\n\nWhat it is claimed to measure. Papers link HELM to no constructs, one behavioral indicator, and two other instruments. The only behavioral indicator it is recorded as measuring is multiple-choice question answering: one paper states that HELM uses questions from MMLU, with multiple choice questions and labeled correct answers. In the recorded relationships, the measurement use therefore centers on that single behavioral indicator rather than on any linked construct.\n\nSpace of uses. Papers commonly use HELM as a broad comparative evaluation or ranking source. One paper reports that HELM and LiveBench are strongly correlated, another uses HELM to rank LLM performance on MMLU, and other papers position HELM alongside Open LLM Leaderboard, BigBench, and ChatbotArena as comprehensive or aggregate evaluations. It is also cited among established benchmark suites in general benchmark listings.\n\nConcerns raised. Only a smaller line of work raises explicit reservations. One paper describes aggregate benchmarks such as HELM as proxy measurements of the true capabilities of LLMs, and another presents HELM as one of several knowledge-based and logic-based benchmarks that fail to capture nuanced human preferences.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "A Systematic Analysis of Base Model Choice for Reward Modeling",
+      "EcoTune: Token-Efficient Multi-Fidelity Hyperparameter Optimization for Large Language Model Inference",
+      "In Benchmarks We Trust ... Or Not?",
+      "Trustworthy Medical Question Answering: An Evaluation-Centric Survey",
+      "Unsupervised Hallucination Detection by Inspecting Reasoning Processes"
+    ],
+    "iclr25": [
+      "AIR-BENCH 2024: A Safety Benchmark based on Regulation and Policies Specified Risk Categories",
+      "AutoBencher: Towards Declarative Benchmark Construction",
+      "Limits to scalable evaluation at the frontier: LLM as judge won\u2019t beat twice the data",
+      "MMTEB: Massive Multilingual Text Embedding Benchmark",
+      "PiCO: Peer Review in LLMs based on Consistency Optimization",
+      "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+      "VibeCheck: Discover and Quantify Qualitative Differences in Large Language Models"
+    ],
+    "icml25": [
+      "Active Evaluation Acquisition for Efficient LLM Benchmarking",
+      "Correlated Errors in Large Language Models",
+      "Optimizing Adaptive Attacks against Watermarks for Language Models",
+      "Position: AI Evaluation Should Learn from How We Test Humans",
+      "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge",
+      "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks",
+      "Reliable and Efficient Amortized Model-based Evaluation"
+    ],
+    "naacl25": [
+      "Are We Done with MMLU?",
+      "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+      "Language Models can Categorize System Inputs for Performance Analysis"
+    ],
+    "neurips24": [
+      "Preference Learning Algorithms Do Not Learn Preference Rankings"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5,
+    "iclr25": 7,
+    "icml25": 7,
+    "naacl25": 3,
+    "neurips24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

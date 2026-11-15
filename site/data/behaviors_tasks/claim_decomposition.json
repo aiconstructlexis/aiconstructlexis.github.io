@@ -1,0 +1,203 @@
+{
+  "canonical_name": "Claim decomposition",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the dominant framing is the breakdown of a complex text, claim, statement, or summary into smaller units that can be checked separately, most often as discrete or atomic sub-claims. Most formulations stress verifiability, independent evaluation, or a single factual statement per unit, while smaller variants cast the outputs as sub-questions, decontextualised claim sentences, semantically independent viewpoints, or minimal true or false propositions about an image.\n\nVariants. Papers use several near-synonymous names for the behavior, including claim extraction, claim simplification, statement decomposition, viewpoint extraction, and atomic proposition decomposition. The settings vary from multi-faceted claims, passages, and larger documents to reference summaries for content validity and coverage, complex research ideas decomposed into evaluable viewpoints, and detailed image captions broken into atomic units.\n\nSpace of elicitation and scores. Papers link claim decomposition to two measurement instruments, FActScore and WiCE, but they do so through related links rather than explicit measured_by claims. In those descriptions, FActScore is an LLM-based fact-checking pipeline that verifies claims decomposed from a passage against a trusted reference source, while WiCE appears through the use of its decomposition module in experiments.\n\nWhat it is taken as evidence of. Papers connect the behavior to two constructs, and the link is not uniform. One paper reports it as related to calibration through claim-level extraction, confidence estimation, and calibration analysis, while another paper claims a causal relationship from claim decomposition to interpretability and explainability, saying claim-level decomposition enables finer-grained and more interpretable evaluation.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Claim decomposition",
+    "Claim extraction",
+    "Claim simplification",
+    "Viewpoint extraction",
+    "Statement decomposition",
+    "Atomic proposition decomposition"
+  ],
+  "papers": [
+    "Improving Zero-shot Sentence Decontextualisation with Content Selection and Planning",
+    "MedFact: A Large-scale Chinese Dataset for Evidence-based Medical Fact-checking of LLM Responses",
+    "The Psychology of Falsehood: A Human-Centric Survey of Misinformation Detection",
+    "TracSum: A New Benchmark for Aspect-Based Summarization with Sentence-Level Traceability in Medical Domain",
+    "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+    "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation",
+    "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage",
+    "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+    "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering for LLM-based Fake News Detection",
+    "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation",
+    "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "Breaking down a complex input text into smaller, verifiable sub-claims, either emphasizing atomicity or verifiability.",
+      "papers": [
+        "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering for LLM-based Fake News Detection",
+        "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+        "TracSum: A New Benchmark for Aspect-Based Summarization with Sentence-Level Traceability in Medical Domain"
+      ],
+      "original_name": "Claim decomposition"
+    },
+    {
+      "text": "Decomposing a text into a set of discrete claims for later verification.",
+      "papers": [
+        "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation",
+        "Improving Zero-shot Sentence Decontextualisation with Content Selection and Planning"
+      ],
+      "original_name": "Claim extraction"
+    },
+    {
+      "text": "The task of breaking down complex assertions into simpler, more easily verifiable components.",
+      "papers": [
+        "The Psychology of Falsehood: A Human-Centric Survey of Misinformation Detection"
+      ],
+      "original_name": "Claim simplification"
+    },
+    {
+      "text": "The task of decomposing a complex research idea into a list of simpler, semantically independent, and evaluable units called viewpoints.",
+      "papers": [
+        "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation"
+      ],
+      "original_name": "Viewpoint extraction"
+    },
+    {
+      "text": "Breaking down a complex statement containing multiple claims into simpler, constituent sub-statements for independent evaluation.",
+      "papers": [
+        "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation"
+      ],
+      "original_name": "Statement decomposition"
+    },
+    {
+      "text": "Breaking down a detailed caption into minimal true/false claims about the image for individual verification.",
+      "papers": [
+        "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage"
+      ],
+      "original_name": "Atomic proposition decomposition"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Calibration",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses",
+      "evidence": "This approach involves extracting distinct claims from the generated content, estimating the confidence associated with each claim, and then analyzing the calibration at the claim level. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "RAG-Zeval: Enhancing RAG Responses Evaluator through End-to-End Reasoning and Ranking-Based Reinforcement Learning",
+      "evidence": "Other approaches, including RAGAS (Shahul et al., 2023), RAG-Checker (Ru et al., 2024), and OpenEval (Ispas et al., 2025), introduce claim-level decomposition, enabling LLMs to assess the faithfulness and correctness of each factual statement for finer-grained and more interpretable evaluation.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "RAG-Zeval: Enhancing RAG Responses Evaluator through End-to-End Reasoning and Ranking-Based Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WiCE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+      "evidence": "\u201cwe use the decomposition modules from VeriScore, FactScore, and Wice3 for our experiments\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FActScore",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "DnDScore: Decontextualization and Decomposition for Factuality Verification in Long-Form Text Generation",
+      "evidence": "\u201cFACTSCORE is an LLM-based fact-checking pipeline that verifies claims decomposed from a passage against a trusted reference source\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "DnDScore: Decontextualization and Decomposition for Factuality Verification in Long-Form Text Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the dominant framing is the breakdown of a complex text, claim, statement, or summary into smaller units that can be checked separately, most often as discrete or atomic sub-claims. Most formulations stress verifiability, independent evaluation, or a single factual statement per unit, while smaller variants cast the outputs as sub-questions, decontextualised claim sentences, semantically independent viewpoints, or minimal true or false propositions about an image."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several near-synonymous names for the behavior, including claim extraction, claim simplification, statement decomposition, viewpoint extraction, and atomic proposition decomposition. The settings vary from multi-faceted claims, passages, and larger documents to reference summaries for content validity and coverage, complex research ideas decomposed into evaluable viewpoints, and detailed image captions broken into atomic units."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link claim decomposition to two measurement instruments, FActScore and WiCE, but they do so through related links rather than explicit measured_by claims. In those descriptions, FActScore is an LLM-based fact-checking pipeline that verifies claims decomposed from a passage against a trusted reference source, while WiCE appears through the use of its decomposition module in experiments."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers connect the behavior to two constructs, and the link is not uniform. One paper reports it as related to calibration through claim-level extraction, confidence estimation, and calibration analysis, while another paper claims a causal relationship from claim decomposition to interpretability and explainability, saying claim-level decomposition enables finer-grained and more interpretable evaluation."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the dominant framing is the breakdown of a complex text, claim, statement, or summary into smaller units that can be checked separately, most often as discrete or atomic sub-claims. Most formulations stress verifiability, independent evaluation, or a single factual statement per unit, while smaller variants cast the outputs as sub-questions, decontextualised claim sentences, semantically independent viewpoints, or minimal true or false propositions about an image.\n\nVariants. Papers use several near-synonymous names for the behavior, including claim extraction, claim simplification, statement decomposition, viewpoint extraction, and atomic proposition decomposition. The settings vary from multi-faceted claims, passages, and larger documents to reference summaries for content validity and coverage, complex research ideas decomposed into evaluable viewpoints, and detailed image captions broken into atomic units.\n\nSpace of elicitation and scores. Papers link claim decomposition to two measurement instruments, FActScore and WiCE, but they do so through related links rather than explicit measured_by claims. In those descriptions, FActScore is an LLM-based fact-checking pipeline that verifies claims decomposed from a passage against a trusted reference source, while WiCE appears through the use of its decomposition module in experiments.\n\nWhat it is taken as evidence of. Papers connect the behavior to two constructs, and the link is not uniform. One paper reports it as related to calibration through claim-level extraction, confidence estimation, and calibration analysis, while another paper claims a causal relationship from claim decomposition to interpretability and explainability, saying claim-level decomposition enables finer-grained and more interpretable evaluation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Improving Zero-shot Sentence Decontextualisation with Content Selection and Planning",
+      "MedFact: A Large-scale Chinese Dataset for Evidence-based Medical Fact-checking of LLM Responses",
+      "The Psychology of Falsehood: A Human-Centric Survey of Misinformation Detection",
+      "TracSum: A New Benchmark for Aspect-Based Summarization with Sentence-Level Traceability in Medical Domain"
+    ],
+    "iclr24": [
+      "LitCab: Lightweight Language Model Calibration over Short- and Long-form Responses"
+    ],
+    "iclr25": [
+      "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation"
+    ],
+    "naacl25": [
+      "Decomposition Dilemmas: Does Claim Decomposition Boost or Burden Fact-Checking Performance?",
+      "IMRRF: Integrating Multi-Source Retrieval and Redundancy Filtering for LLM-based Fake News Detection",
+      "A Probabilistic Framework for LLM Hallucination Detection via Belief Tree Propagation"
+    ],
+    "neurips24": [
+      "RAGChecker: A Fine-grained Framework for Diagnosing Retrieval-Augmented Generation"
+    ],
+    "icml25": [
+      "Toward Robust Hyper-Detailed Image Captioning: A Multiagent Approach and Dual Evaluation Metrics for Factuality and Coverage"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4,
+    "iclr24": 1,
+    "iclr25": 1,
+    "naacl25": 3,
+    "neurips24": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

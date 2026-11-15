@@ -1,0 +1,117 @@
+{
+  "canonical_name": "Multitask language understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the construct is treated as a broad ability rather than a narrow task score. One definition frames it as a latent ability to comprehend and perform across diverse language tasks and domains, reflecting broad linguistic and world knowledge, while another frames it as the ability to answer questions and solve problems across a wide range of academic and professional subjects. A quoted passage also describes it as performing a wide variety of language tasks across different knowledge domains without task-specific training, so the main variation is between task-and-domain wording and subject-or-discipline wording, with breadth emphasized in both.\n\nSpace of facets. The papers do not break this construct into subtypes. The main variation is in naming: \"multitask language understanding\" is phrased around varied language tasks and knowledge domains, while \"multi-discipline understanding\" is phrased around varied academic and professional subjects. In the quoted passages it is also presented separately from math understanding, as in the statement that \"MMMU and MathVista aim to evaluate the multi-discipline and math understanding ability, respectively.\"\n\nSpace of measurement. Operationalization in the papers uses 3 measurement instruments, MMLU, MMLU-Pro, and MMMU, and no behavioral indicators are linked to it. MMLU and MMLU-Pro are used where a paper says the dataset covers broad knowledge of different disciplines, and MMMU is described as aiming to evaluate multi-discipline understanding ability. In these papers, the measurement language stays close to the definitions by focusing on breadth across disciplines, subjects, and knowledge domains.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multitask language understanding",
+    "Multi-discipline understanding"
+  ],
+  "papers": [
+    "DIDS: Domain Impact-aware Data Sampling for Large Language Model Training",
+    "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+    "Large (Vision) Language Models are Unsupervised In-Context Learners"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The latent ability of a model to comprehend and perform across diverse language tasks and domains, reflecting broad linguistic and world knowledge.",
+      "papers": [
+        "Large (Vision) Language Models are Unsupervised In-Context Learners"
+      ],
+      "original_name": "Multitask language understanding"
+    },
+    {
+      "text": "The model's ability to answer questions and solve problems across a wide range of academic and professional subjects.",
+      "papers": [
+        "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models"
+      ],
+      "original_name": "Multi-discipline understanding"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+      "evidence": "MMMU and MathVista aim to evaluate the multi-discipline and math understanding ability, respectively. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "evidence": "we evaluate unsupervised ICL on the GSM8K dataset that requires reasoning capabilities and on the MMLU(-Pro) dataset that covers broad knowledge of different disciplines. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Large (Vision) Language Models are Unsupervised In-Context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU-Pro",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "evidence": "we evaluate unsupervised ICL on the GSM8K dataset that requires reasoning capabilities and on the MMLU(-Pro) dataset that covers broad knowledge of different disciplines. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Large (Vision) Language Models are Unsupervised In-Context Learners"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the construct is treated as a broad ability rather than a narrow task score. One definition frames it as a latent ability to comprehend and perform across diverse language tasks and domains, reflecting broad linguistic and world knowledge, while another frames it as the ability to answer questions and solve problems across a wide range of academic and professional subjects. A quoted passage also describes it as performing a wide variety of language tasks across different knowledge domains without task-specific training, so the main variation is between task-and-domain wording and subject-or-discipline wording, with breadth emphasized in both."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers do not break this construct into subtypes. The main variation is in naming: \"multitask language understanding\" is phrased around varied language tasks and knowledge domains, while \"multi-discipline understanding\" is phrased around varied academic and professional subjects. In the quoted passages it is also presented separately from math understanding, as in the statement that \"MMMU and MathVista aim to evaluate the multi-discipline and math understanding ability, respectively.\""
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization in the papers uses 3 measurement instruments, MMLU, MMLU-Pro, and MMMU, and no behavioral indicators are linked to it. MMLU and MMLU-Pro are used where a paper says the dataset covers broad knowledge of different disciplines, and MMMU is described as aiming to evaluate multi-discipline understanding ability. In these papers, the measurement language stays close to the definitions by focusing on breadth across disciplines, subjects, and knowledge domains."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the construct is treated as a broad ability rather than a narrow task score. One definition frames it as a latent ability to comprehend and perform across diverse language tasks and domains, reflecting broad linguistic and world knowledge, while another frames it as the ability to answer questions and solve problems across a wide range of academic and professional subjects. A quoted passage also describes it as performing a wide variety of language tasks across different knowledge domains without task-specific training, so the main variation is between task-and-domain wording and subject-or-discipline wording, with breadth emphasized in both.\n\nSpace of facets. The papers do not break this construct into subtypes. The main variation is in naming: \"multitask language understanding\" is phrased around varied language tasks and knowledge domains, while \"multi-discipline understanding\" is phrased around varied academic and professional subjects. In the quoted passages it is also presented separately from math understanding, as in the statement that \"MMMU and MathVista aim to evaluate the multi-discipline and math understanding ability, respectively.\"\n\nSpace of measurement. Operationalization in the papers uses 3 measurement instruments, MMLU, MMLU-Pro, and MMMU, and no behavioral indicators are linked to it. MMLU and MMLU-Pro are used where a paper says the dataset covers broad knowledge of different disciplines, and MMMU is described as aiming to evaluate multi-discipline understanding ability. In these papers, the measurement language stays close to the definitions by focusing on breadth across disciplines, subjects, and knowledge domains.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "DIDS: Domain Impact-aware Data Sampling for Large Language Model Training"
+    ],
+    "iclr25": [
+      "Feast Your Eyes: Mixture-of-Resolution Adaptation for Multimodal Large Language Models",
+      "Large (Vision) Language Models are Unsupervised In-Context Learners"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

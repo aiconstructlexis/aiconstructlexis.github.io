@@ -1,0 +1,164 @@
+{
+  "canonical_name": "Comprehensiveness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage describes comprehensiveness as whether an output covers enough information to fully answer a query or instruction, or to support a downstream task. Definitions agree on the idea of complete coverage, but they differ in what the output is expected to cover: some focus on all aspects or facets of the answer, while others require all source documents' perspectives, all relevant video details, a broad range of legal cases and situational variations, or all relevant aspects of a user's situation. A smaller line of work labels the same general idea answer comprehensiveness, defined as addressing the full set of important facets in an open-ended question.\n\nSpace of facets. When papers make the construct more specific, they do so by naming units of coverage: aspects or facets of a query, source documents and their perspectives, fine-grained actions and details, or sub-questions. One paper breaks answer comprehensiveness into coverage of core, background, and follow-up sub-questions. Another treats comprehensiveness as similar to completeness and even recall-like, as the fraction of gold reference items covered by candidate review sentences, and discusses it alongside relevance and a balance with conciseness.\n\nSpace of measurement. Papers link comprehensiveness to 2 measurement instruments and no behavioral indicators. The linked instruments are Human evaluation, implemented as judges rating outputs on a 1-5 Likert scale for comprehensiveness, and LLM-as-a-judge, where comprehensiveness appears as one of several multi-perspective criteria. Other papers make the measurement target explicit as sub-question coverage, measuring how well a system addresses different facets of a question, or as recall-like coverage of a gold set. These operationalizations keep the focus on coverage of needed information.\n\nLinks. Across papers, comprehensiveness is related to Faithfulness in one formulation: faithfulness is assessed with the complementary criteria of comprehensiveness and sufficiency. No paper reports a causal relationship or a correlation involving comprehensiveness.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Comprehensiveness",
+    "Answer comprehensiveness"
+  ],
+  "papers": [
+    "Automating Legal Interpretation with LLMs: Retrieval, Generation, and Evaluation",
+    "Completing A Systematic Review in Hours instead of Months with Interactive AI Agents",
+    "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+    "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+    "Small Models, Big Results: Achieving Superior Intent Extraction through Decomposition",
+    "Towards AI-Assisted Psychotherapy: Emotion-Guided Generative Interventions",
+    "TreeReview: A Dynamic Tree of Questions Framework for Deep and Efficient LLM-based Scientific Peer Review",
+    "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+    "RECOMP: Improving Retrieval-Augmented LMs with Context Compression and Selective Augmentation",
+    "CRScore: Grounding Automated Evaluation of Code Review Comments in Code Claims and Smells",
+    "Do RAG Systems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage",
+    "MoDS: Moderating a Mixture of Document Speakers to Summarize Debatable Queries in Document Collections",
+    "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models",
+    "Artemis: Towards Referential Understanding in Complex Videos",
+    "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales"
+  ],
+  "paper_count": 15,
+  "definitions": [
+    {
+      "text": "The extent to which a summary contains enough information to answer the query or support the downstream task, regardless of whether every detail is directly copied from the source documents.",
+      "papers": [
+        "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+        "RECOMP: Improving Retrieval-Augmented LMs with Context Compression and Selective Augmentation",
+        "Artemis: Towards Referential Understanding in Complex Videos",
+        "MoDS: Moderating a Mixture of Document Speakers to Summarize Debatable Queries in Document Collections",
+        "CRScore: Grounding Automated Evaluation of Code Review Comments in Code Claims and Smells",
+        "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models",
+        "Automating Legal Interpretation with LLMs: Retrieval, Generation, and Evaluation",
+        "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion"
+      ],
+      "original_name": "Comprehensiveness"
+    },
+    {
+      "text": "The extent to which a response addresses the full set of important facets needed for a complete answer to an open-ended question.",
+      "papers": [
+        "Do RAG Systems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage"
+      ],
+      "original_name": "Answer comprehensiveness"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models",
+      "evidence": "Using a 1-5 Likert scale, the judges are asked to rate the model output based on five criteria: comprehensiveness, layness, meaning preservation, conciseness, and fluency. (Section 5.3.3).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+      "evidence": "The evaluation framework uses multi-perspective criteria by LLM-as-a-judge, such as comprehensiveness, specificity, and relevance. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "NormXLogit: The Head-on-Top Never Lies",
+      "evidence": "To assess the faithfulness of the aforementioned methods, we adopt two complementary criteria: comprehensiveness and sufficiency (DeYoung et al., 2020). (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NormXLogit: The Head-on-Top Never Lies"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage describes comprehensiveness as whether an output covers enough information to fully answer a query or instruction, or to support a downstream task. Definitions agree on the idea of complete coverage, but they differ in what the output is expected to cover: some focus on all aspects or facets of the answer, while others require all source documents' perspectives, all relevant video details, a broad range of legal cases and situational variations, or all relevant aspects of a user's situation. A smaller line of work labels the same general idea answer comprehensiveness, defined as addressing the full set of important facets in an open-ended question."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "When papers make the construct more specific, they do so by naming units of coverage: aspects or facets of a query, source documents and their perspectives, fine-grained actions and details, or sub-questions. One paper breaks answer comprehensiveness into coverage of core, background, and follow-up sub-questions. Another treats comprehensiveness as similar to completeness and even recall-like, as the fraction of gold reference items covered by candidate review sentences, and discusses it alongside relevance and a balance with conciseness."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link comprehensiveness to 2 measurement instruments and no behavioral indicators. The linked instruments are Human evaluation, implemented as judges rating outputs on a 1-5 Likert scale for comprehensiveness, and LLM-as-a-judge, where comprehensiveness appears as one of several multi-perspective criteria. Other papers make the measurement target explicit as sub-question coverage, measuring how well a system addresses different facets of a question, or as recall-like coverage of a gold set. These operationalizations keep the focus on coverage of needed information."
+    },
+    {
+      "label": "Links.",
+      "text": "Across papers, comprehensiveness is related to Faithfulness in one formulation: faithfulness is assessed with the complementary criteria of comprehensiveness and sufficiency. No paper reports a causal relationship or a correlation involving comprehensiveness."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage describes comprehensiveness as whether an output covers enough information to fully answer a query or instruction, or to support a downstream task. Definitions agree on the idea of complete coverage, but they differ in what the output is expected to cover: some focus on all aspects or facets of the answer, while others require all source documents' perspectives, all relevant video details, a broad range of legal cases and situational variations, or all relevant aspects of a user's situation. A smaller line of work labels the same general idea answer comprehensiveness, defined as addressing the full set of important facets in an open-ended question.\n\nSpace of facets. When papers make the construct more specific, they do so by naming units of coverage: aspects or facets of a query, source documents and their perspectives, fine-grained actions and details, or sub-questions. One paper breaks answer comprehensiveness into coverage of core, background, and follow-up sub-questions. Another treats comprehensiveness as similar to completeness and even recall-like, as the fraction of gold reference items covered by candidate review sentences, and discusses it alongside relevance and a balance with conciseness.\n\nSpace of measurement. Papers link comprehensiveness to 2 measurement instruments and no behavioral indicators. The linked instruments are Human evaluation, implemented as judges rating outputs on a 1-5 Likert scale for comprehensiveness, and LLM-as-a-judge, where comprehensiveness appears as one of several multi-perspective criteria. Other papers make the measurement target explicit as sub-question coverage, measuring how well a system addresses different facets of a question, or as recall-like coverage of a gold set. These operationalizations keep the focus on coverage of needed information.\n\nLinks. Across papers, comprehensiveness is related to Faithfulness in one formulation: faithfulness is assessed with the complementary criteria of comprehensiveness and sufficiency. No paper reports a causal relationship or a correlation involving comprehensiveness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Automating Legal Interpretation with LLMs: Retrieval, Generation, and Evaluation",
+      "Completing A Systematic Review in Hours instead of Months with Interactive AI Agents"
+    ],
+    "emnlp25": [
+      "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+      "Multi-perspective Analysis of Large Language Model Domain Specialization: An Experiment in Accounting Audit Procedures Generation",
+      "Small Models, Big Results: Achieving Superior Intent Extraction through Decomposition",
+      "Towards AI-Assisted Psychotherapy: Emotion-Guided Generative Interventions",
+      "TreeReview: A Dynamic Tree of Questions Framework for Deep and Efficient LLM-based Scientific Peer Review"
+    ],
+    "iclr24": [
+      "PandaLM: An Automatic Evaluation Benchmark for LLM Instruction Tuning Optimization",
+      "RECOMP: Improving Retrieval-Augmented LMs with Context Compression and Selective Augmentation"
+    ],
+    "naacl25": [
+      "CRScore: Grounding Automated Evaluation of Code Review Comments in Code Claims and Smells",
+      "Do RAG Systems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage",
+      "MoDS: Moderating a Mixture of Document Speakers to Summarize Debatable Queries in Document Collections",
+      "VTechAGP: An Academic-to-General-Audience Text Paraphrase Dataset and Benchmark Models"
+    ],
+    "neurips24": [
+      "Artemis: Towards Referential Understanding in Complex Videos",
+      "Beyond Accuracy: Ensuring Correct Predictions With Correct Rationales"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 5,
+    "iclr24": 2,
+    "naacl25": 4,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "naacl25",
+    "neurips24"
+  ]
+}

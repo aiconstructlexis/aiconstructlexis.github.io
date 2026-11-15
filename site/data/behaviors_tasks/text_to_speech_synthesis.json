@@ -1,0 +1,210 @@
+{
+  "canonical_name": "Text-to-speech synthesis",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats it as generating human-like or audible speech from text input, a text transcript, or written text. Definitions usually focus on producing spoken audio, and some formulations describe this as translating text into sequences of discrete audio tokens or producing speech from intermediate text responses. A smaller line of work broadens the task to converting textual content plus style instructions into speech, or to generating speech that is contextually appropriate for multi-turn dialogue; in those cases, success is described in terms of fluent, human-like speech with the requested acoustic style, users' needs, or dialogue context.\n\nVariants. Several variants appear under nearby names, including conversational speech synthesis, speech generation, text-to-speech generation, and speech synthesis. Papers study context-aware conversational TTS, prompt-based customization with human-like intonation, style-conditioned generation from open-domain instructions, simple text-to-speech, and zero-shot TTS conditioned on a reference audio prompt or unseen speakers' prompts, sometimes described as generating speech in the voice of a target speaker and related to Voice cloning. Other formulations cast the task as audio language modeling, spectrogram reconstruction, or speech decoding from discrete speech tokens.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers elicit the behavior directly through task setups such as text-conditioned speech generation, simple text-to-speech, zero-shot TTS, and speech synthesis from internal representations like discrete tokens or spectrograms, with some work framing it as an audio language modeling problem.\n\nWhat it is taken as evidence of. Construct links are limited and indirect: papers relate it to two constructs, In-context learning and Multimodal reasoning, and these links are recorded as related rather than as measurement, causal, or correlational claims. The framing does not converge on a single construct it indicates, because some work studies text-to-speech in an in-context learning setting, while other work connects generated audio differences to cross-modal reasoning capability. Related behavioral links also connect zero-shot TTS to Voice cloning, and other work says LLM-based TTS systems face Hallucination.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Conversational speech synthesis",
+    "Text-to-speech synthesis",
+    "Speech generation",
+    "Text-to-speech generation",
+    "Text-to-speech",
+    "Speech synthesis"
+  ],
+  "papers": [
+    "Charting the Landscape of African NLP: Mapping Progress and Shaping the Road Ahead",
+    "Debatable Intelligence: Benchmarking LLM Judges via Debate Speech Evaluation",
+    "Eliciting Implicit Acoustic Styles from Open-domain Instructions to Facilitate Fine-grained Controllable Generation of Speech",
+    "Koel-TTS: Enhancing LLM based Speech Generation with Preference Alignment and Classifier Free Guidance",
+    "MIO: A Foundation Model on Multimodal Tokens",
+    "Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets",
+    "Towards Controllable Speech Synthesis in the Era of Large Language Models: A Systematic Survey",
+    "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+    "HALL-E: Hierarchical Neural Codec Language Model for Minute-Long Zero-Shot Text-to-Speech Synthesis",
+    "LLaMA-Omni: Seamless Speech Interaction with Large Language Models",
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+    "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+    "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation",
+    "Long-Form Speech Generation with Spoken Language Models",
+    "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+    "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "The task of generating speech that is contextually appropriate for interactive, multi-turn dialogues.",
+      "papers": [
+        "Towards Controllable Speech Synthesis in the Era of Large Language Models: A Systematic Survey"
+      ],
+      "original_name": "Conversational speech synthesis"
+    },
+    {
+      "text": "The task of generating human-like speech from a given text input.",
+      "papers": [
+        "Towards Controllable Speech Synthesis in the Era of Large Language Models: A Systematic Survey",
+        "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+        "HALL-E: Hierarchical Neural Codec Language Model for Minute-Long Zero-Shot Text-to-Speech Synthesis"
+      ],
+      "original_name": "Text-to-speech synthesis"
+    },
+    {
+      "text": "The observable task of converting textual content and style instructions into an audible speech signal.",
+      "papers": [
+        "Eliciting Implicit Acoustic Styles from Open-domain Instructions to Facilitate Fine-grained Controllable Generation of Speech"
+      ],
+      "original_name": "Speech generation"
+    },
+    {
+      "text": "The observable task of synthesizing audible speech from a given text transcript.",
+      "papers": [
+        "Koel-TTS: Enhancing LLM based Speech Generation with Preference Alignment and Classifier Free Guidance",
+        "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+      ],
+      "original_name": "Text-to-speech generation"
+    },
+    {
+      "text": "The task of synthesizing audible speech from written text.",
+      "papers": [
+        "Charting the Landscape of African NLP: Mapping Progress and Shaping the Road Ahead"
+      ],
+      "original_name": "Text-to-speech"
+    },
+    {
+      "text": "The observable process of generating audible speech waveforms from an internal representation, such as discrete speech tokens.",
+      "papers": [
+        "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+        "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM"
+      ],
+      "original_name": "Speech synthesis"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "We also note that the generated audio appears different from all context audio samples, demonstrating the cross-modal reasoning capability of LLMs when using the LLM-Codec as the connector for text and audio. (Section 5.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Voice cloning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation",
+      "evidence": "We apply DiTAR to zero-shot text-to-speech (TTS) that aims to generate speech from unseen speakers\u2019 prompts. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Koel-TTS: Enhancing LLM based Speech Generation with Preference Alignment and Classifier Free Guidance",
+      "evidence": "LLM-based TTS systems face challenges, with hallucinations being a prominent issue (Sahoo et al., 2024; Song et al., 2024; Neekhara et al., 2024a; Borsos et al., 2023).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Koel-TTS: Enhancing LLM based Speech Generation with Preference Alignment and Classifier Free Guidance"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner",
+      "evidence": "We conduct experiments to validate the effectiveness of LLM-Codec in an in-context learning setting. ... we evaluate LLM-Codec on various audio understanding and generation tasks, such as speech emotion classification, audio classification, simple text-to-speech, and speech denoising.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats it as generating human-like or audible speech from text input, a text transcript, or written text. Definitions usually focus on producing spoken audio, and some formulations describe this as translating text into sequences of discrete audio tokens or producing speech from intermediate text responses. A smaller line of work broadens the task to converting textual content plus style instructions into speech, or to generating speech that is contextually appropriate for multi-turn dialogue; in those cases, success is described in terms of fluent, human-like speech with the requested acoustic style, users' needs, or dialogue context."
+    },
+    {
+      "label": "Variants.",
+      "text": "Several variants appear under nearby names, including conversational speech synthesis, speech generation, text-to-speech generation, and speech synthesis. Papers study context-aware conversational TTS, prompt-based customization with human-like intonation, style-conditioned generation from open-domain instructions, simple text-to-speech, and zero-shot TTS conditioned on a reference audio prompt or unseen speakers' prompts, sometimes described as generating speech in the voice of a target speaker and related to Voice cloning. Other formulations cast the task as audio language modeling, spectrogram reconstruction, or speech decoding from discrete speech tokens."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Instead, papers elicit the behavior directly through task setups such as text-conditioned speech generation, simple text-to-speech, zero-shot TTS, and speech synthesis from internal representations like discrete tokens or spectrograms, with some work framing it as an audio language modeling problem."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Construct links are limited and indirect: papers relate it to two constructs, In-context learning and Multimodal reasoning, and these links are recorded as related rather than as measurement, causal, or correlational claims. The framing does not converge on a single construct it indicates, because some work studies text-to-speech in an in-context learning setting, while other work connects generated audio differences to cross-modal reasoning capability. Related behavioral links also connect zero-shot TTS to Voice cloning, and other work says LLM-based TTS systems face Hallucination."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats it as generating human-like or audible speech from text input, a text transcript, or written text. Definitions usually focus on producing spoken audio, and some formulations describe this as translating text into sequences of discrete audio tokens or producing speech from intermediate text responses. A smaller line of work broadens the task to converting textual content plus style instructions into speech, or to generating speech that is contextually appropriate for multi-turn dialogue; in those cases, success is described in terms of fluent, human-like speech with the requested acoustic style, users' needs, or dialogue context.\n\nVariants. Several variants appear under nearby names, including conversational speech synthesis, speech generation, text-to-speech generation, and speech synthesis. Papers study context-aware conversational TTS, prompt-based customization with human-like intonation, style-conditioned generation from open-domain instructions, simple text-to-speech, and zero-shot TTS conditioned on a reference audio prompt or unseen speakers' prompts, sometimes described as generating speech in the voice of a target speaker and related to Voice cloning. Other formulations cast the task as audio language modeling, spectrogram reconstruction, or speech decoding from discrete speech tokens.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers elicit the behavior directly through task setups such as text-conditioned speech generation, simple text-to-speech, zero-shot TTS, and speech synthesis from internal representations like discrete tokens or spectrograms, with some work framing it as an audio language modeling problem.\n\nWhat it is taken as evidence of. Construct links are limited and indirect: papers relate it to two constructs, In-context learning and Multimodal reasoning, and these links are recorded as related rather than as measurement, causal, or correlational claims. The framing does not converge on a single construct it indicates, because some work studies text-to-speech in an in-context learning setting, while other work connects generated audio differences to cross-modal reasoning capability. Related behavioral links also connect zero-shot TTS to Voice cloning, and other work says LLM-based TTS systems face Hallucination.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Charting the Landscape of African NLP: Mapping Progress and Shaping the Road Ahead",
+      "Debatable Intelligence: Benchmarking LLM Judges via Debate Speech Evaluation",
+      "Eliciting Implicit Acoustic Styles from Open-domain Instructions to Facilitate Fine-grained Controllable Generation of Speech",
+      "Koel-TTS: Enhancing LLM based Speech Generation with Preference Alignment and Classifier Free Guidance",
+      "MIO: A Foundation Model on Multimodal Tokens",
+      "Mitigating Hallucinations in LM-Based TTS Models via Distribution Alignment Using GFlowNets",
+      "Towards Controllable Speech Synthesis in the Era of Large Language Models: A Systematic Survey"
+    ],
+    "iclr25": [
+      "HALL-E: Hierarchical Neural Codec Language Model for Minute-Long Zero-Shot Text-to-Speech Synthesis",
+      "LLaMA-Omni: Seamless Speech Interaction with Large Language Models",
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+    ],
+    "icml25": [
+      "ALMTokenizer: A Low-bitrate and Semantic-rich Audio Codec Tokenizer for Audio Language Modeling",
+      "DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation",
+      "Long-Form Speech Generation with Spoken Language Models"
+    ],
+    "neurips24": [
+      "Paralinguistics-Aware Speech-Empowered Large Language Models for Natural Conversation",
+      "UniAudio 1.5: Large Language Model-Driven Audio Codec is A Few-Shot Audio Task Learner"
+    ],
+    "iclr24": [
+      "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 7,
+    "iclr25": 3,
+    "icml25": 3,
+    "neurips24": 2,
+    "iclr24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

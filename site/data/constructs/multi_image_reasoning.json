@@ -1,0 +1,320 @@
+{
+  "canonical_name": "Multi-image reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats this as a latent model ability to integrate information across multiple images within a single context. Most descriptions emphasize cross-image comparison, synthesis, and answering questions or inferring relations from multiple images, while some frame the same ability as multi-image comprehension or understanding, focusing on identifying shared or consistent elements or handling multiple images with interleaved text. A smaller line of work extends the framing from multiple images to non-overlapping video frames, describing a need to accumulate geometric and visual cues across time to form a unified scene understanding.\n\nSpace of facets. Papers use several neighboring names, multi-image reasoning, multi-image comprehension, and multi-image understanding, for closely related descriptions of integrating across multiple images. They systematize it mainly by the kind of cross-image relation to recover: some ask for spatial, temporal, or logical relations among images, some focus on shared or consistent elements, and one paper recasts the problem as multi-frame integration across disjoint video frames. It is also contrasted with single-image visual understanding, with one study noting that models focused on single images are limited in their ability to interpret and integrate information across multiple images.\n\nSpace of measurement. Papers link it to 10 measurement instruments and 1 behavioral indicator, and the operationalization is almost entirely benchmark-based. The most common instruments are Mantis-Eval, BLINK, MMMU, NLVR2, and MVBench, with the remaining instruments also introduced as multi-image evaluation benchmarks or tasks; the evidence describes Mantis-Eval as a benchmark for multi-image reasoning, MuirBench as a benchmark to assess multi-image understanding, and SEED-Bench-2 as evaluating comprehension of multimodal inputs containing multiple images. This largely matches the definitions, because the instruments are presented as probing multi-image reasoning, understanding, or comprehension rather than a different target.\n\nLinks. Beyond measurement, one paper reports that Knowledge-based visual question answering is related to multi-image reasoning. The evidence places both within a benchmark that comprises scenarios involving multi-image reasoning and understanding, listing Knowledge Grounded QA alongside Multi-Image Reasoning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-image reasoning",
+    "Multi-image comprehension",
+    "Multi-frame integration",
+    "Multi-image understanding"
+  ],
+  "papers": [
+    "Out of Sight, Not Out of Context? Egocentric Spatial Reasoning in VLMs Across Disjoint Frames",
+    "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning",
+    "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+    "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+    "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+    "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+    "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+    "CoMemo: LVLMs Need Image Context with Image Memory",
+    "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+    "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems",
+    "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning",
+    "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+    "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+    "ReMI: A Dataset for Reasoning with Multiple Images"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "The latent ability to integrate information across multiple images and answer questions or infer relations that require cross-image comparison and synthesis.",
+      "papers": [
+        "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+        "CoMemo: LVLMs Need Image Context with Image Memory",
+        "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning"
+      ],
+      "original_name": "Multi-image reasoning"
+    },
+    {
+      "text": "The latent ability of a multimodal model to understand and integrate visual content across multiple images to identify shared or consistent elements.",
+      "papers": [
+        "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+        "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning"
+      ],
+      "original_name": "Multi-image comprehension"
+    },
+    {
+      "text": "The capacity to accumulate and synthesize geometric and visual cues across non-overlapping video frames to form a unified understanding of a scene.",
+      "papers": [
+        "Out of Sight, Not Out of Context? Egocentric Spatial Reasoning in VLMs Across Disjoint Frames"
+      ],
+      "original_name": "Multi-frame integration"
+    },
+    {
+      "text": "The latent ability to correctly interpret and reason over inputs containing multiple images and interleaved text.",
+      "papers": [
+        "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models"
+      ],
+      "original_name": "Multi-image understanding"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Mantis-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "We additionally evaluate models on MMMU [Yue et al., 2024](containing both single and multi-image questions) and Mantis-Eval [Jiang et al., 2024](all multi-image questions) to probe a model\u2019s multi-image reasoning abilities beyond in-context learning evaluations. (Section 4.2)",
+      "paper_count": 6,
+      "paper_weight": 6.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ],
+        "iclr25": [
+          "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+          "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ],
+        "acl25": [
+          "Design Choices for Extending the Context Length of Visual Language Models"
+        ],
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BLINK",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+      "evidence": "\u201cTable 4 presents the the evaluation results on multi-image understanding benchmarks. The evaluation benchmarks consist of ... BLINK ...\u201d",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+          "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models"
+        ],
+        "acl25": [
+          "Design Choices for Extending the Context Length of Visual Language Models"
+        ],
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMMU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "evidence": "We additionally evaluate models on MMMU [Yue et al., 2024](containing both single and multi-image questions) and Mantis-Eval [Jiang et al., 2024](all multi-image questions) to probe a model\u2019s multi-image reasoning abilities beyond in-context learning evaluations. (Section 4.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens"
+        ],
+        "iclr25": [
+          "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NLVR2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+      "evidence": "\u201cTable 4 presents the the evaluation results on multi-image understanding benchmarks. The evaluation benchmarks consist of NLVR2 ...\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+          "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVerse-mv",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+      "evidence": "\u201cTable 4 presents the the evaluation results on multi-image understanding benchmarks. The evaluation benchmarks consist of ... MathVerse-mv ...\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SciVerse-mv",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models",
+      "evidence": "\u201cTable 4 presents the the evaluation results on multi-image understanding benchmarks. The evaluation benchmarks consist of ... SciVerse-mv ...\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "mPLUG-Owl3: Towards Long Image-Sequence Understanding in Multi-Modal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MVBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+      "evidence": "First, we select five multi-image benchmarks: MMMU (Yue et al., 2024), BLINK (Fu et al., 2024), Mantis (Jiang et al., 2024), NLVR2 (Suhr et al., 2018), and MVBench (Li et al., 2024c). (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MuirBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "we introduce MUIRBENCH (MULTI-IMAGE UNDERSTANDING BENCHMARK), a comprehensive benchmark designed to rigorously assess and evaluate multi-image understanding by multimodal LLMs. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SEED-Bench-2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning",
+      "evidence": "Multi-image Tasks: Seed-Bench-2 (Li et al., 2024) evaluates the ability to comprehend multimodal inputs containing multiple images.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Q-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Design Choices for Extending the Context Length of Visual Language Models",
+      "evidence": "For multi-image tasks, we incorporate Mantis-Eval (Jiang et al., 2024), QBench (Wu et al., 2024b), and BLINK (Fu et al., 2024b), in line with LLaVA-Interleave (Li et al., 2024a). (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Design Choices for Extending the Context Length of Visual Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge-based visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "evidence": "DemonBench comprises seven scenarios involving multi-image reasoning and understanding, including tasks such as Multi-Modal Dialogue, Visual Relation Inference, Knowledge Grounded QA, and Multi-Image Reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 10,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats this as a latent model ability to integrate information across multiple images within a single context. Most descriptions emphasize cross-image comparison, synthesis, and answering questions or inferring relations from multiple images, while some frame the same ability as multi-image comprehension or understanding, focusing on identifying shared or consistent elements or handling multiple images with interleaved text. A smaller line of work extends the framing from multiple images to non-overlapping video frames, describing a need to accumulate geometric and visual cues across time to form a unified scene understanding."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several neighboring names, multi-image reasoning, multi-image comprehension, and multi-image understanding, for closely related descriptions of integrating across multiple images. They systematize it mainly by the kind of cross-image relation to recover: some ask for spatial, temporal, or logical relations among images, some focus on shared or consistent elements, and one paper recasts the problem as multi-frame integration across disjoint video frames. It is also contrasted with single-image visual understanding, with one study noting that models focused on single images are limited in their ability to interpret and integrate information across multiple images."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link it to 10 measurement instruments and 1 behavioral indicator, and the operationalization is almost entirely benchmark-based. The most common instruments are Mantis-Eval, BLINK, MMMU, NLVR2, and MVBench, with the remaining instruments also introduced as multi-image evaluation benchmarks or tasks; the evidence describes Mantis-Eval as a benchmark for multi-image reasoning, MuirBench as a benchmark to assess multi-image understanding, and SEED-Bench-2 as evaluating comprehension of multimodal inputs containing multiple images. This largely matches the definitions, because the instruments are presented as probing multi-image reasoning, understanding, or comprehension rather than a different target."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper reports that Knowledge-based visual question answering is related to multi-image reasoning. The evidence places both within a benchmark that comprises scenarios involving multi-image reasoning and understanding, listing Knowledge Grounded QA alongside Multi-Image Reasoning."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats this as a latent model ability to integrate information across multiple images within a single context. Most descriptions emphasize cross-image comparison, synthesis, and answering questions or inferring relations from multiple images, while some frame the same ability as multi-image comprehension or understanding, focusing on identifying shared or consistent elements or handling multiple images with interleaved text. A smaller line of work extends the framing from multiple images to non-overlapping video frames, describing a need to accumulate geometric and visual cues across time to form a unified scene understanding.\n\nSpace of facets. Papers use several neighboring names, multi-image reasoning, multi-image comprehension, and multi-image understanding, for closely related descriptions of integrating across multiple images. They systematize it mainly by the kind of cross-image relation to recover: some ask for spatial, temporal, or logical relations among images, some focus on shared or consistent elements, and one paper recasts the problem as multi-frame integration across disjoint video frames. It is also contrasted with single-image visual understanding, with one study noting that models focused on single images are limited in their ability to interpret and integrate information across multiple images.\n\nSpace of measurement. Papers link it to 10 measurement instruments and 1 behavioral indicator, and the operationalization is almost entirely benchmark-based. The most common instruments are Mantis-Eval, BLINK, MMMU, NLVR2, and MVBench, with the remaining instruments also introduced as multi-image evaluation benchmarks or tasks; the evidence describes Mantis-Eval as a benchmark for multi-image reasoning, MuirBench as a benchmark to assess multi-image understanding, and SEED-Bench-2 as evaluating comprehension of multimodal inputs containing multiple images. This largely matches the definitions, because the instruments are presented as probing multi-image reasoning, understanding, or comprehension rather than a different target.\n\nLinks. Beyond measurement, one paper reports that Knowledge-based visual question answering is related to multi-image reasoning. The evidence places both within a benchmark that comprises scenarios involving multi-image reasoning and understanding, listing Knowledge Grounded QA alongside Multi-Image Reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Out of Sight, Not Out of Context? Egocentric Spatial Reasoning in VLMs Across Disjoint Frames"
+    ],
+    "iclr25": [
+      "MIA-DPO: Multi-Image Augmented Direct Preference Optimization For Large Vision-Language Models",
+      "MMAD: A Comprehensive Benchmark for Multimodal Large Language Models in Industrial Anomaly Detection",
+      "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+    ],
+    "icml25": [
+      "CoMemo: LVLMs Need Image Context with Image Memory",
+      "EasyRef: Omni-Generalized Group Image Reference for Diffusion Models via Multimodal LLM",
+      "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems"
+    ],
+    "neurips24": [
+      "MINT-1T: Scaling Open-Source Multimodal Data by 10x: A Multimodal Dataset with One Trillion Tokens",
+      "MaVEn: An Effective Multi-granularity Hybrid Visual Encoding Framework for Multimodal Large Language Model",
+      "ReMI: A Dataset for Reasoning with Multiple Images"
+    ],
+    "iclr24": [
+      "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning"
+    ],
+    "naacl25": [
+      "From Introspection to Best Practices: Principled Analysis of Demonstrations in Multimodal In-Context Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr25": 5,
+    "icml25": 3,
+    "neurips24": 3,
+    "iclr24": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

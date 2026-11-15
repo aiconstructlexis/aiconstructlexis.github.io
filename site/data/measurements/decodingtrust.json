@@ -1,0 +1,140 @@
+{
+  "canonical_name": "DecodingTrust",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, the prevailing usage treats DecodingTrust as a benchmark dataset for evaluating LLM trustworthiness, and often safety, with several papers describing it as covering multiple perspectives. Some papers narrow that broad framing to particular components, especially a stereotypes partition, described in one study as 48 statements for race groups black and white, and a privacy dataset centered on the Enron email extraction task. A smaller framing presents it as a public leaderboard that integrates large amounts of new test data to evaluate and rank safety and trustworthiness, and another describes it through red-teaming prompts or instructions.\n\nWhat it is claimed to measure. Papers link DecodingTrust to 2 constructs and 1 behavioral indicator. Most definitions frame it as measuring Trustworthiness, while other papers use it to measure Stereotyping and Privacy leakage, with the privacy use tied to the Enron email extraction task and data leakage. The measurement claims therefore span both a broad construct and more specific targets, rather than converging on only one use.\n\nSpace of uses. No measurement instrument is linked to it through formal relationships. In practice, papers position it both as a broad benchmark for trustworthiness and as a source of specific evaluation slices, and they mention it alongside TrustLLM, CrowS-Pairs, AdvBench, SafetyPrompt, and Enkrypt AI. These pairings vary by use, including stereotype evaluation with CrowS-Pairs, comparison to TrustLLM as another broad trustworthiness benchmark, grouping with AdvBench and SafetyPrompt as collections of red-teaming instructions, and mention with Enkrypt AI as a leaderboard using large amounts of new test data.\n\nConcerns raised. One paper raises a concern about its testing format, describing DecodingTrust as using static templates that do not account for the dynamic nature of red-teaming algorithms, which that paper says limits effectiveness.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Decoding Trust",
+    "DecodingTrust"
+  ],
+  "papers": [
+    "Certifying Counterfactual Bias in LLMs",
+    "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking",
+    "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge",
+    "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+    "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+    "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+    "Jailbreaking Large Language Models Against Moderation Guardrails via Cipher Characters",
+    "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "A benchmark dataset used to evaluate LLM properties, including stereotype bias against demographic groups, here using the stereotypes partition.",
+      "papers": [
+        "Certifying Counterfactual Bias in LLMs"
+      ],
+      "original_name": "Decoding Trust"
+    },
+    {
+      "text": "A benchmark dataset designed to evaluate the trustworthiness of LLMs, including tasks related to privacy, such as the Enron email extraction task used to assess data leakage.",
+      "papers": [
+        "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking",
+        "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+        "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+        "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+        "Jailbreaking Large Language Models Against Moderation Guardrails via Cipher Characters",
+        "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types"
+      ],
+      "original_name": "DecodingTrust"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+      "evidence": "DecodingTrust (Wang et al. [2023]) was among the first to aim for a comprehensive assessment of trustworthiness in GPT models from several perspectives. (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Privacy leakage",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking",
+      "evidence": "We use the DecodingTrust (Wang et al., 2024) privacy dataset, focusing on the Enron email extraction task. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Stereotyping",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+      "evidence": "To verify ALI-Agent\u2019s effectiveness as a general evaluation framework, we conduct experiments on six datasets from three distinct aspects of human values: stereotypes (DecodingTrust [11], CrowS-Pairs [2])...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, the prevailing usage treats DecodingTrust as a benchmark dataset for evaluating LLM trustworthiness, and often safety, with several papers describing it as covering multiple perspectives. Some papers narrow that broad framing to particular components, especially a stereotypes partition, described in one study as 48 statements for race groups black and white, and a privacy dataset centered on the Enron email extraction task. A smaller framing presents it as a public leaderboard that integrates large amounts of new test data to evaluate and rank safety and trustworthiness, and another describes it through red-teaming prompts or instructions."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link DecodingTrust to 2 constructs and 1 behavioral indicator. Most definitions frame it as measuring Trustworthiness, while other papers use it to measure Stereotyping and Privacy leakage, with the privacy use tied to the Enron email extraction task and data leakage. The measurement claims therefore span both a broad construct and more specific targets, rather than converging on only one use."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it through formal relationships. In practice, papers position it both as a broad benchmark for trustworthiness and as a source of specific evaluation slices, and they mention it alongside TrustLLM, CrowS-Pairs, AdvBench, SafetyPrompt, and Enkrypt AI. These pairings vary by use, including stereotype evaluation with CrowS-Pairs, comparison to TrustLLM as another broad trustworthiness benchmark, grouping with AdvBench and SafetyPrompt as collections of red-teaming instructions, and mention with Enkrypt AI as a leaderboard using large amounts of new test data."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One paper raises a concern about its testing format, describing DecodingTrust as using static templates that do not account for the dynamic nature of red-teaming algorithms, which that paper says limits effectiveness."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, the prevailing usage treats DecodingTrust as a benchmark dataset for evaluating LLM trustworthiness, and often safety, with several papers describing it as covering multiple perspectives. Some papers narrow that broad framing to particular components, especially a stereotypes partition, described in one study as 48 statements for race groups black and white, and a privacy dataset centered on the Enron email extraction task. A smaller framing presents it as a public leaderboard that integrates large amounts of new test data to evaluate and rank safety and trustworthiness, and another describes it through red-teaming prompts or instructions.\n\nWhat it is claimed to measure. Papers link DecodingTrust to 2 constructs and 1 behavioral indicator. Most definitions frame it as measuring Trustworthiness, while other papers use it to measure Stereotyping and Privacy leakage, with the privacy use tied to the Enron email extraction task and data leakage. The measurement claims therefore span both a broad construct and more specific targets, rather than converging on only one use.\n\nSpace of uses. No measurement instrument is linked to it through formal relationships. In practice, papers position it both as a broad benchmark for trustworthiness and as a source of specific evaluation slices, and they mention it alongside TrustLLM, CrowS-Pairs, AdvBench, SafetyPrompt, and Enkrypt AI. These pairings vary by use, including stereotype evaluation with CrowS-Pairs, comparison to TrustLLM as another broad trustworthiness benchmark, grouping with AdvBench and SafetyPrompt as collections of red-teaming instructions, and mention with Enkrypt AI as a leaderboard using large amounts of new test data.\n\nConcerns raised. One paper raises a concern about its testing format, describing DecodingTrust as using static templates that do not account for the dynamic nature of red-teaming algorithms, which that paper says limits effectiveness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Certifying Counterfactual Bias in LLMs",
+      "IterGen: Iterative Semantic-aware Structured LLM Generation with Backtracking"
+    ],
+    "icml25": [
+      "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge",
+      "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing"
+    ],
+    "neurips24": [
+      "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+      "Enhancing Multiple Dimensions of Trustworthiness in LLMs via Sparse Activation Control",
+      "Jailbreaking Large Language Models Against Moderation Guardrails via Cipher Characters",
+      "SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 2,
+    "neurips24": 4
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

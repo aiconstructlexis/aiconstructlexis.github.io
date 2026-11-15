@@ -1,0 +1,105 @@
+{
+  "canonical_name": "Episodic memory",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, episodic memory is consistently framed as access to specific past episodes rather than general knowledge. Some papers describe it at the model level as storage and retrieval of sequence-specific information, independent of generalized or natural language knowledge, while others emphasize recall of events grounded in time and space or of past user interactions and autobiographical experiences. The main variation is whether the construct is phrased as a storage and retrieval capacity or in more human-like autobiographical terms.\n\nSpace of facets. The clearest systematization is a contrast with semantic memory or generalized world knowledge: episodic memory is reserved for details of specific events, personal experiences, or sequence-specific information. Some authors also use the term for a memory mechanism, with embeddings or recurrent state described as serving as episodic memory that passes information between time steps, while others use the same term for a latent ability to recall specific experiences.\n\nSpace of measurement. In the linked operationalizations, no measurement instrument is attached to episodic memory, and no linked construct is recorded. One behavioral indicator is linked, Event segmentation, but it appears through a related link rather than a direct measured_by relation. The papers instead describe the construct through behaviors such as storing sequence-specific information across time steps, recalling events grounded in time and space, and recalling past user interactions, which matches how they define it.\n\nLinks. The only reported link is that episodic memory is related to Event segmentation. In that account, episodic memory is discussed in terms of how experiences are segmented into events. No causal or correlational relationships are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Episodic memory"
+  ],
+  "papers": [
+    "Cramming 1568 Tokens into a Single Vector and Back Again: Exploring the Limits of Embedding Space Capacity",
+    "PRIME: Large Language Model Personalization with Cognitive Dual-Memory and Personalized Thought Process",
+    "Episodic Memories Generation and Evaluation Benchmark for Large Language Models",
+    "Human-inspired Episodic Memory for Infinite Context LLMs",
+    "MMEgo: Towards Building Egocentric Multimodal LLMs for Video QA",
+    "Emergence of Episodic Memory in Transformers: Characterizing Changes in Temporal Structure of Attention Scores During Training",
+    "Linking In-context Learning in Transformers to Human Episodic Memory"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The ability of a model to store and retrieve specific, sequence-level information, distinct from its generalized world knowledge.",
+      "papers": [
+        "Cramming 1568 Tokens into a Single Vector and Back Again: Exploring the Limits of Embedding Space Capacity",
+        "Episodic Memories Generation and Evaluation Benchmark for Large Language Models",
+        "PRIME: Large Language Model Personalization with Cognitive Dual-Memory and Personalized Thought Process"
+      ],
+      "original_name": "Episodic memory"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Event segmentation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Human-inspired Episodic Memory for Infinite Context LLMs",
+      "evidence": "These models have revealed key aspects of episodic memory, particularly in describing how experiences are segmented into events",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Human-inspired Episodic Memory for Infinite Context LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, episodic memory is consistently framed as access to specific past episodes rather than general knowledge. Some papers describe it at the model level as storage and retrieval of sequence-specific information, independent of generalized or natural language knowledge, while others emphasize recall of events grounded in time and space or of past user interactions and autobiographical experiences. The main variation is whether the construct is phrased as a storage and retrieval capacity or in more human-like autobiographical terms."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The clearest systematization is a contrast with semantic memory or generalized world knowledge: episodic memory is reserved for details of specific events, personal experiences, or sequence-specific information. Some authors also use the term for a memory mechanism, with embeddings or recurrent state described as serving as episodic memory that passes information between time steps, while others use the same term for a latent ability to recall specific experiences."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "In the linked operationalizations, no measurement instrument is attached to episodic memory, and no linked construct is recorded. One behavioral indicator is linked, Event segmentation, but it appears through a related link rather than a direct measured_by relation. The papers instead describe the construct through behaviors such as storing sequence-specific information across time steps, recalling events grounded in time and space, and recalling past user interactions, which matches how they define it."
+    },
+    {
+      "label": "Links.",
+      "text": "The only reported link is that episodic memory is related to Event segmentation. In that account, episodic memory is discussed in terms of how experiences are segmented into events. No causal or correlational relationships are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, episodic memory is consistently framed as access to specific past episodes rather than general knowledge. Some papers describe it at the model level as storage and retrieval of sequence-specific information, independent of generalized or natural language knowledge, while others emphasize recall of events grounded in time and space or of past user interactions and autobiographical experiences. The main variation is whether the construct is phrased as a storage and retrieval capacity or in more human-like autobiographical terms.\n\nSpace of facets. The clearest systematization is a contrast with semantic memory or generalized world knowledge: episodic memory is reserved for details of specific events, personal experiences, or sequence-specific information. Some authors also use the term for a memory mechanism, with embeddings or recurrent state described as serving as episodic memory that passes information between time steps, while others use the same term for a latent ability to recall specific experiences.\n\nSpace of measurement. In the linked operationalizations, no measurement instrument is attached to episodic memory, and no linked construct is recorded. One behavioral indicator is linked, Event segmentation, but it appears through a related link rather than a direct measured_by relation. The papers instead describe the construct through behaviors such as storing sequence-specific information across time steps, recalling events grounded in time and space, and recalling past user interactions, which matches how they define it.\n\nLinks. The only reported link is that episodic memory is related to Event segmentation. In that account, episodic memory is discussed in terms of how experiences are segmented into events. No causal or correlational relationships are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Cramming 1568 Tokens into a Single Vector and Back Again: Exploring the Limits of Embedding Space Capacity"
+    ],
+    "emnlp25": [
+      "PRIME: Large Language Model Personalization with Cognitive Dual-Memory and Personalized Thought Process"
+    ],
+    "iclr25": [
+      "Episodic Memories Generation and Evaluation Benchmark for Large Language Models",
+      "Human-inspired Episodic Memory for Infinite Context LLMs",
+      "MMEgo: Towards Building Egocentric Multimodal LLMs for Video QA"
+    ],
+    "naacl25": [
+      "Emergence of Episodic Memory in Transformers: Characterizing Changes in Temporal Structure of Attention Scores During Training"
+    ],
+    "neurips24": [
+      "Linking In-context Learning in Transformers to Human Episodic Memory"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr25": 3,
+    "naacl25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

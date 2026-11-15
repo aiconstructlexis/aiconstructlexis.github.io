@@ -1,0 +1,66 @@
+{
+  "canonical_name": "Warmth",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, warmth is treated as a trait or dimension defined through empathy, emotional connection, and friendliness. Definitions describe it as the extent to which a chatbot conveys empathy and emotional connection in interaction, including whether the chatbot conveys empathy, while another paper frames it as the perceived intent or social friendliness of an impression target, reflected in whether it is seen as benevolent or friendly versus hostile or combative. The main variation is whether warmth is described as what a chatbot conveys during interaction or as a perceived dimension of impressions.\n\nSpace of facets. The only explicit systematization places warmth alongside competence as one of two dimensions of impressions. In that usage, warmth and competence are reported to account for 54-63% of the variance in LLM-generated stereotypes.\n\nSpace of measurement. Papers do not link warmth to any measurement instrument, and they do not link it to any behavioral indicator. The only operational detail in the descriptions is rating-based language: one paper evaluates whether the chatbot conveys empathy and reports positive ratings across characteristics, particularly warmth, but no named instrument is attached to that use.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Warmth"
+  ],
+  "papers": [
+    "Finding A Voice: Exploring the Potential of African American Dialect and Voice Generation for Chatbots",
+    "HumT DumT: Measuring and controlling human-like language in LLMs",
+    "A Comprehensive Framework to Operationalize Social Stereotypes for Responsible AI Evaluations",
+    "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The extent to which the chatbot conveys empathy and emotional connection during interaction.",
+      "papers": [
+        "Finding A Voice: Exploring the Potential of African American Dialect and Voice Generation for Chatbots",
+        "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions"
+      ],
+      "original_name": "Warmth"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, warmth is treated as a trait or dimension defined through empathy, emotional connection, and friendliness. Definitions describe it as the extent to which a chatbot conveys empathy and emotional connection in interaction, including whether the chatbot conveys empathy, while another paper frames it as the perceived intent or social friendliness of an impression target, reflected in whether it is seen as benevolent or friendly versus hostile or combative. The main variation is whether warmth is described as what a chatbot conveys during interaction or as a perceived dimension of impressions."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The only explicit systematization places warmth alongside competence as one of two dimensions of impressions. In that usage, warmth and competence are reported to account for 54-63% of the variance in LLM-generated stereotypes."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers do not link warmth to any measurement instrument, and they do not link it to any behavioral indicator. The only operational detail in the descriptions is rating-based language: one paper evaluates whether the chatbot conveys empathy and reports positive ratings across characteristics, particularly warmth, but no named instrument is attached to that use."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, warmth is treated as a trait or dimension defined through empathy, emotional connection, and friendliness. Definitions describe it as the extent to which a chatbot conveys empathy and emotional connection in interaction, including whether the chatbot conveys empathy, while another paper frames it as the perceived intent or social friendliness of an impression target, reflected in whether it is seen as benevolent or friendly versus hostile or combative. The main variation is whether warmth is described as what a chatbot conveys during interaction or as a perceived dimension of impressions.\n\nSpace of facets. The only explicit systematization places warmth alongside competence as one of two dimensions of impressions. In that usage, warmth and competence are reported to account for 54-63% of the variance in LLM-generated stereotypes.\n\nSpace of measurement. Papers do not link warmth to any measurement instrument, and they do not link it to any behavioral indicator. The only operational detail in the descriptions is rating-based language: one paper evaluates whether the chatbot conveys empathy and reports positive ratings across characteristics, particularly warmth, but no named instrument is attached to that use.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Finding A Voice: Exploring the Potential of African American Dialect and Voice Generation for Chatbots",
+      "HumT DumT: Measuring and controlling human-like language in LLMs"
+    ],
+    "emnlp25": [
+      "A Comprehensive Framework to Operationalize Social Stereotypes for Responsible AI Evaluations",
+      "Artificial Impressions: Evaluating Large Language Model Behavior Through the Lens of Trait Impressions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

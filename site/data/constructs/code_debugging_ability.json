@@ -1,0 +1,48 @@
+{
+  "canonical_name": "Code debugging ability",
+  "type": "construct",
+  "canonical_definition": "The latent ability of an LLM to identify and correct errors in its own generated code, improving functional correctness without external fine-tuning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Code repair capability"
+  ],
+  "papers": [
+    "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance",
+    "AuPair: Golden Example Pairs for Code Repair"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "The latent ability of an LLM to identify and correct errors in its own generated code, improving functional correctness without external fine-tuning.",
+      "papers": [
+        "AuPair: Golden Example Pairs for Code Repair"
+      ],
+      "original_name": "Code repair capability"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The latent ability of an LLM to identify and correct errors in its own generated code, improving functional correctness without external fine-tuning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance"
+    ],
+    "icml25": [
+      "AuPair: Golden Example Pairs for Code Repair"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

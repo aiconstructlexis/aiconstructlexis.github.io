@@ -1,0 +1,92 @@
+{
+  "canonical_name": "Sequential recommendation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage is predicting the next item a user will interact with from a chronologically ordered or preceding history of interactions. Papers largely agree on this next-item forecasting framing, describing the objective as predicting users\u2019 subsequent choices from historical records, and one formalization states it as selecting the item with the highest probability given the user sequence. As one paper puts it, sequential recommender systems \u201caim to predict users\u2019 subsequent choices based on their historical interactions\u201d (LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation).\n\nVariants. Most papers use the name sequential recommendation, while some use next-item prediction for the same observable behavior. A smaller line of work presents it as a natural language generation task, with prompts such as recommending an item for a user based on purchased items and outputs in the form of an item identifier. Another variant reformulates the task as next-token prediction and then forecasts the next item from the predicted token sequence (RecGPT: A Foundation Model for Sequential Recommendation).\n\nSpace of elicitation and scores. No measurement instrument is linked to it, so papers do not connect this behavior to a named elicitation or scoring instrument.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not explicitly treat this behavior as evidence of a named construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Sequential recommendation",
+    "Next-item prediction"
+  ],
+  "papers": [
+    "RecBase: Generative Foundation Model Pretraining for Zero-Shot Recommendation",
+    "RecGPT: A Foundation Model for Sequential Recommendation",
+    "SLMRec: Distilling Large Language Models into Small for Sequential Recommendation",
+    "Improving LLMs for Recommendation with Out-Of-Vocabulary Tokens",
+    "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+    "LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation",
+    "On Softmax Direct Preference Optimization for Recommendation"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The task of predicting the next item a user is likely to interact with based on their chronologically ordered history of previous interactions.",
+      "papers": [
+        "LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation",
+        "Improving LLMs for Recommendation with Out-Of-Vocabulary Tokens"
+      ],
+      "original_name": "Sequential recommendation"
+    },
+    {
+      "text": "The observable behavior of forecasting the next item a user will interact with based on their preceding sequence of interactions.",
+      "papers": [
+        "RecGPT: A Foundation Model for Sequential Recommendation"
+      ],
+      "original_name": "Next-item prediction"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage is predicting the next item a user will interact with from a chronologically ordered or preceding history of interactions. Papers largely agree on this next-item forecasting framing, describing the objective as predicting users\u2019 subsequent choices from historical records, and one formalization states it as selecting the item with the highest probability given the user sequence. As one paper puts it, sequential recommender systems \u201caim to predict users\u2019 subsequent choices based on their historical interactions\u201d (LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation)."
+    },
+    {
+      "label": "Variants.",
+      "text": "Most papers use the name sequential recommendation, while some use next-item prediction for the same observable behavior. A smaller line of work presents it as a natural language generation task, with prompts such as recommending an item for a user based on purchased items and outputs in the form of an item identifier. Another variant reformulates the task as next-token prediction and then forecasts the next item from the predicted token sequence (RecGPT: A Foundation Model for Sequential Recommendation)."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it, so papers do not connect this behavior to a named elicitation or scoring instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it, so papers do not explicitly treat this behavior as evidence of a named construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage is predicting the next item a user will interact with from a chronologically ordered or preceding history of interactions. Papers largely agree on this next-item forecasting framing, describing the objective as predicting users\u2019 subsequent choices from historical records, and one formalization states it as selecting the item with the highest probability given the user sequence. As one paper puts it, sequential recommender systems \u201caim to predict users\u2019 subsequent choices based on their historical interactions\u201d (LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation).\n\nVariants. Most papers use the name sequential recommendation, while some use next-item prediction for the same observable behavior. A smaller line of work presents it as a natural language generation task, with prompts such as recommending an item for a user based on purchased items and outputs in the form of an item identifier. Another variant reformulates the task as next-token prediction and then forecasts the next item from the predicted token sequence (RecGPT: A Foundation Model for Sequential Recommendation).\n\nSpace of elicitation and scores. No measurement instrument is linked to it, so papers do not connect this behavior to a named elicitation or scoring instrument.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not explicitly treat this behavior as evidence of a named construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "RecBase: Generative Foundation Model Pretraining for Zero-Shot Recommendation",
+      "RecGPT: A Foundation Model for Sequential Recommendation"
+    ],
+    "iclr25": [
+      "SLMRec: Distilling Large Language Models into Small for Sequential Recommendation"
+    ],
+    "neurips24": [
+      "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "LLM-ESR: Large Language Models Enhancement for Long-tailed Sequential Recommendation",
+      "On Softmax Direct Preference Optimization for Recommendation"
+    ],
+    "icml25": [
+      "Improving LLMs for Recommendation with Out-Of-Vocabulary Tokens"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 1,
+    "neurips24": 3,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

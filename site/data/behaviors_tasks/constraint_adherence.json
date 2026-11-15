@@ -1,0 +1,147 @@
+{
+  "canonical_name": "Constraint adherence",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as producing outputs that obey explicit rules or requirements in the prompt or task. Most definitions focus on compliance that can be checked directly, such as plans whose actions satisfy stated constraints, responses that meet formatting, structural, or stylistic rules, or solutions that respect prohibitions like not using a particular technique; a smaller line of work phrases it as a latent ability to satisfy multiple design constraints at once, including component usage, efficiency, output voltage, and feasibility. Success is therefore framed in domain-specific terms, from avoiding illegal actions and unsatisfied goals to obeying answer-length or other structural restrictions.\n\nVariants. Papers also use nearby labels such as constraint following and constraint satisfaction. The behavior is studied in several settings: planning, where agents are expected to generate plans that reference and obey prompt constraints, with failures described as unmet preconditions in BlocksWorld and unfulfilled hard constraints in TravelPlanner; crosswords, where the relevant constraints are answer length and character overlaps; code generation, where authors incrementally add new denial-style restrictions to force new strategies; prompt-conditioned response generation, where verifiable requirements can include formatting or stylistic rules such as alliteration; and circuit topology generation, where outputs are expected to satisfy component-pool, efficiency, and output-voltage constraints.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to it, Blocksworld, a planning benchmark in which agents execute actions from an initial state to a goal state and all actions must adhere to prompt-defined constraints. Beyond that named instrument, papers operationalize the behavior by checking whether plans violate constraints and become illegal or leave goals unsatisfied, whether crossword answers obey length limits, whether responses satisfy verifiable formatting or stylistic rules, and whether generated code follows denial-prompted restrictions.\n\nWhat it is taken as evidence of. It is linked to two constructs, with different kinds of claims rather than a single shared interpretation. One paper reports that Constraint adherence is related to Length control ability, describing adherence to length constraints as a component of crossword solving, while another paper claims a causal relationship from Model selection ability to Constraint adherence, saying that balancing model capabilities, licensing requirements, resource constraints, and performance metrics in model selection aligns execution with task requirements and practical considerations.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Constraint adherence",
+    "Constraint following",
+    "Constraint satisfaction"
+  ],
+  "papers": [
+    "Leveraging Loanword Constraints for Improving Machine Translation in a Low-Resource Multilingual Context",
+    "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+    "AUTOCIRCUIT-RL: Reinforcement Learning-Driven LLM for Automated Circuit Topology Generation",
+    "Revealing the Barriers of Language Agents in Planning",
+    "A Systematic Examination of Preference Learning through the Lens of Instruction-Following",
+    "Benchmarking Language Model Creativity: A Case Study on Code Generation",
+    "Language Models are Crossword Solvers"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The latent ability of the model to generate outputs that satisfy multiple, specified design constraints such as component usage, efficiency, and output voltage.",
+      "papers": [
+        "AUTOCIRCUIT-RL: Reinforcement Learning-Driven LLM for Automated Circuit Topology Generation",
+        "Revealing the Barriers of Language Agents in Planning",
+        "Language Models are Crossword Solvers"
+      ],
+      "original_name": "Constraint adherence"
+    },
+    {
+      "text": "The observable behavior of adhering to explicitly stated prohibitions or requirements when generating a solution, such as not using a specific programming technique.",
+      "papers": [
+        "Benchmarking Language Model Creativity: A Case Study on Code Generation"
+      ],
+      "original_name": "Constraint following"
+    },
+    {
+      "text": "The observable behavior of a model generating responses that meet specific, verifiable requirements such as formatting, structural, or stylistic rules defined in the prompt.",
+      "papers": [
+        "A Systematic Examination of Preference Learning through the Lens of Instruction-Following"
+      ],
+      "original_name": "Constraint satisfaction"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Model selection ability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle",
+      "evidence": "\"By balancing these factors: model capabilities, licensing requirements, resource constraints, and performance metrics, we systematically select the most suitable model for each action. This ensures that the execution of the plan is aligned with both the technical requirements of the tasks and the practical considerations of the user.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Blocksworld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Revealing the Barriers of Language Agents in Planning",
+      "evidence": "BlocksWorld (Valmeekam et al., 2024a) is a planning benchmark that provides a domain description, including action and constraint definitions, and requires agents to execute actions to transition from an initial state to a goal state. All actions must adhere to the constraints outlined in the prompt. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Revealing the Barriers of Language Agents in Planning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Length control ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Language Models are Crossword Solvers",
+      "evidence": "\u201cthe ability of LLMs to adhere to length constraints, which is a critical component of solving crossword puzzles\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Language Models are Crossword Solvers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats this behavior as producing outputs that obey explicit rules or requirements in the prompt or task. Most definitions focus on compliance that can be checked directly, such as plans whose actions satisfy stated constraints, responses that meet formatting, structural, or stylistic rules, or solutions that respect prohibitions like not using a particular technique; a smaller line of work phrases it as a latent ability to satisfy multiple design constraints at once, including component usage, efficiency, output voltage, and feasibility. Success is therefore framed in domain-specific terms, from avoiding illegal actions and unsatisfied goals to obeying answer-length or other structural restrictions."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers also use nearby labels such as constraint following and constraint satisfaction. The behavior is studied in several settings: planning, where agents are expected to generate plans that reference and obey prompt constraints, with failures described as unmet preconditions in BlocksWorld and unfulfilled hard constraints in TravelPlanner; crosswords, where the relevant constraints are answer length and character overlaps; code generation, where authors incrementally add new denial-style restrictions to force new strategies; prompt-conditioned response generation, where verifiable requirements can include formatting or stylistic rules such as alliteration; and circuit topology generation, where outputs are expected to satisfy component-pool, efficiency, and output-voltage constraints."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one measurement instrument is linked to it, Blocksworld, a planning benchmark in which agents execute actions from an initial state to a goal state and all actions must adhere to prompt-defined constraints. Beyond that named instrument, papers operationalize the behavior by checking whether plans violate constraints and become illegal or leave goals unsatisfied, whether crossword answers obey length limits, whether responses satisfy verifiable formatting or stylistic rules, and whether generated code follows denial-prompted restrictions."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "It is linked to two constructs, with different kinds of claims rather than a single shared interpretation. One paper reports that Constraint adherence is related to Length control ability, describing adherence to length constraints as a component of crossword solving, while another paper claims a causal relationship from Model selection ability to Constraint adherence, saying that balancing model capabilities, licensing requirements, resource constraints, and performance metrics in model selection aligns execution with task requirements and practical considerations."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as producing outputs that obey explicit rules or requirements in the prompt or task. Most definitions focus on compliance that can be checked directly, such as plans whose actions satisfy stated constraints, responses that meet formatting, structural, or stylistic rules, or solutions that respect prohibitions like not using a particular technique; a smaller line of work phrases it as a latent ability to satisfy multiple design constraints at once, including component usage, efficiency, output voltage, and feasibility. Success is therefore framed in domain-specific terms, from avoiding illegal actions and unsatisfied goals to obeying answer-length or other structural restrictions.\n\nVariants. Papers also use nearby labels such as constraint following and constraint satisfaction. The behavior is studied in several settings: planning, where agents are expected to generate plans that reference and obey prompt constraints, with failures described as unmet preconditions in BlocksWorld and unfulfilled hard constraints in TravelPlanner; crosswords, where the relevant constraints are answer length and character overlaps; code generation, where authors incrementally add new denial-style restrictions to force new strategies; prompt-conditioned response generation, where verifiable requirements can include formatting or stylistic rules such as alliteration; and circuit topology generation, where outputs are expected to satisfy component-pool, efficiency, and output-voltage constraints.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to it, Blocksworld, a planning benchmark in which agents execute actions from an initial state to a goal state and all actions must adhere to prompt-defined constraints. Beyond that named instrument, papers operationalize the behavior by checking whether plans violate constraints and become illegal or leave goals unsatisfied, whether crossword answers obey length limits, whether responses satisfy verifiable formatting or stylistic rules, and whether generated code follows denial-prompted restrictions.\n\nWhat it is taken as evidence of. It is linked to two constructs, with different kinds of claims rather than a single shared interpretation. One paper reports that Constraint adherence is related to Length control ability, describing adherence to length constraints as a component of crossword solving, while another paper claims a causal relationship from Model selection ability to Constraint adherence, saying that balancing model capabilities, licensing requirements, resource constraints, and performance metrics in model selection aligns execution with task requirements and practical considerations.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Leveraging Loanword Constraints for Improving Machine Translation in a Low-Resource Multilingual Context"
+    ],
+    "iclr25": [
+      "From an LLM Swarm to a PDDL-empowered Hive: Planning Self-executed Instructions in a Multi-modal Jungle"
+    ],
+    "naacl25": [
+      "Revealing the Barriers of Language Agents in Planning",
+      "A Systematic Examination of Preference Learning through the Lens of Instruction-Following",
+      "Benchmarking Language Model Creativity: A Case Study on Code Generation",
+      "Language Models are Crossword Solvers"
+    ],
+    "icml25": [
+      "AUTOCIRCUIT-RL: Reinforcement Learning-Driven LLM for Automated Circuit Topology Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr25": 1,
+    "naacl25": 4,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

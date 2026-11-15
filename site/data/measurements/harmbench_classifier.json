@@ -1,0 +1,149 @@
+{
+  "canonical_name": "HarmBench classifier",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing usage treats this as a HarmBench safety judge, an LLM-based classifier used to decide whether a model output is harmful or whether a response to a harmful instruction is unsafe. Definitions vary between an official HarmBench classifier of model response harmfulness, an evaluator used for HarmBench results, and a judge that checks whether a target response matches malicious intent and counts as a successful jailbreak. Some authors specify that it is fine-tuned from Llama-2-13B or refer to the HarmBench-Llama2-13B-Chat variant, while one paper places it as a baseline safety evaluator in a meta-evaluation.\n\nWhat it is claimed to measure. Papers link it to 1 construct and 2 behavioral indicators. They use it to measure harmful content generation, assessing output safety or harmfulness and computing attack or adversarial success rates. They also use it to measure harmlessness, reporting the percentage of harmless responses or classifying whether prompting generated a harmful response, and it is reported as measuring jailbreaking through attack success rate using HarmBench's judge. These measurement claims are distributed across harmful content generation, harmlessness, and jailbreaking rather than concentrated on only one linked target.\n\nSpace of uses. Across the surveyed work, it is commonly positioned as the judge used in HarmBench evaluations: papers describe using it to determine whether a model's response to a harmful instruction is unsafe, to evaluate target LLM responses, and to make a binary success decision for jailbreak attacks, with one quoted passage formalizing it as Judge(Target(P), I) \u2192 {0, 1}. Papers use it to compute attack success rates, adversarial success rates, and harmless-response percentages, and one paper says it is deployed because of high alignment with human evaluations. Papers do not link it to any other measurement instrument, though one meta-evaluation places it alongside Llama-Guard-2-8B, MD-Judge, and WildGuard as a baseline safety evaluator.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HarmBench classifier",
+    "HarmBench Classifier",
+    "HarmBench evaluator",
+    "HarmBench judge",
+    "HarmBench-Llama2-13B-Chat"
+  ],
+  "papers": [
+    "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+    "Robust LLM safeguarding via refusal feature adversarial training",
+    "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal",
+    "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs",
+    "Adversarial Reasoning at Jailbreaking Time"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "An LLM-as-a-judge safety classifier fine-tuned to assess whether model outputs are harmful.",
+      "papers": [
+        "Robust LLM safeguarding via refusal feature adversarial training"
+      ],
+      "original_name": "HarmBench classifier"
+    },
+    {
+      "text": "A specific classifier from the HarmBench benchmark, used as a baseline safety evaluator in the meta-evaluation.",
+      "papers": [
+        "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal"
+      ],
+      "original_name": "HarmBench Classifier"
+    },
+    {
+      "text": "LLM-based evaluation system used to determine if a model's response to a harmful instruction is unsafe, serving as a judge for attack success on the HarmBench dataset.",
+      "papers": [
+        "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs"
+      ],
+      "original_name": "HarmBench evaluator"
+    },
+    {
+      "text": "A judge model/protocol from HarmBench that determines whether a target response matches the malicious intent and counts as a successful jailbreak.",
+      "papers": [
+        "Adversarial Reasoning at Jailbreaking Time"
+      ],
+      "original_name": "HarmBench judge"
+    },
+    {
+      "text": "A classifier used to judge whether generated responses are harmless or contain harmful content.",
+      "papers": [
+        "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models"
+      ],
+      "original_name": "HarmBench-Llama2-13B-Chat"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Robust LLM safeguarding via refusal feature adversarial training",
+      "evidence": "To compute attack success rate, we use three LLM-as-a-judge models that are fine-tuned to assess output safety: the official HarmBench classifier... (Section 5)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Robust LLM safeguarding via refusal feature adversarial training"
+        ],
+        "emnlp25": [
+          "Improving Large Language Model Safety with Contrastive Representation Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+      "evidence": "We report percentage of harmless responses based on the safety classifier HarmBench-Llama2-13B-Chat (Mazeika et al., 2024).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+          "Do as I do (Safely): Mitigating Task-Specific Fine-tuning Risks in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Jailbreaking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "REINFORCE Adversarial Attacks on Large Language Models: An Adaptive, Distributional, and Semantic Objective",
+      "evidence": "\u201cwe report the attack success rate (ASR) using HarmBench\u2019s judge\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "REINFORCE Adversarial Attacks on Large Language Models: An Adaptive, Distributional, and Semantic Objective"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing usage treats this as a HarmBench safety judge, an LLM-based classifier used to decide whether a model output is harmful or whether a response to a harmful instruction is unsafe. Definitions vary between an official HarmBench classifier of model response harmfulness, an evaluator used for HarmBench results, and a judge that checks whether a target response matches malicious intent and counts as a successful jailbreak. Some authors specify that it is fine-tuned from Llama-2-13B or refer to the HarmBench-Llama2-13B-Chat variant, while one paper places it as a baseline safety evaluator in a meta-evaluation."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 1 construct and 2 behavioral indicators. They use it to measure harmful content generation, assessing output safety or harmfulness and computing attack or adversarial success rates. They also use it to measure harmlessness, reporting the percentage of harmless responses or classifying whether prompting generated a harmful response, and it is reported as measuring jailbreaking through attack success rate using HarmBench's judge. These measurement claims are distributed across harmful content generation, harmlessness, and jailbreaking rather than concentrated on only one linked target."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Across the surveyed work, it is commonly positioned as the judge used in HarmBench evaluations: papers describe using it to determine whether a model's response to a harmful instruction is unsafe, to evaluate target LLM responses, and to make a binary success decision for jailbreak attacks, with one quoted passage formalizing it as Judge(Target(P), I) \u2192 {0, 1}. Papers use it to compute attack success rates, adversarial success rates, and harmless-response percentages, and one paper says it is deployed because of high alignment with human evaluations. Papers do not link it to any other measurement instrument, though one meta-evaluation places it alongside Llama-Guard-2-8B, MD-Judge, and WildGuard as a baseline safety evaluator."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing usage treats this as a HarmBench safety judge, an LLM-based classifier used to decide whether a model output is harmful or whether a response to a harmful instruction is unsafe. Definitions vary between an official HarmBench classifier of model response harmfulness, an evaluator used for HarmBench results, and a judge that checks whether a target response matches malicious intent and counts as a successful jailbreak. Some authors specify that it is fine-tuned from Llama-2-13B or refer to the HarmBench-Llama2-13B-Chat variant, while one paper places it as a baseline safety evaluator in a meta-evaluation.\n\nWhat it is claimed to measure. Papers link it to 1 construct and 2 behavioral indicators. They use it to measure harmful content generation, assessing output safety or harmfulness and computing attack or adversarial success rates. They also use it to measure harmlessness, reporting the percentage of harmless responses or classifying whether prompting generated a harmful response, and it is reported as measuring jailbreaking through attack success rate using HarmBench's judge. These measurement claims are distributed across harmful content generation, harmlessness, and jailbreaking rather than concentrated on only one linked target.\n\nSpace of uses. Across the surveyed work, it is commonly positioned as the judge used in HarmBench evaluations: papers describe using it to determine whether a model's response to a harmful instruction is unsafe, to evaluate target LLM responses, and to make a binary success decision for jailbreak attacks, with one quoted passage formalizing it as Judge(Target(P), I) \u2192 {0, 1}. Papers use it to compute attack success rates, adversarial success rates, and harmless-response percentages, and one paper says it is deployed because of high alignment with human evaluations. Papers do not link it to any other measurement instrument, though one meta-evaluation places it alongside Llama-Guard-2-8B, MD-Judge, and WildGuard as a baseline safety evaluator.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+      "Robust LLM safeguarding via refusal feature adversarial training",
+      "SORRY-Bench: Systematically Evaluating Large Language Model Safety Refusal"
+    ],
+    "icml25": [
+      "AdvPrompter: Fast Adaptive Adversarial Prompting for LLMs",
+      "Adversarial Reasoning at Jailbreaking Time"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

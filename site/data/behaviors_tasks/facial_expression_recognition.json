@@ -1,0 +1,42 @@
+{
+  "canonical_name": "Facial expression recognition",
+  "type": "behavior",
+  "canonical_definition": "The task of classifying a human face in an image into one of several basic emotional expressions.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Facial expression recognition"
+  ],
+  "papers": [
+    "HEMM: Holistic Evaluation of Multimodal Foundation Models"
+  ],
+  "paper_count": 1,
+  "definitions": [
+    {
+      "text": "The task of classifying a human face in an image into one of several basic emotional expressions.",
+      "papers": [
+        "HEMM: Holistic Evaluation of Multimodal Foundation Models"
+      ],
+      "original_name": "Facial expression recognition"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The task of classifying a human face in an image into one of several basic emotional expressions.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "HEMM: Holistic Evaluation of Multimodal Foundation Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 1
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

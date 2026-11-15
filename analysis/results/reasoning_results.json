@@ -1,0 +1,654 @@
+{
+ "data": "data/reasoning/open_llm_leaderboard_v1_v2.csv",
+ "n": 400,
+ "indicators": [
+  "arc",
+  "mmlu",
+  "winogrande",
+  "gsm8k",
+  "math_lvl5"
+ ],
+ "correlations": {
+  "arc": {
+   "arc": 1.0,
+   "mmlu": 0.901495,
+   "winogrande": 0.966058,
+   "gsm8k": 0.817115,
+   "math_lvl5": 0.539751,
+   "log10_params": 0.744195
+  },
+  "mmlu": {
+   "arc": 0.901495,
+   "mmlu": 1.0,
+   "winogrande": 0.871024,
+   "gsm8k": 0.838212,
+   "math_lvl5": 0.669131,
+   "log10_params": 0.702087
+  },
+  "winogrande": {
+   "arc": 0.966058,
+   "mmlu": 0.871024,
+   "winogrande": 1.0,
+   "gsm8k": 0.763089,
+   "math_lvl5": 0.483534,
+   "log10_params": 0.761952
+  },
+  "gsm8k": {
+   "arc": 0.817115,
+   "mmlu": 0.838212,
+   "winogrande": 0.763089,
+   "gsm8k": 1.0,
+   "math_lvl5": 0.656794,
+   "log10_params": 0.522098
+  },
+  "math_lvl5": {
+   "arc": 0.539751,
+   "mmlu": 0.669131,
+   "winogrande": 0.483534,
+   "gsm8k": 0.656794,
+   "math_lvl5": 1.0,
+   "log10_params": 0.513785
+  },
+  "log10_params": {
+   "arc": 0.744195,
+   "mmlu": 0.702087,
+   "winogrande": 0.761952,
+   "gsm8k": 0.522098,
+   "math_lvl5": 0.513785,
+   "log10_params": 1.0
+  }
+ },
+ "r_winogrande_gsm8k": 0.7630886506940494,
+ "partial_r_winogrande_gsm8k_given_log10_params": 0.6613023117188183,
+ "models": {
+  "hierarchical": {
+   "name": "Hierarchical CFA: reasoning > math > arithmetic (Approach 1)",
+   "spec": "reasoning  =~ arc + winogrande\nmath       =~ mmlu + math_lvl5\narithmetic =~ gsm8k\nmath       ~ reasoning\narithmetic ~ math\ngsm8k ~~ 0*gsm8k",
+   "latents": [
+    "reasoning",
+    "math",
+    "arithmetic"
+   ],
+   "observed": [
+    "arc",
+    "mmlu",
+    "winogrande",
+    "gsm8k",
+    "math_lvl5"
+   ],
+   "fit": {
+    "n": 400,
+    "df": 4,
+    "chi2": 90.91451767600631,
+    "p": 8.418154755102181e-19,
+    "CFI": 0.9662213098401541,
+    "TLI": 0.9155532746003854,
+    "RMSEA": 0.23336177459496063,
+    "baseline_chi2": 2583.057666378231,
+    "baseline_df": 10
+   },
+   "parameters": [
+    {
+     "lval": "math",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 0.89885631834567,
+     "std_estimate": 0.9229205827081666,
+     "fixed": false
+    },
+    {
+     "lval": "arithmetic",
+     "op": "~",
+     "rval": "math",
+     "estimate": 0.8934622150523219,
+     "std_estimate": 0.8701700878602551,
+     "fixed": false
+    },
+    {
+     "lval": "arc",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 1.0,
+     "std_estimate": 1.0,
+     "fixed": true
+    },
+    {
+     "lval": "winogrande",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 0.9660456983569622,
+     "std_estimate": 0.9660479036925551,
+     "fixed": false
+    },
+    {
+     "lval": "mmlu",
+     "op": "~",
+     "rval": "math",
+     "estimate": 1.0,
+     "std_estimate": 0.9739017321313778,
+     "fixed": true
+    },
+    {
+     "lval": "math_lvl5",
+     "op": "~",
+     "rval": "math",
+     "estimate": 0.6910310957171265,
+     "std_estimate": 0.6731344023231722,
+     "fixed": false
+    },
+    {
+     "lval": "gsm8k",
+     "op": "~",
+     "rval": "arithmetic",
+     "estimate": 1.0,
+     "std_estimate": 1.0,
+     "fixed": true
+    },
+    {
+     "lval": "arithmetic",
+     "op": "~~",
+     "rval": "arithmetic",
+     "estimate": 0.24219123567030001,
+     "std_estimate": 0.24280401819327604,
+     "fixed": false
+    },
+    {
+     "lval": "math",
+     "op": "~~",
+     "rval": "math",
+     "estimate": 0.1402355891778922,
+     "std_estimate": 0.1482175980136181,
+     "fixed": false
+    },
+    {
+     "lval": "reasoning",
+     "op": "~~",
+     "rval": "reasoning",
+     "estimate": 0.9974854848182001,
+     "std_estimate": 1.0,
+     "fixed": false
+    },
+    {
+     "lval": "gsm8k",
+     "op": "~~",
+     "rval": "gsm8k",
+     "estimate": 0.0,
+     "std_estimate": 0.0,
+     "fixed": true
+    },
+    {
+     "lval": "arc",
+     "op": "~~",
+     "rval": "arc",
+     "estimate": 1.4508933229611848e-18,
+     "std_estimate": 1.4545508130633318e-18,
+     "fixed": false
+    },
+    {
+     "lval": "math_lvl5",
+     "op": "~~",
+     "rval": "math_lvl5",
+     "estimate": 0.545318363850769,
+     "std_estimate": 0.5468900764090258,
+     "fixed": false
+    },
+    {
+     "lval": "mmlu",
+     "op": "~~",
+     "rval": "mmlu",
+     "estimate": 0.05138843699020429,
+     "std_estimate": 0.05151541615150203,
+     "fixed": false
+    },
+    {
+     "lval": "winogrande",
+     "op": "~~",
+     "rval": "winogrande",
+     "estimate": 0.0665832962429415,
+     "std_estimate": 0.06675144777121982,
+     "fixed": false
+    }
+   ]
+  },
+  "one_factor": {
+   "name": "One-factor comparison model",
+   "spec": "g =~ arc + winogrande + mmlu + math_lvl5 + gsm8k",
+   "latents": [
+    "g"
+   ],
+   "observed": [
+    "arc",
+    "mmlu",
+    "winogrande",
+    "gsm8k",
+    "math_lvl5"
+   ],
+   "fit": {
+    "n": 400,
+    "df": 5,
+    "chi2": 249.39796598582475,
+    "p": 7.401018907713657e-52,
+    "CFI": 0.9050165221015691,
+    "TLI": 0.8100330442031383,
+    "RMSEA": 0.3500074943600249,
+    "baseline_chi2": 2583.057666378231,
+    "baseline_df": 10
+   },
+   "parameters": [
+    {
+     "lval": "arc",
+     "op": "~",
+     "rval": "g",
+     "estimate": 1.0,
+     "std_estimate": 0.996688271929374,
+     "fixed": true
+    },
+    {
+     "lval": "winogrande",
+     "op": "~",
+     "rval": "g",
+     "estimate": 0.9714998783563881,
+     "std_estimate": 0.9682819771171167,
+     "fixed": false
+    },
+    {
+     "lval": "mmlu",
+     "op": "~",
+     "rval": "g",
+     "estimate": 0.9093243319491588,
+     "std_estimate": 0.906305543251007,
+     "fixed": false
+    },
+    {
+     "lval": "math_lvl5",
+     "op": "~",
+     "rval": "g",
+     "estimate": 0.5480711623746948,
+     "std_estimate": 0.5462455337709441,
+     "fixed": false
+    },
+    {
+     "lval": "gsm8k",
+     "op": "~",
+     "rval": "g",
+     "estimate": 0.8236016090375005,
+     "std_estimate": 0.8208128589508028,
+     "fixed": false
+    },
+    {
+     "lval": "g",
+     "op": "~~",
+     "rval": "g",
+     "estimate": 0.9909675857528857,
+     "std_estimate": 1.0,
+     "fixed": false
+    },
+    {
+     "lval": "arc",
+     "op": "~~",
+     "rval": "arc",
+     "estimate": 0.0065963803520817975,
+     "std_estimate": 0.006612488598438109,
+     "fixed": false
+    },
+    {
+     "lval": "gsm8k",
+     "op": "~~",
+     "rval": "gsm8k",
+     "estimate": 0.325519995578944,
+     "std_estimate": 0.3262662505810095,
+     "fixed": false
+    },
+    {
+     "lval": "math_lvl5",
+     "op": "~~",
+     "rval": "math_lvl5",
+     "estimate": 0.699933733578322,
+     "std_estimate": 0.7016158168352963,
+     "fixed": false
+    },
+    {
+     "lval": "mmlu",
+     "op": "~~",
+     "rval": "mmlu",
+     "estimate": 0.17817805306554277,
+     "std_estimate": 0.17861026227249716,
+     "fixed": false
+    },
+    {
+     "lval": "winogrande",
+     "op": "~~",
+     "rval": "winogrande",
+     "estimate": 0.0622780029188579,
+     "std_estimate": 0.06243001279016726,
+     "fixed": false
+    }
+   ]
+  },
+  "two_level": {
+   "name": "Two-level model: gsm8k loads on math directly",
+   "spec": "reasoning =~ arc + winogrande\nmath      =~ mmlu + math_lvl5 + gsm8k\nmath      ~ reasoning",
+   "latents": [
+    "reasoning",
+    "math"
+   ],
+   "observed": [
+    "arc",
+    "mmlu",
+    "winogrande",
+    "gsm8k",
+    "math_lvl5"
+   ],
+   "fit": {
+    "n": 400,
+    "df": 4,
+    "chi2": 90.91445777528797,
+    "p": 8.418401458404572e-19,
+    "CFI": 0.9662213331201293,
+    "TLI": 0.915553332800323,
+    "RMSEA": 0.23336169417950928,
+    "baseline_chi2": 2583.057666378231,
+    "baseline_df": 10
+   },
+   "parameters": [
+    {
+     "lval": "math",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 0.8988745006338112,
+     "std_estimate": 0.9229272795383884,
+     "fixed": false
+    },
+    {
+     "lval": "arc",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 1.0,
+     "std_estimate": 1.0,
+     "fixed": true
+    },
+    {
+     "lval": "winogrande",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 0.9660488093482271,
+     "std_estimate": 0.9660581359738329,
+     "fixed": false
+    },
+    {
+     "lval": "mmlu",
+     "op": "~",
+     "rval": "math",
+     "estimate": 1.0,
+     "std_estimate": 0.9738974706882159,
+     "fixed": true
+    },
+    {
+     "lval": "math_lvl5",
+     "op": "~",
+     "rval": "math",
+     "estimate": 0.6912511101803668,
+     "std_estimate": 0.6732550605693025,
+     "fixed": false
+    },
+    {
+     "lval": "gsm8k",
+     "op": "~",
+     "rval": "math",
+     "estimate": 0.8934983898075048,
+     "std_estimate": 0.8701805285547828,
+     "fixed": false
+    },
+    {
+     "lval": "math",
+     "op": "~~",
+     "rval": "math",
+     "estimate": 0.14023014979236567,
+     "std_estimate": 0.1482052366838696,
+     "fixed": false
+    },
+    {
+     "lval": "reasoning",
+     "op": "~~",
+     "rval": "reasoning",
+     "estimate": 0.9975041092828678,
+     "std_estimate": 1.0,
+     "fixed": false
+    },
+    {
+     "lval": "arc",
+     "op": "~~",
+     "rval": "arc",
+     "estimate": 3.418375217903139e-17,
+     "std_estimate": 3.426928456826809e-17,
+     "fixed": false
+    },
+    {
+     "lval": "gsm8k",
+     "op": "~~",
+     "rval": "gsm8k",
+     "estimate": 0.2421977154738293,
+     "std_estimate": 0.24278584772411888,
+     "fixed": false
+    },
+    {
+     "lval": "math_lvl5",
+     "op": "~~",
+     "rval": "math_lvl5",
+     "estimate": 0.5453323938979837,
+     "std_estimate": 0.5467276234178249,
+     "fixed": false
+    },
+    {
+     "lval": "mmlu",
+     "op": "~~",
+     "rval": "mmlu",
+     "estimate": 0.0513994598982455,
+     "std_estimate": 0.05152371658709556,
+     "fixed": false
+    },
+    {
+     "lval": "winogrande",
+     "op": "~~",
+     "rval": "winogrande",
+     "estimate": 0.06656383766872562,
+     "std_estimate": 0.06673167791876333,
+     "fixed": false
+    }
+   ]
+  },
+  "bifactor": {
+   "name": "Bifactor CFA: general reasoning + orthogonal numerical (Approach 2)",
+   "spec": "reasoning =~ arc + mmlu + math_lvl5 + winogrande + gsm8k\nnumerical =~ mmlu + math_lvl5 + gsm8k\nreasoning ~~ 0*numerical",
+   "latents": [
+    "reasoning",
+    "numerical"
+   ],
+   "observed": [
+    "arc",
+    "mmlu",
+    "winogrande",
+    "gsm8k",
+    "math_lvl5"
+   ],
+   "fit": {
+    "n": 400,
+    "df": 2,
+    "chi2": 24.79820917555955,
+    "p": 4.122278193753537e-06,
+    "CFI": 0.9911396431283059,
+    "TLI": 0.9556982156415295,
+    "RMSEA": 0.169024212557035,
+    "baseline_chi2": 2583.057666378231,
+    "baseline_df": 10
+   },
+   "parameters": [
+    {
+     "lval": "arc",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 1.0,
+     "std_estimate": 1.0,
+     "fixed": true
+    },
+    {
+     "lval": "mmlu",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 0.9013219388627758,
+     "std_estimate": 0.9014572142718903,
+     "fixed": false
+    },
+    {
+     "lval": "mmlu",
+     "op": "~",
+     "rval": "numerical",
+     "estimate": 1.0,
+     "std_estimate": 0.2932434236368474,
+     "fixed": true
+    },
+    {
+     "lval": "math_lvl5",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 0.5394082443301198,
+     "std_estimate": 0.5394845768616887,
+     "fixed": false
+    },
+    {
+     "lval": "math_lvl5",
+     "op": "~",
+     "rval": "numerical",
+     "estimate": 2.1233415228053705,
+     "std_estimate": 0.6226505998800083,
+     "fixed": false
+    },
+    {
+     "lval": "winogrande",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 0.9660790797026705,
+     "std_estimate": 0.9660576167100742,
+     "fixed": false
+    },
+    {
+     "lval": "gsm8k",
+     "op": "~",
+     "rval": "reasoning",
+     "estimate": 0.8170071684158462,
+     "std_estimate": 0.8170497716652386,
+     "fixed": false
+    },
+    {
+     "lval": "gsm8k",
+     "op": "~",
+     "rval": "numerical",
+     "estimate": 1.181974548902072,
+     "std_estimate": 0.3465723218280002,
+     "fixed": false
+    },
+    {
+     "lval": "reasoning",
+     "op": "~~",
+     "rval": "numerical",
+     "estimate": 0.0,
+     "std_estimate": 0.0,
+     "fixed": true
+    },
+    {
+     "lval": "reasoning",
+     "op": "~~",
+     "rval": "reasoning",
+     "estimate": 0.9973959498046835,
+     "std_estimate": 1.0,
+     "fixed": false
+    },
+    {
+     "lval": "numerical",
+     "op": "~~",
+     "rval": "numerical",
+     "estimate": 0.08574203957306874,
+     "std_estimate": 0.9999999999999998,
+     "fixed": false
+    },
+    {
+     "lval": "arc",
+     "op": "~~",
+     "rval": "arc",
+     "estimate": 0.0,
+     "std_estimate": 0.0,
+     "fixed": false
+    },
+    {
+     "lval": "gsm8k",
+     "op": "~~",
+     "rval": "gsm8k",
+     "estimate": 0.21174232807148216,
+     "std_estimate": 0.21231729636453037,
+     "fixed": false
+    },
+    {
+     "lval": "math_lvl5",
+     "op": "~~",
+     "rval": "math_lvl5",
+     "estimate": 0.3203353690389482,
+     "std_estimate": 0.3212626217974304,
+     "fixed": false
+    },
+    {
+     "lval": "mmlu",
+     "op": "~~",
+     "rval": "mmlu",
+     "estimate": 0.1010888322020005,
+     "std_estimate": 0.10138318533090376,
+     "fixed": false
+    },
+    {
+     "lval": "winogrande",
+     "op": "~~",
+     "rval": "winogrande",
+     "estimate": 0.06656186346870192,
+     "std_estimate": 0.06673268119645136,
+     "fixed": false
+    }
+   ]
+  }
+ },
+ "hierarchical_vs_one_factor": {
+  "delta_chi2": 158.48344830981844,
+  "delta_df": 1,
+  "p": 2.426644698643948e-36
+ },
+ "bifactor_communalities": {
+  "arc": {
+   "lambda_reasoning": 1.0,
+   "lambda_numerical": null,
+   "h2": 1.0
+  },
+  "mmlu": {
+   "lambda_reasoning": 0.9014572142718903,
+   "lambda_numerical": 0.2932434236368474,
+   "h2": 0.8986168146690963
+  },
+  "winogrande": {
+   "lambda_reasoning": 0.9660576167100742,
+   "lambda_numerical": null,
+   "h2": 0.9332673188035486
+  },
+  "gsm8k": {
+   "lambda_reasoning": 0.8170497716652386,
+   "lambda_numerical": 0.3465723218280002,
+   "h2": 0.7876827036354695
+  },
+  "math_lvl5": {
+   "lambda_reasoning": 0.5394845768616887,
+   "lambda_numerical": 0.6226505998800083,
+   "h2": 0.6787373782025694
+  }
+ },
+ "software": {
+  "semopy": "2.3.11",
+  "pandas": "3.0.5",
+  "numpy": "2.5.1"
+ }
+}

@@ -1,0 +1,151 @@
+{
+  "canonical_name": "CoVoST 2",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across these papers, CoVoST 2 is most commonly described as a multilingual speech-to-text translation corpus or benchmark derived from Common Voice, used for training and evaluation. Definitions differ on the source-target setup: some describe English speech translated into multiple typologically diverse languages, with one use case noting 15,500 English examples into seven languages, while others focus on general-domain French-English and German-English subsets or on 14 non-English source languages paired bidirectionally with English for 28 directions. A smaller framing presents it as the speech translation source corpus used inside CoVoGER to generate N-best lists.\n\nWhat it is claimed to measure. Papers link CoVoST 2 to one construct and two behavioral indicators. The prevailing usage is to measure speech translation, with papers stating that speech translation is tested on CoVoST 2 and reporting settings such as En-De or English-to-multiple-language translation; a smaller line of work also uses it to measure speech recognition in joint ASR and ST evaluation. Separately, one paper reports CoVoST 2 as measuring cross-lingual alignment, saying its results confirm superior cross-lingual alignment and translation performance, so the measurement claims are mostly concentrated on translation with narrower links to speech recognition and cross-lingual alignment.\n\nSpace of uses. Papers link CoVoST 2 to one other measurement instrument, CoVoGER, and describe that relation by saying CoVoGER is constructed by decoding speech from CoVoST-2 for speech translation. Other papers use CoVoST2 alongside MuST-C and MSLT, either by collecting tailored data from their training and test splits or by testing speech-to-text recognition and translation on MuST-C v1.0 and CoVoST2 together. Across these uses, papers position it both as a benchmark for reporting speech translation results and as a source corpus within broader evaluation setups.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CoVoST 2",
+    "CoVoST2",
+    "CoVoST-2"
+  ],
+  "papers": [
+    "Distilling an End-to-End Voice Assistant Without Instruction Training Data",
+    "Locate-and-Focus: Enhancing Terminology Translation in Speech Language Models",
+    "Soundwave: Less is More for Speech-Text Alignment in LLMs",
+    "CoVoGER: A Multilingual Multitask Benchmark for Speech-to-text Generative Error Correction with Large Language Models",
+    "Whisper-UT: A Unified Translation Framework for Speech and Text"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A benchmark dataset for evaluating speech-to-text translation, containing English speech examples to be translated into multiple typologically diverse languages.",
+      "papers": [
+        "Distilling an End-to-End Voice Assistant Without Instruction Training Data"
+      ],
+      "original_name": "CoVoST 2"
+    },
+    {
+      "text": "A large-scale multilingual speech-to-text translation corpus (Common Voice Speech-to-Text) used for training and evaluating speech translation models.",
+      "papers": [
+        "Locate-and-Focus: Enhancing Terminology Translation in Speech Language Models"
+      ],
+      "original_name": "CoVoST2"
+    },
+    {
+      "text": "A multilingual speech-to-text translation corpus derived from Common Voice, used in the CoVoGER benchmark to generate N-best lists for 28 source-target language directions.",
+      "papers": [
+        "CoVoGER: A Multilingual Multitask Benchmark for Speech-to-text Generative Error Correction with Large Language Models"
+      ],
+      "original_name": "CoVoST-2"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Speech translation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+      "evidence": "\u201cEn2Zh CoVoST2-En2Zh ...\u201d",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "SALMONN: Towards Generic Hearing Abilities for Large Language Models"
+        ],
+        "naacl25": [
+          "Prepending or Cross-Attention for Speech-to-Text? An Empirical Comparison"
+        ],
+        "acl25": [
+          "Distilling an End-to-End Voice Assistant Without Instruction Training Data",
+          "Soundwave: Less is More for Speech-Text Alignment in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Speech recognition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Prepending or Cross-Attention for Speech-to-Text? An Empirical Comparison",
+      "evidence": "testing speech-to-text recognition (ASR) and translation (ST) on MuST-C v1.0 and CoVoST2 datasets. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Prepending or Cross-Attention for Speech-to-Text? An Empirical Comparison"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-lingual alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Audio-Reasoner: Improving Reasoning Capability in Large Audio Language Models",
+      "evidence": "These results confirm Audio-Reasoner\u2019s superior cross-lingual alignment and translation performance. (Section 4.2, referring to CoVoST 2 results in Table 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Audio-Reasoner: Improving Reasoning Capability in Large Audio Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "CoVoGER",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "CoVoGER: A Multilingual Multitask Benchmark for Speech-to-text Generative Error Correction with Large Language Models",
+      "evidence": "\u201cTo construct the COVOGER benchmark, we decode speech from two large-scale public datasets, Common Voice 20.0 for ASR and CoVoST-2 ... for ST.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CoVoGER: A Multilingual Multitask Benchmark for Speech-to-text Generative Error Correction with Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across these papers, CoVoST 2 is most commonly described as a multilingual speech-to-text translation corpus or benchmark derived from Common Voice, used for training and evaluation. Definitions differ on the source-target setup: some describe English speech translated into multiple typologically diverse languages, with one use case noting 15,500 English examples into seven languages, while others focus on general-domain French-English and German-English subsets or on 14 non-English source languages paired bidirectionally with English for 28 directions. A smaller framing presents it as the speech translation source corpus used inside CoVoGER to generate N-best lists."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link CoVoST 2 to one construct and two behavioral indicators. The prevailing usage is to measure speech translation, with papers stating that speech translation is tested on CoVoST 2 and reporting settings such as En-De or English-to-multiple-language translation; a smaller line of work also uses it to measure speech recognition in joint ASR and ST evaluation. Separately, one paper reports CoVoST 2 as measuring cross-lingual alignment, saying its results confirm superior cross-lingual alignment and translation performance, so the measurement claims are mostly concentrated on translation with narrower links to speech recognition and cross-lingual alignment."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers link CoVoST 2 to one other measurement instrument, CoVoGER, and describe that relation by saying CoVoGER is constructed by decoding speech from CoVoST-2 for speech translation. Other papers use CoVoST2 alongside MuST-C and MSLT, either by collecting tailored data from their training and test splits or by testing speech-to-text recognition and translation on MuST-C v1.0 and CoVoST2 together. Across these uses, papers position it both as a benchmark for reporting speech translation results and as a source corpus within broader evaluation setups."
+    }
+  ],
+  "characterization": "What it is. Across these papers, CoVoST 2 is most commonly described as a multilingual speech-to-text translation corpus or benchmark derived from Common Voice, used for training and evaluation. Definitions differ on the source-target setup: some describe English speech translated into multiple typologically diverse languages, with one use case noting 15,500 English examples into seven languages, while others focus on general-domain French-English and German-English subsets or on 14 non-English source languages paired bidirectionally with English for 28 directions. A smaller framing presents it as the speech translation source corpus used inside CoVoGER to generate N-best lists.\n\nWhat it is claimed to measure. Papers link CoVoST 2 to one construct and two behavioral indicators. The prevailing usage is to measure speech translation, with papers stating that speech translation is tested on CoVoST 2 and reporting settings such as En-De or English-to-multiple-language translation; a smaller line of work also uses it to measure speech recognition in joint ASR and ST evaluation. Separately, one paper reports CoVoST 2 as measuring cross-lingual alignment, saying its results confirm superior cross-lingual alignment and translation performance, so the measurement claims are mostly concentrated on translation with narrower links to speech recognition and cross-lingual alignment.\n\nSpace of uses. Papers link CoVoST 2 to one other measurement instrument, CoVoGER, and describe that relation by saying CoVoGER is constructed by decoding speech from CoVoST-2 for speech translation. Other papers use CoVoST2 alongside MuST-C and MSLT, either by collecting tailored data from their training and test splits or by testing speech-to-text recognition and translation on MuST-C v1.0 and CoVoST2 together. Across these uses, papers position it both as a benchmark for reporting speech translation results and as a source corpus within broader evaluation setups.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Distilling an End-to-End Voice Assistant Without Instruction Training Data",
+      "Locate-and-Focus: Enhancing Terminology Translation in Speech Language Models",
+      "Soundwave: Less is More for Speech-Text Alignment in LLMs"
+    ],
+    "emnlp25": [
+      "CoVoGER: A Multilingual Multitask Benchmark for Speech-to-text Generative Error Correction with Large Language Models",
+      "Whisper-UT: A Unified Translation Framework for Speech and Text"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

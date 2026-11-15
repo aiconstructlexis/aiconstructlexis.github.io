@@ -1,0 +1,148 @@
+{
+  "canonical_name": "Rule-based reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Definitions divide between a broad latent-ability framing and a narrower task-specific application framing. One paper describes it as the latent ability to understand, integrate, and apply multiple abstract rules simultaneously, with examples such as counting, color logic, and shape constraints, and its quoted passages describe step-by-step planning with arithmetic and geometric rules and deep, abstract reasoning in a constrained spatial pathfinding environment. Another paper uses the nearby name rule application for applying sport-specific rules to a concrete scenario or video, described as the ability to connect movements with context-based rules to determine the correct judgment.\n\nSpace of facets. The papers distinguish it mainly by task domain and reasoning stage. The spatial framing bundles it with path-finding, counting, segregation, and logic over colors and shapes in a single task, while the sports framing uses the nearby label rule application for judgments that connect movements with context-based rules. In one related account, inductive reasoning appears within a rule-based reasoning paradigm: the model first derives the correct rule from examples and then uses that rule on new questions, and knowledge transfer is tied to whether a formed rule is transferable.\n\nSpace of measurement. Papers link it to 1 measurement instrument and no behavioral indicators. The only linked instrument is SPaRC, presented as a spatial pathfinding reasoning challenge, and the linked evidence says it is used to reveal limitations regarding rule-based reasoning; the accompanying task description requires path-finding, counting, segregation, color and shape logic, and step-by-step planning under arithmetic and geometric rules. This operationalization follows the abstract multi-rule spatial framing, and no linked instrument operationalizes the sport-specific scenario or video framing.\n\nLinks. It is linked to 3 constructs, and the recorded links are all related links rather than causal or correlational claims. Papers relate it to Inductive reasoning, where the rule-based reasoning paradigm is described as first deriving the correct rule from examples and then using it to answer new questions, and to Knowledge transfer, with the claim that once a rule is formed through induction it should be transferable. It is also related to Mathematical reasoning through tasks that involve precise rule following.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Rule-based reasoning",
+    "Rule application"
+  ],
+  "papers": [
+    "GuideBench: Benchmarking Domain-Oriented Guideline Following for LLM Agents",
+    "Improving Rule-based Reasoning in LLMs using Neurosymbolic Representations",
+    "SPaRC: A Spatial Pathfinding Reasoning Challenge",
+    "Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement",
+    "SPORTU: A Comprehensive Sports Understanding Benchmark for Multimodal Large Language Models"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The latent ability to understand, integrate, and apply multiple abstract rules simultaneously, such as counting, color logic, and shape constraints, to satisfy complex conditions in a reasoning task.",
+      "papers": [
+        "SPaRC: A Spatial Pathfinding Reasoning Challenge"
+      ],
+      "original_name": "Rule-based reasoning"
+    },
+    {
+      "text": "Applying sport-specific rules to a concrete scenario or video to determine the correct judgment.",
+      "papers": [
+        "SPORTU: A Comprehensive Sports Understanding Benchmark for Multimodal Large Language Models"
+      ],
+      "original_name": "Rule application"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inductive reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models",
+      "evidence": "in the rule-based reasoning paradigm, inductive reasoning involves first deriving the correct rule through the observation of examples and then using the inductive rule to answer new questions (like what humans do). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SPaRC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SPaRC: A Spatial Pathfinding Reasoning Challenge",
+      "evidence": "Empirically, SPaRC reveals critical limitations in current reasoning models regarding spatial reasoning, rule-based reasoning, multi-step planning, and constraint satisfaction. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SPaRC: A Spatial Pathfinding Reasoning Challenge"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Improving Rule-based Reasoning in LLMs using Neurosymbolic Representations",
+      "evidence": "Large language models (LLMs) continue to face challenges in reliably solving reasoning tasks, particularly tasks that involve precise rule following, as often found in mathematical reasoning tasks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Improving Rule-based Reasoning in LLMs using Neurosymbolic Representations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge transfer",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models",
+      "evidence": "For rule-based reasoning, once a rule is formed through induction, it should be transferable.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Definitions divide between a broad latent-ability framing and a narrower task-specific application framing. One paper describes it as the latent ability to understand, integrate, and apply multiple abstract rules simultaneously, with examples such as counting, color logic, and shape constraints, and its quoted passages describe step-by-step planning with arithmetic and geometric rules and deep, abstract reasoning in a constrained spatial pathfinding environment. Another paper uses the nearby name rule application for applying sport-specific rules to a concrete scenario or video, described as the ability to connect movements with context-based rules to determine the correct judgment."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers distinguish it mainly by task domain and reasoning stage. The spatial framing bundles it with path-finding, counting, segregation, and logic over colors and shapes in a single task, while the sports framing uses the nearby label rule application for judgments that connect movements with context-based rules. In one related account, inductive reasoning appears within a rule-based reasoning paradigm: the model first derives the correct rule from examples and then uses that rule on new questions, and knowledge transfer is tied to whether a formed rule is transferable."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link it to 1 measurement instrument and no behavioral indicators. The only linked instrument is SPaRC, presented as a spatial pathfinding reasoning challenge, and the linked evidence says it is used to reveal limitations regarding rule-based reasoning; the accompanying task description requires path-finding, counting, segregation, color and shape logic, and step-by-step planning under arithmetic and geometric rules. This operationalization follows the abstract multi-rule spatial framing, and no linked instrument operationalizes the sport-specific scenario or video framing."
+    },
+    {
+      "label": "Links.",
+      "text": "It is linked to 3 constructs, and the recorded links are all related links rather than causal or correlational claims. Papers relate it to Inductive reasoning, where the rule-based reasoning paradigm is described as first deriving the correct rule from examples and then using it to answer new questions, and to Knowledge transfer, with the claim that once a rule is formed through induction it should be transferable. It is also related to Mathematical reasoning through tasks that involve precise rule following."
+    }
+  ],
+  "characterization": "Space of definitions. Definitions divide between a broad latent-ability framing and a narrower task-specific application framing. One paper describes it as the latent ability to understand, integrate, and apply multiple abstract rules simultaneously, with examples such as counting, color logic, and shape constraints, and its quoted passages describe step-by-step planning with arithmetic and geometric rules and deep, abstract reasoning in a constrained spatial pathfinding environment. Another paper uses the nearby name rule application for applying sport-specific rules to a concrete scenario or video, described as the ability to connect movements with context-based rules to determine the correct judgment.\n\nSpace of facets. The papers distinguish it mainly by task domain and reasoning stage. The spatial framing bundles it with path-finding, counting, segregation, and logic over colors and shapes in a single task, while the sports framing uses the nearby label rule application for judgments that connect movements with context-based rules. In one related account, inductive reasoning appears within a rule-based reasoning paradigm: the model first derives the correct rule from examples and then uses that rule on new questions, and knowledge transfer is tied to whether a formed rule is transferable.\n\nSpace of measurement. Papers link it to 1 measurement instrument and no behavioral indicators. The only linked instrument is SPaRC, presented as a spatial pathfinding reasoning challenge, and the linked evidence says it is used to reveal limitations regarding rule-based reasoning; the accompanying task description requires path-finding, counting, segregation, color and shape logic, and step-by-step planning under arithmetic and geometric rules. This operationalization follows the abstract multi-rule spatial framing, and no linked instrument operationalizes the sport-specific scenario or video framing.\n\nLinks. It is linked to 3 constructs, and the recorded links are all related links rather than causal or correlational claims. Papers relate it to Inductive reasoning, where the rule-based reasoning paradigm is described as first deriving the correct rule from examples and then using it to answer new questions, and to Knowledge transfer, with the claim that once a rule is formed through induction it should be transferable. It is also related to Mathematical reasoning through tasks that involve precise rule following.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "GuideBench: Benchmarking Domain-Oriented Guideline Following for LLM Agents"
+    ],
+    "emnlp25": [
+      "Improving Rule-based Reasoning in LLMs using Neurosymbolic Representations",
+      "SPaRC: A Spatial Pathfinding Reasoning Challenge"
+    ],
+    "iclr24": [
+      "Phenomenal Yet Puzzling: Testing Inductive Reasoning Capabilities of Language Models with Hypothesis Refinement"
+    ],
+    "iclr25": [
+      "SPORTU: A Comprehensive Sports Understanding Benchmark for Multimodal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 2,
+    "iclr24": 1,
+    "iclr25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "canonical_name": "Representativeness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. The definition treats representativeness as a property of a training-data subset relative to the full dataset: it is the degree to which the subset captures the essential information needed for a model to perform well across tasks, combining sufficiency and necessity with respect to the full dataset. The accompanying usage keeps this framing focused on identifying a \"core subset of demonstrations\" that is \"tailored to specific LLMs\" and serves as a \"faithful representation\" of the training dataset.\n\nSpace of facets. Rather than introducing subtypes, the paper organizes the concept around a subset versus full-dataset comparison and pairs representativeness with minimality. A high-quality subset is described as both representative of the entire training dataset and \"as minimal in size as possible,\" with the stated dual objectives of maintaining data quality and minimizing computational expenses.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to representativeness. In use, the construct is described through selecting a core subset of demonstrations and requiring that this subset be a faithful, minimal representation of the full training dataset, but no named benchmark, evaluation procedure, or other instrument is attached to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Representativeness"
+  ],
+  "papers": [
+    "Large Language Models are Demonstration Pre-Selectors for Themselves",
+    "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+    "Position: Human Baselines in Model Evaluations Need Rigor and Transparency (With Recommendations & Reporting Checklist)"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The degree to which a subset of training data captures the essential information needed for a model to perform well across tasks, reflecting both sufficiency and necessity with respect to the full dataset.",
+      "papers": [
+        "Large Language Models are Demonstration Pre-Selectors for Themselves"
+      ],
+      "original_name": "Representativeness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The definition treats representativeness as a property of a training-data subset relative to the full dataset: it is the degree to which the subset captures the essential information needed for a model to perform well across tasks, combining sufficiency and necessity with respect to the full dataset. The accompanying usage keeps this framing focused on identifying a \"core subset of demonstrations\" that is \"tailored to specific LLMs\" and serves as a \"faithful representation\" of the training dataset."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Rather than introducing subtypes, the paper organizes the concept around a subset versus full-dataset comparison and pairs representativeness with minimality. A high-quality subset is described as both representative of the entire training dataset and \"as minimal in size as possible,\" with the stated dual objectives of maintaining data quality and minimizing computational expenses."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to representativeness. In use, the construct is described through selecting a core subset of demonstrations and requiring that this subset be a faithful, minimal representation of the full training dataset, but no named benchmark, evaluation procedure, or other instrument is attached to it."
+    }
+  ],
+  "characterization": "Space of definitions. The definition treats representativeness as a property of a training-data subset relative to the full dataset: it is the degree to which the subset captures the essential information needed for a model to perform well across tasks, combining sufficiency and necessity with respect to the full dataset. The accompanying usage keeps this framing focused on identifying a \"core subset of demonstrations\" that is \"tailored to specific LLMs\" and serves as a \"faithful representation\" of the training dataset.\n\nSpace of facets. Rather than introducing subtypes, the paper organizes the concept around a subset versus full-dataset comparison and pairs representativeness with minimality. A high-quality subset is described as both representative of the entire training dataset and \"as minimal in size as possible,\" with the stated dual objectives of maintaining data quality and minimizing computational expenses.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to representativeness. In use, the construct is described through selecting a core subset of demonstrations and requiring that this subset be a faithful, minimal representation of the full training dataset, but no named benchmark, evaluation procedure, or other instrument is attached to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Large Language Models are Demonstration Pre-Selectors for Themselves",
+      "Position: Challenges and Future Directions of Data-Centric AI Alignment",
+      "Position: Human Baselines in Model Evaluations Need Rigor and Transparency (With Recommendations & Reporting Checklist)"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 3
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

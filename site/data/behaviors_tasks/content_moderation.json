@@ -1,0 +1,159 @@
+{
+  "canonical_name": "Content moderation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats content moderation as an observable policy-compliance behavior: filtering, blocking, or altering user-generated or model-generated content, either before or after generation. A smaller formulation narrows it to classifying a given text, such as a user prompt or model response, as safe or unsafe under a defined policy. One paper also notes that generative AI \"tends to use invisible content moderation more than social media\" and describes models as being built and fine-tuned to avoid providing dangerous information.\n\nVariants. Papers study content moderation at multiple points in the interaction, on user prompts, on model responses, and as moderation that can happen before or after content is generated. One paper treats it as a cross-cultural, zero-shot family of tasks, evaluating detection of hate speech, offensive language, spam speech, abusive speech, bias speech, threat speech, and stance of speech across 8 cultures. In the recorded relationships, it is also related to harmful content detection and to hate speech detection.\n\nSpace of elicitation and scores. Papers link content moderation to 4 measurement instruments, all through measured_by relationships. The most frequently linked are OpenAI Moderation API, OpenAI Moderation dataset, WildGuardMix, and XSTest. The linked instruments include an API that one study uses to \"tag all conversations\" and instruments used in reporting average harmfulness F1 scores.\n\nWhat it is taken as evidence of. No construct is linked to content moderation, so the papers do not present a shared claim about what construct this behavior indicates.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Content moderation"
+  ],
+  "papers": [
+    "Position: AI Scaling: From Up to Down and Out",
+    "Position: Generative AI Regulation Can Learn from Social Media Regulation",
+    "AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The observable act of filtering, blocking, or altering user or model-generated content to comply with policies, which may occur before or after content is generated.",
+      "papers": [
+        "Position: Generative AI Regulation Can Learn from Social Media Regulation",
+        "AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails"
+      ],
+      "original_name": "Content moderation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenAI Moderation API",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset",
+      "evidence": "\"We utilize the OpenAI moderation API4 (Markov et al., 2023) to tag all conversations.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "LMSYS-Chat-1M: A Large-Scale Real-World LLM Conversation Dataset"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hate speech detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "CulturePark: Boosting Cross-cultural Understanding in Large Language Models",
+      "evidence": "We evaluate on 7 content moderation tasks for 8 different cultures to detect the following content: hate speech, offensive language, spam speech, abusive speech, bias speech, threat speech, and stance of speech in zero-shot evaluation (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CulturePark: Boosting Cross-cultural Understanding in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "CulturePark: Boosting Cross-cultural Understanding in Large Language Models",
+      "evidence": "We evaluate on 7 content moderation tasks for 8 different cultures to detect the following content: hate speech, offensive language, spam speech, abusive speech, bias speech, threat speech, and stance of speech in zero-shot evaluation (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CulturePark: Boosting Cross-cultural Understanding in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WildGuardMix",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails",
+      "evidence": "Additionally, it performs on par with WILDGUARD (Han et al., 2024) in terms of average harmfulness F1 scores across WILDGUARDTEST (Han et al., 2024), XSTest (R\u00f6ttger et al., 2023; Han et al., 2024), and the OpenAI Moderation Dataset (Markov et al., 2023). (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XSTest",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails",
+      "evidence": "Additionally, it performs on par with WILDGUARD (Han et al., 2024) in terms of average harmfulness F1 scores across WILDGUARDTEST (Han et al., 2024), XSTest (R\u00f6ttger et al., 2023; Han et al., 2024), and the OpenAI Moderation Dataset (Markov et al., 2023). (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenAI Moderation dataset",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails",
+      "evidence": "Additionally, it performs on par with WILDGUARD (Han et al., 2024) in terms of average harmfulness F1 scores across WILDGUARDTEST (Han et al., 2024), XSTest (R\u00f6ttger et al., 2023; Han et al., 2024), and the OpenAI Moderation Dataset (Markov et al., 2023). (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats content moderation as an observable policy-compliance behavior: filtering, blocking, or altering user-generated or model-generated content, either before or after generation. A smaller formulation narrows it to classifying a given text, such as a user prompt or model response, as safe or unsafe under a defined policy. One paper also notes that generative AI \"tends to use invisible content moderation more than social media\" and describes models as being built and fine-tuned to avoid providing dangerous information."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study content moderation at multiple points in the interaction, on user prompts, on model responses, and as moderation that can happen before or after content is generated. One paper treats it as a cross-cultural, zero-shot family of tasks, evaluating detection of hate speech, offensive language, spam speech, abusive speech, bias speech, threat speech, and stance of speech across 8 cultures. In the recorded relationships, it is also related to harmful content detection and to hate speech detection."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link content moderation to 4 measurement instruments, all through measured_by relationships. The most frequently linked are OpenAI Moderation API, OpenAI Moderation dataset, WildGuardMix, and XSTest. The linked instruments include an API that one study uses to \"tag all conversations\" and instruments used in reporting average harmfulness F1 scores."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to content moderation, so the papers do not present a shared claim about what construct this behavior indicates."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats content moderation as an observable policy-compliance behavior: filtering, blocking, or altering user-generated or model-generated content, either before or after generation. A smaller formulation narrows it to classifying a given text, such as a user prompt or model response, as safe or unsafe under a defined policy. One paper also notes that generative AI \"tends to use invisible content moderation more than social media\" and describes models as being built and fine-tuned to avoid providing dangerous information.\n\nVariants. Papers study content moderation at multiple points in the interaction, on user prompts, on model responses, and as moderation that can happen before or after content is generated. One paper treats it as a cross-cultural, zero-shot family of tasks, evaluating detection of hate speech, offensive language, spam speech, abusive speech, bias speech, threat speech, and stance of speech across 8 cultures. In the recorded relationships, it is also related to harmful content detection and to hate speech detection.\n\nSpace of elicitation and scores. Papers link content moderation to 4 measurement instruments, all through measured_by relationships. The most frequently linked are OpenAI Moderation API, OpenAI Moderation dataset, WildGuardMix, and XSTest. The linked instruments include an API that one study uses to \"tag all conversations\" and instruments used in reporting average harmfulness F1 scores.\n\nWhat it is taken as evidence of. No construct is linked to content moderation, so the papers do not present a shared claim about what construct this behavior indicates.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Position: AI Scaling: From Up to Down and Out",
+      "Position: Generative AI Regulation Can Learn from Social Media Regulation"
+    ],
+    "naacl25": [
+      "AEGIS2.0: A Diverse AI Safety Dataset and Risks Taxonomy for Alignment of LLM Guardrails"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "icml25",
+    "naacl25"
+  ]
+}

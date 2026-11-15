@@ -1,0 +1,101 @@
+{
+  "canonical_name": "Meeting summarization",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as condensing meeting discussions or transcripts into concise outputs, most often overviews or structured minutes, and sometimes lists of action items. Definitions generally agree on concise, structured coverage of the discussion, though some specify brief summaries and others allow more detailed summaries that cover main insights and local details. A smaller line of work frames it as generating a summary for all attendees that excludes confidential information while retaining public information, or as summarizing aspects of a meeting in response to specific content questions.\n\nVariants. Papers use several variants and names for this behavior. One recurring split is between traditional brief summarization and a detailed summarization track, where the summary remains concise but also covers main insights and local details. Other variants include question-focused meeting summarization, with transcripts paired with prompts about particular discussion topics, and meeting summary generation for summaries that are automatically sent to all attendees and must omit earlier sensitive discussion.\n\nSpace of elicitation and scores. Papers measure this behavior with one instrument, TofuEval. It is described as one of the few frameworks specifically developed for meeting and dialogue summarization, and no other instrument is linked to this behavior.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not specify what construct it is taken to indicate.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Meeting summarization",
+    "Meeting summary generation"
+  ],
+  "papers": [
+    "MISP-Meeting: A Real-World Dataset with Multimodal Cues for Long-form Meeting Transcription and Summarization",
+    "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?",
+    "Summarizing Speech: A Comprehensive Survey",
+    "Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory",
+    "Teaching Language Models to Hallucinate Less with Synthetic Tasks"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The task of condensing free-form spoken discussions from meetings into concise overviews, structured minutes, or lists of action items.",
+      "papers": [
+        "Summarizing Speech: A Comprehensive Survey",
+        "MISP-Meeting: A Real-World Dataset with Multimodal Cues for Long-form Meeting Transcription and Summarization",
+        "Teaching Language Models to Hallucinate Less with Synthetic Tasks"
+      ],
+      "original_name": "Meeting summarization"
+    },
+    {
+      "text": "Generating a meeting summary for all attendees while excluding confidential information and retaining public information.",
+      "papers": [
+        "Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory"
+      ],
+      "original_name": "Meeting summary generation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TofuEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Summarizing Speech: A Comprehensive Survey",
+      "evidence": "Among these, CREAM (Gong et al., 2024), MESA (Kirstein et al., 2025b), and TofuEval (Tang et al., 2024) stand out as one of the few frameworks specifically developed for meeting and dialogue summarization... (Section 5.2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Summarizing Speech: A Comprehensive Survey"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats this behavior as condensing meeting discussions or transcripts into concise outputs, most often overviews or structured minutes, and sometimes lists of action items. Definitions generally agree on concise, structured coverage of the discussion, though some specify brief summaries and others allow more detailed summaries that cover main insights and local details. A smaller line of work frames it as generating a summary for all attendees that excludes confidential information while retaining public information, or as summarizing aspects of a meeting in response to specific content questions."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several variants and names for this behavior. One recurring split is between traditional brief summarization and a detailed summarization track, where the summary remains concise but also covers main insights and local details. Other variants include question-focused meeting summarization, with transcripts paired with prompts about particular discussion topics, and meeting summary generation for summaries that are automatically sent to all attendees and must omit earlier sensitive discussion."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers measure this behavior with one instrument, TofuEval. It is described as one of the few frameworks specifically developed for meeting and dialogue summarization, and no other instrument is linked to this behavior."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it, so papers do not specify what construct it is taken to indicate."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as condensing meeting discussions or transcripts into concise outputs, most often overviews or structured minutes, and sometimes lists of action items. Definitions generally agree on concise, structured coverage of the discussion, though some specify brief summaries and others allow more detailed summaries that cover main insights and local details. A smaller line of work frames it as generating a summary for all attendees that excludes confidential information while retaining public information, or as summarizing aspects of a meeting in response to specific content questions.\n\nVariants. Papers use several variants and names for this behavior. One recurring split is between traditional brief summarization and a detailed summarization track, where the summary remains concise but also covers main insights and local details. Other variants include question-focused meeting summarization, with transcripts paired with prompts about particular discussion topics, and meeting summary generation for summaries that are automatically sent to all attendees and must omit earlier sensitive discussion.\n\nSpace of elicitation and scores. Papers measure this behavior with one instrument, TofuEval. It is described as one of the few frameworks specifically developed for meeting and dialogue summarization, and no other instrument is linked to this behavior.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not specify what construct it is taken to indicate.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "SmartBench: Is Your LLM Truly a Good Chinese Smartphone Assistant?",
+      "Summarizing Speech: A Comprehensive Survey"
+    ],
+    "acl25": [
+      "MISP-Meeting: A Real-World Dataset with Multimodal Cues for Long-form Meeting Transcription and Summarization"
+    ],
+    "iclr24": [
+      "Can LLMs Keep a Secret? Testing Privacy Implications of Language Models via Contextual Integrity Theory",
+      "Teaching Language Models to Hallucinate Less with Synthetic Tasks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "acl25": 1,
+    "iclr24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24"
+  ]
+}

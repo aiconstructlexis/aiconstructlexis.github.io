@@ -1,0 +1,59 @@
+{
+  "canonical_name": "Knowledge tracing ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. The only definition treats knowledge tracing ability as a latent predictive capacity: correctly forecasting a student's future performance on educational tasks from historical interaction data and evolving knowledge states. The accompanying descriptions keep that framing tightly centered on prediction, using phrases such as \"accurately predict future performance,\" \"forecast student performance,\" and improved \"prediction accuracy\" and \"overall predictive performance.\"\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. Instead, the paper describes it through predictive outcomes, especially prediction accuracy, forecasting future performance, and overall predictive performance.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Predictive accuracy"
+  ],
+  "papers": [
+    "The Efficiency vs. Accuracy Trade-off: Optimizing RAG-Enhanced LLM Recommender Systems Using Multi-Head Early Exit",
+    "CIKT: A Collaborative and Iterative Knowledge Tracing Framework with Large Language Models",
+    "COM-BOM: Bayesian Exemplar Search for Efficiently Exploring the Accuracy-Calibration Pareto Frontier"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The latent capacity of the model to correctly forecast a student's future performance on educational tasks based on historical interaction data and evolving knowledge states.",
+      "papers": [
+        "CIKT: A Collaborative and Iterative Knowledge Tracing Framework with Large Language Models"
+      ],
+      "original_name": "Predictive accuracy"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The only definition treats knowledge tracing ability as a latent predictive capacity: correctly forecasting a student's future performance on educational tasks from historical interaction data and evolving knowledge states. The accompanying descriptions keep that framing tightly centered on prediction, using phrases such as \"accurately predict future performance,\" \"forecast student performance,\" and improved \"prediction accuracy\" and \"overall predictive performance.\""
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to it. Instead, the paper describes it through predictive outcomes, especially prediction accuracy, forecasting future performance, and overall predictive performance."
+    }
+  ],
+  "characterization": "Space of definitions. The only definition treats knowledge tracing ability as a latent predictive capacity: correctly forecasting a student's future performance on educational tasks from historical interaction data and evolving knowledge states. The accompanying descriptions keep that framing tightly centered on prediction, using phrases such as \"accurately predict future performance,\" \"forecast student performance,\" and improved \"prediction accuracy\" and \"overall predictive performance.\"\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. Instead, the paper describes it through predictive outcomes, especially prediction accuracy, forecasting future performance, and overall predictive performance.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "The Efficiency vs. Accuracy Trade-off: Optimizing RAG-Enhanced LLM Recommender Systems Using Multi-Head Early Exit"
+    ],
+    "emnlp25": [
+      "CIKT: A Collaborative and Iterative Knowledge Tracing Framework with Large Language Models",
+      "COM-BOM: Bayesian Exemplar Search for Efficiently Exploring the Accuracy-Calibration Pareto Frontier"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

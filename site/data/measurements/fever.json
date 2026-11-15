@@ -1,0 +1,202 @@
+{
+  "canonical_name": "FEVER",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, FEVER is most commonly described as a fact verification benchmark or dataset of human-written claims about Wikipedia, paired with evidence from Wikipedia and labeled as Supported, Refuted, or NotEnoughInfo, though one definition gives the third label as neutral. Several papers present it under the full name Fact Extraction and VERification, while smaller usages describe it as a fact-checking task, a natural language inference benchmark, a KILT subset task, or a closed-book fact verification dataset. One paper further describes it as a large-scale resource with 185,000 annotated claims.\n\nWhat it is claimed to measure. The prevailing usage is to treat FEVER as measuring fact checking: across papers it is linked to one behavioral indicator, Fact checking, and to no constructs. This matches the dominant framing of FEVER as a fact-checking or fact verification task, usually cast as three-class claim classification with evidence. Some papers also describe it as testing world knowledge and factuality, and one paper uses it for factual consistency.\n\nSpace of uses. Papers commonly use FEVER as an evaluation task: one study says it uses FEVER 'for all our experiments and comparison against previous methods,' and others report the standard three-class accuracy scheme for fact verification tasks. It also appears inside broader task collections, including the KILT subset, question-answering evaluations, and a RAG fine-tuning mixture with NQ, WoW, and MMLU. Across papers, FEVER is related to one other instrument, BEIR, through a paper that lists FEVER among BEIR's public datasets.\n\nConcerns raised. One paper reports a robustness concern, stating that analysis using FEVER reveals that LLMs are brittle to small input changes (FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models).",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FEVER"
+  ],
+  "papers": [
+    "Curriculum Debiasing: Toward Robust Parameter-Efficient Fine-Tuning Against Dataset Biases",
+    "Efficient Long Context Language Model Retrieval with Compression",
+    "Mitigating Shortcut Learning with InterpoLated Learning",
+    "Mixtures of In-Context Learners",
+    "Adversarial Attacks Against Automated Fact-Checking: A Survey",
+    "AgentPro: Enhancing LLM Agents with Automated Process Supervision",
+    "Augmenting Multi-Agent Communication with State Delta Trajectory",
+    "Identifying and Answering Questions with False Assumptions: An Interpretable Approach",
+    "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+    "Query-Focused Retrieval Heads Improve Long-Context Reasoning and Re-ranking",
+    "The Missing Parts: Augmenting Fact Verification with Half Truth Detection",
+    "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+    "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+    "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+    "Massive Editing for Large Language Models via Meta Learning",
+    "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+    "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+    "Towards Understanding Factual Knowledge of Large Language Models",
+    "Unsupervised Pretraining for Fact Verification by Language Model Distillation",
+    "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+    "Chain-of-Action: Faithful and Multimodal Question Answering through Large Language Models",
+    "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+    "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+    "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation",
+    "Emergent Response Planning in LLMs",
+    "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+    "Reinforced Lifelong Editing for Language Models",
+    "Eliciting Critical Reasoning in Retrieval-Augmented Generation via Contrastive Explanations",
+    "FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models",
+    "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+  ],
+  "paper_count": 30,
+  "definitions": [
+    {
+      "text": "The Fact Extraction and VERification (FEVER) benchmark is a dataset for fact verification, consisting of claims that need to be classified as Supported, Refuted, or NotEnoughInfo based on evidence from Wikipedia.",
+      "papers": [
+        "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+        "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+        "Massive Editing for Large Language Models via Meta Learning",
+        "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+        "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+        "Towards Understanding Factual Knowledge of Large Language Models",
+        "Unsupervised Pretraining for Fact Verification by Language Model Distillation",
+        "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+        "FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models",
+        "Eliciting Critical Reasoning in Retrieval-Augmented Generation via Contrastive Explanations",
+        "Mitigating Shortcut Learning with InterpoLated Learning",
+        "Emergent Response Planning in LLMs",
+        "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+        "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+      ],
+      "original_name": "FEVER"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fact checking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Unsupervised Pretraining for Fact Verification by Language Model Distillation",
+      "evidence": "We use the FEVER (Thorne et al., 2018) dataset for all our experiments and comparison against previous methods. (Section 4.1)",
+      "paper_count": 10,
+      "paper_weight": 10.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Unsupervised Pretraining for Fact Verification by Language Model Distillation",
+          "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+          "Massive Editing for Large Language Models via Meta Learning"
+        ],
+        "neurips24": [
+          "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+        ],
+        "iclr25": [
+          "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation"
+        ],
+        "naacl25": [
+          "FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models",
+          "Eliciting Critical Reasoning in Retrieval-Augmented Generation via Contrastive Explanations"
+        ],
+        "emnlp25": [
+          "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+          "AgentPro: Enhancing LLM Agents with Automated Process Supervision",
+          "Adversarial Attacks Against Automated Fact-Checking: A Survey"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BEIR",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "\u201cnine public datasets in the BEIR benchmark (Thakur et al., 2021), including ... FEVER (Thorne et al., 2018)\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, FEVER is most commonly described as a fact verification benchmark or dataset of human-written claims about Wikipedia, paired with evidence from Wikipedia and labeled as Supported, Refuted, or NotEnoughInfo, though one definition gives the third label as neutral. Several papers present it under the full name Fact Extraction and VERification, while smaller usages describe it as a fact-checking task, a natural language inference benchmark, a KILT subset task, or a closed-book fact verification dataset. One paper further describes it as a large-scale resource with 185,000 annotated claims."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The prevailing usage is to treat FEVER as measuring fact checking: across papers it is linked to one behavioral indicator, Fact checking, and to no constructs. This matches the dominant framing of FEVER as a fact-checking or fact verification task, usually cast as three-class claim classification with evidence. Some papers also describe it as testing world knowledge and factuality, and one paper uses it for factual consistency."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers commonly use FEVER as an evaluation task: one study says it uses FEVER 'for all our experiments and comparison against previous methods,' and others report the standard three-class accuracy scheme for fact verification tasks. It also appears inside broader task collections, including the KILT subset, question-answering evaluations, and a RAG fine-tuning mixture with NQ, WoW, and MMLU. Across papers, FEVER is related to one other instrument, BEIR, through a paper that lists FEVER among BEIR's public datasets."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One paper reports a robustness concern, stating that analysis using FEVER reveals that LLMs are brittle to small input changes (FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models)."
+    }
+  ],
+  "characterization": "What it is. Across papers, FEVER is most commonly described as a fact verification benchmark or dataset of human-written claims about Wikipedia, paired with evidence from Wikipedia and labeled as Supported, Refuted, or NotEnoughInfo, though one definition gives the third label as neutral. Several papers present it under the full name Fact Extraction and VERification, while smaller usages describe it as a fact-checking task, a natural language inference benchmark, a KILT subset task, or a closed-book fact verification dataset. One paper further describes it as a large-scale resource with 185,000 annotated claims.\n\nWhat it is claimed to measure. The prevailing usage is to treat FEVER as measuring fact checking: across papers it is linked to one behavioral indicator, Fact checking, and to no constructs. This matches the dominant framing of FEVER as a fact-checking or fact verification task, usually cast as three-class claim classification with evidence. Some papers also describe it as testing world knowledge and factuality, and one paper uses it for factual consistency.\n\nSpace of uses. Papers commonly use FEVER as an evaluation task: one study says it uses FEVER 'for all our experiments and comparison against previous methods,' and others report the standard three-class accuracy scheme for fact verification tasks. It also appears inside broader task collections, including the KILT subset, question-answering evaluations, and a RAG fine-tuning mixture with NQ, WoW, and MMLU. Across papers, FEVER is related to one other instrument, BEIR, through a paper that lists FEVER among BEIR's public datasets.\n\nConcerns raised. One paper reports a robustness concern, stating that analysis using FEVER reveals that LLMs are brittle to small input changes (FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Curriculum Debiasing: Toward Robust Parameter-Efficient Fine-Tuning Against Dataset Biases",
+      "Efficient Long Context Language Model Retrieval with Compression",
+      "Mitigating Shortcut Learning with InterpoLated Learning",
+      "Mixtures of In-Context Learners"
+    ],
+    "emnlp25": [
+      "Adversarial Attacks Against Automated Fact-Checking: A Survey",
+      "AgentPro: Enhancing LLM Agents with Automated Process Supervision",
+      "Augmenting Multi-Agent Communication with State Delta Trajectory",
+      "Identifying and Answering Questions with False Assumptions: An Interpretable Approach",
+      "Measuring the Effect of Disfluency in Multilingual Knowledge Probing Benchmarks",
+      "Query-Focused Retrieval Heads Improve Long-Context Reasoning and Re-ranking",
+      "The Missing Parts: Augmenting Fact Verification with Half Truth Detection",
+      "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models"
+    ],
+    "iclr24": [
+      "BTR: Binary Token Representations for Efficient Retrieval Augmented Language Models",
+      "Chain-of-Knowledge: Grounding Large Language Models via Dynamic Knowledge Adapting over Heterogeneous Sources",
+      "Massive Editing for Large Language Models via Meta Learning",
+      "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+      "The Truth is in There: Improving Reasoning in Language Models with Layer-Selective Rank Reduction",
+      "Towards Understanding Factual Knowledge of Large Language Models",
+      "Unsupervised Pretraining for Fact Verification by Language Model Distillation"
+    ],
+    "iclr25": [
+      "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "Chain-of-Action: Faithful and Multimodal Question Answering through Large Language Models",
+      "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+      "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+      "Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation"
+    ],
+    "icml25": [
+      "Emergent Response Planning in LLMs",
+      "FactTest: Factuality Testing in Large Language Models with Finite-Sample and Distribution-Free Guarantees",
+      "Reinforced Lifelong Editing for Language Models"
+    ],
+    "naacl25": [
+      "Eliciting Critical Reasoning in Retrieval-Augmented Generation via Contrastive Explanations",
+      "FactEval: Evaluating the Robustness of Fact Verification Systems in the Era of Large Language Models"
+    ],
+    "neurips24": [
+      "Chain of Preference Optimization: Improving Chain-of-Thought Reasoning in LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 8,
+    "iclr24": 7,
+    "iclr25": 5,
+    "icml25": 3,
+    "naacl25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "canonical_name": "Answer generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the dominant framing is producing a final textual answer to a query or question, usually from provided context, retrieved documents or pages, or other supplied information. Many definitions place it at the end of a pipeline, and success is variously described as giving a summarized, concise, fluent, precise, justified, or expert-matching answer; some papers additionally require structured output, such as citations and separate reason and answer sections, while others expect a strict final format like a number or multiple-choice option. A smaller line of work narrows it to a conclusive response after function calls, or to free-form natural-language generation as a sequence-to-sequence process. As MIRAGE-Bench: Automatic Multilingual Benchmark Arena for Retrieval-Augmented Generation Systems describes it, the task can require a summarized answer from query and context, with the model starting \"##Reason\" and then \"##Answer\".\n\nVariants. Variants span answer generation, final answer generation, and free-form answer generation. Papers study it in multilingual retrieval-augmented settings, question-context generation, multi-document and multimodal document QA, image-centered multi-agent exchanges where agents answer one another's questions, and reasoning-heavy settings such as temporal, mathematical, geographic, cultural, code, and scientific question answering. Some variants ask for one final concise or conclusive answer after reasoning or function calls, while others generate several candidate answers for later human scoring or editing, or pair the answer with source attribution fields such as a document identifier and bounding-box coordinates.\n\nSpace of elicitation and scores. Papers link this behavior to 2 measurement instruments, most often GQA and VQA-v2. In the linked measurement use, both are described as datasets requiring free-form answer generation, so the behavior is elicited through generating free-form answers. No other measurement instrument is linked.\n\nWhat it is taken as evidence of. Papers do not link answer generation to any construct, so there is no shared claim here about what construct it reflects. Instead, the recurring links are to other behaviors: several papers claim a causal relationship from Chain of thought to Answer generation, with one paper treating that link as related rather than causal; one paper reports Answer generation is related to Hallucination, noting that answers with the correct labels \"suffer less from hallucination\"; and one paper reports it correlates with Information retrieval, describing the correlation as \"not very strong\" while saying better retrieval accompanies better generation.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Answer generation",
+    "Final answer generation",
+    "Free-form answer generation"
+  ],
+  "papers": [
+    "Answering Complex Geographic Questions by Adaptive Reasoning with Visual Context and External Commonsense Knowledge",
+    "Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention",
+    "Improving Chain-of-Thought Reasoning via Quasi-Symbolic Abstractions",
+    "Learning to Reason Over Time: Timeline Self-Reflection for Improved Temporal Reasoning in Language Models",
+    "MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for Retrieval Augmented Generation",
+    "RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation",
+    "SCOP: Evaluating the Comprehension Process of Large Language Models from a Cognitive View",
+    "VISA: Retrieval Augmented Generation with Visual Source Attribution",
+    "Exposing the Achilles' Heel: Evaluating LLMs Ability to Handle Mistakes in Mathematical Reasoning",
+    "Exploring Chain-of-Thought Reasoning for Steerable Pluralistic Alignment",
+    "Knowledge Editing through Chain-of-Thought",
+    "ProReason: Multi-Modal Proactive Reasoning with Decoupled Eyesight and Wisdom",
+    "Reasoning Model Unlearning: Forgetting Traces, Not Just Answers, While Preserving Reasoning Skills",
+    "Culture Cartography: Mapping the Landscape of Cultural Knowledge",
+    "Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning",
+    "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+    "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+    "Analyzing and Improving Coherence of Large Language Models in Question Answering",
+    "CoRAC: Integrating Selective API Document Retrieval with Question Semantic Intent for Code Question Answering",
+    "Do RAG Systems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage",
+    "Faux Polyglot: A Study on Information Disparity in Multilingual Large Language Models",
+    "MIRAGE-Bench: Automatic Multilingual Benchmark Arena for Retrieval-Augmented Generation Systems",
+    "Option Symbol Matters: Investigating and Mitigating Multiple-Choice Option Symbol Bias of Large Language Models",
+    "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+    "RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement",
+    "SUNAR: Semantic Uncertainty based Neighborhood Aware Retrieval for Complex QA",
+    "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+    "VisDoM: Multi-Document QA with Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+    "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning",
+    "The Power of Many: Multi-Agent Multimodal Models for Cultural Image Captioning",
+    "Boosting the Potential of Large Language Models with an Intelligent Information Assistant"
+  ],
+  "paper_count": 31,
+  "definitions": [
+    {
+      "text": "Producing a summarized response to a query based on provided context passages, including citations and structured output with reason and answer sections.",
+      "papers": [
+        "Faux Polyglot: A Study on Information Disparity in Multilingual Large Language Models",
+        "MIRAGE-Bench: Automatic Multilingual Benchmark Arena for Retrieval-Augmented Generation Systems",
+        "VisDoM: Multi-Document QA with Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+        "The Power of Many: Multi-Agent Multimodal Models for Cultural Image Captioning",
+        "Boosting the Potential of Large Language Models with an Intelligent Information Assistant",
+        "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents",
+        "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation",
+        "Culture Cartography: Mapping the Landscape of Cultural Knowledge",
+        "Answering Complex Geographic Questions by Adaptive Reasoning with Visual Context and External Commonsense Knowledge",
+        "Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention",
+        "Improving Chain-of-Thought Reasoning via Quasi-Symbolic Abstractions",
+        "Learning to Reason Over Time: Timeline Self-Reflection for Improved Temporal Reasoning in Language Models",
+        "MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for Retrieval Augmented Generation",
+        "RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation",
+        "SCOP: Evaluating the Comprehension Process of Large Language Models from a Cognitive View",
+        "VISA: Retrieval Augmented Generation with Visual Source Attribution"
+      ],
+      "original_name": "Answer generation"
+    },
+    {
+      "text": "The observable behavior of producing a conclusive response to the user's initial query after completing a sequence of function calls.",
+      "papers": [
+        "Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning",
+        "Reasoning Model Unlearning: Forgetting Traces, Not Just Answers, While Preserving Reasoning Skills",
+        "Exposing the Achilles' Heel: Evaluating LLMs Ability to Handle Mistakes in Mathematical Reasoning",
+        "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+      ],
+      "original_name": "Final answer generation"
+    },
+    {
+      "text": "The task of generating a natural language, free-form answer to a question based on a provided context.",
+      "papers": [
+        "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+        "CoRAC: Integrating Selective API Document Retrieval with Question Semantic Intent for Code Question Answering"
+      ],
+      "original_name": "Free-form answer generation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain of thought",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "VisDoM: Multi-Document QA with Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+      "evidence": "Extracting reasoning chains from multi-document artefacts can help contextualize curated evidence for final answer generation.",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "VisDoM: Multi-Document QA with Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+          "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning"
+        ],
+        "emnlp25": [
+          "From Reasoning to Answer: Empirical, Attention-Based and Mechanistic Insights into Distilled DeepSeek R1 Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VQA-v2",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Do Vision & Language Decoders use Images and Text equally? How Self-consistent are their Explanations?",
+      "evidence": "We experiment on samples from i) 3 datasets requiring free-form answer generation \u2013 VQA (Goyal et al., 2017), GQA, and GQA balanced (Hudson & Manning, 2019) (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do Vision & Language Decoders use Images and Text equally? How Self-consistent are their Explanations?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Do Vision & Language Decoders use Images and Text equally? How Self-consistent are their Explanations?",
+      "evidence": "We experiment on samples from i) 3 datasets requiring free-form answer generation \u2013 VQA (Goyal et al., 2017), GQA, and GQA balanced (Hudson & Manning, 2019) (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do Vision & Language Decoders use Images and Text equally? How Self-consistent are their Explanations?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+      "evidence": "In Answer Generation... answers containing the correct labels are of higher quality and suffer less from hallucination.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "correlates",
+      "paper": "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+      "evidence": "While the correlation is not very strong (up to r = 0.42), it confirms that with increased retrieval performance, the generation improves (Salemi and Zamani, 2024).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "PeerQA: A Scientific Question Answering Dataset from Peer Reviews"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the dominant framing is producing a final textual answer to a query or question, usually from provided context, retrieved documents or pages, or other supplied information. Many definitions place it at the end of a pipeline, and success is variously described as giving a summarized, concise, fluent, precise, justified, or expert-matching answer; some papers additionally require structured output, such as citations and separate reason and answer sections, while others expect a strict final format like a number or multiple-choice option. A smaller line of work narrows it to a conclusive response after function calls, or to free-form natural-language generation as a sequence-to-sequence process. As MIRAGE-Bench: Automatic Multilingual Benchmark Arena for Retrieval-Augmented Generation Systems describes it, the task can require a summarized answer from query and context, with the model starting \"##Reason\" and then \"##Answer\"."
+    },
+    {
+      "label": "Variants.",
+      "text": "Variants span answer generation, final answer generation, and free-form answer generation. Papers study it in multilingual retrieval-augmented settings, question-context generation, multi-document and multimodal document QA, image-centered multi-agent exchanges where agents answer one another's questions, and reasoning-heavy settings such as temporal, mathematical, geographic, cultural, code, and scientific question answering. Some variants ask for one final concise or conclusive answer after reasoning or function calls, while others generate several candidate answers for later human scoring or editing, or pair the answer with source attribution fields such as a document identifier and bounding-box coordinates."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to 2 measurement instruments, most often GQA and VQA-v2. In the linked measurement use, both are described as datasets requiring free-form answer generation, so the behavior is elicited through generating free-form answers. No other measurement instrument is linked."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not link answer generation to any construct, so there is no shared claim here about what construct it reflects. Instead, the recurring links are to other behaviors: several papers claim a causal relationship from Chain of thought to Answer generation, with one paper treating that link as related rather than causal; one paper reports Answer generation is related to Hallucination, noting that answers with the correct labels \"suffer less from hallucination\"; and one paper reports it correlates with Information retrieval, describing the correlation as \"not very strong\" while saying better retrieval accompanies better generation."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the dominant framing is producing a final textual answer to a query or question, usually from provided context, retrieved documents or pages, or other supplied information. Many definitions place it at the end of a pipeline, and success is variously described as giving a summarized, concise, fluent, precise, justified, or expert-matching answer; some papers additionally require structured output, such as citations and separate reason and answer sections, while others expect a strict final format like a number or multiple-choice option. A smaller line of work narrows it to a conclusive response after function calls, or to free-form natural-language generation as a sequence-to-sequence process. As MIRAGE-Bench: Automatic Multilingual Benchmark Arena for Retrieval-Augmented Generation Systems describes it, the task can require a summarized answer from query and context, with the model starting \"##Reason\" and then \"##Answer\".\n\nVariants. Variants span answer generation, final answer generation, and free-form answer generation. Papers study it in multilingual retrieval-augmented settings, question-context generation, multi-document and multimodal document QA, image-centered multi-agent exchanges where agents answer one another's questions, and reasoning-heavy settings such as temporal, mathematical, geographic, cultural, code, and scientific question answering. Some variants ask for one final concise or conclusive answer after reasoning or function calls, while others generate several candidate answers for later human scoring or editing, or pair the answer with source attribution fields such as a document identifier and bounding-box coordinates.\n\nSpace of elicitation and scores. Papers link this behavior to 2 measurement instruments, most often GQA and VQA-v2. In the linked measurement use, both are described as datasets requiring free-form answer generation, so the behavior is elicited through generating free-form answers. No other measurement instrument is linked.\n\nWhat it is taken as evidence of. Papers do not link answer generation to any construct, so there is no shared claim here about what construct it reflects. Instead, the recurring links are to other behaviors: several papers claim a causal relationship from Chain of thought to Answer generation, with one paper treating that link as related rather than causal; one paper reports Answer generation is related to Hallucination, noting that answers with the correct labels \"suffer less from hallucination\"; and one paper reports it correlates with Information retrieval, describing the correlation as \"not very strong\" while saying better retrieval accompanies better generation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Exploring Chain-of-Thought Reasoning for Steerable Pluralistic Alignment",
+      "Knowledge Editing through Chain-of-Thought",
+      "ProReason: Multi-Modal Proactive Reasoning with Decoupled Eyesight and Wisdom",
+      "Reasoning Model Unlearning: Forgetting Traces, Not Just Answers, While Preserving Reasoning Skills",
+      "Culture Cartography: Mapping the Landscape of Cultural Knowledge"
+    ],
+    "iclr25": [
+      "Facilitating Multi-turn Function Calling for LLMs via Compositional Instruction Tuning",
+      "VisRAG: Vision-based Retrieval-augmented Generation on Multi-modality Documents"
+    ],
+    "naacl25": [
+      "Analyzing and Improving Coherence of Large Language Models in Question Answering",
+      "CoRAC: Integrating Selective API Document Retrieval with Question Semantic Intent for Code Question Answering",
+      "Do RAG Systems Cover What Matters? Evaluating and Optimizing Responses with Sub-Question Coverage",
+      "Faux Polyglot: A Study on Information Disparity in Multilingual Large Language Models",
+      "MIRAGE-Bench: Automatic Multilingual Benchmark Arena for Retrieval-Augmented Generation Systems",
+      "Option Symbol Matters: Investigating and Mitigating Multiple-Choice Option Symbol Bias of Large Language Models",
+      "PeerQA: A Scientific Question Answering Dataset from Peer Reviews",
+      "RAG-Star: Enhancing Deliberative Reasoning with Retrieval Augmented Verification and Refinement",
+      "SUNAR: Semantic Uncertainty based Neighborhood Aware Retrieval for Complex QA",
+      "SimRAG: Self-Improving Retrieval-Augmented Generation for Adapting Large Language Models to Specialized Domains",
+      "VisDoM: Multi-Document QA with Visually Rich Elements Using Multimodal Retrieval-Augmented Generation",
+      "On the Impact of Fine-Tuning on Chain-of-Thought Reasoning",
+      "The Power of Many: Multi-Agent Multimodal Models for Cultural Image Captioning"
+    ],
+    "acl25": [
+      "Answering Complex Geographic Questions by Adaptive Reasoning with Visual Context and External Commonsense Knowledge",
+      "Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention",
+      "Improving Chain-of-Thought Reasoning via Quasi-Symbolic Abstractions",
+      "Learning to Reason Over Time: Timeline Self-Reflection for Improved Temporal Reasoning in Language Models",
+      "MEMERAG: A Multilingual End-to-End Meta-Evaluation Benchmark for Retrieval Augmented Generation",
+      "RetroLLM: Empowering Large Language Models to Retrieve Fine-grained Evidence within Generation",
+      "SCOP: Evaluating the Comprehension Process of Large Language Models from a Cognitive View",
+      "VISA: Retrieval Augmented Generation with Visual Source Attribution",
+      "Exposing the Achilles' Heel: Evaluating LLMs Ability to Handle Mistakes in Mathematical Reasoning"
+    ],
+    "neurips24": [
+      "Boosting the Potential of Large Language Models with an Intelligent Information Assistant"
+    ],
+    "icml25": [
+      "C-3PO: Compact Plug-and-Play Proxy Optimization to Achieve Human-like Retrieval-Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5,
+    "iclr25": 2,
+    "naacl25": 13,
+    "acl25": 9,
+    "neurips24": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

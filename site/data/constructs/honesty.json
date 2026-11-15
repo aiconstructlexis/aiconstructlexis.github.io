@@ -1,0 +1,429 @@
+{
+  "canonical_name": "Honesty",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats honesty as a latent model trait or disposition toward truthfulness, factual accuracy, and non-deception. Most definitions also fold in acknowledging limits, for example abstaining, saying \"I don't know,\" declining to answer when information is insufficient, avoiding fabrication or hallucination, or matching stated confidence to accuracy. A smaller line of work narrows it to consistency with the model's internal beliefs or knowledge, and one survey uses the label \"sincerity\" for acting on what one believes to be true with sufficient evidence. Some authors describe honesty as a property of the model, while others describe it as the degree to which outputs are truthful and do not misrepresent facts or mislead.\n\nSpace of facets. Papers most often place honesty inside broader alignment taxonomies, especially alongside helpfulness and harmlessness as part of 3H or HHH, and one paper also lists it among five fine-grained alignment perspectives with unbiasedness and engagement. The concept is not fully stabilized against nearby terms: some papers separate honesty from truthfulness, with one defining honesty as stating what the model believes and truthfulness as stating what is objectively true, while other papers use truthfulness or factual accuracy inside their honesty definitions. \"Sincerity\" appears as an alternate label in cooperative settings, and work on strategic discussion explicitly contrasts honesty with deception.\n\nSpace of measurement. Papers operationalize honesty with 4 measurement instruments and 4 behavioral indicators. The most common linked instruments are UltraFeedback, a multi-aspect preference dataset with GPT-4 evaluations that includes an honest objective, LLM-as-a-judge ratings of honesty, and the QA benchmarks TriviaQA and TruthfulQA; behaviorally, honesty is tied to refusal, abstention, confidence expression, and hallucination. These measures track the same themes emphasized in many definitions: truthful or factual responses, uncertainty expression, and avoiding fabrication or hallucination.\n\nLinks. Some papers relate honesty to human preference alignment, treating it as one of the 3H or HHH principles, and some relate it to refusal or abstention, where honest behavior is giving \"I don't know\" or declining when knowledge is insufficient. Other papers relate honesty to calibration, confidence expression, hallucination, self-awareness of operational limits, truthfulness, sycophancy, and world knowledge; one paper says reducing sycophancy is a measure for enhancing honesty, and another says a model is more honest if it performs better on measures of world knowledge. One paper reports that harmlessness correlates with honesty and describes a potential trade-off, and one paper claims a causal relationship from honesty to trustworthiness.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Honesty",
+    "Sincerity"
+  ],
+  "papers": [
+    "How to Enable Effective Cooperation Between Humans and NLP Models: A Survey of Principles, Formalizations, and Beyond",
+    "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+    "Icon2: Aligning Large Language Models Using Self-Synthetic Preference Data via Inherent Regulation",
+    "SATER: A Self-Aware and Token-Efficient Approach to Routing and Cascading",
+    "Textual Aesthetics in Large Language Models",
+    "Too Helpful, Too Harmless, Too Honest or Just Right?",
+    "AlpaGasus: Training a Better Alpaca with Fewer Data",
+    "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+    "How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions",
+    "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+    "SALMON: Self-Alignment with Instructable Reward Models",
+    "Training Socially Aligned Language Models on Simulated Social Interactions",
+    "Forewarned is Forearmed: Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+    "Refine Knowledge of Large Language Models via Adaptive Contrastive Learning",
+    "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+    "DPO Meets PPO: Reinforced Token Optimization for RLHF",
+    "Detecting Strategic Deception with Linear Probes",
+    "Latent Preference Coding: Aligning Large Language Models via Discrete Latent Codes",
+    "Learning Distribution-wise Control in Representation Space for Language Models",
+    "PoisonBench: Assessing Language Model Vulnerability to Poisoned Preference Data",
+    "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+    "Preference Learning for AI Alignment: a Causal Perspective",
+    "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs",
+    "RuleAdapter: Dynamic Rules for training Safety Reward Models in RLHF",
+    "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models",
+    "Are LLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers on LLM-based Evaluation",
+    "Beyond the Safety Bundle: Auditing the Helpful and Harmless Dataset",
+    "DPL: Diverse Preference Learning Without A Reference Model",
+    "Pipeline Analysis for Developing Instruct LLMs in Low-Resource Languages: A Case Study on Basque",
+    "Transferable Post-training via Inverse Value Learning",
+    "Unlocking Decoding-time Controllability: Gradient-Free Multi-Objective Alignment with Contrastive Prompts",
+    "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+    "Aligner: Efficient Alignment by Learning to Correct",
+    "Alignment for Honesty",
+    "HonestLLM: Toward an Honest and Helpful Large Language Model",
+    "Learning to Discuss Strategically: A Case Study on One Night Ultimate Werewolf",
+    "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+    "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+    "On scalable oversight with weak LLMs judging strong LLMs",
+    "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+    "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "UltraMedical: Building Specialized Generalists in Biomedicine"
+  ],
+  "paper_count": 42,
+  "definitions": [
+    {
+      "text": "A desirable model trait encompassing truthfulness and the ability to acknowledge when it lacks information, for instance by abstaining from answering or avoiding hallucinations.",
+      "papers": [
+        "AlpaGasus: Training a Better Alpaca with Fewer Data",
+        "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+        "How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions",
+        "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+        "SALMON: Self-Alignment with Instructable Reward Models",
+        "Training Socially Aligned Language Models on Simulated Social Interactions",
+        "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments"
+      ],
+      "original_name": "Honesty"
+    },
+    {
+      "text": "The latent tendency of a model to provide truthful and evidence-backed responses without deception during cooperation with humans.",
+      "papers": [
+        "How to Enable Effective Cooperation Between Humans and NLP Models: A Survey of Principles, Formalizations, and Beyond"
+      ],
+      "original_name": "Sincerity"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SALMON: Self-Alignment with Instructable Reward Models",
+      "evidence": "Additionally, we found SALMON capable to emphasize the distinct aspects of the alignment with respect to being Helpful, Honest, and Harmless) (HHH) (Askell et al., 2021) by customizing its preference principles.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "SALMON: Self-Alignment with Instructable Reward Models"
+        ],
+        "emnlp25": [
+          "Icon2: Aligning Large Language Models Using Self-Synthetic Preference Data via Inherent Regulation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UltraFeedback",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": "UltraFeedback [7]: a multi-aspect alignment dataset with 64K prompts with preferences obtained from GPT-4, including \"Instruction following\", \"Honest\", \"Truthful\", and \"Helpful\" objectives (Section 4.1).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+        ],
+        "emnlp25": [
+          "Textual Aesthetics in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Refusal",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Alignment for Honesty",
+      "evidence": "In this paper, we argue for the importance of alignment for honesty, ensuring that LLMs proactively refuse to answer questions when they lack knowledge, while still not being overly conservative. (Abstract)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Alignment for Honesty"
+        ],
+        "iclr25": [
+          "Refine Knowledge of Large Language Models via Adaptive Contrastive Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Calibration",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": "At its most basic level, the AI should provide accurate information, be well-calibrated, and express appropriate levels of uncertainty rather than misleading users. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HonestLLM: Toward an Honest and Helpful Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstention",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "LMMs must be ... honest (e.g., abstention or the ability to say I don\u2019t know...)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Alignment for Honesty",
+      "evidence": "According to Evans et al. (2021); Park et al. (2023), honesty entails a model stating what it believes, while an adjacent concept, truthfulness, demands it to state what is objectively true. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Alignment for Honesty"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Alignment for Honesty",
+      "evidence": "Results of LLaMA2-Chat-13B on the TriviaQA evaluation set are shown in Tab. 3... enhance the honesty score",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Alignment for Honesty"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": "honesty\u2014defined as consistently delivering accurate information and refraining from deceiving users\u2014plays a crucial role in ensuring the trustworthy deployment of LLMs in real-world applications. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HonestLLM: Toward an Honest and Helpful Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": "we first refine and extend the definition of honesty in LLMs based on the definition proposed by Askell et al. [14], as the ability to recognize their limitations, remain objective without pandering, and thereby avoid spreading misinformation or inducing hallucinations. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HonestLLM: Toward an Honest and Helpful Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": "Crucially, the AI should be honest about its capabilities and knowledge levels. This requires LLMs to have an awareness of their operational limits, a point highlighted by Huang et al. [19] which noted the general unawareness of LLMs to utilize external tools effectively. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HonestLLM: Toward an Honest and Helpful Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sycophancy",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "evidence": "Such behavior compromises the truthfulness of LLMs; therefore, reducing sycophancy is a critical measure for enhancing the honesty of LLMs [13]. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HonestLLM: Toward an Honest and Helpful Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "evidence": "MiniGPT-v2 exhibits strong safety across several dimensions but underperforms on Truthfulness, suggesting a potential trade-off between honesty and harmlessness.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "World knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking",
+      "evidence": "Model A is more honest than model B IFF it exhibits statistically superior performance on measures of world knowledge (Section 5).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DPL: Diverse Preference Learning Without A Reference Model",
+      "evidence": "\u201cwe conduct a one-shot \u2018first-past-the-post\u2019 (FPP)-style assessment with GPT-4o as the judge ... for quality ratings on a Likert scale between 1 to 5 ... including overall performance, honesty, helpfulness, truthfulness, and safety\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "DPL: Diverse Preference Learning Without A Reference Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Too Helpful, Too Harmless, Too Honest or Just Right?",
+      "evidence": "For honesty, we utilize the TruthfulQA dataset (Lin et al., 2021) (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Too Helpful, Too Harmless, Too Honest or Just Right?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Confidence expression",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Alignment for Honesty",
+      "evidence": "the expression of uncertainty can serve as a valuable indicator of honesty, and we view calibration from the perspective of model knowledge as a finer-grained handling of knowns",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Alignment for Honesty"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 16,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 11,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats honesty as a latent model trait or disposition toward truthfulness, factual accuracy, and non-deception. Most definitions also fold in acknowledging limits, for example abstaining, saying \"I don't know,\" declining to answer when information is insufficient, avoiding fabrication or hallucination, or matching stated confidence to accuracy. A smaller line of work narrows it to consistency with the model's internal beliefs or knowledge, and one survey uses the label \"sincerity\" for acting on what one believes to be true with sufficient evidence. Some authors describe honesty as a property of the model, while others describe it as the degree to which outputs are truthful and do not misrepresent facts or mislead."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers most often place honesty inside broader alignment taxonomies, especially alongside helpfulness and harmlessness as part of 3H or HHH, and one paper also lists it among five fine-grained alignment perspectives with unbiasedness and engagement. The concept is not fully stabilized against nearby terms: some papers separate honesty from truthfulness, with one defining honesty as stating what the model believes and truthfulness as stating what is objectively true, while other papers use truthfulness or factual accuracy inside their honesty definitions. \"Sincerity\" appears as an alternate label in cooperative settings, and work on strategic discussion explicitly contrasts honesty with deception."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers operationalize honesty with 4 measurement instruments and 4 behavioral indicators. The most common linked instruments are UltraFeedback, a multi-aspect preference dataset with GPT-4 evaluations that includes an honest objective, LLM-as-a-judge ratings of honesty, and the QA benchmarks TriviaQA and TruthfulQA; behaviorally, honesty is tied to refusal, abstention, confidence expression, and hallucination. These measures track the same themes emphasized in many definitions: truthful or factual responses, uncertainty expression, and avoiding fabrication or hallucination."
+    },
+    {
+      "label": "Links.",
+      "text": "Some papers relate honesty to human preference alignment, treating it as one of the 3H or HHH principles, and some relate it to refusal or abstention, where honest behavior is giving \"I don't know\" or declining when knowledge is insufficient. Other papers relate honesty to calibration, confidence expression, hallucination, self-awareness of operational limits, truthfulness, sycophancy, and world knowledge; one paper says reducing sycophancy is a measure for enhancing honesty, and another says a model is more honest if it performs better on measures of world knowledge. One paper reports that harmlessness correlates with honesty and describes a potential trade-off, and one paper claims a causal relationship from honesty to trustworthiness."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats honesty as a latent model trait or disposition toward truthfulness, factual accuracy, and non-deception. Most definitions also fold in acknowledging limits, for example abstaining, saying \"I don't know,\" declining to answer when information is insufficient, avoiding fabrication or hallucination, or matching stated confidence to accuracy. A smaller line of work narrows it to consistency with the model's internal beliefs or knowledge, and one survey uses the label \"sincerity\" for acting on what one believes to be true with sufficient evidence. Some authors describe honesty as a property of the model, while others describe it as the degree to which outputs are truthful and do not misrepresent facts or mislead.\n\nSpace of facets. Papers most often place honesty inside broader alignment taxonomies, especially alongside helpfulness and harmlessness as part of 3H or HHH, and one paper also lists it among five fine-grained alignment perspectives with unbiasedness and engagement. The concept is not fully stabilized against nearby terms: some papers separate honesty from truthfulness, with one defining honesty as stating what the model believes and truthfulness as stating what is objectively true, while other papers use truthfulness or factual accuracy inside their honesty definitions. \"Sincerity\" appears as an alternate label in cooperative settings, and work on strategic discussion explicitly contrasts honesty with deception.\n\nSpace of measurement. Papers operationalize honesty with 4 measurement instruments and 4 behavioral indicators. The most common linked instruments are UltraFeedback, a multi-aspect preference dataset with GPT-4 evaluations that includes an honest objective, LLM-as-a-judge ratings of honesty, and the QA benchmarks TriviaQA and TruthfulQA; behaviorally, honesty is tied to refusal, abstention, confidence expression, and hallucination. These measures track the same themes emphasized in many definitions: truthful or factual responses, uncertainty expression, and avoiding fabrication or hallucination.\n\nLinks. Some papers relate honesty to human preference alignment, treating it as one of the 3H or HHH principles, and some relate it to refusal or abstention, where honest behavior is giving \"I don't know\" or declining when knowledge is insufficient. Other papers relate honesty to calibration, confidence expression, hallucination, self-awareness of operational limits, truthfulness, sycophancy, and world knowledge; one paper says reducing sycophancy is a measure for enhancing honesty, and another says a model is more honest if it performs better on measures of world knowledge. One paper reports that harmlessness correlates with honesty and describes a potential trade-off, and one paper claims a causal relationship from honesty to trustworthiness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "How to Enable Effective Cooperation Between Humans and NLP Models: A Survey of Principles, Formalizations, and Beyond"
+    ],
+    "emnlp25": [
+      "DeepResearcher: Scaling Deep Research via Reinforcement Learning in Real-world Environments",
+      "Icon2: Aligning Large Language Models Using Self-Synthetic Preference Data via Inherent Regulation",
+      "SATER: A Self-Aware and Token-Efficient Approach to Routing and Cascading",
+      "Textual Aesthetics in Large Language Models",
+      "Too Helpful, Too Harmless, Too Honest or Just Right?"
+    ],
+    "iclr24": [
+      "AlpaGasus: Training a Better Alpaca with Fewer Data",
+      "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions",
+      "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "SALMON: Self-Alignment with Instructable Reward Models",
+      "Training Socially Aligned Language Models on Simulated Social Interactions"
+    ],
+    "iclr25": [
+      "Forewarned is Forearmed: Harnessing LLMs for Data Synthesis via Failure-induced Exploration",
+      "Refine Knowledge of Large Language Models via Adaptive Contrastive Learning",
+      "Style Outweighs Substance: Failure Modes of LLM Judges in Alignment Benchmarking"
+    ],
+    "icml25": [
+      "DPO Meets PPO: Reinforced Token Optimization for RLHF",
+      "Detecting Strategic Deception with Linear Probes",
+      "Latent Preference Coding: Aligning Large Language Models via Discrete Latent Codes",
+      "Learning Distribution-wise Control in Representation Space for Language Models",
+      "PoisonBench: Assessing Language Model Vulnerability to Poisoned Preference Data",
+      "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+      "Preference Learning for AI Alignment: a Causal Perspective",
+      "Reward-Augmented Data Enhances Direct Preference Alignment of LLMs",
+      "RuleAdapter: Dynamic Rules for training Safety Reward Models in RLHF",
+      "To Steer or Not to Steer? Mechanistic Error Reduction with Abstention for Language Models"
+    ],
+    "naacl25": [
+      "Are LLM-Judges Robust to Expressions of Uncertainty? Investigating the effect of Epistemic Markers on LLM-based Evaluation",
+      "Beyond the Safety Bundle: Auditing the Helpful and Harmless Dataset",
+      "DPL: Diverse Preference Learning Without A Reference Model",
+      "Pipeline Analysis for Developing Instruct LLMs in Low-Resource Languages: A Case Study on Basque",
+      "Transferable Post-training via Inverse Value Learning",
+      "Unlocking Decoding-time Controllability: Gradient-Free Multi-Objective Alignment with Contrastive Prompts"
+    ],
+    "neurips24": [
+      "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "Aligner: Efficient Alignment by Learning to Correct",
+      "Alignment for Honesty",
+      "HonestLLM: Toward an Honest and Helpful Large Language Model",
+      "Learning to Discuss Strategically: A Case Study on One Night Ultimate Werewolf",
+      "MLLMGuard: A Multi-dimensional Safety Evaluation Suite for Multimodal Large Language Models",
+      "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "On scalable oversight with weak LLMs judging strong LLMs",
+      "Regularizing Hidden States Enables Learning Generalizable Reward Model for LLMs",
+      "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+      "UltraMedical: Building Specialized Generalists in Biomedicine"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 5,
+    "iclr24": 6,
+    "iclr25": 3,
+    "icml25": 10,
+    "naacl25": 6,
+    "neurips24": 11
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

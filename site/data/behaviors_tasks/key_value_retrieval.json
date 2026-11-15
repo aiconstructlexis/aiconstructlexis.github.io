@@ -1,0 +1,276 @@
+{
+  "canonical_name": "Key-value retrieval",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the dominant framing treats it as retrieving the value associated with a specified key from prior context containing many key-value pairs, often organized as a dictionary, long list, random string pairs, or a large JSON object. Success is usually accurate recovery or generation of the value for the queried key. Several papers present it as a synthetic task, and some explicitly use it to evaluate context awareness; some authors use narrower recall formulations under the same umbrella, such as retrieving a stored value for a queried variable or copying the token that followed an earlier trigger token within the same input.\n\nVariants. Papers use several nearby names and harder or narrower settings. Associative recall keeps the same basic pattern of generating a value from a key given a string of key-value tuples, and one multi-query version says that successive queries must recall earlier variable assignments. A smaller line of work studies multi-subkey dictionary retrieval, where each key is a tuple of integers and the model must identify the tuple containing specified subkeys, then report the tuple, its value, and its dictionary; another names in-context recall as a token-copying version, and other instantiations use Python-style UUID pairs or large JSON objects.\n\nSpace of elicitation and scores. Papers link it to 2 measurement instruments, MQAR and InfiniteBench. MQAR measures the behavior by asking models to predict the value associated with the corresponding key at query positions while ignoring non-query positions, whereas InfiniteBench includes key-value retrieval among extended-context tasks such as summarization and question answering.\n\nWhat it is taken as evidence of. Papers connect this behavior to 4 constructs, and the links do not center on a single construct. It is reported as related to in-context learning, context utilization, and in-context reasoning, while one paper claims a causal relationship from key-value retrieval to long-context reasoning by stating that finetuning on synthetic key-value retrieval tasks improves long-context reasoning capabilities.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Key-value retrieval",
+    "Multi-subkey dictionary retrieval",
+    "Associative recall",
+    "In-context recall",
+    "Key-Value Retrieval task"
+  ],
+  "papers": [
+    "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability",
+    "Scaling Laws for Associative Memories",
+    "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+    "Zoology: Measuring and Improving Recall in Efficient Language Models",
+    "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers",
+    "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+    "RNNs are not Transformers (Yet): The Key Bottleneck on In-Context Retrieval",
+    "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+    "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+    "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+    "ZETA: Leveraging $Z$-order Curves for Efficient Top-$k$ Attention",
+    "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+    "Quantifying Memory Utilization with Effective State-Size",
+    "Understanding the Skill Gap in Recurrent Language Models: The Role of the Gather-and-Aggregate Mechanism",
+    "Pointwise Mutual Information as a Performance Gauge for Retrieval-Augmented Generation",
+    "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+    "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+    "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+    "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+    "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+  ],
+  "paper_count": 20,
+  "definitions": [
+    {
+      "text": "The task of extracting the correct value corresponding to a given key from a context containing multiple key-value pairs.",
+      "papers": [
+        "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+        "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+        "Understanding the Skill Gap in Recurrent Language Models: The Role of the Gather-and-Aggregate Mechanism",
+        "Pointwise Mutual Information as a Performance Gauge for Retrieval-Augmented Generation"
+      ],
+      "original_name": "Key-value retrieval"
+    },
+    {
+      "text": "Given dictionaries whose keys are tuples of integers, the model identifies the tuple containing specified subkeys and reports the tuple, its value, and its dictionary.",
+      "papers": [
+        "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data"
+      ],
+      "original_name": "Multi-subkey dictionary retrieval"
+    },
+    {
+      "text": "Retrieving the correct stored value for a queried variable from prior context.",
+      "papers": [
+        "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study"
+      ],
+      "original_name": "Associative recall"
+    },
+    {
+      "text": "The observable task of copying a token that follows a previous occurrence of a specific trigger token within the same input context.",
+      "papers": [
+        "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers"
+      ],
+      "original_name": "In-context recall"
+    },
+    {
+      "text": "An evaluation task that measures a model's context awareness by requiring it to retrieve a specific value for a given key from a long context of randomly generated key-value pairs.",
+      "papers": [
+        "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness"
+      ],
+      "original_name": "Key-Value Retrieval task"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MQAR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "evidence": "Multi-Query Associative Recall (MQAR) Task. (Figure 1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions"
+        ],
+        "icml25": [
+          "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability",
+      "evidence": "\u201cwe evaluate the capacity of various architectures to in-context learn associative recall\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability"
+        ],
+        "neurips24": [
+          "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Synthetic recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "evidence": "finetuning LLMs on this dataset significantly improves LLMs\u2019 information retrieval and reasoning capabilities in longer-context settings. (ABSTRACT)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+          "SCBench: A KV Cache-Centric Analysis of Long-Context Methods"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "RNNs are not Transformers (Yet): The Key Bottleneck on In-Context Retrieval",
+      "evidence": "RNNs with CoT cannot solve a set of fundamental algorithmic problems that directly ask for in-context retrieval, including associative recall. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "RNNs are not Transformers (Yet): The Key Bottleneck on In-Context Retrieval"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers",
+      "evidence": "Under this definition, we list a few simple examples of reasoning that we will consider below: \u2022 In-context recall (Section 2.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "InfiniteBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation",
+      "evidence": "InfiniteBench (Zhang et al., 2024): Designed for LLMs on extended contexts, it includes tasks like key-value retrieval, summarization, and QA on data exceeding 100K tokens.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Instruction-tuned LLMs to Million-token Contexts via Hierarchical Synthetic Data Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "evidence": "Finetuning LLMs on synthetic key-value retrieval tasks improves LLMs\u2019 long-context reasoning capabilities, even if explicit chain-of-thought reasoning is not allowed. (Finding 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context utilization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "evidence": "We assess the context utilization ability of our approaches on two tasks, including multi-document question answering (MDQA) and key-value retrieval (KV retrieval) tasks from [15]. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the dominant framing treats it as retrieving the value associated with a specified key from prior context containing many key-value pairs, often organized as a dictionary, long list, random string pairs, or a large JSON object. Success is usually accurate recovery or generation of the value for the queried key. Several papers present it as a synthetic task, and some explicitly use it to evaluate context awareness; some authors use narrower recall formulations under the same umbrella, such as retrieving a stored value for a queried variable or copying the token that followed an earlier trigger token within the same input."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby names and harder or narrower settings. Associative recall keeps the same basic pattern of generating a value from a key given a string of key-value tuples, and one multi-query version says that successive queries must recall earlier variable assignments. A smaller line of work studies multi-subkey dictionary retrieval, where each key is a tuple of integers and the model must identify the tuple containing specified subkeys, then report the tuple, its value, and its dictionary; another names in-context recall as a token-copying version, and other instantiations use Python-style UUID pairs or large JSON objects."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link it to 2 measurement instruments, MQAR and InfiniteBench. MQAR measures the behavior by asking models to predict the value associated with the corresponding key at query positions while ignoring non-query positions, whereas InfiniteBench includes key-value retrieval among extended-context tasks such as summarization and question answering."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers connect this behavior to 4 constructs, and the links do not center on a single construct. It is reported as related to in-context learning, context utilization, and in-context reasoning, while one paper claims a causal relationship from key-value retrieval to long-context reasoning by stating that finetuning on synthetic key-value retrieval tasks improves long-context reasoning capabilities."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the dominant framing treats it as retrieving the value associated with a specified key from prior context containing many key-value pairs, often organized as a dictionary, long list, random string pairs, or a large JSON object. Success is usually accurate recovery or generation of the value for the queried key. Several papers present it as a synthetic task, and some explicitly use it to evaluate context awareness; some authors use narrower recall formulations under the same umbrella, such as retrieving a stored value for a queried variable or copying the token that followed an earlier trigger token within the same input.\n\nVariants. Papers use several nearby names and harder or narrower settings. Associative recall keeps the same basic pattern of generating a value from a key given a string of key-value tuples, and one multi-query version says that successive queries must recall earlier variable assignments. A smaller line of work studies multi-subkey dictionary retrieval, where each key is a tuple of integers and the model must identify the tuple containing specified subkeys, then report the tuple, its value, and its dictionary; another names in-context recall as a token-copying version, and other instantiations use Python-style UUID pairs or large JSON objects.\n\nSpace of elicitation and scores. Papers link it to 2 measurement instruments, MQAR and InfiniteBench. MQAR measures the behavior by asking models to predict the value associated with the corresponding key at query positions while ignoring non-query positions, whereas InfiniteBench includes key-value retrieval among extended-context tasks such as summarization and question answering.\n\nWhat it is taken as evidence of. Papers connect this behavior to 4 constructs, and the links do not center on a single construct. It is reported as related to in-context learning, context utilization, and in-context reasoning, while one paper claims a causal relationship from key-value retrieval to long-context reasoning by stating that finetuning on synthetic key-value retrieval tasks improves long-context reasoning capabilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Is attention required for ICL? Exploring the Relationship Between Model Architecture and In-Context Learning Ability",
+      "Scaling Laws for Associative Memories",
+      "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+      "Zoology: Measuring and Improving Recall in Efficient Language Models"
+    ],
+    "iclr25": [
+      "Distributional Associations vs In-Context Reasoning: A Study of Feed-forward and Attention Layers",
+      "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "RNNs are not Transformers (Yet): The Key Bottleneck on In-Context Retrieval",
+      "Rodimus*: Breaking the Accuracy-Efficiency Trade-Off with Efficient Attentions",
+      "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+      "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+      "ZETA: Leveraging $Z$-order Curves for Efficient Top-$k$ Attention",
+      "SCBench: A KV Cache-Centric Analysis of Long-Context Methods"
+    ],
+    "icml25": [
+      "Quantifying Memory Utilization with Effective State-Size",
+      "Understanding the Skill Gap in Recurrent Language Models: The Role of the Gather-and-Aggregate Mechanism"
+    ],
+    "neurips24": [
+      "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "Found in the Middle: How Language Models Use Long Contexts Better via Plug-and-Play Positional Encoding",
+      "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+      "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "Orchid: Flexible and Data-Dependent Convolution for Sequence Modeling"
+    ],
+    "naacl25": [
+      "Pointwise Mutual Information as a Performance Gauge for Retrieval-Augmented Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 4,
+    "iclr25": 8,
+    "icml25": 2,
+    "neurips24": 5,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

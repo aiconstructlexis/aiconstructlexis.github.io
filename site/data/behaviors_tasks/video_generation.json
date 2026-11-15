@@ -1,0 +1,199 @@
+{
+  "canonical_name": "Video generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats video generation as synthesizing a sequence of coherent video frames or realistic video sequences. Most commonly, papers frame it as generation conditioned on an input such as a text prompt, a class label, previous frames, or, in some work, a static image, though some definitions also allow unconditional generation. Success is described in terms such as coherence and realism, and some papers further emphasize spatial and temporal coherence with the input description, desired attributes and motion patterns, semantic faithfulness to captions, or fidelity to the prompt and visual quality.\n\nVariants. Most papers study text-to-video generation, described as generating a novel video sequence or video clip from a textual description or caption. Smaller lines of work separate image-to-video generation from a static input image, class-conditional generation, and frame prediction with a 5-frame condition. A more specialized variant is impossible video generation, where the prompt asks for scenes that violate physical, biological, geographical, or social laws while the model is still expected to follow the prompt.\n\nSpace of elicitation and scores. Papers link video generation to three measurement instruments. The most frequently linked instrument is VBench, which papers use for evaluating video generation capability and for GPT-augmented prompts in the video generation domain; MSR-VTT and UCF-101 are also used, described as common datasets for video generation experiments, with MSR-VTT also appearing in text-to-video evaluation. Across these links, the instruments are treated as a mix of a benchmark and datasets.\n\nWhat it is taken as evidence of. These papers do not link video generation to any construct, so they do not explicitly use it as evidence of a construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Video generation",
+    "Text-to-video generation",
+    "Image-to-video generation",
+    "Impossible video generation"
+  ],
+  "papers": [
+    "HAIC: Improving Human Action Understanding and Generation with Better Captions for Multi-modal Large Language Models",
+    "LLM-grounded Video Diffusion Models",
+    "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+    "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+    "SageAttention: Accurate 8-Bit Attention for Plug-and-play Inference Acceleration",
+    "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation",
+    "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation",
+    "World Model on Million-Length Video And Language With Blockwise RingAttention",
+    "Data-Juicer Sandbox: A Feedback-Driven Suite for Multimodal Data-Model Co-development",
+    "I Think, Therefore I Diffuse: Enabling Multimodal In-Context Reasoning in Diffusion Models",
+    "Impossible Videos",
+    "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+    "XAttention: Block Sparse Attention with Antidiagonal Scoring",
+    "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation",
+    "Compositional 3D-aware Video Generation with LLM Director",
+    "GenAI Arena: An Open Evaluation Platform for Generative Models",
+    "Neural Residual Diffusion Models for Deep Scalable Vision Generation",
+    "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+    "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition",
+    "VideoTetris: Towards Compositional Text-to-Video Generation",
+    "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+  ],
+  "paper_count": 21,
+  "definitions": [
+    {
+      "text": "Generating coherent and realistic video sequences, either conditioned on class labels or previous frames.",
+      "papers": [
+        "LLM-grounded Video Diffusion Models",
+        "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+        "Neural Residual Diffusion Models for Deep Scalable Vision Generation",
+        "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation"
+      ],
+      "original_name": "Video generation"
+    },
+    {
+      "text": "Creating dynamic video content from textual prompts.",
+      "papers": [
+        "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+        "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+        "Impossible Videos",
+        "HAIC: Improving Human Action Understanding and Generation with Better Captions for Multi-modal Large Language Models"
+      ],
+      "original_name": "Text-to-video generation"
+    },
+    {
+      "text": "Creating dynamic video content based on a static input image.",
+      "papers": [
+        "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+      ],
+      "original_name": "Image-to-video generation"
+    },
+    {
+      "text": "The observable act of producing a video that depicts a scene violating real-world physical, biological, geographical, or social laws, as prompted by a text description.",
+      "papers": [
+        "Impossible Videos"
+      ],
+      "original_name": "Impossible video generation"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation",
+      "evidence": "To evaluate the visual generation capability, we use... VBench (Huang et al., 2024) for video generation. (Section 4.1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation"
+        ],
+        "icml25": [
+          "XAttention: Block Sparse Attention with Antidiagonal Scoring",
+          "Data-Juicer Sandbox: A Feedback-Driven Suite for Multimodal Data-Model Co-development"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "UCF-101",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+      "evidence": "We use Kinetics-600 (K600) and UCF-101 (Soomro et al., 2012) for video generation experiments (Section 4.1).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Language Model Beats Diffusion - Tokenizer is key to visual generation",
+          "LLM-grounded Video Diffusion Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MSR-VTT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLM-grounded Video Diffusion Models",
+      "evidence": "\"We also evaluate LVD on common datasets such as UCF-101 (Soomro et al., 2012) and MSR-VTT (Xu et al., 2016)\"",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "LLM-grounded Video Diffusion Models"
+        ],
+        "neurips24": [
+          "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats video generation as synthesizing a sequence of coherent video frames or realistic video sequences. Most commonly, papers frame it as generation conditioned on an input such as a text prompt, a class label, previous frames, or, in some work, a static image, though some definitions also allow unconditional generation. Success is described in terms such as coherence and realism, and some papers further emphasize spatial and temporal coherence with the input description, desired attributes and motion patterns, semantic faithfulness to captions, or fidelity to the prompt and visual quality."
+    },
+    {
+      "label": "Variants.",
+      "text": "Most papers study text-to-video generation, described as generating a novel video sequence or video clip from a textual description or caption. Smaller lines of work separate image-to-video generation from a static input image, class-conditional generation, and frame prediction with a 5-frame condition. A more specialized variant is impossible video generation, where the prompt asks for scenes that violate physical, biological, geographical, or social laws while the model is still expected to follow the prompt."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link video generation to three measurement instruments. The most frequently linked instrument is VBench, which papers use for evaluating video generation capability and for GPT-augmented prompts in the video generation domain; MSR-VTT and UCF-101 are also used, described as common datasets for video generation experiments, with MSR-VTT also appearing in text-to-video evaluation. Across these links, the instruments are treated as a mix of a benchmark and datasets."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "These papers do not link video generation to any construct, so they do not explicitly use it as evidence of a construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats video generation as synthesizing a sequence of coherent video frames or realistic video sequences. Most commonly, papers frame it as generation conditioned on an input such as a text prompt, a class label, previous frames, or, in some work, a static image, though some definitions also allow unconditional generation. Success is described in terms such as coherence and realism, and some papers further emphasize spatial and temporal coherence with the input description, desired attributes and motion patterns, semantic faithfulness to captions, or fidelity to the prompt and visual quality.\n\nVariants. Most papers study text-to-video generation, described as generating a novel video sequence or video clip from a textual description or caption. Smaller lines of work separate image-to-video generation from a static input image, class-conditional generation, and frame prediction with a 5-frame condition. A more specialized variant is impossible video generation, where the prompt asks for scenes that violate physical, biological, geographical, or social laws while the model is still expected to follow the prompt.\n\nSpace of elicitation and scores. Papers link video generation to three measurement instruments. The most frequently linked instrument is VBench, which papers use for evaluating video generation capability and for GPT-augmented prompts in the video generation domain; MSR-VTT and UCF-101 are also used, described as common datasets for video generation experiments, with MSR-VTT also appearing in text-to-video evaluation. Across these links, the instruments are treated as a mix of a benchmark and datasets.\n\nWhat it is taken as evidence of. These papers do not link video generation to any construct, so they do not explicitly use it as evidence of a construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "LLM-grounded Video Diffusion Models",
+      "Language Model Beats Diffusion - Tokenizer is key to visual generation"
+    ],
+    "iclr25": [
+      "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+      "SageAttention: Accurate 8-Bit Attention for Plug-and-play Inference Acceleration",
+      "Show-o: One Single Transformer to Unify Multimodal Understanding and Generation",
+      "VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation",
+      "World Model on Million-Length Video And Language With Blockwise RingAttention"
+    ],
+    "icml25": [
+      "Data-Juicer Sandbox: A Feedback-Driven Suite for Multimodal Data-Model Co-development",
+      "I Think, Therefore I Diffuse: Enabling Multimodal In-Context Reasoning in Diffusion Models",
+      "Impossible Videos",
+      "PAK-UCB Contextual Bandit: An Online Learning Approach to Prompt-Aware Selection of Generative Models and LLMs",
+      "XAttention: Block Sparse Attention with Antidiagonal Scoring"
+    ],
+    "neurips24": [
+      "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation",
+      "Compositional 3D-aware Video Generation with LLM Director",
+      "GenAI Arena: An Open Evaluation Platform for Generative Models",
+      "Neural Residual Diffusion Models for Deep Scalable Vision Generation",
+      "ShareGPT4Video: Improving Video Understanding and Generation with Better Captions",
+      "T2Vs Meet VLMs: A Scalable Multimodal Dataset for Visual Harmfulness Recognition",
+      "VideoTetris: Towards Compositional Text-to-Video Generation",
+      "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+    ],
+    "acl25": [
+      "HAIC: Improving Human Action Understanding and Generation with Better Captions for Multi-modal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 5,
+    "icml25": 5,
+    "neurips24": 8,
+    "acl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

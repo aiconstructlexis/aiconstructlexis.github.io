@@ -1,0 +1,221 @@
+{
+  "canonical_name": "Memory",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, memory is most commonly treated as a model or agent capacity to retain, store, recall, and access earlier information so it can be used later, whether in long sequences, long contexts, or multi-step interaction histories. Several definitions make this explicitly long-range, describing \"incorporating long-range information in context,\" retaining context beyond a fixed window, or preserving information from earlier video frames for later questions. A smaller line of work narrows memory to retrieval of factual knowledge stored in model parameters, independent of logical inference, while another frames it as active retrieval and maintenance over short sequences for recalling past stimuli or decisions.\n\nSpace of facets. The term is spread across nearby labels such as memory capacity, context retention, long-term context retention, information retention, and long-context memory. Papers also use it for different substrates and contents: recurrent or attention state size, conversational history, long video streams, past observations and attempted actions, spatial memory, and parametric memory as knowledge in the model's parameters. A recurring distinction is between memory and reasoning, with papers describing memory recall as retrieving relevant knowledge or storing and accessing facts, separate from chaining them into multi-step inference, and another paper treating memory and reasoning as separate cognitive abilities.\n\nSpace of measurement. Memory is linked to 3 measurement instruments and no behavioral indicators. All linked instruments are benchmarks: HELMET and LongMemEval are used to assess long-context memory, with LongMemEval described as covering six memory tasks for chat assistants, and TextWorld is used for long-horizon tasks requiring memory alongside planning, exploration, and commonsense. These linked measures line up most directly with the long-context and long-horizon definitions.\n\nLinks. Papers report 2 construct-level links. One paper claims a causal relationship from chain-of-thought reasoning to memory, stating that chain-of-thought helps identify relevant information from long texts and improves recall of long-context memory. Another paper reports a related link from long-context understanding to memory, with reduced state size described as a bottleneck for long-context understanding; no correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Memory capacity",
+    "Memory",
+    "Long-term context retention",
+    "Information retention",
+    "Long-context memory"
+  ],
+  "papers": [
+    "Browsing Like Human: A Multimodal Web Agent with Experiential Fast-and-Slow Thinking",
+    "Disentangling Memory and Reasoning Ability in Large Language Models",
+    "Scaling up the State Size of RNN LLMs for Long-Context Scenarios",
+    "LoCt-Instruct: An Automatic Pipeline for Constructing Datasets of Logical Continuous Instructions",
+    "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+    "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs",
+    "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework",
+    "VisEscape: A Benchmark for Evaluating Exploration-driven Decision-making in Virtual Escape Rooms",
+    "AgentSquare: Automatic LLM Agent Search in Modular Design Space",
+    "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents",
+    "Human Simulacra: Benchmarking the Personification of Large Language Models",
+    "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+    "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+    "Training Free Exponential Context Extension via Cascading KV Cache",
+    "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+    "Gated Slot Attention for Efficient Linear-Time Sequence Modeling"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "The latent ability of a model to store and access information over a sequence, which can be implicitly increased by architectural features.",
+      "papers": [
+        "Gated Slot Attention for Efficient Linear-Time Sequence Modeling",
+        "Scaling up the State Size of RNN LLMs for Long-Context Scenarios",
+        "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework"
+      ],
+      "original_name": "Memory capacity"
+    },
+    {
+      "text": "The capacity to incorporate and retain relevant long-range interaction history when selecting the next action.",
+      "papers": [
+        "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+        "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents",
+        "Disentangling Memory and Reasoning Ability in Large Language Models",
+        "VisEscape: A Benchmark for Evaluating Exploration-driven Decision-making in Virtual Escape Rooms"
+      ],
+      "original_name": "Memory"
+    },
+    {
+      "text": "The model's ability to maintain and access information from earlier parts of a long sequence for use in later predictions.",
+      "papers": [
+        "Training Free Exponential Context Extension via Cascading KV Cache"
+      ],
+      "original_name": "Context retention"
+    },
+    {
+      "text": "The model's ability to preserve and access relevant information from earlier parts of a long video stream to answer questions posed later.",
+      "papers": [
+        "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval"
+      ],
+      "original_name": "Long-term context retention"
+    },
+    {
+      "text": "The capacity to store and access relevant facts within a long context, distinct from the ability to reason over them in sequence.",
+      "papers": [
+        "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs"
+      ],
+      "original_name": "Information retention"
+    },
+    {
+      "text": "The ability of a model to effectively recall, process, and utilize information from very long input sequences.",
+      "papers": [
+        "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+      ],
+      "original_name": "Long-context memory"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+      "evidence": "tasks requiring long-horizon memory and planning, exploration, and commonsense in TextWorld",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongMemEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+      "evidence": "LONGMEMEVAL was a challenging benchmark designed to evaluate the long-context memory ability of chat assistants across six memory tasks... (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HELMET",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+      "evidence": "To assess long-context memory and extrapolation ability, two benchmarks are adopted: ... an application-centric benchmark HELMET (Yen et al., 2024). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Scaling up the State Size of RNN LLMs for Long-Context Scenarios",
+      "evidence": "Despite these improvements, the state sizes of RNNs remain much smaller than those of Transformers with a 2k context length, making state size a critical bottleneck for long-context understanding.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Scaling up the State Size of RNN LLMs for Long-Context Scenarios"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+      "evidence": "Mamba can effectively identify key information from long texts through CoT thinking, thus significantly improving its ability to recall long-context memory. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, memory is most commonly treated as a model or agent capacity to retain, store, recall, and access earlier information so it can be used later, whether in long sequences, long contexts, or multi-step interaction histories. Several definitions make this explicitly long-range, describing \"incorporating long-range information in context,\" retaining context beyond a fixed window, or preserving information from earlier video frames for later questions. A smaller line of work narrows memory to retrieval of factual knowledge stored in model parameters, independent of logical inference, while another frames it as active retrieval and maintenance over short sequences for recalling past stimuli or decisions."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The term is spread across nearby labels such as memory capacity, context retention, long-term context retention, information retention, and long-context memory. Papers also use it for different substrates and contents: recurrent or attention state size, conversational history, long video streams, past observations and attempted actions, spatial memory, and parametric memory as knowledge in the model's parameters. A recurring distinction is between memory and reasoning, with papers describing memory recall as retrieving relevant knowledge or storing and accessing facts, separate from chaining them into multi-step inference, and another paper treating memory and reasoning as separate cognitive abilities."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Memory is linked to 3 measurement instruments and no behavioral indicators. All linked instruments are benchmarks: HELMET and LongMemEval are used to assess long-context memory, with LongMemEval described as covering six memory tasks for chat assistants, and TextWorld is used for long-horizon tasks requiring memory alongside planning, exploration, and commonsense. These linked measures line up most directly with the long-context and long-horizon definitions."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers report 2 construct-level links. One paper claims a causal relationship from chain-of-thought reasoning to memory, stating that chain-of-thought helps identify relevant information from long texts and improves recall of long-context memory. Another paper reports a related link from long-context understanding to memory, with reduced state size described as a bottleneck for long-context understanding; no correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, memory is most commonly treated as a model or agent capacity to retain, store, recall, and access earlier information so it can be used later, whether in long sequences, long contexts, or multi-step interaction histories. Several definitions make this explicitly long-range, describing \"incorporating long-range information in context,\" retaining context beyond a fixed window, or preserving information from earlier video frames for later questions. A smaller line of work narrows memory to retrieval of factual knowledge stored in model parameters, independent of logical inference, while another frames it as active retrieval and maintenance over short sequences for recalling past stimuli or decisions.\n\nSpace of facets. The term is spread across nearby labels such as memory capacity, context retention, long-term context retention, information retention, and long-context memory. Papers also use it for different substrates and contents: recurrent or attention state size, conversational history, long video streams, past observations and attempted actions, spatial memory, and parametric memory as knowledge in the model's parameters. A recurring distinction is between memory and reasoning, with papers describing memory recall as retrieving relevant knowledge or storing and accessing facts, separate from chaining them into multi-step inference, and another paper treating memory and reasoning as separate cognitive abilities.\n\nSpace of measurement. Memory is linked to 3 measurement instruments and no behavioral indicators. All linked instruments are benchmarks: HELMET and LongMemEval are used to assess long-context memory, with LongMemEval described as covering six memory tasks for chat assistants, and TextWorld is used for long-horizon tasks requiring memory alongside planning, exploration, and commonsense. These linked measures line up most directly with the long-context and long-horizon definitions.\n\nLinks. Papers report 2 construct-level links. One paper claims a causal relationship from chain-of-thought reasoning to memory, stating that chain-of-thought helps identify relevant information from long texts and improves recall of long-context memory. Another paper reports a related link from long-context understanding to memory, with reduced state size described as a bottleneck for long-context understanding; no correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Browsing Like Human: A Multimodal Web Agent with Experiential Fast-and-Slow Thinking",
+      "Disentangling Memory and Reasoning Ability in Large Language Models",
+      "Scaling up the State Size of RNN LLMs for Long-Context Scenarios"
+    ],
+    "emnlp25": [
+      "LoCt-Instruct: An Automatic Pipeline for Constructing Datasets of Logical Continuous Instructions",
+      "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+      "seqBench: A Tunable Benchmark to Quantify Sequential Reasoning Limits of LLMs",
+      "Flexibly Utilize Memory for Long-Term Conversation via a Fragment-then-Compose Framework",
+      "VisEscape: A Benchmark for Evaluating Exploration-driven Decision-making in Virtual Escape Rooms"
+    ],
+    "iclr25": [
+      "AgentSquare: Automatic LLM Agent Search in Modular Design Space",
+      "AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents",
+      "Human Simulacra: Benchmarking the Personification of Large Language Models",
+      "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+      "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+      "Training Free Exponential Context Extension via Cascading KV Cache"
+    ],
+    "neurips24": [
+      "AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents",
+      "Gated Slot Attention for Efficient Linear-Time Sequence Modeling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 5,
+    "iclr25": 6,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

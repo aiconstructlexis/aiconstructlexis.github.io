@@ -1,0 +1,174 @@
+{
+  "canonical_name": "BANKING77",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing usage treats BANKING77, also written as BANKING, Banking-77, or Banking77, as a banking-domain intent classification benchmark built from customer banking or online banking queries and organized into 77 intent classes or categories. Definitions commonly frame it as a fine-grained intent detection or classification resource for domain-specific language understanding, and some papers place it among benchmarks used for in-context learning. A smaller line of work uses the name Bank77 and describes it instead as an intent discovery dataset for finding unknown intents in user utterances.\n\nWhat it is claimed to measure. Papers link BANKING77 to 1 construct and 2 behavioral indicators. The prevailing reported use is to measure Intent classification, with additional papers using it to measure Text classification; one paper also reports it as measuring Reasoning, describing evaluations of reasoning accuracy with prompt engineering and demonstration selection across BANKING77 and other benchmarks. Taken together, papers more often report it as measuring classification behaviors than as measuring a construct.\n\nSpace of uses. Across papers, BANKING77 often appears inside multi-dataset evaluations rather than as a standalone instrument. It is used alongside CLINC, 20 Newsgroups, Patent, Imdb, and GoEmotion, among other benchmarks, and papers position it for fine-tuning and baseline comparison under simulated data heterogeneity, for intent detection and text classification evaluation, and for in-context learning settings including long-context and demonstration-selection setups.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BANKING77",
+    "BANKING",
+    "Banking-77",
+    "Banking77",
+    "Bank77"
+  ],
+  "papers": [
+    "Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention",
+    "TestNUC: Enhancing Test-Time Computing Approaches and Scaling through Neighboring Unlabeled Data Consistency",
+    "Towards Robust and Efficient Federated Low-Rank Adaptation with Heterogeneous Clients",
+    "Co-Evolving LLMs and Embedding Models via Density-Guided Preference Optimization for Text Clustering",
+    "DINT Transformer",
+    "Dial-In LLM: Human-Aligned LLM-in-the-loop Intent Clustering for Customer Service Dialogues",
+    "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments",
+    "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities",
+    "Towards Automated Error Discovery: A Study in Conversational AI",
+    "Demonstration Selection for In-Context Learning via Reinforcement Learning",
+    "MAPLE: Many-Shot Adaptive Pseudo-Labeling for In-Context Learning",
+    "In-Context Learning with Long-Context Models: An In-Depth Exploration"
+  ],
+  "paper_count": 12,
+  "definitions": [
+    {
+      "text": "A dataset for intent classification, used in this paper to evaluate model performance under various simulated data heterogeneity settings in a federated learning context.",
+      "papers": [
+        "Towards Robust and Efficient Federated Low-Rank Adaptation with Heterogeneous Clients"
+      ],
+      "original_name": "BANKING77"
+    },
+    {
+      "text": "Intent classification dataset focused on customer banking queries, used to evaluate fine-grained intent detection in real-world domains.",
+      "papers": [
+        "TestNUC: Enhancing Test-Time Computing Approaches and Scaling through Neighboring Unlabeled Data Consistency",
+        "Towards Automated Error Discovery: A Study in Conversational AI"
+      ],
+      "original_name": "BANKING"
+    },
+    {
+      "text": "A customer service intent classification dataset in the banking domain with 77 intent classes, used to evaluate domain-specific language understanding.",
+      "papers": [
+        "Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention",
+        "DINT Transformer",
+        "In-Context Learning with Long-Context Models: An In-Depth Exploration"
+      ],
+      "original_name": "Banking-77"
+    },
+    {
+      "text": "Intent classification dataset in the banking domain with 77 classes, used to evaluate fine-grained classification under in-context learning settings.",
+      "papers": [
+        "MAPLE: Many-Shot Adaptive Pseudo-Labeling for In-Context Learning",
+        "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments"
+      ],
+      "original_name": "Banking77"
+    },
+    {
+      "text": "A dataset for intent discovery, aiming to identify unknown intents within user utterances.",
+      "papers": [
+        "Co-Evolving LLMs and Embedding Models via Density-Guided Preference Optimization for Text Clustering"
+      ],
+      "original_name": "Bank77"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Intent classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Tight Clusters Make Specialized Experts",
+      "evidence": "We report top-1 accuracy for finetuning classification tasks on the ... 77-class Banking-77 (B77) (Casanueva et al., 2020).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Tight Clusters Make Specialized Experts"
+        ],
+        "emnlp25": [
+          "Towards Automated Error Discovery: A Study in Conversational AI"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Demonstration Selection for In-Context Learning via Reinforcement Learning",
+      "evidence": "This section presents a comprehensive evaluation of the reasoning accuracy of both closed-source and open-source LLMs using a range of prompt engineering and demonstration selection techniques across four benchmark datasets: BANKING77, CLINC150, HWU64, and LIU54. (Section 4.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Demonstration Selection for In-Context Learning via Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments",
+      "evidence": "Text Classification: Requires models to capture the overall semantics of a single text input. We use Patent (Sharma et al., 2019), Imdb and Banking77 (both from MTEB (Muennighoff et al., 2023)). (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing usage treats BANKING77, also written as BANKING, Banking-77, or Banking77, as a banking-domain intent classification benchmark built from customer banking or online banking queries and organized into 77 intent classes or categories. Definitions commonly frame it as a fine-grained intent detection or classification resource for domain-specific language understanding, and some papers place it among benchmarks used for in-context learning. A smaller line of work uses the name Bank77 and describes it instead as an intent discovery dataset for finding unknown intents in user utterances."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link BANKING77 to 1 construct and 2 behavioral indicators. The prevailing reported use is to measure Intent classification, with additional papers using it to measure Text classification; one paper also reports it as measuring Reasoning, describing evaluations of reasoning accuracy with prompt engineering and demonstration selection across BANKING77 and other benchmarks. Taken together, papers more often report it as measuring classification behaviors than as measuring a construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Across papers, BANKING77 often appears inside multi-dataset evaluations rather than as a standalone instrument. It is used alongside CLINC, 20 Newsgroups, Patent, Imdb, and GoEmotion, among other benchmarks, and papers position it for fine-tuning and baseline comparison under simulated data heterogeneity, for intent detection and text classification evaluation, and for in-context learning settings including long-context and demonstration-selection setups."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing usage treats BANKING77, also written as BANKING, Banking-77, or Banking77, as a banking-domain intent classification benchmark built from customer banking or online banking queries and organized into 77 intent classes or categories. Definitions commonly frame it as a fine-grained intent detection or classification resource for domain-specific language understanding, and some papers place it among benchmarks used for in-context learning. A smaller line of work uses the name Bank77 and describes it instead as an intent discovery dataset for finding unknown intents in user utterances.\n\nWhat it is claimed to measure. Papers link BANKING77 to 1 construct and 2 behavioral indicators. The prevailing reported use is to measure Intent classification, with additional papers using it to measure Text classification; one paper also reports it as measuring Reasoning, describing evaluations of reasoning accuracy with prompt engineering and demonstration selection across BANKING77 and other benchmarks. Taken together, papers more often report it as measuring classification behaviors than as measuring a construct.\n\nSpace of uses. Across papers, BANKING77 often appears inside multi-dataset evaluations rather than as a standalone instrument. It is used alongside CLINC, 20 Newsgroups, Patent, Imdb, and GoEmotion, among other benchmarks, and papers position it for fine-tuning and baseline comparison under simulated data heterogeneity, for intent detection and text classification evaluation, and for in-context learning settings including long-context and demonstration-selection setups.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention",
+      "TestNUC: Enhancing Test-Time Computing Approaches and Scaling through Neighboring Unlabeled Data Consistency",
+      "Towards Robust and Efficient Federated Low-Rank Adaptation with Heterogeneous Clients"
+    ],
+    "emnlp25": [
+      "Co-Evolving LLMs and Embedding Models via Density-Guided Preference Optimization for Text Clustering",
+      "DINT Transformer",
+      "Dial-In LLM: Human-Aligned LLM-in-the-loop Intent Clustering for Customer Service Dialogues",
+      "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments",
+      "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities",
+      "Towards Automated Error Discovery: A Study in Conversational AI"
+    ],
+    "icml25": [
+      "Demonstration Selection for In-Context Learning via Reinforcement Learning",
+      "MAPLE: Many-Shot Adaptive Pseudo-Labeling for In-Context Learning"
+    ],
+    "naacl25": [
+      "In-Context Learning with Long-Context Models: An In-Depth Exploration"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 6,
+    "icml25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

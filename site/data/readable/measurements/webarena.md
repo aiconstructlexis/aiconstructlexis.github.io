@@ -1,0 +1,36 @@
+# WebArena
+**Type:** Measurement instrument  
+**Supporting papers:** 26  
+
+## State of the Field
+
+**What it is.** Across papers, the dominant framing is a realistic, web-based interactive environment and benchmark for autonomous or language agents, used to navigate browser interfaces and complete long-horizon tasks from high-level natural language instructions, and some definitions add that agents act through natural language and code. Most descriptions emphasize realistic or functional websites, often naming domains such as e-commerce, forums, development platforms, content management systems, GitLab, Reddit, and Wikipedia; the most detailed account describes 812 tasks or test examples with evaluation based on functional correctness. A smaller line of work describes it more generally as a real web environment with various scenarios, as a benchmark for shopping tasks, or as a source of environments and workflows reused elsewhere.
+
+**What it is claimed to measure.** Papers use WebArena to measure one construct and two behavioral indicators. The prevailing usage is to measure web navigation, with papers describing binary rewards for whether an instruction is achieved by web navigation and using the benchmark for textual or vision-based web navigation; a smaller group reports it as measuring generalization, citing its mix of website types and task intents, and one paper presents it as suitable for evaluating real-world task completion. Overall, the measurement claims concentrate on web navigation rather than spreading evenly across many constructs.
+
+**Space of uses.** Papers mainly position WebArena as a headline evaluation benchmark for agents, including runs on the full dataset, comparisons against baseline agents, and domain-specific studies such as experiments restricted to the Reddit domain. It is often used alongside Mind2Web, and more occasionally alongside MiniWoB++ and VisualWebArena; some papers also reuse it as a source benchmark for VideoWebArena and WONDERBREAD. No other measurement instrument is linked to it.
+
+## Sources
+
+**WebArena** (12 papers: [Lemur: Harmonizing Natural Language and Code for Language Agents](https://proceedings.iclr.cc/paper_files/paper/2024/file/41ec0e510c31883f3b50a782651fb5b9-Paper-Conference.pdf), [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://proceedings.iclr.cc/paper_files/paper/2024/file/4410c0711e9154a7a2d26f9b3816d1ef-Paper-Conference.pdf), [VideoWebArena: Evaluating Long Context Multimodal Agents with Video Understanding Web Tasks](https://proceedings.iclr.cc/paper_files/paper/2025/file/5b555804d495321df2e3208cc27f4fbc-Paper-Conference.pdf), [OS-Genesis: Automating GUI Agent Trajectory Construction via Reverse Task Synthesis](https://aclanthology.org/2025.acl-long.277.pdf), [Plan-and-Act: Improving Planning of Agents for Long-Horizon Tasks](https://raw.githubusercontent.com/mlresearch/v267/main/assets/erdogan25a/erdogan25a.pdf), [AgentBoard: An Analytical Evaluation Board of Multi-turn LLM Agents](https://proceedings.neurips.cc/paper_files/paper/2024/file/877b40688e330a0e2a3fc24084208dfa-Paper-Datasets_and_Benchmarks_Track.pdf), [AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents](https://proceedings.neurips.cc/paper_files/paper/2024/file/d8efbb5dd415974eb095c3f06bff1f48-Paper-Conference.pdf), [AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning](https://proceedings.neurips.cc/paper_files/paper/2024/file/0142921fad7ef9192bd87229cdafa9d4-Paper-Conference.pdf), [Shopping MMLU: A Massive Multi-Task Online Shopping Benchmark for Large Language Models](https://proceedings.neurips.cc/paper_files/paper/2024/file/2049d75dd13db049897562bcf7d59da8-Paper-Datasets_and_Benchmarks_Track.pdf), [Synatra: Turning Indirect Knowledge into Direct Demonstrations for Digital Agents at Scale](https://proceedings.neurips.cc/paper_files/paper/2024/file/a6a6891cf1dfc64d664f086cf5976e93-Paper-Conference.pdf), [WONDERBREAD: A Benchmark for Evaluating Multimodal Foundation Models on Business Process Management Tasks](https://proceedings.neurips.cc/paper_files/paper/2024/file/d1fa821312040303b089ae529dbf81a6-Paper-Datasets_and_Benchmarks_Track.pdf), [WorkArena++: Towards Compositional Planning and Reasoning-based Common Knowledge Work Tasks](https://proceedings.neurips.cc/paper_files/paper/2024/file/0b82662b6c32e887bb252a74d8cb2d5e-Paper-Datasets_and_Benchmarks_Track.pdf))
+> Web-based interactive environment for evaluating agents' ability to navigate and complete tasks in a simulated browser through natural language and code.
+
+## Relationships
+
+### → WebArena
+- **Web navigation** (behavioral indicator): *measured_by*, 7 papers
+  > WebArena [8]: This web-based benchmark introduces realistic environments by replicating the functionality and data found in popular web domains (e.g., Gitlab, Reddit, Wikipedia). (Section 4.1.1)
+  - [AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents](https://proceedings.neurips.cc/paper_files/paper/2024/file/d8efbb5dd415974eb095c3f06bff1f48-Paper-Conference.pdf)
+  - [AgentTrek: Agent Trajectory Synthesis via Guiding Replay with Web Tutorials](https://proceedings.iclr.cc/paper_files/paper/2025/file/c681fb2bf1d785fbc766f3ea14758aab-Paper-Conference.pdf)
+  - [Learning to Contextualize Web Pages for Enhanced Decision Making by LLM Agents](https://proceedings.iclr.cc/paper_files/paper/2025/file/c995a913bc20ca39ce2231b8973be90a-Paper-Conference.pdf)
+  - [Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation](https://proceedings.iclr.cc/paper_files/paper/2025/file/a00548031e4647b13042c97c922fadf1-Paper-Conference.pdf)
+  - [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://proceedings.iclr.cc/paper_files/paper/2025/file/a4b6ad6b48850c0c331d1259fc66a69c-Paper-Conference.pdf)
+  - [Agent Workflow Memory](https://raw.githubusercontent.com/mlresearch/v267/main/assets/wang25bx/wang25bx.pdf)
+  - [Proposer-Agent-Evaluator (PAE): Autonomous Skill Discovery For Foundation Model Internet Agents](https://raw.githubusercontent.com/mlresearch/v267/main/assets/zhou25ah/zhou25ah.pdf)
+- **Generalization** (construct): *measured_by*, 2 papers
+  > Furthermore, we evaluate LCoW’s generalization capabilities in WebArena benchmark.
+  - [Learning to Contextualize Web Pages for Enhanced Decision Making by LLM Agents](https://proceedings.iclr.cc/paper_files/paper/2025/file/c995a913bc20ca39ce2231b8973be90a-Paper-Conference.pdf)
+  - [AgentOccam: A Simple Yet Strong Baseline for LLM-Based Web Agents](https://proceedings.iclr.cc/paper_files/paper/2025/file/f2c6e459b95694a24ac69c469a4ee746-Paper-Conference.pdf)
+- **Task completion** (behavioral indicator): *measured_by*, 1 paper
+  > This benchmark is particularly suitable for evaluating real-world task completion capabilities due to its focus on practical web interactions. (Section 3.1)
+  - [AgentTrek: Agent Trajectory Synthesis via Guiding Replay with Web Tutorials](https://proceedings.iclr.cc/paper_files/paper/2025/file/c681fb2bf1d785fbc766f3ea14758aab-Paper-Conference.pdf)

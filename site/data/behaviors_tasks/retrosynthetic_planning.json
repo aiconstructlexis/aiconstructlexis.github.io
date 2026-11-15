@@ -1,0 +1,103 @@
+{
+  "canonical_name": "Retrosynthetic planning",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Most definitions describe this behavior as working backward from a target or product molecule to identify reactants for synthesis. The prevailing framing is retrosynthetic analysis that begins with the target compound and seeks potential reactant molecules, while a broader formulation describes generating a step-by-step synthesis pathway that reaches commercially available reactants. A narrower formulation treats it as predicting a reaction template or a one-step retrosynthetic reaction from a product molecule and text context.\n\nVariants. Papers use several nearby names for this behavior, including retrosynthetic planning, retrosynthesis, and reaction prediction. The main variation is scope: some formulations focus on full synthesis pathways, some on identifying potential reactant molecules, and some on one-step template prediction from product molecules with text context.\n\nSpace of elicitation and scores. No measurement instrument is linked to it.\n\nWhat it is taken as evidence of. Papers do not link it to any construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Retrosynthetic planning",
+    "Retrosynthesis",
+    "Reaction prediction"
+  ],
+  "papers": [
+    "Structural Reasoning Improves Molecular Understanding of LLM",
+    "Improving Chemical Understanding of LLMs via SMILES Parsing",
+    "On LLM-Based Scientific Inductive Reasoning Beyond Equations",
+    "Mol-Instructions: A Large-Scale Biomolecular Instruction Dataset for Large Language Models",
+    "Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning",
+    "RetroInText: A Multimodal Large Language Model Enhanced Framework for Retrosynthetic Planning via In-Context Representation Learning",
+    "LLaMo: Large Language Model-based Molecular Graph Assistant"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The observable process of generating a step-by-step synthesis pathway for a target molecule by working backward to commercially available reactants.",
+      "papers": [
+        "Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning"
+      ],
+      "original_name": "Retrosynthetic planning"
+    },
+    {
+      "text": "The task of identifying potential reactant molecules required to synthesize a target chemical compound.",
+      "papers": [
+        "LLaMo: Large Language Model-based Molecular Graph Assistant"
+      ],
+      "original_name": "Retrosynthesis"
+    },
+    {
+      "text": "Predicting a reaction template or one-step retrosynthetic reaction from a product molecule and text context.",
+      "papers": [
+        "Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning"
+      ],
+      "original_name": "Reaction prediction"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most definitions describe this behavior as working backward from a target or product molecule to identify reactants for synthesis. The prevailing framing is retrosynthetic analysis that begins with the target compound and seeks potential reactant molecules, while a broader formulation describes generating a step-by-step synthesis pathway that reaches commercially available reactants. A narrower formulation treats it as predicting a reaction template or a one-step retrosynthetic reaction from a product molecule and text context."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby names for this behavior, including retrosynthetic planning, retrosynthesis, and reaction prediction. The main variation is scope: some formulations focus on full synthesis pathways, some on identifying potential reactant molecules, and some on one-step template prediction from product molecules with text context."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not link it to any construct."
+    }
+  ],
+  "characterization": "Space of definitions. Most definitions describe this behavior as working backward from a target or product molecule to identify reactants for synthesis. The prevailing framing is retrosynthetic analysis that begins with the target compound and seeks potential reactant molecules, while a broader formulation describes generating a step-by-step synthesis pathway that reaches commercially available reactants. A narrower formulation treats it as predicting a reaction template or a one-step retrosynthetic reaction from a product molecule and text context.\n\nVariants. Papers use several nearby names for this behavior, including retrosynthetic planning, retrosynthesis, and reaction prediction. The main variation is scope: some formulations focus on full synthesis pathways, some on identifying potential reactant molecules, and some on one-step template prediction from product molecules with text context.\n\nSpace of elicitation and scores. No measurement instrument is linked to it.\n\nWhat it is taken as evidence of. Papers do not link it to any construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Structural Reasoning Improves Molecular Understanding of LLM"
+    ],
+    "emnlp25": [
+      "Improving Chemical Understanding of LLMs via SMILES Parsing",
+      "On LLM-Based Scientific Inductive Reasoning Beyond Equations"
+    ],
+    "iclr24": [
+      "Mol-Instructions: A Large-Scale Biomolecular Instruction Dataset for Large Language Models"
+    ],
+    "iclr25": [
+      "Multimodal Large Language Models for Inverse Molecular Design with Retrosynthetic Planning",
+      "RetroInText: A Multimodal Large Language Model Enhanced Framework for Retrosynthetic Planning via In-Context Representation Learning"
+    ],
+    "neurips24": [
+      "LLaMo: Large Language Model-based Molecular Graph Assistant"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 2,
+    "iclr24": 1,
+    "iclr25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

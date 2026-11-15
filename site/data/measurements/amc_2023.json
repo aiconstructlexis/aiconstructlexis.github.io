@@ -1,0 +1,207 @@
+{
+  "canonical_name": "AMC 2023",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing description is of a benchmark or dataset drawn from the 2023 American Mathematics Competitions, used for standardized or competition-style math questions. Most definitions frame the content as challenging high school-level problems and describe it as a benchmark, dataset, or exam for mathematical reasoning or problem solving. A smaller line of description differs, calling AMC2023 a middle school math competition covering arithmetic, algebra, and geometry and noting that it contains 40 questions. Papers refer to it under several surface forms, including AMC, AMC2023, AMC23, and AMC 2023.\n\nWhat it is claimed to measure. The measurement claims converge rather than spreading across many targets. Papers link AMC 2023 to one construct, Mathematical reasoning, and one behavioral indicator, Mathematical problem solving, with Mathematical reasoning the prevailing usage and Mathematical problem solving appearing in a smaller line of work. In these uses, papers place it within benchmark sets for assessing models' reasoning or problem-solving abilities on math tasks.\n\nSpace of uses. Papers usually deploy AMC 2023 as one item in broader math benchmark suites rather than as a standalone instrument. It is commonly used alongside AIME 2024, MATH or MATH500, GSM8K, and OlympiadBench, and some evaluations also pair it with Minerva Math and other competition benchmarks. Authors often position it as a challenging, out-of-distribution, competition-level, or olympiad-level benchmark, and some report pass@1 or pass@16 on it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "AMC",
+    "AMC2023",
+    "AMC23",
+    "AMC 2023"
+  ],
+  "papers": [
+    "Chain-of-Reasoning: Towards Unified Mathematical Reasoning in Large Language Models via a Multi-Paradigm Perspective",
+    "FastMCTS: A Simple Sampling Strategy for Data Synthesis",
+    "S2R: Teaching LLMs to Self-verify and Self-correct via Reinforcement Learning",
+    "Unlocking General Long Chain-of-Thought Reasoning Capabilities of Large Language Models via Representation Engineering",
+    "Agentic-R1: Distilled Dual-Strategy Reasoning",
+    "AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time",
+    "DSG-MCTS: A Dynamic Strategy-Guided Monte Carlo Tree Search for Diversified Reasoning in Large Language Models",
+    "Enhancing Efficiency and Exploration in Reinforcement Learning for LLMs",
+    "FANS: Formal Answer Selection for LLM Natural Language Math Reasoning Using Lean4",
+    "HS-STaR: Hierarchical Sampling for Self-Taught Reasoners via Difficulty Estimation and Budget Reallocation",
+    "Learning Like Humans: Advancing LLM Reasoning Capabilities via Adaptive Difficulty Curriculum Learning and Expert-Guided Self-Reformulation",
+    "Let's Reason Formally: Natural-Formal Hybrid Reasoning Enhances LLM's Math Capability",
+    "MuTIS: Enhancing Reasoning Efficiency through Multi Turn Intervention Sampling in Reinforcement Learning",
+    "Orthogonal Finetuning Made Scalable",
+    "R-PRM: Reasoning-Driven Process Reward Modeling",
+    "REARANK: Reasoning Re-ranking Agent via Reinforcement Learning",
+    "Reinforcement Learning for Large Language Models via Group Preference Reward Shaping",
+    "START: Self-taught Reasoner with Tools",
+    "Search-o1: Agentic Search-Enhanced Large Reasoning Models",
+    "Steering LLM Reasoning Through Bias-Only Adaptation",
+    "Step Guided Reasoning: Improving Mathematical Reasoning using Guidance Generation and Step Reasoning",
+    "Teach Small Models to Reason by Curriculum Distillation",
+    "Through the Valley: Path to Effective Long CoT Training for Small Language Models",
+    "Unleashing the Reasoning Potential of LLMs by Critique Fine-Tuning on One Problem",
+    "BRiTE: Bootstrapping Reinforced Thinking Process to Enhance Language Model Reasoning",
+    "Leveraging Online Olympiad-Level Math Problems for LLMs Training and Contamination-Resistant Evaluation",
+    "Optimizing Test-Time Compute via Meta Reinforcement Finetuning",
+    "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+    "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking",
+    "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+  ],
+  "paper_count": 30,
+  "definitions": [
+    {
+      "text": "A mathematical reasoning benchmark used to test transfer of the reranking-trained model to challenging math questions.",
+      "papers": [
+        "REARANK: Reasoning Re-ranking Agent via Reinforcement Learning"
+      ],
+      "original_name": "AMC"
+    },
+    {
+      "text": "American Mathematics Competitions dataset from 2023, featuring challenging high school-level math problems used to evaluate advanced arithmetic reasoning.",
+      "papers": [
+        "Chain-of-Reasoning: Towards Unified Mathematical Reasoning in Large Language Models via a Multi-Paradigm Perspective",
+        "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+        "Search-o1: Agentic Search-Enhanced Large Reasoning Models"
+      ],
+      "original_name": "AMC2023"
+    },
+    {
+      "text": "A benchmark consisting of problems from the 2023 American Mathematics Competitions, used to evaluate competition-level mathematical reasoning.",
+      "papers": [
+        "FastMCTS: A Simple Sampling Strategy for Data Synthesis",
+        "Leveraging Online Olympiad-Level Math Problems for LLMs Training and Contamination-Resistant Evaluation",
+        "Unleashing the Reasoning Potential of LLMs by Critique Fine-Tuning on One Problem",
+        "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+      ],
+      "original_name": "AMC23"
+    },
+    {
+      "text": "American Mathematics Competitions exam from 2023, used to evaluate performance on standardized math problems at the high school level.",
+      "papers": [
+        "S2R: Teaching LLMs to Self-verify and Self-correct via Reinforcement Learning",
+        "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking",
+        "Enhancing Efficiency and Exploration in Reinforcement Learning for LLMs"
+      ],
+      "original_name": "AMC 2023"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data",
+      "evidence": "We evaluate our models on a set of common benchmarks that consists of GSM8K (1.3K examples), MATH (5K examples), AMC 2023 (40 examples), AIME 2024 (30 examples), and Omni-MATH (4.4K examples) (Omni-Math, 2024).",
+      "paper_count": 12,
+      "paper_weight": 12.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "OpenMathInstruct-2: Accelerating AI for Math with Massive Open-Source Instruction Data"
+        ],
+        "naacl25": [
+          "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+        ],
+        "acl25": [
+          "S2R: Teaching LLMs to Self-verify and Self-correct via Reinforcement Learning"
+        ],
+        "icml25": [
+          "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+          "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking"
+        ],
+        "emnlp25": [
+          "FANS: Formal Answer Selection for LLM Natural Language Math Reasoning Using Lean4",
+          "AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time",
+          "START: Self-taught Reasoner with Tools",
+          "Steering LLM Reasoning Through Bias-Only Adaptation",
+          "Step Guided Reasoning: Improving Mathematical Reasoning using Guidance Generation and Step Reasoning",
+          "Learning Like Humans: Advancing LLM Reasoning Capabilities via Adaptive Difficulty Curriculum Learning and Expert-Guided Self-Reformulation",
+          "Agentic-R1: Distilled Dual-Strategy Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical problem solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Search-o1: Agentic Search-Enhanced Large Reasoning Models",
+      "evidence": "(2) Math benchmarks include MATH500 (Lightman et al., 2024), AMC2023, and AIME2024. (Section 4.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Search-o1: Agentic Search-Enhanced Large Reasoning Models",
+          "R-PRM: Reasoning-Driven Process Reward Modeling"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing description is of a benchmark or dataset drawn from the 2023 American Mathematics Competitions, used for standardized or competition-style math questions. Most definitions frame the content as challenging high school-level problems and describe it as a benchmark, dataset, or exam for mathematical reasoning or problem solving. A smaller line of description differs, calling AMC2023 a middle school math competition covering arithmetic, algebra, and geometry and noting that it contains 40 questions. Papers refer to it under several surface forms, including AMC, AMC2023, AMC23, and AMC 2023."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The measurement claims converge rather than spreading across many targets. Papers link AMC 2023 to one construct, Mathematical reasoning, and one behavioral indicator, Mathematical problem solving, with Mathematical reasoning the prevailing usage and Mathematical problem solving appearing in a smaller line of work. In these uses, papers place it within benchmark sets for assessing models' reasoning or problem-solving abilities on math tasks."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers usually deploy AMC 2023 as one item in broader math benchmark suites rather than as a standalone instrument. It is commonly used alongside AIME 2024, MATH or MATH500, GSM8K, and OlympiadBench, and some evaluations also pair it with Minerva Math and other competition benchmarks. Authors often position it as a challenging, out-of-distribution, competition-level, or olympiad-level benchmark, and some report pass@1 or pass@16 on it."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing description is of a benchmark or dataset drawn from the 2023 American Mathematics Competitions, used for standardized or competition-style math questions. Most definitions frame the content as challenging high school-level problems and describe it as a benchmark, dataset, or exam for mathematical reasoning or problem solving. A smaller line of description differs, calling AMC2023 a middle school math competition covering arithmetic, algebra, and geometry and noting that it contains 40 questions. Papers refer to it under several surface forms, including AMC, AMC2023, AMC23, and AMC 2023.\n\nWhat it is claimed to measure. The measurement claims converge rather than spreading across many targets. Papers link AMC 2023 to one construct, Mathematical reasoning, and one behavioral indicator, Mathematical problem solving, with Mathematical reasoning the prevailing usage and Mathematical problem solving appearing in a smaller line of work. In these uses, papers place it within benchmark sets for assessing models' reasoning or problem-solving abilities on math tasks.\n\nSpace of uses. Papers usually deploy AMC 2023 as one item in broader math benchmark suites rather than as a standalone instrument. It is commonly used alongside AIME 2024, MATH or MATH500, GSM8K, and OlympiadBench, and some evaluations also pair it with Minerva Math and other competition benchmarks. Authors often position it as a challenging, out-of-distribution, competition-level, or olympiad-level benchmark, and some report pass@1 or pass@16 on it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Chain-of-Reasoning: Towards Unified Mathematical Reasoning in Large Language Models via a Multi-Paradigm Perspective",
+      "FastMCTS: A Simple Sampling Strategy for Data Synthesis",
+      "S2R: Teaching LLMs to Self-verify and Self-correct via Reinforcement Learning",
+      "Unlocking General Long Chain-of-Thought Reasoning Capabilities of Large Language Models via Representation Engineering"
+    ],
+    "emnlp25": [
+      "Agentic-R1: Distilled Dual-Strategy Reasoning",
+      "AlphaOne: Reasoning Models Thinking Slow and Fast at Test Time",
+      "DSG-MCTS: A Dynamic Strategy-Guided Monte Carlo Tree Search for Diversified Reasoning in Large Language Models",
+      "Enhancing Efficiency and Exploration in Reinforcement Learning for LLMs",
+      "FANS: Formal Answer Selection for LLM Natural Language Math Reasoning Using Lean4",
+      "HS-STaR: Hierarchical Sampling for Self-Taught Reasoners via Difficulty Estimation and Budget Reallocation",
+      "Learning Like Humans: Advancing LLM Reasoning Capabilities via Adaptive Difficulty Curriculum Learning and Expert-Guided Self-Reformulation",
+      "Let's Reason Formally: Natural-Formal Hybrid Reasoning Enhances LLM's Math Capability",
+      "MuTIS: Enhancing Reasoning Efficiency through Multi Turn Intervention Sampling in Reinforcement Learning",
+      "Orthogonal Finetuning Made Scalable",
+      "R-PRM: Reasoning-Driven Process Reward Modeling",
+      "REARANK: Reasoning Re-ranking Agent via Reinforcement Learning",
+      "Reinforcement Learning for Large Language Models via Group Preference Reward Shaping",
+      "START: Self-taught Reasoner with Tools",
+      "Search-o1: Agentic Search-Enhanced Large Reasoning Models",
+      "Steering LLM Reasoning Through Bias-Only Adaptation",
+      "Step Guided Reasoning: Improving Mathematical Reasoning using Guidance Generation and Step Reasoning",
+      "Teach Small Models to Reason by Curriculum Distillation",
+      "Through the Valley: Path to Effective Long CoT Training for Small Language Models",
+      "Unleashing the Reasoning Potential of LLMs by Critique Fine-Tuning on One Problem"
+    ],
+    "icml25": [
+      "BRiTE: Bootstrapping Reinforced Thinking Process to Enhance Language Model Reasoning",
+      "Leveraging Online Olympiad-Level Math Problems for LLMs Training and Contamination-Resistant Evaluation",
+      "Optimizing Test-Time Compute via Meta Reinforcement Finetuning",
+      "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+      "rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking"
+    ],
+    "naacl25": [
+      "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 20,
+    "icml25": 5,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

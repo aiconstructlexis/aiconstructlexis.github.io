@@ -1,0 +1,52 @@
+{
+  "canonical_name": "Motion reasoning",
+  "type": "construct",
+  "canonical_definition": "Inferring higher-level information from a motion sequence, such as the likely identity or context of the motion.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Motion reasoning",
+    "Shape and trend analysis"
+  ],
+  "papers": [
+    "Motion-Agent: A Conversational Framework for Human Motion Generation with LLMs",
+    "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "Inferring higher-level information from a motion sequence, such as the likely identity or context of the motion.",
+      "papers": [
+        "Motion-Agent: A Conversational Framework for Human Motion Generation with LLMs"
+      ],
+      "original_name": "Motion reasoning"
+    },
+    {
+      "text": "The observable task of analyzing a subject's trajectory to determine the shape or general trend of its movement.",
+      "papers": [
+        "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models"
+      ],
+      "original_name": "Shape and trend analysis"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "Inferring higher-level information from a motion sequence, such as the likely identity or context of the motion.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Motion-Agent: A Conversational Framework for Human Motion Generation with LLMs",
+      "TOMATO: Assessing Visual Temporal Reasoning Capabilities in Multimodal Foundation Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "canonical_name": "Geometric reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats geometric reasoning as a latent ability to understand information in geometric diagrams, symbols, and text, and then carry out multi-step, often symbolic or logical inference to solve a problem. Several definitions add spatial relationships, theorems, and spatial comprehension to this framing, and some descriptions emphasize understanding basic geometric elements and their relationships as part of the challenge. A smaller line of work narrows the concept to subskills such as geometric structure understanding or geometric relationship identification, while another definition shifts from latent ability to the observable task of geometric problem solving, receiving a diagram plus text and producing an answer, often step by step.\n\nSpace of facets. Papers use several nearby labels for overlapping parts of this space, including geometric reasoning, geometry reasoning, geometric understanding, and geometric ability. Within that broader capability, they single out geometric comprehension of points, lines, angles, and their properties, geometric structure understanding, and geometric relationship identification, the step of identifying explicit or implicit relations such as parallel, perpendicular, or intersecting from text. One paper presents geometric relationship identification as a minimal module for evaluating understanding of geometric structures, and another places geometry reasoning as one of seven mathematical reasoning types, while geometric problem solving is used for the observable end task rather than the latent capability itself.\n\nSpace of measurement. Papers link geometric reasoning to 4 measurement instruments and 1 behavioral indicator. The recorded instruments are GeoQA and MathVista most often, with Geometry3K and GEOS also used through MathVista-GPS multiple-choice sub-tasks, so operationalization is mainly dataset-based evaluation on geometry problem solving test sets and sub-tasks. These measures line up most directly with definitions that emphasize multi-step problem solving and inference, while the narrower formulations around basic element comprehension or relationship identification are described separately; the only linked behavioral indicator, Hallucination, appears in a causal claim rather than as a measure.\n\nLinks. Beyond measurement, one paper claims a causal relationship from Hallucination to geometric reasoning, stating that severe hallucination on geometric figures hinders abilities on solving geometric problems. One paper also reports related links from Abstract reasoning to geometric reasoning and from Spatial reasoning to geometric reasoning, describing geometric ability in terms of advanced spatial comprehension and abstract thinking. No correlational link is recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Geometric reasoning",
+    "Geometric comprehension",
+    "Geometric understanding",
+    "Geometric ability",
+    "Geometric structure understanding",
+    "Geometry reasoning",
+    "Geometric problem solving",
+    "Geometric relationship identification"
+  ],
+  "papers": [
+    "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning",
+    "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+    "Do Large Language Models Truly Understand Geometric Structures?",
+    "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+    "GeoX: Geometric Problem Solving Through Unified Formalized Vision-Language Pre-training"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The ability to perform multi-step, symbolic inference based on geometric figures and textual problem descriptions to arrive at a solution.",
+      "papers": [
+        "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+        "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning"
+      ],
+      "original_name": "Geometric reasoning"
+    },
+    {
+      "text": "The ability to accurately perceive and understand basic geometric elements (like points, lines, angles), their properties, and their spatial relationships within a diagram.",
+      "papers": [
+        "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model"
+      ],
+      "original_name": "Geometric comprehension"
+    },
+    {
+      "text": "The ability to comprehend and interpret information from geometric diagrams, symbols, and textual descriptions.",
+      "papers": [
+        "GeoX: Geometric Problem Solving Through Unified Formalized Vision-Language Pre-training"
+      ],
+      "original_name": "Geometric understanding"
+    },
+    {
+      "text": "The cognitive capacity to perform tasks involving spatial reasoning and a deep understanding of geometric diagrams and structures.",
+      "papers": [
+        "Do Large Language Models Truly Understand Geometric Structures?"
+      ],
+      "original_name": "Geometric ability"
+    },
+    {
+      "text": "The latent ability of a model to accurately comprehend and interpret the components and relationships within a geometric figure described textually.",
+      "papers": [
+        "Do Large Language Models Truly Understand Geometric Structures?"
+      ],
+      "original_name": "Geometric structure understanding"
+    },
+    {
+      "text": "The ability to understand and reason about geometric shapes, relationships, and properties, including the use of theorems and spatial configurations.",
+      "papers": [
+        "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+      ],
+      "original_name": "Geometry reasoning"
+    },
+    {
+      "text": "The observable task of receiving a geometric problem, which includes a diagram and text, and producing a final answer, often with a step-by-step solution.",
+      "papers": [
+        "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model"
+      ],
+      "original_name": "Geometric problem solving"
+    },
+    {
+      "text": "The specific cognitive skill of correctly identifying explicit or implicit geometric relationships between elements like points, lines, and shapes from a textual description.",
+      "papers": [
+        "Do Large Language Models Truly Understand Geometric Structures?"
+      ],
+      "original_name": "Geometric relationship identification"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GeoQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+      "evidence": "We evaluate G-LLaVA on the geometry problems solving (GPS) task (testmini split) of MathVista (Lu et al., 2023) and test set of GeoQA. (Section 5.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model"
+        ],
+        "emnlp25": [
+          "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MathVista",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+      "evidence": "\"We evaluate G-LLaVA on the geometry problems solving (GPS) task (testmini split) of MathVista\"",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model"
+        ],
+        "emnlp25": [
+          "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+      "evidence": "State-of-the-art MLLMs suffer severe hallucination on geometric figures, which greatly hinders their abilities on solving geometric problems. (Figure 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstract reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Do Large Language Models Truly Understand Geometric Structures?",
+      "evidence": "Geometric ability is a significant challenge for large language models (LLMs) due to the need for advanced spatial comprehension and abstract thinking.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do Large Language Models Truly Understand Geometric Structures?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Geometry3K",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+      "evidence": "\"Additionally, we show the results of sub-tasks on MathVista-GPS multiple-choice questions for easier evaluation in Table 15, which includes GeoQA+, UniGeo, Geometry3K, and GEOS.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GEOS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+      "evidence": "\"Additionally, we show the results of sub-tasks on MathVista-GPS multiple-choice questions for easier evaluation in Table 15, which includes GeoQA+, UniGeo, Geometry3K, and GEOS.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Spatial reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Do Large Language Models Truly Understand Geometric Structures?",
+      "evidence": "\"Geometric ability is a significant challenge for large language models (LLMs) due to the need for advanced spatial comprehension and abstract thinking.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do Large Language Models Truly Understand Geometric Structures?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats geometric reasoning as a latent ability to understand information in geometric diagrams, symbols, and text, and then carry out multi-step, often symbolic or logical inference to solve a problem. Several definitions add spatial relationships, theorems, and spatial comprehension to this framing, and some descriptions emphasize understanding basic geometric elements and their relationships as part of the challenge. A smaller line of work narrows the concept to subskills such as geometric structure understanding or geometric relationship identification, while another definition shifts from latent ability to the observable task of geometric problem solving, receiving a diagram plus text and producing an answer, often step by step."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several nearby labels for overlapping parts of this space, including geometric reasoning, geometry reasoning, geometric understanding, and geometric ability. Within that broader capability, they single out geometric comprehension of points, lines, angles, and their properties, geometric structure understanding, and geometric relationship identification, the step of identifying explicit or implicit relations such as parallel, perpendicular, or intersecting from text. One paper presents geometric relationship identification as a minimal module for evaluating understanding of geometric structures, and another places geometry reasoning as one of seven mathematical reasoning types, while geometric problem solving is used for the observable end task rather than the latent capability itself."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link geometric reasoning to 4 measurement instruments and 1 behavioral indicator. The recorded instruments are GeoQA and MathVista most often, with Geometry3K and GEOS also used through MathVista-GPS multiple-choice sub-tasks, so operationalization is mainly dataset-based evaluation on geometry problem solving test sets and sub-tasks. These measures line up most directly with definitions that emphasize multi-step problem solving and inference, while the narrower formulations around basic element comprehension or relationship identification are described separately; the only linked behavioral indicator, Hallucination, appears in a causal claim rather than as a measure."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper claims a causal relationship from Hallucination to geometric reasoning, stating that severe hallucination on geometric figures hinders abilities on solving geometric problems. One paper also reports related links from Abstract reasoning to geometric reasoning and from Spatial reasoning to geometric reasoning, describing geometric ability in terms of advanced spatial comprehension and abstract thinking. No correlational link is recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats geometric reasoning as a latent ability to understand information in geometric diagrams, symbols, and text, and then carry out multi-step, often symbolic or logical inference to solve a problem. Several definitions add spatial relationships, theorems, and spatial comprehension to this framing, and some descriptions emphasize understanding basic geometric elements and their relationships as part of the challenge. A smaller line of work narrows the concept to subskills such as geometric structure understanding or geometric relationship identification, while another definition shifts from latent ability to the observable task of geometric problem solving, receiving a diagram plus text and producing an answer, often step by step.\n\nSpace of facets. Papers use several nearby labels for overlapping parts of this space, including geometric reasoning, geometry reasoning, geometric understanding, and geometric ability. Within that broader capability, they single out geometric comprehension of points, lines, angles, and their properties, geometric structure understanding, and geometric relationship identification, the step of identifying explicit or implicit relations such as parallel, perpendicular, or intersecting from text. One paper presents geometric relationship identification as a minimal module for evaluating understanding of geometric structures, and another places geometry reasoning as one of seven mathematical reasoning types, while geometric problem solving is used for the observable end task rather than the latent capability itself.\n\nSpace of measurement. Papers link geometric reasoning to 4 measurement instruments and 1 behavioral indicator. The recorded instruments are GeoQA and MathVista most often, with Geometry3K and GEOS also used through MathVista-GPS multiple-choice sub-tasks, so operationalization is mainly dataset-based evaluation on geometry problem solving test sets and sub-tasks. These measures line up most directly with definitions that emphasize multi-step problem solving and inference, while the narrower formulations around basic element comprehension or relationship identification are described separately; the only linked behavioral indicator, Hallucination, appears in a causal claim rather than as a measure.\n\nLinks. Beyond measurement, one paper claims a causal relationship from Hallucination to geometric reasoning, stating that severe hallucination on geometric figures hinders abilities on solving geometric problems. One paper also reports related links from Abstract reasoning to geometric reasoning and from Spatial reasoning to geometric reasoning, describing geometric ability in terms of advanced spatial comprehension and abstract thinking. No correlational link is recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Theorem-Validated Reverse Chain-of-Thought Problem Generation for Geometric Reasoning"
+    ],
+    "iclr24": [
+      "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+    ],
+    "iclr25": [
+      "Do Large Language Models Truly Understand Geometric Structures?",
+      "G-LLaVA: Solving Geometric Problem with Multi-Modal Large Language Model",
+      "GeoX: Geometric Problem Solving Through Unified Formalized Vision-Language Pre-training"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr24": 1,
+    "iclr25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25"
+  ]
+}

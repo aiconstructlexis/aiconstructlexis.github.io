@@ -1,0 +1,140 @@
+{
+  "canonical_name": "Humor",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, humor is consistently treated as a stylistic alignment dimension: a model's tendency or ability to produce witty, amusing, or funny responses when that style is desired. The definitions largely agree on this framing, with only a mild shift in emphasis between model-level tendency or ability and response-level quality, and one formulation also presents humor as a secondary objective in generation.\n\nSpace of facets. In these papers, humor is positioned alongside helpfulness and harmlessness as one of the pre-defined dimensions, values, or objectives used in multi-objective alignment. The recurring organization is therefore not into subtypes of humor, but into a set of preference dimensions that may need to be balanced and can be described as sometimes conflicting; one paper further frames helpfulness as the primary objective while humor is the target reward.\n\nSpace of measurement. Humor is linked to one measurement instrument, HH-RLHF, and no behavioral indicators are linked to it. Papers describe this operationalization as using a large-scale dataset, or a task based on the Anthropic-HH dataset, together with open-sourced reward models on \"Harmless,\" \"Helpful,\" and \"Humor\" to score responses; in one setup, the baseline policy is aligned to helpfulness and humor is the target reward. This operationalization lines up with the definitions by treating humor as something evaluated in generated responses.\n\nLinks. Humor is linked to two constructs through related relationships: helpfulness is related to humor, and harmlessness is related to humor. Papers describe these links in the language of multi-dimensional human preferences, stating that dimensions such as helpfulness, harmlessness, and humor may need to be balanced, can be sometimes conflicting, and that aligning with one value could inadvertently diminish another.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Humor"
+  ],
+  "papers": [
+    "MAP: Multi-Human-Value Alignment Palette",
+    "PAD: Personalized Alignment of LLMs at Decoding-time",
+    "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+    "PARM: Multi-Objective Test-Time Alignment via Preference-Aware Autoregressive Reward Model",
+    "Unlocking Decoding-time Controllability: Gradient-Free Multi-Objective Alignment with Contrastive Prompts",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The tendency of a model to produce amusing or humorous responses when such style is desired.",
+      "papers": [
+        "Decoding-Time Language Model Alignment with Multiple Objectives",
+        "PAD: Personalized Alignment of LLMs at Decoding-time",
+        "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time"
+      ],
+      "original_name": "Humor"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HH-RLHF",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models",
+      "evidence": "HH-RLHF [3]: a large-scale dataset ... We follow Yang et al. [35] and use open-sourced reward models on three objectives: \"Harmless\", \"Helpful\", and \"Humor\" to score the responses (Section 4.1).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+        ],
+        "icml25": [
+          "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "PARM: Multi-Objective Test-Time Alignment via Preference-Aware Autoregressive Reward Model",
+      "evidence": "In practice, human preferences are multi-dimensional and we often need to align LLMs to balance multiple, sometimes conflicting, preference dimensions such as helpfulness, harmlessness, and humor (Section 2. Related Work)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "PARM: Multi-Objective Test-Time Alignment via Preference-Aware Autoregressive Reward Model"
+        ],
+        "iclr25": [
+          "MAP: Multi-Human-Value Alignment Palette"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "PARM: Multi-Objective Test-Time Alignment via Preference-Aware Autoregressive Reward Model",
+      "evidence": "In practice, human preferences are multi-dimensional and we often need to align LLMs to balance multiple, sometimes conflicting, preference dimensions such as helpfulness, harmlessness, and humor (Section 2. Related Work)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "PARM: Multi-Objective Test-Time Alignment via Preference-Aware Autoregressive Reward Model"
+        ],
+        "iclr25": [
+          "MAP: Multi-Human-Value Alignment Palette"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, humor is consistently treated as a stylistic alignment dimension: a model's tendency or ability to produce witty, amusing, or funny responses when that style is desired. The definitions largely agree on this framing, with only a mild shift in emphasis between model-level tendency or ability and response-level quality, and one formulation also presents humor as a secondary objective in generation."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "In these papers, humor is positioned alongside helpfulness and harmlessness as one of the pre-defined dimensions, values, or objectives used in multi-objective alignment. The recurring organization is therefore not into subtypes of humor, but into a set of preference dimensions that may need to be balanced and can be described as sometimes conflicting; one paper further frames helpfulness as the primary objective while humor is the target reward."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Humor is linked to one measurement instrument, HH-RLHF, and no behavioral indicators are linked to it. Papers describe this operationalization as using a large-scale dataset, or a task based on the Anthropic-HH dataset, together with open-sourced reward models on \"Harmless,\" \"Helpful,\" and \"Humor\" to score responses; in one setup, the baseline policy is aligned to helpfulness and humor is the target reward. This operationalization lines up with the definitions by treating humor as something evaluated in generated responses."
+    },
+    {
+      "label": "Links.",
+      "text": "Humor is linked to two constructs through related relationships: helpfulness is related to humor, and harmlessness is related to humor. Papers describe these links in the language of multi-dimensional human preferences, stating that dimensions such as helpfulness, harmlessness, and humor may need to be balanced, can be sometimes conflicting, and that aligning with one value could inadvertently diminish another."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, humor is consistently treated as a stylistic alignment dimension: a model's tendency or ability to produce witty, amusing, or funny responses when that style is desired. The definitions largely agree on this framing, with only a mild shift in emphasis between model-level tendency or ability and response-level quality, and one formulation also presents humor as a secondary objective in generation.\n\nSpace of facets. In these papers, humor is positioned alongside helpfulness and harmlessness as one of the pre-defined dimensions, values, or objectives used in multi-objective alignment. The recurring organization is therefore not into subtypes of humor, but into a set of preference dimensions that may need to be balanced and can be described as sometimes conflicting; one paper further frames helpfulness as the primary objective while humor is the target reward.\n\nSpace of measurement. Humor is linked to one measurement instrument, HH-RLHF, and no behavioral indicators are linked to it. Papers describe this operationalization as using a large-scale dataset, or a task based on the Anthropic-HH dataset, together with open-sourced reward models on \"Harmless,\" \"Helpful,\" and \"Humor\" to score responses; in one setup, the baseline policy is aligned to helpfulness and humor is the target reward. This operationalization lines up with the definitions by treating humor as something evaluated in generated responses.\n\nLinks. Humor is linked to two constructs through related relationships: helpfulness is related to humor, and harmlessness is related to humor. Papers describe these links in the language of multi-dimensional human preferences, stating that dimensions such as helpfulness, harmlessness, and humor may need to be balanced, can be sometimes conflicting, and that aligning with one value could inadvertently diminish another.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "MAP: Multi-Human-Value Alignment Palette",
+      "PAD: Personalized Alignment of LLMs at Decoding-time"
+    ],
+    "icml25": [
+      "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+      "PARM: Multi-Objective Test-Time Alignment via Preference-Aware Autoregressive Reward Model"
+    ],
+    "naacl25": [
+      "Unlocking Decoding-time Controllability: Gradient-Free Multi-Objective Alignment with Contrastive Prompts"
+    ],
+    "neurips24": [
+      "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "MetaAligner: Towards Generalizable Multi-Objective Alignment of Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 2,
+    "naacl25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

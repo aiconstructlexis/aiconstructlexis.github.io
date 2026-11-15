@@ -1,0 +1,82 @@
+{
+  "canonical_name": "Ego4D",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, Ego4D is most commonly described as a large-scale egocentric video dataset. Definitions emphasize everyday activities, and one paper adds that it has dense annotations for various aspects of the videos. Papers often discuss it as source material for derived benchmarks: HourVideo is curated from Ego4D, with 500 videos covering 77 daily life scenarios, and another line of work recasts Ego4D into an offline procedural mistake detection format for Ego4D-PMD using individually annotated video frames.\n\nWhat it is claimed to measure. Across the papers, Ego4D is linked to 1 construct and no behavioral indicators. The measurement claims center on Egocentric video understanding: one paper reports that Ego4D offers human-annotated videos and labels for certain egocentric video understanding tasks, particularly episodic memory.\n\nSpace of uses. No other measurement instrument is linked to it. Instead, papers mainly position Ego4D as a source dataset from which other evaluations are built or reformatted, including curation for HourVideo and recasting into an offline mistake detection setting for Ego4D-PMD.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Ego4D"
+  ],
+  "papers": [
+    "Transparent and Coherent Procedural Mistake Detection",
+    "HourVideo: 1-Hour Video-Language Understanding",
+    "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+    "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A large-scale dataset of egocentric videos from which the videos for the HourVideo benchmark were curated.",
+      "papers": [
+        "HourVideo: 1-Hour Video-Language Understanding",
+        "Transparent and Coherent Procedural Mistake Detection"
+      ],
+      "original_name": "Ego4D"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Egocentric video understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MMEgo: Towards Building Egocentric Multimodal LLMs for Video QA",
+      "evidence": "While Ego4D (Grauman et al., 2022) offers valuable human-annotated videos and labels for certain egocentric video understanding tasks, particularly episodic memory (which assesses a model\u2019s ability to retain visual details in such videos)... (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMEgo: Towards Building Egocentric Multimodal LLMs for Video QA"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, Ego4D is most commonly described as a large-scale egocentric video dataset. Definitions emphasize everyday activities, and one paper adds that it has dense annotations for various aspects of the videos. Papers often discuss it as source material for derived benchmarks: HourVideo is curated from Ego4D, with 500 videos covering 77 daily life scenarios, and another line of work recasts Ego4D into an offline procedural mistake detection format for Ego4D-PMD using individually annotated video frames."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across the papers, Ego4D is linked to 1 construct and no behavioral indicators. The measurement claims center on Egocentric video understanding: one paper reports that Ego4D offers human-annotated videos and labels for certain egocentric video understanding tasks, particularly episodic memory."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No other measurement instrument is linked to it. Instead, papers mainly position Ego4D as a source dataset from which other evaluations are built or reformatted, including curation for HourVideo and recasting into an offline mistake detection setting for Ego4D-PMD."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, Ego4D is most commonly described as a large-scale egocentric video dataset. Definitions emphasize everyday activities, and one paper adds that it has dense annotations for various aspects of the videos. Papers often discuss it as source material for derived benchmarks: HourVideo is curated from Ego4D, with 500 videos covering 77 daily life scenarios, and another line of work recasts Ego4D into an offline procedural mistake detection format for Ego4D-PMD using individually annotated video frames.\n\nWhat it is claimed to measure. Across the papers, Ego4D is linked to 1 construct and no behavioral indicators. The measurement claims center on Egocentric video understanding: one paper reports that Ego4D offers human-annotated videos and labels for certain egocentric video understanding tasks, particularly episodic memory.\n\nSpace of uses. No other measurement instrument is linked to it. Instead, papers mainly position Ego4D as a source dataset from which other evaluations are built or reformatted, including curation for HourVideo and recasting into an offline mistake detection setting for Ego4D-PMD.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "HourVideo: 1-Hour Video-Language Understanding",
+      "PIVOT-R: Primitive-Driven Waypoint-Aware World Model for Robotic Manipulation",
+      "VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought"
+    ],
+    "emnlp25": [
+      "Transparent and Coherent Procedural Mistake Detection"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "emnlp25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

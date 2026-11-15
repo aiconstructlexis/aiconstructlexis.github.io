@@ -1,0 +1,176 @@
+{
+  "canonical_name": "Knowledge memorization",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing framing treats knowledge memorization as retained factual or content knowledge from data that should have been forgotten. The definitions agree on the target content, and one paper states that a model should \"not only forget verbatim texts, but also the knowledge in the forgetting set\"; they differ mainly in whether this is framed as a retention property of the model or as observable retention shown by correct answers to questions derived from the forgetting data. In the machine unlearning usage, the desired outcome is \"no knowledge memorization,\" meaning the model should be incapable of responding to questions about the forget set.\n\nSpace of facets. Where papers systematize the construct, they mostly separate it from verbatim memorization and place it among other unlearning properties. One benchmark enumerates \"no knowledge memorization\" alongside no verbatim memorization, no privacy leakage, utility preservation, scalability, and sustainability, while another quoted passage glosses the retained content as \"general knowledge encoded in the tokens.\" The recurring distinction is between retained knowledge and recall of original text.\n\nSpace of measurement. Papers link the construct to 2 measurement instruments, a benchmark (MUSE) and Membership inference attack methods, and to 2 behavioral indicators, Question answering and Text infilling. The most explicit operationalizations are question-based: one paper evaluates generated question-answer pairs based on the forgetting data, and MUSE defines the desired outcome as being unable to answer questions about the forget set. A smaller line of measurement uses four membership inference attack methods, and another paper uses fill-in-the-blank probes to examine memory of training data related to unlearning targets.\n\nLinks. Papers link it to 3 constructs. One paper claims a causal relationship from Knowledge memorization to Knowledge understanding, arguing that understanding-level concept tasks \"rely heavily on knowledge memory.\" Other papers report related links with Knowledge application, in the context of knowledge utilization during continual pre-training, and with Utility preservation, where retain-set performance is evaluated using a knowledge memorization metric.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Knowledge memorization"
+  ],
+  "papers": [
+    "LLM Unlearning via Loss Adjustment with Only Forget Data",
+    "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+    "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+    "Unlearning as multi-task optimization: A normalized gradient difference approach with an adaptive learning rate"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The extent to which a model retains factual or content knowledge derived from data that should have been forgotten.",
+      "papers": [
+        "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+        "Unlearning as multi-task optimization: A normalized gradient difference approach with an adaptive learning rate"
+      ],
+      "original_name": "Knowledge memorization"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "KoLA: Carefully Benchmarking World Knowledge of Large Language Models",
+      "evidence": "The knowledge memorization (KM) level shows notable correlations with other levels, especially with the concept tasks in the understanding level ... which indicates that these high-level tasks rely heavily on knowledge memory. (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "KoLA: Carefully Benchmarking World Knowledge of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Membership inference attack",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "evidence": "We adopt four membership inference attack (MIA) methods for knowledge memorization on our collected MIA set. (Introduction)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge application",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment",
+      "evidence": "However, this method may lead to inefficient knowledge memorization due to a lack of awareness of knowledge utilization during the continual pre-training... (Section Abstract).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MUSE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "We address this issue by proposing MUSE, a comprehensive machine unlearning evaluation benchmark that enumerates six diverse desirable properties for unlearned models: (1) no verbatim memorization, (2) no knowledge memorization, (3) no privacy leakage, (4) utility preservation on data not intended for removal, (5) scalability with respect to the size of removal requests, and (6) sustainability over sequential unlearning requests. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text infilling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "evidence": "We use fill-in-the-blank style probes (FB) to examine the memory of the original training data related to the unlearning targets. (Section 3.3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "We measure a model f\u2019s memorization of knowledge from the forget set Dforget as follows: for each example x \u2208Dforget associated with a question-answer pair (q, a), we gather the model\u2019s answer to the question q, denoted f(q). (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Utility preservation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "To quantify this, we evaluate the unlearned model\u2019s performance on the retain set using the knowledge memorization metric KnowMem(funlearn, Dretain). (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing framing treats knowledge memorization as retained factual or content knowledge from data that should have been forgotten. The definitions agree on the target content, and one paper states that a model should \"not only forget verbatim texts, but also the knowledge in the forgetting set\"; they differ mainly in whether this is framed as a retention property of the model or as observable retention shown by correct answers to questions derived from the forgetting data. In the machine unlearning usage, the desired outcome is \"no knowledge memorization,\" meaning the model should be incapable of responding to questions about the forget set."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Where papers systematize the construct, they mostly separate it from verbatim memorization and place it among other unlearning properties. One benchmark enumerates \"no knowledge memorization\" alongside no verbatim memorization, no privacy leakage, utility preservation, scalability, and sustainability, while another quoted passage glosses the retained content as \"general knowledge encoded in the tokens.\" The recurring distinction is between retained knowledge and recall of original text."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link the construct to 2 measurement instruments, a benchmark (MUSE) and Membership inference attack methods, and to 2 behavioral indicators, Question answering and Text infilling. The most explicit operationalizations are question-based: one paper evaluates generated question-answer pairs based on the forgetting data, and MUSE defines the desired outcome as being unable to answer questions about the forget set. A smaller line of measurement uses four membership inference attack methods, and another paper uses fill-in-the-blank probes to examine memory of training data related to unlearning targets."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link it to 3 constructs. One paper claims a causal relationship from Knowledge memorization to Knowledge understanding, arguing that understanding-level concept tasks \"rely heavily on knowledge memory.\" Other papers report related links with Knowledge application, in the context of knowledge utilization during continual pre-training, and with Utility preservation, where retain-set performance is evaluated using a knowledge memorization metric."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing framing treats knowledge memorization as retained factual or content knowledge from data that should have been forgotten. The definitions agree on the target content, and one paper states that a model should \"not only forget verbatim texts, but also the knowledge in the forgetting set\"; they differ mainly in whether this is framed as a retention property of the model or as observable retention shown by correct answers to questions derived from the forgetting data. In the machine unlearning usage, the desired outcome is \"no knowledge memorization,\" meaning the model should be incapable of responding to questions about the forget set.\n\nSpace of facets. Where papers systematize the construct, they mostly separate it from verbatim memorization and place it among other unlearning properties. One benchmark enumerates \"no knowledge memorization\" alongside no verbatim memorization, no privacy leakage, utility preservation, scalability, and sustainability, while another quoted passage glosses the retained content as \"general knowledge encoded in the tokens.\" The recurring distinction is between retained knowledge and recall of original text.\n\nSpace of measurement. Papers link the construct to 2 measurement instruments, a benchmark (MUSE) and Membership inference attack methods, and to 2 behavioral indicators, Question answering and Text infilling. The most explicit operationalizations are question-based: one paper evaluates generated question-answer pairs based on the forgetting data, and MUSE defines the desired outcome as being unable to answer questions about the forget set. A smaller line of measurement uses four membership inference attack methods, and another paper uses fill-in-the-blank probes to examine memory of training data related to unlearning targets.\n\nLinks. Papers link it to 3 constructs. One paper claims a causal relationship from Knowledge memorization to Knowledge understanding, arguing that understanding-level concept tasks \"rely heavily on knowledge memory.\" Other papers report related links with Knowledge application, in the context of knowledge utilization during continual pre-training, and with Utility preservation, where retain-set performance is evaluated using a knowledge memorization metric.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "LLM Unlearning via Loss Adjustment with Only Forget Data",
+      "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "Mix-CPT: A Domain Adaptation Framework via Decoupling Knowledge Learning and Format Alignment"
+    ],
+    "naacl25": [
+      "Unlearning as multi-task optimization: A normalized gradient difference approach with an adaptive learning rate"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "naacl25"
+  ]
+}

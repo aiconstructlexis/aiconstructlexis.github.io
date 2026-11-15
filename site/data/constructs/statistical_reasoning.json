@@ -1,0 +1,144 @@
+{
+  "canonical_name": "Statistical reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the cited work, the dominant framing treats statistical reasoning as the ability to reason over quantitative information and statistical relationships. One definition describes it as proficiency in quantitative synthesis across multiple documents, including aggregation, distributional analysis, and correlation analysis, while another frames it as interpreting charts, plots, and tables to understand trends, distributions, and statistical relationships. The main variation is the context of use, multi-document synthesis versus visually presented data, rather than whether statistical analysis is involved.\n\nSpace of facets. Papers place it inside broader reasoning taxonomies rather than identifying it with another construct. One benchmark uses it as one of three primary categories and describes statistical tasks through aggregation, correlation analysis, and variance analysis across multiple documents, while another treats it as one of seven mathematical reasoning types and situates figure question answering around statistical reasoning over multiple charts and plots. No construct-to-construct links are recorded for it.\n\nSpace of measurement. Operationalization is benchmark-based: papers link it to 2 measurement instruments and 3 behavioral indicators. The linked instruments are CLIMATEVIZ, a benchmark for statistical reasoning and fact verification on scientific charts, and MEBench, which includes a statistical reasoning category within cross-document multi-entity question answering; the named behavioral indicators are Aggregative question answering, Correlation analysis, and Variance analysis. These measures closely follow the two main definitions, with one instrument centered on charts and the other on multi-document quantitative synthesis.\n\nLinks. No causal or correlational claims are recorded. Instead, papers report related links connecting Aggregative question answering to Statistical reasoning, Correlation analysis to Statistical reasoning, and Statistical reasoning to Variance analysis, using the same language that describes statistical tasks as quantitative synthesis across multiple documents.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Statistical reasoning"
+  ],
+  "papers": [
+    "ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts",
+    "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+    "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The proficiency in performing quantitative synthesis, including aggregation, distributional analysis, and correlation analysis, using information from multiple documents.",
+      "papers": [
+        "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+        "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+      ],
+      "original_name": "Statistical reasoning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MEBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+      "evidence": "Our benchmark comprises 4,780 questions which are systematically categorized into three primary categories: Comparative Reasoning, Statistical Reasoning and Relational Reasoning, further divided into eight distinct types, ensuring broad coverage of real-world multi-entity reasoning scenarios.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Aggregative question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+      "evidence": "Statistical tasks assess LLM\u2019s proficiency in quantitative synthesis, including aggregation, distributional analysis, correlation analysis, and variance analysis across multi-document.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Correlation analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+      "evidence": "Statistical tasks assess LLM\u2019s proficiency in quantitative synthesis, including aggregation, distributional analysis, correlation analysis, and variance analysis across multi-document.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Variance analysis",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering",
+      "evidence": "Statistical tasks assess LLM\u2019s proficiency in quantitative synthesis, including aggregation, distributional analysis, correlation analysis, and variance analysis across multi-document.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CLIMATEVIZ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts",
+      "evidence": "These findings underscore the unique challenges posed by CLIMATEVIZ and highlight the need for further advances in models capable of statistical reasoning, structured explanation generation, and deep scientific understanding from visual evidence. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the cited work, the dominant framing treats statistical reasoning as the ability to reason over quantitative information and statistical relationships. One definition describes it as proficiency in quantitative synthesis across multiple documents, including aggregation, distributional analysis, and correlation analysis, while another frames it as interpreting charts, plots, and tables to understand trends, distributions, and statistical relationships. The main variation is the context of use, multi-document synthesis versus visually presented data, rather than whether statistical analysis is involved."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers place it inside broader reasoning taxonomies rather than identifying it with another construct. One benchmark uses it as one of three primary categories and describes statistical tasks through aggregation, correlation analysis, and variance analysis across multiple documents, while another treats it as one of seven mathematical reasoning types and situates figure question answering around statistical reasoning over multiple charts and plots. No construct-to-construct links are recorded for it."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is benchmark-based: papers link it to 2 measurement instruments and 3 behavioral indicators. The linked instruments are CLIMATEVIZ, a benchmark for statistical reasoning and fact verification on scientific charts, and MEBench, which includes a statistical reasoning category within cross-document multi-entity question answering; the named behavioral indicators are Aggregative question answering, Correlation analysis, and Variance analysis. These measures closely follow the two main definitions, with one instrument centered on charts and the other on multi-document quantitative synthesis."
+    },
+    {
+      "label": "Links.",
+      "text": "No causal or correlational claims are recorded. Instead, papers report related links connecting Aggregative question answering to Statistical reasoning, Correlation analysis to Statistical reasoning, and Statistical reasoning to Variance analysis, using the same language that describes statistical tasks as quantitative synthesis across multiple documents."
+    }
+  ],
+  "characterization": "Space of definitions. Across the cited work, the dominant framing treats statistical reasoning as the ability to reason over quantitative information and statistical relationships. One definition describes it as proficiency in quantitative synthesis across multiple documents, including aggregation, distributional analysis, and correlation analysis, while another frames it as interpreting charts, plots, and tables to understand trends, distributions, and statistical relationships. The main variation is the context of use, multi-document synthesis versus visually presented data, rather than whether statistical analysis is involved.\n\nSpace of facets. Papers place it inside broader reasoning taxonomies rather than identifying it with another construct. One benchmark uses it as one of three primary categories and describes statistical tasks through aggregation, correlation analysis, and variance analysis across multiple documents, while another treats it as one of seven mathematical reasoning types and situates figure question answering around statistical reasoning over multiple charts and plots. No construct-to-construct links are recorded for it.\n\nSpace of measurement. Operationalization is benchmark-based: papers link it to 2 measurement instruments and 3 behavioral indicators. The linked instruments are CLIMATEVIZ, a benchmark for statistical reasoning and fact verification on scientific charts, and MEBench, which includes a statistical reasoning category within cross-document multi-entity question answering; the named behavioral indicators are Aggregative question answering, Correlation analysis, and Variance analysis. These measures closely follow the two main definitions, with one instrument centered on charts and the other on multi-document quantitative synthesis.\n\nLinks. No causal or correlational claims are recorded. Instead, papers report related links connecting Aggregative question answering to Statistical reasoning, Correlation analysis to Statistical reasoning, and Statistical reasoning to Variance analysis, using the same language that describes statistical tasks as quantitative synthesis across multiple documents.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "ClimateViz: A Benchmark for Statistical Reasoning and Fact Verification on Scientific Charts",
+      "MEBench: Benchmarking Large Language Models for Cross-Document Multi-Entity Question Answering"
+    ],
+    "iclr24": [
+      "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24"
+  ]
+}

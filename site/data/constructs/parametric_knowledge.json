@@ -1,0 +1,270 @@
+{
+  "canonical_name": "Parametric knowledge",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats parametric knowledge as knowledge stored in a model's parameters, usually acquired during pre-training and available without external retrieval or prompt-supplied information. Many papers present it under closely related labels such as internal, implicit, latent, or model knowledge, and several describe it as what a model falls back on when retrieval is misleading or absent. The main variation is scope: some definitions mean broad factual or world knowledge, while a smaller line of work narrows it to task, language, or domain-specific priors. Another variation concerns expression, with one paper defining latent knowledge as information learned in the parameters that may not be fully expressed in the final output layer.\n\nSpace of facets. Across papers, several labels are used for closely related ideas, especially parametric memory, prior knowledge, internal knowledge, and model knowledge, with narrower variants such as task or multi-task knowledge. The most common organizing contrast is between knowledge in parameters and non-parametric or contextual information from retrieval, source documents, demonstrations, or the immediate input. Some papers further single out facets such as commonsense, factual, professional or domain-specific, and language-specific knowledge, while a few extend the notion to knowledge and rules used for implicit reasoning, describe elicited parametric memory as the model's internal belief, or localize storage to FFN modules.\n\nSpace of measurement. It is linked to 1 measurement instrument, MMLU, and 1 behavioral indicator, knowledge-based question answering. MMLU is a benchmark and is described as assessing parametric or multi-task knowledge, with one paper adding that it primarily assesses parametric knowledge and requires minimal reasoning; the linked behavioral indicator is described as evaluating the model's internal knowledge retained by base large language models. Beyond this named benchmark, several papers operationalize the construct by withholding external information, for example testing without retrieval or source documents, using closed-book question answering, or enciphering inputs to quantify prior knowledge, and one paper analyzes early-layer versus final-layer logits to access latent knowledge that may not appear in standard outputs.\n\nLinks. It is linked to 3 constructs. One paper claims a causal relationship from parametric knowledge to factuality, stating that latent knowledge can guide self-refinement of outputs and improve factual accuracy, and another claims a causal relationship from parametric knowledge to weak-to-strong generalization by eliciting latent knowledge from pre-trained LLMs. One paper relates knowledge transfer to parametric knowledge, stressing transferability across model scales, and another relates knowledge-based question answering to parametric knowledge as an evaluation of internal knowledge; no correlational link is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Parametric knowledge",
+    "Multi-task knowledge",
+    "Model knowledge",
+    "Internal knowledge",
+    "Implicit knowledge",
+    "Latent knowledge",
+    "Parametric memory",
+    "Prior knowledge",
+    "Task knowledge"
+  ],
+  "papers": [
+    "Towards Objective Fine-tuning: How LLMs' Prior Knowledge Causes Potential Poor Calibration?",
+    "Understanding In-Context Machine Translation for Low-Resource Languages: A Case Study on Manchu",
+    "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels",
+    "NILE: Internal Consistency Alignment in Large Language Models",
+    "Unsupervised Hallucination Detection by Inspecting Reasoning Processes",
+    "When Long Helps Short: How Context Length in Supervised Fine-tuning Affects Behavior of Large Language Models",
+    "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+    "Making Retrieval-Augmented Language Models Robust to Irrelevant Context",
+    "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+    "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+    "DRoC: Elevating Large Language Models for Complex Vehicle Routing via Decomposed Retrieval of Constraints",
+    "MRAG-Bench: Vision-Centric Evaluation for Retrieval-Augmented Multimodal Models",
+    "Retrieval Head Mechanistically Explains Long-Context Factuality",
+    "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+    "Synthetic continued pretraining",
+    "Aggregation Artifacts in Subjective Tasks Collapse Large Language Models' Posteriors",
+    "VoiceTextBlender: Augmenting Large Language Models with Speech Capabilities via Single-Stage Joint Speech-Text Supervised Fine-Tuning",
+    "Grokking of Implicit Reasoning in Transformers: A Mechanistic Journey to the Edge of Generalization",
+    "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+    "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+    "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+    "Understanding Information Storage and Transfer in Multi-Modal Large Language Models"
+  ],
+  "paper_count": 22,
+  "definitions": [
+    {
+      "text": "The knowledge implicitly stored within the parameters of a language model, as opposed to knowledge accessed from an external source.",
+      "papers": [
+        "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+        "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+        "Synthetic continued pretraining",
+        "When Long Helps Short: How Context Length in Supervised Fine-tuning Affects Behavior of Large Language Models"
+      ],
+      "original_name": "Parametric knowledge"
+    },
+    {
+      "text": "The general knowledge and task-related understanding acquired by a model during its pre-training phase, which influences its predictions independently of in-context examples.",
+      "papers": [
+        "Aggregation Artifacts in Subjective Tasks Collapse Large Language Models' Posteriors",
+        "Understanding In-Context Machine Translation for Low-Resource Languages: A Case Study on Manchu"
+      ],
+      "original_name": "Prior knowledge"
+    },
+    {
+      "text": "The latent breadth of factual and domain knowledge that supports performance across many subject areas.",
+      "papers": [
+        "VoiceTextBlender: Augmenting Large Language Models with Speech Capabilities via Single-Stage Joint Speech-Text Supervised Fine-Tuning"
+      ],
+      "original_name": "Multi-task knowledge"
+    },
+    {
+      "text": "The latent store of factual world knowledge encoded in a model during pre-training and potentially altered during fine-tuning, which supports accurate responses in closed-book settings.",
+      "papers": [
+        "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels"
+      ],
+      "original_name": "Model knowledge"
+    },
+    {
+      "text": "The knowledge acquired by a large language model during its pre-training phase, which is embedded within its parameters.",
+      "papers": [
+        "NILE: Internal Consistency Alignment in Large Language Models"
+      ],
+      "original_name": "Internal knowledge"
+    },
+    {
+      "text": "The latent professional or domain-specific knowledge encoded within a model's parameters that is not explicitly provided in the input context.",
+      "papers": [
+        "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction"
+      ],
+      "original_name": "Implicit knowledge"
+    },
+    {
+      "text": "The factual information implicitly learned and stored within the model's internal parameters during training, which may not be fully expressed in the final output layer.",
+      "papers": [
+        "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models"
+      ],
+      "original_name": "Latent knowledge"
+    },
+    {
+      "text": "The knowledge stored implicitly within the learned parameters of a language model, as opposed to knowledge accessed from an external source.",
+      "papers": [
+        "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+        "Making Retrieval-Augmented Language Models Robust to Irrelevant Context",
+        "Grokking of Implicit Reasoning in Transformers: A Mechanistic Journey to the Edge of Generalization"
+      ],
+      "original_name": "Parametric memory"
+    },
+    {
+      "text": "The amount of prior task-specific knowledge the model already has before receiving in-context exemplars.",
+      "papers": [
+        "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars"
+      ],
+      "original_name": "Task knowledge"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Retrieval Head Mechanistically Explains Long-Context Factuality",
+      "evidence": "MMLU primarily assesses a model\u2019s parametric knowledge and requires minimal reasoning, thus offering limited benefits from CoT reasoning. (Section 4.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Retrieval Head Mechanistically Explains Long-Context Factuality"
+        ],
+        "naacl25": [
+          "VoiceTextBlender: Augmenting Large Language Models with Speech Capabilities via Single-Stage Joint Speech-Text Supervised Fine-Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "evidence": "our SLED framework leverages the latent knowledge embedded within the LLM by contrasting the output logits from the final layer with those from early layers. It then utilizes an approximate gradient approach to enable latent knowledge to guide the self-refinement of outputs, thereby effectively improving factual accuracy. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Weak-to-strong generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "A transfer learning framework for weak to strong generalization",
+      "evidence": "We prove that weak-to-strong generalization is possible by eliciting latent knowledge from pre-trained LLMs.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "A transfer learning framework for weak to strong generalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge transfer",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+      "evidence": "Our findings highlight the critical factors contributing to the process of parametric knowledge transfer, underscoring the transferability of model parameters across LLMs of different scales. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge-based question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+      "evidence": "Knowledge-based Question Answering (KG): This type of question evaluates the model\u2019s internal knowledge, which is retained by the base large language models (Section 2.2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats parametric knowledge as knowledge stored in a model's parameters, usually acquired during pre-training and available without external retrieval or prompt-supplied information. Many papers present it under closely related labels such as internal, implicit, latent, or model knowledge, and several describe it as what a model falls back on when retrieval is misleading or absent. The main variation is scope: some definitions mean broad factual or world knowledge, while a smaller line of work narrows it to task, language, or domain-specific priors. Another variation concerns expression, with one paper defining latent knowledge as information learned in the parameters that may not be fully expressed in the final output layer."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Across papers, several labels are used for closely related ideas, especially parametric memory, prior knowledge, internal knowledge, and model knowledge, with narrower variants such as task or multi-task knowledge. The most common organizing contrast is between knowledge in parameters and non-parametric or contextual information from retrieval, source documents, demonstrations, or the immediate input. Some papers further single out facets such as commonsense, factual, professional or domain-specific, and language-specific knowledge, while a few extend the notion to knowledge and rules used for implicit reasoning, describe elicited parametric memory as the model's internal belief, or localize storage to FFN modules."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "It is linked to 1 measurement instrument, MMLU, and 1 behavioral indicator, knowledge-based question answering. MMLU is a benchmark and is described as assessing parametric or multi-task knowledge, with one paper adding that it primarily assesses parametric knowledge and requires minimal reasoning; the linked behavioral indicator is described as evaluating the model's internal knowledge retained by base large language models. Beyond this named benchmark, several papers operationalize the construct by withholding external information, for example testing without retrieval or source documents, using closed-book question answering, or enciphering inputs to quantify prior knowledge, and one paper analyzes early-layer versus final-layer logits to access latent knowledge that may not appear in standard outputs."
+    },
+    {
+      "label": "Links.",
+      "text": "It is linked to 3 constructs. One paper claims a causal relationship from parametric knowledge to factuality, stating that latent knowledge can guide self-refinement of outputs and improve factual accuracy, and another claims a causal relationship from parametric knowledge to weak-to-strong generalization by eliciting latent knowledge from pre-trained LLMs. One paper relates knowledge transfer to parametric knowledge, stressing transferability across model scales, and another relates knowledge-based question answering to parametric knowledge as an evaluation of internal knowledge; no correlational link is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats parametric knowledge as knowledge stored in a model's parameters, usually acquired during pre-training and available without external retrieval or prompt-supplied information. Many papers present it under closely related labels such as internal, implicit, latent, or model knowledge, and several describe it as what a model falls back on when retrieval is misleading or absent. The main variation is scope: some definitions mean broad factual or world knowledge, while a smaller line of work narrows it to task, language, or domain-specific priors. Another variation concerns expression, with one paper defining latent knowledge as information learned in the parameters that may not be fully expressed in the final output layer.\n\nSpace of facets. Across papers, several labels are used for closely related ideas, especially parametric memory, prior knowledge, internal knowledge, and model knowledge, with narrower variants such as task or multi-task knowledge. The most common organizing contrast is between knowledge in parameters and non-parametric or contextual information from retrieval, source documents, demonstrations, or the immediate input. Some papers further single out facets such as commonsense, factual, professional or domain-specific, and language-specific knowledge, while a few extend the notion to knowledge and rules used for implicit reasoning, describe elicited parametric memory as the model's internal belief, or localize storage to FFN modules.\n\nSpace of measurement. It is linked to 1 measurement instrument, MMLU, and 1 behavioral indicator, knowledge-based question answering. MMLU is a benchmark and is described as assessing parametric or multi-task knowledge, with one paper adding that it primarily assesses parametric knowledge and requires minimal reasoning; the linked behavioral indicator is described as evaluating the model's internal knowledge retained by base large language models. Beyond this named benchmark, several papers operationalize the construct by withholding external information, for example testing without retrieval or source documents, using closed-book question answering, or enciphering inputs to quantify prior knowledge, and one paper analyzes early-layer versus final-layer logits to access latent knowledge that may not appear in standard outputs.\n\nLinks. It is linked to 3 constructs. One paper claims a causal relationship from parametric knowledge to factuality, stating that latent knowledge can guide self-refinement of outputs and improve factual accuracy, and another claims a causal relationship from parametric knowledge to weak-to-strong generalization by eliciting latent knowledge from pre-trained LLMs. One paper relates knowledge transfer to parametric knowledge, stressing transferability across model scales, and another relates knowledge-based question answering to parametric knowledge as an evaluation of internal knowledge; no correlational link is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Towards Objective Fine-tuning: How LLMs' Prior Knowledge Causes Potential Poor Calibration?",
+      "Understanding In-Context Machine Translation for Low-Resource Languages: A Case Study on Manchu"
+    ],
+    "emnlp25": [
+      "Analyzing the Effects of Supervised Fine-Tuning on Model Knowledge from Token and Parameter Levels",
+      "NILE: Internal Consistency Alignment in Large Language Models",
+      "Unsupervised Hallucination Detection by Inspecting Reasoning Processes",
+      "When Long Helps Short: How Context Length in Supervised Fine-tuning Affects Behavior of Large Language Models"
+    ],
+    "iclr24": [
+      "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+      "Making Retrieval-Augmented Language Models Robust to Irrelevant Context",
+      "RA-DIT: Retrieval-Augmented Dual Instruction Tuning",
+      "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective"
+    ],
+    "iclr25": [
+      "DRoC: Elevating Large Language Models for Complex Vehicle Routing via Decomposed Retrieval of Constraints",
+      "MRAG-Bench: Vision-Centric Evaluation for Retrieval-Augmented Multimodal Models",
+      "Retrieval Head Mechanistically Explains Long-Context Factuality",
+      "Streaming Video Understanding and Multi-round Interaction with Memory-enhanced Knowledge",
+      "Synthetic continued pretraining"
+    ],
+    "naacl25": [
+      "Aggregation Artifacts in Subjective Tasks Collapse Large Language Models' Posteriors",
+      "VoiceTextBlender: Augmenting Large Language Models with Speech Capabilities via Single-Stage Joint Speech-Text Supervised Fine-Tuning"
+    ],
+    "neurips24": [
+      "Grokking of Implicit Reasoning in Transformers: A Mechanistic Journey to the Edge of Generalization",
+      "HLM-Cite: Hybrid Language Model Workflow for Text-based Scientific Citation Prediction",
+      "Prompt Optimization with EASE? Efficient Ordering-aware Automated Selection of Exemplars",
+      "SLED: Self Logits Evolution Decoding for Improving Factuality in Large Language Models",
+      "Understanding Information Storage and Transfer in Multi-Modal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 4,
+    "iclr24": 4,
+    "iclr25": 5,
+    "naacl25": 2,
+    "neurips24": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

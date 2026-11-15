@@ -1,0 +1,160 @@
+{
+  "canonical_name": "Weak-to-strong generalization",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the dominant framing treats weak-to-strong generalization as a phenomenon or ability in which a stronger model, trained on weaker supervision, weaker demonstrations, or data labeled by a weaker model, exceeds the performance of the weak source policy or weak supervisor. Most definitions agree on this above-teacher criterion, while smaller variations emphasize different targets: some describe recovering the strong model's full capabilities or full potential under weak supervision, and another casts it as extending an alignment objective into areas beyond the weak supervisor's knowledge. A smaller line also presents it as a latent ability, rather than only an observed outcome.\n\nSpace of facets. Papers use the same label for several closely related notions: an observed phenomenon of outperforming weak teachers, an ability or latent ability of the strong model, and a training paradigm in which a strong model is supervised by a weaker model. They also vary in scope, with some treating it broadly as eliciting capabilities from noisy weak labels and others narrowing it to generalizing an alignment objective beyond the supervisor's knowledge boundary. One recurring contrast is that papers do not present it as simple replication of the weak model, but as learning the task's intent and rules from weakly labeled data.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. In the papers, it is operationalized directly through the training setup and comparative outcome: a stronger model is trained or fine-tuned on weaker demonstrations or labels from a weaker model, and the construct is evidenced when the student outperforms the weak supervisor, recovers part of the strong model's performance, or, in some definitions, recovers its full capabilities or full potential. This operationalization mostly matches the dominant definitions, though definitions that stress full capability recovery are broader than the minimal above-teacher criterion.\n\nLinks. It is linked to 3 constructs: parametric knowledge, critique ability, and overfitting. One paper claims a causal relationship from parametric knowledge to weak-to-strong generalization, stating that it is possible by eliciting latent knowledge from pre-trained LLMs. Other papers relate it to critique ability, describing weaker critics guiding stronger task models as a similar phenomenon, and to overfitting, noting that erroneous labels from weak supervisors may lead strong models to overfit in weak-to-strong generalization.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Weak-to-strong generalization",
+    "Weak to strong generalization",
+    "Weak-to-Strong generalization"
+  ],
+  "papers": [
+    "AgentRM: Enhancing Agent Generalization with Reward Modeling",
+    "How to Mitigate Overfitting in Weak-to-strong Generalization?",
+    "A transfer learning framework for weak to strong generalization",
+    "Bayesian WeakS-to-Strong from Text Classification to Generation",
+    "Iterative Label Refinement Matters More than Preference Optimization under Weak Supervision",
+    "Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization",
+    "Weak to Strong Generalization for Large Language Models with Multi-capabilities",
+    "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+    "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions",
+    "Teaching Language Models to Critique via Reinforcement Learning",
+    "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+    "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+    "Stress-Testing Capability Elicitation With Password-Locked Models"
+  ],
+  "paper_count": 13,
+  "definitions": [
+    {
+      "text": "The phenomenon where training on weaker demonstrations or weaker supervision still yields performance above the weak source policy.",
+      "papers": [
+        "Stress-Testing Capability Elicitation With Password-Locked Models",
+        "Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization",
+        "How to Mitigate Overfitting in Weak-to-strong Generalization?",
+        "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss"
+      ],
+      "original_name": "Weak-to-strong generalization"
+    },
+    {
+      "text": "The ability of a more powerful model to learn a task and surpass the performance of a weaker supervisor model by training on data labeled by that weaker model.",
+      "papers": [
+        "Weak to Strong Generalization for Large Language Models with Multi-capabilities"
+      ],
+      "original_name": "Weak to strong generalization"
+    },
+    {
+      "text": "The ability of a stronger model to recover its full capabilities when supervised only by the labels from a weaker, less capable model.",
+      "papers": [
+        "Bayesian WeakS-to-Strong from Text Classification to Generation"
+      ],
+      "original_name": "Weak-to-Strong generalization"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Parametric knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "A transfer learning framework for weak to strong generalization",
+      "evidence": "We prove that weak-to-strong generalization is possible by eliciting latent knowledge from pre-trained LLMs.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "A transfer learning framework for weak to strong generalization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Critique ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Teaching Language Models to Critique via Reinforcement Learning",
+      "evidence": "Our experiments demonstrate that relatively weaker critic models can effectively guide stronger task-performing models such as GPT-4o (Table 3), exhibiting a similar phenomenon to weak-to-strong generalization (Christiano et al., 2018; Burns et al., 2023), where weaker models can be trained to effectively supervise more capable ones. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Teaching Language Models to Critique via Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Overfitting",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "How to Mitigate Overfitting in Weak-to-strong Generalization?",
+      "evidence": "Although weak-to-strong generalization exhibiting certain generalization capabilities, strong models exhibit significant overfitting in weak-to-strong generalization: Due to the strong fit ability of strong models, erroneous labels from weak supervisors may lead to overfitting in strong models. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "How to Mitigate Overfitting in Weak-to-strong Generalization?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the dominant framing treats weak-to-strong generalization as a phenomenon or ability in which a stronger model, trained on weaker supervision, weaker demonstrations, or data labeled by a weaker model, exceeds the performance of the weak source policy or weak supervisor. Most definitions agree on this above-teacher criterion, while smaller variations emphasize different targets: some describe recovering the strong model's full capabilities or full potential under weak supervision, and another casts it as extending an alignment objective into areas beyond the weak supervisor's knowledge. A smaller line also presents it as a latent ability, rather than only an observed outcome."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use the same label for several closely related notions: an observed phenomenon of outperforming weak teachers, an ability or latent ability of the strong model, and a training paradigm in which a strong model is supervised by a weaker model. They also vary in scope, with some treating it broadly as eliciting capabilities from noisy weak labels and others narrowing it to generalizing an alignment objective beyond the supervisor's knowledge boundary. One recurring contrast is that papers do not present it as simple replication of the weak model, but as learning the task's intent and rules from weakly labeled data."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. In the papers, it is operationalized directly through the training setup and comparative outcome: a stronger model is trained or fine-tuned on weaker demonstrations or labels from a weaker model, and the construct is evidenced when the student outperforms the weak supervisor, recovers part of the strong model's performance, or, in some definitions, recovers its full capabilities or full potential. This operationalization mostly matches the dominant definitions, though definitions that stress full capability recovery are broader than the minimal above-teacher criterion."
+    },
+    {
+      "label": "Links.",
+      "text": "It is linked to 3 constructs: parametric knowledge, critique ability, and overfitting. One paper claims a causal relationship from parametric knowledge to weak-to-strong generalization, stating that it is possible by eliciting latent knowledge from pre-trained LLMs. Other papers relate it to critique ability, describing weaker critics guiding stronger task models as a similar phenomenon, and to overfitting, noting that erroneous labels from weak supervisors may lead strong models to overfit in weak-to-strong generalization."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the dominant framing treats weak-to-strong generalization as a phenomenon or ability in which a stronger model, trained on weaker supervision, weaker demonstrations, or data labeled by a weaker model, exceeds the performance of the weak source policy or weak supervisor. Most definitions agree on this above-teacher criterion, while smaller variations emphasize different targets: some describe recovering the strong model's full capabilities or full potential under weak supervision, and another casts it as extending an alignment objective into areas beyond the weak supervisor's knowledge. A smaller line also presents it as a latent ability, rather than only an observed outcome.\n\nSpace of facets. Papers use the same label for several closely related notions: an observed phenomenon of outperforming weak teachers, an ability or latent ability of the strong model, and a training paradigm in which a strong model is supervised by a weaker model. They also vary in scope, with some treating it broadly as eliciting capabilities from noisy weak labels and others narrowing it to generalizing an alignment objective beyond the supervisor's knowledge boundary. One recurring contrast is that papers do not present it as simple replication of the weak model, but as learning the task's intent and rules from weakly labeled data.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. In the papers, it is operationalized directly through the training setup and comparative outcome: a stronger model is trained or fine-tuned on weaker demonstrations or labels from a weaker model, and the construct is evidenced when the student outperforms the weak supervisor, recovers part of the strong model's performance, or, in some definitions, recovers its full capabilities or full potential. This operationalization mostly matches the dominant definitions, though definitions that stress full capability recovery are broader than the minimal above-teacher criterion.\n\nLinks. It is linked to 3 constructs: parametric knowledge, critique ability, and overfitting. One paper claims a causal relationship from parametric knowledge to weak-to-strong generalization, stating that it is possible by eliciting latent knowledge from pre-trained LLMs. Other papers relate it to critique ability, describing weaker critics guiding stronger task models as a similar phenomenon, and to overfitting, noting that erroneous labels from weak supervisors may lead strong models to overfit in weak-to-strong generalization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "AgentRM: Enhancing Agent Generalization with Reward Modeling",
+      "How to Mitigate Overfitting in Weak-to-strong Generalization?"
+    ],
+    "iclr25": [
+      "A transfer learning framework for weak to strong generalization",
+      "Bayesian WeakS-to-Strong from Text Classification to Generation",
+      "Iterative Label Refinement Matters More than Preference Optimization under Weak Supervision",
+      "Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization",
+      "Weak to Strong Generalization for Large Language Models with Multi-capabilities"
+    ],
+    "icml25": [
+      "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+      "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions",
+      "Teaching Language Models to Critique via Reinforcement Learning"
+    ],
+    "neurips24": [
+      "Can LLMs Learn by Teaching for Better Reasoning? A Preliminary Study",
+      "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+      "Stress-Testing Capability Elicitation With Password-Locked Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 5,
+    "icml25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

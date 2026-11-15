@@ -1,0 +1,109 @@
+{
+  "canonical_name": "Image inpainting",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across definitions, the common core is filling missing, masked, or corrupted parts of an image. Authors differ in how the fill is conditioned: some describe using the visible parts of the image, others specify a textual instruction or in-context visual examples, and one definition makes success explicit as producing plausible, contextually appropriate content.\n\nVariants. Papers use several nearby names, most commonly image inpainting or image in-painting, with smaller variants such as image infilling and generative fill. The behavior appears in both low-level and downstream settings, including zero-shot control settings, filling different pixel-space masks, and completing the missing half of an example; examples are shown on CelebA-HQ, SVHN, MNIST, and CIFAR-10.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Elicitation is described procedurally by masking part of an image and having the model generate within that region, in one paper by teacher-forcing ground-truth tokens outside the mask and generating only inside it, and in another by asking for the missing half of an example; no separate scoring instrument is named.\n\nWhat it is taken as evidence of. Only one construct is linked. Papers relate image in-painting to Zero-shot generalization: one paper presents it as a downstream task through which a model showcases zero-shot generalization ability, and no other construct link is recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Image inpainting",
+    "Image in-painting",
+    "Image infilling",
+    "Generative fill"
+  ],
+  "papers": [
+    "Can Generative AI Solve Your In-Context Learning Problem? A Martingale Perspective",
+    "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+    "PromptFix: You Prompt and We Fix the Photo",
+    "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The task of filling in missing or corrupted parts of an image based on a textual instruction.",
+      "papers": [
+        "PromptFix: You Prompt and We Fix the Photo"
+      ],
+      "original_name": "Image inpainting"
+    },
+    {
+      "text": "The task of filling in a missing or masked region within an image with plausible, contextually appropriate content.",
+      "papers": [
+        "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction"
+      ],
+      "original_name": "Image in-painting"
+    },
+    {
+      "text": "The task of generating pixels to fill in a masked or missing region of an image based on the visible parts.",
+      "papers": [
+        "Glauber Generative Model: Discrete Diffusion Models via Binary Classification"
+      ],
+      "original_name": "Image infilling"
+    },
+    {
+      "text": "Completing missing parts of an image based on in-context visual examples.",
+      "papers": [
+        "Can Generative AI Solve Your In-Context Learning Problem? A Martingale Perspective"
+      ],
+      "original_name": "Generative fill"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+      "evidence": "VAR further showcases zero-shot generalization ability in downstream tasks including image in-painting, out-painting, and editing.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across definitions, the common core is filling missing, masked, or corrupted parts of an image. Authors differ in how the fill is conditioned: some describe using the visible parts of the image, others specify a textual instruction or in-context visual examples, and one definition makes success explicit as producing plausible, contextually appropriate content."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby names, most commonly image inpainting or image in-painting, with smaller variants such as image infilling and generative fill. The behavior appears in both low-level and downstream settings, including zero-shot control settings, filling different pixel-space masks, and completing the missing half of an example; examples are shown on CelebA-HQ, SVHN, MNIST, and CIFAR-10."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Elicitation is described procedurally by masking part of an image and having the model generate within that region, in one paper by teacher-forcing ground-truth tokens outside the mask and generating only inside it, and in another by asking for the missing half of an example; no separate scoring instrument is named."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Only one construct is linked. Papers relate image in-painting to Zero-shot generalization: one paper presents it as a downstream task through which a model showcases zero-shot generalization ability, and no other construct link is recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across definitions, the common core is filling missing, masked, or corrupted parts of an image. Authors differ in how the fill is conditioned: some describe using the visible parts of the image, others specify a textual instruction or in-context visual examples, and one definition makes success explicit as producing plausible, contextually appropriate content.\n\nVariants. Papers use several nearby names, most commonly image inpainting or image in-painting, with smaller variants such as image infilling and generative fill. The behavior appears in both low-level and downstream settings, including zero-shot control settings, filling different pixel-space masks, and completing the missing half of an example; examples are shown on CelebA-HQ, SVHN, MNIST, and CIFAR-10.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Elicitation is described procedurally by masking part of an image and having the model generate within that region, in one paper by teacher-forcing ground-truth tokens outside the mask and generating only inside it, and in another by asking for the missing half of an example; no separate scoring instrument is named.\n\nWhat it is taken as evidence of. Only one construct is linked. Papers relate image in-painting to Zero-shot generalization: one paper presents it as a downstream task through which a model showcases zero-shot generalization ability, and no other construct link is recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Can Generative AI Solve Your In-Context Learning Problem? A Martingale Perspective",
+      "Glauber Generative Model: Discrete Diffusion Models via Binary Classification"
+    ],
+    "neurips24": [
+      "PromptFix: You Prompt and We Fix the Photo",
+      "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

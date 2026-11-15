@@ -1,0 +1,108 @@
+{
+  "canonical_name": "FiQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers most commonly treat FiQA as a retrieval benchmark within BEIR. Definitions variously describe it as a single-hop retrieval benchmark whose corpus consists of human-written responses to the search queries, as a dataset from the BEIR benchmark for financial question answering, and as a financial QA benchmark used for downstream evaluation; one paper also describes using it as a retrieval dataset for generating and evaluating adversarial passages in corpus-poisoning experiments.\n\nWhat it is claimed to measure. Measurement claims are concentrated on one target: papers link FiQA to no constructs and to one behavioral indicator, financial question answering. In Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics and Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models, papers use it to measure financial question answering, including the label \"FiQA (Maia et al., 2018), Financial QA.\"\n\nSpace of uses. Papers usually position FiQA within BEIR, and BEIR is the only linked measurement instrument through a related link. In use, papers include it among BEIR retrieval benchmarks, pair it with NFCorpus, SciFact, and SciDocs in a BEIROOC evaluation setup, use ROUGE-L for FiQA in one downstream evaluation setting, and use it to generate and evaluate adversarial passages in corpus-poisoning experiments.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FiQA"
+  ],
+  "papers": [
+    "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics",
+    "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models",
+    "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+    "Teaching LLMs How to Learn with Contextual Fine-Tuning",
+    "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+    "tRAG: Term-level Retrieval-Augmented Generation for Domain-Adaptive Retrieval"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A BEIR dataset used as a single-hop retrieval benchmark where passages are human-written responses to search queries.",
+      "papers": [
+        "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+        "tRAG: Term-level Retrieval-Augmented Generation for Domain-Adaptive Retrieval",
+        "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+        "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models"
+      ],
+      "original_name": "FiQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Financial question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics",
+      "evidence": "FIQA for financial question answering (Section 4.3).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics",
+          "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BEIR",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "\u201cnine public datasets in the BEIR benchmark (Thakur et al., 2021), including ... FiQA (Maia et al., 2018)\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers most commonly treat FiQA as a retrieval benchmark within BEIR. Definitions variously describe it as a single-hop retrieval benchmark whose corpus consists of human-written responses to the search queries, as a dataset from the BEIR benchmark for financial question answering, and as a financial QA benchmark used for downstream evaluation; one paper also describes using it as a retrieval dataset for generating and evaluating adversarial passages in corpus-poisoning experiments."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Measurement claims are concentrated on one target: papers link FiQA to no constructs and to one behavioral indicator, financial question answering. In Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics and Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models, papers use it to measure financial question answering, including the label \"FiQA (Maia et al., 2018), Financial QA.\""
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers usually position FiQA within BEIR, and BEIR is the only linked measurement instrument through a related link. In use, papers include it among BEIR retrieval benchmarks, pair it with NFCorpus, SciFact, and SciDocs in a BEIROOC evaluation setup, use ROUGE-L for FiQA in one downstream evaluation setting, and use it to generate and evaluate adversarial passages in corpus-poisoning experiments."
+    }
+  ],
+  "characterization": "What it is. Papers most commonly treat FiQA as a retrieval benchmark within BEIR. Definitions variously describe it as a single-hop retrieval benchmark whose corpus consists of human-written responses to the search queries, as a dataset from the BEIR benchmark for financial question answering, and as a financial QA benchmark used for downstream evaluation; one paper also describes using it as a retrieval dataset for generating and evaluating adversarial passages in corpus-poisoning experiments.\n\nWhat it is claimed to measure. Measurement claims are concentrated on one target: papers link FiQA to no constructs and to one behavioral indicator, financial question answering. In Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics and Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models, papers use it to measure financial question answering, including the label \"FiQA (Maia et al., 2018), Financial QA.\"\n\nSpace of uses. Papers usually position FiQA within BEIR, and BEIR is the only linked measurement instrument through a related link. In use, papers include it among BEIR retrieval benchmarks, pair it with NFCorpus, SciFact, and SciDocs in a BEIROOC evaluation setup, use ROUGE-L for FiQA in one downstream evaluation setting, and use it to generate and evaluate adversarial passages in corpus-poisoning experiments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics",
+      "Training a Utility-based Retriever Through Shared Context Attribution for Retrieval-Augmented Language Models"
+    ],
+    "iclr25": [
+      "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "Teaching LLMs How to Learn with Contextual Fine-Tuning"
+    ],
+    "naacl25": [
+      "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+      "tRAG: Term-level Retrieval-Augmented Generation for Domain-Adaptive Retrieval"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 2,
+    "naacl25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

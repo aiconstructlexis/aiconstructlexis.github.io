@@ -1,0 +1,102 @@
+{
+  "canonical_name": "Event argument extraction",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats event argument extraction as identifying event arguments in text and assigning each argument its role, explicitly assuming that the event trigger is already given. A smaller line of work uses the shorter label argument extraction for scientific events, where the task is to find the text spans that serve as arguments for a scientific activity and classify them into roles such as context, method, or result. Across both framings, the shared task is to recover argument spans and label them with semantic roles, though they differ in whether the trigger-given setup is stated explicitly and in the role inventory they foreground.\n\nVariants. Papers study this behavior in multiple settings. One recurring setting is cross-lingual transfer, described as event argument extraction spanning 20 languages. Another is scientific event extraction, where the task is decomposed into Argument Identification, predicting the set of argument spans for each event, and Argument Classification, predicting the semantic role for each identified span.\n\nSpace of elicitation and scores. Papers link this behavior to one measurement instrument, TextEE. In the linked usage, authors say they adopt TextEE to compare models while focusing on defining correctness at the event argument level.\n\nWhat it is taken as evidence of. The papers do not link event argument extraction to any construct, so they do not make an explicit claim about what broader construct this behavior indicates.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Event Argument Extraction",
+    "Argument extraction"
+  ],
+  "papers": [
+    "Multimedia Event Extraction with LLM Knowledge Editing",
+    "SciEvent: Benchmarking Multi-domain Scientific Event Extraction",
+    "Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction",
+    "Constrained Decoding for Cross-lingual Label Projection",
+    "GoLLIE: Annotation Guidelines improve Zero-Shot Information-Extraction",
+    "BEMEAE: Moving Beyond Exact Span Match for Event Argument Extraction"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The task of identifying event arguments and their specific roles in text, given the presence of an event trigger.",
+      "papers": [
+        "Constrained Decoding for Cross-lingual Label Projection",
+        "GoLLIE: Annotation Guidelines improve Zero-Shot Information-Extraction"
+      ],
+      "original_name": "Event Argument Extraction"
+    },
+    {
+      "text": "The task of identifying text spans that serve as arguments for a scientific event and classifying them into specific semantic roles like Context, Method, or Result.",
+      "papers": [
+        "SciEvent: Benchmarking Multi-domain Scientific Event Extraction"
+      ],
+      "original_name": "Argument extraction"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TextEE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "BEMEAE: Moving Beyond Exact Span Match for Event Argument Extraction",
+      "evidence": "In our study, while we adopt TextEE to compare models, our primary focus is on defining correctness at the event argument level. (Section 3).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "BEMEAE: Moving Beyond Exact Span Match for Event Argument Extraction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats event argument extraction as identifying event arguments in text and assigning each argument its role, explicitly assuming that the event trigger is already given. A smaller line of work uses the shorter label argument extraction for scientific events, where the task is to find the text spans that serve as arguments for a scientific activity and classify them into roles such as context, method, or result. Across both framings, the shared task is to recover argument spans and label them with semantic roles, though they differ in whether the trigger-given setup is stated explicitly and in the role inventory they foreground."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study this behavior in multiple settings. One recurring setting is cross-lingual transfer, described as event argument extraction spanning 20 languages. Another is scientific event extraction, where the task is decomposed into Argument Identification, predicting the set of argument spans for each event, and Argument Classification, predicting the semantic role for each identified span."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to one measurement instrument, TextEE. In the linked usage, authors say they adopt TextEE to compare models while focusing on defining correctness at the event argument level."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "The papers do not link event argument extraction to any construct, so they do not make an explicit claim about what broader construct this behavior indicates."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats event argument extraction as identifying event arguments in text and assigning each argument its role, explicitly assuming that the event trigger is already given. A smaller line of work uses the shorter label argument extraction for scientific events, where the task is to find the text spans that serve as arguments for a scientific activity and classify them into roles such as context, method, or result. Across both framings, the shared task is to recover argument spans and label them with semantic roles, though they differ in whether the trigger-given setup is stated explicitly and in the role inventory they foreground.\n\nVariants. Papers study this behavior in multiple settings. One recurring setting is cross-lingual transfer, described as event argument extraction spanning 20 languages. Another is scientific event extraction, where the task is decomposed into Argument Identification, predicting the set of argument spans for each event, and Argument Classification, predicting the semantic role for each identified span.\n\nSpace of elicitation and scores. Papers link this behavior to one measurement instrument, TextEE. In the linked usage, authors say they adopt TextEE to compare models while focusing on defining correctness at the event argument level.\n\nWhat it is taken as evidence of. The papers do not link event argument extraction to any construct, so they do not make an explicit claim about what broader construct this behavior indicates.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Multimedia Event Extraction with LLM Knowledge Editing",
+      "SciEvent: Benchmarking Multi-domain Scientific Event Extraction",
+      "Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction"
+    ],
+    "iclr24": [
+      "Constrained Decoding for Cross-lingual Label Projection",
+      "GoLLIE: Annotation Guidelines improve Zero-Shot Information-Extraction"
+    ],
+    "naacl25": [
+      "BEMEAE: Moving Beyond Exact Span Match for Event Argument Extraction"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr24": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "naacl25"
+  ]
+}

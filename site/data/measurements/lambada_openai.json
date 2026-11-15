@@ -1,0 +1,78 @@
+{
+  "canonical_name": "Lambada-OpenAI",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers most commonly describe Lambada-OpenAI as a benchmark for evaluating language understanding, specifically the ability to model long-range dependencies in text through a text completion task. The operational detail that appears in the descriptions is a 0-shot setting.\n\nWhat it is claimed to measure. Across the papers here, Lambada-OpenAI is used to measure Natural language understanding. It is linked to 1 construct and no behavioral indicators, so the reported use converges on a single construct rather than spreading across multiple targets.\n\nSpace of uses. The usage in the papers descriptions place Lambada-OpenAI within a language-understanding evaluation lineup alongside Hellaswag-0-shot, Winograd-3-shots, and WinoGrande-5-shots. Papers that specify the setup report it in 0-shot form, and no separate linked measurement instruments are recorded for it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Lambada-OpenAI"
+  ],
+  "papers": [
+    "Instruction-Following Pruning for Large Language Models",
+    "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+    "Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A benchmark for evaluating language understanding, specifically the ability to model long-range dependencies in text through a text completion task.",
+      "papers": [
+        "Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models"
+      ],
+      "original_name": "Lambada-OpenAI"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum",
+      "evidence": "Language Understanding (LU): Lambada-OpenAI [44], Hellaswag-0-shot [65], Winograd-3-shots [30], and WinoGrande-5-shots [54].",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dataset Decomposition: Faster LLM Training with Variable Sequence Length Curriculum"
+        ],
+        "icml25": [
+          "Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers most commonly describe Lambada-OpenAI as a benchmark for evaluating language understanding, specifically the ability to model long-range dependencies in text through a text completion task. The operational detail that appears in the descriptions is a 0-shot setting."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across the papers here, Lambada-OpenAI is used to measure Natural language understanding. It is linked to 1 construct and no behavioral indicators, so the reported use converges on a single construct rather than spreading across multiple targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The usage in the papers descriptions place Lambada-OpenAI within a language-understanding evaluation lineup alongside Hellaswag-0-shot, Winograd-3-shots, and WinoGrande-5-shots. Papers that specify the setup report it in 0-shot form, and no separate linked measurement instruments are recorded for it."
+    }
+  ],
+  "characterization": "What it is. Papers most commonly describe Lambada-OpenAI as a benchmark for evaluating language understanding, specifically the ability to model long-range dependencies in text through a text completion task. The operational detail that appears in the descriptions is a 0-shot setting.\n\nWhat it is claimed to measure. Across the papers here, Lambada-OpenAI is used to measure Natural language understanding. It is linked to 1 construct and no behavioral indicators, so the reported use converges on a single construct rather than spreading across multiple targets.\n\nSpace of uses. The usage in the papers descriptions place Lambada-OpenAI within a language-understanding evaluation lineup alongside Hellaswag-0-shot, Winograd-3-shots, and WinoGrande-5-shots. Papers that specify the setup report it in 0-shot form, and no separate linked measurement instruments are recorded for it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Instruction-Following Pruning for Large Language Models",
+      "MxMoE: Mixed-precision Quantization for MoE with Accuracy and Performance Co-Design",
+      "Parameters vs FLOPs: Scaling Laws for Optimal Sparsity for Mixture-of-Experts Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 3
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "canonical_name": "Mode collapse",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. In the one definition, mode collapse is treated as an observable failure mode in knowledge distillation, where a student model's output distribution becomes overly focused on the teacher's dominant modes and ignores less frequent, potentially important information. The accompanying quoted passage uses the same framing, saying the student focuses only on the dominant modes of the teacher distribution, so the behavior is identified by this narrowed output distribution.\n\nVariants. Most of the direct definitional detail comes from distillation, but some papers use the same label in broader generation settings. There it is described as LLMs repeatedly generating the same few completions, reduced across-input diversity under RLHF fine-tuning, or a learned model focusing on only a limited subset of the true data distribution.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The papers describe the behavior through concentration on dominant modes and reduced diversity, rather than through a named instrument that elicits or scores it.\n\nWhat it is taken as evidence of. Papers connect mode collapse only to generation diversity. One paper claims a causal relationship from mode collapse to generation diversity, describing repeated generation of the same few completions as limiting diversity, while other papers describe mode collapse as related to reduced or across-input diversity without making the link causal.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Mode collapse"
+  ],
+  "papers": [
+    "Language Model Probabilities are Not Calibrated in Numeric Contexts",
+    "Group-Aware Reinforcement Learning for Output Diversity in Large Language Models",
+    "Understanding the Effects of RLHF on LLM Generalisation and Diversity",
+    "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models",
+    "Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks",
+    "Representative Language Generation",
+    "FactorSim: Generative Simulation via Factorized Representation"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "An observable failure mode in knowledge distillation where a student model's output distribution becomes overly focused on only the dominant modes of the teacher's distribution, ignoring less frequent but potentially important information.",
+      "papers": [
+        "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models"
+      ],
+      "original_name": "Mode collapse"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generation diversity",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Group-Aware Reinforcement Learning for Output Diversity in Large Language Models",
+      "evidence": "Large Language Models (LLMs) often suffer from mode collapse, repeatedly generating the same few completions even when many valid answers exist, limiting their diversity across a wide range of tasks.",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Group-Aware Reinforcement Learning for Output Diversity in Large Language Models"
+        ],
+        "iclr24": [
+          "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+        ],
+        "icml25": [
+          "Representative Language Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In the one definition, mode collapse is treated as an observable failure mode in knowledge distillation, where a student model's output distribution becomes overly focused on the teacher's dominant modes and ignores less frequent, potentially important information. The accompanying quoted passage uses the same framing, saying the student focuses only on the dominant modes of the teacher distribution, so the behavior is identified by this narrowed output distribution."
+    },
+    {
+      "label": "Variants.",
+      "text": "Most of the direct definitional detail comes from distillation, but some papers use the same label in broader generation settings. There it is described as LLMs repeatedly generating the same few completions, reduced across-input diversity under RLHF fine-tuning, or a learned model focusing on only a limited subset of the true data distribution."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. The papers describe the behavior through concentration on dominant modes and reduced diversity, rather than through a named instrument that elicits or scores it."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers connect mode collapse only to generation diversity. One paper claims a causal relationship from mode collapse to generation diversity, describing repeated generation of the same few completions as limiting diversity, while other papers describe mode collapse as related to reduced or across-input diversity without making the link causal."
+    }
+  ],
+  "characterization": "Space of definitions. In the one definition, mode collapse is treated as an observable failure mode in knowledge distillation, where a student model's output distribution becomes overly focused on the teacher's dominant modes and ignores less frequent, potentially important information. The accompanying quoted passage uses the same framing, saying the student focuses only on the dominant modes of the teacher distribution, so the behavior is identified by this narrowed output distribution.\n\nVariants. Most of the direct definitional detail comes from distillation, but some papers use the same label in broader generation settings. There it is described as LLMs repeatedly generating the same few completions, reduced across-input diversity under RLHF fine-tuning, or a learned model focusing on only a limited subset of the true data distribution.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The papers describe the behavior through concentration on dominant modes and reduced diversity, rather than through a named instrument that elicits or scores it.\n\nWhat it is taken as evidence of. Papers connect mode collapse only to generation diversity. One paper claims a causal relationship from mode collapse to generation diversity, describing repeated generation of the same few completions as limiting diversity, while other papers describe mode collapse as related to reduced or across-input diversity without making the link causal.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Language Model Probabilities are Not Calibrated in Numeric Contexts"
+    ],
+    "emnlp25": [
+      "Group-Aware Reinforcement Learning for Output Diversity in Large Language Models"
+    ],
+    "iclr24": [
+      "Understanding the Effects of RLHF on LLM Generalisation and Diversity"
+    ],
+    "iclr25": [
+      "TAID: Temporally Adaptive Interpolated Distillation for Efficient Knowledge Transfer in Language Models"
+    ],
+    "icml25": [
+      "Generalists vs. Specialists: Evaluating LLMs on Highly-Constrained Biophysical Sequence Optimization Tasks",
+      "Representative Language Generation"
+    ],
+    "neurips24": [
+      "FactorSim: Generative Simulation via Factorized Representation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr24": 1,
+    "iclr25": 1,
+    "icml25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

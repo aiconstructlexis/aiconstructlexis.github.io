@@ -1,0 +1,104 @@
+{
+  "canonical_name": "Complexity",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the cited work, the prevailing usage treats complexity as a response-level dimension, defined as the level of sophistication, depth, intricacy, or elaboration in a model-generated response. The definitions are closely aligned rather than contested: one emphasizes sophistication, depth, and intricacy, and another frames complexity as the degree of elaboration or sophistication used as a rating dimension in preference annotation.\n\nSpace of facets. Papers do not break complexity into subtypes or offer competing taxonomies. Instead, they place it in a recurring bundle with helpfulness, correctness, coherence, and verbosity, describing these collectively as reward attributes or as aspects used in preference annotation.\n\nSpace of measurement. Operationally, complexity is linked to one measurement instrument and no behavioral indicators. The only named instrument is HelpSteer, described as a model alignment and steering dataset, and papers use it to score complexity alongside helpfulness, correctness, coherence, and verbosity, so the operationalization treats complexity as a directly rated response attribute.\n\nLinks. Beyond measurement, one paper reports that complexity correlates with helpfulness: lower Pearson's R values for complexity in HelpSteer2 are described as indicating that annotators were less influenced by response complexity when assessing overall helpfulness. No papers report a causal relationship or a generic related link involving complexity.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Complexity"
+  ],
+  "papers": [
+    "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals",
+    "RuleAdapter: Dynamic Rules for training Safety Reward Models in RLHF",
+    "Decoding-Time Language Model Alignment with Multiple Objectives",
+    "HelpSteer 2: Open-source dataset for training top-performing reward models",
+    "Learning Goal-Conditioned Representations for Language Reward Models"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The level of sophistication, depth, or intricacy in the model's generated response.",
+      "papers": [
+        "Decoding-Time Language Model Alignment with Multiple Objectives",
+        "RuleAdapter: Dynamic Rules for training Safety Reward Models in RLHF"
+      ],
+      "original_name": "Complexity"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HelpSteer",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "For HelpSteer, we use https://huggingface.co/Haoxiang-Wang/ RewardModel-Mistral-7B-for-DPA-v1 for all attributes of rewards, including helpfulness, correctness, coherence, complexity and verbosity.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives",
+          "Learning Goal-Conditioned Representations for Language Reward Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "evidence": "Additionally, the Pearson\u2019s R values for both complexity (0.2361 to 0.1805) and verbosity (0.2555 to 0.0600) have decreased, indicating that annotators are less influenced by the complexity and verbosity of responses when assessing overall helpfulness in HelpSteer2.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HelpSteer 2: Open-source dataset for training top-performing reward models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the cited work, the prevailing usage treats complexity as a response-level dimension, defined as the level of sophistication, depth, intricacy, or elaboration in a model-generated response. The definitions are closely aligned rather than contested: one emphasizes sophistication, depth, and intricacy, and another frames complexity as the degree of elaboration or sophistication used as a rating dimension in preference annotation."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not break complexity into subtypes or offer competing taxonomies. Instead, they place it in a recurring bundle with helpfulness, correctness, coherence, and verbosity, describing these collectively as reward attributes or as aspects used in preference annotation."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationally, complexity is linked to one measurement instrument and no behavioral indicators. The only named instrument is HelpSteer, described as a model alignment and steering dataset, and papers use it to score complexity alongside helpfulness, correctness, coherence, and verbosity, so the operationalization treats complexity as a directly rated response attribute."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper reports that complexity correlates with helpfulness: lower Pearson's R values for complexity in HelpSteer2 are described as indicating that annotators were less influenced by response complexity when assessing overall helpfulness. No papers report a causal relationship or a generic related link involving complexity."
+    }
+  ],
+  "characterization": "Space of definitions. Across the cited work, the prevailing usage treats complexity as a response-level dimension, defined as the level of sophistication, depth, intricacy, or elaboration in a model-generated response. The definitions are closely aligned rather than contested: one emphasizes sophistication, depth, and intricacy, and another frames complexity as the degree of elaboration or sophistication used as a rating dimension in preference annotation.\n\nSpace of facets. Papers do not break complexity into subtypes or offer competing taxonomies. Instead, they place it in a recurring bundle with helpfulness, correctness, coherence, and verbosity, describing these collectively as reward attributes or as aspects used in preference annotation.\n\nSpace of measurement. Operationally, complexity is linked to one measurement instrument and no behavioral indicators. The only named instrument is HelpSteer, described as a model alignment and steering dataset, and papers use it to score complexity alongside helpfulness, correctness, coherence, and verbosity, so the operationalization treats complexity as a directly rated response attribute.\n\nLinks. Beyond measurement, one paper reports that complexity correlates with helpfulness: lower Pearson's R values for complexity in HelpSteer2 are described as indicating that annotators were less influenced by response complexity when assessing overall helpfulness. No papers report a causal relationship or a generic related link involving complexity.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "RATE: Causal Explainability of Reward Models with Imperfect Counterfactuals",
+      "RuleAdapter: Dynamic Rules for training Safety Reward Models in RLHF"
+    ],
+    "neurips24": [
+      "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "HelpSteer 2: Open-source dataset for training top-performing reward models",
+      "Learning Goal-Conditioned Representations for Language Reward Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "neurips24": 3
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "canonical_name": "Pluralistic alignment",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most definitions treat pluralistic alignment as a model's ability to align with diverse, heterogeneous, and sometimes conflicting human preferences or values, rather than being optimized for a single homogeneous consensus preference or reward function. A smaller strand narrows the idea to distributional preference alignment, where the model should learn from and generate outputs that reflect the statistical distribution of preferences within a specific group. Another paper frames it as alignment with a human population, meaning the degree to which the distribution of simulated LLM responses matches the distribution of responses in a real human population, so the definitions vary between broad heterogeneity and distributional matching.\n\nSpace of facets. Papers organize the construct mostly through contrasts rather than formal subtypes: it is set against consensus-style optimization and against a single monolithic reward function. Some authors connect it to personalization, while others discuss it alongside value pluralism, diverse human populations, and different safety preferences. The terminology partly overlaps, with distributional preference alignment and alignment with human population appearing as narrower labels for group-level or population-level versions of the broader idea.\n\nSpace of measurement. In measurement, papers link pluralistic alignment to 2 measurement instruments and no behavioral indicators. The linked instruments are GlobalOpinionQA and OpinionQA, both described as datasets for quantifying distributional alignment, so the operationalization is benchmark-based and distribution-focused. This lines up most directly with definitions that emphasize group or population preference distributions, and it is less direct for definitions centered on diverse or conflicting preferences more generally.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Pluralistic alignment",
+    "Distributional preference alignment",
+    "Alignment with human population"
+  ],
+  "papers": [
+    "DIWALI - Diversity and Inclusivity aWare cuLture specific Items for India: Dataset and Assessment of LLMs for Cultural Text Adaptation in Indian Context",
+    "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning",
+    "Pluralistic Alignment for Healthcare: A Role-Driven Framework",
+    "No Preference Left Behind: Group Distributional Preference Optimization",
+    "PAL: Sample-Efficient Personalized Reward Modeling for Pluralistic Alignment",
+    "Diverging Preferences: When do Annotators Disagree and do Models Know?",
+    "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+    "Uncertainty Quantification for LLM-Based Survey Simulations"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "The ability of an AI system to align with diverse, heterogeneous human preferences rather than being optimized for a single, homogeneous consensus preference.",
+      "papers": [
+        "PAL: Sample-Efficient Personalized Reward Modeling for Pluralistic Alignment",
+        "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+        "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning"
+      ],
+      "original_name": "Pluralistic alignment"
+    },
+    {
+      "text": "The model's capability to learn from and generate outputs that reflect the statistical distribution of preferences within a specific group.",
+      "papers": [
+        "No Preference Left Behind: Group Distributional Preference Optimization"
+      ],
+      "original_name": "Distributional preference alignment"
+    },
+    {
+      "text": "The degree to which the distribution of an LLM's simulated responses matches the distribution of responses from a real human population.",
+      "papers": [
+        "Uncertainty Quantification for LLM-Based Survey Simulations"
+      ],
+      "original_name": "Alignment with human population"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpinionQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking Distributional Alignment of Large Language Models",
+      "evidence": "In this section, we describe three datasets for quantifying distributional alignment \u2013 OpinionQA (Santurkar et al., 2023), GlobalOpinionQA (Durmus et al., 2024), and a new non-political subjective opinion dataset, NYT Book Opinions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Benchmarking Distributional Alignment of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GlobalOpinionQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Benchmarking Distributional Alignment of Large Language Models",
+      "evidence": "In this section, we describe three datasets for quantifying distributional alignment \u2013 OpinionQA (Santurkar et al., 2023), GlobalOpinionQA (Durmus et al., 2024), and a new non-political subjective opinion dataset, NYT Book Opinions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Benchmarking Distributional Alignment of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most definitions treat pluralistic alignment as a model's ability to align with diverse, heterogeneous, and sometimes conflicting human preferences or values, rather than being optimized for a single homogeneous consensus preference or reward function. A smaller strand narrows the idea to distributional preference alignment, where the model should learn from and generate outputs that reflect the statistical distribution of preferences within a specific group. Another paper frames it as alignment with a human population, meaning the degree to which the distribution of simulated LLM responses matches the distribution of responses in a real human population, so the definitions vary between broad heterogeneity and distributional matching."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers organize the construct mostly through contrasts rather than formal subtypes: it is set against consensus-style optimization and against a single monolithic reward function. Some authors connect it to personalization, while others discuss it alongside value pluralism, diverse human populations, and different safety preferences. The terminology partly overlaps, with distributional preference alignment and alignment with human population appearing as narrower labels for group-level or population-level versions of the broader idea."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "In measurement, papers link pluralistic alignment to 2 measurement instruments and no behavioral indicators. The linked instruments are GlobalOpinionQA and OpinionQA, both described as datasets for quantifying distributional alignment, so the operationalization is benchmark-based and distribution-focused. This lines up most directly with definitions that emphasize group or population preference distributions, and it is less direct for definitions centered on diverse or conflicting preferences more generally."
+    }
+  ],
+  "characterization": "Space of definitions. Most definitions treat pluralistic alignment as a model's ability to align with diverse, heterogeneous, and sometimes conflicting human preferences or values, rather than being optimized for a single homogeneous consensus preference or reward function. A smaller strand narrows the idea to distributional preference alignment, where the model should learn from and generate outputs that reflect the statistical distribution of preferences within a specific group. Another paper frames it as alignment with a human population, meaning the degree to which the distribution of simulated LLM responses matches the distribution of responses in a real human population, so the definitions vary between broad heterogeneity and distributional matching.\n\nSpace of facets. Papers organize the construct mostly through contrasts rather than formal subtypes: it is set against consensus-style optimization and against a single monolithic reward function. Some authors connect it to personalization, while others discuss it alongside value pluralism, diverse human populations, and different safety preferences. The terminology partly overlaps, with distributional preference alignment and alignment with human population appearing as narrower labels for group-level or population-level versions of the broader idea.\n\nSpace of measurement. In measurement, papers link pluralistic alignment to 2 measurement instruments and no behavioral indicators. The linked instruments are GlobalOpinionQA and OpinionQA, both described as datasets for quantifying distributional alignment, so the operationalization is benchmark-based and distribution-focused. This lines up most directly with definitions that emphasize group or population preference distributions, and it is less direct for definitions centered on diverse or conflicting preferences more generally.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "DIWALI - Diversity and Inclusivity aWare cuLture specific Items for India: Dataset and Assessment of LLMs for Cultural Text Adaptation in Indian Context",
+      "MiCRo: Mixture Modeling and Context-aware Routing for Personalized Preference Learning",
+      "Pluralistic Alignment for Healthcare: A Role-Driven Framework"
+    ],
+    "iclr25": [
+      "No Preference Left Behind: Group Distributional Preference Optimization",
+      "PAL: Sample-Efficient Personalized Reward Modeling for Pluralistic Alignment"
+    ],
+    "icml25": [
+      "Diverging Preferences: When do Annotators Disagree and do Models Know?",
+      "SafetyAnalyst: Interpretable, Transparent, and Steerable Safety Moderation for AI Behavior",
+      "Uncertainty Quantification for LLM-Based Survey Simulations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 2,
+    "icml25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

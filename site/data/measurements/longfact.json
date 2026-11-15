@@ -1,0 +1,99 @@
+{
+  "canonical_name": "LongFact",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, LongFact is treated as a resource for evaluating factuality in long-form generation, though its format is described differently. One description presents it as a dataset with 250 prompts, while another describes a GPT-4-generated prompt set for benchmarking long-form factuality in open domains, with 2,280 fact-seeking prompts or questions across 38 manually selected topics; as one paper puts it, it contains \"2,280 fact-seeking prompts that solicit long-form responses across 38 manually-selected topics\" (Long-form factuality in large language models).\n\nWhat it is claimed to measure. Papers describe it as evaluating factuality in long-form generation, and the recorded measurement links connect it to two behavioral indicators, Hallucination and Long-form text generation, with no linked constructs. The measurement claims therefore spread across these two indicators: one paper reports \"hallucination on LongFact,\" while another uses it as the measure for Long-form text generation.\n\nSpace of uses. No other measurement instrument is linked to it in the papers. Papers position it as a benchmark or evaluation set: one paper includes it among \"four fact-seeking long-form generation datasets,\" while another presents it as a prompt set for benchmarking long-form factuality in open domains.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LongFact"
+  ],
+  "papers": [
+    "Aligning Large Language Models to Follow Instructions and Hallucinate Less via Effective Data Filtering",
+    "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning",
+    "Improving Factuality with Explicit Working Memory",
+    "LoGU: Long-form Generation with Uncertainty Expressions",
+    "Long-form factuality in large language models"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A dataset with 250 prompts designed to evaluate the factuality of models in long-form generation tasks.",
+      "papers": [
+        "Improving Factuality with Explicit Working Memory",
+        "Long-form factuality in large language models"
+      ],
+      "original_name": "LongFact"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-form text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "\u201cLongFact consists of 2,280 fact-seeking prompts that solicit long-form responses across 38 manually-selected topics.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Long-form factuality in large language models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Aligning Large Language Models to Follow Instructions and Hallucinate Less via Effective Data Filtering",
+      "evidence": "hallucination on LongFact (Figure 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Aligning Large Language Models to Follow Instructions and Hallucinate Less via Effective Data Filtering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, LongFact is treated as a resource for evaluating factuality in long-form generation, though its format is described differently. One description presents it as a dataset with 250 prompts, while another describes a GPT-4-generated prompt set for benchmarking long-form factuality in open domains, with 2,280 fact-seeking prompts or questions across 38 manually selected topics; as one paper puts it, it contains \"2,280 fact-seeking prompts that solicit long-form responses across 38 manually-selected topics\" (Long-form factuality in large language models)."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers describe it as evaluating factuality in long-form generation, and the recorded measurement links connect it to two behavioral indicators, Hallucination and Long-form text generation, with no linked constructs. The measurement claims therefore spread across these two indicators: one paper reports \"hallucination on LongFact,\" while another uses it as the measure for Long-form text generation."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No other measurement instrument is linked to it in the papers. Papers position it as a benchmark or evaluation set: one paper includes it among \"four fact-seeking long-form generation datasets,\" while another presents it as a prompt set for benchmarking long-form factuality in open domains."
+    }
+  ],
+  "characterization": "What it is. Across papers, LongFact is treated as a resource for evaluating factuality in long-form generation, though its format is described differently. One description presents it as a dataset with 250 prompts, while another describes a GPT-4-generated prompt set for benchmarking long-form factuality in open domains, with 2,280 fact-seeking prompts or questions across 38 manually selected topics; as one paper puts it, it contains \"2,280 fact-seeking prompts that solicit long-form responses across 38 manually-selected topics\" (Long-form factuality in large language models).\n\nWhat it is claimed to measure. Papers describe it as evaluating factuality in long-form generation, and the recorded measurement links connect it to two behavioral indicators, Hallucination and Long-form text generation, with no linked constructs. The measurement claims therefore spread across these two indicators: one paper reports \"hallucination on LongFact,\" while another uses it as the measure for Long-form text generation.\n\nSpace of uses. No other measurement instrument is linked to it in the papers. Papers position it as a benchmark or evaluation set: one paper includes it among \"four fact-seeking long-form generation datasets,\" while another presents it as a prompt set for benchmarking long-form factuality in open domains.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Aligning Large Language Models to Follow Instructions and Hallucinate Less via Effective Data Filtering",
+      "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning",
+      "Improving Factuality with Explicit Working Memory",
+      "LoGU: Long-form Generation with Uncertainty Expressions"
+    ],
+    "neurips24": [
+      "Long-form factuality in large language models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "neurips24"
+  ]
+}

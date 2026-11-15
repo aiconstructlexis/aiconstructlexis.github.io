@@ -1,0 +1,144 @@
+{
+  "canonical_name": "Biography",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, Biography is most commonly described as a fact-seeking long-form generation dataset centered on biographical information, used to evaluate factual consistency in narrative generation. Some authors instead describe it as a test set for biography generation used for out-of-domain evaluation of factuality. The descriptions differ on format details: one gives 181 prompts, while another says it uses a subset as the test set with 183 questions about biography generation.\n\nWhat it is claimed to measure. Papers link Biography to 2 constructs and 1 behavioral indicator. The linked behavioral indicator is biography generation, and papers also use Biography to measure factuality, including by reporting FactScore on the out-of-domain Biography dataset. A smaller line of work uses a synthetic Biography dataset to measure knowledge forgetting.\n\nSpace of uses. It is linked to 1 other measurement instrument, FActScore, which papers use alongside Biography for fact-verification. In that pairing, Biography is positioned as the out-of-domain test set and FActScore as the corresponding evaluation strategy; elsewhere papers simply refer to evaluating a biography-generation task with Biography.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Biography",
+    "Biography dataset"
+  ],
+  "papers": [
+    "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning",
+    "Improving Factuality with Explicit Working Memory",
+    "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+    "Spurious Forgetting in Continual Learning of Language Models",
+    "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Fact-seeking long-form generation dataset with 181 prompts centered on biographical information, used to evaluate factual consistency in narrative generation.",
+      "papers": [
+        "Improving Factuality with Explicit Working Memory",
+        "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+      ],
+      "original_name": "Biography"
+    },
+    {
+      "text": "A test set containing questions about generating biographies, used for out-of-domain evaluation of factuality.",
+      "papers": [
+        "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs"
+      ],
+      "original_name": "Biography dataset"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Biography generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+      "evidence": "\"Fact verification. We evaluate a biography-generation task (Min et al., 2023)\"",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+        ],
+        "iclr25": [
+          "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "evidence": "its FactScore on the out-of-domain Biography dataset is also improved from 30.29% to 39.39% (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge forgetting",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Spurious Forgetting in Continual Learning of Language Models",
+      "evidence": "\u201cwe constructed a synthetic dataset, the Biography dataset, and designed controlled experiments to investigate the underlying causes of spurious forgetting\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Spurious Forgetting in Continual Learning of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FActScore",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "evidence": "ANAH and Biography represent the in-domain and out-of-domain test sets, respectively. ANAH-v2 and FactScore represent the corresponding evaluation strategies (Table 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, Biography is most commonly described as a fact-seeking long-form generation dataset centered on biographical information, used to evaluate factual consistency in narrative generation. Some authors instead describe it as a test set for biography generation used for out-of-domain evaluation of factuality. The descriptions differ on format details: one gives 181 prompts, while another says it uses a subset as the test set with 183 questions about biography generation."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link Biography to 2 constructs and 1 behavioral indicator. The linked behavioral indicator is biography generation, and papers also use Biography to measure factuality, including by reporting FactScore on the out-of-domain Biography dataset. A smaller line of work uses a synthetic Biography dataset to measure knowledge forgetting."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "It is linked to 1 other measurement instrument, FActScore, which papers use alongside Biography for fact-verification. In that pairing, Biography is positioned as the out-of-domain test set and FActScore as the corresponding evaluation strategy; elsewhere papers simply refer to evaluating a biography-generation task with Biography."
+    }
+  ],
+  "characterization": "What it is. Across papers, Biography is most commonly described as a fact-seeking long-form generation dataset centered on biographical information, used to evaluate factual consistency in narrative generation. Some authors instead describe it as a test set for biography generation used for out-of-domain evaluation of factuality. The descriptions differ on format details: one gives 181 prompts, while another says it uses a subset as the test set with 183 questions about biography generation.\n\nWhat it is claimed to measure. Papers link Biography to 2 constructs and 1 behavioral indicator. The linked behavioral indicator is biography generation, and papers also use Biography to measure factuality, including by reporting FactScore on the out-of-domain Biography dataset. A smaller line of work uses a synthetic Biography dataset to measure knowledge forgetting.\n\nSpace of uses. It is linked to 1 other measurement instrument, FActScore, which papers use alongside Biography for fact-verification. In that pairing, Biography is positioned as the out-of-domain test set and FActScore as the corresponding evaluation strategy; elsewhere papers simply refer to evaluating a biography-generation task with Biography.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning",
+      "Improving Factuality with Explicit Working Memory"
+    ],
+    "iclr25": [
+      "Mask-DPO: Generalizable Fine-grained Factuality Alignment of LLMs",
+      "Spurious Forgetting in Continual Learning of Language Models"
+    ],
+    "neurips24": [
+      "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "iclr25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "neurips24"
+  ]
+}

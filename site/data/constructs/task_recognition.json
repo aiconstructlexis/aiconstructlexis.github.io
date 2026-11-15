@@ -1,0 +1,125 @@
+{
+  "canonical_name": "Task recognition",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. The prevailing usage describes task recognition as identifying the target or underlying task, sometimes phrased as the required operation, from in-context demonstrations and then solving it with knowledge already acquired in pre-training. A smaller line of work uses nearby labels for narrower or more mechanistic versions of the same general capacity: task differentiation is the ability to distinguish tasks from input characteristics without explicit task labels, while task vector retrieval is a latent ability to extract a high-level task concept vector from demonstration pairs. Across these definitions, papers agree on inferring a task from demonstrations, but differ on whether they describe that capacity as an observable behavior, recognizing the task and using prior knowledge, or as latent retrieval of a task concept.\n\nSpace of facets. Some papers organize in-context learning by separating task recognition from task learning, and one paper explicitly says ICL is disentangled into the two. Beyond that pairing, papers use adjacent labels for related capacities rather than a single common subdivision: task differentiation highlights unsupervised separation of tasks and generalization to unseen tasks, while task vector retrieval emphasizes retrieval of a task concept vector that supports generalization across queries within the same task.\n\nSpace of measurement. No measurement instrument is linked to task recognition, and no named benchmark, evaluation scheme, probe, or analysis is explicitly recorded as measuring it. The only linked behavioral indicator is catastrophic forgetting, but that link is recorded as related rather than measured_by, so papers mostly describe the construct through the target behaviors in their definitions: recognizing the task from demonstrations, differentiating tasks without labels, or retrieving a task concept vector.\n\nLinks. The only linked construct is task learning, which is reported to correlate with task recognition; one paper says that \"the performance of task recognition and task learning changes in the opposite direction.\" The only linked behavioral indicator is catastrophic forgetting, which is related to task recognition in a paper that says the catastrophic effects of fine-tuning may be explained as \"shifting task inference\" and that prompts farther from the fine-tuning data can recover pretrained capabilities.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Task recognition",
+    "Task differentiation",
+    "Task vector retrieval"
+  ],
+  "papers": [
+    "Paths Not Taken: Understanding and Mending the Multilingual Factual Recall Pipeline",
+    "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration",
+    "VisiPruner: Decoding Discontinuous Cross-Modal Dynamics for Efficient Multimodal LLMs",
+    "HMoRA: Making LLMs More Effective with Hierarchical Mixture of LoRA Experts",
+    "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning",
+    "Provable In-Context Vector Arithmetic via Retrieving Task Concepts"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The ability of a language model to identify the target task from in-context demonstrations and then solve it by utilizing its pre-existing knowledge.",
+      "papers": [
+        "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning",
+        "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration"
+      ],
+      "original_name": "Task recognition"
+    },
+    {
+      "text": "The model's ability to distinguish between different tasks based on their input characteristics, without relying on explicit task labels.",
+      "papers": [
+        "HMoRA: Making LLMs More Effective with Hierarchical Mixture of LoRA Experts"
+      ],
+      "original_name": "Task differentiation"
+    },
+    {
+      "text": "The latent ability of a transformer to extract a high-level task concept vector from demonstration pairs during in-context learning, enabling generalization across queries within the same task.",
+      "papers": [
+        "Provable In-Context Vector Arithmetic via Retrieving Task Concepts"
+      ],
+      "original_name": "Task vector retrieval"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Task learning",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning",
+      "evidence": "\u201cthe performance of task recognition and task learning changes in the opposite direction\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic forgetting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Understanding Catastrophic Forgetting in Language Models via Implicit Inference",
+      "evidence": "We find that the catastrophic effects of fine-tuning may be explained as shifting task inference and that transforming prompts further from the fine-tuning data can recover pretrained capabilities. (Section 6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Understanding Catastrophic Forgetting in Language Models via Implicit Inference"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The prevailing usage describes task recognition as identifying the target or underlying task, sometimes phrased as the required operation, from in-context demonstrations and then solving it with knowledge already acquired in pre-training. A smaller line of work uses nearby labels for narrower or more mechanistic versions of the same general capacity: task differentiation is the ability to distinguish tasks from input characteristics without explicit task labels, while task vector retrieval is a latent ability to extract a high-level task concept vector from demonstration pairs. Across these definitions, papers agree on inferring a task from demonstrations, but differ on whether they describe that capacity as an observable behavior, recognizing the task and using prior knowledge, or as latent retrieval of a task concept."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Some papers organize in-context learning by separating task recognition from task learning, and one paper explicitly says ICL is disentangled into the two. Beyond that pairing, papers use adjacent labels for related capacities rather than a single common subdivision: task differentiation highlights unsupervised separation of tasks and generalization to unseen tasks, while task vector retrieval emphasizes retrieval of a task concept vector that supports generalization across queries within the same task."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to task recognition, and no named benchmark, evaluation scheme, probe, or analysis is explicitly recorded as measuring it. The only linked behavioral indicator is catastrophic forgetting, but that link is recorded as related rather than measured_by, so papers mostly describe the construct through the target behaviors in their definitions: recognizing the task from demonstrations, differentiating tasks without labels, or retrieving a task concept vector."
+    },
+    {
+      "label": "Links.",
+      "text": "The only linked construct is task learning, which is reported to correlate with task recognition; one paper says that \"the performance of task recognition and task learning changes in the opposite direction.\" The only linked behavioral indicator is catastrophic forgetting, which is related to task recognition in a paper that says the catastrophic effects of fine-tuning may be explained as \"shifting task inference\" and that prompts farther from the fine-tuning data can recover pretrained capabilities."
+    }
+  ],
+  "characterization": "Space of definitions. The prevailing usage describes task recognition as identifying the target or underlying task, sometimes phrased as the required operation, from in-context demonstrations and then solving it with knowledge already acquired in pre-training. A smaller line of work uses nearby labels for narrower or more mechanistic versions of the same general capacity: task differentiation is the ability to distinguish tasks from input characteristics without explicit task labels, while task vector retrieval is a latent ability to extract a high-level task concept vector from demonstration pairs. Across these definitions, papers agree on inferring a task from demonstrations, but differ on whether they describe that capacity as an observable behavior, recognizing the task and using prior knowledge, or as latent retrieval of a task concept.\n\nSpace of facets. Some papers organize in-context learning by separating task recognition from task learning, and one paper explicitly says ICL is disentangled into the two. Beyond that pairing, papers use adjacent labels for related capacities rather than a single common subdivision: task differentiation highlights unsupervised separation of tasks and generalization to unseen tasks, while task vector retrieval emphasizes retrieval of a task concept vector that supports generalization across queries within the same task.\n\nSpace of measurement. No measurement instrument is linked to task recognition, and no named benchmark, evaluation scheme, probe, or analysis is explicitly recorded as measuring it. The only linked behavioral indicator is catastrophic forgetting, but that link is recorded as related rather than measured_by, so papers mostly describe the construct through the target behaviors in their definitions: recognizing the task from demonstrations, differentiating tasks without labels, or retrieving a task concept vector.\n\nLinks. The only linked construct is task learning, which is reported to correlate with task recognition; one paper says that \"the performance of task recognition and task learning changes in the opposite direction.\" The only linked behavioral indicator is catastrophic forgetting, which is related to task recognition in a paper that says the catastrophic effects of fine-tuning may be explained as \"shifting task inference\" and that prompts farther from the fine-tuning data can recover pretrained capabilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Paths Not Taken: Understanding and Mending the Multilingual Factual Recall Pipeline",
+      "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration",
+      "VisiPruner: Decoding Discontinuous Cross-Modal Dynamics for Efficient Multimodal LLMs"
+    ],
+    "iclr25": [
+      "HMoRA: Making LLMs More Effective with Hierarchical Mixture of LoRA Experts",
+      "Investigating the Pre-Training Dynamics of In-Context Learning: Task Recognition vs. Task Learning"
+    ],
+    "icml25": [
+      "Provable In-Context Vector Arithmetic via Retrieving Task Concepts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 2,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

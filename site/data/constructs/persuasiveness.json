@@ -1,0 +1,106 @@
+{
+  "canonical_name": "Persuasiveness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the dominant framing treats persuasiveness or persuasion as convincing power: either the effectiveness of generated arguments at convincing an audience across contexts, or a latent capacity of an argument or participant to influence others' opinions. The main variation is the unit of analysis, with one definition centered on generated arguments and another on an argument or participant; as Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing puts it, persuasiveness is the \"effectiveness of argument across contexts.\"\n\nSpace of facets. The papers use closely related labels, including \"persuasiveness,\" \"rhetorical persuasiveness,\" and \"persuasion,\" for neighboring formulations of the same general idea. One framing, from Evaluation and Facilitation of Online Discussions in the LLM Era: A Survey, presents persuasion as \"not only an indicator of argument quality\" but also as a possible proxy for identifying markers of whether facilitator intervention is needed, and links it to linguistic markers and turn-taking dynamics. Set against the argument-level definition, this creates a recurring distinction between persuasiveness as an output property and persuasion as a latent, interaction-linked capacity.\n\nSpace of measurement. Operationalization is narrow in the linked work: persuasiveness is connected to one measurement instrument, LLM-as-a-judge, and to no behavioral indicators. The linked use scores essays or generated writing on persuasiveness as one of several evaluation dimensions with a GPT-4o-based evaluation framework, so the observed measurement lines up most directly with the argument-effectiveness framing rather than the participant-and-turn-taking framing.\n\nLinks. The only nonmeasurement link reported is a causal claim from persuasiveness to information-seeking ability. One paper states that interviewer LLMs \"struggle with engaging persuasively,\" and describes this as leading to suboptimal information extraction across model size and capability.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Persuasiveness",
+    "Persuasion"
+  ],
+  "papers": [
+    "Evaluation and Facilitation of Online Discussions in the LLM Era: A Survey",
+    "How Persuasive Is Your Context?",
+    "MemInsight: Autonomous Memory Augmentation for LLM Agents",
+    "Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing",
+    "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The extent to which generated arguments are effective at convincing an audience across contexts.",
+      "papers": [
+        "Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing"
+      ],
+      "original_name": "Persuasiveness"
+    },
+    {
+      "text": "The latent capacity of an argument or participant to influence others\u2019 opinions, often linked to linguistic markers and turn-taking dynamics.",
+      "papers": [
+        "Evaluation and Facilitation of Online Discussions in the LLM Era: A Survey"
+      ],
+      "original_name": "Persuasion"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing",
+      "evidence": "Essays are evaluated across five dimensions: ... (4) Persuasiveness... we adopt a GPT-4o-based evaluation framework for more consistent, human-aligned assessments. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Information-seeking ability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews",
+      "evidence": "Interviewer-LLMs, however, struggle with engaging persuasively, leading to suboptimal information extraction across model size and capability.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the dominant framing treats persuasiveness or persuasion as convincing power: either the effectiveness of generated arguments at convincing an audience across contexts, or a latent capacity of an argument or participant to influence others' opinions. The main variation is the unit of analysis, with one definition centered on generated arguments and another on an argument or participant; as Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing puts it, persuasiveness is the \"effectiveness of argument across contexts.\""
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers use closely related labels, including \"persuasiveness,\" \"rhetorical persuasiveness,\" and \"persuasion,\" for neighboring formulations of the same general idea. One framing, from Evaluation and Facilitation of Online Discussions in the LLM Era: A Survey, presents persuasion as \"not only an indicator of argument quality\" but also as a possible proxy for identifying markers of whether facilitator intervention is needed, and links it to linguistic markers and turn-taking dynamics. Set against the argument-level definition, this creates a recurring distinction between persuasiveness as an output property and persuasion as a latent, interaction-linked capacity."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow in the linked work: persuasiveness is connected to one measurement instrument, LLM-as-a-judge, and to no behavioral indicators. The linked use scores essays or generated writing on persuasiveness as one of several evaluation dimensions with a GPT-4o-based evaluation framework, so the observed measurement lines up most directly with the argument-effectiveness framing rather than the participant-and-turn-taking framing."
+    },
+    {
+      "label": "Links.",
+      "text": "The only nonmeasurement link reported is a causal claim from persuasiveness to information-seeking ability. One paper states that interviewer LLMs \"struggle with engaging persuasively,\" and describes this as leading to suboptimal information extraction across model size and capability."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the dominant framing treats persuasiveness or persuasion as convincing power: either the effectiveness of generated arguments at convincing an audience across contexts, or a latent capacity of an argument or participant to influence others' opinions. The main variation is the unit of analysis, with one definition centered on generated arguments and another on an argument or participant; as Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing puts it, persuasiveness is the \"effectiveness of argument across contexts.\"\n\nSpace of facets. The papers use closely related labels, including \"persuasiveness,\" \"rhetorical persuasiveness,\" and \"persuasion,\" for neighboring formulations of the same general idea. One framing, from Evaluation and Facilitation of Online Discussions in the LLM Era: A Survey, presents persuasion as \"not only an indicator of argument quality\" but also as a possible proxy for identifying markers of whether facilitator intervention is needed, and links it to linguistic markers and turn-taking dynamics. Set against the argument-level definition, this creates a recurring distinction between persuasiveness as an output property and persuasion as a latent, interaction-linked capacity.\n\nSpace of measurement. Operationalization is narrow in the linked work: persuasiveness is connected to one measurement instrument, LLM-as-a-judge, and to no behavioral indicators. The linked use scores essays or generated writing on persuasiveness as one of several evaluation dimensions with a GPT-4o-based evaluation framework, so the observed measurement lines up most directly with the argument-effectiveness framing rather than the participant-and-turn-taking framing.\n\nLinks. The only nonmeasurement link reported is a causal claim from persuasiveness to information-seeking ability. One paper states that interviewer LLMs \"struggle with engaging persuasively,\" and describes this as leading to suboptimal information extraction across model size and capability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Evaluation and Facilitation of Online Discussions in the LLM Era: A Survey",
+      "How Persuasive Is Your Context?",
+      "MemInsight: Autonomous Memory Augmentation for LLM Agents",
+      "Plan Dynamically, Express Rhetorically: A Debate-Driven Rhetorical Framework for Argumentative Writing",
+      "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "canonical_name": "Flores-101",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across definitions, Flores-101 is most commonly described as a multilingual benchmark dataset with aligned translations or translation pairs across 101 languages. Papers variously describe the content as professionally translated sentences, aligned translations, or human-written translation pairs, and one usage specifically refers to the devtest. A smaller description treats it more broadly as a benchmark for machine translation and cross-lingual generation, with BLEU and COMET used to assess translation quality.\n\nWhat it is claimed to measure. In the linked literature, papers use Flores-101 to measure Machine translation. It is linked to 1 behavioral indicator, Machine translation, and to no constructs, so the reported use converges on a single behavioral indicator rather than spreading across multiple constructs. The relationship evidence describes it as an evaluation set for translation, as a benchmark for translation tasks from FLORES-101, and as covering bidirectional Eng\u2192X and X\u2192Eng machine translation.\n\nSpace of uses. Papers most often position Flores-101 as an evaluation benchmark, using it to test models on translation tasks and multilingual capabilities. It appears as an evaluation set, as the devtest used to test each model, and as one of several benchmarks for multilingual general and cross-lingual generation; one study also performs interventions on Flores-101, with input texts sampled from the dataset, for qualitative evaluation in a machine translation context. No other measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Flores-101",
+    "FLORES-101"
+  ],
+  "papers": [
+    "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment",
+    "From Unaligned to Aligned: Scaling Multilingual LLMs with Multi-Way Parallel Corpora",
+    "M-Wanda: Improving One-Shot Pruning for Multilingual LLMs",
+    "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+    "Large Language Models Share Representations of Latent Grammatical Concepts Across Typologically Diverse Languages"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A benchmark dataset consisting of sentences professionally translated across 101 languages, used for qualitative evaluation of interventions in a machine translation context.",
+      "papers": [
+        "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+        "Large Language Models Share Representations of Latent Grammatical Concepts Across Typologically Diverse Languages"
+      ],
+      "original_name": "Flores-101"
+    },
+    {
+      "text": "Benchmark for evaluating machine translation and cross-lingual generation across 101 languages, using BLEU and COMET metrics to assess translation quality.",
+      "papers": [
+        "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment"
+      ],
+      "original_name": "FLORES-101"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Machine translation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages",
+      "evidence": "In Table 10, we used the translation dataset Flores-101 [Fan et al., 2021] as the evaluation set (Section A.5)",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MindMerger: Efficiently Boosting LLM Reasoning in non-English Languages"
+        ],
+        "naacl25": [
+          "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models"
+        ],
+        "acl25": [
+          "Byte Latent Transformer: Patches Scale Better Than Tokens"
+        ],
+        "icml25": [
+          "Instruction-Following Pruning for Large Language Models"
+        ],
+        "emnlp25": [
+          "From Unaligned to Aligned: Scaling Multilingual LLMs with Multi-Way Parallel Corpora"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across definitions, Flores-101 is most commonly described as a multilingual benchmark dataset with aligned translations or translation pairs across 101 languages. Papers variously describe the content as professionally translated sentences, aligned translations, or human-written translation pairs, and one usage specifically refers to the devtest. A smaller description treats it more broadly as a benchmark for machine translation and cross-lingual generation, with BLEU and COMET used to assess translation quality."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "In the linked literature, papers use Flores-101 to measure Machine translation. It is linked to 1 behavioral indicator, Machine translation, and to no constructs, so the reported use converges on a single behavioral indicator rather than spreading across multiple constructs. The relationship evidence describes it as an evaluation set for translation, as a benchmark for translation tasks from FLORES-101, and as covering bidirectional Eng\u2192X and X\u2192Eng machine translation."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers most often position Flores-101 as an evaluation benchmark, using it to test models on translation tasks and multilingual capabilities. It appears as an evaluation set, as the devtest used to test each model, and as one of several benchmarks for multilingual general and cross-lingual generation; one study also performs interventions on Flores-101, with input texts sampled from the dataset, for qualitative evaluation in a machine translation context. No other measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Across definitions, Flores-101 is most commonly described as a multilingual benchmark dataset with aligned translations or translation pairs across 101 languages. Papers variously describe the content as professionally translated sentences, aligned translations, or human-written translation pairs, and one usage specifically refers to the devtest. A smaller description treats it more broadly as a benchmark for machine translation and cross-lingual generation, with BLEU and COMET used to assess translation quality.\n\nWhat it is claimed to measure. In the linked literature, papers use Flores-101 to measure Machine translation. It is linked to 1 behavioral indicator, Machine translation, and to no constructs, so the reported use converges on a single behavioral indicator rather than spreading across multiple constructs. The relationship evidence describes it as an evaluation set for translation, as a benchmark for translation tasks from FLORES-101, and as covering bidirectional Eng\u2192X and X\u2192Eng machine translation.\n\nSpace of uses. Papers most often position Flores-101 as an evaluation benchmark, using it to test models on translation tasks and multilingual capabilities. It appears as an evaluation set, as the devtest used to test each model, and as one of several benchmarks for multilingual general and cross-lingual generation; one study also performs interventions on Flores-101, with input texts sampled from the dataset, for qualitative evaluation in a machine translation context. No other measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment",
+      "From Unaligned to Aligned: Scaling Multilingual LLMs with Multi-Way Parallel Corpora",
+      "M-Wanda: Improving One-Shot Pruning for Multilingual LLMs"
+    ],
+    "naacl25": [
+      "KS-Lottery: Finding Certified Lottery Tickets for Multilingual Transfer in Large Language Models",
+      "Large Language Models Share Representations of Latent Grammatical Concepts Across Typologically Diverse Languages"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "naacl25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

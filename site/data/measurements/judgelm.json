@@ -1,0 +1,67 @@
+{
+  "canonical_name": "JudgeLM",
+  "type": "measurement",
+  "canonical_definition": "What it is. The definition treats JudgeLM as a judge model for automated evaluation of LLM responses, used to score or select outputs. One paper also refers to multiple named variants, including JudgeLM-7B, JudgeLM-13B, and JudgeLM-33B.\n\nWhat it is claimed to measure. Papers describe JudgeLM as evaluating responses by scoring or selecting outputs, but they do not link it to any named construct or behavioral indicator. No named construct is reported as being measured by it, and no behavioral indicator is reported either.\n\nSpace of uses. In xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation, JudgeLM is discussed as one option within a group of judge models, mentioned alongside PandaLM and GPT-4. The same paper refers to several model sizes, so its use is presented through multiple variants rather than a single named configuration.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "JudgeLM"
+  ],
+  "papers": [
+    "A Survey on Efficient Large Language Model Training: From Data-centric Perspectives",
+    "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation",
+    "Tuning LLM Judge Design Decisions for 1/1000 of the Cost"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A judge model used for automated evaluation of LLM responses by scoring or selecting outputs.",
+      "papers": [
+        "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation"
+      ],
+      "original_name": "JudgeLM"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "The definition treats JudgeLM as a judge model for automated evaluation of LLM responses, used to score or select outputs. One paper also refers to multiple named variants, including JudgeLM-7B, JudgeLM-13B, and JudgeLM-33B."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers describe JudgeLM as evaluating responses by scoring or selecting outputs, but they do not link it to any named construct or behavioral indicator. No named construct is reported as being measured by it, and no behavioral indicator is reported either."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation, JudgeLM is discussed as one option within a group of judge models, mentioned alongside PandaLM and GPT-4. The same paper refers to several model sizes, so its use is presented through multiple variants rather than a single named configuration."
+    }
+  ],
+  "characterization": "What it is. The definition treats JudgeLM as a judge model for automated evaluation of LLM responses, used to score or select outputs. One paper also refers to multiple named variants, including JudgeLM-7B, JudgeLM-13B, and JudgeLM-33B.\n\nWhat it is claimed to measure. Papers describe JudgeLM as evaluating responses by scoring or selecting outputs, but they do not link it to any named construct or behavioral indicator. No named construct is reported as being measured by it, and no behavioral indicator is reported either.\n\nSpace of uses. In xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation, JudgeLM is discussed as one option within a group of judge models, mentioned alongside PandaLM and GPT-4. The same paper refers to several model sizes, so its use is presented through multiple variants rather than a single named configuration.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "A Survey on Efficient Large Language Model Training: From Data-centric Perspectives"
+    ],
+    "iclr25": [
+      "xFinder: Large Language Models as Automated Evaluators for Reliable Evaluation"
+    ],
+    "icml25": [
+      "Tuning LLM Judge Design Decisions for 1/1000 of the Cost"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr25",
+    "icml25"
+  ]
+}

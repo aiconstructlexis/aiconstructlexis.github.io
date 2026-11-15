@@ -1,0 +1,211 @@
+{
+  "canonical_name": "Multilingual understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most commonly, papers treat multilingual understanding as a latent ability to comprehend inputs and answer questions or perform tasks accurately across multiple languages, rather than only one dominant language. Definitions often make the scope explicitly inclusive of underrepresented, understudied, high- and low-resource, or local languages, and one study highlights a gap in understanding multilingual prompts and reports worse performance when questions are asked in local languages. A recurring alternative label, cross-lingual understanding, emphasizes transferring knowledge across languages or responding in a language different from the model's dominant training language while preserving meaning and accuracy, while some authors broaden the construct to include generation, cultural nuance, or multimodal processing.\n\nSpace of facets. Papers use several overlapping labels for closely related capabilities, including multilingual understanding, cross-lingual understanding, multilingual comprehension, multilingual perception and comprehension, and multilingual language understanding. The construct is specialized by setting: some papers distinguish native usage from cross-lingual scenarios and pair it with cross-cultural or regional knowledge, while others place it in multimodal, video, or table reasoning contexts. Papers do not explicitly equate it with, nest it under, or contrast it against another named construct.\n\nSpace of measurement. Operationalization relies on 6 measurement instruments and no linked behavioral indicators. The named instruments are C-Eval, CSRT, CVQA, Chatbot Arena, and INCLUDE, plus 1 other instrument; they are described as a broad suite of general benchmarks that covers multilingual understanding, LLM evaluation for safety and multilingual understanding, benchmarking with English and local-language questions, evaluation across user queries and tasks including multilingual understanding, and a benchmark built from regional resources. The remaining instrument evaluates sentence understanding in multiple languages by determining the relation between sentence pairs, so measurement mostly tests question answering, task performance, or sentence understanding across languages, sometimes in settings such as local languages or regional knowledge.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multilingual understanding",
+    "Cross-lingual understanding",
+    "Multilingual comprehension",
+    "Multilingual perception and comprehension",
+    "Multilingual language understanding"
+  ],
+  "papers": [
+    "Disentangling Language and Culture for Evaluating Multilingual Large Language Models",
+    "A Culturally-diverse Multilingual Multimodal Video Benchmark & Model",
+    "Cross-Document Cross-Lingual NLI via RST-Enhanced Graph Fusion and Interpretability Prediction",
+    "Dynamic Expert Specialization: Towards Catastrophic Forgetting-Free Multi-Domain MoE Adaptation",
+    "TVQACML: Benchmarking Text-Centric Visual Question Answering in Multilingual Chinese Minority Languages",
+    "TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering",
+    "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
+    "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation",
+    "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+    "Multi-Head Mixture-of-Experts"
+  ],
+  "paper_count": 10,
+  "definitions": [
+    {
+      "text": "The latent capacity to process and answer questions accurately across multiple languages, including underrepresented and understudied ones.",
+      "papers": [
+        "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+        "Dynamic Expert Specialization: Towards Catastrophic Forgetting-Free Multi-Domain MoE Adaptation"
+      ],
+      "original_name": "Multilingual understanding"
+    },
+    {
+      "text": "The ability to comprehend and perform tasks involving multiple languages, particularly by transferring knowledge from one language to another.",
+      "papers": [
+        "Multi-Head Mixture-of-Experts",
+        "TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering",
+        "Disentangling Language and Culture for Evaluating Multilingual Large Language Models"
+      ],
+      "original_name": "Cross-lingual understanding"
+    },
+    {
+      "text": "The latent ability of a model to understand and generate responses in multiple languages, particularly across both high- and low-resource languages, while preserving linguistic and cultural nuance.",
+      "papers": [
+        "A Culturally-diverse Multilingual Multimodal Video Benchmark & Model"
+      ],
+      "original_name": "Multilingual comprehension"
+    },
+    {
+      "text": "The model's capability to process and understand information presented in multiple languages, especially in a multimodal context.",
+      "papers": [
+        "TVQACML: Benchmarking Text-Centric Visual Question Answering in Multilingual Chinese Minority Languages"
+      ],
+      "original_name": "Multilingual perception and comprehension"
+    },
+    {
+      "text": "The latent ability of an LLM to comprehend and answer questions accurately across multiple languages rather than only in one dominant language.",
+      "papers": [
+        "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge"
+      ],
+      "original_name": "Multilingual language understanding"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CVQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "\u201cCVQA is written in both English and local languages, enabling us to benchmark multilingual MLLMs and English-only MLLMs.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "INCLUDE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
+      "evidence": "we design a pipeline to collect a large multilingual language understanding benchmark (i.e., INCLUDE) by collecting regional resources (e.g., educational, professional, and practical tests) that are specific to countries and originally created by native speakers of each country\u2019s official languages. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chatbot Arena",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation",
+      "evidence": "The most popular one is the Chatbot Arena (Chiang et al., 2024b), which contains over one million user queries and evaluates models in various tasks such as code, math, and multilingual understanding. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CSRT",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Code-Switching Red-Teaming: LLM Evaluation for Safety and Multilingual Understanding",
+      "evidence": "The CSRT enables LLM evaluation in terms of both safety and multilingual understanding. (Figure 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Code-Switching Red-Teaming: LLM Evaluation for Safety and Multilingual Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "C-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Dynamic Expert Specialization: Towards Catastrophic Forgetting-Free Multi-Domain MoE Adaptation",
+      "evidence": "a broad suite of general benchmarks\u2014...CEval...\u2014that cover ... multilingual understanding. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Dynamic Expert Specialization: Towards Catastrophic Forgetting-Free Multi-Domain MoE Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "XNLI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "From Neurons to Semantics: Evaluating Cross-Linguistic Alignment Capabilities of Large Language Models via Neurons Alignment",
+      "evidence": "We use the widely adopted XNLI dataset (Conneau et al., 2018) for evaluation, which assesses sentence understanding in multiple languages by determining the relationship between sentence pairs. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "From Neurons to Semantics: Evaluating Cross-Linguistic Alignment Capabilities of Large Language Models via Neurons Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most commonly, papers treat multilingual understanding as a latent ability to comprehend inputs and answer questions or perform tasks accurately across multiple languages, rather than only one dominant language. Definitions often make the scope explicitly inclusive of underrepresented, understudied, high- and low-resource, or local languages, and one study highlights a gap in understanding multilingual prompts and reports worse performance when questions are asked in local languages. A recurring alternative label, cross-lingual understanding, emphasizes transferring knowledge across languages or responding in a language different from the model's dominant training language while preserving meaning and accuracy, while some authors broaden the construct to include generation, cultural nuance, or multimodal processing."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several overlapping labels for closely related capabilities, including multilingual understanding, cross-lingual understanding, multilingual comprehension, multilingual perception and comprehension, and multilingual language understanding. The construct is specialized by setting: some papers distinguish native usage from cross-lingual scenarios and pair it with cross-cultural or regional knowledge, while others place it in multimodal, video, or table reasoning contexts. Papers do not explicitly equate it with, nest it under, or contrast it against another named construct."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization relies on 6 measurement instruments and no linked behavioral indicators. The named instruments are C-Eval, CSRT, CVQA, Chatbot Arena, and INCLUDE, plus 1 other instrument; they are described as a broad suite of general benchmarks that covers multilingual understanding, LLM evaluation for safety and multilingual understanding, benchmarking with English and local-language questions, evaluation across user queries and tasks including multilingual understanding, and a benchmark built from regional resources. The remaining instrument evaluates sentence understanding in multiple languages by determining the relation between sentence pairs, so measurement mostly tests question answering, task performance, or sentence understanding across languages, sometimes in settings such as local languages or regional knowledge."
+    }
+  ],
+  "characterization": "Space of definitions. Most commonly, papers treat multilingual understanding as a latent ability to comprehend inputs and answer questions or perform tasks accurately across multiple languages, rather than only one dominant language. Definitions often make the scope explicitly inclusive of underrepresented, understudied, high- and low-resource, or local languages, and one study highlights a gap in understanding multilingual prompts and reports worse performance when questions are asked in local languages. A recurring alternative label, cross-lingual understanding, emphasizes transferring knowledge across languages or responding in a language different from the model's dominant training language while preserving meaning and accuracy, while some authors broaden the construct to include generation, cultural nuance, or multimodal processing.\n\nSpace of facets. Papers use several overlapping labels for closely related capabilities, including multilingual understanding, cross-lingual understanding, multilingual comprehension, multilingual perception and comprehension, and multilingual language understanding. The construct is specialized by setting: some papers distinguish native usage from cross-lingual scenarios and pair it with cross-cultural or regional knowledge, while others place it in multimodal, video, or table reasoning contexts. Papers do not explicitly equate it with, nest it under, or contrast it against another named construct.\n\nSpace of measurement. Operationalization relies on 6 measurement instruments and no linked behavioral indicators. The named instruments are C-Eval, CSRT, CVQA, Chatbot Arena, and INCLUDE, plus 1 other instrument; they are described as a broad suite of general benchmarks that covers multilingual understanding, LLM evaluation for safety and multilingual understanding, benchmarking with English and local-language questions, evaluation across user queries and tasks including multilingual understanding, and a benchmark built from regional resources. The remaining instrument evaluates sentence understanding in multiple languages by determining the relation between sentence pairs, so measurement mostly tests question answering, task performance, or sentence understanding across languages, sometimes in settings such as local languages or regional knowledge.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "A Culturally-diverse Multilingual Multimodal Video Benchmark & Model",
+      "Cross-Document Cross-Lingual NLI via RST-Enhanced Graph Fusion and Interpretability Prediction",
+      "Dynamic Expert Specialization: Towards Catastrophic Forgetting-Free Multi-Domain MoE Adaptation",
+      "TVQACML: Benchmarking Text-Centric Visual Question Answering in Multilingual Chinese Minority Languages",
+      "TableEval: A Real-World Benchmark for Complex, Multilingual, and Multi-Structured Table Question Answering"
+    ],
+    "iclr25": [
+      "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
+      "Polyrating: A Cost-Effective and Bias-Aware Rating System for LLM Evaluation"
+    ],
+    "neurips24": [
+      "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "Multi-Head Mixture-of-Experts"
+    ],
+    "acl25": [
+      "Disentangling Language and Culture for Evaluating Multilingual Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5,
+    "iclr25": 2,
+    "neurips24": 2,
+    "acl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

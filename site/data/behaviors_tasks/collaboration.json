@@ -1,0 +1,263 @@
+{
+  "canonical_name": "Collaboration",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats collaboration as an observable multi-agent process: agents exchange messages over several rounds, share opinions or feedback, and work toward a consensus, shared answer, joint output, or plan. Papers describe this as an \"iterative discussion process aimed at reaching a consensus,\" as agents who \"exchange messages before the verifier decides,\" or as interaction to jointly solve a problem. A smaller line of work uses the term for cooperative choice in games, where success is selecting actions such as Cooperate, Silent, or Option A that maximize mutual benefit, system reward, or collective welfare, sometimes without explicit communication. Other papers frame it by successful joint task completion or by cooperative perception in embodied settings.\n\nVariants. Terminology varies, with recurring labels including cooperation, collaborative discussion, multi-turn discussion, collective decision-making, and collaborative task completion. The behavior is studied in medical decision-making and social science coding, in economic and social dilemma games, in embodied settings such as perception for manipulation, and in systems where outputs are aggregated across a communication topology. One paper also reports collaboration as related to plan generation, describing agents that collaboratively create and refine meta-plans through multi-turn discussion.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to collaboration, AgentBench. One paper presents it as a benchmark comprising multiple tasks that require different LLMs within a system to cooperate and discuss. No other instrument is linked.\n\nWhat it is taken as evidence of. The only construct linked to collaboration is Reasoning. The recorded relationship is causal from Reasoning to Collaboration, with one paper claiming that reasoning models \"reduce cooperation and norm enforcement, favoring individual rationality.\" No other construct link is recorded, so papers do not present multiple construct framings for what collaboration reflects.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Cooperation",
+    "Collaborative discussion",
+    "Iterative discussion",
+    "Multi-turn discussion",
+    "Message exchange",
+    "Collaborative problem solving",
+    "Spontaneous cooperation",
+    "Cooperative perception",
+    "Collaborative task completion",
+    "Multi-agent coordination",
+    "Cooperative decision-making",
+    "Collective decision-making",
+    "Multi-agent cooperation",
+    "Multi-turn collaborative task completion",
+    "Cooperation efficiency",
+    "Collaborative decision-making"
+  ],
+  "papers": [
+    "SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention",
+    "Collab-Overcooked: Benchmarking and Evaluating Large Language Models as Collaborative Agents",
+    "Compound AI Systems Optimization: A Survey of Methods, Challenges, and Future Directions",
+    "Spontaneous Giving and Calculated Greed in Language Models",
+    "Understanding the Information Propagation Effects of Communication Topologies in LLM-based Multi-Agent Systems",
+    "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors",
+    "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+    "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+    "Competing Large Language Models in Multi-Agent Gaming Environments",
+    "EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents",
+    "Moral Alignment for LLM Agents",
+    "Neural Interactive Proofs",
+    "Strategist: Self-improvement of LLM Decision Making via Bi-Level Tree Search",
+    "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+    "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation",
+    "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+    "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+    "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making"
+  ],
+  "paper_count": 18,
+  "definitions": [
+    {
+      "text": "Choosing actions that maximize mutual benefit or system reward, such remaining silent in Prisoner's Dilemma.",
+      "papers": [
+        "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+        "Moral Alignment for LLM Agents"
+      ],
+      "original_name": "Cooperation"
+    },
+    {
+      "text": "Multi-agent exchange of opinions and arguments to reach a shared medical answer.",
+      "papers": [
+        "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+        "SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"
+      ],
+      "original_name": "Collaborative discussion"
+    },
+    {
+      "text": "An interactive process where multiple agents exchange messages over several rounds to share information, provide feedback, and reach a consensus on a plan.",
+      "papers": [
+        "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation"
+      ],
+      "original_name": "Multi-turn discussion"
+    },
+    {
+      "text": "Sending and receiving messages across rounds between prover and verifier agents before a final decision is made.",
+      "papers": [
+        "Neural Interactive Proofs"
+      ],
+      "original_name": "Message exchange"
+    },
+    {
+      "text": "The observable process of a team of two or more agents engaging in interaction to jointly solve a given problem.",
+      "papers": [
+        "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration"
+      ],
+      "original_name": "Collaborative problem solving"
+    },
+    {
+      "text": "The observable, multi-turn conversational exchange between agents as they work on a task.",
+      "papers": [
+        "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration"
+      ],
+      "original_name": "Iterative discussion"
+    },
+    {
+      "text": "The observable task where multiple agents collaborate to perceive the environment, such as one agent locating an object for another agent to manipulate.",
+      "papers": [
+        "EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents"
+      ],
+      "original_name": "Cooperative perception"
+    },
+    {
+      "text": "Selecting cooperative actions without explicit communication that increase collective welfare.",
+      "papers": [
+        "Competing Large Language Models in Multi-Agent Gaming Environments"
+      ],
+      "original_name": "Spontaneous cooperation"
+    },
+    {
+      "text": "The observable outcome where two or more agents successfully work together to achieve a shared goal within the given constraints.",
+      "papers": [
+        "Collab-Overcooked: Benchmarking and Evaluating Large Language Models as Collaborative Agents"
+      ],
+      "original_name": "Collaborative task completion"
+    },
+    {
+      "text": "The observable act of choosing to allocate resources or act in ways that benefit others at a cost to oneself in economic games.",
+      "papers": [
+        "Spontaneous Giving and Calculated Greed in Language Models"
+      ],
+      "original_name": "Cooperative decision-making"
+    },
+    {
+      "text": "The observable process by which multiple LLM agents interact through a communication topology to produce a final joint output or answer to a query.",
+      "papers": [
+        "Understanding the Information Propagation Effects of Communication Topologies in LLM-based Multi-Agent Systems"
+      ],
+      "original_name": "Collective decision-making"
+    },
+    {
+      "text": "The observable interaction where multiple distinct AI agents work together, communicate, and coordinate actions to solve a problem.",
+      "papers": [
+        "Compound AI Systems Optimization: A Survey of Methods, Challenges, and Future Directions"
+      ],
+      "original_name": "Multi-agent cooperation"
+    },
+    {
+      "text": "The degree to which multiple agents coordinate their actions to complete a joint task with minimal redundancy and wasted effort.",
+      "papers": [
+        "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation"
+      ],
+      "original_name": "Cooperation efficiency"
+    },
+    {
+      "text": "An observable process where multiple agents engage in discussion to jointly devise a strategy or plan of action.",
+      "papers": [
+        "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors"
+      ],
+      "original_name": "Collaborative decision-making"
+    }
+  ],
+  "definition_count": 14,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Spontaneous Giving and Calculated Greed in Language Models",
+      "evidence": "We find that reasoning models consistently reduce cooperation and norm enforcement, favoring individual rationality. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Spontaneous Giving and Calculated Greed in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AgentBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Compound AI Systems Optimization: A Survey of Methods, Challenges, and Future Directions",
+      "evidence": "AgentBench (Liu et al., 2023) and AgentGym (Xi et al., 2024) comprise multiple tasks requiring different LLMs within the system to cooperate and discuss",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Compound AI Systems Optimization: A Survey of Methods, Challenges, and Future Directions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Plan generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+      "evidence": "CaPo enables agents to collaboratively create and refine long-term, strategic, and coherent meta-plans through multi-turn discussions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats collaboration as an observable multi-agent process: agents exchange messages over several rounds, share opinions or feedback, and work toward a consensus, shared answer, joint output, or plan. Papers describe this as an \"iterative discussion process aimed at reaching a consensus,\" as agents who \"exchange messages before the verifier decides,\" or as interaction to jointly solve a problem. A smaller line of work uses the term for cooperative choice in games, where success is selecting actions such as Cooperate, Silent, or Option A that maximize mutual benefit, system reward, or collective welfare, sometimes without explicit communication. Other papers frame it by successful joint task completion or by cooperative perception in embodied settings."
+    },
+    {
+      "label": "Variants.",
+      "text": "Terminology varies, with recurring labels including cooperation, collaborative discussion, multi-turn discussion, collective decision-making, and collaborative task completion. The behavior is studied in medical decision-making and social science coding, in economic and social dilemma games, in embodied settings such as perception for manipulation, and in systems where outputs are aggregated across a communication topology. One paper also reports collaboration as related to plan generation, describing agents that collaboratively create and refine meta-plans through multi-turn discussion."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one measurement instrument is linked to collaboration, AgentBench. One paper presents it as a benchmark comprising multiple tasks that require different LLMs within a system to cooperate and discuss. No other instrument is linked."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "The only construct linked to collaboration is Reasoning. The recorded relationship is causal from Reasoning to Collaboration, with one paper claiming that reasoning models \"reduce cooperation and norm enforcement, favoring individual rationality.\" No other construct link is recorded, so papers do not present multiple construct framings for what collaboration reflects."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats collaboration as an observable multi-agent process: agents exchange messages over several rounds, share opinions or feedback, and work toward a consensus, shared answer, joint output, or plan. Papers describe this as an \"iterative discussion process aimed at reaching a consensus,\" as agents who \"exchange messages before the verifier decides,\" or as interaction to jointly solve a problem. A smaller line of work uses the term for cooperative choice in games, where success is selecting actions such as Cooperate, Silent, or Option A that maximize mutual benefit, system reward, or collective welfare, sometimes without explicit communication. Other papers frame it by successful joint task completion or by cooperative perception in embodied settings.\n\nVariants. Terminology varies, with recurring labels including cooperation, collaborative discussion, multi-turn discussion, collective decision-making, and collaborative task completion. The behavior is studied in medical decision-making and social science coding, in economic and social dilemma games, in embodied settings such as perception for manipulation, and in systems where outputs are aggregated across a communication topology. One paper also reports collaboration as related to plan generation, describing agents that collaboratively create and refine meta-plans through multi-turn discussion.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to collaboration, AgentBench. One paper presents it as a benchmark comprising multiple tasks that require different LLMs within a system to cooperate and discuss. No other instrument is linked.\n\nWhat it is taken as evidence of. The only construct linked to collaboration is Reasoning. The recorded relationship is causal from Reasoning to Collaboration, with one paper claiming that reasoning models \"reduce cooperation and norm enforcement, favoring individual rationality.\" No other construct link is recorded, so papers do not present multiple construct framings for what collaboration reflects.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Collab-Overcooked: Benchmarking and Evaluating Large Language Models as Collaborative Agents",
+      "Compound AI Systems Optimization: A Survey of Methods, Challenges, and Future Directions",
+      "Spontaneous Giving and Calculated Greed in Language Models",
+      "Understanding the Information Propagation Effects of Communication Topologies in LLM-based Multi-Agent Systems"
+    ],
+    "iclr25": [
+      "ACC-Collab: An Actor-Critic Approach to Multi-Agent LLM Collaboration",
+      "CaPo: Cooperative Plan Optimization for Efficient Embodied Multi-Agent Cooperation",
+      "Competing Large Language Models in Multi-Agent Gaming Environments",
+      "EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents",
+      "Moral Alignment for LLM Agents",
+      "Neural Interactive Proofs",
+      "Strategist: Self-improvement of LLM Decision Making via Bi-Level Tree Search"
+    ],
+    "neurips24": [
+      "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+      "Cooperation, Competition, and Maliciousness: LLM-Stakeholders Interactive Negotiation",
+      "EAI: Emotional Decision-Making of LLMs in Strategic Games and Ethical Dilemmas",
+      "GTBench: Uncovering the Strategic Reasoning Capabilities of LLMs via Game-Theoretic Evaluations",
+      "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making"
+    ],
+    "acl25": [
+      "SCALE: Towards Collaborative Content Analysis in Social Science with Large Language Model Agents and Human Intervention"
+    ],
+    "iclr24": [
+      "AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4,
+    "iclr25": 7,
+    "neurips24": 5,
+    "acl25": 1,
+    "iclr24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

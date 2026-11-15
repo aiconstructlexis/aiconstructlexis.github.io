@@ -1,0 +1,180 @@
+{
+  "canonical_name": "MME-RealWorld",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, MME-RealWorld is most commonly described as a multimodal benchmark for real-world scenarios and real-world multimodal tasks, used to assess vision-language performance. The prevailing descriptions present it as manually curated or manually annotated, with one line of description specifying five primary categories and 43 sub-class tasks, including monitoring, autonomous driving, OCR, property, and text/address tasks, and another noting an average resolution of 2000\u00d71500. A smaller line of work also refers to an MME-RealWorld-Lite Reasoning subset and a remaining Reasoning subset.\n\nWhat it is claimed to measure. Papers use MME-RealWorld to measure 2 constructs and 4 behavioral indicators. The construct links are to Reasoning and Generalization, while the behavioral indicators linked to it are Agent intention prediction, Diagram understanding, Multiple-choice question answering, and Object counting, so the recorded uses span both broad constructs and task-level behaviors. The supporting descriptions also frame the benchmark as covering 43 perception and reasoning subtasks, and the multiple-choice question answering setup is described as using four manually constructed options with the model's default multiple-choice prompt.\n\nSpace of uses. In the papers here, MME-RealWorld appears both as one benchmark within a larger evaluation suite and as a further evaluation on real-world applications. One paper reports evaluating a model on six challenging benchmarks including MME-RW, another says it further evaluates on MME-RealWorld, and the only linked instrument is VLMEvalKit, which is named as the evaluation framework employed for these benchmarks. Another reported use builds an Error-book on the MME-RealWorld-Lite Reasoning subset and applies it to the remaining MME-RealWorld Reasoning subset to test Generalization.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MME-RW",
+    "MME-RealWorld"
+  ],
+  "papers": [
+    "Retrieval Enhanced Feedback via In-context Neural Error-book",
+    "ZoomEye: Enhancing Multimodal LLMs with Human-Like Zooming Capabilities through Tree-Based Image Exploration",
+    "Efficient Multi-modal Long Context Learning for Training-free Adaptation",
+    "Retrieval-Augmented Perception: High-resolution Image Perception Meets Visual RAG"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A benchmark for real-world multi-modal tasks used to assess vision-language performance.",
+      "papers": [
+        "Efficient Multi-modal Long Context Learning for Training-free Adaptation"
+      ],
+      "original_name": "MME-RW"
+    },
+    {
+      "text": "A manually curated multimodal benchmark for real-world scenarios with multiple categories and sub-tasks, including monitoring, autonomous driving, OCR, property, and text/address tasks.",
+      "papers": [
+        "Retrieval-Augmented Perception: High-resolution Image Perception Meets Visual RAG",
+        "ZoomEye: Enhancing Multimodal LLMs with Human-Like Zooming Capabilities through Tree-Based Image Exploration"
+      ],
+      "original_name": "MME-RealWorld"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "evidence": "Our benchmark contains 5 real-world domains, covering 43 perception and reasoning subtasks. (Figure 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "evidence": "For each question, we manually construct four options, with one being the correct answer... We try to use the model's default prompt for multiple-choice questions...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object counting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "evidence": "There are 3 perception tasks: object counting, color recognition, and spatial relationship understanding. (Section 2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Agent intention prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "evidence": "Intention Prediction: focus on predicting driving intention of a designated traffic agent in the short-term future. (Section 2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Diagram understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Retrieval Enhanced Feedback via In-context Neural Error-book",
+      "evidence": "MME-RealWorld covers complex visual reasoning tasks derived from realistic applications across diverse domains (e.g., Autonomous Driving, Diagrams, OCR) (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Retrieval Enhanced Feedback via In-context Neural Error-book"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Retrieval Enhanced Feedback via In-context Neural Error-book",
+      "evidence": "After creating an Error-book based on MME-RealWorld-Lite (Reasoning) subset, we applied it directly to the remaining MME-RealWorld Reasoning subset, excluding the Lite portion to rigorously test generalization (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Retrieval Enhanced Feedback via In-context Neural Error-book"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VLMEvalKit",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Retrieval Enhanced Feedback via In-context Neural Error-book",
+      "evidence": "\"The evaluation framework employed for these benchmarks was VLMEvalKit (Duan et al., 2024).\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Retrieval Enhanced Feedback via In-context Neural Error-book"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, MME-RealWorld is most commonly described as a multimodal benchmark for real-world scenarios and real-world multimodal tasks, used to assess vision-language performance. The prevailing descriptions present it as manually curated or manually annotated, with one line of description specifying five primary categories and 43 sub-class tasks, including monitoring, autonomous driving, OCR, property, and text/address tasks, and another noting an average resolution of 2000\u00d71500. A smaller line of work also refers to an MME-RealWorld-Lite Reasoning subset and a remaining Reasoning subset."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use MME-RealWorld to measure 2 constructs and 4 behavioral indicators. The construct links are to Reasoning and Generalization, while the behavioral indicators linked to it are Agent intention prediction, Diagram understanding, Multiple-choice question answering, and Object counting, so the recorded uses span both broad constructs and task-level behaviors. The supporting descriptions also frame the benchmark as covering 43 perception and reasoning subtasks, and the multiple-choice question answering setup is described as using four manually constructed options with the model's default multiple-choice prompt."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In the papers here, MME-RealWorld appears both as one benchmark within a larger evaluation suite and as a further evaluation on real-world applications. One paper reports evaluating a model on six challenging benchmarks including MME-RW, another says it further evaluates on MME-RealWorld, and the only linked instrument is VLMEvalKit, which is named as the evaluation framework employed for these benchmarks. Another reported use builds an Error-book on the MME-RealWorld-Lite Reasoning subset and applies it to the remaining MME-RealWorld Reasoning subset to test Generalization."
+    }
+  ],
+  "characterization": "What it is. Across the papers, MME-RealWorld is most commonly described as a multimodal benchmark for real-world scenarios and real-world multimodal tasks, used to assess vision-language performance. The prevailing descriptions present it as manually curated or manually annotated, with one line of description specifying five primary categories and 43 sub-class tasks, including monitoring, autonomous driving, OCR, property, and text/address tasks, and another noting an average resolution of 2000\u00d71500. A smaller line of work also refers to an MME-RealWorld-Lite Reasoning subset and a remaining Reasoning subset.\n\nWhat it is claimed to measure. Papers use MME-RealWorld to measure 2 constructs and 4 behavioral indicators. The construct links are to Reasoning and Generalization, while the behavioral indicators linked to it are Agent intention prediction, Diagram understanding, Multiple-choice question answering, and Object counting, so the recorded uses span both broad constructs and task-level behaviors. The supporting descriptions also frame the benchmark as covering 43 perception and reasoning subtasks, and the multiple-choice question answering setup is described as using four manually constructed options with the model's default multiple-choice prompt.\n\nSpace of uses. In the papers here, MME-RealWorld appears both as one benchmark within a larger evaluation suite and as a further evaluation on real-world applications. One paper reports evaluating a model on six challenging benchmarks including MME-RW, another says it further evaluates on MME-RealWorld, and the only linked instrument is VLMEvalKit, which is named as the evaluation framework employed for these benchmarks. Another reported use builds an Error-book on the MME-RealWorld-Lite Reasoning subset and applies it to the remaining MME-RealWorld Reasoning subset to test Generalization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Retrieval Enhanced Feedback via In-context Neural Error-book",
+      "ZoomEye: Enhancing Multimodal LLMs with Human-Like Zooming Capabilities through Tree-Based Image Exploration"
+    ],
+    "icml25": [
+      "Efficient Multi-modal Long Context Learning for Training-free Adaptation",
+      "Retrieval-Augmented Perception: High-resolution Image Perception Meets Visual RAG"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "canonical_name": "Semantic textual similarity",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the dominant framing is a pairwise meaning-comparison task: authors usually describe it as estimating how similar or semantically equivalent two texts or sentences are, most often by producing a continuous score. The scoring form is commonly continuous, with examples ranging from 0 to 1 or 0 to 5, and one study asks a model to 'assess the similarity of the two sentences and provide a score from 0 to 1' (Semantic-Eval : A Semantic Comprehension Evaluation Framework for Large Language Models Generation without Training). A smaller line of work uses categorical judgments instead, such as deciding whether pairs are paraphrases or semantically related, or whether meaning is preserved between a pre-dropout and post-dropout response.\n\nVariants. Papers use nearby labels such as semantic textual similarity, semantic text similarity, sentence similarity, text similarity prediction, and pair classification. Some papers narrow the setting to financial texts, including headline-article and query-intent matching, while others place it in biomedical tasks or compare generated responses before and after neuron dropout. One paper also reports monolingual and cross-lingual sentence settings, alongside 'semantic text similarity and relatedness'.\n\nSpace of elicitation and scores. Papers link this behavior to 4 measurement instruments, with MTEB mentioned most often, followed by GLUE, STS12, and STS-B. These are described as benchmarks or datasets that include semantic similarity among other tasks, and some papers say STS evaluations directly measure whether embeddings capture fine-grained semantic similarity. Beyond benchmark-based evaluation, papers also elicit it through direct scoring prompts or model-based judgments, and one study prompts GPT-4o to decide whether a post-dropout response is still semantically similar to the original (Polysemantic Dropout: Conformal OOD Detection for Specialized LLMs).\n\nWhat it is taken as evidence of. Direct construct links are scarce. Among linked constructs, only Coherence appears, and it is linked as related rather than via a correlational or causal claim; the paper says that measuring semantic similarity through token-level embedding distances can overlook contextual information and reduce 'contextual semantic coherence', so the connection is framed as relatedness rather than as a shared construct claim.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text similarity prediction",
+    "Text pair classification",
+    "Semantic similarity",
+    "Sentence similarity estimation",
+    "Sentence similarity",
+    "Semantic similarity judgment",
+    "Semantic textual similarity",
+    "Semantic text similarity",
+    "Sentence similarity assessment"
+  ],
+  "papers": [
+    "Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment",
+    "Semantic-Eval : A Semantic Comprehension Evaluation Framework for Large Language Models Generation without Training",
+    "AROMA: Autonomous Rank-one Matrix Adaptation",
+    "Conan-Embedding-v2: Training an LLM from Scratch for Text Embeddings",
+    "Diffusion vs. Autoregressive Language Models: A Text Embedding Perspective",
+    "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments",
+    "FinMTEB: Finance Massive Text Embedding Benchmark",
+    "Polysemantic Dropout: Conformal OOD Detection for Specialized LLMs",
+    "Reasoning under Uncertainty: Efficient LLM Inference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling",
+    "Tiny Budgets, Big Gains: Parameter Placement Strategy in Parameter Super-Efficient Fine-Tuning",
+    "Training LLMs to be Better Text Embedders through Bidirectional Reconstruction",
+    "Training compute-optimal transformer encoder models",
+    "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+    "MMTEB: Massive Multilingual Text Embedding Benchmark",
+    "Making Text Embedders Few-Shot Learners",
+    "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+    "Repetition Improves Language Model Embeddings",
+    "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free",
+    "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model",
+    "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models"
+  ],
+  "paper_count": 20,
+  "definitions": [
+    {
+      "text": "Predicting the semantic similarity score between two text sentences.",
+      "papers": [
+        "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models"
+      ],
+      "original_name": "Text similarity prediction"
+    },
+    {
+      "text": "The observable task of assessing the degree to which two pieces of text are similar in meaning.",
+      "papers": [
+        "AROMA: Autonomous Rank-one Matrix Adaptation"
+      ],
+      "original_name": "Semantic similarity"
+    },
+    {
+      "text": "The observable behavior of determining whether two financial texts are semantically related, such as assessing if a headline matches a news article or if a query matches user intent.",
+      "papers": [
+        "FinMTEB: Finance Massive Text Embedding Benchmark"
+      ],
+      "original_name": "Text pair classification"
+    },
+    {
+      "text": "The task of quantifying the degree of semantic similarity between two sentences, often on a continuous scale.",
+      "papers": [
+        "Training LLMs to be Better Text Embedders through Bidirectional Reconstruction"
+      ],
+      "original_name": "Sentence similarity estimation"
+    },
+    {
+      "text": "Judging whether two sentences are semantically similar or paraphrases.",
+      "papers": [
+        "Tiny Budgets, Big Gains: Parameter Placement Strategy in Parameter Super-Efficient Fine-Tuning"
+      ],
+      "original_name": "Sentence similarity"
+    },
+    {
+      "text": "The observable behavior of comparing two text responses to determine whether their meaning is preserved, used here to detect changes in model output after neuron dropout.",
+      "papers": [
+        "Polysemantic Dropout: Conformal OOD Detection for Specialized LLMs"
+      ],
+      "original_name": "Semantic similarity judgment"
+    },
+    {
+      "text": "The task of measuring the degree of semantic equivalence between two texts, typically on a continuous scale.",
+      "papers": [
+        "Making Text Embedders Few-Shot Learners",
+        "Diffusion vs. Autoregressive Language Models: A Text Embedding Perspective",
+        "Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment",
+        "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model"
+      ],
+      "original_name": "Semantic textual similarity"
+    },
+    {
+      "text": "The task of determining how similar two pieces of text are in meaning, typically by assigning a continuous score.",
+      "papers": [
+        "MMTEB: Massive Multilingual Text Embedding Benchmark"
+      ],
+      "original_name": "Semantic text similarity"
+    },
+    {
+      "text": "The observable task of determining the degree of semantic similarity between two sentences.",
+      "papers": [
+        "Semantic-Eval : A Semantic Comprehension Evaluation Framework for Large Language Models Generation without Training",
+        "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization"
+      ],
+      "original_name": "Sentence similarity assessment"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MTEB",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Making Text Embedders Few-Shot Learners",
+      "evidence": "It includes data for various tasks including Retrieval, Reranking, Clustering, Classification, and STS. (Section 4.1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Making Text Embedders Few-Shot Learners",
+          "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free"
+        ],
+        "emnlp25": [
+          "Diffusion vs. Autoregressive Language Models: A Text Embedding Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "STS12",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free",
+      "evidence": "To validate this hypothesis and quantify their complementarity, we need to examine how these two embedding relate to one another. We approach this by conducting a Spearman correlation analysis using the STS12 dataset, which contains 6,216 sentence pairs. (Section 3.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free"
+        ],
+        "emnlp25": [
+          "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Memory Efficient Randomized Subspace Optimization Method for Training Large Language Models",
+      "evidence": "\"the GLUE benchmark (Wang et al., 2019), which encompasses a diverse range of tasks, including question answering, sentiment analysis, and semantic textual similarity\" (Section 6.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "A Memory Efficient Randomized Subspace Optimization Method for Training Large Language Models"
+        ],
+        "emnlp25": [
+          "AROMA: Autonomous Rank-one Matrix Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coherence",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy",
+      "evidence": "Besides, these works typically measure semantic similarity via token-level embedding distances. Such approach overlooks contextual information, often leading to reduced contextual semantic coherence. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "STS-B",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments",
+      "evidence": "Semantic Textual Similarity (STS): Directly measures the ability of embeddings to capture fine-grained semantic similarity. We use STSB, STS12 (both from MTEB (Muennighoff et al., 2023)) and SICK (from (Marelli et al., 2014)). (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the dominant framing is a pairwise meaning-comparison task: authors usually describe it as estimating how similar or semantically equivalent two texts or sentences are, most often by producing a continuous score. The scoring form is commonly continuous, with examples ranging from 0 to 1 or 0 to 5, and one study asks a model to 'assess the similarity of the two sentences and provide a score from 0 to 1' (Semantic-Eval : A Semantic Comprehension Evaluation Framework for Large Language Models Generation without Training). A smaller line of work uses categorical judgments instead, such as deciding whether pairs are paraphrases or semantically related, or whether meaning is preserved between a pre-dropout and post-dropout response."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use nearby labels such as semantic textual similarity, semantic text similarity, sentence similarity, text similarity prediction, and pair classification. Some papers narrow the setting to financial texts, including headline-article and query-intent matching, while others place it in biomedical tasks or compare generated responses before and after neuron dropout. One paper also reports monolingual and cross-lingual sentence settings, alongside 'semantic text similarity and relatedness'."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to 4 measurement instruments, with MTEB mentioned most often, followed by GLUE, STS12, and STS-B. These are described as benchmarks or datasets that include semantic similarity among other tasks, and some papers say STS evaluations directly measure whether embeddings capture fine-grained semantic similarity. Beyond benchmark-based evaluation, papers also elicit it through direct scoring prompts or model-based judgments, and one study prompts GPT-4o to decide whether a post-dropout response is still semantically similar to the original (Polysemantic Dropout: Conformal OOD Detection for Specialized LLMs)."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Direct construct links are scarce. Among linked constructs, only Coherence appears, and it is linked as related rather than via a correlational or causal claim; the paper says that measuring semantic similarity through token-level embedding distances can overlook contextual information and reduce 'contextual semantic coherence', so the connection is framed as relatedness rather than as a shared construct claim."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the dominant framing is a pairwise meaning-comparison task: authors usually describe it as estimating how similar or semantically equivalent two texts or sentences are, most often by producing a continuous score. The scoring form is commonly continuous, with examples ranging from 0 to 1 or 0 to 5, and one study asks a model to 'assess the similarity of the two sentences and provide a score from 0 to 1' (Semantic-Eval : A Semantic Comprehension Evaluation Framework for Large Language Models Generation without Training). A smaller line of work uses categorical judgments instead, such as deciding whether pairs are paraphrases or semantically related, or whether meaning is preserved between a pre-dropout and post-dropout response.\n\nVariants. Papers use nearby labels such as semantic textual similarity, semantic text similarity, sentence similarity, text similarity prediction, and pair classification. Some papers narrow the setting to financial texts, including headline-article and query-intent matching, while others place it in biomedical tasks or compare generated responses before and after neuron dropout. One paper also reports monolingual and cross-lingual sentence settings, alongside 'semantic text similarity and relatedness'.\n\nSpace of elicitation and scores. Papers link this behavior to 4 measurement instruments, with MTEB mentioned most often, followed by GLUE, STS12, and STS-B. These are described as benchmarks or datasets that include semantic similarity among other tasks, and some papers say STS evaluations directly measure whether embeddings capture fine-grained semantic similarity. Beyond benchmark-based evaluation, papers also elicit it through direct scoring prompts or model-based judgments, and one study prompts GPT-4o to decide whether a post-dropout response is still semantically similar to the original (Polysemantic Dropout: Conformal OOD Detection for Specialized LLMs).\n\nWhat it is taken as evidence of. Direct construct links are scarce. Among linked constructs, only Coherence appears, and it is linked as related rather than via a correlational or causal claim; the paper says that measuring semantic similarity through token-level embedding distances can overlook contextual information and reduce 'contextual semantic coherence', so the connection is framed as relatedness rather than as a shared construct claim.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "AROMA: Autonomous Rank-one Matrix Adaptation",
+      "Conan-Embedding-v2: Training an LLM from Scratch for Text Embeddings",
+      "Diffusion vs. Autoregressive Language Models: A Text Embedding Perspective",
+      "EMO: Embedding Model Distillation via Intra-Model Relation and Optimal Transport Alignments",
+      "FinMTEB: Finance Massive Text Embedding Benchmark",
+      "Polysemantic Dropout: Conformal OOD Detection for Specialized LLMs",
+      "Reasoning under Uncertainty: Efficient LLM Inference via Unsupervised Confidence Dilution and Convergent Adaptive Sampling",
+      "Tiny Budgets, Big Gains: Parameter Placement Strategy in Parameter Super-Efficient Fine-Tuning",
+      "Training LLMs to be Better Text Embedders through Bidirectional Reconstruction",
+      "Training compute-optimal transformer encoder models"
+    ],
+    "iclr25": [
+      "MMTEB: Massive Multilingual Text Embedding Benchmark",
+      "Making Text Embedders Few-Shot Learners",
+      "NV-Embed: Improved Techniques for Training LLMs as Generalist Embedding Models",
+      "Repetition Improves Language Model Embeddings",
+      "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free"
+    ],
+    "neurips24": [
+      "PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models"
+    ],
+    "acl25": [
+      "Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment",
+      "Semantic-Eval : A Semantic Comprehension Evaluation Framework for Large Language Models Generation without Training"
+    ],
+    "iclr24": [
+      "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization"
+    ],
+    "naacl25": [
+      "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 10,
+    "iclr25": 5,
+    "neurips24": 1,
+    "acl25": 2,
+    "iclr24": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "canonical_name": "FollowBench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, the dominant description is of a fine-grained constraint-following benchmark with five levels of difficulty, built from diverse, open-ended instructions and evaluated by strong LLMs such as GPT-4. Some authors frame it more specifically as a benchmark for complex, multi-constraint instruction-following tasks, while others describe it as covering more general instructions that require LLM-based judgment rather than simple code execution.\n\nWhat it is claimed to measure. Papers link it to 3 constructs and 1 behavioral indicator. The prevailing use is to measure instruction following ability and complex instruction following ability, with instruction following also measured by it; one paper additionally uses it to measure generalization on more general instructions not verifiable by simple code executions. Overall, the recorded claims cluster around instruction following and its complex variant, with generalization appearing as a less common target.\n\nSpace of uses. Papers typically deploy it alongside other instruction-following benchmarks rather than on its own. It often appears with IFEval and CFBench, and also with ComplexBench, Multi-IF, and SysBench; papers position it as a widely-used or main benchmark for instruction-following, especially when the evaluation focuses on complex instructions with multiple constraints.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FollowBench"
+  ],
+  "papers": [
+    "Condor: Enhance LLM Alignment with Knowledge-Driven Data Synthesis and Refinement",
+    "ImPart: Importance-Aware Delta-Sparsification for Improved Model Compression and Merging in LLMs",
+    "MuSC: Improving Complex Instruction Following with Multi-granularity Self-Contrastive Training",
+    "AIR: Complex Instruction Generation via Automatic Iterative Refinement",
+    "UltraIF: Advancing Instruction Following from the Wild",
+    "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+    "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+    "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "A fine-grained constraint-following benchmark with five levels of difficulty, containing diverse and open-ended instructions that require evaluation by strong LLMs.",
+      "papers": [
+        "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+        "MuSC: Improving Complex Instruction Following with Multi-granularity Self-Contrastive Training",
+        "UltraIF: Advancing Instruction Following from the Wild"
+      ],
+      "original_name": "FollowBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+      "evidence": "We evaluate our methods using two widely-used instruction-following benchmarks: IFEval (Zhou et al., 2023) and FollowBench (Jiang et al., 2024b) as main results (Section 4).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+          "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Complex instruction following ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "MuSC: Improving Complex Instruction Following with Multi-granularity Self-Contrastive Training",
+      "evidence": "We mainly perform evaluations on three complex instruction-following benchmarks: CFBench (Zhang et al., 2024b), FollowBench (Jiang et al., 2024b) and ComplexBench (Wen et al., 2024) (Section 4.1).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "MuSC: Improving Complex Instruction Following with Multi-granularity Self-Contrastive Training"
+        ],
+        "emnlp25": [
+          "AIR: Complex Instruction Generation via Automatic Iterative Refinement"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following",
+      "evidence": "We evaluate the trained models on several widely-used instruction-following benchmarks, including IFEval (Zhou et al., 2023), Multi-IF (He et al., 2024b), SysBench (Qin et al., 2024), FollowBench (Jiang et al., 2024), and CFBench (Zhang et al., 2024a). (Introduction)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+      "evidence": "FollowBench is a fine-grained constraint-following benchmark with five levels of difficulty. It contains diverse and open-ended instructions requiring evaluation by strong LLMs, such as GPT-4, which can fully examine the generalization of AUTOIF to more general instructions not verifiable by simple code executions. (Section 4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, the dominant description is of a fine-grained constraint-following benchmark with five levels of difficulty, built from diverse, open-ended instructions and evaluated by strong LLMs such as GPT-4. Some authors frame it more specifically as a benchmark for complex, multi-constraint instruction-following tasks, while others describe it as covering more general instructions that require LLM-based judgment rather than simple code execution."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 3 constructs and 1 behavioral indicator. The prevailing use is to measure instruction following ability and complex instruction following ability, with instruction following also measured by it; one paper additionally uses it to measure generalization on more general instructions not verifiable by simple code executions. Overall, the recorded claims cluster around instruction following and its complex variant, with generalization appearing as a less common target."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers typically deploy it alongside other instruction-following benchmarks rather than on its own. It often appears with IFEval and CFBench, and also with ComplexBench, Multi-IF, and SysBench; papers position it as a widely-used or main benchmark for instruction-following, especially when the evaluation focuses on complex instructions with multiple constraints."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, the dominant description is of a fine-grained constraint-following benchmark with five levels of difficulty, built from diverse, open-ended instructions and evaluated by strong LLMs such as GPT-4. Some authors frame it more specifically as a benchmark for complex, multi-constraint instruction-following tasks, while others describe it as covering more general instructions that require LLM-based judgment rather than simple code execution.\n\nWhat it is claimed to measure. Papers link it to 3 constructs and 1 behavioral indicator. The prevailing use is to measure instruction following ability and complex instruction following ability, with instruction following also measured by it; one paper additionally uses it to measure generalization on more general instructions not verifiable by simple code executions. Overall, the recorded claims cluster around instruction following and its complex variant, with generalization appearing as a less common target.\n\nSpace of uses. Papers typically deploy it alongside other instruction-following benchmarks rather than on its own. It often appears with IFEval and CFBench, and also with ComplexBench, Multi-IF, and SysBench; papers position it as a widely-used or main benchmark for instruction-following, especially when the evaluation focuses on complex instructions with multiple constraints.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Condor: Enhance LLM Alignment with Knowledge-Driven Data Synthesis and Refinement",
+      "ImPart: Importance-Aware Delta-Sparsification for Improved Model Compression and Merging in LLMs",
+      "MuSC: Improving Complex Instruction Following with Multi-granularity Self-Contrastive Training"
+    ],
+    "emnlp25": [
+      "AIR: Complex Instruction Generation via Automatic Iterative Refinement",
+      "UltraIF: Advancing Instruction Following from the Wild",
+      "VerIF: Verification Engineering for Reinforcement Learning in Instruction Following"
+    ],
+    "iclr25": [
+      "SPaR: Self-Play with Tree-Search Refinement to Improve Instruction-Following in Large Language Models",
+      "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 3,
+    "iclr25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

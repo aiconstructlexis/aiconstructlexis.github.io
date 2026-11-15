@@ -1,0 +1,71 @@
+{
+  "canonical_name": "Nectar",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers here, Nectar is treated as a dataset rather than a protocol. The more detailed description presents it as a dataset of human-labeled responses in seven distinct rankings, used to evaluate question answering performance, with one paper stating, \"We began our experiments using the Nectar dataset, which includes human-labeled responses categorized into seven distinct rankings\" (RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution). A smaller description refers to Berkeley Nectar simply as a dataset used in direct and indirect transfer evaluations of decoding-time alignment, without further detail on contents or format.\n\nWhat it is claimed to measure. Papers here do not explicitly link Nectar to any construct or behavioral indicator through recorded measurement relationships. Instead, the definitions describe it more narrowly as being used to evaluate question answering performance in one paper, while another paper uses Berkeley Nectar in transfer evaluations of decoding-time alignment; these usages do not converge into an explicit measured construct in the recorded links.\n\nSpace of uses. The prevailing usage in these papers is as an evaluation dataset. One paper says experiments began with Nectar for question answering evaluation, while another uses Berkeley Nectar alongside UltraFeedback in its analysis, stating that \"the analysis utilizes the UltraFeedback and Berkeley Nectar datasets\" (Transfer Q-star : Principled Decoding for LLM Alignment). No other measurement instruments are explicitly linked to it through recorded instrument-to-instrument relationships.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Nectar",
+    "Berkeley Nectar"
+  ],
+  "papers": [
+    "Amulet: Putting Complex Multi-Turn Conversations on the Stand with LLM Juries",
+    "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution",
+    "Transfer Q-star : Principled Decoding for LLM Alignment"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Dataset containing human-labeled responses across seven rankings, used to evaluate question answering performance.",
+      "papers": [
+        "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution"
+      ],
+      "original_name": "Nectar"
+    },
+    {
+      "text": "A dataset used in the paper's direct and indirect transfer evaluations of decoding-time alignment.",
+      "papers": [
+        "Transfer Q-star : Principled Decoding for LLM Alignment"
+      ],
+      "original_name": "Berkeley Nectar"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers here, Nectar is treated as a dataset rather than a protocol. The more detailed description presents it as a dataset of human-labeled responses in seven distinct rankings, used to evaluate question answering performance, with one paper stating, \"We began our experiments using the Nectar dataset, which includes human-labeled responses categorized into seven distinct rankings\" (RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution). A smaller description refers to Berkeley Nectar simply as a dataset used in direct and indirect transfer evaluations of decoding-time alignment, without further detail on contents or format."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers here do not explicitly link Nectar to any construct or behavioral indicator through recorded measurement relationships. Instead, the definitions describe it more narrowly as being used to evaluate question answering performance in one paper, while another paper uses Berkeley Nectar in transfer evaluations of decoding-time alignment; these usages do not converge into an explicit measured construct in the recorded links."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The prevailing usage in these papers is as an evaluation dataset. One paper says experiments began with Nectar for question answering evaluation, while another uses Berkeley Nectar alongside UltraFeedback in its analysis, stating that \"the analysis utilizes the UltraFeedback and Berkeley Nectar datasets\" (Transfer Q-star : Principled Decoding for LLM Alignment). No other measurement instruments are explicitly linked to it through recorded instrument-to-instrument relationships."
+    }
+  ],
+  "characterization": "What it is. Across the papers here, Nectar is treated as a dataset rather than a protocol. The more detailed description presents it as a dataset of human-labeled responses in seven distinct rankings, used to evaluate question answering performance, with one paper stating, \"We began our experiments using the Nectar dataset, which includes human-labeled responses categorized into seven distinct rankings\" (RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution). A smaller description refers to Berkeley Nectar simply as a dataset used in direct and indirect transfer evaluations of decoding-time alignment, without further detail on contents or format.\n\nWhat it is claimed to measure. Papers here do not explicitly link Nectar to any construct or behavioral indicator through recorded measurement relationships. Instead, the definitions describe it more narrowly as being used to evaluate question answering performance in one paper, while another paper uses Berkeley Nectar in transfer evaluations of decoding-time alignment; these usages do not converge into an explicit measured construct in the recorded links.\n\nSpace of uses. The prevailing usage in these papers is as an evaluation dataset. One paper says experiments began with Nectar for question answering evaluation, while another uses Berkeley Nectar alongside UltraFeedback in its analysis, stating that \"the analysis utilizes the UltraFeedback and Berkeley Nectar datasets\" (Transfer Q-star : Principled Decoding for LLM Alignment). No other measurement instruments are explicitly linked to it through recorded instrument-to-instrument relationships.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Amulet: Putting Complex Multi-Turn Conversations on the Stand with LLM Juries",
+      "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution"
+    ],
+    "neurips24": [
+      "Transfer Q-star : Principled Decoding for LLM Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "canonical_name": "Native language identification",
+  "type": "behavior",
+  "canonical_definition": "Predicting the native language of an author based on their writing in a second language, typically from a closed set of candidate languages.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Native language identification",
+    "Native language classification"
+  ],
+  "papers": [
+    "Robust Native Language Identification through Agentic Decomposition",
+    "Tracing L1 Interference in English Learner Writing: A Longitudinal Corpus with Error Annotations"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "Predicting the native language of an author based on their writing in a second language, typically from a closed set of candidate languages.",
+      "papers": [
+        "Robust Native Language Identification through Agentic Decomposition"
+      ],
+      "original_name": "Native language identification"
+    },
+    {
+      "text": "The observable task of taking a text as input and outputting a predicted native language (L1) for the author.",
+      "papers": [
+        "Tracing L1 Interference in English Learner Writing: A Longitudinal Corpus with Error Annotations"
+      ],
+      "original_name": "Native language classification"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TOEFL11",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Robust Native Language Identification through Agentic Decomposition",
+      "evidence": "We conduct experiments on two benchmark datasets for NLI: the ETS Corpus of Non-Native Written English (TOEFL11) (Blanchard et al., 2013) and Write & Improve Corpus 2024 (Nicholls et al., 2024). (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Robust Native Language Identification through Agentic Decomposition"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [],
+  "characterization": "Predicting the native language of an author based on their writing in a second language, typically from a closed set of candidate languages.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Robust Native Language Identification through Agentic Decomposition",
+      "Tracing L1 Interference in English Learner Writing: A Longitudinal Corpus with Error Annotations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

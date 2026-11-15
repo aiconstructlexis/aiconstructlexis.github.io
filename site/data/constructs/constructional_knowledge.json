@@ -1,0 +1,42 @@
+{
+  "canonical_name": "Constructional knowledge",
+  "type": "construct",
+  "canonical_definition": "The ability of a model to learn and represent constructions, defined as conventionalized form-meaning pairings in a language.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Constructional knowledge"
+  ],
+  "papers": [
+    "BabyLM's First Constructions: Causal interventions provide a signal of learning"
+  ],
+  "paper_count": 1,
+  "definitions": [
+    {
+      "text": "The ability of a model to learn and represent constructions, defined as conventionalized form-meaning pairings in a language.",
+      "papers": [
+        "BabyLM's First Constructions: Causal interventions provide a signal of learning"
+      ],
+      "original_name": "Constructional knowledge"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The ability of a model to learn and represent constructions, defined as conventionalized form-meaning pairings in a language.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "BabyLM's First Constructions: Causal interventions provide a signal of learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

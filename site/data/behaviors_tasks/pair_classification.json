@@ -1,0 +1,84 @@
+{
+  "canonical_name": "Pair classification",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the cited definitions, pair classification is most commonly described as deciding whether two text inputs are semantically related or form a positive pair. The examples papers use are query-passage relevance and cases where two texts are paraphrases or otherwise have a specified relationship, so success is framed as correctly classifying the relation between the paired texts.\n\nVariants. The examples named for this task include query-passage relevance, paraphrase judgments, and deciding whether a pair has some other specific relationship. Papers refer to the category as Pair Classification and, in one table, abbreviate it as PairClass.\n\nSpace of elicitation and scores. One measurement instrument is linked to it: MTEB, which one paper uses to evaluate Pair Classification as a task category. Separately, one paper reports pair classification with AP as the metric.\n\nWhat it is taken as evidence of. No paper links it to a construct, so the cited work does not explicitly treat pair classification as evidence of a named construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Pair classification"
+  ],
+  "papers": [
+    "Conan-Embedding-v2: Training an LLM from Scratch for Text Embeddings",
+    "Training compute-optimal transformer encoder models",
+    "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Determining whether two text inputs are semantically related or form a positive pair, such as query-passage relevance.",
+      "papers": [
+        "Conan-Embedding-v2: Training an LLM from Scratch for Text Embeddings",
+        "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free"
+      ],
+      "original_name": "Pair classification"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MTEB",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free",
+      "evidence": "We evaluate MOEE on 6 task categories from the MTEB, including Classification, Clustering, Pair Classification, Re-ranking, Semantic Textual Similarity (STS), and Summarization. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the cited definitions, pair classification is most commonly described as deciding whether two text inputs are semantically related or form a positive pair. The examples papers use are query-passage relevance and cases where two texts are paraphrases or otherwise have a specified relationship, so success is framed as correctly classifying the relation between the paired texts."
+    },
+    {
+      "label": "Variants.",
+      "text": "The examples named for this task include query-passage relevance, paraphrase judgments, and deciding whether a pair has some other specific relationship. Papers refer to the category as Pair Classification and, in one table, abbreviate it as PairClass."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "One measurement instrument is linked to it: MTEB, which one paper uses to evaluate Pair Classification as a task category. Separately, one paper reports pair classification with AP as the metric."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No paper links it to a construct, so the cited work does not explicitly treat pair classification as evidence of a named construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the cited definitions, pair classification is most commonly described as deciding whether two text inputs are semantically related or form a positive pair. The examples papers use are query-passage relevance and cases where two texts are paraphrases or otherwise have a specified relationship, so success is framed as correctly classifying the relation between the paired texts.\n\nVariants. The examples named for this task include query-passage relevance, paraphrase judgments, and deciding whether a pair has some other specific relationship. Papers refer to the category as Pair Classification and, in one table, abbreviate it as PairClass.\n\nSpace of elicitation and scores. One measurement instrument is linked to it: MTEB, which one paper uses to evaluate Pair Classification as a task category. Separately, one paper reports pair classification with AP as the metric.\n\nWhat it is taken as evidence of. No paper links it to a construct, so the cited work does not explicitly treat pair classification as evidence of a named construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Conan-Embedding-v2: Training an LLM from Scratch for Text Embeddings",
+      "Training compute-optimal transformer encoder models"
+    ],
+    "iclr25": [
+      "Your Mixture-of-Experts LLM Is Secretly an Embedding Model for Free"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

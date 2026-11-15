@@ -1,0 +1,134 @@
+{
+  "canonical_name": "Reading comprehension",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats reading comprehension as understanding or interpreting a written passage and extracting the information needed to answer questions or complete tasks. Many authors frame this as a latent ability, as in the claim that it requires \"strong reading comprehension skills to interpret and extract accurate information,\" while a smaller line of work defines it more directly as the observable task of answering questions from a given context. The narrower task framing sometimes specifies answer formats such as multiple-choice selection or span extraction, and one variant also includes deciding whether a question can be answered using the passage.\n\nSpace of facets. Papers use the label at several levels of scope. Some treat it as a broad capability category, often listed alongside question answering, commonsense reasoning, world knowledge, mathematical reasoning, dialog, or conversational proficiency, while others name subtypes such as multiple-choice reading comprehension and machine reading comprehension. A few formulations broaden the category further, for example by grouping readability and natural language inference under reading comprehension, whereas another line narrows it to a \"Comprehension\" skill in question answering style evaluations.\n\nSpace of measurement. Operationalization is narrow in the linked measurements: papers connect the construct to 2 measurement instruments, RACE and OpenBookQA, and to no behavioral indicators. Both are benchmarks, with RACE described as a multiple-choice reading comprehension task or benchmark, and OpenBookQA said to assess \"book comprehension ability.\" Beyond those named links, source descriptions make the measured behavior concrete as passage-based question answering in multiple-choice, exact-match-from-context, span-extraction, and answerability settings, and one machine reading comprehension setup evaluates answers on relevance, factuality, and completeness. These measurements mostly match the dominant definition of passage understanding, though some extend it to deciding whether a question is answerable from the passage or to rating answer quality dimensions.\n\nLinks. The papers only report measurement links for this construct. More than one paper says reading comprehension is measured by RACE, and one paper says it is measured by OpenBookQA; the accompanying evidence describes RACE as a multiple-choice reading comprehension task and OpenBookQA as assessing book comprehension ability. No paper reports a causal, correlational, or other related relationship involving reading comprehension.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Reading comprehension",
+    "Multiple-choice reading comprehension",
+    "Machine reading comprehension"
+  ],
+  "papers": [
+    "VMLU Benchmarks: A comprehensive benchmark toolkit for Vietnamese LLMs",
+    "PAFT: Prompt-Agnostic Fine-Tuning",
+    "To Trust or Not to Trust? Enhancing Large Language Models' Situated Faithfulness to External Contexts",
+    "CABS: Conflict-Aware and Balanced Sparsification for Enhancing Model Merging",
+    "Discriminative Policy Optimization for Token-Level Reward Models",
+    "LAuReL: Learned Augmented Residual Layer"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "Understanding and extracting information from written passages to answer questions or complete tasks.",
+      "papers": [
+        "PAFT: Prompt-Agnostic Fine-Tuning",
+        "To Trust or Not to Trust? Enhancing Large Language Models' Situated Faithfulness to External Contexts",
+        "VMLU Benchmarks: A comprehensive benchmark toolkit for Vietnamese LLMs",
+        "LAuReL: Learned Augmented Residual Layer"
+      ],
+      "original_name": "Reading comprehension"
+    },
+    {
+      "text": "The observable task of answering questions about a given text by selecting the correct option from a predefined set of choices.",
+      "papers": [
+        "CABS: Conflict-Aware and Balanced Sparsification for Enhancing Model Merging"
+      ],
+      "original_name": "Multiple-choice reading comprehension"
+    },
+    {
+      "text": "The ability to understand a given text and answer questions based on it, evaluated on dimensions such as relevance, factuality, and completeness.",
+      "papers": [
+        "Discriminative Policy Optimization for Token-Level Reward Models"
+      ],
+      "original_name": "Machine reading comprehension"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RACE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CABS: Conflict-Aware and Balanced Sparsification for Enhancing Model Merging",
+      "evidence": "\u201cwe also included the multiple-choice reading comprehension task RACE\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "CABS: Conflict-Aware and Balanced Sparsification for Enhancing Model Merging"
+        ],
+        "neurips24": [
+          "Sparse maximal update parameterization: A holistic approach to sparse training dynamics"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenBookQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On Large Language Model Continual Unlearning",
+      "evidence": "\u201cOpenbookQA (Mihaylov et al., 2018) can assess the book comprehension ability\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Large Language Model Continual Unlearning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats reading comprehension as understanding or interpreting a written passage and extracting the information needed to answer questions or complete tasks. Many authors frame this as a latent ability, as in the claim that it requires \"strong reading comprehension skills to interpret and extract accurate information,\" while a smaller line of work defines it more directly as the observable task of answering questions from a given context. The narrower task framing sometimes specifies answer formats such as multiple-choice selection or span extraction, and one variant also includes deciding whether a question can be answered using the passage."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use the label at several levels of scope. Some treat it as a broad capability category, often listed alongside question answering, commonsense reasoning, world knowledge, mathematical reasoning, dialog, or conversational proficiency, while others name subtypes such as multiple-choice reading comprehension and machine reading comprehension. A few formulations broaden the category further, for example by grouping readability and natural language inference under reading comprehension, whereas another line narrows it to a \"Comprehension\" skill in question answering style evaluations."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow in the linked measurements: papers connect the construct to 2 measurement instruments, RACE and OpenBookQA, and to no behavioral indicators. Both are benchmarks, with RACE described as a multiple-choice reading comprehension task or benchmark, and OpenBookQA said to assess \"book comprehension ability.\" Beyond those named links, source descriptions make the measured behavior concrete as passage-based question answering in multiple-choice, exact-match-from-context, span-extraction, and answerability settings, and one machine reading comprehension setup evaluates answers on relevance, factuality, and completeness. These measurements mostly match the dominant definition of passage understanding, though some extend it to deciding whether a question is answerable from the passage or to rating answer quality dimensions."
+    },
+    {
+      "label": "Links.",
+      "text": "The papers only report measurement links for this construct. More than one paper says reading comprehension is measured by RACE, and one paper says it is measured by OpenBookQA; the accompanying evidence describes RACE as a multiple-choice reading comprehension task and OpenBookQA as assessing book comprehension ability. No paper reports a causal, correlational, or other related relationship involving reading comprehension."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats reading comprehension as understanding or interpreting a written passage and extracting the information needed to answer questions or complete tasks. Many authors frame this as a latent ability, as in the claim that it requires \"strong reading comprehension skills to interpret and extract accurate information,\" while a smaller line of work defines it more directly as the observable task of answering questions from a given context. The narrower task framing sometimes specifies answer formats such as multiple-choice selection or span extraction, and one variant also includes deciding whether a question can be answered using the passage.\n\nSpace of facets. Papers use the label at several levels of scope. Some treat it as a broad capability category, often listed alongside question answering, commonsense reasoning, world knowledge, mathematical reasoning, dialog, or conversational proficiency, while others name subtypes such as multiple-choice reading comprehension and machine reading comprehension. A few formulations broaden the category further, for example by grouping readability and natural language inference under reading comprehension, whereas another line narrows it to a \"Comprehension\" skill in question answering style evaluations.\n\nSpace of measurement. Operationalization is narrow in the linked measurements: papers connect the construct to 2 measurement instruments, RACE and OpenBookQA, and to no behavioral indicators. Both are benchmarks, with RACE described as a multiple-choice reading comprehension task or benchmark, and OpenBookQA said to assess \"book comprehension ability.\" Beyond those named links, source descriptions make the measured behavior concrete as passage-based question answering in multiple-choice, exact-match-from-context, span-extraction, and answerability settings, and one machine reading comprehension setup evaluates answers on relevance, factuality, and completeness. These measurements mostly match the dominant definition of passage understanding, though some extend it to deciding whether a question is answerable from the passage or to rating answer quality dimensions.\n\nLinks. The papers only report measurement links for this construct. More than one paper says reading comprehension is measured by RACE, and one paper says it is measured by OpenBookQA; the accompanying evidence describes RACE as a multiple-choice reading comprehension task and OpenBookQA as assessing book comprehension ability. No paper reports a causal, correlational, or other related relationship involving reading comprehension.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "CABS: Conflict-Aware and Balanced Sparsification for Enhancing Model Merging",
+      "Discriminative Policy Optimization for Token-Level Reward Models",
+      "LAuReL: Learned Augmented Residual Layer"
+    ],
+    "emnlp25": [
+      "PAFT: Prompt-Agnostic Fine-Tuning"
+    ],
+    "iclr25": [
+      "To Trust or Not to Trust? Enhancing Large Language Models' Situated Faithfulness to External Contexts"
+    ],
+    "acl25": [
+      "VMLU Benchmarks: A comprehensive benchmark toolkit for Vietnamese LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 3,
+    "emnlp25": 1,
+    "iclr25": 1,
+    "acl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

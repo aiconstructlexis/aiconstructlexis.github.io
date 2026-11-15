@@ -1,0 +1,272 @@
+{
+  "canonical_name": "SAMSum",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, SAMSum is most commonly described as a dialogue summarization dataset or benchmark built from chat or messenger-like conversations paired with short or human-written summaries. Definitions variously emphasize daily-life messenger conversations, multi-turn or multi-party dialogues, and human-annotated abstractive summarization, and some papers use few-shot variants such as \"SAMSUM Few shot\" or describe it as a few-shot summarization benchmark. A minority description diverges, with one quoted passage characterizing it as using news articles and machine-generated summaries.\n\nWhat it is claimed to measure. Papers link it to 2 behavioral indicators and 1 construct. The prevailing usage is to measure Text summarization, with a smaller line of work using it for Dialogue summarization, and one paper also uses summarization on SAMSum as part of assessing General ability. Overall, the measurement claims are concentrated on summarization rather than spread broadly across constructs.\n\nSpace of uses. Across papers, SAMSum is commonly used as one benchmark within broader evaluation suites, though some studies make it the task-specific dataset for text or dialogue summarization experiments. The only explicit instrument-level link is to LongBench, and some authors treat it as a LongBench dataset or a few-shot instruction-following item; other papers place it alongside XSUM, CNN/Daily Mail, TriviaQA, and QMSum. It also appears in practical fine-tuning and evaluation settings, including LoRA finetuning, benign fine-tuning use cases, KV-cache compression, distillation, long-context in-context learning, and uncertainty estimation on summaries.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SAMSum",
+    "SAMsum",
+    "SAMSUM",
+    "Samsum",
+    "SamSum"
+  ],
+  "papers": [
+    "D.Va: Validate Your Demonstration First Before You Use It",
+    "Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention",
+    "ACING: Actor-Critic for Instruction Learning in Black-Box LLMs",
+    "HydraOpt: Navigating the Efficiency-Performance Trade-off of Adapter Merging",
+    "Paired by the Teacher: Turning Unpaired Data into High-Fidelity Pairs for Low-Resource Text Generation",
+    "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+    "Unconditional Truthfulness: Learning Unconditional Uncertainty of Large Language Models",
+    "XQuant: Achieving Ultra-Low Bit KV Cache Quantization with Cross-Layer Compression",
+    "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization",
+    "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+    "Privacy-Preserving In-Context Learning for Large Language Models",
+    "Retrieval meets Long Context Large Language Models",
+    "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+    "Perturbation-Restrained Sequential Model Editing",
+    "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+    "Safety Alignment Should be Made More Than Just a Few Tokens Deep",
+    "SqueezeAttention: 2D Management of KV-Cache in LLM Inference via Layer-wise Optimal Budget",
+    "Uncertainty-Aware Decoding with Minimum Bayes Risk",
+    "DA-KD: Difficulty-Aware Knowledge Distillation for Efficient Large Language Models",
+    "EPIC: Efficient Position-Independent Caching for Serving Large Language Models",
+    "Fourier Position Embedding: Enhancing Attention\u2019s Periodic Extension for Length Generalization",
+    "Parameter-Efficient Fine-Tuning of State Space Models",
+    "QoS-Efficient Serving of Multiple Mixture-of-Expert LLMs Using Partial Runtime Reconfiguration",
+    "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+    "In-Context Learning with Long-Context Models: An In-Depth Exploration",
+    "Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models",
+    "Towards Sustainable NLP: Insights from Benchmarking Inference Energy in Large Language Models",
+    "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+    "Adversarial Moment-Matching Distillation of Large Language Models",
+    "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "Make Your LLM Fully Utilize the Context"
+  ],
+  "paper_count": 32,
+  "definitions": [
+    {
+      "text": "Dialogue summarization dataset consisting of chat transcripts and human-written summaries, used to evaluate privacy-preserving summarization.",
+      "papers": [
+        "Privacy-Preserving In-Context Learning for Large Language Models",
+        "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+        "Adversarial Moment-Matching Distillation of Large Language Models",
+        "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+        "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+        "Make Your LLM Fully Utilize the Context"
+      ],
+      "original_name": "SAMsum"
+    },
+    {
+      "text": "A dialogue summarization dataset used to evaluate language generation performance, particularly in summarizing multi-party conversations.",
+      "papers": [
+        "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+        "Retrieval meets Long Context Large Language Models",
+        "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+        "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+        "In-Context Learning with Long-Context Models: An In-Depth Exploration",
+        "Towards Sustainable NLP: Insights from Benchmarking Inference Energy in Large Language Models",
+        "Parameter-Efficient Fine-Tuning of State Space Models",
+        "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+      ],
+      "original_name": "SAMSum"
+    },
+    {
+      "text": "A dialogue summarization dataset used as an evaluation set for LLM inference under KV-cache compression.",
+      "papers": [
+        "SqueezeAttention: 2D Management of KV-Cache in LLM Inference via Layer-wise Optimal Budget"
+      ],
+      "original_name": "SAMSUM"
+    },
+    {
+      "text": "A dataset of chat dialogues and their summaries, used for evaluating and fine-tuning models on summarization tasks.",
+      "papers": [
+        "Safety Alignment Should be Made More Than Just a Few Tokens Deep"
+      ],
+      "original_name": "Samsum"
+    },
+    {
+      "text": "A dialogue summarization benchmark used to evaluate selective generation uncertainty methods on generated summaries.",
+      "papers": [
+        "Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models",
+        "D.Va: Validate Your Demonstration First Before You Use It"
+      ],
+      "original_name": "SamSum"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+      "evidence": "As an early application for Hedgehog on larger models, we convert Llama-2 7B (Touvron et al., 2023) before finetuning with low-rank adapters (LoRA) (Hu et al., 2021) on SAMSum summarization (Gliwa et al., 2019).",
+      "paper_count": 13,
+      "paper_weight": 13.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry"
+        ],
+        "neurips24": [
+          "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+          "Adversarial Moment-Matching Distillation of Large Language Models",
+          "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+        ],
+        "iclr25": [
+          "Perturbation-Restrained Sequential Model Editing",
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+          "Uncertainty-Aware Decoding with Minimum Bayes Risk"
+        ],
+        "acl25": [
+          "Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention"
+        ],
+        "icml25": [
+          "Parameter-Efficient Fine-Tuning of State Space Models",
+          "DA-KD: Difficulty-Aware Knowledge Distillation for Efficient Large Language Models",
+          "QoS-Efficient Serving of Multiple Mixture-of-Expert LLMs Using Partial Runtime Reconfiguration"
+        ],
+        "emnlp25": [
+          "ACING: Actor-Critic for Instruction Learning in Black-Box LLMs",
+          "HydraOpt: Navigating the Efficiency-Performance Trade-off of Adapter Merging"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Dialogue summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+      "evidence": "dialogue summarization: samsum (Gliwa et al., 2019) and qmsum (Zhong et al., 2021) from LongBench (Bai et al., 2024)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals"
+        ],
+        "naacl25": [
+          "Towards Sustainable NLP: Insights from Benchmarking Inference Energy in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Perturbation-Restrained Sequential Model Editing",
+      "evidence": "To explore the side effects of sequential model editing on the general abilities of LLMs, four representative tasks with corresponding datasets were adopted for assessment... including: ... Summarization on the SAMSum (Gliwa et al., 2019)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Perturbation-Restrained Sequential Model Editing"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "LongBench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "EPIC: Efficient Position-Independent Caching for Serving Large Language Models",
+      "evidence": "Following CacheBlend, we evaluate on four LongBench datasets (Bai et al., 2024): ...SAMSum (few-shot instruction following)... (Section 5.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "EPIC: Efficient Position-Independent Caching for Serving Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, SAMSum is most commonly described as a dialogue summarization dataset or benchmark built from chat or messenger-like conversations paired with short or human-written summaries. Definitions variously emphasize daily-life messenger conversations, multi-turn or multi-party dialogues, and human-annotated abstractive summarization, and some papers use few-shot variants such as \"SAMSUM Few shot\" or describe it as a few-shot summarization benchmark. A minority description diverges, with one quoted passage characterizing it as using news articles and machine-generated summaries."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 2 behavioral indicators and 1 construct. The prevailing usage is to measure Text summarization, with a smaller line of work using it for Dialogue summarization, and one paper also uses summarization on SAMSum as part of assessing General ability. Overall, the measurement claims are concentrated on summarization rather than spread broadly across constructs."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Across papers, SAMSum is commonly used as one benchmark within broader evaluation suites, though some studies make it the task-specific dataset for text or dialogue summarization experiments. The only explicit instrument-level link is to LongBench, and some authors treat it as a LongBench dataset or a few-shot instruction-following item; other papers place it alongside XSUM, CNN/Daily Mail, TriviaQA, and QMSum. It also appears in practical fine-tuning and evaluation settings, including LoRA finetuning, benign fine-tuning use cases, KV-cache compression, distillation, long-context in-context learning, and uncertainty estimation on summaries."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, SAMSum is most commonly described as a dialogue summarization dataset or benchmark built from chat or messenger-like conversations paired with short or human-written summaries. Definitions variously emphasize daily-life messenger conversations, multi-turn or multi-party dialogues, and human-annotated abstractive summarization, and some papers use few-shot variants such as \"SAMSUM Few shot\" or describe it as a few-shot summarization benchmark. A minority description diverges, with one quoted passage characterizing it as using news articles and machine-generated summaries.\n\nWhat it is claimed to measure. Papers link it to 2 behavioral indicators and 1 construct. The prevailing usage is to measure Text summarization, with a smaller line of work using it for Dialogue summarization, and one paper also uses summarization on SAMSum as part of assessing General ability. Overall, the measurement claims are concentrated on summarization rather than spread broadly across constructs.\n\nSpace of uses. Across papers, SAMSum is commonly used as one benchmark within broader evaluation suites, though some studies make it the task-specific dataset for text or dialogue summarization experiments. The only explicit instrument-level link is to LongBench, and some authors treat it as a LongBench dataset or a few-shot instruction-following item; other papers place it alongside XSUM, CNN/Daily Mail, TriviaQA, and QMSum. It also appears in practical fine-tuning and evaluation settings, including LoRA finetuning, benign fine-tuning use cases, KV-cache compression, distillation, long-context in-context learning, and uncertainty estimation on summaries.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "D.Va: Validate Your Demonstration First Before You Use It",
+      "Efficient Many-Shot In-Context Learning with Dynamic Block-Sparse Attention"
+    ],
+    "emnlp25": [
+      "ACING: Actor-Critic for Instruction Learning in Black-Box LLMs",
+      "HydraOpt: Navigating the Efficiency-Performance Trade-off of Adapter Merging",
+      "Paired by the Teacher: Turning Unpaired Data into High-Fidelity Pairs for Low-Resource Text Generation",
+      "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+      "Unconditional Truthfulness: Learning Unconditional Uncertainty of Large Language Models",
+      "XQuant: Achieving Ultra-Low Bit KV Cache Quantization with Cross-Layer Compression",
+      "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization"
+    ],
+    "iclr24": [
+      "Connecting Large Language Models with Evolutionary Algorithms Yields Powerful Prompt Optimizers",
+      "Privacy-Preserving In-Context Learning for Large Language Models",
+      "Retrieval meets Long Context Large Language Models",
+      "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry"
+    ],
+    "iclr25": [
+      "Perturbation-Restrained Sequential Model Editing",
+      "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "Safety Alignment Should be Made More Than Just a Few Tokens Deep",
+      "SqueezeAttention: 2D Management of KV-Cache in LLM Inference via Layer-wise Optimal Budget",
+      "Uncertainty-Aware Decoding with Minimum Bayes Risk"
+    ],
+    "icml25": [
+      "DA-KD: Difficulty-Aware Knowledge Distillation for Efficient Large Language Models",
+      "EPIC: Efficient Position-Independent Caching for Serving Large Language Models",
+      "Fourier Position Embedding: Enhancing Attention\u2019s Periodic Extension for Length Generalization",
+      "Parameter-Efficient Fine-Tuning of State Space Models",
+      "QoS-Efficient Serving of Multiple Mixture-of-Expert LLMs Using Partial Runtime Reconfiguration",
+      "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals"
+    ],
+    "naacl25": [
+      "In-Context Learning with Long-Context Models: An In-Depth Exploration",
+      "Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models",
+      "Towards Sustainable NLP: Insights from Benchmarking Inference Energy in Large Language Models"
+    ],
+    "neurips24": [
+      "Accelerating Blockwise Parallel Language Models with Draft Refinement",
+      "Adversarial Moment-Matching Distillation of Large Language Models",
+      "BackdoorAlign: Mitigating Fine-tuning based Jailbreak Attack with Backdoor Enhanced Safety Alignment",
+      "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "Make Your LLM Fully Utilize the Context"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 7,
+    "iclr24": 4,
+    "iclr25": 5,
+    "icml25": 6,
+    "naacl25": 3,
+    "neurips24": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

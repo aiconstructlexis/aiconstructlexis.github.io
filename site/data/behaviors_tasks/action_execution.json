@@ -1,0 +1,79 @@
+{
+  "canonical_name": "Action execution",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. The only explicit framing treats action execution as the agent's observable performance of a specific action from its available action space within an environment. The accompanying description keeps the emphasis on executing actions according to the task while recording the interaction process.\n\nVariants. Papers do not distinguish named subtypes, domains, or modalities in the descriptions. The framing stays at the level of one category of agentic task, defined relative to the task, the environment, and the agent's available action space.\n\nSpace of elicitation and scores. Papers link it to 1 measurement instrument, T-Eval. One paper reports that action execution is measured by T-Eval by placing it in the Action Execution category of agentic tasks, and no other instrument is linked.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not explicitly treat it as evidence of a construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Action execution"
+  ],
+  "papers": [
+    "ADAM: An Embodied Causal Agent in Open-World Environments",
+    "EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents",
+    "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The agent's observable performance of a specific action from its available action space within the environment.",
+      "papers": [
+        "ADAM: An Embodied Causal Agent in Open-World Environments"
+      ],
+      "original_name": "Action execution"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "T-Eval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "evidence": "We categorize the agentic tasks into three types: (1) Action Execution: T-Eval (Chen et al., 2023c), ToolBench (Qin et al., 2023a), and ToolAlpaca (Tang et al., 2023b) (Sec. 2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The only explicit framing treats action execution as the agent's observable performance of a specific action from its available action space within an environment. The accompanying description keeps the emphasis on executing actions according to the task while recording the interaction process."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers do not distinguish named subtypes, domains, or modalities in the descriptions. The framing stays at the level of one category of agentic task, defined relative to the task, the environment, and the agent's available action space."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link it to 1 measurement instrument, T-Eval. One paper reports that action execution is measured by T-Eval by placing it in the Action Execution category of agentic tasks, and no other instrument is linked."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it, so papers do not explicitly treat it as evidence of a construct."
+    }
+  ],
+  "characterization": "Space of definitions. The only explicit framing treats action execution as the agent's observable performance of a specific action from its available action space within an environment. The accompanying description keeps the emphasis on executing actions according to the task while recording the interaction process.\n\nVariants. Papers do not distinguish named subtypes, domains, or modalities in the descriptions. The framing stays at the level of one category of agentic task, defined relative to the task, the environment, and the agent's available action space.\n\nSpace of elicitation and scores. Papers link it to 1 measurement instrument, T-Eval. One paper reports that action execution is measured by T-Eval by placing it in the Action Execution category of agentic tasks, and no other instrument is linked.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not explicitly treat it as evidence of a construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ADAM: An Embodied Causal Agent in Open-World Environments",
+      "EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents",
+      "NeSyC: A Neuro-symbolic Continual Learner For Complex Embodied Tasks in Open Domains"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "canonical_name": "Fashion-MNIST",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, Fashion-MNIST is described as a dataset of Zalando article images with 60,000 training examples and 10,000 test examples. The definitions agree on that format, while differing slightly in emphasis: one paper presents it as used for image classification, and another describes it as a drop-in replacement for MNIST.\n\nWhat it is claimed to measure. Papers do not report Fashion-MNIST as measuring any linked constructs or behavioral indicators. The recorded links include no constructs and no behavioral indicators, so the descriptions frame it as a dataset without explicit measured concepts attached to it.\n\nSpace of uses. The descriptions place Fashion-MNIST in training setups rather than in explicit measurement claims. One study states that \"The MNIST (Deng, 2012) and FashionMNIST (Xiao et al., 2017) datasets are used for pretraining and fine-tuning, respectively\" (Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics), while another simply cites \"Fashion MNIST (Xiao et al., 2017)\" as the dataset used.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FashionMNIST",
+    "Fashion MNIST"
+  ],
+  "papers": [
+    "Bilinear MLPs enable weight-based mechanistic interpretability",
+    "A Simple Model of Inference Scaling Laws",
+    "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
+    "DTZO: Distributed Trilevel Zeroth Order Learning with Provable Non-Asymptotic Convergence",
+    "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A dataset of Zalando's article images, consisting of a training set of 60,000 examples and a test set of 10,000 examples, used for image classification.",
+      "papers": [
+        "DTZO: Distributed Trilevel Zeroth Order Learning with Provable Non-Asymptotic Convergence"
+      ],
+      "original_name": "Fashion MNIST"
+    },
+    {
+      "text": "A dataset of Zalando's article images, consisting of a training set of 60,000 examples and a test set of 10,000 examples, used as a drop-in replacement for MNIST.",
+      "papers": [
+        "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics"
+      ],
+      "original_name": "FashionMNIST"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, Fashion-MNIST is described as a dataset of Zalando article images with 60,000 training examples and 10,000 test examples. The definitions agree on that format, while differing slightly in emphasis: one paper presents it as used for image classification, and another describes it as a drop-in replacement for MNIST."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers do not report Fashion-MNIST as measuring any linked constructs or behavioral indicators. The recorded links include no constructs and no behavioral indicators, so the descriptions frame it as a dataset without explicit measured concepts attached to it."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The descriptions place Fashion-MNIST in training setups rather than in explicit measurement claims. One study states that \"The MNIST (Deng, 2012) and FashionMNIST (Xiao et al., 2017) datasets are used for pretraining and fine-tuning, respectively\" (Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics), while another simply cites \"Fashion MNIST (Xiao et al., 2017)\" as the dataset used."
+    }
+  ],
+  "characterization": "What it is. Across the papers, Fashion-MNIST is described as a dataset of Zalando article images with 60,000 training examples and 10,000 test examples. The definitions agree on that format, while differing slightly in emphasis: one paper presents it as used for image classification, and another describes it as a drop-in replacement for MNIST.\n\nWhat it is claimed to measure. Papers do not report Fashion-MNIST as measuring any linked constructs or behavioral indicators. The recorded links include no constructs and no behavioral indicators, so the descriptions frame it as a dataset without explicit measured concepts attached to it.\n\nSpace of uses. The descriptions place Fashion-MNIST in training setups rather than in explicit measurement claims. One study states that \"The MNIST (Deng, 2012) and FashionMNIST (Xiao et al., 2017) datasets are used for pretraining and fine-tuning, respectively\" (Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics), while another simply cites \"Fashion MNIST (Xiao et al., 2017)\" as the dataset used.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Bilinear MLPs enable weight-based mechanistic interpretability"
+    ],
+    "icml25": [
+      "A Simple Model of Inference Scaling Laws",
+      "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
+      "DTZO: Distributed Trilevel Zeroth Order Learning with Provable Non-Asymptotic Convergence",
+      "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

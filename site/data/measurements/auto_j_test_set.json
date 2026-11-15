@@ -1,0 +1,76 @@
+{
+  "canonical_name": "Auto-J test set",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the definitions, the prevailing usage treats Auto-J as a curated or automated judge benchmark. Papers describe it as a benchmark for meta-evaluation of LLM judges, and one definition also presents it as a benchmark for evaluating reward models, particularly by examining correlation with human expert judgments. A smaller line of description specifies \"Auto-J (Eval-P test set with ties),\" a pairwise evaluation benchmark that includes tie outcomes.\n\nWhat it is claimed to measure. The descriptions say papers use Auto-J to evaluate LLM judges and reward models, with the most common framing centered on meta-evaluation of judges and a secondary framing centered on correlation with human expert judgments. Papers in this literature do not link it to any named constructs or behavioral indicators, so the record does not attach it to any explicitly named construct.\n\nSpace of uses. Where usage is described, one paper places AutoJ alongside RewardBench and MT-Bench as one of three reward model benchmarks. Another paper uses the tie-enabled version for pairwise evaluation, describing it as a way to test judge models on indeterminate comparisons.\n\nConcerns raised. One paper notes that the benchmark's allowance for ties results in lower scores across judges.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Auto-J",
+    "AutoJ"
+  ],
+  "papers": [
+    "Direct Judgement Preference Optimization",
+    "Advancing LLM Reasoning Generalists with Preference Trees",
+    "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A curated benchmark for meta-evaluation of LLM judges.",
+      "papers": [
+        "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement",
+        "Direct Judgement Preference Optimization"
+      ],
+      "original_name": "Auto-J"
+    },
+    {
+      "text": "An automated judge benchmark used to evaluate reward models, particularly on their correlation with human expert judgments.",
+      "papers": [
+        "Advancing LLM Reasoning Generalists with Preference Trees"
+      ],
+      "original_name": "AutoJ"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the definitions, the prevailing usage treats Auto-J as a curated or automated judge benchmark. Papers describe it as a benchmark for meta-evaluation of LLM judges, and one definition also presents it as a benchmark for evaluating reward models, particularly by examining correlation with human expert judgments. A smaller line of description specifies \"Auto-J (Eval-P test set with ties),\" a pairwise evaluation benchmark that includes tie outcomes."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The descriptions say papers use Auto-J to evaluate LLM judges and reward models, with the most common framing centered on meta-evaluation of judges and a secondary framing centered on correlation with human expert judgments. Papers in this literature do not link it to any named constructs or behavioral indicators, so the record does not attach it to any explicitly named construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Where usage is described, one paper places AutoJ alongside RewardBench and MT-Bench as one of three reward model benchmarks. Another paper uses the tie-enabled version for pairwise evaluation, describing it as a way to test judge models on indeterminate comparisons."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One paper notes that the benchmark's allowance for ties results in lower scores across judges."
+    }
+  ],
+  "characterization": "What it is. Across the definitions, the prevailing usage treats Auto-J as a curated or automated judge benchmark. Papers describe it as a benchmark for meta-evaluation of LLM judges, and one definition also presents it as a benchmark for evaluating reward models, particularly by examining correlation with human expert judgments. A smaller line of description specifies \"Auto-J (Eval-P test set with ties),\" a pairwise evaluation benchmark that includes tie outcomes.\n\nWhat it is claimed to measure. The descriptions say papers use Auto-J to evaluate LLM judges and reward models, with the most common framing centered on meta-evaluation of judges and a secondary framing centered on correlation with human expert judgments. Papers in this literature do not link it to any named constructs or behavioral indicators, so the record does not attach it to any explicitly named construct.\n\nSpace of uses. Where usage is described, one paper places AutoJ alongside RewardBench and MT-Bench as one of three reward model benchmarks. Another paper uses the tie-enabled version for pairwise evaluation, describing it as a way to test judge models on indeterminate comparisons.\n\nConcerns raised. One paper notes that the benchmark's allowance for ties results in lower scores across judges.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Advancing LLM Reasoning Generalists with Preference Trees",
+      "Trust or Escalate: LLM Judges with Provable Guarantees for Human Agreement"
+    ],
+    "emnlp25": [
+      "Direct Judgement Preference Optimization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "emnlp25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

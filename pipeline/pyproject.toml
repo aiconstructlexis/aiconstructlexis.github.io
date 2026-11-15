@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiconstructlexis"
+version = "0.0.1"
+description = "AI Construct Lexis: extract constructs, behaviors and measurement instruments from LLM papers and harmonize them into a nomological network."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "pyyaml>=6.0",
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "tqdm>=4.60",
+    "json-repair>=0.30",
+    "pymupdf>=1.24",
+    "numpy>=1.26",
+    "networkx>=3.2",
+    "openai>=1.40",
+    "google-genai>=1.0",
+    "together>=2.5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+openreview = ["openreview-py>=1.40"]
+pdf-fallback = ["pdfminer.six>=20221105"]
+tokens = ["tiktoken>=0.7"]
+
+[project.scripts]
+lexis = "aiconstructlexis.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["aiconstructlexis*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

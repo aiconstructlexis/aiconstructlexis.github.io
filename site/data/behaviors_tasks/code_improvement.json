@@ -1,0 +1,92 @@
+{
+  "canonical_name": "Code improvement",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as revising existing code to improve non-functional qualities. Definitions describe modifying code to enhance performance, security, or maintainability, while adjacent uses of \"code refinement\" describe either fixing identified vulnerabilities in an initially generated snippet or improving readability and style. Success is framed as producing code that addresses the targeted issue, for example fixing vulnerable code, improving latency or resource utilization, or adding docstrings, comments, and consistent conventions without altering functionality.\n\nVariants. Papers use both \"code improvement\" and \"code refinement\" for this behavior. The settings mentioned include multiple programming languages and function-, class-, or file-level edits, with variants such as bug fixing, latency improvement, resource utilization optimization, vulnerability repair, and readability or style refinement through docstrings, inline comments, and consistent coding conventions. One paper, Generating CAD Code with Vision-Language Models for 3D Designs, claims a causal relationship from Feedback generation to Code improvement, stating that ameliorative feedback is applied to refine the code.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The papers operationalize it through task formulations such as vulnerable-code fixing, non-functional code edits, and style or readability refinement, but they do not link the behavior to a named elicitation or scoring instrument.\n\nWhat it is taken as evidence of. No construct is linked to it in the surveyed papers.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Code improvement",
+    "Code refinement"
+  ],
+  "papers": [
+    "UnitCoder: Scalable Code Synthesis from Pre-training Corpora",
+    "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits",
+    "ProSec: Fortifying Code LLMs with Proactive Security Alignment"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The task of modifying code to enhance non-functional properties such as performance, security, or maintainability.",
+      "papers": [
+        "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits"
+      ],
+      "original_name": "Code improvement"
+    },
+    {
+      "text": "Revising an initially generated code snippet to fix identified vulnerabilities or improve security.",
+      "papers": [
+        "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+        "UnitCoder: Scalable Code Synthesis from Pre-training Corpora"
+      ],
+      "original_name": "Code refinement"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Feedback generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Generating CAD Code with Vision-Language Models for 3D Designs",
+      "evidence": "The question-answer pairs are then used to generate ameliorative feedback to further refine the 3D object... feedback, Fref, is then applied to refine the code, as described Eq. (3). (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Generating CAD Code with Vision-Language Models for 3D Designs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats this behavior as revising existing code to improve non-functional qualities. Definitions describe modifying code to enhance performance, security, or maintainability, while adjacent uses of \"code refinement\" describe either fixing identified vulnerabilities in an initially generated snippet or improving readability and style. Success is framed as producing code that addresses the targeted issue, for example fixing vulnerable code, improving latency or resource utilization, or adding docstrings, comments, and consistent conventions without altering functionality."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use both \"code improvement\" and \"code refinement\" for this behavior. The settings mentioned include multiple programming languages and function-, class-, or file-level edits, with variants such as bug fixing, latency improvement, resource utilization optimization, vulnerability repair, and readability or style refinement through docstrings, inline comments, and consistent coding conventions. One paper, Generating CAD Code with Vision-Language Models for 3D Designs, claims a causal relationship from Feedback generation to Code improvement, stating that ameliorative feedback is applied to refine the code."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. The papers operationalize it through task formulations such as vulnerable-code fixing, non-functional code edits, and style or readability refinement, but they do not link the behavior to a named elicitation or scoring instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it in the surveyed papers."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats this behavior as revising existing code to improve non-functional qualities. Definitions describe modifying code to enhance performance, security, or maintainability, while adjacent uses of \"code refinement\" describe either fixing identified vulnerabilities in an initially generated snippet or improving readability and style. Success is framed as producing code that addresses the targeted issue, for example fixing vulnerable code, improving latency or resource utilization, or adding docstrings, comments, and consistent conventions without altering functionality.\n\nVariants. Papers use both \"code improvement\" and \"code refinement\" for this behavior. The settings mentioned include multiple programming languages and function-, class-, or file-level edits, with variants such as bug fixing, latency improvement, resource utilization optimization, vulnerability repair, and readability or style refinement through docstrings, inline comments, and consistent coding conventions. One paper, Generating CAD Code with Vision-Language Models for 3D Designs, claims a causal relationship from Feedback generation to Code improvement, stating that ameliorative feedback is applied to refine the code.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. The papers operationalize it through task formulations such as vulnerable-code fixing, non-functional code edits, and style or readability refinement, but they do not link the behavior to a named elicitation or scoring instrument.\n\nWhat it is taken as evidence of. No construct is linked to it in the surveyed papers.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "NextCoder: Robust Adaptation of Code LMs to Diverse Code Edits",
+      "ProSec: Fortifying Code LLMs with Proactive Security Alignment"
+    ],
+    "emnlp25": [
+      "UnitCoder: Scalable Code Synthesis from Pre-training Corpora"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "emnlp25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

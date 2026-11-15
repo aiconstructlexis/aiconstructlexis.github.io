@@ -1,0 +1,222 @@
+{
+  "canonical_name": "Error recovery",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats error recovery as a latent ability or capability to recover from mistakes in perception, skill execution, partner actions, invalid actions, or unexpected state changes and continue toward task completion or goal progress; one paper reports that LLMs \"struggle to recover from skill failures and perception grounding errors.\" Several definitions broaden this to handling and managing execution errors, including revising code or adjusting reasoning from execution feedback. A smaller, narrower framing specializes it to out-of-sync recovery, where the agent must notice that its belief has diverged from the true state, diagnose the mismatch, and update its understanding to resynchronize, while one paper instead casts it as observable self-correction during inference rather than a latent capability.\n\nSpace of facets. Papers use adjacent labels such as failure recovery, error tolerance, error handling, and out-of-sync recovery for overlapping formulations of the same general idea. One framing groups supporting mechanisms such as error identification, recovery loops, self-correction, and fallback strategies under error handling, while the out-of-sync variant is explicitly broken into recognizing state mismatch, identifying root causes, acquiring the missing update, and updating belief to match the world state. Across these formulations, the main variation is whether detection is bundled into the construct itself or treated as preceding recovery, and whether recovery targets general task execution, the reasoning process itself, or belief-state resynchronization.\n\nSpace of measurement. No measurement instrument is linked to it. Papers instead operationalize it through five behavioral indicators, most often Backtracking, then Error detection, Self-reflection, Task completion, and Technical problem solving. These indicators make recovery visible through observing action outcomes, sending unconfirmed actions to a recovery module, revising reasoning or tool choice after self-reflection, associating successful recovery with technical problem-solving proficiency, and resuming progress to completion, which aligns with definitions centered on correcting errors and continuing the task.\n\nLinks. Papers claim a causal relationship from Backtracking to Error recovery, from Self-reflection to Error recovery, and from Technical problem solving to Error recovery. In the recorded evidence, backtracking lets an agent observe action outcomes and recover from error states effectively, self-reflective inference supports iterative reasoning, tool use, and error recovery, and successful out-of-sync recoveries are said to hinge on technical problem-solving proficiency. Error recovery is also related to Error detection, which sends the agent to a reflector when an action is not confirmed, and related to Task completion, with one report describing an agent that can recover from such states and complete the requested instruction. No correlational link is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Failure recovery",
+    "Error tolerance",
+    "Error handling",
+    "Out-of-sync recovery",
+    "Error recovery"
+  ],
+  "papers": [
+    "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism",
+    "CRITICTOOL: Evaluating Self-Critique Capabilities of Large Language Models in Tool-Calling Error Scenarios",
+    "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+    "SmartPlay : A Benchmark for LLMs as Intelligent Agents",
+    "Better than Your Teacher: LLM Agents that learn from Privileged AI Feedback",
+    "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+    "OpenRCA: Can Large Language Models Locate the Root Cause of Software Failures?",
+    "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+    "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+    "WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning",
+    "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+    "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+    "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+    "Towards Efficient Online Tuning of VLM Agents via Counterfactual Soft Reinforcement Learning",
+    "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering",
+    "CRMArena: Understanding the Capacity of LLM Agents to Perform Professional CRM Tasks in Realistic Environments",
+    "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning"
+  ],
+  "paper_count": 17,
+  "definitions": [
+    {
+      "text": "The ability to recover from mistakes in perception, skill execution, or partner actions and continue toward task completion.",
+      "papers": [
+        "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+        "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism",
+        "CRMArena: Understanding the Capacity of LLM Agents to Perform Professional CRM Tasks in Realistic Environments"
+      ],
+      "original_name": "Error recovery"
+    },
+    {
+      "text": "The ability of an agent to effectively adjust its plan and continue making progress toward a goal after encountering an invalid action or unexpected state change.",
+      "papers": [
+        "Robotouille: An Asynchronous Planning Benchmark for LLM Agents"
+      ],
+      "original_name": "Failure recovery"
+    },
+    {
+      "text": "The capability of a model to effectively handle and recover from errors, such as by revising its code or adjusting its reasoning based on execution feedback.",
+      "papers": [
+        "OpenRCA: Can Large Language Models Locate the Root Cause of Software Failures?",
+        "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering"
+      ],
+      "original_name": "Error tolerance"
+    },
+    {
+      "text": "The latent capability of an agent to detect, recover from, and manage execution errors or unexpected situations during task performance.",
+      "papers": [
+        "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION"
+      ],
+      "original_name": "Error handling"
+    },
+    {
+      "text": "The ability of an agent to detect that its internal understanding of a system state has diverged from the true state, diagnose the cause of the mismatch, and update its understanding to resynchronize.",
+      "papers": [
+        "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering"
+      ],
+      "original_name": "Out-of-sync recovery"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Technical problem solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering",
+      "evidence": "This observation further substantiates that successful out-of-sync recoveries hinge on not only agents\u2019 technical problem-solving proficiency, but their efficient cause analysis and effective collaboration capabilities.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-reflection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling",
+      "evidence": "SCRIBE combines domain-specific tools with a self-reflective inference pipeline that supports iterative reasoning, tool use, and error recovery. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Backtracking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism",
+      "evidence": "BacktrackAgent explicitly incorporates a backtracking mechanism to observe the outcomes of action executions, allowing it to detect and recover from error states effectively. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning",
+      "evidence": "\u201cDigiRL is able to recover from such states and complete complex instruction as requested\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Error detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism",
+      "evidence": "If both the Verifier and the Judger confirm that ai t is correct, the agent considers it the final action at time-step t and proceeds to time-step t+1. Otherwise, the agent goes to the Reflector for error recovery. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats error recovery as a latent ability or capability to recover from mistakes in perception, skill execution, partner actions, invalid actions, or unexpected state changes and continue toward task completion or goal progress; one paper reports that LLMs \"struggle to recover from skill failures and perception grounding errors.\" Several definitions broaden this to handling and managing execution errors, including revising code or adjusting reasoning from execution feedback. A smaller, narrower framing specializes it to out-of-sync recovery, where the agent must notice that its belief has diverged from the true state, diagnose the mismatch, and update its understanding to resynchronize, while one paper instead casts it as observable self-correction during inference rather than a latent capability."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use adjacent labels such as failure recovery, error tolerance, error handling, and out-of-sync recovery for overlapping formulations of the same general idea. One framing groups supporting mechanisms such as error identification, recovery loops, self-correction, and fallback strategies under error handling, while the out-of-sync variant is explicitly broken into recognizing state mismatch, identifying root causes, acquiring the missing update, and updating belief to match the world state. Across these formulations, the main variation is whether detection is bundled into the construct itself or treated as preceding recovery, and whether recovery targets general task execution, the reasoning process itself, or belief-state resynchronization."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it. Papers instead operationalize it through five behavioral indicators, most often Backtracking, then Error detection, Self-reflection, Task completion, and Technical problem solving. These indicators make recovery visible through observing action outcomes, sending unconfirmed actions to a recovery module, revising reasoning or tool choice after self-reflection, associating successful recovery with technical problem-solving proficiency, and resuming progress to completion, which aligns with definitions centered on correcting errors and continuing the task."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers claim a causal relationship from Backtracking to Error recovery, from Self-reflection to Error recovery, and from Technical problem solving to Error recovery. In the recorded evidence, backtracking lets an agent observe action outcomes and recover from error states effectively, self-reflective inference supports iterative reasoning, tool use, and error recovery, and successful out-of-sync recoveries are said to hinge on technical problem-solving proficiency. Error recovery is also related to Error detection, which sends the agent to a reflector when an action is not confirmed, and related to Task completion, with one report describing an agent that can recover from such states and complete the requested instruction. No correlational link is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats error recovery as a latent ability or capability to recover from mistakes in perception, skill execution, partner actions, invalid actions, or unexpected state changes and continue toward task completion or goal progress; one paper reports that LLMs \"struggle to recover from skill failures and perception grounding errors.\" Several definitions broaden this to handling and managing execution errors, including revising code or adjusting reasoning from execution feedback. A smaller, narrower framing specializes it to out-of-sync recovery, where the agent must notice that its belief has diverged from the true state, diagnose the mismatch, and update its understanding to resynchronize, while one paper instead casts it as observable self-correction during inference rather than a latent capability.\n\nSpace of facets. Papers use adjacent labels such as failure recovery, error tolerance, error handling, and out-of-sync recovery for overlapping formulations of the same general idea. One framing groups supporting mechanisms such as error identification, recovery loops, self-correction, and fallback strategies under error handling, while the out-of-sync variant is explicitly broken into recognizing state mismatch, identifying root causes, acquiring the missing update, and updating belief to match the world state. Across these formulations, the main variation is whether detection is bundled into the construct itself or treated as preceding recovery, and whether recovery targets general task execution, the reasoning process itself, or belief-state resynchronization.\n\nSpace of measurement. No measurement instrument is linked to it. Papers instead operationalize it through five behavioral indicators, most often Backtracking, then Error detection, Self-reflection, Task completion, and Technical problem solving. These indicators make recovery visible through observing action outcomes, sending unconfirmed actions to a recovery module, revising reasoning or tool choice after self-reflection, associating successful recovery with technical problem-solving proficiency, and resuming progress to completion, which aligns with definitions centered on correcting errors and continuing the task.\n\nLinks. Papers claim a causal relationship from Backtracking to Error recovery, from Self-reflection to Error recovery, and from Technical problem solving to Error recovery. In the recorded evidence, backtracking lets an agent observe action outcomes and recover from error states effectively, self-reflective inference supports iterative reasoning, tool use, and error recovery, and successful out-of-sync recoveries are said to hinge on technical problem-solving proficiency. Error recovery is also related to Error detection, which sends the agent to a reflector when an action is not confirmed, and related to Task completion, with one report describing an agent that can recover from such states and complete the requested instruction. No correlational link is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "BacktrackAgent: Enhancing GUI Agent with Error Detection and Backtracking Mechanism",
+      "CRITICTOOL: Evaluating Self-Critique Capabilities of Large Language Models in Tool-Calling Error Scenarios",
+      "SCRIBE: Structured Chain Reasoning for Interactive Behaviour Explanations using Tool Calling"
+    ],
+    "iclr24": [
+      "SmartPlay : A Benchmark for LLMs as Intelligent Agents"
+    ],
+    "iclr25": [
+      "Better than Your Teacher: LLM Agents that learn from Privileged AI Feedback",
+      "OSCAR: Operating System Control via State-Aware Reasoning and Re-Planning",
+      "OpenRCA: Can Large Language Models Locate the Root Cause of Software Failures?",
+      "Robotouille: An Asynchronous Planning Benchmark for LLM Agents",
+      "SPA-BENCH: A COMPREHENSIVE BENCHMARK FOR SMARTPHONE AGENT EVALUATION",
+      "WebRL: Training LLM Web Agents via Self-Evolving Online Curriculum Reinforcement Learning",
+      "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks"
+    ],
+    "icml25": [
+      "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+      "On the Resilience of LLM-Based Multi-Agent Collaboration with Faulty Agents",
+      "Towards Efficient Online Tuning of VLM Agents via Counterfactual Soft Reinforcement Learning",
+      "SyncMind: Measuring Agent Out-of-Sync Recovery in Collaborative Software Engineering"
+    ],
+    "neurips24": [
+      "DigiRL: Training In-The-Wild Device-Control Agents with Autonomous Reinforcement Learning"
+    ],
+    "naacl25": [
+      "CRMArena: Understanding the Capacity of LLM Agents to Perform Professional CRM Tasks in Realistic Environments"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr24": 1,
+    "iclr25": 7,
+    "icml25": 4,
+    "neurips24": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

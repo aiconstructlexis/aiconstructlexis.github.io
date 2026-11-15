@@ -1,0 +1,215 @@
+{
+  "canonical_name": "Visual recognition",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing framing treats visual recognition as a model ability to identify visual content in an image, usually objects, text, landmarks, and other elements, and sometimes to describe their relationships. One paper explicitly frames it as a latent ability that comes before solving a task, while another describes visual recognition prompts as those requiring simple descriptions of visual elements. A smaller line of work narrows the scope to novel concept recognition, meaning identifying and understanding concepts not seen in pre-training, or to object existence determination, meaning correctly judging whether a specified object is present or absent.\n\nSpace of facets. Papers organize the construct as a recognition-side capability rather than an understanding-side one: one paper presents multi-modal models as having visual recognition, for example grounding, alongside visual understanding. Within that framing, object detection and referring expression segmentation are treated as related recognition abilities. The term also appears as a prompt category, where visual recognition prompts are those that require simple descriptions of visual elements, and another paper contrasts recognition with visual perception, which it says goes further by interpreting and contextualizing those elements.\n\nSpace of measurement. Papers link visual recognition to two measurement instruments, both benchmarks: AMBER and FGVC. Operationalizations in the quoted passages are concrete recognition tasks, including visual recognition accuracy for recognizing four cards from an input image, recognizing different landmarks from visual observation, and prompts that require simple descriptions of visual elements; papers also link it to two behavioral indicators, object detection and referring expression segmentation. These measures mostly align with the broad definitions because they test identifying visual elements, but the concrete tasks narrow that broad idea to settings such as fine-grained classification, landmark identification, and short descriptive prompts.\n\nLinks. Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding claims a causal relationship from visual recognition to visual understanding, stating that recognition can benefit understanding tasks because recognition results are compositions for understanding. The same paper relates visual recognition to visual grounding, object detection, and referring expression segmentation, and Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs relates it to visual perception, described there as going beyond basic recognition by interpreting and contextualizing visual elements within a broader scene.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Visual recognition",
+    "Novel concept recognition",
+    "Object existence determination"
+  ],
+  "papers": [
+    "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+    "Contrastive Visual Data Augmentation",
+    "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+    "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models",
+    "Evaluating and Mitigating Object Hallucination in Large Vision-Language Models: Can They Still See Removed Objects?",
+    "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+    "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "Unveiling Encoder-Free Vision-Language Models",
+    "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+    "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "The general ability to identify and classify objects, text, and other elements within an image.",
+      "papers": [
+        "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences",
+        "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+        "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+      ],
+      "original_name": "Visual recognition"
+    },
+    {
+      "text": "The ability of a model to correctly identify and understand visual concepts it has not encountered during its pre-training.",
+      "papers": [
+        "Contrastive Visual Data Augmentation"
+      ],
+      "original_name": "Novel concept recognition"
+    },
+    {
+      "text": "The model's latent capability to correctly identify whether a specified object is present or absent in a given image.",
+      "papers": [
+        "Evaluating and Mitigating Object Hallucination in Large Vision-Language Models: Can They Still See Removed Objects?"
+      ],
+      "original_name": "Object existence determination"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "A mainstream of Multi-modal Large Language Models (MLLMs) have two essential functions, i.e., visual recognition (e.g., grounding) and understanding (e.g., visual question answering). (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "visual recognition is potential to benefit all understanding tasks as recognition results are important compositions for understanding. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Object detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "Prior MLLMs [1, 2, 21] solve traditional visual recognition tasks (e.g., object detection, instance segmentation) in a sequential generation paradigm. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression segmentation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "evidence": "In addition to detection, Octopus is potential to acquire a broader range of recognition abilities, taking advantage of the versatility of the DETR mechanism. Hereby, we endow Octopus with the referring segmentation ability by modifying its object queries into \u201cmask\u201d queries... (Appendix B)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual perception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+      "evidence": "Visual Perception (VP) extends beyond VR by interpreting and contextualizing these elements within the broader scene (Fu et al., 2024), essential for tasks requiring more than basic recognition. (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AMBER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs",
+      "evidence": "The models are tested across seven benchmarks: AMBER (visual recognition)... (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FGVC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models",
+      "evidence": "We evaluate WeGeFT on the VTAB-1k benchmark (Zhai et al., 2019) and the fine-grained visual classification (FGVC) benchmark...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing framing treats visual recognition as a model ability to identify visual content in an image, usually objects, text, landmarks, and other elements, and sometimes to describe their relationships. One paper explicitly frames it as a latent ability that comes before solving a task, while another describes visual recognition prompts as those requiring simple descriptions of visual elements. A smaller line of work narrows the scope to novel concept recognition, meaning identifying and understanding concepts not seen in pre-training, or to object existence determination, meaning correctly judging whether a specified object is present or absent."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers organize the construct as a recognition-side capability rather than an understanding-side one: one paper presents multi-modal models as having visual recognition, for example grounding, alongside visual understanding. Within that framing, object detection and referring expression segmentation are treated as related recognition abilities. The term also appears as a prompt category, where visual recognition prompts are those that require simple descriptions of visual elements, and another paper contrasts recognition with visual perception, which it says goes further by interpreting and contextualizing those elements."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link visual recognition to two measurement instruments, both benchmarks: AMBER and FGVC. Operationalizations in the quoted passages are concrete recognition tasks, including visual recognition accuracy for recognizing four cards from an input image, recognizing different landmarks from visual observation, and prompts that require simple descriptions of visual elements; papers also link it to two behavioral indicators, object detection and referring expression segmentation. These measures mostly align with the broad definitions because they test identifying visual elements, but the concrete tasks narrow that broad idea to settings such as fine-grained classification, landmark identification, and short descriptive prompts."
+    },
+    {
+      "label": "Links.",
+      "text": "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding claims a causal relationship from visual recognition to visual understanding, stating that recognition can benefit understanding tasks because recognition results are compositions for understanding. The same paper relates visual recognition to visual grounding, object detection, and referring expression segmentation, and Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs relates it to visual perception, described there as going beyond basic recognition by interpreting and contextualizing visual elements within a broader scene."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing framing treats visual recognition as a model ability to identify visual content in an image, usually objects, text, landmarks, and other elements, and sometimes to describe their relationships. One paper explicitly frames it as a latent ability that comes before solving a task, while another describes visual recognition prompts as those requiring simple descriptions of visual elements. A smaller line of work narrows the scope to novel concept recognition, meaning identifying and understanding concepts not seen in pre-training, or to object existence determination, meaning correctly judging whether a specified object is present or absent.\n\nSpace of facets. Papers organize the construct as a recognition-side capability rather than an understanding-side one: one paper presents multi-modal models as having visual recognition, for example grounding, alongside visual understanding. Within that framing, object detection and referring expression segmentation are treated as related recognition abilities. The term also appears as a prompt category, where visual recognition prompts are those that require simple descriptions of visual elements, and another paper contrasts recognition with visual perception, which it says goes further by interpreting and contextualizing those elements.\n\nSpace of measurement. Papers link visual recognition to two measurement instruments, both benchmarks: AMBER and FGVC. Operationalizations in the quoted passages are concrete recognition tasks, including visual recognition accuracy for recognizing four cards from an input image, recognizing different landmarks from visual observation, and prompts that require simple descriptions of visual elements; papers also link it to two behavioral indicators, object detection and referring expression segmentation. These measures mostly align with the broad definitions because they test identifying visual elements, but the concrete tasks narrow that broad idea to settings such as fine-grained classification, landmark identification, and short descriptive prompts.\n\nLinks. Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding claims a causal relationship from visual recognition to visual understanding, stating that recognition can benefit understanding tasks because recognition results are compositions for understanding. The same paper relates visual recognition to visual grounding, object detection, and referring expression segmentation, and Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs relates it to visual perception, described there as going beyond basic recognition by interpreting and contextualizing visual elements within a broader scene.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Contrastive Visual Data Augmentation",
+      "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+      "WeGeFT: Weight-Generative Fine-Tuning for Multi-Faceted Efficient Adaptation of Large Models"
+    ],
+    "naacl25": [
+      "Evaluating and Mitigating Object Hallucination in Large Vision-Language Models: Can They Still See Removed Objects?"
+    ],
+    "neurips24": [
+      "Fine-Tuning Large Vision-Language Models as Decision-Making Agents via Reinforcement Learning",
+      "Measuring Multimodal Mathematical Reasoning with MATH-Vision Dataset",
+      "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "Unveiling Encoder-Free Vision-Language Models",
+      "Visual Riddles: a Commonsense and World Knowledge Challenge for Large Vision and Language Models",
+      "WildVision: Evaluating Vision-Language Models in the Wild with Human Preferences"
+    ],
+    "iclr25": [
+      "Visual Description Grounding Reduces Hallucinations and Boosts Reasoning in LVLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 3,
+    "naacl25": 1,
+    "neurips24": 6,
+    "iclr25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

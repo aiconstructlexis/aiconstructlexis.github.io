@@ -1,0 +1,361 @@
+{
+  "canonical_name": "Stereotyping",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage describes stereotyping as a model tendency to generate, agree with, or otherwise rely on oversimplified, generalized, and often inaccurate beliefs about social groups, especially demographic groups such as gender, ethnicity, religion, or socioeconomic status. Much of the work narrows this broad framing to gender, covering roles, traits, abilities, and occupational associations, and one paper reports models justifying behavior with claims like \"men should pay\" or \"women shouldn't be left alone.\" A smaller line of work treats it as latent stereotypical reasoning or as systematic task patterns, especially gendered occupation translations, so the main difference is between broad group-level output bias and narrower, often gendered, latent or task-specific formulations.\n\nSpace of facets. Papers break the construct into recurring subtypes such as gender stereotypical bias, stereotypical association, stereotypical reasoning, and occupational or gender-occupation bias. These labels overlap but are not identical: some refer broadly to reproducing pre-conceived gender roles, characteristics, or abilities, while others focus on associations between occupations and gender, or on prompts about stereotypical personality traits, activities, and preferences. In surrounding taxonomies, stereotyping appears as one component of fairness, as one of two harms under social bias alongside toxicity, and as one trustworthiness vertical.\n\nSpace of measurement. Operationalization is mostly benchmark-based: papers link stereotyping to 5 measurement instruments, most often CrowS-Pairs and StereoSet, followed by BBQ, DecodingTrust, and LLM-as-a-judge. The benchmarks are described as testing stereotypical associations in paired sentences or context-sentence pairs, with StereoSet covering gender, profession, race, and religion, and CrowS-Pairs assessing stereotypes associated with historically disadvantaged groups; one paper also uses GPT-4 as a judge to score the stereotypical degree of outputs about specific social groups. Papers also connect the construct to 2 behavioral indicators, machine translation and visual question answering, but those are recorded as related settings rather than as measures; overall, the operationalizations line up most directly with definitions framed as output associations and generalized beliefs, and less directly with the minority framing of latent stereotypical reasoning.\n\nLinks. Papers relate stereotyping to broader taxonomies of fairness, social bias, and trustworthiness: one fairness account breaks fairness into stereotype and bias & preference, one social-bias account organizes harms into stereotyping and toxicity, and one trustworthiness account includes stereotypical bias among its verticals. One paper claims a causal relationship from human preference alignment to stereotyping, reporting that stereotypical bias increases by 150%. It is also related to machine translation, where papers discuss gendered occupation translations, and to one other behavioral setting; no correlation claims are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Stereotyping",
+    "Gender stereotypical bias",
+    "Stereotypical association",
+    "Occupational gender bias",
+    "Stereotypical reasoning",
+    "Gender stereotypes",
+    "Gender bias",
+    "Stereotypes",
+    "Gender-occupation bias",
+    "Stereotypical bias"
+  ],
+  "papers": [
+    "Bias in Language Models: Beyond Trick Tests and Towards RUTEd Evaluation",
+    "FairI Tales: Evaluation of Fairness in Indian Contexts with a Focus on Bias and Stereotypes",
+    "Gender Inclusivity Fairness Index (GIFI): A Multilevel Framework for Evaluating Gender Diversity in Large Language Models",
+    "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models",
+    "Adapting Bias Evaluation to Domain Contexts using Generative Models",
+    "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms",
+    "Biased Tales: Cultural and Topic Bias in Generating Children's Stories",
+    "Blind Men and the Elephant: Diverse Perspectives on Gender Stereotypes in Benchmark Datasets",
+    "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution in LLMs",
+    "EuroGEST: Investigating gender stereotypes in multilingual language models",
+    "Incorporating Diverse Perspectives in Cultural Alignment: Survey of Evaluation Benchmarks Through A Three-Dimensional Framework",
+    "Job Unfair: An Investigation of Gender and Occupational Bias in Free-Form Text Completions by LLMs",
+    "Measuring Bias or Measuring the Task: Understanding the Brittle Nature of LLM Gender Biases",
+    "Reward Model Perspectives: Whose Opinions Do Reward Models Reward?",
+    "Scalable and Culturally Specific Stereotype Dataset Construction via Human-LLM Collaboration",
+    "TFDP: Token-Efficient Disparity Audits for Autoregressive LLMs via Single-Token Masked Evaluation",
+    "Unsupervised Concept Vector Extraction for Bias Control in LLMs",
+    "VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models",
+    "We Politely Insist: Your LLM Must Learn the Persian Art of Taarof",
+    "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+    "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+    "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs",
+    "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+  ],
+  "paper_count": 23,
+  "definitions": [
+    {
+      "text": "The model's tendency to generate oversimplified and often inaccurate generalizations about groups of people, particularly based on demographic indicators like gender, ethnicity, or religion.",
+      "papers": [
+        "Incorporating Diverse Perspectives in Cultural Alignment: Survey of Evaluation Benchmarks Through A Three-Dimensional Framework",
+        "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models"
+      ],
+      "original_name": "Stereotyping"
+    },
+    {
+      "text": "The tendency of a language model to associate certain characteristics, roles, or attributes with individuals based on their gender, reflecting and potentially amplifying societal stereotypes.",
+      "papers": [
+        "Blind Men and the Elephant: Diverse Perspectives on Gender Stereotypes in Benchmark Datasets"
+      ],
+      "original_name": "Gender stereotypical bias"
+    },
+    {
+      "text": "A model's systematic predisposition to associate specific occupations with particular genders, revealed through aggregated patterns in translation when the source text is gender-ambiguous.",
+      "papers": [
+        "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms"
+      ],
+      "original_name": "Occupational gender bias"
+    },
+    {
+      "text": "The tendency to link particular occupations with specific genders in ways that reflect social stereotypes rather than neutral interpretation.",
+      "papers": [
+        "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms"
+      ],
+      "original_name": "Stereotypical association"
+    },
+    {
+      "text": "The latent cognitive process by which a model preferentially selects responses that align with culturally ingrained stereotypes, particularly in gendered contexts.",
+      "papers": [
+        "EuroGEST: Investigating gender stereotypes in multilingual language models"
+      ],
+      "original_name": "Stereotypical reasoning"
+    },
+    {
+      "text": "The tendency of a model to produce responses influenced by stereotypical gender roles rather than culturally appropriate norms, even when gender is irrelevant to the expected behavior.",
+      "papers": [
+        "We Politely Insist: Your LLM Must Learn the Persian Art of Taarof"
+      ],
+      "original_name": "Gender bias"
+    },
+    {
+      "text": "The latent tendency to reproduce oversimplified and generalized beliefs about gender roles, characteristics, or abilities, such as assuming women are naturally suited for caregiving or men for leadership.",
+      "papers": [
+        "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models"
+      ],
+      "original_name": "Stereotypes"
+    },
+    {
+      "text": "A specific form of social bias where a model systematically associates certain occupations with particular genders, often reflecting societal stereotypes.",
+      "papers": [
+        "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs"
+      ],
+      "original_name": "Gender-occupation bias"
+    },
+    {
+      "text": "The model's tendency to generate or agree with over-generalized, disrespectful, or negative beliefs about particular demographic groups.",
+      "papers": [
+        "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+      ],
+      "original_name": "Stereotypical bias"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StereoSet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reward Model Perspectives: Whose Opinions Do Reward Models Reward?",
+      "evidence": "STEREOSET. STEREOSET measures stereotypical biases of models on gender, profession, race, and religion through 4, 229 context-sentence pairs. (Section 4.2)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Reward Model Perspectives: Whose Opinions Do Reward Models Reward?",
+          "Blind Men and the Elephant: Diverse Perspectives on Gender Stereotypes in Benchmark Datasets"
+        ],
+        "iclr25": [
+          "Collapsed Language Models Promote Fairness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CrowS-Pairs",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+      "evidence": "CrowS-Pairs (Nangia et al., 2020) assesses stereotypes associated with historically disadvantaged groups.",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models"
+        ],
+        "emnlp25": [
+          "Blind Men and the Elephant: Diverse Perspectives on Gender Stereotypes in Benchmark Datasets"
+        ],
+        "neurips24": [
+          "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models",
+      "evidence": "We break down this concept [Fairness] into stereotype and bias & preference according to the types of discriminatory outputs [88, 132]. (Sec. 2.2.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BBQ",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models",
+      "evidence": "CrowS-Pairs (Nangia et al., 2020) and BBQ (Parrish et al., 2022) target nine categories of stereotypes, including gender, in paired sentences. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "evidence": "this study investigates how models aligned with general-purpose preference data perform across five trustworthiness verticals: toxicity, stereotypical bias, machine ethics, truthfulness, and privacy.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "evidence": "the effects on other trustworthiness aspects are negative: stereotypical bias increases by 150%... (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Social bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+      "evidence": "Our categorization of social bias types in LLMs is structured around two distinct types of harms: Stereotyping and Toxicity.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+      "evidence": "Particularly, for the bias type of Stereotyping, we use GPT-4 to assess the stereotypical degree of LLM-generated outputs regarding any specific social group.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Machine translation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms",
+      "evidence": "Machine Translation systems have become indispensable tools for cross-linguistic communication, yet they frequently exhibit gender biases that reinforce societal stereotypes (Blodgett et al., 2020; Menis-Mastromichalakis et al., 2025). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "DecodingTrust",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+      "evidence": "To verify ALI-Agent\u2019s effectiveness as a general evaluation framework, we conduct experiments on six datasets from three distinct aspects of human values: stereotypes (DecodingTrust [11], CrowS-Pairs [2])...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Revealing and Reducing Gender Biases in Vision and Language Assistants (VLAs)",
+      "evidence": "Images, along with prompts, are presented to the VLAs in a visual question answering (VQA) format, and responses are analyzed to discern systematic distributional differences for females and males. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Revealing and Reducing Gender Biases in Vision and Language Assistants (VLAs)"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage describes stereotyping as a model tendency to generate, agree with, or otherwise rely on oversimplified, generalized, and often inaccurate beliefs about social groups, especially demographic groups such as gender, ethnicity, religion, or socioeconomic status. Much of the work narrows this broad framing to gender, covering roles, traits, abilities, and occupational associations, and one paper reports models justifying behavior with claims like \"men should pay\" or \"women shouldn't be left alone.\" A smaller line of work treats it as latent stereotypical reasoning or as systematic task patterns, especially gendered occupation translations, so the main difference is between broad group-level output bias and narrower, often gendered, latent or task-specific formulations."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers break the construct into recurring subtypes such as gender stereotypical bias, stereotypical association, stereotypical reasoning, and occupational or gender-occupation bias. These labels overlap but are not identical: some refer broadly to reproducing pre-conceived gender roles, characteristics, or abilities, while others focus on associations between occupations and gender, or on prompts about stereotypical personality traits, activities, and preferences. In surrounding taxonomies, stereotyping appears as one component of fairness, as one of two harms under social bias alongside toxicity, and as one trustworthiness vertical."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is mostly benchmark-based: papers link stereotyping to 5 measurement instruments, most often CrowS-Pairs and StereoSet, followed by BBQ, DecodingTrust, and LLM-as-a-judge. The benchmarks are described as testing stereotypical associations in paired sentences or context-sentence pairs, with StereoSet covering gender, profession, race, and religion, and CrowS-Pairs assessing stereotypes associated with historically disadvantaged groups; one paper also uses GPT-4 as a judge to score the stereotypical degree of outputs about specific social groups. Papers also connect the construct to 2 behavioral indicators, machine translation and visual question answering, but those are recorded as related settings rather than as measures; overall, the operationalizations line up most directly with definitions framed as output associations and generalized beliefs, and less directly with the minority framing of latent stereotypical reasoning."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers relate stereotyping to broader taxonomies of fairness, social bias, and trustworthiness: one fairness account breaks fairness into stereotype and bias & preference, one social-bias account organizes harms into stereotyping and toxicity, and one trustworthiness account includes stereotypical bias among its verticals. One paper claims a causal relationship from human preference alignment to stereotyping, reporting that stereotypical bias increases by 150%. It is also related to machine translation, where papers discuss gendered occupation translations, and to one other behavioral setting; no correlation claims are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage describes stereotyping as a model tendency to generate, agree with, or otherwise rely on oversimplified, generalized, and often inaccurate beliefs about social groups, especially demographic groups such as gender, ethnicity, religion, or socioeconomic status. Much of the work narrows this broad framing to gender, covering roles, traits, abilities, and occupational associations, and one paper reports models justifying behavior with claims like \"men should pay\" or \"women shouldn't be left alone.\" A smaller line of work treats it as latent stereotypical reasoning or as systematic task patterns, especially gendered occupation translations, so the main difference is between broad group-level output bias and narrower, often gendered, latent or task-specific formulations.\n\nSpace of facets. Papers break the construct into recurring subtypes such as gender stereotypical bias, stereotypical association, stereotypical reasoning, and occupational or gender-occupation bias. These labels overlap but are not identical: some refer broadly to reproducing pre-conceived gender roles, characteristics, or abilities, while others focus on associations between occupations and gender, or on prompts about stereotypical personality traits, activities, and preferences. In surrounding taxonomies, stereotyping appears as one component of fairness, as one of two harms under social bias alongside toxicity, and as one trustworthiness vertical.\n\nSpace of measurement. Operationalization is mostly benchmark-based: papers link stereotyping to 5 measurement instruments, most often CrowS-Pairs and StereoSet, followed by BBQ, DecodingTrust, and LLM-as-a-judge. The benchmarks are described as testing stereotypical associations in paired sentences or context-sentence pairs, with StereoSet covering gender, profession, race, and religion, and CrowS-Pairs assessing stereotypes associated with historically disadvantaged groups; one paper also uses GPT-4 as a judge to score the stereotypical degree of outputs about specific social groups. Papers also connect the construct to 2 behavioral indicators, machine translation and visual question answering, but those are recorded as related settings rather than as measures; overall, the operationalizations line up most directly with definitions framed as output associations and generalized beliefs, and less directly with the minority framing of latent stereotypical reasoning.\n\nLinks. Papers relate stereotyping to broader taxonomies of fairness, social bias, and trustworthiness: one fairness account breaks fairness into stereotype and bias & preference, one social-bias account organizes harms into stereotyping and toxicity, and one trustworthiness account includes stereotypical bias among its verticals. One paper claims a causal relationship from human preference alignment to stereotyping, reporting that stereotypical bias increases by 150%. It is also related to machine translation, where papers discuss gendered occupation translations, and to one other behavioral setting; no correlation claims are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Bias in Language Models: Beyond Trick Tests and Towards RUTEd Evaluation",
+      "FairI Tales: Evaluation of Fairness in Indian Contexts with a Focus on Bias and Stereotypes",
+      "Gender Inclusivity Fairness Index (GIFI): A Multilevel Framework for Evaluating Gender Diversity in Large Language Models",
+      "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models"
+    ],
+    "emnlp25": [
+      "Adapting Bias Evaluation to Domain Contexts using Generative Models",
+      "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms",
+      "Biased Tales: Cultural and Topic Bias in Generating Children's Stories",
+      "Blind Men and the Elephant: Diverse Perspectives on Gender Stereotypes in Benchmark Datasets",
+      "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution in LLMs",
+      "EuroGEST: Investigating gender stereotypes in multilingual language models",
+      "Incorporating Diverse Perspectives in Cultural Alignment: Survey of Evaluation Benchmarks Through A Three-Dimensional Framework",
+      "Job Unfair: An Investigation of Gender and Occupational Bias in Free-Form Text Completions by LLMs",
+      "Measuring Bias or Measuring the Task: Understanding the Brittle Nature of LLM Gender Biases",
+      "Reward Model Perspectives: Whose Opinions Do Reward Models Reward?",
+      "Scalable and Culturally Specific Stereotype Dataset Construction via Human-LLM Collaboration",
+      "TFDP: Token-Efficient Disparity Audits for Autoregressive LLMs via Single-Token Masked Evaluation",
+      "Unsupervised Concept Vector Extraction for Bias Control in LLMs",
+      "VisBias: Measuring Explicit and Implicit Social Biases in Vision Language Models",
+      "We Politely Insist: Your LLM Must Learn the Persian Art of Taarof"
+    ],
+    "iclr25": [
+      "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models"
+    ],
+    "icml25": [
+      "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs"
+    ],
+    "neurips24": [
+      "MultiTrust: A Comprehensive Benchmark Towards Trustworthy Multimodal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 15,
+    "iclr25": 2,
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

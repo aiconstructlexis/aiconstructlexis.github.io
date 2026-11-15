@@ -1,0 +1,354 @@
+{
+  "canonical_name": "Compositionality",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats compositionality as a latent ability or property that lets a model combine simpler elements, subproblems, or operations into correct, structured solutions for more complex tasks. Many definitions describe this as systematic combination, whether sentence meaning derived from constituents and composition rules, multi-step reasoning built from smaller sub-problems, or plans assembled from reusable components. Several papers use the term evaluatively, reporting worse performance as difficulty rises, a remaining compositionality gap on complex multi-hop questions, or a lack of compositional ability even with in-context learning. A smaller line of work narrows the term to symbolic composition in code, while other papers place it in learned action representations or algebraically composable model components.\n\nSpace of facets. Papers organize the construct by the units being composed: linguistic constituents and their structure, objects, attributes, and relations in multimodal settings, atomic reasoning steps, high-level actions or macro actions, and learned components such as expert vectors. They also use neighboring labels, including skill composition, symbolic composition, and compositional capability or capabilities, for abilities to combine simpler operations, concepts, or components into more complex solutions or meanings. Some authors distinguish compositionality from broader semantic and lexical understanding, or note that models can show compositional plausibility without conceptual coherence.\n\nSpace of measurement. Operationally, papers link compositionality to 4 measurement instruments and no behavioral indicators. All linked instruments are benchmarks: CREPE is used for systematicity and productivity, Winoground is used among challenging benchmarks for VLM compositionality, and BIG-Bench Hard is described as evaluating reasoning, compositionality, and generalization; ARC-AGI appears as a related benchmark setting where ARC tasks are treated as complex compositions of atomic operations. These measures mostly align with the dominant definitions by testing systematic combination and complex reasoning, though BIG-Bench Hard is described more broadly than compositionality alone.\n\nLinks. Individual papers claim causal relationships from compositionality to semantic understanding and to two forms of generalization. One paper also claims a causal relationship from modality gap to compositionality, describing poor compositionality in contrastive vision-language models. Separately, compositionality is reported as related to inductive reasoning and adaptability, and one related evaluation setting treats ARC tasks as complex compositions of atomic operations; no correlation link is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Compositionality",
+    "Symbolic composition",
+    "Skill composition",
+    "Compositional capability",
+    "Compositional capabilities"
+  ],
+  "papers": [
+    "Behavioural vs. Representational Systematicity in End-to-End Models: An Opinionated Survey",
+    "CoT-ICL Lab: A Synthetic Framework for Studying Chain-of-Thought Learning from In-Context Demonstrations",
+    "Exploring How Generative MLLMs Perceive More Than CLIP with the Same Vision Encoder",
+    "GRaMPa: Subword Regularisation by Skewing Uniform Segmentation Distributions with an Efficient Path-counting Markov Model",
+    "Geometric Signatures of Compositionality Across a Language Model's Lifetime",
+    "How Humans and LLMs Organize Conceptual Knowledge: Exploring Subordinate Categories in Italian",
+    "Modeling the Evolution of English Noun Compounds with Feature-Rich Diachronic Compositionality Prediction",
+    "All for One: LLMs Solve Mental Math at the Last Token With Information Transferred From Other Tokens",
+    "Circuit Complexity Bounds for RoPE-based Transformer Architecture",
+    "Memorization or Reasoning? Exploring the Idiom Understanding of LLMs",
+    "Procedural Environment Generation for Tool-Use Agents",
+    "TreeRare: Syntax Tree-Guided Retrieval and Reasoning for Knowledge-Intensive Question Answering",
+    "Unpacking Let Alone: Human-Scale Models Generalize to a Rare Construction in Form but not Meaning",
+    "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions",
+    "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+    "Conversational Drug Editing Using Retrieval and Domain Feedback",
+    "DyVal: Dynamic Evaluation of Large Language Models for Reasoning Tasks",
+    "Learning Grounded Action Abstractions from Language",
+    "Combining Induction and Transduction for Abstract Reasoning",
+    "Inference Scaling for Long-Context Retrieval Augmented Generation",
+    "MaestroMotif: Skill Design from Artificial Intelligence Feedback",
+    "Transformer-Squared: Self-adaptive LLMs",
+    "Hierarchical Planning for Complex Tasks with Knowledge Graph-RAG and Symbolic Verification",
+    "I Think, Therefore I Diffuse: Enabling Multimodal In-Context Reasoning in Diffusion Models",
+    "Position: We Need An Algorithmic Understanding of Generative AI",
+    "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning",
+    "The Synergy of LLMs & RL Unlocks Offline Learning of Generalizable Language-Conditioned Policies with Low-fidelity Data",
+    "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+    "MatViX: Multimodal Information Extraction from Visually Rich Articles",
+    "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task",
+    "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+    "Can Models Learn Skill Composition from Examples?",
+    "Human-Object Interaction Detection Collaborated with Large Relation-driven Diffusion Models",
+    "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+    "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+    "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+    "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+    "Token Merging for Training-Free Semantic Binding in Text-to-Image Synthesis",
+    "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+    "Who Evaluates the Evaluations? Objectively Scoring Text-to-Image Prompt Coherence Metrics with T2IScoreScore (TS2)"
+  ],
+  "paper_count": 40,
+  "definitions": [
+    {
+      "text": "The degree to which a model can combine simpler subproblems into correct solutions for more complex problems as difficulty increases.",
+      "papers": [
+        "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+        "Conversational Drug Editing Using Retrieval and Domain Feedback",
+        "DyVal: Dynamic Evaluation of Large Language Models for Reasoning Tasks",
+        "Learning Grounded Action Abstractions from Language",
+        "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+        "Transformer-Squared: Self-adaptive LLMs",
+        "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+        "MatViX: Multimodal Information Extraction from Visually Rich Articles",
+        "How Humans and LLMs Organize Conceptual Knowledge: Exploring Subordinate Categories in Italian",
+        "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning",
+        "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions"
+      ],
+      "original_name": "Compositionality"
+    },
+    {
+      "text": "The latent ability to compose multiple distinct concepts together using symbolic code, uniquely equipped in induction models.",
+      "papers": [
+        "Combining Induction and Transduction for Abstract Reasoning"
+      ],
+      "original_name": "Symbolic composition"
+    },
+    {
+      "text": "The ability to combine multiple atomic operations or reasoning steps into a coherent solution for a complex task, reflecting compositional generalization in problem-solving.",
+      "papers": [
+        "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task"
+      ],
+      "original_name": "Skill composition"
+    },
+    {
+      "text": "The ability of a model to construct complex plans by combining simpler, reusable components (e.g., macro actions) in a structured and coherent way, reflecting systematic generalization across tasks.",
+      "papers": [
+        "Hierarchical Planning for Complex Tasks with Knowledge Graph-RAG and Symbolic Verification"
+      ],
+      "original_name": "Compositional capability"
+    },
+    {
+      "text": "The ability to combine simpler computational or linguistic elements to form more complex structures and meanings.",
+      "papers": [
+        "Circuit Complexity Bounds for RoPE-based Transformer Architecture"
+      ],
+      "original_name": "Compositional capabilities"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CREPE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "We evaluate on the CREPE benchmark (Ma et al., 2023) that focuses on systematicity (Fodor & Pylyshyn, 1988) and productivity (von Humboldt et al., 1988; Chomsky, 1956).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Semantic understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "evidence": "methods that improve compositionality of CLIP such as NegCLIP and CLIP-SVLC also achieve better performance on SUGARCREPE++ compared to CLIP, underscoring the importance of compositionality as a critical component for understanding semantic and lexical differences. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Out-of-distribution generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "evidence": "Large language models can solve tasks that were not present in the training set. This capability is believed to be due to in-context learning and skill composition. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Zero-shot generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Human-Object Interaction Detection Collaborated with Large Relation-driven Diffusion Models",
+      "evidence": "\u201ccompositionality contributes significantly to zero-shot generalization\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Human-Object Interaction Detection Collaborated with Large Relation-driven Diffusion Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Inductive reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Combining Induction and Transduction for Abstract Reasoning",
+      "evidence": "Inductive program synthesis excels at precise computations, and at composing multiple concepts (Abstract).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Combining Induction and Transduction for Abstract Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Winoground",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Exploring How Generative MLLMs Perceive More Than CLIP with the Same Vision Encoder",
+      "evidence": "We use several challenging benchmarks, Winoground (Thrush et al., 2022), NaturalBench (Li et al., 2024), SeeTrue (Yarom et al., 2024), SugarCREPE (Hsieh et al., 2024), for assessing VLMs\u2019 compositionality. (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Exploring How Generative MLLMs Perceive More Than CLIP with the Same Vision Encoder"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-Bench Hard",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning",
+      "evidence": "BIG-Bench Hard (BBH; Srivastava et al., 2023; Suzgun et al., 2023) is a benchmark comprising 27 challenging tasks across 23 task types, designed to evaluate large language models on reasoning, compositionality, and generalization. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Modality gap",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions",
+      "evidence": "The modality gap (Liang et al., 2022) is one of the primary factors contributing to the poor compositionality of contrastive vision-language models... (Section 6.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Adaptability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Transformer-Squared: Self-adaptive LLMs",
+      "evidence": "While compositionality and scalability are crucial for effective adaptation, current LLM training methodologies fall short of achieving both these properties simultaneously. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Transformer-Squared: Self-adaptive LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "ARC-AGI",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task",
+      "evidence": "Therefore, we regard ARC tasks as complex compositions of atomic operations for evaluation. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats compositionality as a latent ability or property that lets a model combine simpler elements, subproblems, or operations into correct, structured solutions for more complex tasks. Many definitions describe this as systematic combination, whether sentence meaning derived from constituents and composition rules, multi-step reasoning built from smaller sub-problems, or plans assembled from reusable components. Several papers use the term evaluatively, reporting worse performance as difficulty rises, a remaining compositionality gap on complex multi-hop questions, or a lack of compositional ability even with in-context learning. A smaller line of work narrows the term to symbolic composition in code, while other papers place it in learned action representations or algebraically composable model components."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers organize the construct by the units being composed: linguistic constituents and their structure, objects, attributes, and relations in multimodal settings, atomic reasoning steps, high-level actions or macro actions, and learned components such as expert vectors. They also use neighboring labels, including skill composition, symbolic composition, and compositional capability or capabilities, for abilities to combine simpler operations, concepts, or components into more complex solutions or meanings. Some authors distinguish compositionality from broader semantic and lexical understanding, or note that models can show compositional plausibility without conceptual coherence."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationally, papers link compositionality to 4 measurement instruments and no behavioral indicators. All linked instruments are benchmarks: CREPE is used for systematicity and productivity, Winoground is used among challenging benchmarks for VLM compositionality, and BIG-Bench Hard is described as evaluating reasoning, compositionality, and generalization; ARC-AGI appears as a related benchmark setting where ARC tasks are treated as complex compositions of atomic operations. These measures mostly align with the dominant definitions by testing systematic combination and complex reasoning, though BIG-Bench Hard is described more broadly than compositionality alone."
+    },
+    {
+      "label": "Links.",
+      "text": "Individual papers claim causal relationships from compositionality to semantic understanding and to two forms of generalization. One paper also claims a causal relationship from modality gap to compositionality, describing poor compositionality in contrastive vision-language models. Separately, compositionality is reported as related to inductive reasoning and adaptability, and one related evaluation setting treats ARC tasks as complex compositions of atomic operations; no correlation link is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats compositionality as a latent ability or property that lets a model combine simpler elements, subproblems, or operations into correct, structured solutions for more complex tasks. Many definitions describe this as systematic combination, whether sentence meaning derived from constituents and composition rules, multi-step reasoning built from smaller sub-problems, or plans assembled from reusable components. Several papers use the term evaluatively, reporting worse performance as difficulty rises, a remaining compositionality gap on complex multi-hop questions, or a lack of compositional ability even with in-context learning. A smaller line of work narrows the term to symbolic composition in code, while other papers place it in learned action representations or algebraically composable model components.\n\nSpace of facets. Papers organize the construct by the units being composed: linguistic constituents and their structure, objects, attributes, and relations in multimodal settings, atomic reasoning steps, high-level actions or macro actions, and learned components such as expert vectors. They also use neighboring labels, including skill composition, symbolic composition, and compositional capability or capabilities, for abilities to combine simpler operations, concepts, or components into more complex solutions or meanings. Some authors distinguish compositionality from broader semantic and lexical understanding, or note that models can show compositional plausibility without conceptual coherence.\n\nSpace of measurement. Operationally, papers link compositionality to 4 measurement instruments and no behavioral indicators. All linked instruments are benchmarks: CREPE is used for systematicity and productivity, Winoground is used among challenging benchmarks for VLM compositionality, and BIG-Bench Hard is described as evaluating reasoning, compositionality, and generalization; ARC-AGI appears as a related benchmark setting where ARC tasks are treated as complex compositions of atomic operations. These measures mostly align with the dominant definitions by testing systematic combination and complex reasoning, though BIG-Bench Hard is described more broadly than compositionality alone.\n\nLinks. Individual papers claim causal relationships from compositionality to semantic understanding and to two forms of generalization. One paper also claims a causal relationship from modality gap to compositionality, describing poor compositionality in contrastive vision-language models. Separately, compositionality is reported as related to inductive reasoning and adaptability, and one related evaluation setting treats ARC tasks as complex compositions of atomic operations; no correlation link is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Behavioural vs. Representational Systematicity in End-to-End Models: An Opinionated Survey",
+      "CoT-ICL Lab: A Synthetic Framework for Studying Chain-of-Thought Learning from In-Context Demonstrations",
+      "Exploring How Generative MLLMs Perceive More Than CLIP with the Same Vision Encoder",
+      "GRaMPa: Subword Regularisation by Skewing Uniform Segmentation Distributions with an Efficient Path-counting Markov Model",
+      "Geometric Signatures of Compositionality Across a Language Model's Lifetime",
+      "How Humans and LLMs Organize Conceptual Knowledge: Exploring Subordinate Categories in Italian",
+      "Modeling the Evolution of English Noun Compounds with Feature-Rich Diachronic Compositionality Prediction"
+    ],
+    "emnlp25": [
+      "All for One: LLMs Solve Mental Math at the Last Token With Information Transferred From Other Tokens",
+      "Circuit Complexity Bounds for RoPE-based Transformer Architecture",
+      "Memorization or Reasoning? Exploring the Idiom Understanding of LLMs",
+      "Procedural Environment Generation for Tool-Use Agents",
+      "TreeRare: Syntax Tree-Guided Retrieval and Reasoning for Knowledge-Intensive Question Answering",
+      "Unpacking Let Alone: Human-Scale Models Generalize to a Rare Construction in Form but not Meaning",
+      "Vision-Free Retrieval: Rethinking Multimodal Search with Textual Scene Descriptions"
+    ],
+    "iclr24": [
+      "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "Conversational Drug Editing Using Retrieval and Domain Feedback",
+      "DyVal: Dynamic Evaluation of Large Language Models for Reasoning Tasks",
+      "Learning Grounded Action Abstractions from Language"
+    ],
+    "iclr25": [
+      "Combining Induction and Transduction for Abstract Reasoning",
+      "Inference Scaling for Long-Context Retrieval Augmented Generation",
+      "MaestroMotif: Skill Design from Artificial Intelligence Feedback",
+      "Transformer-Squared: Self-adaptive LLMs"
+    ],
+    "icml25": [
+      "Hierarchical Planning for Complex Tasks with Knowledge Graph-RAG and Symbolic Verification",
+      "I Think, Therefore I Diffuse: Enabling Multimodal In-Context Reasoning in Diffusion Models",
+      "Position: We Need An Algorithmic Understanding of Generative AI",
+      "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning",
+      "The Synergy of LLMs & RL Unlocks Offline Learning of Generalizable Language-Conditioned Policies with Low-fidelity Data"
+    ],
+    "naacl25": [
+      "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+      "MatViX: Multimodal Information Extraction from Visually Rich Articles",
+      "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task"
+    ],
+    "neurips24": [
+      "Benchmarking Complex Instruction-Following with Multiple Constraints Composition",
+      "Can Models Learn Skill Composition from Examples?",
+      "Human-Object Interaction Detection Collaborated with Large Relation-driven Diffusion Models",
+      "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "NaturalBench: Evaluating Vision-Language Models on Natural Adversarial Samples",
+      "SUGARCREPE++ Dataset: Vision-Language Model Sensitivity to Semantic and Lexical Alterations",
+      "The Factorization Curse: Which Tokens You Predict Underlie the Reversal Curse and More",
+      "Token Merging for Training-Free Semantic Binding in Text-to-Image Synthesis",
+      "TripletCLIP: Improving Compositional Reasoning of CLIP via Synthetic Vision-Language Negatives",
+      "Who Evaluates the Evaluations? Objectively Scoring Text-to-Image Prompt Coherence Metrics with T2IScoreScore (TS2)"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 7,
+    "emnlp25": 7,
+    "iclr24": 4,
+    "iclr25": 4,
+    "icml25": 5,
+    "naacl25": 3,
+    "neurips24": 10
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

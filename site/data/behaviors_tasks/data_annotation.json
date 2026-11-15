@@ -1,0 +1,202 @@
+{
+  "canonical_name": "Data annotation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the dominant framing treats data annotation as assigning labels, metadata, or extracted features to examples according to a schema. Most uses ask for explicit outputs such as chosen or rejected preferences, gendered or neutral source labels, toxic content categories, or final truth values of True, False, and Unknown, while some extend the annotation to rationales, pedagogical feedback, textual explanations, or argument spans with roles. A smaller use broadens the term to annotation workflow steps, such as filtering unlabeled sentences for later human annotation, and the annotator itself varies from prompted LLMs and automatic annotators to teachers, students, and ingroup or outgroup raters.\n\nVariants. Papers study several task-specific variants, especially preference annotation, toxicity annotation, bias annotation, event-focused annotation, and annotation generation for education. Preference annotation appears both for paired text responses and image assessment with scalar scores, rankings, and explanations, while event-focused work covers missing-event detection and argument-role assignment. Other papers apply the same behavior to source categories, review targets and aspects, and truth-value assignment.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. Papers instead usually operationalize it directly with prompted LLMs or automatic annotators, sometimes using high-level task instructions, preference judgment principles, and few-shot examples, and the resulting outputs take the form of labels, pairwise preferences, rankings, scalar scores, explanations, or span-role assignments.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not explicitly specify what construct this behavior indicates.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Data annotation",
+    "Annotation generation",
+    "Label generation",
+    "Preference annotation",
+    "Source category labeling",
+    "Toxicity annotation",
+    "Missing event annotation",
+    "Text annotation",
+    "Bias annotation",
+    "Pun annotation",
+    "Ingroup annotation",
+    "Outgroup annotation",
+    "Structured video annotation",
+    "Event argument annotation",
+    "Facet annotation"
+  ],
+  "papers": [
+    "Benchmarking Debiasing Methods for LLM-based Parameter Estimates",
+    "HESEIA: A community-based dataset for evaluating social biases in large language models, co-designed in real school settings in Latin America",
+    "HICode: Hierarchical Inductive Coding with LLMs",
+    "Language Models as Continuous Self-Evolving Data Engineers",
+    "Mapping Toxic Comments Across Demographics: A Dataset from German Public Broadcasting",
+    "Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews",
+    "Mind the Inclusivity Gap: Multilingual Gender-Neutral Translation Evaluation with mGeNTE",
+    "ModelCitizens: Representing Community Voices in Online Safety",
+    "MultiLogicNMR(er): A Benchmark and Neural-Symbolic Framework for Non-monotonic Reasoning with Multiple Extensions",
+    "Position: LLMs Can be Good Tutors in English Education",
+    "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+    "Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction",
+    "Improve LLM-as-a-Judge Ability as a General Ability",
+    "SetCSE: Set Operations using Contrastive Learning of Sentence Embeddings",
+    "RLTHF: Targeted Human Feedback for LLM Alignment",
+    "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "Producing structured labels, rationales, or pedagogical feedback for educational data, such as explanations for grammar errors or discourse relations.",
+      "papers": [
+        "Position: LLMs Can be Good Tutors in English Education"
+      ],
+      "original_name": "Annotation generation"
+    },
+    {
+      "text": "The observable action of assigning labels or metadata, such as preference information, to data examples.",
+      "papers": [
+        "Language Models as Continuous Self-Evolving Data Engineers",
+        "SetCSE: Set Operations using Contrastive Learning of Sentence Embeddings"
+      ],
+      "original_name": "Data annotation"
+    },
+    {
+      "text": "Assigning final truth values (True, False, Unknown) to questions based on the set of computed extensions under a specified reasoning mode.",
+      "papers": [
+        "MultiLogicNMR(er): A Benchmark and Neural-Symbolic Framework for Non-monotonic Reasoning with Multiple Extensions"
+      ],
+      "original_name": "Label generation"
+    },
+    {
+      "text": "The task of automatically labeling pairs of responses as 'chosen' or 'rejected' to create preference data for downstream model training.",
+      "papers": [
+        "Improve LLM-as-a-Judge Ability as a General Ability",
+        "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+        "RLTHF: Targeted Human Feedback for LLM Alignment"
+      ],
+      "original_name": "Preference annotation"
+    },
+    {
+      "text": "Outputting a label that classifies the source sentence as either gendered or neutral.",
+      "papers": [
+        "Mind the Inclusivity Gap: Multilingual Gender-Neutral Translation Evaluation with mGeNTE"
+      ],
+      "original_name": "Source category labeling"
+    },
+    {
+      "text": "The observable task of assigning one or more predefined labels from a multi-class, multi-label schema to a given text to categorize its toxic content.",
+      "papers": [
+        "Mapping Toxic Comments Across Demographics: A Dataset from German Public Broadcasting"
+      ],
+      "original_name": "Toxicity annotation"
+    },
+    {
+      "text": "Detecting and labeling additional event mentions in a generated sentence that were not part of the initial generation prompt.",
+      "papers": [
+        "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection"
+      ],
+      "original_name": "Missing event annotation"
+    },
+    {
+      "text": "The process of assigning a label or extracting a feature from a piece of text according to a specified schema.",
+      "papers": [
+        "Benchmarking Debiasing Methods for LLM-based Parameter Estimates"
+      ],
+      "original_name": "Text annotation"
+    },
+    {
+      "text": "The process by which teachers and students identify and label social biases in sentences according to demographic axes such as gender, socioeconomic status, and nationality.",
+      "papers": [
+        "HESEIA: A community-based dataset for evaluating social biases in large language models, co-designed in real school settings in Latin America"
+      ],
+      "original_name": "Bias annotation"
+    },
+    {
+      "text": "Providing toxicity labels by individuals who self-identify with the identity group targeted in a post, reflecting community-specific norms.",
+      "papers": [
+        "ModelCitizens: Representing Community Voices in Online Safety"
+      ],
+      "original_name": "Ingroup annotation"
+    },
+    {
+      "text": "Providing toxicity labels by individuals who do not identify with the target group, often reflecting external perceptions of harm.",
+      "papers": [
+        "ModelCitizens: Representing Community Voices in Online Safety"
+      ],
+      "original_name": "Outgroup annotation"
+    },
+    {
+      "text": "Identifying argument spans in text and assigning each span a role for a given event type.",
+      "papers": [
+        "Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction"
+      ],
+      "original_name": "Event argument annotation"
+    },
+    {
+      "text": "The observable process of assigning predefined category labels (e.g., Method, Validity) to review points to enable structured analysis of review focus.",
+      "papers": [
+        "Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews"
+      ],
+      "original_name": "Facet annotation"
+    }
+  ],
+  "definition_count": 13,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the dominant framing treats data annotation as assigning labels, metadata, or extracted features to examples according to a schema. Most uses ask for explicit outputs such as chosen or rejected preferences, gendered or neutral source labels, toxic content categories, or final truth values of True, False, and Unknown, while some extend the annotation to rationales, pedagogical feedback, textual explanations, or argument spans with roles. A smaller use broadens the term to annotation workflow steps, such as filtering unlabeled sentences for later human annotation, and the annotator itself varies from prompted LLMs and automatic annotators to teachers, students, and ingroup or outgroup raters."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study several task-specific variants, especially preference annotation, toxicity annotation, bias annotation, event-focused annotation, and annotation generation for education. Preference annotation appears both for paired text responses and image assessment with scalar scores, rankings, and explanations, while event-focused work covers missing-event detection and argument-role assignment. Other papers apply the same behavior to source categories, review targets and aspects, and truth-value assignment."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior. Papers instead usually operationalize it directly with prompted LLMs or automatic annotators, sometimes using high-level task instructions, preference judgment principles, and few-shot examples, and the resulting outputs take the form of labels, pairwise preferences, rankings, scalar scores, explanations, or span-role assignments."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it, so papers do not explicitly specify what construct this behavior indicates."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the dominant framing treats data annotation as assigning labels, metadata, or extracted features to examples according to a schema. Most uses ask for explicit outputs such as chosen or rejected preferences, gendered or neutral source labels, toxic content categories, or final truth values of True, False, and Unknown, while some extend the annotation to rationales, pedagogical feedback, textual explanations, or argument spans with roles. A smaller use broadens the term to annotation workflow steps, such as filtering unlabeled sentences for later human annotation, and the annotator itself varies from prompted LLMs and automatic annotators to teachers, students, and ingroup or outgroup raters.\n\nVariants. Papers study several task-specific variants, especially preference annotation, toxicity annotation, bias annotation, event-focused annotation, and annotation generation for education. Preference annotation appears both for paired text responses and image assessment with scalar scores, rankings, and explanations, while event-focused work covers missing-event detection and argument-role assignment. Other papers apply the same behavior to source categories, review targets and aspects, and truth-value assignment.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. Papers instead usually operationalize it directly with prompted LLMs or automatic annotators, sometimes using high-level task instructions, preference judgment principles, and few-shot examples, and the resulting outputs take the form of labels, pairwise preferences, rankings, scalar scores, explanations, or span-role assignments.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not explicitly specify what construct this behavior indicates.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Benchmarking Debiasing Methods for LLM-based Parameter Estimates",
+      "HESEIA: A community-based dataset for evaluating social biases in large language models, co-designed in real school settings in Latin America",
+      "HICode: Hierarchical Inductive Coding with LLMs",
+      "Language Models as Continuous Self-Evolving Data Engineers",
+      "Mapping Toxic Comments Across Demographics: A Dataset from German Public Broadcasting",
+      "Mind the Blind Spots: A Focus-Level Evaluation Framework for LLM Reviews",
+      "Mind the Inclusivity Gap: Multilingual Gender-Neutral Translation Evaluation with mGeNTE",
+      "ModelCitizens: Representing Community Voices in Online Safety",
+      "MultiLogicNMR(er): A Benchmark and Neural-Symbolic Framework for Non-monotonic Reasoning with Multiple Extensions",
+      "Position: LLMs Can be Good Tutors in English Education",
+      "SNaRe: Domain-aware Data Generation for Low-Resource Event Detection",
+      "Towards Event Extraction with Massive Types: LLM-based Collaborative Annotation and Partitioning Extraction",
+      "Improve LLM-as-a-Judge Ability as a General Ability"
+    ],
+    "iclr24": [
+      "SetCSE: Set Operations using Contrastive Learning of Sentence Embeddings"
+    ],
+    "neurips24": [
+      "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better"
+    ],
+    "icml25": [
+      "RLTHF: Targeted Human Feedback for LLM Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 13,
+    "iclr24": 1,
+    "neurips24": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "neurips24"
+  ]
+}

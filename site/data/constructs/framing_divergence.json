@@ -1,0 +1,42 @@
+{
+  "canonical_name": "Framing divergence",
+  "type": "construct",
+  "canonical_definition": "The latent tendency of an LLM to generate conflicting narrative interpretations of the same event when conditioned on different personas, reflecting epistemic contradictions shaped by perspective.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Framing divergence"
+  ],
+  "papers": [
+    "Who Holds the Pen? Caricature and Perspective in LLM Retellings of History"
+  ],
+  "paper_count": 1,
+  "definitions": [
+    {
+      "text": "The latent tendency of an LLM to generate conflicting narrative interpretations of the same event when conditioned on different personas, reflecting epistemic contradictions shaped by perspective.",
+      "papers": [
+        "Who Holds the Pen? Caricature and Perspective in LLM Retellings of History"
+      ],
+      "original_name": "Framing divergence"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The latent tendency of an LLM to generate conflicting narrative interpretations of the same event when conditioned on different personas, reflecting epistemic contradictions shaped by perspective.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Who Holds the Pen? Caricature and Perspective in LLM Retellings of History"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

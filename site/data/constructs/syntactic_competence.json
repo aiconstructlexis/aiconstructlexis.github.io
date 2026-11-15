@@ -1,0 +1,281 @@
+{
+  "canonical_name": "Syntactic competence",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats syntactic competence as a latent ability, capacity, or knowledge through which a model represents and applies grammatical structure and rules. Most definitions center on processing or judging grammaticality, including agreement, word order, sentence hierarchy, and acceptable versus unacceptable contrasts, sometimes with reference to native-speaker intuitions; a smaller line instead defines it through internal representations that encode part-of-speech, dependency, or phrase-type information. Other minority framings narrow it to formal competence independent of meaning, to abstraction over schematic category constraints rather than specific word forms, or to producing syntactically correct outputs, including L2 English agreement phenomena and cases where semantic errors remain.\n\nSpace of facets. Papers use several labels for closely related framings, including syntactic awareness, syntactic understanding, syntactic ability, grammatical knowledge, grammatical competence, formal competence, grammatical awareness, and syntactic knowledge. The construct is broken into facets such as part-of-speech tags, dependency labels, phrase types, agreement, word order, sentence hierarchy, and specific constructions like passive voice, relative clauses, coordination, and subordination. Some definitions widen the scope to morphology and the syntax-semantics interface, while one paper explicitly contrasts formal constraints with semantic constraints, marking a form versus meaning distinction.\n\nSpace of measurement. Papers link syntactic competence to 2 measurement instruments and 2 behavioral indicators. Operationalization is mostly benchmark-based: BLiMP, the most common instrument, is described as a minimal-pair and targeted evaluation resource for syntactic generalization, probing syntax, the syntax-semantics interface, and morphology; SyntaxGym is another test suite for the same purpose. The linked behavioral indicators are grammatical acceptability judgment and event extraction; quoted passages also mention acceptability tasks, robustness checks for word order and subordination, probing grammatical knowledge or hidden representations, and one block-placement evaluation of syntactic reasoning. These operationalizations mostly align with definitions focused on grammatical contrasts and judgments, though some definitions instead target internal representations or syntactically well-formed output.\n\nLinks. Outside measurement, one paper claims a causal relationship from syntactic competence to event extraction, stating that syntax information has been found beneficial for the task. Papers also relate syntactic competence to grammatical acceptability judgment, describing grammaticality judgment and acceptability tasks as settings where models exploit grammatical information and where researchers assess robustness against grammatical errors or probe grammatical knowledge. A separate paper relates it to semantic understanding through a form-meaning asymmetry, where models learn formal constraints almost perfectly but fail semantic constraints. No correlational link is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Syntactic awareness",
+    "Syntactic understanding",
+    "Syntax learning",
+    "Syntactic ability",
+    "Formal competence",
+    "Syntactic generalization",
+    "Syntactic competence",
+    "Grammatical knowledge",
+    "Grammatical competence",
+    "Grammatical awareness",
+    "Grammatical abstraction",
+    "Grammatical accuracy",
+    "Syntactic knowledge"
+  ],
+  "papers": [
+    "Can LLMs Simulate L2-English Dialogue? An Information-Theoretic Analysis of L1-Dependent Biases",
+    "CxGGEC: Construction-Guided Grammatical Error Correction",
+    "GrammaMT: Improving Machine Translation with Grammar-Informed In-Context Learning",
+    "Targeted Syntactic Evaluation for Grammatical Error Correction",
+    "BIRD: Bronze Inscription Restoration and Dating",
+    "BabyLM's First Constructions: Causal interventions provide a signal of learning",
+    "Child-Directed Language Does Not Consistently Boost Syntax Learning in Language Models",
+    "Explainability and Interpretability of Multilingual Large Language Models: A Survey",
+    "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations",
+    "LinguaLens: Towards Interpreting Linguistic Mechanisms of Large Language Models via Sparse Auto-Encoder",
+    "Mechanisms vs. Outcomes: Probing for Syntax Fails to Explain Performance on Targeted Syntactic Evaluations",
+    "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments",
+    "STARE at the Structure: Steering ICL Exemplar Selection with Structural Alignment",
+    "TurBLiMP: A Turkish Benchmark of Linguistic Minimal Pairs",
+    "Unpacking Let Alone: Human-Scale Models Generalize to a Rare Construction in Form but not Meaning",
+    "Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?",
+    "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs",
+    "How to Make the Most of LLMs' Grammatical Knowledge for Acceptability Judgments",
+    "Pipeline Analysis for Developing Instruct LLMs in Low-Resource Languages: A Case Study on Basque",
+    "Soft Syntactic Reinforcement for Neural Event Extraction",
+    "DevBench: A multimodal developmental benchmark for language learning"
+  ],
+  "paper_count": 21,
+  "definitions": [
+    {
+      "text": "The degree to which a model's internal representations encode and utilize grammatical structure such as part-of-speech, dependency relations, and phrase types to inform processing decisions.",
+      "papers": [
+        "STARE at the Structure: Steering ICL Exemplar Selection with Structural Alignment"
+      ],
+      "original_name": "Syntactic awareness"
+    },
+    {
+      "text": "The latent ability to represent and process grammatical structures such as agreement, word order, and sentence hierarchy across languages.",
+      "papers": [
+        "Explainability and Interpretability of Multilingual Large Language Models: A Survey"
+      ],
+      "original_name": "Syntactic understanding"
+    },
+    {
+      "text": "The latent capacity of a language model to acquire and apply grammatical rules, particularly in distinguishing grammatical from ungrammatical sentence structures.",
+      "papers": [
+        "Child-Directed Language Does Not Consistently Boost Syntax Learning in Language Models"
+      ],
+      "original_name": "Syntactic ability"
+    },
+    {
+      "text": "A model's ability to correctly identify and apply the syntactic and structural rules of a linguistic construction, independent of its meaning.",
+      "papers": [
+        "Unpacking Let Alone: Human-Scale Models Generalize to a Rare Construction in Form but not Meaning"
+      ],
+      "original_name": "Formal competence"
+    },
+    {
+      "text": "The latent ability of a language model to correctly process and judge grammatical structures in accordance with native speaker intuitions.",
+      "papers": [
+        "TurBLiMP: A Turkish Benchmark of Linguistic Minimal Pairs"
+      ],
+      "original_name": "Syntactic competence"
+    },
+    {
+      "text": "The model's internalized representation of a language's formal rules of grammar.",
+      "papers": [
+        "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments"
+      ],
+      "original_name": "Grammatical knowledge"
+    },
+    {
+      "text": "The latent capacity to encode and distinguish acceptable versus unacceptable grammatical contrasts across syntax, syntax-semantics interface, and morphology.",
+      "papers": [
+        "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations"
+      ],
+      "original_name": "Grammatical competence"
+    },
+    {
+      "text": "The inferred ability of a model to produce outputs that conform to the syntactic rules and categories of a language, even when making semantic errors.",
+      "papers": [
+        "BIRD: Bronze Inscription Restoration and Dating"
+      ],
+      "original_name": "Grammatical awareness"
+    },
+    {
+      "text": "The capacity to generalize beyond specific word forms to abstract syntactic and semantic categories, such as recognizing that a construction requires a comparative adjective rather than a particular word.",
+      "papers": [
+        "BabyLM's First Constructions: Causal interventions provide a signal of learning"
+      ],
+      "original_name": "Grammatical abstraction"
+    },
+    {
+      "text": "The latent ability to produce syntactically correct constructions in L2 English, particularly in agreement phenomena such as number, tense, and subject-verb consistency, despite L1 interference.",
+      "papers": [
+        "Can LLMs Simulate L2-English Dialogue? An Information-Theoretic Analysis of L1-Dependent Biases"
+      ],
+      "original_name": "Grammatical accuracy"
+    },
+    {
+      "text": "The latent representation of grammatical structure and sentence-level form, including constructions like passive voice, relative clauses, and coordination.",
+      "papers": [
+        "LinguaLens: Towards Interpreting Linguistic Mechanisms of Large Language Models via Sparse Auto-Encoder"
+      ],
+      "original_name": "Syntactic knowledge"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BLiMP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+      "evidence": "We use the BLiMP (Warstadt et al., 2020) and SyntaxGym (SG, Gauthier et al., 2020) test suites to evaluate LMs for syntactic generalization.",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Sneaking Syntax into Transformer Language Models with Tree Regularization"
+        ],
+        "emnlp25": [
+          "Child-Directed Language Does Not Consistently Boost Syntax Learning in Language Models",
+          "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations",
+          "Mechanisms vs. Outcomes: Probing for Syntax Fails to Explain Performance on Targeted Syntactic Evaluations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Grammatical acceptability judgment",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?",
+      "evidence": "However, LLMs can exploit grammatical information, given an appropriate task\u2014e.g. grammaticality judgment or IGT prediction\u2014and more useful grammatical data in the form of our typological prompt, which achieves leading results on these linguistic tasks. (Section 6)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?"
+        ],
+        "emnlp25": [
+          "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Event extraction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Soft Syntactic Reinforcement for Neural Event Extraction",
+      "evidence": "Among EE literature, syntax information has been found beneficial for the task (Nguyen et al., 2016; Yan et al., 2019; Liu et al., 2019a; Lai et al., 2020). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Soft Syntactic Reinforcement for Neural Event Extraction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SyntaxGym",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+      "evidence": "We use the BLiMP (Warstadt et al., 2020) and SyntaxGym (SG, Gauthier et al., 2020) test suites to evaluate LMs for syntactic generalization.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Sneaking Syntax into Transformer Language Models with Tree Regularization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unpacking Let Alone: Human-Scale Models Generalize to a Rare Construction in Form but not Meaning",
+      "evidence": "Our experiments show strong evidence for a form\u2013meaning asymmetry: Human-scale models learn LET-ALONE\u2019s formal constraints almost perfectly (\u00a74), but fail to learn any semantic constraints (\u00a75).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Unpacking Let Alone: Human-Scale Models Generalize to a Rare Construction in Form but not Meaning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats syntactic competence as a latent ability, capacity, or knowledge through which a model represents and applies grammatical structure and rules. Most definitions center on processing or judging grammaticality, including agreement, word order, sentence hierarchy, and acceptable versus unacceptable contrasts, sometimes with reference to native-speaker intuitions; a smaller line instead defines it through internal representations that encode part-of-speech, dependency, or phrase-type information. Other minority framings narrow it to formal competence independent of meaning, to abstraction over schematic category constraints rather than specific word forms, or to producing syntactically correct outputs, including L2 English agreement phenomena and cases where semantic errors remain."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several labels for closely related framings, including syntactic awareness, syntactic understanding, syntactic ability, grammatical knowledge, grammatical competence, formal competence, grammatical awareness, and syntactic knowledge. The construct is broken into facets such as part-of-speech tags, dependency labels, phrase types, agreement, word order, sentence hierarchy, and specific constructions like passive voice, relative clauses, coordination, and subordination. Some definitions widen the scope to morphology and the syntax-semantics interface, while one paper explicitly contrasts formal constraints with semantic constraints, marking a form versus meaning distinction."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link syntactic competence to 2 measurement instruments and 2 behavioral indicators. Operationalization is mostly benchmark-based: BLiMP, the most common instrument, is described as a minimal-pair and targeted evaluation resource for syntactic generalization, probing syntax, the syntax-semantics interface, and morphology; SyntaxGym is another test suite for the same purpose. The linked behavioral indicators are grammatical acceptability judgment and event extraction; quoted passages also mention acceptability tasks, robustness checks for word order and subordination, probing grammatical knowledge or hidden representations, and one block-placement evaluation of syntactic reasoning. These operationalizations mostly align with definitions focused on grammatical contrasts and judgments, though some definitions instead target internal representations or syntactically well-formed output."
+    },
+    {
+      "label": "Links.",
+      "text": "Outside measurement, one paper claims a causal relationship from syntactic competence to event extraction, stating that syntax information has been found beneficial for the task. Papers also relate syntactic competence to grammatical acceptability judgment, describing grammaticality judgment and acceptability tasks as settings where models exploit grammatical information and where researchers assess robustness against grammatical errors or probe grammatical knowledge. A separate paper relates it to semantic understanding through a form-meaning asymmetry, where models learn formal constraints almost perfectly but fail semantic constraints. No correlational link is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats syntactic competence as a latent ability, capacity, or knowledge through which a model represents and applies grammatical structure and rules. Most definitions center on processing or judging grammaticality, including agreement, word order, sentence hierarchy, and acceptable versus unacceptable contrasts, sometimes with reference to native-speaker intuitions; a smaller line instead defines it through internal representations that encode part-of-speech, dependency, or phrase-type information. Other minority framings narrow it to formal competence independent of meaning, to abstraction over schematic category constraints rather than specific word forms, or to producing syntactically correct outputs, including L2 English agreement phenomena and cases where semantic errors remain.\n\nSpace of facets. Papers use several labels for closely related framings, including syntactic awareness, syntactic understanding, syntactic ability, grammatical knowledge, grammatical competence, formal competence, grammatical awareness, and syntactic knowledge. The construct is broken into facets such as part-of-speech tags, dependency labels, phrase types, agreement, word order, sentence hierarchy, and specific constructions like passive voice, relative clauses, coordination, and subordination. Some definitions widen the scope to morphology and the syntax-semantics interface, while one paper explicitly contrasts formal constraints with semantic constraints, marking a form versus meaning distinction.\n\nSpace of measurement. Papers link syntactic competence to 2 measurement instruments and 2 behavioral indicators. Operationalization is mostly benchmark-based: BLiMP, the most common instrument, is described as a minimal-pair and targeted evaluation resource for syntactic generalization, probing syntax, the syntax-semantics interface, and morphology; SyntaxGym is another test suite for the same purpose. The linked behavioral indicators are grammatical acceptability judgment and event extraction; quoted passages also mention acceptability tasks, robustness checks for word order and subordination, probing grammatical knowledge or hidden representations, and one block-placement evaluation of syntactic reasoning. These operationalizations mostly align with definitions focused on grammatical contrasts and judgments, though some definitions instead target internal representations or syntactically well-formed output.\n\nLinks. Outside measurement, one paper claims a causal relationship from syntactic competence to event extraction, stating that syntax information has been found beneficial for the task. Papers also relate syntactic competence to grammatical acceptability judgment, describing grammaticality judgment and acceptability tasks as settings where models exploit grammatical information and where researchers assess robustness against grammatical errors or probe grammatical knowledge. A separate paper relates it to semantic understanding through a form-meaning asymmetry, where models learn formal constraints almost perfectly but fail semantic constraints. No correlational link is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Can LLMs Simulate L2-English Dialogue? An Information-Theoretic Analysis of L1-Dependent Biases",
+      "CxGGEC: Construction-Guided Grammatical Error Correction",
+      "GrammaMT: Improving Machine Translation with Grammar-Informed In-Context Learning",
+      "Targeted Syntactic Evaluation for Grammatical Error Correction"
+    ],
+    "emnlp25": [
+      "BIRD: Bronze Inscription Restoration and Dating",
+      "BabyLM's First Constructions: Causal interventions provide a signal of learning",
+      "Child-Directed Language Does Not Consistently Boost Syntax Learning in Language Models",
+      "Explainability and Interpretability of Multilingual Large Language Models: A Survey",
+      "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations",
+      "LinguaLens: Towards Interpreting Linguistic Mechanisms of Large Language Models via Sparse Auto-Encoder",
+      "Mechanisms vs. Outcomes: Probing for Syntax Fails to Explain Performance on Targeted Syntactic Evaluations",
+      "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments",
+      "STARE at the Structure: Steering ICL Exemplar Selection with Structural Alignment",
+      "TurBLiMP: A Turkish Benchmark of Linguistic Minimal Pairs",
+      "Unpacking Let Alone: Human-Scale Models Generalize to a Rare Construction in Form but not Meaning"
+    ],
+    "iclr25": [
+      "Can LLMs Really Learn to Translate a Low-Resource Language from One Grammar Book?",
+      "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs"
+    ],
+    "naacl25": [
+      "How to Make the Most of LLMs' Grammatical Knowledge for Acceptability Judgments",
+      "Pipeline Analysis for Developing Instruct LLMs in Low-Resource Languages: A Case Study on Basque",
+      "Soft Syntactic Reinforcement for Neural Event Extraction"
+    ],
+    "neurips24": [
+      "DevBench: A multimodal developmental benchmark for language learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 11,
+    "iclr25": 2,
+    "naacl25": 3,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

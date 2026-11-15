@@ -1,0 +1,67 @@
+{
+  "canonical_name": "TQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, TQA is most commonly described as Textbook Question Answering. One description presents it as a reading-comprehension benchmark used in generative format, and another as a dataset consisting of scientific textbooks for evaluating knowledge-based reasoning. A smaller line of work uses the same label for TriviaQA, described as a challenging reading-comprehension dataset of question-answer pairs authored by trivia enthusiasts and used for closed-book QA.\n\nWhat it is claimed to measure. Papers do not link TQA to any recorded construct or behavioral indicator through formal relationships. In authors' own descriptions, it is instead used to assess reading comprehension, and one paper also frames it as evaluating knowledge-based reasoning; a smaller line of work uses the label for closed-book QA.\n\nSpace of uses. One paper places TQA alongside HumanEval, GSM8k, and NQ in a four-task suite spanning code, math, question answering, and reading comprehension, and reports F1 scores for TQA together with GSM8k and NQ. Elsewhere, one paper treats TQA as a closed-book QA dataset, while another uses the scientific-textbook version of TQA for fine-tuning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "TQA"
+  ],
+  "papers": [
+    "Mixture of LoRA Experts",
+    "Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs",
+    "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+    "Scalable Bayesian Learning with posteriors"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Textbook Question Answering (TQA), a reading-comprehension benchmark used here in generative format to assess reading comprehension.",
+      "papers": [
+        "Mixture of LoRA Experts",
+        "Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs",
+        "Scalable Bayesian Learning with posteriors"
+      ],
+      "original_name": "TQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, TQA is most commonly described as Textbook Question Answering. One description presents it as a reading-comprehension benchmark used in generative format, and another as a dataset consisting of scientific textbooks for evaluating knowledge-based reasoning. A smaller line of work uses the same label for TriviaQA, described as a challenging reading-comprehension dataset of question-answer pairs authored by trivia enthusiasts and used for closed-book QA."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers do not link TQA to any recorded construct or behavioral indicator through formal relationships. In authors' own descriptions, it is instead used to assess reading comprehension, and one paper also frames it as evaluating knowledge-based reasoning; a smaller line of work uses the label for closed-book QA."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "One paper places TQA alongside HumanEval, GSM8k, and NQ in a four-task suite spanning code, math, question answering, and reading comprehension, and reports F1 scores for TQA together with GSM8k and NQ. Elsewhere, one paper treats TQA as a closed-book QA dataset, while another uses the scientific-textbook version of TQA for fine-tuning."
+    }
+  ],
+  "characterization": "What it is. Across papers, TQA is most commonly described as Textbook Question Answering. One description presents it as a reading-comprehension benchmark used in generative format, and another as a dataset consisting of scientific textbooks for evaluating knowledge-based reasoning. A smaller line of work uses the same label for TriviaQA, described as a challenging reading-comprehension dataset of question-answer pairs authored by trivia enthusiasts and used for closed-book QA.\n\nWhat it is claimed to measure. Papers do not link TQA to any recorded construct or behavioral indicator through formal relationships. In authors' own descriptions, it is instead used to assess reading comprehension, and one paper also frames it as evaluating knowledge-based reasoning; a smaller line of work uses the label for closed-book QA.\n\nSpace of uses. One paper places TQA alongside HumanEval, GSM8k, and NQ in a four-task suite spanning code, math, question answering, and reading comprehension, and reports F1 scores for TQA together with GSM8k and NQ. Elsewhere, one paper treats TQA as a closed-book QA dataset, while another uses the scientific-textbook version of TQA for fine-tuning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Mixture of LoRA Experts",
+      "Model Tells You What to Discard: Adaptive KV Cache Compression for LLMs"
+    ],
+    "iclr25": [
+      "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+      "Scalable Bayesian Learning with posteriors"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25"
+  ]
+}

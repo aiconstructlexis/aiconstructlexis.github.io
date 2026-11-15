@@ -1,0 +1,88 @@
+{
+  "canonical_name": "Interleaved understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the cited papers, the prevailing usage treats interleaved understanding as a latent ability or capacity for understanding, processing, and often reasoning over inputs that mix images and text in an interleaved sequence. Most formulations emphasize alternating or intertwined visual and textual elements within a single input, including the ability to \"process interleaved image-text inputs effectively\" and to integrate them into a coherent interpretation. A narrower formulation focuses on long-form content with multiple images and text, adding the need to identify relevant information while ignoring distractors. The main variation is therefore scope: general multimodal sequence comprehension versus long-form interleaved image-text comprehension with distractor filtering.\n\nSpace of facets. The terminology varies across papers, with near-overlapping labels such as interleaved understanding, interleaved multimodal comprehension, and interleaved image-text comprehension. Across these labels, recurring facets are comprehension, reasoning, and integration of alternating image-text sequences into a coherent interpretation. Some formulations also pair the construct with generation through phrases such as \"interleaved multimodal comprehension and generation\", while others keep it centered on comprehension.\n\nSpace of measurement. No measurement instrument is linked to this construct, and no behavioral indicator is linked to it. Papers nonetheless describe benchmark-style operationalizations: one study mentions benchmarks introduced to evaluate interleaved visual understanding capability and reports performance on FIND-Bench, another describes MMIE as designed to assess understanding and generating interleaved text and images in any sequence, and another presents IITC as a demanding task in which models must disregard superfluous elements, answer questions, and follow instructions to identify the relevant image. These operationalizations largely mirror the definitions' focus on interleaved image-text comprehension, with the IITC description making distractor handling especially explicit.\n\nLinks. No papers report causal, correlational, or related links involving this construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Interleaved understanding",
+    "Interleaved multimodal comprehension",
+    "Interleaved image-text comprehension"
+  ],
+  "papers": [
+    "Bootstrapping Language-Guided Navigation Learning with Self-Refining Data Flywheel",
+    "Learning Interleaved Image-Text Comprehension in Vision-Language Large Models",
+    "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models",
+    "Interfacing Foundation Models' Embeddings",
+    "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The specific latent ability to comprehend and reason over inputs that contain an alternating sequence of visual and textual elements.",
+      "papers": [
+        "Interfacing Foundation Models' Embeddings"
+      ],
+      "original_name": "Interleaved understanding"
+    },
+    {
+      "text": "The latent capacity to process and understand multiple, interleaved, and multimodal contexts within a single input sequence.",
+      "papers": [
+        "Unified Generative and Discriminative Training for Multi-modal Large Language Models",
+        "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models"
+      ],
+      "original_name": "Interleaved multimodal comprehension"
+    },
+    {
+      "text": "The ability of a model to understand and reason over long-form content where text and multiple images are intertwined, requiring it to identify relevant information while ignoring distractors.",
+      "papers": [
+        "Learning Interleaved Image-Text Comprehension in Vision-Language Large Models"
+      ],
+      "original_name": "Interleaved image-text comprehension"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the cited papers, the prevailing usage treats interleaved understanding as a latent ability or capacity for understanding, processing, and often reasoning over inputs that mix images and text in an interleaved sequence. Most formulations emphasize alternating or intertwined visual and textual elements within a single input, including the ability to \"process interleaved image-text inputs effectively\" and to integrate them into a coherent interpretation. A narrower formulation focuses on long-form content with multiple images and text, adding the need to identify relevant information while ignoring distractors. The main variation is therefore scope: general multimodal sequence comprehension versus long-form interleaved image-text comprehension with distractor filtering."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The terminology varies across papers, with near-overlapping labels such as interleaved understanding, interleaved multimodal comprehension, and interleaved image-text comprehension. Across these labels, recurring facets are comprehension, reasoning, and integration of alternating image-text sequences into a coherent interpretation. Some formulations also pair the construct with generation through phrases such as \"interleaved multimodal comprehension and generation\", while others keep it centered on comprehension."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to this construct, and no behavioral indicator is linked to it. Papers nonetheless describe benchmark-style operationalizations: one study mentions benchmarks introduced to evaluate interleaved visual understanding capability and reports performance on FIND-Bench, another describes MMIE as designed to assess understanding and generating interleaved text and images in any sequence, and another presents IITC as a demanding task in which models must disregard superfluous elements, answer questions, and follow instructions to identify the relevant image. These operationalizations largely mirror the definitions' focus on interleaved image-text comprehension, with the IITC description making distractor handling especially explicit."
+    },
+    {
+      "label": "Links.",
+      "text": "No papers report causal, correlational, or related links involving this construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the cited papers, the prevailing usage treats interleaved understanding as a latent ability or capacity for understanding, processing, and often reasoning over inputs that mix images and text in an interleaved sequence. Most formulations emphasize alternating or intertwined visual and textual elements within a single input, including the ability to \"process interleaved image-text inputs effectively\" and to integrate them into a coherent interpretation. A narrower formulation focuses on long-form content with multiple images and text, adding the need to identify relevant information while ignoring distractors. The main variation is therefore scope: general multimodal sequence comprehension versus long-form interleaved image-text comprehension with distractor filtering.\n\nSpace of facets. The terminology varies across papers, with near-overlapping labels such as interleaved understanding, interleaved multimodal comprehension, and interleaved image-text comprehension. Across these labels, recurring facets are comprehension, reasoning, and integration of alternating image-text sequences into a coherent interpretation. Some formulations also pair the construct with generation through phrases such as \"interleaved multimodal comprehension and generation\", while others keep it centered on comprehension.\n\nSpace of measurement. No measurement instrument is linked to this construct, and no behavioral indicator is linked to it. Papers nonetheless describe benchmark-style operationalizations: one study mentions benchmarks introduced to evaluate interleaved visual understanding capability and reports performance on FIND-Bench, another describes MMIE as designed to assess understanding and generating interleaved text and images in any sequence, and another presents IITC as a demanding task in which models must disregard superfluous elements, answer questions, and follow instructions to identify the relevant image. These operationalizations largely mirror the definitions' focus on interleaved image-text comprehension, with the IITC description making distractor handling especially explicit.\n\nLinks. No papers report causal, correlational, or related links involving this construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Bootstrapping Language-Guided Navigation Learning with Self-Refining Data Flywheel",
+      "Learning Interleaved Image-Text Comprehension in Vision-Language Large Models",
+      "MMIE: Massive Multimodal Interleaved Comprehension Benchmark for Large Vision-Language Models"
+    ],
+    "neurips24": [
+      "Interfacing Foundation Models' Embeddings",
+      "Unified Generative and Discriminative Training for Multi-modal Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

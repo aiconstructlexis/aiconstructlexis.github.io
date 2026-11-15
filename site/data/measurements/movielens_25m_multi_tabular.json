@@ -1,0 +1,42 @@
+{
+  "canonical_name": "MovieLens-25M multi-tabular",
+  "type": "measurement",
+  "canonical_definition": "A multi-tabular dataset adapted from the MovieLens-25M dataset, used to evaluate graph construction methods on a relation attribute prediction task.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Movielens"
+  ],
+  "papers": [
+    "AutoG: Towards automatic graph construction from tabular data"
+  ],
+  "paper_count": 1,
+  "definitions": [
+    {
+      "text": "A multi-tabular dataset adapted from the MovieLens-25M dataset, used to evaluate graph construction methods on a relation attribute prediction task.",
+      "papers": [
+        "AutoG: Towards automatic graph construction from tabular data"
+      ],
+      "original_name": "Movielens"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "A multi-tabular dataset adapted from the MovieLens-25M dataset, used to evaluate graph construction methods on a relation attribute prediction task.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "AutoG: Towards automatic graph construction from tabular data"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

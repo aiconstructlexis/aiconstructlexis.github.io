@@ -1,0 +1,101 @@
+{
+  "canonical_name": "Zero-shot inference",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, zero-shot inference is described in two task formulations. One describes producing segmentation predictions on an unseen dataset with a supplied vocabulary and no dataset-specific retraining, with the model \"trained on Ctrain and directly tested on Ctest\"; another describes producing predictions from a human-designed instruction without labeled demonstrations, and characterizes the setup as \"zero-shot, inference-only\". The papers therefore differ mainly in whether the setting is unseen-dataset segmentation or instruction-conditioned prompting.\n\nVariants. Papers study zero-shot inference in at least two settings, open vocabulary semantic segmentation on unseen datasets with customisable vocabulary, and instruction-conditioned prompting. A named related variant is Zero-shot with Chain-of-Thought (CoT), which is described as incorporating reasoning prompts to generate intermediate reasoning steps before the final answer.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the papers, the behavior is elicited either by conditioning on a human-designed instruction without labeled demonstrations, or by directly testing a model on an unseen dataset with a supplied vocabulary and no dataset-specific retraining.\n\nWhat it is taken as evidence of. Papers do not explicitly present zero-shot inference as evidence of a construct through a measurement claim. Only one construct is linked to it, In-context learning, and that link is described as related: one paper reports that an unsupervised ICL method improves upon zero-shot inference by using a few self-generated examples as context labeled by the model itself. The recorded links therefore connect it to a construct by relatedness rather than by an agreed indicator relationship.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Zero-shot inference"
+  ],
+  "papers": [
+    "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+    "Large (Vision) Language Models are Unsupervised In-Context Learners",
+    "Mixture of In-Context Prompters for Tabular PFNs",
+    "Revisit the Open Nature of Open Vocabulary Semantic Segmentation"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Producing segmentation predictions on an unseen dataset using a supplied vocabulary without dataset-specific retraining.",
+      "papers": [
+        "Revisit the Open Nature of Open Vocabulary Semantic Segmentation",
+        "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering"
+      ],
+      "original_name": "Zero-shot inference"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "evidence": "our unsupervised ICL method improves upon the zero-shot inference by using a few self-generated examples as a context that are labeled by the model itself, thus without requiring any labeled examples. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Large (Vision) Language Models are Unsupervised In-Context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain of thought",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "evidence": "\u201cZero-shot with Chain-of-Thought (CoT) incorporates CoT reasoning prompts to generate intermediate reasoning steps before the final answer\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Large (Vision) Language Models are Unsupervised In-Context Learners"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, zero-shot inference is described in two task formulations. One describes producing segmentation predictions on an unseen dataset with a supplied vocabulary and no dataset-specific retraining, with the model \"trained on Ctrain and directly tested on Ctest\"; another describes producing predictions from a human-designed instruction without labeled demonstrations, and characterizes the setup as \"zero-shot, inference-only\". The papers therefore differ mainly in whether the setting is unseen-dataset segmentation or instruction-conditioned prompting."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study zero-shot inference in at least two settings, open vocabulary semantic segmentation on unseen datasets with customisable vocabulary, and instruction-conditioned prompting. A named related variant is Zero-shot with Chain-of-Thought (CoT), which is described as incorporating reasoning prompts to generate intermediate reasoning steps before the final answer."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. In the papers, the behavior is elicited either by conditioning on a human-designed instruction without labeled demonstrations, or by directly testing a model on an unseen dataset with a supplied vocabulary and no dataset-specific retraining."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not explicitly present zero-shot inference as evidence of a construct through a measurement claim. Only one construct is linked to it, In-context learning, and that link is described as related: one paper reports that an unsupervised ICL method improves upon zero-shot inference by using a few self-generated examples as context labeled by the model itself. The recorded links therefore connect it to a construct by relatedness rather than by an agreed indicator relationship."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, zero-shot inference is described in two task formulations. One describes producing segmentation predictions on an unseen dataset with a supplied vocabulary and no dataset-specific retraining, with the model \"trained on Ctrain and directly tested on Ctest\"; another describes producing predictions from a human-designed instruction without labeled demonstrations, and characterizes the setup as \"zero-shot, inference-only\". The papers therefore differ mainly in whether the setting is unseen-dataset segmentation or instruction-conditioned prompting.\n\nVariants. Papers study zero-shot inference in at least two settings, open vocabulary semantic segmentation on unseen datasets with customisable vocabulary, and instruction-conditioned prompting. A named related variant is Zero-shot with Chain-of-Thought (CoT), which is described as incorporating reasoning prompts to generate intermediate reasoning steps before the final answer.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the papers, the behavior is elicited either by conditioning on a human-designed instruction without labeled demonstrations, or by directly testing a model on an unseen dataset with a supplied vocabulary and no dataset-specific retraining.\n\nWhat it is taken as evidence of. Papers do not explicitly present zero-shot inference as evidence of a construct through a measurement claim. Only one construct is linked to it, In-context learning, and that link is described as related: one paper reports that an unsupervised ICL method improves upon zero-shot inference by using a few self-generated examples as context labeled by the model itself. The recorded links therefore connect it to a construct by relatedness rather than by an agreed indicator relationship.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Large (Vision) Language Models are Unsupervised In-Context Learners",
+      "Mixture of In-Context Prompters for Tabular PFNs",
+      "Revisit the Open Nature of Open Vocabulary Semantic Segmentation"
+    ],
+    "iclr24": [
+      "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "iclr24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25"
+  ]
+}

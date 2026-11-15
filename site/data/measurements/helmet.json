@@ -1,0 +1,268 @@
+{
+  "canonical_name": "HELMET",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing usage is as a long-context benchmark for extended text processing tasks. Definitions describe it as application-centric and comprehensive, with a common description noting that it includes portions from RULER and \u221eBench; papers also describe it as covering seven categories of tasks, though one evaluation setup names five task types, synthetic recall, retrieval-augmented generation, many-shot in-context learning, passage re-ranking, and long-document QA, totaling 17 sub-tasks.\n\nWhat it is claimed to measure. Papers link HELMET to 4 constructs and 4 behavioral indicators. The most recurrent measurement claims use it for in-context prediction and synthetic recall, and papers also report it as measuring document question answering and ranking; at the construct level, papers use it to measure length generalization, long-context understanding, long-range dependency modeling, and memory.\n\nSpace of uses. Papers most often use HELMET alongside RULER: one study presents it as a main benchmark and notes that it includes portions from RULER, while another evaluates models on HELMET and RULER together. A smaller line of work relates HELMET to HotpotQA, Natural Questions, and TriviaQA, with one paper describing those factoid QA tasks as curated by HELMET for long-context benchmarking with 128k input tokens.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HELMET"
+  ],
+  "papers": [
+    "A Silver Bullet or a Compromise for Full Attention? A Comprehensive Study of Gist Token-based Context Compression",
+    "Self-Taught Agentic Long Context Understanding",
+    "Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-k",
+    "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+    "NExtLong: Toward Effective Long-Context Training without Long Documents",
+    "NoLiMa: Long-Context Evaluation Beyond Literal Matching"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A long-context benchmark that includes portions from RULER and \u221eBench, used to assess model performance on extended text processing tasks.",
+      "papers": [
+        "A Silver Bullet or a Compromise for Full Attention? A Comprehensive Study of Gist Token-based Context Compression",
+        "NExtLong: Toward Effective Long-Context Training without Long Documents",
+        "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+      ],
+      "original_name": "HELMET"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "evidence": "we present HELMET (How to Evaluate Long-context Models Effectively and Thoroughly). We curate a diverse set of application-centric long-context tasks across seven categories. Beyond widely adopted categories like ... we also add many-shot in-context learning (ICL)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly"
+        ],
+        "icml25": [
+          "NExtLong: Toward Effective Long-Context Training without Long Documents"
+        ],
+        "emnlp25": [
+          "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Synthetic recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "evidence": "we present HELMET (How to Evaluate Long-context Models Effectively and Thoroughly). We curate a diverse set of application-centric long-context tasks across seven categories. Beyond widely adopted categories like synthetic recall...",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly"
+        ],
+        "icml25": [
+          "NExtLong: Toward Effective Long-Context Training without Long Documents"
+        ],
+        "emnlp25": [
+          "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-Taught Agentic Long Context Understanding",
+      "evidence": "In this section, we assess our method AgenticLU using a suite of evaluation tasks drawn from the HELMET long-context benchmark (Yen et al., 2024). (Section 6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Self-Taught Agentic Long Context Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-range dependency modeling",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "NExtLong: Toward Effective Long-Context Training without Long Documents",
+      "evidence": "Extensive experiments on the HELMET(Yen et al., 2024b) and RULER(Hsieh et al., 2024) benchmarks demonstrate that NExtLong significantly improves the model\u2019s ability to capture and utilize long-range dependencies. (Section 1. Introduction)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "NExtLong: Toward Effective Long-Context Training without Long Documents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Ranking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "NExtLong: Toward Effective Long-Context Training without Long Documents",
+      "evidence": "The evaluation spans five task types from the HELMET benchmark: synthetic recall, retrieval-augmented generation (RAG), many-shot in-context learning (ICL), passage re-ranking, and long-document QA, covering a total of 17 sub-tasks. (Section 4.1. Evaluation)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "NExtLong: Toward Effective Long-Context Training without Long Documents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Document question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "NExtLong: Toward Effective Long-Context Training without Long Documents",
+      "evidence": "The evaluation spans five task types from the HELMET benchmark: synthetic recall, retrieval-augmented generation (RAG), many-shot in-context learning (ICL), passage re-ranking, and long-document QA, covering a total of 17 sub-tasks. (Section 4.1. Evaluation)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "NExtLong: Toward Effective Long-Context Training without Long Documents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memory",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+      "evidence": "To assess long-context memory and extrapolation ability, two benchmarks are adopted: ... an application-centric benchmark HELMET (Yen et al., 2024). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation",
+      "evidence": "To assess long-context memory and extrapolation ability, two benchmarks are adopted: ... an application-centric benchmark HELMET (Yen et al., 2024). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HotpotQA",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-k",
+      "evidence": "For testing on factoid QA tasks, we use HotpotQA (Yang et al., 2018), Natural Questions (NQ) (Kwiatkowski et al., 2019), and TriviaQA (Joshi et al., 2017), as curated by HELMET (Yen et al., 2025) for long-context benchmarking with 128k input tokens. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-k"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural Questions",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-k",
+      "evidence": "For testing on factoid QA tasks, we use HotpotQA (Yang et al., 2018), Natural Questions (NQ) (Kwiatkowski et al., 2019), and TriviaQA (Joshi et al., 2017), as curated by HELMET (Yen et al., 2025) for long-context benchmarking with 128k input tokens. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-k"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-k",
+      "evidence": "For testing on factoid QA tasks, we use HotpotQA (Yang et al., 2018), Natural Questions (NQ) (Kwiatkowski et al., 2019), and TriviaQA (Joshi et al., 2017), as curated by HELMET (Yen et al., 2025) for long-context benchmarking with 128k input tokens. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-k"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RULER",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly",
+      "evidence": "\u201cFor this category, we select multiple synthetic recall tasks from RULER (an extended version of NIAH; Hsieh et al., 2024) and also add a JSON KV retrieval task (Liu et al., 2023), which we find more challenging.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "HELMET: How to Evaluate Long-context Models Effectively and Thoroughly"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 12,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing usage is as a long-context benchmark for extended text processing tasks. Definitions describe it as application-centric and comprehensive, with a common description noting that it includes portions from RULER and \u221eBench; papers also describe it as covering seven categories of tasks, though one evaluation setup names five task types, synthetic recall, retrieval-augmented generation, many-shot in-context learning, passage re-ranking, and long-document QA, totaling 17 sub-tasks."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link HELMET to 4 constructs and 4 behavioral indicators. The most recurrent measurement claims use it for in-context prediction and synthetic recall, and papers also report it as measuring document question answering and ranking; at the construct level, papers use it to measure length generalization, long-context understanding, long-range dependency modeling, and memory."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers most often use HELMET alongside RULER: one study presents it as a main benchmark and notes that it includes portions from RULER, while another evaluates models on HELMET and RULER together. A smaller line of work relates HELMET to HotpotQA, Natural Questions, and TriviaQA, with one paper describing those factoid QA tasks as curated by HELMET for long-context benchmarking with 128k input tokens."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing usage is as a long-context benchmark for extended text processing tasks. Definitions describe it as application-centric and comprehensive, with a common description noting that it includes portions from RULER and \u221eBench; papers also describe it as covering seven categories of tasks, though one evaluation setup names five task types, synthetic recall, retrieval-augmented generation, many-shot in-context learning, passage re-ranking, and long-document QA, totaling 17 sub-tasks.\n\nWhat it is claimed to measure. Papers link HELMET to 4 constructs and 4 behavioral indicators. The most recurrent measurement claims use it for in-context prediction and synthetic recall, and papers also report it as measuring document question answering and ranking; at the construct level, papers use it to measure length generalization, long-context understanding, long-range dependency modeling, and memory.\n\nSpace of uses. Papers most often use HELMET alongside RULER: one study presents it as a main benchmark and notes that it includes portions from RULER, while another evaluates models on HELMET and RULER together. A smaller line of work relates HELMET to HotpotQA, Natural Questions, and TriviaQA, with one paper describing those factoid QA tasks as curated by HELMET for long-context benchmarking with 128k input tokens.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "A Silver Bullet or a Compromise for Full Attention? A Comprehensive Study of Gist Token-based Context Compression",
+      "Self-Taught Agentic Long Context Understanding"
+    ],
+    "emnlp25": [
+      "Efficient Context Selection for Long-Context QA: No Tuning, No Iteration, Just Adaptive-k",
+      "Recall with Reasoning: Chain-of-Thought Distillation for Mamba's Long-Context Memory and Extrapolation"
+    ],
+    "icml25": [
+      "NExtLong: Toward Effective Long-Context Training without Long Documents",
+      "NoLiMa: Long-Context Evaluation Beyond Literal Matching"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25"
+  ]
+}

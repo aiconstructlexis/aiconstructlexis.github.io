@@ -1,0 +1,393 @@
+{
+  "canonical_name": "SuperGLUE",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, SuperGLUE is most commonly described as a benchmark suite or collection of diverse, challenging language understanding tasks, usually framed as more difficult than GLUE and aimed at reasoning, inference, and comprehension. Definitions differ on its size and composition, with some papers describing 6 tasks, others 7 or 8, and several naming subsets such as MultiRC, BoolQ, WiC, WSC, CB, COPA, RTE, and ReCoRD; some also characterize it through task families such as question answering, textual entailment, coreference resolution, logical reasoning, and classification-style tasks.\n\nWhat it is claimed to measure. Papers use SuperGLUE to measure 2 constructs and 4 behavioral indicators. Most often, they use it to measure Natural language understanding, with a smaller line of work also using it to measure Multi-task ability; one paper says it allows evaluation of \"different aspects of natural language understanding\" (BERTs are Generative In-Context Learners). At the behavioral level, it is reported as measuring Classification, Coreference resolution, Language understanding task performance, and Word sense disambiguation, so the construct-level claims converge most clearly on language understanding while the behavioral links are spread across several task-level indicators.\n\nSpace of uses. Across uses, papers typically employ SuperGLUE for evaluation: they fine-tune on it, report few-shot or in-context results on it, use dev sets from its datasets, or draw subsets from it for studies of energy use, continual learning, and text quality. It is frequently paired with GLUE, sometimes with Super Natural-Instructions, and papers also relate it to 7 task-level instruments, most often BoolQ, CB, COPA, MultiRC, and RTE; one study calls it \"a widely acceptable benchmark for evaluating general-purpose language understanding\" (Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning).",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SuperGLUE"
+  ],
+  "papers": [
+    "Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets",
+    "MEraser: An Effective Fingerprint Erasure Approach for Large Language Models",
+    "SR-LLM: Rethinking the Structured Representation in Large Language Model",
+    "Unveiling the Potential of BERT-family: A New Recipe for Building Scalable, General and Competitive Large Language Models",
+    "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+    "HELENE: Hessian Layer-wise Clipping and Gradient Annealing for Accelerating Fine-tuning LLM with Zeroth-order Optimization",
+    "In Benchmarks We Trust ... Or Not?",
+    "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+    "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+    "MUZO: Leveraging Multiple Queries and Momentum for Zeroth-Order Fine-Tuning of Large Language Models",
+    "MaZO: Masked Zeroth-Order Optimization for Multi-Task Fine-Tuning of Large Language Models",
+    "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+    "MobiZO: Enabling Efficient LLM Fine-Tuning at the Edge via Inference Engines",
+    "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+    "QuZO: Quantized Zeroth-Order Fine-Tuning for Large Language Models",
+    "Reimagining Safety Alignment with An Image",
+    "SinhalaMMLU: A Comprehensive Benchmark for Evaluating Multitask Language Understanding in Sinhala",
+    "The Role of Outgoing Connection Heterogeneity in Feedforward Layers of Large Language Models",
+    "Towards Infinite-Long Prefix in Transformer",
+    "A Good Learner can Teach Better: Teacher-Student Collaborative Knowledge Distillation",
+    "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+    "Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning",
+    "DePT: Decomposed Prompt Tuning for Parameter-Efficient Fine-tuning",
+    "Functional Interpolation for Relative Positions improves Long Context Transformers",
+    "Headless Language Models: Learning without Predicting with Contrastive Weight Tying",
+    "Language Model Cascades: Token-Level Uncertainty And Beyond",
+    "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+    "ADePT: Adaptive Decomposed Prompt Tuning for Parameter-Efficient Fine-tuning",
+    "ELICIT: LLM Augmentation Via External In-context Capability",
+    "Efficient stagewise pretraining via progressive subnetworks",
+    "Enhancing Zeroth-order Fine-tuning for Language Models with Low-rank Structures",
+    "Mini-batch Coresets for Memory-efficient Language Model Training on Data Mixtures",
+    "On the Crucial Role of Initialization for Matrix Factorization",
+    "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+    "Scaling Laws for Downstream Task Performance in Machine Translation",
+    "Towards Scalable Exact Machine Unlearning Using Parameter-Efficient Fine-Tuning",
+    "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+    "LASER: Attention with Exponential Transformation",
+    "MERIT: Maximum-normalized Element-wise Ratio for Language Model Large-batch Training",
+    "Efficient and Effective Prompt Tuning via Prompt Decomposition and Compressed Outer Product",
+    "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model",
+    "Towards Sustainable NLP: Insights from Benchmarking Inference Energy in Large Language Models",
+    "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+    "BERTs are Generative In-Context Learners",
+    "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+    "Learn more, but bother less: parameter efficient continual learning"
+  ],
+  "paper_count": 46,
+  "definitions": [
+    {
+      "text": "A more challenging benchmark suite than GLUE, consisting of complex language understanding tasks that test reasoning and comprehension abilities.",
+      "papers": [
+        "A Good Learner can Teach Better: Teacher-Student Collaborative Knowledge Distillation",
+        "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+        "Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning",
+        "DePT: Decomposed Prompt Tuning for Parameter-Efficient Fine-tuning",
+        "Functional Interpolation for Relative Positions improves Long Context Transformers",
+        "Headless Language Models: Learning without Predicting with Contrastive Weight Tying",
+        "Language Model Cascades: Token-Level Uncertainty And Beyond",
+        "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training",
+        "On the Crucial Role of Initialization for Matrix Factorization",
+        "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model",
+        "Towards Sustainable NLP: Insights from Benchmarking Inference Energy in Large Language Models",
+        "Efficient and Effective Prompt Tuning via Prompt Decomposition and Compressed Outer Product",
+        "SR-LLM: Rethinking the Structured Representation in Large Language Model",
+        "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+        "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+        "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+        "BERTs are Generative In-Context Learners",
+        "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+        "Learn more, but bother less: parameter efficient continual learning"
+      ],
+      "original_name": "SuperGLUE"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "A Good Learner can Teach Better: Teacher-Student Collaborative Knowledge Distillation",
+      "evidence": "We assess the effectiveness of MPDistil using two natural language understanding benchmarks, SuperGLUE (Wang et al., 2019) and GLUE (Wang et al., 2018), encompassing 15 NLU tasks. (Section 1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "A Good Learner can Teach Better: Teacher-Student Collaborative Knowledge Distillation"
+        ],
+        "emnlp25": [
+          "Towards Infinite-Long Prefix in Transformer"
+        ],
+        "neurips24": [
+          "BERTs are Generative In-Context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BoolQ",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+      "evidence": "For question answering tasks, we utilize BoolQ (from SuperGLUE) (Section 4).",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches"
+        ],
+        "emnlp25": [
+          "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+          "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language understanding task performance",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+      "evidence": "The first benchmark, SuperGLUE, is a collection of eight challenging language understanding and reasoning tasks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "GaussMark: A Practical Approach for Structural Watermarking of Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-task ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning",
+      "evidence": "\u201cwe conducted experiments on two publicly available multitasking benchmarks: SuperGLUE (Wang et al., 2019) and Super Natural-Instructions (Super NI) (Wang et al., 2022).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "evidence": "examine BAdam's capability in classification tasks by training RoBERTa-large on SuperGLUE benchmarks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Word sense disambiguation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model",
+      "evidence": "The SuperGLUE benchmark comprises advanced language understanding tasks... word sense disambiguation (WiC; (Pilehvar and Camacho-Collados, 2019))... (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coreference resolution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model",
+      "evidence": "The SuperGLUE benchmark comprises advanced language understanding tasks... coreference resolution (WSC; ())... (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "CB",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+      "evidence": "\u201cwe use six NLU tasks from the SuperGLUE benchmark to evaluate the performance of the language model ... including ... CB\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "COPA",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+      "evidence": "\u201cwe use six NLU tasks from the SuperGLUE benchmark to evaluate the performance of the language model ... including ... COPA\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "MultiRC",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+      "evidence": "\u201cwe use six NLU tasks from the SuperGLUE benchmark to evaluate the performance of the language model ... including ... MRC\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "RTE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+      "evidence": "\u201cwe use six NLU tasks from the SuperGLUE benchmark to evaluate the performance of the language model ... including ... RTE\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WiC",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+      "evidence": "\u201cwe use six NLU tasks from the SuperGLUE benchmark to evaluate the performance of the language model ... including ... WiC\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WSC",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+      "evidence": "\u201cwe use six NLU tasks from the SuperGLUE benchmark to evaluate the performance of the language model ... including ... WSC\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 13,
+  "incoming_relationship_count": 11,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, SuperGLUE is most commonly described as a benchmark suite or collection of diverse, challenging language understanding tasks, usually framed as more difficult than GLUE and aimed at reasoning, inference, and comprehension. Definitions differ on its size and composition, with some papers describing 6 tasks, others 7 or 8, and several naming subsets such as MultiRC, BoolQ, WiC, WSC, CB, COPA, RTE, and ReCoRD; some also characterize it through task families such as question answering, textual entailment, coreference resolution, logical reasoning, and classification-style tasks."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use SuperGLUE to measure 2 constructs and 4 behavioral indicators. Most often, they use it to measure Natural language understanding, with a smaller line of work also using it to measure Multi-task ability; one paper says it allows evaluation of \"different aspects of natural language understanding\" (BERTs are Generative In-Context Learners). At the behavioral level, it is reported as measuring Classification, Coreference resolution, Language understanding task performance, and Word sense disambiguation, so the construct-level claims converge most clearly on language understanding while the behavioral links are spread across several task-level indicators."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Across uses, papers typically employ SuperGLUE for evaluation: they fine-tune on it, report few-shot or in-context results on it, use dev sets from its datasets, or draw subsets from it for studies of energy use, continual learning, and text quality. It is frequently paired with GLUE, sometimes with Super Natural-Instructions, and papers also relate it to 7 task-level instruments, most often BoolQ, CB, COPA, MultiRC, and RTE; one study calls it \"a widely acceptable benchmark for evaluating general-purpose language understanding\" (Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning)."
+    }
+  ],
+  "characterization": "What it is. Across papers, SuperGLUE is most commonly described as a benchmark suite or collection of diverse, challenging language understanding tasks, usually framed as more difficult than GLUE and aimed at reasoning, inference, and comprehension. Definitions differ on its size and composition, with some papers describing 6 tasks, others 7 or 8, and several naming subsets such as MultiRC, BoolQ, WiC, WSC, CB, COPA, RTE, and ReCoRD; some also characterize it through task families such as question answering, textual entailment, coreference resolution, logical reasoning, and classification-style tasks.\n\nWhat it is claimed to measure. Papers use SuperGLUE to measure 2 constructs and 4 behavioral indicators. Most often, they use it to measure Natural language understanding, with a smaller line of work also using it to measure Multi-task ability; one paper says it allows evaluation of \"different aspects of natural language understanding\" (BERTs are Generative In-Context Learners). At the behavioral level, it is reported as measuring Classification, Coreference resolution, Language understanding task performance, and Word sense disambiguation, so the construct-level claims converge most clearly on language understanding while the behavioral links are spread across several task-level indicators.\n\nSpace of uses. Across uses, papers typically employ SuperGLUE for evaluation: they fine-tune on it, report few-shot or in-context results on it, use dev sets from its datasets, or draw subsets from it for studies of energy use, continual learning, and text quality. It is frequently paired with GLUE, sometimes with Super Natural-Instructions, and papers also relate it to 7 task-level instruments, most often BoolQ, CB, COPA, MultiRC, and RTE; one study calls it \"a widely acceptable benchmark for evaluating general-purpose language understanding\" (Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning).",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Efficient Ensemble for Fine-tuning Language Models on Multiple Datasets",
+      "MEraser: An Effective Fingerprint Erasure Approach for Large Language Models",
+      "SR-LLM: Rethinking the Structured Representation in Large Language Model",
+      "Unveiling the Potential of BERT-family: A New Recipe for Building Scalable, General and Competitive Large Language Models"
+    ],
+    "emnlp25": [
+      "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+      "HELENE: Hessian Layer-wise Clipping and Gradient Annealing for Accelerating Fine-tuning LLM with Zeroth-order Optimization",
+      "In Benchmarks We Trust ... Or Not?",
+      "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+      "MEPT: Mixture of Expert Prompt Tuning as a Manifold Mapper",
+      "MUZO: Leveraging Multiple Queries and Momentum for Zeroth-Order Fine-Tuning of Large Language Models",
+      "MaZO: Masked Zeroth-Order Optimization for Multi-Task Fine-Tuning of Large Language Models",
+      "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+      "MobiZO: Enabling Efficient LLM Fine-Tuning at the Edge via Inference Engines",
+      "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "QuZO: Quantized Zeroth-Order Fine-Tuning for Large Language Models",
+      "Reimagining Safety Alignment with An Image",
+      "SinhalaMMLU: A Comprehensive Benchmark for Evaluating Multitask Language Understanding in Sinhala",
+      "The Role of Outgoing Connection Heterogeneity in Feedforward Layers of Large Language Models",
+      "Towards Infinite-Long Prefix in Transformer"
+    ],
+    "iclr24": [
+      "A Good Learner can Teach Better: Teacher-Student Collaborative Knowledge Distillation",
+      "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+      "Customizable Combination of Parameter-Efficient Modules for Multi-Task Learning",
+      "DePT: Decomposed Prompt Tuning for Parameter-Efficient Fine-tuning",
+      "Functional Interpolation for Relative Positions improves Long Context Transformers",
+      "Headless Language Models: Learning without Predicting with Contrastive Weight Tying",
+      "Language Model Cascades: Token-Level Uncertainty And Beyond",
+      "Sophia: A Scalable Stochastic Second-order Optimizer for Language Model Pre-training"
+    ],
+    "iclr25": [
+      "ADePT: Adaptive Decomposed Prompt Tuning for Parameter-Efficient Fine-tuning",
+      "ELICIT: LLM Augmentation Via External In-context Capability",
+      "Efficient stagewise pretraining via progressive subnetworks",
+      "Enhancing Zeroth-order Fine-tuning for Language Models with Low-rank Structures",
+      "Mini-batch Coresets for Memory-efficient Language Model Training on Data Mixtures",
+      "On the Crucial Role of Initialization for Matrix Factorization",
+      "PortLLM: Personalizing Evolving Large Language Models with Training-Free and Portable Model Patches",
+      "Scaling Laws for Downstream Task Performance in Machine Translation",
+      "Towards Scalable Exact Machine Unlearning Using Parameter-Efficient Fine-Tuning"
+    ],
+    "icml25": [
+      "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+      "LASER: Attention with Exponential Transformation",
+      "MERIT: Maximum-normalized Element-wise Ratio for Language Model Large-batch Training"
+    ],
+    "naacl25": [
+      "Efficient and Effective Prompt Tuning via Prompt Decomposition and Compressed Outer Product",
+      "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model",
+      "Towards Sustainable NLP: Insights from Benchmarking Inference Energy in Large Language Models"
+    ],
+    "neurips24": [
+      "BAdam: A Memory Efficient Full Parameter Optimization Method for Large Language Models",
+      "BERTs are Generative In-Context Learners",
+      "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+      "Learn more, but bother less: parameter efficient continual learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 15,
+    "iclr24": 8,
+    "iclr25": 9,
+    "icml25": 3,
+    "naacl25": 3,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

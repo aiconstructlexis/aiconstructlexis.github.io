@@ -1,0 +1,102 @@
+{
+  "canonical_name": "Fluid intelligence",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. In the usage in the papers, fluid intelligence is treated as a latent ability for solving novel problems without relying on prior or pre-existing knowledge or memorization. The definition also specifies abstract inductive reasoning and pattern induction from examples, and frames evaluating fluid intelligence as a way to assess LLM reasoning abilities given their exposure to and memorization of large amounts of knowledge during pre-training.\n\nSpace of facets. The construct is organized mainly by contrast: it is described as solving new problems without relying on prior knowledge or memorization, and as involving abstract inductive reasoning and pattern induction from examples. A nearby construct is analogical reasoning, which one paper describes as tightly linked to fluid intelligence.\n\nSpace of measurement. It is linked to 1 measurement instrument and no behavioral indicators. The only linked instrument is the Abstraction and Reasoning Corpus, which one paper calls the de facto standard for measuring machine fluid intelligence, so the recorded operationalization is performance on the ARC task.\n\nLinks. One paper reports that analogical reasoning is related to fluid intelligence, stating that analogy-making is tightly linked with fluid intelligence and characterizing fluid intelligence as the capacity to apply learned skills in novel settings.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Fluid intelligence"
+  ],
+  "papers": [
+    "MuseScorer: Idea Originality Scoring At Scale",
+    "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems",
+    "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The latent ability to solve novel problems without relying on prior knowledge or memorization, involving abstract inductive reasoning and pattern induction from examples.",
+      "papers": [
+        "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task"
+      ],
+      "original_name": "Fluid intelligence"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Analogical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems",
+      "evidence": "Analogy-making is a critical aspect of human cognition, tightly linked with fluid intelligence, the capacity to apply learned skills in novel settings (Lake et al., 2017). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Abstraction and Reasoning Corpus",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task",
+      "evidence": "Therefore, the ARC task has become the de facto standard for measuring machine fluid intelligence, sparking a wave of recent studies aimed at improving LLM performance on it (Acquaviva et al., 2022; Xu et al.; Wang et al., 2024; Wang et al.). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In the usage in the papers, fluid intelligence is treated as a latent ability for solving novel problems without relying on prior or pre-existing knowledge or memorization. The definition also specifies abstract inductive reasoning and pattern induction from examples, and frames evaluating fluid intelligence as a way to assess LLM reasoning abilities given their exposure to and memorization of large amounts of knowledge during pre-training."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The construct is organized mainly by contrast: it is described as solving new problems without relying on prior knowledge or memorization, and as involving abstract inductive reasoning and pattern induction from examples. A nearby construct is analogical reasoning, which one paper describes as tightly linked to fluid intelligence."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "It is linked to 1 measurement instrument and no behavioral indicators. The only linked instrument is the Abstraction and Reasoning Corpus, which one paper calls the de facto standard for measuring machine fluid intelligence, so the recorded operationalization is performance on the ARC task."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper reports that analogical reasoning is related to fluid intelligence, stating that analogy-making is tightly linked with fluid intelligence and characterizing fluid intelligence as the capacity to apply learned skills in novel settings."
+    }
+  ],
+  "characterization": "Space of definitions. In the usage in the papers, fluid intelligence is treated as a latent ability for solving novel problems without relying on prior or pre-existing knowledge or memorization. The definition also specifies abstract inductive reasoning and pattern induction from examples, and frames evaluating fluid intelligence as a way to assess LLM reasoning abilities given their exposure to and memorization of large amounts of knowledge during pre-training.\n\nSpace of facets. The construct is organized mainly by contrast: it is described as solving new problems without relying on prior knowledge or memorization, and as involving abstract inductive reasoning and pattern induction from examples. A nearby construct is analogical reasoning, which one paper describes as tightly linked to fluid intelligence.\n\nSpace of measurement. It is linked to 1 measurement instrument and no behavioral indicators. The only linked instrument is the Abstraction and Reasoning Corpus, which one paper calls the de facto standard for measuring machine fluid intelligence, so the recorded operationalization is performance on the ARC task.\n\nLinks. One paper reports that analogical reasoning is related to fluid intelligence, stating that analogy-making is tightly linked with fluid intelligence and characterizing fluid intelligence as the capacity to apply learned skills in novel settings.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "MuseScorer: Idea Originality Scoring At Scale"
+    ],
+    "icml25": [
+      "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems"
+    ],
+    "naacl25": [
+      "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "icml25": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

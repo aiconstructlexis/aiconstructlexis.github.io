@@ -1,0 +1,133 @@
+{
+  "canonical_name": "Localization ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats localization ability as a latent model capacity for accurate spatial identification in visual content. The definitions largely agree on that core idea, with one framing it as identifying and specifying the position of target instances, and another as determining the spatial position and boundaries of objects within an image.\n\nSpace of facets. Papers use the near-synonymous labels localization capability and localization ability for the same kind of model property. The main difference in emphasis is whether the construct is described around target instances in visual content or around objects and their boundaries in images, and it is also discussed in connection with referring expression comprehension and open-ended object detection and segmentation.\n\nSpace of measurement. Papers link localization ability to one measurement instrument, MMLongBench-Doc, which is described as including single-page questions mainly to evaluate localization abilities, and to two behavioral indicators, Open-vocabulary object detection and Referring expression understanding. Another common operationalization is task accuracy under IoU-based criteria, including Acc0.5, Acc0.75, Acc0.9, and mean accuracy across IoU criteria, which matches the definitions' emphasis on locating targets and object boundaries.\n\nLinks. One paper claims a causal relationship from Fine-grained perception to localization ability, stating that sharper attention maps and more fine-grained features result in improved localization ability. Papers also describe localization ability as related to Referring expression understanding and to Open-vocabulary object detection, while no correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Localization capability",
+    "Localization ability",
+    "Localization"
+  ],
+  "papers": [
+    "A Large-Scale Human-Centric Benchmark for Referring Expression Comprehension in the LMM Era",
+    "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+    "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The latent ability of a model to accurately identify and specify the position of target instances within visual content.",
+      "papers": [
+        "A Large-Scale Human-Centric Benchmark for Referring Expression Comprehension in the LMM Era"
+      ],
+      "original_name": "Localization capability"
+    },
+    {
+      "text": "The model's latent capacity to accurately determine the spatial position and boundaries of objects within an image.",
+      "papers": [
+        "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+      ],
+      "original_name": "Localization ability"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLongBench-Doc",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "evidence": "\u201c(1) 494 single-page questions (with one evidence page) mainly to evaluate localization abilities\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fine-grained perception",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Kernel-based Unsupervised Embedding Alignment for Enhanced Visual Representation in Vision-language Models",
+      "evidence": "We visualize the attention maps from the penultimate layer of the CLIP visual encoder for several examples in Fig 2. The attention maps are generally similar w/wo alignment, as the regularization term prevents significant changes in the model\u2019s weights. However, we still observe that the attention maps after alignment are sharper and highlight more fine-grained features. This indicates that the aligned model is better at capturing details from the input image, resulting in improved localization ability. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Kernel-based Unsupervised Embedding Alignment for Enhanced Visual Representation in Vision-language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Referring expression understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "A Large-Scale Human-Centric Benchmark for Referring Expression Comprehension in the LMM Era",
+      "evidence": "The REC task serves as a critical benchmark to evaluate the localization capabilities of these models. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "A Large-Scale Human-Centric Benchmark for Referring Expression Comprehension in the LMM Era"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Open-vocabulary object detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Contrastive Localized Language-Image Pre-Training",
+      "evidence": "improving the localization capability, most works specifically focus on the downstream dense vision tasks such as open-vocabulary detection (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Contrastive Localized Language-Image Pre-Training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats localization ability as a latent model capacity for accurate spatial identification in visual content. The definitions largely agree on that core idea, with one framing it as identifying and specifying the position of target instances, and another as determining the spatial position and boundaries of objects within an image."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use the near-synonymous labels localization capability and localization ability for the same kind of model property. The main difference in emphasis is whether the construct is described around target instances in visual content or around objects and their boundaries in images, and it is also discussed in connection with referring expression comprehension and open-ended object detection and segmentation."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link localization ability to one measurement instrument, MMLongBench-Doc, which is described as including single-page questions mainly to evaluate localization abilities, and to two behavioral indicators, Open-vocabulary object detection and Referring expression understanding. Another common operationalization is task accuracy under IoU-based criteria, including Acc0.5, Acc0.75, Acc0.9, and mean accuracy across IoU criteria, which matches the definitions' emphasis on locating targets and object boundaries."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper claims a causal relationship from Fine-grained perception to localization ability, stating that sharper attention maps and more fine-grained features result in improved localization ability. Papers also describe localization ability as related to Referring expression understanding and to Open-vocabulary object detection, while no correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats localization ability as a latent model capacity for accurate spatial identification in visual content. The definitions largely agree on that core idea, with one framing it as identifying and specifying the position of target instances, and another as determining the spatial position and boundaries of objects within an image.\n\nSpace of facets. Papers use the near-synonymous labels localization capability and localization ability for the same kind of model property. The main difference in emphasis is whether the construct is described around target instances in visual content or around objects and their boundaries in images, and it is also discussed in connection with referring expression comprehension and open-ended object detection and segmentation.\n\nSpace of measurement. Papers link localization ability to one measurement instrument, MMLongBench-Doc, which is described as including single-page questions mainly to evaluate localization abilities, and to two behavioral indicators, Open-vocabulary object detection and Referring expression understanding. Another common operationalization is task accuracy under IoU-based criteria, including Acc0.5, Acc0.75, Acc0.9, and mean accuracy across IoU criteria, which matches the definitions' emphasis on locating targets and object boundaries.\n\nLinks. One paper claims a causal relationship from Fine-grained perception to localization ability, stating that sharper attention maps and more fine-grained features result in improved localization ability. Papers also describe localization ability as related to Referring expression understanding and to Open-vocabulary object detection, while no correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "A Large-Scale Human-Centric Benchmark for Referring Expression Comprehension in the LMM Era",
+      "MMLONGBENCH-DOC: Benchmarking Long-context Document Understanding with Visualizations",
+      "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3
+  },
+  "conferences": [
+    "neurips24"
+  ]
+}

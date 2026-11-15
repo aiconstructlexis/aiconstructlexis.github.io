@@ -1,0 +1,134 @@
+{
+  "canonical_name": "Human-likeness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats human-likeness as resemblance between a model's outputs or behavior and human patterns, often explicitly contrasted with absolute task accuracy. One recurring formulation centers on response distributions, described as \"comparing models and humans on their response patterns, not their absolute performance\" (DevBench: A multimodal developmental benchmark for language learning); other papers use closely related language for human-like daily activities judged by naturalness, coherence, and plausibility, natural and conversational tutoring responses, realistic role-playing, learning trajectories that mirror human learners, or text with more human-like word distributions and flexible wording. A smaller line of work uses nearby labels for different targets: human-like comprehension is framed as depth, flexibility, and nuance of understanding, while perceived humanlikeness is framed as whether users experience the agent as resembling a human interlocutor.\n\nSpace of facets. Papers do not converge on a single subtype scheme, and the same label spans several facets. Some authors unpack it into naturalness, coherence, and plausibility, while others emphasize realism and believability in role-play, emotionally engaging interactions, natural rather than robotic phrasing, emotional expressiveness and personality consistency, lexical diversity and stylistic naturalness, or learning dynamics that resemble those of human learners. The terminology also branches into adjacent names, especially human-like comprehension and perceived humanlikeness, which shift the focus from produced behavior to understanding or to user perception.\n\nSpace of measurement. No measurement instrument is linked to it and no behavioral indicator is linked to it. Even so, papers describe several task-specific operationalizations: matching human response distributions rather than absolute performance, ratings of naturalness, coherence, and plausibility for generated activities, judgments about whether dialogue sounds natural rather than robotic or asks \"How humanlike was the agent?\", assessments of role-playing realism and emotionally engaging interactions, and evaluations of learning trajectories or word distributions for human-written resemblance. These operationalizations mostly track the definitions' emphasis on resemblance to human patterns, but they vary in whether they target output behavior, perceived interaction quality, developmental trajectories, or textual style.\n\nLinks. The only linked relation is with emotional expression: papers describe emotional expression as related to human-likeness. In CharacterBox: Evaluating the Role-Playing Capabilities of LLMs in Text-Based Virtual Worlds, human-likeness is framed through \"dynamic, emotionally engaging interactions,\" and emotional expression is described as the ability to express emotions vividly within that portrayal. No causal or correlational claims are linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Human-likeness",
+    "Human-like comprehension",
+    "Perceived humanlikeness"
+  ],
+  "papers": [
+    "Enhancing LLM-Based Social Bot via an Adversarial Learning Framework",
+    "Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support",
+    "V-VAE: A Variational Auto Encoding Framework Towards Fine-Grained Control over Human-Like Chat",
+    "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks on LLM-Generated Text Detectors",
+    "Do LLMs have Consistent Values?",
+    "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+    "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+    "A Distributional Perspective on Word Learning in Neural Language Models",
+    "CharacterBox: Evaluating the Role-Playing Capabilities of LLMs in Text-Based Virtual Worlds",
+    "REL-A.I.: An Interaction-Centered Approach To Measuring Human-LM Reliance",
+    "Unifying AI Tutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment of LLM-Powered AI Tutors",
+    "Who Relies More on World Knowledge and Bias for Syntactic Ambiguity Resolution: Humans or LLMs?",
+    "DevBench: A multimodal developmental benchmark for language learning",
+    "Doing Experiments and Revising Rules with Natural Language and Probabilistic Reasoning"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "The degree to which a model's response patterns resemble human response distributions rather than merely achieving high task accuracy.",
+      "papers": [
+        "DevBench: A multimodal developmental benchmark for language learning",
+        "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+        "Unifying AI Tutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment of LLM-Powered AI Tutors",
+        "CharacterBox: Evaluating the Role-Playing Capabilities of LLMs in Text-Based Virtual Worlds",
+        "A Distributional Perspective on Word Learning in Neural Language Models",
+        "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks on LLM-Generated Text Detectors"
+      ],
+      "original_name": "Human-likeness"
+    },
+    {
+      "text": "The capacity to understand language with the depth, flexibility, and nuance characteristic of human cognition.",
+      "papers": [
+        "Who Relies More on World Knowledge and Bias for Syntactic Ambiguity Resolution: Humans or LLMs?"
+      ],
+      "original_name": "Human-like comprehension"
+    },
+    {
+      "text": "The degree to which users perceive the LLM as resembling a human interlocutor in behavior and expression, affecting their willingness to engage and rely on its responses.",
+      "papers": [
+        "REL-A.I.: An Interaction-Centered Approach To Measuring Human-LM Reliance"
+      ],
+      "original_name": "Perceived humanlikeness"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Emotional expression",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CharacterBox: Evaluating the Role-Playing Capabilities of LLMs in Text-Based Virtual Worlds",
+      "evidence": "Human-Likeness evaluates the realism and believability of the character\u2019s portrayal, focusing on dynamic, emotionally engaging interactions: \u201a Emotional Expression (EE): Evaluates the ability of the character to express emotions vividly, key to enhancing user immersion.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "CharacterBox: Evaluating the Role-Playing Capabilities of LLMs in Text-Based Virtual Worlds"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats human-likeness as resemblance between a model's outputs or behavior and human patterns, often explicitly contrasted with absolute task accuracy. One recurring formulation centers on response distributions, described as \"comparing models and humans on their response patterns, not their absolute performance\" (DevBench: A multimodal developmental benchmark for language learning); other papers use closely related language for human-like daily activities judged by naturalness, coherence, and plausibility, natural and conversational tutoring responses, realistic role-playing, learning trajectories that mirror human learners, or text with more human-like word distributions and flexible wording. A smaller line of work uses nearby labels for different targets: human-like comprehension is framed as depth, flexibility, and nuance of understanding, while perceived humanlikeness is framed as whether users experience the agent as resembling a human interlocutor."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not converge on a single subtype scheme, and the same label spans several facets. Some authors unpack it into naturalness, coherence, and plausibility, while others emphasize realism and believability in role-play, emotionally engaging interactions, natural rather than robotic phrasing, emotional expressiveness and personality consistency, lexical diversity and stylistic naturalness, or learning dynamics that resemble those of human learners. The terminology also branches into adjacent names, especially human-like comprehension and perceived humanlikeness, which shift the focus from produced behavior to understanding or to user perception."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it and no behavioral indicator is linked to it. Even so, papers describe several task-specific operationalizations: matching human response distributions rather than absolute performance, ratings of naturalness, coherence, and plausibility for generated activities, judgments about whether dialogue sounds natural rather than robotic or asks \"How humanlike was the agent?\", assessments of role-playing realism and emotionally engaging interactions, and evaluations of learning trajectories or word distributions for human-written resemblance. These operationalizations mostly track the definitions' emphasis on resemblance to human patterns, but they vary in whether they target output behavior, perceived interaction quality, developmental trajectories, or textual style."
+    },
+    {
+      "label": "Links.",
+      "text": "The only linked relation is with emotional expression: papers describe emotional expression as related to human-likeness. In CharacterBox: Evaluating the Role-Playing Capabilities of LLMs in Text-Based Virtual Worlds, human-likeness is framed through \"dynamic, emotionally engaging interactions,\" and emotional expression is described as the ability to express emotions vividly within that portrayal. No causal or correlational claims are linked to it."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats human-likeness as resemblance between a model's outputs or behavior and human patterns, often explicitly contrasted with absolute task accuracy. One recurring formulation centers on response distributions, described as \"comparing models and humans on their response patterns, not their absolute performance\" (DevBench: A multimodal developmental benchmark for language learning); other papers use closely related language for human-like daily activities judged by naturalness, coherence, and plausibility, natural and conversational tutoring responses, realistic role-playing, learning trajectories that mirror human learners, or text with more human-like word distributions and flexible wording. A smaller line of work uses nearby labels for different targets: human-like comprehension is framed as depth, flexibility, and nuance of understanding, while perceived humanlikeness is framed as whether users experience the agent as resembling a human interlocutor.\n\nSpace of facets. Papers do not converge on a single subtype scheme, and the same label spans several facets. Some authors unpack it into naturalness, coherence, and plausibility, while others emphasize realism and believability in role-play, emotionally engaging interactions, natural rather than robotic phrasing, emotional expressiveness and personality consistency, lexical diversity and stylistic naturalness, or learning dynamics that resemble those of human learners. The terminology also branches into adjacent names, especially human-like comprehension and perceived humanlikeness, which shift the focus from produced behavior to understanding or to user perception.\n\nSpace of measurement. No measurement instrument is linked to it and no behavioral indicator is linked to it. Even so, papers describe several task-specific operationalizations: matching human response distributions rather than absolute performance, ratings of naturalness, coherence, and plausibility for generated activities, judgments about whether dialogue sounds natural rather than robotic or asks \"How humanlike was the agent?\", assessments of role-playing realism and emotionally engaging interactions, and evaluations of learning trajectories or word distributions for human-written resemblance. These operationalizations mostly track the definitions' emphasis on resemblance to human patterns, but they vary in whether they target output behavior, perceived interaction quality, developmental trajectories, or textual style.\n\nLinks. The only linked relation is with emotional expression: papers describe emotional expression as related to human-likeness. In CharacterBox: Evaluating the Role-Playing Capabilities of LLMs in Text-Based Virtual Worlds, human-likeness is framed through \"dynamic, emotionally engaging interactions,\" and emotional expression is described as the ability to express emotions vividly within that portrayal. No causal or correlational claims are linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Enhancing LLM-Based Social Bot via an Adversarial Learning Framework",
+      "Look Beyond Feeling: Unveiling Latent Needs from Implicit Expressions for Proactive Emotional Support",
+      "V-VAE: A Variational Auto Encoding Framework Towards Fine-Grained Control over Human-Like Chat",
+      "Your Language Model Can Secretly Write Like Humans: Contrastive Paraphrase Attacks on LLM-Generated Text Detectors"
+    ],
+    "iclr25": [
+      "Do LLMs have Consistent Values?",
+      "Humanizing the Machine: Proxy Attacks to Mislead LLM Detectors",
+      "Simulating Human-like Daily Activities with Desire-driven Autonomy"
+    ],
+    "naacl25": [
+      "A Distributional Perspective on Word Learning in Neural Language Models",
+      "CharacterBox: Evaluating the Role-Playing Capabilities of LLMs in Text-Based Virtual Worlds",
+      "REL-A.I.: An Interaction-Centered Approach To Measuring Human-LM Reliance",
+      "Unifying AI Tutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment of LLM-Powered AI Tutors",
+      "Who Relies More on World Knowledge and Bias for Syntactic Ambiguity Resolution: Humans or LLMs?"
+    ],
+    "neurips24": [
+      "DevBench: A multimodal developmental benchmark for language learning",
+      "Doing Experiments and Revising Rules with Natural Language and Probabilistic Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4,
+    "iclr25": 3,
+    "naacl25": 5,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

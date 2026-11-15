@@ -1,0 +1,157 @@
+{
+  "canonical_name": "Text continuation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats text continuation as generating the next portion of text from a given prefix, prompt, sentence, or opening passage. Most definitions describe success as producing a continuation that coherently and contextually follows the input, and some add that it should logically follow the prefix or preserve stylistic consistency with it. Smaller lines of work formulate it as regenerating the remaining part of a truncated passage, continuing from compressed memory slots, or generating continuations under added logical constraints or in red-teaming setups.\n\nVariants. Papers use several nearby names, including text completion, text continuation generation, open-ended text completion, and transcript continuation. The task appears in sentence and article completion, five-token prompt continuation for trial and demonstration settings, continuation from a truncated movie review or other passage prefix, and continuation from speech-derived prompts where paralinguistic cues may shape the preferred completion. Some variants explicitly condition the continuation on style or control requirements, such as continuing in AAE or producing a single continuation that follows logical constraints.\n\nSpace of elicitation and scores. Only two measurement instruments are linked in the papers: GSM8K and WikiText-103. One paper describes GSM8K as a text-completion benchmark, while another describes WikiText-103 as a standard benchmark for language modeling.\n\nWhat it is taken as evidence of. Across these papers, text continuation is not linked to any construct, so the papers do not specify a construct that it is taken to indicate.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Text continuation",
+    "Text completion",
+    "Text continuation generation",
+    "Open-ended text completion"
+  ],
+  "papers": [
+    "Exploring LLMs' Ability to Spontaneously and Conditionally Modify Moral Expressions through Text Manipulation",
+    "Pretraining Context Compressor for Large Language Models with Embedding-Based Memory",
+    "The Impossibility of Fair LLMs",
+    "Curiosity-driven Red-teaming for Large Language Models",
+    "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+    "In-context Autoencoder for Context Compression in a Large Language Model",
+    "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+    "Adapting Large Language Models via Reading Comprehension",
+    "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text",
+    "Babysit A Language Model From Scratch: Interactive Language Learning by Trials and Demonstrations",
+    "My LLM might Mimic AAE - But When Should It?",
+    "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data",
+    "Adaptable Logical Control for Large Language Models"
+  ],
+  "paper_count": 13,
+  "definitions": [
+    {
+      "text": "Generating subsequent text following the original context based on memory slots, used to evaluate the model's ability to maintain predictive capability after compression.",
+      "papers": [
+        "Curiosity-driven Red-teaming for Large Language Models",
+        "In-context Autoencoder for Context Compression in a Large Language Model",
+        "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+        "Babysit A Language Model From Scratch: Interactive Language Learning by Trials and Demonstrations",
+        "My LLM might Mimic AAE - But When Should It?",
+        "Adaptable Logical Control for Large Language Models",
+        "Exploring LLMs' Ability to Spontaneously and Conditionally Modify Moral Expressions through Text Manipulation"
+      ],
+      "original_name": "Text continuation"
+    },
+    {
+      "text": "The task of generating text to continue a given prompt or sentence.",
+      "papers": [
+        "The Impossibility of Fair LLMs",
+        "Adapting Large Language Models via Reading Comprehension"
+      ],
+      "original_name": "Text completion"
+    },
+    {
+      "text": "Generating the remaining portion of a passage from a truncated prefix.",
+      "papers": [
+        "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text"
+      ],
+      "original_name": "Text continuation generation"
+    },
+    {
+      "text": "Continuing a given text prompt in a coherent and contextually appropriate manner without specific task constraints, often used to evaluate generative fluency and consistency.",
+      "papers": [
+        "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data"
+      ],
+      "original_name": "Open-ended text completion"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-103",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution",
+      "evidence": "WikiText-103 (Merity et al., 2017) is a standard benchmark for language modeling... (Section 4.1, Text completion)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Nearest Neighbor Speculative Decoding for LLM Generation and Attribution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "metabench - A Sparse Benchmark of Reasoning and Knowledge in Large Language Models",
+      "evidence": "Choice permutation applies to all benchmarks except GSM8K which is a text-completion benchmark, not a multiple-choice benchmark. (Section 3.1, footnote 7)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "metabench - A Sparse Benchmark of Reasoning and Knowledge in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats text continuation as generating the next portion of text from a given prefix, prompt, sentence, or opening passage. Most definitions describe success as producing a continuation that coherently and contextually follows the input, and some add that it should logically follow the prefix or preserve stylistic consistency with it. Smaller lines of work formulate it as regenerating the remaining part of a truncated passage, continuing from compressed memory slots, or generating continuations under added logical constraints or in red-teaming setups."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby names, including text completion, text continuation generation, open-ended text completion, and transcript continuation. The task appears in sentence and article completion, five-token prompt continuation for trial and demonstration settings, continuation from a truncated movie review or other passage prefix, and continuation from speech-derived prompts where paralinguistic cues may shape the preferred completion. Some variants explicitly condition the continuation on style or control requirements, such as continuing in AAE or producing a single continuation that follows logical constraints."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only two measurement instruments are linked in the papers: GSM8K and WikiText-103. One paper describes GSM8K as a text-completion benchmark, while another describes WikiText-103 as a standard benchmark for language modeling."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Across these papers, text continuation is not linked to any construct, so the papers do not specify a construct that it is taken to indicate."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats text continuation as generating the next portion of text from a given prefix, prompt, sentence, or opening passage. Most definitions describe success as producing a continuation that coherently and contextually follows the input, and some add that it should logically follow the prefix or preserve stylistic consistency with it. Smaller lines of work formulate it as regenerating the remaining part of a truncated passage, continuing from compressed memory slots, or generating continuations under added logical constraints or in red-teaming setups.\n\nVariants. Papers use several nearby names, including text completion, text continuation generation, open-ended text completion, and transcript continuation. The task appears in sentence and article completion, five-token prompt continuation for trial and demonstration settings, continuation from a truncated movie review or other passage prefix, and continuation from speech-derived prompts where paralinguistic cues may shape the preferred completion. Some variants explicitly condition the continuation on style or control requirements, such as continuing in AAE or producing a single continuation that follows logical constraints.\n\nSpace of elicitation and scores. Only two measurement instruments are linked in the papers: GSM8K and WikiText-103. One paper describes GSM8K as a text-completion benchmark, while another describes WikiText-103 as a standard benchmark for language modeling.\n\nWhat it is taken as evidence of. Across these papers, text continuation is not linked to any construct, so the papers do not specify a construct that it is taken to indicate.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Exploring LLMs' Ability to Spontaneously and Conditionally Modify Moral Expressions through Text Manipulation",
+      "Pretraining Context Compressor for Large Language Models with Embedding-Based Memory",
+      "The Impossibility of Fair LLMs"
+    ],
+    "iclr24": [
+      "Curiosity-driven Red-teaming for Large Language Models",
+      "EMO: EARTH MOVER DISTANCE OPTIMIZATION FOR AUTO-REGRESSIVE LANGUAGE MODELING",
+      "In-context Autoencoder for Context Compression in a Large Language Model",
+      "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+      "Adapting Large Language Models via Reading Comprehension",
+      "DNA-GPT: Divergent N-Gram Analysis for Training-Free Detection of GPT-Generated Text"
+    ],
+    "naacl25": [
+      "Babysit A Language Model From Scratch: Interactive Language Learning by Trials and Demonstrations",
+      "My LLM might Mimic AAE - But When Should It?",
+      "Verifiable by Design: Aligning Language Models to Quote from Pre-Training Data"
+    ],
+    "neurips24": [
+      "Adaptable Logical Control for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "iclr24": 6,
+    "naacl25": 3,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "naacl25",
+    "neurips24"
+  ]
+}

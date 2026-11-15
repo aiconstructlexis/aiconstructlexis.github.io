@@ -1,0 +1,150 @@
+{
+  "canonical_name": "TravelPlanner",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the dominant framing is a benchmark for evaluating travel planning agents or LLM agents on complex planning tasks. Most descriptions add a sandbox environment with tools for accessing nearly four million data records, plus curated planning intents or queries, reference plans, and user-specified constraints; some narrow this to U.S. domestic travel planning, while others emphasize itinerary generation over flights, accommodations, and other arrangements, with hard and sometimes soft constraints. A smaller line describes it as a dataset or benchmark task rather than simply a benchmark, and one paper reports results on a TravelPlanner validation setting.\n\nWhat it is claimed to measure. Papers link TravelPlanner to 2 constructs and no behavioral indicators. The prevailing usage is to measure Planning, with papers describing it as a benchmark for real-world, complex, or challenging planning; a smaller line of work uses it to measure Long-horizon planning under user-defined constraints. These measurement claims stay concentrated on planning-related constructs rather than spreading across many targets.\n\nSpace of uses. No measurement instrument is linked to it, although papers often report evaluating it alongside other planning benchmarks, including OpenAGI, Natural Plan, Tau-bench, and PlanBench. The common positioning is as a challenging benchmark for comparing agent systems and planning methods, while one paper uses it as a further validation task after other evaluations.\n\nConcerns raised. When papers note problems on TravelPlanner, they mostly emphasize difficulty: authors describe it as challenging and failure-prone, and a few report low success rates, including 15.6% in one study and a 10% viable-plan success rate for the best LLM in another. One paper also says its results show that LLMs are not capable of handling multi-constraint tasks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Travelplanner",
+    "TravelPlanner"
+  ],
+  "papers": [
+    "Agent-RewardBench: Towards a Unified Benchmark for Reward Modeling across Perception, Planning, and Safety in Real-World Multimodal Agents",
+    "Personal Travel Solver: A Preference-Driven LLM-Solver System for Travel Planning",
+    "PlanGenLLMs: A Modern Survey of LLM Planning Capabilities",
+    "SAMULE: Self-Learning Agents Enhanced by Multi-level Reflection",
+    "SwarmAgentic: Towards Fully Automated Agentic System Generation via Swarm Intelligence",
+    "AgentSquare: Automatic LLM Agent Search in Modular Design Space",
+    "Interactive Speculative Planning: Enhance Agent Efficiency through Co-design of System and User Interface",
+    "From Debate to Equilibrium: Belief-Driven Multi-Agent LLM Reasoning via Bayesian Nash Equilibrium",
+    "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking",
+    "EvoAgent: Towards Automatic Multi-Agent Generation via Evolutionary Algorithms",
+    "Large Language Models Can Solve Real-World Planning Rigorously with Formal Verification Tools",
+    "Revealing the Barriers of Language Agents in Planning"
+  ],
+  "paper_count": 12,
+  "definitions": [
+    {
+      "text": "A benchmark for evaluating LLM agents on travel-planning tasks.",
+      "papers": [
+        "AgentSquare: Automatic LLM Agent Search in Modular Design Space",
+        "SAMULE: Self-Learning Agents Enhanced by Multi-level Reflection",
+        "SwarmAgentic: Towards Fully Automated Agentic System Generation via Swarm Intelligence"
+      ],
+      "original_name": "Travelplanner"
+    },
+    {
+      "text": "A benchmark for evaluating travel planning agents, providing a sandbox environment with tools for accessing travel data and a set of curated planning intents with constraints.",
+      "papers": [
+        "Interactive Speculative Planning: Enhance Agent Efficiency through Co-design of System and User Interface",
+        "Revealing the Barriers of Language Agents in Planning",
+        "EvoAgent: Towards Automatic Multi-Agent Generation via Evolutionary Algorithms",
+        "Large Language Models Can Solve Real-World Planning Rigorously with Formal Verification Tools",
+        "Agent-RewardBench: Towards a Unified Benchmark for Reward Modeling across Perception, Planning, and Safety in Real-World Multimodal Agents",
+        "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking"
+      ],
+      "original_name": "TravelPlanner"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "EvoAgent: Towards Automatic Multi-Agent Generation via Evolutionary Algorithms",
+      "evidence": "Planning in complex and realistic environments is also a crucial skill for building autonomous agents. Thus, we also select TravelPlanner (Xie et al., 2024), a benchmark designed to evaluate language agents in real-world complex planning with multiple constraints. (Section 4.3)",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "EvoAgent: Towards Automatic Multi-Agent Generation via Evolutionary Algorithms"
+        ],
+        "icml25": [
+          "From Debate to Equilibrium: Belief-Driven Multi-Agent LLM Reasoning via Bayesian Nash Equilibrium",
+          "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking"
+        ],
+        "emnlp25": [
+          "SwarmAgentic: Towards Fully Automated Agentic System Generation via Swarm Intelligence"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-horizon planning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SwarmAgentic: Towards Fully Automated Agentic System Generation via Swarm Intelligence",
+      "evidence": "TravelPlanner (TP) (Xie et al., 2024), which tests long-horizon planning under user-defined constraints (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SwarmAgentic: Towards Fully Automated Agentic System Generation via Swarm Intelligence"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the dominant framing is a benchmark for evaluating travel planning agents or LLM agents on complex planning tasks. Most descriptions add a sandbox environment with tools for accessing nearly four million data records, plus curated planning intents or queries, reference plans, and user-specified constraints; some narrow this to U.S. domestic travel planning, while others emphasize itinerary generation over flights, accommodations, and other arrangements, with hard and sometimes soft constraints. A smaller line describes it as a dataset or benchmark task rather than simply a benchmark, and one paper reports results on a TravelPlanner validation setting."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link TravelPlanner to 2 constructs and no behavioral indicators. The prevailing usage is to measure Planning, with papers describing it as a benchmark for real-world, complex, or challenging planning; a smaller line of work uses it to measure Long-horizon planning under user-defined constraints. These measurement claims stay concentrated on planning-related constructs rather than spreading across many targets."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it, although papers often report evaluating it alongside other planning benchmarks, including OpenAGI, Natural Plan, Tau-bench, and PlanBench. The common positioning is as a challenging benchmark for comparing agent systems and planning methods, while one paper uses it as a further validation task after other evaluations."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "When papers note problems on TravelPlanner, they mostly emphasize difficulty: authors describe it as challenging and failure-prone, and a few report low success rates, including 15.6% in one study and a 10% viable-plan success rate for the best LLM in another. One paper also says its results show that LLMs are not capable of handling multi-constraint tasks."
+    }
+  ],
+  "characterization": "What it is. Across papers, the dominant framing is a benchmark for evaluating travel planning agents or LLM agents on complex planning tasks. Most descriptions add a sandbox environment with tools for accessing nearly four million data records, plus curated planning intents or queries, reference plans, and user-specified constraints; some narrow this to U.S. domestic travel planning, while others emphasize itinerary generation over flights, accommodations, and other arrangements, with hard and sometimes soft constraints. A smaller line describes it as a dataset or benchmark task rather than simply a benchmark, and one paper reports results on a TravelPlanner validation setting.\n\nWhat it is claimed to measure. Papers link TravelPlanner to 2 constructs and no behavioral indicators. The prevailing usage is to measure Planning, with papers describing it as a benchmark for real-world, complex, or challenging planning; a smaller line of work uses it to measure Long-horizon planning under user-defined constraints. These measurement claims stay concentrated on planning-related constructs rather than spreading across many targets.\n\nSpace of uses. No measurement instrument is linked to it, although papers often report evaluating it alongside other planning benchmarks, including OpenAGI, Natural Plan, Tau-bench, and PlanBench. The common positioning is as a challenging benchmark for comparing agent systems and planning methods, while one paper uses it as a further validation task after other evaluations.\n\nConcerns raised. When papers note problems on TravelPlanner, they mostly emphasize difficulty: authors describe it as challenging and failure-prone, and a few report low success rates, including 15.6% in one study and a 10% viable-plan success rate for the best LLM in another. One paper also says its results show that LLMs are not capable of handling multi-constraint tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Agent-RewardBench: Towards a Unified Benchmark for Reward Modeling across Perception, Planning, and Safety in Real-World Multimodal Agents",
+      "Personal Travel Solver: A Preference-Driven LLM-Solver System for Travel Planning",
+      "PlanGenLLMs: A Modern Survey of LLM Planning Capabilities"
+    ],
+    "iclr25": [
+      "AgentSquare: Automatic LLM Agent Search in Modular Design Space",
+      "Interactive Speculative Planning: Enhance Agent Efficiency through Co-design of System and User Interface"
+    ],
+    "icml25": [
+      "From Debate to Equilibrium: Belief-Driven Multi-Agent LLM Reasoning via Bayesian Nash Equilibrium",
+      "HyperTree Planning: Enhancing LLM Reasoning via Hierarchical Thinking"
+    ],
+    "naacl25": [
+      "EvoAgent: Towards Automatic Multi-Agent Generation via Evolutionary Algorithms",
+      "Large Language Models Can Solve Real-World Planning Rigorously with Formal Verification Tools",
+      "Revealing the Barriers of Language Agents in Planning"
+    ],
+    "emnlp25": [
+      "SAMULE: Self-Learning Agents Enhanced by Multi-level Reflection",
+      "SwarmAgentic: Towards Fully Automated Agentic System Generation via Swarm Intelligence"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "iclr25": 2,
+    "icml25": 2,
+    "naacl25": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

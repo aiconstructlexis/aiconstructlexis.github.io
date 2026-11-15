@@ -1,0 +1,92 @@
+{
+  "canonical_name": "MovieLens",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers most commonly describe MovieLens as a widely used benchmark dataset for recommendation systems, centered on user movie ratings and movie metadata. Some descriptions are more task-specific, presenting it as movie-rating data for evaluating recommendation systems, query modification in LLM-based recommenders, simulation platforms, or personalized cover generation; one paper also describes it as including movie metadata, user demographics, and covers, and reports \"86K movies, 0.3M users, and 3.3M ratings\".\n\nWhat it is claimed to measure. The reported measurement claims converge on one construct: MovieLens is linked to one construct, Generalization, and to no behavioral indicators. One paper, Customizing Language Models with Instance-wise LoRA for Sequential Recommendation, uses it to measure Generalization, stating that MovieLens was included \"to validate the generalization ability\" of the model in real-world recommendation scenarios.\n\nSpace of uses. Papers typically place MovieLens within multi-dataset evaluations. It is used alongside LastFM and Steam in sequential recommendation experiments, alongside Google Local and AmazonBook in simulation-platform evaluation, and in one study as one of two public datasets representing movie recommendation scenarios for personalized cover generation; papers do not link it to other measurement instruments.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MovieLens"
+  ],
+  "papers": [
+    "Beyond Static Testbeds: An Interaction-Centric Agent Simulation Platform for Dynamic Recommender Systems",
+    "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment",
+    "Unified Parameter-Efficient Unlearning for LLMs",
+    "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+    "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+    "On Softmax Direct Preference Optimization for Recommendation"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A widely used benchmark dataset in recommendation systems research, containing user ratings and metadata for movies.",
+      "papers": [
+        "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+        "Unified Parameter-Efficient Unlearning for LLMs",
+        "Beyond Static Testbeds: An Interaction-Centric Agent Simulation Platform for Dynamic Recommender Systems",
+        "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment"
+      ],
+      "original_name": "MovieLens"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "evidence": "\u201cTo validate the generalization ability of iLoRA, we conducted extensive experiments on three datasets derived from real-world recommendation scenarios: LastFM, MovieLens, and Steam\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers most commonly describe MovieLens as a widely used benchmark dataset for recommendation systems, centered on user movie ratings and movie metadata. Some descriptions are more task-specific, presenting it as movie-rating data for evaluating recommendation systems, query modification in LLM-based recommenders, simulation platforms, or personalized cover generation; one paper also describes it as including movie metadata, user demographics, and covers, and reports \"86K movies, 0.3M users, and 3.3M ratings\"."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The reported measurement claims converge on one construct: MovieLens is linked to one construct, Generalization, and to no behavioral indicators. One paper, Customizing Language Models with Instance-wise LoRA for Sequential Recommendation, uses it to measure Generalization, stating that MovieLens was included \"to validate the generalization ability\" of the model in real-world recommendation scenarios."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers typically place MovieLens within multi-dataset evaluations. It is used alongside LastFM and Steam in sequential recommendation experiments, alongside Google Local and AmazonBook in simulation-platform evaluation, and in one study as one of two public datasets representing movie recommendation scenarios for personalized cover generation; papers do not link it to other measurement instruments."
+    }
+  ],
+  "characterization": "What it is. Papers most commonly describe MovieLens as a widely used benchmark dataset for recommendation systems, centered on user movie ratings and movie metadata. Some descriptions are more task-specific, presenting it as movie-rating data for evaluating recommendation systems, query modification in LLM-based recommenders, simulation platforms, or personalized cover generation; one paper also describes it as including movie metadata, user demographics, and covers, and reports \"86K movies, 0.3M users, and 3.3M ratings\".\n\nWhat it is claimed to measure. The reported measurement claims converge on one construct: MovieLens is linked to one construct, Generalization, and to no behavioral indicators. One paper, Customizing Language Models with Instance-wise LoRA for Sequential Recommendation, uses it to measure Generalization, stating that MovieLens was included \"to validate the generalization ability\" of the model in real-world recommendation scenarios.\n\nSpace of uses. Papers typically place MovieLens within multi-dataset evaluations. It is used alongside LastFM and Steam in sequential recommendation experiments, alongside Google Local and AmazonBook in simulation-platform evaluation, and in one study as one of two public datasets representing movie recommendation scenarios for personalized cover generation; papers do not link it to other measurement instruments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Unified Parameter-Efficient Unlearning for LLMs"
+    ],
+    "neurips24": [
+      "Customizing Language Models with Instance-wise LoRA for Sequential Recommendation",
+      "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+      "On Softmax Direct Preference Optimization for Recommendation"
+    ],
+    "emnlp25": [
+      "Beyond Static Testbeds: An Interaction-Centric Agent Simulation Platform for Dynamic Recommender Systems",
+      "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1,
+    "neurips24": 3,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

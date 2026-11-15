@@ -1,0 +1,91 @@
+{
+  "canonical_name": "Stock trading",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage is a decision task that ends in one action, buy, sell, or hold, based on financial information or market context. Both definitions align on that output space, though one is narrower, focusing on individual stocks and \"multi-modal market information processing,\" while the other states the task more generally as making decisions from financial information and market context. One prompt formulation further specifies that the model should provide exactly one investment decision, and may choose hold when a buy-or-sell call is hard.\n\nVariants. The main named variant is single stock trading, where decisions are generated for individual stocks. Other descriptions keep the label broader as stock trading from financial information and market context, and one quoted passage places it among sequential financial tasks in which a sole decision-maker generates trading actions.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, the papers operationalize it through the decision format itself: one prompt asks for exactly one investment decision, buy or sell, with hold allowed when the choice is hard, and another description has a manager agent generate trading actions as the sole decision-maker for sequential financial tasks.\n\nWhat it is taken as evidence of. Only one construct is linked to it, Decision-making, and the link is related rather than a measurement claim. In that relationship, decision-making is described as proficiency in making informed financial decisions, such as developing trading strategies and optimizing investment portfolios, which places stock trading alongside those behaviors. No other construct is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Single stock trading",
+    "Stock trading"
+  ],
+  "papers": [
+    "INVESTORBENCH: A Benchmark for Financial Decision-Making Tasks with LLM-based Agent",
+    "FinBen: A Holistic Financial Benchmark for Large Language Models",
+    "FinCon: A Synthesized LLM Multi-Agent System with Conceptual Verbal Reinforcement for Enhanced Financial Decision Making"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Generating trading decisions (buy, sell, hold) for individual stocks based on multi-modal market information processing.",
+      "papers": [
+        "FinCon: A Synthesized LLM Multi-Agent System with Conceptual Verbal Reinforcement for Enhanced Financial Decision Making"
+      ],
+      "original_name": "Single stock trading"
+    },
+    {
+      "text": "Making buy, sell, or hold decisions from financial information and market context.",
+      "papers": [
+        "FinBen: A Holistic Financial Benchmark for Large Language Models"
+      ],
+      "original_name": "Stock trading"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Decision-making",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "FinBen: A Holistic Financial Benchmark for Large Language Models",
+      "evidence": "Decision-Making assesses the model\u2019s proficiency in making informed financial decisions, such as developing trading strategies and optimizing investment portfolios (Paiva et al., 2019).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "FinBen: A Holistic Financial Benchmark for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage is a decision task that ends in one action, buy, sell, or hold, based on financial information or market context. Both definitions align on that output space, though one is narrower, focusing on individual stocks and \"multi-modal market information processing,\" while the other states the task more generally as making decisions from financial information and market context. One prompt formulation further specifies that the model should provide exactly one investment decision, and may choose hold when a buy-or-sell call is hard."
+    },
+    {
+      "label": "Variants.",
+      "text": "The main named variant is single stock trading, where decisions are generated for individual stocks. Other descriptions keep the label broader as stock trading from financial information and market context, and one quoted passage places it among sequential financial tasks in which a sole decision-maker generates trading actions."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Instead, the papers operationalize it through the decision format itself: one prompt asks for exactly one investment decision, buy or sell, with hold allowed when the choice is hard, and another description has a manager agent generate trading actions as the sole decision-maker for sequential financial tasks."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Only one construct is linked to it, Decision-making, and the link is related rather than a measurement claim. In that relationship, decision-making is described as proficiency in making informed financial decisions, such as developing trading strategies and optimizing investment portfolios, which places stock trading alongside those behaviors. No other construct is linked to it."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage is a decision task that ends in one action, buy, sell, or hold, based on financial information or market context. Both definitions align on that output space, though one is narrower, focusing on individual stocks and \"multi-modal market information processing,\" while the other states the task more generally as making decisions from financial information and market context. One prompt formulation further specifies that the model should provide exactly one investment decision, and may choose hold when a buy-or-sell call is hard.\n\nVariants. The main named variant is single stock trading, where decisions are generated for individual stocks. Other descriptions keep the label broader as stock trading from financial information and market context, and one quoted passage places it among sequential financial tasks in which a sole decision-maker generates trading actions.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, the papers operationalize it through the decision format itself: one prompt asks for exactly one investment decision, buy or sell, with hold allowed when the choice is hard, and another description has a manager agent generate trading actions as the sole decision-maker for sequential financial tasks.\n\nWhat it is taken as evidence of. Only one construct is linked to it, Decision-making, and the link is related rather than a measurement claim. In that relationship, decision-making is described as proficiency in making informed financial decisions, such as developing trading strategies and optimizing investment portfolios, which places stock trading alongside those behaviors. No other construct is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "INVESTORBENCH: A Benchmark for Financial Decision-Making Tasks with LLM-based Agent"
+    ],
+    "neurips24": [
+      "FinBen: A Holistic Financial Benchmark for Large Language Models",
+      "FinCon: A Synthesized LLM Multi-Agent System with Conceptual Verbal Reinforcement for Enhanced Financial Decision Making"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "neurips24"
+  ]
+}

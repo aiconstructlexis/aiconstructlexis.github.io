@@ -1,0 +1,154 @@
+{
+  "canonical_name": "Referring expression generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across definitions, the prevailing usage treats referring expression generation as producing a descriptive textual expression for a specified object or bounded region in an image, usually supplied as a bounding box. Papers agree that the output should accurately, and in some formulations unambiguously, refer to that content; a smaller line of work also describes it as the latent ability to understand a visual reference and then generate the description.\n\nVariants. A recurring variant names the task multimodal referring, with the same basic setup of understanding image regions or objects that users specify through bounding boxes or location tokens and generating the associated text. Papers also connect it to two other behavioral indicators in nearby grounding settings: referring expression segmentation is described as the dual task of REG, and one paper claims a causal relationship from referring expression generation to Entity grounding by incorporating descriptive textual clues into that task.\n\nSpace of elicitation and scores. Papers link it to one measurement instrument, RefCOCOg, described as a classical benchmark for referring expression generation. This operationalizes the behavior through image objects or regions paired with referring expressions; no other instrument is linked.\n\nWhat it is taken as evidence of. Among constructs, papers link it to two constructs, Grounding and Visual grounding, rather than using a single uniform construct link. One paper claims a causal relationship from Grounding to referring expression generation, stating that adding grounding data improves referring performance, while another reports that referring expression generation is related to Visual grounding as part of grounding data for interactive visual grounding capabilities.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Referring expression generation",
+    "Multimodal referring"
+  ],
+  "papers": [
+    "Grounding Multimodal Large Language Models to the World",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The task of generating a descriptive textual expression that accurately refers to a specific, bounded region within an image.",
+      "papers": [
+        "CogVLM: Visual Expert for Pretrained Language Models",
+        "Grounding Multimodal Large Language Models to the World"
+      ],
+      "original_name": "Referring expression generation"
+    },
+    {
+      "text": "The latent ability of a model to understand a visual reference, such as a bounding box, and generate an appropriate textual description for the specified object or region.",
+      "papers": [
+        "Grounding Multimodal Large Language Models to the World"
+      ],
+      "original_name": "Multimodal referring"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RefCOCOg",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "The RefCOCOg [33] dataset is a classical benchmark for referring expression generation, which contains 85,474 expressions for 54,822 objects in 26,711 images. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Referring expression segmentation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation",
+      "evidence": "To eliminate unsuitable candidate outputs, we leverage the dual task of REG: Referring expression segmentation (RES) [37, 48], which aims to segment a target object mask from the entire image given a sentence describing the object. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "CogVLM: Visual Expert for Pretrained Language Models",
+      "evidence": "In order to endow our model with consistent, interactive visual grounding capabilities, we collect a high-quality dataset covering 4 types of grounding data: ... (2) Referring Expression Generation (REG)... (Section 2.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CogVLM: Visual Expert for Pretrained Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Entity grounding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "ISR: Self-Refining Referring Expressions for Entity Grounding",
+      "evidence": "we are the first to incorporate referring expression generation into the entity grounding task, enhancing its process by providing descriptive textual clues. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "ISR: Self-Refining Referring Expressions for Entity Grounding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Grounding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "evidence": "\u201cParticularly, when adding grounding data into training, the referring performance gets improved, and vice versa.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Ferret: Refer and Ground Anything Anywhere at Any Granularity"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across definitions, the prevailing usage treats referring expression generation as producing a descriptive textual expression for a specified object or bounded region in an image, usually supplied as a bounding box. Papers agree that the output should accurately, and in some formulations unambiguously, refer to that content; a smaller line of work also describes it as the latent ability to understand a visual reference and then generate the description."
+    },
+    {
+      "label": "Variants.",
+      "text": "A recurring variant names the task multimodal referring, with the same basic setup of understanding image regions or objects that users specify through bounding boxes or location tokens and generating the associated text. Papers also connect it to two other behavioral indicators in nearby grounding settings: referring expression segmentation is described as the dual task of REG, and one paper claims a causal relationship from referring expression generation to Entity grounding by incorporating descriptive textual clues into that task."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link it to one measurement instrument, RefCOCOg, described as a classical benchmark for referring expression generation. This operationalizes the behavior through image objects or regions paired with referring expressions; no other instrument is linked."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Among constructs, papers link it to two constructs, Grounding and Visual grounding, rather than using a single uniform construct link. One paper claims a causal relationship from Grounding to referring expression generation, stating that adding grounding data improves referring performance, while another reports that referring expression generation is related to Visual grounding as part of grounding data for interactive visual grounding capabilities."
+    }
+  ],
+  "characterization": "Space of definitions. Across definitions, the prevailing usage treats referring expression generation as producing a descriptive textual expression for a specified object or bounded region in an image, usually supplied as a bounding box. Papers agree that the output should accurately, and in some formulations unambiguously, refer to that content; a smaller line of work also describes it as the latent ability to understand a visual reference and then generate the description.\n\nVariants. A recurring variant names the task multimodal referring, with the same basic setup of understanding image regions or objects that users specify through bounding boxes or location tokens and generating the associated text. Papers also connect it to two other behavioral indicators in nearby grounding settings: referring expression segmentation is described as the dual task of REG, and one paper claims a causal relationship from referring expression generation to Entity grounding by incorporating descriptive textual clues into that task.\n\nSpace of elicitation and scores. Papers link it to one measurement instrument, RefCOCOg, described as a classical benchmark for referring expression generation. This operationalizes the behavior through image objects or regions paired with referring expressions; no other instrument is linked.\n\nWhat it is taken as evidence of. Among constructs, papers link it to two constructs, Grounding and Visual grounding, rather than using a single uniform construct link. One paper claims a causal relationship from Grounding to referring expression generation, stating that adding grounding data improves referring performance, while another reports that referring expression generation is related to Visual grounding as part of grounding data for interactive visual grounding capabilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "CogVLM: Visual Expert for Pretrained Language Models",
+      "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "Unleashing Region Understanding in Intermediate Layers for MLLM-based Referring Expression Generation"
+    ],
+    "iclr24": [
+      "Grounding Multimodal Large Language Models to the World"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 3,
+    "iclr24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "neurips24"
+  ]
+}

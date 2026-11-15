@@ -1,0 +1,221 @@
+{
+  "canonical_name": "Functional correctness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats functional correctness as whether a generated artifact does what it is intended to do under a specification or user request, typically by passing relevant test cases or functional verification. Most formulations are about generated code, smart contracts, programs, or API calls, while a smaller formulation extends it to an LLM output that correctly solves the intended problem as verified by an external solver. Papers also separate it from syntactic validity, with one quoted passage noting that better-formed outputs do not by themselves guarantee functional correctness.\n\nSpace of facets. Papers do not introduce named subtypes, but they recurrently position the construct against nearby evaluation dimensions. The clearest contrast is with syntactic correctness, and some work evaluates it alongside design quality or alongside API hallucination as a distinct target; in benchmark descriptions, test-based checking is also described as execution correctness. No linked constructs are reported as superordinate, equivalent, or contrasting constructs beyond these pairings.\n\nSpace of measurement. Operationalization is dominated by benchmark-based testing. Papers link it to 5 measurement instruments and 2 behavioral indicators; the instruments named most often are HumanEval, APPS, CodeContests, HumanEval+, and MBPP. HumanEval and MBPP use Pass or passRatio@k, where a task is solved if the solution passes all test cases, APPS and CodeContests use private test cases to check execution correctness, and other quoted passages show Pass@k and Compile@k, AST sub-tree matching for API calls, and solver-based equivalence checks, all of which directly test whether outputs satisfy the intended function.\n\nLinks. In the papers, the non-measurement links are causal claims from the two linked behavioral indicators. One paper claims a causal relationship from catastrophic forgetting to functional correctness, stating that direct SFT may lead to catastrophic forgetting that diminishes the ability to generate functionally correct code. Another paper claims a causal relationship from code editing to functional correctness, reporting higher functional correctness together with stronger editing performance and robustness; no correlational or undirected related links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Functional correctness"
+  ],
+  "papers": [
+    "AutoSDT: Scaling Data-Driven Discovery Tasks Toward Open Co-Scientists",
+    "Improving Large Language Models Function Calling and Interpretability via Guided-Structured Templates",
+    "SolEval: Benchmarking Large Language Models for Repository-level Solidity Smart Contract Generation",
+    "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+    "CraftRTL: High-quality Synthetic Data Generation for Verilog Code Models with Correct-by-Construction Non-Textual Representations and Targeted Code Repair",
+    "Adaptive Self-improvement LLM Agentic System for ML Library Development",
+    "BaxBench: Can LLMs Generate Correct and Secure Backends?",
+    "Black-Box Adversarial Attacks on LLM-Based Code Completion",
+    "CRANE: Reasoning with constrained LLM generation",
+    "EditLord: Learning Code Transformation Rules for Code Editing",
+    "Function-to-Style Guidance of LLMs for Code Translation",
+    "KernelBench: Can LLMs Write Efficient GPU Kernels?",
+    "LLM-Supported Natural Language to Bash Translation",
+    "Gorilla: Large Language Model Connected with Massive APIs",
+    "Mercury: A Code Efficiency Benchmark for Code Large Language Models"
+  ],
+  "paper_count": 15,
+  "definitions": [
+    {
+      "text": "The degree to which a generated smart contract behaves as intended according to its specification and passes all relevant test cases.",
+      "papers": [
+        "SolEval: Benchmarking Large Language Models for Repository-level Solidity Smart Contract Generation",
+        "CraftRTL: High-quality Synthetic Data Generation for Verilog Code Models with Correct-by-Construction Non-Textual Representations and Targeted Code Repair",
+        "CRANE: Reasoning with constrained LLM generation"
+      ],
+      "original_name": "Functional correctness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mercury: A Code Efficiency Benchmark for Code Large Language Models",
+      "evidence": "HumanEval assesses the functional correctness of synthesized code derived from docstrings. (Section 4.2)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mercury: A Code Efficiency Benchmark for Code Large Language Models"
+        ],
+        "icml25": [
+          "Black-Box Adversarial Attacks on LLM-Based Code Completion"
+        ],
+        "emnlp25": [
+          "SolEval: Benchmarking Large Language Models for Repository-level Solidity Smart Contract Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Mercury: A Code Efficiency Benchmark for Code Large Language Models",
+      "evidence": "Both HumanEval and MBPP harness the metric Pass to measure the Code LLMs\u2019 functional correctness, where a task is considered solved if the given solution passes all test cases, and the total fraction of solved tasks is reported as P ass = Nsolved/Ntotal [25]. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mercury: A Code Efficiency Benchmark for Code Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic forgetting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Mercury: A Code Efficiency Benchmark for Code Large Language Models",
+      "evidence": "This suggests that direct SFT may lead to catastrophic forgetting in vanilla models, diminishing their ability to generate functionally correct code. (Section 4.5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mercury: A Code Efficiency Benchmark for Code Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "EditLord: Learning Code Transformation Rules for Code Editing",
+      "evidence": "EDITLORD outperforms the state-of-the-art by an average of 22.7% in editing performance and 58.1% in robustness while achieving 20.2% higher functional correctness across critical software engineering and security applications, LM models, and editing modes. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "EditLord: Learning Code Transformation Rules for Code Editing"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "APPS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+      "evidence": "Generated codes are evaluated against (private) test cases to check the execution correctness (Hendrycks et al., 2021; Chen et al., 2021; Li et al., 2022) (Section 3.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CodeContests",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+      "evidence": "Generated codes are evaluated against (private) test cases to check the execution correctness (Hendrycks et al., 2021; Chen et al., 2021; Li et al., 2022) (Section 3.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HumanEval+",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "EffiCoder: Enhancing Code Generation in Large Language Models through Efficiency-Aware Fine-tuning",
+      "evidence": "As shown in Table 3, we observe that almost all LLMs achieve better efficiency and higher correctness after being fine-tuned with . Take HumanEvalPlus as an example... (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "EffiCoder: Enhancing Code Generation in Large Language Models through Efficiency-Aware Fine-tuning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats functional correctness as whether a generated artifact does what it is intended to do under a specification or user request, typically by passing relevant test cases or functional verification. Most formulations are about generated code, smart contracts, programs, or API calls, while a smaller formulation extends it to an LLM output that correctly solves the intended problem as verified by an external solver. Papers also separate it from syntactic validity, with one quoted passage noting that better-formed outputs do not by themselves guarantee functional correctness."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not introduce named subtypes, but they recurrently position the construct against nearby evaluation dimensions. The clearest contrast is with syntactic correctness, and some work evaluates it alongside design quality or alongside API hallucination as a distinct target; in benchmark descriptions, test-based checking is also described as execution correctness. No linked constructs are reported as superordinate, equivalent, or contrasting constructs beyond these pairings."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is dominated by benchmark-based testing. Papers link it to 5 measurement instruments and 2 behavioral indicators; the instruments named most often are HumanEval, APPS, CodeContests, HumanEval+, and MBPP. HumanEval and MBPP use Pass or passRatio@k, where a task is solved if the solution passes all test cases, APPS and CodeContests use private test cases to check execution correctness, and other quoted passages show Pass@k and Compile@k, AST sub-tree matching for API calls, and solver-based equivalence checks, all of which directly test whether outputs satisfy the intended function."
+    },
+    {
+      "label": "Links.",
+      "text": "In the papers, the non-measurement links are causal claims from the two linked behavioral indicators. One paper claims a causal relationship from catastrophic forgetting to functional correctness, stating that direct SFT may lead to catastrophic forgetting that diminishes the ability to generate functionally correct code. Another paper claims a causal relationship from code editing to functional correctness, reporting higher functional correctness together with stronger editing performance and robustness; no correlational or undirected related links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats functional correctness as whether a generated artifact does what it is intended to do under a specification or user request, typically by passing relevant test cases or functional verification. Most formulations are about generated code, smart contracts, programs, or API calls, while a smaller formulation extends it to an LLM output that correctly solves the intended problem as verified by an external solver. Papers also separate it from syntactic validity, with one quoted passage noting that better-formed outputs do not by themselves guarantee functional correctness.\n\nSpace of facets. Papers do not introduce named subtypes, but they recurrently position the construct against nearby evaluation dimensions. The clearest contrast is with syntactic correctness, and some work evaluates it alongside design quality or alongside API hallucination as a distinct target; in benchmark descriptions, test-based checking is also described as execution correctness. No linked constructs are reported as superordinate, equivalent, or contrasting constructs beyond these pairings.\n\nSpace of measurement. Operationalization is dominated by benchmark-based testing. Papers link it to 5 measurement instruments and 2 behavioral indicators; the instruments named most often are HumanEval, APPS, CodeContests, HumanEval+, and MBPP. HumanEval and MBPP use Pass or passRatio@k, where a task is solved if the solution passes all test cases, APPS and CodeContests use private test cases to check execution correctness, and other quoted passages show Pass@k and Compile@k, AST sub-tree matching for API calls, and solver-based equivalence checks, all of which directly test whether outputs satisfy the intended function.\n\nLinks. In the papers, the non-measurement links are causal claims from the two linked behavioral indicators. One paper claims a causal relationship from catastrophic forgetting to functional correctness, stating that direct SFT may lead to catastrophic forgetting that diminishes the ability to generate functionally correct code. Another paper claims a causal relationship from code editing to functional correctness, reporting higher functional correctness together with stronger editing performance and robustness; no correlational or undirected related links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "AutoSDT: Scaling Data-Driven Discovery Tasks Toward Open Co-Scientists",
+      "Improving Large Language Models Function Calling and Interpretability via Guided-Structured Templates",
+      "SolEval: Benchmarking Large Language Models for Repository-level Solidity Smart Contract Generation"
+    ],
+    "iclr24": [
+      "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis"
+    ],
+    "iclr25": [
+      "CraftRTL: High-quality Synthetic Data Generation for Verilog Code Models with Correct-by-Construction Non-Textual Representations and Targeted Code Repair"
+    ],
+    "icml25": [
+      "Adaptive Self-improvement LLM Agentic System for ML Library Development",
+      "BaxBench: Can LLMs Generate Correct and Secure Backends?",
+      "Black-Box Adversarial Attacks on LLM-Based Code Completion",
+      "CRANE: Reasoning with constrained LLM generation",
+      "EditLord: Learning Code Transformation Rules for Code Editing",
+      "Function-to-Style Guidance of LLMs for Code Translation",
+      "KernelBench: Can LLMs Write Efficient GPU Kernels?"
+    ],
+    "naacl25": [
+      "LLM-Supported Natural Language to Bash Translation"
+    ],
+    "neurips24": [
+      "Gorilla: Large Language Model Connected with Massive APIs",
+      "Mercury: A Code Efficiency Benchmark for Code Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr24": 1,
+    "iclr25": 1,
+    "icml25": 7,
+    "naacl25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

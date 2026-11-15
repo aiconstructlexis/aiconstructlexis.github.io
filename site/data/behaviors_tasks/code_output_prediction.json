@@ -1,0 +1,134 @@
+{
+  "canonical_name": "Code output prediction",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. The prevailing usage treats this as a code reasoning task where the goal is to predict the final output or result of executing code from the program and its inputs. Definitions largely agree on output prediction as the core criterion, while a smaller framing broadens it to execution reasoning that also includes inferring inputs from outputs. Some papers explicitly cast the task as simulation: one says output prediction requires the model to \"simulate a compiler\" (Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment), and another describes verbally simulating execution by tracking each line, executed lines, variable changes, and the final output (SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning).\n\nVariants. Papers use several closely related labels, including output prediction, execution reasoning, and code execution prediction. The main variants are predicting outputs from code and inputs, and a less common inverse form that infers inputs from outputs. Benchmark-linked task names include CRUXEval-O for output prediction, CRUXEval-I for input prediction, and the code execution task in LiveCodeBench.\n\nSpace of elicitation and scores. It is measured by two instruments: CRUXEval and LiveCodeBench. CRUXEval is used through its code-understanding tasks CruxEval-O and, in broader execution-reasoning setups, CruxEval-I; LiveCodeBench is used through its code execution task, LCB-Exec. Across these papers, measurement therefore operationalizes the behavior as output prediction, input prediction, or code execution on benchmark tasks.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not explicitly state what broader construct this behavior indicates.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Output prediction",
+    "Execution reasoning",
+    "Code execution prediction"
+  ],
+  "papers": [
+    "ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis",
+    "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark",
+    "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment",
+    "Can Large Language Models Understand Intermediate Representations in Compilers?",
+    "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction",
+    "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+    "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "Predicting the final output of a program given the program and its inputs.",
+      "papers": [
+        "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment"
+      ],
+      "original_name": "Output prediction"
+    },
+    {
+      "text": "The observable task of predicting program outputs given inputs or inferring inputs given outputs, often involving step-by-step simulation.",
+      "papers": [
+        "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning"
+      ],
+      "original_name": "Execution reasoning"
+    },
+    {
+      "text": "The observable task of predicting the final output or result of executing a given piece of code.",
+      "papers": [
+        "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction"
+      ],
+      "original_name": "Code execution prediction"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CRUXEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "evidence": "two code-understanding tasks\u2014namely, CruxEval-I (input prediction) and CruxEval-O (output prediction) from CruxEval benchmark [6] (Section 4.1).",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+          "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning"
+        ],
+        "iclr25": [
+          "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LiveCodeBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning",
+      "evidence": "\"For execution reasoning, we employ CRUXEval [37] and the code execution task in LiveCodeBench (LCB-Exec for short) [18].\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The prevailing usage treats this as a code reasoning task where the goal is to predict the final output or result of executing code from the program and its inputs. Definitions largely agree on output prediction as the core criterion, while a smaller framing broadens it to execution reasoning that also includes inferring inputs from outputs. Some papers explicitly cast the task as simulation: one says output prediction requires the model to \"simulate a compiler\" (Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment), and another describes verbally simulating execution by tracking each line, executed lines, variable changes, and the final output (SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning)."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several closely related labels, including output prediction, execution reasoning, and code execution prediction. The main variants are predicting outputs from code and inputs, and a less common inverse form that infers inputs from outputs. Benchmark-linked task names include CRUXEval-O for output prediction, CRUXEval-I for input prediction, and the code execution task in LiveCodeBench."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "It is measured by two instruments: CRUXEval and LiveCodeBench. CRUXEval is used through its code-understanding tasks CruxEval-O and, in broader execution-reasoning setups, CruxEval-I; LiveCodeBench is used through its code execution task, LCB-Exec. Across these papers, measurement therefore operationalizes the behavior as output prediction, input prediction, or code execution on benchmark tasks."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it, so papers do not explicitly state what broader construct this behavior indicates."
+    }
+  ],
+  "characterization": "Space of definitions. The prevailing usage treats this as a code reasoning task where the goal is to predict the final output or result of executing code from the program and its inputs. Definitions largely agree on output prediction as the core criterion, while a smaller framing broadens it to execution reasoning that also includes inferring inputs from outputs. Some papers explicitly cast the task as simulation: one says output prediction requires the model to \"simulate a compiler\" (Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment), and another describes verbally simulating execution by tracking each line, executed lines, variable changes, and the final output (SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning).\n\nVariants. Papers use several closely related labels, including output prediction, execution reasoning, and code execution prediction. The main variants are predicting outputs from code and inputs, and a less common inverse form that infers inputs from outputs. Benchmark-linked task names include CRUXEval-O for output prediction, CRUXEval-I for input prediction, and the code execution task in LiveCodeBench.\n\nSpace of elicitation and scores. It is measured by two instruments: CRUXEval and LiveCodeBench. CRUXEval is used through its code-understanding tasks CruxEval-O and, in broader execution-reasoning setups, CruxEval-I; LiveCodeBench is used through its code execution task, LCB-Exec. Across these papers, measurement therefore operationalizes the behavior as output prediction, input prediction, or code execution on benchmark tasks.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not explicitly state what broader construct this behavior indicates.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis"
+    ],
+    "iclr25": [
+      "TestGenEval: A Real World Unit Test Generation and Test Completion Benchmark",
+      "Unveiling the Magic of Code Reasoning through Hypothesis Decomposition and Amendment"
+    ],
+    "icml25": [
+      "Can Large Language Models Understand Intermediate Representations in Compilers?",
+      "CodeIO: Condensing Reasoning Patterns via Code Input-Output Prediction"
+    ],
+    "neurips24": [
+      "Prompt Tuning Strikes Back: Customizing Foundation Models with Low-Rank Prompt Adaptation",
+      "SemCoder: Training Code Language Models with Comprehensive Semantics Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 1,
+    "iclr25": 2,
+    "icml25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

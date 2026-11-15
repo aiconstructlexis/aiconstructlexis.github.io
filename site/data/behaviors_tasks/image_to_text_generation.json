@@ -1,0 +1,85 @@
+{
+  "canonical_name": "Image-to-text generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats this behavior as generating text from an input image, most commonly as a description or response based on that image. Definitions range from generating descriptions for input images to broader formulations that include conversation, detailed description, and complex reasoning. A smaller line of work makes the text input explicit, defining the task as producing a relevant and coherent response from an image plus an optional prompt, or as a response conditioned on and consistent with both an input image and a textual query.\n\nVariants. Papers use several closely related names, including image-to-text generation, Image2Text, image-to-text (I2T) generation, and image-grounded text generation. The studied forms span plain image description, instruction-following or conversational responses, and broader responses involving detailed description or complex reasoning; one paper instantiates this as a Chinese-English bilingual multimodal chatbot responding to user instructions based on the input image. Some settings also pair the image with user-provided text or a textual query, and one paper treats it as a practical multimodal use case with LLaVA-like models.\n\nSpace of elicitation and scores. No measurement instrument is linked to it, so the papers do not identify a commonly linked instrument for eliciting or scoring this behavior.\n\nWhat it is taken as evidence of. No construct is linked to it, so the papers do not explicitly relate this behavior to a named construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Image-to-text generation",
+    "Image-grounded text generation"
+  ],
+  "papers": [
+    "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages",
+    "Unified Language-Vision Pretraining in LLM with Dynamic Discrete Visual Tokenization",
+    "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+    "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+    "Data-Juicer Sandbox: A Feedback-Driven Suite for Multimodal Data-Model Co-development"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Producing textual descriptions or responses based on input images, including conversation, detailed description, and complex reasoning.",
+      "papers": [
+        "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages",
+        "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+        "Data-Juicer Sandbox: A Feedback-Driven Suite for Multimodal Data-Model Co-development"
+      ],
+      "original_name": "Image-to-text generation"
+    },
+    {
+      "text": "The task of generating a textual response that is conditioned on and consistent with a given input image and a textual query.",
+      "papers": [
+        "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models"
+      ],
+      "original_name": "Image-grounded text generation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats this behavior as generating text from an input image, most commonly as a description or response based on that image. Definitions range from generating descriptions for input images to broader formulations that include conversation, detailed description, and complex reasoning. A smaller line of work makes the text input explicit, defining the task as producing a relevant and coherent response from an image plus an optional prompt, or as a response conditioned on and consistent with both an input image and a textual query."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several closely related names, including image-to-text generation, Image2Text, image-to-text (I2T) generation, and image-grounded text generation. The studied forms span plain image description, instruction-following or conversational responses, and broader responses involving detailed description or complex reasoning; one paper instantiates this as a Chinese-English bilingual multimodal chatbot responding to user instructions based on the input image. Some settings also pair the image with user-provided text or a textual query, and one paper treats it as a practical multimodal use case with LLaVA-like models."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it, so the papers do not identify a commonly linked instrument for eliciting or scoring this behavior."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it, so the papers do not explicitly relate this behavior to a named construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats this behavior as generating text from an input image, most commonly as a description or response based on that image. Definitions range from generating descriptions for input images to broader formulations that include conversation, detailed description, and complex reasoning. A smaller line of work makes the text input explicit, defining the task as producing a relevant and coherent response from an image plus an optional prompt, or as a response conditioned on and consistent with both an input image and a textual query.\n\nVariants. Papers use several closely related names, including image-to-text generation, Image2Text, image-to-text (I2T) generation, and image-grounded text generation. The studied forms span plain image description, instruction-following or conversational responses, and broader responses involving detailed description or complex reasoning; one paper instantiates this as a Chinese-English bilingual multimodal chatbot responding to user instructions based on the input image. Some settings also pair the image with user-provided text or a textual query, and one paper treats it as a practical multimodal use case with LLaVA-like models.\n\nSpace of elicitation and scores. No measurement instrument is linked to it, so the papers do not identify a commonly linked instrument for eliciting or scoring this behavior.\n\nWhat it is taken as evidence of. No construct is linked to it, so the papers do not explicitly relate this behavior to a named construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages",
+      "Unified Language-Vision Pretraining in LLM with Dynamic Discrete Visual Tokenization"
+    ],
+    "icml25": [
+      "Look Twice Before You Answer: Memory-Space Visual Retracing for Hallucination Mitigation in Multimodal Large Language Models",
+      "Data-Juicer Sandbox: A Feedback-Driven Suite for Multimodal Data-Model Co-development"
+    ],
+    "iclr25": [
+      "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "icml25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "canonical_name": "Multi-step planning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats multi-step planning as choosing, producing, or executing an ordered sequence of actions, subgoals, or subtasks over multiple steps to reach a goal. Several descriptions make the long horizon explicit, stressing step-by-step planning toward a goal and noting that early decisions can affect later steps or future outcomes. A smaller line of work uses the name natural planning for a closely related idea, framing it as decomposing an input problem into an ordered sequence of intermediate subgoals that guide solution generation and explicitly separating it from classical AI planning.\n\nSpace of facets. Papers mainly organize the construct around decomposition into subgoals: one related construct is Task decomposition, and some descriptions define planning itself as creating a plan by decomposing a task into sub-goals or sub-tasks and then iteratively executing each sub-task. The clearest naming distinction is between multi-step planning and natural planning, with the latter used for the subgoal-decomposition framing and contrasted with classical AI planning. In benchmark-oriented descriptions, multi-step planning also appears alongside pathfinding, logic skills, spatial navigation, rule understanding, and constraint satisfaction.\n\nSpace of measurement. Operationalization centers on one measurement instrument, SPaRC, and one behavioral indicator, Task decomposition. SPaRC is a reasoning challenge that measures multi-step planning through long-term, step-by-step path planning, where errors earlier in the reasoning chain can affect later steps. The linked behavioral indicator captures the construct as decomposing an input problem into an ordered sequence of intermediate subgoals, so the operationalizations mostly match the decomposition and extended-horizon definitions.\n\nLinks. Beyond measurement, one paper reports that multi-step planning is related to Task decomposition, using decomposition into ordered intermediate subgoals as the shared formulation. One paper also claims a causal relationship from multi-step planning to Complex reasoning, stating that planning trajectories improve complex reasoning capabilities.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-step planning",
+    "Natural planning",
+    "Step-by-step planning"
+  ],
+  "papers": [
+    "Can LLMs Help You at Work? A Sandbox for Evaluating LLM Agents in Enterprise Environments",
+    "Direct Value Optimization: Improving Chain-of-Thought Reasoning in LLMs with Refined Values",
+    "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+    "SPaRC: A Spatial Pathfinding Reasoning Challenge",
+    "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+    "MONA: Myopic Optimization with Non-myopic Approval Can Mitigate Multi-step Reward Hacking"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "Selecting a sequence of actions across multiple steps to achieve a goal or manipulate future outcomes.",
+      "papers": [
+        "MONA: Myopic Optimization with Non-myopic Approval Can Mitigate Multi-step Reward Hacking",
+        "Can LLMs Help You at Work? A Sandbox for Evaluating LLM Agents in Enterprise Environments"
+      ],
+      "original_name": "Multi-step planning"
+    },
+    {
+      "text": "The ability to decompose a problem into an ordered sequence of intermediate subgoals that guide solution generation.",
+      "papers": [
+        "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving"
+      ],
+      "original_name": "Natural planning"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SPaRC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SPaRC: A Spatial Pathfinding Reasoning Challenge",
+      "evidence": "Empirically, SPaRC reveals critical limitations in current reasoning models regarding spatial reasoning, rule-based reasoning, multi-step planning, and constraint satisfaction. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SPaRC: A Spatial Pathfinding Reasoning Challenge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task decomposition",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+      "evidence": "In this work, we formalize natural planning\u2014distinct from classical AI planning (which is not the focus of this work)\u2014as the process of decomposing an input problem x into an ordered sequence of intermediate subgoals that guide its solution. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Complex reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+      "evidence": "Our detailed analysis demonstrates how planning trajectories improves complex reasoning capabilities, showing that PLAN-TUNING is an effective strategy for improving task-specific performance of smaller LLMs. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats multi-step planning as choosing, producing, or executing an ordered sequence of actions, subgoals, or subtasks over multiple steps to reach a goal. Several descriptions make the long horizon explicit, stressing step-by-step planning toward a goal and noting that early decisions can affect later steps or future outcomes. A smaller line of work uses the name natural planning for a closely related idea, framing it as decomposing an input problem into an ordered sequence of intermediate subgoals that guide solution generation and explicitly separating it from classical AI planning."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers mainly organize the construct around decomposition into subgoals: one related construct is Task decomposition, and some descriptions define planning itself as creating a plan by decomposing a task into sub-goals or sub-tasks and then iteratively executing each sub-task. The clearest naming distinction is between multi-step planning and natural planning, with the latter used for the subgoal-decomposition framing and contrasted with classical AI planning. In benchmark-oriented descriptions, multi-step planning also appears alongside pathfinding, logic skills, spatial navigation, rule understanding, and constraint satisfaction."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization centers on one measurement instrument, SPaRC, and one behavioral indicator, Task decomposition. SPaRC is a reasoning challenge that measures multi-step planning through long-term, step-by-step path planning, where errors earlier in the reasoning chain can affect later steps. The linked behavioral indicator captures the construct as decomposing an input problem into an ordered sequence of intermediate subgoals, so the operationalizations mostly match the decomposition and extended-horizon definitions."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper reports that multi-step planning is related to Task decomposition, using decomposition into ordered intermediate subgoals as the shared formulation. One paper also claims a causal relationship from multi-step planning to Complex reasoning, stating that planning trajectories improve complex reasoning capabilities."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats multi-step planning as choosing, producing, or executing an ordered sequence of actions, subgoals, or subtasks over multiple steps to reach a goal. Several descriptions make the long horizon explicit, stressing step-by-step planning toward a goal and noting that early decisions can affect later steps or future outcomes. A smaller line of work uses the name natural planning for a closely related idea, framing it as decomposing an input problem into an ordered sequence of intermediate subgoals that guide solution generation and explicitly separating it from classical AI planning.\n\nSpace of facets. Papers mainly organize the construct around decomposition into subgoals: one related construct is Task decomposition, and some descriptions define planning itself as creating a plan by decomposing a task into sub-goals or sub-tasks and then iteratively executing each sub-task. The clearest naming distinction is between multi-step planning and natural planning, with the latter used for the subgoal-decomposition framing and contrasted with classical AI planning. In benchmark-oriented descriptions, multi-step planning also appears alongside pathfinding, logic skills, spatial navigation, rule understanding, and constraint satisfaction.\n\nSpace of measurement. Operationalization centers on one measurement instrument, SPaRC, and one behavioral indicator, Task decomposition. SPaRC is a reasoning challenge that measures multi-step planning through long-term, step-by-step path planning, where errors earlier in the reasoning chain can affect later steps. The linked behavioral indicator captures the construct as decomposing an input problem into an ordered sequence of intermediate subgoals, so the operationalizations mostly match the decomposition and extended-horizon definitions.\n\nLinks. Beyond measurement, one paper reports that multi-step planning is related to Task decomposition, using decomposition into ordered intermediate subgoals as the shared formulation. One paper also claims a causal relationship from multi-step planning to Complex reasoning, stating that planning trajectories improve complex reasoning capabilities.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Can LLMs Help You at Work? A Sandbox for Evaluating LLM Agents in Enterprise Environments",
+      "Direct Value Optimization: Improving Chain-of-Thought Reasoning in LLMs with Refined Values",
+      "PLAN-TUNING: Post-Training Language Models to Learn Step-by-Step Planning for Complex Problem Solving",
+      "SPaRC: A Spatial Pathfinding Reasoning Challenge"
+    ],
+    "icml25": [
+      "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+      "MONA: Myopic Optimization with Non-myopic Approval Can Mitigate Multi-step Reward Hacking"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4,
+    "icml25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "canonical_name": "WebQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the descriptions, WebQA is treated as a retrieval-augmented question answering dataset used to evaluate long-context retrieval performance. The prevailing characterization specifies 20 documents per question and frames the evaluation around position-dependent accuracy.\n\nWhat it is claimed to measure. Papers describe WebQA as evaluating long-context retrieval performance and assessing position-dependent accuracy. No constructs or behavioral indicators are linked to it in the recorded relationships, so the usage in the papers does not converge on any separately named construct.\n\nSpace of uses. The quoted passage positions WebQA as one dataset in an evaluation suite, used alongside NaturalQuestions, TriviaQA, and KV Retrieval. In that usage, it appears as part of a broader benchmark set rather than with any recorded linked measurement instrument.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WebQA"
+  ],
+  "papers": [
+    "MMAPG: A Training-Free Framework for Multimodal Multi-hop Question Answering via Adaptive Planning Graphs",
+    "Memory-QA: Answering Recall Questions Based on Multimodal Memories",
+    "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation",
+    "RAG-Instruct: Boosting LLMs with Diverse Retrieval-Augmented Instructions"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Retrieval-augmented QA dataset used to evaluate long-context retrieval performance with 20 documents per question, assessing position-dependent accuracy.",
+      "papers": [
+        "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation"
+      ],
+      "original_name": "WebQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the descriptions, WebQA is treated as a retrieval-augmented question answering dataset used to evaluate long-context retrieval performance. The prevailing characterization specifies 20 documents per question and frames the evaluation around position-dependent accuracy."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers describe WebQA as evaluating long-context retrieval performance and assessing position-dependent accuracy. No constructs or behavioral indicators are linked to it in the recorded relationships, so the usage in the papers does not converge on any separately named construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The quoted passage positions WebQA as one dataset in an evaluation suite, used alongside NaturalQuestions, TriviaQA, and KV Retrieval. In that usage, it appears as part of a broader benchmark set rather than with any recorded linked measurement instrument."
+    }
+  ],
+  "characterization": "What it is. Across the descriptions, WebQA is treated as a retrieval-augmented question answering dataset used to evaluate long-context retrieval performance. The prevailing characterization specifies 20 documents per question and frames the evaluation around position-dependent accuracy.\n\nWhat it is claimed to measure. Papers describe WebQA as evaluating long-context retrieval performance and assessing position-dependent accuracy. No constructs or behavioral indicators are linked to it in the recorded relationships, so the usage in the papers does not converge on any separately named construct.\n\nSpace of uses. The quoted passage positions WebQA as one dataset in an evaluation suite, used alongside NaturalQuestions, TriviaQA, and KV Retrieval. In that usage, it appears as part of a broader benchmark set rather than with any recorded linked measurement instrument.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "MMAPG: A Training-Free Framework for Multimodal Multi-hop Question Answering via Adaptive Planning Graphs",
+      "Memory-QA: Answering Recall Questions Based on Multimodal Memories",
+      "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation",
+      "RAG-Instruct: Boosting LLMs with Diverse Retrieval-Augmented Instructions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

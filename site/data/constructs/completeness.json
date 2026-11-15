@@ -1,0 +1,176 @@
+{
+  "canonical_name": "Completeness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, completeness is most commonly framed as full coverage without omission: responses, summaries, retrieved sets, or decomposed representations should include all relevant items, facts, or context, sometimes \"all and only\" the items that satisfy the constraints. Many definitions also add sufficiency of detail, describing outputs as providing in-depth and in-breadth information or as covering all question-relevant key points. A smaller line of work treats completeness as a property of a plan or reasoning system, either that a set of sub-tasks contains all information needed for a comprehensive answer, or that a system can find a valid proof whenever one exists. Another minority framing narrows it to factual completeness, meaning that a claim and its evidence contain all critical context needed for a non-misleading interpretation.\n\nSpace of facets. Papers use several alternative labels for overlapping ideas: response informativeness names the completeness of an answer in RAG, information coverage refers to capturing all relevant claims and facts, and factual completeness extends the term to whether claims and evidence include all critical context. The concept is also organized by what it is attached to, including answer content, source-to-summary coverage, table decomposition, retrieval results, planning decompositions, and proof search. Several papers pair completeness with neighboring criteria rather than treating it alone, most often correctness or accuracy, while others place it beside consistency, solvability, non-redundancy, soundness, relevance, and verbosity.\n\nSpace of measurement. Papers link completeness to no measurement instrument, one behavioral indicator, Question answering, and no constructs. In practice, most operationalizations are direct coverage scores: one retrieval paper defines it as the fraction of ground-truth answers with an approximate match, a summarization paper uses the proportion of covered key-facts, and a text-to-table paper measures information coverage by mapping each ground-truth tuple to its most similar generated counterpart. Some papers also use direct assessments, for example a 1 to 5 Likert scale for whether decomposed tables retain the information needed to answer a query, or criteria asking whether a response covers all question-relevant key points and sufficient detail. These operationalizations largely mirror the prevailing definition as preserving or covering all relevant content without omission.\n\nLinks. One paper reports that completeness is related to Question answering, stating that question-answering systems can have attributes of relevance, verbosity, and completeness. No causal or correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Completeness",
+    "Response informativeness",
+    "Information coverage",
+    "Factual completeness"
+  ],
+  "papers": [
+    "DeepSolution: Boosting Complex Engineering Solution Design via Tree-based Exploration and Bi-point Thinking",
+    "LongReward: Improving Long-context Large Language Models with AI Feedback",
+    "MT-RAIG: Novel Benchmark and Evaluation Framework for Retrieval-Augmented Insight Generation over Multiple Tables",
+    "Map&Make: Schema Guided Text to Table Generation",
+    "PlanGenLLMs: A Modern Survey of LLM Planning Capabilities",
+    "Towards Multi-dimensional Evaluation of LLM Summarization across Domains and Languages",
+    "F2TEval: Human-Aligned Multi-Dimensional Evaluation for Figure-to-Text Task",
+    "JUREX-4E: Juridical Expert-Annotated Four-Element Knowledge Base for Legal Reasoning",
+    "LLM-Driven Completeness and Consistency Evaluation for Cultural Heritage Data Augmentation in Cross-Modal Retrieval",
+    "OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain",
+    "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements",
+    "RAGferee: Building Contextual Reward Models for Retrieval-Augmented Generation",
+    "RICO: Improving Accuracy and Completeness in Image Recaptioning via Visual Reconstruction",
+    "The Missing Parts: Augmenting Fact Verification with Half Truth Detection",
+    "TracSum: A New Benchmark for Aspect-Based Summarization with Sentence-Level Traceability in Medical Domain",
+    "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+    "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization",
+    "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+    "KITAB: Evaluating LLMs on Constraint Satisfaction for Information Retrieval",
+    "Agent-Oriented Planning in Multi-Agent Systems",
+    "Mixture-of-Agents Enhances Large Language Model Capabilities",
+    "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+    "Learning to Summarize from LLM-generated Feedback",
+    "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization",
+    "SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning",
+    "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+  ],
+  "paper_count": 26,
+  "definitions": [
+    {
+      "text": "The extent to which the model retrieves all and only the items that satisfy the given constraints, without omitting valid solutions.",
+      "papers": [
+        "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+        "KITAB: Evaluating LLMs on Constraint Satisfaction for Information Retrieval",
+        "Agent-Oriented Planning in Multi-Agent Systems",
+        "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+        "SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning",
+        "Learning to Summarize from LLM-generated Feedback",
+        "LongReward: Improving Long-context Large Language Models with AI Feedback",
+        "TracSum: A New Benchmark for Aspect-Based Summarization with Sentence-Level Traceability in Medical Domain"
+      ],
+      "original_name": "Completeness"
+    },
+    {
+      "text": "The latent ability of a RAG generator to fully utilize valuable information from retrieved documents to produce complete and correct answers.",
+      "papers": [
+        "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization"
+      ],
+      "original_name": "Response informativeness"
+    },
+    {
+      "text": "The ability of a model to capture and represent all relevant claims and facts from a source text in its generated output.",
+      "papers": [
+        "Map&Make: Schema Guided Text to Table Generation"
+      ],
+      "original_name": "Information coverage"
+    },
+    {
+      "text": "The degree to which a claim and its supporting evidence contain all critical context necessary for a non-misleading interpretation.",
+      "papers": [
+        "The Missing Parts: Augmenting Fact Verification with Half Truth Detection"
+      ],
+      "original_name": "Factual completeness"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Decoding-Time Language Model Alignment with Multiple Objectives",
+      "evidence": "question-answering systems can have attributes of relevance, verbosity, and completeness [52].",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Decoding-Time Language Model Alignment with Multiple Objectives"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, completeness is most commonly framed as full coverage without omission: responses, summaries, retrieved sets, or decomposed representations should include all relevant items, facts, or context, sometimes \"all and only\" the items that satisfy the constraints. Many definitions also add sufficiency of detail, describing outputs as providing in-depth and in-breadth information or as covering all question-relevant key points. A smaller line of work treats completeness as a property of a plan or reasoning system, either that a set of sub-tasks contains all information needed for a comprehensive answer, or that a system can find a valid proof whenever one exists. Another minority framing narrows it to factual completeness, meaning that a claim and its evidence contain all critical context needed for a non-misleading interpretation."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several alternative labels for overlapping ideas: response informativeness names the completeness of an answer in RAG, information coverage refers to capturing all relevant claims and facts, and factual completeness extends the term to whether claims and evidence include all critical context. The concept is also organized by what it is attached to, including answer content, source-to-summary coverage, table decomposition, retrieval results, planning decompositions, and proof search. Several papers pair completeness with neighboring criteria rather than treating it alone, most often correctness or accuracy, while others place it beside consistency, solvability, non-redundancy, soundness, relevance, and verbosity."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link completeness to no measurement instrument, one behavioral indicator, Question answering, and no constructs. In practice, most operationalizations are direct coverage scores: one retrieval paper defines it as the fraction of ground-truth answers with an approximate match, a summarization paper uses the proportion of covered key-facts, and a text-to-table paper measures information coverage by mapping each ground-truth tuple to its most similar generated counterpart. Some papers also use direct assessments, for example a 1 to 5 Likert scale for whether decomposed tables retain the information needed to answer a query, or criteria asking whether a response covers all question-relevant key points and sufficient detail. These operationalizations largely mirror the prevailing definition as preserving or covering all relevant content without omission."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper reports that completeness is related to Question answering, stating that question-answering systems can have attributes of relevance, verbosity, and completeness. No causal or correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, completeness is most commonly framed as full coverage without omission: responses, summaries, retrieved sets, or decomposed representations should include all relevant items, facts, or context, sometimes \"all and only\" the items that satisfy the constraints. Many definitions also add sufficiency of detail, describing outputs as providing in-depth and in-breadth information or as covering all question-relevant key points. A smaller line of work treats completeness as a property of a plan or reasoning system, either that a set of sub-tasks contains all information needed for a comprehensive answer, or that a system can find a valid proof whenever one exists. Another minority framing narrows it to factual completeness, meaning that a claim and its evidence contain all critical context needed for a non-misleading interpretation.\n\nSpace of facets. Papers use several alternative labels for overlapping ideas: response informativeness names the completeness of an answer in RAG, information coverage refers to capturing all relevant claims and facts, and factual completeness extends the term to whether claims and evidence include all critical context. The concept is also organized by what it is attached to, including answer content, source-to-summary coverage, table decomposition, retrieval results, planning decompositions, and proof search. Several papers pair completeness with neighboring criteria rather than treating it alone, most often correctness or accuracy, while others place it beside consistency, solvability, non-redundancy, soundness, relevance, and verbosity.\n\nSpace of measurement. Papers link completeness to no measurement instrument, one behavioral indicator, Question answering, and no constructs. In practice, most operationalizations are direct coverage scores: one retrieval paper defines it as the fraction of ground-truth answers with an approximate match, a summarization paper uses the proportion of covered key-facts, and a text-to-table paper measures information coverage by mapping each ground-truth tuple to its most similar generated counterpart. Some papers also use direct assessments, for example a 1 to 5 Likert scale for whether decomposed tables retain the information needed to answer a query, or criteria asking whether a response covers all question-relevant key points and sufficient detail. These operationalizations largely mirror the prevailing definition as preserving or covering all relevant content without omission.\n\nLinks. One paper reports that completeness is related to Question answering, stating that question-answering systems can have attributes of relevance, verbosity, and completeness. No causal or correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "DeepSolution: Boosting Complex Engineering Solution Design via Tree-based Exploration and Bi-point Thinking",
+      "LongReward: Improving Long-context Large Language Models with AI Feedback",
+      "MT-RAIG: Novel Benchmark and Evaluation Framework for Retrieval-Augmented Insight Generation over Multiple Tables",
+      "Map&Make: Schema Guided Text to Table Generation",
+      "PlanGenLLMs: A Modern Survey of LLM Planning Capabilities",
+      "Towards Multi-dimensional Evaluation of LLM Summarization across Domains and Languages"
+    ],
+    "emnlp25": [
+      "F2TEval: Human-Aligned Multi-Dimensional Evaluation for Figure-to-Text Task",
+      "JUREX-4E: Juridical Expert-Annotated Four-Element Knowledge Base for Legal Reasoning",
+      "LLM-Driven Completeness and Consistency Evaluation for Cultural Heritage Data Augmentation in Cross-Modal Retrieval",
+      "OmniEval: An Omnidirectional and Automatic RAG Evaluation Benchmark in Financial Domain",
+      "PAKTON: A Multi-Agent Framework for Question Answering in Long Legal Agreements",
+      "RAGferee: Building Contextual Reward Models for Retrieval-Augmented Generation",
+      "RICO: Improving Accuracy and Completeness in Image Recaptioning via Visual Reconstruction",
+      "The Missing Parts: Augmenting Fact Verification with Half Truth Detection",
+      "TracSum: A New Benchmark for Aspect-Based Summarization with Sentence-Level Traceability in Medical Domain",
+      "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+      "ZERA: Zero-init Instruction Evolving Refinement Agent \u2013 From Zero Instructions to Structured Prompts via Principle-based Optimization"
+    ],
+    "iclr24": [
+      "FLASK: Fine-grained Language Model Evaluation based on Alignment Skill Sets",
+      "KITAB: Evaluating LLMs on Constraint Satisfaction for Information Retrieval"
+    ],
+    "iclr25": [
+      "Agent-Oriented Planning in Multi-Agent Systems",
+      "Mixture-of-Agents Enhances Large Language Model Capabilities"
+    ],
+    "naacl25": [
+      "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+      "Learning to Summarize from LLM-generated Feedback",
+      "PA-RAG: RAG Alignment via Multi-Perspective Preference Optimization",
+      "SymBa: Symbolic Backward Chaining for Structured Natural Language Reasoning"
+    ],
+    "neurips24": [
+      "SeafloorAI: A Large-scale Vision-Language Dataset for Seafloor Geological Survey"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 6,
+    "emnlp25": 11,
+    "iclr24": 2,
+    "iclr25": 2,
+    "naacl25": 4,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

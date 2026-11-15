@@ -1,0 +1,214 @@
+{
+  "canonical_name": "BLiMP",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, BLiMP is most commonly treated as an English benchmark or corpus of linguistic minimal pairs for grammaticality or acceptability judgments. It is usually described as minimally different pairs of acceptable and unacceptable, or grammatical and ungrammatical, sentences, with evaluation based on identifying the grammatical item or assigning it lower perplexity; several definitions present it as a multi-task benchmark spanning syntax, morphology, and semantics. Most descriptions specify 67 subtasks, datasets, or paradigms with 1,000 pairs each, often grouped into 12 categories or phenomena and sometimes summarized as 67,000 pairs, and some add that the examples are template-generated or built from manually crafted sentence templates, though one paper describes 13 linguistic phenomena. A smaller usage selects an 11-dataset subset that can be used for text generation.\n\nWhat it is claimed to measure. Papers link BLiMP to 5 constructs and no behavioral indicators. The prevailing claim is that it measures syntactic competence, with papers using it for syntactic generalization, grammatical learning, and grammatical competence; some papers also report it as measuring formal linguistic competence. Smaller lines of work use it to measure language proficiency, linguistic knowledge, or plausibility, including plausibility defined as whether model attributions align with human-understood linguistic rationales.\n\nSpace of uses. BLiMP is often used alongside SyntaxGym, and some papers pair it with CLiMP, GLUE, Brain-Score, or Ewok. In these settings it is typically positioned as a benchmark for linguistic competence or grammaticality within a broader evaluation suite, sometimes as an external targeted evaluation, and one paper states that it 'has become the standard benchmark for English'. Other reported uses include zero-shot evaluation, assessing syntactic agreement, and selecting an 11-dataset subset for generation-based explanation faithfulness.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BLiMP"
+  ],
+  "papers": [
+    "Between Circuits and Chomsky: Pre-pretraining on Formal Languages Imparts Linguistic Biases",
+    "Language Models Grow Less Humanlike beyond Phase Transition",
+    "On the Acquisition of Shared Grammatical Representations in Bilingual Language Models",
+    "Pre-Training Curriculum for Multi-Token Prediction in Language Models",
+    "Child-Directed Language Does Not Consistently Boost Syntax Learning in Language Models",
+    "Convergence and Divergence of Language Models under Different Random Seeds",
+    "From Language to Cognition: How LLMs Outgrow the Human Language Network",
+    "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations",
+    "Mechanisms vs. Outcomes: Probing for Syntax Fails to Explain Performance on Targeted Syntactic Evaluations",
+    "NormXLogit: The Head-on-Top Never Lies",
+    "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments",
+    "SLlama: Parameter-Efficient Language Model Architecture for Enhanced Linguistic Competence Under Strict Data Constraints",
+    "Sheaf Discovery with Joint Computation Graph Pruning and Flexible Granularity",
+    "TurBLiMP: A Turkish Benchmark of Linguistic Minimal Pairs",
+    "Sudden Drops in the Loss: Syntax Acquisition, Phase Transitions, and Simplicity Bias in MLMs",
+    "Unveiling and Manipulating Prompt Influence in Large Language Models",
+    "What does the Knowledge Neuron Thesis Have to do with Knowledge?",
+    "TopoLM: brain-like spatio-functional organization in a topographic language model",
+    "TopoNets: High performing vision and language models with brain-like topography",
+    "How to Make the Most of LLMs' Grammatical Knowledge for Acceptability Judgments",
+    "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+    "The LLM Language Network: A Neuroscientific Approach for Identifying Causally Task-Relevant Units"
+  ],
+  "paper_count": 22,
+  "definitions": [
+    {
+      "text": "Benchmark of Linguistic Minimal Pairs, a corpus of minimal-pair sentence judgments used here to evaluate syntactic phenomena such as agreement.",
+      "papers": [
+        "Sudden Drops in the Loss: Syntax Acquisition, Phase Transitions, and Simplicity Bias in MLMs",
+        "Unveiling and Manipulating Prompt Influence in Large Language Models",
+        "What does the Knowledge Neuron Thesis Have to do with Knowledge?",
+        "TopoLM: brain-like spatio-functional organization in a topographic language model",
+        "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+        "The LLM Language Network: A Neuroscientific Approach for Identifying Causally Task-Relevant Units",
+        "How to Make the Most of LLMs' Grammatical Knowledge for Acceptability Judgments",
+        "Between Circuits and Chomsky: Pre-pretraining on Formal Languages Imparts Linguistic Biases",
+        "Child-Directed Language Does Not Consistently Boost Syntax Learning in Language Models",
+        "Convergence and Divergence of Language Models under Different Random Seeds",
+        "From Language to Cognition: How LLMs Outgrow the Human Language Network",
+        "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations",
+        "Mechanisms vs. Outcomes: Probing for Syntax Fails to Explain Performance on Targeted Syntactic Evaluations",
+        "NormXLogit: The Head-on-Top Never Lies",
+        "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments",
+        "SLlama: Parameter-Efficient Language Model Architecture for Enhanced Linguistic Competence Under Strict Data Constraints",
+        "Sheaf Discovery with Joint Computation Graph Pruning and Flexible Granularity",
+        "TurBLiMP: A Turkish Benchmark of Linguistic Minimal Pairs"
+      ],
+      "original_name": "BLiMP"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Syntactic competence",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+      "evidence": "We use the BLiMP (Warstadt et al., 2020) and SyntaxGym (SG, Gauthier et al., 2020) test suites to evaluate LMs for syntactic generalization.",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Sneaking Syntax into Transformer Language Models with Tree Regularization"
+        ],
+        "emnlp25": [
+          "Child-Directed Language Does Not Consistently Boost Syntax Learning in Language Models",
+          "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations",
+          "Mechanisms vs. Outcomes: Probing for Syntax Fails to Explain Performance on Targeted Syntactic Evaluations"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Formal linguistic competence",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "From Language to Cognition: How LLMs Outgrow the Human Language Network",
+      "evidence": "To assess formal linguistic competence, we use two benchmarks: BLIMP (Warstadt et al., 2019) and SYNTAXGYM (Gauthier et al., 2020). (Section 3.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "From Language to Cognition: How LLMs Outgrow the Human Language Network"
+        ],
+        "naacl25": [
+          "The LLM Language Network: A Neuroscientific Approach for Identifying Causally Task-Relevant Units"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language proficiency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SLlama: Parameter-Efficient Language Model Architecture for Enhanced Linguistic Competence Under Strict Data Constraints",
+      "evidence": "BLiMP provides a fine-grained evaluation of core linguistic competence. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SLlama: Parameter-Efficient Language Model Architecture for Enhanced Linguistic Competence Under Strict Data Constraints"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Linguistic knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TopoLM: brain-like spatio-functional organization in a topographic language model",
+      "evidence": "we evaluate TopoLM\u2019s performance on linguistic knowledge (BLiMP), downstream task (GLUE), and brain alignment benchmarks (Brain-Score)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "TopoLM: brain-like spatio-functional organization in a topographic language model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Plausibility",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "NormXLogit: The Head-on-Top Never Lies",
+      "evidence": "...to examine its plausibility, i.e., the extent to which its attributions align with human-understood linguistic rationales provided by BLiMP... (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NormXLogit: The Head-on-Top Never Lies"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, BLiMP is most commonly treated as an English benchmark or corpus of linguistic minimal pairs for grammaticality or acceptability judgments. It is usually described as minimally different pairs of acceptable and unacceptable, or grammatical and ungrammatical, sentences, with evaluation based on identifying the grammatical item or assigning it lower perplexity; several definitions present it as a multi-task benchmark spanning syntax, morphology, and semantics. Most descriptions specify 67 subtasks, datasets, or paradigms with 1,000 pairs each, often grouped into 12 categories or phenomena and sometimes summarized as 67,000 pairs, and some add that the examples are template-generated or built from manually crafted sentence templates, though one paper describes 13 linguistic phenomena. A smaller usage selects an 11-dataset subset that can be used for text generation."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link BLiMP to 5 constructs and no behavioral indicators. The prevailing claim is that it measures syntactic competence, with papers using it for syntactic generalization, grammatical learning, and grammatical competence; some papers also report it as measuring formal linguistic competence. Smaller lines of work use it to measure language proficiency, linguistic knowledge, or plausibility, including plausibility defined as whether model attributions align with human-understood linguistic rationales."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "BLiMP is often used alongside SyntaxGym, and some papers pair it with CLiMP, GLUE, Brain-Score, or Ewok. In these settings it is typically positioned as a benchmark for linguistic competence or grammaticality within a broader evaluation suite, sometimes as an external targeted evaluation, and one paper states that it 'has become the standard benchmark for English'. Other reported uses include zero-shot evaluation, assessing syntactic agreement, and selecting an 11-dataset subset for generation-based explanation faithfulness."
+    }
+  ],
+  "characterization": "What it is. Across papers, BLiMP is most commonly treated as an English benchmark or corpus of linguistic minimal pairs for grammaticality or acceptability judgments. It is usually described as minimally different pairs of acceptable and unacceptable, or grammatical and ungrammatical, sentences, with evaluation based on identifying the grammatical item or assigning it lower perplexity; several definitions present it as a multi-task benchmark spanning syntax, morphology, and semantics. Most descriptions specify 67 subtasks, datasets, or paradigms with 1,000 pairs each, often grouped into 12 categories or phenomena and sometimes summarized as 67,000 pairs, and some add that the examples are template-generated or built from manually crafted sentence templates, though one paper describes 13 linguistic phenomena. A smaller usage selects an 11-dataset subset that can be used for text generation.\n\nWhat it is claimed to measure. Papers link BLiMP to 5 constructs and no behavioral indicators. The prevailing claim is that it measures syntactic competence, with papers using it for syntactic generalization, grammatical learning, and grammatical competence; some papers also report it as measuring formal linguistic competence. Smaller lines of work use it to measure language proficiency, linguistic knowledge, or plausibility, including plausibility defined as whether model attributions align with human-understood linguistic rationales.\n\nSpace of uses. BLiMP is often used alongside SyntaxGym, and some papers pair it with CLiMP, GLUE, Brain-Score, or Ewok. In these settings it is typically positioned as a benchmark for linguistic competence or grammaticality within a broader evaluation suite, sometimes as an external targeted evaluation, and one paper states that it 'has become the standard benchmark for English'. Other reported uses include zero-shot evaluation, assessing syntactic agreement, and selecting an 11-dataset subset for generation-based explanation faithfulness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Between Circuits and Chomsky: Pre-pretraining on Formal Languages Imparts Linguistic Biases",
+      "Language Models Grow Less Humanlike beyond Phase Transition",
+      "On the Acquisition of Shared Grammatical Representations in Bilingual Language Models",
+      "Pre-Training Curriculum for Multi-Token Prediction in Language Models"
+    ],
+    "iclr24": [
+      "Sudden Drops in the Loss: Syntax Acquisition, Phase Transitions, and Simplicity Bias in MLMs",
+      "Unveiling and Manipulating Prompt Influence in Large Language Models",
+      "What does the Knowledge Neuron Thesis Have to do with Knowledge?"
+    ],
+    "iclr25": [
+      "TopoLM: brain-like spatio-functional organization in a topographic language model",
+      "TopoNets: High performing vision and language models with brain-like topography"
+    ],
+    "naacl25": [
+      "How to Make the Most of LLMs' Grammatical Knowledge for Acceptability Judgments",
+      "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+      "The LLM Language Network: A Neuroscientific Approach for Identifying Causally Task-Relevant Units"
+    ],
+    "emnlp25": [
+      "Child-Directed Language Does Not Consistently Boost Syntax Learning in Language Models",
+      "Convergence and Divergence of Language Models under Different Random Seeds",
+      "From Language to Cognition: How LLMs Outgrow the Human Language Network",
+      "Layer-wise Minimal Pair Probing Reveals Contextual Grammatical-Conceptual Hierarchy in Speech Representations",
+      "Mechanisms vs. Outcomes: Probing for Syntax Fails to Explain Performance on Targeted Syntactic Evaluations",
+      "NormXLogit: The Head-on-Top Never Lies",
+      "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments",
+      "SLlama: Parameter-Efficient Language Model Architecture for Enhanced Linguistic Competence Under Strict Data Constraints",
+      "Sheaf Discovery with Joint Computation Graph Pruning and Flexible Granularity",
+      "TurBLiMP: A Turkish Benchmark of Linguistic Minimal Pairs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "iclr24": 3,
+    "iclr25": 2,
+    "naacl25": 3,
+    "emnlp25": 10
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25"
+  ]
+}

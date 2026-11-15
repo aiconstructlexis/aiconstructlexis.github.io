@@ -1,0 +1,276 @@
+{
+  "canonical_name": "CoLA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, CoLA is most commonly described as the Corpus of Linguistic Acceptability, usually framed as a GLUE task or benchmark for grammatical or linguistic acceptability. The prevailing usage treats it as a binary, often single-sentence classification task in which English sentences are judged as grammatically acceptable or unacceptable, or simply grammatically correct. Some papers use the surface names GLUE-COLA or GLUE-CoLA, and one definition instead describes GLUE-CoLA as a dataset of text from books and journal articles used in TDDBench.\n\nWhat it is claimed to measure. Papers use CoLA to measure 3 constructs and 2 behavioral indicators. The dominant behavioral claim is that it measures grammatical acceptability judgment, with papers describing the task as deciding whether a sentence is acceptable or unacceptable; a smaller line of work also treats it as text classification. At the construct level, it is most often used to measure natural language understanding, and some papers also report it as measuring general ability and generalization, so its measurement claims are spread across several constructs rather than centered on one alone.\n\nSpace of uses. Most papers position CoLA as one task within larger evaluation suites, especially GLUE, which is the only linked instrument and is described as related to CoLA. Across the surveyed work, it is used for fine-tuning and development-set reporting, close-ended in-context learning on an out-of-domain dataset, downstream capability checks after editing, robustness testing under bit-flip errors, and as part of TDDBench for training data detection. Some papers also present it as an unseen task or as one of several general capability tests.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CoLA",
+    "GLUE-COLA",
+    "GLUE-CoLA"
+  ],
+  "papers": [
+    "Plug-in and Fine-tuning: Bridging the Gap between Small Language Models and Large Language Models",
+    "UniICL: An Efficient ICL Framework Unifying Compression, Selection, and Generation",
+    "Vulnerability of LLMs to Vertically Aligned Text Manipulations",
+    "Bit-Flip Error Resilience in LLMs: A Comprehensive Analysis and Defense Framework",
+    "Can an Individual Manipulate the Collective Decisions of Multi-Agents?",
+    "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+    "DisLoRA: Task-specific Low-Rank Adaptation via Orthogonal Basis from Singular Value Decomposition",
+    "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments",
+    "TASO: Task-Aligned Sparse Optimization for Parameter-Efficient Model Adaptation",
+    "Fast-ELECTRA for Efficient Pre-training",
+    "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+    "ReLoRA: High-Rank Training Through Low-Rank Updates",
+    "Stable Anisotropic Regularization",
+    "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+    "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+    "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+    "DARE the Extreme: Revisiting Delta-Parameter Pruning For Fine-Tuned Models",
+    "ELICIT: LLM Augmentation Via External In-context Capability",
+    "Encryption-Friendly LLM Architecture",
+    "Federated Residual Low-Rank Adaption of Large Language Models",
+    "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+    "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+    "PEARL: Towards Permutation-Resilient LLMs",
+    "TDDBench: A Benchmark for Training data detection",
+    "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+    "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
+    "Does Low Rank Adaptation Lead to Lower Robustness against Training-Time Attacks?",
+    "Large Language Models are Demonstration Pre-Selectors for Themselves",
+    "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+    "LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently",
+    "On-the-Fly Adaptive Distillation of Transformer to Dual-State Linear Attention for Long-Context LLM Serving",
+    "Reinforced Lifelong Editing for Language Models",
+    "The Ripple Effect: On Unforeseen Complications of Backdoor Attacks",
+    "Learning to Reason via Program Generation, Emulation, and Search",
+    "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens"
+  ],
+  "paper_count": 35,
+  "definitions": [
+    {
+      "text": "The Corpus of Linguistic Acceptability benchmark, used here as a downstream grammatical acceptability evaluation.",
+      "papers": [
+        "Fast-ELECTRA for Efficient Pre-training",
+        "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+        "ReLoRA: High-Rank Training Through Low-Rank Updates",
+        "Stable Anisotropic Regularization",
+        "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry",
+        "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+        "UniICL: An Efficient ICL Framework Unifying Compression, Selection, and Generation",
+        "Reinforced Lifelong Editing for Language Models",
+        "Bit-Flip Error Resilience in LLMs: A Comprehensive Analysis and Defense Framework",
+        "Can an Individual Manipulate the Collective Decisions of Multi-Agents?",
+        "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+        "DisLoRA: Task-specific Low-Rank Adaptation via Orthogonal Basis from Singular Value Decomposition",
+        "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments",
+        "TASO: Task-Aligned Sparse Optimization for Parameter-Efficient Model Adaptation"
+      ],
+      "original_name": "CoLA"
+    },
+    {
+      "text": "The Corpus of Linguistic Acceptability, a task from the GLUE benchmark for determining if a sentence is grammatically correct.",
+      "papers": [
+        "ELICIT: LLM Augmentation Via External In-context Capability"
+      ],
+      "original_name": "GLUE-COLA"
+    },
+    {
+      "text": "A dataset of text from books and journal articles, part of the GLUE benchmark, used in TDDBench to evaluate TDD algorithms.",
+      "papers": [
+        "TDDBench: A Benchmark for Training data detection"
+      ],
+      "original_name": "GLUE-CoLA"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+      "evidence": "In the realm of NLU, we utilized the CoLA (Warstadt et al., 2019), RTE (Poliak, 2020), MNLI (Williams et al., 2018), MRPC (Dolan & Brockett, 2005) datasets from GLUE benchmark (Wang et al., 2018) to evaluate the performance of UniCoTT (Section 4.1).",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation",
+          "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+          "Federated Residual Low-Rank Adaption of Large Language Models"
+        ],
+        "icml25": [
+          "LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Grammatical acceptability judgment",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "evidence": "CoLA (Corpus of Linguistic Acceptability) (Warstadt et al., 2019) is a single-sentence classification task, where sentences are annotated as either grammatically acceptable or unacceptable (Section 4.3).",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models"
+        ],
+        "emnlp25": [
+          "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+          "Bit-Flip Error Resilience in LLMs: A Comprehensive Analysis and Defense Framework",
+          "Can an Individual Manipulate the Collective Decisions of Multi-Agents?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+      "evidence": "In this context, our evaluation is conducted across 6 datasets from the GLUE: SST-2, MRPC, CoLA, QNLI, RTE, and STS-B. (Section 4.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models"
+        ],
+        "emnlp25": [
+          "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "ELICIT: LLM Augmentation Via External In-context Capability",
+      "evidence": "In Table 3, we observe that ELICIT significantly improves model performance on unseen tasks (GLUE-COLA, BBQ Religion, Deepmind (Saxton et al., 2019), MMLU-Psychology, and BBH-Logical-Deduction-Five-objects) not present in its capability library. (Section 4.4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "ELICIT: LLM Augmentation Via External In-context Capability"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Learning to Reason via Program Generation, Emulation, and Search",
+      "evidence": "Following Zhang et al. (2023b), we evaluate on a series of Text Classification datasets: CoLA (2 labels) (Warstadt et al., 2019)... (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning to Reason via Program Generation, Emulation, and Search"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "evidence": "we perform General Capability Tests using six natural language tasks... Specifically, the evaluation tasks include: ... 5. CoLA (Corpus of Linguistic Acceptability) (Section 4.3).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, CoLA is most commonly described as the Corpus of Linguistic Acceptability, usually framed as a GLUE task or benchmark for grammatical or linguistic acceptability. The prevailing usage treats it as a binary, often single-sentence classification task in which English sentences are judged as grammatically acceptable or unacceptable, or simply grammatically correct. Some papers use the surface names GLUE-COLA or GLUE-CoLA, and one definition instead describes GLUE-CoLA as a dataset of text from books and journal articles used in TDDBench."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use CoLA to measure 3 constructs and 2 behavioral indicators. The dominant behavioral claim is that it measures grammatical acceptability judgment, with papers describing the task as deciding whether a sentence is acceptable or unacceptable; a smaller line of work also treats it as text classification. At the construct level, it is most often used to measure natural language understanding, and some papers also report it as measuring general ability and generalization, so its measurement claims are spread across several constructs rather than centered on one alone."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Most papers position CoLA as one task within larger evaluation suites, especially GLUE, which is the only linked instrument and is described as related to CoLA. Across the surveyed work, it is used for fine-tuning and development-set reporting, close-ended in-context learning on an out-of-domain dataset, downstream capability checks after editing, robustness testing under bit-flip errors, and as part of TDDBench for training data detection. Some papers also present it as an unseen task or as one of several general capability tests."
+    }
+  ],
+  "characterization": "What it is. Across papers, CoLA is most commonly described as the Corpus of Linguistic Acceptability, usually framed as a GLUE task or benchmark for grammatical or linguistic acceptability. The prevailing usage treats it as a binary, often single-sentence classification task in which English sentences are judged as grammatically acceptable or unacceptable, or simply grammatically correct. Some papers use the surface names GLUE-COLA or GLUE-CoLA, and one definition instead describes GLUE-CoLA as a dataset of text from books and journal articles used in TDDBench.\n\nWhat it is claimed to measure. Papers use CoLA to measure 3 constructs and 2 behavioral indicators. The dominant behavioral claim is that it measures grammatical acceptability judgment, with papers describing the task as deciding whether a sentence is acceptable or unacceptable; a smaller line of work also treats it as text classification. At the construct level, it is most often used to measure natural language understanding, and some papers also report it as measuring general ability and generalization, so its measurement claims are spread across several constructs rather than centered on one alone.\n\nSpace of uses. Most papers position CoLA as one task within larger evaluation suites, especially GLUE, which is the only linked instrument and is described as related to CoLA. Across the surveyed work, it is used for fine-tuning and development-set reporting, close-ended in-context learning on an out-of-domain dataset, downstream capability checks after editing, robustness testing under bit-flip errors, and as part of TDDBench for training data detection. Some papers also present it as an unseen task or as one of several general capability tests.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Plug-in and Fine-tuning: Bridging the Gap between Small Language Models and Large Language Models",
+      "UniICL: An Efficient ICL Framework Unifying Compression, Selection, and Generation",
+      "Vulnerability of LLMs to Vertically Aligned Text Manipulations"
+    ],
+    "iclr24": [
+      "Fast-ELECTRA for Efficient Pre-training",
+      "Increasing Model Capacity for Free: A Simple Strategy for Parameter Efficient Fine-tuning",
+      "ReLoRA: High-Rank Training Through Low-Rank Updates",
+      "Stable Anisotropic Regularization",
+      "The Hedgehog & the Porcupine: Expressive Linear Attentions with Softmax Mimicry"
+    ],
+    "iclr25": [
+      "AlphaEdit: Null-Space Constrained Knowledge Editing for Language Models",
+      "Collaborative Discrete-Continuous Black-Box Prompt Learning for Language Models",
+      "DARE the Extreme: Revisiting Delta-Parameter Pruning For Fine-Tuned Models",
+      "ELICIT: LLM Augmentation Via External In-context Capability",
+      "Encryption-Friendly LLM Architecture",
+      "Federated Residual Low-Rank Adaption of Large Language Models",
+      "HeadMap: Locating and Enhancing Knowledge Circuits in LLMs",
+      "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+      "PEARL: Towards Permutation-Resilient LLMs",
+      "TDDBench: A Benchmark for Training data detection",
+      "UniCoTT: A Unified Framework for Structural Chain-of-Thought Distillation"
+    ],
+    "icml25": [
+      "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
+      "Does Low Rank Adaptation Lead to Lower Robustness against Training-Time Attacks?",
+      "Large Language Models are Demonstration Pre-Selectors for Themselves",
+      "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+      "LoRA-One: One-Step Full Gradient Could Suffice for Fine-Tuning Large Language Models, Provably and Efficiently",
+      "On-the-Fly Adaptive Distillation of Transformer to Dual-State Linear Attention for Long-Context LLM Serving",
+      "Reinforced Lifelong Editing for Language Models",
+      "The Ripple Effect: On Unforeseen Complications of Backdoor Attacks"
+    ],
+    "neurips24": [
+      "Learning to Reason via Program Generation, Emulation, and Search",
+      "Towards Understanding How Transformers Learn In-context Through a Representation Learning Lens"
+    ],
+    "emnlp25": [
+      "Bit-Flip Error Resilience in LLMs: A Comprehensive Analysis and Defense Framework",
+      "Can an Individual Manipulate the Collective Decisions of Multi-Agents?",
+      "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+      "DisLoRA: Task-specific Low-Rank Adaptation via Orthogonal Basis from Singular Value Decomposition",
+      "QFrCoLA: a Quebec-French Corpus of Linguistic Acceptability Judgments",
+      "TASO: Task-Aligned Sparse Optimization for Parameter-Efficient Model Adaptation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "iclr24": 5,
+    "iclr25": 11,
+    "icml25": 8,
+    "neurips24": 2,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

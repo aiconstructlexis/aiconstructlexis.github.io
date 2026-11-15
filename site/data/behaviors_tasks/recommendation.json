@@ -1,0 +1,175 @@
+{
+  "canonical_name": "Recommendation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats recommendation as predicting or generating items for a user from profile information, historical interactions, or user-item interaction behaviors. Most definitions describe the output as a list, often a ranked or top-k list, of items or item IDs that are relevant, most likely to be preferred, or that best match the user's preferences. As described in Language Representations Can be What Recommenders Need: Findings and Potentials, collaborative filtering \"aims to select item i that best matches user u's preferences based on binary interaction behaviors,\" while other papers phrase the task as generating recommendations directly with an LLM.\n\nVariants. Papers study several variants under this label. Common named versions include collaborative filtering, top-K item generation, item recommendation, top-k recommendation, and user intention capture; these differ in whether they predict the next liked item, generate K distinct token sequences by beam search, or refine outputs by combining historical interests with language-based intention queries. A smaller line of work places the task in multi-modal or graph-based settings, estimating preferences from an interaction graph together with item descriptions and images.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers operationalize the behavior directly through the task output: generating a recommendation list, predicting relevant item IDs, or producing K distinct token sequences as top-K items, often through beam search.\n\nWhat it is taken as evidence of. Rather than mapping it to one construct, papers link recommendation to 3 constructs. One paper reports that Fairness is related to Recommendation, and that Recommendation is related to Social bias, describing implications for fairness, bias, and whether recommender systems work for everyone. Another paper claims a causal relationship from Memorization to Recommendation, stating that better memorization \"leads to improvements in various recommendation tasks.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "User intention capture",
+    "Collaborative filtering",
+    "Top-K item generation",
+    "Recommendation generation",
+    "Item recommendation",
+    "Top-k recommendation"
+  ],
+  "papers": [
+    "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations in LLM-Based Recommender Systems",
+    "Reading Between the Prompts: How Stereotypes Shape LLM's Implicit Personalization",
+    "Towards Unified Multi-Modal Personalization: Large Vision-Language Models for Generative Recommendation and Beyond",
+    "Efficient Inference for Large Language Model-based Generative Recommendation",
+    "Language Representations Can be What Recommenders Need: Findings and Potentials",
+    "Unified Parameter-Efficient Unlearning for LLMs",
+    "A Multi-modal Large Language Model with Graph-of-Thought for Effective Recommendation",
+    "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "The task of predicting a user's interest in an item based on the collective preferences and behaviors of many users, typically represented in a user-item interaction matrix.",
+      "papers": [
+        "Language Representations Can be What Recommenders Need: Findings and Potentials"
+      ],
+      "original_name": "Collaborative filtering"
+    },
+    {
+      "text": "Refining recommendations by combining user historical interests with language-based intention queries.",
+      "papers": [
+        "Language Representations Can be What Recommenders Need: Findings and Potentials"
+      ],
+      "original_name": "User intention capture"
+    },
+    {
+      "text": "The observable behavior of producing K distinct token sequences, representing a list of recommended items, typically via beam search.",
+      "papers": [
+        "Efficient Inference for Large Language Model-based Generative Recommendation"
+      ],
+      "original_name": "Top-K item generation"
+    },
+    {
+      "text": "The observable task of producing a list of recommended items for a user based on their profile and historical interactions.",
+      "papers": [
+        "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations in LLM-Based Recommender Systems"
+      ],
+      "original_name": "Recommendation generation"
+    },
+    {
+      "text": "The observable task of predicting and generating a list of relevant item IDs that a user is likely to be interested in based on their interaction history.",
+      "papers": [
+        "Towards Unified Multi-Modal Personalization: Large Vision-Language Models for Generative Recommendation and Beyond"
+      ],
+      "original_name": "Item recommendation"
+    },
+    {
+      "text": "Generating a ranked list of k items most likely to be preferred by a user based on historical interactions and item features.",
+      "papers": [
+        "A Multi-modal Large Language Model with Graph-of-Thought for Effective Recommendation"
+      ],
+      "original_name": "Top-k recommendation"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fairness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+      "evidence": "Clearly, this has important implications for fairness, bias, and whether recommender systems work for everyone. (Section 4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Social bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+      "evidence": "Clearly, this has important implications for fairness, bias, and whether recommender systems work for everyone. (Section 4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Improving LLMs for Recommendation with Out-Of-Vocabulary Tokens",
+      "evidence": "The experiments show that META ID improves memorization and diversity score, which leads to improvements in various recommendation tasks. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Improving LLMs for Recommendation with Out-Of-Vocabulary Tokens"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats recommendation as predicting or generating items for a user from profile information, historical interactions, or user-item interaction behaviors. Most definitions describe the output as a list, often a ranked or top-k list, of items or item IDs that are relevant, most likely to be preferred, or that best match the user's preferences. As described in Language Representations Can be What Recommenders Need: Findings and Potentials, collaborative filtering \"aims to select item i that best matches user u's preferences based on binary interaction behaviors,\" while other papers phrase the task as generating recommendations directly with an LLM."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study several variants under this label. Common named versions include collaborative filtering, top-K item generation, item recommendation, top-k recommendation, and user intention capture; these differ in whether they predict the next liked item, generate K distinct token sequences by beam search, or refine outputs by combining historical interests with language-based intention queries. A smaller line of work places the task in multi-modal or graph-based settings, estimating preferences from an interaction graph together with item descriptions and images."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Instead, papers operationalize the behavior directly through the task output: generating a recommendation list, predicting relevant item IDs, or producing K distinct token sequences as top-K items, often through beam search."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Rather than mapping it to one construct, papers link recommendation to 3 constructs. One paper reports that Fairness is related to Recommendation, and that Recommendation is related to Social bias, describing implications for fairness, bias, and whether recommender systems work for everyone. Another paper claims a causal relationship from Memorization to Recommendation, stating that better memorization \"leads to improvements in various recommendation tasks.\""
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats recommendation as predicting or generating items for a user from profile information, historical interactions, or user-item interaction behaviors. Most definitions describe the output as a list, often a ranked or top-k list, of items or item IDs that are relevant, most likely to be preferred, or that best match the user's preferences. As described in Language Representations Can be What Recommenders Need: Findings and Potentials, collaborative filtering \"aims to select item i that best matches user u's preferences based on binary interaction behaviors,\" while other papers phrase the task as generating recommendations directly with an LLM.\n\nVariants. Papers study several variants under this label. Common named versions include collaborative filtering, top-K item generation, item recommendation, top-k recommendation, and user intention capture; these differ in whether they predict the next liked item, generate K distinct token sequences by beam search, or refine outputs by combining historical interests with language-based intention queries. A smaller line of work places the task in multi-modal or graph-based settings, estimating preferences from an interaction graph together with item descriptions and images.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers operationalize the behavior directly through the task output: generating a recommendation list, predicting relevant item IDs, or producing K distinct token sequences as top-K items, often through beam search.\n\nWhat it is taken as evidence of. Rather than mapping it to one construct, papers link recommendation to 3 constructs. One paper reports that Fairness is related to Recommendation, and that Recommendation is related to Social bias, describing implications for fairness, bias, and whether recommender systems work for everyone. Another paper claims a causal relationship from Memorization to Recommendation, stating that better memorization \"leads to improvements in various recommendation tasks.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Logit Space Constrained Fine-Tuning for Mitigating Hallucinations in LLM-Based Recommender Systems",
+      "Reading Between the Prompts: How Stereotypes Shape LLM's Implicit Personalization"
+    ],
+    "iclr25": [
+      "Efficient Inference for Large Language Model-based Generative Recommendation",
+      "Language Representations Can be What Recommenders Need: Findings and Potentials",
+      "Unified Parameter-Efficient Unlearning for LLMs"
+    ],
+    "neurips24": [
+      "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems"
+    ],
+    "iclr24": [
+      "Towards Unified Multi-Modal Personalization: Large Vision-Language Models for Generative Recommendation and Beyond"
+    ],
+    "naacl25": [
+      "A Multi-modal Large Language Model with Graph-of-Thought for Effective Recommendation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 3,
+    "neurips24": 1,
+    "iclr24": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

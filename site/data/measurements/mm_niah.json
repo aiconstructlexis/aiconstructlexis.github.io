@@ -1,0 +1,131 @@
+{
+  "canonical_name": "MM-NIAH",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers most commonly describe MM-NIAH as a benchmark for long multimodal or mixed-modality contexts built around a needle-in-a-haystack setup. One line of work presents it as a mixed video-text retrieval benchmark, where 25% of the input is text segments inserted across frames and the model must locate relevant content, with tests reaching up to 4.5k frames, about 1.1M tokens. Another description is broader, framing it as a benchmark for long multimodal documents with interleaved text and images and tasks in retrieval, counting, and reasoning.\n\nWhat it is claimed to measure. Papers link MM-NIAH to one behavioral indicator and two constructs. The prevailing uses are to measure Synthetic recall and Long-context multimodal understanding, with papers describing it as detecting image and text needles within hybrid long contexts and as evaluating the capability to comprehend long multimodal documents. A narrower link treats it as measuring Multimodal reasoning, in line with the benchmark's reasoning task alongside retrieval and counting.\n\nSpace of uses. In use, papers position MM-NIAH as an evaluation for mixed-modality or long-context multimodal scenarios, including settings where image and text needles are detected within hybrid long inputs. It is linked to one other instrument, BLINK, and a paper states that images from BLINK's Jigsaw and Multi-view reasoning splits are inserted into the document to serve as the image needle.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MM-NIAH"
+  ],
+  "papers": [
+    "CoMemo: LVLMs Need Image Context with Image Memory",
+    "MMInference: Accelerating Pre-filling for Long-Context Visual Language Models via Modality-Aware Permutation Sparse Attention",
+    "Needle In A Multimodal Haystack"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Mixed-Modality Needle in a Haystack, a retrieval benchmark for mixed video-text inputs in which text segments are inserted across frames and the model must locate relevant content.",
+      "papers": [
+        "MMInference: Accelerating Pre-filling for Long-Context Visual Language Models via Modality-Aware Permutation Sparse Attention",
+        "Needle In A Multimodal Haystack"
+      ],
+      "original_name": "MM-NIAH"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Synthetic recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Needle In A Multimodal Haystack",
+      "evidence": "Our benchmark includes three types of evaluation tasks: multimodal retrieval, counting, and reasoning. (Abstract)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Needle In A Multimodal Haystack"
+        ],
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Needle In A Multimodal Haystack",
+      "evidence": "In this work, we present Needle In A Multimodal Haystack (MM-NIAH), the first benchmark specifically designed to systematically evaluate the capability of existing MLLMs to comprehend long multimodal documents. (Abstract)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Needle In A Multimodal Haystack"
+        ],
+        "icml25": [
+          "CoMemo: LVLMs Need Image Context with Image Memory"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Needle In A Multimodal Haystack",
+      "evidence": "Our benchmark includes three types of evaluation tasks: multimodal retrieval, counting, and reasoning. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Needle In A Multimodal Haystack"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BLINK",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Needle In A Multimodal Haystack",
+      "evidence": "for each evaluation data, images sampled from the Jigsaw and Multi-view reasoning split of BLINK benchmark [26] are inserted into the document to serve as the image needle. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Needle In A Multimodal Haystack"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers most commonly describe MM-NIAH as a benchmark for long multimodal or mixed-modality contexts built around a needle-in-a-haystack setup. One line of work presents it as a mixed video-text retrieval benchmark, where 25% of the input is text segments inserted across frames and the model must locate relevant content, with tests reaching up to 4.5k frames, about 1.1M tokens. Another description is broader, framing it as a benchmark for long multimodal documents with interleaved text and images and tasks in retrieval, counting, and reasoning."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link MM-NIAH to one behavioral indicator and two constructs. The prevailing uses are to measure Synthetic recall and Long-context multimodal understanding, with papers describing it as detecting image and text needles within hybrid long contexts and as evaluating the capability to comprehend long multimodal documents. A narrower link treats it as measuring Multimodal reasoning, in line with the benchmark's reasoning task alongside retrieval and counting."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In use, papers position MM-NIAH as an evaluation for mixed-modality or long-context multimodal scenarios, including settings where image and text needles are detected within hybrid long inputs. It is linked to one other instrument, BLINK, and a paper states that images from BLINK's Jigsaw and Multi-view reasoning splits are inserted into the document to serve as the image needle."
+    }
+  ],
+  "characterization": "What it is. Papers most commonly describe MM-NIAH as a benchmark for long multimodal or mixed-modality contexts built around a needle-in-a-haystack setup. One line of work presents it as a mixed video-text retrieval benchmark, where 25% of the input is text segments inserted across frames and the model must locate relevant content, with tests reaching up to 4.5k frames, about 1.1M tokens. Another description is broader, framing it as a benchmark for long multimodal documents with interleaved text and images and tasks in retrieval, counting, and reasoning.\n\nWhat it is claimed to measure. Papers link MM-NIAH to one behavioral indicator and two constructs. The prevailing uses are to measure Synthetic recall and Long-context multimodal understanding, with papers describing it as detecting image and text needles within hybrid long contexts and as evaluating the capability to comprehend long multimodal documents. A narrower link treats it as measuring Multimodal reasoning, in line with the benchmark's reasoning task alongside retrieval and counting.\n\nSpace of uses. In use, papers position MM-NIAH as an evaluation for mixed-modality or long-context multimodal scenarios, including settings where image and text needles are detected within hybrid long inputs. It is linked to one other instrument, BLINK, and a paper states that images from BLINK's Jigsaw and Multi-view reasoning splits are inserted into the document to serve as the image needle.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "CoMemo: LVLMs Need Image Context with Image Memory",
+      "MMInference: Accelerating Pre-filling for Long-Context Visual Language Models via Modality-Aware Permutation Sparse Attention"
+    ],
+    "neurips24": [
+      "Needle In A Multimodal Haystack"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

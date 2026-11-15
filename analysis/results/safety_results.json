@@ -1,0 +1,1116 @@
+{
+ "safetywashing": {
+  "data": "data/safety/analysis_dataset.json",
+  "n": 26,
+  "variables": [
+   "harmbench_direct",
+   "beavertails",
+   "toxigen",
+   "harmbench_gcg",
+   "harmbench_tap",
+   "harmbench_human",
+   "truthfulqa",
+   "mmlu"
+  ],
+  "correlations": {
+   "harmbench_direct": {
+    "harmbench_direct": 1.0,
+    "beavertails": 0.083754,
+    "toxigen": 0.179257,
+    "harmbench_gcg": 0.722495,
+    "harmbench_tap": 0.664389,
+    "harmbench_human": 0.765407,
+    "truthfulqa": -0.328936,
+    "mmlu": -0.026946
+   },
+   "beavertails": {
+    "harmbench_direct": 0.083754,
+    "beavertails": 1.0,
+    "toxigen": -0.437275,
+    "harmbench_gcg": 0.309362,
+    "harmbench_tap": 0.281392,
+    "harmbench_human": 0.397145,
+    "truthfulqa": -0.656806,
+    "mmlu": -0.621726
+   },
+   "toxigen": {
+    "harmbench_direct": 0.179257,
+    "beavertails": -0.437275,
+    "toxigen": 1.0,
+    "harmbench_gcg": -0.343857,
+    "harmbench_tap": -0.261905,
+    "harmbench_human": -0.238372,
+    "truthfulqa": 0.587882,
+    "mmlu": 0.618887
+   },
+   "harmbench_gcg": {
+    "harmbench_direct": 0.722495,
+    "beavertails": 0.309362,
+    "toxigen": -0.343857,
+    "harmbench_gcg": 1.0,
+    "harmbench_tap": 0.818883,
+    "harmbench_human": 0.911724,
+    "truthfulqa": -0.538209,
+    "mmlu": -0.336796
+   },
+   "harmbench_tap": {
+    "harmbench_direct": 0.664389,
+    "beavertails": 0.281392,
+    "toxigen": -0.261905,
+    "harmbench_gcg": 0.818883,
+    "harmbench_tap": 1.0,
+    "harmbench_human": 0.880096,
+    "truthfulqa": -0.522321,
+    "mmlu": -0.394805
+   },
+   "harmbench_human": {
+    "harmbench_direct": 0.765407,
+    "beavertails": 0.397145,
+    "toxigen": -0.238372,
+    "harmbench_gcg": 0.911724,
+    "harmbench_tap": 0.880096,
+    "harmbench_human": 1.0,
+    "truthfulqa": -0.58367,
+    "mmlu": -0.368241
+   },
+   "truthfulqa": {
+    "harmbench_direct": -0.328936,
+    "beavertails": -0.656806,
+    "toxigen": 0.587882,
+    "harmbench_gcg": -0.538209,
+    "harmbench_tap": -0.522321,
+    "harmbench_human": -0.58367,
+    "truthfulqa": 1.0,
+    "mmlu": 0.769019
+   },
+   "mmlu": {
+    "harmbench_direct": -0.026946,
+    "beavertails": -0.621726,
+    "toxigen": 0.618887,
+    "harmbench_gcg": -0.336796,
+    "harmbench_tap": -0.394805,
+    "harmbench_human": -0.368241,
+    "truthfulqa": 0.769019,
+    "mmlu": 1.0
+   }
+  },
+  "harmlessness_block_mean_r": -0.058088181535124774,
+  "attack_block_mean_r": 0.8702341987323562,
+  "cross_block_mean_r": 0.2551173593951877,
+  "same_construct_pairs": [
+   {
+    "a": "beavertails",
+    "b": "harmbench_direct",
+    "constructs": [
+     "Safety",
+     "Harmlessness"
+    ],
+    "r": 0.08375427242893173
+   },
+   {
+    "a": "harmbench_direct",
+    "b": "toxigen",
+    "constructs": [
+     "Safety",
+     "Harmlessness"
+    ],
+    "r": 0.17925660026414023
+   },
+   {
+    "a": "harmbench_direct",
+    "b": "truthfulqa",
+    "constructs": [
+     "Safety"
+    ],
+    "r": -0.32893558164117004
+   },
+   {
+    "a": "beavertails",
+    "b": "toxigen",
+    "constructs": [
+     "Safety",
+     "Harmlessness"
+    ],
+    "r": -0.43727541729844627
+   },
+   {
+    "a": "beavertails",
+    "b": "truthfulqa",
+    "constructs": [
+     "Safety"
+    ],
+    "r": -0.6568063990829958
+   },
+   {
+    "a": "toxigen",
+    "b": "truthfulqa",
+    "constructs": [
+     "Safety"
+    ],
+    "r": 0.5878820115887959
+   },
+   {
+    "a": "harmbench_direct",
+    "b": "harmbench_gcg",
+    "constructs": [
+     "Adversarial Robustness"
+    ],
+    "r": 0.7224950242736533
+   }
+  ],
+  "same_construct_mean_r_by_construct": {
+   "Safety": -0.09535408562345737,
+   "Harmlessness": -0.058088181535124774,
+   "Adversarial Robustness": 0.7224950242736533
+  },
+  "same_construct_mean_r": 0.021481501504701295,
+  "models": {
+   "hierarchical": {
+    "name": "Hierarchical CFA: safety > harmlessness, adversarial robustness",
+    "spec": "harmlessness =~ harmbench_direct + beavertails + toxigen\nadvrobust    =~ harmbench_gcg + harmbench_tap + harmbench_human\nsafety       =~ truthfulqa\nharmlessness ~ safety\nadvrobust    ~ safety",
+    "latents": [
+     "harmlessness",
+     "advrobust",
+     "safety"
+    ],
+    "observed": [
+     "harmbench_direct",
+     "beavertails",
+     "toxigen",
+     "harmbench_gcg",
+     "harmbench_tap",
+     "harmbench_human",
+     "truthfulqa"
+    ],
+    "fit": {
+     "n": 26,
+     "df": 12,
+     "chi2": 45.127553066156594,
+     "p": 9.799139832197506e-06,
+     "CFI": 0.7774200248158495,
+     "TLI": 0.6104850434277366,
+     "RMSEA": 0.33230283911996394,
+     "baseline_chi2": 169.83438206311538,
+     "baseline_df": 21
+    },
+    "parameters": [
+     {
+      "lval": "harmlessness",
+      "op": "~",
+      "rval": "safety",
+      "estimate": -0.32916818530586606,
+      "std_estimate": -0.999999999999986,
+      "fixed": false
+     },
+     {
+      "lval": "advrobust",
+      "op": "~",
+      "rval": "safety",
+      "estimate": -0.5417670793791013,
+      "std_estimate": -0.5886394993348786,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_direct",
+      "op": "~",
+      "rval": "harmlessness",
+      "estimate": 1.0,
+      "std_estimate": 0.3291317110436401,
+      "fixed": true
+     },
+     {
+      "lval": "beavertails",
+      "op": "~",
+      "rval": "harmlessness",
+      "estimate": 1.995773842992041,
+      "std_estimate": 0.6568450183245031,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~",
+      "rval": "harmlessness",
+      "estimate": -1.7862597160371803,
+      "std_estimate": -0.5879031034332035,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~",
+      "rval": "advrobust",
+      "estimate": 1.0,
+      "std_estimate": 0.920427918882265,
+      "fixed": true
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~",
+      "rval": "advrobust",
+      "estimate": 0.9654621917712124,
+      "std_estimate": 0.8885798451422583,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~",
+      "rval": "advrobust",
+      "estimate": 1.0761927332362697,
+      "std_estimate": 0.9905089378785206,
+      "fixed": false
+     },
+     {
+      "lval": "truthfulqa",
+      "op": "~",
+      "rval": "safety",
+      "estimate": 1.0,
+      "std_estimate": 1.0,
+      "fixed": true
+     },
+     {
+      "lval": "advrobust",
+      "op": "~~",
+      "rval": "advrobust",
+      "estimate": 0.5320923307016515,
+      "std_estimate": 0.6535035398227835,
+      "fixed": false
+     },
+     {
+      "lval": "harmlessness",
+      "op": "~~",
+      "rval": "harmlessness",
+      "estimate": 2.911339615131304e-15,
+      "std_estimate": 2.7954036591871655e-14,
+      "fixed": false
+     },
+     {
+      "lval": "safety",
+      "op": "~~",
+      "rval": "safety",
+      "estimate": 0.9611975035255507,
+      "std_estimate": 1.0000000000000002,
+      "fixed": false
+     },
+     {
+      "lval": "beavertails",
+      "op": "~~",
+      "rval": "beavertails",
+      "estimate": 0.5466600878371787,
+      "std_estimate": 0.5685546219022831,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_direct",
+      "op": "~~",
+      "rval": "harmbench_direct",
+      "estimate": 0.857263176494234,
+      "std_estimate": 0.8916723167854858,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~~",
+      "rval": "harmbench_gcg",
+      "estimate": 0.14686496826782464,
+      "std_estimate": 0.15281244614206252,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~~",
+      "rval": "harmbench_human",
+      "estimate": 0.01815855625787867,
+      "std_estimate": 0.018892043982764947,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~~",
+      "rval": "harmbench_tap",
+      "estimate": 0.20226269469263947,
+      "std_estimate": 0.2104258588069603,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~~",
+      "rval": "toxigen",
+      "estimate": 0.6291430228819841,
+      "std_estimate": 0.654369940973608,
+      "fixed": false
+     },
+     {
+      "lval": "truthfulqa",
+      "op": "~~",
+      "rval": "truthfulqa",
+      "estimate": 3.460913281322078e-17,
+      "std_estimate": 3.600626581558823e-17,
+      "fixed": false
+     }
+    ]
+   },
+   "one_factor_four": {
+    "name": "One Safety factor over the four Safety-claimed instruments",
+    "spec": "safety =~ harmbench_direct + beavertails + toxigen + truthfulqa",
+    "latents": [
+     "safety"
+    ],
+    "observed": [
+     "harmbench_direct",
+     "beavertails",
+     "toxigen",
+     "truthfulqa"
+    ],
+    "fit": {
+     "n": 26,
+     "df": 2,
+     "chi2": 7.979532726362142,
+     "p": 0.01850403683913083,
+     "CFI": 0.8049777499094847,
+     "TLI": 0.41493324972845397,
+     "RMSEA": 0.34581881748575055,
+     "baseline_chi2": 36.660771904676885,
+     "baseline_df": 6
+    },
+    "parameters": [
+     {
+      "lval": "harmbench_direct",
+      "op": "~",
+      "rval": "safety",
+      "estimate": 1.0,
+      "std_estimate": 0.3288207056674877,
+      "fixed": true
+     },
+     {
+      "lval": "beavertails",
+      "op": "~",
+      "rval": "safety",
+      "estimate": 1.9965949254464113,
+      "std_estimate": 0.6566108109790327,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~",
+      "rval": "safety",
+      "estimate": -1.7885015596186076,
+      "std_estimate": -0.5879790145201261,
+      "fixed": false
+     },
+     {
+      "lval": "truthfulqa",
+      "op": "~",
+      "rval": "safety",
+      "estimate": -3.0418857023934542,
+      "std_estimate": -0.9999999999999999,
+      "fixed": false
+     },
+     {
+      "lval": "safety",
+      "op": "~~",
+      "rval": "safety",
+      "estimate": 0.10392995143156512,
+      "std_estimate": 1.0000000000000002,
+      "fixed": false
+     },
+     {
+      "lval": "beavertails",
+      "op": "~~",
+      "rval": "beavertails",
+      "estimate": 0.5466529568011708,
+      "std_estimate": 0.568862242905457,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_direct",
+      "op": "~~",
+      "rval": "harmbench_direct",
+      "estimate": 0.8572891892330049,
+      "std_estimate": 0.8918769435243353,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~~",
+      "rval": "toxigen",
+      "estimate": 0.6291581316613329,
+      "std_estimate": 0.654280678483941,
+      "fixed": false
+     },
+     {
+      "lval": "truthfulqa",
+      "op": "~~",
+      "rval": "truthfulqa",
+      "estimate": 0.0,
+      "std_estimate": 0.0,
+      "fixed": false
+     }
+    ]
+   },
+   "one_factor_six": {
+    "name": "One Safety factor over the six behavioral instruments",
+    "spec": "safety =~ harmbench_direct + beavertails + toxigen + harmbench_gcg + harmbench_tap + harmbench_human",
+    "latents": [
+     "safety"
+    ],
+    "observed": [
+     "harmbench_direct",
+     "beavertails",
+     "toxigen",
+     "harmbench_gcg",
+     "harmbench_tap",
+     "harmbench_human"
+    ],
+    "fit": {
+     "n": 26,
+     "df": 9,
+     "chi2": 25.37284874736782,
+     "p": 0.00258526903974413,
+     "CFI": 0.8682812612960045,
+     "TLI": 0.780468768826674,
+     "RMSEA": 0.2697558463777348,
+     "baseline_chi2": 139.3015907111109,
+     "baseline_df": 15
+    },
+    "parameters": [
+     {
+      "lval": "harmbench_direct",
+      "op": "~",
+      "rval": "safety",
+      "estimate": 1.0,
+      "std_estimate": 0.7671156467067647,
+      "fixed": true
+     },
+     {
+      "lval": "beavertails",
+      "op": "~",
+      "rval": "safety",
+      "estimate": 0.5115997369032085,
+      "std_estimate": 0.3924691878521221,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~",
+      "rval": "safety",
+      "estimate": -0.3150768807087076,
+      "std_estimate": -0.24170600984336274,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~",
+      "rval": "safety",
+      "estimate": 1.1933530041436886,
+      "std_estimate": 0.9155174395711368,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~",
+      "rval": "safety",
+      "estimate": 1.1512184350262187,
+      "std_estimate": 0.8832422982818193,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~",
+      "rval": "safety",
+      "estimate": 1.2989178340316798,
+      "std_estimate": 0.9965149190335515,
+      "fixed": false
+     },
+     {
+      "lval": "safety",
+      "op": "~~",
+      "rval": "safety",
+      "estimate": 0.5659382761886833,
+      "std_estimate": 1.0,
+      "fixed": false
+     },
+     {
+      "lval": "beavertails",
+      "op": "~~",
+      "rval": "beavertails",
+      "estimate": 0.813527919794459,
+      "std_estimate": 0.8459679365866957,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_direct",
+      "op": "~~",
+      "rval": "harmbench_direct",
+      "estimate": 0.3957789286623597,
+      "std_estimate": 0.41153358457766237,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~~",
+      "rval": "harmbench_gcg",
+      "estimate": 0.155606188136277,
+      "std_estimate": 0.16182781784110964,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~~",
+      "rval": "harmbench_human",
+      "estimate": 0.006690371735030599,
+      "std_estimate": 0.006958016143554261,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~~",
+      "rval": "harmbench_tap",
+      "estimate": 0.21140563446762134,
+      "std_estimate": 0.21988304252584964,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~~",
+      "rval": "toxigen",
+      "estimate": 0.9054899643824995,
+      "std_estimate": 0.9415782048056002,
+      "fixed": false
+     }
+    ]
+   },
+   "two_factor": {
+    "name": "Two correlated factors: harmlessness and adversarial robustness",
+    "spec": "harmlessness =~ harmbench_direct + beavertails + toxigen\nadvrobust    =~ harmbench_gcg + harmbench_tap + harmbench_human\nharmlessness ~~ advrobust",
+    "latents": [
+     "harmlessness",
+     "advrobust"
+    ],
+    "observed": [
+     "harmbench_direct",
+     "beavertails",
+     "toxigen",
+     "harmbench_gcg",
+     "harmbench_tap",
+     "harmbench_human"
+    ],
+    "fit": {
+     "n": 26,
+     "df": 8,
+     "chi2": 15.58835769770511,
+     "p": 0.048665547712114926,
+     "CFI": 0.938952046757461,
+     "TLI": 0.8855350876702396,
+     "RMSEA": 0.19478652029472046,
+     "baseline_chi2": 139.3015907111109,
+     "baseline_df": 15
+    },
+    "parameters": [
+     {
+      "lval": "harmbench_direct",
+      "op": "~",
+      "rval": "harmlessness",
+      "estimate": 1.0,
+      "std_estimate": 1.2409225496510091e-08,
+      "fixed": true
+     },
+     {
+      "lval": "beavertails",
+      "op": "~",
+      "rval": "harmlessness",
+      "estimate": 0.19342860609888068,
+      "std_estimate": 2.4004883624044167e-09,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~",
+      "rval": "harmlessness",
+      "estimate": -0.4242119975531202,
+      "std_estimate": -5.264658635538838e-09,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~",
+      "rval": "advrobust",
+      "estimate": 1.0,
+      "std_estimate": 0.9343126137084778,
+      "fixed": true
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~",
+      "rval": "advrobust",
+      "estimate": 0.9542544629102977,
+      "std_estimate": 0.8926968728147578,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~",
+      "rval": "advrobust",
+      "estimate": 1.0518658438640511,
+      "std_estimate": 0.9813469348456677,
+      "fixed": false
+     },
+     {
+      "lval": "harmlessness",
+      "op": "~~",
+      "rval": "advrobust",
+      "estimate": 0.7398916717839812,
+      "std_estimate": 65439498.87291774,
+      "fixed": false
+     },
+     {
+      "lval": "harmlessness",
+      "op": "~~",
+      "rval": "harmlessness",
+      "estimate": 1.4807971068243165e-16,
+      "std_estimate": 1.0,
+      "fixed": false
+     },
+     {
+      "lval": "advrobust",
+      "op": "~~",
+      "rval": "advrobust",
+      "estimate": 0.8632981114136936,
+      "std_estimate": 1.0,
+      "fixed": false
+     },
+     {
+      "lval": "beavertails",
+      "op": "~~",
+      "rval": "beavertails",
+      "estimate": 0.9614744588587342,
+      "std_estimate": 1.0000000000000002,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_direct",
+      "op": "~~",
+      "rval": "harmbench_direct",
+      "estimate": 0.9616260158546176,
+      "std_estimate": 0.9999999999999998,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~~",
+      "rval": "harmbench_gcg",
+      "estimate": 0.12565651541419515,
+      "std_estimate": 0.12705993986523267,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~~",
+      "rval": "harmbench_human",
+      "estimate": 0.036656170395304735,
+      "std_estimate": 0.03695819346901284,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~~",
+      "rval": "harmbench_tap",
+      "estimate": 0.2003432003661222,
+      "std_estimate": 0.20309229326675204,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~~",
+      "rval": "toxigen",
+      "estimate": 0.9614374137837994,
+      "std_estimate": 1.0000000000000002,
+      "fixed": false
+     }
+    ]
+   },
+   "refusal_knowledge": {
+    "name": "Refusal vs. knowledge",
+    "spec": "refusal   =~ harmbench_direct + harmbench_gcg + harmbench_tap + harmbench_human\nknowledge =~ toxigen + truthfulqa + beavertails\nrefusal   ~~ knowledge",
+    "latents": [
+     "refusal",
+     "knowledge"
+    ],
+    "observed": [
+     "harmbench_direct",
+     "beavertails",
+     "toxigen",
+     "harmbench_gcg",
+     "harmbench_tap",
+     "harmbench_human",
+     "truthfulqa"
+    ],
+    "fit": {
+     "n": 26,
+     "df": 13,
+     "chi2": 25.258783307899204,
+     "p": 0.02134059775137664,
+     "CFI": 0.9176347350795552,
+     "TLI": 0.8669484182054352,
+     "RMSEA": 0.19421465767308727,
+     "baseline_chi2": 169.83438206311538,
+     "baseline_df": 21
+    },
+    "parameters": [
+     {
+      "lval": "harmbench_direct",
+      "op": "~",
+      "rval": "refusal",
+      "estimate": 1.0,
+      "std_estimate": 0.7691821304383853,
+      "fixed": true
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~",
+      "rval": "refusal",
+      "estimate": 1.19381118928997,
+      "std_estimate": 0.9182458213298212,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~",
+      "rval": "refusal",
+      "estimate": 1.1515775672528679,
+      "std_estimate": 0.8857443697177112,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~",
+      "rval": "refusal",
+      "estimate": 1.2918557735265297,
+      "std_estimate": 0.9936786786843278,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~",
+      "rval": "knowledge",
+      "estimate": 1.0,
+      "std_estimate": 0.5880400127431686,
+      "fixed": true
+     },
+     {
+      "lval": "truthfulqa",
+      "op": "~",
+      "rval": "knowledge",
+      "estimate": 1.700533050105592,
+      "std_estimate": 0.9999999999999999,
+      "fixed": false
+     },
+     {
+      "lval": "beavertails",
+      "op": "~",
+      "rval": "knowledge",
+      "estimate": -1.1171935593139766,
+      "std_estimate": -0.6569779992598439,
+      "fixed": false
+     },
+     {
+      "lval": "refusal",
+      "op": "~~",
+      "rval": "knowledge",
+      "estimate": -0.25442274820136895,
+      "std_estimate": -0.5848370379894238,
+      "fixed": false
+     },
+     {
+      "lval": "refusal",
+      "op": "~~",
+      "rval": "refusal",
+      "estimate": 0.5689168059616269,
+      "std_estimate": 1.0000000000000002,
+      "fixed": false
+     },
+     {
+      "lval": "knowledge",
+      "op": "~~",
+      "rval": "knowledge",
+      "estimate": 0.332654481002269,
+      "std_estimate": 1.0,
+      "fixed": false
+     },
+     {
+      "lval": "beavertails",
+      "op": "~~",
+      "rval": "beavertails",
+      "estimate": 0.5467481092519964,
+      "std_estimate": 0.5683799084885326,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_direct",
+      "op": "~~",
+      "rval": "harmbench_direct",
+      "estimate": 0.392674195894251,
+      "std_estimate": 0.40835885021426666,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~~",
+      "rval": "harmbench_gcg",
+      "estimate": 0.15080521239647304,
+      "std_estimate": 0.15682461161032177,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~~",
+      "rval": "harmbench_human",
+      "estimate": 0.012118473351308688,
+      "std_estimate": 0.012602683528168401,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~~",
+      "rval": "harmbench_tap",
+      "estimate": 0.20719476816000562,
+      "std_estimate": 0.2154569115133745,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~~",
+      "rval": "toxigen",
+      "estimate": 0.6293555960819187,
+      "std_estimate": 0.6542089434130142,
+      "fixed": false
+     },
+     {
+      "lval": "truthfulqa",
+      "op": "~~",
+      "rval": "truthfulqa",
+      "estimate": 0.0,
+      "std_estimate": 0.0,
+      "fixed": false
+     }
+    ]
+   },
+   "refusal_knowledge_mmlu": {
+    "name": "Refusal vs. knowledge, with MMLU on the knowledge factor",
+    "spec": "refusal   =~ harmbench_direct + harmbench_gcg + harmbench_tap + harmbench_human\nknowledge =~ toxigen + truthfulqa + beavertails + mmlu\nrefusal   ~~ knowledge",
+    "latents": [
+     "refusal",
+     "knowledge"
+    ],
+    "observed": [
+     "harmbench_direct",
+     "beavertails",
+     "toxigen",
+     "harmbench_gcg",
+     "harmbench_tap",
+     "harmbench_human",
+     "truthfulqa",
+     "mmlu"
+    ],
+    "fit": {
+     "n": 26,
+     "df": 19,
+     "chi2": 31.713187969660925,
+     "p": 0.03365844658345643,
+     "CFI": 0.9264355181726818,
+     "TLI": 0.891589184675531,
+     "RMSEA": 0.16359891885925695,
+     "baseline_chi2": 200.81693085942294,
+     "baseline_df": 28
+    },
+    "parameters": [
+     {
+      "lval": "harmbench_direct",
+      "op": "~",
+      "rval": "refusal",
+      "estimate": 1.0,
+      "std_estimate": 0.7685404082786705,
+      "fixed": true
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~",
+      "rval": "refusal",
+      "estimate": 1.1941459709911313,
+      "std_estimate": 0.9178446028130034,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~",
+      "rval": "refusal",
+      "estimate": 1.1520916006052486,
+      "std_estimate": 0.8855005508079964,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~",
+      "rval": "refusal",
+      "estimate": 1.2934151574607222,
+      "std_estimate": 0.9941292821109174,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~",
+      "rval": "knowledge",
+      "estimate": 1.0,
+      "std_estimate": 0.6427952750513943,
+      "fixed": true
+     },
+     {
+      "lval": "truthfulqa",
+      "op": "~",
+      "rval": "knowledge",
+      "estimate": 1.4555295143263578,
+      "std_estimate": 0.935657451920622,
+      "fixed": false
+     },
+     {
+      "lval": "beavertails",
+      "op": "~",
+      "rval": "knowledge",
+      "estimate": -1.104310266061221,
+      "std_estimate": -0.7098728912573142,
+      "fixed": false
+     },
+     {
+      "lval": "mmlu",
+      "op": "~",
+      "rval": "knowledge",
+      "estimate": 1.2911944795829504,
+      "std_estimate": 0.8300367726077287,
+      "fixed": false
+     },
+     {
+      "lval": "refusal",
+      "op": "~~",
+      "rval": "knowledge",
+      "estimate": -0.26851594045071386,
+      "std_estimate": -0.5652019270711023,
+      "fixed": false
+     },
+     {
+      "lval": "refusal",
+      "op": "~~",
+      "rval": "refusal",
+      "estimate": 0.5680602453047892,
+      "std_estimate": 1.0,
+      "fixed": false
+     },
+     {
+      "lval": "knowledge",
+      "op": "~~",
+      "rval": "knowledge",
+      "estimate": 0.3973182194515887,
+      "std_estimate": 0.9999999999999998,
+      "fixed": false
+     },
+     {
+      "lval": "beavertails",
+      "op": "~~",
+      "rval": "beavertails",
+      "estimate": 0.47699261317313646,
+      "std_estimate": 0.4960804782579813,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_direct",
+      "op": "~~",
+      "rval": "harmbench_direct",
+      "estimate": 0.3936870718832226,
+      "std_estimate": 0.40934564084285435,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_gcg",
+      "op": "~~",
+      "rval": "harmbench_gcg",
+      "estimate": 0.15150271989649144,
+      "std_estimate": 0.15756128508703993,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_human",
+      "op": "~~",
+      "rval": "harmbench_human",
+      "estimate": 0.011257166226963518,
+      "std_estimate": 0.011706970449631973,
+      "fixed": false
+     },
+     {
+      "lval": "harmbench_tap",
+      "op": "~~",
+      "rval": "harmbench_tap",
+      "estimate": 0.2075968730047333,
+      "std_estimate": 0.21588877451873506,
+      "fixed": false
+     },
+     {
+      "lval": "mmlu",
+      "op": "~~",
+      "rval": "mmlu",
+      "estimate": 0.2990487016786896,
+      "std_estimate": 0.31103895611894555,
+      "fixed": false
+     },
+     {
+      "lval": "toxigen",
+      "op": "~~",
+      "rval": "toxigen",
+      "estimate": 0.5642788453633703,
+      "std_estimate": 0.5868142343716024,
+      "fixed": false
+     },
+     {
+      "lval": "truthfulqa",
+      "op": "~~",
+      "rval": "truthfulqa",
+      "estimate": 0.11974944545654612,
+      "std_estimate": 0.1245451326654091,
+      "fixed": false
+     }
+    ]
+   }
+  }
+ },
+ "helm": {
+  "data": [
+   "data/safety/helm_safety.json",
+   "data/safety/air_refusal.json"
+  ],
+  "n": 87,
+  "n_joined_with_air": 75,
+  "correlations": {
+   "harmbench_xstest": {
+    "r": 0.21425400733986838,
+    "p": 0.04629113521523365,
+    "n": 87
+   },
+   "harmbench_air": {
+    "r": 0.8366676146766886,
+    "p": 9.079150167548884e-21,
+    "n": 75
+   },
+   "xstest_air": {
+    "r": 0.009951182570584326,
+    "p": 0.9324725677386525,
+    "n": 75
+   },
+   "sst_redteam": {
+    "r": 0.9664992122455061,
+    "p": 5.587586504142936e-52,
+    "n": 87
+   }
+  }
+ },
+ "software": {
+  "semopy": "2.3.11",
+  "pandas": "3.0.5",
+  "numpy": "2.5.1"
+ }
+}

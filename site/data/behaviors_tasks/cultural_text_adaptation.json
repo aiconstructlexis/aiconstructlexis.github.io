@@ -1,0 +1,132 @@
+{
+  "canonical_name": "Cultural text adaptation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats this behavior as modifying text or dialogue so it aligns with a target culture's linguistic, social, and conceptual norms, entities, and expectations. The most specific formulation describes transforming source-culture text into target-culture text by replacing culturally grounded entities while preserving semantic intent, while a smaller formulation narrows the task to recontextualizing educational materials for the cultural and social norms of different regions. In dialogue work, adapted outputs are framed as culturally adapted slot substitutions similar to those made by human annotators.\n\nVariants. Papers use several names for related variants, including cultural context adaptation, cultural text adaptation, and cultural adaptation. The settings range from educational materials and source-to-target adaptation such as American-to-Indian text adaptation, to multilingual dialogue localization that changes names, locations, brands, and references, and to Arabic and English CAMeL-2 contexts where adaptation is examined through preferences for Arab versus Western entities in [MASK] token fillings. One paper reports that cultural text adaptation is related to Text infilling through this [MASK] token filling setup.\n\nSpace of elicitation and scores. Papers link this behavior to 2 measurement instruments: Human evaluation and LLM-as-a-judge. In the linked evaluation setup, adaptations on a cultural text adaptation task are evaluated with an LLM as Judge and with human evaluations from diverse socio-demographic region.\n\nWhat it is taken as evidence of. No construct is linked to this behavior as evidence of in the papers.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Cultural context adaptation",
+    "Cultural text adaptation",
+    "Cultural adaptation"
+  ],
+  "papers": [
+    "DIWALI - Diversity and Inclusivity aWare cuLture specific Items for India: Dataset and Assessment of LLMs for Cultural Text Adaptation in Indian Context",
+    "Multilingual Dialogue Generation and Localization with Dialogue Act Scripting",
+    "Position: LLMs Can be Good Tutors in English Education",
+    "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The observable task of recontextualizing educational materials to reflect the cultural and social norms of different regions.",
+      "papers": [
+        "Position: LLMs Can be Good Tutors in English Education"
+      ],
+      "original_name": "Cultural context adaptation"
+    },
+    {
+      "text": "The observable process of modifying a text from a source cultural context (e.g., American) to align with a target cultural context (e.g., Indian) by replacing culturally grounded entities while preserving semantic intent.",
+      "papers": [
+        "DIWALI - Diversity and Inclusivity aWare cuLture specific Items for India: Dataset and Assessment of LLMs for Cultural Text Adaptation in Indian Context"
+      ],
+      "original_name": "Cultural text adaptation"
+    },
+    {
+      "text": "The ability of a language model to appropriately handle and generate text that aligns with specific cultural contexts, norms, and entities.",
+      "papers": [
+        "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+        "Multilingual Dialogue Generation and Localization with Dialogue Act Scripting"
+      ],
+      "original_name": "Cultural adaptation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DIWALI - Diversity and Inclusivity aWare cuLture specific Items for India: Dataset and Assessment of LLMs for Cultural Text Adaptation in Indian Context",
+      "evidence": "To measure the cultural competence of LLMs on a cultural text adaptation task, we evaluate the adaptations using the CSIs created, LLM as Judge, and human evaluations from diverse socio-demographic region. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "DIWALI - Diversity and Inclusivity aWare cuLture specific Items for India: Dataset and Assessment of LLMs for Cultural Text Adaptation in Indian Context"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DIWALI - Diversity and Inclusivity aWare cuLture specific Items for India: Dataset and Assessment of LLMs for Cultural Text Adaptation in Indian Context",
+      "evidence": "To measure the cultural competence of LLMs on a cultural text adaptation task, we evaluate the adaptations using the CSIs created, LLM as Judge, and human evaluations from diverse socio-demographic region. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "DIWALI - Diversity and Inclusivity aWare cuLture specific Items for India: Dataset and Assessment of LLMs for Cultural Text Adaptation in Indian Context"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text infilling",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+      "evidence": "We compare the ability of LMs at adapting to cultural contexts in Arabic and English by analyzing their preference for Arab vs. Western entities as [MASK] token fillings of CAMeL-2 contexts. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats this behavior as modifying text or dialogue so it aligns with a target culture's linguistic, social, and conceptual norms, entities, and expectations. The most specific formulation describes transforming source-culture text into target-culture text by replacing culturally grounded entities while preserving semantic intent, while a smaller formulation narrows the task to recontextualizing educational materials for the cultural and social norms of different regions. In dialogue work, adapted outputs are framed as culturally adapted slot substitutions similar to those made by human annotators."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several names for related variants, including cultural context adaptation, cultural text adaptation, and cultural adaptation. The settings range from educational materials and source-to-target adaptation such as American-to-Indian text adaptation, to multilingual dialogue localization that changes names, locations, brands, and references, and to Arabic and English CAMeL-2 contexts where adaptation is examined through preferences for Arab versus Western entities in [MASK] token fillings. One paper reports that cultural text adaptation is related to Text infilling through this [MASK] token filling setup."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to 2 measurement instruments: Human evaluation and LLM-as-a-judge. In the linked evaluation setup, adaptations on a cultural text adaptation task are evaluated with an LLM as Judge and with human evaluations from diverse socio-demographic region."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to this behavior as evidence of in the papers."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats this behavior as modifying text or dialogue so it aligns with a target culture's linguistic, social, and conceptual norms, entities, and expectations. The most specific formulation describes transforming source-culture text into target-culture text by replacing culturally grounded entities while preserving semantic intent, while a smaller formulation narrows the task to recontextualizing educational materials for the cultural and social norms of different regions. In dialogue work, adapted outputs are framed as culturally adapted slot substitutions similar to those made by human annotators.\n\nVariants. Papers use several names for related variants, including cultural context adaptation, cultural text adaptation, and cultural adaptation. The settings range from educational materials and source-to-target adaptation such as American-to-Indian text adaptation, to multilingual dialogue localization that changes names, locations, brands, and references, and to Arabic and English CAMeL-2 contexts where adaptation is examined through preferences for Arab versus Western entities in [MASK] token fillings. One paper reports that cultural text adaptation is related to Text infilling through this [MASK] token filling setup.\n\nSpace of elicitation and scores. Papers link this behavior to 2 measurement instruments: Human evaluation and LLM-as-a-judge. In the linked evaluation setup, adaptations on a cultural text adaptation task are evaluated with an LLM as Judge and with human evaluations from diverse socio-demographic region.\n\nWhat it is taken as evidence of. No construct is linked to this behavior as evidence of in the papers.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "DIWALI - Diversity and Inclusivity aWare cuLture specific Items for India: Dataset and Assessment of LLMs for Cultural Text Adaptation in Indian Context",
+      "Multilingual Dialogue Generation and Localization with Dialogue Act Scripting",
+      "Position: LLMs Can be Good Tutors in English Education"
+    ],
+    "naacl25": [
+      "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "canonical_name": "ARC-AGI",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, ARC-AGI is most commonly described as the Abstraction and Reasoning Corpus, a grid-based benchmark where models infer a transformation rule from input-output examples and then produce the correct output for a new test grid. One definition says the original dataset contains 900 reasoning tasks. A smaller line of description refers to it more specifically as an ARC reasoning benchmark, a visual inductive reasoning benchmark, or a program synthesis benchmark designed to challenge core reasoning capabilities.\n\nWhat it is claimed to measure. Papers link ARC-AGI to 7 constructs and no behavioral indicators. The prevailing use is to measure Reasoning and Generalization: papers describe it as designed to assess core knowledge and the ability to generalize in AI, and as a benchmark that challenges core reasoning capabilities. Other papers use it to measure Abstract reasoning, Core knowledge, and Inductive reasoning; overall, these claims are spread across several constructs rather than centered on one, with 2 additional construct links beyond these, one of them a related rather than measured_by connection.\n\nSpace of uses. No other measurement instrument is linked to it. Papers use ARC-AGI as the benchmark on which they verify effectiveness or report improvements, and they position it as a reasoning benchmark, a visual inductive reasoning benchmark, and, in one line of work, a testbed for program synthesis. One analysis also treats ARC tasks as \"complex compositions of atomic operations for evaluation,\" connecting the benchmark to compositionality.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ARC-AGI"
+  ],
+  "papers": [
+    "In Benchmarks We Trust ... Or Not?",
+    "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation",
+    "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective",
+    "RE-IMAGINE: Symbolic Benchmark Synthesis for Reasoning Evaluation",
+    "Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI",
+    "SparseLoRA: Accelerating LLM Fine-Tuning with Contextual Sparsity"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "Abstraction and Reasoning Corpus (ARC-AGI), a benchmark of grid-based reasoning tasks where models infer a transformation rule from examples and produce the correct output for a test input.",
+      "papers": [
+        "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective"
+      ],
+      "original_name": "ARC-AGI"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI",
+      "evidence": "We demonstrate SOAR\u2019s effectiveness on the Abstraction and Reasoning Corpus (ARC), a program synthesis benchmark specifically designed to challenge AI models\u2019 core reasoning capabilities (Chollet, 2019).",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI",
+          "RE-IMAGINE: Symbolic Benchmark Synthesis for Reasoning Evaluation",
+          "Test-Time Training Provably Improves Transformers as In-context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective",
+      "evidence": "The Abstraction and Reasoning Corpus (ARC-AGI), introduced by Chollet (2019) and designed to assess core knowledge and the ability to generalize in AI, exemplifies this difficulty. (Section 1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective"
+        ],
+        "neurips24": [
+          "HYSYNTH: Context-Free LLM Approximation for Guiding Program Synthesis"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstract reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective",
+      "evidence": "The Abstraction and Reasoning Corpus (ARC-AGI) poses a significant challenge for large language models (LLMs), exposing limitations in their abstract reasoning abilities. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Core knowledge",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective",
+      "evidence": "The Abstraction and Reasoning Corpus (ARC-AGI), introduced by Chollet (2019) and designed to assess core knowledge and the ability to generalize in AI, exemplifies this difficulty. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Inductive reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Hypothesis Search: Inductive Reasoning with Language Models",
+      "evidence": "\"We verify our pipeline\u2019s effectiveness on the ARC visual inductive reasoning benchmark\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Hypothesis Search: Inductive Reasoning with Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Compositionality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task",
+      "evidence": "Therefore, we regard ARC tasks as complex compositions of atomic operations for evaluation. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Understanding LLMs' Fluid Intelligence Deficiency: An Analysis of the ARC Task"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Program synthesis ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI",
+      "evidence": "ARC was explicitly designed to resist pattern matching and require core reasoning, making it a strong testbed for program synthesis (Chollet, 2024).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 7,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, ARC-AGI is most commonly described as the Abstraction and Reasoning Corpus, a grid-based benchmark where models infer a transformation rule from input-output examples and then produce the correct output for a new test grid. One definition says the original dataset contains 900 reasoning tasks. A smaller line of description refers to it more specifically as an ARC reasoning benchmark, a visual inductive reasoning benchmark, or a program synthesis benchmark designed to challenge core reasoning capabilities."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link ARC-AGI to 7 constructs and no behavioral indicators. The prevailing use is to measure Reasoning and Generalization: papers describe it as designed to assess core knowledge and the ability to generalize in AI, and as a benchmark that challenges core reasoning capabilities. Other papers use it to measure Abstract reasoning, Core knowledge, and Inductive reasoning; overall, these claims are spread across several constructs rather than centered on one, with 2 additional construct links beyond these, one of them a related rather than measured_by connection."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No other measurement instrument is linked to it. Papers use ARC-AGI as the benchmark on which they verify effectiveness or report improvements, and they position it as a reasoning benchmark, a visual inductive reasoning benchmark, and, in one line of work, a testbed for program synthesis. One analysis also treats ARC tasks as \"complex compositions of atomic operations for evaluation,\" connecting the benchmark to compositionality."
+    }
+  ],
+  "characterization": "What it is. Across papers, ARC-AGI is most commonly described as the Abstraction and Reasoning Corpus, a grid-based benchmark where models infer a transformation rule from input-output examples and then produce the correct output for a new test grid. One definition says the original dataset contains 900 reasoning tasks. A smaller line of description refers to it more specifically as an ARC reasoning benchmark, a visual inductive reasoning benchmark, or a program synthesis benchmark designed to challenge core reasoning capabilities.\n\nWhat it is claimed to measure. Papers link ARC-AGI to 7 constructs and no behavioral indicators. The prevailing use is to measure Reasoning and Generalization: papers describe it as designed to assess core knowledge and the ability to generalize in AI, and as a benchmark that challenges core reasoning capabilities. Other papers use it to measure Abstract reasoning, Core knowledge, and Inductive reasoning; overall, these claims are spread across several constructs rather than centered on one, with 2 additional construct links beyond these, one of them a related rather than measured_by connection.\n\nSpace of uses. No other measurement instrument is linked to it. Papers use ARC-AGI as the benchmark on which they verify effectiveness or report improvements, and they position it as a reasoning benchmark, a visual inductive reasoning benchmark, and, in one line of work, a testbed for program synthesis. One analysis also treats ARC tasks as \"complex compositions of atomic operations for evaluation,\" connecting the benchmark to compositionality.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "In Benchmarks We Trust ... Or Not?"
+    ],
+    "icml25": [
+      "Position: AI Competitions Provide the Gold Standard for Empirical Rigor in GenAI Evaluation",
+      "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective",
+      "RE-IMAGINE: Symbolic Benchmark Synthesis for Reasoning Evaluation",
+      "Self-Improving Language Models for Evolutionary Program Synthesis: A Case Study on ARC-AGI",
+      "SparseLoRA: Accelerating LLM Fine-Tuning with Contextual Sparsity"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "icml25": 5
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

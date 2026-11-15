@@ -1,0 +1,161 @@
+{
+  "canonical_name": "CVQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, CVQA is most commonly described as a culturally diverse, multilingual visual question answering benchmark and dataset for culturally specific or culturally diverse images and questions. Definitions describe it as a large-scale resource spanning 31 languages and 30 countries, written in both English and local languages, while one definition instead calls it a cross-lingual VQA dataset. Its questions are described as multiple choice, with one correct answer and three distractors, and the benchmark is also said to be convertible into free-text open-ended QA.\n\nWhat it is claimed to measure. Papers use CVQA to measure three constructs and three behavioral indicators, with claims spread across several targets rather than centered on one alone. The prevailing construct-level uses are for cultural bias, cultural understanding, and multilingual understanding: papers say it can assess the cultural capability and bias of multimodal models, and use it to assess a model's ability to reason about and understand culturally diverse visual content. At the behavioral level, it is reported as measuring visual question answering, and descriptions of its format also link it to additional question-answering modes through its multiple-choice setup and its convertibility to free-text open-ended QA.\n\nSpace of uses. Papers present CVQA as a benchmark in its own right, and one paper says it can serve as a probing evaluation suite for assessing cultural capability and bias in multimodal models. It also appears alongside other datasets in combined evaluations: one paper uses CVQA with MaRVL to assess reasoning about culturally diverse visual content, and another uses CVQA with A-OKVQA to measure Western bias in question answering.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "CVQA"
+  ],
+  "papers": [
+    "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+    "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+    "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The Cross-lingual Visual Question Answering (CVQA) dataset, used to assess a model's ability to reason about and understand culturally diverse visual content.",
+      "papers": [
+        "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+        "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+      ],
+      "original_name": "CVQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cultural understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "This benchmark can serve as a probing evaluation suite for assessing the cultural capability and bias of multimodal models and hopefully encourage more research efforts toward increasing cultural awareness and linguistic diversity in this field. (Abstract)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+        ],
+        "iclr25": [
+          "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cultural bias",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding",
+      "evidence": "\u201cTo measure Western bias in question answering, we use A-OKVQA and CVQA (Schwenk et al., 2022; Romero et al., 2024).\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding"
+        ],
+        "neurips24": [
+          "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "\u201cWe propose CVQA, a large-scale multilingual VQA benchmark\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "\u201cEach question was accompanied by one correct answer and three distractors that were reasonably plausible, yet incorrect, thus forming a multiple-choice format.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Open-ended question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "\u201cwe made sure that CVQA is also convertible into free-text open-ended QA\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark",
+      "evidence": "\u201cCVQA is written in both English and local languages, enabling us to benchmark multilingual MLLMs and English-only MLLMs.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, CVQA is most commonly described as a culturally diverse, multilingual visual question answering benchmark and dataset for culturally specific or culturally diverse images and questions. Definitions describe it as a large-scale resource spanning 31 languages and 30 countries, written in both English and local languages, while one definition instead calls it a cross-lingual VQA dataset. Its questions are described as multiple choice, with one correct answer and three distractors, and the benchmark is also said to be convertible into free-text open-ended QA."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use CVQA to measure three constructs and three behavioral indicators, with claims spread across several targets rather than centered on one alone. The prevailing construct-level uses are for cultural bias, cultural understanding, and multilingual understanding: papers say it can assess the cultural capability and bias of multimodal models, and use it to assess a model's ability to reason about and understand culturally diverse visual content. At the behavioral level, it is reported as measuring visual question answering, and descriptions of its format also link it to additional question-answering modes through its multiple-choice setup and its convertibility to free-text open-ended QA."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers present CVQA as a benchmark in its own right, and one paper says it can serve as a probing evaluation suite for assessing cultural capability and bias in multimodal models. It also appears alongside other datasets in combined evaluations: one paper uses CVQA with MaRVL to assess reasoning about culturally diverse visual content, and another uses CVQA with A-OKVQA to measure Western bias in question answering."
+    }
+  ],
+  "characterization": "What it is. Across papers, CVQA is most commonly described as a culturally diverse, multilingual visual question answering benchmark and dataset for culturally specific or culturally diverse images and questions. Definitions describe it as a large-scale resource spanning 31 languages and 30 countries, written in both English and local languages, while one definition instead calls it a cross-lingual VQA dataset. Its questions are described as multiple choice, with one correct answer and three distractors, and the benchmark is also said to be convertible into free-text open-ended QA.\n\nWhat it is claimed to measure. Papers use CVQA to measure three constructs and three behavioral indicators, with claims spread across several targets rather than centered on one alone. The prevailing construct-level uses are for cultural bias, cultural understanding, and multilingual understanding: papers say it can assess the cultural capability and bias of multimodal models, and use it to assess a model's ability to reason about and understand culturally diverse visual content. At the behavioral level, it is reported as measuring visual question answering, and descriptions of its format also link it to additional question-answering modes through its multiple-choice setup and its convertibility to free-text open-ended QA.\n\nSpace of uses. Papers present CVQA as a benchmark in its own right, and one paper says it can serve as a probing evaluation suite for assessing cultural capability and bias in multimodal models. It also appears alongside other datasets in combined evaluations: one paper uses CVQA with MaRVL to assess reasoning about culturally diverse visual content, and another uses CVQA with A-OKVQA to measure Western bias in question answering.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+      "See It from My Perspective: How Language Affects Cultural Bias in Image Understanding"
+    ],
+    "neurips24": [
+      "CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

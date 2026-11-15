@@ -1,0 +1,103 @@
+{
+  "canonical_name": "Yelp",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing description is of a review dataset from the Yelp platform, derived from Yelp reviews and used in classification settings. Most definitions frame it for sentiment classification or sentiment analysis, while some specify business reviews, opinions about restaurants and local services, or short natural language casual reviews; one definition also describes it as a 5-way classification task.\n\nWhat it is claimed to measure. Formally, papers link Yelp to 1 behavioral indicator and no constructs. The linked behavioral indicator is Text classification: one paper reports that Text classification is measured by Yelp, describing Yelp as one of two 5-way classification tasks; elsewhere, papers describe Yelp as used to evaluate sentiment classification, out-of-distribution sentiment analysis, downstream classifiers, synthetic-data utility, and text origin detection.\n\nSpace of uses. Papers often use Yelp alongside other datasets, including SST-5, SST2, Fine-Food, and OpenReview, as one component of broader evaluation suites. In those settings it is positioned as a sentiment benchmark, an out-of-distribution evaluation set, a source of seed samples and downstream classifier evaluation, a 5-way classification task for assessing synthetic data utility, and a short natural language dataset for text origin detection; no measurement instrument is formally linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Yelp"
+  ],
+  "papers": [
+    "Direct Prompt Optimization with Continuous Representations",
+    "GRAM: Generative Recommendation via Semantic-aware Multi-granular Late Fusion",
+    "Flexible-length Text Infilling for Discrete Diffusion Models",
+    "Profiler: Black-box AI-generated Text Origin Detection via Context-aware Inference Pattern Analysis",
+    "SCISSOR: Mitigating Semantic Bias through Cluster-Aware Siamese Networks for Robust Classification",
+    "Sparse Autoencoders for Hypothesis Generation",
+    "Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs",
+    "LLMs vs Established Text Augmentation Techniques for Classification: When do the Benefits Outweight the Costs?",
+    "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware and LLM-Driven Augmented Data"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "A dataset derived from Yelp reviews, used for sentiment classification tasks to source seed samples and evaluate downstream classifiers.",
+      "papers": [
+        "LLMs vs Established Text Augmentation Techniques for Classification: When do the Benefits Outweight the Costs?",
+        "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware and LLM-Driven Augmented Data",
+        "Direct Prompt Optimization with Continuous Representations",
+        "Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs",
+        "Profiler: Black-box AI-generated Text Origin Detection via Context-aware Inference Pattern Analysis"
+      ],
+      "original_name": "Yelp"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text classification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs",
+      "evidence": "We conduct experiments on two classi\ufb01cation tasks: Yelp (Yelp, Inc.) and OpenReview (Xie et al., 2024), both of which are 5-way classi\ufb01cation... (Section 4.1.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing description is of a review dataset from the Yelp platform, derived from Yelp reviews and used in classification settings. Most definitions frame it for sentiment classification or sentiment analysis, while some specify business reviews, opinions about restaurants and local services, or short natural language casual reviews; one definition also describes it as a 5-way classification task."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Formally, papers link Yelp to 1 behavioral indicator and no constructs. The linked behavioral indicator is Text classification: one paper reports that Text classification is measured by Yelp, describing Yelp as one of two 5-way classification tasks; elsewhere, papers describe Yelp as used to evaluate sentiment classification, out-of-distribution sentiment analysis, downstream classifiers, synthetic-data utility, and text origin detection."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers often use Yelp alongside other datasets, including SST-5, SST2, Fine-Food, and OpenReview, as one component of broader evaluation suites. In those settings it is positioned as a sentiment benchmark, an out-of-distribution evaluation set, a source of seed samples and downstream classifier evaluation, a 5-way classification task for assessing synthetic data utility, and a short natural language dataset for text origin detection; no measurement instrument is formally linked to it."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing description is of a review dataset from the Yelp platform, derived from Yelp reviews and used in classification settings. Most definitions frame it for sentiment classification or sentiment analysis, while some specify business reviews, opinions about restaurants and local services, or short natural language casual reviews; one definition also describes it as a 5-way classification task.\n\nWhat it is claimed to measure. Formally, papers link Yelp to 1 behavioral indicator and no constructs. The linked behavioral indicator is Text classification: one paper reports that Text classification is measured by Yelp, describing Yelp as one of two 5-way classification tasks; elsewhere, papers describe Yelp as used to evaluate sentiment classification, out-of-distribution sentiment analysis, downstream classifiers, synthetic-data utility, and text origin detection.\n\nSpace of uses. Papers often use Yelp alongside other datasets, including SST-5, SST2, Fine-Food, and OpenReview, as one component of broader evaluation suites. In those settings it is positioned as a sentiment benchmark, an out-of-distribution evaluation set, a source of seed samples and downstream classifier evaluation, a 5-way classification task for assessing synthetic data utility, and a short natural language dataset for text origin detection; no measurement instrument is formally linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Direct Prompt Optimization with Continuous Representations",
+      "GRAM: Generative Recommendation via Semantic-aware Multi-granular Late Fusion"
+    ],
+    "emnlp25": [
+      "Flexible-length Text Infilling for Discrete Diffusion Models",
+      "Profiler: Black-box AI-generated Text Origin Detection via Context-aware Inference Pattern Analysis"
+    ],
+    "icml25": [
+      "SCISSOR: Mitigating Semantic Bias through Cluster-Aware Siamese Networks for Robust Classification",
+      "Sparse Autoencoders for Hypothesis Generation",
+      "Synthesizing Privacy-Preserving Text Data via Finetuning *without* Finetuning Billion-Scale LLMs"
+    ],
+    "naacl25": [
+      "LLMs vs Established Text Augmentation Techniques for Classification: When do the Benefits Outweight the Costs?",
+      "SALAD: Improving Robustness and Generalization through Contrastive Learning with Structure-Aware and LLM-Driven Augmented Data"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2,
+    "icml25": 3,
+    "naacl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "icml25",
+    "naacl25"
+  ]
+}

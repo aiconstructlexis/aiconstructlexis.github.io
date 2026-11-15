@@ -1,0 +1,552 @@
+{
+  "canonical_name": "Utility preservation",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats utility preservation as retention of a model's general performance or capabilities after a targeted intervention, most often unlearning, but also after alignment, editing, steering, pruning, compression, layer skipping, or fine-tuning. Most definitions focus on maintaining performance on non-target data or general downstream tasks, often phrased as preserving the retain set or avoiding degradation on benign tasks. The main variation is the reference standard: some papers compare against non-target or retain-set performance, others against the original or reference model's core capabilities, and narrower variants focus on preserving functional code generation or retained tool use.\n\nSpace of facets. Papers use a broad family of near-synonymous labels for this construct, including capability preservation, general capability preservation, utility retention, performance retention, model integrity, and performance preservation, usually for the same broad idea of retaining prior abilities after intervention. A narrower subtype is tool knowledge retention, which isolates preservation of knowledge about tools not marked for unlearning. Some papers make the preserved content explicit as factual knowledge, truthfulness, reasoning, text and code generation, instruction following, or functional correctness, and one unlearning benchmark places utility preservation as one of six desirable properties of an unlearned model.\n\nSpace of measurement. Across papers, utility preservation is measured by 12 instruments and linked to 3 behavioral indicators. The most common instruments are MT-Bench, AlpacaEval, MMLU, GSM8K, and AgentDojo, with papers using them to assess general capabilities, benign-task performance, knowledge reasoning, conversational ability, and utility preservation in agent settings. Almost all of these operationalizations are benchmark-based, and they mostly match the dominant definition by checking post-intervention performance on general or non-target tasks, though some evaluations narrow the construct to particular domains such as code or speech.\n\nLinks. A recurring cross-paper link is a trade-off with forget quality: one paper reports that utility preservation correlates with forget quality, and another treats the two as related when explicit retain data or reference-model knowledge may blur forget and retain data. Single-paper causal claims run from truthfulness to utility preservation, where increased truthfulness negatively impacts utility, and from overrefusal to utility preservation, where stronger refusal on benign inputs limits overall utility. Other papers relate utility preservation to privacy preservation through a privacy-utility trade-off, to knowledge memorization via retain-set evaluation, and more broadly to retaining other general abilities after intervention.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Utility preservation",
+    "General capability preservation",
+    "Model performance preservation",
+    "Capabilities preservation",
+    "Capability preservation",
+    "Utility",
+    "Tool knowledge retention",
+    "Utility retention",
+    "Performance retention",
+    "Model integrity",
+    "Performance preservation"
+  ],
+  "papers": [
+    "Masks Can be Learned as an Alternative to Experts",
+    "COUNTDOWN: Contextually Sparse Activation Filtering Out Unnecessary Weights in Down Projection",
+    "Model Unlearning via Sparse Autoencoder Subspace Guided Projections",
+    "Router-Tuning: A Simple and Effective Approach for Dynamic Depth",
+    "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs",
+    "Catastrophic Failure of LLM Unlearning via Quantization",
+    "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+    "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+    "On Large Language Model Continual Unlearning",
+    "Rethinking LLM Unlearning Objectives: A Gradient Perspective and Go Beyond",
+    "Towards Scalable Exact Machine Unlearning Using Parameter-Efficient Fine-Tuning",
+    "Unified Parameter-Efficient Unlearning for LLMs",
+    "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning",
+    "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+    "DLP: Dynamic Layerwise Pruning in Large Language Models",
+    "Let LLM Tell What to Prune and How Much to Prune",
+    "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+    "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+    "Reinforced Lifelong Editing for Language Models",
+    "Theoretical guarantees on the best-of-n alignment policy",
+    "Tool Unlearning for Tool-Augmented LLMs",
+    "Efficient One-shot Compression via Low-Rank Local Feature Distillation"
+  ],
+  "paper_count": 22,
+  "definitions": [
+    {
+      "text": "The extent to which an unlearned model maintains its general performance on data not intended for removal.",
+      "papers": [
+        "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+        "ProSec: Fortifying Code LLMs with Proactive Security Alignment"
+      ],
+      "original_name": "Utility preservation"
+    },
+    {
+      "text": "The extent to which an aligned model retains the core abilities and knowledge of the original reference model from which it was derived.",
+      "papers": [
+        "Theoretical guarantees on the best-of-n alignment policy"
+      ],
+      "original_name": "Capability preservation"
+    },
+    {
+      "text": "The ability of a pruned model to retain its original language modeling and downstream task performance despite high sparsity.",
+      "papers": [
+        "DLP: Dynamic Layerwise Pruning in Large Language Models"
+      ],
+      "original_name": "Model performance preservation"
+    },
+    {
+      "text": "The ability of a model editing method to maintain the LLM's performance on general downstream tasks while performing targeted knowledge updates.",
+      "papers": [
+        "Reinforced Lifelong Editing for Language Models"
+      ],
+      "original_name": "General capability preservation"
+    },
+    {
+      "text": "The extent to which a steering intervention avoids degrading the model's underlying general abilities while controlling a target concept.",
+      "papers": [
+        "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders"
+      ],
+      "original_name": "Capabilities preservation"
+    },
+    {
+      "text": "The model's ability to maintain its performance on general downstream tasks after a targeted intervention like detoxification.",
+      "papers": [
+        "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs"
+      ],
+      "original_name": "Utility"
+    },
+    {
+      "text": "The latent ability of a model to preserve its learned capability to use tools that are not marked for unlearning, maintaining performance on those tools post-unlearning.",
+      "papers": [
+        "Tool Unlearning for Tool-Augmented LLMs"
+      ],
+      "original_name": "Tool knowledge retention"
+    },
+    {
+      "text": "The degree to which an LLM preserves its general knowledge and capabilities on non-target data after undergoing an unlearning process.",
+      "papers": [
+        "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning"
+      ],
+      "original_name": "Utility retention"
+    },
+    {
+      "text": "The extent to which a pruned model preserves the original model's functional capabilities and accuracy after compression, particularly in language modeling and downstream tasks.",
+      "papers": [
+        "Let LLM Tell What to Prune and How Much to Prune"
+      ],
+      "original_name": "Performance retention"
+    },
+    {
+      "text": "The degree to which a model maintains its overall performance and efficacy after undergoing unlearning procedures.",
+      "papers": [
+        "Unified Parameter-Efficient Unlearning for LLMs"
+      ],
+      "original_name": "Model integrity"
+    },
+    {
+      "text": "The latent ability of a model to retain its original task performance after undergoing structural or parametric modifications such as layer skipping or fine-tuning.",
+      "papers": [
+        "Router-Tuning: A Simple and Effective Approach for Dynamic Depth"
+      ],
+      "original_name": "Performance preservation"
+    }
+  ],
+  "definition_count": 11,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MT-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization",
+      "evidence": "The utility performance is evaluated on MT-Bench(Zheng et al., 2023), IFEval(Zhou et al., 2023) and GSM8K(Cobbe et al., 2021), along with the benign part of XSTest(R\u00f6ttger et al., 2024). (Section 1).",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization"
+        ],
+        "icml25": [
+          "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+          "Assessing Safety Risks and Quantization-aware Safety Patching for Quantized Large Language Models",
+          "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Jailbreak Antidote: Runtime Safety-Utility Balance via Sparse Representation Adjustment in Large Language Models",
+      "evidence": "To measure model utility on benign tasks, we used AlpacaEval (Dubois et al., 2024). (Section 5.1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Jailbreak Antidote: Runtime Safety-Utility Balance via Sparse Representation Adjustment in Large Language Models"
+        ],
+        "icml25": [
+          "Assessing Safety Risks and Quantization-aware Safety Patching for Quantized Large Language Models"
+        ],
+        "emnlp25": [
+          "AdaSteer: Your Aligned LLM is Inherently an Adaptive Jailbreak Defender"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Exploring Safety-Utility Trade-Offs in Personalized Language Models",
+      "evidence": "For evaluating utility, we consider MMLU (Hendrycks et al., 2020), GSM8K (Cobbe et al., 2021), and MBPP (Austin et al., 2021) datasets. (Section 3)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Exploring Safety-Utility Trade-Offs in Personalized Language Models"
+        ],
+        "icml25": [
+          "Safe Delta: Consistently Preserving Safety when Fine-Tuning LLMs on Diverse Datasets",
+          "Improving LLM Safety Alignment with Dual-Objective Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Exploring Safety-Utility Trade-Offs in Personalized Language Models",
+      "evidence": "For evaluating utility, we consider MMLU (Hendrycks et al., 2020), GSM8K (Cobbe et al., 2021), and MBPP (Austin et al., 2021) datasets. (Section 3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Exploring Safety-Utility Trade-Offs in Personalized Language Models"
+        ],
+        "acl25": [
+          "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Forget quality",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+      "evidence": "Through the evaluation of four baseline VLM unlearning algorithms within FIUBENCH, we find that all methods remain limited in their unlearning performance, with significant trade-offs between model utility and forget quality.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Benchmarking Vision Language Model Unlearning via Fictitious Facial Identity Dataset",
+          "LLM Unlearning via Loss Adjustment with Only Forget Data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MUSE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "We address this issue by proposing MUSE, a comprehensive machine unlearning evaluation benchmark that enumerates six diverse desirable properties for unlearned models: (1) no verbatim memorization, (2) no knowledge memorization, (3) no privacy leakage, (4) utility preservation on data not intended for removal, (5) scalability with respect to the size of removal requests, and (6) sustainability over sequential unlearning requests. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MBPP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Exploring Safety-Utility Trade-Offs in Personalized Language Models",
+      "evidence": "For evaluating utility, we consider MMLU (Hendrycks et al., 2020), GSM8K (Cobbe et al., 2021), and MBPP (Austin et al., 2021) datasets. (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Exploring Safety-Utility Trade-Offs in Personalized Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness in LLM Agents",
+      "evidence": "Additionally, increase in truthfulness negatively impacts utility (-15%). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness in LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IFEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization",
+      "evidence": "The utility performance is evaluated on MT-Bench(Zheng et al., 2023), IFEval(Zhou et al., 2023) and GSM8K(Cobbe et al., 2021), along with the benign part of XSTest(R\u00f6ttger et al., 2024). (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Improve Safety Training of Large Language Models with Safety-Critical Singular Vectors Localization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Privacy preservation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy",
+      "evidence": "For DP-based solutions, although they yield better efficiency but faces the trade-off between privacy and utility. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Cape: Context-Aware Prompt Perturbation Mechanism with Differential Privacy"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "HellaSwag",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Improving LLM Safety Alignment with Dual-Objective Optimization",
+      "evidence": "\u201cwe evaluate capabilities retention on benchmarks including MMLU and Hellaswag\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Improving LLM Safety Alignment with Dual-Objective Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AgentDojo",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+      "evidence": "Extensive evaluation on the IPI benchmark AgentDojo demonstrates that MELON outperforms SOTA defenses in both attack prevention and utility preservation. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GLUE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reinforced Lifelong Editing for Language Models",
+      "evidence": "\u201cwe assessed downstream performance using 6 tests from GLUE\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Reinforced Lifelong Editing for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LibriSpeech",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SPIRIT: Patching Speech Language Models against Jailbreak Attacks",
+      "evidence": "For general utility evaluation, we use AIR-Bench Chat..., LibriSpeech (Panayotov et al., 2015), a benchmark dataset of clean read speech for standard ASR tasks, and MELD... (Section 8.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SPIRIT: Patching Speech Language Models against Jailbreak Attacks"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MELD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SPIRIT: Patching Speech Language Models against Jailbreak Attacks",
+      "evidence": "For general utility evaluation, we use AIR-Bench Chat..., LibriSpeech..., and MELD (Poria et al., 2019), an emotion classification benchmark... (Section 8.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SPIRIT: Patching Speech Language Models against Jailbreak Attacks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Overrefusal",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "AdaSteer: Your Aligned LLM is Inherently an Adaptive Jailbreak Defender",
+      "evidence": "for benign inputs, such reinforcement of refusal behavior significantly increases the risk of false rejections, limiting the model\u2019s overall utility",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AdaSteer: Your Aligned LLM is Inherently an Adaptive Jailbreak Defender"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "evidence": "To quantify this, we evaluate the unlearned model\u2019s performance on the retain set using the knowledge memorization metric KnowMem(funlearn, Dretain). (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MUSE: Machine Unlearning Six-Way Evaluation for Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Deception",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness in LLM Agents",
+      "evidence": "However, a very useful agent (from the salesman\u2019s perspective) may engage in deceptive practices such as obfuscation and overt lying, as shown in Figure 1. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness in LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Tool Unlearning for Tool-Augmented LLMs",
+      "evidence": "As a foundation model, f \u2032 is expected to retain abilities such as text and code generation, question answering, instruction-following, and basic mathematical reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Tool Unlearning for Tool-Augmented LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Tool Unlearning for Tool-Augmented LLMs",
+      "evidence": "As a foundation model, f \u2032 is expected to retain abilities such as text and code generation, question answering, instruction-following, and basic mathematical reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Tool Unlearning for Tool-Augmented LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Tool Unlearning for Tool-Augmented LLMs",
+      "evidence": "As a foundation model, f \u2032 is expected to retain abilities such as text and code generation, question answering, instruction-following, and basic mathematical reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Tool Unlearning for Tool-Augmented LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Tool Unlearning for Tool-Augmented LLMs",
+      "evidence": "As a foundation model, f \u2032 is expected to retain abilities such as text and code generation, question answering, instruction-following, and basic mathematical reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Tool Unlearning for Tool-Augmented LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 22,
+  "incoming_relationship_count": 10,
+  "outgoing_relationship_count": 12,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats utility preservation as retention of a model's general performance or capabilities after a targeted intervention, most often unlearning, but also after alignment, editing, steering, pruning, compression, layer skipping, or fine-tuning. Most definitions focus on maintaining performance on non-target data or general downstream tasks, often phrased as preserving the retain set or avoiding degradation on benign tasks. The main variation is the reference standard: some papers compare against non-target or retain-set performance, others against the original or reference model's core capabilities, and narrower variants focus on preserving functional code generation or retained tool use."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use a broad family of near-synonymous labels for this construct, including capability preservation, general capability preservation, utility retention, performance retention, model integrity, and performance preservation, usually for the same broad idea of retaining prior abilities after intervention. A narrower subtype is tool knowledge retention, which isolates preservation of knowledge about tools not marked for unlearning. Some papers make the preserved content explicit as factual knowledge, truthfulness, reasoning, text and code generation, instruction following, or functional correctness, and one unlearning benchmark places utility preservation as one of six desirable properties of an unlearned model."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Across papers, utility preservation is measured by 12 instruments and linked to 3 behavioral indicators. The most common instruments are MT-Bench, AlpacaEval, MMLU, GSM8K, and AgentDojo, with papers using them to assess general capabilities, benign-task performance, knowledge reasoning, conversational ability, and utility preservation in agent settings. Almost all of these operationalizations are benchmark-based, and they mostly match the dominant definition by checking post-intervention performance on general or non-target tasks, though some evaluations narrow the construct to particular domains such as code or speech."
+    },
+    {
+      "label": "Links.",
+      "text": "A recurring cross-paper link is a trade-off with forget quality: one paper reports that utility preservation correlates with forget quality, and another treats the two as related when explicit retain data or reference-model knowledge may blur forget and retain data. Single-paper causal claims run from truthfulness to utility preservation, where increased truthfulness negatively impacts utility, and from overrefusal to utility preservation, where stronger refusal on benign inputs limits overall utility. Other papers relate utility preservation to privacy preservation through a privacy-utility trade-off, to knowledge memorization via retain-set evaluation, and more broadly to retaining other general abilities after intervention."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats utility preservation as retention of a model's general performance or capabilities after a targeted intervention, most often unlearning, but also after alignment, editing, steering, pruning, compression, layer skipping, or fine-tuning. Most definitions focus on maintaining performance on non-target data or general downstream tasks, often phrased as preserving the retain set or avoiding degradation on benign tasks. The main variation is the reference standard: some papers compare against non-target or retain-set performance, others against the original or reference model's core capabilities, and narrower variants focus on preserving functional code generation or retained tool use.\n\nSpace of facets. Papers use a broad family of near-synonymous labels for this construct, including capability preservation, general capability preservation, utility retention, performance retention, model integrity, and performance preservation, usually for the same broad idea of retaining prior abilities after intervention. A narrower subtype is tool knowledge retention, which isolates preservation of knowledge about tools not marked for unlearning. Some papers make the preserved content explicit as factual knowledge, truthfulness, reasoning, text and code generation, instruction following, or functional correctness, and one unlearning benchmark places utility preservation as one of six desirable properties of an unlearned model.\n\nSpace of measurement. Across papers, utility preservation is measured by 12 instruments and linked to 3 behavioral indicators. The most common instruments are MT-Bench, AlpacaEval, MMLU, GSM8K, and AgentDojo, with papers using them to assess general capabilities, benign-task performance, knowledge reasoning, conversational ability, and utility preservation in agent settings. Almost all of these operationalizations are benchmark-based, and they mostly match the dominant definition by checking post-intervention performance on general or non-target tasks, though some evaluations narrow the construct to particular domains such as code or speech.\n\nLinks. A recurring cross-paper link is a trade-off with forget quality: one paper reports that utility preservation correlates with forget quality, and another treats the two as related when explicit retain data or reference-model knowledge may blur forget and retain data. Single-paper causal claims run from truthfulness to utility preservation, where increased truthfulness negatively impacts utility, and from overrefusal to utility preservation, where stronger refusal on benign inputs limits overall utility. Other papers relate utility preservation to privacy preservation through a privacy-utility trade-off, to knowledge memorization via retain-set evaluation, and more broadly to retaining other general abilities after intervention.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Masks Can be Learned as an Alternative to Experts"
+    ],
+    "emnlp25": [
+      "COUNTDOWN: Contextually Sparse Activation Filtering Out Unnecessary Weights in Down Projection",
+      "Model Unlearning via Sparse Autoencoder Subspace Guided Projections",
+      "Router-Tuning: A Simple and Effective Approach for Dynamic Depth"
+    ],
+    "iclr24": [
+      "Get more for less: Principled Data Selection for Warming Up Fine-Tuning in LLMs"
+    ],
+    "iclr25": [
+      "Catastrophic Failure of LLM Unlearning via Quantization",
+      "In-Context Editing: Learning Knowledge from Self-Induced Distributions",
+      "MUSE: Machine Unlearning Six-Way Evaluation for Language Models",
+      "On Large Language Model Continual Unlearning",
+      "Rethinking LLM Unlearning Objectives: A Gradient Perspective and Go Beyond",
+      "Towards Scalable Exact Machine Unlearning Using Parameter-Efficient Fine-Tuning",
+      "Unified Parameter-Efficient Unlearning for LLMs"
+    ],
+    "icml25": [
+      "Adaptive Localization of Knowledge Negation for Continual LLM Unlearning",
+      "AxBench: Steering LLMs? Even Simple Baselines Outperform Sparse Autoencoders",
+      "DLP: Dynamic Layerwise Pruning in Large Language Models",
+      "Let LLM Tell What to Prune and How Much to Prune",
+      "MELON: Provable Defense Against Indirect Prompt Injection Attacks in AI Agents",
+      "ProSec: Fortifying Code LLMs with Proactive Security Alignment",
+      "Reinforced Lifelong Editing for Language Models",
+      "Theoretical guarantees on the best-of-n alignment policy",
+      "Tool Unlearning for Tool-Augmented LLMs"
+    ],
+    "naacl25": [
+      "Efficient One-shot Compression via Low-Rank Local Feature Distillation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 3,
+    "iclr24": 1,
+    "iclr25": 7,
+    "icml25": 9,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

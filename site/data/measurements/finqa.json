@@ -1,0 +1,89 @@
+{
+  "canonical_name": "FinQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, FinQA is most commonly described as a financial question-answering benchmark or dataset. The most specific definition presents it as a held-out dataset where answering requires generating a Python-executable math expression from a question and financial tables, while other papers describe it more broadly as a benchmark focused on knowledge-based question answering or as a financial QA dataset that primarily assesses text generation.\n\nWhat it is claimed to measure. Across papers, it is linked to 1 construct and no behavioral indicators, and the linked construct is Financial reasoning. The only recorded measurement claim is that papers use FinQA to measure Financial reasoning, with one paper describing FinQA and ConvFinQA as datasets developed to benchmark models for numerical reasoning tasks in the financial domain, so the reported use converges on that single construct rather than spreading across several.\n\nSpace of uses. Papers usually position FinQA as an evaluation resource. One paper uses it as a held-out dataset to evaluate generalization on questions and tables, another uses it with Fin-Fact to construct reranking tasks, and other discussion places it alongside FinanceBench and ConvFinQA. No measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "FinQA"
+  ],
+  "papers": [
+    "FinMTEB: Finance Massive Text Embedding Benchmark",
+    "Program of Thoughts for Financial Reasoning: Leveraging Dynamic In-Context Examples and Generative Retrieval",
+    "Table-LLM-Specialist: Language Model Specialists for Tables using Iterative Fine-tuning",
+    "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+    "Weaver: Interweaving SQL and LLM for Table Reasoning",
+    "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+    "LLaSA: Large Language and Structured Data Assistant"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A held-out dataset that requires generating a Python-executable math expression to answer questions based on financial tables.",
+      "papers": [
+        "LLaSA: Large Language and Structured Data Assistant",
+        "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+        "FinMTEB: Finance Massive Text Embedding Benchmark"
+      ],
+      "original_name": "FinQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Financial reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Program of Thoughts for Financial Reasoning: Leveraging Dynamic In-Context Examples and Generative Retrieval",
+      "evidence": "datasets such as FinQA (Chen et al., 2021b) and ConvFinQA (Chen et al., 2022) have been developed to benchmark deep learning models for such numerical reasoning tasks in the financial domain.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Program of Thoughts for Financial Reasoning: Leveraging Dynamic In-Context Examples and Generative Retrieval"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, FinQA is most commonly described as a financial question-answering benchmark or dataset. The most specific definition presents it as a held-out dataset where answering requires generating a Python-executable math expression from a question and financial tables, while other papers describe it more broadly as a benchmark focused on knowledge-based question answering or as a financial QA dataset that primarily assesses text generation."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across papers, it is linked to 1 construct and no behavioral indicators, and the linked construct is Financial reasoning. The only recorded measurement claim is that papers use FinQA to measure Financial reasoning, with one paper describing FinQA and ConvFinQA as datasets developed to benchmark models for numerical reasoning tasks in the financial domain, so the reported use converges on that single construct rather than spreading across several."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers usually position FinQA as an evaluation resource. One paper uses it as a held-out dataset to evaluate generalization on questions and tables, another uses it with Fin-Fact to construct reranking tasks, and other discussion places it alongside FinanceBench and ConvFinQA. No measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Across the papers, FinQA is most commonly described as a financial question-answering benchmark or dataset. The most specific definition presents it as a held-out dataset where answering requires generating a Python-executable math expression from a question and financial tables, while other papers describe it more broadly as a benchmark focused on knowledge-based question answering or as a financial QA dataset that primarily assesses text generation.\n\nWhat it is claimed to measure. Across papers, it is linked to 1 construct and no behavioral indicators, and the linked construct is Financial reasoning. The only recorded measurement claim is that papers use FinQA to measure Financial reasoning, with one paper describing FinQA and ConvFinQA as datasets developed to benchmark models for numerical reasoning tasks in the financial domain, so the reported use converges on that single construct rather than spreading across several.\n\nSpace of uses. Papers usually position FinQA as an evaluation resource. One paper uses it as a held-out dataset to evaluate generalization on questions and tables, another uses it with Fin-Fact to construct reranking tasks, and other discussion places it alongside FinanceBench and ConvFinQA. No measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "FinMTEB: Finance Massive Text Embedding Benchmark",
+      "Program of Thoughts for Financial Reasoning: Leveraging Dynamic In-Context Examples and Generative Retrieval",
+      "Table-LLM-Specialist: Language Model Specialists for Tables using Iterative Fine-tuning",
+      "Table-R1: Inference-Time Scaling for Table Reasoning Tasks",
+      "Weaver: Interweaving SQL and LLM for Table Reasoning"
+    ],
+    "naacl25": [
+      "FinEval: A Chinese Financial Domain Knowledge Evaluation Benchmark for Large Language Models",
+      "LLaSA: Large Language and Structured Data Assistant"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5,
+    "naacl25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

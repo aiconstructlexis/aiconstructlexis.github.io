@@ -1,0 +1,234 @@
+{
+  "canonical_name": "Moral reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most papers treat moral reasoning as a latent or cognitive ability to make judgments in ethically complex situations, especially when principles conflict or trade-offs are involved. Closely related definitions cast it as evaluating the moral and consequential implications of actions, adhering to ethical principles, and recognizing actions that are against human morality, with one formulation explicitly placing it beyond \"superficial rule-following.\" A smaller line of work frames it instead as an underlying process of weighing harm, fairness, and social norms, or as a capacity shown through principled or stage-like justification and through associative networks of moral concepts.\n\nSpace of facets. Papers use several overlapping labels for nearby territory, including ethical reasoning, machine ethics, ethics, and morality, and they do not draw a sharp boundary among them. Some organize the construct through value-based theories and competing moral principles in daily-life dilemmas, while others distinguish underlying moral reasoning from final moral judgments, or describe it in terms of abstract reasoning and \"higher moral stages.\" In a smaller line of work, Action prediction is treated as one of the core concepts of moral reasoning.\n\nSpace of measurement. Operationalization is fairly concentrated: papers link moral reasoning to 2 measurement instruments and 1 behavioral indicator. ETHICS is the most common instrument, used as a benchmark for machine ethics or moral reasoning, including scenario-based commonsense moral recognition tasks and deontological settings; Social Chemistry 101 appears as another benchmark under morality, and the linked behavioral indicator is Action prediction. These operationalizations mainly use benchmark performance on scenario judgments and moral recognition, which aligns with definitions centered on ethical judgment and recognition, though some definitions also emphasize consequential evaluation, trade-offs, or justification.\n\nLinks. Beyond measurement, one paper claims a causal relationship from Human preference alignment to moral reasoning, reporting improved machine ethics benchmark performance after RLHF on a general-purpose preference dataset. Papers also report that moral reasoning is related to Trustworthiness, where machine ethics is treated as one component in a broader trustworthiness framework. A smaller line of work relates Action prediction to moral reasoning by treating it as one of its core concepts.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Machine ethics",
+    "Ethical reasoning",
+    "Ethics",
+    "Morality",
+    "Moral reasoning"
+  ],
+  "papers": [
+    "Are Rules Meant to be Broken? Understanding Multilingual Moral Reasoning as a Computational Pipeline with UniMoral",
+    "Comparing Moral Values in Western English-speaking societies and LLMs with Word Associations",
+    "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+    "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+    "Probing Narrative Morals: A New Character-Focused MFT Framework for Use with Large Language Models",
+    "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework",
+    "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics",
+    "The Staircase of Ethics: Probing LLM Value Priorities through Multi-Step Induction to Complex Moral Dilemmas",
+    "Bias Runs Deep: Implicit Reasoning Biases in Persona-Assigned LLMs",
+    "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+    "DailyDilemmas: Revealing Value Preferences of LLMs with Quandaries of Daily Life",
+    "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+    "A Checks-and-Balances Framework for Context-Aware Ethical AI Alignment",
+    "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+    "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+    "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+    "Unveiling the Bias Impact on Symmetric Moral Consistency of Large Language Models"
+  ],
+  "paper_count": 17,
+  "definitions": [
+    {
+      "text": "The latent ability to evaluate the moral and consequential implications of actions, beyond superficial rule-following.",
+      "papers": [
+        "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+        "A Checks-and-Balances Framework for Context-Aware Ethical AI Alignment",
+        "Bias Runs Deep: Implicit Reasoning Biases in Persona-Assigned LLMs"
+      ],
+      "original_name": "Ethical reasoning"
+    },
+    {
+      "text": "The model's adherence to ethical principles and its ability to recognize actions that are against human morality.",
+      "papers": [
+        "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+      ],
+      "original_name": "Machine ethics"
+    },
+    {
+      "text": "The cognitive ability to navigate and make judgments in situations involving complex and often conflicting ethical principles.",
+      "papers": [
+        "DailyDilemmas: Revealing Value Preferences of LLMs with Quandaries of Daily Life",
+        "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+        "Comparing Moral Values in Western English-speaking societies and LLMs with Word Associations",
+        "EMNLP: Educator-role Moral and Normative Large Language Models Profiling"
+      ],
+      "original_name": "Moral reasoning"
+    },
+    {
+      "text": "The model's capacity to adhere to moral principles and make ethically sound judgments, particularly in complex dilemmas.",
+      "papers": [
+        "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing"
+      ],
+      "original_name": "Ethics"
+    },
+    {
+      "text": "The model's latent adherence to ethical principles and commonsense moral judgments when presented with scenarios involving right and wrong.",
+      "papers": [
+        "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation"
+      ],
+      "original_name": "Morality"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ETHICS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+      "evidence": "To verify ALI-Agent\u2019s effectiveness as a general evaluation framework, we conduct experiments on six datasets from three distinct aspects of human values: ...morality (ETHICS [3], Social Chemistry 101 [37])...",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+          "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?"
+        ],
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ],
+        "icml25": [
+          "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing"
+        ],
+        "emnlp25": [
+          "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Social Chemistry 101",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+      "evidence": "To verify ALI-Agent\u2019s effectiveness as a general evaluation framework, we conduct experiments on six datasets from three distinct aspects of human values: ...morality (ETHICS [3], Social Chemistry 101 [37])...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "evidence": "These components [truthfulness, toxicity, fairness, robustness, privacy, and machine ethics] collectively contribute to a comprehensive framework for assessing and improving LLM trustworthiness. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Human preference alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness",
+      "evidence": "RLHF applied to a general-purpose preference dataset leads to a substantial average improvement of 31% on the machine ethics benchmark. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Action prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Are Rules Meant to be Broken? Understanding Multilingual Moral Reasoning as a Computational Pipeline with UniMoral",
+      "evidence": "While numerous tasks can be accomplished using UNIMORAL, we focus on four core concepts of moral reasoning: [I] Action Prediction (AP)... (Section 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Are Rules Meant to be Broken? Understanding Multilingual Moral Reasoning as a Computational Pipeline with UniMoral"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most papers treat moral reasoning as a latent or cognitive ability to make judgments in ethically complex situations, especially when principles conflict or trade-offs are involved. Closely related definitions cast it as evaluating the moral and consequential implications of actions, adhering to ethical principles, and recognizing actions that are against human morality, with one formulation explicitly placing it beyond \"superficial rule-following.\" A smaller line of work frames it instead as an underlying process of weighing harm, fairness, and social norms, or as a capacity shown through principled or stage-like justification and through associative networks of moral concepts."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several overlapping labels for nearby territory, including ethical reasoning, machine ethics, ethics, and morality, and they do not draw a sharp boundary among them. Some organize the construct through value-based theories and competing moral principles in daily-life dilemmas, while others distinguish underlying moral reasoning from final moral judgments, or describe it in terms of abstract reasoning and \"higher moral stages.\" In a smaller line of work, Action prediction is treated as one of the core concepts of moral reasoning."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is fairly concentrated: papers link moral reasoning to 2 measurement instruments and 1 behavioral indicator. ETHICS is the most common instrument, used as a benchmark for machine ethics or moral reasoning, including scenario-based commonsense moral recognition tasks and deontological settings; Social Chemistry 101 appears as another benchmark under morality, and the linked behavioral indicator is Action prediction. These operationalizations mainly use benchmark performance on scenario judgments and moral recognition, which aligns with definitions centered on ethical judgment and recognition, though some definitions also emphasize consequential evaluation, trade-offs, or justification."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper claims a causal relationship from Human preference alignment to moral reasoning, reporting improved machine ethics benchmark performance after RLHF on a general-purpose preference dataset. Papers also report that moral reasoning is related to Trustworthiness, where machine ethics is treated as one component in a broader trustworthiness framework. A smaller line of work relates Action prediction to moral reasoning by treating it as one of its core concepts."
+    }
+  ],
+  "characterization": "Space of definitions. Most papers treat moral reasoning as a latent or cognitive ability to make judgments in ethically complex situations, especially when principles conflict or trade-offs are involved. Closely related definitions cast it as evaluating the moral and consequential implications of actions, adhering to ethical principles, and recognizing actions that are against human morality, with one formulation explicitly placing it beyond \"superficial rule-following.\" A smaller line of work frames it instead as an underlying process of weighing harm, fairness, and social norms, or as a capacity shown through principled or stage-like justification and through associative networks of moral concepts.\n\nSpace of facets. Papers use several overlapping labels for nearby territory, including ethical reasoning, machine ethics, ethics, and morality, and they do not draw a sharp boundary among them. Some organize the construct through value-based theories and competing moral principles in daily-life dilemmas, while others distinguish underlying moral reasoning from final moral judgments, or describe it in terms of abstract reasoning and \"higher moral stages.\" In a smaller line of work, Action prediction is treated as one of the core concepts of moral reasoning.\n\nSpace of measurement. Operationalization is fairly concentrated: papers link moral reasoning to 2 measurement instruments and 1 behavioral indicator. ETHICS is the most common instrument, used as a benchmark for machine ethics or moral reasoning, including scenario-based commonsense moral recognition tasks and deontological settings; Social Chemistry 101 appears as another benchmark under morality, and the linked behavioral indicator is Action prediction. These operationalizations mainly use benchmark performance on scenario judgments and moral recognition, which aligns with definitions centered on ethical judgment and recognition, though some definitions also emphasize consequential evaluation, trade-offs, or justification.\n\nLinks. Beyond measurement, one paper claims a causal relationship from Human preference alignment to moral reasoning, reporting improved machine ethics benchmark performance after RLHF on a general-purpose preference dataset. Papers also report that moral reasoning is related to Trustworthiness, where machine ethics is treated as one component in a broader trustworthiness framework. A smaller line of work relates Action prediction to moral reasoning by treating it as one of its core concepts.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Are Rules Meant to be Broken? Understanding Multilingual Moral Reasoning as a Computational Pipeline with UniMoral",
+      "Comparing Moral Values in Western English-speaking societies and LLMs with Word Associations"
+    ],
+    "emnlp25": [
+      "Are Language Models Consequentialist or Deontological Moral Reasoners?",
+      "EMNLP: Educator-role Moral and Normative Large Language Models Profiling",
+      "Probing Narrative Morals: A New Character-Focused MFT Framework for Use with Large Language Models",
+      "Structured Moral Reasoning in Language Models: A Value-Grounded Evaluation Framework",
+      "Synthetic Socratic Debates: Examining Persona Effects on Moral Decision and Persuasion Dynamics",
+      "The Staircase of Ethics: Probing LLM Value Priorities through Multi-Step Induction to Complex Moral Dilemmas"
+    ],
+    "iclr25": [
+      "BadRobot: Jailbreaking Embodied LLM Agents in the Physical World",
+      "DailyDilemmas: Revealing Value Preferences of LLMs with Quandaries of Daily Life",
+      "More RLHF, More Trust? On The Impact of Preference Alignment On Trustworthiness"
+    ],
+    "icml25": [
+      "A Checks-and-Balances Framework for Context-Aware Ethical AI Alignment",
+      "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing"
+    ],
+    "neurips24": [
+      "ALI-Agent: Assessing LLMs' Alignment with Human Values via Agent-based Evaluation",
+      "Safetywashing: Do AI Safety Benchmarks Actually Measure Safety Progress?",
+      "Unveiling the Bias Impact on Symmetric Moral Consistency of Large Language Models"
+    ],
+    "iclr24": [
+      "Bias Runs Deep: Implicit Reasoning Biases in Persona-Assigned LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 6,
+    "iclr25": 3,
+    "icml25": 2,
+    "neurips24": 3,
+    "iclr24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

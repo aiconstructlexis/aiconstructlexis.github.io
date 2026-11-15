@@ -1,0 +1,385 @@
+{
+  "canonical_name": "BIG-bench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across these papers, the prevailing usage treats BIG-bench as a large, collaborative evaluation suite, usually described as Beyond the Imitation Game, with 204 or over 200 diverse tasks for probing the capabilities and limitations of language models. Definitions vary in emphasis: some highlight reasoning and comprehension tasks, others say it covers both traditional NLP tasks and novel problems, and several papers use narrower slices such as BIG-BENCH LITE, the BBII subset, the verb tense subset, or single tasks such as Date Understanding and Sudoku.\n\nWhat it is claimed to measure. Papers link BIG-bench to 6 constructs and 4 behavioral indicators, so its reported measurement role spans multiple targets. The construct links are measured_by claims, with papers using it to measure Calibration, Emergent abilities, Logical reasoning, and Social bias, plus 2 other constructs. Behavioral uses are also reported, including Multi-digit multiplication, plus 3 other indicators, and one of those behavioral links is only related rather than measured by the benchmark.\n\nSpace of uses. Most commonly, papers position BIG-bench as a broad benchmark or as a source of subtasks for targeted evaluations. Papers use it alongside MMLU, and some place it beside HELM, the instruction induction benchmark, or CrowS-Pairs. Papers also link it to one other instrument, Date Understanding, which one study uses as a testbed drawn from BIG-bench; elsewhere the benchmark is used as a seed dataset for updated evaluations or as a source of reasoning tasks.\n\nConcerns raised. Direct concerns are sparse. One paper groups BIG-Bench with other knowledge-based and logic-based benchmarks as failing to capture nuanced human preferences.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "BIG-BENCH",
+    "BIG-Bench",
+    "Big-Bench",
+    "BIG-bench",
+    "Big-bench",
+    "BigBench"
+  ],
+  "papers": [
+    "Basic Reading Distillation",
+    "Inferring from Logits: Exploring Best Practices for Decoding-Free Generative Candidate Selection",
+    "Interpret and Improve In-Context Learning via the Lens of Input-Label Mappings",
+    "Quantifying Semantic Emergence in Language Models",
+    "Reversal of Thought: Enhancing Large Language Models with Preference-Guided Reverse Reasoning Warm-up",
+    "Sample-Efficient Human Evaluation of Large Language Models via Maximum Discrepancy Competition",
+    "A Causal Lens for Evaluating Faithfulness Metrics",
+    "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+    "Explicit Learning and the LLM in Machine Translation",
+    "In Benchmarks We Trust ... Or Not?",
+    "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+    "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+    "Steering Language Models in Multi-Token Generation: A Case Study on Tense and Aspect",
+    "Arena-lite: Efficient and Reliable Large Language Model Evaluation via Tournament-Based Direct Comparisons",
+    "Evaluating the Zero-shot Robustness of Instruction-tuned Language Models",
+    "Large Language Models as Analogical Reasoners",
+    "Large Language Models as Tool Makers",
+    "Predicting Emergent Abilities with Infinite Resolution Evaluation",
+    "AutoBencher: Towards Declarative Benchmark Construction",
+    "Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning",
+    "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+    "MeteoRA: Multiple-tasks Embedded LoRA for Large Language Models",
+    "PiCO: Peer Review in LLMs based on Consistency Optimization",
+    "QA-Calibration of Language Model Confidence Scores",
+    "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+    "U-shaped and Inverted-U Scaling behind Emergent Abilities of Large Language Models",
+    "Fast Exact Unlearning for In-Context Learning Data for LLMs",
+    "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+    "Position: AI Evaluation Should Learn from How We Test Humans",
+    "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge",
+    "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks",
+    "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+    "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+    "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+    "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+    "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+    "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+    "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+    "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+    "Preference Learning Algorithms Do Not Learn Preference Rankings",
+    "Symbolic Regression with a Learned Concept Library",
+    "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+  ],
+  "paper_count": 42,
+  "definitions": [
+    {
+      "text": "Comprehensive evaluation suite containing diverse reasoning tasks such as logical deduction, temporal sequences, and formal fallacies, designed to test a wide range of cognitive abilities in language models.",
+      "papers": [
+        "Large Language Models as Analogical Reasoners",
+        "AutoBencher: Towards Declarative Benchmark Construction",
+        "Interpret and Improve In-Context Learning via the Lens of Input-Label Mappings",
+        "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+        "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+        "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+        "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+        "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+        "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+        "Preference Learning Algorithms Do Not Learn Preference Rankings",
+        "Symbolic Regression with a Learned Concept Library",
+        "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+      ],
+      "original_name": "BIG-Bench"
+    },
+    {
+      "text": "A diverse evaluation suite for large language models that includes a wide range of challenging tasks, used here to study in-context learning and emergent abilities.",
+      "papers": [
+        "Predicting Emergent Abilities with Infinite Resolution Evaluation",
+        "Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning",
+        "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks",
+        "Arena-lite: Efficient and Reliable Large Language Model Evaluation via Tournament-Based Direct Comparisons",
+        "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+        "Observational Scaling Laws and the Predictability of Langauge Model Performance"
+      ],
+      "original_name": "BigBench"
+    },
+    {
+      "text": "Beyond the Imitation Game benchmark, a collaboratively built benchmark of 204 diverse tasks from various domains; the paper uses the BIG-BENCH LITE subset focusing on QA, classification, and translation tasks.",
+      "papers": [
+        "Evaluating the Zero-shot Robustness of Instruction-tuned Language Models"
+      ],
+      "original_name": "BIG-BENCH"
+    },
+    {
+      "text": "A benchmark suite containing a wide range of challenging tasks designed to measure the capabilities of large language models, including reasoning and comprehension.",
+      "papers": [
+        "Large Language Models as Tool Makers"
+      ],
+      "original_name": "Big-Bench"
+    },
+    {
+      "text": "Beyond the Imitation Game benchmark (BIG-bench) is a collaborative benchmark comprising 204 diverse tasks designed to probe the capabilities and limitations of large language models.",
+      "papers": [
+        "PiCO: Peer Review in LLMs based on Consistency Optimization",
+        "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+        "Steering Language Models in Multi-Token Generation: A Case Study on Tense and Aspect"
+      ],
+      "original_name": "BIG-bench"
+    },
+    {
+      "text": "A large, collaborative benchmark suite for language models, from which the 'date understanding' task is used as a testbed for commonsense reasoning.",
+      "papers": [
+        "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist"
+      ],
+      "original_name": "Big-bench"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Word sorting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Large Language Models as Analogical Reasoners",
+      "evidence": "We further evaluate on various reasoning tasks in BIG-Bench (Srivastava et al., 2022; Suzgun et al., 2022): word sorting, logical deduction five objects, temporal sequences, reasoning about colored objects, and formal fallacies. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models as Analogical Reasoners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Large Language Models as Analogical Reasoners",
+      "evidence": "\"We further evaluate on various reasoning tasks in BIG-Bench (Srivastava et al., 2022; Suzgun et al., 2022): word sorting, logical deduction five objects, temporal sequences, reasoning about colored objects, and formal fallacies.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models as Analogical Reasoners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Temporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Large Language Models as Analogical Reasoners",
+      "evidence": "\"We further evaluate on various reasoning tasks in BIG-Bench (Srivastava et al., 2022; Suzgun et al., 2022): word sorting, logical deduction five objects, temporal sequences, reasoning about colored objects, and formal fallacies.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models as Analogical Reasoners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Social bias",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+      "evidence": "Probability-based bias evaluations such as CrowS-Pairs [22] and tasks in the BIG-bench benchmarking suite [48] compare the probabilities of stereotype-related tokens conditional on the presence of identity-related tokens. (Section 2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Table question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "Three reasoning tasks directly obtained from the BIG-Bench suite [50]: ... Penguins\u2014where the task is to answer questions about penguins' attributes based on a given table",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Stability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+      "evidence": "\"Extensive experiments on updated MMLU and BIG-Bench demonstrate the stability of the proposed strategies\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Calibration",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "QA-Calibration of Language Model Confidence Scores",
+      "evidence": "Table 2 shows the performance of the posthoc calibrators on MMLU and BigBench datasets.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "QA-Calibration of Language Model Confidence Scores"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Emergent abilities",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "U-shaped and Inverted-U Scaling behind Emergent Abilities of Large Language Models",
+      "evidence": "Fig. 4 shows U-shaped and inverted-U scaling on 6 datasets exhibiting emergent abilities... Except for MMLU, the other 5 tasks are from Big-Bench.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "U-shaped and Inverted-U Scaling behind Emergent Abilities of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Object counting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "A Causal Lens for Evaluating Faithfulness Metrics",
+      "evidence": "Adapted from BIG-bench (Bench authors, 2023), this task tests object classification and counting. (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "A Causal Lens for Evaluating Faithfulness Metrics"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Date Understanding",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+      "evidence": "\"We choose the date understanding task in Big-bench (bench authors, 2023) as testbed since it is wildly used to measure commonsense reasoning ability\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-digit multiplication",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+      "evidence": "\"we first consider the multi-digit multiplication task from the BIG-bench benchmark\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 9,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across these papers, the prevailing usage treats BIG-bench as a large, collaborative evaluation suite, usually described as Beyond the Imitation Game, with 204 or over 200 diverse tasks for probing the capabilities and limitations of language models. Definitions vary in emphasis: some highlight reasoning and comprehension tasks, others say it covers both traditional NLP tasks and novel problems, and several papers use narrower slices such as BIG-BENCH LITE, the BBII subset, the verb tense subset, or single tasks such as Date Understanding and Sudoku."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link BIG-bench to 6 constructs and 4 behavioral indicators, so its reported measurement role spans multiple targets. The construct links are measured_by claims, with papers using it to measure Calibration, Emergent abilities, Logical reasoning, and Social bias, plus 2 other constructs. Behavioral uses are also reported, including Multi-digit multiplication, plus 3 other indicators, and one of those behavioral links is only related rather than measured by the benchmark."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Most commonly, papers position BIG-bench as a broad benchmark or as a source of subtasks for targeted evaluations. Papers use it alongside MMLU, and some place it beside HELM, the instruction induction benchmark, or CrowS-Pairs. Papers also link it to one other instrument, Date Understanding, which one study uses as a testbed drawn from BIG-bench; elsewhere the benchmark is used as a seed dataset for updated evaluations or as a source of reasoning tasks."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "Direct concerns are sparse. One paper groups BIG-Bench with other knowledge-based and logic-based benchmarks as failing to capture nuanced human preferences."
+    }
+  ],
+  "characterization": "What it is. Across these papers, the prevailing usage treats BIG-bench as a large, collaborative evaluation suite, usually described as Beyond the Imitation Game, with 204 or over 200 diverse tasks for probing the capabilities and limitations of language models. Definitions vary in emphasis: some highlight reasoning and comprehension tasks, others say it covers both traditional NLP tasks and novel problems, and several papers use narrower slices such as BIG-BENCH LITE, the BBII subset, the verb tense subset, or single tasks such as Date Understanding and Sudoku.\n\nWhat it is claimed to measure. Papers link BIG-bench to 6 constructs and 4 behavioral indicators, so its reported measurement role spans multiple targets. The construct links are measured_by claims, with papers using it to measure Calibration, Emergent abilities, Logical reasoning, and Social bias, plus 2 other constructs. Behavioral uses are also reported, including Multi-digit multiplication, plus 3 other indicators, and one of those behavioral links is only related rather than measured by the benchmark.\n\nSpace of uses. Most commonly, papers position BIG-bench as a broad benchmark or as a source of subtasks for targeted evaluations. Papers use it alongside MMLU, and some place it beside HELM, the instruction induction benchmark, or CrowS-Pairs. Papers also link it to one other instrument, Date Understanding, which one study uses as a testbed drawn from BIG-bench; elsewhere the benchmark is used as a seed dataset for updated evaluations or as a source of reasoning tasks.\n\nConcerns raised. Direct concerns are sparse. One paper groups BIG-Bench with other knowledge-based and logic-based benchmarks as failing to capture nuanced human preferences.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Basic Reading Distillation",
+      "Inferring from Logits: Exploring Best Practices for Decoding-Free Generative Candidate Selection",
+      "Interpret and Improve In-Context Learning via the Lens of Input-Label Mappings",
+      "Quantifying Semantic Emergence in Language Models",
+      "Reversal of Thought: Enhancing Large Language Models with Preference-Guided Reverse Reasoning Warm-up",
+      "Sample-Efficient Human Evaluation of Large Language Models via Maximum Discrepancy Competition"
+    ],
+    "emnlp25": [
+      "A Causal Lens for Evaluating Faithfulness Metrics",
+      "Dynamic Collaboration of Multi-Language Models based on Minimal Complete Semantic Units",
+      "Explicit Learning and the LLM in Machine Translation",
+      "In Benchmarks We Trust ... Or Not?",
+      "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+      "Steering Language Models in Multi-Token Generation: A Case Study on Tense and Aspect",
+      "Arena-lite: Efficient and Reliable Large Language Model Evaluation via Tournament-Based Direct Comparisons"
+    ],
+    "iclr24": [
+      "Evaluating the Zero-shot Robustness of Instruction-tuned Language Models",
+      "Large Language Models as Analogical Reasoners",
+      "Large Language Models as Tool Makers",
+      "Predicting Emergent Abilities with Infinite Resolution Evaluation"
+    ],
+    "iclr25": [
+      "AutoBencher: Towards Declarative Benchmark Construction",
+      "Divide and Translate: Compositional First-Order Logic Translation and Verification for Complex Logical Reasoning",
+      "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+      "MeteoRA: Multiple-tasks Embedded LoRA for Large Language Models",
+      "PiCO: Peer Review in LLMs based on Consistency Optimization",
+      "QA-Calibration of Language Model Confidence Scores",
+      "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+      "U-shaped and Inverted-U Scaling behind Emergent Abilities of Large Language Models"
+    ],
+    "icml25": [
+      "Fast Exact Unlearning for In-Context Learning Data for LLMs",
+      "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+      "Position: AI Evaluation Should Learn from How We Test Humans",
+      "Position: Evaluating Generative AI Systems Is a Social Science Measurement Challenge",
+      "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks"
+    ],
+    "neurips24": [
+      "Automating Dataset Updates Towards Reliable and Timely Evaluation of Large Language Models",
+      "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "Cross-Care: Assessing the Healthcare Implications of Pre-training Data on Language Model Bias",
+      "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "Enhancing LLM Reasoning via Vision-Augmented Prompting",
+      "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+      "Observational Scaling Laws and the Predictability of Langauge Model Performance",
+      "Preference Learning Algorithms Do Not Learn Preference Rankings",
+      "Symbolic Regression with a Learned Concept Library",
+      "WizardArena: Post-training Large Language Models via Simulated Offline Chatbot Arena"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 6,
+    "emnlp25": 8,
+    "iclr24": 4,
+    "iclr25": 8,
+    "icml25": 5,
+    "neurips24": 11
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

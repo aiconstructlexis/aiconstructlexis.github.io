@@ -1,0 +1,188 @@
+{
+  "canonical_name": "MMMLU",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, MMMLU is most commonly described as a multilingual version of MMLU, often specifically a human-translated or professionally translated variant used across multiple languages and subjects. Definitions vary in emphasis, framing it as testing general language understanding, reasoning performance, knowledge comprehension, or world knowledge. One description also notes that answers are extracted from generated outputs rather than token probabilities, and another use draws on its test sets to create \"easy\" and \"hard\" evaluation sets.\n\nWhat it is claimed to measure. Papers use MMMLU to measure four constructs and two behavioral indicators. The named targets include cross-lingual alignment, knowledge understanding, multilingual ability, multilingual reasoning, and language mixing, with one additional behavioral indicator also linked to it. Overall, papers distribute its measurement claims across several named targets rather than centering on only one.\n\nSpace of uses. Several papers place MMMLU inside broader multilingual evaluation suites. It appears with Belebele and m-ARC in cross-lingual alignment evaluations, with Belebele again for multiple-choice question answering, and with MMLU in another multilingual evaluation track. One setup uses five-shot prompting.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MMMLU",
+    "M-MMLU"
+  ],
+  "papers": [
+    "CC-Tuning: A Cross-Lingual Connection Mechanism for Improving Joint Multilingual Supervised Fine-Tuning",
+    "Cross-Lingual Optimization for Language Transfer in Large Language Models",
+    "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis",
+    "Disentangling Language and Culture for Evaluating Multilingual Large Language Models",
+    "From Neurons to Semantics: Evaluating Cross-Linguistic Alignment Capabilities of Large Language Models via Neurons Alignment",
+    "MPO: Multilingual Safety Alignment via Reward Gap Optimization",
+    "Enhancing LLM Language Adaption through Cross-lingual In-Context Pre-training",
+    "From Unaligned to Aligned: Scaling Multilingual LLMs with Multi-Way Parallel Corpora",
+    "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+    "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation of LLMs",
+    "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching",
+    "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+    "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages"
+  ],
+  "paper_count": 13,
+  "definitions": [
+    {
+      "text": "A human-translated version of the MMLU benchmark, used to test general language understanding across multiple languages and subjects.",
+      "papers": [
+        "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages",
+        "Cross-Lingual Optimization for Language Transfer in Large Language Models",
+        "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation of LLMs"
+      ],
+      "original_name": "MMMLU"
+    },
+    {
+      "text": "A multilingual benchmark for evaluating a model's world knowledge across a wide range of subjects and languages.",
+      "papers": [
+        "MPO: Multilingual Safety Alignment via Reward Gap Optimization"
+      ],
+      "original_name": "M-MMLU"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "evidence": "To evaluate the LLMs\u2019 capability across languages, researchers developed various multilingual benchmarks. Many rely on English translation, including XNLI (Conneau et al., 2018), MMMLU (Hendrycks et al., 2021a)... (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+      "evidence": "For multiple choice QA, we use Belebele (Bandarkar et al., 2024) and Multilingual MMLU (Hendrycks et al., 2021; Lai et al., 2023, MMMLU) with five shot prompting. (Section 5.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language mixing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes",
+      "evidence": "To evaluate language mixing across broader domains, we also use the multilingual MMLU (m-MMLU) dataset... (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Language Mixing in Reasoning Language Models: Patterns, Impact, and Internal Causes"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation of LLMs",
+      "evidence": "the OpenAI multilingual version of MMLU (MMMLU)1 for knowledge comprehension (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation of LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multilingual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching",
+      "evidence": "Beyond English textual reasoning, we include two additional evaluation tracks: a multilingual experiment using MMLU and its professionally translated variant MMMLU (Hendrycks et al., 2021)...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-lingual alignment",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "From Neurons to Semantics: Evaluating Cross-Linguistic Alignment Capabilities of Large Language Models via Neurons Alignment",
+      "evidence": "To evaluate this alignment, we utilize three benchmarks\u2014Belebele (Bandarkar et al., 2024), m-ARC (Lai et al., 2023), and m-MMLU (Lai et al., 2023)\u2014which collectively encompass a diverse range of high-, medium-, and low-resource languages. (Section 3.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "From Neurons to Semantics: Evaluating Cross-Linguistic Alignment Capabilities of Large Language Models via Neurons Alignment"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, MMMLU is most commonly described as a multilingual version of MMLU, often specifically a human-translated or professionally translated variant used across multiple languages and subjects. Definitions vary in emphasis, framing it as testing general language understanding, reasoning performance, knowledge comprehension, or world knowledge. One description also notes that answers are extracted from generated outputs rather than token probabilities, and another use draws on its test sets to create \"easy\" and \"hard\" evaluation sets."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use MMMLU to measure four constructs and two behavioral indicators. The named targets include cross-lingual alignment, knowledge understanding, multilingual ability, multilingual reasoning, and language mixing, with one additional behavioral indicator also linked to it. Overall, papers distribute its measurement claims across several named targets rather than centering on only one."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Several papers place MMMLU inside broader multilingual evaluation suites. It appears with Belebele and m-ARC in cross-lingual alignment evaluations, with Belebele again for multiple-choice question answering, and with MMLU in another multilingual evaluation track. One setup uses five-shot prompting."
+    }
+  ],
+  "characterization": "What it is. Across papers, MMMLU is most commonly described as a multilingual version of MMLU, often specifically a human-translated or professionally translated variant used across multiple languages and subjects. Definitions vary in emphasis, framing it as testing general language understanding, reasoning performance, knowledge comprehension, or world knowledge. One description also notes that answers are extracted from generated outputs rather than token probabilities, and another use draws on its test sets to create \"easy\" and \"hard\" evaluation sets.\n\nWhat it is claimed to measure. Papers use MMMLU to measure four constructs and two behavioral indicators. The named targets include cross-lingual alignment, knowledge understanding, multilingual ability, multilingual reasoning, and language mixing, with one additional behavioral indicator also linked to it. Overall, papers distribute its measurement claims across several named targets rather than centering on only one.\n\nSpace of uses. Several papers place MMMLU inside broader multilingual evaluation suites. It appears with Belebele and m-ARC in cross-lingual alignment evaluations, with Belebele again for multiple-choice question answering, and with MMLU in another multilingual evaluation track. One setup uses five-shot prompting.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CC-Tuning: A Cross-Lingual Connection Mechanism for Improving Joint Multilingual Supervised Fine-Tuning",
+      "Cross-Lingual Optimization for Language Transfer in Large Language Models",
+      "CulFiT: A Fine-grained Cultural-aware LLM Training Paradigm via Multilingual Critique Data Synthesis",
+      "Disentangling Language and Culture for Evaluating Multilingual Large Language Models",
+      "From Neurons to Semantics: Evaluating Cross-Linguistic Alignment Capabilities of Large Language Models via Neurons Alignment",
+      "MPO: Multilingual Safety Alignment via Reward Gap Optimization"
+    ],
+    "emnlp25": [
+      "Enhancing LLM Language Adaption through Cross-lingual In-Context Pre-training",
+      "From Unaligned to Aligned: Scaling Multilingual LLMs with Multi-Way Parallel Corpora",
+      "NOVA-63: Native Omni-lingual Versatile Assessments of 63 Disciplines",
+      "P-MMEval: A Parallel Multilingual Multitask Benchmark for Consistent Evaluation of LLMs",
+      "Sketch-of-Thought: Efficient LLM Reasoning with Adaptive Cognitive-Inspired Sketching"
+    ],
+    "iclr25": [
+      "Adapters for Altering LLM Vocabularies: What Languages Benefit the Most?",
+      "Pangea: A Fully Open Multilingual Multimodal LLM for 39 Languages"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 6,
+    "emnlp25": 5,
+    "iclr25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

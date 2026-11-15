@@ -1,0 +1,188 @@
+{
+  "canonical_name": "3D understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the literature, the prevailing usage describes 3D understanding as a latent ability to infer, represent, ground, and reason about the three-dimensional structure of objects and scenes from 2D or RGB inputs. Definitions largely converge on geometry, layout, object properties, and spatial relations as the shared content. A smaller line of work uses nearby labels such as 3D awareness for accounting for depth during compositing, narrows the concept to object-level encoding of structure and viewpoint in internal representations, or emphasizes constructing and maintaining a metrically accurate scene model over time from egocentric visual inputs.\n\nSpace of facets. Papers systematize the concept mainly by level and function. Object-level formulations target whether representations encode discriminative information about 3D structure and viewpoint, scene-level formulations target reasoning about objects, attributes, and their spatial relationships in a 3D environment, and a temporal formulation centers on maintaining coherent 3D scene representations across frames. Related labels also separate representation from reasoning: some papers use 3D-related reasoning for reasoning about pose, distance, and spatial relationships using integrated 3D information, while broader terms such as 3D understanding or 3D awareness refer to the more general ability.\n\nSpace of measurement. Papers link the construct to 2 measurement instruments, ScanQA and SQA3D, and to 2 behavioral indicators, 3D question answering and motion planning, with no linked constructs. The explicitly linked measurements are benchmark evaluations: papers report 3D spatial understanding on the ScanQA validation set and use ScanQA and SQA3D to demonstrate improved overall 3D scene understanding and reasoning. These operationalizations emphasize scene understanding and reasoning, in line with the dominant definitions, while a narrower object-level usage is evaluated by linear probing frozen feature representations on a 3D viewpoint classification task.\n\nLinks. Beyond measurement, one paper claims a causal relationship from 3D understanding to motion planning, stating that higher-level 3D-aware tasks such as motion planning require a \"fundamental and explicit\" 3D understanding. One paper also reports that 3D question answering is related to 3D understanding, using 3D-QA as a representative example of 3D scene understanding tasks. No correlational links or construct-to-construct links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "3D understanding",
+    "3D awareness",
+    "Object-level 3D awareness",
+    "3D-related reasoning",
+    "3D scene understanding",
+    "3D scene representation"
+  ],
+  "papers": [
+    "Out of Sight, Not Out of Context? Egocentric Spatial Reasoning in VLMs Across Disjoint Frames",
+    "Language-Image Models with 3D Understanding",
+    "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+    "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+    "ChatCam: Empowering Camera Control through Conversational AI",
+    "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding",
+    "LLaNA: Large Language and NeRF Assistant",
+    "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+    "YouDream: Generating Anatomically Controllable Consistent Text-to-3D Animals"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "The model's ability to infer and represent the three-dimensional structure, layout, and properties of a scene and its objects from two-dimensional inputs.",
+      "papers": [
+        "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+        "Language-Image Models with 3D Understanding"
+      ],
+      "original_name": "3D understanding"
+    },
+    {
+      "text": "The latent capacity to account for depth and three-dimensional geometry when placing or compositing objects into a scene.",
+      "papers": [
+        "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions"
+      ],
+      "original_name": "3D awareness"
+    },
+    {
+      "text": "The degree to which a model's internal representations encode discriminative information about the 3D structure and viewpoint of objects.",
+      "papers": [
+        "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding"
+      ],
+      "original_name": "Object-level 3D awareness"
+    },
+    {
+      "text": "The cognitive ability of a model, particularly an LLM, to reason about object properties like pose, distance, and spatial relationships using integrated 3D information.",
+      "papers": [
+        "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding"
+      ],
+      "original_name": "3D-related reasoning"
+    },
+    {
+      "text": "The ability to comprehend and reason about the objects, their attributes, and their spatial relationships within a three-dimensional environment.",
+      "papers": [
+        "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers"
+      ],
+      "original_name": "3D scene understanding"
+    },
+    {
+      "text": "The internal construction and maintenance of a metrically accurate, three-dimensional model of a scene from egocentric visual inputs, enabling spatial inference across time.",
+      "papers": [
+        "Out of Sight, Not Out of Context? Egocentric Spatial Reasoning in VLMs Across Disjoint Frames"
+      ],
+      "original_name": "3D scene representation"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ScanQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "evidence": "on ScanQA and SQA3D, which do not require object referencing and grounding, we still achieve consistent performance enhancement, demonstrating improved overall 3D scene understanding and reasoning",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers"
+        ],
+        "iclr25": [
+          "Oryx MLLM: On-Demand Spatial-Temporal Understanding at Arbitrary Resolution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Motion planning",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+      "evidence": "...higher-level 3D-aware tasks, such as articulating dynamic scene changes and motion planning, require a fundamental and explicit 3D understanding beyond current spatial VQA datasets. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SQA3D",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "evidence": "on ScanQA and SQA3D, which do not require object referencing and grounding, we still achieve consistent performance enhancement, demonstrating improved overall 3D scene understanding and reasoning",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "3D question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "3D Question Answering via only 2D Vision-Language Models",
+      "evidence": "In this work, we explore how to harness their potential to address 3D scene understanding tasks, using 3D question answering (3D-QA) as a representative example. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "3D Question Answering via only 2D Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the literature, the prevailing usage describes 3D understanding as a latent ability to infer, represent, ground, and reason about the three-dimensional structure of objects and scenes from 2D or RGB inputs. Definitions largely converge on geometry, layout, object properties, and spatial relations as the shared content. A smaller line of work uses nearby labels such as 3D awareness for accounting for depth during compositing, narrows the concept to object-level encoding of structure and viewpoint in internal representations, or emphasizes constructing and maintaining a metrically accurate scene model over time from egocentric visual inputs."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers systematize the concept mainly by level and function. Object-level formulations target whether representations encode discriminative information about 3D structure and viewpoint, scene-level formulations target reasoning about objects, attributes, and their spatial relationships in a 3D environment, and a temporal formulation centers on maintaining coherent 3D scene representations across frames. Related labels also separate representation from reasoning: some papers use 3D-related reasoning for reasoning about pose, distance, and spatial relationships using integrated 3D information, while broader terms such as 3D understanding or 3D awareness refer to the more general ability."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link the construct to 2 measurement instruments, ScanQA and SQA3D, and to 2 behavioral indicators, 3D question answering and motion planning, with no linked constructs. The explicitly linked measurements are benchmark evaluations: papers report 3D spatial understanding on the ScanQA validation set and use ScanQA and SQA3D to demonstrate improved overall 3D scene understanding and reasoning. These operationalizations emphasize scene understanding and reasoning, in line with the dominant definitions, while a narrower object-level usage is evaluated by linear probing frozen feature representations on a 3D viewpoint classification task."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper claims a causal relationship from 3D understanding to motion planning, stating that higher-level 3D-aware tasks such as motion planning require a \"fundamental and explicit\" 3D understanding. One paper also reports that 3D question answering is related to 3D understanding, using 3D-QA as a representative example of 3D scene understanding tasks. No correlational links or construct-to-construct links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the literature, the prevailing usage describes 3D understanding as a latent ability to infer, represent, ground, and reason about the three-dimensional structure of objects and scenes from 2D or RGB inputs. Definitions largely converge on geometry, layout, object properties, and spatial relations as the shared content. A smaller line of work uses nearby labels such as 3D awareness for accounting for depth during compositing, narrows the concept to object-level encoding of structure and viewpoint in internal representations, or emphasizes constructing and maintaining a metrically accurate scene model over time from egocentric visual inputs.\n\nSpace of facets. Papers systematize the concept mainly by level and function. Object-level formulations target whether representations encode discriminative information about 3D structure and viewpoint, scene-level formulations target reasoning about objects, attributes, and their spatial relationships in a 3D environment, and a temporal formulation centers on maintaining coherent 3D scene representations across frames. Related labels also separate representation from reasoning: some papers use 3D-related reasoning for reasoning about pose, distance, and spatial relationships using integrated 3D information, while broader terms such as 3D understanding or 3D awareness refer to the more general ability.\n\nSpace of measurement. Papers link the construct to 2 measurement instruments, ScanQA and SQA3D, and to 2 behavioral indicators, 3D question answering and motion planning, with no linked constructs. The explicitly linked measurements are benchmark evaluations: papers report 3D spatial understanding on the ScanQA validation set and use ScanQA and SQA3D to demonstrate improved overall 3D scene understanding and reasoning. These operationalizations emphasize scene understanding and reasoning, in line with the dominant definitions, while a narrower object-level usage is evaluated by linear probing frozen feature representations on a 3D viewpoint classification task.\n\nLinks. Beyond measurement, one paper claims a causal relationship from 3D understanding to motion planning, stating that higher-level 3D-aware tasks such as motion planning require a \"fundamental and explicit\" 3D understanding. One paper also reports that 3D question answering is related to 3D understanding, using 3D-QA as a representative example of 3D scene understanding tasks. No correlational links or construct-to-construct links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Out of Sight, Not Out of Context? Egocentric Spatial Reasoning in VLMs Across Disjoint Frames"
+    ],
+    "neurips24": [
+      "$\\textit{Bifr\\\"ost}$: 3D-Aware Image Compositing with Language Instructions",
+      "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "ChatCam: Empowering Camera Control through Conversational AI",
+      "ImageNet3D: Towards General-Purpose Object-Level 3D Understanding",
+      "LLaNA: Large Language and NeRF Assistant",
+      "SpatialPIN: Enhancing Spatial Reasoning Capabilities of Vision-Language Models through Prompting and Interacting 3D Priors",
+      "YouDream: Generating Anatomically Controllable Consistent Text-to-3D Animals"
+    ],
+    "iclr25": [
+      "Language-Image Models with 3D Understanding"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "neurips24": 7,
+    "iclr25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "canonical_name": "Plasticity",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats plasticity as an ability or capacity to quickly and effectively adapt to something new, most commonly a new data distribution such as a different domain or language, and more broadly new information, corpora, or tasks. Definitions agree on adaptation and learning in the new setting, and one formulation makes the speed criterion explicit by describing plasticity as reaching target performance with minimal steps or achieving the highest possible performance. A narrower framing appears in work on self-improving systems, where plasticity is described as acquisition of new knowledge and skills, reflected in solving new types of tasks that the baseline could not solve.\n\nSpace of facets. The main structuring move is to place plasticity alongside stability. Papers describe a balance or trade-off between the two, and one study explicitly glosses the pair as plasticity, \"acquisition of new knowledge,\" versus stability, \"preservation of old knowledge.\" The term also spans two close uses in the literature here: adaptation to new distributions such as domains or languages, and acquisition of new knowledge or skills for new task types.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to plasticity. In the papers' own operational descriptions, it is assessed through performance on new settings: quick adaptation to new domains or languages, either by reaching target performance with minimal steps or by the highest achievable performance; improvement on new cases and the number of additional tasks solved relative to a baseline; and, in one formulation, lack of plasticity is said to result in poor AP4 and FWT4, while forgetting is discussed through BWT4. These operationalizations follow the same themes as the definitions, centering adaptation to new distributions, information, or tasks.\n\nLinks. The recorded links are relational rather than causal or correlational. Among linked constructs, plasticity is most often related to stability: multiple papers describe a balance or trade-off between the two, including \"well-maintained balance\" and \"out-of-balance\" formulations. It is also related to self-improvement in one paper, where plasticity and stability are among the metrics used to analyze a self-improvement system.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Plasticity"
+  ],
+  "papers": [
+    "Contextual Experience Replay for Self-Improvement of Language Agents",
+    "Continual Gradient Low-Rank Projection Fine-Tuning for LLMs",
+    "Efficient Domain Continual pretraining by Mitigating the Stability Gap",
+    "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for Multimodal LLMs",
+    "MixLoRA-DSI: Dynamically Expandable Mixture-of-LoRA Experts for Rehearsal-Free Generative Retrieval over Dynamic Corpora",
+    "DEPT: Decoupled Embeddings for Pre-training Language Models",
+    "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+    "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+    "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "The model's ability to quickly and effectively adapt to a new data distribution, such as a different domain or language.",
+      "papers": [
+        "DEPT: Decoupled Embeddings for Pre-training Language Models",
+        "Contextual Experience Replay for Self-Improvement of Language Agents",
+        "MixLoRA-DSI: Dynamically Expandable Mixture-of-LoRA Experts for Rehearsal-Free Generative Retrieval over Dynamic Corpora"
+      ],
+      "original_name": "Plasticity"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Stability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "evidence": "This technique demonstrates a negligible reduction in the FP metric, signifying a well-maintained balance between plasticity and stability. (Section 6)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ],
+        "icml25": [
+          "Large Continual Instruction Assistant"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-improvement",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Contextual Experience Replay for Self-Improvement of Language Agents",
+      "evidence": "We conducted further analysis to investigate the improvements of CER with various metrics, such as cross-template success rate, stability (preservation of old knowledge), and plasticity (acquisition of new knowledge) (Grossberg, 1982; Rolnick et al., 2019) (\u00a75.2, \u00a75.3), demonstrating its generalizability and effectiveness as a self-improvement system.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Contextual Experience Replay for Self-Improvement of Language Agents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats plasticity as an ability or capacity to quickly and effectively adapt to something new, most commonly a new data distribution such as a different domain or language, and more broadly new information, corpora, or tasks. Definitions agree on adaptation and learning in the new setting, and one formulation makes the speed criterion explicit by describing plasticity as reaching target performance with minimal steps or achieving the highest possible performance. A narrower framing appears in work on self-improving systems, where plasticity is described as acquisition of new knowledge and skills, reflected in solving new types of tasks that the baseline could not solve."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The main structuring move is to place plasticity alongside stability. Papers describe a balance or trade-off between the two, and one study explicitly glosses the pair as plasticity, \"acquisition of new knowledge,\" versus stability, \"preservation of old knowledge.\" The term also spans two close uses in the literature here: adaptation to new distributions such as domains or languages, and acquisition of new knowledge or skills for new task types."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument and no behavioral indicator are linked to plasticity. In the papers' own operational descriptions, it is assessed through performance on new settings: quick adaptation to new domains or languages, either by reaching target performance with minimal steps or by the highest achievable performance; improvement on new cases and the number of additional tasks solved relative to a baseline; and, in one formulation, lack of plasticity is said to result in poor AP4 and FWT4, while forgetting is discussed through BWT4. These operationalizations follow the same themes as the definitions, centering adaptation to new distributions, information, or tasks."
+    },
+    {
+      "label": "Links.",
+      "text": "The recorded links are relational rather than causal or correlational. Among linked constructs, plasticity is most often related to stability: multiple papers describe a balance or trade-off between the two, including \"well-maintained balance\" and \"out-of-balance\" formulations. It is also related to self-improvement in one paper, where plasticity and stability are among the metrics used to analyze a self-improvement system."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats plasticity as an ability or capacity to quickly and effectively adapt to something new, most commonly a new data distribution such as a different domain or language, and more broadly new information, corpora, or tasks. Definitions agree on adaptation and learning in the new setting, and one formulation makes the speed criterion explicit by describing plasticity as reaching target performance with minimal steps or achieving the highest possible performance. A narrower framing appears in work on self-improving systems, where plasticity is described as acquisition of new knowledge and skills, reflected in solving new types of tasks that the baseline could not solve.\n\nSpace of facets. The main structuring move is to place plasticity alongside stability. Papers describe a balance or trade-off between the two, and one study explicitly glosses the pair as plasticity, \"acquisition of new knowledge,\" versus stability, \"preservation of old knowledge.\" The term also spans two close uses in the literature here: adaptation to new distributions such as domains or languages, and acquisition of new knowledge or skills for new task types.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to plasticity. In the papers' own operational descriptions, it is assessed through performance on new settings: quick adaptation to new domains or languages, either by reaching target performance with minimal steps or by the highest achievable performance; improvement on new cases and the number of additional tasks solved relative to a baseline; and, in one formulation, lack of plasticity is said to result in poor AP4 and FWT4, while forgetting is discussed through BWT4. These operationalizations follow the same themes as the definitions, centering adaptation to new distributions, information, or tasks.\n\nLinks. The recorded links are relational rather than causal or correlational. Among linked constructs, plasticity is most often related to stability: multiple papers describe a balance or trade-off between the two, including \"well-maintained balance\" and \"out-of-balance\" formulations. It is also related to self-improvement in one paper, where plasticity and stability are among the metrics used to analyze a self-improvement system.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Contextual Experience Replay for Self-Improvement of Language Agents",
+      "Continual Gradient Low-Rank Projection Fine-Tuning for LLMs",
+      "Efficient Domain Continual pretraining by Mitigating the Stability Gap"
+    ],
+    "emnlp25": [
+      "Merge then Realign: Simple and Effective Modality-Incremental Continual Learning for Multimodal LLMs",
+      "MixLoRA-DSI: Dynamically Expandable Mixture-of-LoRA Experts for Rehearsal-Free Generative Retrieval over Dynamic Corpora"
+    ],
+    "iclr25": [
+      "DEPT: Decoupled Embeddings for Pre-training Language Models",
+      "Knowledge Entropy Decay during Language Model Pretraining Hinders New Knowledge Acquisition",
+      "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 2,
+    "iclr25": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25"
+  ]
+}

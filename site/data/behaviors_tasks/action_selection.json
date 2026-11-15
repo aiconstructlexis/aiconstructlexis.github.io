@@ -1,0 +1,336 @@
+{
+  "canonical_name": "Action selection",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats action selection as the observable act of choosing one action, move, or arm from a set of available candidates, usually conditioned on the current state or context and sometimes on the goal, interaction history, or past feedback. Success is commonly phrased as selecting the optimal, most appropriate, most plausible, or highest-scoring option, and several definitions make the output explicit, for example by having the agent \"output the next action\" or choose exactly one listed option. A smaller line of work broadens it to decision-making tasks that require selecting valid actions, or even action sequences, to achieve goals in dynamic or uncertain environments.\n\nVariants. Papers study this behavior across web agents, games, embodied environments, autonomous driving, robotics, and bandit settings. The most common alternate label is decision-making, while narrower variants include driving decision making, high-level action selection, arm selection, and candidate action selection. Other single-paper formulations specialize it to daily activities or to choosing targets in sequential and hidden-role games.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers operationalize it directly in the task: the model is asked to output the next action, choose exactly one option from a fixed menu of arms or robot actions, or pick the better action from candidate pairs. Some papers also describe look-ahead simulation, evaluation mechanisms, or reward-model scores as guides for the selection, and bandit formulations frame choices as maximizing cumulative reward.\n\nWhat it is taken as evidence of. Papers do not converge on a single construct that this behavior is taken to reflect. It is linked to 7 constructs, but the recorded relations mostly run in the other direction: reasoning, commonsense knowledge, exploration-exploitation tradeoff, and logical reasoning are each claimed to have a causal relationship to action selection, model selection ability is reported as related to it, and 2 other constructs are linked by additional causal claims. Separately, tool use and multiple-choice question answering are reported as related to action selection.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Action selection",
+    "Decision-making",
+    "Driving decision making",
+    "Autonomous decision making",
+    "High-level action selection",
+    "Arm selection",
+    "Activity selection",
+    "Target selection",
+    "Secret action selection",
+    "Candidate action selection"
+  ],
+  "papers": [
+    "GAMEBoT: Transparent Assessment of LLM Reasoning in Games",
+    "World Modeling Makes a Better Planner: Dual Preference Optimization for Embodied Task Planning",
+    "ReflAct: World-Grounded Decision Making in LLM Agents via Goal-State Reflection",
+    "Structured Preference Optimization for Vision-Language Long-Horizon Task Planning",
+    "WebEvolver: Enhancing Web Agent Self-Improvement with Co-evolving World Model",
+    "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+    "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning",
+    "Competing Large Language Models in Multi-Agent Gaming Environments",
+    "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+    "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+    "Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization",
+    "Boosting Virtual Agent Learning and Reasoning: A Step-Wise, Multi-Dimensional, and Generalist Reward Model with Benchmark",
+    "EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration",
+    "Can large language models explore in-context?",
+    "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+    "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+    "Mars: Situated Inductive Reasoning in an Open-World Environment",
+    "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+    "Policy Learning from Tutorial Books via Understanding, Rehearsing and Introspecting"
+  ],
+  "paper_count": 19,
+  "definitions": [
+    {
+      "text": "The process of choosing the optimal action from a set of candidates, often guided by a look-ahead or evaluation mechanism.",
+      "papers": [
+        "WebEvolver: Enhancing Web Agent Self-Improvement with Co-evolving World Model",
+        "Policy Learning from Tutorial Books via Understanding, Rehearsing and Introspecting",
+        "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+        "GAMEBoT: Transparent Assessment of LLM Reasoning in Games",
+        "World Modeling Makes a Better Planner: Dual Preference Optimization for Embodied Task Planning",
+        "EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration"
+      ],
+      "original_name": "Action selection"
+    },
+    {
+      "text": "Performing tasks that require selecting and executing specific actions in different contexts based on induced rules.",
+      "papers": [
+        "Mars: Situated Inductive Reasoning in an Open-World Environment",
+        "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+        "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+      ],
+      "original_name": "Decision-making"
+    },
+    {
+      "text": "Selecting high-level driving actions or meta-actions from scene descriptions and prior experience.",
+      "papers": [
+        "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving"
+      ],
+      "original_name": "Driving decision making"
+    },
+    {
+      "text": "The task of a system making choices and taking actions independently to achieve goals in a given environment.",
+      "papers": [
+        "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems"
+      ],
+      "original_name": "Autonomous decision making"
+    },
+    {
+      "text": "Choosing discrete robot actions such as navigation, pickup, placement, opening, closing, cleaning, or toggling to advance the task.",
+      "papers": [
+        "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments"
+      ],
+      "original_name": "High-level action selection"
+    },
+    {
+      "text": "Choosing one action from a fixed set of bandit arms at each time step.",
+      "papers": [
+        "Can large language models explore in-context?"
+      ],
+      "original_name": "Arm selection"
+    },
+    {
+      "text": "The observable process of an agent choosing a single action to execute from a set of evaluated candidates based on which one best satisfies its intrinsic motivations.",
+      "papers": [
+        "Simulating Human-like Daily Activities with Desire-driven Autonomy"
+      ],
+      "original_name": "Activity selection"
+    },
+    {
+      "text": "Choosing which opponent to attack or target in a sequential elimination game.",
+      "papers": [
+        "Competing Large Language Models in Multi-Agent Gaming Environments"
+      ],
+      "original_name": "Target selection"
+    },
+    {
+      "text": "Choosing targets for elimination, investigation, or protection during the night phase, based on hidden role and private information.",
+      "papers": [
+        "Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization"
+      ],
+      "original_name": "Secret action selection"
+    },
+    {
+      "text": "The process of choosing between two or more candidate actions at a given step based on reward model scoring.",
+      "papers": [
+        "Boosting Virtual Agent Learning and Reasoning: A Step-Wise, Multi-Dimensional, and Generalist Reward Model with Benchmark"
+      ],
+      "original_name": "Candidate action selection"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+      "evidence": "In the Reasoning module, we utilize the experiences derived from the Memory module and the common-sense knowledge of the LLM to perform decision-making for the current traffic scenario. (Section 3.3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models"
+        ],
+        "iclr25": [
+          "Enhancing Language Model Agents using Diversity of Thoughts"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Tool use",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "NAT: Enhancing Agent Tuning with Negative Samples",
+      "evidence": "\u201cActions involve selecting which tool to call and the input to that tool.\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "NAT: Enhancing Agent Tuning with Negative Samples"
+        ],
+        "icml25": [
+          "Prune \u2019n Predict: Optimizing LLM Decision-making with Conformal Prediction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Commonsense knowledge",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+      "evidence": "In the Reasoning module, we utilize the experiences derived from the Memory module and the common-sense knowledge of the LLM to perform decision-making for the current traffic scenario. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Model selection ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
+      "evidence": "RestoreAgent can provide the best decisions, including which image restoration tasks need to be performed, the order of their execution, and which model is most suitable for each task. (Section 3.2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Scene understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "evidence": "the scene understanding module in LeapAD is designed to selectively identify critical objects, simplifying the description of the surrounding environment and reducing the load on decision-making processes. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Logical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "evidence": "The Analytic Process relies on logical reasoning, employing rational thinking to analyze complex situations and make safe driving decisions. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "World modeling",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation",
+      "evidence": "a World-model-augmented (WMA) web agent, which simulates the outcomes of its actions for better decision-making. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Exploration-exploitation tradeoff",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Monte Carlo Planning with Large Language Model for Text-Based Game Agents",
+      "evidence": "\u201cLLMs often struggle to balance exploration and exploitation, which hinders their ability to navigate extensive state spaces efficiently.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Monte Carlo Planning with Large Language Model for Text-Based Game Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Prune \u2019n Predict: Optimizing LLM Decision-making with Conformal Prediction",
+      "evidence": "Large language models (LLMs) (Touvron et al., 2023; Databricks, 2024; Abdin et al., 2024) have demonstrated remarkable capabilities in various decision-making tasks, including multi-choice question answering and tool usage (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Prune \u2019n Predict: Optimizing LLM Decision-making with Conformal Prediction"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats action selection as the observable act of choosing one action, move, or arm from a set of available candidates, usually conditioned on the current state or context and sometimes on the goal, interaction history, or past feedback. Success is commonly phrased as selecting the optimal, most appropriate, most plausible, or highest-scoring option, and several definitions make the output explicit, for example by having the agent \"output the next action\" or choose exactly one listed option. A smaller line of work broadens it to decision-making tasks that require selecting valid actions, or even action sequences, to achieve goals in dynamic or uncertain environments."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study this behavior across web agents, games, embodied environments, autonomous driving, robotics, and bandit settings. The most common alternate label is decision-making, while narrower variants include driving decision making, high-level action selection, arm selection, and candidate action selection. Other single-paper formulations specialize it to daily activities or to choosing targets in sequential and hidden-role games."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. Instead, papers operationalize it directly in the task: the model is asked to output the next action, choose exactly one option from a fixed menu of arms or robot actions, or pick the better action from candidate pairs. Some papers also describe look-ahead simulation, evaluation mechanisms, or reward-model scores as guides for the selection, and bandit formulations frame choices as maximizing cumulative reward."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not converge on a single construct that this behavior is taken to reflect. It is linked to 7 constructs, but the recorded relations mostly run in the other direction: reasoning, commonsense knowledge, exploration-exploitation tradeoff, and logical reasoning are each claimed to have a causal relationship to action selection, model selection ability is reported as related to it, and 2 other constructs are linked by additional causal claims. Separately, tool use and multiple-choice question answering are reported as related to action selection."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats action selection as the observable act of choosing one action, move, or arm from a set of available candidates, usually conditioned on the current state or context and sometimes on the goal, interaction history, or past feedback. Success is commonly phrased as selecting the optimal, most appropriate, most plausible, or highest-scoring option, and several definitions make the output explicit, for example by having the agent \"output the next action\" or choose exactly one listed option. A smaller line of work broadens it to decision-making tasks that require selecting valid actions, or even action sequences, to achieve goals in dynamic or uncertain environments.\n\nVariants. Papers study this behavior across web agents, games, embodied environments, autonomous driving, robotics, and bandit settings. The most common alternate label is decision-making, while narrower variants include driving decision making, high-level action selection, arm selection, and candidate action selection. Other single-paper formulations specialize it to daily activities or to choosing targets in sequential and hidden-role games.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. Instead, papers operationalize it directly in the task: the model is asked to output the next action, choose exactly one option from a fixed menu of arms or robot actions, or pick the better action from candidate pairs. Some papers also describe look-ahead simulation, evaluation mechanisms, or reward-model scores as guides for the selection, and bandit formulations frame choices as maximizing cumulative reward.\n\nWhat it is taken as evidence of. Papers do not converge on a single construct that this behavior is taken to reflect. It is linked to 7 constructs, but the recorded relations mostly run in the other direction: reasoning, commonsense knowledge, exploration-exploitation tradeoff, and logical reasoning are each claimed to have a causal relationship to action selection, model selection ability is reported as related to it, and 2 other constructs are linked by additional causal claims. Separately, tool use and multiple-choice question answering are reported as related to action selection.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "ReflAct: World-Grounded Decision Making in LLM Agents via Goal-State Reflection",
+      "Structured Preference Optimization for Vision-Language Long-Horizon Task Planning",
+      "WebEvolver: Enhancing Web Agent Self-Improvement with Co-evolving World Model"
+    ],
+    "iclr25": [
+      "Competing Large Language Models in Multi-Agent Gaming Environments",
+      "Simulating Human-like Daily Activities with Desire-driven Autonomy",
+      "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models"
+    ],
+    "icml25": [
+      "Learning Strategic Language Agents in the Werewolf Game with Iterative Latent Space Policy Optimization",
+      "Boosting Virtual Agent Learning and Reasoning: A Step-Wise, Multi-Dimensional, and Generalist Reward Model with Benchmark",
+      "EVOLvE: Evaluating and Optimizing LLMs For In-Context Exploration"
+    ],
+    "neurips24": [
+      "Can large language models explore in-context?",
+      "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "Long-Horizon Planning for Multi-Agent Robots in Partially Observable Environments",
+      "Mars: Situated Inductive Reasoning in an Open-World Environment",
+      "No Free Delivery Service: Epistemic limits of passive data collection in complex social systems",
+      "Policy Learning from Tutorial Books via Understanding, Rehearsing and Introspecting"
+    ],
+    "acl25": [
+      "GAMEBoT: Transparent Assessment of LLM Reasoning in Games",
+      "World Modeling Makes a Better Planner: Dual Preference Optimization for Embodied Task Planning"
+    ],
+    "iclr24": [
+      "DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models",
+      "True Knowledge Comes from Practice: Aligning Large Language Models with Embodied Environments via Reinforcement Learning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "iclr25": 3,
+    "icml25": 3,
+    "neurips24": 6,
+    "acl25": 2,
+    "iclr24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

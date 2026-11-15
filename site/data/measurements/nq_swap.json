@@ -1,0 +1,100 @@
+{
+  "canonical_name": "NQ-Swap",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed papers, NQ-Swap is most commonly described as a counterfactual version of Natural Questions, where incorrect answers are swapped into the context to test whether a model relies on correct evidence. A closely related description treats it as a knowledge conflict dataset based on Natural Questions, consisting of synthetic conflicting data to test a model's ability to handle discrepancies. Papers also position it as a counterfactual QA benchmark that offers a more challenging and complementary evaluation of whether models can identify and rely on the correct evidence.\n\nWhat it is claimed to measure. The reported measurement claims are concentrated rather than spread across many targets: papers link NQ-Swap to one construct, Context faithfulness, and one behavioral indicator, Question answering. The prevailing usage is to measure Context faithfulness, with papers describing it as evaluating a model's ability to identify and rely on the correct evidence, or to follow instructions and contexts on knowledge conflict datasets. A smaller line of use reports it as measuring Question answering, where it appears as one of the QA datasets used in task evaluation.\n\nSpace of uses. Papers use NQ-Swap within benchmark sets rather than in isolation. One recurring setup pairs it with ConfiQA as a counterfactual QA benchmark, while another uses it alongside MemoTrap as a knowledge conflict dataset for evaluating instruction and context following. It also appears in broader QA suites with Natural Question, TriviaQA, and PopQA, along with other QA datasets, when papers report performance across diverse QA tasks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "NQ-Swap"
+  ],
+  "papers": [
+    "CoCoA: Confidence- and Context-Aware Adaptive Decoding for Resolving Knowledge Conflicts in Large Language Models",
+    "Sparse Autoencoder Features for Classifications and Transferability",
+    "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs",
+    "AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A counterfactual version of Natural Questions where incorrect answers are swapped into the context to test a model's reliance on correct evidence.",
+      "papers": [
+        "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs",
+        "AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge"
+      ],
+      "original_name": "NQ-Swap"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs",
+      "evidence": "we also include two counter-factual QA benchmarks: NQ-Swap and ConfiQA, offering a more challenging and complementary evaluation of a model\u2019s ability to identify and rely on the correct evidence. (Section 3.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs"
+        ],
+        "iclr24": [
+          "In-Context Pretraining: Language Modeling Beyond Document Boundaries"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge",
+      "evidence": "We demonstrate ADACAD\u2019s effectiveness on a diverse range of tasks, covering question-answering (QA) and summarization, with six QA datasets (Natural Question (NQ; Kwiatkowski et al., 2019), NQ-SWAP (Longpre et al., 2021), TriviaQA (Joshi et al., 2017), PopQA (Mallen et al., 2023), HotpotQA (Yang et al., 2018), TabMWP (Lu et al., 2023)) (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed papers, NQ-Swap is most commonly described as a counterfactual version of Natural Questions, where incorrect answers are swapped into the context to test whether a model relies on correct evidence. A closely related description treats it as a knowledge conflict dataset based on Natural Questions, consisting of synthetic conflicting data to test a model's ability to handle discrepancies. Papers also position it as a counterfactual QA benchmark that offers a more challenging and complementary evaluation of whether models can identify and rely on the correct evidence."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "The reported measurement claims are concentrated rather than spread across many targets: papers link NQ-Swap to one construct, Context faithfulness, and one behavioral indicator, Question answering. The prevailing usage is to measure Context faithfulness, with papers describing it as evaluating a model's ability to identify and rely on the correct evidence, or to follow instructions and contexts on knowledge conflict datasets. A smaller line of use reports it as measuring Question answering, where it appears as one of the QA datasets used in task evaluation."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use NQ-Swap within benchmark sets rather than in isolation. One recurring setup pairs it with ConfiQA as a counterfactual QA benchmark, while another uses it alongside MemoTrap as a knowledge conflict dataset for evaluating instruction and context following. It also appears in broader QA suites with Natural Question, TriviaQA, and PopQA, along with other QA datasets, when papers report performance across diverse QA tasks."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed papers, NQ-Swap is most commonly described as a counterfactual version of Natural Questions, where incorrect answers are swapped into the context to test whether a model relies on correct evidence. A closely related description treats it as a knowledge conflict dataset based on Natural Questions, consisting of synthetic conflicting data to test a model's ability to handle discrepancies. Papers also position it as a counterfactual QA benchmark that offers a more challenging and complementary evaluation of whether models can identify and rely on the correct evidence.\n\nWhat it is claimed to measure. The reported measurement claims are concentrated rather than spread across many targets: papers link NQ-Swap to one construct, Context faithfulness, and one behavioral indicator, Question answering. The prevailing usage is to measure Context faithfulness, with papers describing it as evaluating a model's ability to identify and rely on the correct evidence, or to follow instructions and contexts on knowledge conflict datasets. A smaller line of use reports it as measuring Question answering, where it appears as one of the QA datasets used in task evaluation.\n\nSpace of uses. Papers use NQ-Swap within benchmark sets rather than in isolation. One recurring setup pairs it with ConfiQA as a counterfactual QA benchmark, while another uses it alongside MemoTrap as a knowledge conflict dataset for evaluating instruction and context following. It also appears in broader QA suites with Natural Question, TriviaQA, and PopQA, along with other QA datasets, when papers report performance across diverse QA tasks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "CoCoA: Confidence- and Context-Aware Adaptive Decoding for Resolving Knowledge Conflicts in Large Language Models",
+      "Sparse Autoencoder Features for Classifications and Transferability",
+      "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs"
+    ],
+    "naacl25": [
+      "AdaCAD: Adaptively Decoding to Balance Conflicts between Contextual and Parametric Knowledge"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 3,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

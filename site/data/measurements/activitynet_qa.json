@@ -1,0 +1,218 @@
+{
+  "canonical_name": "ActivityNet-QA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, ActivityNet-QA is most commonly described as an open-ended video question-answering benchmark or dataset built on ActivityNet videos. Definitions repeatedly frame it as covering complex web videos, longer activity videos, and complex human activities or events, with some papers emphasizing zero-shot video understanding evaluation and others describing it in terms of human activity understanding. One paper further states that it contains human-annotated QA pairs on 5,800 videos derived from ActivityNet and is designed for long-term spatiotemporal reasoning.\n\nWhat it is claimed to measure. Papers link it to 2 constructs and 1 behavioral indicator. The prevailing usage is to measure video question answering: many papers evaluate zero-shot or open-ended VideoQA on ActivityNet-QA and refer to it directly as a video QA benchmark. A broader framing treats it as measuring video understanding, while a smaller line of work reports it as assessing spatiotemporal reasoning.\n\nSpace of uses. Papers usually position ActivityNet-QA as one item in broader evaluation suites, describing it as part of classical, widely used, or general video QA and video understanding benchmark collections. It appears in comparative evaluations, zero-shot video-QA settings, and comprehensive suites of video understanding benchmarks. No measurement instrument is linked to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "ActivityNet-QA"
+  ],
+  "papers": [
+    "HAIC: Improving Human Action Understanding and Generation with Better Captions for Multi-modal Large Language Models",
+    "VQAGuider: Guiding Multimodal Large Language Models to Answer Complex Video Questions",
+    "RAVEN: Query-Guided Representation Alignment for Question Answering over Audio, Video, Embedded Sensors, and Natural Language",
+    "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+    "Static or Dynamic: Towards Query-Adaptive Token Selection for Video Question Answering",
+    "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding",
+    "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+    "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+    "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+    "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token",
+    "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+    "Matryoshka Multimodal Models",
+    "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+    "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+    "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs",
+    "Unhackable Temporal Reward for Scalable Video MLLMs",
+    "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision",
+    "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models",
+    "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+    "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+    "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+    "Unifying Specialized Visual Encoders for Video Language Models",
+    "Artemis: Towards Referential Understanding in Complex Videos",
+    "Dense Connector for MLLMs",
+    "Efficient Large Multi-modal Models via Visual Context Compression",
+    "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+    "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+    "Slot-VLM: Object-Event Slots for Video-Language Modeling",
+    "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+    "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+    "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+  ],
+  "paper_count": 33,
+  "definitions": [
+    {
+      "text": "A video question-answering benchmark used for zero-shot video understanding evaluation.",
+      "papers": [
+        "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+        "VQAGuider: Guiding Multimodal Large Language Models to Answer Complex Video Questions",
+        "Unifying Specialized Visual Encoders for Video Language Models",
+        "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+        "Artemis: Towards Referential Understanding in Complex Videos",
+        "Dense Connector for MLLMs",
+        "Efficient Large Multi-modal Models via Visual Context Compression",
+        "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+        "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+        "Slot-VLM: Object-Event Slots for Video-Language Modeling",
+        "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+        "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+        "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+      ],
+      "original_name": "ActivityNet-QA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "Additionally, we evaluate zero-shot performance on open-ended video question-answering benchmarks such as MSVD-QA [68], ActivityNet-QA [69], MSRVTT-QA [70]... (Section 4.1)",
+      "paper_count": 12,
+      "paper_weight": 12.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dense Connector for MLLMs",
+          "Artemis: Towards Referential Understanding in Complex Videos",
+          "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+        ],
+        "iclr25": [
+          "Unhackable Temporal Reward for Scalable Video MLLMs",
+          "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+          "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+          "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+        ],
+        "icml25": [
+          "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+          "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+          "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models"
+        ],
+        "emnlp25": [
+          "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+          "Static or Dynamic: Towards Query-Adaptive Token Selection for Video Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Video understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Dense Connector for MLLMs",
+      "evidence": "By scaling up the LLM to 34B, our model demonstrates a marked improvement in video understanding capabilities, achieving state-of-the-art performance on video evaluation benchmarks with accuracies of 77.4% on MSVD [68], 62.1% on MSR-VTT [70], and 55.8% on ActivityNet [69]. (Section 4.3)",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Dense Connector for MLLMs"
+        ],
+        "iclr25": [
+          "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+          "Matryoshka Multimodal Models",
+          "LongVILA: Scaling Long-Context Visual Language Models for Long Videos"
+        ],
+        "icml25": [
+          "Unifying Specialized Visual Encoders for Video Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Spatiotemporal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+      "evidence": "ActivityNet-QA (Yu et al., 2019) encompasses human-annotated QA pairs on 5,800 videos derived from the ActivityNet (Caba Heilbron et al., 2015) dataset. This benchmark is designed to assess the capabilities of VideoQA models in long-term spatiotemporal reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, ActivityNet-QA is most commonly described as an open-ended video question-answering benchmark or dataset built on ActivityNet videos. Definitions repeatedly frame it as covering complex web videos, longer activity videos, and complex human activities or events, with some papers emphasizing zero-shot video understanding evaluation and others describing it in terms of human activity understanding. One paper further states that it contains human-annotated QA pairs on 5,800 videos derived from ActivityNet and is designed for long-term spatiotemporal reasoning."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 2 constructs and 1 behavioral indicator. The prevailing usage is to measure video question answering: many papers evaluate zero-shot or open-ended VideoQA on ActivityNet-QA and refer to it directly as a video QA benchmark. A broader framing treats it as measuring video understanding, while a smaller line of work reports it as assessing spatiotemporal reasoning."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers usually position ActivityNet-QA as one item in broader evaluation suites, describing it as part of classical, widely used, or general video QA and video understanding benchmark collections. It appears in comparative evaluations, zero-shot video-QA settings, and comprehensive suites of video understanding benchmarks. No measurement instrument is linked to it."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, ActivityNet-QA is most commonly described as an open-ended video question-answering benchmark or dataset built on ActivityNet videos. Definitions repeatedly frame it as covering complex web videos, longer activity videos, and complex human activities or events, with some papers emphasizing zero-shot video understanding evaluation and others describing it in terms of human activity understanding. One paper further states that it contains human-annotated QA pairs on 5,800 videos derived from ActivityNet and is designed for long-term spatiotemporal reasoning.\n\nWhat it is claimed to measure. Papers link it to 2 constructs and 1 behavioral indicator. The prevailing usage is to measure video question answering: many papers evaluate zero-shot or open-ended VideoQA on ActivityNet-QA and refer to it directly as a video QA benchmark. A broader framing treats it as measuring video understanding, while a smaller line of work reports it as assessing spatiotemporal reasoning.\n\nSpace of uses. Papers usually position ActivityNet-QA as one item in broader evaluation suites, describing it as part of classical, widely used, or general video QA and video understanding benchmark collections. It appears in comparative evaluations, zero-shot video-QA settings, and comprehensive suites of video understanding benchmarks. No measurement instrument is linked to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "HAIC: Improving Human Action Understanding and Generation with Better Captions for Multi-modal Large Language Models",
+      "VQAGuider: Guiding Multimodal Large Language Models to Answer Complex Video Questions"
+    ],
+    "emnlp25": [
+      "RAVEN: Query-Guided Representation Alignment for Question Answering over Audio, Video, Embedded Sensors, and Natural Language",
+      "Seeing More, Saying More: Lightweight Language Experts are Dynamic Video Token Compressors",
+      "Static or Dynamic: Towards Query-Adaptive Token Selection for Video Question Answering",
+      "ViPE: Visual Perception in Parameter Space for Efficient Video-Language Understanding"
+    ],
+    "iclr25": [
+      "Aligned Better, Listen Better for Audio-Visual Large Language Models",
+      "AuroraCap: Efficient, Performant Video Detailed Captioning and a New Benchmark",
+      "Can Video LLMs Refuse to Answer? Alignment for Answerability in Video Large Language Models",
+      "Frame-Voyager: Learning to Query Frames for Video Large Language Models",
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "LLaVA-Mini: Efficient Image and Video Large Multimodal Models with One Vision Token",
+      "LongVILA: Scaling Long-Context Visual Language Models for Long Videos",
+      "Matryoshka Multimodal Models",
+      "MixEval-X: Any-to-any Evaluations from Real-world Data Mixture",
+      "Streaming Video Question-Answering with In-context Video KV-Cache Retrieval",
+      "Teaching Human Behavior Improves Content Understanding Abilities Of VLMs",
+      "Unhackable Temporal Reward for Scalable Video MLLMs",
+      "Video-STaR: Self-Training Enables Video Instruction Tuning with Any Supervision"
+    ],
+    "icml25": [
+      "$\\mathcalVista\\mathcalDPO$: Video Hierarchical Spatial-Temporal Direct Preference Optimization for Large Video Models",
+      "CoreMatching: A Co-adaptive Sparse Inference Framework with Token and Neuron Pruning for Comprehensive Acceleration of Vision-Language Models",
+      "Divide and Conquer: Exploring Language-centric Tree Reasoning for Video Question-Answering",
+      "SparseVLM: Visual Token Sparsification for Efficient Vision-Language Model Inference",
+      "Unifying Specialized Visual Encoders for Video Language Models"
+    ],
+    "neurips24": [
+      "Artemis: Towards Referential Understanding in Complex Videos",
+      "Dense Connector for MLLMs",
+      "Efficient Large Multi-modal Models via Visual Context Compression",
+      "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "MMBench-Video: A Long-Form Multi-Shot Benchmark for Holistic Video Understanding",
+      "Slot-VLM: Object-Event Slots for Video-Language Modeling",
+      "SlowFocus: Enhancing Fine-grained Temporal Understanding in Video LLM",
+      "VideoLLM-MoD: Efficient Video-Language Streaming with Mixture-of-Depths Vision Computation",
+      "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 4,
+    "iclr25": 13,
+    "icml25": 5,
+    "neurips24": 9
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

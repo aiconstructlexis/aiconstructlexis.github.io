@@ -1,0 +1,130 @@
+{
+  "canonical_name": "Chronological ordering",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across definitions, the prevailing usage is a sequencing task in which a model must arrange shuffled or retrieved items into the correct temporal or logical order. Most formulations treat success as giving the full correct sequence, described variously as restoring the original logical sequence of plot-synopsis sentences, identifying the chronological order of inserted video needles, arranging images by temporal or visual progression, or ordering events and states from earliest to latest.\n\nVariants. Papers study this behavior across text, video, and multi-image settings, and use several names for it, including plot unscrambling, ordering, image ordering, visual ordering, and chronological ordering. The variants differ in what is being sequenced: shuffled movie-synopsis sentences, multiple inserted needles in a video, numbered image patches whose order must be stated, or retrieved dates, events, and states; some descriptions place image ordering under temporal reasoning, while movie synopsis unscrambling appears under language comprehension.\n\nSpace of elicitation and scores. It is measured by one instrument, VNBench. Papers describe VNBench as a video benchmark that includes retrieval, ordering, and counting tasks, with ordering used to evaluate chronological ordering; papers also report accuracy for temporal and visual ordering tasks, but no other named instrument is linked to this behavior.\n\nWhat it is taken as evidence of. As a broader construct link, papers only relate it to Natural language understanding. That link comes from work that groups movie synopsis unscrambling with language comprehension, and papers do not report other construct links for this behavior.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Ordering",
+    "Plot unscrambling",
+    "Image ordering",
+    "Visual ordering",
+    "Chronological ordering"
+  ],
+  "papers": [
+    "Episodic Memories Generation and Evaluation Benchmark for Large Language Models",
+    "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+    "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+    "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+    "Needle In A Video Haystack: A Scalable Synthetic Evaluator for Video MLLMs"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Reordering shuffled sentences of a plot synopsis into the original logical sequence.",
+      "papers": [
+        "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+      ],
+      "original_name": "Plot unscrambling"
+    },
+    {
+      "text": "Identifying the correct chronological order of multiple inserted needles in a video.",
+      "papers": [
+        "Needle In A Video Haystack: A Scalable Synthetic Evaluator for Video MLLMs"
+      ],
+      "original_name": "Ordering"
+    },
+    {
+      "text": "The task of arranging a set of images into a correct temporal or logical sequence.",
+      "papers": [
+        "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models"
+      ],
+      "original_name": "Image ordering"
+    },
+    {
+      "text": "Ordering images according to visual progression or sequence cues.",
+      "papers": [
+        "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models"
+      ],
+      "original_name": "Visual ordering"
+    },
+    {
+      "text": "The task of arranging a set of retrieved events or states in the correct temporal sequence, from earliest to latest.",
+      "papers": [
+        "Episodic Memories Generation and Evaluation Benchmark for Large Language Models"
+      ],
+      "original_name": "Chronological ordering"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VNBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Needle In A Video Haystack: A Scalable Synthetic Evaluator for Video MLLMs",
+      "evidence": "Utilizing VideoNIAH, we compile a video benchmark, VNBench, which includes tasks such as retrieval, ordering, and counting to evaluate three key aspects of video understanding: temporal perception, chronological ordering, and spatio-temporal coherence. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Needle In A Video Haystack: A Scalable Synthetic Evaluator for Video MLLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "evidence": "\u201cLanguage Comprehension: Connections word puzzles, a typo-fixing task, and a movie synopsis unscrambling task\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveBench: A Challenging, Contamination-Limited LLM Benchmark"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across definitions, the prevailing usage is a sequencing task in which a model must arrange shuffled or retrieved items into the correct temporal or logical order. Most formulations treat success as giving the full correct sequence, described variously as restoring the original logical sequence of plot-synopsis sentences, identifying the chronological order of inserted video needles, arranging images by temporal or visual progression, or ordering events and states from earliest to latest."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study this behavior across text, video, and multi-image settings, and use several names for it, including plot unscrambling, ordering, image ordering, visual ordering, and chronological ordering. The variants differ in what is being sequenced: shuffled movie-synopsis sentences, multiple inserted needles in a video, numbered image patches whose order must be stated, or retrieved dates, events, and states; some descriptions place image ordering under temporal reasoning, while movie synopsis unscrambling appears under language comprehension."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "It is measured by one instrument, VNBench. Papers describe VNBench as a video benchmark that includes retrieval, ordering, and counting tasks, with ordering used to evaluate chronological ordering; papers also report accuracy for temporal and visual ordering tasks, but no other named instrument is linked to this behavior."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "As a broader construct link, papers only relate it to Natural language understanding. That link comes from work that groups movie synopsis unscrambling with language comprehension, and papers do not report other construct links for this behavior."
+    }
+  ],
+  "characterization": "Space of definitions. Across definitions, the prevailing usage is a sequencing task in which a model must arrange shuffled or retrieved items into the correct temporal or logical order. Most formulations treat success as giving the full correct sequence, described variously as restoring the original logical sequence of plot-synopsis sentences, identifying the chronological order of inserted video needles, arranging images by temporal or visual progression, or ordering events and states from earliest to latest.\n\nVariants. Papers study this behavior across text, video, and multi-image settings, and use several names for it, including plot unscrambling, ordering, image ordering, visual ordering, and chronological ordering. The variants differ in what is being sequenced: shuffled movie-synopsis sentences, multiple inserted needles in a video, numbered image patches whose order must be stated, or retrieved dates, events, and states; some descriptions place image ordering under temporal reasoning, while movie synopsis unscrambling appears under language comprehension.\n\nSpace of elicitation and scores. It is measured by one instrument, VNBench. Papers describe VNBench as a video benchmark that includes retrieval, ordering, and counting tasks, with ordering used to evaluate chronological ordering; papers also report accuracy for temporal and visual ordering tasks, but no other named instrument is linked to this behavior.\n\nWhat it is taken as evidence of. As a broader construct link, papers only relate it to Natural language understanding. That link comes from work that groups movie synopsis unscrambling with language comprehension, and papers do not report other construct links for this behavior.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Episodic Memories Generation and Evaluation Benchmark for Large Language Models",
+      "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+      "MMIU: Multimodal Multi-image Understanding for Evaluating Large Vision-Language Models",
+      "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "Needle In A Video Haystack: A Scalable Synthetic Evaluator for Video MLLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 5
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

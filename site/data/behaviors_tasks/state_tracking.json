@@ -1,0 +1,221 @@
+{
+  "canonical_name": "State tracking",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage is to treat state tracking as variable tracking in long contexts: keeping track of changing variable values, or monitoring and reporting variable states, when they are updated multiple times through a long context. The formulations largely agree, differing mainly in wording, and one paper makes the target explicit as tracking \"the variable assignments provided in the context.\"\n\nVariants. Papers most often name the behavior variable tracking, often abbreviated VT, and study it in synthetic long-context settings. Several descriptions place it in a multi-hop tracing variant with variable tracking, across sequence lengths from 4K to 128K or 131K tokens. A smaller line of work connects state tracking to nearby task settings, especially shortest path finding, multi-hop translation in machine translation, and code generation.\n\nSpace of elicitation and scores. Papers link state tracking to two measurement instruments. The dominant operationalization is RULER: several papers say state tracking is measured by this synthetic long-context benchmark, which includes variable tracking tasks and a category described as multi-hop tracing with variable tracking. The only other linked instrument is Coin Flip, but there it is only related to state tracking rather than stated to measure it, in a paper that says models can lose track of states as task complexity increases.\n\nWhat it is taken as evidence of. Papers link state tracking to three constructs, and they do not settle on a single construct that it reflects. Some use it as related to long-context understanding, because variable tracking appears in evaluations of long-context capabilities. Another paper relates it to theory of mind, calling basic state tracking a skill underlying theory of mind reasoning, while a separate paper claims a causal relationship from expressive power to state tracking.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Variable tracking"
+  ],
+  "papers": [
+    "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval",
+    "LeanK: Learnable K Cache Channel Pruning for Efficient Decoding",
+    "ActionReasoningBench: Reasoning about Actions with and without Ramification Constraints",
+    "Jamba: Hybrid Transformer-Mamba Language Models",
+    "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+    "Why Does the Effective Context Length of LLMs Fall Short?",
+    "CateKV: On Sequential Consistency for Long-Context LLM Inference Acceleration",
+    "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference",
+    "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "The task of keeping track of the changing values of variables that are updated multiple times within a long context.",
+      "papers": [
+        "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+        "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference"
+      ],
+      "original_name": "Variable tracking"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RULER",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Why Does the Effective Context Length of LLMs Fall Short?",
+      "evidence": "The RULER benchmark ... encompasses ... tasks involving variable tracking",
+      "paper_count": 7,
+      "paper_weight": 7.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Why Does the Effective Context Length of LLMs Fall Short?",
+          "FlexPrefill: A Context-Aware Sparse Attention Mechanism for Efficient Long-Sequence Inference",
+          "LongPO: Long Context Self-Evolution of Large Language Models through Short-to-Long Preference Optimization",
+          "Scaling Long Context Training Data by Long-Distance Referrals"
+        ],
+        "acl25": [
+          "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval"
+        ],
+        "emnlp25": [
+          "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities"
+        ],
+        "icml25": [
+          "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coin Flip",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Chain-of-Thought Reasoning Without Prompting",
+      "evidence": "on Coin-Flip and Web-of-Lies, we observe that the model can generate CoT paths that simulate the process step-by-step, but it can easily lose track of the states, especially when the task complexity increases. This reveals model\u2019s intrinsic vulnerability in performing accurate state tracking. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chain-of-Thought Reasoning Without Prompting"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theory of mind",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning",
+      "evidence": "We show that LLMs struggle with basic state tracking, a fundamental skill underlying theory of mind reasoning: tracking mental states necessarily requires being able to track states. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "evidence": "In recurrent models, Gated DeltaNet shows consistent advantages, especially in ... Code tasks, demonstrating its superior capabilities in ... state tracking, respectively.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Gated Delta Networks: Improving Mamba2 with Delta Rule"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference",
+      "evidence": "To evaluate long-context capabilities, we use the RULER benchmark (Hsieh et al., 2024), which consists of a set of synthetic needle-in-a-haystack, question-answering and variable tracking tasks, with varying context length from 4K to 131K tokens. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Expressive power",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Implicit Language Models are RNNs: Balancing Parallelization and Expressivity",
+      "evidence": "Transformers, despite their dominance on contemporary language benchmarks, exhibit fundamental limitations in computational expressiveness... they cannot fully recognize regular languages (Bhattamishra et al., 2020) or, equivalently, represent finite state machines (FSMs) (Merrill et al., 2022). This limitation is significant because FSMs form the backbone of many real-world state-tracking problems...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Implicit Language Models are RNNs: Balancing Parallelization and Expressivity"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Shortest path finding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities",
+      "evidence": "In the Shortest Path task, the model must find the shortest path from a given node to another. Intuitively, to effectively solve the problem, the model should maintain the state of its exploration in the graph",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Machine translation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities",
+      "evidence": "A more challenging task, Multi-hop Translation, further requires the model to perform a sequence of translations across multiple languages. ... the model must correctly apply consecutive bilingual dictionaries while keeping track of the translated outputs across the intermediate languages.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 6,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage is to treat state tracking as variable tracking in long contexts: keeping track of changing variable values, or monitoring and reporting variable states, when they are updated multiple times through a long context. The formulations largely agree, differing mainly in wording, and one paper makes the target explicit as tracking \"the variable assignments provided in the context.\""
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers most often name the behavior variable tracking, often abbreviated VT, and study it in synthetic long-context settings. Several descriptions place it in a multi-hop tracing variant with variable tracking, across sequence lengths from 4K to 128K or 131K tokens. A smaller line of work connects state tracking to nearby task settings, especially shortest path finding, multi-hop translation in machine translation, and code generation."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link state tracking to two measurement instruments. The dominant operationalization is RULER: several papers say state tracking is measured by this synthetic long-context benchmark, which includes variable tracking tasks and a category described as multi-hop tracing with variable tracking. The only other linked instrument is Coin Flip, but there it is only related to state tracking rather than stated to measure it, in a paper that says models can lose track of states as task complexity increases."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers link state tracking to three constructs, and they do not settle on a single construct that it reflects. Some use it as related to long-context understanding, because variable tracking appears in evaluations of long-context capabilities. Another paper relates it to theory of mind, calling basic state tracking a skill underlying theory of mind reasoning, while a separate paper claims a causal relationship from expressive power to state tracking."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage is to treat state tracking as variable tracking in long contexts: keeping track of changing variable values, or monitoring and reporting variable states, when they are updated multiple times through a long context. The formulations largely agree, differing mainly in wording, and one paper makes the target explicit as tracking \"the variable assignments provided in the context.\"\n\nVariants. Papers most often name the behavior variable tracking, often abbreviated VT, and study it in synthetic long-context settings. Several descriptions place it in a multi-hop tracing variant with variable tracking, across sequence lengths from 4K to 128K or 131K tokens. A smaller line of work connects state tracking to nearby task settings, especially shortest path finding, multi-hop translation in machine translation, and code generation.\n\nSpace of elicitation and scores. Papers link state tracking to two measurement instruments. The dominant operationalization is RULER: several papers say state tracking is measured by this synthetic long-context benchmark, which includes variable tracking tasks and a category described as multi-hop tracing with variable tracking. The only other linked instrument is Coin Flip, but there it is only related to state tracking rather than stated to measure it, in a paper that says models can lose track of states as task complexity increases.\n\nWhat it is taken as evidence of. Papers link state tracking to three constructs, and they do not settle on a single construct that it reflects. Some use it as related to long-context understanding, because variable tracking appears in evaluations of long-context capabilities. Another paper relates it to theory of mind, calling basic state tracking a skill underlying theory of mind reasoning, while a separate paper claims a causal relationship from expressive power to state tracking.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval"
+    ],
+    "emnlp25": [
+      "LeanK: Learnable K Cache Channel Pruning for Efficient Decoding"
+    ],
+    "iclr25": [
+      "ActionReasoningBench: Reasoning about Actions with and without Ramification Constraints",
+      "Jamba: Hybrid Transformer-Mamba Language Models",
+      "Scaling Stick-Breaking Attention: An Efficient Implementation and In-depth Study",
+      "Why Does the Effective Context Length of LLMs Fall Short?"
+    ],
+    "icml25": [
+      "CateKV: On Sequential Consistency for Long-Context LLM Inference Acceleration",
+      "ShadowKV: KV Cache in Shadows for High-Throughput Long-Context LLM Inference",
+      "xLSTM 7B: A Recurrent LLM for Fast and Efficient Inference"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr25": 4,
+    "icml25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

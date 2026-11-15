@@ -1,0 +1,125 @@
+{
+  "canonical_name": "Watermark detectability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the dominant framing treats detectability as successful identification of a watermark signal in model-generated text. Most definitions describe the degree or latent ability with which a detection algorithm, detection system, or watermarking scheme can distinguish watermarked from non-watermarked text from statistical patterns in token selection, sometimes explicitly under tokenization inconsistencies or adversarial attacks, and sometimes with attention to low false positive rates. A smaller line of work uses the same term more broadly for machine-generated text, defining it as the ability to distinguish AI-generated or machine-generated text from human-authored text, with one paper stating that personalization reduces that detectability.\n\nSpace of facets. The definitions differentiate detectability along two recurring axes. One axis is the target distinction, watermark presence versus human-authored versus machine-generated text, and the other is where the property is located, as papers variously place it in the embedded statistical signal, the detection system, the watermarking scheme, or the generated text itself. Several papers also discuss detectability together with robustness, generation quality, stealthiness, resilience, or safety mechanisms, and one paper expresses it in the language of statistical test power.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to it. In the papers, detectability is nevertheless operationalized through evaluations of whether detectors identify watermarked text, AUROC used to simulate detectability in real-world scenarios, statistical testing framed as test power and test level, evaluations on machine translation and protein generation, and assessments of whether AI detectors distinguish machine-generated from human-authored content. These operationalizations mostly match the dominant definitions by targeting successful detection, though some broaden the target from watermark presence to machine-generated text more generally.\n\nLinks. No causal, correlational, related, or measured_by links are reported for this construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Watermark detectability",
+    "Detectability",
+    "Machine-generated text detectability"
+  ],
+  "papers": [
+    "Evaluation of LLM Vulnerabilities to Being Misused for Personalized Disinformation Generation",
+    "From Trade-off to Synergy: A Versatile Symbiotic Watermarking Framework for Large Language Models",
+    "Improved Unbiased Watermark for Large Language Models",
+    "Addressing Tokenization Inconsistency in Steganography and Watermarking Based on Large Language Models",
+    "Invisible Entropy: Towards Safe and Efficient Low-Entropy LLM Watermarking",
+    "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution",
+    "On the Reliability of Watermarks for Large Language Models",
+    "A Watermark for Order-Agnostic Language Models",
+    "Can Watermarked LLMs be Identified by Users via Crafted Prompts?",
+    "Can Watermarks be Used to Detect LLM IP Infringement For Free?",
+    "BiMark: Unbiased Multilayer Watermarking for Large Language Models",
+    "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+    "StealthInk: A Multi-bit and Stealthy Watermark for Large Language Models",
+    "Beemo: Benchmark of Expert-edited Machine-generated Outputs"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "The degree to which a statistical signal embedded in model-generated text can be successfully identified by a detection algorithm.",
+      "papers": [
+        "A Watermark for Order-Agnostic Language Models",
+        "Invisible Entropy: Towards Safe and Efficient Low-Entropy LLM Watermarking",
+        "GaussMark: A Practical Approach for Structural Watermarking of Language Models"
+      ],
+      "original_name": "Watermark detectability"
+    },
+    {
+      "text": "The ability of a watermark detection system to correctly identify LLM-generated text as watermarked, even in the presence of tokenization inconsistencies or adversarial attacks.",
+      "papers": [
+        "Addressing Tokenization Inconsistency in Steganography and Watermarking Based on Large Language Models",
+        "Evaluation of LLM Vulnerabilities to Being Misused for Personalized Disinformation Generation",
+        "StealthInk: A Multi-bit and Stealthy Watermark for Large Language Models"
+      ],
+      "original_name": "Detectability"
+    },
+    {
+      "text": "The latent ability of a model or system to distinguish between human-authored and machine-generated text based on underlying linguistic or statistical patterns.",
+      "papers": [
+        "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution"
+      ],
+      "original_name": "Machine-generated text detectability"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the dominant framing treats detectability as successful identification of a watermark signal in model-generated text. Most definitions describe the degree or latent ability with which a detection algorithm, detection system, or watermarking scheme can distinguish watermarked from non-watermarked text from statistical patterns in token selection, sometimes explicitly under tokenization inconsistencies or adversarial attacks, and sometimes with attention to low false positive rates. A smaller line of work uses the same term more broadly for machine-generated text, defining it as the ability to distinguish AI-generated or machine-generated text from human-authored text, with one paper stating that personalization reduces that detectability."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The definitions differentiate detectability along two recurring axes. One axis is the target distinction, watermark presence versus human-authored versus machine-generated text, and the other is where the property is located, as papers variously place it in the embedded statistical signal, the detection system, the watermarking scheme, or the generated text itself. Several papers also discuss detectability together with robustness, generation quality, stealthiness, resilience, or safety mechanisms, and one paper expresses it in the language of statistical test power."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument and no behavioral indicator are linked to it. In the papers, detectability is nevertheless operationalized through evaluations of whether detectors identify watermarked text, AUROC used to simulate detectability in real-world scenarios, statistical testing framed as test power and test level, evaluations on machine translation and protein generation, and assessments of whether AI detectors distinguish machine-generated from human-authored content. These operationalizations mostly match the dominant definitions by targeting successful detection, though some broaden the target from watermark presence to machine-generated text more generally."
+    },
+    {
+      "label": "Links.",
+      "text": "No causal, correlational, related, or measured_by links are reported for this construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the dominant framing treats detectability as successful identification of a watermark signal in model-generated text. Most definitions describe the degree or latent ability with which a detection algorithm, detection system, or watermarking scheme can distinguish watermarked from non-watermarked text from statistical patterns in token selection, sometimes explicitly under tokenization inconsistencies or adversarial attacks, and sometimes with attention to low false positive rates. A smaller line of work uses the same term more broadly for machine-generated text, defining it as the ability to distinguish AI-generated or machine-generated text from human-authored text, with one paper stating that personalization reduces that detectability.\n\nSpace of facets. The definitions differentiate detectability along two recurring axes. One axis is the target distinction, watermark presence versus human-authored versus machine-generated text, and the other is where the property is located, as papers variously place it in the embedded statistical signal, the detection system, the watermarking scheme, or the generated text itself. Several papers also discuss detectability together with robustness, generation quality, stealthiness, resilience, or safety mechanisms, and one paper expresses it in the language of statistical test power.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to it. In the papers, detectability is nevertheless operationalized through evaluations of whether detectors identify watermarked text, AUROC used to simulate detectability in real-world scenarios, statistical testing framed as test power and test level, evaluations on machine translation and protein generation, and assessments of whether AI detectors distinguish machine-generated from human-authored content. These operationalizations mostly match the dominant definitions by targeting successful detection, though some broaden the target from watermark presence to machine-generated text more generally.\n\nLinks. No causal, correlational, related, or measured_by links are reported for this construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Evaluation of LLM Vulnerabilities to Being Misused for Personalized Disinformation Generation",
+      "From Trade-off to Synergy: A Versatile Symbiotic Watermarking Framework for Large Language Models",
+      "Improved Unbiased Watermark for Large Language Models"
+    ],
+    "emnlp25": [
+      "Addressing Tokenization Inconsistency in Steganography and Watermarking Based on Large Language Models",
+      "Invisible Entropy: Towards Safe and Efficient Low-Entropy LLM Watermarking",
+      "OpenTuringBench: An Open-Model-based Benchmark and Framework for Machine-Generated Text Detection and Attribution"
+    ],
+    "iclr24": [
+      "On the Reliability of Watermarks for Large Language Models"
+    ],
+    "iclr25": [
+      "A Watermark for Order-Agnostic Language Models",
+      "Can Watermarked LLMs be Identified by Users via Crafted Prompts?",
+      "Can Watermarks be Used to Detect LLM IP Infringement For Free?"
+    ],
+    "icml25": [
+      "BiMark: Unbiased Multilayer Watermarking for Large Language Models",
+      "GaussMark: A Practical Approach for Structural Watermarking of Language Models",
+      "StealthInk: A Multi-bit and Stealthy Watermark for Large Language Models"
+    ],
+    "naacl25": [
+      "Beemo: Benchmark of Expert-edited Machine-generated Outputs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 3,
+    "iclr24": 1,
+    "iclr25": 3,
+    "icml25": 3,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

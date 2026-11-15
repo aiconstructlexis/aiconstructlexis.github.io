@@ -1,0 +1,382 @@
+{
+  "canonical_name": "Alpaca instruction dataset",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing description is an instruction-following dataset, often described as 52,000 instruction-following demonstrations or instruction-response pairs. Some definitions make its format more explicit as instruction, input, output triples, and papers also refer to the Alpaca training dataset, a cleaned version of Alpaca, code prompts from Alpaca, and an Alpaca subset without unsafe instructions. A smaller line of work uses it less as a standalone tuning set and more as a source of human-written prompts, out-of-domain queries, seed data, or target and anti-target prompts.\n\nWhat it is claimed to measure. Papers link it to 5 constructs and 4 behavioral indicators, and the dominant measurement claim is instruction following. It is also reported as measuring helpfulness and question answering, while smaller lines of work use it for general ability and text generation. Overall, papers spread its use across several targets rather than tying it to a single construct.\n\nSpace of uses. No measurement instrument is linked to it. In practice, papers position it in several roles: as a fine-tuning or supervised instruction-tuning set, as calibration and recovery-tuning data after pruning or compression, as language-modeling test data, and as a source of control, seed, or out-of-domain queries. When it appears alongside other resources, recurring pairings include WikiText-2 and FLAN v2 in training setups, and SAMSum, CNN/DM, and GSM8K in broader evaluation suites.\n\nConcerns raised. A few papers work with restricted or cleaned variants, referring to a cleaned version of Alpaca for post-training or focusing on Alpaca without unsafe instructions. Another stated concern is safety under benign fine-tuning: one study uses Alpaca to test whether utility-oriented fine-tuning can compromise safety.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Alpaca",
+    "Alpaca dataset",
+    "Alpaca Instruction Tuning Dataset"
+  ],
+  "papers": [
+    "A Drop-In Solution for On-the-Fly Adaptation of Speculative Decoding in Large Language Models",
+    "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise",
+    "DyePack: Provably Flagging Test Set Contamination in LLMs Using Backdoors",
+    "EverTracer: Hunting Stolen Large Language Models via Stealthy and Robust Probabilistic Fingerprint",
+    "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+    "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+    "Priority on High-Quality: Selecting Instruction Data via Consistency Verification of Noise Injection",
+    "Refusal-Aware Red Teaming: Exposing Inconsistency in Safety Evaluations",
+    "Too Helpful, Too Harmless, Too Honest or Just Right?",
+    "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+    "Language Model Inversion",
+    "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+    "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+    "SliceGPT: Compress Large Language Models by Deleting Rows and Columns",
+    "Basis Sharing: Cross-Layer Parameter Sharing for Large Language Model Compression",
+    "Beware of Calibration Data for Pruning Large Language Models",
+    "Can Watermarks be Used to Detect LLM IP Infringement For Free?",
+    "Context-Parametric Inversion: Why Instruction Finetuning May Not Actually Improve Context Reliance",
+    "Cut Your Losses in Large-Vocabulary Language Models",
+    "DON\u2019T STOP ME NOW: EMBEDDING BASED SCHEDULING FOR LLMS",
+    "Distributed Speculative Inference (DSI): Speculation Parallelism for Provably Faster Lossless Language Model Inference",
+    "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+    "GraphRouter: A Graph-based Router for LLM Selections",
+    "Iterative Label Refinement Matters More than Preference Optimization under Weak Supervision",
+    "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+    "MeteoRA: Multiple-tasks Embedded LoRA for Large Language Models",
+    "Mixture of Attentions For Speculative Decoding",
+    "MoDeGPT: Modular Decomposition for Large Language Model Compression",
+    "Permute-and-Flip: An optimally stable and watermarkable decoder for LLMs",
+    "Programming Refusal with Conditional Activation Steering",
+    "SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference Acceleration",
+    "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+    "Towards Optimal Multi-draft Speculative Decoding",
+    "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models",
+    "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+    "You Only Prune Once: Designing Calibration-Free Model Compression With Policy Learning",
+    "Activation Space Interventions Can Be Transferred Between Large Language Models",
+    "BanditSpec: Adaptive Speculative Decoding via Bandit Algorithms",
+    "Detecting Strategic Deception with Linear Probes",
+    "Gumiho: A Hybrid Architecture to Prioritize Early Tokens in Speculative Decoding",
+    "La RoSA: Enhancing LLM Efficiency via Layerwise Rotated Sparse Activation",
+    "Mask-Enhanced Autoregressive Prediction: Pay Less Attention to Learn More",
+    "Occult: Optimizing Collaborative Communications across Experts for Accelerated Parallel MoE Training and Inference",
+    "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+    "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+    "The Illusion of Role Separation: Hidden Shortcuts in LLM Role Learning (and How to Fix Them)",
+    "Theoretical guarantees on the best-of-n alignment policy",
+    "Vulnerability-Aware Alignment: Mitigating Uneven Forgetting in Harmful Fine-Tuning",
+    "Mamba-Shedder: Post-Transformer Compression for Efficient Selective Structured State Space Models",
+    "Prompt Compression for Large Language Models: A Survey",
+    "SSH: Sparse Spectrum Adaptation via Discrete Hartley Transformation",
+    "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+    "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+    "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+    "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+    "Learning to Reason via Program Generation, Emulation, and Search",
+    "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+  ],
+  "paper_count": 57,
+  "definitions": [
+    {
+      "text": "Instruction-following dataset used for calibration and recovery fine-tuning, serving as a basis for assessing model performance post-compression.",
+      "papers": [
+        "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+        "Language Model Inversion",
+        "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+        "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+        "SliceGPT: Compress Large Language Models by Deleting Rows and Columns",
+        "Towards Optimal Multi-draft Speculative Decoding",
+        "SSH: Sparse Spectrum Adaptation via Discrete Hartley Transformation",
+        "Mamba-Shedder: Post-Transformer Compression for Efficient Selective Structured State Space Models",
+        "Prompt Compression for Large Language Models: A Survey",
+        "Theoretical guarantees on the best-of-n alignment policy",
+        "EverTracer: Hunting Stolen Large Language Models via Stealthy and Robust Probabilistic Fingerprint",
+        "A Drop-In Solution for On-the-Fly Adaptation of Speculative Decoding in Large Language Models",
+        "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+        "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+        "Learning to Reason via Program Generation, Emulation, and Search",
+        "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+      ],
+      "original_name": "Alpaca"
+    },
+    {
+      "text": "A dataset of instruction-following examples, used in the paper as a source of out-of-domain queries for detecting model infringement.",
+      "papers": [
+        "Can Watermarks be Used to Detect LLM IP Infringement For Free?",
+        "Detecting Strategic Deception with Linear Probes",
+        "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation"
+      ],
+      "original_name": "Alpaca dataset"
+    },
+    {
+      "text": "An instruction dataset used here as a source of prompts for hallucination-related editing and evaluation setup.",
+      "papers": [
+        "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models"
+      ],
+      "original_name": "Alpaca Instruction Tuning Dataset"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+      "evidence": "\"Alpaca contains 52K instruction-following data generated from text-davinci-003 (GPT 3.5)\" (Section 4.1)",
+      "paper_count": 7,
+      "paper_weight": 7.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models"
+        ],
+        "iclr25": [
+          "Towards Optimal Multi-draft Speculative Decoding",
+          "SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference Acceleration",
+          "Distributed Speculative Inference (DSI): Speculation Parallelism for Provably Faster Lossless Language Model Inference",
+          "Iterative Label Refinement Matters More than Preference Optimization under Weak Supervision",
+          "Durable Quantization Conditioned Misalignment Attack on Large Language Models"
+        ],
+        "emnlp25": [
+          "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "evidence": "The \ufb01rst task is Q&A and summarization, including Alpaca [68] and SAMSum [22], and perplexity (PPL) is used to measure their performance. (Section 4.1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models"
+        ],
+        "iclr25": [
+          "Permute-and-Flip: An optimally stable and watermarkable decoder for LLMs",
+          "GraphRouter: A Graph-based Router for LLM Selections"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+      "evidence": "To evaluate helpfulness, we assessed the quality of responses generated on the Alpaca dataset (Taori et al., 2023)...",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights"
+        ],
+        "emnlp25": [
+          "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise",
+          "Too Helpful, Too Harmless, Too Honest or Just Right?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "General ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "evidence": "We set N g = 4 general evaluation tasks, covering Hellaswag (Zellers et al., 2019), CommonsenseQA (Talmor et al., 2018), Alpaca (Hendrycks et al., 2020), and BBH-Object-Count (Srivastava et al., 2022) (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "evidence": "IP = 1 N g PN g j=1 \u02c6a T e j N , which is the average in-context performance on N g general evaluation tasks... We set N g = 4 general evaluation tasks, covering Hellaswag (Zellers et al., 2019), CommonsenseQA (Talmor et al., 2018), Alpaca (Hendrycks et al., 2020), and BBH-Object-Count (Srivastava et al., 2022) (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Beware of Calibration Data for Pruning Large Language Models",
+      "evidence": "Instead, we choose the Alpaca (Taori et al., 2023) dataset, distinct from all four calibration data sources, as our language modeling test data. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Beware of Calibration Data for Pruning Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Semantic consistency",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Waste Not, Want Not; Recycled Gumbel Noise Improves Consistency in Natural Language Generation",
+      "evidence": "We create semantically equivalent pairs of questions for evaluation by randomly sampling 300 questions from the Alpaca dataset (Taori et al., 2023) \u2014 a popular human-preference dataset - and rephrasing them using gpt-4o mini. (Section 6.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Waste Not, Want Not; Recycled Gumbel Noise Improves Consistency in Natural Language Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "JoPA: Explaining Large Language Model's Generation via Joint Prompt Attribution",
+      "evidence": "We employ three distinct text generation datasets: Alpaca (Taori et al., 2023), tldr_news (Belv\u00e8ze, 2022), and MHC (Amod, 2024), to evaluate the effectiveness of our method across various generation tasks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "JoPA: Explaining Large Language Model's Generation via Joint Prompt Attribution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Refusal",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Programming Refusal with Conditional Activation Steering",
+      "evidence": "\u201cFor the refusal behavior vector, we randomly select 100 instructions from the Alpaca dataset ... and append them with 100 typical refusal or compliance behavior prefixes as responses\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Programming Refusal with Conditional Activation Steering"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing description is an instruction-following dataset, often described as 52,000 instruction-following demonstrations or instruction-response pairs. Some definitions make its format more explicit as instruction, input, output triples, and papers also refer to the Alpaca training dataset, a cleaned version of Alpaca, code prompts from Alpaca, and an Alpaca subset without unsafe instructions. A smaller line of work uses it less as a standalone tuning set and more as a source of human-written prompts, out-of-domain queries, seed data, or target and anti-target prompts."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link it to 5 constructs and 4 behavioral indicators, and the dominant measurement claim is instruction following. It is also reported as measuring helpfulness and question answering, while smaller lines of work use it for general ability and text generation. Overall, papers spread its use across several targets rather than tying it to a single construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it. In practice, papers position it in several roles: as a fine-tuning or supervised instruction-tuning set, as calibration and recovery-tuning data after pruning or compression, as language-modeling test data, and as a source of control, seed, or out-of-domain queries. When it appears alongside other resources, recurring pairings include WikiText-2 and FLAN v2 in training setups, and SAMSum, CNN/DM, and GSM8K in broader evaluation suites."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "A few papers work with restricted or cleaned variants, referring to a cleaned version of Alpaca for post-training or focusing on Alpaca without unsafe instructions. Another stated concern is safety under benign fine-tuning: one study uses Alpaca to test whether utility-oriented fine-tuning can compromise safety."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing description is an instruction-following dataset, often described as 52,000 instruction-following demonstrations or instruction-response pairs. Some definitions make its format more explicit as instruction, input, output triples, and papers also refer to the Alpaca training dataset, a cleaned version of Alpaca, code prompts from Alpaca, and an Alpaca subset without unsafe instructions. A smaller line of work uses it less as a standalone tuning set and more as a source of human-written prompts, out-of-domain queries, seed data, or target and anti-target prompts.\n\nWhat it is claimed to measure. Papers link it to 5 constructs and 4 behavioral indicators, and the dominant measurement claim is instruction following. It is also reported as measuring helpfulness and question answering, while smaller lines of work use it for general ability and text generation. Overall, papers spread its use across several targets rather than tying it to a single construct.\n\nSpace of uses. No measurement instrument is linked to it. In practice, papers position it in several roles: as a fine-tuning or supervised instruction-tuning set, as calibration and recovery-tuning data after pruning or compression, as language-modeling test data, and as a source of control, seed, or out-of-domain queries. When it appears alongside other resources, recurring pairings include WikiText-2 and FLAN v2 in training setups, and SAMSum, CNN/DM, and GSM8K in broader evaluation suites.\n\nConcerns raised. A few papers work with restricted or cleaned variants, referring to a cleaned version of Alpaca for post-training or focusing on Alpaca without unsafe instructions. Another stated concern is safety under benign fine-tuning: one study uses Alpaca to test whether utility-oriented fine-tuning can compromise safety.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Data to Defense: The Role of Curation in Aligning Large Language Models Against Safety Compromise",
+      "DyePack: Provably Flagging Test Set Contamination in LLMs Using Backdoors",
+      "EverTracer: Hunting Stolen Large Language Models via Stealthy and Robust Probabilistic Fingerprint",
+      "Language Models Can be Efficiently Steered via Minimal Embedding Layer Transformations",
+      "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance",
+      "Priority on High-Quality: Selecting Instruction Data via Consistency Verification of Noise Injection",
+      "Refusal-Aware Red Teaming: Exposing Inconsistency in Safety Evaluations",
+      "Too Helpful, Too Harmless, Too Honest or Just Right?"
+    ],
+    "iclr24": [
+      "Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!",
+      "Language Model Inversion",
+      "NOLA: Compressing LoRA using Linear Combination of Random Basis",
+      "QA-LoRA: Quantization-Aware Low-Rank Adaptation of Large Language Models",
+      "SliceGPT: Compress Large Language Models by Deleting Rows and Columns"
+    ],
+    "iclr25": [
+      "Basis Sharing: Cross-Layer Parameter Sharing for Large Language Model Compression",
+      "Beware of Calibration Data for Pruning Large Language Models",
+      "Can Watermarks be Used to Detect LLM IP Infringement For Free?",
+      "Context-Parametric Inversion: Why Instruction Finetuning May Not Actually Improve Context Reliance",
+      "Cut Your Losses in Large-Vocabulary Language Models",
+      "DON\u2019T STOP ME NOW: EMBEDDING BASED SCHEDULING FOR LLMS",
+      "Distributed Speculative Inference (DSI): Speculation Parallelism for Provably Faster Lossless Language Model Inference",
+      "Durable Quantization Conditioned Misalignment Attack on Large Language Models",
+      "GraphRouter: A Graph-based Router for LLM Selections",
+      "Iterative Label Refinement Matters More than Preference Optimization under Weak Supervision",
+      "KaSA: Knowledge-Aware Singular-Value Adaptation of Large Language Models",
+      "MeteoRA: Multiple-tasks Embedded LoRA for Large Language Models",
+      "Mixture of Attentions For Speculative Decoding",
+      "MoDeGPT: Modular Decomposition for Large Language Model Compression",
+      "Permute-and-Flip: An optimally stable and watermarkable decoder for LLMs",
+      "Programming Refusal with Conditional Activation Steering",
+      "SWIFT: On-the-Fly Self-Speculative Decoding for LLM Inference Acceleration",
+      "TIS-DPO: Token-level Importance Sampling for Direct Preference Optimization With Estimated Weights",
+      "Towards Optimal Multi-draft Speculative Decoding",
+      "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models",
+      "Unlocking the Power of Function Vectors for Characterizing and Mitigating Catastrophic Forgetting in Continual Instruction Tuning",
+      "You Only Prune Once: Designing Calibration-Free Model Compression With Policy Learning"
+    ],
+    "icml25": [
+      "Activation Space Interventions Can Be Transferred Between Large Language Models",
+      "BanditSpec: Adaptive Speculative Decoding via Bandit Algorithms",
+      "Detecting Strategic Deception with Linear Probes",
+      "Gumiho: A Hybrid Architecture to Prioritize Early Tokens in Speculative Decoding",
+      "La RoSA: Enhancing LLM Efficiency via Layerwise Rotated Sparse Activation",
+      "Mask-Enhanced Autoregressive Prediction: Pay Less Attention to Learn More",
+      "Occult: Optimizing Collaborative Communications across Experts for Accelerated Parallel MoE Training and Inference",
+      "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+      "The Geometry of Refusal in Large Language Models: Concept Cones and Representational Independence",
+      "The Illusion of Role Separation: Hidden Shortcuts in LLM Role Learning (and How to Fix Them)",
+      "Theoretical guarantees on the best-of-n alignment policy",
+      "Vulnerability-Aware Alignment: Mitigating Uneven Forgetting in Harmful Fine-Tuning"
+    ],
+    "naacl25": [
+      "Mamba-Shedder: Post-Transformer Compression for Efficient Selective Structured State Space Models",
+      "Prompt Compression for Large Language Models: A Survey",
+      "SSH: Sparse Spectrum Adaptation via Discrete Hartley Transformation"
+    ],
+    "neurips24": [
+      "Adversarial Representation Engineering: A General Model Editing Framework for Large Language Models",
+      "D-LLM: A Token Adaptive Computing Resource Allocation Strategy for Large Language Models",
+      "DISP-LLM: Dimension-Independent Structural Pruning for Large Language Models",
+      "IDGen: Item Discrimination Induced Prompt Generation for LLM Evaluation",
+      "Learning to Reason via Program Generation, Emulation, and Search",
+      "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+    ],
+    "acl25": [
+      "A Drop-In Solution for On-the-Fly Adaptation of Speculative Decoding in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 8,
+    "iclr24": 5,
+    "iclr25": 22,
+    "icml25": 12,
+    "naacl25": 3,
+    "neurips24": 6,
+    "acl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

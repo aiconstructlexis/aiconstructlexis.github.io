@@ -1,0 +1,42 @@
+{
+  "canonical_name": "Honest response generation",
+  "type": "behavior",
+  "canonical_definition": "Producing a model output that truthfully communicates facts or admits to prior misdeeds without intent to mislead.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Honest response generation"
+  ],
+  "papers": [
+    "Detecting Strategic Deception with Linear Probes"
+  ],
+  "paper_count": 1,
+  "definitions": [
+    {
+      "text": "Producing a model output that truthfully communicates facts or admits to prior misdeeds without intent to mislead.",
+      "papers": [
+        "Detecting Strategic Deception with Linear Probes"
+      ],
+      "original_name": "Honest response generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "Producing a model output that truthfully communicates facts or admits to prior misdeeds without intent to mislead.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Detecting Strategic Deception with Linear Probes"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 1
+  },
+  "conferences": [
+    "icml25"
+  ]
+}

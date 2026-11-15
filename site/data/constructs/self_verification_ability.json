@@ -1,0 +1,124 @@
+{
+  "canonical_name": "Self-verification ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed papers, the prevailing usage treats self-verification ability as an inherent, intrinsic, or emergent model capability to assess the correctness, validity, or quality of its own outputs, solutions, or reasoning steps, sometimes explicitly without external ground truth or assistance. Several papers make this capability concrete as code-based validation, natural-language checking, or confirmation of conclusions and overlooked cases. A smaller line uses the same label for a technique or procedure, namely prompting an LLM to reconsider a judgment or verify an extracted entity type, so the main divide is between self-verification as a latent capacity and as an elicited routine.\n\nSpace of facets. Papers differentiate the construct mainly by what is being checked and at what granularity. Some describe checking final answers, others verifying intermediate reasoning steps, reasoning trajectories, or the feasibility of an already generated reasoning path, and one formulation recasts it as solution summarization, where the model recalls intermediate steps, organizes them, and works backward to check consistency. Related labels remain nearby rather than fully merged: self-evaluation is used for assessing correctness and progress and for allocating self-assigned rewards, self-verification is discussed alongside self-correction and trial-and-error, and one paper mentions self-consistency separately from self-verification.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to it. When papers operationalize it directly, they usually do so procedurally: generating and ranking multiple answers, executing generated code to verify answers and then voting among them, asking the model to reconsider a previous judgment, checking whether an extracted entity has the correct type before retaining it, selecting among sampled responses through natural-language self-verification, or training the model to predict [eos] versus [refine] as an intrinsic verification signal. These operationalizations all instantiate internal checking, but they range from code execution to prompt-based re-evaluation and token-level refinement.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Self-verification",
+    "Solution summarization",
+    "Self-evaluation"
+  ],
+  "papers": [
+    "GRAT: Guiding Retrieval-Augmented Reasoning through Process Rewards Tree Search",
+    "FacLens: Transferable Probe for Foreseeing Non-Factuality in Fact-Seeking Question Answering of Large Language Models",
+    "Boosting of Thoughts: Trial-and-Error Problem Solving with Large Language Models",
+    "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+    "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+    "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+    "CogMath: Assessing LLMs\u2019 Authentic Mathematical Ability from a Human Cognitive Perspective",
+    "Steer LLM Latents for Hallucination Detection",
+    "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification",
+    "T1: Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling",
+    "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification",
+    "LLM-Human Pipeline for Cultural Grounding of Conversations",
+    "MASTER: A Multi-Agent System with LLM Specialized MCTS",
+    "PICLe: Pseudo-annotations for In-Context Learning in Low-Resource Named Entity Detection",
+    "AGILE: A Novel Reinforcement Learning Framework of LLM Agents"
+  ],
+  "paper_count": 15,
+  "definitions": [
+    {
+      "text": "The inherent ability of a model to assess the correctness of its own generated solutions or reasoning steps, particularly by generating and executing code to validate an answer.",
+      "papers": [
+        "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+        "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+        "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification",
+        "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification",
+        "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification",
+        "T1: Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling"
+      ],
+      "original_name": "Self-verification"
+    },
+    {
+      "text": "The latent ability to reflect on and verify one's own reasoning process, including explaining intermediate steps and performing backward reasoning to check consistency.",
+      "papers": [
+        "CogMath: Assessing LLMs\u2019 Authentic Mathematical Ability from a Human Cognitive Perspective"
+      ],
+      "original_name": "Solution summarization"
+    },
+    {
+      "text": "The model's capacity to assess the correctness and progress of its own reasoning steps and solutions without relying on external ground truth.",
+      "papers": [
+        "MASTER: A Multi-Agent System with LLM Specialized MCTS"
+      ],
+      "original_name": "Self-evaluation"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed papers, the prevailing usage treats self-verification ability as an inherent, intrinsic, or emergent model capability to assess the correctness, validity, or quality of its own outputs, solutions, or reasoning steps, sometimes explicitly without external ground truth or assistance. Several papers make this capability concrete as code-based validation, natural-language checking, or confirmation of conclusions and overlooked cases. A smaller line uses the same label for a technique or procedure, namely prompting an LLM to reconsider a judgment or verify an extracted entity type, so the main divide is between self-verification as a latent capacity and as an elicited routine."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers differentiate the construct mainly by what is being checked and at what granularity. Some describe checking final answers, others verifying intermediate reasoning steps, reasoning trajectories, or the feasibility of an already generated reasoning path, and one formulation recasts it as solution summarization, where the model recalls intermediate steps, organizes them, and works backward to check consistency. Related labels remain nearby rather than fully merged: self-evaluation is used for assessing correctness and progress and for allocating self-assigned rewards, self-verification is discussed alongside self-correction and trial-and-error, and one paper mentions self-consistency separately from self-verification."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument and no behavioral indicator are linked to it. When papers operationalize it directly, they usually do so procedurally: generating and ranking multiple answers, executing generated code to verify answers and then voting among them, asking the model to reconsider a previous judgment, checking whether an extracted entity has the correct type before retaining it, selecting among sampled responses through natural-language self-verification, or training the model to predict [eos] versus [refine] as an intrinsic verification signal. These operationalizations all instantiate internal checking, but they range from code execution to prompt-based re-evaluation and token-level refinement."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed papers, the prevailing usage treats self-verification ability as an inherent, intrinsic, or emergent model capability to assess the correctness, validity, or quality of its own outputs, solutions, or reasoning steps, sometimes explicitly without external ground truth or assistance. Several papers make this capability concrete as code-based validation, natural-language checking, or confirmation of conclusions and overlooked cases. A smaller line uses the same label for a technique or procedure, namely prompting an LLM to reconsider a judgment or verify an extracted entity type, so the main divide is between self-verification as a latent capacity and as an elicited routine.\n\nSpace of facets. Papers differentiate the construct mainly by what is being checked and at what granularity. Some describe checking final answers, others verifying intermediate reasoning steps, reasoning trajectories, or the feasibility of an already generated reasoning path, and one formulation recasts it as solution summarization, where the model recalls intermediate steps, organizes them, and works backward to check consistency. Related labels remain nearby rather than fully merged: self-evaluation is used for assessing correctness and progress and for allocating self-assigned rewards, self-verification is discussed alongside self-correction and trial-and-error, and one paper mentions self-consistency separately from self-verification.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to it. When papers operationalize it directly, they usually do so procedurally: generating and ranking multiple answers, executing generated code to verify answers and then voting among them, asking the model to reconsider a previous judgment, checking whether an extracted entity has the correct type before retaining it, selecting among sampled responses through natural-language self-verification, or training the model to predict [eos] versus [refine] as an intrinsic verification signal. These operationalizations all instantiate internal checking, but they range from code execution to prompt-based re-evaluation and token-level refinement.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "GRAT: Guiding Retrieval-Augmented Reasoning through Process Rewards Tree Search"
+    ],
+    "emnlp25": [
+      "FacLens: Transferable Probe for Foreseeing Non-Factuality in Fact-Seeking Question Answering of Large Language Models"
+    ],
+    "iclr24": [
+      "Boosting of Thoughts: Trial-and-Error Problem Solving with Large Language Models",
+      "CRITIC: Large Language Models Can Self-Correct with Tool-Interactive Critiquing",
+      "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+      "Solving Challenging Math Word Problems Using GPT-4 Code Interpreter with Code-based Self-Verification"
+    ],
+    "icml25": [
+      "CogMath: Assessing LLMs\u2019 Authentic Mathematical Ability from a Human Cognitive Perspective",
+      "Steer LLM Latents for Hallucination Detection",
+      "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification",
+      "T1: Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling",
+      "ReVISE: Learning to Refine at Test-Time via Intrinsic Self-Verification"
+    ],
+    "naacl25": [
+      "LLM-Human Pipeline for Cultural Grounding of Conversations",
+      "MASTER: A Multi-Agent System with LLM Specialized MCTS",
+      "PICLe: Pseudo-annotations for In-Context Learning in Low-Resource Named Entity Detection"
+    ],
+    "neurips24": [
+      "AGILE: A Novel Reinforcement Learning Framework of LLM Agents"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr24": 4,
+    "icml25": 5,
+    "naacl25": 3,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

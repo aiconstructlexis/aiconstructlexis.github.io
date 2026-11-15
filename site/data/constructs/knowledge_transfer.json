@@ -1,0 +1,636 @@
+{
+  "canonical_name": "Knowledge transfer",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is transferability: the degree to which something learned in one setting remains effective in another, usually across models, tasks, datasets, languages, modalities, or training objectives. In this usage, what transfers is often a prompt, jailbreak attack, policy, detector, value network, or learned algorithm rather than the whole model, and papers variously describe cases where transfer is weak, such as continuous prompts not being directly transferable, and cases of broad transfer across unseen models or tasks. A smaller line of work uses knowledge transfer more broadly for a model or multi-expert system reusing previously learned knowledge on downstream tasks, including cross-lingual, cross-domain, and cross-modality application. The main variation is therefore both in scope and locus: some definitions treat it as a latent ability of models or experts, while others treat it as the observed degree of performance carryover of a specific learned artifact.\n\nSpace of facets. Most papers organize the concept through subtypes tied to setting rather than through a single common taxonomy. In continual learning, some authors explicitly define knowledge transfer as including forward transfer, earlier tasks helping later ones, and backward transfer, later learning helping earlier tasks; benchmark-reduction work further distinguishes task transferability from in-context transferability, where transfer is estimated from how much one task's exemplars help another. Other papers narrow the umbrella to prompt transferability, skill transfer, ability transfer across languages, cross-task transfer across modalities or settings, and competence transfer between semantically related goals. The terminology is correspondingly broad, with knowledge transfer, transferability, knowledge transferability, transfer learning, task transfer, and competence transfer used for overlapping ideas about carrying learned behavior across settings.\n\nSpace of measurement. Papers link the construct to 2 measurement instruments, GSM8K and TruthfulQA, both used as benchmarks, and to 2 behavioral indicators, Time series forecasting and Catastrophic forgetting, though the latter appear in causal or related claims rather than as direct instruments. Operationalization is usually outcome-based: authors apply a prompt, attack, detector, value network, or other learned component from one model, task, dataset, language, or modality to another and judge transfer by retained or improved performance, sometimes through cross-task evaluation, attack success rates, ablations, or transfer ICL, where performance from task-i exemplars on task-j is taken to reflect transferability. One multilingual paper also says TCd directly measures a model's ability to transfer knowledge across languages through consistent factual answers. These operationalizations mostly match the dominant definition as cross-setting effectiveness, though some broader uses infer knowledge transfer from downstream benchmark gains or from time-series forecasting performance after ablations rather than from a dedicated transfer score.\n\nLinks. One paper claims a causal relationship from Knowledge transfer to Generalization, saying prior knowledge lets models generalize better to new tasks or domains, while a few other papers relate transferability to prompt or structural prompt generalization. Separate single-paper claims describe a causal relationship from Knowledge transfer to Time series forecasting, and causal relationships from Abstraction and Cross-lingual alignment to Knowledge transfer; one paper also reports that Expressive power correlates with Knowledge transfer, with larger source models showing lower prompt transfer performance. Other papers relate Knowledge transfer to In-context learning, Robustness, Continual learning, Knowledge manipulation, Expert specialization, Parametric knowledge, Rule-based reasoning, and Catastrophic forgetting.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Transferability",
+    "Knowledge transfer",
+    "Ability transfer",
+    "Transfer learning",
+    "Skill transfer",
+    "Transfer",
+    "Task transfer",
+    "Cross-task transfer",
+    "In-context transferability",
+    "Task transferability",
+    "Backward transfer",
+    "Forward transfer",
+    "Prompt transferability",
+    "Knowledge transferability",
+    "Competence transfer"
+  ],
+  "papers": [
+    "Controllable Style Arithmetic with Language Models",
+    "Cuckoo: An IE Free Rider Hatched by Massive Nutrition in LLM's Nest",
+    "From Neurons to Semantics: Evaluating Cross-Linguistic Alignment Capabilities of Large Language Models via Neurons Alignment",
+    "Guiding not Forcing: Enhancing the Transferability of Jailbreaking Attacks on LLMs via Removing Superfluous Constraints",
+    "Have We Designed Generalizable Structural Knowledge Promptings? Systematic Evaluation and Rethinking",
+    "Multi-task Adversarial Attacks against Black-box Model with Few-shot Queries",
+    "Open-World Planning via Lifted Regression with LLM-Inferred Affordances for Embodied Agents",
+    "Recurrent Knowledge Identification and Fusion for Language Model Continual Learning",
+    "TeamLoRA: Boosting Low-Rank Adaptation with Expert Collaboration and Competition",
+    "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+    "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment",
+    "Attention Eclipse: Manipulating Attention to Bypass LLM Safety-Alignment",
+    "Do You Know About My Nation? Investigating Multilingual Language Models' Cultural Literacy Through Factual Knowledge",
+    "Enhancing Large Language Model for Knowledge Graph Completion via Structure-Aware Alignment-Tuning",
+    "Evaluating the Effectiveness and Scalability of LLM-Based Data Augmentation for Retrieval",
+    "Extracting and Combining Abilities For Building Multi-lingual Ability-enhanced Large Language Models",
+    "Learning from Few Samples: A Novel Approach for High-Quality Malcode Generation",
+    "ModalPrompt: Towards Efficient Multimodal Continual Instruction Tuning with Dual-Modality Guided Prompt",
+    "ORPP: Self-Optimizing Role-playing Prompts to Enhance Language Model Capabilities",
+    "Personality Vector: Modulating Personality of Large Language Models by Model Merging",
+    "SenDetEX: Sentence-Level AI-Generated Text Detection for Human-AI Hybrid Content via Style and Context Fusion",
+    "Transferable Direct Prompt Injection via Activation-Guided MCMC Sampling",
+    "AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Language Models",
+    "Detecting Machine-Generated Texts by Multi-Population Aware Optimization for Maximum Mean Discrepancy",
+    "Making Pre-trained Language Models Great on Tabular Prediction",
+    "Plug-and-Play Policy Planner for Large Language Model Powered Dialogue Agents",
+    "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+    "Scalable Language Model with Generalized Continual Learning",
+    "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+    "Understanding and Mitigating the Label Noise in Pre-training on Downstream Tasks",
+    "Zero-Shot Continuous Prompt Transfer: Generalizing Task Semantics Across Language Models",
+    "(Mis)Fitting Scaling Laws: A Survey of Scaling Law Fitting Techniques in Deep Learning",
+    "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+    "BenTo: Benchmark Reduction with In-Context Transferability",
+    "Building, Reusing, and Generalizing Abstract Representations from Concrete Sequences",
+    "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+    "Diffusion-based Neural Network Weights Generation",
+    "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+    "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+    "Implicit In-context Learning",
+    "Improved Techniques for Optimization-Based Jailbreaking on Large Language Models",
+    "Jailbreaking as a Reward Misspecification Problem",
+    "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+    "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+    "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+    "Learning Diverse Attacks on Large Language Models for Robust Red-Teaming and Safety Tuning",
+    "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models",
+    "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+    "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+    "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+    "Task-Adaptive Pretrained Language Models via Clustered-Importance Sampling",
+    "Understanding and Enhancing the Transferability of Jailbreaking Attacks",
+    "AdaptiveStep: Automatically Dividing Reasoning Step through Model Confidence",
+    "AdvAgent: Controllable Blackbox Red-teaming on Web Agents",
+    "Adversarial Reasoning at Jailbreaking Time",
+    "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+    "Efficient Personalized Adaptation for Physiological Signal Foundation Model",
+    "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs",
+    "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+    "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+    "LoRA-Gen: Specializing Large Language Model via Online LoRA Generation",
+    "MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces",
+    "Multi-agent Architecture Search via Agentic Supernet",
+    "PINNsAgent: Automated PDE Surrogation with Large Language Models",
+    "SAE-V: Interpreting Multimodal Models for Enhanced Alignment",
+    "Speculate, then Collaborate: Fusing Knowledge of Language Models during Decoding",
+    "Synthetic Text Generation for Training Large Language Models via Gradient Matching",
+    "TAROT: Targeted Data Selection via Optimal Transport",
+    "Towards Universal Offline Black-Box Optimization via Learning Language Model Embeddings",
+    "TruthFlow: Truthful LLM Generation via Representation Flow Correction",
+    "Can Large Language Models Invent Algorithms to Improve Themselves?: Algorithm Discovery for Recursive Self-Improvement through Reinforcement Learning",
+    "Extracting and Understanding the Superficial Knowledge in Alignment",
+    "Iterative Self-Tuning LLMs for Enhanced Jailbreaking Capabilities",
+    "QAVA: Query-Agnostic Visual Attack to Large Vision-Language Models",
+    "SeqAR: Jailbreak LLMs with Sequential Auto-Generated Characters",
+    "Stealthy Jailbreak Attacks on Large Language Models via Benign Data Mirroring",
+    "Stronger Universal and Transferable Attacks by Suppressing Refusals",
+    "Transferable Post-training via Inverse Value Learning",
+    "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+    "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+    "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning",
+    "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+    "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+    "Learn more, but bother less: parameter efficient continual learning",
+    "Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving",
+    "Mixture of Demonstrations for In-Context Learning",
+    "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+    "Protecting Your LLMs with Information Bottleneck",
+    "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+    "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+    "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+    "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+    "Training Compute-Optimal Protein Language Models",
+    "Tri-Level Navigator: LLM-Empowered Tri-Level Learning for Time Series OOD Generalization"
+  ],
+  "paper_count": 94,
+  "definitions": [
+    {
+      "text": "The degree to which continuous prompts learned on one language model can be effectively applied to another, reflecting the generalizability of task semantics across model architectures and embedding spaces.",
+      "papers": [
+        "AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Language Models",
+        "Detecting Machine-Generated Texts by Multi-Population Aware Optimization for Maximum Mean Discrepancy",
+        "Making Pre-trained Language Models Great on Tabular Prediction",
+        "Plug-and-Play Policy Planner for Large Language Model Powered Dialogue Agents",
+        "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+        "Understanding and Mitigating the Label Noise in Pre-training on Downstream Tasks",
+        "Zero-Shot Continuous Prompt Transfer: Generalizing Task Semantics Across Language Models",
+        "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+        "Stronger Universal and Transferable Attacks by Suppressing Refusals",
+        "QAVA: Query-Agnostic Visual Attack to Large Vision-Language Models",
+        "Stealthy Jailbreak Attacks on Large Language Models via Benign Data Mirroring",
+        "SeqAR: Jailbreak LLMs with Sequential Auto-Generated Characters",
+        "Can Large Language Models Invent Algorithms to Improve Themselves?: Algorithm Discovery for Recursive Self-Improvement through Reinforcement Learning",
+        "Transferable Post-training via Inverse Value Learning",
+        "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+        "Extracting and Understanding the Superficial Knowledge in Alignment",
+        "Iterative Self-Tuning LLMs for Enhanced Jailbreaking Capabilities",
+        "Cuckoo: An IE Free Rider Hatched by Massive Nutrition in LLM's Nest",
+        "Learning from Few Samples: A Novel Approach for High-Quality Malcode Generation"
+      ],
+      "original_name": "Transferability"
+    },
+    {
+      "text": "The latent ability of domain-specific experts to share and apply their learned knowledge to relevant downstream tasks within a multi-expert system.",
+      "papers": [
+        "TeamLoRA: Boosting Low-Rank Adaptation with Expert Collaboration and Competition",
+        "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models"
+      ],
+      "original_name": "Knowledge transfer"
+    },
+    {
+      "text": "The latent capacity to transfer learned capabilities from one language or domain to another without retraining, preserving the core knowledge while adapting to new linguistic contexts.",
+      "papers": [
+        "Extracting and Combining Abilities For Building Multi-lingual Ability-enhanced Large Language Models"
+      ],
+      "original_name": "Ability transfer"
+    },
+    {
+      "text": "The ability of a model to leverage knowledge gained from training on one task or objective to improve its performance on a different but related task or objective.",
+      "papers": [
+        "Training Compute-Optimal Protein Language Models"
+      ],
+      "original_name": "Transfer learning"
+    },
+    {
+      "text": "The degree to which a capability or mechanism learned on one task can be successfully applied or adapted to improve performance on a different task.",
+      "papers": [
+        "Iteration Head: A Mechanistic Study of Chain-of-Thought"
+      ],
+      "original_name": "Skill transfer"
+    },
+    {
+      "text": "The model's ability to effectively transfer learned patterns and knowledge from source domains to improve performance on different target domains.",
+      "papers": [
+        "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+        "Do You Know About My Nation? Investigating Multilingual Language Models' Cultural Literacy Through Factual Knowledge"
+      ],
+      "original_name": "Knowledge transferability"
+    },
+    {
+      "text": "The ability to apply learned knowledge, such as abstract variables, from a training context to a new, related context.",
+      "papers": [
+        "Building, Reusing, and Generalizing Abstract Representations from Concrete Sequences"
+      ],
+      "original_name": "Transfer"
+    },
+    {
+      "text": "The ability of a model trained for one task to perform well on a different, unevaluated task.",
+      "papers": [
+        "Task-Adaptive Pretrained Language Models via Clustered-Importance Sampling"
+      ],
+      "original_name": "Task transfer"
+    },
+    {
+      "text": "The ability to apply knowledge or skills learned from one set of tasks to perform new, untrained tasks, often by composing existing capabilities.",
+      "papers": [
+        "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models"
+      ],
+      "original_name": "Cross-task transfer"
+    },
+    {
+      "text": "A task-level latent property estimated from how much exemplars from one task improve performance on another task when used as in-context examples.",
+      "papers": [
+        "BenTo: Benchmark Reduction with In-Context Transferability"
+      ],
+      "original_name": "In-context transferability"
+    },
+    {
+      "text": "The degree to which knowledge or skill learned from one task improves performance on another task, reflecting overlap or generalization across tasks.",
+      "papers": [
+        "BenTo: Benchmark Reduction with In-Context Transferability"
+      ],
+      "original_name": "Task transferability"
+    },
+    {
+      "text": "The extent to which learning new tasks improves performance on previously learned tasks.",
+      "papers": [
+        "LeanAgent: Lifelong Learning for Formal Theorem Proving"
+      ],
+      "original_name": "Backward transfer"
+    },
+    {
+      "text": "The phenomenon where knowledge gained from previous tasks improves the learning of new, subsequent tasks.",
+      "papers": [
+        "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection"
+      ],
+      "original_name": "Forward transfer"
+    },
+    {
+      "text": "The latent ability of a soft prompt tuned on one language model to maintain high performance when applied to a different, larger language model.",
+      "papers": [
+        "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs"
+      ],
+      "original_name": "Prompt transferability"
+    },
+    {
+      "text": "The phenomenon where practicing one goal improves performance on other semantically related goals, captured dynamically through learned representations rather than predefined groupings.",
+      "papers": [
+        "MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces"
+      ],
+      "original_name": "Competence transfer"
+    }
+  ],
+  "definition_count": 15,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Learn more, but bother less: parameter efficient continual learning",
+      "evidence": "This transfer is crucial as it allows the model to leverage previously acquired knowledge to better generalize to new tasks or domains. (Section 1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learn more, but bother less: parameter efficient continual learning"
+        ],
+        "iclr24": [
+          "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization"
+        ],
+        "acl25": [
+          "Have We Designed Generalizable Structural Knowledge Promptings? Systematic Evaluation and Rethinking"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning",
+      "evidence": "Moreover, the absence of the need to update model parameters also allows a good attribution result for ICL to be transferable across different language models. (Introduction)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning"
+        ],
+        "iclr25": [
+          "BenTo: Benchmark Reduction with In-Context Transferability"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Mixture of Demonstrations for In-Context Learning",
+      "evidence": "In this subsection, we aim to evaluate the robustness, especially the generalizability and transferability of our method MoD to various LLMs. (Section 4.5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Mixture of Demonstrations for In-Context Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Expressive power",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Zero-Shot Continuous Prompt Transfer: Generalizing Task Semantics Across Language Models",
+      "evidence": "We observed in Table 3 that a larger source model (either BERTlarge or RoBERTalarge) has lower transfer performance. This aligns with the intuition in Khashabi et al. (2022) that there could be a large number of similarly performing continuous prompts, residing in a large (and also deep) model\u2019s expressive embedding space... Therefore, the induced prompt may carry model specificity in addition to task semantics, limiting its transferability to other models. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Zero-Shot Continuous Prompt Transfer: Generalizing Task Semantics Across Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Time series forecasting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+      "evidence": "We attribute the performance gains of TIME-FFM to the valid knowledge transferability across domains. (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Catastrophic forgetting",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+      "evidence": "Cross-domain co-training on a large number of datasets only negatively impacts LLaGA. A similar phenomenon can also be observed when LLMs with cross-modality projectors are applied to CV [49], which may be related to catastrophic forgetting. (Section 4.2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge manipulation",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+      "evidence": "enhance the knowledge manipulation (e.g., knowledge recall, reasoning, and transfer) ability of LLMs. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Abstraction",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Building, Reusing, and Generalizing Abstract Representations from Concrete Sequences",
+      "evidence": "Higher levels of abstraction implies more flexible transfer",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Building, Reusing, and Generalizing Abstract Representations from Concrete Sequences"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Expert specialization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+      "evidence": "Thus, there exists a trade-off between the short-term cost savings from knowledge transfer and the long-term convergence efficiency through expert specialization. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TruthfulQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "evidence": "Bulilding on this success we further extended DAMO to LLMs, where is also delivered strong results on benchmarks such as TruthfulQA Lin et al. (2021), FACTOR Muhlgay et al. (2023), and GSM8K Cobbe et al. (2021), indicating that DAMO possesses notable transferability across different tasks and model types. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "GSM8K",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "evidence": "Bulilding on this success we further extended DAMO to LLMs, where is also delivered strong results on benchmarks such as TruthfulQA Lin et al. (2021), FACTOR Muhlgay et al. (2023), and GSM8K Cobbe et al. (2021), indicating that DAMO possesses notable transferability across different tasks and model types. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Continual learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+      "evidence": "Previous CL research posits that an effective CL method should address two primary challenges: 1) Catastrophic Forgetting (CF) ... and 2) Knowledge Transfer (KT), which includes both forward transfer and backward transfer. (Section 2.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-lingual alignment",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment",
+      "evidence": "A classic assumption in multilingual NLP is that more consistent multilingual representations facilitate easier knowledge transfer (Pan et al., 2021; Tang et al., 2022). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Parametric knowledge",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective",
+      "evidence": "Our findings highlight the critical factors contributing to the process of parametric knowledge transfer, underscoring the transferability of model parameters across LLMs of different scales. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Seeking Neural Nuggets: Knowledge Transfer in Large Language Models from a Parametric Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Rule-based reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models",
+      "evidence": "For rule-based reasoning, once a rule is formed through induction, it should be transferable.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 15,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is transferability: the degree to which something learned in one setting remains effective in another, usually across models, tasks, datasets, languages, modalities, or training objectives. In this usage, what transfers is often a prompt, jailbreak attack, policy, detector, value network, or learned algorithm rather than the whole model, and papers variously describe cases where transfer is weak, such as continuous prompts not being directly transferable, and cases of broad transfer across unseen models or tasks. A smaller line of work uses knowledge transfer more broadly for a model or multi-expert system reusing previously learned knowledge on downstream tasks, including cross-lingual, cross-domain, and cross-modality application. The main variation is therefore both in scope and locus: some definitions treat it as a latent ability of models or experts, while others treat it as the observed degree of performance carryover of a specific learned artifact."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Most papers organize the concept through subtypes tied to setting rather than through a single common taxonomy. In continual learning, some authors explicitly define knowledge transfer as including forward transfer, earlier tasks helping later ones, and backward transfer, later learning helping earlier tasks; benchmark-reduction work further distinguishes task transferability from in-context transferability, where transfer is estimated from how much one task's exemplars help another. Other papers narrow the umbrella to prompt transferability, skill transfer, ability transfer across languages, cross-task transfer across modalities or settings, and competence transfer between semantically related goals. The terminology is correspondingly broad, with knowledge transfer, transferability, knowledge transferability, transfer learning, task transfer, and competence transfer used for overlapping ideas about carrying learned behavior across settings."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link the construct to 2 measurement instruments, GSM8K and TruthfulQA, both used as benchmarks, and to 2 behavioral indicators, Time series forecasting and Catastrophic forgetting, though the latter appear in causal or related claims rather than as direct instruments. Operationalization is usually outcome-based: authors apply a prompt, attack, detector, value network, or other learned component from one model, task, dataset, language, or modality to another and judge transfer by retained or improved performance, sometimes through cross-task evaluation, attack success rates, ablations, or transfer ICL, where performance from task-i exemplars on task-j is taken to reflect transferability. One multilingual paper also says TCd directly measures a model's ability to transfer knowledge across languages through consistent factual answers. These operationalizations mostly match the dominant definition as cross-setting effectiveness, though some broader uses infer knowledge transfer from downstream benchmark gains or from time-series forecasting performance after ablations rather than from a dedicated transfer score."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper claims a causal relationship from Knowledge transfer to Generalization, saying prior knowledge lets models generalize better to new tasks or domains, while a few other papers relate transferability to prompt or structural prompt generalization. Separate single-paper claims describe a causal relationship from Knowledge transfer to Time series forecasting, and causal relationships from Abstraction and Cross-lingual alignment to Knowledge transfer; one paper also reports that Expressive power correlates with Knowledge transfer, with larger source models showing lower prompt transfer performance. Other papers relate Knowledge transfer to In-context learning, Robustness, Continual learning, Knowledge manipulation, Expert specialization, Parametric knowledge, Rule-based reasoning, and Catastrophic forgetting."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is transferability: the degree to which something learned in one setting remains effective in another, usually across models, tasks, datasets, languages, modalities, or training objectives. In this usage, what transfers is often a prompt, jailbreak attack, policy, detector, value network, or learned algorithm rather than the whole model, and papers variously describe cases where transfer is weak, such as continuous prompts not being directly transferable, and cases of broad transfer across unseen models or tasks. A smaller line of work uses knowledge transfer more broadly for a model or multi-expert system reusing previously learned knowledge on downstream tasks, including cross-lingual, cross-domain, and cross-modality application. The main variation is therefore both in scope and locus: some definitions treat it as a latent ability of models or experts, while others treat it as the observed degree of performance carryover of a specific learned artifact.\n\nSpace of facets. Most papers organize the concept through subtypes tied to setting rather than through a single common taxonomy. In continual learning, some authors explicitly define knowledge transfer as including forward transfer, earlier tasks helping later ones, and backward transfer, later learning helping earlier tasks; benchmark-reduction work further distinguishes task transferability from in-context transferability, where transfer is estimated from how much one task's exemplars help another. Other papers narrow the umbrella to prompt transferability, skill transfer, ability transfer across languages, cross-task transfer across modalities or settings, and competence transfer between semantically related goals. The terminology is correspondingly broad, with knowledge transfer, transferability, knowledge transferability, transfer learning, task transfer, and competence transfer used for overlapping ideas about carrying learned behavior across settings.\n\nSpace of measurement. Papers link the construct to 2 measurement instruments, GSM8K and TruthfulQA, both used as benchmarks, and to 2 behavioral indicators, Time series forecasting and Catastrophic forgetting, though the latter appear in causal or related claims rather than as direct instruments. Operationalization is usually outcome-based: authors apply a prompt, attack, detector, value network, or other learned component from one model, task, dataset, language, or modality to another and judge transfer by retained or improved performance, sometimes through cross-task evaluation, attack success rates, ablations, or transfer ICL, where performance from task-i exemplars on task-j is taken to reflect transferability. One multilingual paper also says TCd directly measures a model's ability to transfer knowledge across languages through consistent factual answers. These operationalizations mostly match the dominant definition as cross-setting effectiveness, though some broader uses infer knowledge transfer from downstream benchmark gains or from time-series forecasting performance after ablations rather than from a dedicated transfer score.\n\nLinks. One paper claims a causal relationship from Knowledge transfer to Generalization, saying prior knowledge lets models generalize better to new tasks or domains, while a few other papers relate transferability to prompt or structural prompt generalization. Separate single-paper claims describe a causal relationship from Knowledge transfer to Time series forecasting, and causal relationships from Abstraction and Cross-lingual alignment to Knowledge transfer; one paper also reports that Expressive power correlates with Knowledge transfer, with larger source models showing lower prompt transfer performance. Other papers relate Knowledge transfer to In-context learning, Robustness, Continual learning, Knowledge manipulation, Expert specialization, Parametric knowledge, Rule-based reasoning, and Catastrophic forgetting.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Controllable Style Arithmetic with Language Models",
+      "Cuckoo: An IE Free Rider Hatched by Massive Nutrition in LLM's Nest",
+      "From Neurons to Semantics: Evaluating Cross-Linguistic Alignment Capabilities of Large Language Models via Neurons Alignment",
+      "Guiding not Forcing: Enhancing the Transferability of Jailbreaking Attacks on LLMs via Removing Superfluous Constraints",
+      "Have We Designed Generalizable Structural Knowledge Promptings? Systematic Evaluation and Rethinking",
+      "Multi-task Adversarial Attacks against Black-box Model with Few-shot Queries",
+      "Open-World Planning via Lifted Regression with LLM-Inferred Affordances for Embodied Agents",
+      "Recurrent Knowledge Identification and Fusion for Language Model Continual Learning",
+      "TeamLoRA: Boosting Low-Rank Adaptation with Expert Collaboration and Competition"
+    ],
+    "emnlp25": [
+      "AIMMerging: Adaptive Iterative Model Merging Using Training Trajectories for Language Model Continual Learning",
+      "AlignX: Advancing Multilingual Large Language Models with Multilingual Representation Alignment",
+      "Attention Eclipse: Manipulating Attention to Bypass LLM Safety-Alignment",
+      "Do You Know About My Nation? Investigating Multilingual Language Models' Cultural Literacy Through Factual Knowledge",
+      "Enhancing Large Language Model for Knowledge Graph Completion via Structure-Aware Alignment-Tuning",
+      "Evaluating the Effectiveness and Scalability of LLM-Based Data Augmentation for Retrieval",
+      "Extracting and Combining Abilities For Building Multi-lingual Ability-enhanced Large Language Models",
+      "Learning from Few Samples: A Novel Approach for High-Quality Malcode Generation",
+      "ModalPrompt: Towards Efficient Multimodal Continual Instruction Tuning with Dual-Modality Guided Prompt",
+      "ORPP: Self-Optimizing Role-playing Prompts to Enhance Language Model Capabilities",
+      "Personality Vector: Modulating Personality of Large Language Models by Model Merging",
+      "SenDetEX: Sentence-Level AI-Generated Text Detection for Human-AI Hybrid Content via Style and Context Fusion",
+      "Transferable Direct Prompt Injection via Activation-Guided MCMC Sampling"
+    ],
+    "iclr24": [
+      "AutoDAN: Generating Stealthy Jailbreak Prompts on Aligned Large Language Models",
+      "Detecting Machine-Generated Texts by Multi-Population Aware Optimization for Maximum Mean Discrepancy",
+      "Making Pre-trained Language Models Great on Tabular Prediction",
+      "Plug-and-Play Policy Planner for Large Language Model Powered Dialogue Agents",
+      "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+      "Scalable Language Model with Generalized Continual Learning",
+      "Time-LLM: Time Series Forecasting by Reprogramming Large Language Models",
+      "Understanding and Mitigating the Label Noise in Pre-training on Downstream Tasks",
+      "Zero-Shot Continuous Prompt Transfer: Generalizing Task Semantics Across Language Models"
+    ],
+    "iclr25": [
+      "(Mis)Fitting Scaling Laws: A Survey of Scaling Law Fitting Techniques in Deep Learning",
+      "Adapt-$\\infty$: Scalable Continual Multimodal Instruction Tuning via Dynamic Data Selection",
+      "BenTo: Benchmark Reduction with In-Context Transferability",
+      "Building, Reusing, and Generalizing Abstract Representations from Concrete Sequences",
+      "DAMO: Decoding by Accumulating Activations Momentum for Mitigating Hallucinations in Vision-Language Models",
+      "Diffusion-based Neural Network Weights Generation",
+      "Drop-Upcycling: Training Sparse Mixture of Experts with Partial Re-initialization",
+      "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+      "Implicit In-context Learning",
+      "Improved Techniques for Optimization-Based Jailbreaking on Large Language Models",
+      "Jailbreaking as a Reward Misspecification Problem",
+      "Knowledge Graph Finetuning Enhances Knowledge Manipulation in Large Language Models",
+      "LLaVA-Interleave: Tackling Multi-image, Video, and 3D in Large Multimodal Models",
+      "LeanAgent: Lifelong Learning for Formal Theorem Proving",
+      "Learning Diverse Attacks on Large Language Models for Robust Red-Teaming and Safety Tuning",
+      "MIRAGE: Evaluating and Explaining Inductive Reasoning Process in Language Models",
+      "One Model Transfer to All: On Robust Jailbreak Prompts Generation against LLMs",
+      "REMEDY: Recipe Merging Dynamics in Large Vision-Language Models",
+      "ROUTE: Robust Multitask Tuning and Collaboration for Text-to-SQL",
+      "Task-Adaptive Pretrained Language Models via Clustered-Importance Sampling",
+      "Understanding and Enhancing the Transferability of Jailbreaking Attacks"
+    ],
+    "icml25": [
+      "AdaptiveStep: Automatically Dividing Reasoning Step through Model Confidence",
+      "AdvAgent: Controllable Blackbox Red-teaming on Web Agents",
+      "Adversarial Reasoning at Jailbreaking Time",
+      "Benign Samples Matter! Fine-tuning On Outlier Benign Samples Severely Breaks Safety",
+      "Efficient Personalized Adaptation for Physiological Signal Foundation Model",
+      "Efficient and Privacy-Preserving Soft Prompt Transfer for LLMs",
+      "Exploiting Presentative Feature Distributions for Parameter-Efficient Continual Learning of Large Language Models",
+      "Learngene Tells You How to Customize: Task-Aware Parameter Initialization at Flexible Scales",
+      "LoRA-Gen: Specializing Large Language Model via Online LoRA Generation",
+      "MAGELLAN: Metacognitive predictions of learning progress guide autotelic LLM agents in large goal spaces",
+      "Multi-agent Architecture Search via Agentic Supernet",
+      "PINNsAgent: Automated PDE Surrogation with Large Language Models",
+      "SAE-V: Interpreting Multimodal Models for Enhanced Alignment",
+      "Speculate, then Collaborate: Fusing Knowledge of Language Models during Decoding",
+      "Synthetic Text Generation for Training Large Language Models via Gradient Matching",
+      "TAROT: Targeted Data Selection via Optimal Transport",
+      "Towards Universal Offline Black-Box Optimization via Learning Language Model Embeddings",
+      "TruthFlow: Truthful LLM Generation via Representation Flow Correction"
+    ],
+    "naacl25": [
+      "Can Large Language Models Invent Algorithms to Improve Themselves?: Algorithm Discovery for Recursive Self-Improvement through Reinforcement Learning",
+      "Extracting and Understanding the Superficial Knowledge in Alignment",
+      "Iterative Self-Tuning LLMs for Enhanced Jailbreaking Capabilities",
+      "QAVA: Query-Agnostic Visual Attack to Large Vision-Language Models",
+      "SeqAR: Jailbreak LLMs with Sequential Auto-Generated Characters",
+      "Stealthy Jailbreak Attacks on Large Language Models via Benign Data Mirroring",
+      "Stronger Universal and Transferable Attacks by Suppressing Refusals",
+      "Transferable Post-training via Inverse Value Learning",
+      "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack"
+    ],
+    "neurips24": [
+      "AgentPoison: Red-teaming LLM Agents via Poisoning Memory or Knowledge Bases",
+      "DETAIL: Task DEmonsTration Attribution for Interpretable In-context Learning",
+      "Fight Back Against Jailbreaking via Prompt Adversarial Tuning",
+      "Iteration Head: A Mechanistic Study of Chain-of-Thought",
+      "Learn more, but bother less: parameter efficient continual learning",
+      "Metacognitive Capabilities of LLMs: An Exploration in Mathematical Problem Solving",
+      "Mixture of Demonstrations for In-Context Learning",
+      "Personalized Steering of Large Language Models: Versatile Steering Vectors Through Bi-directional Preference Optimization",
+      "Protecting Your LLMs with Information Bottleneck",
+      "Robust Prompt Optimization for Defending Language Models Against Jailbreaking Attacks",
+      "Shadowcast: Stealthy Data Poisoning Attacks Against Vision-Language Models",
+      "Text-space Graph Foundation Models: Comprehensive Benchmarks and New Insights",
+      "Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forecasting",
+      "Training Compute-Optimal Protein Language Models",
+      "Tri-Level Navigator: LLM-Empowered Tri-Level Learning for Time Series OOD Generalization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 9,
+    "emnlp25": 13,
+    "iclr24": 9,
+    "iclr25": 21,
+    "icml25": 18,
+    "naacl25": 9,
+    "neurips24": 15
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

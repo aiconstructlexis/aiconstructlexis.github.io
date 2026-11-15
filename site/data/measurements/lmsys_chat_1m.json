@@ -1,0 +1,105 @@
+{
+  "canonical_name": "LMSYS-Chat-1M",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, the prevailing description is a large dataset of real-world chat interactions. Definitions variously call it a dataset of real-world user prompts and conversations, real-world LLM conversations, or user-model conversations; one paper specifies an open-access collection of 1 million user conversations from the Chatbot Arena platform, while another describes real-world conversations with 25 state-of-the-art LLMs. Papers typically treat it as a source from which prompts or conversation samples are drawn for chat model fine-tuning and evaluation.\n\nWhat it is claimed to measure. Papers do not explicitly present LMSYS-Chat-1M as measuring any named construct or behavioral indicator. Instead, papers use it as an evaluation source in several ways: to assess non-adversarial reproduction in practical chat settings, to supply out-of-distribution prompts for classifier generalization tests, to represent realistic use cases, and to analyze real-world usage patterns. These uses spread across several evaluation aims rather than converging on one named measured construct.\n\nSpace of uses. Most commonly, papers use LMSYS-Chat-1M as a prompt or conversation pool for downstream experiments. It appears most often alongside WildChat, either as a parallel dataset for rerunning analyses or as one of two open-access real-world conversation collections; a smaller line of work contrasts it with UltraChat as synthetic. Other papers draw samples from it for specific procedures, including prompt selection for model fine-tuning, sampling anthropomorphic outputs from commercial models, and taking a small set of prompts to better represent real-world use cases.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LMSYS-chat-1M",
+    "LMSYS-Chat-1M",
+    "LMSys-Chat-1M",
+    "LmsysChat"
+  ],
+  "papers": [
+    "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems",
+    "Estimating LLM Consistency: A User Baseline vs Surrogate Metrics",
+    "REVIVING YOUR MNEME: Predicting The Side Effects of LLM Unlearning and Fine-Tuning via Sparse Model Diffing",
+    "Learning from negative feedback, or positive feedback or both",
+    "Measuring Non-Adversarial Reproduction of Training Data in Large Language Models",
+    "Idiosyncrasies in Large Language Models",
+    "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "A large-scale dataset of real-world user prompts and conversations used as a source of inputs for fine-tuning and evaluating chat-oriented language models.",
+      "papers": [
+        "Learning from negative feedback, or positive feedback or both"
+      ],
+      "original_name": "LMSYS-chat-1M"
+    },
+    {
+      "text": "A large dataset of real-world LLM conversations used here to assess non-adversarial reproduction in practical chat settings.",
+      "papers": [
+        "Measuring Non-Adversarial Reproduction of Training Data in Large Language Models",
+        "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks",
+        "Estimating LLM Consistency: A User Baseline vs Surrogate Metrics"
+      ],
+      "original_name": "LMSYS-Chat-1M"
+    },
+    {
+      "text": "A dataset of real-world conversations with 25 state-of-the-art LLMs, used to sample anthropomorphic outputs from commercial models.",
+      "papers": [
+        "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems"
+      ],
+      "original_name": "LMSys-Chat-1M"
+    },
+    {
+      "text": "A dataset capturing real-world user interactions, used as a source of out-of-distribution prompts for testing classifier generalization.",
+      "papers": [
+        "Idiosyncrasies in Large Language Models"
+      ],
+      "original_name": "LmsysChat"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, the prevailing description is a large dataset of real-world chat interactions. Definitions variously call it a dataset of real-world user prompts and conversations, real-world LLM conversations, or user-model conversations; one paper specifies an open-access collection of 1 million user conversations from the Chatbot Arena platform, while another describes real-world conversations with 25 state-of-the-art LLMs. Papers typically treat it as a source from which prompts or conversation samples are drawn for chat model fine-tuning and evaluation."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers do not explicitly present LMSYS-Chat-1M as measuring any named construct or behavioral indicator. Instead, papers use it as an evaluation source in several ways: to assess non-adversarial reproduction in practical chat settings, to supply out-of-distribution prompts for classifier generalization tests, to represent realistic use cases, and to analyze real-world usage patterns. These uses spread across several evaluation aims rather than converging on one named measured construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Most commonly, papers use LMSYS-Chat-1M as a prompt or conversation pool for downstream experiments. It appears most often alongside WildChat, either as a parallel dataset for rerunning analyses or as one of two open-access real-world conversation collections; a smaller line of work contrasts it with UltraChat as synthetic. Other papers draw samples from it for specific procedures, including prompt selection for model fine-tuning, sampling anthropomorphic outputs from commercial models, and taking a small set of prompts to better represent real-world use cases."
+    }
+  ],
+  "characterization": "What it is. Across papers, the prevailing description is a large dataset of real-world chat interactions. Definitions variously call it a dataset of real-world user prompts and conversations, real-world LLM conversations, or user-model conversations; one paper specifies an open-access collection of 1 million user conversations from the Chatbot Arena platform, while another describes real-world conversations with 25 state-of-the-art LLMs. Papers typically treat it as a source from which prompts or conversation samples are drawn for chat model fine-tuning and evaluation.\n\nWhat it is claimed to measure. Papers do not explicitly present LMSYS-Chat-1M as measuring any named construct or behavioral indicator. Instead, papers use it as an evaluation source in several ways: to assess non-adversarial reproduction in practical chat settings, to supply out-of-distribution prompts for classifier generalization tests, to represent realistic use cases, and to analyze real-world usage patterns. These uses spread across several evaluation aims rather than converging on one named measured construct.\n\nSpace of uses. Most commonly, papers use LMSYS-Chat-1M as a prompt or conversation pool for downstream experiments. It appears most often alongside WildChat, either as a parallel dataset for rerunning analyses or as one of two open-access real-world conversation collections; a smaller line of work contrasts it with UltraChat as synthetic. Other papers draw samples from it for specific procedures, including prompt selection for model fine-tuning, sampling anthropomorphic outputs from commercial models, and taking a small set of prompts to better represent real-world use cases.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems"
+    ],
+    "emnlp25": [
+      "Estimating LLM Consistency: A User Baseline vs Surrogate Metrics",
+      "REVIVING YOUR MNEME: Predicting The Side Effects of LLM Unlearning and Fine-Tuning via Sparse Model Diffing"
+    ],
+    "iclr25": [
+      "Learning from negative feedback, or positive feedback or both",
+      "Measuring Non-Adversarial Reproduction of Training Data in Large Language Models"
+    ],
+    "icml25": [
+      "Idiosyncrasies in Large Language Models",
+      "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 2,
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

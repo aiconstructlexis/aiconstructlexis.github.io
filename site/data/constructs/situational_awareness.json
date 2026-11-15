@@ -1,0 +1,156 @@
+{
+  "canonical_name": "Situational awareness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats situational awareness as a model's knowledge of itself and its circumstances, especially self-knowledge, the ability to infer its situation, and the capacity to act on that knowledge. As one study puts it, a model is situationally aware to the extent that it has \"self-knowledge\", can make \"inferences\" about its situation, and takes \"actions\" on that basis (Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs). Other papers define the same term in terms of perceiving and understanding operational context and the implications of a model's state, using knowledge about itself, its training context, and human supervisors to inform behavior, including recognizing evaluation or deployment, or perceiving environmental cues and other characters' behaviors, emotions, and intentions in dialogue. A smaller line of work places it in stepwise reasoning, defining it as the capacity to integrate contextual signals from the environment and internal reasoning state when weighting uncertainty across steps, so the main disagreement is over what counts as the relevant \"situation\": the model's own identity and training context, its operational context, a dialogue scene, or the current reasoning trajectory.\n\nSpace of facets. The most explicit decomposition breaks the construct into self-knowledge, situational inferences, and actions based on that knowledge. Other papers systematize it differently: one dialogue-focused paper represents it as \"SA = \u27e8EP, BA, EA, IA\u27e9\" formed through hierarchical perception and interpretation, while another specifies knowledge about itself, its training context, physical implementation, and how human supervisors are likely to respond to its behavior. Papers also place it near neighboring constructs rather than using a single boundary, relating it to self-awareness and situational inference, treating self-recognition as an instance of situational awareness, and noting that it \"should not be confused with notions of awareness in philosophy or psychology\" (The Alignment Problem from a Deep Learning Perspective).\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Even without linked measures, papers often describe behavioral operationalizations: they ask whether a model knows which entity it is, can infer its situation, and acts on that knowledge, and one paper explicitly says the construct can be behaviorally tested. Other operationalizations appear inside methods rather than linked measures, for example assigning situational weights to uncertainty at each reasoning step or modeling situational awareness through hierarchical perception in dialogue.\n\nLinks. Papers link situational awareness to four constructs. It is related to situational inference and self-awareness in definitions that build it from inferences about the situation and self-knowledge, and one paper says self-recognition can be seen as an instance of situational awareness. Separately, one paper claims a causal relationship from situational awareness to persona consistency, reporting that jointly modeling external situational awareness and internal self-awareness generates responses with improved character consistency.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Situational awareness"
+  ],
+  "papers": [
+    "CRiskEval: A Chinese Multi-Level Risk Evaluation Benchmark Dataset for Large Language Models",
+    "Uncertainty Propagation on LLM Agent",
+    "Agent-to-Agent Theory of Mind: Testing Interlocutor Awareness among Large Language Models",
+    "CogDual: Enhancing Dual Cognition of LLMs via Reinforcement Learning with Implicit Rule-Based Rewards",
+    "V-VAE: A Variational Auto Encoding Framework Towards Fine-Grained Control over Human-Like Chat",
+    "The Alignment Problem from a Deep Learning Perspective",
+    "An Auditing Test to Detect Behavioral Shift in Language Models",
+    "Inspection and Control of Self-Generated-Text Recognition Ability in Llama3-8b-Instruct",
+    "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "The model's knowledge of itself and its circumstances, which includes self-knowledge, the ability to make inferences about its situation, and the capacity to act on this knowledge.",
+      "papers": [
+        "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+        "An Auditing Test to Detect Behavioral Shift in Language Models",
+        "Uncertainty Propagation on LLM Agent",
+        "CogDual: Enhancing Dual Cognition of LLMs via Reinforcement Learning with Implicit Rule-Based Rewards",
+        "The Alignment Problem from a Deep Learning Perspective"
+      ],
+      "original_name": "Situational awareness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Situational inference",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+      "evidence": "\u201cOur definition builds on recent work ... (2) M can make deductions/inferences about its situation (inferences)\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-recognition",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Inspection and Control of Self-Generated-Text Recognition Ability in Llama3-8b-Instruct",
+      "evidence": "Self-recognition can be seen as an instance of situational awareness, which has long been noted as a potential point of risk for AI (Cotra, 2021).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Inspection and Control of Self-Generated-Text Recognition Ability in Llama3-8b-Instruct"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Persona consistency",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "CogDual: Enhancing Dual Cognition of LLMs via Reinforcement Learning with Implicit Rule-Based Rewards",
+      "evidence": "By jointly modeling external situational awareness and internal self-awareness, CogDual generates responses with improved character consistency and contextual alignment.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "CogDual: Enhancing Dual Cognition of LLMs via Reinforcement Learning with Implicit Rule-Based Rewards"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Self-awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+      "evidence": "A model M is situationally aware to the extent that (1) M knows which entity it is and knows facts about itself (self-knowledge), (2) M can make deductions/inferences about its situation (inferences), and (3) M acts on the basis of this knowledge (actions). (Section 2.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats situational awareness as a model's knowledge of itself and its circumstances, especially self-knowledge, the ability to infer its situation, and the capacity to act on that knowledge. As one study puts it, a model is situationally aware to the extent that it has \"self-knowledge\", can make \"inferences\" about its situation, and takes \"actions\" on that basis (Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs). Other papers define the same term in terms of perceiving and understanding operational context and the implications of a model's state, using knowledge about itself, its training context, and human supervisors to inform behavior, including recognizing evaluation or deployment, or perceiving environmental cues and other characters' behaviors, emotions, and intentions in dialogue. A smaller line of work places it in stepwise reasoning, defining it as the capacity to integrate contextual signals from the environment and internal reasoning state when weighting uncertainty across steps, so the main disagreement is over what counts as the relevant \"situation\": the model's own identity and training context, its operational context, a dialogue scene, or the current reasoning trajectory."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The most explicit decomposition breaks the construct into self-knowledge, situational inferences, and actions based on that knowledge. Other papers systematize it differently: one dialogue-focused paper represents it as \"SA = \u27e8EP, BA, EA, IA\u27e9\" formed through hierarchical perception and interpretation, while another specifies knowledge about itself, its training context, physical implementation, and how human supervisors are likely to respond to its behavior. Papers also place it near neighboring constructs rather than using a single boundary, relating it to self-awareness and situational inference, treating self-recognition as an instance of situational awareness, and noting that it \"should not be confused with notions of awareness in philosophy or psychology\" (The Alignment Problem from a Deep Learning Perspective)."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. Even without linked measures, papers often describe behavioral operationalizations: they ask whether a model knows which entity it is, can infer its situation, and acts on that knowledge, and one paper explicitly says the construct can be behaviorally tested. Other operationalizations appear inside methods rather than linked measures, for example assigning situational weights to uncertainty at each reasoning step or modeling situational awareness through hierarchical perception in dialogue."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link situational awareness to four constructs. It is related to situational inference and self-awareness in definitions that build it from inferences about the situation and self-knowledge, and one paper says self-recognition can be seen as an instance of situational awareness. Separately, one paper claims a causal relationship from situational awareness to persona consistency, reporting that jointly modeling external situational awareness and internal self-awareness generates responses with improved character consistency."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats situational awareness as a model's knowledge of itself and its circumstances, especially self-knowledge, the ability to infer its situation, and the capacity to act on that knowledge. As one study puts it, a model is situationally aware to the extent that it has \"self-knowledge\", can make \"inferences\" about its situation, and takes \"actions\" on that basis (Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs). Other papers define the same term in terms of perceiving and understanding operational context and the implications of a model's state, using knowledge about itself, its training context, and human supervisors to inform behavior, including recognizing evaluation or deployment, or perceiving environmental cues and other characters' behaviors, emotions, and intentions in dialogue. A smaller line of work places it in stepwise reasoning, defining it as the capacity to integrate contextual signals from the environment and internal reasoning state when weighting uncertainty across steps, so the main disagreement is over what counts as the relevant \"situation\": the model's own identity and training context, its operational context, a dialogue scene, or the current reasoning trajectory.\n\nSpace of facets. The most explicit decomposition breaks the construct into self-knowledge, situational inferences, and actions based on that knowledge. Other papers systematize it differently: one dialogue-focused paper represents it as \"SA = \u27e8EP, BA, EA, IA\u27e9\" formed through hierarchical perception and interpretation, while another specifies knowledge about itself, its training context, physical implementation, and how human supervisors are likely to respond to its behavior. Papers also place it near neighboring constructs rather than using a single boundary, relating it to self-awareness and situational inference, treating self-recognition as an instance of situational awareness, and noting that it \"should not be confused with notions of awareness in philosophy or psychology\" (The Alignment Problem from a Deep Learning Perspective).\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Even without linked measures, papers often describe behavioral operationalizations: they ask whether a model knows which entity it is, can infer its situation, and acts on that knowledge, and one paper explicitly says the construct can be behaviorally tested. Other operationalizations appear inside methods rather than linked measures, for example assigning situational weights to uncertainty at each reasoning step or modeling situational awareness through hierarchical perception in dialogue.\n\nLinks. Papers link situational awareness to four constructs. It is related to situational inference and self-awareness in definitions that build it from inferences about the situation and self-knowledge, and one paper says self-recognition can be seen as an instance of situational awareness. Separately, one paper claims a causal relationship from situational awareness to persona consistency, reporting that jointly modeling external situational awareness and internal self-awareness generates responses with improved character consistency.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CRiskEval: A Chinese Multi-Level Risk Evaluation Benchmark Dataset for Large Language Models",
+      "Uncertainty Propagation on LLM Agent"
+    ],
+    "emnlp25": [
+      "Agent-to-Agent Theory of Mind: Testing Interlocutor Awareness among Large Language Models",
+      "CogDual: Enhancing Dual Cognition of LLMs via Reinforcement Learning with Implicit Rule-Based Rewards",
+      "V-VAE: A Variational Auto Encoding Framework Towards Fine-Grained Control over Human-Like Chat"
+    ],
+    "iclr25": [
+      "An Auditing Test to Detect Behavioral Shift in Language Models",
+      "Inspection and Control of Self-Generated-Text Recognition Ability in Llama3-8b-Instruct"
+    ],
+    "neurips24": [
+      "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs"
+    ],
+    "iclr24": [
+      "The Alignment Problem from a Deep Learning Perspective"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 3,
+    "iclr25": 2,
+    "neurips24": 1,
+    "iclr24": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "neurips24"
+  ]
+}

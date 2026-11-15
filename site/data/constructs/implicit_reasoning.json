@@ -1,0 +1,117 @@
+{
+  "canonical_name": "Implicit reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. The only explicit definition treats it as a model capacity for recovering what is not said directly: inferring unstated assumptions, background knowledge, and indirect logical connections needed to interpret ambiguous or incompletely specified argumentative content. This usage is illustrated by descriptions of using different background knowledge to complement implicit information, and by the claim that a model can sometimes identify implicit logic that annotators did not realize. A separate usage overlaps it with multi-hop reasoning, describing implicit reasoning as solving multi-hop reasoning tasks in a single forward pass, without chain of thought.\n\nSpace of facets. The papers do not divide it into named subtypes. The main difference across uses is scope and framing: one centers on interpreting argumentative content and identifying logical structure from implicit information, while another frames the construct through multi-hop task solving in a single forward pass. Papers also place it alongside broader constructs rather than under a stable taxonomy, especially multi-hop reasoning, and one paper relates it to social intelligence through information reasoning alongside goal completion.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Instead, papers describe it through task behaviors such as inferring unstated assumptions, drawing on background knowledge to fill in implicit information, identifying implicit logic, or solving multi-hop reasoning in a single forward pass without chain of thought.\n\nLinks. Some papers claim a causal relationship from Grokking to implicit reasoning, stating that transformers can learn implicit reasoning only through grokking and that grokking-based data augmentation can unlock implicit multi-hop reasoning capabilities. Papers also report that implicit reasoning is related to Multi-hop reasoning, with one claim that it aligns closely with multi-hop reasoning and another that defines it through single-pass solution of multi-hop tasks without chain of thought. One paper further reports that implicit reasoning is related to Social intelligence in an evaluation that considers both goal completion and information reasoning.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Implicit reasoning"
+  ],
+  "papers": [
+    "Hidden in Plain Sight: Reasoning in Underspecified and Misspecified Scenarios for Multimodal LLMs",
+    "Identification of Multiple Logical Interpretations in Counter-Arguments",
+    "Language models can learn implicit multi-hop reasoning, but only if they have lots of training data",
+    "Toward Multi-Session Personalized Conversation: A Large-Scale Dataset and Hierarchical Tree Framework for Implicit Reasoning"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The model's capacity to infer unstated assumptions, background knowledge, or indirect logical connections necessary to interpret ambiguous or incompletely specified argumentative content.",
+      "papers": [
+        "Identification of Multiple Logical Interpretations in Counter-Arguments"
+      ],
+      "original_name": "Implicit reasoning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Grokking",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Grokking of Implicit Reasoning in Transformers: A Mechanistic Journey to the Edge of Generalization",
+      "evidence": "transformers can learn implicit reasoning, but only through grokking, i.e., extended training far beyond overfitting.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Grokking of Implicit Reasoning in Transformers: A Mechanistic Journey to the Edge of Generalization"
+        ],
+        "icml25": [
+          "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-hop reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers",
+      "evidence": "This property aligns closely with our focus on multi-hop reasoning and underscores the need for implicit reasoning capability (Section 1).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers"
+        ],
+        "emnlp25": [
+          "Language models can learn implicit multi-hop reasoning, but only if they have lots of training data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Social intelligence",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios",
+      "evidence": "We evaluate social intelligence from multiple aspects, considering both goal completion and information reasoning... (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The only explicit definition treats it as a model capacity for recovering what is not said directly: inferring unstated assumptions, background knowledge, and indirect logical connections needed to interpret ambiguous or incompletely specified argumentative content. This usage is illustrated by descriptions of using different background knowledge to complement implicit information, and by the claim that a model can sometimes identify implicit logic that annotators did not realize. A separate usage overlaps it with multi-hop reasoning, describing implicit reasoning as solving multi-hop reasoning tasks in a single forward pass, without chain of thought."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The papers do not divide it into named subtypes. The main difference across uses is scope and framing: one centers on interpreting argumentative content and identifying logical structure from implicit information, while another frames the construct through multi-hop task solving in a single forward pass. Papers also place it alongside broader constructs rather than under a stable taxonomy, especially multi-hop reasoning, and one paper relates it to social intelligence through information reasoning alongside goal completion."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. Instead, papers describe it through task behaviors such as inferring unstated assumptions, drawing on background knowledge to fill in implicit information, identifying implicit logic, or solving multi-hop reasoning in a single forward pass without chain of thought."
+    },
+    {
+      "label": "Links.",
+      "text": "Some papers claim a causal relationship from Grokking to implicit reasoning, stating that transformers can learn implicit reasoning only through grokking and that grokking-based data augmentation can unlock implicit multi-hop reasoning capabilities. Papers also report that implicit reasoning is related to Multi-hop reasoning, with one claim that it aligns closely with multi-hop reasoning and another that defines it through single-pass solution of multi-hop tasks without chain of thought. One paper further reports that implicit reasoning is related to Social intelligence in an evaluation that considers both goal completion and information reasoning."
+    }
+  ],
+  "characterization": "Space of definitions. The only explicit definition treats it as a model capacity for recovering what is not said directly: inferring unstated assumptions, background knowledge, and indirect logical connections needed to interpret ambiguous or incompletely specified argumentative content. This usage is illustrated by descriptions of using different background knowledge to complement implicit information, and by the claim that a model can sometimes identify implicit logic that annotators did not realize. A separate usage overlaps it with multi-hop reasoning, describing implicit reasoning as solving multi-hop reasoning tasks in a single forward pass, without chain of thought.\n\nSpace of facets. The papers do not divide it into named subtypes. The main difference across uses is scope and framing: one centers on interpreting argumentative content and identifying logical structure from implicit information, while another frames the construct through multi-hop task solving in a single forward pass. Papers also place it alongside broader constructs rather than under a stable taxonomy, especially multi-hop reasoning, and one paper relates it to social intelligence through information reasoning alongside goal completion.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. Instead, papers describe it through task behaviors such as inferring unstated assumptions, drawing on background knowledge to fill in implicit information, identifying implicit logic, or solving multi-hop reasoning in a single forward pass without chain of thought.\n\nLinks. Some papers claim a causal relationship from Grokking to implicit reasoning, stating that transformers can learn implicit reasoning only through grokking and that grokking-based data augmentation can unlock implicit multi-hop reasoning capabilities. Papers also report that implicit reasoning is related to Multi-hop reasoning, with one claim that it aligns closely with multi-hop reasoning and another that defines it through single-pass solution of multi-hop tasks without chain of thought. One paper further reports that implicit reasoning is related to Social intelligence in an evaluation that considers both goal completion and information reasoning.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Hidden in Plain Sight: Reasoning in Underspecified and Misspecified Scenarios for Multimodal LLMs",
+      "Identification of Multiple Logical Interpretations in Counter-Arguments",
+      "Language models can learn implicit multi-hop reasoning, but only if they have lots of training data",
+      "Toward Multi-Session Personalized Conversation: A Large-Scale Dataset and Hierarchical Tree Framework for Implicit Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25"
+  ]
+}

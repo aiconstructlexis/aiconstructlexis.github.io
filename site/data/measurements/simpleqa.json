@@ -1,0 +1,122 @@
+{
+  "canonical_name": "SimpleQA",
+  "type": "measurement",
+  "canonical_definition": "What it is. Papers most commonly describe SimpleQA as an OpenAI benchmark made up of numerous concise, fact-oriented, fact-seeking questions for assessing LLM factual capabilities in general knowledge. A narrower description presents it specifically as a factuality benchmark in which model responses are categorized as correct, incorrect, or not attempted.\n\nWhat it is claimed to measure. Papers use SimpleQA to measure two constructs, Factuality and Truthfulness, and one behavioral indicator, Factual question answering. The prevailing usage stays within factual evaluation: one paper says it was proposed to measure short-form factuality in LLMs, another takes it for truthfulness, and another describes it as evaluating the ability of language models to answer fact-seeking questions.\n\nSpace of uses. The clearest paired use is alongside FreshQA-2025-04-28, where a paper presents the two as factuality benchmarks for fact-seeking questions. Otherwise, no measurement instrument is linked to it, and papers position SimpleQA as a benchmark used for short-form factuality or truthfulness evaluation.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SimpleQA"
+  ],
+  "papers": [
+    "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning",
+    "Chinese SafetyQA: A Safety Short-form Factuality Benchmark for Large Language Models",
+    "Chinese SimpleQA: A Chinese Factuality Evaluation for Large Language Models",
+    "Flaw or Artifact? Rethinking Prompt Sensitivity in Evaluating LLMs",
+    "HydraRAG: Structured Cross-Source Enhanced Large Language Model Reasoning",
+    "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+    "Step Guided Reasoning: Improving Mathematical Reasoning using Guidance Generation and Step Reasoning",
+    "Thinking Out Loud: Do Reasoning Models Know When They're Right?",
+    "WebEvolver: Enhancing Web Agent Self-Improvement with Co-evolving World Model"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "A benchmark introduced by OpenAI comprising numerous concise, fact-oriented questions to assess the factual capabilities of LLMs in general knowledge areas.",
+      "papers": [
+        "Chinese SafetyQA: A Safety Short-form Factuality Benchmark for Large Language Models",
+        "Thinking Out Loud: Do Reasoning Models Know When They're Right?"
+      ],
+      "original_name": "SimpleQA"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Chinese SimpleQA: A Chinese Factuality Evaluation for Large Language Models",
+      "evidence": "Recently, SimpleQA (Wei et al., 2024) has been proposed to measure the short-form factuality in LLMs (Section 2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Chinese SimpleQA: A Chinese Factuality Evaluation for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "STAIR: Improving Safety Alignment with Introspective Reasoning",
+      "evidence": "We take SimpleQA (Wei et al., 2024b) for truthfulness... (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "STAIR: Improving Safety Alignment with Introspective Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Thinking Out Loud: Do Reasoning Models Know When They're Right?",
+      "evidence": "Factuality: SimpleQA (Wei et al., 2024) and FreshQA-2025-04-28 (Vu et al., 2023), two factuality benchmarks that evaluate the ability of language models to answer fact-seeking questions. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Thinking Out Loud: Do Reasoning Models Know When They're Right?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Papers most commonly describe SimpleQA as an OpenAI benchmark made up of numerous concise, fact-oriented, fact-seeking questions for assessing LLM factual capabilities in general knowledge. A narrower description presents it specifically as a factuality benchmark in which model responses are categorized as correct, incorrect, or not attempted."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use SimpleQA to measure two constructs, Factuality and Truthfulness, and one behavioral indicator, Factual question answering. The prevailing usage stays within factual evaluation: one paper says it was proposed to measure short-form factuality in LLMs, another takes it for truthfulness, and another describes it as evaluating the ability of language models to answer fact-seeking questions."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The clearest paired use is alongside FreshQA-2025-04-28, where a paper presents the two as factuality benchmarks for fact-seeking questions. Otherwise, no measurement instrument is linked to it, and papers position SimpleQA as a benchmark used for short-form factuality or truthfulness evaluation."
+    }
+  ],
+  "characterization": "What it is. Papers most commonly describe SimpleQA as an OpenAI benchmark made up of numerous concise, fact-oriented, fact-seeking questions for assessing LLM factual capabilities in general knowledge. A narrower description presents it specifically as a factuality benchmark in which model responses are categorized as correct, incorrect, or not attempted.\n\nWhat it is claimed to measure. Papers use SimpleQA to measure two constructs, Factuality and Truthfulness, and one behavioral indicator, Factual question answering. The prevailing usage stays within factual evaluation: one paper says it was proposed to measure short-form factuality in LLMs, another takes it for truthfulness, and another describes it as evaluating the ability of language models to answer fact-seeking questions.\n\nSpace of uses. The clearest paired use is alongside FreshQA-2025-04-28, where a paper presents the two as factuality benchmarks for fact-seeking questions. Otherwise, no measurement instrument is linked to it, and papers position SimpleQA as a benchmark used for short-form factuality or truthfulness evaluation.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Alleviating Hallucinations from Knowledge Misalignment in Large Language Models via Selective Abstention Learning",
+      "Chinese SafetyQA: A Safety Short-form Factuality Benchmark for Large Language Models",
+      "Chinese SimpleQA: A Chinese Factuality Evaluation for Large Language Models"
+    ],
+    "emnlp25": [
+      "Flaw or Artifact? Rethinking Prompt Sensitivity in Evaluating LLMs",
+      "HydraRAG: Structured Cross-Source Enhanced Large Language Model Reasoning",
+      "MetaFaith: Faithful Natural Language Uncertainty Expression in LLMs",
+      "Step Guided Reasoning: Improving Mathematical Reasoning using Guidance Generation and Step Reasoning",
+      "Thinking Out Loud: Do Reasoning Models Know When They're Right?",
+      "WebEvolver: Enhancing Web Agent Self-Improvement with Co-evolving World Model"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 6
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25"
+  ]
+}

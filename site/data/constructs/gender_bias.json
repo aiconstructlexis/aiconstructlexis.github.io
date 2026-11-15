@@ -1,0 +1,220 @@
+{
+  "canonical_name": "Gender bias",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across these papers, the prevailing usage treats gender bias as a latent or systematic tendency in a model's outputs, representations, or reasoning that disadvantages, misrepresents, or unfairly associates people on the basis of gender. Most definitions emphasize stereotyped or spurious associations, such as linking gender-neutral expressions, occupations, or roles to a specific gender, or depicting men with more agentic language than women. Smaller strands narrow the construct to harmful content against marginalized genders, especially within the LGBTQ+ community, or to gendered stereotypes in clinical reasoning independent of clinical relevance. One study also frames it as persisting even in non-stereotypical settings, reporting fair behavior in only 9%-41% of stereotype-free sentences.\n\nSpace of facets. Papers do not use a single subtype scheme, but they recurrently break the construct into specific manifestations: gender-occupation associations, agency versus communal language, skewed role and attribute representations, biased clinical reasoning, and harms toward marginalized genders. The broad label 'gender bias' often serves as the umbrella term, while 'bias against marginalized genders' is presented as one form within it. The main axis of variation is whether the construct is treated broadly as unfair gendered assumptions in generated content, or more narrowly as a property of outputs, embeddings, or reasoning in a particular domain.\n\nSpace of measurement. Papers link gender bias to 4 measurement instruments and 1 behavioral indicator. Measurement is centered on benchmark-style datasets and tests: WinoBias is the most frequently linked instrument and is described as probing gender bias through pronoun resolution and occupation associations in coreference settings, followed by BOLD, StereoSet, and Winogender as datasets or tests for analyzing or evaluating gender bias in LLMs. The lone linked behavioral indicator is coreference resolution. These operationalizations line up most directly with definitions centered on stereotyped gender associations, while broader definitions about marginalized genders, clinical reasoning, or representation shifts across roles and attributes are not paired with additional named instruments.\n\nLinks. Beyond measurement, one paper reports that coreference resolution is related to gender bias, stating that gender biases in neural models can be made visible in coreference resolution. No papers claim a causal or correlational link involving gender bias.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Gender bias",
+    "Bias against marginalized genders"
+  ],
+  "papers": [
+    "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models",
+    "Multilingual Text-to-Image Generation Magnifies Gender Stereotypes",
+    "Unmasking Style Sensitivity: A Causal Analysis of Bias Evaluation Instability in Large Language Models",
+    "What's the Difference? Supporting Users in Identifying the Effects of Prompt and Model Changes Through Token Patterns",
+    "White Men Lead, Black Women Help? Benchmarking and Mitigating Language Agency Social Biases in LLMs",
+    "Adapting Bias Evaluation to Domain Contexts using Generative Models",
+    "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms",
+    "Biased Tales: Cultural and Topic Bias in Generating Children's Stories",
+    "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution in LLMs",
+    "Job Unfair: An Investigation of Gender and Occupational Bias in Free-Form Text Completions by LLMs",
+    "Measuring Bias or Measuring the Task: Understanding the Brittle Nature of LLM Gender Biases",
+    "TFDP: Token-Efficient Disparity Audits for Autoregressive LLMs via Single-Token Masked Evaluation",
+    "Unsupervised Concept Vector Extraction for Bias Control in LLMs",
+    "We Politely Insist: Your LLM Must Learn the Persian Art of Taarof",
+    "Are Models Biased on Text without Gender-related Language?",
+    "Debiasing Algorithm through Model Adaptation",
+    "Large Language Models can Become Strong Self-Detoxifiers",
+    "Monitoring Latent World States in Language Models with Propositional Probes",
+    "PolyPythias: Stability and Outliers across Fifty Language Model Pre-Training Runs",
+    "Revealing and Reducing Gender Biases in Vision and Language Assistants (VLAs)",
+    "Position: Rethinking LLM Bias Probing Using Lessons from the Social Sciences",
+    "Fine-Tuned LLMs are \u201cTime Capsules\u201d for Tracking Societal Bias Through Books",
+    "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?",
+    "Racing Thoughts: Explaining Contextualization Errors in Large Language Models"
+  ],
+  "paper_count": 24,
+  "definitions": [
+    {
+      "text": "A specific form of bias where a model's outputs systematically disadvantage or misrepresent individuals based on their gender.",
+      "papers": [
+        "Large Language Models can Become Strong Self-Detoxifiers",
+        "Fine-Tuned LLMs are \u201cTime Capsules\u201d for Tracking Societal Bias Through Books",
+        "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?"
+      ],
+      "original_name": "Gender bias"
+    },
+    {
+      "text": "The latent tendency to generate content that perpetuates disparities or harms against non-dominant gender identities, particularly within the LGBTQ+ community, such as denying their legitimacy or associating them with deviance.",
+      "papers": [
+        "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models"
+      ],
+      "original_name": "Bias against marginalized genders"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WinoBias",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Debiasing Algorithm through Model Adaptation",
+      "evidence": "To answer the first question, we check the LLaMA performance on popular tests for gender bias: WinoBias (Zhao et al., 2018) and StereoSet (Nadeem et al., 2021). (Section 1)",
+      "paper_count": 6,
+      "paper_weight": 6.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Debiasing Algorithm through Model Adaptation"
+        ],
+        "icml25": [
+          "Is Your Model Fairly Certain? Uncertainty-Aware Fairness Evaluation for LLMs",
+          "Position: Rethinking LLM Bias Probing Using Lessons from the Social Sciences"
+        ],
+        "iclr25": [
+          "Prompting Fairness: Integrating Causality to Debias Large Language Models",
+          "CEB: Compositional Evaluation Benchmark for Fairness in Large Language Models",
+          "Collapsed Language Models Promote Fairness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StereoSet",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Debiasing Algorithm through Model Adaptation",
+      "evidence": "To answer the first question, we check the LLaMA performance on popular tests for gender bias: WinoBias (Zhao et al., 2018) and StereoSet (Nadeem et al., 2021). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Debiasing Algorithm through Model Adaptation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BOLD",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Large Language Models can Become Strong Self-Detoxifiers",
+      "evidence": "Additionally, we further conducted an experiment where we use the BOLD dataset to analyze LM gender bias, results are shown in appendix Table 13. (Section 4.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Large Language Models can Become Strong Self-Detoxifiers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Winogender",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models",
+      "evidence": "We also conduct experiments on BBQ (Parrish et al., 2022) and WinoGender (Zhao et al., 2018), two widely used datasets for evaluating gender bias in LLMs. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coreference resolution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution in LLMs",
+      "evidence": "As noted by Davis and van Schijndel (2020), gender biases in neural models can be made visible in coreference resolution. (Section 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution in LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across these papers, the prevailing usage treats gender bias as a latent or systematic tendency in a model's outputs, representations, or reasoning that disadvantages, misrepresents, or unfairly associates people on the basis of gender. Most definitions emphasize stereotyped or spurious associations, such as linking gender-neutral expressions, occupations, or roles to a specific gender, or depicting men with more agentic language than women. Smaller strands narrow the construct to harmful content against marginalized genders, especially within the LGBTQ+ community, or to gendered stereotypes in clinical reasoning independent of clinical relevance. One study also frames it as persisting even in non-stereotypical settings, reporting fair behavior in only 9%-41% of stereotype-free sentences."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers do not use a single subtype scheme, but they recurrently break the construct into specific manifestations: gender-occupation associations, agency versus communal language, skewed role and attribute representations, biased clinical reasoning, and harms toward marginalized genders. The broad label 'gender bias' often serves as the umbrella term, while 'bias against marginalized genders' is presented as one form within it. The main axis of variation is whether the construct is treated broadly as unfair gendered assumptions in generated content, or more narrowly as a property of outputs, embeddings, or reasoning in a particular domain."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link gender bias to 4 measurement instruments and 1 behavioral indicator. Measurement is centered on benchmark-style datasets and tests: WinoBias is the most frequently linked instrument and is described as probing gender bias through pronoun resolution and occupation associations in coreference settings, followed by BOLD, StereoSet, and Winogender as datasets or tests for analyzing or evaluating gender bias in LLMs. The lone linked behavioral indicator is coreference resolution. These operationalizations line up most directly with definitions centered on stereotyped gender associations, while broader definitions about marginalized genders, clinical reasoning, or representation shifts across roles and attributes are not paired with additional named instruments."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper reports that coreference resolution is related to gender bias, stating that gender biases in neural models can be made visible in coreference resolution. No papers claim a causal or correlational link involving gender bias."
+    }
+  ],
+  "characterization": "Space of definitions. Across these papers, the prevailing usage treats gender bias as a latent or systematic tendency in a model's outputs, representations, or reasoning that disadvantages, misrepresents, or unfairly associates people on the basis of gender. Most definitions emphasize stereotyped or spurious associations, such as linking gender-neutral expressions, occupations, or roles to a specific gender, or depicting men with more agentic language than women. Smaller strands narrow the construct to harmful content against marginalized genders, especially within the LGBTQ+ community, or to gendered stereotypes in clinical reasoning independent of clinical relevance. One study also frames it as persisting even in non-stereotypical settings, reporting fair behavior in only 9%-41% of stereotype-free sentences.\n\nSpace of facets. Papers do not use a single subtype scheme, but they recurrently break the construct into specific manifestations: gender-occupation associations, agency versus communal language, skewed role and attribute representations, biased clinical reasoning, and harms toward marginalized genders. The broad label 'gender bias' often serves as the umbrella term, while 'bias against marginalized genders' is presented as one form within it. The main axis of variation is whether the construct is treated broadly as unfair gendered assumptions in generated content, or more narrowly as a property of outputs, embeddings, or reasoning in a particular domain.\n\nSpace of measurement. Papers link gender bias to 4 measurement instruments and 1 behavioral indicator. Measurement is centered on benchmark-style datasets and tests: WinoBias is the most frequently linked instrument and is described as probing gender bias through pronoun resolution and occupation associations in coreference settings, followed by BOLD, StereoSet, and Winogender as datasets or tests for analyzing or evaluating gender bias in LLMs. The lone linked behavioral indicator is coreference resolution. These operationalizations line up most directly with definitions centered on stereotyped gender associations, while broader definitions about marginalized genders, clinical reasoning, or representation shifts across roles and attributes are not paired with additional named instruments.\n\nLinks. Beyond measurement, one paper reports that coreference resolution is related to gender bias, stating that gender biases in neural models can be made visible in coreference resolution. No papers claim a causal or correlational link involving gender bias.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "GenderAlign: An Alignment Dataset for Mitigating Gender Bias in Large Language Models",
+      "Multilingual Text-to-Image Generation Magnifies Gender Stereotypes",
+      "Unmasking Style Sensitivity: A Causal Analysis of Bias Evaluation Instability in Large Language Models",
+      "What's the Difference? Supporting Users in Identifying the Effects of Prompt and Model Changes Through Token Patterns",
+      "White Men Lead, Black Women Help? Benchmarking and Mitigating Language Agency Social Biases in LLMs"
+    ],
+    "emnlp25": [
+      "Adapting Bias Evaluation to Domain Contexts using Generative Models",
+      "Assumed Identities: Quantifying Gender Bias in Machine Translation of Gender-Ambiguous Occupational Terms",
+      "Biased Tales: Cultural and Topic Bias in Generating Children's Stories",
+      "Correct-Detect: Balancing Performance and Ambiguity Through the Lens of Coreference Resolution in LLMs",
+      "Job Unfair: An Investigation of Gender and Occupational Bias in Free-Form Text Completions by LLMs",
+      "Measuring Bias or Measuring the Task: Understanding the Brittle Nature of LLM Gender Biases",
+      "TFDP: Token-Efficient Disparity Audits for Autoregressive LLMs via Single-Token Masked Evaluation",
+      "Unsupervised Concept Vector Extraction for Bias Control in LLMs",
+      "We Politely Insist: Your LLM Must Learn the Persian Art of Taarof"
+    ],
+    "iclr24": [
+      "Are Models Biased on Text without Gender-related Language?",
+      "Debiasing Algorithm through Model Adaptation"
+    ],
+    "iclr25": [
+      "Large Language Models can Become Strong Self-Detoxifiers",
+      "Monitoring Latent World States in Language Models with Propositional Probes",
+      "PolyPythias: Stability and Outliers across Fifty Language Model Pre-Training Runs",
+      "Revealing and Reducing Gender Biases in Vision and Language Assistants (VLAs)"
+    ],
+    "icml25": [
+      "Position: Rethinking LLM Bias Probing Using Lessons from the Social Sciences"
+    ],
+    "naacl25": [
+      "Fine-Tuned LLMs are \u201cTime Capsules\u201d for Tracking Societal Bias Through Books",
+      "How Can We Diagnose and Treat Bias in Large Language Models for Clinical Decision-Making?",
+      "Racing Thoughts: Explaining Contextualization Errors in Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 5,
+    "emnlp25": 9,
+    "iclr24": 2,
+    "iclr25": 4,
+    "icml25": 1,
+    "naacl25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

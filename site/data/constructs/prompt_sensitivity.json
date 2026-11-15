@@ -1,0 +1,261 @@
+{
+  "canonical_name": "Prompt sensitivity",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats prompt sensitivity as variation in a model's performance, outputs, predictions, or output distributions when prompts are reworded, reformatted, or reordered without changing their meaning. Most definitions center on semantically similar prompts or identical instructions, while narrower versions focus on formatting, verbalizers, example choice, or example order, and one survey narrows it further to whether known knowledge can be successfully verified only under certain prompt forms. A smaller line defines it specifically as changes in predicted class distributions across prompt rephrasings, without requiring access to ground truth, while another closely related framing emphasizes maintaining stable performance under irrelevant or meaning-preserving prompt variations such as formatting.\n\nSpace of facets. Papers use several nearby labels, including prompt brittleness, instruction sensitivity, response consistency, stylistic self-consistency, and robustness to spurious features. Some papers frame the phenomenon on the input side, as sensitivity to wording, detail, formatting, or order, while another frames instruction-induced accuracy fluctuations as differences in response consistency, meaning structurally, lexically, and logically stable outputs across prompt styles, with Cross-Response Similarity used for stylistic self-consistency. The terminology is not uniform: the label \"sensitivity\" is also used elsewhere for metric error detection, word-level importance in text classifiers, and the bit-flip behavior of functions.\n\nSpace of measurement. Prompt sensitivity is linked to 2 measurement instruments, LLM-as-a-judge and TREC, and no behavioral indicator is linked to it. In use, papers operationalize it by creating semantically equivalent prompt or instruction variants and comparing predicted class distributions, task performance, output distributions, or cross-response similarity: examples include normalized entropy over rephrasings without ground truth, standard deviation over instruction orderings, token-probability and discrete-choice metrics across task formats, and Cross-Response Similarity for stylistic self-consistency. Most of these measurements follow the dominant definitions by varying prompts while holding semantics fixed and then tracking changes in predictions or responses, while a smaller subset scores response stability or successful knowledge verification under different prompt forms.\n\nLinks. Among linked constructs, one paper states that prompt robustness is related to prompt sensitivity, noting that sensitivity can be used to compare the \"robustness\" of different LLMs to prompt variation. Another paper reports that prompt sensitivity correlates with selection bias, suggesting that a model weak on selection bias also tends to change its output across different prompt templates.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Prompt brittleness",
+    "Prompt sensitivity",
+    "Instruction sensitivity",
+    "Response consistency",
+    "Stylistic self-consistency",
+    "Robustness to spurious features",
+    "Sensitivity"
+  ],
+  "papers": [
+    "Knowledge Boundary of Large Language Models: A Survey",
+    "MAIN-RAG: Multi-Agent Filtering Retrieval-Augmented Generation",
+    "Only a Little to the Left: A Theory-grounded Measure of Political Bias in Large Language Models",
+    "What's the Difference? Supporting Users in Identifying the Effects of Prompt and Model Changes Through Token Patterns",
+    "A Systematic Survey of Automatic Prompt Optimization Techniques",
+    "ACING: Actor-Critic for Instruction Learning in Black-Box LLMs",
+    "An Empirical Study of LLM Reasoning Ability Under Strict Output Length Constraint",
+    "Benchmarking LLMs on Semantic Overlap Summarization",
+    "Do Large Language Models Understand Word Senses?",
+    "Ensembling Prompting Strategies for Zero-Shot Hierarchical Text Classification with Large Language Models",
+    "Flaw or Artifact? Rethinking Prompt Sensitivity in Evaluating LLMs",
+    "Mapping the Minds of LLMs: A Graph-Based Analysis of Reasoning LLMs",
+    "Measuring Bias or Measuring the Task: Understanding the Brittle Nature of LLM Gender Biases",
+    "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of Quantized LLMs",
+    "RCScore: Quantifying Response Consistency in Large Language Models",
+    "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+    "Motif: Intrinsic Motivation from Artificial Intelligence Feedback",
+    "Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting",
+    "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+    "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation",
+    "Lower Bounds for Chain-of-Thought Reasoning in Hard-Attention Transformers",
+    "Position: Contextual Integrity is Inadequately Applied to Language Models",
+    "Statistical Hypothesis Testing for Auditing Robustness in Language Models",
+    "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+    "Adapting Sentence-level Automatic Metrics for Document-level Simplification Evaluation",
+    "SMAB: MAB based word Sensitivity Estimation Framework and its Applications in Adversarial Text Generation",
+    "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering",
+    "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+    "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+    "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+    "Task Me Anything"
+  ],
+  "paper_count": 31,
+  "definitions": [
+    {
+      "text": "The tendency of model predictions to change substantially under small changes in prompt formatting, verbalizers, example choice, or example order.",
+      "papers": [
+        "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering"
+      ],
+      "original_name": "Prompt brittleness"
+    },
+    {
+      "text": "The tendency for a model's performance and output to vary based on different wordings of a prompt, even when the prompts are semantically similar.",
+      "papers": [
+        "Motif: Intrinsic Motivation from Artificial Intelligence Feedback",
+        "Task Me Anything",
+        "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+        "Knowledge Boundary of Large Language Models: A Survey",
+        "Position: Contextual Integrity is Inadequately Applied to Language Models",
+        "Measuring Bias or Measuring the Task: Understanding the Brittle Nature of LLM Gender Biases"
+      ],
+      "original_name": "Prompt sensitivity"
+    },
+    {
+      "text": "The degree to which a model's performance is affected by variations in the textual phrasing or ordering of an instruction, even when the semantic meaning is identical.",
+      "papers": [
+        "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities",
+        "RCScore: Quantifying Response Consistency in Large Language Models"
+      ],
+      "original_name": "Instruction sensitivity"
+    },
+    {
+      "text": "The degree to which a model produces structurally, lexically, and logically stable outputs across different instruction styles for the same underlying task.",
+      "papers": [
+        "RCScore: Quantifying Response Consistency in Large Language Models"
+      ],
+      "original_name": "Response consistency"
+    },
+    {
+      "text": "A model's ability to generate outputs that are stylistically similar to each other when responding to the same problem presented with varied instructions.",
+      "papers": [
+        "RCScore: Quantifying Response Consistency in Large Language Models"
+      ],
+      "original_name": "Stylistic self-consistency"
+    },
+    {
+      "text": "The ability of a model to maintain stable performance despite the presence of irrelevant or meaning-preserving variations in the input, such as prompt formatting.",
+      "papers": [
+        "Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting"
+      ],
+      "original_name": "Robustness to spurious features"
+    },
+    {
+      "text": "The degree to which an LLM's predicted class distribution changes across semantically equivalent rephrasings of the prompt, reflecting its instability to input variations independent of ground truth.",
+      "papers": [
+        "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering",
+        "SMAB: MAB based word Sensitivity Estimation Framework and its Applications in Adversarial Text Generation",
+        "Adapting Sentence-level Automatic Metrics for Document-level Simplification Evaluation",
+        "Lower Bounds for Chain-of-Thought Reasoning in Hard-Attention Transformers"
+      ],
+      "original_name": "Sensitivity"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TREC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering",
+      "evidence": "\u201cFigure 2: Predicted class distributions over prompt rephrasings p\u03c4 across three samples of the same class Person (TREC dataset, Section 4).\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Flaw or Artifact? Rethinking Prompt Sensitivity in Evaluating LLMs",
+      "evidence": "To rigorously assess whether LLMs truly suffer from prompt sensitivity, we revisit this issue using a more robust evaluation strategy: LLMs as judges.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Flaw or Artifact? Rethinking Prompt Sensitivity in Evaluating LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt robustness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering",
+      "evidence": "The sensitivity should be used, for instance, as a guide to compare the \u201crobustness\u201d of different LLMs to variations of the prompt. (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Selection bias",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Revisiting LLM Value Probing Strategies: Are They Robust and Expressive?",
+      "evidence": "This suggests that a model weak on selection bias also tends to change its output for different prompt templates. (Section 7.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Revisiting LLM Value Probing Strategies: Are They Robust and Expressive?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats prompt sensitivity as variation in a model's performance, outputs, predictions, or output distributions when prompts are reworded, reformatted, or reordered without changing their meaning. Most definitions center on semantically similar prompts or identical instructions, while narrower versions focus on formatting, verbalizers, example choice, or example order, and one survey narrows it further to whether known knowledge can be successfully verified only under certain prompt forms. A smaller line defines it specifically as changes in predicted class distributions across prompt rephrasings, without requiring access to ground truth, while another closely related framing emphasizes maintaining stable performance under irrelevant or meaning-preserving prompt variations such as formatting."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several nearby labels, including prompt brittleness, instruction sensitivity, response consistency, stylistic self-consistency, and robustness to spurious features. Some papers frame the phenomenon on the input side, as sensitivity to wording, detail, formatting, or order, while another frames instruction-induced accuracy fluctuations as differences in response consistency, meaning structurally, lexically, and logically stable outputs across prompt styles, with Cross-Response Similarity used for stylistic self-consistency. The terminology is not uniform: the label \"sensitivity\" is also used elsewhere for metric error detection, word-level importance in text classifiers, and the bit-flip behavior of functions."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Prompt sensitivity is linked to 2 measurement instruments, LLM-as-a-judge and TREC, and no behavioral indicator is linked to it. In use, papers operationalize it by creating semantically equivalent prompt or instruction variants and comparing predicted class distributions, task performance, output distributions, or cross-response similarity: examples include normalized entropy over rephrasings without ground truth, standard deviation over instruction orderings, token-probability and discrete-choice metrics across task formats, and Cross-Response Similarity for stylistic self-consistency. Most of these measurements follow the dominant definitions by varying prompts while holding semantics fixed and then tracking changes in predictions or responses, while a smaller subset scores response stability or successful knowledge verification under different prompt forms."
+    },
+    {
+      "label": "Links.",
+      "text": "Among linked constructs, one paper states that prompt robustness is related to prompt sensitivity, noting that sensitivity can be used to compare the \"robustness\" of different LLMs to prompt variation. Another paper reports that prompt sensitivity correlates with selection bias, suggesting that a model weak on selection bias also tends to change its output across different prompt templates."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats prompt sensitivity as variation in a model's performance, outputs, predictions, or output distributions when prompts are reworded, reformatted, or reordered without changing their meaning. Most definitions center on semantically similar prompts or identical instructions, while narrower versions focus on formatting, verbalizers, example choice, or example order, and one survey narrows it further to whether known knowledge can be successfully verified only under certain prompt forms. A smaller line defines it specifically as changes in predicted class distributions across prompt rephrasings, without requiring access to ground truth, while another closely related framing emphasizes maintaining stable performance under irrelevant or meaning-preserving prompt variations such as formatting.\n\nSpace of facets. Papers use several nearby labels, including prompt brittleness, instruction sensitivity, response consistency, stylistic self-consistency, and robustness to spurious features. Some papers frame the phenomenon on the input side, as sensitivity to wording, detail, formatting, or order, while another frames instruction-induced accuracy fluctuations as differences in response consistency, meaning structurally, lexically, and logically stable outputs across prompt styles, with Cross-Response Similarity used for stylistic self-consistency. The terminology is not uniform: the label \"sensitivity\" is also used elsewhere for metric error detection, word-level importance in text classifiers, and the bit-flip behavior of functions.\n\nSpace of measurement. Prompt sensitivity is linked to 2 measurement instruments, LLM-as-a-judge and TREC, and no behavioral indicator is linked to it. In use, papers operationalize it by creating semantically equivalent prompt or instruction variants and comparing predicted class distributions, task performance, output distributions, or cross-response similarity: examples include normalized entropy over rephrasings without ground truth, standard deviation over instruction orderings, token-probability and discrete-choice metrics across task formats, and Cross-Response Similarity for stylistic self-consistency. Most of these measurements follow the dominant definitions by varying prompts while holding semantics fixed and then tracking changes in predictions or responses, while a smaller subset scores response stability or successful knowledge verification under different prompt forms.\n\nLinks. Among linked constructs, one paper states that prompt robustness is related to prompt sensitivity, noting that sensitivity can be used to compare the \"robustness\" of different LLMs to prompt variation. Another paper reports that prompt sensitivity correlates with selection bias, suggesting that a model weak on selection bias also tends to change its output across different prompt templates.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Knowledge Boundary of Large Language Models: A Survey",
+      "MAIN-RAG: Multi-Agent Filtering Retrieval-Augmented Generation",
+      "Only a Little to the Left: A Theory-grounded Measure of Political Bias in Large Language Models",
+      "What's the Difference? Supporting Users in Identifying the Effects of Prompt and Model Changes Through Token Patterns"
+    ],
+    "emnlp25": [
+      "A Systematic Survey of Automatic Prompt Optimization Techniques",
+      "ACING: Actor-Critic for Instruction Learning in Black-Box LLMs",
+      "An Empirical Study of LLM Reasoning Ability Under Strict Output Length Constraint",
+      "Benchmarking LLMs on Semantic Overlap Summarization",
+      "Do Large Language Models Understand Word Senses?",
+      "Ensembling Prompting Strategies for Zero-Shot Hierarchical Text Classification with Large Language Models",
+      "Flaw or Artifact? Rethinking Prompt Sensitivity in Evaluating LLMs",
+      "Mapping the Minds of LLMs: A Graph-Based Analysis of Reasoning LLMs",
+      "Measuring Bias or Measuring the Task: Understanding the Brittle Nature of LLM Gender Biases",
+      "Quantized but Deceptive? A Multi-Dimensional Truthfulness Evaluation of Quantized LLMs",
+      "RCScore: Quantifying Response Consistency in Large Language Models"
+    ],
+    "iclr24": [
+      "Batch Calibration: Rethinking Calibration for In-Context Learning and Prompt Engineering",
+      "Motif: Intrinsic Motivation from Artificial Intelligence Feedback",
+      "Quantifying Language Models' Sensitivity to Spurious Features in Prompt Design or: How I learned to start worrying about prompt formatting"
+    ],
+    "iclr25": [
+      "GReaTer: Gradients Over Reasoning Makes Smaller Language Models Strong Prompt Optimizers",
+      "GraphEval: A Lightweight Graph-Based LLM Framework for Idea Evaluation"
+    ],
+    "icml25": [
+      "Lower Bounds for Chain-of-Thought Reasoning in Hard-Attention Transformers",
+      "Position: Contextual Integrity is Inadequately Applied to Language Models",
+      "Statistical Hypothesis Testing for Auditing Robustness in Language Models",
+      "What Limits Virtual Agent Application? OmniBench: A Scalable Multi-Dimensional Benchmark for Essential Virtual Agent Capabilities"
+    ],
+    "naacl25": [
+      "Adapting Sentence-level Automatic Metrics for Document-level Simplification Evaluation",
+      "SMAB: MAB based word Sensitivity Estimation Framework and its Applications in Adversarial Text Generation",
+      "What Did I Do Wrong? Quantifying LLMs' Sensitivity and Consistency to Prompt Engineering"
+    ],
+    "neurips24": [
+      "Efficient Contextual LLM Cascades through Budget-Constrained Policy Learning",
+      "KnowGPT: Knowledge Graph based Prompting for Large Language Models",
+      "SocialGPT: Prompting LLMs for Social Relation Reasoning via Greedy Segment Optimization",
+      "Task Me Anything"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 11,
+    "iclr24": 3,
+    "iclr25": 2,
+    "icml25": 4,
+    "naacl25": 3,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

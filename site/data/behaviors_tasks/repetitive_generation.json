@@ -1,0 +1,258 @@
+{
+  "canonical_name": "Repetitive generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is as a generation failure in which outputs repeat tokens, words, phrases, sentences, utterances, or ideas. Most descriptions treat the repeated material as unnecessary or meaningless, either as repetition that affects meaning, adds no new information, or lowers readability, conciseness, coherence, or response diversity. A smaller line of work narrows it to outputs that devolve into unproductive loops on hard tasks, repeated list items within a single response, or repetition of the same prompted token many times.\n\nVariants. Variants span general and long-form text generation, reasoning failures described as unproductive generation loops, multi-turn social dialogue, query-focused and book-length summarization, code generation, and translation. The most common labels are repetitive generation, repetition, and repetitive text generation, while smaller labels include parroting for repeated actions in dialogue and oscillatory hallucination for repeated token sequences in translation. Other formulations focus on duplicate summary spans, duplicate code fragments such as repeated assertions or comments, single-token repetition tasks, and repeated character sequences in no-space content.\n\nSpace of elicitation and scores. Papers connect it to 1 measurement instrument, Human evaluation. This appears as guideline-based human scoring that assesses repetition alongside fluency, coherence, compatibility, and hallucination, and some evaluation prompts ask directly whether a response repeats itself, including repeated list items.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not present a shared view of which construct it reflects. Instead, individual papers report it as related to Style transfer and Reward hacking, and one paper claims a causal relationship from Repetitive generation to Training data regurgitation, stating that repeated tokens could confuse models and create a vulnerability for leakage attacks.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Repetitive text generation",
+    "Repetition",
+    "Parroting",
+    "Repetitive generation",
+    "Meaningless repetition",
+    "Content repetition",
+    "Token repetition",
+    "Duplication",
+    "Text repetition",
+    "Oscillatory hallucination"
+  ],
+  "papers": [
+    "MAGNET: Augmenting Generative Decoders with Representation Learning and Infilling Capabilities",
+    "Marco-o1 v2: Towards Widening The Distillation Bottleneck for Reasoning Models",
+    "Rethinking Repetition Problems of LLMs in Code Generation",
+    "SOTOPIA-\u03a9: Dynamic Strategy Injection Learning and Social Instruction Following Evaluation for Social Agents",
+    "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models",
+    "ReLearn: Unlearning via Learning for Large Language Models",
+    "AFRIDOC-MT: Document-level MT Corpus for African Languages",
+    "Code Execution as Grounded Supervision for LLM Reasoning",
+    "Evaluating Large Language Models for Detecting Antisemitism",
+    "MuTIS: Enhancing Reasoning Efficiency through Multi Turn Intervention Sampling in Reinforcement Learning",
+    "Sparse Activation Editing for Reliable Instruction Following in Narratives",
+    "Weights-Rotated Preference Optimization for Large Language Models",
+    "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
+    "Branch-GAN: Improving Text Generation with (not so) Large Language Models",
+    "Human Feedback is not Gold Standard",
+    "Tailoring Self-Rationalizers with Multi-Reward Distillation",
+    "A Closer Look at Machine Unlearning for Large Language Models",
+    "Interpreting the Repeated Token Phenomenon in Large Language Models",
+    "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+    "Mitigating Hallucinated Translations in Large Language Models with Hallucination-focused Preference Optimization",
+    "RAP: A Metric for Balancing Repetition and Performance in Open-Source Large Language Models"
+  ],
+  "paper_count": 21,
+  "definitions": [
+    {
+      "text": "An observable failure mode where the model generates repetitive tokens, phrases, or entire utterances that degrade the quality and meaning of the text.",
+      "papers": [
+        "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models",
+        "MuTIS: Enhancing Reasoning Efficiency through Multi Turn Intervention Sampling in Reinforcement Learning",
+        "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization"
+      ],
+      "original_name": "Repetition"
+    },
+    {
+      "text": "An observable failure mode where the model produces outputs consisting of repeating words or phrases.",
+      "papers": [
+        "ReLearn: Unlearning via Learning for Large Language Models",
+        "Branch-GAN: Improving Text Generation with (not so) Large Language Models"
+      ],
+      "original_name": "Repetitive text generation"
+    },
+    {
+      "text": "Repeating similar or nearly identical actions across multiple turns in a dialogue, resulting in low response diversity despite potential goal achievement.",
+      "papers": [
+        "SOTOPIA-\u03a9: Dynamic Strategy Injection Learning and Social Instruction Following Evaluation for Social Agents"
+      ],
+      "original_name": "Parroting"
+    },
+    {
+      "text": "Producing overly repetitive text as a failure mode after excessive editing strength.",
+      "papers": [
+        "Sparse Activation Editing for Reliable Instruction Following in Narratives",
+        "A Closer Look at Machine Unlearning for Large Language Models",
+        "Human Feedback is not Gold Standard",
+        "Tailoring Self-Rationalizers with Multi-Reward Distillation"
+      ],
+      "original_name": "Repetitive generation"
+    },
+    {
+      "text": "The observable pattern of repeating phrases, sentences, or ideas without adding new information, often as a result of reward hacking in preference optimization.",
+      "papers": [
+        "Weights-Rotated Preference Optimization for Large Language Models"
+      ],
+      "original_name": "Meaningless repetition"
+    },
+    {
+      "text": "The observable repetition of identical or nearly identical tokens, expressions, or comments in the generated code, such as repeated assertions or print statements.",
+      "papers": [
+        "Rethinking Repetition Problems of LLMs in Code Generation"
+      ],
+      "original_name": "Content repetition"
+    },
+    {
+      "text": "Producing the same input token repeatedly when prompted with a repetition task.",
+      "papers": [
+        "Interpreting the Repeated Token Phenomenon in Large Language Models"
+      ],
+      "original_name": "Token repetition"
+    },
+    {
+      "text": "Repeating the same or very similar information multiple times within the summary, reducing conciseness and coherence.",
+      "papers": [
+        "BooookScore: A systematic exploration of book-length summarization in the era of LLMs"
+      ],
+      "original_name": "Duplication"
+    },
+    {
+      "text": "Generating repeated word sequences or repeated character sequences within no-space content.",
+      "papers": [
+        "RAP: A Metric for Balancing Repetition and Performance in Open-Source Large Language Models"
+      ],
+      "original_name": "Text repetition"
+    },
+    {
+      "text": "A repetitive output pattern in translation where a sequence of tokens is excessively repeated, indicating a form of degenerate generation.",
+      "papers": [
+        "Mitigating Hallucinated Translations in Large Language Models with Hallucination-focused Preference Optimization"
+      ],
+      "original_name": "Oscillatory hallucination"
+    }
+  ],
+  "definition_count": 10,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Style transfer",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Style Transfer with Multi-iteration Preference Optimization",
+      "evidence": "First, we observe repetitions and hallucinations in some transferred texts. (Limitations)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Style Transfer with Multi-iteration Preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models",
+      "evidence": "To address this, we extend human evaluation guidelines from Clark et al. (2023), assessing repetition, fluency, coherence, compatibility (ROCStories/DialogSum), and hallucination (DeliData): (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reward hacking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Demystifying Long Chain-of-Thought Reasoning",
+      "evidence": "We observed that with enough training compute, the model started to show signs of reward hacking, where it increased the lengths of its CoTs on hard questions using repetition rather than learning to solve them. (Section 4.6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Demystifying Long Chain-of-Thought Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Training data regurgitation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Interpreting the Repeated Token Phenomenon in Large Language Models",
+      "evidence": "Nasr et al. (2023) first observed that repeated tokens could confuse models, creating a vulnerability exploitable for training data leakage attacks. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Interpreting the Repeated Token Phenomenon in Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is as a generation failure in which outputs repeat tokens, words, phrases, sentences, utterances, or ideas. Most descriptions treat the repeated material as unnecessary or meaningless, either as repetition that affects meaning, adds no new information, or lowers readability, conciseness, coherence, or response diversity. A smaller line of work narrows it to outputs that devolve into unproductive loops on hard tasks, repeated list items within a single response, or repetition of the same prompted token many times."
+    },
+    {
+      "label": "Variants.",
+      "text": "Variants span general and long-form text generation, reasoning failures described as unproductive generation loops, multi-turn social dialogue, query-focused and book-length summarization, code generation, and translation. The most common labels are repetitive generation, repetition, and repetitive text generation, while smaller labels include parroting for repeated actions in dialogue and oscillatory hallucination for repeated token sequences in translation. Other formulations focus on duplicate summary spans, duplicate code fragments such as repeated assertions or comments, single-token repetition tasks, and repeated character sequences in no-space content."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers connect it to 1 measurement instrument, Human evaluation. This appears as guideline-based human scoring that assesses repetition alongside fluency, coherence, compatibility, and hallucination, and some evaluation prompts ask directly whether a response repeats itself, including repeated list items."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it, so papers do not present a shared view of which construct it reflects. Instead, individual papers report it as related to Style transfer and Reward hacking, and one paper claims a causal relationship from Repetitive generation to Training data regurgitation, stating that repeated tokens could confuse models and create a vulnerability for leakage attacks."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is as a generation failure in which outputs repeat tokens, words, phrases, sentences, utterances, or ideas. Most descriptions treat the repeated material as unnecessary or meaningless, either as repetition that affects meaning, adds no new information, or lowers readability, conciseness, coherence, or response diversity. A smaller line of work narrows it to outputs that devolve into unproductive loops on hard tasks, repeated list items within a single response, or repetition of the same prompted token many times.\n\nVariants. Variants span general and long-form text generation, reasoning failures described as unproductive generation loops, multi-turn social dialogue, query-focused and book-length summarization, code generation, and translation. The most common labels are repetitive generation, repetition, and repetitive text generation, while smaller labels include parroting for repeated actions in dialogue and oscillatory hallucination for repeated token sequences in translation. Other formulations focus on duplicate summary spans, duplicate code fragments such as repeated assertions or comments, single-token repetition tasks, and repeated character sequences in no-space content.\n\nSpace of elicitation and scores. Papers connect it to 1 measurement instrument, Human evaluation. This appears as guideline-based human scoring that assesses repetition alongside fluency, coherence, compatibility, and hallucination, and some evaluation prompts ask directly whether a response repeats itself, including repeated list items.\n\nWhat it is taken as evidence of. No construct is linked to it, so papers do not present a shared view of which construct it reflects. Instead, individual papers report it as related to Style transfer and Reward hacking, and one paper claims a causal relationship from Repetitive generation to Training data regurgitation, stating that repeated tokens could confuse models and create a vulnerability for leakage attacks.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "MAGNET: Augmenting Generative Decoders with Representation Learning and Infilling Capabilities",
+      "Marco-o1 v2: Towards Widening The Distillation Bottleneck for Reasoning Models",
+      "Rethinking Repetition Problems of LLMs in Code Generation",
+      "SOTOPIA-\u03a9: Dynamic Strategy Injection Learning and Social Instruction Following Evaluation for Social Agents",
+      "Segment-Level Diffusion: A Framework for Controllable Long-Form Generation with Diffusion Language Models",
+      "ReLearn: Unlearning via Learning for Large Language Models"
+    ],
+    "emnlp25": [
+      "AFRIDOC-MT: Document-level MT Corpus for African Languages",
+      "Code Execution as Grounded Supervision for LLM Reasoning",
+      "Evaluating Large Language Models for Detecting Antisemitism",
+      "MuTIS: Enhancing Reasoning Efficiency through Multi Turn Intervention Sampling in Reinforcement Learning",
+      "Sparse Activation Editing for Reliable Instruction Following in Narratives",
+      "Weights-Rotated Preference Optimization for Large Language Models"
+    ],
+    "icml25": [
+      "Interpreting the Repeated Token Phenomenon in Large Language Models"
+    ],
+    "iclr24": [
+      "BooookScore: A systematic exploration of book-length summarization in the era of LLMs",
+      "Branch-GAN: Improving Text Generation with (not so) Large Language Models",
+      "Human Feedback is not Gold Standard",
+      "Tailoring Self-Rationalizers with Multi-Reward Distillation"
+    ],
+    "naacl25": [
+      "DETQUS: Decomposition-Enhanced Transformers for QUery-focused Summarization",
+      "Mitigating Hallucinated Translations in Large Language Models with Hallucination-focused Preference Optimization",
+      "RAP: A Metric for Balancing Repetition and Performance in Open-Source Large Language Models"
+    ],
+    "iclr25": [
+      "A Closer Look at Machine Unlearning for Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 6,
+    "emnlp25": 6,
+    "icml25": 1,
+    "iclr24": 4,
+    "naacl25": 3,
+    "iclr25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "canonical_name": "Uncertainty quantification",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats uncertainty quantification, often under the label uncertainty estimation, as a model's ability to represent or infer how uncertain it is about its own predictions, often in calibration terms where \"expressed confidence aligns with the actual probability of being correct.\" Many definitions keep this broad, referring to the reliability of predictions, responses, or internal states. A smaller line of work narrows the concept to specific loci, including evaluator judgments, reward-model predictions of human preference, the reasoning process, and underspecified user requests. The main variation is therefore between a general self-uncertainty capacity and scoped forms tied to prediction, evaluation, reasoning, or interaction context.\n\nSpace of facets. Papers organize this family of terms into several subtypes: uncertainty in attention and prediction distributions, evaluation uncertainty, response uncertainty, reasoning uncertainty, reward uncertainty, and underspecification uncertainty. The broad label uncertainty estimation is also tied to self-evaluation, and confidence elicitation is used for estimating confidence in responses. Some subtype names cover different objects: response uncertainty is defined either as ambiguity in a response probability distribution or as variability across sampled outputs, and evaluation uncertainty is defined either as instability in evaluator judgments or as uncertainty about unobserved evaluation scores.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. In use, papers instead operationalize the construct with model-side quantities such as confidence compared with correctness, entropy of the predictive posterior, token probabilities, perplexity, logits and attention scores, Jensen-Shannon divergence over categorical attention, ensemble-based uncertainty, and variability across sampled outputs. These estimates are then used for routing or rejection, adaptive attention or gating, data selection and confidence sets, dynamic fusion, and conditional-threshold decisions.\n\nLinks. The only recorded construct link is to Truthfulness. One paper claims a causal relationship from uncertainty quantification to Truthfulness, describing it as \"a prominent approach for eliciting truthful answers from large language models.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Uncertainty quantification",
+    "Reward uncertainty",
+    "Evaluation uncertainty",
+    "Response uncertainty",
+    "Reasoning uncertainty",
+    "Underspecification uncertainty",
+    "Uncertainty estimation"
+  ],
+  "papers": [
+    "AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment",
+    "CER: Confidence Enhanced Reasoning in LLMs",
+    "Semantic Exploration with Adaptive Gating for Efficient Problem Solving with Language Models",
+    "Towards Harmonized Uncertainty Estimation for Large Language Models",
+    "A Head to Predict and a Head to Question: Pre-trained Uncertainty Quantification Heads for Hallucination Detection in LLM Outputs",
+    "Calibrating LLMs for Text-to-SQL Parsing by Leveraging Sub-clause Frequencies",
+    "MoSEs: Uncertainty-Aware AI-Generated Text Detection via Mixture of Stylistics Experts with Conditional Thresholds",
+    "Simple Yet Effective: An Information-Theoretic Approach to Multi-LLM Uncertainty Quantification",
+    "Unconditional Truthfulness: Learning Unconditional Uncertainty of Large Language Models",
+    "Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens",
+    "Bayesian Low-rank Adaptation for Large Language Models",
+    "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+    "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition",
+    "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+    "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+    "Efficiently Learning at Test-Time: Active Fine-Tuning of LLMs",
+    "LiFT: Learning to Fine-Tune via Bayesian Parameter Efficient Meta Fine-Tuning",
+    "Uncertainty and Influence aware Reward Model Refinement for Reinforcement Learning from Human Feedback",
+    "Bayesian Neural Scaling Law Extrapolation with Prior-Data Fitted Networks",
+    "Learning to Route LLMs with Confidence Tokens",
+    "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+    "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+    "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+    "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+    "Prune \u2019n Predict: Optimizing LLM Decision-making with Conformal Prediction",
+    "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models",
+    "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+    "Uncertainty Quantification for LLM-Based Survey Simulations",
+    "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
+    "Active Evaluation Acquisition for Efficient LLM Benchmarking"
+  ],
+  "paper_count": 30,
+  "definitions": [
+    {
+      "text": "The model's ability to accurately represent its own uncertainty, where expressed confidence aligns with the actual probability of being correct.",
+      "papers": [
+        "LiFT: Learning to Fine-Tune via Bayesian Parameter Efficient Meta Fine-Tuning",
+        "Learning to Route LLMs with Confidence Tokens",
+        "MoSEs: Uncertainty-Aware AI-Generated Text Detection via Mixture of Stylistics Experts with Conditional Thresholds"
+      ],
+      "original_name": "Uncertainty quantification"
+    },
+    {
+      "text": "The ability to quantify ambiguity in attention or prediction distributions and use that estimate to adapt model processing.",
+      "papers": [
+        "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+        "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+        "Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens",
+        "Semantic Exploration with Adaptive Gating for Efficient Problem Solving with Language Models",
+        "Bayesian Low-rank Adaptation for Large Language Models",
+        "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+        "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition"
+      ],
+      "original_name": "Uncertainty estimation"
+    },
+    {
+      "text": "The degree of confidence or ambiguity in a reward model's prediction of human preference, often estimated using ensembles.",
+      "papers": [
+        "Uncertainty and Influence aware Reward Model Refinement for Reinforcement Learning from Human Feedback"
+      ],
+      "original_name": "Reward uncertainty"
+    },
+    {
+      "text": "The degree of instability or indecision in an LLM evaluator's judgments across inputs, settings, or domains.",
+      "papers": [
+        "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+        "Active Evaluation Acquisition for Efficient LLM Benchmarking"
+      ],
+      "original_name": "Evaluation uncertainty"
+    },
+    {
+      "text": "The degree of ambiguity or lack of confidence in the model's predicted probability distribution for a response to a given prompt.",
+      "papers": [
+        "Efficiently Learning at Test-Time: Active Fine-Tuning of LLMs",
+        "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration"
+      ],
+      "original_name": "Response uncertainty"
+    },
+    {
+      "text": "The degree of uncertainty in the model's reasoning process, especially when token probability trends suggest weaker alignment with successful reasoning.",
+      "papers": [
+        "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models"
+      ],
+      "original_name": "Reasoning uncertainty"
+    },
+    {
+      "text": "The latent uncertainty arising when a user's input does not fully specify the task or provide sufficient context, leading to ambiguity in the model's response generation.",
+      "papers": [
+        "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents"
+      ],
+      "original_name": "Underspecification uncertainty"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models",
+      "evidence": "Uncertainty quantification (UQ) is a prominent approach for eliciting truthful answers from large language models (LLMs).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Token-Level Density-Based Uncertainty Quantification Methods for Eliciting Truthfulness of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats uncertainty quantification, often under the label uncertainty estimation, as a model's ability to represent or infer how uncertain it is about its own predictions, often in calibration terms where \"expressed confidence aligns with the actual probability of being correct.\" Many definitions keep this broad, referring to the reliability of predictions, responses, or internal states. A smaller line of work narrows the concept to specific loci, including evaluator judgments, reward-model predictions of human preference, the reasoning process, and underspecified user requests. The main variation is therefore between a general self-uncertainty capacity and scoped forms tied to prediction, evaluation, reasoning, or interaction context."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers organize this family of terms into several subtypes: uncertainty in attention and prediction distributions, evaluation uncertainty, response uncertainty, reasoning uncertainty, reward uncertainty, and underspecification uncertainty. The broad label uncertainty estimation is also tied to self-evaluation, and confidence elicitation is used for estimating confidence in responses. Some subtype names cover different objects: response uncertainty is defined either as ambiguity in a response probability distribution or as variability across sampled outputs, and evaluation uncertainty is defined either as instability in evaluator judgments or as uncertainty about unobserved evaluation scores."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to it. In use, papers instead operationalize the construct with model-side quantities such as confidence compared with correctness, entropy of the predictive posterior, token probabilities, perplexity, logits and attention scores, Jensen-Shannon divergence over categorical attention, ensemble-based uncertainty, and variability across sampled outputs. These estimates are then used for routing or rejection, adaptive attention or gating, data selection and confidence sets, dynamic fusion, and conditional-threshold decisions."
+    },
+    {
+      "label": "Links.",
+      "text": "The only recorded construct link is to Truthfulness. One paper claims a causal relationship from uncertainty quantification to Truthfulness, describing it as \"a prominent approach for eliciting truthful answers from large language models.\""
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats uncertainty quantification, often under the label uncertainty estimation, as a model's ability to represent or infer how uncertain it is about its own predictions, often in calibration terms where \"expressed confidence aligns with the actual probability of being correct.\" Many definitions keep this broad, referring to the reliability of predictions, responses, or internal states. A smaller line of work narrows the concept to specific loci, including evaluator judgments, reward-model predictions of human preference, the reasoning process, and underspecified user requests. The main variation is therefore between a general self-uncertainty capacity and scoped forms tied to prediction, evaluation, reasoning, or interaction context.\n\nSpace of facets. Papers organize this family of terms into several subtypes: uncertainty in attention and prediction distributions, evaluation uncertainty, response uncertainty, reasoning uncertainty, reward uncertainty, and underspecification uncertainty. The broad label uncertainty estimation is also tied to self-evaluation, and confidence elicitation is used for estimating confidence in responses. Some subtype names cover different objects: response uncertainty is defined either as ambiguity in a response probability distribution or as variability across sampled outputs, and evaluation uncertainty is defined either as instability in evaluator judgments or as uncertainty about unobserved evaluation scores.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to it. In use, papers instead operationalize the construct with model-side quantities such as confidence compared with correctness, entropy of the predictive posterior, token probabilities, perplexity, logits and attention scores, Jensen-Shannon divergence over categorical attention, ensemble-based uncertainty, and variability across sampled outputs. These estimates are then used for routing or rejection, adaptive attention or gating, data selection and confidence sets, dynamic fusion, and conditional-threshold decisions.\n\nLinks. The only recorded construct link is to Truthfulness. One paper claims a causal relationship from uncertainty quantification to Truthfulness, describing it as \"a prominent approach for eliciting truthful answers from large language models.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "AmbiK: Dataset of Ambiguous Tasks in Kitchen Environment",
+      "CER: Confidence Enhanced Reasoning in LLMs",
+      "Semantic Exploration with Adaptive Gating for Efficient Problem Solving with Language Models",
+      "Towards Harmonized Uncertainty Estimation for Large Language Models"
+    ],
+    "emnlp25": [
+      "A Head to Predict and a Head to Question: Pre-trained Uncertainty Quantification Heads for Hallucination Detection in LLM Outputs",
+      "Calibrating LLMs for Text-to-SQL Parsing by Leveraging Sub-clause Frequencies",
+      "MoSEs: Uncertainty-Aware AI-Generated Text Detection via Mixture of Stylistics Experts with Conditional Thresholds",
+      "Simple Yet Effective: An Information-Theoretic Approach to Multi-LLM Uncertainty Quantification",
+      "Unconditional Truthfulness: Learning Unconditional Uncertainty of Large Language Models",
+      "Large Language Models Have Intrinsic Meta-Cognition, but Need a Good Lens"
+    ],
+    "iclr25": [
+      "Adaptive Transformer Programs: Bridging the Gap Between Performance and Interpretability in Transformers",
+      "An Empirical Analysis of Uncertainty in Large Language Model Evaluations",
+      "Efficiently Learning at Test-Time: Active Fine-Tuning of LLMs",
+      "LiFT: Learning to Fine-Tune via Bayesian Parameter Efficient Meta Fine-Tuning",
+      "Uncertainty and Influence aware Reward Model Refinement for Reinforcement Learning from Human Feedback"
+    ],
+    "icml25": [
+      "Bayesian Neural Scaling Law Extrapolation with Prior-Data Fitted Networks",
+      "Learning to Route LLMs with Confidence Tokens",
+      "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+      "Position: LLMs Need a Bayesian Meta-Reasoning Framework for More Robust and Generalizable Reasoning",
+      "Position: Uncertainty Quantification Needs Reassessment for Large Language Model Agents",
+      "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+      "Prune \u2019n Predict: Optimizing LLM Decision-making with Conformal Prediction",
+      "Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models",
+      "Towards Rationale-Answer Alignment of LVLMs via Self-Rationale Calibration",
+      "Uncertainty Quantification for LLM-Based Survey Simulations",
+      "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
+      "Active Evaluation Acquisition for Efficient LLM Benchmarking"
+    ],
+    "iclr24": [
+      "Bayesian Low-rank Adaptation for Large Language Models",
+      "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+      "It's Never Too Late: Fusing Acoustic Information into Large Language Models for Automatic Speech Recognition"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 4,
+    "emnlp25": 6,
+    "iclr25": 5,
+    "icml25": 12,
+    "iclr24": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

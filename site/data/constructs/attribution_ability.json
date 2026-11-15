@@ -1,0 +1,106 @@
+{
+  "canonical_name": "Attribution ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, attribution ability is consistently framed as source-grounded support: models are expected to back claims with traceable, source-aligned evidence and to link statements to the evidence that supports them. One study notes that LLMs often have \"limited ability to attribute their claims to source material,\" which matches this emphasis on grounding and traceability. A narrower formulation centers on generated explanations for fact checking, where citations should faithfully reflect the actual content and context of the provided passages, while the broader formulation speaks about model claims and the auditability and verification of reasoning steps.\n\nSpace of facets. No explicit facet structure or subtype taxonomy is laid out in the papers. The main naming variation is between \"attribution\" and \"evidence attribution\": the former is described broadly as supporting claims with traceable evidence, while the latter focuses more specifically on whether statements in explanations are correctly and faithfully linked to supporting source evidence. The clearest difference is scope, broad model claims versus explanation-level citation faithfulness.\n\nSpace of measurement. No measurement instrument is linked to this construct, and no behavioral indicator is linked to it. Instead, the papers describe operationalization in terms of what should be assessed: whether attribution is faithful to the source evidence, whether citations reflect the source content and context, and whether claims are supported by traceable, source-aligned evidence. In the usage in the papers, assessment is described at the level of these targets rather than through a named instrument.\n\nLinks. The linked constructs are Trustworthiness and Interpretability and explainability, both through causal claims. One paper claims a causal relationship from attribution ability to Trustworthiness, stating that improving accurate attributions has the potential to help improve trustworthiness, alongside usefulness and transparency. Another paper claims a causal relationship from attribution ability to Interpretability and explainability, describing indexed attribution triplets in generated text as enhancing interpretability; no correlational or generic related links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Attribution",
+    "Evidence attribution"
+  ],
+  "papers": [
+    "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+    "Unstructured Evidence Attribution for Long Context Query Focused Summarization",
+    "Evaluating Evidence Attribution in Generated Fact Checking Explanations"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The ability of a model to support its claims with traceable, source-aligned evidence, enabling auditability and verification of reasoning steps.",
+      "papers": [
+        "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning"
+      ],
+      "original_name": "Attribution"
+    },
+    {
+      "text": "The latent ability of a model to correctly and faithfully link statements in its explanations to the supporting source evidence, ensuring that citations reflect actual content and context from the provided passages.",
+      "papers": [
+        "Evaluating Evidence Attribution in Generated Fact Checking Explanations"
+      ],
+      "original_name": "Evidence attribution"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Trustworthiness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Unstructured Evidence Attribution for Long Context Query Focused Summarization",
+      "evidence": "Improving the ability of LLMs to both generate relevant summaries and provide accurate attributions has the potential to help improve their usefulness, transparency, and trustworthiness. (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Unstructured Evidence Attribution for Long Context Query Focused Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Interpretability and explainability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Evaluating and Improving Graph to Text Generation with Large Language Models",
+      "evidence": "Attribution: attribute triplet indexes in the generated text using sequential numbers to enhance the interpretability of the generated text. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Evaluating and Improving Graph to Text Generation with Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, attribution ability is consistently framed as source-grounded support: models are expected to back claims with traceable, source-aligned evidence and to link statements to the evidence that supports them. One study notes that LLMs often have \"limited ability to attribute their claims to source material,\" which matches this emphasis on grounding and traceability. A narrower formulation centers on generated explanations for fact checking, where citations should faithfully reflect the actual content and context of the provided passages, while the broader formulation speaks about model claims and the auditability and verification of reasoning steps."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "No explicit facet structure or subtype taxonomy is laid out in the papers. The main naming variation is between \"attribution\" and \"evidence attribution\": the former is described broadly as supporting claims with traceable evidence, while the latter focuses more specifically on whether statements in explanations are correctly and faithfully linked to supporting source evidence. The clearest difference is scope, broad model claims versus explanation-level citation faithfulness."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to this construct, and no behavioral indicator is linked to it. Instead, the papers describe operationalization in terms of what should be assessed: whether attribution is faithful to the source evidence, whether citations reflect the source content and context, and whether claims are supported by traceable, source-aligned evidence. In the usage in the papers, assessment is described at the level of these targets rather than through a named instrument."
+    },
+    {
+      "label": "Links.",
+      "text": "The linked constructs are Trustworthiness and Interpretability and explainability, both through causal claims. One paper claims a causal relationship from attribution ability to Trustworthiness, stating that improving accurate attributions has the potential to help improve trustworthiness, alongside usefulness and transparency. Another paper claims a causal relationship from attribution ability to Interpretability and explainability, describing indexed attribution triplets in generated text as enhancing interpretability; no correlational or generic related links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, attribution ability is consistently framed as source-grounded support: models are expected to back claims with traceable, source-aligned evidence and to link statements to the evidence that supports them. One study notes that LLMs often have \"limited ability to attribute their claims to source material,\" which matches this emphasis on grounding and traceability. A narrower formulation centers on generated explanations for fact checking, where citations should faithfully reflect the actual content and context of the provided passages, while the broader formulation speaks about model claims and the auditability and verification of reasoning steps.\n\nSpace of facets. No explicit facet structure or subtype taxonomy is laid out in the papers. The main naming variation is between \"attribution\" and \"evidence attribution\": the former is described broadly as supporting claims with traceable evidence, while the latter focuses more specifically on whether statements in explanations are correctly and faithfully linked to supporting source evidence. The clearest difference is scope, broad model claims versus explanation-level citation faithfulness.\n\nSpace of measurement. No measurement instrument is linked to this construct, and no behavioral indicator is linked to it. Instead, the papers describe operationalization in terms of what should be assessed: whether attribution is faithful to the source evidence, whether citations reflect the source content and context, and whether claims are supported by traceable, source-aligned evidence. In the usage in the papers, assessment is described at the level of these targets rather than through a named instrument.\n\nLinks. The linked constructs are Trustworthiness and Interpretability and explainability, both through causal claims. One paper claims a causal relationship from attribution ability to Trustworthiness, stating that improving accurate attributions has the potential to help improve trustworthiness, alongside usefulness and transparency. Another paper claims a causal relationship from attribution ability to Interpretability and explainability, describing indexed attribution triplets in generated text as enhancing interpretability; no correlational or generic related links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Tree-of-Quote Prompting Improves Factuality and Attribution in Multi-Hop and Medical Reasoning",
+      "Unstructured Evidence Attribution for Long Context Query Focused Summarization"
+    ],
+    "naacl25": [
+      "Evaluating Evidence Attribution in Generated Fact Checking Explanations"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

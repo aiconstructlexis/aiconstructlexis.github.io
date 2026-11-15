@@ -1,0 +1,307 @@
+{
+  "canonical_name": "Abstract reasoning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Most papers describe abstract reasoning as high-level reasoning over concepts, principles, relations, or problem structure, rather than concrete instances, direct computation, low-level details, symbolic manipulation, or precise step-by-step deduction. This framing appears in discussions of program properties, formal logic and commonsense, semantic analysis and planning, and prompts that use higher-level thoughts or an overarching perspective to guide reasoning. A smaller line of work uses the label for narrower abilities, such as inferring patterns from a few examples, generalizing event mentions by omitting spurious details, turning abstract equations or flowcharts into implementation decisions, handling difficult non-routine mathematics, or completing visual analogies.\n\nSpace of facets. Papers often align abstract reasoning with abstract thinking or high-level reasoning, and commonly contrast it with low-level reasoning, surface-level reasoning steps, and attention to concrete or irrelevant details. One theoretical account explicitly breaks it into abstraction, extracting common features from concrete entities, and reasoning, deriving new knowledge from existing information. Other papers systematize it through operations like simplifying a problem into an archetype, filtering out intellectually irrelevant components, mapping generalized cause or effect events back to mentions in context, or using analogical, inductive, or transductive strategies to apply a principle to a new case.\n\nSpace of measurement. Papers link abstract reasoning to 3 measurement instruments, ARC-AGI, Abstraction and Reasoning Corpus, and Bongard Problems, and to 1 behavioral indicator, iterative refinement. The linked instruments are all task-style evaluations: the Abstraction and Reasoning Corpus is described as evaluating abstract reasoning through solving visual puzzles, Bongard Problems as visual puzzles testing pattern recognition and abstract reasoning, and ARC-AGI as a challenge that exposes limitations in abstract reasoning. These operationalizations focus on puzzle solving and pattern recognition, while definitions also place the construct in program verification, formal logic, causal event abstraction, mathematical problem solving, and implementation synthesis; the linked behavioral indicator appears as a causal link rather than a direct measure.\n\nLinks. Papers link abstract reasoning to 5 constructs. One paper claims a causal relationship from code understanding to abstract reasoning, and another claims a causal relationship from symbolic reasoning to abstract reasoning, stating that emergent reasoning in neural networks depends on symbolic mechanisms. In the other direction, one paper claims a causal relationship from abstract reasoning to the linked behavioral indicator by integrating abstract reasoning into reflection to generate adaptive instruction. Abstract reasoning is also related to general reasoning, with one paper reporting a discrepancy between their performances, to geometric reasoning through the need for advanced spatial comprehension and abstract thinking, and to reasoning itself in an account that treats abstract reasoning as involving both abstraction and reasoning; no correlational link is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Abstract reasoning",
+    "Abstract thinking",
+    "High-level reasoning",
+    "Advanced abstract reasoning",
+    "Visual analogy solving"
+  ],
+  "papers": [
+    "LMR-BENCH: Evaluating LLM Agent's Ability on Reproducing Language Modeling Research",
+    "Puzzled by Puzzles: When Vision-Language Models Can't Take a Hint",
+    "Think Globally, Group Locally: Evaluating LLMs Using Multi-Lingual Word Grouping Games",
+    "Towards Robust Mathematical Reasoning",
+    "Lemur: Integrating Large Language Models in Automated Program Verification",
+    "MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning",
+    "ToRA: A Tool-Integrated Reasoning Agent for Mathematical Problem Solving",
+    "Attention as a Hypernetwork",
+    "ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation",
+    "Combining Induction and Transduction for Abstract Reasoning",
+    "Do Large Language Models Truly Understand Geometric Structures?",
+    "VOILA: Evaluation of MLLMs For Perceptual Understanding and Analogical Reasoning",
+    "Benchmarking Abstract and Reasoning Abilities Through A Theoretical Perspective",
+    "Bongard in Wonderland: Visual Puzzles that Still Make AI Go Mad?",
+    "Emergent Symbolic Mechanisms Support Abstract Reasoning in Large Language Models",
+    "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective",
+    "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems",
+    "SPEX: Scaling Feature Interaction Explanations for LLMs",
+    "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning",
+    "ACCESS : A Benchmark for Abstract Causal Event Discovery and Reasoning",
+    "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models",
+    "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction",
+    "IrokoBench: A New Benchmark for African Languages in the Age of Large Language Models",
+    "DeiSAM: Segment Anything with Deictic Prompting",
+    "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+    "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance"
+  ],
+  "paper_count": 26,
+  "definitions": [
+    {
+      "text": "The ability to reason about program properties and logic at a conceptual level, distinct from precise, step-by-step formal deduction.",
+      "papers": [
+        "Lemur: Integrating Large Language Models in Automated Program Verification",
+        "MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning",
+        "ToRA: A Tool-Integrated Reasoning Agent for Mathematical Problem Solving",
+        "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+        "Combining Induction and Transduction for Abstract Reasoning",
+        "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction",
+        "IrokoBench: A New Benchmark for African Languages in the Age of Large Language Models",
+        "ACCESS : A Benchmark for Abstract Causal Event Discovery and Reasoning",
+        "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning",
+        "LMR-BENCH: Evaluating LLM Agent's Ability on Reproducing Language Modeling Research"
+      ],
+      "original_name": "Abstract reasoning"
+    },
+    {
+      "text": "The cognitive ability to work with concepts and principles independent of concrete instances, which is considered a prerequisite for demanding tasks like code generation.",
+      "papers": [
+        "ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation",
+        "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models"
+      ],
+      "original_name": "Abstract thinking"
+    },
+    {
+      "text": "The latent ability of a model to reason from abstract, conceptual representations of a problem rather than from low-level details, enabling more robust and semantically precise inference.",
+      "papers": [
+        "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models"
+      ],
+      "original_name": "High-level reasoning"
+    },
+    {
+      "text": "The capacity to handle difficult combinatorial or other non-routine mathematical problems that require deeper abstraction and problem solving.",
+      "papers": [
+        "Towards Robust Mathematical Reasoning"
+      ],
+      "original_name": "Advanced abstract reasoning"
+    },
+    {
+      "text": "Completing a visual analogy by inferring the missing image from a reference pair and an application pair.",
+      "papers": [
+        "VOILA: Evaluation of MLLMs For Perceptual Understanding and Analogical Reasoning"
+      ],
+      "original_name": "Visual analogy solving"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Lemur: Integrating Large Language Models in Automated Program Verification",
+      "evidence": "This decomposition requires high-level reasoning that is difficult to automate using conventional formal methods, but plausibly could be performed by LLMs, with their documented code-understanding capability. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Lemur: Integrating Large Language Models in Automated Program Verification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "General reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance",
+      "evidence": "Our findings reveal a substantial discrepancy between their general reasoning and abstract reasoning performances. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Geometric reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Do Large Language Models Truly Understand Geometric Structures?",
+      "evidence": "Geometric ability is a significant challenge for large language models (LLMs) due to the need for advanced spatial comprehension and abstract thinking.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do Large Language Models Truly Understand Geometric Structures?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Iterative refinement",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction",
+      "evidence": "We propose Instruct-of-Reflection (IoRT), a dynamic iterative reflection framework that integrates abstract reasoning into the reflection process, generating adaptive instruction to regulate the iterative reflection. (\u00a7 7)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Symbolic reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Emergent Symbolic Mechanisms Support Abstract Reasoning in Large Language Models",
+      "evidence": "These results point toward a resolution of the longstanding debate between symbolic and neural network approaches, suggesting that emergent reasoning in neural networks depends on the emergence of symbolic mechanisms. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Emergent Symbolic Mechanisms Support Abstract Reasoning in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Benchmarking Abstract and Reasoning Abilities Through A Theoretical Perspective",
+      "evidence": "abstract reasoning involves two core processes: abstraction, the extraction of common features from concrete entities (Murphy, 2004), and reasoning, the derivation of new knowledge from existing information (Holyoak & Morrison, 2012).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Benchmarking Abstract and Reasoning Abilities Through A Theoretical Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ARC-AGI",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective",
+      "evidence": "The Abstraction and Reasoning Corpus (ARC-AGI) poses a significant challenge for large language models (LLMs), exposing limitations in their abstract reasoning abilities. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Bongard Problems",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Bongard in Wonderland: Visual Puzzles that Still Make AI Go Mad?",
+      "evidence": "\u201cThese visual puzzles test cognitive abilities in pattern recognition and abstract reasoning\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Bongard in Wonderland: Visual Puzzles that Still Make AI Go Mad?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Abstraction and Reasoning Corpus",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning",
+      "evidence": "\"The Abstraction and Reasoning Corpus (ARC) aims to evaluate the abstract reasoning capabilities of language models through their ability to solve visual puzzles.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Most papers describe abstract reasoning as high-level reasoning over concepts, principles, relations, or problem structure, rather than concrete instances, direct computation, low-level details, symbolic manipulation, or precise step-by-step deduction. This framing appears in discussions of program properties, formal logic and commonsense, semantic analysis and planning, and prompts that use higher-level thoughts or an overarching perspective to guide reasoning. A smaller line of work uses the label for narrower abilities, such as inferring patterns from a few examples, generalizing event mentions by omitting spurious details, turning abstract equations or flowcharts into implementation decisions, handling difficult non-routine mathematics, or completing visual analogies."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers often align abstract reasoning with abstract thinking or high-level reasoning, and commonly contrast it with low-level reasoning, surface-level reasoning steps, and attention to concrete or irrelevant details. One theoretical account explicitly breaks it into abstraction, extracting common features from concrete entities, and reasoning, deriving new knowledge from existing information. Other papers systematize it through operations like simplifying a problem into an archetype, filtering out intellectually irrelevant components, mapping generalized cause or effect events back to mentions in context, or using analogical, inductive, or transductive strategies to apply a principle to a new case."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link abstract reasoning to 3 measurement instruments, ARC-AGI, Abstraction and Reasoning Corpus, and Bongard Problems, and to 1 behavioral indicator, iterative refinement. The linked instruments are all task-style evaluations: the Abstraction and Reasoning Corpus is described as evaluating abstract reasoning through solving visual puzzles, Bongard Problems as visual puzzles testing pattern recognition and abstract reasoning, and ARC-AGI as a challenge that exposes limitations in abstract reasoning. These operationalizations focus on puzzle solving and pattern recognition, while definitions also place the construct in program verification, formal logic, causal event abstraction, mathematical problem solving, and implementation synthesis; the linked behavioral indicator appears as a causal link rather than a direct measure."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link abstract reasoning to 5 constructs. One paper claims a causal relationship from code understanding to abstract reasoning, and another claims a causal relationship from symbolic reasoning to abstract reasoning, stating that emergent reasoning in neural networks depends on symbolic mechanisms. In the other direction, one paper claims a causal relationship from abstract reasoning to the linked behavioral indicator by integrating abstract reasoning into reflection to generate adaptive instruction. Abstract reasoning is also related to general reasoning, with one paper reporting a discrepancy between their performances, to geometric reasoning through the need for advanced spatial comprehension and abstract thinking, and to reasoning itself in an account that treats abstract reasoning as involving both abstraction and reasoning; no correlational link is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Most papers describe abstract reasoning as high-level reasoning over concepts, principles, relations, or problem structure, rather than concrete instances, direct computation, low-level details, symbolic manipulation, or precise step-by-step deduction. This framing appears in discussions of program properties, formal logic and commonsense, semantic analysis and planning, and prompts that use higher-level thoughts or an overarching perspective to guide reasoning. A smaller line of work uses the label for narrower abilities, such as inferring patterns from a few examples, generalizing event mentions by omitting spurious details, turning abstract equations or flowcharts into implementation decisions, handling difficult non-routine mathematics, or completing visual analogies.\n\nSpace of facets. Papers often align abstract reasoning with abstract thinking or high-level reasoning, and commonly contrast it with low-level reasoning, surface-level reasoning steps, and attention to concrete or irrelevant details. One theoretical account explicitly breaks it into abstraction, extracting common features from concrete entities, and reasoning, deriving new knowledge from existing information. Other papers systematize it through operations like simplifying a problem into an archetype, filtering out intellectually irrelevant components, mapping generalized cause or effect events back to mentions in context, or using analogical, inductive, or transductive strategies to apply a principle to a new case.\n\nSpace of measurement. Papers link abstract reasoning to 3 measurement instruments, ARC-AGI, Abstraction and Reasoning Corpus, and Bongard Problems, and to 1 behavioral indicator, iterative refinement. The linked instruments are all task-style evaluations: the Abstraction and Reasoning Corpus is described as evaluating abstract reasoning through solving visual puzzles, Bongard Problems as visual puzzles testing pattern recognition and abstract reasoning, and ARC-AGI as a challenge that exposes limitations in abstract reasoning. These operationalizations focus on puzzle solving and pattern recognition, while definitions also place the construct in program verification, formal logic, causal event abstraction, mathematical problem solving, and implementation synthesis; the linked behavioral indicator appears as a causal link rather than a direct measure.\n\nLinks. Papers link abstract reasoning to 5 constructs. One paper claims a causal relationship from code understanding to abstract reasoning, and another claims a causal relationship from symbolic reasoning to abstract reasoning, stating that emergent reasoning in neural networks depends on symbolic mechanisms. In the other direction, one paper claims a causal relationship from abstract reasoning to the linked behavioral indicator by integrating abstract reasoning into reflection to generate adaptive instruction. Abstract reasoning is also related to general reasoning, with one paper reporting a discrepancy between their performances, to geometric reasoning through the need for advanced spatial comprehension and abstract thinking, and to reasoning itself in an account that treats abstract reasoning as involving both abstraction and reasoning; no correlational link is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "LMR-BENCH: Evaluating LLM Agent's Ability on Reproducing Language Modeling Research",
+      "Puzzled by Puzzles: When Vision-Language Models Can't Take a Hint",
+      "Think Globally, Group Locally: Evaluating LLMs Using Multi-Lingual Word Grouping Games",
+      "Towards Robust Mathematical Reasoning"
+    ],
+    "iclr24": [
+      "Lemur: Integrating Large Language Models in Automated Program Verification",
+      "MAmmoTH: Building Math Generalist Models through Hybrid Instruction Tuning",
+      "ToRA: A Tool-Integrated Reasoning Agent for Mathematical Problem Solving"
+    ],
+    "iclr25": [
+      "Attention as a Hypernetwork",
+      "ChartMimic: Evaluating LMM's Cross-Modal Reasoning Capability via Chart-to-Code Generation",
+      "Combining Induction and Transduction for Abstract Reasoning",
+      "Do Large Language Models Truly Understand Geometric Structures?",
+      "VOILA: Evaluation of MLLMs For Perceptual Understanding and Analogical Reasoning"
+    ],
+    "icml25": [
+      "Benchmarking Abstract and Reasoning Abilities Through A Theoretical Perspective",
+      "Bongard in Wonderland: Visual Puzzles that Still Make AI Go Mad?",
+      "Emergent Symbolic Mechanisms Support Abstract Reasoning in Large Language Models",
+      "Product of Experts with LLMs: Boosting Performance on ARC Is a Matter of Perspective",
+      "Reasoning Limitations of Multimodal Large Language Models. A case study of Bongard Problems",
+      "SPEX: Scaling Feature Interaction Explanations for LLMs",
+      "The Surprising Effectiveness of Test-Time Training for Few-Shot Learning"
+    ],
+    "naacl25": [
+      "ACCESS : A Benchmark for Abstract Causal Event Discovery and Reasoning",
+      "Forest for the Trees: Overarching Prompting Evokes High-Level Reasoning in Large Language Models",
+      "Instruct-of-Reflection: Enhancing Large Language Models Iterative Reflection Capabilities via Dynamic-Meta Instruction",
+      "IrokoBench: A New Benchmark for African Languages in the Age of Large Language Models"
+    ],
+    "neurips24": [
+      "DeiSAM: Segment Anything with Deictic Prompting",
+      "LogiCity: Advancing Neuro-Symbolic AI with Abstract Urban Simulation",
+      "Meaningful Learning: Enhancing Abstract Reasoning in Large Language Models via Generic Fact Guidance"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4,
+    "iclr24": 3,
+    "iclr25": 5,
+    "icml25": 7,
+    "naacl25": 4,
+    "neurips24": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

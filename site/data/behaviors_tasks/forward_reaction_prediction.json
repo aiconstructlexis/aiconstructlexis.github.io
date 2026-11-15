@@ -1,0 +1,73 @@
+{
+  "canonical_name": "Forward reaction prediction",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. The paper treats this behavior as determining the potential products of a chemical reaction from given reactants and reagents. In LLaMo: Large Language Model-based Molecular Graph Assistant, it is also described as the \"proactive determination\" of potential products, so the task formulation centers on producing reaction products from the supplied reactants and reagents.\n\nSpace of elicitation and scores. It appears as one of several instruction types in the reported dataset collection, but no measurement instrument is linked to it.\n\nWhat it is taken as evidence of. No construct is linked to it as evidence of.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Forward reaction prediction"
+  ],
+  "papers": [
+    "Improving Chemical Understanding of LLMs via SMILES Parsing",
+    "Mol-Instructions: A Large-Scale Biomolecular Instruction Dataset for Large Language Models",
+    "Hierarchical Graph Tokenization for Molecule-Language Alignment",
+    "LLaMo: Large Language Model-based Molecular Graph Assistant"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The task of determining the potential products of a chemical reaction given a set of reactants and reagents.",
+      "papers": [
+        "LLaMo: Large Language Model-based Molecular Graph Assistant"
+      ],
+      "original_name": "Forward reaction prediction"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "The paper treats this behavior as determining the potential products of a chemical reaction from given reactants and reagents. In LLaMo: Large Language Model-based Molecular Graph Assistant, it is also described as the \"proactive determination\" of potential products, so the task formulation centers on producing reaction products from the supplied reactants and reagents."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "It appears as one of several instruction types in the reported dataset collection, but no measurement instrument is linked to it."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it as evidence of."
+    }
+  ],
+  "characterization": "Space of definitions. The paper treats this behavior as determining the potential products of a chemical reaction from given reactants and reagents. In LLaMo: Large Language Model-based Molecular Graph Assistant, it is also described as the \"proactive determination\" of potential products, so the task formulation centers on producing reaction products from the supplied reactants and reagents.\n\nSpace of elicitation and scores. It appears as one of several instruction types in the reported dataset collection, but no measurement instrument is linked to it.\n\nWhat it is taken as evidence of. No construct is linked to it as evidence of.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Improving Chemical Understanding of LLMs via SMILES Parsing"
+    ],
+    "iclr24": [
+      "Mol-Instructions: A Large-Scale Biomolecular Instruction Dataset for Large Language Models"
+    ],
+    "icml25": [
+      "Hierarchical Graph Tokenization for Molecule-Language Alignment"
+    ],
+    "neurips24": [
+      "LLaMo: Large Language Model-based Molecular Graph Assistant"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr24": 1,
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "icml25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "canonical_name": "Conditional text generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage is a task where a model produces a text response or completion conditioned on a provided input context or prompt. Definitions agree on that conditioning requirement, and one formulation describes it as generating \"fluent and coherent text completions based on input contexts\" (SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation). A smaller line of work frames it more generally as prediction from an arbitrary subset of input tokens, with outputs expected to respect and incorporate arbitrary contextual evidence.\n\nVariants. Papers most often place this behavior in familiar conditional generation tasks, with text summarization and data-to-text generation treated as related settings. Another usage names specific generation modes, including CAR generation and arbitrary-context (AC) generation, where the model predicts using arbitrary context. One paper also contrasts relatively open-ended and strongly constrained conditional settings.\n\nSpace of elicitation and scores. The measurement evidence is narrow: papers link this behavior to one measurement instrument, the dataset ParaDetox. In that usage, ParaDetox appears in a study that contrasts datasets by how strong their conditional constraints are, and describes Paradetox as imposing the strongest constraints among those datasets. No other measurement instrument is linked by the papers.\n\nWhat it is taken as evidence of. No construct is linked to conditional text generation as what it evidences. Instead, papers relate it to text summarization, data-to-text generation, and hallucination, all through related rather than evidential links.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Conditional text generation"
+  ],
+  "papers": [
+    "MiniLLM: Knowledge Distillation of Large Language Models",
+    "Beyond Autoregression: Fast LLMs via Self-Distillation Through Time",
+    "Discrete Copula Diffusion",
+    "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+    "Tractable Transformers for Flexible Conditional Generation"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Producing fluent and coherent text completions based on provided input contexts.",
+      "papers": [
+        "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+        "MiniLLM: Knowledge Distillation of Large Language Models",
+        "Tractable Transformers for Flexible Conditional Generation"
+      ],
+      "original_name": "Conditional text generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text summarization",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "evidence": "This issue arises in typical conditional text generation tasks, such as text summarization and data-to-text generation, where the goal is to produce fluent text based on contextual input. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Data-to-text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "evidence": "This issue arises in typical conditional text generation tasks, such as text summarization and data-to-text generation, where the goal is to produce fluent text based on contextual input. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ParaDetox",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Conditional [MASK] Discrete Diffusion Language Model",
+      "evidence": "In particular, we focus on two datasets that significantly differ in their level of conditional constraints: RocStories (Mostafazadeh et al., 2016), which is relatively open-ended, and Paradetox (Logacheva et al., 2022), which imposes the strongest conditional constraints (Section 5.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Conditional [MASK] Discrete Diffusion Language Model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation",
+      "evidence": "Large Language Models (LLMs), when used for conditional text generation, often produce hallucinations, i.e., information that is unfaithful or not grounded in the input context. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage is a task where a model produces a text response or completion conditioned on a provided input context or prompt. Definitions agree on that conditioning requirement, and one formulation describes it as generating \"fluent and coherent text completions based on input contexts\" (SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation). A smaller line of work frames it more generally as prediction from an arbitrary subset of input tokens, with outputs expected to respect and incorporate arbitrary contextual evidence."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers most often place this behavior in familiar conditional generation tasks, with text summarization and data-to-text generation treated as related settings. Another usage names specific generation modes, including CAR generation and arbitrary-context (AC) generation, where the model predicts using arbitrary context. One paper also contrasts relatively open-ended and strongly constrained conditional settings."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "The measurement evidence is narrow: papers link this behavior to one measurement instrument, the dataset ParaDetox. In that usage, ParaDetox appears in a study that contrasts datasets by how strong their conditional constraints are, and describes Paradetox as imposing the strongest constraints among those datasets. No other measurement instrument is linked by the papers."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to conditional text generation as what it evidences. Instead, papers relate it to text summarization, data-to-text generation, and hallucination, all through related rather than evidential links."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage is a task where a model produces a text response or completion conditioned on a provided input context or prompt. Definitions agree on that conditioning requirement, and one formulation describes it as generating \"fluent and coherent text completions based on input contexts\" (SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation). A smaller line of work frames it more generally as prediction from an arbitrary subset of input tokens, with outputs expected to respect and incorporate arbitrary contextual evidence.\n\nVariants. Papers most often place this behavior in familiar conditional generation tasks, with text summarization and data-to-text generation treated as related settings. Another usage names specific generation modes, including CAR generation and arbitrary-context (AC) generation, where the model predicts using arbitrary context. One paper also contrasts relatively open-ended and strongly constrained conditional settings.\n\nSpace of elicitation and scores. The measurement evidence is narrow: papers link this behavior to one measurement instrument, the dataset ParaDetox. In that usage, ParaDetox appears in a study that contrasts datasets by how strong their conditional constraints are, and describes Paradetox as imposing the strongest constraints among those datasets. No other measurement instrument is linked by the papers.\n\nWhat it is taken as evidence of. No construct is linked to conditional text generation as what it evidences. Instead, papers relate it to text summarization, data-to-text generation, and hallucination, all through related rather than evidential links.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Beyond Autoregression: Fast LLMs via Self-Distillation Through Time",
+      "Discrete Copula Diffusion",
+      "SCOPE: A Self-supervised Framework for Improving Faithfulness in Conditional Text Generation"
+    ],
+    "iclr24": [
+      "MiniLLM: Knowledge Distillation of Large Language Models"
+    ],
+    "icml25": [
+      "Tractable Transformers for Flexible Conditional Generation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3,
+    "iclr24": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

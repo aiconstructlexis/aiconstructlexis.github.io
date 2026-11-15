@@ -1,0 +1,79 @@
+{
+  "canonical_name": "Speech quality",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. In the usage in the papers, speech quality is described as the perceptual quality of synthesized speech output, with naturalness, clarity, and absence of artifacts named as its main aspects. The same paper also treats it as a performance dimension alongside conversational abilities, and no competing definition appears.\n\nSpace of facets. The only explicit breakdown treats naturalness, clarity, and absence of artifacts as the facets of the construct. Beyond those aspects, the paper does not introduce subtypes, broader taxonomies, or contrasts with nearby constructs.\n\nSpace of measurement. Papers link speech quality to no measurement instruments, one behavioral indicator, and no constructs. In operational use, the only paper measures it by computing VisQOL and MOSNet on reconstructed speech, explicitly targeting the reconstructed speech output.\n\nLinks. One paper claims a causal relationship from Speech enhancement to Speech quality, describing speech enhancement as aiming to improve the intelligibility and quality of speech when degradation is caused by various noises.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Speech quality"
+  ],
+  "papers": [
+    "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling",
+    "LLaMA-Omni: Seamless Speech Interaction with Large Language Models",
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The perceptual quality of the synthesized speech output, including aspects like naturalness, clarity, and absence of artifacts.",
+      "papers": [
+        "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+      ],
+      "original_name": "Speech quality"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Speech enhancement",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling",
+      "evidence": "Speech enhancement (SE) aims to improve the intelligibility and quality of speech, particularly in situations where degradation is caused by various noises. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In the usage in the papers, speech quality is described as the perceptual quality of synthesized speech output, with naturalness, clarity, and absence of artifacts named as its main aspects. The same paper also treats it as a performance dimension alongside conversational abilities, and no competing definition appears."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The only explicit breakdown treats naturalness, clarity, and absence of artifacts as the facets of the construct. Beyond those aspects, the paper does not introduce subtypes, broader taxonomies, or contrasts with nearby constructs."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link speech quality to no measurement instruments, one behavioral indicator, and no constructs. In operational use, the only paper measures it by computing VisQOL and MOSNet on reconstructed speech, explicitly targeting the reconstructed speech output."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper claims a causal relationship from Speech enhancement to Speech quality, describing speech enhancement as aiming to improve the intelligibility and quality of speech when degradation is caused by various noises."
+    }
+  ],
+  "characterization": "Space of definitions. In the usage in the papers, speech quality is described as the perceptual quality of synthesized speech output, with naturalness, clarity, and absence of artifacts named as its main aspects. The same paper also treats it as a performance dimension alongside conversational abilities, and no competing definition appears.\n\nSpace of facets. The only explicit breakdown treats naturalness, clarity, and absence of artifacts as the facets of the construct. Beyond those aspects, the paper does not introduce subtypes, broader taxonomies, or contrasts with nearby constructs.\n\nSpace of measurement. Papers link speech quality to no measurement instruments, one behavioral indicator, and no constructs. In operational use, the only paper measures it by computing VisQOL and MOSNet on reconstructed speech, explicitly targeting the reconstructed speech output.\n\nLinks. One paper claims a causal relationship from Speech enhancement to Speech quality, describing speech enhancement as aiming to improve the intelligibility and quality of speech when degradation is caused by various noises.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "GenSE: Generative Speech Enhancement via Language Models using Hierarchical Modeling",
+      "LLaMA-Omni: Seamless Speech Interaction with Large Language Models",
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

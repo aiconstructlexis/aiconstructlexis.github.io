@@ -1,0 +1,91 @@
+{
+  "canonical_name": "Spatial perception",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats spatial perception as a facet of perception concerned with understanding or accurately perceiving spatial properties and relationships in visual inputs, usually images or scenes. Most definitions stay close to this formulation, while some broaden it to include describing those relationships, reasoning about them within a scene, or interpreting them without relying on an explicit map; another paper illustrates the construct through judgments about line orientation and the horizontality of a water surface.\n\nSpace of facets. Papers offer little internal taxonomy for this construct. The clearest placement comes in Does Spatial Cognition Emerge in Frontier Models, which presents spatial perception as one skill evaluated within small-scale spatial cognition, alongside spatial visualization, spatial orientation, selective spatial attention, and visuospatial working memory; other papers mention it together with planning or reasoning capabilities, but do not introduce separate named subtypes.\n\nSpace of measurement. No measurement instrument is linked to spatial perception, and no behavioral indicator is linked to it. Instead, papers make it concrete through example tasks and failures, including understanding spatial relationships between objects in an image, determining the angle between two lines in an image, judging the horizontality of a water surface, and, as Cradle: Empowering Foundation Agents towards General Computer Control notes, difficulty locating target objects in a visual scene.\n\nLinks. Only one related link is reported. One paper relates Small-scale spatial cognition to Spatial perception, describing small-scale tasks as evaluating spatial perception together with spatial visualization, spatial orientation, selective spatial attention, and visuospatial working memory; no causal or correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Spatial perception"
+  ],
+  "papers": [
+    "ImagineNav: Prompting Vision-Language Models as Embodied Navigator through Scene Imagination",
+    "Cradle: Empowering Foundation Agents towards General Computer Control",
+    "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+    "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A specific facet of perception involving the ability to understand and describe the spatial relationships between objects in an image.",
+      "papers": [
+        "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+        "ImagineNav: Prompting Vision-Language Models as Embodied Navigator through Scene Imagination",
+        "Cradle: Empowering Foundation Agents towards General Computer Control"
+      ],
+      "original_name": "Spatial perception"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Small-scale spatial cognition",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Does Spatial Cognition Emerge in Frontier Models?",
+      "evidence": "Small-scale tasks require understanding space at the level of objects or object arrangements and evaluate skills such as spatial visualization, spatial orientation, spatial perception, selective spatial attention and visuospatial working memory. (Figure 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Does Spatial Cognition Emerge in Frontier Models?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats spatial perception as a facet of perception concerned with understanding or accurately perceiving spatial properties and relationships in visual inputs, usually images or scenes. Most definitions stay close to this formulation, while some broaden it to include describing those relationships, reasoning about them within a scene, or interpreting them without relying on an explicit map; another paper illustrates the construct through judgments about line orientation and the horizontality of a water surface."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers offer little internal taxonomy for this construct. The clearest placement comes in Does Spatial Cognition Emerge in Frontier Models, which presents spatial perception as one skill evaluated within small-scale spatial cognition, alongside spatial visualization, spatial orientation, selective spatial attention, and visuospatial working memory; other papers mention it together with planning or reasoning capabilities, but do not introduce separate named subtypes."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to spatial perception, and no behavioral indicator is linked to it. Instead, papers make it concrete through example tasks and failures, including understanding spatial relationships between objects in an image, determining the angle between two lines in an image, judging the horizontality of a water surface, and, as Cradle: Empowering Foundation Agents towards General Computer Control notes, difficulty locating target objects in a visual scene."
+    },
+    {
+      "label": "Links.",
+      "text": "Only one related link is reported. One paper relates Small-scale spatial cognition to Spatial perception, describing small-scale tasks as evaluating spatial perception together with spatial visualization, spatial orientation, selective spatial attention, and visuospatial working memory; no causal or correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats spatial perception as a facet of perception concerned with understanding or accurately perceiving spatial properties and relationships in visual inputs, usually images or scenes. Most definitions stay close to this formulation, while some broaden it to include describing those relationships, reasoning about them within a scene, or interpreting them without relying on an explicit map; another paper illustrates the construct through judgments about line orientation and the horizontality of a water surface.\n\nSpace of facets. Papers offer little internal taxonomy for this construct. The clearest placement comes in Does Spatial Cognition Emerge in Frontier Models, which presents spatial perception as one skill evaluated within small-scale spatial cognition, alongside spatial visualization, spatial orientation, selective spatial attention, and visuospatial working memory; other papers mention it together with planning or reasoning capabilities, but do not introduce separate named subtypes.\n\nSpace of measurement. No measurement instrument is linked to spatial perception, and no behavioral indicator is linked to it. Instead, papers make it concrete through example tasks and failures, including understanding spatial relationships between objects in an image, determining the angle between two lines in an image, judging the horizontality of a water surface, and, as Cradle: Empowering Foundation Agents towards General Computer Control notes, difficulty locating target objects in a visual scene.\n\nLinks. Only one related link is reported. One paper relates Small-scale spatial cognition to Spatial perception, describing small-scale tasks as evaluating spatial perception together with spatial visualization, spatial orientation, selective spatial attention, and visuospatial working memory; no causal or correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "ConvBench: A Multi-Turn Conversation Evaluation Benchmark with Hierarchical Ablation Capability for Large Vision-Language Models",
+      "Hallo3D: Multi-Modal Hallucination Detection and Mitigation for Consistent 3D Content Generation"
+    ],
+    "iclr25": [
+      "ImagineNav: Prompting Vision-Language Models as Embodied Navigator through Scene Imagination"
+    ],
+    "icml25": [
+      "Cradle: Empowering Foundation Agents towards General Computer Control"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

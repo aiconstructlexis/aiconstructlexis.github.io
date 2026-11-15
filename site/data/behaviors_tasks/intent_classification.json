@@ -1,0 +1,304 @@
+{
+  "canonical_name": "Intent classification",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats this behavior as identifying a user's intent, intention, goal, or purpose from a spoken or written utterance, query, or command, usually in conversational AI or spoken language understanding settings. Most descriptions operationalize success as assigning a predefined intent label or semantic category, often as a multiclass classification problem, and one paper explicitly frames it as classifying an utterance into one of several predefined intents for a virtual assistant. Smaller variants widen the success criterion to identifying unknown intents, handling multi-intent cases as multi-label sequence prediction, or generating a free-form sentence that describes the inferred user intent from UI interaction traces.\n\nVariants. Papers use several near-synonymous names, including intent detection, intent recognition, and intention recognition, with the same core task applied in different settings. The variants span text-only and speech utterances, spoken commands, virtual assistant data, and multimodal cases that combine text with video and audio; one video-focused study frames it as inferring intentions from agents' actions and subtle cues. A smaller line of work studies intent extraction from screenshots and action logs, where the output is a natural-language description rather than a class label.\n\nSpace of elicitation and scores. Papers measure this behavior with 7 linked instruments. The most frequently linked are BANKING77, CLINC150, and SNIPS; ATIS and MASSIVE also appear, along with 2 other instruments. These instruments are mostly benchmark datasets for intent label classification, while the less frequent ones cover speech SLU and multimodal intent recognition, including a multilingual virtual assistant dataset with intent and slot annotations and a large-scale dataset with fine-grained intent labels across text, video, and audio.\n\nWhat it is taken as evidence of. Papers give little explicit evidence-of framing for this behavior. The only construct-level link is to Relational reasoning, and that link is described as related rather than as something the behavior measures or reflects: one paper calls for \"relational reasoning methods concentrating on fine-grained semantics\" for multimodal intent recognition. Beyond that, the papers do not converge on a shared construct that intent classification is taken to indicate.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Intent detection",
+    "Intention recognition",
+    "Intent recognition",
+    "Multimodal intent recognition",
+    "Intent extraction",
+    "Intent classification"
+  ],
+  "papers": [
+    "ECLM: Entity Level Language Model for Spoken Language Understanding with Chain of Intent",
+    "INJONGO: A Multicultural Intent Detection and Slot-filling Dataset for 16 African Languages",
+    "A Rigorous Evaluation of LLM Data Generation Strategies for Low-Resource Languages",
+    "Beyond Task-Oriented and Chitchat Dialogues: Proactive and Transition-Aware Conversational Agents",
+    "Charting the Landscape of African NLP: Mapping Progress and Shaping the Road Ahead",
+    "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+    "Compositional Generalisation for Explainable Hate Speech Detection",
+    "D-CoDe: Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition",
+    "Few-Shot Open-Set Classification via Reasoning-Aware Decomposition",
+    "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for Edge AI",
+    "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition",
+    "LoCt-Instruct: An Automatic Pipeline for Constructing Datasets of Logical Continuous Instructions",
+    "MultiAgentESC: A LLM-based Multi-Agent Collaboration Framework for Emotional Support Conversation",
+    "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks",
+    "ResFormer: All-Time Reservoir Memory for Long Sequence Classification",
+    "Small Models, Big Results: Achieving Superior Intent Extraction through Decomposition",
+    "Speech Discrete Tokens or Continuous Features? A Comparative Analysis for Spoken Language Understanding in SpeechLLMs",
+    "Text Takes Over: A Study of Modality Bias in Multimodal Intent Detection",
+    "TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research",
+    "Towards Automated Error Discovery: A Study in Conversational AI",
+    "V-VAE: A Variational Auto Encoding Framework Towards Fine-Grained Control over Human-Like Chat",
+    "Dynamic-SUPERB Phase-2: A Collaboratively Expanding Benchmark for Measuring the Capabilities of Spoken Language Models with 180 Tasks",
+    "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity",
+    "On Large Language Model Continual Unlearning",
+    "Tight Clusters Make Specialized Experts",
+    "Understanding and Enhancing the Transferability of Jailbreaking Attacks",
+    "Main Predicate and Their Arguments as Explanation Signals For Intent Classification",
+    "Wav2Prompt: End-to-End Speech Prompt Learning and Task-based Fine-tuning for Text-based LLMs",
+    "Prototype Conditioned Generative Replay for Continual Learning in NLP"
+  ],
+  "paper_count": 29,
+  "definitions": [
+    {
+      "text": "The task of identifying the user's intent from an utterance, used in this paper to assess the generalizability of the error detection method.",
+      "papers": [
+        "Towards Automated Error Discovery: A Study in Conversational AI",
+        "ECLM: Entity Level Language Model for Spoken Language Understanding with Chain of Intent",
+        "INJONGO: A Multicultural Intent Detection and Slot-filling Dataset for 16 African Languages",
+        "Prototype Conditioned Generative Replay for Continual Learning in NLP"
+      ],
+      "original_name": "Intent detection"
+    },
+    {
+      "text": "The task of identifying the user's intention or goal from a spoken or written utterance, typically in a conversational AI context.",
+      "papers": [
+        "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+        "Tight Clusters Make Specialized Experts",
+        "Wav2Prompt: End-to-End Speech Prompt Learning and Task-based Fine-tuning for Text-based LLMs",
+        "Main Predicate and Their Arguments as Explanation Signals For Intent Classification"
+      ],
+      "original_name": "Intent classification"
+    },
+    {
+      "text": "The observable task of identifying the underlying goal or intent of a user's utterances in a conversation.",
+      "papers": [
+        "MultiAgentESC: A LLM-based Multi-Agent Collaboration Framework for Emotional Support Conversation"
+      ],
+      "original_name": "Intention recognition"
+    },
+    {
+      "text": "The task of classifying a user's utterance into one of several predefined intents, typically in the context of a virtual assistant.",
+      "papers": [
+        "A Rigorous Evaluation of LLM Data Generation Strategies for Low-Resource Languages",
+        "Understanding and Enhancing the Transferability of Jailbreaking Attacks"
+      ],
+      "original_name": "Intent recognition"
+    },
+    {
+      "text": "Classifying the intent expressed in a multimodal sample using text together with video and audio cues.",
+      "papers": [
+        "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition"
+      ],
+      "original_name": "Multimodal intent recognition"
+    },
+    {
+      "text": "Generating a free-form natural language description of the inferred user goal from a sequence of UI interactions, including screenshots and action logs.",
+      "papers": [
+        "Small Models, Big Results: Achieving Superior Intent Extraction through Decomposition"
+      ],
+      "original_name": "Intent extraction"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BANKING77",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Tight Clusters Make Specialized Experts",
+      "evidence": "We report top-1 accuracy for finetuning classification tasks on the ... 77-class Banking-77 (B77) (Casanueva et al., 2020).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Tight Clusters Make Specialized Experts"
+        ],
+        "emnlp25": [
+          "Towards Automated Error Discovery: A Study in Conversational AI"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CLINC150",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "On Large Language Model Continual Unlearning",
+      "evidence": "Intent Classification. CLINC150 (mis, 2020) is designed for intent classification, which comprises 150 classes across five domains... (Section 4.1).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "On Large Language Model Continual Unlearning"
+        ],
+        "emnlp25": [
+          "Towards Automated Error Discovery: A Study in Conversational AI"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SNIPS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Main Predicate and Their Arguments as Explanation Signals For Intent Classification",
+      "evidence": "We use two intent classification benchmark datasets, ATIS (Hemphill et al., 1990), and SNIPS (Coucke et al., 2018). (Section 3)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Main Predicate and Their Arguments as Explanation Signals For Intent Classification"
+        ],
+        "emnlp25": [
+          "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SLURP",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity",
+      "evidence": "We evaluate them on three common speech tasks with corresponding common benchmarks: ... intent classification, a standard SLU task, with SLURP (Bastianelli et al., 2020) (Section 4.4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ATIS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Main Predicate and Their Arguments as Explanation Signals For Intent Classification",
+      "evidence": "We use two intent classification benchmark datasets, ATIS (Hemphill et al., 1990), and SNIPS (Coucke et al., 2018). (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Main Predicate and Their Arguments as Explanation Signals For Intent Classification"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MASSIVE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "A Rigorous Evaluation of LLM Data Generation Strategies for Low-Resource Languages",
+      "evidence": "For intent recognition, we use MASSIVE (FitzGerald et al., 2023), which is a multilingual dataset for virtual assistant evaluation with intent and slot annotations that supports 51 languages and 60 intents. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "A Rigorous Evaluation of LLM Data Generation Strategies for Low-Resource Languages"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Relational reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition",
+      "evidence": "Consequently, there is a need for relational reasoning methods concentrating on fine-grained semantics for multimodal intent recognition... (Introduction)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MIntRec2.0",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition",
+      "evidence": "MIntRec2.0 is a large-scale dataset with 30 fine-grained intent labels spanning text, video, and audio modalities. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 8,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats this behavior as identifying a user's intent, intention, goal, or purpose from a spoken or written utterance, query, or command, usually in conversational AI or spoken language understanding settings. Most descriptions operationalize success as assigning a predefined intent label or semantic category, often as a multiclass classification problem, and one paper explicitly frames it as classifying an utterance into one of several predefined intents for a virtual assistant. Smaller variants widen the success criterion to identifying unknown intents, handling multi-intent cases as multi-label sequence prediction, or generating a free-form sentence that describes the inferred user intent from UI interaction traces."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several near-synonymous names, including intent detection, intent recognition, and intention recognition, with the same core task applied in different settings. The variants span text-only and speech utterances, spoken commands, virtual assistant data, and multimodal cases that combine text with video and audio; one video-focused study frames it as inferring intentions from agents' actions and subtle cues. A smaller line of work studies intent extraction from screenshots and action logs, where the output is a natural-language description rather than a class label."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers measure this behavior with 7 linked instruments. The most frequently linked are BANKING77, CLINC150, and SNIPS; ATIS and MASSIVE also appear, along with 2 other instruments. These instruments are mostly benchmark datasets for intent label classification, while the less frequent ones cover speech SLU and multimodal intent recognition, including a multilingual virtual assistant dataset with intent and slot annotations and a large-scale dataset with fine-grained intent labels across text, video, and audio."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers give little explicit evidence-of framing for this behavior. The only construct-level link is to Relational reasoning, and that link is described as related rather than as something the behavior measures or reflects: one paper calls for \"relational reasoning methods concentrating on fine-grained semantics\" for multimodal intent recognition. Beyond that, the papers do not converge on a shared construct that intent classification is taken to indicate."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats this behavior as identifying a user's intent, intention, goal, or purpose from a spoken or written utterance, query, or command, usually in conversational AI or spoken language understanding settings. Most descriptions operationalize success as assigning a predefined intent label or semantic category, often as a multiclass classification problem, and one paper explicitly frames it as classifying an utterance into one of several predefined intents for a virtual assistant. Smaller variants widen the success criterion to identifying unknown intents, handling multi-intent cases as multi-label sequence prediction, or generating a free-form sentence that describes the inferred user intent from UI interaction traces.\n\nVariants. Papers use several near-synonymous names, including intent detection, intent recognition, and intention recognition, with the same core task applied in different settings. The variants span text-only and speech utterances, spoken commands, virtual assistant data, and multimodal cases that combine text with video and audio; one video-focused study frames it as inferring intentions from agents' actions and subtle cues. A smaller line of work studies intent extraction from screenshots and action logs, where the output is a natural-language description rather than a class label.\n\nSpace of elicitation and scores. Papers measure this behavior with 7 linked instruments. The most frequently linked are BANKING77, CLINC150, and SNIPS; ATIS and MASSIVE also appear, along with 2 other instruments. These instruments are mostly benchmark datasets for intent label classification, while the less frequent ones cover speech SLU and multimodal intent recognition, including a multilingual virtual assistant dataset with intent and slot annotations and a large-scale dataset with fine-grained intent labels across text, video, and audio.\n\nWhat it is taken as evidence of. Papers give little explicit evidence-of framing for this behavior. The only construct-level link is to Relational reasoning, and that link is described as related rather than as something the behavior measures or reflects: one paper calls for \"relational reasoning methods concentrating on fine-grained semantics\" for multimodal intent recognition. Beyond that, the papers do not converge on a shared construct that intent classification is taken to indicate.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "A Rigorous Evaluation of LLM Data Generation Strategies for Low-Resource Languages",
+      "Beyond Task-Oriented and Chitchat Dialogues: Proactive and Transition-Aware Conversational Agents",
+      "Charting the Landscape of African NLP: Mapping Progress and Shaping the Road Ahead",
+      "Comparing Specialised Small and General Large Language Models on Text Classification: 100 Labelled Samples to Achieve Break-Even Performance",
+      "Compositional Generalisation for Explainable Hate Speech Detection",
+      "D-CoDe: Scaling Image-Pretrained VLMs to Video via Dynamic Compression and Question Decomposition",
+      "Few-Shot Open-Set Classification via Reasoning-Aware Decomposition",
+      "Grammar Pruning: Enabling Low-Latency Zero-Shot Task-Oriented Language Models for Edge AI",
+      "LLM-Guided Semantic Relational Reasoning for Multimodal Intent Recognition",
+      "LoCt-Instruct: An Automatic Pipeline for Constructing Datasets of Logical Continuous Instructions",
+      "MultiAgentESC: A LLM-based Multi-Agent Collaboration Framework for Emotional Support Conversation",
+      "Randomly Removing 50% of Dimensions in Text Embeddings has Minimal Impact on Retrieval and Classification Tasks",
+      "ResFormer: All-Time Reservoir Memory for Long Sequence Classification",
+      "Small Models, Big Results: Achieving Superior Intent Extraction through Decomposition",
+      "Speech Discrete Tokens or Continuous Features? A Comparative Analysis for Spoken Language Understanding in SpeechLLMs",
+      "Text Takes Over: A Study of Modality Bias in Multimodal Intent Detection",
+      "TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research",
+      "Towards Automated Error Discovery: A Study in Conversational AI",
+      "V-VAE: A Variational Auto Encoding Framework Towards Fine-Grained Control over Human-Like Chat"
+    ],
+    "iclr25": [
+      "Dynamic-SUPERB Phase-2: A Collaboratively Expanding Benchmark for Measuring the Capabilities of Spoken Language Models with 180 Tasks",
+      "Joint Fine-tuning and Conversion of Pretrained Speech and Language Models towards Linear Complexity",
+      "On Large Language Model Continual Unlearning",
+      "Tight Clusters Make Specialized Experts",
+      "Understanding and Enhancing the Transferability of Jailbreaking Attacks"
+    ],
+    "naacl25": [
+      "Main Predicate and Their Arguments as Explanation Signals For Intent Classification",
+      "Wav2Prompt: End-to-End Speech Prompt Learning and Task-based Fine-tuning for Text-based LLMs",
+      "Prototype Conditioned Generative Replay for Continual Learning in NLP"
+    ],
+    "acl25": [
+      "ECLM: Entity Level Language Model for Spoken Language Understanding with Chain of Intent",
+      "INJONGO: A Multicultural Intent Detection and Slot-filling Dataset for 16 African Languages"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 19,
+    "iclr25": 5,
+    "naacl25": 3,
+    "acl25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25"
+  ]
+}

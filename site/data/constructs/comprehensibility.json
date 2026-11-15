@@ -1,0 +1,92 @@
+{
+  "canonical_name": "Comprehensibility",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats this construct as the clarity and ease with which a model's generated language can be understood by people. Papers using the near-synonym Understandability describe generated text as clear and easy to comprehend by a human reader, while a narrower spoken-language framing defines it as how easily a response can be comprehended when spoken aloud, so the main variation is written versus spoken output and reader versus listener as the reference.\n\nSpace of facets. Papers present it as one evaluation axis among neighboring output-quality dimensions. One use places Comprehensibility inside the FEEL model with other axes such as informativeness, helpfulness, and coherence, while uses of Understandability place it alongside fluency and meaning preservation; across these papers, Comprehensibility and Understandability are used for closely similar notions.\n\nSpace of measurement. Operationalization is narrow: papers link it to 1 measurement instrument, Human evaluation, with no linked behavioral indicators and no linked constructs. In practice, people rate outputs directly for understandability or comprehensibility, for example by comparing translations on an Understandability axis or rating explanations on a 1-5 Likert scale for understandability; this mirrors the definitions by making ease of comprehension itself the judgment target.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Comprehensibility",
+    "Understandability"
+  ],
+  "papers": [
+    "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+    "Explaining Differences Between Model Pairs in Natural Language through Sample Learning",
+    "Mondrian: A Framework for Logical Abstract (Re)Structuring",
+    "Think, Verbalize, then Speak: Bridging Complex Thoughts and Comprehensible Speech",
+    "Automatic Input Rewriting Improves Translation with Large Language Models"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The clarity and ease of understanding of the language used in a model's generated responses.",
+      "papers": [
+        "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion"
+      ],
+      "original_name": "Comprehensibility"
+    },
+    {
+      "text": "The quality of a generated text being clear and easy to comprehend by a human reader.",
+      "papers": [
+        "Automatic Input Rewriting Improves Translation with Large Language Models",
+        "Think, Verbalize, then Speak: Bridging Complex Thoughts and Comprehensible Speech"
+      ],
+      "original_name": "Understandability"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Human evaluation",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Explaining Differences Between Model Pairs in Natural Language through Sample Learning",
+      "evidence": "\"We recruited 10 participants... to rate SLED explanations on a 1\u20135 Likert scale for understandability, informativeness, and perceived utility.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Explaining Differences Between Model Pairs in Natural Language through Sample Learning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats this construct as the clarity and ease with which a model's generated language can be understood by people. Papers using the near-synonym Understandability describe generated text as clear and easy to comprehend by a human reader, while a narrower spoken-language framing defines it as how easily a response can be comprehended when spoken aloud, so the main variation is written versus spoken output and reader versus listener as the reference."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers present it as one evaluation axis among neighboring output-quality dimensions. One use places Comprehensibility inside the FEEL model with other axes such as informativeness, helpfulness, and coherence, while uses of Understandability place it alongside fluency and meaning preservation; across these papers, Comprehensibility and Understandability are used for closely similar notions."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is narrow: papers link it to 1 measurement instrument, Human evaluation, with no linked behavioral indicators and no linked constructs. In practice, people rate outputs directly for understandability or comprehensibility, for example by comparing translations on an Understandability axis or rating explanations on a 1-5 Likert scale for understandability; this mirrors the definitions by making ease of comprehension itself the judgment target."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats this construct as the clarity and ease with which a model's generated language can be understood by people. Papers using the near-synonym Understandability describe generated text as clear and easy to comprehend by a human reader, while a narrower spoken-language framing defines it as how easily a response can be comprehended when spoken aloud, so the main variation is written versus spoken output and reader versus listener as the reference.\n\nSpace of facets. Papers present it as one evaluation axis among neighboring output-quality dimensions. One use places Comprehensibility inside the FEEL model with other axes such as informativeness, helpfulness, and coherence, while uses of Understandability place it alongside fluency and meaning preservation; across these papers, Comprehensibility and Understandability are used for closely similar notions.\n\nSpace of measurement. Operationalization is narrow: papers link it to 1 measurement instrument, Human evaluation, with no linked behavioral indicators and no linked constructs. In practice, people rate outputs directly for understandability or comprehensibility, for example by comparing translations on an Understandability axis or rating explanations on a 1-5 Likert scale for understandability; this mirrors the definitions by making ease of comprehension itself the judgment target.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "DeepWell-Adol: A Scalable Expert-Based Dialogue Corpus for Adolescent Positive Mental Health and Wellbeing Promotion",
+      "Explaining Differences Between Model Pairs in Natural Language through Sample Learning",
+      "Mondrian: A Framework for Logical Abstract (Re)Structuring",
+      "Think, Verbalize, then Speak: Bridging Complex Thoughts and Comprehensible Speech"
+    ],
+    "naacl25": [
+      "Automatic Input Rewriting Improves Translation with Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 4,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25"
+  ]
+}

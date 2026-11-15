@@ -1,0 +1,132 @@
+{
+  "canonical_name": "Out-of-distribution detection",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats this as the task of identifying inputs that do not belong to the training distribution. The more specific formulation adds a success criterion: a sample from a different distribution than the model was trained on should typically receive higher uncertainty than an in-distribution sample. One paper also frames it as a benchmark for uncertainty-aware methods, stating that an effective approach should \"reliably assign higher uncertainties to OOD samples compared to ID samples.\"\n\nVariants. Papers use both the names \"Out-of-distribution detection\" and \"OOD detection.\" The studied settings vary by training and evaluation setup: one uses OBQA as the in-distribution dataset and ARC-C, ARC-E, and CSQA as OOD datasets, while another performs OOD detection during pre-training and fine-tuning and evaluates with external OOD datasets including SVHN. Another paper discusses distinguishing ID from OoD inputs in a setting where image interpretation capabilities affect performance.\n\nSpace of elicitation and scores. Two measurement instruments are linked to this behavior, CommonsenseQA and SVHN, and both are used as dataset-based evaluations. CommonsenseQA appears as an OOD test set in a setup fine-tuned on OBQA, while SVHN appears among external OOD datasets used for validation.\n\nWhat it is taken as evidence of. Papers do not converge on a single construct that this behavior reflects, and the linked constructs are framed with different relationship types. Two constructs are linked: it is reported as related to epistemic uncertainty, with one paper saying epistemic uncertainty provides an improved indicator for out-of-distribution detection, and another paper claims a causal relationship from visual understanding to out-of-distribution detection, arguing that insufficient image interpretation capabilities limit accurate distinction between ID and OoD inputs.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Out-of-distribution detection",
+    "OOD detection"
+  ],
+  "papers": [
+    "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+    "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+    "Scalable Bayesian Learning with posteriors"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The observable task of identifying whether a given input sample comes from a different data distribution than the one the model was trained on, typically by assigning it a higher uncertainty score.",
+      "papers": [
+        "Calibrating LLMs with Information-Theoretic Evidential Deep Learning"
+      ],
+      "original_name": "Out-of-distribution detection"
+    },
+    {
+      "text": "The task of identifying input samples that do not belong to the training distribution.",
+      "papers": [
+        "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards"
+      ],
+      "original_name": "OOD detection"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CommonsenseQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "evidence": "We fine-tune the LLMs on OBQA (as the ID dataset) and test them on ARC-C, ARC-E, and CSQA (as OOD dataset).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Calibrating LLMs with Information-Theoretic Evidential Deep Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation",
+      "evidence": "We found that one of the reasons for this discrepancy is the insufficient image interpretation capabilities of these models, which limits their ability to accurately distinguish between ID and OoD inputs. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Reflexive Guidance: Improving OoDD in Vision-Language Models via Self-Guided Image-Adaptive Concept Generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SVHN",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+      "evidence": "The model is trained on CIFAR100-LT Krizhevsky & Hinton (2009) with an imbalance ratio of 100, and validated on external OOD datasets including SVHN Netzer et al. (2011), Places365 Zhou et al. (2017), LSUN Yu et al., iSUN Xu et al. and Texture Cimpoi et al. (2014). (Section 3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Epistemic uncertainty",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Scalable Bayesian Learning with posteriors",
+      "evidence": "\u201cepistemic uncertainty providing an improved indicator for out-of-distribution detection.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scalable Bayesian Learning with posteriors"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats this as the task of identifying inputs that do not belong to the training distribution. The more specific formulation adds a success criterion: a sample from a different distribution than the model was trained on should typically receive higher uncertainty than an in-distribution sample. One paper also frames it as a benchmark for uncertainty-aware methods, stating that an effective approach should \"reliably assign higher uncertainties to OOD samples compared to ID samples.\""
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use both the names \"Out-of-distribution detection\" and \"OOD detection.\" The studied settings vary by training and evaluation setup: one uses OBQA as the in-distribution dataset and ARC-C, ARC-E, and CSQA as OOD datasets, while another performs OOD detection during pre-training and fine-tuning and evaluates with external OOD datasets including SVHN. Another paper discusses distinguishing ID from OoD inputs in a setting where image interpretation capabilities affect performance."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Two measurement instruments are linked to this behavior, CommonsenseQA and SVHN, and both are used as dataset-based evaluations. CommonsenseQA appears as an OOD test set in a setup fine-tuned on OBQA, while SVHN appears among external OOD datasets used for validation."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not converge on a single construct that this behavior reflects, and the linked constructs are framed with different relationship types. Two constructs are linked: it is reported as related to epistemic uncertainty, with one paper saying epistemic uncertainty provides an improved indicator for out-of-distribution detection, and another paper claims a causal relationship from visual understanding to out-of-distribution detection, arguing that insufficient image interpretation capabilities limit accurate distinction between ID and OoD inputs."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats this as the task of identifying inputs that do not belong to the training distribution. The more specific formulation adds a success criterion: a sample from a different distribution than the model was trained on should typically receive higher uncertainty than an in-distribution sample. One paper also frames it as a benchmark for uncertainty-aware methods, stating that an effective approach should \"reliably assign higher uncertainties to OOD samples compared to ID samples.\"\n\nVariants. Papers use both the names \"Out-of-distribution detection\" and \"OOD detection.\" The studied settings vary by training and evaluation setup: one uses OBQA as the in-distribution dataset and ARC-C, ARC-E, and CSQA as OOD datasets, while another performs OOD detection during pre-training and fine-tuning and evaluates with external OOD datasets including SVHN. Another paper discusses distinguishing ID from OoD inputs in a setting where image interpretation capabilities affect performance.\n\nSpace of elicitation and scores. Two measurement instruments are linked to this behavior, CommonsenseQA and SVHN, and both are used as dataset-based evaluations. CommonsenseQA appears as an OOD test set in a setup fine-tuned on OBQA, while SVHN appears among external OOD datasets used for validation.\n\nWhat it is taken as evidence of. Papers do not converge on a single construct that this behavior reflects, and the linked constructs are framed with different relationship types. Two constructs are linked: it is reported as related to epistemic uncertainty, with one paper saying epistemic uncertainty provides an improved indicator for out-of-distribution detection, and another paper claims a causal relationship from visual understanding to out-of-distribution detection, arguing that insufficient image interpretation capabilities limit accurate distinction between ID and OoD inputs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Adapting Multi-modal Large Language Model to Concept Drift From Pre-training Onwards",
+      "Calibrating LLMs with Information-Theoretic Evidential Deep Learning",
+      "Scalable Bayesian Learning with posteriors"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

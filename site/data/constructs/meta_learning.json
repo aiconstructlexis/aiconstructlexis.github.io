@@ -1,0 +1,148 @@
+{
+  "canonical_name": "Meta-learning",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats meta-learning as learning how to perform a new task from a few examples by inferring task rules, not merely retrieving or copying from context. Definitions largely agree on rapid adaptation from limited data, though they differ slightly in emphasis: one describes an ability to learn from few-shot examples, while another frames a latent capacity to acquire abstract reasoning strategies that generalize and then quickly specialize to new domains with minimal supervision.\n\nSpace of facets. Papers most often place meta-learning in direct relation to In-context learning: one recurring framing says current research explains the in-context learning mechanism through two approaches, meta-learning and knowledge retrieval, and another associates success on few-shot examples with the ability to meta-learn. Another formulation ties it to task inference or Task learning, calling task inference ability a form of meta-learning, and one paper uses the Reversal curse as a contrast case by describing it as a failure of meta-learning.\n\nSpace of measurement. The recorded operationalization is sparse: no measurement instrument, benchmark, human evaluation, LLM-as-a-judge, probe, or analysis is linked to meta-learning. Papers link it to 1 behavioral indicator, Protein understanding, and to 4 constructs, In-context learning, Generalization, Reversal curse, and Task learning; when made concrete in prose, it is through learning from few-shot examples, task inference, and rapid adaptation to new tasks with minimal supervision.\n\nLinks. Several papers relate meta-learning to In-context learning, describing it as one of the two main approaches used to explain the in-context learning mechanism, and another says the Transformer can be viewed as a powerful meta-learner in this setting. One paper also relates it to Task learning via task inference ability, one relates it to the Reversal curse by calling that phenomenon a failure of meta-learning, and one paper claims causal relationships from Meta-learning to Protein understanding and to Generalization, citing positive transfer to unseen fitness prediction tasks and generalization after in-context meta-learning followed by fine-tuning; no correlational link is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Meta-learning"
+  ],
+  "papers": [
+    "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings",
+    "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+    "On Understanding Attention-Based In-Context Learning for Categorical Data"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The ability to learn how to perform a new task by inferring its rules from a few examples, rather than simply retrieving or copying information from the context.",
+      "papers": [
+        "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+        "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings"
+      ],
+      "original_name": "Meta-learning"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Learning vs Retrieval: The Role of In-Context Examples in Regression with Large Language Models",
+      "evidence": "Broadly speaking, current research identifies two main approaches to explain the ICL mechanism (Dong et al., 2024; Li et al., 2024): 1) Meta-learning, 2) Knowledge retrieval.",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Learning vs Retrieval: The Role of In-Context Examples in Regression with Large Language Models"
+        ],
+        "icml25": [
+          "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+          "On Understanding Attention-Based In-Context Learning for Categorical Data"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reversal curse",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "The Reversal Curse: LLMs trained on \u201cA is B\u201d fail to learn \u201cB is A\u201d",
+      "evidence": "Nevertheless, the Reversal Curse demonstrates a failure of meta-learning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "The Reversal Curse: LLMs trained on \u201cA is B\u201d fail to learn \u201cB is A\u201d"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Protein understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Metalic: Meta-Learning In-Context with Protein Language Models",
+      "evidence": "we propose meta-learning over a distribution of standard fitness prediction tasks, and demonstrate positive transfer to unseen fitness prediction tasks. (ABSTRACT)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Metalic: Meta-Learning In-Context with Protein Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Metalic: Meta-Learning In-Context with Protein Language Models",
+      "evidence": "Using Metalic\u2019s unique combination of in-context meta-learning followed by fine-tuning, we enable the generalization of extensive fine-tuning, while also precluding expensive computation. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Metalic: Meta-Learning In-Context with Protein Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Task learning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+      "evidence": "This task inference ability is recognized as a form of meta-learning (Min et al., 2022a). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats meta-learning as learning how to perform a new task from a few examples by inferring task rules, not merely retrieving or copying from context. Definitions largely agree on rapid adaptation from limited data, though they differ slightly in emphasis: one describes an ability to learn from few-shot examples, while another frames a latent capacity to acquire abstract reasoning strategies that generalize and then quickly specialize to new domains with minimal supervision."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers most often place meta-learning in direct relation to In-context learning: one recurring framing says current research explains the in-context learning mechanism through two approaches, meta-learning and knowledge retrieval, and another associates success on few-shot examples with the ability to meta-learn. Another formulation ties it to task inference or Task learning, calling task inference ability a form of meta-learning, and one paper uses the Reversal curse as a contrast case by describing it as a failure of meta-learning."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "The recorded operationalization is sparse: no measurement instrument, benchmark, human evaluation, LLM-as-a-judge, probe, or analysis is linked to meta-learning. Papers link it to 1 behavioral indicator, Protein understanding, and to 4 constructs, In-context learning, Generalization, Reversal curse, and Task learning; when made concrete in prose, it is through learning from few-shot examples, task inference, and rapid adaptation to new tasks with minimal supervision."
+    },
+    {
+      "label": "Links.",
+      "text": "Several papers relate meta-learning to In-context learning, describing it as one of the two main approaches used to explain the in-context learning mechanism, and another says the Transformer can be viewed as a powerful meta-learner in this setting. One paper also relates it to Task learning via task inference ability, one relates it to the Reversal curse by calling that phenomenon a failure of meta-learning, and one paper claims causal relationships from Meta-learning to Protein understanding and to Generalization, citing positive transfer to unseen fitness prediction tasks and generalization after in-context meta-learning followed by fine-tuning; no correlational link is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats meta-learning as learning how to perform a new task from a few examples by inferring task rules, not merely retrieving or copying from context. Definitions largely agree on rapid adaptation from limited data, though they differ slightly in emphasis: one describes an ability to learn from few-shot examples, while another frames a latent capacity to acquire abstract reasoning strategies that generalize and then quickly specialize to new domains with minimal supervision.\n\nSpace of facets. Papers most often place meta-learning in direct relation to In-context learning: one recurring framing says current research explains the in-context learning mechanism through two approaches, meta-learning and knowledge retrieval, and another associates success on few-shot examples with the ability to meta-learn. Another formulation ties it to task inference or Task learning, calling task inference ability a form of meta-learning, and one paper uses the Reversal curse as a contrast case by describing it as a failure of meta-learning.\n\nSpace of measurement. The recorded operationalization is sparse: no measurement instrument, benchmark, human evaluation, LLM-as-a-judge, probe, or analysis is linked to meta-learning. Papers link it to 1 behavioral indicator, Protein understanding, and to 4 constructs, In-context learning, Generalization, Reversal curse, and Task learning; when made concrete in prose, it is through learning from few-shot examples, task inference, and rapid adaptation to new tasks with minimal supervision.\n\nLinks. Several papers relate meta-learning to In-context learning, describing it as one of the two main approaches used to explain the in-context learning mechanism, and another says the Transformer can be viewed as a powerful meta-learner in this setting. One paper also relates it to Task learning via task inference ability, one relates it to the Reversal curse by calling that phenomenon a failure of meta-learning, and one paper claims causal relationships from Meta-learning to Protein understanding and to Generalization, citing positive transfer to unseen fitness prediction tasks and generalization after in-context meta-learning followed by fine-tuning; no correlational link is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Beyond Induction Heads: In-Context Meta Learning Induces Multi-Phase Circuit Emergence",
+      "On Understanding Attention-Based In-Context Learning for Categorical Data"
+    ],
+    "emnlp25": [
+      "Warm Up Before You Train: Unlocking General Reasoning in Resource-Constrained Settings"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 2,
+    "emnlp25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

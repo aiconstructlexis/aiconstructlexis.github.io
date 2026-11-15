@@ -1,0 +1,488 @@
+{
+  "canonical_name": "Needle-in-a-Haystack",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, Needle-in-a-Haystack, often abbreviated NIAH, is most commonly described as a synthetic long-context retrieval benchmark or evaluation procedure, and several authors call it a popular or widely used pressure or stress test. The prevailing setup inserts a fact, statement, answer, sentence, or key-value pair, the \"needle\", at varying depths or positions inside a long irrelevant or distracting document or text, the \"haystack\", then queries the model to retrieve it. Some definitions emphasize controlled insertion depth, and one reported setup uses a four-needle variant with multiple inserted items.\n\nWhat it is claimed to measure. Papers use it to measure five constructs and three behavioral indicators. The most frequently linked constructs start with long-context understanding and contextual understanding, while the most frequent behavioral links are synthetic recall, context retrieval, and information retrieval; the remaining links cover three other constructs. These claims are spread across several constructs, though the recurring use is to assess retrieval from long contexts, including correct answer rate on the task and whether models can locate inserted facts across varying positions and context lengths.\n\nSpace of uses. Papers often position it as a retrieval-focused pressure or stress test, sometimes as a preliminary check of long-context capability and sometimes as a downstream evaluation for methods such as context extension, KV cache compression, or context pruning. It is frequently used alongside LongBench, and also appears with RULER and SCBench; papers explicitly relate it to two other instruments, RULER and OpenCompass, and some treat it as a task included within RULER rather than only as a standalone benchmark.\n\nConcerns raised. A smaller line of work flags a limitation of the benchmark's synthetic format: one paper notes that synthetic benchmarks such as needle-in-the-haystack may be inadequate for evaluating real long-context RAG scenarios. Another says that many benchmarks built on this test focus on simple retrieval-based experiments.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Needle-in-the-Haystack",
+    "Needle-in-a-Haystack",
+    "Needle in A Haystack",
+    "Needle In A Haystack",
+    "Needle in a Haystack",
+    "Needle-In-A-Haystack",
+    "Needle-in-a-haystack",
+    "Needle-in-the-haystack",
+    "Needle in A Haystack test",
+    "Needle in a haystack test",
+    "Needle-in-the-Haystack test",
+    "Needle-in-the-haystack test",
+    "NIAH",
+    "Needle-in-a-Haystack (NIAH)",
+    "Needle-in-Haystack",
+    "Needle-in-a-haystack test",
+    "Needle in the Haystack test"
+  ],
+  "papers": [
+    "HoPE: A Novel Positional Encoding Without Long-Term Decay for Enhanced Context Awareness and Extrapolation",
+    "LADM: Long-context Training Data Selection with Attention-based Dependency Measurement for LLMs",
+    "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval",
+    "AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity",
+    "DINT Transformer",
+    "GATEAU: Selecting Influential Samples for Long Context Alignment",
+    "GraphKV: Breaking the Static Selection Paradigm with Graph-Based KV Cache Eviction",
+    "Long Chain-of-Thought Fine-tuning via Understanding-to-Reasoning Transition",
+    "Lookahead Q-Cache: Achieving More Consistent KV Cache Eviction via Pseudo Query",
+    "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities",
+    "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+    "When Long Helps Short: How Context Length in Supervised Fine-tuning Affects Behavior of Large Language Models",
+    "$\\text{D}_{2}\\text{O}$: Dynamic Discriminative Operations for Efficient Long-Context Inference of Large Language Models",
+    "A Little Goes a Long Way: Efficient Long Context Training and Inference with Partial Contexts",
+    "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+    "Differential Transformer",
+    "DuoAttention: Efficient Long-Context LLM Inference with Retrieval and Streaming Heads",
+    "Forgetting Transformer: Softmax Attention with a Forget Gate",
+    "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+    "Holistic Reasoning with Long-Context LMs: A Benchmark for Database Operations on Massive Textual Data",
+    "Hymba: A Hybrid-head Architecture for Small Language Models",
+    "Long Context Compression with Activation Beacon",
+    "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+    "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+    "Needle Threading: Can LLMs Follow Threads Through Near-Million-Scale Haystacks?",
+    "NovelQA: Benchmarking Question Answering on Documents Exceeding 200K Tokens",
+    "Provence: efficient and robust context pruning for retrieval-augmented generation",
+    "Quest: Query-centric Data Synthesis Approach for Long-context Scaling of Large Language Model",
+    "RazorAttention: Efficient KV Cache Compression Through Retrieval Heads",
+    "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+    "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+    "Scaling Long Context Training Data by Long-Distance Referrals",
+    "ThinK: Thinner Key Cache by Query-Driven Pruning",
+    "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention",
+    "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+    "What is Wrong with Perplexity for Long-context Language Modeling?",
+    "World Model on Million-Length Video And Language With Blockwise RingAttention",
+    "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+    "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+    "LOGO \u2014 Long cOntext aliGnment via efficient preference Optimization",
+    "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+    "NoLiMa: Long-Context Evaluation Beyond Literal Matching",
+    "RocketKV: Accelerating Long-Context LLM Inference via Two-Stage KV Cache Compression",
+    "SepLLM: Accelerate Large Language Models by Compressing One Segment into One Separator",
+    "SpeCache: Speculative Key-Value Caching for Efficient Generation of LLMs",
+    "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity",
+    "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+    "Make Your LLM Fully Utilize the Context",
+    "Gated Slot Attention for Efficient Linear-Time Sequence Modeling"
+  ],
+  "paper_count": 49,
+  "definitions": [
+    {
+      "text": "A long-context retrieval benchmark that tests whether a model can find a target item embedded in a long document-style context.",
+      "papers": [
+        "Make Your LLM Fully Utilize the Context",
+        "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+      ],
+      "original_name": "Needle-in-the-Haystack"
+    },
+    {
+      "text": "An evaluation test where a specific, irrelevant fact (the \"needle\") is placed at various depths within a long, distracting text (the \"haystack\"), and the model is queried to retrieve it.",
+      "papers": [
+        "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+        "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+        "SepLLM: Accelerate Large Language Models by Compressing One Segment into One Separator",
+        "AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity",
+        "GraphKV: Breaking the Static Selection Paradigm with Graph-Based KV Cache Eviction",
+        "Long Chain-of-Thought Fine-tuning via Understanding-to-Reasoning Transition",
+        "Lookahead Q-Cache: Achieving More Consistent KV Cache Eviction via Pseudo Query",
+        "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities",
+        "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+        "When Long Helps Short: How Context Length in Supervised Fine-tuning Affects Behavior of Large Language Models"
+      ],
+      "original_name": "Needle-in-a-Haystack"
+    },
+    {
+      "text": "An evaluation test designed to measure a model's ability to retrieve a specific piece of information (the \"needle\") embedded within a long, distracting context (the \"haystack\").",
+      "papers": [
+        "Differential Transformer"
+      ],
+      "original_name": "Needle-In-A-Haystack"
+    },
+    {
+      "text": "A benchmark that assesses a model's ability to retrieve a specific piece of information ('needle') embedded deep within a long, distracting context ('haystack').",
+      "papers": [
+        "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention"
+      ],
+      "original_name": "Needle-in-the-Haystack test"
+    },
+    {
+      "text": "An evaluation procedure where a specific fact (the \"needle\") is placed within a long, irrelevant text (the \"haystack\") to test a model's information retrieval capability.",
+      "papers": [
+        "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data"
+      ],
+      "original_name": "Needle-in-a-haystack"
+    },
+    {
+      "text": "A benchmark designed to evaluate a model's ability to retrieve a specific, targeted piece of information ('the needle') placed at various depths within a long, distracting document ('the haystack').",
+      "papers": [
+        "RazorAttention: Efficient KV Cache Compression Through Retrieval Heads"
+      ],
+      "original_name": "Needle in A Haystack"
+    },
+    {
+      "text": "An evaluation procedure that tests information retrieval in long contexts by inserting a distinct, unrelated sentence (the \"needle\") into a long document (the \"haystack\") and asking the model to retrieve it.",
+      "papers": [
+        "NovelQA: Benchmarking Question Answering on Documents Exceeding 200K Tokens"
+      ],
+      "original_name": "Needle in A Haystack test"
+    },
+    {
+      "text": "A synthetic benchmark designed to test a model's ability to retrieve a specific piece of information from a long, distracting context, noted as potentially inadequate for evaluating real-world RAG challenges.",
+      "papers": [
+        "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG"
+      ],
+      "original_name": "Needle-in-the-haystack"
+    },
+    {
+      "text": "A controlled experiment designed to evaluate a model's ability to find and use a small piece of relevant information ('needle') placed within a larger, irrelevant context ('haystack').",
+      "papers": [
+        "Provence: efficient and robust context pruning for retrieval-augmented generation"
+      ],
+      "original_name": "Needle-in-the-haystack test"
+    },
+    {
+      "text": "An evaluation task designed to test a model's ability to retrieve a specific piece of information ('needle') embedded within a long, distracting context ('haystack').",
+      "papers": [
+        "World Model on Million-Length Video And Language With Blockwise RingAttention"
+      ],
+      "original_name": "Needle In A Haystack"
+    },
+    {
+      "text": "A general evaluation paradigm for long-context retrieval where a small, relevant piece of information (the 'needle') is placed within a large volume of irrelevant text (the 'haystack') to test if a model can find it.",
+      "papers": [
+        "Needle Threading: Can LLMs Follow Threads Through Near-Million-Scale Haystacks?"
+      ],
+      "original_name": "Needle in a haystack test"
+    },
+    {
+      "text": "A long-context retrieval benchmark in which a statement is inserted into a long document and the model must retrieve it from context.",
+      "papers": [
+        "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing"
+      ],
+      "original_name": "Needle in a Haystack"
+    },
+    {
+      "text": "Needle in a Haystack, a benchmark designed to test if a model can retrieve a small, specific piece of information ('needle') placed within a long, irrelevant context ('haystack').",
+      "papers": [
+        "SCBench: A KV Cache-Centric Analysis of Long-Context Methods"
+      ],
+      "original_name": "NIAH"
+    },
+    {
+      "text": "An evaluation procedure that tests a model's ability to retrieve a specific piece of information ('needle') embedded within a long, distracting text ('haystack').",
+      "papers": [
+        "RocketKV: Accelerating Long-Context LLM Inference via Two-Stage KV Cache Compression"
+      ],
+      "original_name": "Needle-in-a-Haystack (NIAH)"
+    },
+    {
+      "text": "An evaluation task that tests a model's ability to retrieve a specific piece of information (the \"needle\") intentionally placed within a long, distracting context (the \"haystack\").",
+      "papers": [
+        "HoPE: A Novel Positional Encoding Without Long-Term Decay for Enhanced Context Awareness and Extrapolation",
+        "Gated Slot Attention for Efficient Linear-Time Sequence Modeling"
+      ],
+      "original_name": "Needle-in-Haystack"
+    },
+    {
+      "text": "Evaluation protocol that assesses a model's ability to retrieve specific target information (a 'needle') embedded in a long context (a 'haystack'), typically using synthetic data with controlled insertion depth.",
+      "papers": [
+        "DINT Transformer"
+      ],
+      "original_name": "Needle-In-A-Haystack test"
+    },
+    {
+      "text": "A retrieval-style evaluation that inserts a fact into a long context and asks the model to retrieve it from different depth positions.",
+      "papers": [
+        "GATEAU: Selecting Influential Samples for Long Context Alignment"
+      ],
+      "original_name": "Needle in the Haystack test"
+    }
+  ],
+  "definition_count": 17,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Synthetic recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "A Little Goes a Long Way: Efficient Long Context Training and Inference with Partial Contexts",
+      "evidence": "NIAH measures the averaged correct answer rate of the models on the needle-in-a-haystack retrieval task. (Table 4)",
+      "paper_count": 11,
+      "paper_weight": 11.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "A Little Goes a Long Way: Efficient Long Context Training and Inference with Partial Contexts",
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+          "Forgetting Transformer: Softmax Attention with a Forget Gate",
+          "DuoAttention: Efficient Long-Context LLM Inference with Retrieval and Streaming Heads",
+          "Hymba: A Hybrid-head Architecture for Small Language Models",
+          "World Model on Million-Length Video And Language With Blockwise RingAttention"
+        ],
+        "acl25": [
+          "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval",
+          "ClusterAttn: KV Cache Compression under Intrinsic Attention Clustering"
+        ],
+        "icml25": [
+          "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+          "EPIC: Efficient Position-Independent Caching for Serving Large Language Models",
+          "LongRoPE2: Near-Lossless LLM Context Window Scaling"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "evidence": "Additionally, we assess the CREAM-Chat model with Needle-in-a-Haystack and LongBench[Bai et al., 2023]. (Section 3.1).",
+      "paper_count": 7,
+      "paper_weight": 7.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding"
+        ],
+        "iclr25": [
+          "DuoAttention: Efficient Long-Context LLM Inference with Retrieval and Streaming Heads",
+          "World Model on Million-Length Video And Language With Blockwise RingAttention",
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+          "Hymba: A Hybrid-head Architecture for Small Language Models"
+        ],
+        "icml25": [
+          "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+          "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Context retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+      "evidence": "We conduct the Needle-in-a-Haystack test to assess the long-context retrieval ability of different KV cache compression methods.",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Not All Heads Matter: A Head-Level KV Cache Compression Method with Integrated Retrieval and Reasoning",
+          "Why Does the Effective Context Length of LLMs Fall Short?",
+          "Long Context Compression with Activation Beacon"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "RULER",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "evidence": "Ruler evaluates models across tasks like NIAH and multi-hop tracing. (Section 5)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+          "Scaling Long Context Training Data by Long-Distance Referrals"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Length generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "BERTs are Generative In-Context Learners",
+      "evidence": "We measure the extent to which DeBERTa generalizes to longer sequences with the \u2018needle in a haystack\u2019 test from RULER (Hsieh et al., 2024). (Section 2.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "BERTs are Generative In-Context Learners"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Provence: efficient and robust context pruning for retrieval-augmented generation",
+      "evidence": "We design a needle-in-the-haystack experiment which allows us to ... evaluate its robustness w.r.t. the position of the relevant information in the input context. (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Provence: efficient and robust context pruning for retrieval-augmented generation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "OpenCompass",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+      "evidence": "Needle-In-A-Haystack (Contributors, 2023a) implemented in OpenCompass (Contributors, 2023b). (Figure 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "ReAttention: Training-Free Infinite Context with Finite Attention Scope"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Contextual understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "HoPE: A Novel Positional Encoding Without Long-Term Decay for Enhanced Context Awareness and Extrapolation",
+      "evidence": "We also conduct Needle-in-a-Haystack tests (gkamradt, 2023) to provide a comprehensive evaluation of both context awareness and extrapolation. (Section 6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "HoPE: A Novel Positional Encoding Without Long-Term Decay for Enhanced Context Awareness and Extrapolation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "LOGO \u2014 Long cOntext aliGnment via efficient preference Optimization",
+      "evidence": "To investigate whether the LOGO training strategy affects the information retrieval capabilities of LCMs, we conduct a Needle-in-a-Haystack (NIAH) testing (gkamradt, 2023). (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "LOGO \u2014 Long cOntext aliGnment via efficient preference Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-range dependency modeling",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention",
+      "evidence": "\"The Needle-in-the-Haystack test assesses LLMs\u2019 ability to handle long-dependency tasks\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 10,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, Needle-in-a-Haystack, often abbreviated NIAH, is most commonly described as a synthetic long-context retrieval benchmark or evaluation procedure, and several authors call it a popular or widely used pressure or stress test. The prevailing setup inserts a fact, statement, answer, sentence, or key-value pair, the \"needle\", at varying depths or positions inside a long irrelevant or distracting document or text, the \"haystack\", then queries the model to retrieve it. Some definitions emphasize controlled insertion depth, and one reported setup uses a four-needle variant with multiple inserted items."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use it to measure five constructs and three behavioral indicators. The most frequently linked constructs start with long-context understanding and contextual understanding, while the most frequent behavioral links are synthetic recall, context retrieval, and information retrieval; the remaining links cover three other constructs. These claims are spread across several constructs, though the recurring use is to assess retrieval from long contexts, including correct answer rate on the task and whether models can locate inserted facts across varying positions and context lengths."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers often position it as a retrieval-focused pressure or stress test, sometimes as a preliminary check of long-context capability and sometimes as a downstream evaluation for methods such as context extension, KV cache compression, or context pruning. It is frequently used alongside LongBench, and also appears with RULER and SCBench; papers explicitly relate it to two other instruments, RULER and OpenCompass, and some treat it as a task included within RULER rather than only as a standalone benchmark."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "A smaller line of work flags a limitation of the benchmark's synthetic format: one paper notes that synthetic benchmarks such as needle-in-the-haystack may be inadequate for evaluating real long-context RAG scenarios. Another says that many benchmarks built on this test focus on simple retrieval-based experiments."
+    }
+  ],
+  "characterization": "What it is. Across papers, Needle-in-a-Haystack, often abbreviated NIAH, is most commonly described as a synthetic long-context retrieval benchmark or evaluation procedure, and several authors call it a popular or widely used pressure or stress test. The prevailing setup inserts a fact, statement, answer, sentence, or key-value pair, the \"needle\", at varying depths or positions inside a long irrelevant or distracting document or text, the \"haystack\", then queries the model to retrieve it. Some definitions emphasize controlled insertion depth, and one reported setup uses a four-needle variant with multiple inserted items.\n\nWhat it is claimed to measure. Papers use it to measure five constructs and three behavioral indicators. The most frequently linked constructs start with long-context understanding and contextual understanding, while the most frequent behavioral links are synthetic recall, context retrieval, and information retrieval; the remaining links cover three other constructs. These claims are spread across several constructs, though the recurring use is to assess retrieval from long contexts, including correct answer rate on the task and whether models can locate inserted facts across varying positions and context lengths.\n\nSpace of uses. Papers often position it as a retrieval-focused pressure or stress test, sometimes as a preliminary check of long-context capability and sometimes as a downstream evaluation for methods such as context extension, KV cache compression, or context pruning. It is frequently used alongside LongBench, and also appears with RULER and SCBench; papers explicitly relate it to two other instruments, RULER and OpenCompass, and some treat it as a task included within RULER rather than only as a standalone benchmark.\n\nConcerns raised. A smaller line of work flags a limitation of the benchmark's synthetic format: one paper notes that synthetic benchmarks such as needle-in-the-haystack may be inadequate for evaluating real long-context RAG scenarios. Another says that many benchmarks built on this test focus on simple retrieval-based experiments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "HoPE: A Novel Positional Encoding Without Long-Term Decay for Enhanced Context Awareness and Extrapolation",
+      "LADM: Long-context Training Data Selection with Attention-based Dependency Measurement for LLMs",
+      "SEAL: Scaling to Emphasize Attention for Long-Context Retrieval"
+    ],
+    "iclr25": [
+      "$\\text{D}_{2}\\text{O}$: Dynamic Discriminative Operations for Efficient Long-Context Inference of Large Language Models",
+      "A Little Goes a Long Way: Efficient Long Context Training and Inference with Partial Contexts",
+      "ChatQA 2: Bridging the Gap to Proprietary LLMs in Long Context and RAG Capabilities",
+      "Differential Transformer",
+      "DuoAttention: Efficient Long-Context LLM Inference with Retrieval and Streaming Heads",
+      "Forgetting Transformer: Softmax Attention with a Forget Gate",
+      "From Artificial Needles to Real Haystacks: Improving Retrieval Capabilities in LLMs by Finetuning on Synthetic Data",
+      "Holistic Reasoning with Long-Context LMs: A Benchmark for Database Operations on Massive Textual Data",
+      "Hymba: A Hybrid-head Architecture for Small Language Models",
+      "Long Context Compression with Activation Beacon",
+      "Long-Context LLMs Meet RAG: Overcoming Challenges for Long Inputs in RAG",
+      "LongGenBench: Benchmarking Long-Form Generation in Long Context LLMs",
+      "Needle Threading: Can LLMs Follow Threads Through Near-Million-Scale Haystacks?",
+      "NovelQA: Benchmarking Question Answering on Documents Exceeding 200K Tokens",
+      "Provence: efficient and robust context pruning for retrieval-augmented generation",
+      "Quest: Query-centric Data Synthesis Approach for Long-context Scaling of Large Language Model",
+      "RazorAttention: Efficient KV Cache Compression Through Retrieval Heads",
+      "ReAttention: Training-Free Infinite Context with Finite Attention Scope",
+      "SCBench: A KV Cache-Centric Analysis of Long-Context Methods",
+      "Scaling Long Context Training Data by Long-Distance Referrals",
+      "ThinK: Thinner Key Cache by Query-Driven Pruning",
+      "TidalDecode: Fast and Accurate LLM Decoding with Position Persistent Sparse Attention",
+      "Understanding and Mitigating Bottlenecks of State Space Models through the Lens of Recency and Over-smoothing",
+      "What is Wrong with Perplexity for Long-context Language Modeling?",
+      "World Model on Million-Length Video And Language With Blockwise RingAttention"
+    ],
+    "icml25": [
+      "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression",
+      "CommVQ: Commutative Vector Quantization for KV Cache Compression",
+      "LOGO \u2014 Long cOntext aliGnment via efficient preference Optimization",
+      "LaCache: Ladder-Shaped KV Caching for Efficient Long-Context Modeling of Large Language Models",
+      "NoLiMa: Long-Context Evaluation Beyond Literal Matching",
+      "RocketKV: Accelerating Long-Context LLM Inference via Two-Stage KV Cache Compression",
+      "SepLLM: Accelerate Large Language Models by Compressing One Segment into One Separator",
+      "SpeCache: Speculative Key-Value Caching for Efficient Generation of LLMs",
+      "Understanding Input Selectivity in Mamba: Impact on Approximation Power, Memorization, and Associative Recall Capacity"
+    ],
+    "neurips24": [
+      "An Efficient Recipe for Long Context Extension via Middle-Focused Positional Encoding",
+      "Make Your LLM Fully Utilize the Context",
+      "Gated Slot Attention for Efficient Linear-Time Sequence Modeling"
+    ],
+    "emnlp25": [
+      "AnchorAttention: Difference-Aware Sparse Attention with Stripe Granularity",
+      "DINT Transformer",
+      "GATEAU: Selecting Influential Samples for Long Context Alignment",
+      "GraphKV: Breaking the Static Selection Paradigm with Graph-Based KV Cache Eviction",
+      "Long Chain-of-Thought Fine-tuning via Understanding-to-Reasoning Transition",
+      "Lookahead Q-Cache: Achieving More Consistent KV Cache Eviction via Pseudo Query",
+      "SYNC: A Synthetic Long-Context Understanding Benchmark for Controlled Comparisons of Model Capabilities",
+      "UNComp: Can Matrix Entropy Uncover Sparsity? \u2014 A Compressor Design from an Uncertainty-Aware Perspective",
+      "When Long Helps Short: How Context Length in Supervised Fine-tuning Affects Behavior of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "iclr25": 25,
+    "icml25": 9,
+    "neurips24": 3,
+    "emnlp25": 9
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

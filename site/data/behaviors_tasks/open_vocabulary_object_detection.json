@@ -1,0 +1,131 @@
+{
+  "canonical_name": "Open-vocabulary object detection",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing framing is detecting and locating objects in images when the category set is not fixed in advance. Definitions differ on the inference setup: some describe categories not seen during training and use textual descriptions or an arbitrary open set of category names provided as text at inference time, while a smaller line of work uses open-ended object detection for discovering unseen objects without any object categories as inputs, with success described as predicting the object categories and locations themselves.\n\nVariants. The main variants in naming are open-vocabulary object detection, open-vocabulary detection, and open-ended object detection. All are image-based, but papers distinguish text-conditioned versions, where category names or descriptions are supplied at inference, from a more open-ended version with no predefined categories, and one evaluation is explicitly described as zero-shot.\n\nSpace of elicitation and scores. Papers link this behavior to two measurement instruments, both datasets: LVIS and Visual Genome. LVIS is used as a zero-shot evaluation dataset, and Visual Genome appears in an open-ended object detection evaluation.\n\nWhat it is taken as evidence of. Papers only link it to one construct, Localization ability, and that connection is framed as related rather than as direct evidence. One paper says that work on improving localization capability focuses on downstream dense vision tasks such as open-vocabulary detection, and no other construct linkage is reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Open-vocabulary object detection",
+    "Open-ended object detection",
+    "Open-vocabulary detection"
+  ],
+  "papers": [
+    "Contrastive Localized Language-Image Pre-Training",
+    "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+    "FlexCap: Describe Anything in Images in Controllable Detail",
+    "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Detecting objects in an image belonging to categories not seen during training, using textual descriptions.",
+      "papers": [
+        "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding"
+      ],
+      "original_name": "Open-vocabulary object detection"
+    },
+    {
+      "text": "The task of identifying and locating objects in an image without being provided with a predefined set of object categories during inference.",
+      "papers": [
+        "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+      ],
+      "original_name": "Open-ended object detection"
+    },
+    {
+      "text": "The task of detecting objects in an image from an arbitrary, open set of category names provided as text at inference time.",
+      "papers": [
+        "Contrastive Localized Language-Image Pre-Training"
+      ],
+      "original_name": "Open-vocabulary detection"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual Genome",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "FlexCap: Describe Anything in Images in Controllable Detail",
+      "evidence": "Open-Ended Object Detection on the Visual Genome dataset. (Figure 6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "FlexCap: Describe Anything in Images in Controllable Detail"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LVIS",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Open-Det: An Efficient Learning Framework for Open-Ended Detection",
+      "evidence": "our model is evaluated on the commonly used zero-shot LVIS (Gupta et al., 2019) dataset, which contains 1,203 categories. (Section 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Open-Det: An Efficient Learning Framework for Open-Ended Detection"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Localization ability",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Contrastive Localized Language-Image Pre-Training",
+      "evidence": "improving the localization capability, most works specifically focus on the downstream dense vision tasks such as open-vocabulary detection (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Contrastive Localized Language-Image Pre-Training"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing framing is detecting and locating objects in images when the category set is not fixed in advance. Definitions differ on the inference setup: some describe categories not seen during training and use textual descriptions or an arbitrary open set of category names provided as text at inference time, while a smaller line of work uses open-ended object detection for discovering unseen objects without any object categories as inputs, with success described as predicting the object categories and locations themselves."
+    },
+    {
+      "label": "Variants.",
+      "text": "The main variants in naming are open-vocabulary object detection, open-vocabulary detection, and open-ended object detection. All are image-based, but papers distinguish text-conditioned versions, where category names or descriptions are supplied at inference, from a more open-ended version with no predefined categories, and one evaluation is explicitly described as zero-shot."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to two measurement instruments, both datasets: LVIS and Visual Genome. LVIS is used as a zero-shot evaluation dataset, and Visual Genome appears in an open-ended object detection evaluation."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers only link it to one construct, Localization ability, and that connection is framed as related rather than as direct evidence. One paper says that work on improving localization capability focuses on downstream dense vision tasks such as open-vocabulary detection, and no other construct linkage is reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing framing is detecting and locating objects in images when the category set is not fixed in advance. Definitions differ on the inference setup: some describe categories not seen during training and use textual descriptions or an arbitrary open set of category names provided as text at inference time, while a smaller line of work uses open-ended object detection for discovering unseen objects without any object categories as inputs, with success described as predicting the object categories and locations themselves.\n\nVariants. The main variants in naming are open-vocabulary object detection, open-vocabulary detection, and open-ended object detection. All are image-based, but papers distinguish text-conditioned versions, where category names or descriptions are supplied at inference, from a more open-ended version with no predefined categories, and one evaluation is explicitly described as zero-shot.\n\nSpace of elicitation and scores. Papers link this behavior to two measurement instruments, both datasets: LVIS and Visual Genome. LVIS is used as a zero-shot evaluation dataset, and Visual Genome appears in an open-ended object detection evaluation.\n\nWhat it is taken as evidence of. Papers only link it to one construct, Localization ability, and that connection is framed as related rather than as direct evidence. One paper says that work on improving localization capability focuses on downstream dense vision tasks such as open-vocabulary detection, and no other construct linkage is reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "Contrastive Localized Language-Image Pre-Training"
+    ],
+    "neurips24": [
+      "FineCLIP: Self-distilled Region-based CLIP for Better Fine-grained Understanding",
+      "FlexCap: Describe Anything in Images in Controllable Detail",
+      "Training-Free Open-Ended Object Detection and Segmentation via Attention as Prompts"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 1,
+    "neurips24": 3
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

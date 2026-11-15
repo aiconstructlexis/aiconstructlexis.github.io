@@ -1,0 +1,93 @@
+{
+  "canonical_name": "Forecasting",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, forecasting is treated as producing predictions about future events or outcomes. The prevailing formulations describe using available information, past data, and current trends to answer what will likely happen, including in finance, sports, business, and politics. A narrower task framing presents the prediction as a future-event answer that is often given in multiple-choice or range-based form, and one definition notes that such predictions may influence user decisions and market behaviors.\n\nVariants. Papers use several nearby names for the behavior, including forecasting, predictive analytics, and future event prediction. The settings mentioned include sports projections, financial forecasting, business analytics, and political outcome questions; examples ask what the 10yr treasury yield will be in 2024 and what a president's approval rating will be on a future date. In the business analytics framing, this appears as the predictive class of insights, summarized as \"what will likely happen.\"\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the descriptions, elicitation is task-based: papers ask for a prediction about a future outcome, sometimes formatted as a multiple-choice or range-based response.\n\nWhat it is taken as evidence of. No construct is linked to forecasting in the reported relationships, so the papers do not identify a particular construct that this behavior is taken to indicate.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Forecasting",
+    "Predictive analytics",
+    "Future event prediction"
+  ],
+  "papers": [
+    "Text2Vis: A Challenging and Diverse Benchmark for Generating Multimodal Visualizations from Text",
+    "InsightBench: Evaluating Business Analytics Agents Through Multi-Step Insight Generation",
+    "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks",
+    "Is Your LLM Outdated? A Deep Look at Temporal Generalization"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Generating predictions about future events in domains such as finance or sports, which may influence user decisions and market behaviors.",
+      "papers": [
+        "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks"
+      ],
+      "original_name": "Forecasting"
+    },
+    {
+      "text": "The ability to forecast future outcomes from past data and current trends.",
+      "papers": [
+        "InsightBench: Evaluating Business Analytics Agents Through Multi-Step Insight Generation"
+      ],
+      "original_name": "Predictive analytics"
+    },
+    {
+      "text": "The observable task of generating a prediction about the outcome of a future event based on available information, often formatted as a multiple-choice or range-based answer.",
+      "papers": [
+        "Is Your LLM Outdated? A Deep Look at Temporal Generalization"
+      ],
+      "original_name": "Future event prediction"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, forecasting is treated as producing predictions about future events or outcomes. The prevailing formulations describe using available information, past data, and current trends to answer what will likely happen, including in finance, sports, business, and politics. A narrower task framing presents the prediction as a future-event answer that is often given in multiple-choice or range-based form, and one definition notes that such predictions may influence user decisions and market behaviors."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby names for the behavior, including forecasting, predictive analytics, and future event prediction. The settings mentioned include sports projections, financial forecasting, business analytics, and political outcome questions; examples ask what the 10yr treasury yield will be in 2024 and what a president's approval rating will be on a future date. In the business analytics framing, this appears as the predictive class of insights, summarized as \"what will likely happen.\""
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. In the descriptions, elicitation is task-based: papers ask for a prediction about a future outcome, sometimes formatted as a multiple-choice or range-based response."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to forecasting in the reported relationships, so the papers do not identify a particular construct that this behavior is taken to indicate."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, forecasting is treated as producing predictions about future events or outcomes. The prevailing formulations describe using available information, past data, and current trends to answer what will likely happen, including in finance, sports, business, and politics. A narrower task framing presents the prediction as a future-event answer that is often given in multiple-choice or range-based form, and one definition notes that such predictions may influence user decisions and market behaviors.\n\nVariants. Papers use several nearby names for the behavior, including forecasting, predictive analytics, and future event prediction. The settings mentioned include sports projections, financial forecasting, business analytics, and political outcome questions; examples ask what the 10yr treasury yield will be in 2024 and what a president's approval rating will be on a future date. In the business analytics framing, this appears as the predictive class of insights, summarized as \"what will likely happen.\"\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the descriptions, elicitation is task-based: papers ask for a prediction about a future outcome, sometimes formatted as a multiple-choice or range-based response.\n\nWhat it is taken as evidence of. No construct is linked to forecasting in the reported relationships, so the papers do not identify a particular construct that this behavior is taken to indicate.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Text2Vis: A Challenging and Diverse Benchmark for Generating Multimodal Visualizations from Text"
+    ],
+    "iclr25": [
+      "InsightBench: Evaluating Business Analytics Agents Through Multi-Step Insight Generation"
+    ],
+    "icml25": [
+      "Position: Societal Impacts Research Requires Benchmarks for Creative Composition Tasks"
+    ],
+    "naacl25": [
+      "Is Your LLM Outdated? A Deep Look at Temporal Generalization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr25": 1,
+    "icml25": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

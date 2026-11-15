@@ -1,0 +1,48 @@
+{
+  "canonical_name": "Pruning robustness",
+  "type": "construct",
+  "canonical_definition": "The degree to which model performance remains stable when adapter parameters or layers are removed or zeroed out.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Pruning robustness"
+  ],
+  "papers": [
+    "OATS: Outlier-Aware Pruning Through Sparse and Low Rank Decomposition",
+    "Come Together, But Not Right Now: A Progressive Strategy to Boost Low-Rank Adaptation"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "The degree to which model performance remains stable when adapter parameters or layers are removed or zeroed out.",
+      "papers": [
+        "Come Together, But Not Right Now: A Progressive Strategy to Boost Low-Rank Adaptation"
+      ],
+      "original_name": "Pruning robustness"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The degree to which model performance remains stable when adapter parameters or layers are removed or zeroed out.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "OATS: Outlier-Aware Pruning Through Sparse and Low Rank Decomposition"
+    ],
+    "icml25": [
+      "Come Together, But Not Right Now: A Progressive Strategy to Boost Low-Rank Adaptation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

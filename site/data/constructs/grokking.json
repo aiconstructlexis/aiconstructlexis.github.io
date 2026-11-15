@@ -1,0 +1,117 @@
+{
+  "canonical_name": "Grokking",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, grokking is most commonly treated as an observable training phenomenon in which test-set generalization improves abruptly long after near-perfect training-set performance has already been reached through memorization. Some descriptions phrase the shift as an \"abrupt change from random guessing to generalization\" after the model memorized the training set, but the shared framing is delayed generalization after the training set has already been fit.\n\nSpace of facets. In the papers, grokking is positioned between memorization and generalization: models are described as first memorizing, or remaining at random guessing, and only later generalizing on the test set. One account also says it \"results from the model learning very structured representations,\" adding a representation-level description alongside the memorization to generalization transition.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to grokking. Instead, papers operationalize it through the described pattern of train and test performance, sudden test-set improvement long after near-perfect training performance, and one paper treats whether models \"grok faster and achieve better performance\" as evidence of stronger grokking behavior.\n\nLinks. Several papers claim a causal relationship from grokking to implicit reasoning, stating that transformers can learn implicit reasoning \"only through grokking\" and that grokking-based data augmentation can unlock implicit multi-hop reasoning capabilities. Papers also relate grokking to memorization, describing generalization as appearing well after memorization of the training set, and relate generalization to grokking through a sudden transition from pure memorization to near-perfect generalization.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Grokking"
+  ],
+  "papers": [
+    "Sneaking Syntax into Transformer Language Models with Tree Regularization",
+    "Grokking of Implicit Reasoning in Transformers: A Mechanistic Journey to the Edge of Generalization",
+    "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A phenomenon where a model's generalization performance abruptly improves long after it has achieved near-perfect performance on the training set through memorization.",
+      "papers": [
+        "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+        "Sneaking Syntax into Transformer Language Models with Tree Regularization"
+      ],
+      "original_name": "Grokking"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Implicit reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Grokking of Implicit Reasoning in Transformers: A Mechanistic Journey to the Edge of Generalization",
+      "evidence": "transformers can learn implicit reasoning, but only through grokking, i.e., extended training far beyond overfitting.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Grokking of Implicit Reasoning in Transformers: A Mechanistic Journey to the Edge of Generalization"
+        ],
+        "icml25": [
+          "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks",
+      "evidence": "Power et al. [24] discovered Grokking, where models trained on modular arithmetic datasets have an abrupt change from random guessing to generalization on the test set way after the model memorized the training set. (Section 2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers",
+      "evidence": "\u201cunder certain conditions, overparameterized neural networks suddenly transition from pure memorization to near-perfect generalization\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Grokking in the Wild: Data Augmentation for Real-World Multi-Hop Reasoning with Transformers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, grokking is most commonly treated as an observable training phenomenon in which test-set generalization improves abruptly long after near-perfect training-set performance has already been reached through memorization. Some descriptions phrase the shift as an \"abrupt change from random guessing to generalization\" after the model memorized the training set, but the shared framing is delayed generalization after the training set has already been fit."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "In the papers, grokking is positioned between memorization and generalization: models are described as first memorizing, or remaining at random guessing, and only later generalizing on the test set. One account also says it \"results from the model learning very structured representations,\" adding a representation-level description alongside the memorization to generalization transition."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument or behavioral indicator is linked to grokking. Instead, papers operationalize it through the described pattern of train and test performance, sudden test-set improvement long after near-perfect training performance, and one paper treats whether models \"grok faster and achieve better performance\" as evidence of stronger grokking behavior."
+    },
+    {
+      "label": "Links.",
+      "text": "Several papers claim a causal relationship from grokking to implicit reasoning, stating that transformers can learn implicit reasoning \"only through grokking\" and that grokking-based data augmentation can unlock implicit multi-hop reasoning capabilities. Papers also relate grokking to memorization, describing generalization as appearing well after memorization of the training set, and relate generalization to grokking through a sudden transition from pure memorization to near-perfect generalization."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, grokking is most commonly treated as an observable training phenomenon in which test-set generalization improves abruptly long after near-perfect training-set performance has already been reached through memorization. Some descriptions phrase the shift as an \"abrupt change from random guessing to generalization\" after the model memorized the training set, but the shared framing is delayed generalization after the training set has already been fit.\n\nSpace of facets. In the papers, grokking is positioned between memorization and generalization: models are described as first memorizing, or remaining at random guessing, and only later generalizing on the test set. One account also says it \"results from the model learning very structured representations,\" adding a representation-level description alongside the memorization to generalization transition.\n\nSpace of measurement. No measurement instrument or behavioral indicator is linked to grokking. Instead, papers operationalize it through the described pattern of train and test performance, sudden test-set improvement long after near-perfect training performance, and one paper treats whether models \"grok faster and achieve better performance\" as evidence of stronger grokking behavior.\n\nLinks. Several papers claim a causal relationship from grokking to implicit reasoning, stating that transformers can learn implicit reasoning \"only through grokking\" and that grokking-based data augmentation can unlock implicit multi-hop reasoning capabilities. Papers also relate grokking to memorization, describing generalization as appearing well after memorization of the training set, and relate generalization to grokking through a sudden transition from pure memorization to near-perfect generalization.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "neurips24": [
+      "Grokking of Implicit Reasoning in Transformers: A Mechanistic Journey to the Edge of Generalization",
+      "Learning to grok: Emergence of in-context learning and skill composition in modular arithmetic tasks"
+    ],
+    "naacl25": [
+      "Sneaking Syntax into Transformer Language Models with Tree Regularization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "neurips24": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "canonical_name": "Object counting",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the dominant framing is a task where a model determines how many instances of a specified object category are present, most often in an image. Papers commonly treat success as returning the correct quantity for the queried object, sometimes in a natural-language question and answer format, and one image-based description says the model must delineate instances of a given object type for counting. A smaller line of work uses the same label for counting entities listed in a textual prompt or context, and another uses it for counting how many instances of an object appear in a video.\n\nVariants. Variants differ mainly by modality and setting. Image-based work includes general perception tasks, cluttered environments, and visual equation settings built from repeated visual elements, and one paper explicitly uses images with 1-4 instances. Other papers name a count subtask, or Object Count (OC), in animal-centric video understanding, while text-oriented work studies counting over verbally enumerated entities.\n\nSpace of elicitation and scores. Papers link object counting to five measurement instruments: BIG-Bench Hard, BIG-bench, MME, MME-RealWorld, and Waste-Bench. The measured_by links are to MME, where Count is one of four subtasks and performance uses a combined accuracy and accuracy+ metric, to MME-RealWorld, where object counting is one of three perception tasks, to BIG-Bench Hard, which one paper uses as the dataset for object counting in prompt optimization, and to Waste-Bench, where counting asks for the number of specific items or categories within an image. One additional paper treats BIG-bench as related, describing an adapted task for object classification and counting.\n\nWhat it is taken as evidence of. Construct links are sparse. The only linked construct is Multimodal reasoning, and that connection is recorded as related rather than as a causal claim or correlation: one paper presents better object counting and OCR within multi-modal reasoning examples. Beyond that, papers do not connect object counting to other constructs.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Object counting",
+    "Object count"
+  ],
+  "papers": [
+    "Response Wide Shut? Surprising Observations in Basic Vision Language Model Capabilities",
+    "Can Vision-Language Models Solve Visual Math Equations?",
+    "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention",
+    "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+    "Can Textual Gradient Work in Federated Learning?",
+    "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+    "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+    "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+    "Needle In A Video Haystack: A Scalable Synthetic Evaluator for Video MLLMs",
+    "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning",
+    "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+    "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+    "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+    "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models",
+    "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "Multi-modal Situated Reasoning in 3D Scenes",
+    "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+  ],
+  "paper_count": 19,
+  "definitions": [
+    {
+      "text": "Determining the number of instances of a specific object category present in an image.",
+      "papers": [
+        "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+        "Can Textual Gradient Work in Federated Learning?",
+        "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+        "Response Wide Shut? Surprising Observations in Basic Vision Language Model Capabilities",
+        "Can Vision-Language Models Solve Visual Math Equations?",
+        "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention"
+      ],
+      "original_name": "Object counting"
+    },
+    {
+      "text": "Counting how many instances of an object appear in a video.",
+      "papers": [
+        "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding"
+      ],
+      "original_name": "Object count"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+      "evidence": "Following Yin et al. (2023), we evaluate hallucination using four subtasks: Existence, Count, Position, and Color, with performance measured by the combined metric of accuracy and accuracy+ (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MME-RealWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "evidence": "There are 3 perception tasks: object counting, color recognition, and spatial relationship understanding. (Section 2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-Bench Hard",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization",
+      "evidence": "For prompt optimization, we use the Big Bench Hard dataset (Suzgun et al., 2022) for Object Counting... (Section 4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Waste-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Waste-Bench: A Comprehensive Benchmark for Evaluating VLLMs in Cluttered Environments",
+      "evidence": "Counting: This category involves tasks where the model must count the number of specific items or categories within an image.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Waste-Bench: A Comprehensive Benchmark for Evaluating VLLMs in Cluttered Environments"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BIG-bench",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "A Causal Lens for Evaluating Faithfulness Metrics",
+      "evidence": "Adapted from BIG-bench (Bench authors, 2023), this task tests object classification and counting. (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "A Causal Lens for Evaluating Faithfulness Metrics"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention",
+      "evidence": "We also show some multi-modal reasoning examples in Figure 6. Our approach exhibits better object counting, OCR, and commence reasoning performance. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the dominant framing is a task where a model determines how many instances of a specified object category are present, most often in an image. Papers commonly treat success as returning the correct quantity for the queried object, sometimes in a natural-language question and answer format, and one image-based description says the model must delineate instances of a given object type for counting. A smaller line of work uses the same label for counting entities listed in a textual prompt or context, and another uses it for counting how many instances of an object appear in a video."
+    },
+    {
+      "label": "Variants.",
+      "text": "Variants differ mainly by modality and setting. Image-based work includes general perception tasks, cluttered environments, and visual equation settings built from repeated visual elements, and one paper explicitly uses images with 1-4 instances. Other papers name a count subtask, or Object Count (OC), in animal-centric video understanding, while text-oriented work studies counting over verbally enumerated entities."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link object counting to five measurement instruments: BIG-Bench Hard, BIG-bench, MME, MME-RealWorld, and Waste-Bench. The measured_by links are to MME, where Count is one of four subtasks and performance uses a combined accuracy and accuracy+ metric, to MME-RealWorld, where object counting is one of three perception tasks, to BIG-Bench Hard, which one paper uses as the dataset for object counting in prompt optimization, and to Waste-Bench, where counting asks for the number of specific items or categories within an image. One additional paper treats BIG-bench as related, describing an adapted task for object classification and counting."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Construct links are sparse. The only linked construct is Multimodal reasoning, and that connection is recorded as related rather than as a causal claim or correlation: one paper presents better object counting and OCR within multi-modal reasoning examples. Beyond that, papers do not connect object counting to other constructs."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the dominant framing is a task where a model determines how many instances of a specified object category are present, most often in an image. Papers commonly treat success as returning the correct quantity for the queried object, sometimes in a natural-language question and answer format, and one image-based description says the model must delineate instances of a given object type for counting. A smaller line of work uses the same label for counting entities listed in a textual prompt or context, and another uses it for counting how many instances of an object appear in a video.\n\nVariants. Variants differ mainly by modality and setting. Image-based work includes general perception tasks, cluttered environments, and visual equation settings built from repeated visual elements, and one paper explicitly uses images with 1-4 instances. Other papers name a count subtask, or Object Count (OC), in animal-centric video understanding, while text-oriented work studies counting over verbally enumerated entities.\n\nSpace of elicitation and scores. Papers link object counting to five measurement instruments: BIG-Bench Hard, BIG-bench, MME, MME-RealWorld, and Waste-Bench. The measured_by links are to MME, where Count is one of four subtasks and performance uses a combined accuracy and accuracy+ metric, to MME-RealWorld, where object counting is one of three perception tasks, to BIG-Bench Hard, which one paper uses as the dataset for object counting in prompt optimization, and to Waste-Bench, where counting asks for the number of specific items or categories within an image. One additional paper treats BIG-bench as related, describing an adapted task for object classification and counting.\n\nWhat it is taken as evidence of. Construct links are sparse. The only linked construct is Multimodal reasoning, and that connection is recorded as related rather than as a causal claim or correlation: one paper presents better object counting and OCR within multi-modal reasoning examples. Beyond that, papers do not connect object counting to other constructs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "A-Bench: Are LMMs Masters at Evaluating AI-generated Images?",
+      "Can Textual Gradient Work in Federated Learning?",
+      "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+      "Do You Keep an Eye on What I Ask? Mitigating Multimodal Hallucination via Attention-Guided Ensemble Decoding",
+      "MME-RealWorld: Could Your Multimodal LLM Challenge High-Resolution Real-World Scenarios that are Difficult for Humans?",
+      "Needle In A Video Haystack: A Scalable Synthetic Evaluator for Video MLLMs",
+      "VL-ICL Bench: The Devil in the Details of Multimodal In-Context Learning"
+    ],
+    "icml25": [
+      "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+      "Revolve: Optimizing AI Systems by Tracking Response Evolution in Textual Optimization"
+    ],
+    "neurips24": [
+      "Animal-Bench: Benchmarking Multimodal Video Models for Animal-centric Video Understanding",
+      "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+      "Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models",
+      "LOVA3: Learning to Visual Question Answering, Asking and Assessment",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "Multi-modal Situated Reasoning in 3D Scenes",
+      "Teach Better or Show Smarter? On Instructions and Exemplars in Automatic Prompt Optimization"
+    ],
+    "iclr24": [
+      "LLaMA-Adapter: Efficient Fine-tuning of Large Language Models with Zero-initialized Attention"
+    ],
+    "acl25": [
+      "Response Wide Shut? Surprising Observations in Basic Vision Language Model Capabilities"
+    ],
+    "emnlp25": [
+      "Can Vision-Language Models Solve Visual Math Equations?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 7,
+    "icml25": 2,
+    "neurips24": 7,
+    "iclr24": 1,
+    "acl25": 1,
+    "emnlp25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

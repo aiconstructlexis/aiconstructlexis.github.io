@@ -1,0 +1,210 @@
+{
+  "canonical_name": "PTB",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across papers, PTB is most commonly described as the Penn Treebank, a language-modeling benchmark, corpus, or dataset used for evaluating models on text prediction. The prevailing description is evaluation via perplexity, though some definitions frame it more specifically as a benchmark for next-token prediction, zero-shot performance, or log-loss under canonicality enforcement. A few papers specify particular forms of the resource, including a test split with 3761 strings, 82k words, and 439k characters, validation-set use, and a version preprocessed by Dyer et al. (2016); one paper instead uses PTB sentences annotated with PropBank as source material for analyzing grammatical features.\n\nWhat it is claimed to measure. Papers link PTB to one construct and one behavioral indicator, so the reported measurement claims are concentrated rather than spread across many targets. The most common claim is that papers use PTB to measure language modeling ability, typically by reporting perplexity on PTB, and a separate line of work uses it to measure text generation, again through perplexity in language generation experiments. The relationship language is consistent across these claims: PTB is reported as measuring language modeling ability and text generation.\n\nSpace of uses. Papers most often use PTB alongside WikiText-2 and C4, and more occasionally with LAMBADA and WikiText103. In use, it is commonly one of a small set of benchmark datasets for reporting perplexity of pruned, quantized, compressed, or otherwise evaluated language models; some papers also use it under zero-shot settings without fine-tuning, and one paper uses PTB sentences as analysis material rather than as the main benchmark outcome.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PTB",
+    "Penn Treebank",
+    "Penn Treebank (PTB)",
+    "Penn Tree Bank"
+  ],
+  "papers": [
+    "FISTAPruner: Layer-wise Post-training Pruning for Large Language Models",
+    "GRASP: Replace Redundant Layers with Adaptive Singular Parameters for Efficient Model Compression",
+    "STARE at the Structure: Steering ICL Exemplar Selection with Structural Alignment",
+    "Steering Language Models in Multi-Token Generation: A Case Study on Tense and Aspect",
+    "Towards Infinite-Long Prefix in Transformer",
+    "A Multi-Level Framework for Accelerating Training Transformer Models",
+    "BESA: Pruning Large Language Models with Blockwise Parameter-Efficient Sparsity Allocation",
+    "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+    "PB-LLM: Partially Binarized Large Language Models",
+    "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models",
+    "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+    "Stack Attention: Improving the Ability of Transformers to Model Hierarchical Patterns",
+    "ARB-LLM: Alternating Refined Binarizations for Large Language Models",
+    "Basis Sharing: Cross-Layer Parameter Sharing for Large Language Model Compression",
+    "Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives",
+    "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+    "Energy-Based Diffusion Language Models for Text Generation",
+    "STBLLM: Breaking the 1-Bit Barrier with Structured Binary LLMs",
+    "You Only Prune Once: Designing Calibration-Free Model Compression With Policy Learning",
+    "Your Absorbing Discrete Diffusion Secretly Models the Conditional Distributions of Clean Data",
+    "Attention-Only Transformers via Unrolled Subspace Denoising",
+    "DLP: Dynamic Layerwise Pruning in Large Language Models",
+    "Delta Decompression for MoE-based LLMs Compression",
+    "GANQ: GPU-Adaptive Non-Uniform Quantization for Large Language Models",
+    "Language Models over Canonical Byte-Pair Encodings",
+    "MoE-SVD: Structured Mixture-of-Experts LLMs Compression via Singular Value Decomposition",
+    "QoS-Efficient Serving of Multiple Mixture-of-Expert LLMs Using Partial Runtime Reconfiguration",
+    "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+    "SkipGPT: Each Token is One of a Kind",
+    "SlimLLM: Accurate Structured Pruning for Large Language Models",
+    "any4: Learned 4-bit Numeric Representation for LLMs",
+    "FedSpaLLM: Federated Pruning of Large Language Models",
+    "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+    "Search for Efficient Large Language Models",
+    "Towards Next-Level Post-Training Quantization of Hyper-Scale Transformers"
+  ],
+  "paper_count": 35,
+  "definitions": [
+    {
+      "text": "PTB (Penn Treebank) is a language-modeling benchmark used to evaluate pruned models via perplexity.",
+      "papers": [
+        "A Multi-Level Framework for Accelerating Training Transformer Models",
+        "BESA: Pruning Large Language Models with Blockwise Parameter-Efficient Sparsity Allocation",
+        "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+        "PB-LLM: Partially Binarized Large Language Models",
+        "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models",
+        "Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives",
+        "DLP: Dynamic Layerwise Pruning in Large Language Models",
+        "GRASP: Replace Redundant Layers with Adaptive Singular Parameters for Efficient Model Compression",
+        "FedSpaLLM: Federated Pruning of Large Language Models",
+        "Search for Efficient Large Language Models",
+        "Towards Next-Level Post-Training Quantization of Hyper-Scale Transformers"
+      ],
+      "original_name": "PTB"
+    },
+    {
+      "text": "Corpus used for evaluating language models, specifically its test split containing 3761 strings, used here to measure log-loss improvements under canonicality enforcement.",
+      "papers": [
+        "Language Models over Canonical Byte-Pair Encodings"
+      ],
+      "original_name": "Penn Treebank"
+    },
+    {
+      "text": "A language modeling benchmark used to evaluate next-token prediction performance in unsupervised pretraining experiments.",
+      "papers": [
+        "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate"
+      ],
+      "original_name": "Penn Tree Bank"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Text generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+      "evidence": "we evaluate quantized models by reporting the perplexity of language generation experiments, specifically on WikiText2 (Merity et al., 2016), PTB (Marcus et al., 1994)), C4 (Raffel et al., 2020). (Section 4.1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models"
+        ],
+        "iclr25": [
+          "STBLLM: Breaking the 1-Bit Barrier with Structured Binary LLMs"
+        ],
+        "icml25": [
+          "QoS-Efficient Serving of Multiple Mixture-of-Expert LLMs Using Partial Runtime Reconfiguration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Language modeling ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "evidence": "We evaluate quantized model performance by two metrics. Firstly, we measure perplexity, measured on the WikiText2 (Merity et al., 2016), Penn Treebank (Marcus et al., 1994) and C4 (Raffel et al., 2020) datasets. (Section 5)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression"
+        ],
+        "iclr25": [
+          "Basis Sharing: Cross-Layer Parameter Sharing for Large Language Model Compression"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across papers, PTB is most commonly described as the Penn Treebank, a language-modeling benchmark, corpus, or dataset used for evaluating models on text prediction. The prevailing description is evaluation via perplexity, though some definitions frame it more specifically as a benchmark for next-token prediction, zero-shot performance, or log-loss under canonicality enforcement. A few papers specify particular forms of the resource, including a test split with 3761 strings, 82k words, and 439k characters, validation-set use, and a version preprocessed by Dyer et al. (2016); one paper instead uses PTB sentences annotated with PropBank as source material for analyzing grammatical features."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link PTB to one construct and one behavioral indicator, so the reported measurement claims are concentrated rather than spread across many targets. The most common claim is that papers use PTB to measure language modeling ability, typically by reporting perplexity on PTB, and a separate line of work uses it to measure text generation, again through perplexity in language generation experiments. The relationship language is consistent across these claims: PTB is reported as measuring language modeling ability and text generation."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers most often use PTB alongside WikiText-2 and C4, and more occasionally with LAMBADA and WikiText103. In use, it is commonly one of a small set of benchmark datasets for reporting perplexity of pruned, quantized, compressed, or otherwise evaluated language models; some papers also use it under zero-shot settings without fine-tuning, and one paper uses PTB sentences as analysis material rather than as the main benchmark outcome."
+    }
+  ],
+  "characterization": "What it is. Across papers, PTB is most commonly described as the Penn Treebank, a language-modeling benchmark, corpus, or dataset used for evaluating models on text prediction. The prevailing description is evaluation via perplexity, though some definitions frame it more specifically as a benchmark for next-token prediction, zero-shot performance, or log-loss under canonicality enforcement. A few papers specify particular forms of the resource, including a test split with 3761 strings, 82k words, and 439k characters, validation-set use, and a version preprocessed by Dyer et al. (2016); one paper instead uses PTB sentences annotated with PropBank as source material for analyzing grammatical features.\n\nWhat it is claimed to measure. Papers link PTB to one construct and one behavioral indicator, so the reported measurement claims are concentrated rather than spread across many targets. The most common claim is that papers use PTB to measure language modeling ability, typically by reporting perplexity on PTB, and a separate line of work uses it to measure text generation, again through perplexity in language generation experiments. The relationship language is consistent across these claims: PTB is reported as measuring language modeling ability and text generation.\n\nSpace of uses. Papers most often use PTB alongside WikiText-2 and C4, and more occasionally with LAMBADA and WikiText103. In use, it is commonly one of a small set of benchmark datasets for reporting perplexity of pruned, quantized, compressed, or otherwise evaluated language models; some papers also use it under zero-shot settings without fine-tuning, and one paper uses PTB sentences as analysis material rather than as the main benchmark outcome.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "FISTAPruner: Layer-wise Post-training Pruning for Large Language Models",
+      "GRASP: Replace Redundant Layers with Adaptive Singular Parameters for Efficient Model Compression",
+      "STARE at the Structure: Steering ICL Exemplar Selection with Structural Alignment",
+      "Steering Language Models in Multi-Token Generation: A Case Study on Tense and Aspect",
+      "Towards Infinite-Long Prefix in Transformer"
+    ],
+    "iclr24": [
+      "A Multi-Level Framework for Accelerating Training Transformer Models",
+      "BESA: Pruning Large Language Models with Blockwise Parameter-Efficient Sparsity Allocation",
+      "OmniQuant: Omnidirectionally Calibrated Quantization for Large Language Models",
+      "PB-LLM: Partially Binarized Large Language Models",
+      "QLLM: Accurate and Efficient Low-Bitwidth Quantization for Large Language Models",
+      "SpQR: A Sparse-Quantized Representation for Near-Lossless LLM Weight Compression",
+      "Stack Attention: Improving the Ability of Transformers to Model Hierarchical Patterns"
+    ],
+    "iclr25": [
+      "ARB-LLM: Alternating Refined Binarizations for Large Language Models",
+      "Basis Sharing: Cross-Layer Parameter Sharing for Large Language Model Compression",
+      "Dobi-SVD: Differentiable SVD for LLM Compression and Some New Perspectives",
+      "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+      "Energy-Based Diffusion Language Models for Text Generation",
+      "STBLLM: Breaking the 1-Bit Barrier with Structured Binary LLMs",
+      "You Only Prune Once: Designing Calibration-Free Model Compression With Policy Learning",
+      "Your Absorbing Discrete Diffusion Secretly Models the Conditional Distributions of Clean Data"
+    ],
+    "icml25": [
+      "Attention-Only Transformers via Unrolled Subspace Denoising",
+      "DLP: Dynamic Layerwise Pruning in Large Language Models",
+      "Delta Decompression for MoE-based LLMs Compression",
+      "GANQ: GPU-Adaptive Non-Uniform Quantization for Large Language Models",
+      "Language Models over Canonical Byte-Pair Encodings",
+      "MoE-SVD: Structured Mixture-of-Experts LLMs Compression via Singular Value Decomposition",
+      "QoS-Efficient Serving of Multiple Mixture-of-Expert LLMs Using Partial Runtime Reconfiguration",
+      "ResQ: Mixed-Precision Quantization of Large Language Models with Low-Rank Residuals",
+      "SkipGPT: Each Token is One of a Kind",
+      "SlimLLM: Accurate Structured Pruning for Large Language Models",
+      "any4: Learned 4-bit Numeric Representation for LLMs"
+    ],
+    "naacl25": [
+      "FedSpaLLM: Federated Pruning of Large Language Models"
+    ],
+    "neurips24": [
+      "Learning from Teaching Regularization: Generalizable Correlations Should be Easy to Imitate",
+      "Search for Efficient Large Language Models",
+      "Towards Next-Level Post-Training Quantization of Hyper-Scale Transformers"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 5,
+    "iclr24": 7,
+    "iclr25": 8,
+    "icml25": 11,
+    "naacl25": 1,
+    "neurips24": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

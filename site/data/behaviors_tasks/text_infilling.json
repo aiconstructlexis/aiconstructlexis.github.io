@@ -1,0 +1,231 @@
+{
+  "canonical_name": "Text infilling",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is generating missing text from surrounding context, usually a prefix and suffix, with the output expected to fit coherently between them. Several definitions describe filling masked spans, fragments, or the middle of a document or sequence, and some make this concrete as infilling middle tokens from given initial and final tokens or generating the middle of a story from its beginning and end. A smaller line of work narrows the task to masked-token or cloze prediction, including single scientific terms or entity names, and some fill-in-the-blank setups allow either generating or selecting the missing completion.\n\nVariants. Papers use several narrower names and settings for this behavior, most often story infilling, masked token infilling, cloze completion, fill-in-the-blank completion, and text insertion. The settings range from short stories with masked fragments, to Arabic [MASK] fillings used to compare Arab and Western entity preferences, to climate-science blanks requiring a single scientific word, localized medical prompts with traditional versus allopathic candidates, knowledge probes with a blanked fact, and profile-based blanks targeting details such as residence, employment, and hobbies. A smaller diffusion-oriented line also studies non-sequential or flexible-length infilling, where span lengths and positions vary and the model may not be given oracle positions.\n\nSpace of elicitation and scores. Papers link text infilling to 2 measurement instruments, ROCStories and WikiText-103. ROCStories is a story corpus used for sentence-level infilling, described as generating the fourth sentence from the first three sentences and the last sentence, while WikiText-103 is used for prompt-mask evaluation of infilling performance, with MAUVE reported on validation sequences. Other papers elicit the behavior through masked fragments, candidate completions, or single-blank prompts, but those are presented as task formats rather than additional named instruments.\n\nWhat it is taken as evidence of. Only 1 construct is linked to text infilling, knowledge memorization, and that link is reported as related rather than as a direct measurement claim. The paper connects the behavior to memorization by using fill-in-the-blank probes to examine memory of original training data related to unlearning targets. No additional construct links are recorded; separately, another paper relates text infilling to cultural text adaptation through Arab versus Western entity fillings.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Sequence infilling",
+    "Story infilling",
+    "Text infilling",
+    "Masked token infilling",
+    "Cloze completion",
+    "Fill-in-the-blank completion",
+    "Text insertion",
+    "Infilling"
+  ],
+  "papers": [
+    "Africa Health Check: Probing Cultural Bias in Medical LLMs",
+    "Flexible-length Text Infilling for Discrete Diffusion Models",
+    "Amortizing intractable inference in large language models",
+    "ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models",
+    "Discrete Copula Diffusion",
+    "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+    "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+    "Scaling Diffusion Language Models via Adaptation from Autoregressive Models",
+    "Hidden No More: Attacking and Defending Private Third-Party LLM Inference",
+    "Tractable Transformers for Flexible Conditional Generation",
+    "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+    "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+    "Protecting Privacy in Multimodal Large Language Models with MLLMU-Bench",
+    "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+    "Adaptable Logical Control for Large Language Models"
+  ],
+  "paper_count": 15,
+  "definitions": [
+    {
+      "text": "The specific infilling task of generating a coherent narrative segment to complete a story.",
+      "papers": [
+        "Scaling Diffusion Language Models via Adaptation from Autoregressive Models",
+        "Amortizing intractable inference in large language models"
+      ],
+      "original_name": "Story infilling"
+    },
+    {
+      "text": "The task of generating text to fill in a missing portion of a document given the surrounding context (prefix and suffix).",
+      "papers": [
+        "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+        "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+        "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+        "Flexible-length Text Infilling for Discrete Diffusion Models",
+        "Adaptable Logical Control for Large Language Models"
+      ],
+      "original_name": "Text infilling"
+    },
+    {
+      "text": "Filling in missing parts of a sequence non-sequentially during discrete diffusion generation.",
+      "papers": [
+        "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models"
+      ],
+      "original_name": "Sequence infilling"
+    },
+    {
+      "text": "The task of predicting missing tokens in a sequence given the surrounding context, used as a proxy to evaluate the difficulty of reconstructing a full prompt from a partial one.",
+      "papers": [
+        "Hidden No More: Attacking and Defending Private Third-Party LLM Inference"
+      ],
+      "original_name": "Masked token infilling"
+    },
+    {
+      "text": "Filling in a missing scientific term in a sentence or phrase using the surrounding context.",
+      "papers": [
+        "ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models"
+      ],
+      "original_name": "Cloze completion"
+    },
+    {
+      "text": "Generating or selecting a treatment completion for a medical scenario when presented with a prompt and two candidate responses\u2014one traditional and one allopathic.",
+      "papers": [
+        "Africa Health Check: Probing Cultural Bias in Medical LLMs",
+        "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+        "Protecting Privacy in Multimodal Large Language Models with MLLMU-Bench"
+      ],
+      "original_name": "Fill-in-the-blank completion"
+    },
+    {
+      "text": "The task of generating text to fill a gap between a given prefix and suffix, ensuring coherence with both contexts.",
+      "papers": [
+        "Adaptable Logical Control for Large Language Models"
+      ],
+      "original_name": "Text insertion"
+    },
+    {
+      "text": "The task of generating a sequence of tokens that fits coherently between a given prefix and suffix context.",
+      "papers": [
+        "Amortizing intractable inference in large language models"
+      ],
+      "original_name": "Infilling"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ROCStories",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Amortizing intractable inference in large language models",
+      "evidence": "\u201cWe use the ROCStories corpus ... Given the first 3 sentences and the last sentence, the goal is to generate the fourth sentence\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Amortizing intractable inference in large language models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiText-103",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Discrete Copula Diffusion",
+      "evidence": "Evaluation of text infilling performance using the MAUVE score (\u2191) with 5 prompt masks... For all methods, we use the same set of 2,000 text sequences from the validation set of WikiText-103",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Discrete Copula Diffusion"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Knowledge memorization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "evidence": "We use fill-in-the-blank style probes (FB) to examine the memory of the original training data related to the unlearning targets. (Section 3.3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cultural text adaptation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+      "evidence": "We compare the ability of LMs at adapting to cultural contexts in Arabic and English by analyzing their preference for Arab vs. Western entities as [MASK] token fillings of CAMeL-2 contexts. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is generating missing text from surrounding context, usually a prefix and suffix, with the output expected to fit coherently between them. Several definitions describe filling masked spans, fragments, or the middle of a document or sequence, and some make this concrete as infilling middle tokens from given initial and final tokens or generating the middle of a story from its beginning and end. A smaller line of work narrows the task to masked-token or cloze prediction, including single scientific terms or entity names, and some fill-in-the-blank setups allow either generating or selecting the missing completion."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several narrower names and settings for this behavior, most often story infilling, masked token infilling, cloze completion, fill-in-the-blank completion, and text insertion. The settings range from short stories with masked fragments, to Arabic [MASK] fillings used to compare Arab and Western entity preferences, to climate-science blanks requiring a single scientific word, localized medical prompts with traditional versus allopathic candidates, knowledge probes with a blanked fact, and profile-based blanks targeting details such as residence, employment, and hobbies. A smaller diffusion-oriented line also studies non-sequential or flexible-length infilling, where span lengths and positions vary and the model may not be given oracle positions."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link text infilling to 2 measurement instruments, ROCStories and WikiText-103. ROCStories is a story corpus used for sentence-level infilling, described as generating the fourth sentence from the first three sentences and the last sentence, while WikiText-103 is used for prompt-mask evaluation of infilling performance, with MAUVE reported on validation sequences. Other papers elicit the behavior through masked fragments, candidate completions, or single-blank prompts, but those are presented as task formats rather than additional named instruments."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Only 1 construct is linked to text infilling, knowledge memorization, and that link is reported as related rather than as a direct measurement claim. The paper connects the behavior to memorization by using fill-in-the-blank probes to examine memory of original training data related to unlearning targets. No additional construct links are recorded; separately, another paper relates text infilling to cultural text adaptation through Arab versus Western entity fillings."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is generating missing text from surrounding context, usually a prefix and suffix, with the output expected to fit coherently between them. Several definitions describe filling masked spans, fragments, or the middle of a document or sequence, and some make this concrete as infilling middle tokens from given initial and final tokens or generating the middle of a story from its beginning and end. A smaller line of work narrows the task to masked-token or cloze prediction, including single scientific terms or entity names, and some fill-in-the-blank setups allow either generating or selecting the missing completion.\n\nVariants. Papers use several narrower names and settings for this behavior, most often story infilling, masked token infilling, cloze completion, fill-in-the-blank completion, and text insertion. The settings range from short stories with masked fragments, to Arabic [MASK] fillings used to compare Arab and Western entity preferences, to climate-science blanks requiring a single scientific word, localized medical prompts with traditional versus allopathic candidates, knowledge probes with a blanked fact, and profile-based blanks targeting details such as residence, employment, and hobbies. A smaller diffusion-oriented line also studies non-sequential or flexible-length infilling, where span lengths and positions vary and the model may not be given oracle positions.\n\nSpace of elicitation and scores. Papers link text infilling to 2 measurement instruments, ROCStories and WikiText-103. ROCStories is a story corpus used for sentence-level infilling, described as generating the fourth sentence from the first three sentences and the last sentence, while WikiText-103 is used for prompt-mask evaluation of infilling performance, with MAUVE reported on validation sequences. Other papers elicit the behavior through masked fragments, candidate completions, or single-blank prompts, but those are presented as task formats rather than additional named instruments.\n\nWhat it is taken as evidence of. Only 1 construct is linked to text infilling, knowledge memorization, and that link is reported as related rather than as a direct measurement claim. The paper connects the behavior to memorization by using fill-in-the-blank probes to examine memory of original training data related to unlearning targets. No additional construct links are recorded; separately, another paper relates text infilling to cultural text adaptation through Arab versus Western entity fillings.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Africa Health Check: Probing Cultural Bias in Medical LLMs",
+      "Flexible-length Text Infilling for Discrete Diffusion Models"
+    ],
+    "iclr25": [
+      "ClimaQA: An Automated Evaluation Framework for Climate Question Answering Models",
+      "Discrete Copula Diffusion",
+      "Efficient Perplexity Bound and Ratio Matching in Discrete Diffusion Language Models",
+      "Glauber Generative Model: Discrete Diffusion Models via Binary Classification",
+      "Scaling Diffusion Language Models via Adaptation from Autoregressive Models"
+    ],
+    "icml25": [
+      "Hidden No More: Attacking and Defending Private Third-Party LLM Inference",
+      "Tractable Transformers for Flexible Conditional Generation"
+    ],
+    "naacl25": [
+      "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+      "On The Origin of Cultural Biases in Language Models: From Pre-training Data to Linguistic Phenomena",
+      "Protecting Privacy in Multimodal Large Language Models with MLLMU-Bench"
+    ],
+    "neurips24": [
+      "RWKU: Benchmarking Real-World Knowledge Unlearning for Large Language Models",
+      "Adaptable Logical Control for Large Language Models"
+    ],
+    "iclr24": [
+      "Amortizing intractable inference in large language models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 5,
+    "icml25": 2,
+    "naacl25": 3,
+    "neurips24": 2,
+    "iclr24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

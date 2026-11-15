@@ -1,0 +1,187 @@
+{
+  "canonical_name": "Spoken question answering",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is answering questions presented in speech or spoken audio, with the model returning either spoken or textual answers. Some authors make success explicit as producing a correct answer, while others score it by whether \"the reference answer appears in the model's response\" or in a transcription. One paper further describes it as answering broad factual questions without access to external knowledge. A smaller line of work narrows the task to answering a spoken question about an image, or to answering a text question using spoken context input rather than a spoken question itself.\n\nVariants. Variants are mostly organized by modality and task name. Papers distinguish spoken-question to spoken-answer and spoken-question to text-answer settings, and they also use names such as SpokenQA, SQA, and spoken-query-based question answering (SQQA). Some work uses an audio clip plus a text question and expects a text answer, while other setups cover speech-related audio from monologue and dialogue in free-text form. Additional formulations treat the response as a speech continuation that must contain the answer, or pair speech with images in a speech question answering setup.\n\nSpace of elicitation and scores. Papers link spoken question answering to three measurement instruments. WebQuestions appears most often, followed by TriviaQA and WikiQA, and the recorded uses include synthesized audio versions of WebQuestions and TriviaQA, plus WikiQA with synthesized speech queries. These are benchmark datasets or test sets used to evaluate spoken question answering, and in one case closely paired factual correctness, on spoken or synthesized-spoken inputs.\n\nWhat it is taken as evidence of. Papers link it to one construct, speech understanding. One paper places \"Speech Question Answering (SQA)\" within a \"Speech Understanding\" section, so the link is reported as related rather than as a measurement or causal claim. Beyond that, no other construct is linked.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Speech question answering",
+    "Spoken question answering",
+    "Speech-based question answering"
+  ],
+  "papers": [
+    "Distilling an End-to-End Voice Assistant Without Instruction Training Data",
+    "LLaMA-Omni 2: LLM-based Real-time Spoken Chatbot with Autoregressive Streaming Speech Synthesis",
+    "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+    "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+    "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+    "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation",
+    "Aligning Spoken Dialogue Models from User Interactions",
+    "Long-Form Speech Generation with Spoken Language Models",
+    "AudioBench: A Universal Benchmark for Audio Large Language Models",
+    "VoiceTextBlender: Augmenting Large Language Models with Speech Capabilities via Single-Stage Joint Speech-Text Supervised Fine-Tuning",
+    "Wav2Prompt: End-to-End Speech Prompt Learning and Task-based Fine-tuning for Text-based LLMs"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "The model answers spoken questions with either spoken or textual responses.",
+      "papers": [
+        "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+        "Distilling an End-to-End Voice Assistant Without Instruction Training Data",
+        "LLaMA-Omni 2: LLM-based Real-time Spoken Chatbot with Autoregressive Streaming Speech Synthesis",
+        "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+        "Wav2Prompt: End-to-End Speech Prompt Learning and Task-based Fine-tuning for Text-based LLMs"
+      ],
+      "original_name": "Spoken question answering"
+    },
+    {
+      "text": "The task of answering a question posed in speech based on the content of a given image.",
+      "papers": [
+        "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation",
+        "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+        "AudioBench: A Universal Benchmark for Audio Large Language Models"
+      ],
+      "original_name": "Speech question answering"
+    },
+    {
+      "text": "Answering text questions based on spoken context input, generating text responses conditioned on audio and text inputs.",
+      "papers": [
+        "VoiceTextBlender: Augmenting Large Language Models with Speech Capabilities via Single-Stage Joint Speech-Text Supervised Fine-Tuning"
+      ],
+      "original_name": "Speech-based question answering"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WebQuestions",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM",
+      "evidence": "Similarly, on the Web Questions test set, the proposed model attains an accuracy of 6.1%, while SpeechGPT yields a comparable accuracy of 6.5%. (Section 4.2.3)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM"
+        ],
+        "iclr25": [
+          "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+        ],
+        "icml25": [
+          "Aligning Spoken Dialogue Models from User Interactions"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TriviaQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "evidence": "Spoken Question Answering ... We evaluate our model on 3 datasets in D\u00b4efossez et al. (2024): Web Questions (Berant et al., 2013), Llama Questions (Nachmani et al., 2024), and TriviaQA (Joshi et al., 2017).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Scaling Speech-Text Pre-training with Synthetic Interleaved Data"
+        ],
+        "icml25": [
+          "Aligning Spoken Dialogue Models from User Interactions"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Speech understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AudioBench: A Universal Benchmark for Audio Large Language Models",
+      "evidence": "3.3.1 Speech Understanding ... Speech Question Answering (SQA).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AudioBench: A Universal Benchmark for Audio Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "WikiQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Wav2Prompt: End-to-End Speech Prompt Learning and Task-based Fine-tuning for Text-based LLMs",
+      "evidence": "For the SQQA task, the WikiQA (Yang et al., 2015) test set with synthesised speech queries provided by (Tang et al., 2024) was used. (Section 5.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Wav2Prompt: End-to-End Speech Prompt Learning and Task-based Fine-tuning for Text-based LLMs"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is answering questions presented in speech or spoken audio, with the model returning either spoken or textual answers. Some authors make success explicit as producing a correct answer, while others score it by whether \"the reference answer appears in the model's response\" or in a transcription. One paper further describes it as answering broad factual questions without access to external knowledge. A smaller line of work narrows the task to answering a spoken question about an image, or to answering a text question using spoken context input rather than a spoken question itself."
+    },
+    {
+      "label": "Variants.",
+      "text": "Variants are mostly organized by modality and task name. Papers distinguish spoken-question to spoken-answer and spoken-question to text-answer settings, and they also use names such as SpokenQA, SQA, and spoken-query-based question answering (SQQA). Some work uses an audio clip plus a text question and expects a text answer, while other setups cover speech-related audio from monologue and dialogue in free-text form. Additional formulations treat the response as a speech continuation that must contain the answer, or pair speech with images in a speech question answering setup."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link spoken question answering to three measurement instruments. WebQuestions appears most often, followed by TriviaQA and WikiQA, and the recorded uses include synthesized audio versions of WebQuestions and TriviaQA, plus WikiQA with synthesized speech queries. These are benchmark datasets or test sets used to evaluate spoken question answering, and in one case closely paired factual correctness, on spoken or synthesized-spoken inputs."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers link it to one construct, speech understanding. One paper places \"Speech Question Answering (SQA)\" within a \"Speech Understanding\" section, so the link is reported as related rather than as a measurement or causal claim. Beyond that, no other construct is linked."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is answering questions presented in speech or spoken audio, with the model returning either spoken or textual answers. Some authors make success explicit as producing a correct answer, while others score it by whether \"the reference answer appears in the model's response\" or in a transcription. One paper further describes it as answering broad factual questions without access to external knowledge. A smaller line of work narrows the task to answering a spoken question about an image, or to answering a text question using spoken context input rather than a spoken question itself.\n\nVariants. Variants are mostly organized by modality and task name. Papers distinguish spoken-question to spoken-answer and spoken-question to text-answer settings, and they also use names such as SpokenQA, SQA, and spoken-query-based question answering (SQQA). Some work uses an audio clip plus a text question and expects a text answer, while other setups cover speech-related audio from monologue and dialogue in free-text form. Additional formulations treat the response as a speech continuation that must contain the answer, or pair speech with images in a speech question answering setup.\n\nSpace of elicitation and scores. Papers link spoken question answering to three measurement instruments. WebQuestions appears most often, followed by TriviaQA and WikiQA, and the recorded uses include synthesized audio versions of WebQuestions and TriviaQA, plus WikiQA with synthesized speech queries. These are benchmark datasets or test sets used to evaluate spoken question answering, and in one case closely paired factual correctness, on spoken or synthesized-spoken inputs.\n\nWhat it is taken as evidence of. Papers link it to one construct, speech understanding. One paper places \"Speech Question Answering (SQA)\" within a \"Speech Understanding\" section, so the link is reported as related rather than as a measurement or causal claim. Beyond that, no other construct is linked.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Scaling Speech-Text Pre-training with Synthetic Interleaved Data",
+      "VLAS: Vision-Language-Action Model with Speech Instructions for Customized Robot Manipulation"
+    ],
+    "icml25": [
+      "Aligning Spoken Dialogue Models from User Interactions",
+      "Long-Form Speech Generation with Spoken Language Models"
+    ],
+    "acl25": [
+      "Distilling an End-to-End Voice Assistant Without Instruction Training Data",
+      "LLaMA-Omni 2: LLM-based Real-time Spoken Chatbot with Autoregressive Streaming Speech Synthesis"
+    ],
+    "iclr24": [
+      "SALMONN: Towards Generic Hearing Abilities for Large Language Models",
+      "Spoken Question Answering and Speech Continuation Using Spectrogram-Powered LLM"
+    ],
+    "naacl25": [
+      "AudioBench: A Universal Benchmark for Audio Large Language Models",
+      "VoiceTextBlender: Augmenting Large Language Models with Speech Capabilities via Single-Stage Joint Speech-Text Supervised Fine-Tuning",
+      "Wav2Prompt: End-to-End Speech Prompt Learning and Task-based Fine-tuning for Text-based LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 2,
+    "acl25": 2,
+    "iclr24": 2,
+    "naacl25": 3
+  },
+  "conferences": [
+    "acl25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "canonical_name": "Human annotation study",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across these papers, the prevailing use of \"human annotation study\" is as a flexible human evaluation protocol, but the concrete protocol varies by task. One framing uses 84 participants who each annotate 18 news stories, 9 real and 9 fake, and classify them as real or fake \"without relying on the Internet.\" Another has humans annotate a subset of 390 examples from DEFREASING*N-alt, following the naturalistic prompt instructions, to compare model behavior with human tendencies. A further version uses three graduate students per episode to annotate an AI agent's truthfulness with fine-grained and coarse-grained categories, with omniscient access to background information, hidden details, and full conversation history.\n\nWhat it is claimed to measure. Papers use this protocol to measure 2 constructs, Coverage and Truthfulness, and it is not linked to any behavioral indicators. The claims are spread across these two constructs rather than converging on a single one: papers report using the results of a human annotation study as ground truth for sentence-level coverage, and they also report having annotators label an agent's truthfulness using fine-grained and coarse-grained metrics.\n\nSpace of uses. Across the surveyed work, the dominant positioning is as a validation or comparison procedure rather than as a standalone benchmark. Papers use it to validate a truthfulness evaluator, to compare model behavior with human tendencies, and to supply ground truth for another evaluation. It is also linked to 1 other measurement instrument, STEER-BENCH, where papers relate a human annotation study to validating that generated demonstrations and questions \"faithfully represent community views.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Human annotation study"
+  ],
+  "papers": [
+    "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness in LLM Agents",
+    "Evaluating Defeasible Reasoning in LLMs with DEFREASING",
+    "Have LLMs Reopened the Pandora's Box of AI-Generated Fake News?"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A human evaluation protocol where 84 participants each analyzed and classified 18 news stories (9 real, 9 fake) as either real or fake without using the internet.",
+      "papers": [
+        "Have LLMs Reopened the Pandora's Box of AI-Generated Fake News?",
+        "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness in LLM Agents",
+        "Evaluating Defeasible Reasoning in LLMs with DEFREASING"
+      ],
+      "original_name": "Human annotation study"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness in LLM Agents",
+      "evidence": "For each episode, three graduate students annotate the AI agent\u2019s truthfulness using both fine-grained (distinguishing between Concealment and Equivocation) and coarse-grained (using the Partial Lie category) metrics. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness in LLM Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coverage",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Towards Effective Extraction and Evaluation of Factual Claims",
+      "evidence": "To evaluate sentence-level coverage (defined in \u00a7 2.2), we used the results of the human annotation study (\u00a74.1.2) as ground truth.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Towards Effective Extraction and Evaluation of Factual Claims"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "STEER-BENCH",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "STEER-BENCH: A Benchmark for Evaluating the Steerability of Large Language Models",
+      "evidence": "\u201cTo validate that generated demonstrations and questions faithfully represent community views, we conduct a human annotation study\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "STEER-BENCH: A Benchmark for Evaluating the Steerability of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across these papers, the prevailing use of \"human annotation study\" is as a flexible human evaluation protocol, but the concrete protocol varies by task. One framing uses 84 participants who each annotate 18 news stories, 9 real and 9 fake, and classify them as real or fake \"without relying on the Internet.\" Another has humans annotate a subset of 390 examples from DEFREASING*N-alt, following the naturalistic prompt instructions, to compare model behavior with human tendencies. A further version uses three graduate students per episode to annotate an AI agent's truthfulness with fine-grained and coarse-grained categories, with omniscient access to background information, hidden details, and full conversation history."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use this protocol to measure 2 constructs, Coverage and Truthfulness, and it is not linked to any behavioral indicators. The claims are spread across these two constructs rather than converging on a single one: papers report using the results of a human annotation study as ground truth for sentence-level coverage, and they also report having annotators label an agent's truthfulness using fine-grained and coarse-grained metrics."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Across the surveyed work, the dominant positioning is as a validation or comparison procedure rather than as a standalone benchmark. Papers use it to validate a truthfulness evaluator, to compare model behavior with human tendencies, and to supply ground truth for another evaluation. It is also linked to 1 other measurement instrument, STEER-BENCH, where papers relate a human annotation study to validating that generated demonstrations and questions \"faithfully represent community views.\""
+    }
+  ],
+  "characterization": "What it is. Across these papers, the prevailing use of \"human annotation study\" is as a flexible human evaluation protocol, but the concrete protocol varies by task. One framing uses 84 participants who each annotate 18 news stories, 9 real and 9 fake, and classify them as real or fake \"without relying on the Internet.\" Another has humans annotate a subset of 390 examples from DEFREASING*N-alt, following the naturalistic prompt instructions, to compare model behavior with human tendencies. A further version uses three graduate students per episode to annotate an AI agent's truthfulness with fine-grained and coarse-grained categories, with omniscient access to background information, hidden details, and full conversation history.\n\nWhat it is claimed to measure. Papers use this protocol to measure 2 constructs, Coverage and Truthfulness, and it is not linked to any behavioral indicators. The claims are spread across these two constructs rather than converging on a single one: papers report using the results of a human annotation study as ground truth for sentence-level coverage, and they also report having annotators label an agent's truthfulness using fine-grained and coarse-grained metrics.\n\nSpace of uses. Across the surveyed work, the dominant positioning is as a validation or comparison procedure rather than as a standalone benchmark. Papers use it to validate a truthfulness evaluator, to compare model behavior with human tendencies, and to supply ground truth for another evaluation. It is also linked to 1 other measurement instrument, STEER-BENCH, where papers relate a human annotation study to validating that generated demonstrations and questions \"faithfully represent community views.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "naacl25": [
+      "AI-LieDar : Examine the Trade-off Between Utility and Truthfulness in LLM Agents",
+      "Evaluating Defeasible Reasoning in LLMs with DEFREASING",
+      "Have LLMs Reopened the Pandora's Box of AI-Generated Fake News?"
+    ]
+  },
+  "paper_count_by_conference": {
+    "naacl25": 3
+  },
+  "conferences": [
+    "naacl25"
+  ]
+}

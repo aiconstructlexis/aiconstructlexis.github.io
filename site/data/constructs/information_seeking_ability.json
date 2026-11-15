@@ -1,0 +1,93 @@
+{
+  "canonical_name": "Information-seeking ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing framing is a latent model capability for proactive question-asking: identifying knowledge gaps, eliciting missing details, and gathering the information needed to make more informed decisions or solve a task, especially under uncertainty and ambiguity. The papers also describe success in turn-by-turn terms, with an information-seeking expert deciding whether it already has enough information to answer confidently. A smaller usage applies the label \"information seeking\" to a task category, namely responding to queries that ask for factual information or explanations, so the main disagreement is between a model ability and a type of query.\n\nSpace of facets. There is little formal subdivision. Papers mostly organize the construct around question-asking ability, active information-seeking capabilities, and proactive information-seeking settings, all centered on asking effective questions to obtain missing details; one description of a successful information-seeking expert emphasizes deciding at each turn whether further questions are needed before answering. The main naming ambiguity is that the same label is also used in one paper for information-seeking questions as a task category rather than for the underlying latent ability.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to the construct. Even so, the descriptions make the operationalization concrete through question-asking behavior: one paper introduces a benchmark to evaluate question-asking ability in LLMs, and another notes that some methods do not evaluate models' active information-seeking capabilities. This operationalization lines up with the dominant definitions, which frame the construct as asking questions to gather missing information.\n\nLinks. The only linked construct is Persuasiveness. One paper claims a causal relationship from Persuasiveness to Information-seeking ability, stating that interviewer LLMs struggle with engaging persuasively, which leads to suboptimal information extraction across model size and capability. No correlational or related links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Information-seeking ability",
+    "Information seeking"
+  ],
+  "papers": [
+    "Instruct-SkillMix: A Powerful Pipeline for LLM Instruction Tuning",
+    "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+    "Uncertainty of Thoughts: Uncertainty-Aware Planning Enhances Information Seeking in LLMs"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The capability of a model to proactively identify knowledge gaps and elicit missing details through questioning in order to make more informed decisions.",
+      "papers": [
+        "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning"
+      ],
+      "original_name": "Information-seeking ability"
+    },
+    {
+      "text": "The latent ability of a model to actively gather necessary information to solve a task by asking effective questions, especially in settings with uncertainty and ambiguity.",
+      "papers": [
+        "Uncertainty of Thoughts: Uncertainty-Aware Planning Enhances Information Seeking in LLMs"
+      ],
+      "original_name": "Information seeking"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Persuasiveness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews",
+      "evidence": "Interviewer-LLMs, however, struggle with engaging persuasively, leading to suboptimal information extraction across model size and capability.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "NewsInterview: a Dataset and a Playground to Evaluate LLMs' Grounding Gap via Informational Interviews"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing framing is a latent model capability for proactive question-asking: identifying knowledge gaps, eliciting missing details, and gathering the information needed to make more informed decisions or solve a task, especially under uncertainty and ambiguity. The papers also describe success in turn-by-turn terms, with an information-seeking expert deciding whether it already has enough information to answer confidently. A smaller usage applies the label \"information seeking\" to a task category, namely responding to queries that ask for factual information or explanations, so the main disagreement is between a model ability and a type of query."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "There is little formal subdivision. Papers mostly organize the construct around question-asking ability, active information-seeking capabilities, and proactive information-seeking settings, all centered on asking effective questions to obtain missing details; one description of a successful information-seeking expert emphasizes deciding at each turn whether further questions are needed before answering. The main naming ambiguity is that the same label is also used in one paper for information-seeking questions as a task category rather than for the underlying latent ability."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument and no behavioral indicator are linked to the construct. Even so, the descriptions make the operationalization concrete through question-asking behavior: one paper introduces a benchmark to evaluate question-asking ability in LLMs, and another notes that some methods do not evaluate models' active information-seeking capabilities. This operationalization lines up with the dominant definitions, which frame the construct as asking questions to gather missing information."
+    },
+    {
+      "label": "Links.",
+      "text": "The only linked construct is Persuasiveness. One paper claims a causal relationship from Persuasiveness to Information-seeking ability, stating that interviewer LLMs struggle with engaging persuasively, which leads to suboptimal information extraction across model size and capability. No correlational or related links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing framing is a latent model capability for proactive question-asking: identifying knowledge gaps, eliciting missing details, and gathering the information needed to make more informed decisions or solve a task, especially under uncertainty and ambiguity. The papers also describe success in turn-by-turn terms, with an information-seeking expert deciding whether it already has enough information to answer confidently. A smaller usage applies the label \"information seeking\" to a task category, namely responding to queries that ask for factual information or explanations, so the main disagreement is between a model ability and a type of query.\n\nSpace of facets. There is little formal subdivision. Papers mostly organize the construct around question-asking ability, active information-seeking capabilities, and proactive information-seeking settings, all centered on asking effective questions to obtain missing details; one description of a successful information-seeking expert emphasizes deciding at each turn whether further questions are needed before answering. The main naming ambiguity is that the same label is also used in one paper for information-seeking questions as a task category rather than for the underlying latent ability.\n\nSpace of measurement. No measurement instrument and no behavioral indicator are linked to the construct. Even so, the descriptions make the operationalization concrete through question-asking behavior: one paper introduces a benchmark to evaluate question-asking ability in LLMs, and another notes that some methods do not evaluate models' active information-seeking capabilities. This operationalization lines up with the dominant definitions, which frame the construct as asking questions to gather missing information.\n\nLinks. The only linked construct is Persuasiveness. One paper claims a causal relationship from Persuasiveness to Information-seeking ability, stating that interviewer LLMs struggle with engaging persuasively, which leads to suboptimal information extraction across model size and capability. No correlational or related links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Instruct-SkillMix: A Powerful Pipeline for LLM Instruction Tuning",
+      "WildBench: Benchmarking LLMs with Challenging Tasks from Real Users in the Wild"
+    ],
+    "neurips24": [
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "Uncertainty of Thoughts: Uncertainty-Aware Planning Enhances Information Seeking in LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

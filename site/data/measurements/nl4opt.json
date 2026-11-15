@@ -1,0 +1,82 @@
+{
+  "canonical_name": "NL4OPT",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, closely related labels, NL4OPT, NL4Opt, and NLP4OPT, are used for what is most commonly described as a benchmark or benchmark dataset for turning natural language optimization problems into mathematical formulations. The prevailing description emphasizes question text in natural language, named entity recognition to extract entities and numerical values, and subsequent formulation into mathematical models. A narrower description presents it as a curated set of 244 linear programming problems used to evaluate autoformulation systems, while a smaller framing describes it as a dataset from the NL4Opt competition for solving optimization problems described in natural language.\n\nWhat it is claimed to measure. Papers mainly use NL4OPT to evaluate whether models can construct or extract optimization formulations from natural language descriptions or questions. In that usage, it is reported as assessing named entity and numerical value extraction as part of formulating mathematical models, and a narrower description limits the task to linear programming autoformulation. Papers do not link it to named constructs or behavioral indicators.\n\nSpace of uses. In the quoted uses, NL4OPT appears mostly in multi-benchmark or multi-dataset evaluations. It is used alongside MAMO, IndustryOR, OptiBench, and OptMATH-Bench in one evaluation setup, where it is described as one of several established modeling benchmarks, and elsewhere it is included among collected optimization problem datasets and among real-world optimization and operation task datasets used for experiments.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "NL4OPT",
+    "NL4Opt",
+    "NLP4OPT"
+  ],
+  "papers": [
+    "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch",
+    "OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling",
+    "Autoformulation of Mathematical Optimization Models Using LLMs",
+    "OptMATH: A Scalable Bidirectional Data Synthesis Framework for Optimization Modeling"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "A benchmark that evaluates a model's ability to construct mathematical formulations from natural language questions, focusing on named entity recognition to extract entities and numerical values.",
+      "papers": [
+        "OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling",
+        "OptMATH: A Scalable Bidirectional Data Synthesis Framework for Optimization Modeling"
+      ],
+      "original_name": "NL4OPT"
+    },
+    {
+      "text": "A dataset from the NL4Opt competition focused on leveraging LLMs to solve optimization problems described in natural language.",
+      "papers": [
+        "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch"
+      ],
+      "original_name": "NL4Opt"
+    },
+    {
+      "text": "A benchmark dataset consisting of 244 linear programming problems described in natural language, used to evaluate autoformulation systems.",
+      "papers": [
+        "Autoformulation of Mathematical Optimization Models Using LLMs"
+      ],
+      "original_name": "NLP4OPT"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, closely related labels, NL4OPT, NL4Opt, and NLP4OPT, are used for what is most commonly described as a benchmark or benchmark dataset for turning natural language optimization problems into mathematical formulations. The prevailing description emphasizes question text in natural language, named entity recognition to extract entities and numerical values, and subsequent formulation into mathematical models. A narrower description presents it as a curated set of 244 linear programming problems used to evaluate autoformulation systems, while a smaller framing describes it as a dataset from the NL4Opt competition for solving optimization problems described in natural language."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers mainly use NL4OPT to evaluate whether models can construct or extract optimization formulations from natural language descriptions or questions. In that usage, it is reported as assessing named entity and numerical value extraction as part of formulating mathematical models, and a narrower description limits the task to linear programming autoformulation. Papers do not link it to named constructs or behavioral indicators."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "In the quoted uses, NL4OPT appears mostly in multi-benchmark or multi-dataset evaluations. It is used alongside MAMO, IndustryOR, OptiBench, and OptMATH-Bench in one evaluation setup, where it is described as one of several established modeling benchmarks, and elsewhere it is included among collected optimization problem datasets and among real-world optimization and operation task datasets used for experiments."
+    }
+  ],
+  "characterization": "What it is. Across the papers, closely related labels, NL4OPT, NL4Opt, and NLP4OPT, are used for what is most commonly described as a benchmark or benchmark dataset for turning natural language optimization problems into mathematical formulations. The prevailing description emphasizes question text in natural language, named entity recognition to extract entities and numerical values, and subsequent formulation into mathematical models. A narrower description presents it as a curated set of 244 linear programming problems used to evaluate autoformulation systems, while a smaller framing describes it as a dataset from the NL4Opt competition for solving optimization problems described in natural language.\n\nWhat it is claimed to measure. Papers mainly use NL4OPT to evaluate whether models can construct or extract optimization formulations from natural language descriptions or questions. In that usage, it is reported as assessing named entity and numerical value extraction as part of formulating mathematical models, and a narrower description limits the task to linear programming autoformulation. Papers do not link it to named constructs or behavioral indicators.\n\nSpace of uses. In the quoted uses, NL4OPT appears mostly in multi-benchmark or multi-dataset evaluations. It is used alongside MAMO, IndustryOR, OptiBench, and OptMATH-Bench in one evaluation setup, where it is described as one of several established modeling benchmarks, and elsewhere it is included among collected optimization problem datasets and among real-world optimization and operation task datasets used for experiments.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "LLMOPT: Learning to Define and Solve General Optimization Problems from Scratch",
+      "OptiBench Meets ReSocratic: Measure and Improve LLMs for Optimization Modeling"
+    ],
+    "icml25": [
+      "Autoformulation of Mathematical Optimization Models Using LLMs",
+      "OptMATH: A Scalable Bidirectional Data Synthesis Framework for Optimization Modeling"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

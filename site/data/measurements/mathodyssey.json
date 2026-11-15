@@ -1,0 +1,117 @@
+{
+  "canonical_name": "MathOdyssey",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, the prevailing usage is as a benchmark for math reasoning, especially Olympiad-level mathematical reasoning. One definition describes it more specifically as a set of math problems of varying difficulty, including olympiad-level competition questions, and a quoted passage calls it \"a popular benchmark for LLM math reasoning\"; another paper refers to it more generally as an olympiad benchmark, and one study focuses on its olympiad-level competition problems.\n\nWhat it is claimed to measure. Papers use MathOdyssey to measure one behavioral indicator, Mathematical problem solving, and two constructs, Generalization and Mathematical reasoning. In the linked claims, it is used as a held-out benchmark for Mathematical problem solving and Generalization, and it is also reported as evaluating Mathematical reasoning, so the measurement claims are spread across these targets rather than centered on a single construct.\n\nSpace of uses. Papers do not link it to another measurement instrument, though they use it alongside Hendrycks MATH and Functional Math. In those uses, it is positioned as an additional or challenging held-out benchmark, and elsewhere as one of multiple olympiad benchmarks in performance comparisons.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "MathOdyssey",
+    "Math Odyssey"
+  ],
+  "papers": [
+    "Inference-Aware Fine-Tuning for Best-of-N Sampling in Large Language Models",
+    "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance",
+    "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A benchmark of varying-difficulty math problems, including olympiad-level competition questions, used to evaluate mathematical reasoning.",
+      "papers": [
+        "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance"
+      ],
+      "original_name": "MathOdyssey"
+    },
+    {
+      "text": "A benchmark used in the paper to evaluate Olympiad-level mathematical reasoning.",
+      "papers": [
+        "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+      ],
+      "original_name": "Math Odyssey"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical problem solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Inference-Aware Fine-Tuning for Best-of-N Sampling in Large Language Models",
+      "evidence": "For math, we train and evaluate on Hendrycks MATH benchmark (Hendrycks et al., 2021), and additionally evaluate on two held-out math benchmarks: Functional MATH (Srivastava et al., 2024) and MathOdyssey (Fang et al., 2024).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Inference-Aware Fine-Tuning for Best-of-N Sampling in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Inference-Aware Fine-Tuning for Best-of-N Sampling in Large Language Models",
+      "evidence": "To further assess the generalization capabilities of our BoN aware fine-tuned models, we evaluate their performance on two challenging, held-out benchmarks: Functional Math (Srivastava et al., 2024) and MathOdyssey (Fang et al., 2024).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Inference-Aware Fine-Tuning for Best-of-N Sampling in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance",
+      "evidence": "recent math specific competition and Olympiad-level benchmarking on Math Odyssey (Fang et al., 2024), OlymiadBench (He et al., 2024), and the American Invitational Mathematics Examination (AIME) & the American Mathematics Competitions (AMC) (Beeching et al., 2024; DeepSeek-AI et al., 2024; Reid et al., 2024) questions show that the state-of-the-art (SOTA), both generalist and specialist, LLMs continue to struggle with advanced math reasoning. (Section 1.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, the prevailing usage is as a benchmark for math reasoning, especially Olympiad-level mathematical reasoning. One definition describes it more specifically as a set of math problems of varying difficulty, including olympiad-level competition questions, and a quoted passage calls it \"a popular benchmark for LLM math reasoning\"; another paper refers to it more generally as an olympiad benchmark, and one study focuses on its olympiad-level competition problems."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use MathOdyssey to measure one behavioral indicator, Mathematical problem solving, and two constructs, Generalization and Mathematical reasoning. In the linked claims, it is used as a held-out benchmark for Mathematical problem solving and Generalization, and it is also reported as evaluating Mathematical reasoning, so the measurement claims are spread across these targets rather than centered on a single construct."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers do not link it to another measurement instrument, though they use it alongside Hendrycks MATH and Functional Math. In those uses, it is positioned as an additional or challenging held-out benchmark, and elsewhere as one of multiple olympiad benchmarks in performance comparisons."
+    }
+  ],
+  "characterization": "What it is. Across the papers, the prevailing usage is as a benchmark for math reasoning, especially Olympiad-level mathematical reasoning. One definition describes it more specifically as a set of math problems of varying difficulty, including olympiad-level competition questions, and a quoted passage calls it \"a popular benchmark for LLM math reasoning\"; another paper refers to it more generally as an olympiad benchmark, and one study focuses on its olympiad-level competition problems.\n\nWhat it is claimed to measure. Papers use MathOdyssey to measure one behavioral indicator, Mathematical problem solving, and two constructs, Generalization and Mathematical reasoning. In the linked claims, it is used as a held-out benchmark for Mathematical problem solving and Generalization, and it is also reported as evaluating Mathematical reasoning, so the measurement claims are spread across these targets rather than centered on a single construct.\n\nSpace of uses. Papers do not link it to another measurement instrument, though they use it alongside Hendrycks MATH and Functional Math. In those uses, it is positioned as an additional or challenging held-out benchmark, and elsewhere as one of multiple olympiad benchmarks in performance comparisons.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Inference-Aware Fine-Tuning for Best-of-N Sampling in Large Language Models",
+      "SBSC: Step-by-Step Coding for Improving Mathematical Olympiad Performance"
+    ],
+    "naacl25": [
+      "LLaMA-Berry: Pairwise Optimization for Olympiad-level Mathematical Reasoning via O1-like Monte Carlo Tree Search"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "naacl25"
+  ]
+}

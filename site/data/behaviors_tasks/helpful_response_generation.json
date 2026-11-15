@@ -1,0 +1,101 @@
+{
+  "canonical_name": "Helpful response generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the papers, this behavior is described as producing responses that stay relevant and useful to the input, rather than generic refusals or disconnected content. Another formulation emphasizes responses that are informative, accurate, and useful in assisting users with their queries or tasks, and one source characterizes failure as \"failing to offer helpful suggestions or relevant content based on the input.\"\n\nVariants. The papers place this behavior in more than one setting. One treats it as generating \"the most harmless and helpful responses tailored to multimodal inputs,\" while another names a \"Helpful Assistant task\" and situates it alongside \"helpful,\" \"harmless,\" and \"humorous\" objectives.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. The papers named here therefore do not identify a specific instrument used to elicit or score it.\n\nWhat it is taken as evidence of. Across the papers that relate this behavior to broader constructs, the only construct named is Helpfulness, and those links are recorded as related. These papers describe the behavior with phrases such as generating \"helpful outputs\" or learning to behave \"helpfully and safely,\" so the construct framing centers on Helpfulness.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Helpful response generation"
+  ],
+  "papers": [
+    "RLCD: Reinforcement Learning from Contrastive Distillation for LM Alignment",
+    "Controllable Safety Alignment: Inference-Time Adaptation to Diverse Safety Requirements",
+    "ETA: Evaluating Then Aligning Safety of Vision Language Models at Inference Time",
+    "Emerging Safety Attack and Defense in Federated Instruction Tuning of Large Language Models",
+    "MPO: An Efficient Post-Processing Framework for Mixing Diverse Preference Alignment",
+    "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "Producing responses that remain relevant and useful to the input rather than generic refusals or disconnected content.",
+      "papers": [
+        "ETA: Evaluating Then Aligning Safety of Vision Language Models at Inference Time"
+      ],
+      "original_name": "Helpful response generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "RLCD: Reinforcement Learning from Contrastive Distillation for LM Alignment",
+      "evidence": "\u201cWe evaluate RLCD through both human and automatic evaluations on three tasks, aiming to improve the ability of LLaMA-7B ... to generate ... helpful outputs\u201d (Introduction).",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "RLCD: Reinforcement Learning from Contrastive Distillation for LM Alignment"
+        ],
+        "iclr25": [
+          "Controllable Safety Alignment: Inference-Time Adaptation to Diverse Safety Requirements",
+          "Emerging Safety Attack and Defense in Federated Instruction Tuning of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, this behavior is described as producing responses that stay relevant and useful to the input, rather than generic refusals or disconnected content. Another formulation emphasizes responses that are informative, accurate, and useful in assisting users with their queries or tasks, and one source characterizes failure as \"failing to offer helpful suggestions or relevant content based on the input.\""
+    },
+    {
+      "label": "Variants.",
+      "text": "The papers place this behavior in more than one setting. One treats it as generating \"the most harmless and helpful responses tailored to multimodal inputs,\" while another names a \"Helpful Assistant task\" and situates it alongside \"helpful,\" \"harmless,\" and \"humorous\" objectives."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior. The papers named here therefore do not identify a specific instrument used to elicit or score it."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Across the papers that relate this behavior to broader constructs, the only construct named is Helpfulness, and those links are recorded as related. These papers describe the behavior with phrases such as generating \"helpful outputs\" or learning to behave \"helpfully and safely,\" so the construct framing centers on Helpfulness."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, this behavior is described as producing responses that stay relevant and useful to the input, rather than generic refusals or disconnected content. Another formulation emphasizes responses that are informative, accurate, and useful in assisting users with their queries or tasks, and one source characterizes failure as \"failing to offer helpful suggestions or relevant content based on the input.\"\n\nVariants. The papers place this behavior in more than one setting. One treats it as generating \"the most harmless and helpful responses tailored to multimodal inputs,\" while another names a \"Helpful Assistant task\" and situates it alongside \"helpful,\" \"harmless,\" and \"humorous\" objectives.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. The papers named here therefore do not identify a specific instrument used to elicit or score it.\n\nWhat it is taken as evidence of. Across the papers that relate this behavior to broader constructs, the only construct named is Helpfulness, and those links are recorded as related. These papers describe the behavior with phrases such as generating \"helpful outputs\" or learning to behave \"helpfully and safely,\" so the construct framing centers on Helpfulness.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "RLCD: Reinforcement Learning from Contrastive Distillation for LM Alignment"
+    ],
+    "iclr25": [
+      "Controllable Safety Alignment: Inference-Time Adaptation to Diverse Safety Requirements",
+      "ETA: Evaluating Then Aligning Safety of Vision Language Models at Inference Time",
+      "Emerging Safety Attack and Defense in Federated Instruction Tuning of Large Language Models"
+    ],
+    "icml25": [
+      "MPO: An Efficient Post-Processing Framework for Mixing Diverse Preference Alignment"
+    ],
+    "neurips24": [
+      "Cal-DPO: Calibrated Direct Preference Optimization for Language Model Alignment"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 1,
+    "iclr25": 3,
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

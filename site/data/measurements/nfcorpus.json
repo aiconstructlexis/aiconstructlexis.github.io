@@ -1,0 +1,138 @@
+{
+  "canonical_name": "NFCorpus",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed papers, the prevailing usage treats NFCorpus, also written NFCORPUS or NF-Corpus, as an information retrieval dataset or benchmark, often described more specifically as medical information retrieval. Definitions add that it contains queries in simple English and technical documents extracted from PubMed, and one paper states that its test split has 323 queries and the corpus has 3.6k documents. Some papers describe it more generally as a retrieval dataset from BEIR used for query generation and retrieval or for generating and evaluating adversarial passages, while another frames it as a medical dataset for domain-specific factual questions involving single entities.\n\nWhat it is claimed to measure. Papers link NFCorpus to two behavioral indicators, Factual question answering and Information retrieval, and to no constructs. One paper uses it to measure information retrieval in long-document retrieval scenarios, reporting recall and precision on NFCORPUS, while the same paper also says that SQUAD, NFCORPUS, and SCI-DOCS contain factual questions involving single entities. In the linked relationships, the measurement claims stay at the level of behavioral indicators rather than constructs.\n\nSpace of uses. Most commonly, papers use NFCorpus as one dataset within broader evaluation suites rather than in isolation. It appears alongside Natural Questions in corpus-poisoning experiments, alongside Dragonball, SQUAD, and SCI-DOCS in filtered long-document RAG experiments, and as one of the public datasets in BEIR; the only linked measurement instrument is BEIR, to which one paper relates NFCorpus explicitly. One paper also highlights it as the dataset with the highest unseen query term ratio when evaluating query generation and retrieval.\n\nConcerns raised. One paper notes a limitation specific to its own filtering setup: because NFCORPUS is a medical-information dataset, its LLM filtering mechanism may have limitations in processing the semantic information of professional academic terms.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "NFCorpus",
+    "NFCORPUS",
+    "NF-Corpus"
+  ],
+  "papers": [
+    "Following the Autoregressive Nature of LLM Embeddings via Compression and Alignment",
+    "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration",
+    "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+    "tRAG: Term-level Retrieval-Augmented Generation for Domain-Adaptive Retrieval",
+    "Time-Reversal Provides Unsupervised Feedback to LLMs"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "A retrieval dataset used to generate and evaluate adversarial passages in the corpus-poisoning experiments.",
+      "papers": [
+        "tRAG: Term-level Retrieval-Augmented Generation for Domain-Adaptive Retrieval",
+        "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack"
+      ],
+      "original_name": "NFCorpus"
+    },
+    {
+      "text": "Medical information retrieval dataset used to evaluate performance on domain-specific factual questions involving single entities.",
+      "papers": [
+        "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration"
+      ],
+      "original_name": "NFCORPUS"
+    },
+    {
+      "text": "A medical information retrieval benchmark dataset containing queries in simple English and technical documents extracted from PubMed.",
+      "papers": [
+        "Time-Reversal Provides Unsupervised Feedback to LLMs"
+      ],
+      "original_name": "NF-Corpus"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Information retrieval",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration",
+      "evidence": "Experimental results across four datasets\u2014Dragonball, SQUAD, NFCORPUS, and SCI-DOCS demonstrate that SAKI-RAG achieves better recall and precision compared to other RAG frameworks in long-document retrieval scenarios (Abstract).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factual question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration",
+      "evidence": "the SQUAD, NFCORPUS, and SCI-DOCS datasets consist of factual questions involving single entities (Section 4.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "BEIR",
+      "other_type": "measurements",
+      "relationship_type": "related",
+      "paper": "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "evidence": "\u201cnine public datasets in the BEIR benchmark (Thakur et al., 2021), including TREC-COVID (Voorhees et al., 2021), NFCorpus (Boteva et al., 2016)\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed papers, the prevailing usage treats NFCorpus, also written NFCORPUS or NF-Corpus, as an information retrieval dataset or benchmark, often described more specifically as medical information retrieval. Definitions add that it contains queries in simple English and technical documents extracted from PubMed, and one paper states that its test split has 323 queries and the corpus has 3.6k documents. Some papers describe it more generally as a retrieval dataset from BEIR used for query generation and retrieval or for generating and evaluating adversarial passages, while another frames it as a medical dataset for domain-specific factual questions involving single entities."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link NFCorpus to two behavioral indicators, Factual question answering and Information retrieval, and to no constructs. One paper uses it to measure information retrieval in long-document retrieval scenarios, reporting recall and precision on NFCORPUS, while the same paper also says that SQUAD, NFCORPUS, and SCI-DOCS contain factual questions involving single entities. In the linked relationships, the measurement claims stay at the level of behavioral indicators rather than constructs."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Most commonly, papers use NFCorpus as one dataset within broader evaluation suites rather than in isolation. It appears alongside Natural Questions in corpus-poisoning experiments, alongside Dragonball, SQUAD, and SCI-DOCS in filtered long-document RAG experiments, and as one of the public datasets in BEIR; the only linked measurement instrument is BEIR, to which one paper relates NFCorpus explicitly. One paper also highlights it as the dataset with the highest unseen query term ratio when evaluating query generation and retrieval."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "One paper notes a limitation specific to its own filtering setup: because NFCORPUS is a medical-information dataset, its LLM filtering mechanism may have limitations in processing the semantic information of professional academic terms."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed papers, the prevailing usage treats NFCorpus, also written NFCORPUS or NF-Corpus, as an information retrieval dataset or benchmark, often described more specifically as medical information retrieval. Definitions add that it contains queries in simple English and technical documents extracted from PubMed, and one paper states that its test split has 323 queries and the corpus has 3.6k documents. Some papers describe it more generally as a retrieval dataset from BEIR used for query generation and retrieval or for generating and evaluating adversarial passages, while another frames it as a medical dataset for domain-specific factual questions involving single entities.\n\nWhat it is claimed to measure. Papers link NFCorpus to two behavioral indicators, Factual question answering and Information retrieval, and to no constructs. One paper uses it to measure information retrieval in long-document retrieval scenarios, reporting recall and precision on NFCORPUS, while the same paper also says that SQUAD, NFCORPUS, and SCI-DOCS contain factual questions involving single entities. In the linked relationships, the measurement claims stay at the level of behavioral indicators rather than constructs.\n\nSpace of uses. Most commonly, papers use NFCorpus as one dataset within broader evaluation suites rather than in isolation. It appears alongside Natural Questions in corpus-poisoning experiments, alongside Dragonball, SQUAD, and SCI-DOCS in filtered long-document RAG experiments, and as one of the public datasets in BEIR; the only linked measurement instrument is BEIR, to which one paper relates NFCorpus explicitly. One paper also highlights it as the dataset with the highest unseen query term ratio when evaluating query generation and retrieval.\n\nConcerns raised. One paper notes a limitation specific to its own filtering setup: because NFCORPUS is a medical-information dataset, its LLM filtering mechanism may have limitations in processing the semantic information of professional academic terms.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Following the Autoregressive Nature of LLM Embeddings via Compression and Alignment",
+      "SAKI-RAG: Mitigating Context Fragmentation in Long-Document RAG via Sentence-level Attention Knowledge Integration"
+    ],
+    "naacl25": [
+      "Tricking Retrievers with Influential Tokens: An Efficient Black-Box Corpus Poisoning Attack",
+      "tRAG: Term-level Retrieval-Augmented Generation for Domain-Adaptive Retrieval"
+    ],
+    "neurips24": [
+      "Time-Reversal Provides Unsupervised Feedback to LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "naacl25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "naacl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "canonical_name": "WMT23",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most commonly, papers treat WMT23 as the 2023 Workshop or Conference on Machine Translation shared-task test set or benchmark for evaluating machine translation systems and translation quality across multiple language pairs. Some definitions add that it contains human-rated translations across multiple language pairs and systems, and one study specifically uses the WMT'23 MQM ratings for English-German and Chinese-English. Another use frames it as the source of contaminated test examples drawn from ten language pairs.\n\nWhat it is claimed to measure. Papers use it to evaluate machine translation systems or translation quality, including fine-grained machine translation evaluation in one study. They do not explicitly use it to measure any named construct or behavioral indicator.\n\nSpace of uses. The prevailing usage is as a benchmark or test set in model evaluation. One study evaluates a Specialist method on WMT'23 and compares it with the XCOMET metric, another uses WMT 2023 as the source of contaminated test examples and then decontaminates the set, and another places WMT23 under generative tasks.\n\nConcerns raised. Contamination is the only explicit concern raised in the papers here: one study sources contaminated data from WMT 2023 across ten language pairs. The same study reports removing 681 WMT'23 examples during decontamination, leaving 9,491 examples.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "WMT\u201923",
+    "WMT 2023",
+    "WMT23"
+  ],
+  "papers": [
+    "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+    "Document-Level Text Generation with Minimum Bayes Risk Decoding using Optimal Transport",
+    "From Jack of All Trades to Master of One: Specializing LLM-based Autoraters to a Test Set",
+    "LAuReL: Learned Augmented Residual Layer",
+    "Overestimation in LLM Evaluation: A Controlled Large-Scale Study on Data Contamination\u2019s Impact on Machine Translation"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "Annual Conference on Machine Translation shared task dataset for evaluating machine translation systems, containing human-rated translations across multiple language pairs and systems.",
+      "papers": [
+        "From Jack of All Trades to Master of One: Specializing LLM-based Autoraters to a Test Set"
+      ],
+      "original_name": "WMT\u201923"
+    },
+    {
+      "text": "A machine translation evaluation dataset from the Workshop on Machine Translation 2023, used in this study as the source of contaminated test examples.",
+      "papers": [
+        "Overestimation in LLM Evaluation: A Controlled Large-Scale Study on Data Contamination\u2019s Impact on Machine Translation"
+      ],
+      "original_name": "WMT 2023"
+    },
+    {
+      "text": "Machine translation benchmark evaluating translation quality across multiple language pairs in the 2023 conference evaluation campaign.",
+      "papers": [
+        "LAuReL: Learned Augmented Residual Layer",
+        "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention"
+      ],
+      "original_name": "WMT23"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most commonly, papers treat WMT23 as the 2023 Workshop or Conference on Machine Translation shared-task test set or benchmark for evaluating machine translation systems and translation quality across multiple language pairs. Some definitions add that it contains human-rated translations across multiple language pairs and systems, and one study specifically uses the WMT'23 MQM ratings for English-German and Chinese-English. Another use frames it as the source of contaminated test examples drawn from ten language pairs."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use it to evaluate machine translation systems or translation quality, including fine-grained machine translation evaluation in one study. They do not explicitly use it to measure any named construct or behavioral indicator."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The prevailing usage is as a benchmark or test set in model evaluation. One study evaluates a Specialist method on WMT'23 and compares it with the XCOMET metric, another uses WMT 2023 as the source of contaminated test examples and then decontaminates the set, and another places WMT23 under generative tasks."
+    },
+    {
+      "label": "Concerns raised.",
+      "text": "Contamination is the only explicit concern raised in the papers here: one study sources contaminated data from WMT 2023 across ten language pairs. The same study reports removing 681 WMT'23 examples during decontamination, leaving 9,491 examples."
+    }
+  ],
+  "characterization": "What it is. Most commonly, papers treat WMT23 as the 2023 Workshop or Conference on Machine Translation shared-task test set or benchmark for evaluating machine translation systems and translation quality across multiple language pairs. Some definitions add that it contains human-rated translations across multiple language pairs and systems, and one study specifically uses the WMT'23 MQM ratings for English-German and Chinese-English. Another use frames it as the source of contaminated test examples drawn from ten language pairs.\n\nWhat it is claimed to measure. Papers use it to evaluate machine translation systems or translation quality, including fine-grained machine translation evaluation in one study. They do not explicitly use it to measure any named construct or behavioral indicator.\n\nSpace of uses. The prevailing usage is as a benchmark or test set in model evaluation. One study evaluates a Specialist method on WMT'23 and compares it with the XCOMET metric, another uses WMT 2023 as the source of contaminated test examples and then decontaminates the set, and another places WMT23 under generative tasks.\n\nConcerns raised. Contamination is the only explicit concern raised in the papers here: one study sources contaminated data from WMT 2023 across ten language pairs. The same study reports removing 681 WMT'23 examples during decontamination, leaving 9,491 examples.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Bridging the Language Gaps in Large Language Models with Inference-Time Cross-Lingual Intervention",
+      "Document-Level Text Generation with Minimum Bayes Risk Decoding using Optimal Transport"
+    ],
+    "icml25": [
+      "From Jack of All Trades to Master of One: Specializing LLM-based Autoraters to a Test Set",
+      "LAuReL: Learned Augmented Residual Layer",
+      "Overestimation in LLM Evaluation: A Controlled Large-Scale Study on Data Contamination\u2019s Impact on Machine Translation"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "icml25": 3
+  },
+  "conferences": [
+    "acl25",
+    "icml25"
+  ]
+}

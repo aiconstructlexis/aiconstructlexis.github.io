@@ -1,0 +1,91 @@
+{
+  "canonical_name": "OpenOrca",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, OpenOrca is most commonly treated as an instruction and reasoning dataset used in supervised fine-tuning and evaluation. Some definitions broaden this to an ORCA family, including OPENORCA and SLIMORCA, described as fine-tuning datasets for instruction-following and as derived from explanations of chain-of-thought reasoning steps from larger models. A smaller framing presents Orca as an SFT collection that combines prior instruction-tuning data such as FLAN, T0, NIV, and CoT, and one paper describes OpenOrca as augmented FLAN collection data.\n\nWhat it is claimed to measure. Papers use OpenOrca to evaluate general reasoning and comprehension performance and instruction-following capabilities, and one paper also describes it as supporting in-domain test sets for model perplexity. These descriptions do not converge on one named construct, and no construct or behavioral indicator is linked to it.\n\nSpace of uses. Papers most often position OpenOrca as a supervised fine-tuning corpus, with some also using it as an evaluation or validation dataset. In reported setups it appears alongside GSM8K and ChatDoctor in fine-tuning experiments, alongside OpenHermes-2.5 in supervised fine-tuning, and among datasets used to validate self-information retention and sequence-level semantic aggregation. Work using the ORCA framing also treats OPENORCA and SLIMORCA as test datasets for instruction-following.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "OpenOrca",
+    "ORCA",
+    "Orca"
+  ],
+  "papers": [
+    "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+    "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models",
+    "A Lens into Interpretable Transformer Mistakes via Semantic Dependency",
+    "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models",
+    "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+    "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "An instruction/reasoning dataset used to fine-tune and evaluate general reasoning and comprehension performance.",
+      "papers": [
+        "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+        "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models",
+        "A Lens into Interpretable Transformer Mistakes via Semantic Dependency"
+      ],
+      "original_name": "OpenOrca"
+    },
+    {
+      "text": "A dataset family (including OPENORCA and SLIMORCA) used for evaluating instruction-following capabilities, derived from explanations of chain-of-thought reasoning steps from larger models.",
+      "papers": [
+        "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection"
+      ],
+      "original_name": "ORCA"
+    },
+    {
+      "text": "SFT collection that aggregates data from prior instruction-tuning datasets like FLAN, T0, and CoT, used for re-weighting and downstream evaluation.",
+      "papers": [
+        "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models"
+      ],
+      "original_name": "Orca"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, OpenOrca is most commonly treated as an instruction and reasoning dataset used in supervised fine-tuning and evaluation. Some definitions broaden this to an ORCA family, including OPENORCA and SLIMORCA, described as fine-tuning datasets for instruction-following and as derived from explanations of chain-of-thought reasoning steps from larger models. A smaller framing presents Orca as an SFT collection that combines prior instruction-tuning data such as FLAN, T0, NIV, and CoT, and one paper describes OpenOrca as augmented FLAN collection data."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use OpenOrca to evaluate general reasoning and comprehension performance and instruction-following capabilities, and one paper also describes it as supporting in-domain test sets for model perplexity. These descriptions do not converge on one named construct, and no construct or behavioral indicator is linked to it."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers most often position OpenOrca as a supervised fine-tuning corpus, with some also using it as an evaluation or validation dataset. In reported setups it appears alongside GSM8K and ChatDoctor in fine-tuning experiments, alongside OpenHermes-2.5 in supervised fine-tuning, and among datasets used to validate self-information retention and sequence-level semantic aggregation. Work using the ORCA framing also treats OPENORCA and SLIMORCA as test datasets for instruction-following."
+    }
+  ],
+  "characterization": "What it is. Across the papers, OpenOrca is most commonly treated as an instruction and reasoning dataset used in supervised fine-tuning and evaluation. Some definitions broaden this to an ORCA family, including OPENORCA and SLIMORCA, described as fine-tuning datasets for instruction-following and as derived from explanations of chain-of-thought reasoning steps from larger models. A smaller framing presents Orca as an SFT collection that combines prior instruction-tuning data such as FLAN, T0, NIV, and CoT, and one paper describes OpenOrca as augmented FLAN collection data.\n\nWhat it is claimed to measure. Papers use OpenOrca to evaluate general reasoning and comprehension performance and instruction-following capabilities, and one paper also describes it as supporting in-domain test sets for model perplexity. These descriptions do not converge on one named construct, and no construct or behavioral indicator is linked to it.\n\nSpace of uses. Papers most often position OpenOrca as a supervised fine-tuning corpus, with some also using it as an evaluation or validation dataset. In reported setups it appears alongside GSM8K and ChatDoctor in fine-tuning experiments, alongside OpenHermes-2.5 in supervised fine-tuning, and among datasets used to validate self-information retention and sequence-level semantic aggregation. Work using the ORCA framing also treats OPENORCA and SLIMORCA as test datasets for instruction-following.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "SEAL: Safety-enhanced Aligned LLM Fine-tuning via Bilevel Data Selection",
+      "Train Small, Infer Large: Memory-Efficient LoRA Training for Large Language Models"
+    ],
+    "icml25": [
+      "A Lens into Interpretable Transformer Mistakes via Semantic Dependency",
+      "Data Mixing Optimization for Supervised Fine-Tuning of Large Language Models"
+    ],
+    "neurips24": [
+      "Keeping LLMs Aligned After Fine-tuning: The Crucial Role of Prompt Templates",
+      "Would I Lie To You? Inference Time Alignment of Language Models using Direct Preference Heads"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

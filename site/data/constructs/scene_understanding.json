@@ -1,0 +1,136 @@
+{
+  "canonical_name": "Scene understanding",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed papers, the prevailing usage treats scene understanding as an ability to interpret a visual environment at the scene level: perceiving the environment, identifying objects or components, and understanding their relationships, layout, and overall meaning. A recurring formulation adds semantic, spatial, and motion attributes and says the goal is a comprehensive understanding, while another application-focused wording narrows it to interpreting environmental layout and visual context well enough to support navigation decisions. A smaller variant presents it as scene-level visual perception, emphasizing whole-image content and description rather than selective identification of critical objects.\n\nSpace of facets. Papers break the construct down by what is being understood: objects or components, their relationships, and broader scene meaning, with one definition explicitly naming semantic, spatial, and motion attributes. The naming is not fully uniform, and closely similar abilities are also labeled visual scene comprehension and scene-level visual perception. The clearest difference in wording is scope, with some descriptions centering whole-image content and others centering critical objects that matter for downstream decisions.\n\nSpace of measurement. Operationally, papers link scene understanding to 1 measurement instrument and 2 behavioral indicators. The only linked instrument is MuirBench, which evaluates whether models can understand a scene comprised of multiple views from multiple surveillance images, so the recorded measurement casts the construct as multi-view scene understanding. Beyond direct measurement, the linked behavioral indicators are Action selection and Referring expression understanding, but those appear through causal claims rather than as standalone tests. The operationalization overlaps with definitions centered on scene-level understanding and relationships, while the measurement evidence does not explicitly cover every definitional facet mentioned in definitions, such as motion attributes or selective focus on critical objects.\n\nLinks. The recorded non-measurement links are causal rather than correlational or generic relatedness. One paper claims a causal relationship from Scene understanding to Action selection, stating that selectively identifying critical objects simplifies the description of the surrounding environment and reduces the load on decision-making processes. Another paper claims a causal relationship from Referring expression understanding to Scene understanding, with object referencing and grounding described as essential for advanced scene understanding.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Scene understanding",
+    "Visual scene comprehension",
+    "Scene-level visual perception"
+  ],
+  "papers": [
+    "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+    "Dysca: A Dynamic and Scalable Benchmark for Evaluating Perception Ability of LVLMs",
+    "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+    "Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology",
+    "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+    "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The cognitive ability to perceive a visual environment, selectively identify critical objects, and interpret their semantic, spatial, and motion attributes to form a comprehensive understanding.",
+      "papers": [
+        "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+        "Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology"
+      ],
+      "original_name": "Scene understanding"
+    },
+    {
+      "text": "The ability to understand and interpret the components, relationships, and overall meaning of a visual scene.",
+      "papers": [
+        "Dysca: A Dynamic and Scalable Benchmark for Evaluating Perception Ability of LVLMs"
+      ],
+      "original_name": "Visual scene comprehension"
+    },
+    {
+      "text": "The ability to understand and describe whole-image content at the scene level.",
+      "papers": [
+        "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension"
+      ],
+      "original_name": "Scene-level visual perception"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Action selection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "evidence": "the scene understanding module in LeapAD is designed to selectively identify critical objects, simplifying the description of the surrounding environment and reducing the load on decision-making processes. (Section 3.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MuirBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "evidence": "[SCENE UNDERSTANDING] aims to evaluate the ability of models to understand a scene comprised of multiple views from multiple surveillance images. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers",
+      "evidence": "Object referencing and grounding are essential for advanced scene understanding.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Chat-Scene: Bridging 3D Scene and Large Language Models with Object Identifiers"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed papers, the prevailing usage treats scene understanding as an ability to interpret a visual environment at the scene level: perceiving the environment, identifying objects or components, and understanding their relationships, layout, and overall meaning. A recurring formulation adds semantic, spatial, and motion attributes and says the goal is a comprehensive understanding, while another application-focused wording narrows it to interpreting environmental layout and visual context well enough to support navigation decisions. A smaller variant presents it as scene-level visual perception, emphasizing whole-image content and description rather than selective identification of critical objects."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers break the construct down by what is being understood: objects or components, their relationships, and broader scene meaning, with one definition explicitly naming semantic, spatial, and motion attributes. The naming is not fully uniform, and closely similar abilities are also labeled visual scene comprehension and scene-level visual perception. The clearest difference in wording is scope, with some descriptions centering whole-image content and others centering critical objects that matter for downstream decisions."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationally, papers link scene understanding to 1 measurement instrument and 2 behavioral indicators. The only linked instrument is MuirBench, which evaluates whether models can understand a scene comprised of multiple views from multiple surveillance images, so the recorded measurement casts the construct as multi-view scene understanding. Beyond direct measurement, the linked behavioral indicators are Action selection and Referring expression understanding, but those appear through causal claims rather than as standalone tests. The operationalization overlaps with definitions centered on scene-level understanding and relationships, while the measurement evidence does not explicitly cover every definitional facet mentioned in definitions, such as motion attributes or selective focus on critical objects."
+    },
+    {
+      "label": "Links.",
+      "text": "The recorded non-measurement links are causal rather than correlational or generic relatedness. One paper claims a causal relationship from Scene understanding to Action selection, stating that selectively identifying critical objects simplifies the description of the surrounding environment and reduces the load on decision-making processes. Another paper claims a causal relationship from Referring expression understanding to Scene understanding, with object referencing and grounding described as essential for advanced scene understanding."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed papers, the prevailing usage treats scene understanding as an ability to interpret a visual environment at the scene level: perceiving the environment, identifying objects or components, and understanding their relationships, layout, and overall meaning. A recurring formulation adds semantic, spatial, and motion attributes and says the goal is a comprehensive understanding, while another application-focused wording narrows it to interpreting environmental layout and visual context well enough to support navigation decisions. A smaller variant presents it as scene-level visual perception, emphasizing whole-image content and description rather than selective identification of critical objects.\n\nSpace of facets. Papers break the construct down by what is being understood: objects or components, their relationships, and broader scene meaning, with one definition explicitly naming semantic, spatial, and motion attributes. The naming is not fully uniform, and closely similar abilities are also labeled visual scene comprehension and scene-level visual perception. The clearest difference in wording is scope, with some descriptions centering whole-image content and others centering critical objects that matter for downstream decisions.\n\nSpace of measurement. Operationally, papers link scene understanding to 1 measurement instrument and 2 behavioral indicators. The only linked instrument is MuirBench, which evaluates whether models can understand a scene comprised of multiple views from multiple surveillance images, so the recorded measurement casts the construct as multi-view scene understanding. Beyond direct measurement, the linked behavioral indicators are Action selection and Referring expression understanding, but those appear through causal claims rather than as standalone tests. The operationalization overlaps with definitions centered on scene-level understanding and relationships, while the measurement evidence does not explicitly cover every definitional facet mentioned in definitions, such as motion attributes or selective focus on critical objects.\n\nLinks. The recorded non-measurement links are causal rather than correlational or generic relatedness. One paper claims a causal relationship from Scene understanding to Action selection, stating that selectively identifying critical objects simplifies the description of the surrounding environment and reduces the load on decision-making processes. Another paper claims a causal relationship from Referring expression understanding to Scene understanding, with object referencing and grounding described as essential for advanced scene understanding.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+      "Dysca: A Dynamic and Scalable Benchmark for Evaluating Perception Ability of LVLMs",
+      "MuirBench: A Comprehensive Benchmark for Robust Multi-image Understanding",
+      "Towards Realistic UAV Vision-Language Navigation: Platform, Benchmark, and Methodology"
+    ],
+    "neurips24": [
+      "Continuously Learning, Adapting, and Improving: A Dual-Process Approach to Autonomous Driving",
+      "INQUIRE: A Natural World Text-to-Image Retrieval Benchmark"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 4,
+    "neurips24": 2
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

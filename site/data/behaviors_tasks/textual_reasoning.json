@@ -1,0 +1,248 @@
+{
+  "canonical_name": "Textual reasoning",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across definitions, the dominant framing is solving or answering reasoning problems in natural language. Papers describe it as drawing inferences or making judgments from text-based premises, answering directly in natural language rather than executable code, and handling verbal reasoning problems without relying primarily on mathematical calculation.\n\nVariants. Other names include verbal reasoning and natural language reasoning. Papers study it as direct natural-language answering instead of code execution, and also in multimodal settings. They relate it to natural language inference and other language-task families, while a separate paper claims a causal relationship from textual reasoning to code debugging.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to it: AlpacaEval. A paper uses AlpacaEval to assess pure text reasoning ability, and no other instrument is linked to it in the papers.\n\nWhat it is taken as evidence of. Rather than treating it as evidence of one construct, papers relate this behavior to five constructs: visual understanding, chain-of-thought reasoning, mathematical reasoning, natural language understanding, and planning. The reported connections are mixed in wording, with one paper saying it excels in natural language understanding, another saying it struggles with quantitative reasoning, and another discussing difficulty handling visual understanding with textual reasoning simultaneously.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Verbal reasoning",
+    "Natural language reasoning",
+    "Textual reasoning"
+  ],
+  "papers": [
+    "Conformal Language Model Reasoning with Coherent Factuality",
+    "Montessori-Instruct: Generate Influential Training Data Tailored for Student Learning",
+    "Steering Large Language Models between Code Execution and Textual Reasoning"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The observable task of solving reasoning problems expressed in natural language without relying primarily on mathematical calculation.",
+      "papers": [
+        "Conformal Language Model Reasoning with Coherent Factuality"
+      ],
+      "original_name": "Verbal reasoning"
+    },
+    {
+      "text": "Drawing inferences or making judgments from text-based premises in benchmark tasks.",
+      "papers": [
+        "Montessori-Instruct: Generate Influential Training Data Tailored for Student Learning"
+      ],
+      "original_name": "Natural language reasoning"
+    },
+    {
+      "text": "Answering a problem directly in natural language without relying on executable code.",
+      "papers": [
+        "Steering Large Language Models between Code Execution and Textual Reasoning"
+      ],
+      "original_name": "Textual reasoning"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Visual understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "NL-Eye: Abductive NLI For Images",
+      "evidence": "This indicates that VLMs are capable of textual reasoning. This finding suggests that the reasoning challenge does not mainly lie in the VLM\u2019s textual components but in the visual ones. (Page 8)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "NL-Eye: Abductive NLI For Images"
+        ],
+        "emnlp25": [
+          "ProReason: Multi-Modal Proactive Reasoning with Decoupled Eyesight and Wisdom"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Chain-of-thought reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models",
+      "evidence": "Natural Language Reasoning: we prompt LLMs to perform multi-step reasoning via natural language, and select the following publicly avaibable datasets: GSM8k [34] contains grade school math problems to test the basic arithmetic and reasoning ability. (Appendix C)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "JiuZhang3.0: Efficiently Improving Mathematical Reasoning by Training Small Data Synthesis Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language inference",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "To Code or Not To Code? Exploring Impact of Code in Pre-training",
+      "evidence": "Natural language reasoning suite consists of 11 benchmarks that involve natural language based reasoning such as Question Answering, natural language inference (NLI), sentence completion, co-reference resolution, and general intelligence.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "To Code or Not To Code? Exploring Impact of Code in Pre-training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Sentence completion",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "To Code or Not To Code? Exploring Impact of Code in Pre-training",
+      "evidence": "Natural language reasoning suite consists of 11 benchmarks that involve natural language based reasoning such as Question Answering, natural language inference (NLI), sentence completion, co-reference resolution, and general intelligence.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "To Code or Not To Code? Exploring Impact of Code in Pre-training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coreference resolution",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "To Code or Not To Code? Exploring Impact of Code in Pre-training",
+      "evidence": "Natural language reasoning suite consists of 11 benchmarks that involve natural language based reasoning such as Question Answering, natural language inference (NLI), sentence completion, co-reference resolution, and general intelligence.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "To Code or Not To Code? Exploring Impact of Code in Pre-training"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Steering Large Language Models between Code Execution and Textual Reasoning",
+      "evidence": "Text is suitable for semantic analysis and commonsense reasoning, but is not the best format for precise computation and planning, symbolic manipulation, and algorithmic processing and optimization (Kambhampati et al., 2024b; Chen et al., 2024a). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Steering Large Language Models between Code Execution and Textual Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Mathematical reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables",
+      "evidence": "Textual reasoning ... struggles with quantitative reasoning.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "AlpacaEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "UnifiedVisual: A Framework for Constructing Unified Vision-Language Datasets",
+      "evidence": "To assess the model\u2019s pure text reasoning ability, we use AlpacaEval (Li et al., 2023a). (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "UnifiedVisual: A Framework for Constructing Unified Vision-Language Datasets"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Code debugging",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "NL-Debugging: Exploiting Natural Language as an Intermediate Representation for Code Debugging",
+      "evidence": "Our findings highlight the potential of natural language reasoning to advance automated code debugging and address complex programming challenges. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NL-Debugging: Exploiting Natural Language as an Intermediate Representation for Code Debugging"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Test output prediction",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "evidence": "Finally, we introduce a new task that is designed to study natural language reasoning and test generation.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Natural language understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables",
+      "evidence": "Textual reasoning excels in natural language understanding",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "H-STAR: LLM-driven Hybrid SQL-Text Adaptive Reasoning on Tables"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 11,
+  "incoming_relationship_count": 8,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across definitions, the dominant framing is solving or answering reasoning problems in natural language. Papers describe it as drawing inferences or making judgments from text-based premises, answering directly in natural language rather than executable code, and handling verbal reasoning problems without relying primarily on mathematical calculation."
+    },
+    {
+      "label": "Variants.",
+      "text": "Other names include verbal reasoning and natural language reasoning. Papers study it as direct natural-language answering instead of code execution, and also in multimodal settings. They relate it to natural language inference and other language-task families, while a separate paper claims a causal relationship from textual reasoning to code debugging."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one measurement instrument is linked to it: AlpacaEval. A paper uses AlpacaEval to assess pure text reasoning ability, and no other instrument is linked to it in the papers."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Rather than treating it as evidence of one construct, papers relate this behavior to five constructs: visual understanding, chain-of-thought reasoning, mathematical reasoning, natural language understanding, and planning. The reported connections are mixed in wording, with one paper saying it excels in natural language understanding, another saying it struggles with quantitative reasoning, and another discussing difficulty handling visual understanding with textual reasoning simultaneously."
+    }
+  ],
+  "characterization": "Space of definitions. Across definitions, the dominant framing is solving or answering reasoning problems in natural language. Papers describe it as drawing inferences or making judgments from text-based premises, answering directly in natural language rather than executable code, and handling verbal reasoning problems without relying primarily on mathematical calculation.\n\nVariants. Other names include verbal reasoning and natural language reasoning. Papers study it as direct natural-language answering instead of code execution, and also in multimodal settings. They relate it to natural language inference and other language-task families, while a separate paper claims a causal relationship from textual reasoning to code debugging.\n\nSpace of elicitation and scores. Only one measurement instrument is linked to it: AlpacaEval. A paper uses AlpacaEval to assess pure text reasoning ability, and no other instrument is linked to it in the papers.\n\nWhat it is taken as evidence of. Rather than treating it as evidence of one construct, papers relate this behavior to five constructs: visual understanding, chain-of-thought reasoning, mathematical reasoning, natural language understanding, and planning. The reported connections are mixed in wording, with one paper saying it excels in natural language understanding, another saying it struggles with quantitative reasoning, and another discussing difficulty handling visual understanding with textual reasoning simultaneously.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Conformal Language Model Reasoning with Coherent Factuality",
+      "Montessori-Instruct: Generate Influential Training Data Tailored for Student Learning",
+      "Steering Large Language Models between Code Execution and Textual Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 3
+  },
+  "conferences": [
+    "iclr25"
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "canonical_name": "Explanation faithfulness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, usage splits between two closely related framings rather than converging on one. One framing, under the label causal faithfulness, treats it as how well a feature interpretation matches the feature's causal role in computation, so that features are \"interpretable in a way consistent with their causal role\" (Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control). Another framing treats explanation faithfulness as how accurately and reliably a textual explanation describes the behavior of a specific neural network unit, with the stated goal of evaluating \"how faithfully this explanation describes the neuron\" (Evaluating Neuron Explanations: A Unified Framework with Sanity Checks).\n\nSpace of facets. The main variation is in what is being evaluated and against what standard. One paper centers feature interpretations and whether they match causal role, while another centers textual explanations and whether they accurately describe a unit's behavior; the difference is between matching causal role and accurately describing behavior. In the unit-explanation framing, papers also discuss faithfulness alongside reliability, truthfulness, and trustworthiness when describing what such evaluations should establish.\n\nSpace of measurement. Papers do not link this construct to any measurement instrument or behavioral indicator. No recorded operationalization is attached to it.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Causal faithfulness",
+    "Explanation faithfulness"
+  ],
+  "papers": [
+    "Self-Critique and Refinement for Faithful Natural Language Explanations",
+    "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models",
+    "Unveiling and Manipulating Prompt Influence in Large Language Models",
+    "Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control",
+    "Evaluating Neuron Explanations: A Unified Framework with Sanity Checks"
+  ],
+  "paper_count": 5,
+  "definitions": [
+    {
+      "text": "The extent to which a feature's interpretation matches its causal role in the model's computation.",
+      "papers": [
+        "Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control"
+      ],
+      "original_name": "Causal faithfulness"
+    },
+    {
+      "text": "The degree to which a textual explanation accurately and reliably describes the behavior of a specific neural network unit, such as a neuron.",
+      "papers": [
+        "Evaluating Neuron Explanations: A Unified Framework with Sanity Checks"
+      ],
+      "original_name": "Explanation faithfulness"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, usage splits between two closely related framings rather than converging on one. One framing, under the label causal faithfulness, treats it as how well a feature interpretation matches the feature's causal role in computation, so that features are \"interpretable in a way consistent with their causal role\" (Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control). Another framing treats explanation faithfulness as how accurately and reliably a textual explanation describes the behavior of a specific neural network unit, with the stated goal of evaluating \"how faithfully this explanation describes the neuron\" (Evaluating Neuron Explanations: A Unified Framework with Sanity Checks)."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "The main variation is in what is being evaluated and against what standard. One paper centers feature interpretations and whether they match causal role, while another centers textual explanations and whether they accurately describe a unit's behavior; the difference is between matching causal role and accurately describing behavior. In the unit-explanation framing, papers also discuss faithfulness alongside reliability, truthfulness, and trustworthiness when describing what such evaluations should establish."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers do not link this construct to any measurement instrument or behavioral indicator. No recorded operationalization is attached to it."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, usage splits between two closely related framings rather than converging on one. One framing, under the label causal faithfulness, treats it as how well a feature interpretation matches the feature's causal role in computation, so that features are \"interpretable in a way consistent with their causal role\" (Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control). Another framing treats explanation faithfulness as how accurately and reliably a textual explanation describes the behavior of a specific neural network unit, with the stated goal of evaluating \"how faithfully this explanation describes the neuron\" (Evaluating Neuron Explanations: A Unified Framework with Sanity Checks).\n\nSpace of facets. The main variation is in what is being evaluated and against what standard. One paper centers feature interpretations and whether they match causal role, while another centers textual explanations and whether they accurately describe a unit's behavior; the difference is between matching causal role and accurately describing behavior. In the unit-explanation framing, papers also discuss faithfulness alongside reliability, truthfulness, and trustworthiness when describing what such evaluations should establish.\n\nSpace of measurement. Papers do not link this construct to any measurement instrument or behavioral indicator. No recorded operationalization is attached to it.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Self-Critique and Refinement for Faithful Natural Language Explanations",
+      "Towards Faithful Natural Language Explanations: A Study Using Activation Patching in Large Language Models"
+    ],
+    "iclr24": [
+      "Unveiling and Manipulating Prompt Influence in Large Language Models"
+    ],
+    "iclr25": [
+      "Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control"
+    ],
+    "icml25": [
+      "Evaluating Neuron Explanations: A Unified Framework with Sanity Checks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr24": 1,
+    "iclr25": 1,
+    "icml25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

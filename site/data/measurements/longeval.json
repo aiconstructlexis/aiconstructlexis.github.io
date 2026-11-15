@@ -1,0 +1,96 @@
+{
+  "canonical_name": "LongEval",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across definitions, LongEval is most commonly described as a benchmark for long-context performance, or for tasks that require understanding long-span context. The prevailing description is a retrieval-focused benchmark composed of topic retrieval and line retrieval tasks with varying prompt lengths, while another paper characterizes it more broadly as an early benchmark with various long context retrieval tasks.\n\nWhat it is claimed to measure. Papers link LongEval to one construct and one behavioral indicator. The prevailing measurement claim is Long-context understanding, with papers describing LongEval as designed to measure long-context performance; a smaller line of work uses it to measure Synthetic recall and describes it as a benchmark for long-context retrieval abilities where answer tokens can be separated from non-answer tokens.\n\nSpace of uses. No other measurement instrument is linked to it. Papers use it as a benchmark for additional experiments and more comprehensive analyses of model scalability in long-context settings, and another paper positions StreamEval as a dataset inspired by LongEval.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "LongEval"
+  ],
+  "papers": [
+    "Efficient Streaming Language Models with Attention Sinks",
+    "IceFormer: Accelerated Inference with Long-Sequence Transformers on CPUs",
+    "LongLeader: A Comprehensive Leaderboard for Large Language Models in Long-context Scenarios"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "A benchmark designed to measure the long-context performance of language models, consisting of topic retrieval and line retrieval tasks with varying prompt lengths.",
+      "papers": [
+        "Efficient Streaming Language Models with Attention Sinks",
+        "IceFormer: Accelerated Inference with Long-Sequence Transformers on CPUs",
+        "LongLeader: A Comprehensive Leaderboard for Large Language Models in Long-context Scenarios"
+      ],
+      "original_name": "LongEval"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "IceFormer: Accelerated Inference with Long-Sequence Transformers on CPUs",
+      "evidence": "we conducted additional experiments on the LongEval benchmark (Li et al., 2023), which is designed to measure long-context performance (Section 5.3).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "IceFormer: Accelerated Inference with Long-Sequence Transformers on CPUs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Synthetic recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "What is Wrong with Perplexity for Long-context Language Modeling?",
+      "evidence": "we conduct experiments on LongEval (Li et al., 2023a), a benchmark for long-context retrieval abilities, where we can separate the answer tokens that match the desired answers (e.g., <45129> in Figure 2(a)) from non-answer tokens. (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "What is Wrong with Perplexity for Long-context Language Modeling?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across definitions, LongEval is most commonly described as a benchmark for long-context performance, or for tasks that require understanding long-span context. The prevailing description is a retrieval-focused benchmark composed of topic retrieval and line retrieval tasks with varying prompt lengths, while another paper characterizes it more broadly as an early benchmark with various long context retrieval tasks."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link LongEval to one construct and one behavioral indicator. The prevailing measurement claim is Long-context understanding, with papers describing LongEval as designed to measure long-context performance; a smaller line of work uses it to measure Synthetic recall and describes it as a benchmark for long-context retrieval abilities where answer tokens can be separated from non-answer tokens."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No other measurement instrument is linked to it. Papers use it as a benchmark for additional experiments and more comprehensive analyses of model scalability in long-context settings, and another paper positions StreamEval as a dataset inspired by LongEval."
+    }
+  ],
+  "characterization": "What it is. Across definitions, LongEval is most commonly described as a benchmark for long-context performance, or for tasks that require understanding long-span context. The prevailing description is a retrieval-focused benchmark composed of topic retrieval and line retrieval tasks with varying prompt lengths, while another paper characterizes it more broadly as an early benchmark with various long context retrieval tasks.\n\nWhat it is claimed to measure. Papers link LongEval to one construct and one behavioral indicator. The prevailing measurement claim is Long-context understanding, with papers describing LongEval as designed to measure long-context performance; a smaller line of work uses it to measure Synthetic recall and describes it as a benchmark for long-context retrieval abilities where answer tokens can be separated from non-answer tokens.\n\nSpace of uses. No other measurement instrument is linked to it. Papers use it as a benchmark for additional experiments and more comprehensive analyses of model scalability in long-context settings, and another paper positions StreamEval as a dataset inspired by LongEval.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Efficient Streaming Language Models with Attention Sinks",
+      "IceFormer: Accelerated Inference with Long-Sequence Transformers on CPUs"
+    ],
+    "naacl25": [
+      "LongLeader: A Comprehensive Leaderboard for Large Language Models in Long-context Scenarios"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "naacl25": 1
+  },
+  "conferences": [
+    "iclr24",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "canonical_name": "SAFE",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, SAFE is most commonly presented as Search-Augmented Factuality Evaluator, an LLM-based search procedure, sometimes framed as an investigative agent, that uses iterative Google Search queries to assess whether generated facts are supported by external evidence. In Long-form factuality in large language models, it is described more specifically as splitting a long-form response into individual facts, checking relevance, searching the web, and labeling each fact as supported, not supported, or irrelevant; other definitions use the broader formulation of asking whether search results support a fact.\n\nWhat it is claimed to measure. Papers link SAFE to 3 behavioral indicators and no constructs. The prevailing measurement claim centers on Hallucination: one paper uses SAFE to quantify LLM hallucinations, and related evidence says it enables direct measurement of hallucination. The other linked indicators, Fact checking and Search query generation, are reported as related to SAFE rather than as additional things it measures, so the explicit measurement claims converge on hallucination.\n\nSpace of uses. Papers use SAFE as an evaluation procedure for long-form responses and as a public metric for quantifying hallucination. The clearest paired use is alongside FActScore, where one study states that it quantifies LLM hallucinations with \"two public metrics: FActScore and SAFE\"; elsewhere SAFE is positioned as a multi-step procedure that breaks responses into facts, sends Google Search queries, and determines whether each fact is supported by the search results.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "SAFE"
+  ],
+  "papers": [
+    "Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering",
+    "Reconsidering LLM Uncertainty Estimation Methods in the Wild",
+    "Long-form factuality in large language models"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Language model-based investigative agent that uses iterative Google Search queries to assess whether generated facts are supported by external evidence.",
+      "papers": [
+        "Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering",
+        "Long-form factuality in large language models"
+      ],
+      "original_name": "SAFE"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering",
+      "evidence": "it enables direct measurement of hallucination using metrics such as FActScore (Min et al., 2023) and SAFE (Wei et al., 2024) (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Search query generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "SAFE utilizes an LLM to... comprising sending search queries to Google Search...",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Long-form factuality in large language models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Fact checking",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Long-form factuality in large language models",
+      "evidence": "...and determining whether a fact is supported by the search results.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Long-form factuality in large language models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, SAFE is most commonly presented as Search-Augmented Factuality Evaluator, an LLM-based search procedure, sometimes framed as an investigative agent, that uses iterative Google Search queries to assess whether generated facts are supported by external evidence. In Long-form factuality in large language models, it is described more specifically as splitting a long-form response into individual facts, checking relevance, searching the web, and labeling each fact as supported, not supported, or irrelevant; other definitions use the broader formulation of asking whether search results support a fact."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link SAFE to 3 behavioral indicators and no constructs. The prevailing measurement claim centers on Hallucination: one paper uses SAFE to quantify LLM hallucinations, and related evidence says it enables direct measurement of hallucination. The other linked indicators, Fact checking and Search query generation, are reported as related to SAFE rather than as additional things it measures, so the explicit measurement claims converge on hallucination."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers use SAFE as an evaluation procedure for long-form responses and as a public metric for quantifying hallucination. The clearest paired use is alongside FActScore, where one study states that it quantifies LLM hallucinations with \"two public metrics: FActScore and SAFE\"; elsewhere SAFE is positioned as a multi-step procedure that breaks responses into facts, sends Google Search queries, and determines whether each fact is supported by the search results."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, SAFE is most commonly presented as Search-Augmented Factuality Evaluator, an LLM-based search procedure, sometimes framed as an investigative agent, that uses iterative Google Search queries to assess whether generated facts are supported by external evidence. In Long-form factuality in large language models, it is described more specifically as splitting a long-form response into individual facts, checking relevance, searching the web, and labeling each fact as supported, not supported, or irrelevant; other definitions use the broader formulation of asking whether search results support a fact.\n\nWhat it is claimed to measure. Papers link SAFE to 3 behavioral indicators and no constructs. The prevailing measurement claim centers on Hallucination: one paper uses SAFE to quantify LLM hallucinations, and related evidence says it enables direct measurement of hallucination. The other linked indicators, Fact checking and Search query generation, are reported as related to SAFE rather than as additional things it measures, so the explicit measurement claims converge on hallucination.\n\nSpace of uses. Papers use SAFE as an evaluation procedure for long-form responses and as a public metric for quantifying hallucination. The clearest paired use is alongside FActScore, where one study states that it quantifies LLM hallucinations with \"two public metrics: FActScore and SAFE\"; elsewhere SAFE is positioned as a multi-step procedure that breaks responses into facts, sends Google Search queries, and determines whether each fact is supported by the search results.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Can Knowledge Graphs Make Large Language Models More Trustworthy? An Empirical Study Over Open-ended Question Answering",
+      "Reconsidering LLM Uncertainty Estimation Methods in the Wild"
+    ],
+    "neurips24": [
+      "Long-form factuality in large language models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "neurips24": 1
+  },
+  "conferences": [
+    "acl25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "canonical_name": "Date inference",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats date inference as inferring a calendar date from context or natural-language descriptions, usually while accounting for calendar structure and date arithmetic. Definitions repeatedly describe deducing a date from a given context, and one description frames it as inferring dates from language while performing arithmetic operations on dates and using knowledge such as the number of days in February. Some papers broaden the behavior to reasoning over weekdays, multi-day spans, and valid scheduling windows, while others frame success as correctly interpreting and calculating dates or weekdays.\n\nVariants. Papers use several nearby names for this behavior, including date deduction, date inference, date calculation, date arithmetic, and weekday understanding. The main variants are natural-language date understanding, arithmetic from a given base date, and longer calendar problems centered on weekdays, dates, and multi-day spans; one description says that long problems focus on \"weekday understanding and calculations involving dates.\" Another variant studies addition and subtraction of days, weeks, and months under various token fragmentation settings.\n\nSpace of elicitation and scores. Papers link this behavior to 1 measurement instrument, Date Understanding. In the recorded relationship, date inference is measured by this instrument, which is described as a task involving inferring dates from natural-language descriptions and performing arithmetic operations on dates.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct as what it indicates.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Date deduction",
+    "Date inference",
+    "Date calculation",
+    "Date arithmetic",
+    "Weekday understanding",
+    "Date reasoning"
+  ],
+  "papers": [
+    "Date Fragments: A Hidden Bottleneck of Tokenization for Temporal Reasoning",
+    "TCP: a Benchmark for Temporal Constraint-Based Planning",
+    "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+    "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "Inferring a calendar date from contextual clues and relative time offsets.",
+      "papers": [
+        "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving"
+      ],
+      "original_name": "Date deduction"
+    },
+    {
+      "text": "Inferring a date from a natural-language description while accounting for calendar structure and date arithmetic.",
+      "papers": [
+        "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models"
+      ],
+      "original_name": "Date inference"
+    },
+    {
+      "text": "Reasoning over calendar dates, weekdays, and multi-day spans to determine valid scheduling windows.",
+      "papers": [
+        "TCP: a Benchmark for Temporal Constraint-Based Planning"
+      ],
+      "original_name": "Date calculation"
+    },
+    {
+      "text": "The task of performing calculations such as addition or subtraction of days, weeks, or months from a given base date.",
+      "papers": [
+        "Date Fragments: A Hidden Bottleneck of Tokenization for Temporal Reasoning"
+      ],
+      "original_name": "Date arithmetic"
+    },
+    {
+      "text": "The observable task of correctly interpreting and performing calculations involving days of the week and dates.",
+      "papers": [
+        "TCP: a Benchmark for Temporal Constraint-Based Planning"
+      ],
+      "original_name": "Weekday understanding"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Date Understanding",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "evidence": "\u201cDateUnderstanding\u2014a task that involves inferring dates from natural language descriptions, performing arithmetic operations on dates\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats date inference as inferring a calendar date from context or natural-language descriptions, usually while accounting for calendar structure and date arithmetic. Definitions repeatedly describe deducing a date from a given context, and one description frames it as inferring dates from language while performing arithmetic operations on dates and using knowledge such as the number of days in February. Some papers broaden the behavior to reasoning over weekdays, multi-day spans, and valid scheduling windows, while others frame success as correctly interpreting and calculating dates or weekdays."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use several nearby names for this behavior, including date deduction, date inference, date calculation, date arithmetic, and weekday understanding. The main variants are natural-language date understanding, arithmetic from a given base date, and longer calendar problems centered on weekdays, dates, and multi-day spans; one description says that long problems focus on \"weekday understanding and calculations involving dates.\" Another variant studies addition and subtraction of days, weeks, and months under various token fragmentation settings."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link this behavior to 1 measurement instrument, Date Understanding. In the recorded relationship, date inference is measured by this instrument, which is described as a task involving inferring dates from natural-language descriptions and performing arithmetic operations on dates."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not link this behavior to any construct as what it indicates."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats date inference as inferring a calendar date from context or natural-language descriptions, usually while accounting for calendar structure and date arithmetic. Definitions repeatedly describe deducing a date from a given context, and one description frames it as inferring dates from language while performing arithmetic operations on dates and using knowledge such as the number of days in February. Some papers broaden the behavior to reasoning over weekdays, multi-day spans, and valid scheduling windows, while others frame success as correctly interpreting and calculating dates or weekdays.\n\nVariants. Papers use several nearby names for this behavior, including date deduction, date inference, date calculation, date arithmetic, and weekday understanding. The main variants are natural-language date understanding, arithmetic from a given base date, and longer calendar problems centered on weekdays, dates, and multi-day spans; one description says that long problems focus on \"weekday understanding and calculations involving dates.\" Another variant studies addition and subtraction of days, weeks, and months under various token fragmentation settings.\n\nSpace of elicitation and scores. Papers link this behavior to 1 measurement instrument, Date Understanding. In the recorded relationship, date inference is measured by this instrument, which is described as a task involving inferring dates from natural-language descriptions and performing arithmetic operations on dates.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct as what it indicates.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Date Fragments: A Hidden Bottleneck of Tokenization for Temporal Reasoning",
+      "TCP: a Benchmark for Temporal Constraint-Based Planning"
+    ],
+    "neurips24": [
+      "Buffer of Thoughts: Thought-Augmented Reasoning with Large Language Models",
+      "StrategyLLM: Large Language Models as Strategy Generators, Executors, Optimizers, and Evaluators for Problem Solving"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "neurips24": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "neurips24"
+  ]
+}

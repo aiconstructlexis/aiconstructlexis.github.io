@@ -1,0 +1,182 @@
+{
+  "canonical_name": "Exploration ability",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats exploration ability as breadth of search: a latent ability, tendency, or process for searching broadly across a solution space and generating varied reasoning trajectories or solution paths. Many definitions stress discovering novel or effective solutions through diverse reasoning paths, multiple candidate answers, or trial-and-error alternatives. A smaller line of work uses the same term for active environment search to locate objects or information, and a few papers narrow it to search over candidate programs or puzzle states. The main disagreement is whether exploration is a latent model property or an observable search behavior, and whether the search happens in reasoning space, an embodied environment, or a program space.\n\nSpace of facets. Papers use several overlapping labels around this construct. \"Self-exploration\" is a narrower version centered on identifying flaws in one's reasoning and generating alternative paths without external intervention, while \"parallel search\" names an observable behavior in which multiple distinct solution paths or program fragments are explored within a single iteration. Several authors also use \"search\" as a near-synonym for exploration, especially for candidate programs or puzzle moves, and one line of work places exploration alongside backtracking and verification as structural patterns in long reasoning chains. Exploration is also repeatedly contrasted with exploitation, or with only refining existing solutions.\n\nSpace of measurement. No measurement instrument is linked to it, and papers link it to one behavioral indicator, Sudoku solving. In the papers' own operational language, exploration is made visible through diverse reasoning paths and alternative branches, pass@k relative to pass@1, oversampling or temperature adjustment to increase sampling diversity and maintain entropy, and within-prompt parallel search over different leaf nodes. These proxies mostly match the dominant breadth-of-search framing, though some papers use the same construct for embodied exploration of environments rather than only for reasoning diversity.\n\nLinks. Only one paper reports that exploration ability is related to Sudoku solving. In that paper, Sudoku solving is described as involving \"searching and finding a cell position where we can apply a subset of the strategies,\" so the recorded relationship is a related link between exploration/search and that task, not a causal or correlational claim. No other links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Exploration",
+    "Exploration capability",
+    "Exploration ability",
+    "Self-exploration",
+    "Parallel search",
+    "Search"
+  ],
+  "papers": [
+    "What Makes a Good Reasoning Chain? Uncovering Structural Patterns in Long Chain-of-Thought Reasoning",
+    "Enhancing Efficiency and Exploration in Reinforcement Learning for LLMs",
+    "Large Language Models as Generalizable Policies for Embodied Tasks",
+    "Motif: Intrinsic Motivation from Artificial Intelligence Feedback",
+    "B-STaR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners",
+    "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+    "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+    "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent",
+    "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+    "Execution-guided within-prompt search for programming-by-example",
+    "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+    "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+    "Rewarding Progress: Scaling Automated Process Verifiers for LLM Reasoning",
+    "SFS: Smarter Code Space Search improves LLM Inference Scaling",
+    "Selective Attention Improves Transformer",
+    "The KoLMogorov Test: Compression by Code Generation",
+    "CVE-Bench: A Benchmark for AI Agents\u2019 Ability to Exploit Real-World Web Application Vulnerabilities",
+    "Code-Generated Graph Representations Using Multiple LLM Agents for Material Properties Prediction",
+    "Divide and Conquer: Grounding LLMs as Efficient Decision-Making Agents via Offline Hierarchical Reinforcement Learning",
+    "Diving into Self-Evolving Training for Multimodal Reasoning",
+    "MARGE: Improving Math Reasoning with Guided Exploration",
+    "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning",
+    "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+    "T1: Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling",
+    "Causal language modeling can elicit search and reasoning capabilities on logic puzzles"
+  ],
+  "paper_count": 25,
+  "definitions": [
+    {
+      "text": "The latent ability of an agent to discover useful states and solution paths in environments that require systematic search over long horizons.",
+      "papers": [
+        "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models"
+      ],
+      "original_name": "Exploration capability"
+    },
+    {
+      "text": "The process of searching broadly across a solution space to discover varied and potentially novel solutions, rather than focusing only on refining existing ones.",
+      "papers": [
+        "SFS: Smarter Code Space Search improves LLM Inference Scaling",
+        "T1: Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling",
+        "What Makes a Good Reasoning Chain? Uncovering Structural Patterns in Long Chain-of-Thought Reasoning"
+      ],
+      "original_name": "Exploration"
+    },
+    {
+      "text": "The tendency of a model to generate diverse reasoning paths and cover more of the solution space when producing multiple candidate answers.",
+      "papers": [
+        "MARGE: Improving Math Reasoning with Guided Exploration",
+        "Enhancing Efficiency and Exploration in Reinforcement Learning for LLMs"
+      ],
+      "original_name": "Exploration ability"
+    },
+    {
+      "text": "The latent ability of a model to identify flaws in its reasoning and generate alternative solution paths without external intervention.",
+      "papers": [
+        "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search"
+      ],
+      "original_name": "Self-exploration"
+    },
+    {
+      "text": "An observable search behavior where the model explores multiple distinct solution paths or program fragments within a single iteration.",
+      "papers": [
+        "Execution-guided within-prompt search for programming-by-example"
+      ],
+      "original_name": "Parallel search"
+    },
+    {
+      "text": "The latent ability to explore candidate programs and find one that matches the target sequence under a shortest-program criterion.",
+      "papers": [
+        "The KoLMogorov Test: Compression by Code Generation"
+      ],
+      "original_name": "Search"
+    }
+  ],
+  "definition_count": 6,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Sudoku solving",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Causal language modeling can elicit search and reasoning capabilities on logic puzzles",
+      "evidence": "\u201cThe iterative process of solving Sudokus can be broken down into two steps: (1) searching and finding a cell position where we can apply a subset of the strategies\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Causal language modeling can elicit search and reasoning capabilities on logic puzzles"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats exploration ability as breadth of search: a latent ability, tendency, or process for searching broadly across a solution space and generating varied reasoning trajectories or solution paths. Many definitions stress discovering novel or effective solutions through diverse reasoning paths, multiple candidate answers, or trial-and-error alternatives. A smaller line of work uses the same term for active environment search to locate objects or information, and a few papers narrow it to search over candidate programs or puzzle states. The main disagreement is whether exploration is a latent model property or an observable search behavior, and whether the search happens in reasoning space, an embodied environment, or a program space."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several overlapping labels around this construct. \"Self-exploration\" is a narrower version centered on identifying flaws in one's reasoning and generating alternative paths without external intervention, while \"parallel search\" names an observable behavior in which multiple distinct solution paths or program fragments are explored within a single iteration. Several authors also use \"search\" as a near-synonym for exploration, especially for candidate programs or puzzle moves, and one line of work places exploration alongside backtracking and verification as structural patterns in long reasoning chains. Exploration is also repeatedly contrasted with exploitation, or with only refining existing solutions."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and papers link it to one behavioral indicator, Sudoku solving. In the papers' own operational language, exploration is made visible through diverse reasoning paths and alternative branches, pass@k relative to pass@1, oversampling or temperature adjustment to increase sampling diversity and maintain entropy, and within-prompt parallel search over different leaf nodes. These proxies mostly match the dominant breadth-of-search framing, though some papers use the same construct for embodied exploration of environments rather than only for reasoning diversity."
+    },
+    {
+      "label": "Links.",
+      "text": "Only one paper reports that exploration ability is related to Sudoku solving. In that paper, Sudoku solving is described as involving \"searching and finding a cell position where we can apply a subset of the strategies,\" so the recorded relationship is a related link between exploration/search and that task, not a causal or correlational claim. No other links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats exploration ability as breadth of search: a latent ability, tendency, or process for searching broadly across a solution space and generating varied reasoning trajectories or solution paths. Many definitions stress discovering novel or effective solutions through diverse reasoning paths, multiple candidate answers, or trial-and-error alternatives. A smaller line of work uses the same term for active environment search to locate objects or information, and a few papers narrow it to search over candidate programs or puzzle states. The main disagreement is whether exploration is a latent model property or an observable search behavior, and whether the search happens in reasoning space, an embodied environment, or a program space.\n\nSpace of facets. Papers use several overlapping labels around this construct. \"Self-exploration\" is a narrower version centered on identifying flaws in one's reasoning and generating alternative paths without external intervention, while \"parallel search\" names an observable behavior in which multiple distinct solution paths or program fragments are explored within a single iteration. Several authors also use \"search\" as a near-synonym for exploration, especially for candidate programs or puzzle moves, and one line of work places exploration alongside backtracking and verification as structural patterns in long reasoning chains. Exploration is also repeatedly contrasted with exploitation, or with only refining existing solutions.\n\nSpace of measurement. No measurement instrument is linked to it, and papers link it to one behavioral indicator, Sudoku solving. In the papers' own operational language, exploration is made visible through diverse reasoning paths and alternative branches, pass@k relative to pass@1, oversampling or temperature adjustment to increase sampling diversity and maintain entropy, and within-prompt parallel search over different leaf nodes. These proxies mostly match the dominant breadth-of-search framing, though some papers use the same construct for embodied exploration of environments rather than only for reasoning diversity.\n\nLinks. Only one paper reports that exploration ability is related to Sudoku solving. In that paper, Sudoku solving is described as involving \"searching and finding a cell position where we can apply a subset of the strategies,\" so the recorded relationship is a related link between exploration/search and that task, not a causal or correlational claim. No other links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Large Language Models as Generalizable Policies for Embodied Tasks",
+      "Motif: Intrinsic Motivation from Artificial Intelligence Feedback"
+    ],
+    "iclr25": [
+      "B-STaR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners",
+      "BALROG: Benchmarking Agentic LLM and VLM Reasoning On Games",
+      "DeepSeek-Prover-V1.5: Harnessing Proof Assistant Feedback for Reinforcement Learning and Monte-Carlo Tree Search",
+      "DistRL: An Asynchronous Distributed Reinforcement Learning Framework for On-Device Control Agent",
+      "ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning",
+      "Execution-guided within-prompt search for programming-by-example",
+      "Intelligent Go-Explore: Standing on the Shoulders of Giant Foundation Models",
+      "PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks",
+      "Rewarding Progress: Scaling Automated Process Verifiers for LLM Reasoning",
+      "SFS: Smarter Code Space Search improves LLM Inference Scaling",
+      "Selective Attention Improves Transformer",
+      "The KoLMogorov Test: Compression by Code Generation"
+    ],
+    "icml25": [
+      "CVE-Bench: A Benchmark for AI Agents\u2019 Ability to Exploit Real-World Web Application Vulnerabilities",
+      "Code-Generated Graph Representations Using Multiple LLM Agents for Material Properties Prediction",
+      "Divide and Conquer: Grounding LLMs as Efficient Decision-Making Agents via Offline Hierarchical Reinforcement Learning",
+      "Diving into Self-Evolving Training for Multimodal Reasoning",
+      "MARGE: Improving Math Reasoning with Guided Exploration",
+      "Position: Truly Self-Improving Agents Require Intrinsic Metacognitive Learning",
+      "Satori: Reinforcement Learning with Chain-of-Action-Thought Enhances LLM Reasoning via Autoregressive Search",
+      "T1: Advancing Language Model Reasoning through Reinforcement Learning and Inference Scaling"
+    ],
+    "neurips24": [
+      "Causal language modeling can elicit search and reasoning capabilities on logic puzzles"
+    ],
+    "emnlp25": [
+      "What Makes a Good Reasoning Chain? Uncovering Structural Patterns in Long Chain-of-Thought Reasoning",
+      "Enhancing Efficiency and Exploration in Reinforcement Learning for LLMs"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 2,
+    "iclr25": 12,
+    "icml25": 8,
+    "neurips24": 1,
+    "emnlp25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

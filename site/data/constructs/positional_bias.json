@@ -1,0 +1,523 @@
+{
+  "canonical_name": "Positional bias",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, positional bias is most commonly treated as order- or location-sensitive behavior: model outputs, attention, retrieval, or evaluations change because information appears at a particular place in the context or comparison rather than because the content differs. This dominant framing is described as under-attention to the middle, degradation for later tokens, easier memorization or retrieval from earlier training positions, or stronger influence from demonstrations that appear later and closer to the query. Smaller lines of work define it more narrowly as a systematic evaluation error in pairwise comparison, or as option-order bias in multiple-choice and Likert settings, where one side or answer position is favored regardless of quality. Definitions differ mainly in where position enters, long context, training documents, demonstrations, or answer ordering, though they share the idea that presentation location changes behavior.\n\nSpace of facets. Papers use several near-synonymous labels for related order effects: position bias, ordering bias, and order bias all refer to output changes driven by presentation order, and one paper explicitly equates positional bias with permutation bias. Within long-context work, lost-in-the-middle and middle bias are treated as manifestations of uneven positional sensitivity, with middle bias described as attention concentrated on a few middle tokens and as distinct from sink or recency effects. Another strand introduces thought shifting as a reasoning-level manifestation, where positional bias alters the reasoning trajectory, and one paper contrasts reducing lost-in-the-middle with replacing it by recency bias.\n\nSpace of measurement. Operationalization spans 3 linked measurement instruments and 7 behavioral indicators. The named instruments are Chatbot Arena, where weak LLM judges were observed to prefer the first response, MMLU, used in experiments on removing positional bias, and PoSum-Bench, a benchmark for positional bias in conversational summarization; the linked indicators include Lost-in-the-middle and Multiple-choice question answering. Across these setups, authors make the construct concrete by shuffling option or response order, or by moving relevant content across the context window, and then checking whether selections, preferences, retrieval success, or summarization behavior change. These operationalizations largely follow the broad definitions of position-sensitive behavior, though pairwise judge preference and option-order tests reflect the narrower evaluation and multiple-choice framings.\n\nLinks. Several papers claim causal relationships from positional bias to long-context understanding and long-context reasoning, to knowledge extraction ability, and to task performance or evaluation properties. One paper reports that faithfulness correlates with it through a U-shaped pattern, where beginnings and ends are handled more faithfully than the middle. Papers also relate it to selection bias. Overall, the literature links it to 9 constructs and 7 behavioral indicators.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Positional bias",
+    "Positional Bias",
+    "Ordering bias",
+    "Position bias",
+    "Middle bias",
+    "Order bias",
+    "Thought shifting"
+  ],
+  "papers": [
+    "GraphInsight: Unlocking Insights in Large Language Models for Graph Structure Understanding",
+    "Positional Overload: Positional Debiasing and Context Window Extension for Large Language Models using Set Encoding",
+    "A Comprehensive Literary Chinese Reading Comprehension Dataset with an Evidence Curation Based Solution",
+    "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+    "Break the Checkbox: Challenging Closed-Style Evaluations of Cultural Alignment in LLMs",
+    "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics",
+    "Conflicting Needles in a Haystack: How LLMs behave when faced with contradictory information",
+    "Do Large Language Models Understand Word Senses?",
+    "Do RAG Systems Really Suffer From Positional Bias?",
+    "F\u00b2Bench: An Open-ended Fairness Evaluation Benchmark for LLMs with Factuality Considerations",
+    "Investigating Value-Reasoning Reliability in Small Large Language Models",
+    "LCES: Zero-shot Automated Essay Scoring via Pairwise Comparisons Using Large Language Models",
+    "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge",
+    "Morables: A Benchmark for Assessing Abstract Moral Reasoning in LLMs with Fables",
+    "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation",
+    "PoSum-Bench: Benchmarking Position Bias in LLM-based Conversational Summarization",
+    "REALM: Recursive Relevance Modeling for LLM-based Document Re-Ranking",
+    "Unstructured Evidence Attribution for Long Context Query Focused Summarization",
+    "Who is in the Spotlight: The Hidden Bias Undermining Multimodal Retrieval-Augmented Generation",
+    "Evaluating Large Language Models at Evaluating Instruction Following",
+    "Generative Judge for Evaluating Alignment",
+    "Large Language Models Are Not Robust Multiple Choice Selectors",
+    "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+    "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+    "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+    "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+    "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+    "ReCogLab: a framework testing relational reasoning & cognitive hypotheses on LLMs",
+    "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+    "Revisiting In-context Learning Inference Circuit in Large Language Models",
+    "RocketEval: Efficient automated LLM evaluation via grading checklist",
+    "Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark",
+    "Aligning with Logic: Measuring, Evaluating and Improving Logical Preference Consistency in Large Language Models",
+    "Investigating Non-Transitivity in LLM-as-a-Judge",
+    "On the Emergence of Position Bias in Transformers",
+    "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+    "Position: Contextual Integrity is Inadequately Applied to Language Models",
+    "Tuning LLM Judge Design Decisions for 1/1000 of the Cost",
+    "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+    "On Positional Bias of Faithfulness for Long-form Summarization",
+    "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model",
+    "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+    "Order-Independence Without Fine Tuning"
+  ],
+  "paper_count": 43,
+  "definitions": [
+    {
+      "text": "An intrinsic property of decoder-only models where the ability to comprehend and represent information degrades for tokens appearing later in a sequence, due to the causal attention mechanism.",
+      "papers": [
+        "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+        "Revisiting In-context Learning Inference Circuit in Large Language Models",
+        "On Positional Bias of Faithfulness for Long-form Summarization",
+        "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model",
+        "Positional Overload: Positional Debiasing and Context Window Extension for Large Language Models using Set Encoding",
+        "Aligning with Logic: Measuring, Evaluating and Improving Logical Preference Consistency in Large Language Models",
+        "Break the Checkbox: Challenging Closed-Style Evaluations of Cultural Alignment in LLMs"
+      ],
+      "original_name": "Positional bias"
+    },
+    {
+      "text": "A systematic error where evaluation outcomes depend on the order of presentation rather than content quality.",
+      "papers": [
+        "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References"
+      ],
+      "original_name": "Positional Bias"
+    },
+    {
+      "text": "A tendency for performance to vary depending on the presentation order of premises or statements.",
+      "papers": [
+        "ReCogLab: a framework testing relational reasoning & cognitive hypotheses on LLMs"
+      ],
+      "original_name": "Ordering bias"
+    },
+    {
+      "text": "A model's latent tendency to give disproportionate weight to information based on its position within the context window, such as favoring content at the beginning or end.",
+      "papers": [
+        "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+        "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+        "Tuning LLM Judge Design Decisions for 1/1000 of the Cost",
+        "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation"
+      ],
+      "original_name": "Position bias"
+    },
+    {
+      "text": "The latent tendency of the model to focus disproportionately on a subset of tokens located in the middle of the input sequence, forming a non-uniform attention pattern distinct from sink or recency effects.",
+      "papers": [
+        "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation"
+      ],
+      "original_name": "Middle bias"
+    },
+    {
+      "text": "The tendency of a model to favor certain answer positions (e.g., A, B, C, D) regardless of content, indicating a vulnerability to the presentation order of options rather than genuine comprehension.",
+      "papers": [
+        "A Comprehensive Literary Chinese Reading Comprehension Dataset with an Evidence Curation Based Solution"
+      ],
+      "original_name": "Order bias"
+    },
+    {
+      "text": "The deviation in a model's reasoning chain due to the position of relevant documents, resulting in incorrect or suboptimal reasoning paths in multi-hop tasks.",
+      "papers": [
+        "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation"
+      ],
+      "original_name": "Thought shifting"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Order-Independence Without Fine Tuning",
+      "evidence": "Pezeshkpour et al., 2023 identify inherent \u2018positional bias\u2019 in the MCQ setting, where LLMs prefer to select options in specific positions as answers (Section 2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Order-Independence Without Fine Tuning"
+        ],
+        "acl25": [
+          "Positional Overload: Positional Debiasing and Context Window Extension for Large Language Models using Set Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Pairwise comparison",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "evidence": "Positional bias (Wang et al., 2024a; Zheng et al., 2023; Wu & Aji, 2023; Chen et al., 2024) occurs when human or LLM evaluators tend to favor one side in a pairwise comparison, regardless of answer quality. (Section 4.5)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "evidence": "\"they tend to favor content at certain positions ... which harms complex reasoning (Chen et al., 2024b), long-context understanding (Liu et al., 2024) and model-based evaluation\"",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ],
+        "emnlp25": [
+          "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Lost-in-the-middle",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark",
+      "evidence": "\u201cWe observed significant positional bias in LMMs, reminiscent of the \u2018lost-in-the-middle\u2019 pathology found in NLP tasks\u201d",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark"
+        ],
+        "icml25": [
+          "On the Emergence of Position Bias in Transformers"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Selection bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+      "evidence": "Our findings show that selection bias, driven by both token identity and positional preferences, intensifies with increasing task difficulty, particularly when MCQ options are fine-grained. (Conclusion)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models"
+        ],
+        "iclr24": [
+          "Large Language Models Are Not Robust Multiple Choice Selectors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "evidence": "\"This bias often leads to unexpected model failures and hurts performance, robustness, and reliability across various applications.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reliability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "evidence": "\"This bias often leads to unexpected model failures and hurts performance, robustness, and reliability across various applications.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge extraction ability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model",
+      "evidence": "LMs suffer from positional bias in the training data, i.e. they struggle to answer questions about the information described in the middle or at the end of the training document. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Boolean question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model",
+      "evidence": "We further find that the positional bias can hurt models\u2019 performance even for questions answerable with Yes/No. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Faithfulness",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "On Positional Bias of Faithfulness for Long-form Summarization",
+      "evidence": "Analyzing LLM-generated summaries across six datasets, we find a \"U-shaped\" trend in faithfulness, where LLMs faithfully summarize the beginning and end of documents but neglect middle content.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "On Positional Bias of Faithfulness for Long-form Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Recency bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "On Positional Bias of Faithfulness for Long-form Summarization",
+      "evidence": "\u201cThis approach may appear to improve faithfulness, but it ultimately replaces one positional bias, i.e., lost-in-the-middle, with another, i.e., recency bias.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "On Positional Bias of Faithfulness for Long-form Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MMLU",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Positional Overload: Positional Debiasing and Context Window Extension for Large Language Models using Set Encoding",
+      "evidence": "Our experiments with the MMLU dataset (Hendrycks et al., 2020) show that set encoding offers a guaranteed and efficient way to remove positional bias without requiring multiple model runs or complex debiasing techniques. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Positional Overload: Positional Debiasing and Context Window Extension for Large Language Models using Set Encoding"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Chatbot Arena",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SkillAggregation: Reference-free LLM-Dependent Aggregation",
+      "evidence": "We observed positional bias in some weak LLM judges on Chatbot Arena where the first response was consistently preferred, similar to (Zheng et al., 2023).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "SkillAggregation: Reference-free LLM-Dependent Aggregation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Preference consistency",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Investigating Non-Transitivity in LLM-as-a-Judge",
+      "evidence": "Moreover, GPT-3.5-Turbo shows a markedly lower preference consistency than GPT-4-Turbo, indicating that its evaluations are primarily driven by position bias rather than comparing output qualities. (Section 4.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Investigating Non-Transitivity in LLM-as-a-Judge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PoSum-Bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "PoSum-Bench: Benchmarking Position Bias in LLM-based Conversational Summarization",
+      "evidence": "To address this issue, we introduce PoSum-Bench, a comprehensive benchmark for evaluating positional bias in conversational summarization, featuring diverse English and French conversational datasets spanning formal meetings, casual conversations, and customer service interactions. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "PoSum-Bench: Benchmarking Position Bias in LLM-based Conversational Summarization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Long-context reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation",
+      "evidence": "PB poses significant obstacles in information-rich settings, such as retrieval-augmented generation (Fang et al., 2025; Dong et al., 2025b), long-context reasoning (Li et al., 2024a; Kuratov et al., 2024), and LLM-as-a-judge (Wang et al., 2024b; Li et al., 2024c). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Word sense disambiguation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Do Large Language Models Understand Word Senses?",
+      "evidence": "This pattern highlights a potential limitation in some LLMs: rather than evaluating definitions purely on semantic appropriateness, they may rely on superficial heuristics such as positional order, which may compromise their reliability and generalization in unbiased WSD tasks (Section 3.2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Do Large Language Models Understand Word Senses?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multi-document question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "evidence": "We select four tasks that pose position bias: ... retrieval-augmented question-answering (Liu et al., 2024) that asks LMs to answer questions based on retrieved documents",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Eliminating Position Bias of Language Models: A Mechanistic Approach"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Synthetic recall",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation",
+      "evidence": "In retrieval tasks, PB predominantly manifests as token-shifting... (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 19,
+  "incoming_relationship_count": 5,
+  "outgoing_relationship_count": 14,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, positional bias is most commonly treated as order- or location-sensitive behavior: model outputs, attention, retrieval, or evaluations change because information appears at a particular place in the context or comparison rather than because the content differs. This dominant framing is described as under-attention to the middle, degradation for later tokens, easier memorization or retrieval from earlier training positions, or stronger influence from demonstrations that appear later and closer to the query. Smaller lines of work define it more narrowly as a systematic evaluation error in pairwise comparison, or as option-order bias in multiple-choice and Likert settings, where one side or answer position is favored regardless of quality. Definitions differ mainly in where position enters, long context, training documents, demonstrations, or answer ordering, though they share the idea that presentation location changes behavior."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several near-synonymous labels for related order effects: position bias, ordering bias, and order bias all refer to output changes driven by presentation order, and one paper explicitly equates positional bias with permutation bias. Within long-context work, lost-in-the-middle and middle bias are treated as manifestations of uneven positional sensitivity, with middle bias described as attention concentrated on a few middle tokens and as distinct from sink or recency effects. Another strand introduces thought shifting as a reasoning-level manifestation, where positional bias alters the reasoning trajectory, and one paper contrasts reducing lost-in-the-middle with replacing it by recency bias."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization spans 3 linked measurement instruments and 7 behavioral indicators. The named instruments are Chatbot Arena, where weak LLM judges were observed to prefer the first response, MMLU, used in experiments on removing positional bias, and PoSum-Bench, a benchmark for positional bias in conversational summarization; the linked indicators include Lost-in-the-middle and Multiple-choice question answering. Across these setups, authors make the construct concrete by shuffling option or response order, or by moving relevant content across the context window, and then checking whether selections, preferences, retrieval success, or summarization behavior change. These operationalizations largely follow the broad definitions of position-sensitive behavior, though pairwise judge preference and option-order tests reflect the narrower evaluation and multiple-choice framings."
+    },
+    {
+      "label": "Links.",
+      "text": "Several papers claim causal relationships from positional bias to long-context understanding and long-context reasoning, to knowledge extraction ability, and to task performance or evaluation properties. One paper reports that faithfulness correlates with it through a U-shaped pattern, where beginnings and ends are handled more faithfully than the middle. Papers also relate it to selection bias. Overall, the literature links it to 9 constructs and 7 behavioral indicators."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, positional bias is most commonly treated as order- or location-sensitive behavior: model outputs, attention, retrieval, or evaluations change because information appears at a particular place in the context or comparison rather than because the content differs. This dominant framing is described as under-attention to the middle, degradation for later tokens, easier memorization or retrieval from earlier training positions, or stronger influence from demonstrations that appear later and closer to the query. Smaller lines of work define it more narrowly as a systematic evaluation error in pairwise comparison, or as option-order bias in multiple-choice and Likert settings, where one side or answer position is favored regardless of quality. Definitions differ mainly in where position enters, long context, training documents, demonstrations, or answer ordering, though they share the idea that presentation location changes behavior.\n\nSpace of facets. Papers use several near-synonymous labels for related order effects: position bias, ordering bias, and order bias all refer to output changes driven by presentation order, and one paper explicitly equates positional bias with permutation bias. Within long-context work, lost-in-the-middle and middle bias are treated as manifestations of uneven positional sensitivity, with middle bias described as attention concentrated on a few middle tokens and as distinct from sink or recency effects. Another strand introduces thought shifting as a reasoning-level manifestation, where positional bias alters the reasoning trajectory, and one paper contrasts reducing lost-in-the-middle with replacing it by recency bias.\n\nSpace of measurement. Operationalization spans 3 linked measurement instruments and 7 behavioral indicators. The named instruments are Chatbot Arena, where weak LLM judges were observed to prefer the first response, MMLU, used in experiments on removing positional bias, and PoSum-Bench, a benchmark for positional bias in conversational summarization; the linked indicators include Lost-in-the-middle and Multiple-choice question answering. Across these setups, authors make the construct concrete by shuffling option or response order, or by moving relevant content across the context window, and then checking whether selections, preferences, retrieval success, or summarization behavior change. These operationalizations largely follow the broad definitions of position-sensitive behavior, though pairwise judge preference and option-order tests reflect the narrower evaluation and multiple-choice framings.\n\nLinks. Several papers claim causal relationships from positional bias to long-context understanding and long-context reasoning, to knowledge extraction ability, and to task performance or evaluation properties. One paper reports that faithfulness correlates with it through a U-shaped pattern, where beginnings and ends are handled more faithfully than the middle. Papers also relate it to selection bias. Overall, the literature links it to 9 constructs and 7 behavioral indicators.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "GraphInsight: Unlocking Insights in Large Language Models for Graph Structure Understanding",
+      "Positional Overload: Positional Debiasing and Context Window Extension for Large Language Models using Set Encoding"
+    ],
+    "emnlp25": [
+      "A Comprehensive Literary Chinese Reading Comprehension Dataset with an Evidence Curation Based Solution",
+      "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+      "Break the Checkbox: Challenging Closed-Style Evaluations of Cultural Alignment in LLMs",
+      "Co-Eval: Augmenting LLM-based Evaluation with Machine Metrics",
+      "Conflicting Needles in a Haystack: How LLMs behave when faced with contradictory information",
+      "Do Large Language Models Understand Word Senses?",
+      "Do RAG Systems Really Suffer From Positional Bias?",
+      "F\u00b2Bench: An Open-ended Fairness Evaluation Benchmark for LLMs with Factuality Considerations",
+      "Investigating Value-Reasoning Reliability in Small Large Language Models",
+      "LCES: Zero-shot Automated Essay Scoring via Pairwise Comparisons Using Large Language Models",
+      "Meta-Rewarding Language Models: Self-Improving Alignment with LLM-as-a-Meta-Judge",
+      "Morables: A Benchmark for Assessing Abstract Moral Reasoning in LLMs with Fables",
+      "POSITION BIAS MITIGATES POSITION BIAS: Mitigate Position Bias Through Inter-Position Knowledge Distillation",
+      "PoSum-Bench: Benchmarking Position Bias in LLM-based Conversational Summarization",
+      "REALM: Recursive Relevance Modeling for LLM-based Document Re-Ranking",
+      "Unstructured Evidence Attribution for Long Context Query Focused Summarization",
+      "Who is in the Spotlight: The Hidden Bias Undermining Multimodal Retrieval-Augmented Generation"
+    ],
+    "iclr24": [
+      "Evaluating Large Language Models at Evaluating Instruction Following",
+      "Generative Judge for Evaluating Alignment",
+      "Large Language Models Are Not Robust Multiple Choice Selectors"
+    ],
+    "iclr25": [
+      "Cheating Automatic LLM Benchmarks: Null Models Achieve High Win Rates",
+      "Eliminating Position Bias of Language Models: A Mechanistic Approach",
+      "Follow My Instruction and Spill the Beans: Scalable Data Extraction from Retrieval-Augmented Generation Systems",
+      "JudgeLM: Fine-tuned Large Language Models are Scalable Judges",
+      "Justice or Prejudice? Quantifying Biases in LLM-as-a-Judge",
+      "ReCogLab: a framework testing relational reasoning & cognitive hypotheses on LLMs",
+      "RevisEval: Improving LLM-as-a-Judge via Response-Adapted References",
+      "Revisiting In-context Learning Inference Circuit in Large Language Models",
+      "RocketEval: Efficient automated LLM evaluation via grading checklist",
+      "Visual Haystacks: A Vision-Centric Needle-In-A-Haystack Benchmark"
+    ],
+    "icml25": [
+      "Aligning with Logic: Measuring, Evaluating and Improving Logical Preference Consistency in Large Language Models",
+      "Investigating Non-Transitivity in LLM-as-a-Judge",
+      "On the Emergence of Position Bias in Transformers",
+      "ParallelComp: Parallel Long-Context Compressor for Length Extrapolation",
+      "Position: Contextual Integrity is Inadequately Applied to Language Models",
+      "Tuning LLM Judge Design Decisions for 1/1000 of the Cost"
+    ],
+    "naacl25": [
+      "Generating Complex Question Decompositions in the Face of Distribution Shifts",
+      "On Positional Bias of Faithfulness for Long-form Summarization",
+      "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model"
+    ],
+    "neurips24": [
+      "Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models",
+      "Order-Independence Without Fine Tuning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 17,
+    "iclr24": 3,
+    "iclr25": 10,
+    "icml25": 6,
+    "naacl25": 3,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

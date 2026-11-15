@@ -1,0 +1,131 @@
+{
+  "canonical_name": "Hateful Memes",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, the prevailing usage treats Hateful Memes, also written HATEFUL MEMES, HatefulMemes, or FHM, as a multimodal meme benchmark or dataset built around meme images and their text captions. Papers describe it as classifying whether an image-text combination is hateful, whether a meme \"describes hateful intentions,\" or whether it contains harmful content; some also note that it requires reasoning beyond simple unimodal signals and describe it as a challenge released by Meta or Facebook.\n\nWhat it is claimed to measure. Papers link this instrument to no constructs and to two behavioral indicators, hate speech detection and harmful content detection. The reported measurement claims use both framings: some papers describe it as evaluating multimodal hate speech detection, while others use it to test whether a model can distinguish toxic from non-toxic images or detect harmful meme content.\n\nSpace of uses. No measurement instrument is linked to it. Papers instead use it as an evaluation dataset for multimodal systems, sometimes alongside other public meme datasets, including HarM and MAMI, and sometimes as a specific-mapping task where the model is asked to determine whether a meme with its caption contains harmful content and output \"yes\" or \"no\". Other papers place it inside broader evaluation setups where models output predictions for hate speech detection in HATEFUL MEMES.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "HATEFUL MEMES",
+    "FHM",
+    "HatefulMemes"
+  ],
+  "papers": [
+    "AdamMeme: Adaptively Probe the Reasoning Capacity of Multimodal Large Language Models on Harmfulness",
+    "MIND: A Multi-agent Framework for Zero-shot Harmful Meme Detection",
+    "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection",
+    "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration",
+    "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+    "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+    "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+    "VHELM: A Holistic Evaluation of Vision Language Models"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "A multimodal meme classification benchmark used to determine whether an image-text combination is hateful.",
+      "papers": [
+        "HEMM: Holistic Evaluation of Multimodal Foundation Models"
+      ],
+      "original_name": "HATEFUL MEMES"
+    },
+    {
+      "text": "A dataset for detecting hate speech in multimodal memes, requiring reasoning beyond simple unimodal signals.",
+      "papers": [
+        "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+        "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration"
+      ],
+      "original_name": "HatefulMemes"
+    },
+    {
+      "text": "The Facebook Hateful Memes (FHM) dataset, a benchmark released as part of a challenge to evaluate multimodal harmful meme detection in hate speech.",
+      "papers": [
+        "MIND: A Multi-agent Framework for Zero-shot Harmful Meme Detection"
+      ],
+      "original_name": "FHM"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Hate speech detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+      "evidence": "Multimodal fusion takes in the image, text, and a description of the task, and then outputs a prediction, which can include... hate speech detection in HATEFUL MEMES... (Section 2.2).",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HEMM: Holistic Evaluation of Multimodal Foundation Models"
+        ],
+        "emnlp25": [
+          "MemeIntel: Explainable Detection of Propagandistic and Hateful Memes"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmful content detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MIND: A Multi-agent Framework for Zero-shot Harmful Meme Detection",
+      "evidence": "We use three publicly available meme datasets for evaluation: (1) HarM (Pramanick et al., 2021a), (2) FHM (Kiela et al., 2020), and (3) MAMI (Fersini et al., 2022). (Section 4.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "MIND: A Multi-agent Framework for Zero-shot Harmful Meme Detection"
+        ],
+        "neurips24": [
+          "VHELM: A Holistic Evaluation of Vision Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, the prevailing usage treats Hateful Memes, also written HATEFUL MEMES, HatefulMemes, or FHM, as a multimodal meme benchmark or dataset built around meme images and their text captions. Papers describe it as classifying whether an image-text combination is hateful, whether a meme \"describes hateful intentions,\" or whether it contains harmful content; some also note that it requires reasoning beyond simple unimodal signals and describe it as a challenge released by Meta or Facebook."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers link this instrument to no constructs and to two behavioral indicators, hate speech detection and harmful content detection. The reported measurement claims use both framings: some papers describe it as evaluating multimodal hate speech detection, while others use it to test whether a model can distinguish toxic from non-toxic images or detect harmful meme content."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to it. Papers instead use it as an evaluation dataset for multimodal systems, sometimes alongside other public meme datasets, including HarM and MAMI, and sometimes as a specific-mapping task where the model is asked to determine whether a meme with its caption contains harmful content and output \"yes\" or \"no\". Other papers place it inside broader evaluation setups where models output predictions for hate speech detection in HATEFUL MEMES."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, the prevailing usage treats Hateful Memes, also written HATEFUL MEMES, HatefulMemes, or FHM, as a multimodal meme benchmark or dataset built around meme images and their text captions. Papers describe it as classifying whether an image-text combination is hateful, whether a meme \"describes hateful intentions,\" or whether it contains harmful content; some also note that it requires reasoning beyond simple unimodal signals and describe it as a challenge released by Meta or Facebook.\n\nWhat it is claimed to measure. Papers link this instrument to no constructs and to two behavioral indicators, hate speech detection and harmful content detection. The reported measurement claims use both framings: some papers describe it as evaluating multimodal hate speech detection, while others use it to test whether a model can distinguish toxic from non-toxic images or detect harmful meme content.\n\nSpace of uses. No measurement instrument is linked to it. Papers instead use it as an evaluation dataset for multimodal systems, sometimes alongside other public meme datasets, including HarM and MAMI, and sometimes as a specific-mapping task where the model is asked to determine whether a meme with its caption contains harmful content and output \"yes\" or \"no\". Other papers place it inside broader evaluation setups where models output predictions for hate speech detection in HATEFUL MEMES.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "AdamMeme: Adaptively Probe the Reasoning Capacity of Multimodal Large Language Models on Harmfulness",
+      "MIND: A Multi-agent Framework for Zero-shot Harmful Meme Detection"
+    ],
+    "emnlp25": [
+      "Robust Adaptation of Large Multimodal Models for Retrieval Augmented Hateful Meme Detection",
+      "TACO: Enhancing Multimodal In-context Learning via Task Mapping-Guided Sequence Configuration"
+    ],
+    "neurips24": [
+      "HEMM: Holistic Evaluation of Multimodal Foundation Models",
+      "Leveraging Visual Tokens for Extended Text Contexts in Multi-Modal Learning",
+      "Q-VLM: Post-training Quantization for Large Vision-Language Models",
+      "VHELM: A Holistic Evaluation of Vision Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 2,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "neurips24"
+  ]
+}

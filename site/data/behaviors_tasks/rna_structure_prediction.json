@@ -1,0 +1,65 @@
+{
+  "canonical_name": "RNA structure prediction",
+  "type": "behavior",
+  "canonical_definition": "The task of identifying and predicting the base-pairing interactions within a single RNA molecule to determine its two-dimensional structure.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Secondary structure prediction",
+    "Contact map prediction",
+    "Distance map prediction"
+  ],
+  "papers": [
+    "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models",
+    "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "The task of identifying and predicting the base-pairing interactions within a single RNA molecule to determine its two-dimensional structure.",
+      "papers": [
+        "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models",
+        "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models"
+      ],
+      "original_name": "Secondary structure prediction"
+    },
+    {
+      "text": "The task of identifying which pairs of nucleotides in an RNA sequence are in close physical proximity in the molecule's three-dimensional structure.",
+      "papers": [
+        "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models"
+      ],
+      "original_name": "Contact map prediction"
+    },
+    {
+      "text": "The task of estimating the physical, three-dimensional distances between all pairs of nucleotides within an RNA molecule.",
+      "papers": [
+        "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models"
+      ],
+      "original_name": "Distance map prediction"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The task of identifying and predicting the base-pairing interactions within a single RNA molecule to determine its two-dimensional structure.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "icml25": [
+      "From Mechanistic Interpretability to Mechanistic Biology: Training, Evaluating, and Interpreting Sparse Autoencoders on Protein Language Models"
+    ],
+    "neurips24": [
+      "BEACON: Benchmark for Comprehensive RNA Tasks and Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "icml25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "icml25",
+    "neurips24"
+  ]
+}

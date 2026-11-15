@@ -1,0 +1,153 @@
+{
+  "canonical_name": "Medical report generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across definitions, the prevailing usage is a generation task in which a model produces a detailed, structured or descriptive clinical report from a provided medical image or scan. Most papers define the report by its account of findings in the image, while one paper broadens the inputs to imaging data or contextual inputs and spells out the report content as findings, location, severity, and comparisons.\n\nVariants. The naming is mostly report generation or medical report generation, with one paper phrasing the outputs specifically as radiology reports. Papers usually study image-based settings, and some work narrows further to English chest X-ray report generation on MIMIC-CXR and IU-Xray.\n\nSpace of elicitation and scores. It is measured by 2 instruments, IU-Xray and MIMIC-CXR. Papers use both as report generation datasets, and some descriptions call them chest X-ray datasets; no other instrument is linked.\n\nWhat it is taken as evidence of. Only 1 construct is linked, Versatility. That link is stated as related: one paper says that performance on report generation, together with visual question answering and medical image classification, showcases versatility, and no other construct link is present.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Medical report generation"
+  ],
+  "papers": [
+    "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+    "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents",
+    "ReEvalMed: Rethinking Medical Report Evaluation by Aligning Metrics with Real-World Clinical Judgment",
+    "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+    "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+    "HealthGPT: A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation",
+    "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+  ],
+  "paper_count": 7,
+  "definitions": [
+    {
+      "text": "The task of generating a detailed, structured textual report describing the findings in a provided medical scan.",
+      "papers": [
+        "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+        "ReEvalMed: Rethinking Medical Report Evaluation by Aligning Metrics with Real-World Clinical Judgment",
+        "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning",
+        "HealthGPT: A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation",
+        "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+      ],
+      "original_name": "Medical report generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MIMIC-CXR",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "We utilize five medical vision-language datasets for medical VQA and report generation tasks, i.e., MIMIC-CXR (Johnson et al., 2019), IU-Xray (Demner-Fushman et al., 2016), Harvard-FairVLMed (Luo et al., 2024), PMC-OA (Lin et al., 2023a) (we only select the pathology part) and Quilt-1M (Ikezogwo et al., 2024).",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "acl25": [
+          "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning"
+        ],
+        "icml25": [
+          "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+        ],
+        "emnlp25": [
+          "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "IU-Xray",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+      "evidence": "We utilize five medical vision-language datasets for medical VQA and report generation tasks, i.e., MIMIC-CXR (Johnson et al., 2019), IU-Xray (Demner-Fushman et al., 2016), Harvard-FairVLMed (Luo et al., 2024), PMC-OA (Lin et al., 2023a) (we only select the pathology part) and Quilt-1M (Ikezogwo et al., 2024).",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models",
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ],
+        "acl25": [
+          "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning"
+        ],
+        "icml25": [
+          "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+        ],
+        "emnlp25": [
+          "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Versatility",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "evidence": "Our MedRegA not only enables three region-centric tasks, but also achieves the best performance for visual question answering, report generation and medical image classification over 8 modalities, showcasing significant versatility. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across definitions, the prevailing usage is a generation task in which a model produces a detailed, structured or descriptive clinical report from a provided medical image or scan. Most papers define the report by its account of findings in the image, while one paper broadens the inputs to imaging data or contextual inputs and spells out the report content as findings, location, severity, and comparisons."
+    },
+    {
+      "label": "Variants.",
+      "text": "The naming is mostly report generation or medical report generation, with one paper phrasing the outputs specifically as radiology reports. Papers usually study image-based settings, and some work narrows further to English chest X-ray report generation on MIMIC-CXR and IU-Xray."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "It is measured by 2 instruments, IU-Xray and MIMIC-CXR. Papers use both as report generation datasets, and some descriptions call them chest X-ray datasets; no other instrument is linked."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Only 1 construct is linked, Versatility. That link is stated as related: one paper says that performance on report generation, together with visual question answering and medical image classification, showcases versatility, and no other construct link is present."
+    }
+  ],
+  "characterization": "Space of definitions. Across definitions, the prevailing usage is a generation task in which a model produces a detailed, structured or descriptive clinical report from a provided medical image or scan. Most papers define the report by its account of findings in the image, while one paper broadens the inputs to imaging data or contextual inputs and spells out the report content as findings, location, severity, and comparisons.\n\nVariants. The naming is mostly report generation or medical report generation, with one paper phrasing the outputs specifically as radiology reports. Papers usually study image-based settings, and some work narrows further to English chest X-ray report generation on MIMIC-CXR and IU-Xray.\n\nSpace of elicitation and scores. It is measured by 2 instruments, IU-Xray and MIMIC-CXR. Papers use both as report generation datasets, and some descriptions call them chest X-ray datasets; no other instrument is linked.\n\nWhat it is taken as evidence of. Only 1 construct is linked, Versatility. That link is stated as related: one paper says that performance on report generation, together with visual question answering and medical image classification, showcases versatility, and no other construct link is present.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Med-VRAgent: A Framework for Medical Visual Reasoning-Enhanced Agents",
+      "ReEvalMed: Rethinking Medical Report Evaluation by Aligning Metrics with Real-World Clinical Judgment"
+    ],
+    "iclr25": [
+      "Interpretable Bilingual Multimodal Large Language Model for Diverse Biomedical Tasks",
+      "MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models"
+    ],
+    "acl25": [
+      "Focus on What Matters: Enhancing Medical Vision-Language Models with Automatic Attention Alignment Tuning"
+    ],
+    "icml25": [
+      "HealthGPT: A Medical Large Vision-Language Model for Unifying Comprehension and Generation via Heterogeneous Knowledge Adaptation",
+      "MMedPO: Aligning Medical Vision-Language Models with Clinical-Aware Multimodal Preference Optimization"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 2,
+    "acl25": 1,
+    "icml25": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25"
+  ]
+}

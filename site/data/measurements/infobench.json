@@ -1,0 +1,122 @@
+{
+  "canonical_name": "InfoBench",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the surveyed work, the prevailing description is an instruction-following benchmark for instruction adherence that decomposes complex instructions into simpler sub-instructions for granular evaluation. One paper adds that it contains 500 diverse instructions and 2,250 decomposed questions across multiple constraint categories, and describes a metric called Decomposed Requirements Following Ratio (DRFR) for assessing instruction-adherence capabilities. Some papers instead describe task-specific views of it: a direct scoring dataset with a 1 to 5 Likert scale and English Easy and Hard subsets, an Expert split used for fine-grained classification, and a benchmark for more general instructions that need LLM-based judgment.\n\nWhat it is claimed to measure. Papers use InfoBench to measure one behavioral indicator, Instruction following, and two constructs, Cross-domain generalization and Instruction following ability. The most common claim is that it measures instruction following: papers describe it as assessing instruction-adherence capabilities and as an instruction benchmark that evaluates whether models comprehend and execute detailed directives, including clear, step-by-step guidance. A smaller line of work uses it as cross-domain validation, reporting that Instruction following ability and Cross-domain generalization are measured by InfoBench alongside other evaluations.\n\nSpace of uses. Papers commonly position InfoBench as one of several instruction-following evaluations, most often alongside IFEval, and some also mention Multi-IF, MT-Bench, and Arena-hard. In these uses, it is described as simulating real-world scenarios that require clear, step-by-step guidance, as a complex instruction-following dataset used for cross-domain validation, and as an evaluation set for more general instructions that need LLM-based judgment. Other papers use task-specific portions of it, including the Expert split for classification and the Easy and Hard subsets for direct scoring of LLM responses.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "InfoBench"
+  ],
+  "papers": [
+    "Are Checklists Really Useful for Automatic Evaluation of Generative Tasks?",
+    "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+    "Direct Judgement Preference Optimization",
+    "UltraIF: Advancing Instruction Following from the Wild",
+    "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs",
+    "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "A benchmark for instruction adherence that decomposes complex instructions into simpler sub-instructions for granular evaluation.",
+      "papers": [
+        "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs",
+        "Are Checklists Really Useful for Automatic Evaluation of Generative Tasks?",
+        "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+        "Direct Judgement Preference Optimization",
+        "UltraIF: Advancing Instruction Following from the Wild"
+      ],
+      "original_name": "InfoBench"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs",
+      "evidence": "InfoBench (Qin et al., 2024) introduces a new metric called Decomposed Requirements Following Ratio (DRFR) for assessing the instruction-adherence capabilities of LLMs.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs"
+        ],
+        "emnlp25": [
+          "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Instruction following ability",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+      "evidence": "To explore AUTOIF on more natural Instruction-following scenario, we further introduce the complex instruction-following dataset InfoBench(Qin et al., 2024b), the general natural instruction evaluation set MT-Bench (Zheng et al., 2023) and the real-world chatbot evaluation set Arena-hard (Zheng et al., 2023) as cross domain validation. (Section 4).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Cross-domain generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models",
+      "evidence": "\"we further introduce the complex instruction-following dataset InfoBench(Qin et al., 2024b), the general natural instruction evaluation set MT-Bench (Zheng et al., 2023) and the real-world chatbot evaluation set Arena-hard (Zheng et al., 2023) as cross domain validation.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the surveyed work, the prevailing description is an instruction-following benchmark for instruction adherence that decomposes complex instructions into simpler sub-instructions for granular evaluation. One paper adds that it contains 500 diverse instructions and 2,250 decomposed questions across multiple constraint categories, and describes a metric called Decomposed Requirements Following Ratio (DRFR) for assessing instruction-adherence capabilities. Some papers instead describe task-specific views of it: a direct scoring dataset with a 1 to 5 Likert scale and English Easy and Hard subsets, an Expert split used for fine-grained classification, and a benchmark for more general instructions that need LLM-based judgment."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use InfoBench to measure one behavioral indicator, Instruction following, and two constructs, Cross-domain generalization and Instruction following ability. The most common claim is that it measures instruction following: papers describe it as assessing instruction-adherence capabilities and as an instruction benchmark that evaluates whether models comprehend and execute detailed directives, including clear, step-by-step guidance. A smaller line of work uses it as cross-domain validation, reporting that Instruction following ability and Cross-domain generalization are measured by InfoBench alongside other evaluations."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers commonly position InfoBench as one of several instruction-following evaluations, most often alongside IFEval, and some also mention Multi-IF, MT-Bench, and Arena-hard. In these uses, it is described as simulating real-world scenarios that require clear, step-by-step guidance, as a complex instruction-following dataset used for cross-domain validation, and as an evaluation set for more general instructions that need LLM-based judgment. Other papers use task-specific portions of it, including the Expert split for classification and the Easy and Hard subsets for direct scoring of LLM responses."
+    }
+  ],
+  "characterization": "What it is. Across the surveyed work, the prevailing description is an instruction-following benchmark for instruction adherence that decomposes complex instructions into simpler sub-instructions for granular evaluation. One paper adds that it contains 500 diverse instructions and 2,250 decomposed questions across multiple constraint categories, and describes a metric called Decomposed Requirements Following Ratio (DRFR) for assessing instruction-adherence capabilities. Some papers instead describe task-specific views of it: a direct scoring dataset with a 1 to 5 Likert scale and English Easy and Hard subsets, an Expert split used for fine-grained classification, and a benchmark for more general instructions that need LLM-based judgment.\n\nWhat it is claimed to measure. Papers use InfoBench to measure one behavioral indicator, Instruction following, and two constructs, Cross-domain generalization and Instruction following ability. The most common claim is that it measures instruction following: papers describe it as assessing instruction-adherence capabilities and as an instruction benchmark that evaluates whether models comprehend and execute detailed directives, including clear, step-by-step guidance. A smaller line of work uses it as cross-domain validation, reporting that Instruction following ability and Cross-domain generalization are measured by InfoBench alongside other evaluations.\n\nSpace of uses. Papers commonly position InfoBench as one of several instruction-following evaluations, most often alongside IFEval, and some also mention Multi-IF, MT-Bench, and Arena-hard. In these uses, it is described as simulating real-world scenarios that require clear, step-by-step guidance, as a complex instruction-following dataset used for cross-domain validation, and as an evaluation set for more general instructions that need LLM-based judgment. Other papers use task-specific portions of it, including the Expert split for classification and the Easy and Hard subsets for direct scoring of LLM responses.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs",
+      "Self-play with Execution Feedback: Improving Instruction-following Capabilities of Large Language Models"
+    ],
+    "emnlp25": [
+      "Are Checklists Really Useful for Automatic Evaluation of Generative Tasks?",
+      "Benchmarking Large Language Models Under Data Contamination: A Survey from Static to Dynamic Evaluation",
+      "Direct Judgement Preference Optimization",
+      "UltraIF: Advancing Instruction Following from the Wild"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "emnlp25": 4
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

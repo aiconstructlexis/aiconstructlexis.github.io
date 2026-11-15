@@ -1,0 +1,253 @@
+{
+  "canonical_name": "PKU-SafeRLHF",
+  "type": "measurement",
+  "canonical_definition": "What it is. Most commonly, papers treat PKU-SafeRLHF, also written SafeRLHF or Safe-RLHF, as a human-annotated preference dataset or public benchmark for safety alignment. Definitions usually describe prompt or instruction-response comparisons with paired responses and labels for helpfulness and harmlessness or safety, and some papers further describe safe and unsafe response pairs, conversation comparisons, and safety-focused coverage such as insults, immorality, crime, emotional harm, and privacy. A smaller line emphasizes it as a harmful-query or red-teaming test set for out-of-distribution evaluation, and papers describe its overall scale differently.\n\nWhat it is claimed to measure. Across papers, the dominant use is to measure harmlessness and helpfulness: papers link it to five constructs and no behavioral indicators, with harmlessness and helpfulness appearing most often. Smaller lines of work use it to measure generalization or safety, and one paper relates PKU-SafeRLHF to safety alignment rather than treating it as a direct measure. Overall, the measurement claims are concentrated on harmlessness and helpfulness rather than evenly spread across the linked constructs.\n\nSpace of uses. Papers usually use it in training as well as evaluation, including alignment tuning, reward-model training, harmful-query or red-teaming evaluation, and benchmark test sets for generative judges. No measurement instrument is linked to it, though papers often place it alongside HH-RLHF, BigBench-HHH, UltraChat, CNN Dailymail, and Iterative-Prompt in broader experimental setups. Some also describe fixed train-test splits, comparisons against gold reward or reference models, or multi-objective settings that maximize helpfulness while imposing a harmlessness threshold.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "PKU SafeRLHF",
+    "PKU-SafeRLHF",
+    "SafeRLHF",
+    "Safe-RLHF"
+  ],
+  "papers": [
+    "Efficient Safety Alignment of Large Language Models via Preference Re-ranking and Representation-based Reward Modeling",
+    "Gradient-Adaptive Policy Optimization: Towards Multi-Objective Alignment of Large Language Models",
+    "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+    "MPO: Multilingual Safety Alignment via Reward Gap Optimization",
+    "PKU-SafeRLHF: Towards Multi-Level Safety Alignment for LLMs with Human Preference",
+    "Governance in Motion: Co-evolution of Constitutions and AI models for Scalable Safety",
+    "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution",
+    "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+    "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+    "Unmasking and Improving Data Credibility: A Study with Datasets for Training Harmless Language Models",
+    "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+    "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+    "Learning LLM-as-a-Judge for Preference Alignment",
+    "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+    "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+    "REEF: Representation Encoding Fingerprints for Large Language Models",
+    "The Crucial Role of Samplers in Online Direct Preference Optimization",
+    "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+    "HPS: Hard Preference Sampling for Human Preference Alignment",
+    "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+    "Unlocking Decoding-time Controllability: Gradient-Free Multi-Objective Alignment with Contrastive Prompts",
+    "Self-Generated Critiques Boost Reward Modeling for Language Models"
+  ],
+  "paper_count": 22,
+  "definitions": [
+    {
+      "text": "A dataset used for out-of-distribution evaluation of model performance on harmful queries.",
+      "papers": [
+        "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+        "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+        "Learning LLM-as-a-Judge for Preference Alignment",
+        "Gradient-Adaptive Policy Optimization: Towards Multi-Objective Alignment of Large Language Models",
+        "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+        "Self-Generated Critiques Boost Reward Modeling for Language Models"
+      ],
+      "original_name": "PKU-SafeRLHF"
+    },
+    {
+      "text": "A dataset of over 300k instances with prompt-response pairs and safety labels, derived from human preferences, used for reinforcement learning with human feedback in safety alignment.",
+      "papers": [
+        "Unmasking and Improving Data Credibility: A Study with Datasets for Training Harmless Language Models"
+      ],
+      "original_name": "PKU SafeRLHF"
+    },
+    {
+      "text": "Human-annotated pairwise preference dataset that independently ranks responses for helpfulness and harmlessness, used for alignment tuning and evaluation.",
+      "papers": [
+        "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+        "Unlocking Decoding-time Controllability: Gradient-Free Multi-Objective Alignment with Contrastive Prompts",
+        "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution"
+      ],
+      "original_name": "SafeRLHF"
+    },
+    {
+      "text": "A dataset used for LM alignment experiments in which trained models are evaluated against a gold reward model and a reference model.",
+      "papers": [
+        "The Crucial Role of Samplers in Online Direct Preference Optimization"
+      ],
+      "original_name": "Safe-RLHF"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Harmlessness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "evidence": "Harmful evaluation on PKU-SafeRLHF. (Figure 3a)",
+      "paper_count": 8,
+      "paper_weight": 8.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+          "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis"
+        ],
+        "iclr25": [
+          "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+          "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization"
+        ],
+        "naacl25": [
+          "Unlocking Decoding-time Controllability: Gradient-Free Multi-Objective Alignment with Contrastive Prompts"
+        ],
+        "acl25": [
+          "Gradient-Adaptive Policy Optimization: Towards Multi-Objective Alignment of Large Language Models"
+        ],
+        "icml25": [
+          "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time"
+        ],
+        "emnlp25": [
+          "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Helpfulness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+      "evidence": "PKU-SafeRLHF provides both paired helpfulness preference rankings and binary safety labels.",
+      "paper_count": 5,
+      "paper_weight": 5.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models"
+        ],
+        "acl25": [
+          "Gradient-Adaptive Policy Optimization: Towards Multi-Objective Alignment of Large Language Models"
+        ],
+        "icml25": [
+          "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time"
+        ],
+        "emnlp25": [
+          "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution"
+        ],
+        "naacl25": [
+          "Unlocking Decoding-time Controllability: Gradient-Free Multi-Objective Alignment with Contrastive Prompts"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+      "evidence": "In this section, we will evaluate our model, previously trained on the C4 dataset, on various other datasets, including Anthropic HH-RLHF (HH), Synthetic instruction2(Instruct), PKU SafeRLHF (PKU), Reward3, UltraFeedback(UltraF), FineWeb (Penedo et al., 2024) and Pile uncopyrighted(Pile)4 datasets. (Section 4.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Robust Multi-bit Text Watermark with LLM-based Paraphrasers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Safety",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Governance in Motion: Co-evolution of Constitutions and AI models for Scalable Safety",
+      "evidence": "We evaluate model safety on the PKU-SafeRLHF and BigBench-HHH datasets. (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Governance in Motion: Co-evolution of Constitutions and AI models for Scalable Safety"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Safety alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "PKU-SafeRLHF: Towards Multi-Level Safety Alignment for LLMs with Human Preference",
+      "evidence": "Using the large-scale annotation data, we further train severity-sensitive moderation for the risk control of LLMs and safety-centric RLHF algorithms for the safety alignment of LLMs. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "PKU-SafeRLHF: Towards Multi-Level Safety Alignment for LLMs with Human Preference"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Most commonly, papers treat PKU-SafeRLHF, also written SafeRLHF or Safe-RLHF, as a human-annotated preference dataset or public benchmark for safety alignment. Definitions usually describe prompt or instruction-response comparisons with paired responses and labels for helpfulness and harmlessness or safety, and some papers further describe safe and unsafe response pairs, conversation comparisons, and safety-focused coverage such as insults, immorality, crime, emotional harm, and privacy. A smaller line emphasizes it as a harmful-query or red-teaming test set for out-of-distribution evaluation, and papers describe its overall scale differently."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Across papers, the dominant use is to measure harmlessness and helpfulness: papers link it to five constructs and no behavioral indicators, with harmlessness and helpfulness appearing most often. Smaller lines of work use it to measure generalization or safety, and one paper relates PKU-SafeRLHF to safety alignment rather than treating it as a direct measure. Overall, the measurement claims are concentrated on harmlessness and helpfulness rather than evenly spread across the linked constructs."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "Papers usually use it in training as well as evaluation, including alignment tuning, reward-model training, harmful-query or red-teaming evaluation, and benchmark test sets for generative judges. No measurement instrument is linked to it, though papers often place it alongside HH-RLHF, BigBench-HHH, UltraChat, CNN Dailymail, and Iterative-Prompt in broader experimental setups. Some also describe fixed train-test splits, comparisons against gold reward or reference models, or multi-objective settings that maximize helpfulness while imposing a harmlessness threshold."
+    }
+  ],
+  "characterization": "What it is. Most commonly, papers treat PKU-SafeRLHF, also written SafeRLHF or Safe-RLHF, as a human-annotated preference dataset or public benchmark for safety alignment. Definitions usually describe prompt or instruction-response comparisons with paired responses and labels for helpfulness and harmlessness or safety, and some papers further describe safe and unsafe response pairs, conversation comparisons, and safety-focused coverage such as insults, immorality, crime, emotional harm, and privacy. A smaller line emphasizes it as a harmful-query or red-teaming test set for out-of-distribution evaluation, and papers describe its overall scale differently.\n\nWhat it is claimed to measure. Across papers, the dominant use is to measure harmlessness and helpfulness: papers link it to five constructs and no behavioral indicators, with harmlessness and helpfulness appearing most often. Smaller lines of work use it to measure generalization or safety, and one paper relates PKU-SafeRLHF to safety alignment rather than treating it as a direct measure. Overall, the measurement claims are concentrated on harmlessness and helpfulness rather than evenly spread across the linked constructs.\n\nSpace of uses. Papers usually use it in training as well as evaluation, including alignment tuning, reward-model training, harmful-query or red-teaming evaluation, and benchmark test sets for generative judges. No measurement instrument is linked to it, though papers often place it alongside HH-RLHF, BigBench-HHH, UltraChat, CNN Dailymail, and Iterative-Prompt in broader experimental setups. Some also describe fixed train-test splits, comparisons against gold reward or reference models, or multi-objective settings that maximize helpfulness while imposing a harmlessness threshold.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Efficient Safety Alignment of Large Language Models via Preference Re-ranking and Representation-based Reward Modeling",
+      "Gradient-Adaptive Policy Optimization: Towards Multi-Objective Alignment of Large Language Models",
+      "LSSF: Safety Alignment for Large Language Models through Low-Rank Safety Subspace Fusion",
+      "MPO: Multilingual Safety Alignment via Reward Gap Optimization",
+      "PKU-SafeRLHF: Towards Multi-Level Safety Alignment for LLMs with Human Preference"
+    ],
+    "emnlp25": [
+      "Governance in Motion: Co-evolution of Constitutions and AI models for Scalable Safety",
+      "RED: Unleashing Token-Level Rewards from Holistic Feedback via Reward Redistribution"
+    ],
+    "iclr24": [
+      "Gaining Wisdom from Setbacks: Aligning Large Language Models via Mistake Analysis",
+      "Improving Generalization of Alignment with Human Preferences through Group Invariant Learning",
+      "Unmasking and Improving Data Credibility: A Study with Datasets for Training Harmless Language Models"
+    ],
+    "iclr25": [
+      "Bi-Factorial Preference Optimization: Balancing Safety-Helpfulness in Language Models",
+      "BingoGuard: LLM Content Moderation Tools with Risk Levels",
+      "Learning LLM-as-a-Judge for Preference Alignment",
+      "MACPO: Weak-to-Strong Alignment via Multi-Agent Contrastive Preference Optimization",
+      "Magnetic Preference Optimization: Achieving Last-iterate Convergence for Language Model Alignment",
+      "REEF: Representation Encoding Fingerprints for Large Language Models",
+      "The Crucial Role of Samplers in Online Direct Preference Optimization"
+    ],
+    "icml25": [
+      "Bounded Rationality for LLMs: Satisficing Alignment at Inference-Time",
+      "HPS: Hard Preference Sampling for Human Preference Alignment"
+    ],
+    "naacl25": [
+      "BPO: Towards Balanced Preference Optimization between Knowledge Breadth and Depth in Alignment",
+      "Unlocking Decoding-time Controllability: Gradient-Free Multi-Objective Alignment with Contrastive Prompts",
+      "Self-Generated Critiques Boost Reward Modeling for Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 5,
+    "emnlp25": 2,
+    "iclr24": 3,
+    "iclr25": 7,
+    "icml25": 2,
+    "naacl25": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

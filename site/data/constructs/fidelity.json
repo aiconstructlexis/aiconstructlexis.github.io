@@ -1,0 +1,167 @@
+{
+  "canonical_name": "Fidelity",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage treats fidelity as a quality property of generated outputs, especially images: realism, high quality, clarity, and freedom from artifacts or unintended distortions. Nearby formulations call this image fidelity, visual quality, or image quality, and one paper lists it alongside Overall and Alignment as an evaluation aspect. A smaller line of work uses the same name for different reference standards: in Sparse Autoencoders for Hypothesis Generation, fidelity is how accurately a natural-language concept matches a neuron's firing behavior through precision and recall, while another paper uses fidelity for preserving the semantic information of original watermarked text, described as the similarity between transformed and original text.\n\nSpace of facets. Rather than a single shared taxonomy, papers mostly position fidelity through overlapping quality labels. Visual quality is defined as aesthetic appeal, fidelity, and clarity in one use, and elsewhere as clarity, resolution, brightness, color, and absence of artifacts; in chart generation, visual quality is also tied to readability, layout, scales, ticks, and the clarity of titles and labels. In other settings, fidelity is contrasted with efficacy, where efficacy concerns minimizing watermark patterns and fidelity concerns preserving semantic information, or treated as distinct from Overall and Alignment.\n\nSpace of measurement. Papers link fidelity to 1 measurement instrument and 1 behavioral indicator. The only named instrument is the VisEval benchmark, used with a VLM Score metric to assess the visual quality of generated charts, and the only linked behavioral indicator is citation generation. Other operationalizations follow the local framing: one paper uses preference across Overall, Alignment, and Fidelity, another reports FID and aesthetic scores for image quality, and Sparse Autoencoders for Hypothesis Generation measures interpretation fidelity as 1 minus the minimum of recall and precision against neuron firing behavior.\n\nLinks. Beyond measurement, one paper claims a causal relationship from citation generation to fidelity, reporting that responses with citation can boost both model performance and fidelity; this claim appears in L-CiteEval. No correlations or non-causal related links are reported, and no construct-to-construct links are recorded.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Fidelity",
+    "Image fidelity",
+    "Visual quality",
+    "Image quality"
+  ],
+  "papers": [
+    "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment",
+    "Reliable and Cost-Effective Exploratory Data Analysis via Graph-Guided RAG",
+    "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages",
+    "MetaDesigner: Advancing Artistic Typography through AI-Driven, User-Centric, and Multilingual WordArt Synthesis",
+    "Impossible Videos",
+    "Position: We Need An Algorithmic Understanding of Generative AI",
+    "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+    "Sparse Autoencoders for Hypothesis Generation",
+    "The Emperor\u2019s New Clothes in Benchmarking? A Rigorous Examination of Mitigation Strategies for LLM Benchmark Data Contamination",
+    "B4: A Black-Box Scrubbing Attack on LLM Watermarks",
+    "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation",
+    "GenAI Arena: An Open Evaluation Platform for Generative Models",
+    "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+    "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+    "Neural Residual Diffusion Models for Deep Scalable Vision Generation"
+  ],
+  "paper_count": 15,
+  "definitions": [
+    {
+      "text": "The degree to which generated outputs are realistic, high-quality, and free from artifacts.",
+      "papers": [
+        "Neural Residual Diffusion Models for Deep Scalable Vision Generation",
+        "Sparse Autoencoders for Hypothesis Generation",
+        "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages",
+        "B4: A Black-Box Scrubbing Attack on LLM Watermarks"
+      ],
+      "original_name": "Fidelity"
+    },
+    {
+      "text": "The degree to which a generated image is realistic, high-quality, and free from artifacts or unintended distortions.",
+      "papers": [
+        "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner"
+      ],
+      "original_name": "Image fidelity"
+    },
+    {
+      "text": "The overall aesthetic appeal, fidelity, and clarity of the generated image.",
+      "papers": [
+        "MetaDesigner: Advancing Artistic Typography through AI-Driven, User-Centric, and Multilingual WordArt Synthesis",
+        "Reliable and Cost-Effective Exploratory Data Analysis via Graph-Guided RAG",
+        "GenAI Arena: An Open Evaluation Platform for Generative Models"
+      ],
+      "original_name": "Visual quality"
+    },
+    {
+      "text": "A general assessment of the generated image's technical and visual excellence, including aspects like realism and lack of artifacts.",
+      "papers": [
+        "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment"
+      ],
+      "original_name": "Image quality"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Citation generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "L-CiteEval: A Suite for Evaluating Fidelity of Long-context Models",
+      "evidence": "we can find that model response with citation can boost both the model performance and its fidelity. (Section 5.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "L-CiteEval: A Suite for Evaluating Fidelity of Long-context Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VisEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reliable and Cost-Effective Exploratory Data Analysis via Graph-Guided RAG",
+      "evidence": "To evaluate the visual quality of the generated charts, we conducted an analysis using the VLM Score metric on the VisEval benchmark with k = 15. (Section 4.6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Reliable and Cost-Effective Exploratory Data Analysis via Graph-Guided RAG"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage treats fidelity as a quality property of generated outputs, especially images: realism, high quality, clarity, and freedom from artifacts or unintended distortions. Nearby formulations call this image fidelity, visual quality, or image quality, and one paper lists it alongside Overall and Alignment as an evaluation aspect. A smaller line of work uses the same name for different reference standards: in Sparse Autoencoders for Hypothesis Generation, fidelity is how accurately a natural-language concept matches a neuron's firing behavior through precision and recall, while another paper uses fidelity for preserving the semantic information of original watermarked text, described as the similarity between transformed and original text."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Rather than a single shared taxonomy, papers mostly position fidelity through overlapping quality labels. Visual quality is defined as aesthetic appeal, fidelity, and clarity in one use, and elsewhere as clarity, resolution, brightness, color, and absence of artifacts; in chart generation, visual quality is also tied to readability, layout, scales, ticks, and the clarity of titles and labels. In other settings, fidelity is contrasted with efficacy, where efficacy concerns minimizing watermark patterns and fidelity concerns preserving semantic information, or treated as distinct from Overall and Alignment."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link fidelity to 1 measurement instrument and 1 behavioral indicator. The only named instrument is the VisEval benchmark, used with a VLM Score metric to assess the visual quality of generated charts, and the only linked behavioral indicator is citation generation. Other operationalizations follow the local framing: one paper uses preference across Overall, Alignment, and Fidelity, another reports FID and aesthetic scores for image quality, and Sparse Autoencoders for Hypothesis Generation measures interpretation fidelity as 1 minus the minimum of recall and precision against neuron firing behavior."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper claims a causal relationship from citation generation to fidelity, reporting that responses with citation can boost both model performance and fidelity; this claim appears in L-CiteEval. No correlations or non-causal related links are reported, and no construct-to-construct links are recorded."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage treats fidelity as a quality property of generated outputs, especially images: realism, high quality, clarity, and freedom from artifacts or unintended distortions. Nearby formulations call this image fidelity, visual quality, or image quality, and one paper lists it alongside Overall and Alignment as an evaluation aspect. A smaller line of work uses the same name for different reference standards: in Sparse Autoencoders for Hypothesis Generation, fidelity is how accurately a natural-language concept matches a neuron's firing behavior through precision and recall, while another paper uses fidelity for preserving the semantic information of original watermarked text, described as the similarity between transformed and original text.\n\nSpace of facets. Rather than a single shared taxonomy, papers mostly position fidelity through overlapping quality labels. Visual quality is defined as aesthetic appeal, fidelity, and clarity in one use, and elsewhere as clarity, resolution, brightness, color, and absence of artifacts; in chart generation, visual quality is also tied to readability, layout, scales, ticks, and the clarity of titles and labels. In other settings, fidelity is contrasted with efficacy, where efficacy concerns minimizing watermark patterns and fidelity concerns preserving semantic information, or treated as distinct from Overall and Alignment.\n\nSpace of measurement. Papers link fidelity to 1 measurement instrument and 1 behavioral indicator. The only named instrument is the VisEval benchmark, used with a VLM Score metric to assess the visual quality of generated charts, and the only linked behavioral indicator is citation generation. Other operationalizations follow the local framing: one paper uses preference across Overall, Alignment, and Fidelity, another reports FID and aesthetic scores for image quality, and Sparse Autoencoders for Hypothesis Generation measures interpretation fidelity as 1 minus the minimum of recall and precision against neuron firing behavior.\n\nLinks. Beyond measurement, one paper claims a causal relationship from citation generation to fidelity, reporting that responses with citation can boost both model performance and fidelity; this claim appears in L-CiteEval. No correlations or non-causal related links are reported, and no construct-to-construct links are recorded.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "ICG: Improving Cover Image Generation via MLLM-based Prompting and Personalized Preference Alignment",
+      "Reliable and Cost-Effective Exploratory Data Analysis via Graph-Guided RAG"
+    ],
+    "iclr25": [
+      "MetaDesigner: Advancing Artistic Typography through AI-Driven, User-Centric, and Multilingual WordArt Synthesis"
+    ],
+    "icml25": [
+      "Impossible Videos",
+      "Position: We Need An Algorithmic Understanding of Generative AI",
+      "Robust Multi-bit Text Watermark with LLM-based Paraphrasers",
+      "Sparse Autoencoders for Hypothesis Generation",
+      "The Emperor\u2019s New Clothes in Benchmarking? A Rigorous Examination of Mitigation Strategies for LLM Benchmark Data Contamination"
+    ],
+    "neurips24": [
+      "ChronoMagic-Bench: A Benchmark for Metamorphic Evaluation of Text-to-Time-lapse Video Generation",
+      "GenAI Arena: An Open Evaluation Platform for Generative Models",
+      "Localize, Understand, Collaborate: Semantic-Aware Dragging via Intention Reasoner",
+      "Multimodal Large Language Models Make Text-to-Image Generative Models Align Better",
+      "Neural Residual Diffusion Models for Deep Scalable Vision Generation"
+    ],
+    "iclr24": [
+      "Large Multilingual Models Pivot Zero-Shot Multimodal Learning across Languages"
+    ],
+    "naacl25": [
+      "B4: A Black-Box Scrubbing Attack on LLM Watermarks"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 1,
+    "icml25": 5,
+    "neurips24": 5,
+    "iclr24": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

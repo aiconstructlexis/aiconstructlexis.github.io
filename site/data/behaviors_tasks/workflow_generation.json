@@ -1,0 +1,76 @@
+{
+  "canonical_name": "Workflow generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats workflow generation as producing a structured, executable workflow in response to a user query, often in code form. A smaller framing narrows the behavior to producing an ordered sequence of subtasks that serves as the topological sequence for a workflow. One paper describes WorkflowBench as \"the first dataset explicitly designed for workflow generation\" (WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models).\n\nVariants. Papers mainly use the general label workflow generation, though one paper uses node chain generation for the version centered on an ordered subtask sequence. The main variation is whether the target output is a full structured, executable workflow or the ordered chain of subtasks that organizes that workflow.\n\nSpace of elicitation and scores. Papers do not link workflow generation to any measurement instrument.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Workflow generation",
+    "Node chain generation"
+  ],
+  "papers": [
+    "Benchmarking Agentic Workflow Generation",
+    "WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models",
+    "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "The observable behavior of producing a structured, executable workflow, typically in the form of code, in response to a user query.",
+      "papers": [
+        "WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models",
+        "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+      ],
+      "original_name": "Workflow generation"
+    },
+    {
+      "text": "Producing an ordered sequence of subtasks that serves as a topological sequence for a workflow.",
+      "papers": [
+        "Benchmarking Agentic Workflow Generation"
+      ],
+      "original_name": "Node chain generation"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats workflow generation as producing a structured, executable workflow in response to a user query, often in code form. A smaller framing narrows the behavior to producing an ordered sequence of subtasks that serves as the topological sequence for a workflow. One paper describes WorkflowBench as \"the first dataset explicitly designed for workflow generation\" (WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models)."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers mainly use the general label workflow generation, though one paper uses node chain generation for the version centered on an ordered subtask sequence. The main variation is whether the target output is a full structured, executable workflow or the ordered chain of subtasks that organizes that workflow."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers do not link workflow generation to any measurement instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not link this behavior to any construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats workflow generation as producing a structured, executable workflow in response to a user query, often in code form. A smaller framing narrows the behavior to producing an ordered sequence of subtasks that serves as the topological sequence for a workflow. One paper describes WorkflowBench as \"the first dataset explicitly designed for workflow generation\" (WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models).\n\nVariants. Papers mainly use the general label workflow generation, though one paper uses node chain generation for the version centered on an ordered subtask sequence. The main variation is whether the target output is a full structured, executable workflow or the ordered chain of subtasks that organizes that workflow.\n\nSpace of elicitation and scores. Papers do not link workflow generation to any measurement instrument.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Benchmarking Agentic Workflow Generation",
+      "WorkflowLLM: Enhancing Workflow Orchestration Capability of Large Language Models"
+    ],
+    "icml25": [
+      "Can Compressed LLMs Truly Act? An Empirical Evaluation of Agentic Capabilities in LLM Compression"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 2,
+    "icml25": 1
+  },
+  "conferences": [
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "canonical_name": "Information integration",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats information integration as a latent ability to combine and use evidence from more than one textual unit to make a relevance judgment or prediction. The shared core is integration across distributed information, but the scope varies: some papers place it in multi-hop retrieval as combining evidence across multiple passages to determine relevance, while others frame it more broadly as combining information from different parts of a linguistic context, especially across sentence and clause boundaries.\n\nSpace of facets. Papers systematize the construct mainly by scale and boundary. One line describes information as distributed across words, sentences, and discourse, and studies integration across these time scales through an \"information integration window\" that sentence and clause boundaries can constrain; another presents it in multi-document settings, with phrases such as \"information integration across multiple passages\" and multi-hop integration that involves relationships between documents.\n\nSpace of measurement. No measurement instrument is linked to this construct, and one behavioral indicator is linked: Multi-hop question answering. The recorded link is not measured_by but related, and the surrounding descriptions point to tasks that require integrating information from multiple documents and to a proposed method to quantify an \"information integration window,\" but no instrument is named as linked to the construct.\n\nLinks. Across the papers, the explicit link is a related relationship from Information integration to Multi-hop question answering. The claim is stated in task terms: one paper reports that standard multi-hop question answering \"requires integrating information between passages in a retrieval corpus.\"",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Information integration"
+  ],
+  "papers": [
+    "Information Integration in Large Language Models is Gated by Linguistic Structural Markers",
+    "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+    "KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks",
+    "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher"
+  ],
+  "paper_count": 4,
+  "definitions": [
+    {
+      "text": "The latent ability to combine evidence across multiple passages to determine relevance in multi-hop retrieval settings.",
+      "papers": [
+        "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+        "Information Integration in Large Language Models is Gated by Linguistic Structural Markers"
+      ],
+      "original_name": "Information integration"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-hop question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models",
+      "evidence": "standard multi-hop question answering (QA) also requires integrating information between passages in a retrieval corpus. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats information integration as a latent ability to combine and use evidence from more than one textual unit to make a relevance judgment or prediction. The shared core is integration across distributed information, but the scope varies: some papers place it in multi-hop retrieval as combining evidence across multiple passages to determine relevance, while others frame it more broadly as combining information from different parts of a linguistic context, especially across sentence and clause boundaries."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers systematize the construct mainly by scale and boundary. One line describes information as distributed across words, sentences, and discourse, and studies integration across these time scales through an \"information integration window\" that sentence and clause boundaries can constrain; another presents it in multi-document settings, with phrases such as \"information integration across multiple passages\" and multi-hop integration that involves relationships between documents."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to this construct, and one behavioral indicator is linked: Multi-hop question answering. The recorded link is not measured_by but related, and the surrounding descriptions point to tasks that require integrating information from multiple documents and to a proposed method to quantify an \"information integration window,\" but no instrument is named as linked to the construct."
+    },
+    {
+      "label": "Links.",
+      "text": "Across the papers, the explicit link is a related relationship from Information integration to Multi-hop question answering. The claim is stated in task terms: one paper reports that standard multi-hop question answering \"requires integrating information between passages in a retrieval corpus.\""
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats information integration as a latent ability to combine and use evidence from more than one textual unit to make a relevance judgment or prediction. The shared core is integration across distributed information, but the scope varies: some papers place it in multi-hop retrieval as combining evidence across multiple passages to determine relevance, while others frame it more broadly as combining information from different parts of a linguistic context, especially across sentence and clause boundaries.\n\nSpace of facets. Papers systematize the construct mainly by scale and boundary. One line describes information as distributed across words, sentences, and discourse, and studies integration across these time scales through an \"information integration window\" that sentence and clause boundaries can constrain; another presents it in multi-document settings, with phrases such as \"information integration across multiple passages\" and multi-hop integration that involves relationships between documents.\n\nSpace of measurement. No measurement instrument is linked to this construct, and one behavioral indicator is linked: Multi-hop question answering. The recorded link is not measured_by but related, and the surrounding descriptions point to tasks that require integrating information from multiple documents and to a proposed method to quantify an \"information integration window,\" but no instrument is named as linked to the construct.\n\nLinks. Across the papers, the explicit link is a related relationship from Information integration to Multi-hop question answering. The claim is stated in task terms: one paper reports that standard multi-hop question answering \"requires integrating information between passages in a retrieval corpus.\"",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Information Integration in Large Language Models is Gated by Linguistic Structural Markers"
+    ],
+    "iclr25": [
+      "Attention in Large Language Models Yields Efficient Zero-Shot Re-Rankers",
+      "KOR-Bench: Benchmarking Language Models on Knowledge-Orthogonal Reasoning Tasks",
+      "MindSearch: Mimicking Human Minds Elicits Deep AI Searcher"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr25": 3
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

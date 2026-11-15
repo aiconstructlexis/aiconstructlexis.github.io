@@ -1,0 +1,12 @@
+{
+  "min_papers": {
+    "construct": 2,
+    "measurement": 2,
+    "behavior": 2
+  },
+  "min_papers_floor": {
+    "construct": 2,
+    "measurement": 2,
+    "behavior": 2
+  }
+}

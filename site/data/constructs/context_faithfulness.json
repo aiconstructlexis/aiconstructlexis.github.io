@@ -1,0 +1,312 @@
+{
+  "canonical_name": "Context faithfulness",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats context faithfulness as a model ability or degree of alignment in which outputs remain accurate, consistent, and grounded in provided context, avoiding unsupported, contradictory, irrelevant, or fabricated content. Most definitions also stress reliance on contextual information when it conflicts with internal or parametric knowledge, sometimes phrased as sensitivity to contextual knowledge rather than internal knowledge. Smaller variants narrow the reference point to source documents or long input contexts, or describe the same general idea as context-grounded reasoning.\n\nSpace of facets. Papers use several overlapping names for closely similar formulations, most often contextual faithfulness or context-faithfulness, but also context fidelity, source fidelity, sensitivity to contextual knowledge, and several narrower labels. The main axis of variation is scope: some papers speak broadly about provided context, while others restrict it to source documents, long-context settings, question-answering, or dialogue history. A recurring contrast places external context against internal or parametric knowledge, and one paper marks unfaithfulness at the sentence level, defining a response as unfaithful if any sentence contradicts or cannot be verified from the retrieved document.\n\nSpace of measurement. Papers link context faithfulness to 4 measurement instruments, led by NQ-Swap, CounterFact, and FaithEval, plus one other instrument. These are used as benchmark-style evaluations of whether a model relies on provided evidence or counterfactual context: NQ-Swap is described as testing the ability to identify and rely on the correct evidence, CounterFact as requiring the model to answer using provided counterfactual context, and FaithEval as a benchmark for faithfulness in contextual scenarios. Assessment is also tied to 3 behavioral indicators, most often Knowledge editing and Multi-hop question answering, with one other linked indicator; papers use knowledge-editing success rates and edited multi-hop QA accuracy to assess the construct. Overall, the measurements mostly match the prevailing definition, because they operationalize adherence to provided context, often under knowledge conflict.\n\nLinks. One paper claims a causal relationship from Factuality to context faithfulness, reporting that current factuality enhancement methods can undermine context-faithfulness; the same paper claims a causal relationship from Overconfidence to context faithfulness, describing overconfidence as producing setbacks for it. Papers also relate context faithfulness to Knowledge editing, Multi-hop question answering, and Self-verification: knowledge-editing success rate is used to assess it, a multi-hop editing task measures it through edited QA accuracy, and one dialogue-related or context-grounded reasoning setup discusses it for effective self-verification.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Contextual faithfulness",
+    "Context-faithfulness",
+    "Context faithfulness",
+    "Sensitivity to contextual knowledge",
+    "Knowledge sensitivity",
+    "Context fidelity",
+    "Source fidelity",
+    "Long-context factuality",
+    "Context-grounded reasoning",
+    "Contextual grounding"
+  ],
+  "papers": [
+    "Exploiting Contextual Knowledge in LLMs through V-usable Information based Layer Enhancement",
+    "Improving Contextual Faithfulness of Large Language Models via Retrieval Heads-Induced Optimization",
+    "PIPER: Benchmarking and Prompting Event Reasoning Boundary of LLMs via Debiasing-Distillation Enhanced Tuning",
+    "CoCoA: Confidence- and Context-Aware Adaptive Decoding for Resolving Knowledge Conflicts in Large Language Models",
+    "Continuously Steering LLMs Sensitivity to Contextual Knowledge with Proxy Models",
+    "Improving Context Fidelity via Native Retrieval-Augmented Reasoning",
+    "KG-CQR: Leveraging Structured Relation Representations in Knowledge Graphs for Contextual Query Retrieval",
+    "Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps",
+    "Stronger Baselines for Retrieval-Augmented Generation with Long-Context Language Models",
+    "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs",
+    "Retrieval Head Mechanistically Explains Long-Context Factuality",
+    "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+    "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+    "ACCORD: Closing the Commonsense Measurability Gap",
+    "AutoMix: Automatically Mixing Language Models",
+    "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "The latent ability of a model to generate responses that are fully supported by and consistent with the provided contextual information, avoiding hallucinations or unsupported claims.",
+      "papers": [
+        "Improving Contextual Faithfulness of Large Language Models via Retrieval Heads-Induced Optimization",
+        "Continuously Steering LLMs Sensitivity to Contextual Knowledge with Proxy Models",
+        "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\""
+      ],
+      "original_name": "Contextual faithfulness"
+    },
+    {
+      "text": "The latent ability of a model to generate responses that accurately reflect the provided contextual information, especially when it conflicts with the model's parametric knowledge.",
+      "papers": [
+        "Exploiting Contextual Knowledge in LLMs through V-usable Information based Layer Enhancement",
+        "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+      ],
+      "original_name": "Context-faithfulness"
+    },
+    {
+      "text": "The ability of a model to accurately ground its generated output in the provided contextual information, avoiding irrelevant or unsupported content.",
+      "papers": [
+        "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs"
+      ],
+      "original_name": "Context faithfulness"
+    },
+    {
+      "text": "The degree to which a language model adjusts its output to align with information provided in the context, especially when that information conflicts with its internal knowledge.",
+      "papers": [
+        "Continuously Steering LLMs Sensitivity to Contextual Knowledge with Proxy Models"
+      ],
+      "original_name": "Sensitivity to contextual knowledge"
+    },
+    {
+      "text": "The degree to which a model's answers remain grounded in and consistent with the provided input context rather than contradicting or fabricating information.",
+      "papers": [
+        "Improving Context Fidelity via Native Retrieval-Augmented Reasoning"
+      ],
+      "original_name": "Context fidelity"
+    },
+    {
+      "text": "The degree to which a model's outputs accurately reflect and are grounded in the provided source documents, without introducing unsupported information.",
+      "papers": [
+        "Stronger Baselines for Retrieval-Augmented Generation with Long-Context Language Models"
+      ],
+      "original_name": "Source fidelity"
+    },
+    {
+      "text": "The degree to which a model's outputs are faithful to the information presented in a long input context, as opposed to generating fabricated content.",
+      "papers": [
+        "Retrieval Head Mechanistically Explains Long-Context Factuality"
+      ],
+      "original_name": "Long-context factuality"
+    },
+    {
+      "text": "The ability to generate accurate and coherent answers that are consistent with a provided context, such as a document or dialogue history.",
+      "papers": [
+        "AutoMix: Automatically Mixing Language Models"
+      ],
+      "original_name": "Context-grounded reasoning"
+    },
+    {
+      "text": "The model's capacity to align its output with the evidence present in the external context, particularly when that context contradicts its prior beliefs.",
+      "papers": [
+        "CoCoA: Confidence- and Context-Aware Adaptive Decoding for Resolving Knowledge Conflicts in Large Language Models"
+      ],
+      "original_name": "Contextual grounding"
+    }
+  ],
+  "definition_count": 9,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "NQ-Swap",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs",
+      "evidence": "we also include two counter-factual QA benchmarks: NQ-Swap and ConfiQA, offering a more challenging and complementary evaluation of a model\u2019s ability to identify and rely on the correct evidence. (Section 3.2)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs"
+        ],
+        "iclr24": [
+          "In-Context Pretraining: Language Modeling Beyond Document Boundaries"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-verification",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "AutoMix: Automatically Mixing Language Models",
+      "evidence": "Furthermore, AutoMix is designed with a dialogue-related or context-grounded reasoning setup in mind for effective self-verification, which does not include tasks like factual question-answering and commonsense reasoning. (Section 6)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoMix: Automatically Mixing Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "current factuality enhancement methods can significantly undermine the context-faithfulness of LLMs. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Overconfidence",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "overconfidence, resulting in a substantial setback for the context-faithfulness of LLMs. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FaithEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "evidence": "\u201cwe introduce FaithEval, a novel and comprehensive benchmark tailored to evaluate the faithfulness of LLMs in contextual scenarios\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\""
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MQuAKE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "\"We use LLAMA2-7B-CHAT and LLAMA2-13B-CHAT as baseline models to conduct experiments on MQUAKE ... This verifies whether knowledge has been properly edited and effectively demonstrates LLMs\u2019 context-faithfulness.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "CounterFact",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs",
+      "evidence": "we also conduct experiments on the CounterFact dataset (Meng et al., 2022), where the model must rely on the provided counterfactual context to answer a simple question correctly. The task does not require complex reasoning, making it well-suited for isolating and evaluating the role of context-faithful experts. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge editing",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "this paper uses the success rate of KE to assess the context-faithfulness of LLMs (Section 2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Multi-hop question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness",
+      "evidence": "We adopt a multi-hop editing task to measure context-faithfulness of LLMs in Section 4 by evaluating the accuracy of multi-hop question answering with fact edits. (Section 2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 9,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 7,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats context faithfulness as a model ability or degree of alignment in which outputs remain accurate, consistent, and grounded in provided context, avoiding unsupported, contradictory, irrelevant, or fabricated content. Most definitions also stress reliance on contextual information when it conflicts with internal or parametric knowledge, sometimes phrased as sensitivity to contextual knowledge rather than internal knowledge. Smaller variants narrow the reference point to source documents or long input contexts, or describe the same general idea as context-grounded reasoning."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use several overlapping names for closely similar formulations, most often contextual faithfulness or context-faithfulness, but also context fidelity, source fidelity, sensitivity to contextual knowledge, and several narrower labels. The main axis of variation is scope: some papers speak broadly about provided context, while others restrict it to source documents, long-context settings, question-answering, or dialogue history. A recurring contrast places external context against internal or parametric knowledge, and one paper marks unfaithfulness at the sentence level, defining a response as unfaithful if any sentence contradicts or cannot be verified from the retrieved document."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link context faithfulness to 4 measurement instruments, led by NQ-Swap, CounterFact, and FaithEval, plus one other instrument. These are used as benchmark-style evaluations of whether a model relies on provided evidence or counterfactual context: NQ-Swap is described as testing the ability to identify and rely on the correct evidence, CounterFact as requiring the model to answer using provided counterfactual context, and FaithEval as a benchmark for faithfulness in contextual scenarios. Assessment is also tied to 3 behavioral indicators, most often Knowledge editing and Multi-hop question answering, with one other linked indicator; papers use knowledge-editing success rates and edited multi-hop QA accuracy to assess the construct. Overall, the measurements mostly match the prevailing definition, because they operationalize adherence to provided context, often under knowledge conflict."
+    },
+    {
+      "label": "Links.",
+      "text": "One paper claims a causal relationship from Factuality to context faithfulness, reporting that current factuality enhancement methods can undermine context-faithfulness; the same paper claims a causal relationship from Overconfidence to context faithfulness, describing overconfidence as producing setbacks for it. Papers also relate context faithfulness to Knowledge editing, Multi-hop question answering, and Self-verification: knowledge-editing success rate is used to assess it, a multi-hop editing task measures it through edited QA accuracy, and one dialogue-related or context-grounded reasoning setup discusses it for effective self-verification."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats context faithfulness as a model ability or degree of alignment in which outputs remain accurate, consistent, and grounded in provided context, avoiding unsupported, contradictory, irrelevant, or fabricated content. Most definitions also stress reliance on contextual information when it conflicts with internal or parametric knowledge, sometimes phrased as sensitivity to contextual knowledge rather than internal knowledge. Smaller variants narrow the reference point to source documents or long input contexts, or describe the same general idea as context-grounded reasoning.\n\nSpace of facets. Papers use several overlapping names for closely similar formulations, most often contextual faithfulness or context-faithfulness, but also context fidelity, source fidelity, sensitivity to contextual knowledge, and several narrower labels. The main axis of variation is scope: some papers speak broadly about provided context, while others restrict it to source documents, long-context settings, question-answering, or dialogue history. A recurring contrast places external context against internal or parametric knowledge, and one paper marks unfaithfulness at the sentence level, defining a response as unfaithful if any sentence contradicts or cannot be verified from the retrieved document.\n\nSpace of measurement. Papers link context faithfulness to 4 measurement instruments, led by NQ-Swap, CounterFact, and FaithEval, plus one other instrument. These are used as benchmark-style evaluations of whether a model relies on provided evidence or counterfactual context: NQ-Swap is described as testing the ability to identify and rely on the correct evidence, CounterFact as requiring the model to answer using provided counterfactual context, and FaithEval as a benchmark for faithfulness in contextual scenarios. Assessment is also tied to 3 behavioral indicators, most often Knowledge editing and Multi-hop question answering, with one other linked indicator; papers use knowledge-editing success rates and edited multi-hop QA accuracy to assess the construct. Overall, the measurements mostly match the prevailing definition, because they operationalize adherence to provided context, often under knowledge conflict.\n\nLinks. One paper claims a causal relationship from Factuality to context faithfulness, reporting that current factuality enhancement methods can undermine context-faithfulness; the same paper claims a causal relationship from Overconfidence to context faithfulness, describing overconfidence as producing setbacks for it. Papers also relate context faithfulness to Knowledge editing, Multi-hop question answering, and Self-verification: knowledge-editing success rate is used to assess it, a multi-hop editing task measures it through edited QA accuracy, and one dialogue-related or context-grounded reasoning setup discusses it for effective self-verification.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Exploiting Contextual Knowledge in LLMs through V-usable Information based Layer Enhancement",
+      "Improving Contextual Faithfulness of Large Language Models via Retrieval Heads-Induced Optimization",
+      "PIPER: Benchmarking and Prompting Event Reasoning Boundary of LLMs via Debiasing-Distillation Enhanced Tuning"
+    ],
+    "emnlp25": [
+      "CoCoA: Confidence- and Context-Aware Adaptive Decoding for Resolving Knowledge Conflicts in Large Language Models",
+      "Continuously Steering LLMs Sensitivity to Contextual Knowledge with Proxy Models",
+      "Improving Context Fidelity via Native Retrieval-Augmented Reasoning",
+      "KG-CQR: Leveraging Structured Relation Representations in Knowledge Graphs for Contextual Query Retrieval",
+      "Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps",
+      "Stronger Baselines for Retrieval-Augmented Generation with Long-Context Language Models",
+      "Understanding and Leveraging the Expert Specialization of Context Faithfulness in Mixture-of-Experts LLMs"
+    ],
+    "iclr25": [
+      "Retrieval Head Mechanistically Explains Long-Context Factuality",
+      "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "Is Factuality Enhancement a Free Lunch For LLMs? Better Factuality Can Lead to Worse Context-Faithfulness"
+    ],
+    "naacl25": [
+      "ACCORD: Closing the Commonsense Measurability Gap"
+    ],
+    "neurips24": [
+      "AutoMix: Automatically Mixing Language Models",
+      "IRCAN: Mitigating Knowledge Conflicts in LLM Generation via Identifying and Reweighting Context-Aware Neurons"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 7,
+    "iclr25": 3,
+    "naacl25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

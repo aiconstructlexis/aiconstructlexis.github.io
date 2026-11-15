@@ -1,0 +1,249 @@
+{
+  "canonical_name": "Boolean question answering",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed work, the prevailing usage is a question answering behavior that requires a definitive binary response grounded in some provided context, most often \"Yes/No\" and sometimes \"True/False.\" Definitions largely agree on the response format, whether framed as answering a question, deciding the truth of a declarative statement, or judging whether a statement is correct or wrong; a smaller line of work also uses an equivalent binary choice such as \"A\" or \"B\" in sentence-comprehension prompts.\n\nVariants. Papers refer to this behavior with several names, including binary, boolean, true/false, yes/no, judgment, and polar question answering. The settings vary from reading comprehension and passage-based QA to professional qualification exams across vertical domains, map questions, sentence-meaning probes after garden path disambiguation, profiling prompts about persona dimensions, and multimodal counter-commonsense scenarios that test whether a model follows visual input or parametric knowledge.\n\nSpace of elicitation and scores. Only one measurement instrument is explicitly linked to this behavior: StrategyQA, which papers describe as a yes-no or binary QA dataset where answers are yes or no. In those uses, the behavior is elicited by requiring a direct binary reply to the question.\n\nWhat it is taken as evidence of. Papers link this behavior to three constructs, but not through one shared relationship type. One paper relates it to factual reasoning, another relates it to text-image alignment by converting text into a yes/no question format to assess visual-textual alignment, and one paper claims a causal relationship from positional bias to this behavior, reporting that positional bias can hurt performance even for questions answerable with Yes/No.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Binary question answering",
+    "Boolean question answering",
+    "True/False question answering",
+    "Yes/no question answering",
+    "True/false question answering",
+    "Judgment question answering",
+    "Polar question answering",
+    "Yes-No question answering"
+  ],
+  "papers": [
+    "Insight Over Sight: Exploring the Vision-Knowledge Conflicts in Multimodal LLMs",
+    "AraEval: An Arabic Multi-Task Evaluation Suite for Large Language Models",
+    "DIDS: Domain Impact-aware Data Sampling for Large Language Model Training",
+    "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+    "Large Language Models Badly Generalize across Option Length, Problem Types, and Irrelevant Noun Replacements",
+    "Probing Logical Reasoning of MLLMs in Scientific Diagrams",
+    "QualBench: Benchmarking Chinese LLMs with Localized Professional Qualifications for Vertical Domain Evaluation",
+    "Unveiling the Response of Large Vision-Language Models to Visually Absent Tokens",
+    "AutoCast++: Enhancing World Event Prediction with Zero-shot Ranking-based Context Retrieval",
+    "Logically Consistent Language Models via Neuro-Symbolic Integration",
+    "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning",
+    "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model",
+    "CFinBench: A Comprehensive Chinese Financial Benchmark for Large Language Models",
+    "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+    "Evaluating the Prompt Steerability of Large Language Models",
+    "Incremental Sentence Processing Mechanisms in Autoregressive Transformer Language Models",
+    "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries",
+    "NAT: Enhancing Agent Tuning with Negative Samples",
+    "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model",
+    "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+    "Unveiling the Tapestry of Consistency in Large Vision-Language Models"
+  ],
+  "paper_count": 21,
+  "definitions": [
+    {
+      "text": "The observable task of responding to a question with a definitive 'yes' or 'no' answer based on provided context.",
+      "papers": [
+        "DIDS: Domain Impact-aware Data Sampling for Large Language Model Training",
+        "Logically Consistent Language Models via Neuro-Symbolic Integration",
+        "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries",
+        "Incremental Sentence Processing Mechanisms in Autoregressive Transformer Language Models",
+        "NAT: Enhancing Agent Tuning with Negative Samples"
+      ],
+      "original_name": "Binary question answering"
+    },
+    {
+      "text": "The task of responding to a question with a binary 'True' or 'False' answer based on a provided context.",
+      "papers": [
+        "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+        "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model"
+      ],
+      "original_name": "Boolean question answering"
+    },
+    {
+      "text": "Determining the truth value of declarative statements drawn from professional qualification exams in various vertical domains.",
+      "papers": [
+        "QualBench: Benchmarking Chinese LLMs with Localized Professional Qualifications for Vertical Domain Evaluation",
+        "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+        "AutoCast++: Enhancing World Event Prediction with Zero-shot Ranking-based Context Retrieval"
+      ],
+      "original_name": "True/False question answering"
+    },
+    {
+      "text": "Responding to a question with either 'Yes' or 'No' based on whether a provided statement is correct.",
+      "papers": [
+        "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning",
+        "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment"
+      ],
+      "original_name": "Yes/no question answering"
+    },
+    {
+      "text": "A specific question answering task where the model must respond with 'yes' or 'no' or an equivalent binary choice.",
+      "papers": [
+        "Unveiling the Tapestry of Consistency in Large Vision-Language Models"
+      ],
+      "original_name": "True/false question answering"
+    },
+    {
+      "text": "The observable task of determining whether a given statement is correct or wrong.",
+      "papers": [
+        "CFinBench: A Comprehensive Chinese Financial Benchmark for Large Language Models"
+      ],
+      "original_name": "Judgment question answering"
+    },
+    {
+      "text": "The model's behavior of responding to yes/no questions about whether it would say a given profiling statement, used to assess alignment with a persona dimension.",
+      "papers": [
+        "Evaluating the Prompt Steerability of Large Language Models"
+      ],
+      "original_name": "Polar question answering"
+    },
+    {
+      "text": "Producing binary (Yes/No) responses to questions that directly present counter-commonsense scenarios, testing whether the model adheres to visual input or parametric knowledge.",
+      "papers": [
+        "Insight Over Sight: Exploring the Vision-Knowledge Conflicts in Multimodal LLMs"
+      ],
+      "original_name": "Yes-No question answering"
+    }
+  ],
+  "definition_count": 8,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "StrategyQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+      "evidence": "StrategyQA is a yes-no QA dataset (Section 3.1.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+          "NAT: Enhancing Agent Tuning with Negative Samples"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Positional bias",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model",
+      "evidence": "We further find that the positional bias can hurt models\u2019 performance even for questions answerable with Yes/No. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Factual reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Logically Consistent Language Models via Neuro-Symbolic Integration",
+      "evidence": "This perspective leads to interpreting factual reasoning as a binary question answering (QA) task (Burns et al., 2022; Kassner et al., 2021; Mitchell et al., 2022).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Logically Consistent Language Models via Neuro-Symbolic Integration"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Text-image alignment",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Natural Language Inference Improves Compositionality in Vision-Language Models",
+      "evidence": "\"we use a function q(.) that converts a given text t into a question format, which enables the model to assess the visual-textual alignment in a consistent manner. Specifically, q(.) generates a yes/no question\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Natural Language Inference Improves Compositionality in Vision-Language Models"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 3,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed work, the prevailing usage is a question answering behavior that requires a definitive binary response grounded in some provided context, most often \"Yes/No\" and sometimes \"True/False.\" Definitions largely agree on the response format, whether framed as answering a question, deciding the truth of a declarative statement, or judging whether a statement is correct or wrong; a smaller line of work also uses an equivalent binary choice such as \"A\" or \"B\" in sentence-comprehension prompts."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers refer to this behavior with several names, including binary, boolean, true/false, yes/no, judgment, and polar question answering. The settings vary from reading comprehension and passage-based QA to professional qualification exams across vertical domains, map questions, sentence-meaning probes after garden path disambiguation, profiling prompts about persona dimensions, and multimodal counter-commonsense scenarios that test whether a model follows visual input or parametric knowledge."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one measurement instrument is explicitly linked to this behavior: StrategyQA, which papers describe as a yes-no or binary QA dataset where answers are yes or no. In those uses, the behavior is elicited by requiring a direct binary reply to the question."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers link this behavior to three constructs, but not through one shared relationship type. One paper relates it to factual reasoning, another relates it to text-image alignment by converting text into a yes/no question format to assess visual-textual alignment, and one paper claims a causal relationship from positional bias to this behavior, reporting that positional bias can hurt performance even for questions answerable with Yes/No."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed work, the prevailing usage is a question answering behavior that requires a definitive binary response grounded in some provided context, most often \"Yes/No\" and sometimes \"True/False.\" Definitions largely agree on the response format, whether framed as answering a question, deciding the truth of a declarative statement, or judging whether a statement is correct or wrong; a smaller line of work also uses an equivalent binary choice such as \"A\" or \"B\" in sentence-comprehension prompts.\n\nVariants. Papers refer to this behavior with several names, including binary, boolean, true/false, yes/no, judgment, and polar question answering. The settings vary from reading comprehension and passage-based QA to professional qualification exams across vertical domains, map questions, sentence-meaning probes after garden path disambiguation, profiling prompts about persona dimensions, and multimodal counter-commonsense scenarios that test whether a model follows visual input or parametric knowledge.\n\nSpace of elicitation and scores. Only one measurement instrument is explicitly linked to this behavior: StrategyQA, which papers describe as a yes-no or binary QA dataset where answers are yes or no. In those uses, the behavior is elicited by requiring a direct binary reply to the question.\n\nWhat it is taken as evidence of. Papers link this behavior to three constructs, but not through one shared relationship type. One paper relates it to factual reasoning, another relates it to text-image alignment by converting text into a yes/no question format to assess visual-textual alignment, and one paper claims a causal relationship from positional bias to this behavior, reporting that positional bias can hurt performance even for questions answerable with Yes/No.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "AraEval: An Arabic Multi-Task Evaluation Suite for Large Language Models",
+      "DIDS: Domain Impact-aware Data Sampling for Large Language Model Training",
+      "From General Reward to Targeted Reward: Improving Open-ended Long-context Generation Models",
+      "Large Language Models Badly Generalize across Option Length, Problem Types, and Irrelevant Noun Replacements",
+      "Probing Logical Reasoning of MLLMs in Scientific Diagrams",
+      "QualBench: Benchmarking Chinese LLMs with Localized Professional Qualifications for Vertical Domain Evaluation",
+      "Unveiling the Response of Large Vision-Language Models to Visually Absent Tokens"
+    ],
+    "icml25": [
+      "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning"
+    ],
+    "naacl25": [
+      "Where is the answer? An empirical study of positional bias for parametric knowledge extraction in language model",
+      "CFinBench: A Comprehensive Chinese Financial Benchmark for Large Language Models",
+      "Correcting Negative Bias in Large Language Models through Negative Attention Score Alignment",
+      "Evaluating the Prompt Steerability of Large Language Models",
+      "Incremental Sentence Processing Mechanisms in Autoregressive Transformer Language Models",
+      "MAPWise: Evaluating Vision-Language Models for Advanced Map Queries",
+      "NAT: Enhancing Agent Tuning with Negative Samples",
+      "SSMLoRA: Enhancing Low-Rank Adaptation with State Space Model"
+    ],
+    "acl25": [
+      "Insight Over Sight: Exploring the Vision-Knowledge Conflicts in Multimodal LLMs"
+    ],
+    "iclr24": [
+      "AutoCast++: Enhancing World Event Prediction with Zero-shot Ranking-based Context Retrieval"
+    ],
+    "iclr25": [
+      "Logically Consistent Language Models via Neuro-Symbolic Integration"
+    ],
+    "neurips24": [
+      "Mixture of In-Context Experts Enhance LLMs' Long Context Awareness",
+      "Unveiling the Tapestry of Consistency in Large Vision-Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 7,
+    "icml25": 1,
+    "naacl25": 8,
+    "acl25": 1,
+    "iclr24": 1,
+    "iclr25": 1,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

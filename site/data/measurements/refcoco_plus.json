@@ -1,0 +1,191 @@
+{
+  "canonical_name": "RefCOCO+",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the cited definitions, RefCOCO+ is most commonly described as a benchmark or dataset for referring expression tasks, usually paired with RefCOCO and RefCOCOg. The prevailing description treats it as similar to RefCOCO but with constraints that exclude spatial or location words, shifting descriptions toward appearance-based language; a smaller line of work describes it as an extension used for referring expression segmentation and as featuring more complex language. Papers also variously label it as a referring expression comprehension benchmark, a visual grounding benchmark, or a referring expression segmentation dataset.\n\nWhat it is claimed to measure. Papers use RefCOCO+ to measure two behavioral indicators, Referring expression segmentation and Referring expression understanding, and one construct, Visual grounding. The recurring uses are to assess referring expression understanding or comprehension, referring expression segmentation, and visual grounding, so the measurement claims are spread across these tasks rather than concentrated on only one framing. Relationship evidence describes it as evaluating recognition ability on referring expression comprehension datasets, as assessing referring segmentation with the refCOCO series, and as measuring grounding capability in natural image scenarios.\n\nSpace of uses. The most common usage positions RefCOCO+ as one of a small set of standard or well-established benchmarks used alongside RefCOCO and RefCOCOg. Several papers present evaluation on this trio for visual grounding, referring expression comprehension or understanding, and referring segmentation; one paper also says it combines the train split of refCLEF, refCOCO, refCOCO+, and refCOCOg to construct a referring segmentation dataset. No other measurement instrument is linked to it through the recorded relationships.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "RefCOCO+",
+    "refCOCO+"
+  ],
+  "papers": [
+    "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models",
+    "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+    "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+    "Grounding Multimodal Large Language Models to the World",
+    "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+    "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+    "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+    "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+    "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+    "SegLLM: Multi-round Reasoning Segmentation with Large Language Models",
+    "Text4Seg: Reimagining Image Segmentation as Text Generation",
+    "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+    "Visual Agents as Fast and Slow Thinkers",
+    "Contrastive Localized Language-Image Pre-Training",
+    "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+    "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+    "CogVLM: Visual Expert for Pretrained Language Models",
+    "Instruction-Guided Visual Masking",
+    "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+    "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+    "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+    "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+    "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+    "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+    "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+  ],
+  "paper_count": 25,
+  "definitions": [
+    {
+      "text": "Referring expression comprehension benchmark similar to RefCOCO but excluding spatial relations in annotations, focusing on appearance-based descriptions.",
+      "papers": [
+        "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+        "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning"
+      ],
+      "original_name": "RefCOCO+"
+    },
+    {
+      "text": "An extension of the refCOCO dataset for referring expression segmentation, featuring more complex language.",
+      "papers": [
+        "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+        "Text4Seg: Reimagining Image Segmentation as Text Generation"
+      ],
+      "original_name": "refCOCO+"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression segmentation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing",
+      "evidence": "Table 2 presents the results of referring image segmentation on three datasets: RefCOCO [40], RefCOCO+ [123] and RefCOCOg [68].",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+        ],
+        "iclr25": [
+          "Text4Seg: Reimagining Image Segmentation as Text Generation",
+          "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+          "Visual Agents as Fast and Slow Thinkers"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Referring expression understanding",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+      "evidence": "RefCOCO+ [103] Refer grounding on natural images. (Table A2)",
+      "paper_count": 4,
+      "paper_weight": 4.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+          "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding"
+        ],
+        "iclr25": [
+          "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension"
+        ],
+        "iclr24": [
+          "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Visual grounding",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "evidence": "For visual grounding, we use RefCOCO, RefCCO+ and RefCOCOg [62]. (Section 4.1)",
+      "paper_count": 3,
+      "paper_weight": 3.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models"
+        ],
+        "iclr25": [
+          "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+          "Harnessing Webpage UIs for Text-Rich Visual Understanding"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 3,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the cited definitions, RefCOCO+ is most commonly described as a benchmark or dataset for referring expression tasks, usually paired with RefCOCO and RefCOCOg. The prevailing description treats it as similar to RefCOCO but with constraints that exclude spatial or location words, shifting descriptions toward appearance-based language; a smaller line of work describes it as an extension used for referring expression segmentation and as featuring more complex language. Papers also variously label it as a referring expression comprehension benchmark, a visual grounding benchmark, or a referring expression segmentation dataset."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers use RefCOCO+ to measure two behavioral indicators, Referring expression segmentation and Referring expression understanding, and one construct, Visual grounding. The recurring uses are to assess referring expression understanding or comprehension, referring expression segmentation, and visual grounding, so the measurement claims are spread across these tasks rather than concentrated on only one framing. Relationship evidence describes it as evaluating recognition ability on referring expression comprehension datasets, as assessing referring segmentation with the refCOCO series, and as measuring grounding capability in natural image scenarios."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "The most common usage positions RefCOCO+ as one of a small set of standard or well-established benchmarks used alongside RefCOCO and RefCOCOg. Several papers present evaluation on this trio for visual grounding, referring expression comprehension or understanding, and referring segmentation; one paper also says it combines the train split of refCLEF, refCOCO, refCOCO+, and refCOCOg to construct a referring segmentation dataset. No other measurement instrument is linked to it through the recorded relationships."
+    }
+  ],
+  "characterization": "What it is. Across the cited definitions, RefCOCO+ is most commonly described as a benchmark or dataset for referring expression tasks, usually paired with RefCOCO and RefCOCOg. The prevailing description treats it as similar to RefCOCO but with constraints that exclude spatial or location words, shifting descriptions toward appearance-based language; a smaller line of work describes it as an extension used for referring expression segmentation and as featuring more complex language. Papers also variously label it as a referring expression comprehension benchmark, a visual grounding benchmark, or a referring expression segmentation dataset.\n\nWhat it is claimed to measure. Papers use RefCOCO+ to measure two behavioral indicators, Referring expression segmentation and Referring expression understanding, and one construct, Visual grounding. The recurring uses are to assess referring expression understanding or comprehension, referring expression segmentation, and visual grounding, so the measurement claims are spread across these tasks rather than concentrated on only one framing. Relationship evidence describes it as evaluating recognition ability on referring expression comprehension datasets, as assessing referring segmentation with the refCOCO series, and as measuring grounding capability in natural image scenarios.\n\nSpace of uses. The most common usage positions RefCOCO+ as one of a small set of standard or well-established benchmarks used alongside RefCOCO and RefCOCOg. Several papers present evaluation on this trio for visual grounding, referring expression comprehension or understanding, and referring segmentation; one paper also says it combines the train split of refCLEF, refCOCO, refCOCO+, and refCOCOg to construct a referring segmentation dataset. No other measurement instrument is linked to it through the recorded relationships.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Advancing Fine-Grained Visual Understanding with Multi-Scale Alignment in Multi-Modal Models"
+    ],
+    "iclr24": [
+      "CoVLM: Composing Visual Entities and Relationships in Large Language Models Via Communicative Decoding",
+      "Ferret: Refer and Ground Anything Anywhere at Any Granularity",
+      "Grounding Multimodal Large Language Models to the World"
+    ],
+    "iclr25": [
+      "ClawMachine: Learning to Fetch Visual Tokens for Referential Comprehension",
+      "CogCoM: A Visual Language Model with Chain-of-Manipulations Reasoning",
+      "Harnessing Webpage UIs for Text-Rich Visual Understanding",
+      "LLM-wrapper: Black-Box Semantic-Aware Adaptation of Vision-Language Models for Referring Expression Comprehension",
+      "MMR: A Large-scale Benchmark Dataset for Multi-target and Multi-granularity Reasoning Segmentation",
+      "SegLLM: Multi-round Reasoning Segmentation with Large Language Models",
+      "Text4Seg: Reimagining Image Segmentation as Text Generation",
+      "Towards Semantic Equivalence of Tokenization in Multimodal LLM",
+      "Visual Agents as Fast and Slow Thinkers"
+    ],
+    "icml25": [
+      "Contrastive Localized Language-Image Pre-Training"
+    ],
+    "neurips24": [
+      "Accelerating Pre-training of Multimodal LLMs via Chain-of-Sight",
+      "Boosting Weakly Supervised Referring Image Segmentation via Progressive Comprehension",
+      "CogVLM: Visual Expert for Pretrained Language Models",
+      "Instruction-Guided Visual Masking",
+      "Lumen: Unleashing Versatile Vision-Centric Capabilities of Large Multimodal Models",
+      "MoME: Mixture of Multimodal Experts for Generalist Multimodal Large Language Models",
+      "OMG-LLaVA: Bridging Image-level, Object-level, Pixel-level Reasoning and Understanding",
+      "Octopus: A Multi-modal LLM with Parallel Recognition and Sequential Understanding",
+      "One Token to Seg Them All: Language Instructed Reasoning Segmentation in Videos",
+      "Visual CoT: Advancing Multi-Modal Language Models with a Comprehensive Dataset and Benchmark for Chain-of-Thought Reasoning",
+      "Vitron: A Unified Pixel-level Vision LLM for Understanding, Generating, Segmenting, Editing"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "iclr24": 3,
+    "iclr25": 9,
+    "icml25": 1,
+    "neurips24": 11
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

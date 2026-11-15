@@ -1,0 +1,48 @@
+{
+  "canonical_name": "Formal language recognition",
+  "type": "behavior",
+  "canonical_definition": "The observable action of receiving a string as input and producing a decision to accept or reject it as a member of a language.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Language recognition"
+  ],
+  "papers": [
+    "Training Neural Networks as Recognizers of Formal Languages",
+    "The Expressive Capacity of State Space Models: A Formal Language Perspective"
+  ],
+  "paper_count": 2,
+  "definitions": [
+    {
+      "text": "The observable action of receiving a string as input and producing a decision to accept or reject it as a member of a language.",
+      "papers": [
+        "Training Neural Networks as Recognizers of Formal Languages"
+      ],
+      "original_name": "Language recognition"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [],
+  "characterization": "The observable action of receiving a string as input and producing a decision to accept or reject it as a member of a language.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr25": [
+      "Training Neural Networks as Recognizers of Formal Languages"
+    ],
+    "neurips24": [
+      "The Expressive Capacity of State Space Models: A Formal Language Perspective"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr25": 1,
+    "neurips24": 1
+  },
+  "conferences": [
+    "iclr25",
+    "neurips24"
+  ]
+}

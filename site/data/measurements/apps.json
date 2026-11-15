@@ -1,0 +1,244 @@
+{
+  "canonical_name": "APPS",
+  "type": "measurement",
+  "canonical_definition": "What it is. Across the papers, the prevailing usage treats APPS as an algorithmic programming or code generation benchmark or dataset. Definitions usually describe natural language programming problems paired with test cases and solutions, often Python solutions, and several papers specify 10,000 problems split evenly between training and test sets across introductory, interview, and competition levels. Some authors instead foreground competitive programming, program synthesis, or code synthesis with public or hidden unit tests, and several evaluations use subsets such as 500 interview-level problems, 500 sampled test questions, or the competition split of 1,000 problems.\n\nWhat it is claimed to measure. Papers most commonly use APPS to measure code generation, with smaller lines of work using it to measure code debugging and clarifying question generation. Papers link it to 3 behavioral indicators and 1 construct: code generation, code debugging, clarifying question generation, and functional correctness. The claims mostly converge on code generation, while the construct-level use is concentrated on functional correctness through execution against test cases.\n\nSpace of uses. No measurement instrument is linked to APPS. In practice, papers usually benchmark it alongside other code datasets, most often HumanEval, MBPP, CodeContests, Codeforces, and LiveCodeBench, and they position it as a main code evaluation benchmark or as an additional coding-domain check; some papers also report results with pass@k or pass@1. Several papers narrow it to specific settings, such as interview-level samples or competition-level challenges, when focusing evaluation on harder problems or limiting evaluation size.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "APPS",
+    "APPs"
+  ],
+  "papers": [
+    "CoIR: A Comprehensive Benchmark for Code Information Retrieval Models",
+    "DebateCoder: Towards Collective Intelligence of LLMs via Test Case Driven LLM Debate for Code Generation",
+    "Personality-Guided Code Generation Using Large Language Models",
+    "Planning-Driven Programming: A Large Language Model Programming Workflow",
+    "ReflectionCoder: Learning from Reflection Sequence for Enhanced One-off Code Generation",
+    "Alignment with Fill-In-the-Middle for Enhancing Code Generation",
+    "NL-Debugging: Exploiting Natural Language as an Intermediate Representation for Code Debugging",
+    "RethinkMCTS: Refining Erroneous Thoughts in Monte Carlo Tree Search for Code Generation",
+    "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+    "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+    "Is Self-Repair a Silver Bullet for Code Generation?",
+    "LLM-Assisted Code Cleaning For Training Accurate Code Generators",
+    "Active Task Disambiguation with LLMs",
+    "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
+    "B-STaR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners",
+    "Copyright-Protected Language Generation via Adaptive Model Fusion",
+    "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+    "Language Models Learn to Mislead Humans via RLHF",
+    "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+    "Neural Interactive Proofs",
+    "On Speeding Up Language Model Evaluation",
+    "Preference Optimization for Reasoning with Pseudo Feedback",
+    "SFS: Smarter Code Space Search improves LLM Inference Scaling",
+    "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+    "The Elicitation Game: Evaluating Capability Elicitation Techniques",
+    "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+    "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+    "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+    "Stress-Testing Capability Elicitation With Password-Locked Models",
+    "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution"
+  ],
+  "paper_count": 31,
+  "definitions": [
+    {
+      "text": "Algorithmic Programming Problems benchmark containing natural language problem descriptions and test cases for evaluating code generation systems.",
+      "papers": [
+        "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+        "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+        "Is Self-Repair a Silver Bullet for Code Generation?",
+        "LLM-Assisted Code Cleaning For Training Accurate Code Generators",
+        "Copyright-Protected Language Generation via Adaptive Model Fusion",
+        "Personality-Guided Code Generation Using Large Language Models",
+        "The Elicitation Game: Evaluating Capability Elicitation Techniques",
+        "NL-Debugging: Exploiting Natural Language as an Intermediate Representation for Code Debugging",
+        "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+        "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+        "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+        "Stress-Testing Capability Elicitation With Password-Locked Models",
+        "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution"
+      ],
+      "original_name": "APPS"
+    },
+    {
+      "text": "A programming benchmark used to evaluate code generation across problems of varying difficulty.",
+      "papers": [
+        "Preference Optimization for Reasoning with Pseudo Feedback"
+      ],
+      "original_name": "APPs"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+      "evidence": "In line with prior RL-based works (Le et al., 2022; Shojaee et al., 2023; Liu et al., 2023), we evaluate B-Coder on the challenging code contests benchmark APPS (Hendrycks et al., 2021). (Section 5)",
+      "paper_count": 14,
+      "paper_weight": 14.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis"
+        ],
+        "neurips24": [
+          "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+          "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+          "Stress-Testing Capability Elicitation With Password-Locked Models"
+        ],
+        "iclr25": [
+          "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+          "Preference Optimization for Reasoning with Pseudo Feedback",
+          "Copyright-Protected Language Generation via Adaptive Model Fusion",
+          "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions"
+        ],
+        "naacl25": [
+          "CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models"
+        ],
+        "acl25": [
+          "Personality-Guided Code Generation Using Large Language Models",
+          "Planning-Driven Programming: A Large Language Model Programming Workflow"
+        ],
+        "icml25": [
+          "The Elicitation Game: Evaluating Capability Elicitation Techniques"
+        ],
+        "emnlp25": [
+          "RethinkMCTS: Refining Erroneous Thoughts in Monte Carlo Tree Search for Code Generation",
+          "Alignment with Fill-In-the-Middle for Enhancing Code Generation"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Code debugging",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "NL-Debugging: Exploiting Natural Language as an Intermediate Representation for Code Debugging",
+      "evidence": "We evaluate our NL-DEBUGGING framework on two widely used code datasets: APPS (Hendrycks et al., 2021) and Codeforces (Team, 2024). (Section 4.1.1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NL-Debugging: Exploiting Natural Language as an Intermediate Representation for Code Debugging"
+        ],
+        "iclr24": [
+          "Is Self-Repair a Silver Bullet for Code Generation?"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Clarifying question generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "measured_by",
+      "paper": "Active Task Disambiguation with LLMs",
+      "evidence": "We evaluate all question-generating strategies on... the more challenging APPS (Hendrycks et al., 2021) benchmark with competition-level coding challenges",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Active Task Disambiguation with LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Functional correctness",
+      "other_type": "constructs",
+      "relationship_type": "measured_by",
+      "paper": "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+      "evidence": "Generated codes are evaluated against (private) test cases to check the execution correctness (Hendrycks et al., 2021; Chen et al., 2021; Li et al., 2022) (Section 3.1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "What it is.",
+      "text": "Across the papers, the prevailing usage treats APPS as an algorithmic programming or code generation benchmark or dataset. Definitions usually describe natural language programming problems paired with test cases and solutions, often Python solutions, and several papers specify 10,000 problems split evenly between training and test sets across introductory, interview, and competition levels. Some authors instead foreground competitive programming, program synthesis, or code synthesis with public or hidden unit tests, and several evaluations use subsets such as 500 interview-level problems, 500 sampled test questions, or the competition split of 1,000 problems."
+    },
+    {
+      "label": "What it is claimed to measure.",
+      "text": "Papers most commonly use APPS to measure code generation, with smaller lines of work using it to measure code debugging and clarifying question generation. Papers link it to 3 behavioral indicators and 1 construct: code generation, code debugging, clarifying question generation, and functional correctness. The claims mostly converge on code generation, while the construct-level use is concentrated on functional correctness through execution against test cases."
+    },
+    {
+      "label": "Space of uses.",
+      "text": "No measurement instrument is linked to APPS. In practice, papers usually benchmark it alongside other code datasets, most often HumanEval, MBPP, CodeContests, Codeforces, and LiveCodeBench, and they position it as a main code evaluation benchmark or as an additional coding-domain check; some papers also report results with pass@k or pass@1. Several papers narrow it to specific settings, such as interview-level samples or competition-level challenges, when focusing evaluation on harder problems or limiting evaluation size."
+    }
+  ],
+  "characterization": "What it is. Across the papers, the prevailing usage treats APPS as an algorithmic programming or code generation benchmark or dataset. Definitions usually describe natural language programming problems paired with test cases and solutions, often Python solutions, and several papers specify 10,000 problems split evenly between training and test sets across introductory, interview, and competition levels. Some authors instead foreground competitive programming, program synthesis, or code synthesis with public or hidden unit tests, and several evaluations use subsets such as 500 interview-level problems, 500 sampled test questions, or the competition split of 1,000 problems.\n\nWhat it is claimed to measure. Papers most commonly use APPS to measure code generation, with smaller lines of work using it to measure code debugging and clarifying question generation. Papers link it to 3 behavioral indicators and 1 construct: code generation, code debugging, clarifying question generation, and functional correctness. The claims mostly converge on code generation, while the construct-level use is concentrated on functional correctness through execution against test cases.\n\nSpace of uses. No measurement instrument is linked to APPS. In practice, papers usually benchmark it alongside other code datasets, most often HumanEval, MBPP, CodeContests, Codeforces, and LiveCodeBench, and they position it as a main code evaluation benchmark or as an additional coding-domain check; some papers also report results with pass@k or pass@1. Several papers narrow it to specific settings, such as interview-level samples or competition-level challenges, when focusing evaluation on harder problems or limiting evaluation size.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CoIR: A Comprehensive Benchmark for Code Information Retrieval Models",
+      "DebateCoder: Towards Collective Intelligence of LLMs via Test Case Driven LLM Debate for Code Generation",
+      "Personality-Guided Code Generation Using Large Language Models",
+      "Planning-Driven Programming: A Large Language Model Programming Workflow",
+      "ReflectionCoder: Learning from Reflection Sequence for Enhanced One-off Code Generation"
+    ],
+    "emnlp25": [
+      "Alignment with Fill-In-the-Middle for Enhancing Code Generation",
+      "NL-Debugging: Exploiting Natural Language as an Intermediate Representation for Code Debugging",
+      "RethinkMCTS: Refining Erroneous Thoughts in Monte Carlo Tree Search for Code Generation"
+    ],
+    "iclr24": [
+      "$\\mathcal{B}$-Coder: Value-Based Deep Reinforcement Learning for Program Synthesis",
+      "CodeChain: Towards Modular Code Generation Through Chain of Self-revisions with Representative Sub-modules",
+      "Is Self-Repair a Silver Bullet for Code Generation?",
+      "LLM-Assisted Code Cleaning For Training Accurate Code Generators"
+    ],
+    "iclr25": [
+      "Active Task Disambiguation with LLMs",
+      "Adaptive Deployment of Untrusted LLMs Reduces Distributed Threats",
+      "B-STaR: Monitoring and Balancing Exploration and Exploitation in Self-Taught Reasoners",
+      "Copyright-Protected Language Generation via Adaptive Model Fusion",
+      "DeFT: Decoding with Flash Tree-attention for Efficient Tree-structured LLM Inference",
+      "Language Models Learn to Mislead Humans via RLHF",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+      "MA-RLHF: Reinforcement Learning from Human Feedback with Macro Actions",
+      "Neural Interactive Proofs",
+      "On Speeding Up Language Model Evaluation",
+      "Preference Optimization for Reasoning with Pseudo Feedback",
+      "SFS: Smarter Code Space Search improves LLM Inference Scaling"
+    ],
+    "icml25": [
+      "Position: Future Research and Challenges Remain Towards AI for Software Engineering",
+      "The Elicitation Game: Evaluating Capability Elicitation Techniques"
+    ],
+    "neurips24": [
+      "Easy-to-Hard Generalization: Scalable Alignment Beyond Human Supervision",
+      "GameTraversalBenchmark: Evaluating Planning Abilities Of Large Language Models Through Traversing 2D Game Maps",
+      "Generating Code World Models with Large Language Models Guided by Monte Carlo Tree Search",
+      "Stress-Testing Capability Elicitation With Password-Locked Models",
+      "kGym: A Platform and Dataset to Benchmark Large Language Models on Linux Kernel Crash Resolution"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 5,
+    "emnlp25": 3,
+    "iclr24": 4,
+    "iclr25": 12,
+    "icml25": 2,
+    "neurips24": 5
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

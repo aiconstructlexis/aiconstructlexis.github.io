@@ -1,0 +1,117 @@
+{
+  "canonical_name": "Perspective taking",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats perspective taking as an ability to adopt a viewpoint other than one's own. Most commonly it is framed in spatial terms: mentally simulating a scene from a different viewpoint, or imagining a new position in space and determining relative directions or orientations from that perspective, summarized in one paper as the ability \"to see what others see.\" A smaller line of work uses the same label more broadly for understanding a situation from an alternative point of view in language, especially for interpreting sarcasm or adopted personas in implicit toxic language.\n\nSpace of facets. Papers organize the construct mainly through adjacent labels and domains rather than a shared subtype taxonomy. One usage treats \"spatial orientation\" as essentially the same ability, with emphasis on building spatial representations of surroundings from a new perspective, while another uses \"perspective-taking\" for pragmatic reasoning about viewpoints in toxic discourse. The clearest nesting relation appears in one paper that treats perspective taking as related to Theory of mind and describes it as a foundational ability within ToM.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. The papers nevertheless operationalize it through task demands: describing what is visible or knowable from a specified viewpoint in an image, for example \"imagine you are the lady in the image, describe what you can see without turning your head around\"; evaluating whether models can imagine a different position in space and determine directions or orientations; and discussing toxic-language cases where a speaker adopts another group's viewpoint. These task formulations align with the definitions' emphasis on alternative viewpoints, while spanning both physical-scene reasoning and social-pragmatic interpretation.\n\nLinks. The only reported relational claim is that perspective taking is related to Theory of mind, with one paper calling it \"a foundational ability in ToM.\" No papers in the recorded relationships claim a causal or correlational link for this construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Perspective taking",
+    "Spatial orientation",
+    "Perspective-taking"
+  ],
+  "papers": [
+    "Defining and Evaluating Visual Language Models' Basic Spatial Abilities: A Perspective from Psychometrics",
+    "Pragmatic Inference Chain (PIC) Improving LLMs' Reasoning of Authentic Implicit Toxic Language",
+    "Does Spatial Cognition Emerge in Frontier Models?",
+    "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs",
+    "Core Knowledge Deficits in Multi-Modal Language Models",
+    "KODIS: A Multicultural Dispute Resolution Dialogue Corpus"
+  ],
+  "paper_count": 6,
+  "definitions": [
+    {
+      "text": "The ability to mentally simulate and understand a scene from a different viewpoint than one's own.",
+      "papers": [
+        "Core Knowledge Deficits in Multi-Modal Language Models"
+      ],
+      "original_name": "Perspective taking"
+    },
+    {
+      "text": "The ability to imagine a different viewpoint in space and determine relative directions or orientations from that perspective.",
+      "papers": [
+        "Does Spatial Cognition Emerge in Frontier Models?"
+      ],
+      "original_name": "Spatial orientation"
+    },
+    {
+      "text": "The cognitive ability to understand a situation from an alternative point of view, which is critical for interpreting complex toxic language involving sarcasm or adopted personas.",
+      "papers": [
+        "Pragmatic Inference Chain (PIC) Improving LLMs' Reasoning of Authentic Implicit Toxic Language"
+      ],
+      "original_name": "Perspective-taking"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theory of mind",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "ToM-SSI: Evaluating Theory of Mind in Situated Social Interactions",
+      "evidence": "This ability is called perspective taking \u2013 a foundational ability in ToM (Masangkay et al., 1974) (Section 2.2).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "ToM-SSI: Evaluating Theory of Mind in Situated Social Interactions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats perspective taking as an ability to adopt a viewpoint other than one's own. Most commonly it is framed in spatial terms: mentally simulating a scene from a different viewpoint, or imagining a new position in space and determining relative directions or orientations from that perspective, summarized in one paper as the ability \"to see what others see.\" A smaller line of work uses the same label more broadly for understanding a situation from an alternative point of view in language, especially for interpreting sarcasm or adopted personas in implicit toxic language."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers organize the construct mainly through adjacent labels and domains rather than a shared subtype taxonomy. One usage treats \"spatial orientation\" as essentially the same ability, with emphasis on building spatial representations of surroundings from a new perspective, while another uses \"perspective-taking\" for pragmatic reasoning about viewpoints in toxic discourse. The clearest nesting relation appears in one paper that treats perspective taking as related to Theory of mind and describes it as a foundational ability within ToM."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it, and no behavioral indicator is linked to it. The papers nevertheless operationalize it through task demands: describing what is visible or knowable from a specified viewpoint in an image, for example \"imagine you are the lady in the image, describe what you can see without turning your head around\"; evaluating whether models can imagine a different position in space and determine directions or orientations; and discussing toxic-language cases where a speaker adopts another group's viewpoint. These task formulations align with the definitions' emphasis on alternative viewpoints, while spanning both physical-scene reasoning and social-pragmatic interpretation."
+    },
+    {
+      "label": "Links.",
+      "text": "The only reported relational claim is that perspective taking is related to Theory of mind, with one paper calling it \"a foundational ability in ToM.\" No papers in the recorded relationships claim a causal or correlational link for this construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats perspective taking as an ability to adopt a viewpoint other than one's own. Most commonly it is framed in spatial terms: mentally simulating a scene from a different viewpoint, or imagining a new position in space and determining relative directions or orientations from that perspective, summarized in one paper as the ability \"to see what others see.\" A smaller line of work uses the same label more broadly for understanding a situation from an alternative point of view in language, especially for interpreting sarcasm or adopted personas in implicit toxic language.\n\nSpace of facets. Papers organize the construct mainly through adjacent labels and domains rather than a shared subtype taxonomy. One usage treats \"spatial orientation\" as essentially the same ability, with emphasis on building spatial representations of surroundings from a new perspective, while another uses \"perspective-taking\" for pragmatic reasoning about viewpoints in toxic discourse. The clearest nesting relation appears in one paper that treats perspective taking as related to Theory of mind and describes it as a foundational ability within ToM.\n\nSpace of measurement. No measurement instrument is linked to it, and no behavioral indicator is linked to it. The papers nevertheless operationalize it through task demands: describing what is visible or knowable from a specified viewpoint in an image, for example \"imagine you are the lady in the image, describe what you can see without turning your head around\"; evaluating whether models can imagine a different position in space and determine directions or orientations; and discussing toxic-language cases where a speaker adopts another group's viewpoint. These task formulations align with the definitions' emphasis on alternative viewpoints, while spanning both physical-scene reasoning and social-pragmatic interpretation.\n\nLinks. The only reported relational claim is that perspective taking is related to Theory of mind, with one paper calling it \"a foundational ability in ToM.\" No papers in the recorded relationships claim a causal or correlational link for this construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Defining and Evaluating Visual Language Models' Basic Spatial Abilities: A Perspective from Psychometrics"
+    ],
+    "emnlp25": [
+      "Pragmatic Inference Chain (PIC) Improving LLMs' Reasoning of Authentic Implicit Toxic Language"
+    ],
+    "iclr25": [
+      "Does Spatial Cognition Emerge in Frontier Models?",
+      "MIA-Bench: Towards Better Instruction Following Evaluation of Multimodal LLMs"
+    ],
+    "icml25": [
+      "Core Knowledge Deficits in Multi-Modal Language Models"
+    ],
+    "naacl25": [
+      "KODIS: A Multicultural Dispute Resolution Dialogue Corpus"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "emnlp25": 1,
+    "iclr25": 2,
+    "icml25": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "naacl25"
+  ]
+}

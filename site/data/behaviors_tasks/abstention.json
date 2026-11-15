@@ -1,0 +1,393 @@
+{
+  "canonical_name": "Abstention",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats abstention as withholding a substantive or final answer when the model is uncertain, not confident, lacks necessary knowledge, or cannot answer from the provided information. Common realizations are explicit non-answer outputs such as I don't know, Unknown, NO-RESPONSE, or other refusal-like signals, and several papers also treat asking for more information or a clarification question as abstention. A smaller line of work narrows it to selective answering above a confidence threshold, or to not giving a definitive answer as instructed, including rejecting ill-defined problems or skipping tasks when tools or information are missing. One paper also claims a causal relationship from Abstention to Hallucination, stating that shifting toward abstention prevents hallucinations.\n\nVariants. Most variants stay within question answering, but papers study it under several nearby names: answer abstention, selective answering, task avoidance, ill-defined problem rejection, and task skipping. In clinical reasoning, abstention can mean not answering and instead asking an information-seeking question; in retrieval settings it can mean abstaining when the passage lacks the answer; in multimodal question answering it can mean outputting a reserved keyword when the image lacks the needed information. Other variants treat it as refusing unsolvable math problems, skipping tool-augmented queries after an awareness check, or as an allowed option in multiple-choice scoring with negative marking.\n\nSpace of elicitation and scores. Papers link abstention to 4 measurement instruments: LLM-as-a-judge, LLMEval, LongMemEval, and TDIUC. These instruments score or elicit the behavior in different ways, including judge labels such as abstention versus direct answer, benchmark ratings of correct, abstain, or hallucinate, a benchmark that lists abstention as one core ability, and absurd visual questions that should not be answered. Outside named instruments, papers often operationalize abstention with explicit abstain instructions, confidence thresholds for returning no answer, reserved outputs such as I don't know, NO-RESPONSE, doesnotapply, [IDK], or no, and in one case a distinction between consistent refusal and partly abstained outputs across multiple samples.\n\nWhat it is taken as evidence of. Papers link abstention to 9 constructs. One paper claims a causal relationship from Calibration to Abstention, while others report Abstention is related to Confidence, Factuality, Generalization, and Honesty; 4 other construct links are also recorded with a mix of related and causal directions. The linked constructs therefore span several framings rather than one common target construct.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Abstention",
+    "Abstaining from answering",
+    "Answer abstention",
+    "Selective answering",
+    "Task avoidance",
+    "Ill-defined problem rejection",
+    "Task skipping"
+  ],
+  "papers": [
+    "Divide-Then-Align: Honest Alignment based on the Knowledge Boundary of RAG",
+    "When to Speak, When to Abstain: Contrastive Decoding with Abstention",
+    "Which of These Best Describes Multiple Choice Evaluation with LLMs? A) Forced B) Flawed C) Fixable D) All of the Above",
+    "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations",
+    "Do RAG Systems Really Suffer From Positional Bias?",
+    "FinTrust: A Comprehensive Benchmark of Trustworthiness Evaluation in Finance Domain",
+    "Sparse Neurons Carry Strong Signals of Question Ambiguity in LLMs",
+    "Towards Statistical Factuality Guarantee for Large Vision-Language Models",
+    "VCSearch: Bridging the Gap Between Well-Defined and Ill-Defined Problems in Mathematical Reasoning",
+    "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+    "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+    "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+    "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+    "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+    "QA-Calibration of Language Model Confidence Scores",
+    "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+    "Learning to Route LLMs with Confidence Tokens",
+    "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models",
+    "Unfamiliar Finetuning Examples Control How Language Models Hallucinate",
+    "Benchmarking Failures in Tool-Augmented Language Models",
+    "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+    "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+    "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+    "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning"
+  ],
+  "paper_count": 24,
+  "definitions": [
+    {
+      "text": "The observable behavior of refraining from providing a final answer when confidence is low, opting instead to ask a question.",
+      "papers": [
+        "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+        "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+        "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations",
+        "Which of These Best Describes Multiple Choice Evaluation with LLMs? A) Forced B) Flawed C) Fixable D) All of the Above"
+      ],
+      "original_name": "Abstention"
+    },
+    {
+      "text": "Withholding an answer by emitting an uncertainty signal or equivalent refusal-like output instead of a substantive response.",
+      "papers": [
+        "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+        "Learning to Route LLMs with Confidence Tokens",
+        "Do RAG Systems Really Suffer From Positional Bias?"
+      ],
+      "original_name": "Abstaining from answering"
+    },
+    {
+      "text": "The model's action of declining to answer a question, often by stating \"I don't know\", when it lacks the necessary knowledge.",
+      "papers": [
+        "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning"
+      ],
+      "original_name": "Answer abstention"
+    },
+    {
+      "text": "The observable behavior of returning an answer only when confidence exceeds a threshold, otherwise abstaining from responding.",
+      "papers": [
+        "QA-Calibration of Language Model Confidence Scores"
+      ],
+      "original_name": "Selective answering"
+    },
+    {
+      "text": "The behavior of a model failing to provide a definitive answer to a task as instructed in the prompt.",
+      "papers": [
+        "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study"
+      ],
+      "original_name": "Task avoidance"
+    },
+    {
+      "text": "The observable behavior of a model refusing to generate a solution when presented with a mathematical problem that has missing or contradictory conditions.",
+      "papers": [
+        "VCSearch: Bridging the Gap Between Well-Defined and Ill-Defined Problems in Mathematical Reasoning"
+      ],
+      "original_name": "Ill-defined problem rejection"
+    },
+    {
+      "text": "Choosing not to attempt a task when the model determines it lacks necessary information or tools to solve it.",
+      "papers": [
+        "Benchmarking Failures in Tool-Augmented Language Models"
+      ],
+      "original_name": "Task skipping"
+    }
+  ],
+  "definition_count": 7,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Honesty",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "LMMs must be ... honest (e.g., abstention or the ability to say I don\u2019t know...)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "TDIUC",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "We evaluate on TDIUC (Kafle & Kanan, 2017), a VQA dataset containing absurd questions (\u223c22% of a total number of questions), that are not related to the image and thus should not be answered.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "In-context learning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning",
+      "evidence": "\u201cICL significantly improves abstention.\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Calibration",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "evidence": "Finally, finetuning with our listener-aware method leads to an emergent increase in model abstention (e.g. saying \u201cI don\u2019t know\u201d) for answers that are likely to be wrong, trading recall for precision. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLMEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+      "evidence": "Then, for each example, we can rate it as \u201ccorrect\u201d or \u201cabstain\u201d or \u201challucinate\u201d depending on the LLMEval output. (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LongMemEval",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+      "evidence": "We introduce LONGMEMEVAL, a comprehensive benchmark designed to evaluate five core long-term memory abilities of chat assistants: information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Generalization",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Knowledge Graph Guided Evaluation of Abstention Techniques",
+      "evidence": "generalizability: whether abstention extends to concept\u2019s descendants (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Knowledge Graph Guided Evaluation of Abstention Techniques"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Specificity",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Knowledge Graph Guided Evaluation of Abstention Techniques",
+      "evidence": "specificity: whether questions about ancestor and sibling concepts are not refused, where abstention is undesirable. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Knowledge Graph Guided Evaluation of Abstention Techniques"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Hallucination",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "When to Speak, When to Abstain: Contrastive Decoding with Abstention",
+      "evidence": "CDA successfully shifts the distribution towards abstention, preventing hallucinations. (Section 6.6, Figure 10)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "When to Speak, When to Abstain: Contrastive Decoding with Abstention"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Truthfulness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "FinTrust: A Comprehensive Benchmark of Trustworthiness Evaluation in Finance Domain",
+      "evidence": "It evaluates whether models can provide factually accurate responses, or appropriately abstain when uncertain. (Section 2.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "FinTrust: A Comprehensive Benchmark of Trustworthiness Evaluation in Finance Domain"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "LLM-as-a-judge",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Sparse Neurons Carry Strong Signals of Question Ambiguity in LLMs",
+      "evidence": "A pretrained LLM-as-judge labels responses as either abstention (clarification or refusal) or direct answer... (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Sparse Neurons Carry Strong Signals of Question Ambiguity in LLMs"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Factuality",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Towards Statistical Factuality Guarantee for Large Vision-Language Models",
+      "evidence": "We define L(\u2205, \u00b7) = 0, which indicates that we do not penalize the model for abstaining from responding when it is uncertain, as here we only focus on the assurance of factuality while neglecting other aspects of reliability such as omission of information. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Towards Statistical Factuality Guarantee for Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Confidence",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning",
+      "evidence": "The goal of the Abstention Module is to evaluate the confidence level of the Expert system",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Knowledge boundary awareness",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Divide-Then-Align: Honest Alignment based on the Knowledge Boundary of RAG",
+      "evidence": "To address the critical limitation of RAFT models regarding their inability to abstain from answering when queries fall outside both knowledge boundaries (\u2718\u2718), we construct a comprehensive preference dataset that captures the desired behavior for each quadrant. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Divide-Then-Align: Honest Alignment based on the Knowledge Boundary of RAG"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 14,
+  "incoming_relationship_count": 2,
+  "outgoing_relationship_count": 12,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats abstention as withholding a substantive or final answer when the model is uncertain, not confident, lacks necessary knowledge, or cannot answer from the provided information. Common realizations are explicit non-answer outputs such as I don't know, Unknown, NO-RESPONSE, or other refusal-like signals, and several papers also treat asking for more information or a clarification question as abstention. A smaller line of work narrows it to selective answering above a confidence threshold, or to not giving a definitive answer as instructed, including rejecting ill-defined problems or skipping tasks when tools or information are missing. One paper also claims a causal relationship from Abstention to Hallucination, stating that shifting toward abstention prevents hallucinations."
+    },
+    {
+      "label": "Variants.",
+      "text": "Most variants stay within question answering, but papers study it under several nearby names: answer abstention, selective answering, task avoidance, ill-defined problem rejection, and task skipping. In clinical reasoning, abstention can mean not answering and instead asking an information-seeking question; in retrieval settings it can mean abstaining when the passage lacks the answer; in multimodal question answering it can mean outputting a reserved keyword when the image lacks the needed information. Other variants treat it as refusing unsolvable math problems, skipping tool-augmented queries after an awareness check, or as an allowed option in multiple-choice scoring with negative marking."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link abstention to 4 measurement instruments: LLM-as-a-judge, LLMEval, LongMemEval, and TDIUC. These instruments score or elicit the behavior in different ways, including judge labels such as abstention versus direct answer, benchmark ratings of correct, abstain, or hallucinate, a benchmark that lists abstention as one core ability, and absurd visual questions that should not be answered. Outside named instruments, papers often operationalize abstention with explicit abstain instructions, confidence thresholds for returning no answer, reserved outputs such as I don't know, NO-RESPONSE, doesnotapply, [IDK], or no, and in one case a distinction between consistent refusal and partly abstained outputs across multiple samples."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers link abstention to 9 constructs. One paper claims a causal relationship from Calibration to Abstention, while others report Abstention is related to Confidence, Factuality, Generalization, and Honesty; 4 other construct links are also recorded with a mix of related and causal directions. The linked constructs therefore span several framings rather than one common target construct."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats abstention as withholding a substantive or final answer when the model is uncertain, not confident, lacks necessary knowledge, or cannot answer from the provided information. Common realizations are explicit non-answer outputs such as I don't know, Unknown, NO-RESPONSE, or other refusal-like signals, and several papers also treat asking for more information or a clarification question as abstention. A smaller line of work narrows it to selective answering above a confidence threshold, or to not giving a definitive answer as instructed, including rejecting ill-defined problems or skipping tasks when tools or information are missing. One paper also claims a causal relationship from Abstention to Hallucination, stating that shifting toward abstention prevents hallucinations.\n\nVariants. Most variants stay within question answering, but papers study it under several nearby names: answer abstention, selective answering, task avoidance, ill-defined problem rejection, and task skipping. In clinical reasoning, abstention can mean not answering and instead asking an information-seeking question; in retrieval settings it can mean abstaining when the passage lacks the answer; in multimodal question answering it can mean outputting a reserved keyword when the image lacks the needed information. Other variants treat it as refusing unsolvable math problems, skipping tool-augmented queries after an awareness check, or as an allowed option in multiple-choice scoring with negative marking.\n\nSpace of elicitation and scores. Papers link abstention to 4 measurement instruments: LLM-as-a-judge, LLMEval, LongMemEval, and TDIUC. These instruments score or elicit the behavior in different ways, including judge labels such as abstention versus direct answer, benchmark ratings of correct, abstain, or hallucinate, a benchmark that lists abstention as one core ability, and absurd visual questions that should not be answered. Outside named instruments, papers often operationalize abstention with explicit abstain instructions, confidence thresholds for returning no answer, reserved outputs such as I don't know, NO-RESPONSE, doesnotapply, [IDK], or no, and in one case a distinction between consistent refusal and partly abstained outputs across multiple samples.\n\nWhat it is taken as evidence of. Papers link abstention to 9 constructs. One paper claims a causal relationship from Calibration to Abstention, while others report Abstention is related to Confidence, Factuality, Generalization, and Honesty; 4 other construct links are also recorded with a mix of related and causal directions. The linked constructs therefore span several framings rather than one common target construct.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Divide-Then-Align: Honest Alignment based on the Knowledge Boundary of RAG",
+      "When to Speak, When to Abstain: Contrastive Decoding with Abstention",
+      "Which of These Best Describes Multiple Choice Evaluation with LLMs? A) Forced B) Flawed C) Fixable D) All of the Above"
+    ],
+    "emnlp25": [
+      "Calibrating Verbal Uncertainty as a Linear Feature to Reduce Hallucinations",
+      "Do RAG Systems Really Suffer From Positional Bias?",
+      "FinTrust: A Comprehensive Benchmark of Trustworthiness Evaluation in Finance Domain",
+      "Sparse Neurons Carry Strong Signals of Question Ambiguity in LLMs",
+      "Towards Statistical Factuality Guarantee for Large Vision-Language Models",
+      "VCSearch: Bridging the Gap Between Well-Defined and Ill-Defined Problems in Mathematical Reasoning"
+    ],
+    "iclr24": [
+      "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts",
+      "Beyond task performance: evaluating and reducing the flaws of large multimodal models with in-context-learning"
+    ],
+    "iclr25": [
+      "Evaluating Large Language Models through Role-Guide and Self-Reflection: A Comparative Study",
+      "FaithEval: Can Your Language Model Stay Faithful to Context, Even If \"The Moon is Made of Marshmallows\"",
+      "Fictitious Synthetic Data Can Improve LLM Factuality via Prerequisite Learning",
+      "QA-Calibration of Language Model Confidence Scores",
+      "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems"
+    ],
+    "icml25": [
+      "Learning to Route LLMs with Confidence Tokens",
+      "The Berkeley Function Calling Leaderboard (BFCL): From Tool Use to Agentic Evaluation of Large Language Models"
+    ],
+    "naacl25": [
+      "Unfamiliar Finetuning Examples Control How Language Models Hallucinate",
+      "Benchmarking Failures in Tool-Augmented Language Models"
+    ],
+    "neurips24": [
+      "Conformal Alignment: Knowing When to Trust Foundation Models with Guarantees",
+      "I Don't Know: Explicit Modeling of Uncertainty with an [IDK] Token",
+      "LACIE: Listener-Aware Finetuning for Calibration in Large Language Models",
+      "MediQ: Question-Asking LLMs and a Benchmark for Reliable Interactive Clinical Reasoning"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 6,
+    "iclr24": 2,
+    "iclr25": 5,
+    "icml25": 2,
+    "naacl25": 2,
+    "neurips24": 4
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "icml25",
+    "naacl25",
+    "neurips24"
+  ]
+}

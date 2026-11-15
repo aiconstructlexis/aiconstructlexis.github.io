@@ -1,0 +1,231 @@
+{
+  "canonical_name": "Social intelligence",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats social intelligence as a latent capacity or ability to understand and navigate complex social interactions or environments. Most definitions combine pursuit of social goals with inference about others, variously framed as others' goals, mental states, intentions, emotions, behaviors, or private information, and several also include adherence to norms or social rules and maintaining relationships. A smaller line of work uses the same label more behaviorally, referring to realistic role enactment and collaboration, or more narrowly to making effective decisions and optimizing outcomes through interaction with other agents in cooperative contexts.\n\nSpace of facets. Papers break the construct into recurring facets rather than a single fixed core: goal completion, information or implicit reasoning, inference or safeguarding of private information, response to others' emotions and intentions, adherence to norms, and collaborative behavior. Some papers explicitly position theory of mind, reasoning about others' intentions, goals, thoughts, and beliefs, as a foundation of social intelligence, and another treats social reasoning as a core competency within it. The same label is therefore used both for broad navigation of dynamic social contexts and for narrower targets such as cooperative outcome optimization or role-based collaboration.\n\nSpace of measurement. Operationalization is benchmark-centered: papers link social intelligence to 3 measurement instruments and 1 behavioral indicator. The linked instruments are SOTOPIA, listed most often and described as an open-ended environment or benchmark for simulating complex social interactions between artificial agents, SIQA for social awareness capabilities, and ToMBench for emotionally and socially grounded reasoning such as emotion recognition, social action prediction, and theory-of-mind reasoning; another paper also describes evaluating social intelligence through multi-turn interactions that emphasize goal completion and implicit reasoning. The only linked behavioral indicator is coalition formation, so the measured space spans interactive social tasks and benchmark tests of social awareness and reasoning.\n\nLinks. Beyond measurement, the recorded links are relational rather than causal or correlational. Social intelligence is related to theory of mind, described as reasoning about others' intentions, goals, thoughts, and beliefs, and to social reasoning, described as a core competency of social intelligence. Other papers relate reasoning and implicit reasoning to social intelligence, and coalition formation is related to the quantitative study of social intelligence.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Social intelligence"
+  ],
+  "papers": [
+    "SDPO: Segment-Level Direct Preference Optimization for Social Agents",
+    "SocialEval: Evaluating Social Intelligence of Large Language Models",
+    "NOVER: Incentive Training for Language Models via Verifier-Free Reinforcement Learning",
+    "R-CHAR: A Metacognition-Driven Framework for Role-Playing in Large Language Models",
+    "Social Genome: Grounded Social Reasoning Abilities of Multimodal Models",
+    "Spontaneous Giving and Calculated Greed in Language Models",
+    "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning",
+    "Exploring Prosocial Irrationality for LLM Agents: A Social Cognition View",
+    "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios",
+    "JRE-L: Journalist, Reader, and Editor LLMs in the Loop for Science Journalism for the General Audience",
+    "K-Level Reasoning: Establishing Higher Order Beliefs in Large Language Models for Strategic Reasoning",
+    "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+    "Autonomous Agents for Collaborative Task under Information Asymmetry",
+    "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge"
+  ],
+  "paper_count": 14,
+  "definitions": [
+    {
+      "text": "The capacity to understand and navigate complex social situations and interactions, including inferring others' goals and mental states.",
+      "papers": [
+        "Autonomous Agents for Collaborative Task under Information Asymmetry",
+        "Exploring Prosocial Irrationality for LLM Agents: A Social Cognition View",
+        "K-Level Reasoning: Establishing Higher Order Beliefs in Large Language Models for Strategic Reasoning",
+        "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios",
+        "JRE-L: Journalist, Reader, and Editor LLMs in the Loop for Science Journalism for the General Audience",
+        "SDPO: Segment-Level Direct Preference Optimization for Social Agents",
+        "Spontaneous Giving and Calculated Greed in Language Models"
+      ],
+      "original_name": "Social intelligence"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SOTOPIA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents",
+      "evidence": "We present SOTOPIA, an open-ended environment to simulate complex social interactions between artificial agents and evaluate their social intelligence.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "SOTOPIA: Interactive Evaluation for Social Intelligence in Language Agents"
+        ],
+        "naacl25": [
+          "K-Level Reasoning: Establishing Higher Order Beliefs in Large Language Models for Strategic Reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Coalition formation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+      "evidence": "\"the quantitative study of social intelligence, like coalition formation and the emergence of hierarchy\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Theory of mind",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning",
+      "evidence": "Reasoning about other people\u2019s intentions, goals, thoughts, and beliefs is a foundation of social intelligence. Known as Theory of Mind (ToM) (Premack & Woodruff, 1978), this capability is crucial for effective human interaction. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ToMBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "NOVER: Incentive Training for Language Models via Verifier-Free Reinforcement Learning",
+      "evidence": "Social Intelligence: We evaluate models on emotionally and socially grounded reasoning using EmoBench (Sabour et al., 2024) and ToMBench (Chen et al., 2024), which test emotion recognition, social action prediction, and theory-of-mind reasoning. (Section 5)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "NOVER: Incentive Training for Language Models via Verifier-Free Reinforcement Learning"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Spontaneous Giving and Calculated Greed in Language Models",
+      "evidence": "However, it remains unclear whether these reasoning capabilities extend to a form of social intelligence: making effective decisions in cooperative contexts. (Abstract)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Spontaneous Giving and Calculated Greed in Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Social reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Social Genome: Grounded Social Reasoning Abilities of Multimodal Models",
+      "evidence": "This form of reasoning is a core competency of social intelligence (Kihlstrom and Cantor, 2000; Conzelmann et al., 2013). (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Social Genome: Grounded Social Reasoning Abilities of Multimodal Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Implicit reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios",
+      "evidence": "We evaluate social intelligence from multiple aspects, considering both goal completion and information reasoning... (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "SIQA",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "HMoE: Heterogeneous Mixture of Experts for Language Modeling",
+      "evidence": "We evaluated these models on six different benchmarks ... including PIQA (Bisk et al., 2020), hellaswag (Zellers et al., 2019), BoolQ (Clark et al., 2019), ARC (Clark et al., 2018), winogrande (Sakaguchi et al., 2021) and SIQA (Sap et al., 2019). These tasks examine models\u2019 language understanding, logical reasoning, knowledge utilization, and social awareness capabilities.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "HMoE: Heterogeneous Mixture of Experts for Language Modeling"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 5,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats social intelligence as a latent capacity or ability to understand and navigate complex social interactions or environments. Most definitions combine pursuit of social goals with inference about others, variously framed as others' goals, mental states, intentions, emotions, behaviors, or private information, and several also include adherence to norms or social rules and maintaining relationships. A smaller line of work uses the same label more behaviorally, referring to realistic role enactment and collaboration, or more narrowly to making effective decisions and optimizing outcomes through interaction with other agents in cooperative contexts."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers break the construct into recurring facets rather than a single fixed core: goal completion, information or implicit reasoning, inference or safeguarding of private information, response to others' emotions and intentions, adherence to norms, and collaborative behavior. Some papers explicitly position theory of mind, reasoning about others' intentions, goals, thoughts, and beliefs, as a foundation of social intelligence, and another treats social reasoning as a core competency within it. The same label is therefore used both for broad navigation of dynamic social contexts and for narrower targets such as cooperative outcome optimization or role-based collaboration."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is benchmark-centered: papers link social intelligence to 3 measurement instruments and 1 behavioral indicator. The linked instruments are SOTOPIA, listed most often and described as an open-ended environment or benchmark for simulating complex social interactions between artificial agents, SIQA for social awareness capabilities, and ToMBench for emotionally and socially grounded reasoning such as emotion recognition, social action prediction, and theory-of-mind reasoning; another paper also describes evaluating social intelligence through multi-turn interactions that emphasize goal completion and implicit reasoning. The only linked behavioral indicator is coalition formation, so the measured space spans interactive social tasks and benchmark tests of social awareness and reasoning."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, the recorded links are relational rather than causal or correlational. Social intelligence is related to theory of mind, described as reasoning about others' intentions, goals, thoughts, and beliefs, and to social reasoning, described as a core competency of social intelligence. Other papers relate reasoning and implicit reasoning to social intelligence, and coalition formation is related to the quantitative study of social intelligence."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats social intelligence as a latent capacity or ability to understand and navigate complex social interactions or environments. Most definitions combine pursuit of social goals with inference about others, variously framed as others' goals, mental states, intentions, emotions, behaviors, or private information, and several also include adherence to norms or social rules and maintaining relationships. A smaller line of work uses the same label more behaviorally, referring to realistic role enactment and collaboration, or more narrowly to making effective decisions and optimizing outcomes through interaction with other agents in cooperative contexts.\n\nSpace of facets. Papers break the construct into recurring facets rather than a single fixed core: goal completion, information or implicit reasoning, inference or safeguarding of private information, response to others' emotions and intentions, adherence to norms, and collaborative behavior. Some papers explicitly position theory of mind, reasoning about others' intentions, goals, thoughts, and beliefs, as a foundation of social intelligence, and another treats social reasoning as a core competency within it. The same label is therefore used both for broad navigation of dynamic social contexts and for narrower targets such as cooperative outcome optimization or role-based collaboration.\n\nSpace of measurement. Operationalization is benchmark-centered: papers link social intelligence to 3 measurement instruments and 1 behavioral indicator. The linked instruments are SOTOPIA, listed most often and described as an open-ended environment or benchmark for simulating complex social interactions between artificial agents, SIQA for social awareness capabilities, and ToMBench for emotionally and socially grounded reasoning such as emotion recognition, social action prediction, and theory-of-mind reasoning; another paper also describes evaluating social intelligence through multi-turn interactions that emphasize goal completion and implicit reasoning. The only linked behavioral indicator is coalition formation, so the measured space spans interactive social tasks and benchmark tests of social awareness and reasoning.\n\nLinks. Beyond measurement, the recorded links are relational rather than causal or correlational. Social intelligence is related to theory of mind, described as reasoning about others' intentions, goals, thoughts, and beliefs, and to social reasoning, described as a core competency of social intelligence. Other papers relate reasoning and implicit reasoning to social intelligence, and coalition formation is related to the quantitative study of social intelligence.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "SDPO: Segment-Level Direct Preference Optimization for Social Agents",
+      "SocialEval: Evaluating Social Intelligence of Large Language Models"
+    ],
+    "emnlp25": [
+      "NOVER: Incentive Training for Language Models via Verifier-Free Reinforcement Learning",
+      "R-CHAR: A Metacognition-Driven Framework for Role-Playing in Large Language Models",
+      "Social Genome: Grounded Social Reasoning Abilities of Multimodal Models",
+      "Spontaneous Giving and Calculated Greed in Language Models"
+    ],
+    "iclr25": [
+      "Explore Theory of Mind: program-guided adversarial data generation for theory of mind reasoning",
+      "Exploring Prosocial Irrationality for LLM Agents: A Social Cognition View"
+    ],
+    "naacl25": [
+      "AgentSense: Benchmarking Social Intelligence of Language Agents through Interactive Scenarios",
+      "JRE-L: Journalist, Reader, and Editor LLMs in the Loop for Science Journalism for the General Audience",
+      "K-Level Reasoning: Establishing Higher Order Beliefs in Large Language Models for Strategic Reasoning"
+    ],
+    "neurips24": [
+      "AdaSociety: An Adaptive Environment with Social Structures for Multi-Agent Decision-Making",
+      "Autonomous Agents for Collaborative Task under Information Asymmetry",
+      "Constrained Human-AI Cooperation: An Inclusive Embodied Social Intelligence Challenge"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 4,
+    "iclr25": 2,
+    "naacl25": 3,
+    "neurips24": 3
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

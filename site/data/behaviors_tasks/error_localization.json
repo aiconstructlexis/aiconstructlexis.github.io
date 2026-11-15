@@ -1,0 +1,187 @@
+{
+  "canonical_name": "Error localization",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage is a fine-grained judgment task in which a model pinpoints where a previously produced solution or reasoning chain goes wrong, most often by identifying the erroneous step or the first step where the error begins. Several formulations describe success as locating the specific faulty step, component, line, or span, and some also require explaining the mistake or giving reasons for the decision, for example by \"judge step by step until the wrong step is located.\" A smaller line of work applies the same pattern to invalid literature-grounded chains, where the model identifies the breakpoint paper nodes where logical progression breaks down.\n\nVariants. Papers study this behavior under several names, most commonly Error localization, and also Process judging, First error step identification, Invalid node identification, and Mistake location. The variants differ mainly by domain and target unit: math settings ask for the step where errors begin in a wrong solution, handwritten math asks for the line or part of an image where the error occurs, chemistry asks for the contiguous erroneous text span in a molecular description, literature-grounded reasoning asks for the incorrect paper nodes in an invalid chain, and tutoring evaluations ask whether the tutor points to the mistake location and outlines what the error is. One paper also relates error localization to pairwise comparison, stating that disagreements between candidate solutions strongly signal potential locations of their errors.\n\nSpace of elicitation and scores. Papers link error localization to 1 measurement instrument, MOLERR2FIX, which is described as a structured four-stage Error-to-Fix evaluation pipeline for chemical reasoning. In that instrument, localization is one stage alongside detection, explanation, and revision, and it is used to assess whether the model can locate the erroneous text span.\n\nWhat it is taken as evidence of. Papers link error localization to 2 constructs, and they do not converge on a single one. One paper reports that it is weakly correlated with problem-solving ability across models and prompts, while another claims a causal relationship from error localization to self-correction ability in a setup that locates and corrects specific error thoughts in smaller student LLMs.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Error localization",
+    "Invalid node identification",
+    "Process judging",
+    "First error step identification",
+    "Mistake location"
+  ],
+  "papers": [
+    "Can Vision-Language Models Evaluate Handwritten Math?",
+    "HypER: Literature-grounded Hypothesis Generation and Distillation with Provenance",
+    "MolErr2Fix: Benchmarking LLM Trustworthiness in Chemistry via Modular Error Detection, Localization, Explanation, and Correction",
+    "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+    "MR-GSM8K: A Meta-Reasoning Benchmark for Large Language Model Evaluation",
+    "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+    "Unifying AI Tutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment of LLM-Powered AI Tutors",
+    "Learning Goal-Conditioned Representations for Language Reward Models",
+    "Recursive Introspection: Teaching Language Model Agents How to Self-Improve"
+  ],
+  "paper_count": 9,
+  "definitions": [
+    {
+      "text": "The observable behavior of a model identifying specific incorrect steps or components within a previously generated solution.",
+      "papers": [
+        "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+        "MolErr2Fix: Benchmarking LLM Trustworthiness in Chemistry via Modular Error Detection, Localization, Explanation, and Correction",
+        "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+        "Can Vision-Language Models Evaluate Handwritten Math?"
+      ],
+      "original_name": "Error localization"
+    },
+    {
+      "text": "The task of identifying the specific papers within an invalid reasoning chain where the logical progression or coherence breaks down.",
+      "papers": [
+        "HypER: Literature-grounded Hypothesis Generation and Distillation with Provenance"
+      ],
+      "original_name": "Invalid node identification"
+    },
+    {
+      "text": "The observable behavior of identifying the specific step in a provided incorrect solution where the first error occurs.",
+      "papers": [
+        "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist"
+      ],
+      "original_name": "Process judging"
+    },
+    {
+      "text": "The observable sub-task of identifying the specific initial step in a flawed reasoning process where the logic first deviates from a correct path.",
+      "papers": [
+        "MR-GSM8K: A Meta-Reasoning Benchmark for Large Language Model Evaluation"
+      ],
+      "original_name": "First error step identification"
+    },
+    {
+      "text": "The observable behavior of a tutor specifying where in the student's reasoning or calculation the error occurred and explaining the nature of the mistake.",
+      "papers": [
+        "Unifying AI Tutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment of LLM-Powered AI Tutors"
+      ],
+      "original_name": "Mistake location"
+    }
+  ],
+  "definition_count": 5,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Self-correction ability",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction",
+      "evidence": "We propose cross-model collaborative DPO, which innovatively leverage SOTA LLMs to locate and correct the specific error thoughts in the reasoning process of smaller student LLMs, thus advancing their self-correction ability and breaking their thought bottleneck. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Problem-solving ability",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "LLMs cannot spot math errors, even when allowed to peek into the solution",
+      "evidence": "A chi-squared test for independence confirms that error localization and problem-solving accuracy are weakly correlated (p > 0.01; \u03d5 < 0.2) across models and prompts (Section 4.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "LLMs cannot spot math errors, even when allowed to peek into the solution"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "MOLERR2FIX",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MolErr2Fix: Benchmarking LLM Trustworthiness in Chemistry via Modular Error Detection, Localization, Explanation, and Correction",
+      "evidence": "MOLERR2FIX introduces a structured chain-like, four-stage Error-to-Fix evaluation pipeline\u2014detection, localization, explanation, and revision\u2014offering a fine-grained and progressive framework for assessing LLMs in chemical reasoning. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MolErr2Fix: Benchmarking LLM Trustworthiness in Chemistry via Modular Error Detection, Localization, Explanation, and Correction"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Pairwise comparison",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification",
+      "evidence": "\"Disagreements between candidate solutions strongly signal the potential locations of their errors.\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "icml25": [
+          "Sample, Scrutinize and Scale: Effective Inference-Time Search by Scaling Verification"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 4,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage is a fine-grained judgment task in which a model pinpoints where a previously produced solution or reasoning chain goes wrong, most often by identifying the erroneous step or the first step where the error begins. Several formulations describe success as locating the specific faulty step, component, line, or span, and some also require explaining the mistake or giving reasons for the decision, for example by \"judge step by step until the wrong step is located.\" A smaller line of work applies the same pattern to invalid literature-grounded chains, where the model identifies the breakpoint paper nodes where logical progression breaks down."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study this behavior under several names, most commonly Error localization, and also Process judging, First error step identification, Invalid node identification, and Mistake location. The variants differ mainly by domain and target unit: math settings ask for the step where errors begin in a wrong solution, handwritten math asks for the line or part of an image where the error occurs, chemistry asks for the contiguous erroneous text span in a molecular description, literature-grounded reasoning asks for the incorrect paper nodes in an invalid chain, and tutoring evaluations ask whether the tutor points to the mistake location and outlines what the error is. One paper also relates error localization to pairwise comparison, stating that disagreements between candidate solutions strongly signal potential locations of their errors."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers link error localization to 1 measurement instrument, MOLERR2FIX, which is described as a structured four-stage Error-to-Fix evaluation pipeline for chemical reasoning. In that instrument, localization is one stage alongside detection, explanation, and revision, and it is used to assess whether the model can locate the erroneous text span."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers link error localization to 2 constructs, and they do not converge on a single one. One paper reports that it is weakly correlated with problem-solving ability across models and prompts, while another claims a causal relationship from error localization to self-correction ability in a setup that locates and corrects specific error thoughts in smaller student LLMs."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage is a fine-grained judgment task in which a model pinpoints where a previously produced solution or reasoning chain goes wrong, most often by identifying the erroneous step or the first step where the error begins. Several formulations describe success as locating the specific faulty step, component, line, or span, and some also require explaining the mistake or giving reasons for the decision, for example by \"judge step by step until the wrong step is located.\" A smaller line of work applies the same pattern to invalid literature-grounded chains, where the model identifies the breakpoint paper nodes where logical progression breaks down.\n\nVariants. Papers study this behavior under several names, most commonly Error localization, and also Process judging, First error step identification, Invalid node identification, and Mistake location. The variants differ mainly by domain and target unit: math settings ask for the step where errors begin in a wrong solution, handwritten math asks for the line or part of an image where the error occurs, chemistry asks for the contiguous erroneous text span in a molecular description, literature-grounded reasoning asks for the incorrect paper nodes in an invalid chain, and tutoring evaluations ask whether the tutor points to the mistake location and outlines what the error is. One paper also relates error localization to pairwise comparison, stating that disagreements between candidate solutions strongly signal potential locations of their errors.\n\nSpace of elicitation and scores. Papers link error localization to 1 measurement instrument, MOLERR2FIX, which is described as a structured four-stage Error-to-Fix evaluation pipeline for chemical reasoning. In that instrument, localization is one stage alongside detection, explanation, and revision, and it is used to assess whether the model can locate the erroneous text span.\n\nWhat it is taken as evidence of. Papers link error localization to 2 constructs, and they do not converge on a single one. One paper reports that it is weakly correlated with problem-solving ability across models and prompts, while another claims a causal relationship from error localization to self-correction ability in a setup that locates and corrects specific error thoughts in smaller student LLMs.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "HypER: Literature-grounded Hypothesis Generation and Distillation with Provenance",
+      "MolErr2Fix: Benchmarking LLM Trustworthiness in Chemistry via Modular Error Detection, Localization, Explanation, and Correction"
+    ],
+    "iclr25": [
+      "Is Your Model Really A Good Math Reasoner? Evaluating Mathematical Reasoning with Checklist",
+      "MR-GSM8K: A Meta-Reasoning Benchmark for Large Language Model Evaluation",
+      "SuperCorrect: Advancing Small LLM Reasoning with Thought Template Distillation and Self-Correction"
+    ],
+    "neurips24": [
+      "Learning Goal-Conditioned Representations for Language Reward Models",
+      "Recursive Introspection: Teaching Language Model Agents How to Self-Improve"
+    ],
+    "acl25": [
+      "Can Vision-Language Models Evaluate Handwritten Math?"
+    ],
+    "naacl25": [
+      "Unifying AI Tutor Evaluation: An Evaluation Taxonomy for Pedagogical Ability Assessment of LLM-Powered AI Tutors"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 3,
+    "neurips24": 2,
+    "acl25": 1,
+    "naacl25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}

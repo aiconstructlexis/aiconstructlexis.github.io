@@ -1,0 +1,68 @@
+{
+  "canonical_name": "Domain-specific question answering",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats this behavior as answering natural language questions that depend on specialized domain knowledge, with success framed as producing accurate answers. One formulation centers on questions \"derived from client\u2019s tabular datasets\" in domains such as finance or healthcare, while another frames it as answering facts contained in a specialized document or newly learned domain. A narrower task setup further constrains the response format to a single word, either \"Yes\" or \"No\" for binary cases or an uppercase letter for multiclass cases, and illustrates the task with questions such as \"will my loan be approved?\"\n\nVariants. Papers study it in several settings: over structured tabular data, over facts in a specialized document, and over a newly learned domain. The named domains include finance and healthcare, and one recurring variant casts the questions as binary or multiclass decisions rather than open-ended responses.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the task descriptions themselves, papers operationalize it through answer accuracy on domain-specific questions, including a setup that requires single-word labels and another that uses \"60 domain-specific questions\" to assess the knowledge contained within a document.\n\nWhat it is taken as evidence of. No construct is linked to it in the papers, so the papers do not state what construct it serves as evidence of.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Domain-specific question answering"
+  ],
+  "papers": [
+    "Graceful Forgetting in Generative Language Models",
+    "Model-based Large Language Model Customization as Service",
+    "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Producing accurate answers to natural language questions that require knowledge of a specific domain, such as finance or healthcare, based on structured tabular data.",
+      "papers": [
+        "Model-based Large Language Model Customization as Service",
+        "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost"
+      ],
+      "original_name": "Domain-specific question answering"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [],
+  "relationship_count": 0,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats this behavior as answering natural language questions that depend on specialized domain knowledge, with success framed as producing accurate answers. One formulation centers on questions \"derived from client\u2019s tabular datasets\" in domains such as finance or healthcare, while another frames it as answering facts contained in a specialized document or newly learned domain. A narrower task setup further constrains the response format to a single word, either \"Yes\" or \"No\" for binary cases or an uppercase letter for multiclass cases, and illustrates the task with questions such as \"will my loan be approved?\""
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study it in several settings: over structured tabular data, over facts in a specialized document, and over a newly learned domain. The named domains include finance and healthcare, and one recurring variant casts the questions as binary or multiclass decisions rather than open-ended responses."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to it. In the task descriptions themselves, papers operationalize it through answer accuracy on domain-specific questions, including a setup that requires single-word labels and another that uses \"60 domain-specific questions\" to assess the knowledge contained within a document."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "No construct is linked to it in the papers, so the papers do not state what construct it serves as evidence of."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats this behavior as answering natural language questions that depend on specialized domain knowledge, with success framed as producing accurate answers. One formulation centers on questions \"derived from client\u2019s tabular datasets\" in domains such as finance or healthcare, while another frames it as answering facts contained in a specialized document or newly learned domain. A narrower task setup further constrains the response format to a single word, either \"Yes\" or \"No\" for binary cases or an uppercase letter for multiclass cases, and illustrates the task with questions such as \"will my loan be approved?\"\n\nVariants. Papers study it in several settings: over structured tabular data, over facts in a specialized document, and over a newly learned domain. The named domains include finance and healthcare, and one recurring variant casts the questions as binary or multiclass decisions rather than open-ended responses.\n\nSpace of elicitation and scores. No measurement instrument is linked to it. In the task descriptions themselves, papers operationalize it through answer accuracy on domain-specific questions, including a setup that requires single-word labels and another that uses \"60 domain-specific questions\" to assess the knowledge contained within a document.\n\nWhat it is taken as evidence of. No construct is linked to it in the papers, so the papers do not state what construct it serves as evidence of.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "Graceful Forgetting in Generative Language Models",
+      "Model-based Large Language Model Customization as Service"
+    ],
+    "iclr25": [
+      "Param$\\Delta$ for Direct Mixing: Post-Train Large Language Model At Zero Cost"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 2,
+    "iclr25": 1
+  },
+  "conferences": [
+    "emnlp25",
+    "iclr25"
+  ]
+}

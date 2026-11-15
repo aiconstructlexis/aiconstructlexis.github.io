@@ -1,0 +1,83 @@
+{
+  "canonical_name": "Multimodal generation",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. In the papers, the behavior is described as predicting missing modalities from available modal information and their interconnections. The recurring example is generating an image from a text caption, so the task is framed around recovering a missing modality given the others.\n\nVariants. The recorded usage includes a broader missing-modality formulation and a narrower node-level setting. In the narrower setting, the goal is to predict missing images based on textual captions, while the broader label multi-modal generation covers cases such as image-from-caption generation.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. Papers describe it directly as a task of predicting missing modalities, rather than through a separately named benchmark or scoring instrument.\n\nWhat it is taken as evidence of. Only one construct is linked to this behavior, multimodal understanding. That link is not framed as an indicator relation: one paper claims a causal relationship from multimodal understanding to multimodal generation, stating that incorporating multimodal understanding data enhances comprehension of object details such as color and quantity, thereby improving generation capability.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-modal generation"
+  ],
+  "papers": [
+    "UnifiedVisual: A Framework for Constructing Unified Vision-Language Datasets",
+    "Graph World Model",
+    "On Path to Multimodal Generalist: General-Level and General-Bench"
+  ],
+  "paper_count": 3,
+  "definitions": [
+    {
+      "text": "Predicting missing modalities, such as generating an image from a text caption, given available modal information and their interconnections.",
+      "papers": [
+        "Graph World Model"
+      ],
+      "original_name": "Multi-modal generation"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multimodal understanding",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "UnifiedVisual: A Framework for Constructing Unified Vision-Language Datasets",
+      "evidence": "incorporating multimodal understanding data enhances the model\u2019s comprehension of object details, including attributes such as color and quantity, thereby improving its generation capability. (Section 5.2.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "UnifiedVisual: A Framework for Constructing Unified Vision-Language Datasets"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 1,
+  "outgoing_relationship_count": 0,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "In the papers, the behavior is described as predicting missing modalities from available modal information and their interconnections. The recurring example is generating an image from a text caption, so the task is framed around recovering a missing modality given the others."
+    },
+    {
+      "label": "Variants.",
+      "text": "The recorded usage includes a broader missing-modality formulation and a narrower node-level setting. In the narrower setting, the goal is to predict missing images based on textual captions, while the broader label multi-modal generation covers cases such as image-from-caption generation."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "No measurement instrument is linked to this behavior. Papers describe it directly as a task of predicting missing modalities, rather than through a separately named benchmark or scoring instrument."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Only one construct is linked to this behavior, multimodal understanding. That link is not framed as an indicator relation: one paper claims a causal relationship from multimodal understanding to multimodal generation, stating that incorporating multimodal understanding data enhances comprehension of object details such as color and quantity, thereby improving generation capability."
+    }
+  ],
+  "characterization": "Space of definitions. In the papers, the behavior is described as predicting missing modalities from available modal information and their interconnections. The recurring example is generating an image from a text caption, so the task is framed around recovering a missing modality given the others.\n\nVariants. The recorded usage includes a broader missing-modality formulation and a narrower node-level setting. In the narrower setting, the goal is to predict missing images based on textual captions, while the broader label multi-modal generation covers cases such as image-from-caption generation.\n\nSpace of elicitation and scores. No measurement instrument is linked to this behavior. Papers describe it directly as a task of predicting missing modalities, rather than through a separately named benchmark or scoring instrument.\n\nWhat it is taken as evidence of. Only one construct is linked to this behavior, multimodal understanding. That link is not framed as an indicator relation: one paper claims a causal relationship from multimodal understanding to multimodal generation, stating that incorporating multimodal understanding data enhances comprehension of object details such as color and quantity, thereby improving generation capability.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "emnlp25": [
+      "UnifiedVisual: A Framework for Constructing Unified Vision-Language Datasets"
+    ],
+    "icml25": [
+      "Graph World Model",
+      "On Path to Multimodal Generalist: General-Level and General-Bench"
+    ]
+  },
+  "paper_count_by_conference": {
+    "emnlp25": 1,
+    "icml25": 2
+  },
+  "conferences": [
+    "emnlp25",
+    "icml25"
+  ]
+}

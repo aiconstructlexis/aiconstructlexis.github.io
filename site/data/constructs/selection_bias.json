@@ -1,0 +1,162 @@
+{
+  "canonical_name": "Selection bias",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats selection bias as a latent or inherent model tendency to favor certain answer options in multiple-choice settings, such as repeatedly choosing particular option identifiers like A or 1 regardless of content. Some formulations emphasize answer positions, and one broadens this to positional or other surface-level patterns rather than content understanding, but the shared core is a systematic preference in option selection rather than content-based choice.\n\nSpace of facets. Papers usually place the construct in multiple-choice tasks, especially MCQA, where selecting among predefined choices creates room for preference for particular tokens or positions. A recurring breakdown distinguishes token-identity preferences from positional preferences, but the relation to positional bias is not stated uniformly: some work says selection bias is driven by both token identity and positional preferences, while another says it arises less from position bias.\n\nSpace of measurement. No measurement instrument is linked to it. Papers instead operationalize it through one linked behavioral indicator, multiple-choice question answering, by examining whether models prefer specific option IDs or answer positions when choosing among predefined options; this mirrors the dominant definitions, which also focus on option or position preference regardless of content.\n\nLinks. Papers link selection bias to four constructs. One paper claims a causal relationship from selection bias to robustness, stating that poor robustness to option position changes results from biased behavior, and another claims a causal relationship from selection bias to reasoning, stating that such bias compromises models' true reasoning capabilities. Selection bias is also related to positional bias, with recorded evidence ranging from being driven by positional preferences to arising less from position bias, and prompt sensitivity is reported to correlate with selection bias; one paper also relates multiple-choice question answering to selection bias.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Selection bias"
+  ],
+  "papers": [
+    "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models",
+    "CalibraEval: Calibrating Prediction Distribution to Mitigate Selection Bias in LLMs-as-Judges",
+    "Mitigating Selection Bias with Node Pruning and Auxiliary Options",
+    "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+    "RoDEval: A Robust Word Sense Disambiguation Evaluation Framework for Large Language Models",
+    "The Good, the Bad, and the Debatable: A Survey on the Impacts of Data for In-Context Learning",
+    "PertEval: Unveiling Real Knowledge Capacity of LLMs with Knowledge-Invariant Perturbations",
+    "Unveiling the Bias Impact on Symmetric Moral Consistency of Large Language Models"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "A latent tendency of a model to favor certain option identifiers (e.g., always picking 'A') regardless of content.",
+      "papers": [
+        "PertEval: Unveiling Real Knowledge Capacity of LLMs with Knowledge-Invariant Perturbations",
+        "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models",
+        "RoDEval: A Robust Word Sense Disambiguation Evaluation Framework for Large Language Models"
+      ],
+      "original_name": "Selection bias"
+    }
+  ],
+  "definition_count": 1,
+  "relationships": [
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Positional bias",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+      "evidence": "Our findings show that selection bias, driven by both token identity and positional preferences, intensifies with increasing task difficulty, particularly when MCQ options are fine-grained. (Conclusion)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models"
+        ],
+        "iclr24": [
+          "Large Language Models Are Not Robust Multiple Choice Selectors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Robustness",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Large Language Models Are Not Robust Multiple Choice Selectors",
+      "evidence": "LLMs\u2019 poor robustness to option position changes results from their biased behavior: they prefer to select speci\ufb01c option IDs as answers (like \u201cOption A\u201d), which we term as selection bias.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr24": [
+          "Large Language Models Are Not Robust Multiple Choice Selectors"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "causes",
+      "paper": "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models",
+      "evidence": "Such bias compromises fairness, reliability, and the true reasoning capabilities of these models. (Section 1).",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Multiple-choice question answering",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+      "evidence": "One such underexplored phenomenon is selection bias in MCQA. Unlike open-ended VQA formats, MCQA requires models to select one option among predefined choices (e.g., A/B/C/D), introducing the possibility of preference for certain option positions or tokens. (Introduction)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Prompt sensitivity",
+      "other_type": "constructs",
+      "relationship_type": "correlates",
+      "paper": "Revisiting LLM Value Probing Strategies: Are They Robust and Expressive?",
+      "evidence": "This suggests that a model weak on selection bias also tends to change its output for different prompt templates. (Section 7.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "Revisiting LLM Value Probing Strategies: Are They Robust and Expressive?"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 5,
+  "incoming_relationship_count": 3,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats selection bias as a latent or inherent model tendency to favor certain answer options in multiple-choice settings, such as repeatedly choosing particular option identifiers like A or 1 regardless of content. Some formulations emphasize answer positions, and one broadens this to positional or other surface-level patterns rather than content understanding, but the shared core is a systematic preference in option selection rather than content-based choice."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers usually place the construct in multiple-choice tasks, especially MCQA, where selecting among predefined choices creates room for preference for particular tokens or positions. A recurring breakdown distinguishes token-identity preferences from positional preferences, but the relation to positional bias is not stated uniformly: some work says selection bias is driven by both token identity and positional preferences, while another says it arises less from position bias."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "No measurement instrument is linked to it. Papers instead operationalize it through one linked behavioral indicator, multiple-choice question answering, by examining whether models prefer specific option IDs or answer positions when choosing among predefined options; this mirrors the dominant definitions, which also focus on option or position preference regardless of content."
+    },
+    {
+      "label": "Links.",
+      "text": "Papers link selection bias to four constructs. One paper claims a causal relationship from selection bias to robustness, stating that poor robustness to option position changes results from biased behavior, and another claims a causal relationship from selection bias to reasoning, stating that such bias compromises models' true reasoning capabilities. Selection bias is also related to positional bias, with recorded evidence ranging from being driven by positional preferences to arising less from position bias, and prompt sensitivity is reported to correlate with selection bias; one paper also relates multiple-choice question answering to selection bias."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats selection bias as a latent or inherent model tendency to favor certain answer options in multiple-choice settings, such as repeatedly choosing particular option identifiers like A or 1 regardless of content. Some formulations emphasize answer positions, and one broadens this to positional or other surface-level patterns rather than content understanding, but the shared core is a systematic preference in option selection rather than content-based choice.\n\nSpace of facets. Papers usually place the construct in multiple-choice tasks, especially MCQA, where selecting among predefined choices creates room for preference for particular tokens or positions. A recurring breakdown distinguishes token-identity preferences from positional preferences, but the relation to positional bias is not stated uniformly: some work says selection bias is driven by both token identity and positional preferences, while another says it arises less from position bias.\n\nSpace of measurement. No measurement instrument is linked to it. Papers instead operationalize it through one linked behavioral indicator, multiple-choice question answering, by examining whether models prefer specific option IDs or answer positions when choosing among predefined options; this mirrors the dominant definitions, which also focus on option or position preference regardless of content.\n\nLinks. Papers link selection bias to four constructs. One paper claims a causal relationship from selection bias to robustness, stating that poor robustness to option position changes results from biased behavior, and another claims a causal relationship from selection bias to reasoning, stating that such bias compromises models' true reasoning capabilities. Selection bias is also related to positional bias, with recorded evidence ranging from being driven by positional preferences to arising less from position bias, and prompt sensitivity is reported to correlate with selection bias; one paper also relates multiple-choice question answering to selection bias.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Addressing Blind Guessing: Calibration of Selection Bias in Multiple-Choice Question Answering by Video Language Models",
+      "CalibraEval: Calibrating Prediction Distribution to Mitigate Selection Bias in LLMs-as-Judges",
+      "Mitigating Selection Bias with Node Pruning and Auxiliary Options"
+    ],
+    "emnlp25": [
+      "Benchmarking and Mitigating MCQA Selection Bias of Large Vision-Language Models",
+      "RoDEval: A Robust Word Sense Disambiguation Evaluation Framework for Large Language Models",
+      "The Good, the Bad, and the Debatable: A Survey on the Impacts of Data for In-Context Learning"
+    ],
+    "neurips24": [
+      "PertEval: Unveiling Real Knowledge Capacity of LLMs with Knowledge-Invariant Perturbations",
+      "Unveiling the Bias Impact on Symmetric Moral Consistency of Large Language Models"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 3,
+    "neurips24": 2
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "neurips24"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "canonical_name": "Multi-digit multiplication",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across papers, the prevailing usage treats this behavior as multiplying two multi-digit integers in base 10 and outputting the product. Most formulations describe either an explicit output-producing task or the task of calculating the product and generating the correct numerical result; as one paper puts it, \"The Multiplication (MUL) task [16] involves multiplying two multi-digit numbers in base 10\" (Limits of Transformer Language Models on Learning to Compose Algorithms).\n\nVariants. Papers use closely related names, most often \"multi-digit multiplication\" or \"integer multiplication\", and sometimes the abbreviation \"MUL\". The main variants differ by operand length and setting, including 4-by-3-digit, 4 \u00d7 4, and 5 \u00d7 5 problems, and one line of work describes multiplication where both multiplier and multiplicand can vary in length, framed as generalization over both operand lengths.\n\nSpace of elicitation and scores. Only one linked measurement instrument appears, BIG-bench, which a paper describes as the benchmark containing the multi-digit multiplication task. Scoring is reported with accuracy, and one paper specifically reports exact match accuracy on 5 \u00d7 5 integer multiplication.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct, and no recorded claim states what construct it reflects.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Multi-digit multiplication",
+    "Integer multiplication",
+    "MUL"
+  ],
+  "papers": [
+    "Principled Understanding of Generalization for Generative Transformer Models in Arithmetic Reasoning Tasks",
+    "Do Large Language Models Truly Grasp Addition? A Rule-Focused Diagnostic Using Two-Integer Arithmetic",
+    "Arithmetic Transformers Can Length-Generalize in Both Operand Length and Count",
+    "Limits of Deep Learning: Sequence Modeling through the Lens of Complexity Theory",
+    "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+    "Improving Diversity in Language Models: When Temperature Fails, Change the Loss",
+    "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+    "Limits of Transformer Language Models on Learning to Compose Algorithms"
+  ],
+  "paper_count": 8,
+  "definitions": [
+    {
+      "text": "Multiplying two multi-digit numbers in base 10 as an explicit output-producing task.",
+      "papers": [
+        "Limits of Transformer Language Models on Learning to Compose Algorithms",
+        "Limits of Deep Learning: Sequence Modeling through the Lens of Complexity Theory"
+      ],
+      "original_name": "Multi-digit multiplication"
+    },
+    {
+      "text": "The task of calculating the product of two multi-digit integers and generating the correct numerical result.",
+      "papers": [
+        "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+        "Do Large Language Models Truly Grasp Addition? A Rule-Focused Diagnostic Using Two-Integer Arithmetic"
+      ],
+      "original_name": "Integer multiplication"
+    },
+    {
+      "text": "Multiplication, a benchmark involving multiplication of two multi-digit base-10 numbers.",
+      "papers": [
+        "Limits of Transformer Language Models on Learning to Compose Algorithms"
+      ],
+      "original_name": "MUL"
+    }
+  ],
+  "definition_count": 3,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "BIG-bench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning",
+      "evidence": "\"we first consider the multi-digit multiplication task from the BIG-bench benchmark\"",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 1,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 1,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across papers, the prevailing usage treats this behavior as multiplying two multi-digit integers in base 10 and outputting the product. Most formulations describe either an explicit output-producing task or the task of calculating the product and generating the correct numerical result; as one paper puts it, \"The Multiplication (MUL) task [16] involves multiplying two multi-digit numbers in base 10\" (Limits of Transformer Language Models on Learning to Compose Algorithms)."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers use closely related names, most often \"multi-digit multiplication\" or \"integer multiplication\", and sometimes the abbreviation \"MUL\". The main variants differ by operand length and setting, including 4-by-3-digit, 4 \u00d7 4, and 5 \u00d7 5 problems, and one line of work describes multiplication where both multiplier and multiplicand can vary in length, framed as generalization over both operand lengths."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Only one linked measurement instrument appears, BIG-bench, which a paper describes as the benchmark containing the multi-digit multiplication task. Scoring is reported with accuracy, and one paper specifically reports exact match accuracy on 5 \u00d7 5 integer multiplication."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "Papers do not link this behavior to any construct, and no recorded claim states what construct it reflects."
+    }
+  ],
+  "characterization": "Space of definitions. Across papers, the prevailing usage treats this behavior as multiplying two multi-digit integers in base 10 and outputting the product. Most formulations describe either an explicit output-producing task or the task of calculating the product and generating the correct numerical result; as one paper puts it, \"The Multiplication (MUL) task [16] involves multiplying two multi-digit numbers in base 10\" (Limits of Transformer Language Models on Learning to Compose Algorithms).\n\nVariants. Papers use closely related names, most often \"multi-digit multiplication\" or \"integer multiplication\", and sometimes the abbreviation \"MUL\". The main variants differ by operand length and setting, including 4-by-3-digit, 4 \u00d7 4, and 5 \u00d7 5 problems, and one line of work describes multiplication where both multiplier and multiplicand can vary in length, framed as generalization over both operand lengths.\n\nSpace of elicitation and scores. Only one linked measurement instrument appears, BIG-bench, which a paper describes as the benchmark containing the multi-digit multiplication task. Scoring is reported with accuracy, and one paper specifically reports exact match accuracy on 5 \u00d7 5 integer multiplication.\n\nWhat it is taken as evidence of. Papers do not link this behavior to any construct, and no recorded claim states what construct it reflects.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Principled Understanding of Generalization for Generative Transformer Models in Arithmetic Reasoning Tasks"
+    ],
+    "iclr25": [
+      "Arithmetic Transformers Can Length-Generalize in Both Operand Length and Count",
+      "Limits of Deep Learning: Sequence Modeling through the Lens of Complexity Theory",
+      "Seq-VCR: Preventing Collapse in Intermediate Transformer Representations for Enhanced Reasoning"
+    ],
+    "icml25": [
+      "Improving Diversity in Language Models: When Temperature Fails, Change the Loss"
+    ],
+    "neurips24": [
+      "Diffusion of Thought: Chain-of-Thought Reasoning in Diffusion Language Models",
+      "Limits of Transformer Language Models on Learning to Compose Algorithms"
+    ],
+    "emnlp25": [
+      "Do Large Language Models Truly Grasp Addition? A Rule-Focused Diagnostic Using Two-Integer Arithmetic"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 1,
+    "iclr25": 3,
+    "icml25": 1,
+    "neurips24": 2,
+    "emnlp25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr25",
+    "icml25",
+    "neurips24"
+  ]
+}

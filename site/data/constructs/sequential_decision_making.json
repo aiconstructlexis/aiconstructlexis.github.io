@@ -1,0 +1,222 @@
+{
+  "canonical_name": "Sequential decision-making",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the definitions, the prevailing usage treats it as a capability for selecting, sequencing, and executing actions over multiple steps to accomplish a task or goal. Most descriptions add temporal or interactive dependence, either that each action depends on previous outcomes or that the sequence is carried out with environmental feedback in an interactive setting. A smaller framing casts it as the task of training policies to make a series of choices over time to achieve a goal, shifting the emphasis from an ability to a policy-learning problem.\n\nSpace of facets. Papers use both \"sequential decision-making\" and \"multi-step decision-making\" for closely similar ideas centered on ordered action sequences over time. Some descriptions place it alongside planning and reasoning, for example by describing methods that integrate reasoning and acting to address sequential decision-making tasks, while another explicitly distinguishes sequential decision-making tasks from general problem-solving tasks. A more specific usage appears in evaluation language that refers to classical sequential decision-making environments with limited action space.\n\nSpace of measurement. Operationalization is concentrated in 3 linked measurement instruments, all benchmark or environment-style evaluations: ALFWorld is used most often, followed by ToolBench and VirtualHome. Papers describe ALFWorld as a benchmark or open-source environment for sequential decision-making scenarios, ToolBench as containing intricate multi-step decision tasks, and VirtualHome as a classical environment with limited action space. The construct is also linked to 3 behavioral indicators, most visibly web navigation and robotic manipulation, plus 1 other indicator. These operationalizations line up with definitions that emphasize multi-step action sequences, interaction, and environmental feedback.\n\nLinks. In the relationship evidence, more than one paper relates it to web navigation, treating web navigation as a sequential decision-making task that requires interaction with an environment. One paper relates robotic manipulation to it by describing such tasks as requiring complex sequential decision-making. Another paper relates it to planning and reasoning, describing a planning method that integrates reasoning and acting to address sequential decision-making tasks. One paper also claims a causal relationship from strategy generation to sequential decision-making, based on reported gains for planning over direct response generation on benchmarks that include decision-making tasks. No correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Sequential decision-making",
+    "Multi-step decision-making"
+  ],
+  "papers": [
+    "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+    "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+    "Efficient Reinforcement Learning with Large Language Model Priors",
+    "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+    "Learning from negative feedback, or positive feedback or both",
+    "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+    "Scaling Autonomous Agents via Automatic Reward Modeling And Planning",
+    "Fleet of Agents: Coordinated Problem Solving with Large Language Models",
+    "LLM-Augmented Chemical Synthesis and Design Decision Programs",
+    "Training a Generally Curious Agent",
+    "Understanding Chain-of-Thought in LLMs through Information Theory"
+  ],
+  "paper_count": 11,
+  "definitions": [
+    {
+      "text": "The ability to perform a series of actions in an interactive environment where each action depends on the outcomes of previous ones.",
+      "papers": [
+        "Fleet of Agents: Coordinated Problem Solving with Large Language Models"
+      ],
+      "original_name": "Sequential decision-making"
+    },
+    {
+      "text": "Selecting and sequencing actions over multiple steps to accomplish a task or instruction.",
+      "papers": [
+        "Rational Decision-Making Agent with Learning Internal Utility Judgment"
+      ],
+      "original_name": "Multi-step decision-making"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Web navigation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Contextual Experience Replay for Self-Improvement of Language Agents",
+      "evidence": "Large language model (LLM) agents have been applied to sequential decision-making tasks such as web navigation, but without any environment-specific experiences, they often fail in these complex tasks.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "Contextual Experience Replay for Self-Improvement of Language Agents"
+        ],
+        "icml25": [
+          "Fleet of Agents: Coordinated Problem Solving with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ALFWorld",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "evidence": "We use one benchmark to evaluate the performance in sequential decision-making scenarios: ALFWorld (Shridhar et al., 2020) (Section 3.4)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning"
+        ],
+        "iclr24": [
+          "Retroformer: Retrospective Large Language Agents with Policy Gradient Optimization"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VirtualHome",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Reinforcing LLM Agents via Policy Optimization with Action Decomposition",
+      "evidence": "We first evaluate our method on two classical sequential decision-making environments with limited action space: Overcooked [5] and VirtualHome [5]",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Reinforcing LLM Agents via Policy Optimization with Action Decomposition"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Planning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+      "evidence": "ReAct [23]: This LLM-based planning method integrates reasoning and acting to address sequential decision-making tasks. (Section 4.1.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Reasoning",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+      "evidence": "ReAct [23]: This LLM-based planning method integrates reasoning and acting to address sequential decision-making tasks. (Section 4.1.2)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Strategy generation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "evidence": "CODEPLAN consistently and significantly outperforms directly generating responses without planning, yielding a relative 25.1% performance gain averaged across 13 challenging reasoning benchmarks spanning mathematical reasoning, symbolic reasoning, instruction-following, multi-hop question answering, and decision-making tasks.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "ToolBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "evidence": "conduct extensive experiments on Game of 24 (Yao et al., 2023), WebShop (Yao et al., 2022a), ToolBench (Qin et al., 2023c) and RestBench (Song et al., 2023), which contains intricate multi-step decision tasks involving diverse scenarios.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Rational Decision-Making Agent with Learning Internal Utility Judgment"
+        ]
+      }
+    },
+    {
+      "direction": "incoming",
+      "other_canonical_name": "Robotic manipulation",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "related",
+      "paper": "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning",
+      "evidence": "Many of these tasks, such as natural language dialogue or robotic control, require complex sequential decision-making. (Section 1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "Q-SFT: Q-Learning for Language Models via Supervised Fine-Tuning"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 8,
+  "incoming_relationship_count": 4,
+  "outgoing_relationship_count": 4,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the definitions, the prevailing usage treats it as a capability for selecting, sequencing, and executing actions over multiple steps to accomplish a task or goal. Most descriptions add temporal or interactive dependence, either that each action depends on previous outcomes or that the sequence is carried out with environmental feedback in an interactive setting. A smaller framing casts it as the task of training policies to make a series of choices over time to achieve a goal, shifting the emphasis from an ability to a policy-learning problem."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers use both \"sequential decision-making\" and \"multi-step decision-making\" for closely similar ideas centered on ordered action sequences over time. Some descriptions place it alongside planning and reasoning, for example by describing methods that integrate reasoning and acting to address sequential decision-making tasks, while another explicitly distinguishes sequential decision-making tasks from general problem-solving tasks. A more specific usage appears in evaluation language that refers to classical sequential decision-making environments with limited action space."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Operationalization is concentrated in 3 linked measurement instruments, all benchmark or environment-style evaluations: ALFWorld is used most often, followed by ToolBench and VirtualHome. Papers describe ALFWorld as a benchmark or open-source environment for sequential decision-making scenarios, ToolBench as containing intricate multi-step decision tasks, and VirtualHome as a classical environment with limited action space. The construct is also linked to 3 behavioral indicators, most visibly web navigation and robotic manipulation, plus 1 other indicator. These operationalizations line up with definitions that emphasize multi-step action sequences, interaction, and environmental feedback."
+    },
+    {
+      "label": "Links.",
+      "text": "In the relationship evidence, more than one paper relates it to web navigation, treating web navigation as a sequential decision-making task that requires interaction with an environment. One paper relates robotic manipulation to it by describing such tasks as requiring complex sequential decision-making. Another paper relates it to planning and reasoning, describing a planning method that integrates reasoning and acting to address sequential decision-making tasks. One paper also claims a causal relationship from strategy generation to sequential decision-making, based on reported gains for planning over direct response generation on benchmarks that include decision-making tasks. No correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the definitions, the prevailing usage treats it as a capability for selecting, sequencing, and executing actions over multiple steps to accomplish a task or goal. Most descriptions add temporal or interactive dependence, either that each action depends on previous outcomes or that the sequence is carried out with environmental feedback in an interactive setting. A smaller framing casts it as the task of training policies to make a series of choices over time to achieve a goal, shifting the emphasis from an ability to a policy-learning problem.\n\nSpace of facets. Papers use both \"sequential decision-making\" and \"multi-step decision-making\" for closely similar ideas centered on ordered action sequences over time. Some descriptions place it alongside planning and reasoning, for example by describing methods that integrate reasoning and acting to address sequential decision-making tasks, while another explicitly distinguishes sequential decision-making tasks from general problem-solving tasks. A more specific usage appears in evaluation language that refers to classical sequential decision-making environments with limited action space.\n\nSpace of measurement. Operationalization is concentrated in 3 linked measurement instruments, all benchmark or environment-style evaluations: ALFWorld is used most often, followed by ToolBench and VirtualHome. Papers describe ALFWorld as a benchmark or open-source environment for sequential decision-making scenarios, ToolBench as containing intricate multi-step decision tasks, and VirtualHome as a classical environment with limited action space. The construct is also linked to 3 behavioral indicators, most visibly web navigation and robotic manipulation, plus 1 other indicator. These operationalizations line up with definitions that emphasize multi-step action sequences, interaction, and environmental feedback.\n\nLinks. In the relationship evidence, more than one paper relates it to web navigation, treating web navigation as a sequential decision-making task that requires interaction with an environment. One paper relates robotic manipulation to it by describing such tasks as requiring complex sequential decision-making. Another paper relates it to planning and reasoning, describing a planning method that integrates reasoning and acting to address sequential decision-making tasks. One paper also claims a causal relationship from strategy generation to sequential decision-making, based on reported gains for planning over direct response generation on benchmarks that include decision-making tasks. No correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "iclr24": [
+      "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control"
+    ],
+    "iclr25": [
+      "CodePlan: Unlocking Reasoning Potential in Large Language Models by Scaling Code-form Planning",
+      "Efficient Reinforcement Learning with Large Language Model Priors",
+      "Empowering LLM Agents with Zero-Shot Optimal Decision-Making through Q-learning",
+      "Learning from negative feedback, or positive feedback or both",
+      "Rational Decision-Making Agent with Learning Internal Utility Judgment",
+      "Scaling Autonomous Agents via Automatic Reward Modeling And Planning"
+    ],
+    "icml25": [
+      "Fleet of Agents: Coordinated Problem Solving with Large Language Models",
+      "LLM-Augmented Chemical Synthesis and Design Decision Programs",
+      "Training a Generally Curious Agent",
+      "Understanding Chain-of-Thought in LLMs through Information Theory"
+    ]
+  },
+  "paper_count_by_conference": {
+    "iclr24": 1,
+    "iclr25": 6,
+    "icml25": 4
+  },
+  "conferences": [
+    "iclr24",
+    "iclr25",
+    "icml25"
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "canonical_name": "Cultural knowledge",
+  "type": "construct",
+  "canonical_definition": "Space of definitions. Across the papers, the prevailing usage treats cultural knowledge as a latent or internalized store of culture-specific facts, norms, values, practices, and concepts that a model can encode, access, or retrieve, often when local context or cues such as country, value, language, or region are present. It is commonly framed as what is needed to interpret and answer culturally specific or local queries, including domains such as food, history, legal frameworks, and region-specific practices. A smaller line of work uses the near-overlapping label cultural literacy, emphasizing a shared body of translinguistic cultural and factual knowledge within a community and treating recall of culturally embedded facts as a proxy for that property.\n\nSpace of facets. Papers break the construct into recurring content areas rather than a single uniform skill: norms and human values, history, cuisine and food artifacts, art, religion, societal beliefs and preferences, geographical markers, and legal or regional practices all appear as parts of it. Some authors explicitly describe it as the \"knowledge component\" of culture or as stored information that maps a cultural setting to a correct response, while another line contrasts it with broader abilities, arguing that strong performance on cultural test beds can show knowledge of tested cultures without showing the ability to operate in a new culture. Papers also vary in what stands in for it, with one treating language as a proxy for cultural knowledge and another reframing the target as cultural literacy through factual knowledge.\n\nSpace of measurement. Papers link cultural knowledge to four measurement instruments and one behavioral indicator. The direct measurement instruments are Candle, FilBench, INCLUDE, and M3Exam: these are described as general cultural benchmarks, a Filipino-centric benchmark with a cultural knowledge category, exam and non-translated academic content intended to capture regional and cultural knowledge, and multilingual real-world questions that \"require strong multilingual proficiency and cultural knowledge to perform well.\" These operationalizations mostly align with the dominant definition by testing factual recall or answering with culture-specific facts and local context, although one paper explicitly treats factual recall as a proxy for cultural literacy rather than as the construct itself.\n\nLinks. Beyond measurement, one paper claims a causal relationship from cultural knowledge to Harmful content detection, with evidence phrased as introducing more comprehensive knowledge about Chinese culture for effectively detecting harmful memes. One paper also reports that cultural knowledge is related to Cultural understanding, with the evidence stating that cultural awareness leverages cultural knowledge to detect inappropriate interactions. No correlational links are reported.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Cultural knowledge",
+    "Understanding of Indian culture",
+    "Cultural literacy"
+  ],
+  "papers": [
+    "CaLMQA: Exploring culturally specific long-form question answering across 23 languages",
+    "CulturalBench: A Robust, Diverse and Challenging Benchmark for Measuring LMs' Cultural Knowledge Through Human-AI Red-Teaming",
+    "SocialCC: Interactive Evaluation for Cultural Competence in Language Agents",
+    "Do You Know About My Nation? Investigating Multilingual Language Models' Cultural Literacy Through Factual Knowledge",
+    "FilBench: Can LLMs Understand and Generate Filipino?",
+    "NileChat: Towards Linguistically Diverse and Culturally Aware LLMs for Local Communities",
+    "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+    "Does Mapo Tofu Contain Coffee? Probing LLMs for Food-related Cultural Knowledge",
+    "Is Translation All You Need? A Study on Solving Multilingual Tasks with Large Language Models",
+    "KMMLU: Measuring Massive Multitask Language Understanding in Korean",
+    "Meta-Cultural Competence: Climbing the Right Hill of Cultural Awareness",
+    "NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models",
+    "WorldCuisines: A Massive-Scale Benchmark for Multilingual and Multicultural Visual Question Answering on Global Cuisines"
+  ],
+  "paper_count": 13,
+  "definitions": [
+    {
+      "text": "The latent trait reflecting an LLM's internalized understanding of cultural norms, values, and practices, which may be accessed when contextual cues such as country or value are provided.",
+      "papers": [
+        "Is Translation All You Need? A Study on Solving Multilingual Tasks with Large Language Models",
+        "NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models",
+        "Does Mapo Tofu Contain Coffee? Probing LLMs for Food-related Cultural Knowledge",
+        "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+        "WorldCuisines: A Massive-Scale Benchmark for Multilingual and Multicultural Visual Question Answering on Global Cuisines",
+        "KMMLU: Measuring Massive Multitask Language Understanding in Korean",
+        "Meta-Cultural Competence: Climbing the Right Hill of Cultural Awareness",
+        "CaLMQA: Exploring culturally specific long-form question answering across 23 languages",
+        "FilBench: Can LLMs Understand and Generate Filipino?"
+      ],
+      "original_name": "Cultural knowledge"
+    },
+    {
+      "text": "The shared body of translinguistic cultural and factual knowledge specific to a community or nation, which is essential for effective communication and understanding within that context.",
+      "papers": [
+        "Do You Know About My Nation? Investigating Multilingual Language Models' Cultural Literacy Through Factual Knowledge"
+      ],
+      "original_name": "Cultural literacy"
+    }
+  ],
+  "definition_count": 2,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Harmful content detection",
+      "other_type": "behaviors_tasks",
+      "relationship_type": "causes",
+      "paper": "Towards Comprehensive Detection of Chinese Harmful Memes",
+      "evidence": "introducing more comprehensive knowledge about Chinese culture are both crucial for effectively detecting harmful memes. (Section 5.4)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "neurips24": [
+          "Towards Comprehensive Detection of Chinese Harmful Memes"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "INCLUDE",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge",
+      "evidence": "Our data collection focuses on license and certification exams that capture regional knowledge of specific countries (in their official languages), and non-translated academic content from the humanities and social sciences to capture cultural knowledge. (Section 3.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "iclr25": [
+          "INCLUDE: Evaluating Multilingual Language Understanding with Regional Knowledge"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "M3Exam",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "Is Translation All You Need? A Study on Solving Multilingual Tasks with Large Language Models",
+      "evidence": "we choose M3Exam (Zhang et al., 2023a), as the questions are real-world natural data from different languages instead of translating from English and require strong multilingual proficiency and cultural knowledge to perform well. (Section 3.3)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "Is Translation All You Need? A Study on Solving Multilingual Tasks with Large Language Models"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Candle",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+      "evidence": "Fine-tuning with CULTUREINSTRUCT outperforms the base LLMs significantly on multiple types of cultural benchmarks, including: (i) benchmarks for general cultural knowledge - CULTURALBENCH (Chiu et al., 2024), CANDLE (Nguyen et al., 2023), and ETICOR (Dwivedi et al., 2023) (Section 4.1)",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "naacl25": [
+          "CultureInstruct: Curating Multi-Cultural Instructions at Scale"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "FilBench",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "FilBench: Can LLMs Understand and Generate Filipino?",
+      "evidence": "\u201cFILBENCH, a Filipino-centric benchmark designed to evaluate LLMs across a diverse set of tasks and capabilities in Filipino, Tagalog, and Cebuano. We carefully curate the tasks in FILBENCH to reflect the priorities and trends of NLP research in the Philippines such as Cultural Knowledge\u201d",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "FilBench: Can LLMs Understand and Generate Filipino?"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "Cultural understanding",
+      "other_type": "constructs",
+      "relationship_type": "related",
+      "paper": "SocialCC: Interactive Evaluation for Cultural Competence in Language Agents",
+      "evidence": "Cultural Awareness, which leverages cultural knowledge to detect inappropriate interactions.",
+      "paper_count": 1,
+      "paper_weight": 1.0,
+      "papers_by_conference": {
+        "acl25": [
+          "SocialCC: Interactive Evaluation for Cultural Competence in Language Agents"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 6,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 6,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the papers, the prevailing usage treats cultural knowledge as a latent or internalized store of culture-specific facts, norms, values, practices, and concepts that a model can encode, access, or retrieve, often when local context or cues such as country, value, language, or region are present. It is commonly framed as what is needed to interpret and answer culturally specific or local queries, including domains such as food, history, legal frameworks, and region-specific practices. A smaller line of work uses the near-overlapping label cultural literacy, emphasizing a shared body of translinguistic cultural and factual knowledge within a community and treating recall of culturally embedded facts as a proxy for that property."
+    },
+    {
+      "label": "Space of facets.",
+      "text": "Papers break the construct into recurring content areas rather than a single uniform skill: norms and human values, history, cuisine and food artifacts, art, religion, societal beliefs and preferences, geographical markers, and legal or regional practices all appear as parts of it. Some authors explicitly describe it as the \"knowledge component\" of culture or as stored information that maps a cultural setting to a correct response, while another line contrasts it with broader abilities, arguing that strong performance on cultural test beds can show knowledge of tested cultures without showing the ability to operate in a new culture. Papers also vary in what stands in for it, with one treating language as a proxy for cultural knowledge and another reframing the target as cultural literacy through factual knowledge."
+    },
+    {
+      "label": "Space of measurement.",
+      "text": "Papers link cultural knowledge to four measurement instruments and one behavioral indicator. The direct measurement instruments are Candle, FilBench, INCLUDE, and M3Exam: these are described as general cultural benchmarks, a Filipino-centric benchmark with a cultural knowledge category, exam and non-translated academic content intended to capture regional and cultural knowledge, and multilingual real-world questions that \"require strong multilingual proficiency and cultural knowledge to perform well.\" These operationalizations mostly align with the dominant definition by testing factual recall or answering with culture-specific facts and local context, although one paper explicitly treats factual recall as a proxy for cultural literacy rather than as the construct itself."
+    },
+    {
+      "label": "Links.",
+      "text": "Beyond measurement, one paper claims a causal relationship from cultural knowledge to Harmful content detection, with evidence phrased as introducing more comprehensive knowledge about Chinese culture for effectively detecting harmful memes. One paper also reports that cultural knowledge is related to Cultural understanding, with the evidence stating that cultural awareness leverages cultural knowledge to detect inappropriate interactions. No correlational links are reported."
+    }
+  ],
+  "characterization": "Space of definitions. Across the papers, the prevailing usage treats cultural knowledge as a latent or internalized store of culture-specific facts, norms, values, practices, and concepts that a model can encode, access, or retrieve, often when local context or cues such as country, value, language, or region are present. It is commonly framed as what is needed to interpret and answer culturally specific or local queries, including domains such as food, history, legal frameworks, and region-specific practices. A smaller line of work uses the near-overlapping label cultural literacy, emphasizing a shared body of translinguistic cultural and factual knowledge within a community and treating recall of culturally embedded facts as a proxy for that property.\n\nSpace of facets. Papers break the construct into recurring content areas rather than a single uniform skill: norms and human values, history, cuisine and food artifacts, art, religion, societal beliefs and preferences, geographical markers, and legal or regional practices all appear as parts of it. Some authors explicitly describe it as the \"knowledge component\" of culture or as stored information that maps a cultural setting to a correct response, while another line contrasts it with broader abilities, arguing that strong performance on cultural test beds can show knowledge of tested cultures without showing the ability to operate in a new culture. Papers also vary in what stands in for it, with one treating language as a proxy for cultural knowledge and another reframing the target as cultural literacy through factual knowledge.\n\nSpace of measurement. Papers link cultural knowledge to four measurement instruments and one behavioral indicator. The direct measurement instruments are Candle, FilBench, INCLUDE, and M3Exam: these are described as general cultural benchmarks, a Filipino-centric benchmark with a cultural knowledge category, exam and non-translated academic content intended to capture regional and cultural knowledge, and multilingual real-world questions that \"require strong multilingual proficiency and cultural knowledge to perform well.\" These operationalizations mostly align with the dominant definition by testing factual recall or answering with culture-specific facts and local context, although one paper explicitly treats factual recall as a proxy for cultural literacy rather than as the construct itself.\n\nLinks. Beyond measurement, one paper claims a causal relationship from cultural knowledge to Harmful content detection, with evidence phrased as introducing more comprehensive knowledge about Chinese culture for effectively detecting harmful memes. One paper also reports that cultural knowledge is related to Cultural understanding, with the evidence stating that cultural awareness leverages cultural knowledge to detect inappropriate interactions. No correlational links are reported.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "CaLMQA: Exploring culturally specific long-form question answering across 23 languages",
+      "CulturalBench: A Robust, Diverse and Challenging Benchmark for Measuring LMs' Cultural Knowledge Through Human-AI Red-Teaming",
+      "SocialCC: Interactive Evaluation for Cultural Competence in Language Agents"
+    ],
+    "emnlp25": [
+      "Do You Know About My Nation? Investigating Multilingual Language Models' Cultural Literacy Through Factual Knowledge",
+      "FilBench: Can LLMs Understand and Generate Filipino?",
+      "NileChat: Towards Linguistically Diverse and Culturally Aware LLMs for Local Communities"
+    ],
+    "naacl25": [
+      "CultureInstruct: Curating Multi-Cultural Instructions at Scale",
+      "Does Mapo Tofu Contain Coffee? Probing LLMs for Food-related Cultural Knowledge",
+      "Is Translation All You Need? A Study on Solving Multilingual Tasks with Large Language Models",
+      "KMMLU: Measuring Massive Multitask Language Understanding in Korean",
+      "Meta-Cultural Competence: Climbing the Right Hill of Cultural Awareness",
+      "NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models",
+      "WorldCuisines: A Massive-Scale Benchmark for Multilingual and Multicultural Visual Question Answering on Global Cuisines"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 3,
+    "emnlp25": 3,
+    "naacl25": 7
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "naacl25"
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "canonical_name": "Stance detection",
+  "type": "behavior",
+  "canonical_definition": "Space of definitions. Across the surveyed papers, the prevailing usage treats stance detection as assigning a stance label to text with respect to a specific target, topic, issue, or proposition, often described as identifying the attitude or position expressed by the author or speaker. Most papers use three-way label sets, usually favor, against, and neutral, with close alternatives such as support, oppose, and neutral or agree, disagree, and neutral. A smaller line of work uses binary versions, either affirmative versus negative for arguments or favor versus against for online political discussions.\n\nVariants. Papers study several relational variants under nearby names, including stance detection, stance classification, comment stance classification, and stance annotation. Beyond generic target-level classification, one strand focuses on social media comment-reply pairs, predicting agree, neutral, or disagree for a reply relative to a parent comment, and another asks whether a top comment supports, denies, or extends an original post based on its semantic and pragmatic relationship to the post. Other settings include arguments labeled affirmative or negative, comments judged with respect to a posed political question, and news headlines labeled as agreeing, neutral, or disagreeing with a target stance about global warming.\n\nSpace of elicitation and scores. Papers measure it with 2 instruments, most often PStance and VAST. Both are used as datasets in experimental evaluation: linked papers report experiments on VAST and PStance to evaluate methods, and one paper refers to P-Stance as a common stance detection dataset.\n\nWhat it is taken as evidence of. The linked papers do not connect stance detection to any construct, so they do not specify what construct this behavior is taken to indicate.",
+  "expert_removed": false,
+  "expert_removed_reason": "",
+  "names": [
+    "Stance detection",
+    "Comment stance classification",
+    "Stance classification",
+    "Stance annotation"
+  ],
+  "papers": [
+    "Bilingual Zero-Shot Stance Detection",
+    "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification",
+    "Are Stereotypes Leading LLMs' Zero-Shot Stance Detection ?",
+    "CARE: A Disagreement Detection Framework with Concept Alignment and Reasoning Enhancement",
+    "Explainability and Interpretability of Multilingual Large Language Models: A Survey",
+    "Exploring Artificial Image Generation for Stance Detection",
+    "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection",
+    "Label Set Optimization via Activation Distribution Kurtosis for Zero-Shot Classification with Generative Models",
+    "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+    "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models",
+    "Targeted Distillation for Sentiment Analysis",
+    "Faithful Explanations of Black-box NLP Models Using LLM-generated Counterfactuals",
+    "The Power of LLM-Generated Synthetic Data for Stance Detection in Online Political Discussions",
+    "Can Unconfident LLM Annotations Be Used for Confident Conclusions?",
+    "Mitigating Biases of Large Language Models in Stance Detection with Counterfactual Augmented Calibration",
+    "OpenDebateEvidence: A Massive-Scale Argument Mining and Summarization Dataset"
+  ],
+  "paper_count": 16,
+  "definitions": [
+    {
+      "text": "The observable task of identifying and classifying the attitude (e.g., favor, against, neutral) expressed in a text towards a specific target or topic.",
+      "papers": [
+        "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification",
+        "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+        "OpenDebateEvidence: A Massive-Scale Argument Mining and Summarization Dataset",
+        "Faithful Explanations of Black-box NLP Models Using LLM-generated Counterfactuals",
+        "Mitigating Biases of Large Language Models in Stance Detection with Counterfactual Augmented Calibration"
+      ],
+      "original_name": "Stance detection"
+    },
+    {
+      "text": "Determining whether a comment supports, denies, or extends the original post, based on its semantic and pragmatic relationship to the post content.",
+      "papers": [
+        "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models"
+      ],
+      "original_name": "Comment stance classification"
+    },
+    {
+      "text": "The observable task of assigning a label (agree, disagree, or neutral) to a reply based on its relationship to a parent comment in a social media context.",
+      "papers": [
+        "CARE: A Disagreement Detection Framework with Concept Alignment and Reasoning Enhancement",
+        "The Power of LLM-Generated Synthetic Data for Stance Detection in Online Political Discussions"
+      ],
+      "original_name": "Stance classification"
+    },
+    {
+      "text": "Classifying whether a text agrees, is neutral, or disagrees with a target stance.",
+      "papers": [
+        "Can Unconfident LLM Annotations Be Used for Confident Conclusions?"
+      ],
+      "original_name": "Stance annotation"
+    }
+  ],
+  "definition_count": 4,
+  "relationships": [
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "VAST",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification",
+      "evidence": "We validate the effectiveness of our method through extensive experiments on the SemEval-2016, and VAST datasets, showing that MPVStance outperforms state-of-the-art models in zero-shot, few-shot, and challenging scenarios. (Section 1)",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "acl25": [
+          "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification"
+        ],
+        "emnlp25": [
+          "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework"
+        ]
+      }
+    },
+    {
+      "direction": "outgoing",
+      "other_canonical_name": "PStance",
+      "other_type": "measurements",
+      "relationship_type": "measured_by",
+      "paper": "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+      "evidence": "We conduct experiments on the VAST, SEM16, and PStance datasets to evaluate our proposed method.",
+      "paper_count": 2,
+      "paper_weight": 2.0,
+      "papers_by_conference": {
+        "emnlp25": [
+          "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework"
+        ],
+        "iclr25": [
+          "The Power of LLM-Generated Synthetic Data for Stance Detection in Online Political Discussions"
+        ]
+      }
+    }
+  ],
+  "relationship_count": 2,
+  "incoming_relationship_count": 0,
+  "outgoing_relationship_count": 2,
+  "characterization_sections": [
+    {
+      "label": "Space of definitions.",
+      "text": "Across the surveyed papers, the prevailing usage treats stance detection as assigning a stance label to text with respect to a specific target, topic, issue, or proposition, often described as identifying the attitude or position expressed by the author or speaker. Most papers use three-way label sets, usually favor, against, and neutral, with close alternatives such as support, oppose, and neutral or agree, disagree, and neutral. A smaller line of work uses binary versions, either affirmative versus negative for arguments or favor versus against for online political discussions."
+    },
+    {
+      "label": "Variants.",
+      "text": "Papers study several relational variants under nearby names, including stance detection, stance classification, comment stance classification, and stance annotation. Beyond generic target-level classification, one strand focuses on social media comment-reply pairs, predicting agree, neutral, or disagree for a reply relative to a parent comment, and another asks whether a top comment supports, denies, or extends an original post based on its semantic and pragmatic relationship to the post. Other settings include arguments labeled affirmative or negative, comments judged with respect to a posed political question, and news headlines labeled as agreeing, neutral, or disagreeing with a target stance about global warming."
+    },
+    {
+      "label": "Space of elicitation and scores.",
+      "text": "Papers measure it with 2 instruments, most often PStance and VAST. Both are used as datasets in experimental evaluation: linked papers report experiments on VAST and PStance to evaluate methods, and one paper refers to P-Stance as a common stance detection dataset."
+    },
+    {
+      "label": "What it is taken as evidence of.",
+      "text": "The linked papers do not connect stance detection to any construct, so they do not specify what construct this behavior is taken to indicate."
+    }
+  ],
+  "characterization": "Space of definitions. Across the surveyed papers, the prevailing usage treats stance detection as assigning a stance label to text with respect to a specific target, topic, issue, or proposition, often described as identifying the attitude or position expressed by the author or speaker. Most papers use three-way label sets, usually favor, against, and neutral, with close alternatives such as support, oppose, and neutral or agree, disagree, and neutral. A smaller line of work uses binary versions, either affirmative versus negative for arguments or favor versus against for online political discussions.\n\nVariants. Papers study several relational variants under nearby names, including stance detection, stance classification, comment stance classification, and stance annotation. Beyond generic target-level classification, one strand focuses on social media comment-reply pairs, predicting agree, neutral, or disagree for a reply relative to a parent comment, and another asks whether a top comment supports, denies, or extends an original post based on its semantic and pragmatic relationship to the post. Other settings include arguments labeled affirmative or negative, comments judged with respect to a posed political question, and news headlines labeled as agreeing, neutral, or disagreeing with a target stance about global warming.\n\nSpace of elicitation and scores. Papers measure it with 2 instruments, most often PStance and VAST. Both are used as datasets in experimental evaluation: linked papers report experiments on VAST and PStance to evaluate methods, and one paper refers to P-Stance as a common stance detection dataset.\n\nWhat it is taken as evidence of. The linked papers do not connect stance detection to any construct, so they do not specify what construct this behavior is taken to indicate.",
+  "characterization_status": "llm",
+  "papers_by_conference": {
+    "acl25": [
+      "Bilingual Zero-Shot Stance Detection",
+      "MPVStance: Mitigating Hallucinations in Stance Detection with Multi-Perspective Verification"
+    ],
+    "emnlp25": [
+      "Are Stereotypes Leading LLMs' Zero-Shot Stance Detection ?",
+      "CARE: A Disagreement Detection Framework with Concept Alignment and Reasoning Enhancement",
+      "Explainability and Interpretability of Multilingual Large Language Models: A Survey",
+      "Exploring Artificial Image Generation for Stance Detection",
+      "LLM-Driven Implicit Target Augmentation and Fine-Grained Contextual Modeling for Zero-Shot and Few-Shot Stance Detection",
+      "Label Set Optimization via Activation Distribution Kurtosis for Zero-Shot Classification with Generative Models",
+      "MPRF: Interpretable Stance Detection through Multi-Path Reasoning Framework",
+      "MemeReaCon: Probing Contextual Meme Understanding in Large Vision-Language Models",
+      "Targeted Distillation for Sentiment Analysis"
+    ],
+    "iclr24": [
+      "Faithful Explanations of Black-box NLP Models Using LLM-generated Counterfactuals"
+    ],
+    "naacl25": [
+      "Can Unconfident LLM Annotations Be Used for Confident Conclusions?",
+      "Mitigating Biases of Large Language Models in Stance Detection with Counterfactual Augmented Calibration"
+    ],
+    "neurips24": [
+      "OpenDebateEvidence: A Massive-Scale Argument Mining and Summarization Dataset"
+    ],
+    "iclr25": [
+      "The Power of LLM-Generated Synthetic Data for Stance Detection in Online Political Discussions"
+    ]
+  },
+  "paper_count_by_conference": {
+    "acl25": 2,
+    "emnlp25": 9,
+    "iclr24": 1,
+    "naacl25": 2,
+    "neurips24": 1,
+    "iclr25": 1
+  },
+  "conferences": [
+    "acl25",
+    "emnlp25",
+    "iclr24",
+    "iclr25",
+    "naacl25",
+    "neurips24"
+  ]
+}
